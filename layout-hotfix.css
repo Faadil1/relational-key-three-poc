@@ -1,0 +1,89 @@
+/* ROUND 13B.4.1 — ABOVE-THE-FOLD POSITIONING HOTFIX
+   Goal: make the artifact/seam/archive scene begin immediately under the header on desktop.
+   This file intentionally overrides vertical centering from figure.css without changing the visual system. */
+
+@media (min-width: 901px) {
+  .shell {
+    overflow: visible !important;
+  }
+
+  .experience {
+    height: auto !important;
+    min-height: 0 !important;
+    margin: 18px auto 10px !important;
+    align-items: start !important;
+  }
+
+  .artifact-column,
+  .archive-column {
+    height: auto !important;
+    justify-content: flex-start !important;
+    align-self: start !important;
+  }
+
+  .card-wrap {
+    margin: 0 !important;
+    width: min(720px, 100%) !important;
+  }
+
+  .artifact-footer {
+    margin-top: 10px !important;
+  }
+
+  .archive-heading {
+    margin-top: 0 !important;
+    margin-bottom: 10px !important;
+  }
+
+  .memory-field {
+    height: 448px !important;
+    min-height: 448px !important;
+  }
+
+  .seam-column {
+    height: 448px !important;
+    min-height: 448px !important;
+    align-self: start !important;
+    align-items: center !important;
+  }
+
+  .control-deck {
+    margin-top: 12px !important;
+  }
+}
+
+@media (min-width: 1400px) and (min-height: 820px) {
+  .experience {
+    margin-top: 16px !important;
+  }
+
+  .card-wrap {
+    width: min(740px, 100%) !important;
+  }
+
+  .memory-field,
+  .seam-column {
+    height: 462px !important;
+    min-height: 462px !important;
+  }
+}
+
+@media (min-width: 1600px) and (min-height: 900px) {
+  .topbar {
+    min-height: 66px !important;
+  }
+
+  .experience {
+    margin-top: 14px !important;
+  }
+
+  .card-wrap {
+    width: min(760px, 100%) !important;
+  }
+
+  .memory-field,
+  .seam-column {
+    height: 474px !important;
+    min-height: 474px !important;
+  }
+}
