@@ -1,6 +1,6 @@
 # ROUND 13E.3.1 — EDGE MATERIAL REGISTRATION
 
-Status: LIVE CANDIDATE / BROWSER VISUAL AUDIT REQUIRED
+Status: PASS WITH POLISH / PRESERVED CANDIDATE
 Project: RELATIONAL KEY — Cultural Editions
 Edition: Craft Memory / Morocco / Fès / Tessellated Register
 
@@ -46,10 +46,15 @@ Inline JavaScript: syntax check PASS.
 https://relational-key-craft-memory-zellige-v13e31-faadil1s-projects.vercel.app
 Deployment: `dpl_4HV3s3QoWeKyBXaRfdR5zmWEFhzs`
 
-## Source commits
-Implementation: `8e745f086466fef161f672d0a5bf6cef92d53329`
-Audit linkage: `a0a96c71862aa93bd3145646dbc26ac945f2f6a5`
-Current canonical branch includes this checkpoint.
+## Source commit
+`8e745f086466fef161f672d0a5bf6cef92d53329`
 
-## Gate
-Do not merge until a live browser recording confirms that the successful state reads as physical edge tessellation rather than a floating connector.
+## User visual gate
+Subsequent user review approved the direction. See `ROUND13E32_USER_APPROVAL_PASS_WITH_POLISH.md`.
+
+## Verdict
+**PAIR ARCHITECTURE — PASS**
+**TESSELLATION MECHANISM — PASS**
+**CRAFT MEMORY / FÈS — PASS WITH POLISH**
+
+Preserve this candidate. Any remaining micro-polish is deferred to the Global Refinement Pass.
