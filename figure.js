@@ -1,103 +1,151 @@
-const $=s=>document.querySelector(s);
-const experience=$('#experience'),card=$('#card'),cardWrap=$('#cardWrap'),outcome=$('#outcome'),explain=$('#explain');
-const drawer=$('#drawer'),backdrop=$('#backdrop'),closeDrawer=$('#closeDrawer'),frontImage=$('#frontImage');
-let claim='matching',view='front',busy=false;
+const $ = (s, root = document) => root.querySelector(s);
+const $$ = (s, root = document) => [...root.querySelectorAll(s)];
 
-frontImage.addEventListener('error',()=>{
-  frontImage.hidden=true;
-  $('.asset-fallback')?.classList.add('show');
-});
-frontImage.addEventListener('load',()=>$('.asset-fallback')?.classList.remove('show'));
+const experience = $('#experience');
+const card = $('#card');
+const cardWrap = $('#cardWrap');
+const outcome = $('#outcome');
+const outcomeLabel = $('#outcomeLabel');
+const outcomeValue = $('#outcomeValue');
+const resultPlaque = $('#resultPlaque');
+const explain = $('#explain');
+const run = $('#run');
+const reset = $('#reset');
+const drawer = $('#drawer');
+const backdrop = $('#backdrop');
+const closeDrawer = $('#closeDrawer');
+const drawerTitle = $('#drawerTitle');
 
-function setView(next){
-  view=next;
-  card.style.transform='';
-  card.classList.remove('front-view','back-view','detail-view');
+let claim = 'matching';
+let view = 'front';
+let busy = false;
+
+function setView(next) {
+  view = next;
+  card.classList.remove('front-view', 'back-view', 'detail-view');
   card.classList.add(`${next}-view`);
-  document.querySelectorAll('[data-view]').forEach(b=>{
-    const active=b.dataset.view===next;
-    b.classList.toggle('active',active);
-    b.setAttribute('aria-pressed',String(active));
+  $$('[data-view]').forEach(btn => {
+    const active = btn.dataset.view === next;
+    btn.classList.toggle('active', active);
+    btn.setAttribute('aria-pressed', String(active));
   });
+  cardWrap.style.transform = '';
 }
 
-function clearState(){
-  busy=false;
-  experience.classList.remove('registered','rejected');
-  card.classList.remove('registered','rejected');
-  outcome.hidden=true;
-  explain.hidden=true;
-  outcome.innerHTML='<span>RELATIONSHIP REGISTERED</span><strong>LEGACY PATH CONTINUES</strong>';
+function setResult(type, text) {
+  resultPlaque.classList.remove('idle', 'success', 'failure');
+  resultPlaque.classList.add(type);
+  resultPlaque.innerHTML = `<span class="mini-mark"></span><b>${text}</b>`;
 }
 
-function runRelation(){
-  if(busy)return;
+function clearState() {
+  busy = false;
+  experience.classList.remove('registered', 'rejected');
+  outcome.hidden = true;
+  explain.hidden = true;
+  outcomeLabel.textContent = 'RELATIONSHIP REGISTERED';
+  outcomeValue.textContent = 'LEGACY PATH CONTINUES';
+  setResult('idle', 'AWAITING TEST');
+}
+
+function runRelationship() {
+  if (busy) return;
   clearState();
-  busy=true;
+  busy = true;
   setView('front');
-  if(claim==='matching'){
-    card.style.transform='translateX(14px)';
-    setTimeout(()=>{
-      card.style.transform='';
-      experience.classList.add('registered');
-      card.classList.add('registered');
-      outcome.hidden=false;
-      explain.hidden=false;
-      busy=false;
+  run.disabled = true;
+  run.textContent = 'COMPARING…';
+
+  if (claim === 'matching') {
+    setTimeout(() => experience.classList.add('registered'), 260);
+    setTimeout(() => {
+      outcome.hidden = false;
+      explain.hidden = false;
+      setResult('success', 'LEGACY PATH CONTINUES');
       navigator.vibrate?.(14);
-    },420);
-  }else{
-    card.classList.add('rejected');
-    experience.classList.add('rejected');
-    card.style.animation='cardReject .46s ease';
-    setTimeout(()=>{
-      card.style.animation='';
-      outcome.innerHTML='<span>RELATIONSHIP DOES NOT REGISTER</span><strong class="shake-note">CREDENTIAL REMAINS VALID</strong>';
-      outcome.hidden=false;
-      explain.hidden=false;
-      busy=false;
-      navigator.vibrate?.([8,18,8]);
-    },460);
+      busy = false;
+      run.disabled = false;
+      run.innerHTML = 'TEST RELATIONSHIP <span>→</span>';
+    }, 760);
+  } else {
+    setTimeout(() => experience.classList.add('rejected'), 220);
+    setTimeout(() => {
+      outcomeLabel.textContent = 'RELATIONSHIP DOES NOT REGISTER';
+      outcomeValue.textContent = 'CREDENTIAL REMAINS VALID';
+      outcome.hidden = false;
+      explain.hidden = false;
+      setResult('failure', 'NO REGISTERED RELATIONSHIP');
+      navigator.vibrate?.([8, 18, 8]);
+      busy = false;
+      run.disabled = false;
+      run.innerHTML = 'TEST RELATIONSHIP <span>→</span>';
+    }, 620);
   }
 }
 
-function openDrawer(){
-  backdrop.hidden=false;
-  requestAnimationFrame(()=>{
+function openDrawer(mode = 'relationship') {
+  if (mode === 'about') drawerTitle.textContent = 'About the Cultural Figure edition';
+  else if (mode === 'collection') drawerTitle.textContent = 'Cultural Editions collection';
+  else drawerTitle.textContent = claim === 'matching' ? 'Why this relationship works' : 'Why this relationship does not register';
+  backdrop.hidden = false;
+  requestAnimationFrame(() => {
     backdrop.classList.add('open');
     drawer.classList.add('open');
-    drawer.setAttribute('aria-hidden','false');
+    drawer.setAttribute('aria-hidden', 'false');
   });
 }
-function close(){
+
+function close() {
   backdrop.classList.remove('open');
   drawer.classList.remove('open');
-  drawer.setAttribute('aria-hidden','true');
-  setTimeout(()=>backdrop.hidden=true,300);
+  drawer.setAttribute('aria-hidden', 'true');
+  setTimeout(() => { backdrop.hidden = true; }, 300);
 }
 
-document.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>setView(b.dataset.view));
-document.querySelectorAll('[data-claim]').forEach(b=>b.onclick=()=>{
-  claim=b.dataset.claim;
-  document.querySelectorAll('[data-claim]').forEach(x=>{
-    const active=x===b;x.classList.toggle('active',active);x.setAttribute('aria-pressed',String(active));
+$$('[data-view]').forEach(btn => btn.addEventListener('click', () => setView(btn.dataset.view)));
+$$('[data-claim]').forEach(btn => btn.addEventListener('click', () => {
+  claim = btn.dataset.claim;
+  $$('[data-claim]').forEach(other => {
+    const active = other === btn;
+    other.classList.toggle('active', active);
+    other.setAttribute('aria-pressed', String(active));
   });
   clearState();
-});
-$('#run').onclick=runRelation;
-$('#reset').onclick=()=>{clearState();setView('front')};
-explain.onclick=openDrawer;
-closeDrawer.onclick=close;
-backdrop.onclick=close;
-window.addEventListener('keydown',e=>{
-  if(e.key==='Escape'&&drawer.classList.contains('open'))close();
-  if((e.key==='Enter'||e.key===' ')&&document.activeElement===cardWrap){e.preventDefault();runRelation();}
+}));
+
+run.addEventListener('click', runRelationship);
+reset.addEventListener('click', () => { clearState(); setView('front'); });
+explain.addEventListener('click', () => openDrawer('relationship'));
+$('#aboutBtn').addEventListener('click', () => openDrawer('about'));
+$('#collectionBtn').addEventListener('click', () => openDrawer('collection'));
+$('#moreBtn').addEventListener('click', () => openDrawer('about'));
+closeDrawer.addEventListener('click', close);
+backdrop.addEventListener('click', close);
+
+window.addEventListener('keydown', e => {
+  if (e.key === 'Escape' && drawer.classList.contains('open')) close();
+  if ((e.key === 'Enter' || e.key === ' ') && document.activeElement === cardWrap) {
+    e.preventDefault();
+    runRelationship();
+  }
 });
 
-cardWrap.addEventListener('pointermove',e=>{
-  if(view!=='front'||matchMedia('(prefers-reduced-motion: reduce)').matches||experience.classList.contains('registered'))return;
-  const r=cardWrap.getBoundingClientRect();
-  const x=(e.clientX-r.left)/r.width-.5, y=(e.clientY-r.top)/r.height-.5;
-  card.style.transform=`rotateX(${(-y*3.2).toFixed(2)}deg) rotateY(${(x*4).toFixed(2)}deg)`;
+if (!matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  cardWrap.addEventListener('pointermove', e => {
+    if (view !== 'front') return;
+    const r = cardWrap.getBoundingClientRect();
+    const x = (e.clientX - r.left) / r.width - 0.5;
+    const y = (e.clientY - r.top) / r.height - 0.5;
+    cardWrap.style.transform = `perspective(1200px) rotateX(${(-y * 2.2).toFixed(2)}deg) rotateY(${(x * 2.8).toFixed(2)}deg)`;
+  });
+  cardWrap.addEventListener('pointerleave', () => { cardWrap.style.transform = ''; });
+}
+
+$$('img').forEach(img => {
+  img.addEventListener('error', () => {
+    const host = img.closest('figure') || img.parentElement;
+    host?.classList.add('broken-image');
+  });
 });
-cardWrap.addEventListener('pointerleave',()=>{if(view==='front'&&!busy)card.style.transform=''});
+
+clearState();
