@@ -6,6 +6,7 @@
   <meta name="theme-color" content="#100d09" />
   <title>RELATIONAL KEY — Cultural Figure Edition</title>
   <link rel="stylesheet" href="./figure.css" />
+  <link rel="stylesheet" href="./real-archive.css" />
 </head>
 <body>
 <main class="shell">
@@ -15,20 +16,37 @@
   </header>
 
   <section class="hero-copy">
-    <p>A figure is not placed on the credential.</p>
-    <h2>Their traces become the material the credential must recognize.</h2>
+    <p>No generated portrait. No synthetic archive.</p>
+    <h2>Real photographs become the memory field the credential must recognize.</h2>
   </section>
 
-  <section id="experience" class="experience" aria-label="Interactive Cultural Figure credential">
+  <section id="experience" class="experience real-archive-experience" aria-label="Interactive Cultural Figure credential">
     <div class="artifact-side">
       <div class="view-tabs" role="group" aria-label="Credential view">
         <button data-view="front" class="active">FRONT</button><button data-view="back">BACK</button><button data-view="detail">MACRO</button>
       </div>
       <div id="cardWrap" class="card-wrap" tabindex="0" aria-label="Cultural Figure credential">
         <article id="card" class="credential front-view">
-          <div class="face face-front">
-            <img id="frontImage" src="https://raw.githubusercontent.com/Faadil1/relational-key-three-poc/ad3129652c463f716a3e412d5504926560a7e765/assets/frida-front.jpg" alt="Generated Cultural Figure Edition art-direction prototype" />
-            <div class="asset-fallback" aria-hidden="true"><span>GENERATED SURFACE</span><b>CULTURAL FIGURE · TRACE FIELD</b><i></i></div>
+          <div class="face face-front real-photo-card">
+            <div class="archive-photo-layout">
+              <figure class="photo-main">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Guillermo_Kahlo%2C_Frida_Kahlo%2C_1932.jpg" alt="Frida Kahlo photographed by Guillermo Kahlo in 1932" />
+                <figcaption>GUILLERMO KAHLO · 1932 · PUBLIC DOMAIN</figcaption>
+              </figure>
+              <figure class="photo-secondary portrait-1926">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Frida_Kahlo_-_1926_WaPo.jpg" alt="Frida Kahlo photographed in 1926" />
+                <figcaption>1926</figcaption>
+              </figure>
+              <figure class="photo-secondary casa-exterior">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/La_Casa_Azul_%28The_Blue_House%29%2C_better_known_as_the_Frida_Kahlo_Museum%2C_located_in_the_Coyoac%C3%A1n_neighborhood_of_Mexico_City.jpg" alt="La Casa Azul in Coyoacán" />
+                <figcaption>COYOACÁN · CASA AZUL · CC0</figcaption>
+              </figure>
+            </div>
+            <div class="front-meta">
+              <span>CULTURAL FIGURE · TRACE SYSTEM</span>
+              <strong>FRIDA KAHLO</strong>
+              <small>REAL PHOTOGRAPHIC SOURCES</small>
+            </div>
             <div class="surface-sheen"></div>
             <div class="edge-port left-port"></div><div class="edge-port right-port"></div>
             <div id="pathOverlay" class="path-overlay"><span></span><i></i><span></span></div>
@@ -37,29 +55,37 @@
             <div class="back-kicker">RELATIONAL KEY · CULTURAL FIGURE EDITION</div><div class="back-number">07 / 2500</div>
             <h3>FRIDA KAHLO</h3>
             <div class="back-grid">
-              <div><span>PLACE</span><strong>COYOACÁN · MEXICO CITY</strong></div><div><span>TRACE FAMILY</span><strong>STUDIO · LETTERS · OBJECTS · PLACE</strong></div>
-              <div><span>KEY ID</span><strong>RK-CF-07-FK</strong></div><div><span>SURFACE</span><strong>GENERATED / ARCHIVE-LED</strong></div>
+              <div><span>PLACE</span><strong>COYOACÁN · MEXICO CITY</strong></div><div><span>TRACE FAMILY</span><strong>PORTRAIT · HOME · OBJECT · PLACE</strong></div>
+              <div><span>KEY ID</span><strong>RK-CF-07-FK</strong></div><div><span>IMAGE RULE</span><strong>REAL SOURCES ONLY</strong></div>
             </div>
-            <div class="provenance-stamp">TRACE REGISTRY · PROTOTYPE</div><p class="back-note">Conceptual edition · no museum affiliation.</p>
+            <div class="provenance-stamp">TRACE REGISTRY · REAL IMAGE PASS</div><p class="back-note">Conceptual edition · no museum affiliation.</p>
           </div>
         </article>
       </div>
-      <div class="artifact-caption"><span>COLLECTIBLE OBJECT</span><b>Generated surface · archive-derived mechanism</b></div>
+      <div class="artifact-caption"><span>COLLECTIBLE OBJECT</span><b>Public-domain / CC0 photography · no generated surface</b></div>
     </div>
 
     <div class="relation-seam" aria-hidden="true"><span class="rail rail-left"></span><div id="junction" class="junction"><i></i><b></b><i></i></div><span class="rail rail-right"></span></div>
 
     <div class="field-side">
-      <div id="memoryField" class="memory-field">
-        <div class="field-head"><span>COUNTERPART FIELD</span><strong>COYOACÁN · TRACE ARCHIVE</strong></div>
-        <div class="archive-grid">
-          <article class="archive-tile studio"><small>1941</small><b>STUDIO</b><em>work surface / interior trace</em></article>
-          <article class="archive-tile letter"><small>CORRESPONDENCE</small><b>HAND · VOICE</b><em>personal mark / written trace</em></article>
-          <article class="archive-tile casa"><small>PLACE</small><b>CASA AZUL</b><em>home / making / memory</em></article>
-          <article class="archive-tile material"><small>MATERIAL</small><b>TEXTILE · BOTANICAL</b><em>surface / object / environment</em></article>
+      <div id="memoryField" class="memory-field real-memory-field">
+        <div class="field-head"><span>COUNTERPART FIELD</span><strong>COYOACÁN · REAL IMAGE ARCHIVE</strong></div>
+        <div class="real-field-grid">
+          <figure class="field-photo kitchen">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/The_kitchen_inside_La_Casa_Azul_%28The_Blue_House%29%2C_which_is_the_Frida_Kahlo_Museum_located_in_Coyoac%C3%A1n%2C_Mexico_City.jpg" alt="Kitchen inside La Casa Azul" />
+            <figcaption>KITCHEN · CASA AZUL · CC0</figcaption>
+          </figure>
+          <figure class="field-photo exterior">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/La_Casa_Azul_%28The_Blue_House%29%2C_better_known_as_the_Frida_Kahlo_Museum%2C_located_in_the_Coyoac%C3%A1n_neighborhood_of_Mexico_City.jpg" alt="Exterior of La Casa Azul" />
+            <figcaption>PLACE · COYOACÁN · CC0</figcaption>
+          </figure>
+          <figure class="field-photo portrait-small">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/0/0a/Frida_Kahlo_-_1926_WaPo.jpg" alt="Frida Kahlo in 1926" />
+            <figcaption>FRIDA · 1926 · PUBLIC DOMAIN</figcaption>
+          </figure>
         </div>
-        <svg class="trace-map" viewBox="0 0 520 340" aria-hidden="true"><path d="M10 170 C86 88 146 247 211 160 S330 89 379 169 S462 239 510 162"/><path d="M30 255 C120 184 175 280 252 220 S406 187 492 238"/></svg>
-        <div class="field-foot"><span>ARCHIVE → TRACE → RECOGNITION</span><b>Conceptual field, not an official museum diagram.</b></div>
+        <svg class="trace-map real-trace-map" viewBox="0 0 520 340" aria-hidden="true"><path d="M12 171 C92 105 150 226 215 164 S334 110 386 171 S470 226 510 164"/></svg>
+        <div class="field-foot"><span>REAL IMAGE → TRACE → RECOGNITION</span><b>Images are documentary sources; the relationship geometry is the design layer.</b></div>
       </div>
     </div>
 
@@ -71,15 +97,21 @@
     <button id="reset" class="quiet">RESET</button><button id="run" class="primary">TEST RELATIONSHIP</button><button id="explain" class="quiet" hidden>WHY THIS WORKS</button>
   </div>
   <section class="law"><span>TRACE</span><i>→</i><span>RECOGNITION</span><i>→</i><span>REGISTRATION</span><i>→</i><span>LEGACY</span></section>
-  <p class="truth">Generated art-direction surface · archive-derived mechanism · conceptual cultural credential.</p>
+  <p class="truth">Real photographs only · public-domain / CC0 sources · conceptual cultural credential.</p>
 </main>
 
 <div id="backdrop" class="backdrop" hidden></div>
 <aside id="drawer" class="drawer" aria-hidden="true">
   <button id="closeDrawer" class="drawer-close">CLOSE</button><div class="drawer-eyebrow">WHY THIS WORKS</div><h3>CULTURAL FIGURE → TRACE SYSTEM</h3>
-  <p>The credential does not reproduce an artwork. It treats documented traces — studio, correspondence, place and personal-object context — as a recognition field.</p>
-  <div class="steps"><div><span>01</span><b>TRACE</b><p>The credential carries a memory claim.</p></div><div><span>02</span><b>FIELD</b><p>The counterpart supplies a trace field.</p></div><div><span>03</span><b>REGISTER</b><p>Compatible traces close the seam.</p></div><div><span>04</span><b>CONTINUE</b><p>The same path becomes a legacy path.</p></div></div>
-  <details><summary>Archive & truthfulness</summary><p>Smithsonian Archives of American Art documents Emmy Lou Packard’s 1941 photograph of Frida Kahlo’s studio and identifies it as U.S. public domain. Museo Frida Kahlo describes Casa Azul and Frida’s personal objects as central to understanding her creative world. The visible card surface is generated art direction, not an archival image or official museum product.</p><a href="https://www.aaa.si.edu/collections/items/detail/frida-kahlos-studio-5527" target="_blank" rel="noreferrer">Smithsonian archive record ↗</a><a href="https://www.museofridakahlo.org.mx/" target="_blank" rel="noreferrer">Museo Frida Kahlo ↗</a></details>
+  <p>The design no longer invents a visual world around the figure. Real photographs carry the memory; RELATIONAL KEY only adds the recognition geometry that connects those traces.</p>
+  <div class="steps"><div><span>01</span><b>IMAGE</b><p>Authentic portrait and place photography forms the visible material.</p></div><div><span>02</span><b>FIELD</b><p>Casa Azul photographs supply a real counterpart context.</p></div><div><span>03</span><b>REGISTER</b><p>The design layer connects compatible traces at the seam.</p></div><div><span>04</span><b>CONTINUE</b><p>The same relational path continues through the documented world.</p></div></div>
+  <details open><summary>Sources & rights</summary>
+    <p>Frida Kahlo, 1926 and Frida Kahlo, 1932 by Guillermo Kahlo are hosted on Wikimedia Commons as public-domain photographs. The Casa Azul exterior and kitchen photographs by Rebeccananonof are CC0. This remains a conceptual RELATIONAL KEY edition and is not an official museum product.</p>
+    <a href="https://commons.wikimedia.org/wiki/File:Frida_Kahlo_-_1926_WaPo.jpg" target="_blank" rel="noreferrer">Frida Kahlo · 1926 · Wikimedia Commons ↗</a>
+    <a href="https://commons.wikimedia.org/wiki/File:Guillermo_Kahlo,_Frida_Kahlo,_1932.jpg" target="_blank" rel="noreferrer">Frida Kahlo · 1932 · Wikimedia Commons ↗</a>
+    <a href="https://commons.wikimedia.org/wiki/File:La_Casa_Azul_(The_Blue_House),_better_known_as_the_Frida_Kahlo_Museum,_located_in_the_Coyoac%C3%A1n_neighborhood_of_Mexico_City.jpg" target="_blank" rel="noreferrer">Casa Azul exterior · CC0 ↗</a>
+    <a href="https://commons.wikimedia.org/wiki/File:The_kitchen_inside_La_Casa_Azul_(The_Blue_House),_which_is_the_Frida_Kahlo_Museum_located_in_Coyoac%C3%A1n,_Mexico_City.jpg" target="_blank" rel="noreferrer">Casa Azul kitchen · CC0 ↗</a>
+  </details>
 </aside>
 <script src="./figure.js"></script>
 </body></html>
