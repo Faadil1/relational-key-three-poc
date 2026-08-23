@@ -1,165 +1,106 @@
 import * as THREE from 'https://cdn.jsdelivr.net/npm/three@0.179.1/build/three.module.js';
 
 const q=s=>document.querySelector(s);
-const canvas=q('#scene'), stage=q('.stage'), phaseEl=q('#phase'), result=q('#result'), debug=q('#debug'), hint=q('#hint'), inspectBtn=q('#inspect');
+const canvas=q('#scene'), stage=q('.stage'), phaseEl=q('#phase'), result=q('#result'), debug=q('#debug'), hint=q('#hint'), inspectBtn=q('#inspect'), residualEl=q('#residual');
 const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
 const S={scenario:'family',phase:'idle',drag:false,done:false,auto:false,debug:false,inspect:false,compatible:true};
 
 const renderer=new THREE.WebGLRenderer({canvas,antialias:true,alpha:true});
-renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));
-renderer.setClearColor(0x000000,0);
-renderer.outputColorSpace=THREE.SRGBColorSpace;
+renderer.setPixelRatio(Math.min(devicePixelRatio,1.5));renderer.setClearColor(0x000000,0);renderer.outputColorSpace=THREE.SRGBColorSpace;
 const scene=new THREE.Scene();
-const cam=new THREE.PerspectiveCamera(34,1,.1,60);cam.position.set(0,0,8.15);
-scene.add(new THREE.HemisphereLight(0xffffff,0xc8bfae,2.6));
-const key=new THREE.DirectionalLight(0xffffff,3.1);key.position.set(-3,5,6);scene.add(key);
-const rim=new THREE.DirectionalLight(0xffb49e,1.15);rim.position.set(5,-2,3);scene.add(rim);
+const cam=new THREE.PerspectiveCamera(34,1,.1,60);cam.position.set(0,0,8.35);
+scene.add(new THREE.HemisphereLight(0xffffff,0xd5ccbc,2.8));
+const key=new THREE.DirectionalLight(0xffffff,3.2);key.position.set(-3.5,5.5,6);scene.add(key);
+const rim=new THREE.DirectionalLight(0xffb49e,.9);rim.position.set(5,-2,4);scene.add(rim);
 
 const world=new THREE.Group();scene.add(world);
-const blue=0x1734e8, ivory=0xeee9de, orange=0xef4a24, quiet=0x9d968d;
+const BLUE=0x1734e8, IVORY=0xeee9de, ORANGE=0xef4a24;
 
-function roundedShape(w,h,r){
-  const x=-w/2,y=-h/2,s=new THREE.Shape();
-  s.moveTo(x+r,y);s.lineTo(x+w-r,y);s.quadraticCurveTo(x+w,y,x+w,y+r);s.lineTo(x+w,y+h-r);s.quadraticCurveTo(x+w,y+h,x+w-r,y+h);s.lineTo(x+r,y+h);s.quadraticCurveTo(x,y+h,x,y+h-r);s.lineTo(x,y+r);s.quadraticCurveTo(x,y,x+r,y);return s;
-}
-function roundedBody(w,h,d,r,color){
-  const geo=new THREE.ExtrudeGeometry(roundedShape(w,h,r),{depth:d,bevelEnabled:true,bevelSegments:2,steps:1,bevelSize:.018,bevelThickness:.012,curveSegments:12});
-  geo.center();
-  return new THREE.Mesh(geo,new THREE.MeshStandardMaterial({color,roughness:.82,metalness:0}));
-}
-function textTexture(lines,{bg='rgba(0,0,0,0)',fg='#ffffff',accent='#ef4a24',w=900,h=560}={}){
-  const c=document.createElement('canvas');c.width=w;c.height=h;const x=c.getContext('2d');x.clearRect(0,0,w,h);if(bg!=='transparent'){x.fillStyle=bg;x.fillRect(0,0,w,h)}
-  x.textBaseline='top';
-  lines.forEach(item=>{x.font=`${item.weight||600} ${item.size||30}px ${item.font||'Arial'}`;x.fillStyle=item.accent?accent:(item.color||fg);x.fillText(item.text,item.x,item.y)});
-  const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=renderer.capabilities.getMaxAnisotropy();return t;
-}
-function surfacePlane(w,h,texture,z=.056){const m=new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshBasicMaterial({map:texture,transparent:true,depthWrite:false}));m.position.z=z;return m}
+function roundedShape(w,h,r){const x=-w/2,y=-h/2,s=new THREE.Shape();s.moveTo(x+r,y);s.lineTo(x+w-r,y);s.quadraticCurveTo(x+w,y,x+w,y+r);s.lineTo(x+w,y+h-r);s.quadraticCurveTo(x+w,y+h,x+w-r,y+h);s.lineTo(x+r,y+h);s.quadraticCurveTo(x,y+h,x,y+h-r);s.lineTo(x,y+r);s.quadraticCurveTo(x,y,x+r,y);return s}
+function roundedBody(w,h,d,r,color){const geo=new THREE.ExtrudeGeometry(roundedShape(w,h,r),{depth:d,bevelEnabled:true,bevelSegments:2,steps:1,bevelSize:.017,bevelThickness:.011,curveSegments:12});geo.center();return new THREE.Mesh(geo,new THREE.MeshStandardMaterial({color,roughness:.84,metalness:0}))}
+function textTexture(lines,{fg='#fff',w=900,h=560}={}){const c=document.createElement('canvas');c.width=w;c.height=h;const x=c.getContext('2d');x.clearRect(0,0,w,h);x.textBaseline='top';lines.forEach(item=>{x.font=`${item.weight||600} ${item.size||30}px ${item.font||'Arial'}`;x.fillStyle=item.color||fg;x.fillText(item.text,item.x,item.y)});const t=new THREE.CanvasTexture(c);t.colorSpace=THREE.SRGBColorSpace;t.anisotropy=renderer.capabilities.getMaxAnisotropy();return t}
+function surface(w,h,texture,z=.061){const m=new THREE.Mesh(new THREE.PlaneGeometry(w,h),new THREE.MeshBasicMaterial({map:texture,transparent:true,depthWrite:false}));m.position.z=z;return m}
 
-const cardGroup=new THREE.Group(), destGroup=new THREE.Group();world.add(cardGroup,destGroup);
-const cardBody=roundedBody(3.3,2.08,.09,.16,blue), destBody=roundedBody(3.18,2.08,.09,.16,ivory);cardGroup.add(cardBody);destGroup.add(destBody);
-const cardTex=textTexture([
-  {text:'ANCHORAGE MUSEUM',x:58,y:48,size:27,weight:700},{text:'FAMILY PLUS',x:58,y:112,size:72,weight:700},{text:'ROAM',x:58,y:214,size:32,weight:700,accent:true},{text:'MEMBER  ·  RK-017-26',x:58,y:444,size:20,weight:600,color:'#bfc8ff'}
-],{bg:'transparent',fg:'#f7f4ed'});
-const destTex=textTexture([
-  {text:'WALT DISNEY FAMILY MUSEUM',x:58,y:48,size:25,weight:700,color:'#262626'},{text:'DESTINATION RULE',x:58,y:118,size:22,weight:600,color:'#8d857c'},{text:'ROAM ACCEPTED',x:58,y:162,size:56,weight:700,accent:true},{text:'RECIPROCAL ADMISSION',x:58,y:442,size:20,weight:600,color:'#777067'}
-],{bg:'transparent',fg:'#222222'});
-const cardSurface=surfacePlane(3.2,1.98,cardTex,.064), destSurface=surfacePlane(3.08,1.98,destTex,.064);cardGroup.add(cardSurface);destGroup.add(destSurface);
+const card=new THREE.Group(), dest=new THREE.Group();world.add(card,dest);
+const cardBody=roundedBody(3.34,2.1,.095,.17,BLUE),destBody=roundedBody(3.2,2.1,.095,.17,IVORY);card.add(cardBody);dest.add(destBody);
+const cardTex=textTexture([{text:'ANCHORAGE MUSEUM',x:58,y:48,size:27,weight:700},{text:'FAMILY PLUS',x:58,y:112,size:70,weight:700},{text:'ROAM',x:58,y:214,size:32,weight:700,color:'#ef4a24'},{text:'MEMBER · RK-017-26',x:58,y:446,size:20,weight:600,color:'#c9d0ff'}]);
+const destTex=textTexture([{text:'WALT DISNEY FAMILY MUSEUM',x:58,y:48,size:25,weight:700,color:'#252525'},{text:'DESTINATION RULE',x:58,y:118,size:22,weight:600,color:'#8d857c'},{text:'ROAM ACCEPTED',x:58,y:162,size:56,weight:700,color:'#ef4a24'},{text:'RECIPROCAL ADMISSION',x:58,y:444,size:20,weight:600,color:'#777067'}],{fg:'#222'});
+card.add(surface(3.23,1.99,cardTex,.066));dest.add(surface(3.09,1.99,destTex,.066));
 
-const orangeMat=new THREE.MeshBasicMaterial({color:orange});
-const pathA=new THREE.Mesh(new THREE.BoxGeometry(2.68,.042,.022),orangeMat);pathA.position.z=.074;cardGroup.add(pathA);
-const pathB=new THREE.Mesh(new THREE.BoxGeometry(2.55,.042,.022),orangeMat);pathB.position.z=.074;destGroup.add(pathB);
+const orangeMat=new THREE.MeshBasicMaterial({color:ORANGE,transparent:true,opacity:1});
+const pathA=new THREE.Mesh(new THREE.BoxGeometry(2.76,.043,.022),orangeMat);pathA.position.z=.078;card.add(pathA);
+const pathB=new THREE.Mesh(new THREE.BoxGeometry(2.58,.043,.022),orangeMat);pathB.position.z=.078;dest.add(pathB);
+const core=new THREE.Mesh(new THREE.CircleGeometry(.19,48),new THREE.MeshBasicMaterial({color:ORANGE,transparent:true,opacity:0}));core.position.z=.086;world.add(core);
 
-function arcMesh(side,bad=false){const start=side==='member'?-Math.PI/2:Math.PI/2;const g=new THREE.RingGeometry(.18,.235,48,1,start,Math.PI);const m=new THREE.Mesh(g,new THREE.MeshBasicMaterial({color:bad?quiet:orange,side:THREE.DoubleSide,transparent:true,opacity:1}));m.position.z=.079;return m}
-let cardArc=arcMesh('member'), destArc=arcMesh('destination');cardGroup.add(cardArc);destGroup.add(destArc);
-const core=new THREE.Mesh(new THREE.CircleGeometry(.19,48),new THREE.MeshBasicMaterial({color:orange,transparent:true,opacity:0}));core.position.z=.083;world.add(core);
+// Data-derived registration profiles. The destination currently accepts ROAM.
+const PROFILES={ROAM:[-.16,.21,-.06,.29,-.12,.18,-.03],ASTC:[.23,-.17,.14,-.05,.26,-.11,.11]};
+const accepted='ROAM';
+const profileGroup=new THREE.Group();world.add(profileGroup);
+let profileMeshes=[];
+function clearProfiles(){profileMeshes.forEach(m=>{profileGroup.remove(m);m.geometry?.dispose();m.material?.dispose?.()});profileMeshes=[]}
+function sphere(r,color,opacity=1){return new THREE.Mesh(new THREE.SphereGeometry(r,18,12),new THREE.MeshBasicMaterial({color,transparent:true,opacity,depthWrite:false}))}
+function tube(points,r,color,opacity=1){const curve=new THREE.CatmullRomCurve3(points);return new THREE.Mesh(new THREE.TubeGeometry(curve,16,r,5,false),new THREE.MeshBasicMaterial({color,transparent:true,opacity,depthWrite:false}))}
+function profileResidual(a,b){return a.reduce((s,v,i)=>s+Math.abs(v-b[i]),0)/a.length}
+function biggestMismatch(a,b){let idx=0,max=0;for(let i=0;i<a.length;i++){const d=Math.abs(a[i]-b[i]);if(d>max){max=d;idx=i}}return {idx,delta:a[idx]-b[idx],max}}
+function profileName(){return S.scenario==='family'?'ROAM':'ASTC'}
+function claimProfile(){return PROFILES[profileName()]}
+function ruleProfile(){return PROFILES[accepted]}
+function residual(){return profileResidual(claimProfile(),ruleProfile())}
 
-const tensionMat=new THREE.MeshBasicMaterial({color:orange,transparent:true,opacity:0,depthWrite:false});
-let tension=new THREE.Mesh(new THREE.TubeGeometry(new THREE.LineCurve3(new THREE.Vector3(),new THREE.Vector3(.01,0,0)),8,.012,5,false),tensionMat);world.add(tension);
-function setTension(a,b,gap,bad){
-  const mid=a.clone().lerp(b,.5);const bend=bad?Math.min(.42,.08+gap*.22):Math.min(.22,gap*.10);mid.y+=bad?bend:-bend*.28;mid.z=.09;
-  const curve=new THREE.CatmullRomCurve3([a.clone(),a.clone().lerp(mid,.55),mid,mid.clone().lerp(b,.45),b.clone()]);
-  const old=tension.geometry;tension.geometry=new THREE.TubeGeometry(curve,32,.012,6,false);old.dispose();
-}
-
-const inspectGroup=new THREE.Group();world.add(inspectGroup);inspectGroup.visible=false;
-function plate(label,value,colorHex){
-  const g=new THREE.Group();const p=new THREE.Mesh(new THREE.PlaneGeometry(1.72,.5),new THREE.MeshBasicMaterial({color:0xf7f4ed,transparent:true,opacity:.94,side:THREE.DoubleSide}));g.add(p);
-  const tex=textTexture([{text:label,x:34,y:32,size:20,weight:600,color:'#8c857d'},{text:value,x:34,y:90,size:42,weight:700,color:colorHex}],{bg:'transparent',fg:'#191a1d',w:680,h:220});
-  const t=surfacePlane(1.66,.47,tex,.008);g.add(t);return g;
-}
-let claimPlate=plate('MEMBER CLAIM','FAMILY PLUS','#1734e8'), networkPlate=plate('RECIPROCITY','ROAM','#ef4a24'), rulePlate=plate('DESTINATION RULE','ROAM ACCEPTED','#191a1d');inspectGroup.add(claimPlate,networkPlate,rulePlate);
-
-let mobile=false,layout={},dragTarget=new THREE.Vector3(),velocity=new THREE.Vector3(),camTargetX=0,camTargetY=0,registeredAt=0,rejectedAt=0,inspectMix=0;
+let mobile=false,layout={},dragTarget=new THREE.Vector3(),velocity=new THREE.Vector3(),registeredAt=0,rejectedAt=0,inspectMix=0,profileOpacity=0,profileSpread=0;
 const ray=new THREE.Raycaster(),pointer=new THREE.Vector2(),dragPlane=new THREE.Plane(new THREE.Vector3(0,0,1),0),hit=new THREE.Vector3(),offset=new THREE.Vector3();
-const labels={idle:'GRAB THE CREDENTIAL',dragging:'MOVE TOWARD DESTINATION',awareness:'RELATIONSHIP DETECTED',proximity:'PROXIMITY',tension:'RELATIONAL TENSION',comparing:'COMPARING CLAIM × RULE',registered:'REGISTERED',continuing:'PATH CONTINUING',revealed:'ENTITLEMENT EXPLAINED',resist:'GEOMETRY RESISTS',rejected:'NO RECIPROCAL RELATIONSHIP',inspect:'INSPECTING THE SEAM'};
+const labels={idle:'GRAB THE CREDENTIAL',dragging:'MOVE TOWARD DESTINATION',awareness:'RELATIONSHIP DETECTED',profile:'PROFILE REVEAL',compare:'COMPARING CLAIM × RULE',registered:'ZERO RESIDUAL · REGISTERED',continuing:'PATH CONTINUING',revealed:'ENTITLEMENT EXPLAINED',interference:'RESIDUAL INTERFERENCE',rejected:'NO RECIPROCAL RELATIONSHIP',inspect:'INSPECTING RELATION'};
 function setPhase(p){if(S.phase===p)return;S.phase=p;phaseEl.textContent=labels[p]||p.toUpperCase();phaseEl.className='phase'+(['registered','continuing','revealed','inspect'].includes(p)?' registered':'')}
-function relayout(){
-  mobile=innerWidth<720;
-  layout=mobile?{start:new THREE.Vector3(0,1.72,0),dest:new THREE.Vector3(0,-1.42,0),snap:new THREE.Vector3(0,.67,0)}:{start:new THREE.Vector3(-2.72,0,0),dest:new THREE.Vector3(2.55,0,0),snap:new THREE.Vector3(-.79,0,0)};
-  reset();
+function relayout(){mobile=innerWidth<720;layout=mobile?{start:new THREE.Vector3(0,1.78,0),dest:new THREE.Vector3(0,-1.44,0),snap:new THREE.Vector3(0,.67,0)}:{start:new THREE.Vector3(-2.78,0,0),dest:new THREE.Vector3(2.58,0,0),snap:new THREE.Vector3(-.78,0,0)};reset()}
+function anchors(){if(mobile)return {a:new THREE.Vector3(card.position.x-.28,card.position.y-1.05,.10),b:new THREE.Vector3(dest.position.x-.28,dest.position.y+1.05,.10)};return {a:new THREE.Vector3(card.position.x+1.67,card.position.y+.04,.10),b:new THREE.Vector3(dest.position.x-1.60,dest.position.y+.04,.10)}}
+function gap(){const {a,b}=anchors();return a.distanceTo(b)}
+function orient(){if(mobile){pathA.rotation.z=Math.PI/2;pathB.rotation.z=Math.PI/2;pathA.scale.x=.74;pathB.scale.x=.71}else{pathA.rotation.z=0;pathB.rotation.z=0;pathA.scale.x=1;pathB.scale.x=1}}
+function updateCardTexture(){const x=cardTex.image.getContext('2d');x.clearRect(0,0,900,560);x.textBaseline='top';x.fillStyle='#f7f4ed';x.font='700 27px Arial';x.fillText('ANCHORAGE MUSEUM',58,48);x.font='700 70px Arial';x.fillText(S.scenario==='family'?'FAMILY PLUS':'STANDARD',58,112);x.fillStyle='#ef4a24';x.font='700 32px Arial';x.fillText(profileName(),58,214);x.fillStyle='#c9d0ff';x.font='600 20px Arial';x.fillText('MEMBER · RK-017-26',58,446);cardTex.needsUpdate=true;cardBody.material.color.set(S.scenario==='family'?BLUE:0x34343a)}
+function reset(){S.drag=false;S.done=false;S.auto=false;S.inspect=false;S.compatible=S.scenario==='family';registeredAt=rejectedAt=0;inspectMix=0;profileOpacity=0;profileSpread=0;card.position.copy(layout.start);dest.position.copy(layout.dest);dragTarget.copy(layout.start);velocity.set(0,0,0);card.rotation.set(0,0,0);dest.rotation.set(0,0,0);core.material.opacity=0;pathB.scale[mobile?'y':'x']=.001;result.hidden=true;inspectBtn.hidden=true;residualEl.hidden=true;hint.classList.remove('hidden');clearProfiles();orient();updateCardTexture();setPhase('idle')}
+
+function setProfileGeometry(opacity=1,spread=0){clearProfiles();const A=claimProfile(),B=ruleProfile(),{a,b}=anchors();const n=A.length;
+  for(let i=0;i<n;i++){
+    const t=i/(n-1)-.5;
+    let pa,pb;
+    if(mobile){pa=a.clone().add(new THREE.Vector3((A[i]*.72)+(t*.03),0,.02+spread*A[i]*.11));pb=b.clone().add(new THREE.Vector3((B[i]*.72)+(t*.03),0,.02-spread*B[i]*.11));}
+    else{pa=a.clone().add(new THREE.Vector3(0,(A[i]*.72)+(t*.03),.02+spread*A[i]*.11));pb=b.clone().add(new THREE.Vector3(0,(B[i]*.72)+(t*.03),.02-spread*B[i]*.11));}
+    const ca=sphere(.028,BLUE,opacity),cb=sphere(.028,ORANGE,opacity);ca.position.copy(pa);cb.position.copy(pb);profileGroup.add(ca,cb);profileMeshes.push(ca,cb);
+    const mid=pa.clone().lerp(pb,.5);const residualBend=(A[i]-B[i])*.52;mobile?mid.x+=residualBend:mid.y+=residualBend;mid.z=.12+Math.abs(residualBend)*.06;
+    const link=tube([pa,mid,pb],.009,S.compatible?ORANGE:0x8d8279,opacity*.88);profileGroup.add(link);profileMeshes.push(link);
+  }
 }
-function applyOrientation(){
-  if(mobile){cardGroup.rotation.z=0;destGroup.rotation.z=0;pathA.rotation.z=Math.PI/2;pathB.rotation.z=Math.PI/2;pathA.scale.x=.72;pathB.scale.x=.7;cardArc.rotation.z=Math.PI/2;destArc.rotation.z=Math.PI/2;}
-  else{pathA.rotation.z=0;pathB.rotation.z=0;pathA.scale.x=1;pathB.scale.x=1;cardArc.rotation.z=0;destArc.rotation.z=0;}
-}
-function setScenarioVisual(){
-  S.compatible=S.scenario==='family';
-  const ctx=cardTex.image.getContext('2d');
-  ctx.clearRect(0,0,900,560);ctx.textBaseline='top';ctx.fillStyle='#f7f4ed';ctx.font='700 27px Arial';ctx.fillText('ANCHORAGE MUSEUM',58,48);ctx.font='700 72px Arial';ctx.fillText(S.compatible?'FAMILY PLUS':'STANDARD',58,112);ctx.fillStyle='#ef4a24';ctx.font='700 32px Arial';ctx.fillText(S.compatible?'ROAM':'ASTC',58,214);ctx.fillStyle='#bfc8ff';ctx.font='600 20px Arial';ctx.fillText('MEMBER  ·  RK-017-26',58,444);cardTex.needsUpdate=true;
-  cardBody.material.color.set(S.compatible?blue:0x34343a);
-  destArc.rotation.z=mobile?Math.PI/2+(S.compatible?0:.28):(S.compatible?0:.28);destArc.position[mobile?'x':'y']=S.compatible?0:.12;
-}
-function rebuildInspectPlates(){
-  inspectGroup.clear();claimPlate=plate('MEMBER CLAIM',S.compatible?'FAMILY PLUS':'STANDARD',S.compatible?'#1734e8':'#595960');networkPlate=plate('RECIPROCITY',S.compatible?'ROAM':'ASTC','#ef4a24');rulePlate=plate('DESTINATION RULE','ROAM ACCEPTED','#191a1d');inspectGroup.add(claimPlate,networkPlate,rulePlate);
-}
-function reset(){
-  S.drag=false;S.done=false;S.auto=false;S.inspect=false;registeredAt=rejectedAt=0;inspectMix=0;inspectGroup.visible=false;inspectBtn.hidden=true;inspectBtn.textContent='INSPECT WHY';result.hidden=true;hint.classList.remove('hidden');
-  cardGroup.position.copy(layout.start);destGroup.position.copy(layout.dest);dragTarget.copy(layout.start);velocity.set(0,0,0);cardGroup.rotation.set(0,0,0);destGroup.rotation.set(0,0,0);core.material.opacity=0;core.scale.setScalar(1);pathB.scale[mobile?'y':'x']=.001;tensionMat.opacity=0;camTargetX=camTargetY=0;setPhase('idle');rebuildInspectPlates();applyOrientation();setScenarioVisual();
-}
-function junctions(){
-  if(mobile)return {a:new THREE.Vector3(cardGroup.position.x-.28,cardGroup.position.y-1.04,.09),b:new THREE.Vector3(destGroup.position.x-.28,destGroup.position.y+1.04,.09)};
-  return {a:new THREE.Vector3(cardGroup.position.x+1.65,cardGroup.position.y+.04,.09),b:new THREE.Vector3(destGroup.position.x-1.59,destGroup.position.y+.04,.09)};
-}
-function gap(){const {a,b}=junctions();return a.distanceTo(b)}
-function show(ok){
-  result.hidden=false;inspectBtn.hidden=false;
-  result.innerHTML=ok?'<div class="result-kicker">RELATIONSHIP REGISTERED</div><div class="result-title">COMPLIMENTARY ADMISSION</div><div class="result-detail">Anchorage Museum <i>→</i> Family Plus <i>→</i> ROAM <i>→</i> Walt Disney Family Museum</div>':'<div class="result-kicker">NO RECIPROCAL RELATIONSHIP</div><div class="result-title small">THE CREDENTIAL REMAINS VALID.</div><div class="result-detail">Standard membership carries ASTC. This destination accepts ROAM.</div>';
-}
+
+function showResidual(){residualEl.hidden=false;const r=residual();residualEl.innerHTML=`<div class="residual-kicker">REGISTRATION RESIDUAL</div><div class="residual-value ${r<.001?'zero':''}">${r<.001?'ZERO · PROFILES REGISTER':'PERSISTS · PROFILES DO NOT REGISTER'}</div>`}
+function show(ok){result.hidden=false;inspectBtn.hidden=false;result.innerHTML=ok?'<div class="result-kicker">RELATIONSHIP REGISTERED</div><div class="result-title">COMPLIMENTARY ADMISSION</div><div class="result-detail">Anchorage Museum <i>→</i> Family Plus <i>→</i> ROAM <i>→</i> Walt Disney Family Museum</div>':'<div class="result-kicker">RESIDUAL INTERFERENCE</div><div class="result-title small">NO RECIPROCAL RELATIONSHIP</div><div class="result-detail">Standard carries ASTC. This destination accepts ROAM. The credential remains valid.</div>';showResidual()}
 function ndc(e){const r=canvas.getBoundingClientRect();pointer.set((e.clientX-r.left)/r.width*2-1,-((e.clientY-r.top)/r.height)*2+1);ray.setFromCamera(pointer,cam)}
-function canGrab(){return !S.inspect&&!S.done}
-canvas.addEventListener('pointerdown',e=>{if(!canGrab())return;ndc(e);if(ray.intersectObject(cardBody).length){S.drag=true;S.auto=false;canvas.setPointerCapture(e.pointerId);ray.ray.intersectPlane(dragPlane,hit);offset.copy(cardGroup.position).sub(hit);setPhase('dragging');hint.classList.add('hidden')}});
-canvas.addEventListener('pointermove',e=>{if(!S.drag||S.done)return;ndc(e);ray.ray.intersectPlane(dragPlane,hit);hit.add(offset);if(mobile){hit.x=THREE.MathUtils.clamp(hit.x,-.58,.58);hit.y=THREE.MathUtils.clamp(hit.y,layout.snap.y-.06,layout.start.y+.16)}else{hit.y=THREE.MathUtils.clamp(hit.y,-.64,.64);hit.x=THREE.MathUtils.clamp(hit.x,layout.start.x-.12,layout.snap.x+.06)}dragTarget.copy(hit)});
+canvas.addEventListener('pointerdown',e=>{if(S.done||S.inspect)return;ndc(e);if(ray.intersectObject(cardBody).length){S.drag=true;S.auto=false;canvas.setPointerCapture(e.pointerId);ray.ray.intersectPlane(dragPlane,hit);offset.copy(card.position).sub(hit);setPhase('dragging');hint.classList.add('hidden')}});
+canvas.addEventListener('pointermove',e=>{if(!S.drag||S.done)return;ndc(e);ray.ray.intersectPlane(dragPlane,hit);hit.add(offset);if(mobile){hit.x=THREE.MathUtils.clamp(hit.x,-.62,.62);hit.y=THREE.MathUtils.clamp(hit.y,layout.snap.y-.06,layout.start.y+.16)}else{hit.y=THREE.MathUtils.clamp(hit.y,-.68,.68);hit.x=THREE.MathUtils.clamp(hit.x,layout.start.x-.12,layout.snap.x+.06)}dragTarget.copy(hit)});
 canvas.addEventListener('pointerup',e=>{S.drag=false;try{canvas.releasePointerCapture(e.pointerId)}catch{}if(!S.done)setPhase('idle')});
 canvas.addEventListener('keydown',e=>{if((e.key==='Enter'||e.key===' ')&&!S.done){e.preventDefault();runAuto()}if((e.key==='i'||e.key==='I')&&S.done)toggleInspect()});
-
 function runAuto(){reset();S.auto=true;hint.classList.add('hidden');setPhase('awareness')}
-q('#reset').onclick=reset;q('#auto').onclick=runAuto;
-q('#debugToggle').onclick=e=>{S.debug=!S.debug;debug.hidden=!S.debug;e.currentTarget.setAttribute('aria-pressed',String(S.debug))};
+function toggleInspect(){if(!S.done)return;S.inspect=!S.inspect;inspectBtn.textContent=S.inspect?'CLOSE INSPECTION':'INSPECT RELATION';setPhase(S.inspect?'inspect':(S.compatible?'revealed':'rejected'))}
+q('#reset').onclick=reset;q('#auto').onclick=runAuto;inspectBtn.onclick=toggleInspect;q('#debugToggle').onclick=e=>{S.debug=!S.debug;debug.hidden=!S.debug;e.currentTarget.setAttribute('aria-pressed',String(S.debug))};
 document.querySelectorAll('[data-scenario]').forEach(btn=>btn.onclick=()=>{S.scenario=btn.dataset.scenario;document.querySelectorAll('[data-scenario]').forEach(x=>{x.classList.toggle('active',x===btn);x.setAttribute('aria-pressed',String(x===btn))});reset()});
-inspectBtn.onclick=toggleInspect;
-function toggleInspect(){if(!S.done)return;S.inspect=!S.inspect;inspectBtn.textContent=S.inspect?'CLOSE INSPECTION':'INSPECT WHY';setPhase(S.inspect?'inspect':(S.compatible?'revealed':'rejected'));inspectGroup.visible=S.inspect}
 
-function updateInspect(dt){const targetMix=S.inspect?1:0;inspectMix=THREE.MathUtils.damp(inspectMix,targetMix,reduced?100:7,dt);if(inspectMix<.01){inspectGroup.visible=false;return}inspectGroup.visible=true;
-  const j=junctions().a.clone().lerp(junctions().b,.5);inspectGroup.position.copy(j);inspectGroup.position.z=.18;
-  const spread=inspectMix;
-  claimPlate.position.set(mobile?-.16*spread:-.32*spread,.34*spread,.18*spread);networkPlate.position.set(0,0,0);rulePlate.position.set(mobile?.16*spread:.32*spread,-.34*spread,-.18*spread);
-  const bad=!S.compatible;if(bad){networkPlate.position.x+=(mobile?.22:.18)*spread;networkPlate.rotation.z=.13*spread;rulePlate.rotation.z=-.08*spread}else{networkPlate.rotation.z=rulePlate.rotation.z=0}
-  [claimPlate,networkPlate,rulePlate].forEach(p=>{p.scale.setScalar(.76+.24*spread);p.visible=spread>.04});
-  camTargetX=(mobile?.36:.72)*spread;camTargetY=.1*spread;
-}
 function resize(){const r=stage.getBoundingClientRect();renderer.setSize(r.width,r.height,false);cam.aspect=r.width/r.height;cam.updateProjectionMatrix();const m=innerWidth<720;if(m!==mobile)relayout()}
-function springStep(dt){
-  const stiffness=S.done?(S.compatible?90:58):S.drag?115:S.auto?34:60;const damping=S.done?15:18;
-  const force=dragTarget.clone().sub(cardGroup.position).multiplyScalar(stiffness);velocity.addScaledVector(force,dt);velocity.multiplyScalar(Math.exp(-damping*dt));cardGroup.position.addScaledVector(velocity,dt);
-}
-
+function spring(dt){const stiffness=reduced?120:58,damping=reduced?30:12.5;const force=dragTarget.clone().sub(card.position).multiplyScalar(stiffness);velocity.addScaledVector(force,dt);velocity.multiplyScalar(Math.exp(-damping*dt));card.position.addScaledVector(velocity,dt)}
+function inspectUpdate(dt){inspectMix=THREE.MathUtils.damp(inspectMix,S.inspect?1:0,reduced?100:6.2,dt);profileSpread=THREE.MathUtils.damp(profileSpread,S.inspect?1:0,reduced?100:5.8,dt);cam.position.x=THREE.MathUtils.damp(cam.position.x,S.inspect?(mobile?.45:.72):0,reduced?100:5.3,dt);cam.position.y=THREE.MathUtils.damp(cam.position.y,S.inspect?(mobile?.1:.18):0,reduced?100:5.3,dt);cam.position.z=THREE.MathUtils.damp(cam.position.z,S.inspect?7.85:8.35,reduced?100:5.3,dt);cam.lookAt(0,0,0)}
 let last=performance.now();
-function loop(now){const dt=Math.min(.033,(now-last)/1000||.016);last=now;resize();
-  if(S.auto&&!S.done){const approach=layout.snap.clone();dragTarget.lerp(approach,reduced?.2:.016)}
-  const g=gap(), engaged=S.drag||S.auto;
+function loop(t){resize();const dt=Math.min(.032,(t-last)/1000||.016);last=t;const g=gap();
+  if(S.auto&&!S.done)dragTarget.lerp(layout.snap,.024);
+  const engaged=S.drag||S.auto;
   if(!S.done&&engaged){
-    if(g<1.55&&g>.92)setPhase('awareness');
-    if(g<=.92&&g>.54)setPhase('proximity');
-    if(g<=.54&&g>.22){setPhase('tension');const pull=THREE.MathUtils.clamp((.54-g)/.32,0,1);dragTarget.lerp(layout.snap,pull*(S.compatible?.18:.07));}
-    if(g<=.22){S.done=true;S.drag=S.auto=false;setPhase('comparing');hint.classList.add('hidden');if(S.compatible){dragTarget.copy(layout.snap);registeredAt=now;setPhase('registered')}else{const resist=layout.snap.clone();if(mobile)resist.y+=.28;else resist.x-=.28;dragTarget.copy(resist);velocity.multiplyScalar(-.22);rejectedAt=now;setPhase('resist')}}
+    if(g<1.42&&g>.9)setPhase('awareness');
+    if(g<=.9&&g>.36){setPhase('profile');profileOpacity=THREE.MathUtils.lerp(profileOpacity,1,.12)}
+    if(g<=.36&&g>.15){setPhase('compare');profileOpacity=1;dragTarget.lerp(layout.snap,.12)}
+    if(g<=.15){S.done=true;S.drag=false;S.auto=false;showResidual();if(S.compatible){dragTarget.copy(layout.snap);registeredAt=t;setPhase('registered');if(navigator.vibrate)navigator.vibrate(14)}else{const m=biggestMismatch(claimProfile(),ruleProfile());const r=layout.snap.clone();if(mobile)r.x+=Math.sign(m.delta||1)*.28;else r.y+=Math.sign(m.delta||1)*.28;mobile?r.y+=.18:r.x-=.18;dragTarget.copy(r);velocity[mobile?'x':'y']+=Math.sign(m.delta||1)*1.25;rejectedAt=t;setPhase('interference');if(navigator.vibrate)navigator.vibrate([8,18,8])}}
   }
-  springStep(dt);
-
-  const response=THREE.MathUtils.clamp(1-g/1.55,0,1);const {a,b}=junctions();setTension(a,b,g,!S.compatible);
-  tensionMat.opacity=(engaged&&!S.done?response*.72:0)*(g>.12?1:.2);
-  destGroup.rotation.z=THREE.MathUtils.damp(destGroup.rotation.z,(S.compatible?0:(mobile?.14:.11))*response,reduced?100:8,dt);
-  if(!S.inspect){camTargetX=THREE.MathUtils.damp(camTargetX,(mobile?0:.18)*response,reduced?100:5,dt);camTargetY=0}
-  if(!reduced&&!S.inspect){const dv=velocity.clone();cardGroup.rotation.x=THREE.MathUtils.damp(cardGroup.rotation.x,mobile?dv.x*.025:-dv.y*.028,8,dt);cardGroup.rotation.y=THREE.MathUtils.damp(cardGroup.rotation.y,mobile?0:dv.x*.018,8,dt)}else if(!S.inspect){cardGroup.rotation.x=cardGroup.rotation.y=0}
-
-  if(registeredAt){const x=(now-registeredAt)/1000;if(x>.12){core.material.opacity=1;setPhase('continuing')}const p=THREE.MathUtils.clamp((x-.15)/.58,0,1);pathB.scale[mobile?'y':'x']=Math.max(.001,reduced?1:p);const pulse=x<.32?Math.sin(Math.PI*Math.min(1,x/.32))*.33:0;core.scale.setScalar(1+pulse);if(x>.78&&S.phase!=='revealed'&&!S.inspect){setPhase('revealed');show(true)}}
-  if(rejectedAt&&now-rejectedAt>260&&!S.inspect&&S.phase!=='rejected'){setPhase('rejected');show(false)}
-
-  if(mobile){pathA.position.set(-.28,-.1,.074);cardArc.position.set(-.28,-1.04,.079);destArc.position.set(-.28,1.04,.079);pathB.position.set(-.28,.12,.074);core.position.set(destGroup.position.x-.28,destGroup.position.y+1.04,.083)}
-  else{pathA.position.set(-.12,.04,.074);cardArc.position.set(1.65,.04,.079);destArc.position.set(-1.59,S.compatible?.04:.16,.079);pathB.position.set(-.18,.04,.074);core.position.set(destGroup.position.x-1.59,destGroup.position.y+.04,.083)}
-
-  updateInspect(dt);
-  cam.position.x=THREE.MathUtils.damp(cam.position.x,camTargetX,reduced?100:5,dt);cam.position.y=THREE.MathUtils.damp(cam.position.y,camTargetY,reduced?100:5,dt);cam.lookAt(0,0,0);
-  if(S.debug)debug.innerHTML=`<div><span>STATE</span><strong>${S.phase.toUpperCase()}</strong></div><div><span>DISTANCE</span><strong>${g.toFixed(3)}</strong></div><div><span>SCENARIO</span><strong>${S.scenario.toUpperCase()}</strong></div><div><span>COMPATIBLE</span><strong>${S.compatible?'TRUE':'FALSE'}</strong></div><div><span>INSPECT</span><strong>${S.inspect?'OPEN':'CLOSED'}</strong></div>`;
-  renderer.render(scene,cam);requestAnimationFrame(loop)
-}
+  spring(dt);
+  const approach=Math.max(0,Math.min(1,(1.15-g)/1.15));if(!S.done&&!S.inspect){card.rotation.x=THREE.MathUtils.damp(card.rotation.x,mobile?0:-velocity.y*.035,8,dt);card.rotation.y=THREE.MathUtils.damp(card.rotation.y,mobile?velocity.x*.035:velocity.x*.025,8,dt);dest.rotation.z=THREE.MathUtils.damp(dest.rotation.z,S.compatible?0:(approach*.018),6,dt)}
+  if(profileOpacity>.01||S.done||S.inspect)setProfileGeometry(Math.max(profileOpacity,S.done?.92:0),profileSpread);
+  if(registeredAt){const x=(t-registeredAt)/1000;if(x>.16){core.material.opacity=THREE.MathUtils.lerp(core.material.opacity,1,.2);setPhase('continuing')}const p=THREE.MathUtils.clamp((x-.2)/.58,0,1);pathB.scale[mobile?'y':'x']=Math.max(.001,p);core.scale.setScalar(1+(x<.3?Math.sin(Math.PI*Math.min(1,x/.3))*.22:0));if(x>.82&&S.phase!=='revealed'&&!S.inspect){setPhase('revealed');show(true)}}
+  if(rejectedAt&&t-rejectedAt>300&&S.phase!=='rejected'&&!S.inspect){setPhase('rejected');show(false)}
+  inspectUpdate(dt);
+  if(S.debug)debug.innerHTML=`<div><span>STATE</span><strong>${S.phase.toUpperCase()}</strong></div><div><span>GAP</span><strong>${g.toFixed(3)}</strong></div><div><span>CLAIM</span><strong>${profileName()}</strong></div><div><span>RULE</span><strong>${accepted}</strong></div><div><span>RESIDUAL</span><strong>${residual().toFixed(3)}</strong></div><div><span>COMPATIBLE</span><strong>${String(S.compatible).toUpperCase()}</strong></div>`;
+  renderer.render(scene,cam);requestAnimationFrame(loop)}
 relayout();requestAnimationFrame(loop);
