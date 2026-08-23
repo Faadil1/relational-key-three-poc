@@ -67,3 +67,9 @@ Do not merge PR #7 until:
 5. the pressure mechanism is subordinate to the meal,
 6. no-match stays calm,
 7. mobile composition remains usable.
+
+## Next decision
+After browser review, choose one:
+- PASS — FOOD MEMORY PILOT FROZEN
+- PASS WITH POLISH — KEEP MECHANISM / REFINE MATERIALITY
+- REBUILD REVEAL — FOOD DOES NOT DOMINATE ENOUGH
