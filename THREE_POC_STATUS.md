@@ -1,0 +1,58 @@
+# THREE_POC_STATUS
+
+- status: DEPLOYED_RUNTIME_CANDIDATE
+- live_url: https://relational-key-three-poc.vercel.app
+- deployment_target: production
+- implementation:
+  - native HTML/CSS/JavaScript
+  - Three.js 0.179.1 loaded as an ES module from jsDelivr
+  - no framework/build step in the deployed POC
+- state_machine:
+  - IDLE
+  - DRAGGING
+  - AWARENESS
+  - PROXIMITY
+  - MAGNETIC
+  - COMPARING
+  - REGISTERED / RESIST
+  - CONTINUING / REJECTED
+  - REVEALED
+- distance_thresholds (world-unit POC defaults):
+  - awareness: < 1.35
+  - proximity: <= 0.78
+  - magnetic: <= 0.42
+  - compare: <= 0.16
+- valid_geometry_behavior:
+  - direct manipulation of credential
+  - proximity-dependent magnetic pull
+  - card snaps to destination edge
+  - member/destination half-junction resolves into a filled vermilion junction
+  - destination path grows from the registration seam
+  - entitlement appears after continuation
+- invalid_geometry_behavior:
+  - same spatial gesture
+  - incompatible junction state
+  - no registration core
+  - no path continuation
+  - 0.22 world-unit recoil away from destination
+  - credential remains valid
+- mobile_behavior:
+  - vertical encounter layout below 720 px
+  - touch drag through Pointer Events
+- reduced_motion_behavior:
+  - decorative tilt is suppressed
+  - semantic resolver/results remain available
+- accessibility_fallback:
+  - TEST RELATIONSHIP control drives the same resolver state machine without drag
+- performance:
+  - one WebGL canvas
+  - procedural meshes only
+  - no GLB assets
+  - no physics engine
+  - no post-processing/bloom/particles
+  - DPR capped at 1.5
+- known_issues:
+  - The current POC uses a CDN-hosted Three.js ES module to keep the runtime proof buildless and easy to validate.
+  - Card typography remains in the surrounding UI rather than being a final production texture/material system.
+  - Magnetic thresholds and camera framing remain POC values pending visual/user validation.
+  - Figma Make V1 remains the frozen baseline until this POC wins the comparison gate.
