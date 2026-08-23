@@ -1,99 +1,151 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f3f0e6" />
-  <meta name="description" content="RELATIONAL KEY — Cross-cultural archive-derived credential prototype." />
-  <title>RELATIONAL KEY — Cultural Editions</title>
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="stylesheet" href="./presentation.css" />
-  <link rel="stylesheet" href="./cross.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#090a08" />
+  <meta name="description" content="RELATIONAL KEY — Food Memory / Edible Passage. Toyama Masu no Sushi interactive prototype." />
+  <title>RELATIONAL KEY — Edible Passage · Toyama</title>
+  <link rel="stylesheet" href="./food.css" />
 </head>
 <body>
-  <main class="shell cross-shell">
+  <main class="shell">
     <header class="topbar">
-      <div>
-        <div class="eyebrow">DAY 17 · CULTURAL EDITIONS · CROSS-CULTURAL PROTOTYPE</div>
-        <h1>RELATIONAL KEY</h1>
+      <a class="brand" href="#" aria-label="RELATIONAL KEY home">
+        <span class="mark" aria-hidden="true"><i></i></span>
+        <span><b>RELATIONAL KEY</b><small>FOOD MEMORY EDITION</small></span>
+      </a>
+      <div class="title">
+        <span>EDIBLE PASSAGE</span>
+        <h1>Toyama · Masu no Sushi</h1>
+        <p>The food object becomes the credential.</p>
       </div>
-      <div class="top-actions">
-        <span id="editionBadge" class="edition-badge">CITY PASSAGE · GATINEAU</span>
-        <button id="blindToggle" class="micro-btn" aria-pressed="false">BLIND TEST</button>
-        <button id="debugToggle" class="micro-btn" aria-pressed="false">DEBUG</button>
+      <div class="header-actions">
+        <button id="aboutBtn" type="button">ABOUT</button>
+        <button id="sourcesBtn" type="button">SOURCES</button>
+        <span class="edition">FM · 001</span>
       </div>
     </header>
 
-    <section class="intro" aria-labelledby="heroTitle">
-      <p id="heroTitle">Different archives. Different fields.</p>
-      <strong>Same relational law.</strong>
-    </section>
+    <section id="stage" class="stage" aria-label="Edible Passage interactive food memory object">
+      <article class="food-state closed-state">
+        <div class="state-label"><span>RESTING STATE</span><b>SEALED / COMPRESSED</b></div>
+        <div id="closedObject" class="food-object closed-object" aria-label="Closed bamboo-wrapped Masu no Sushi">
+          <div class="wood-ring"></div>
+          <div class="leaf-disc" aria-hidden="true">
+            <span class="leaf l1"></span><span class="leaf l2"></span><span class="leaf l3"></span><span class="leaf l4"></span>
+            <span class="leaf l5"></span><span class="leaf l6"></span><span class="leaf l7"></span><span class="leaf l8"></span>
+          </div>
+          <div class="pressure-band"><span>RELATIONAL KEY</span><i></i><span>TOYAMA</span></div>
+          <div class="pressure-core" aria-hidden="true"><i></i><b></b><i></i></div>
+        </div>
+        <p class="state-copy">At rest, pressure holds the meal memory closed. The relationship is latent.</p>
+      </article>
 
-    <section class="stage" aria-label="Interactive cross-cultural Relational Key prototype">
-      <canvas id="scene" tabindex="0"></canvas>
-      <div id="phase" class="phase" aria-live="polite">GRAB THE CREDENTIAL</div>
-      <div id="hint" class="hint">Drag the credential toward its counterpart field.</div>
-      <div id="residual" class="residual" hidden></div>
-      <div id="debug" class="debug" hidden></div>
-      <div id="result" class="result" aria-live="polite" hidden></div>
-      <button id="explainTrigger" class="explain-trigger" hidden>WHY THIS WORKS</button>
-      <div id="runtimeError" class="runtime-error" hidden>
-        <strong>3D runtime unavailable</strong>
-        <span>The interface loaded, but the spatial scene could not render.</span>
+      <div class="relation-zone" aria-hidden="true">
+        <span class="relation-label">RELATIONSHIP</span>
+        <div class="relation-line"><i></i><b></b><i></i></div>
+        <small id="relationStatus">PRESSURE / ALIGNMENT DORMANT</small>
       </div>
+
+      <article class="food-state revealed-state">
+        <div class="state-label"><span>REGISTERED STATE</span><b>UNFOLDED / REVEALED</b></div>
+        <div id="revealedObject" class="food-object revealed-object" aria-label="Revealed Masu no Sushi">
+          <div class="open-leaves" aria-hidden="true">
+            <span class="open-leaf o1"></span><span class="open-leaf o2"></span><span class="open-leaf o3"></span><span class="open-leaf o4"></span>
+            <span class="open-leaf o5"></span><span class="open-leaf o6"></span><span class="open-leaf o7"></span><span class="open-leaf o8"></span>
+          </div>
+          <figure class="meal-photo">
+            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Masu_no_sushi_4_by_hirotomo.jpg?width=1600" alt="Masu no sushi from Toyama, photograph by hirotomo" />
+          </figure>
+          <div class="reveal-ring"></div>
+        </div>
+        <p class="state-copy">When the relationship registers, pressure releases and the meal becomes visible.</p>
+      </article>
     </section>
 
-    <div class="dock cross-dock" aria-label="Prototype controls">
-      <div class="control-block edition-control">
-        <span class="control-label">EDITION</span>
-        <div class="scenario" role="group" aria-label="Cultural edition">
-          <button data-edition="city" class="active" aria-pressed="true">CITY</button>
-          <button data-edition="service" aria-pressed="false">SERVICE</button>
-          <button data-edition="signal" aria-pressed="false">SIGNAL</button>
+    <section class="sequence" aria-label="Edible Passage sequence">
+      <span class="sequence-title">THE SEQUENCE</span>
+      <ol>
+        <li data-step="1"><i>01</i><b>PRESS</b><small>Apply pressure</small></li>
+        <li data-step="2"><i>02</i><b>ALIGN</b><small>Find the natural fit</small></li>
+        <li data-step="3"><i>03</i><b>REGISTER</b><small>Relationship resolves</small></li>
+        <li data-step="4"><i>04</i><b>RELEASE</b><small>Pressure gives way</small></li>
+        <li data-step="5"><i>05</i><b>UNFOLD</b><small>Leaves respond</small></li>
+        <li data-step="6"><i>06</i><b>REVEAL</b><small>Meal memory appears</small></li>
+      </ol>
+    </section>
+
+    <section class="lower-grid">
+      <div class="material-strip" aria-label="Food material details">
+        <figure>
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Sasa-Zushi_%28Trout_Sushi_wrapped_in_Bamboo_Grass%29_%286639289453%29.jpg?width=900" alt="Trout sushi wrapped in bamboo grass" />
+          <figcaption><span>BAMBOO</span><b>FRAGRANT · RESILIENT</b></figcaption>
+        </figure>
+        <figure>
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Masu_no_sushi_2_by_hirotomo.jpg?width=900" alt="Masu no sushi showing trout and rice" />
+          <figcaption><span>MASU / TROUT</span><b>PRESSED · VINEGARED</b></figcaption>
+        </figure>
+        <figure class="rice-crop">
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Masu_no_sushi_4_by_hirotomo.jpg?width=900" alt="Masu no sushi close view" />
+          <figcaption><span>RICE</span><b>TOYAMA · VINEGARED</b></figcaption>
+        </figure>
+        <figure class="wood-crop">
+          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Masu_no_sushi_3_by_hirotomo.jpg?width=900" alt="Masu no sushi packaging and container" />
+          <figcaption><span>CONTAINER</span><b>PORTABLE · PRESSED</b></figcaption>
+        </figure>
+      </div>
+
+      <div class="control-panel">
+        <span class="panel-label">CLAIM TYPE</span>
+        <div class="claim-toggle" role="group" aria-label="Food memory relationship claim">
+          <button data-claim="matching" class="active" aria-pressed="true"><i></i><span><b>MATCHING CLAIM</b><small>Toyama food memory</small></span></button>
+          <button data-claim="other" aria-pressed="false"><i></i><span><b>OTHER CLAIM</b><small>Incompatible relation</small></span></button>
         </div>
       </div>
-      <div class="control-block">
-        <span class="control-label">CLAIM</span>
-        <div class="scenario" role="group" aria-label="Credential claim">
-          <button data-claim="matching" class="active" aria-pressed="true">MATCHING CLAIM</button>
-          <button data-claim="other" aria-pressed="false">OTHER CLAIM</button>
+
+      <div class="action-panel">
+        <span class="panel-label">ACTION</span>
+        <button id="run" class="run-btn" type="button">TEST RELATIONSHIP <span>→</span></button>
+        <div id="result" class="result idle" aria-live="polite">
+          <span class="result-mark"></span>
+          <div><small>RESULT</small><b>AWAITING REGISTRATION</b></div>
+        </div>
+        <div class="secondary-actions">
+          <button id="reset" type="button">RESET</button>
+          <button id="explain" type="button" hidden>WHY THIS WORKS</button>
         </div>
       </div>
-      <div class="run-actions">
-        <button id="reset">RESET</button>
-        <button id="auto" class="quiet">TEST RELATIONSHIP</button>
-      </div>
-    </div>
-
-    <section class="law" aria-label="Interaction law">
-      <span>GRAB</span><i>→</i><span>COMPARE</span><i>→</i><span>REGISTER / RESIST</span><i>→</i><span>CONTINUE</span>
     </section>
-    <p id="truthNote" class="truth-note">Archive-derived concept prototype · not an official map, service procedure, or technical diagram.</p>
+
+    <footer class="footer">
+      <span>REGION <b>TOYAMA</b></span>
+      <span>MEAL <b>MASU NO SUSHI</b></span>
+      <span>TYPE <b>PRESSED SUSHI / EKIBEN</b></span>
+      <span>SOURCE RULE <b>REAL IMAGE FIRST</b></span>
+    </footer>
   </main>
 
-  <div id="explainBackdrop" class="explain-backdrop" hidden></div>
-  <aside id="explainPanel" class="explain-panel" aria-hidden="true" aria-labelledby="explainTitle">
-    <div class="explain-handle" aria-hidden="true"></div>
-    <div class="explain-head">
-      <div>
-        <div class="explain-eyebrow">RELATIONSHIP EXPLANATION</div>
-        <h2 id="explainTitle">Why this works</h2>
-      </div>
-      <button id="explainClose" class="explain-close" aria-label="Close explanation">CLOSE</button>
-    </div>
-    <p id="explainLead" class="explain-lead"></p>
-    <div id="explainSteps" class="explain-steps"></div>
-    <details class="advanced-detail">
-      <summary>Advanced system detail</summary>
-      <div class="advanced-grid">
-        <div><span>Comparison</span><strong id="advancedComparison"></strong></div>
-        <div><span>Registration residual</span><strong id="advancedResidual"></strong></div>
-        <div><span>Geometry outcome</span><strong id="advancedGeometry"></strong></div>
-      </div>
-      <p>Registration profiles and residual are internal prototype encodings. Archive-derived fields are conceptual translations, not official institutional standards.</p>
+  <div id="backdrop" class="backdrop" hidden></div>
+  <aside id="drawer" class="drawer" aria-hidden="true" aria-labelledby="drawerTitle">
+    <div class="drawer-head"><span>FOOD MEMORY / SOURCE TRACE</span><button id="closeDrawer" type="button">×</button></div>
+    <h2 id="drawerTitle">Why this relationship works</h2>
+    <p class="drawer-lead">Masu-zushi already contains its own relational grammar: radial bamboo leaves, a circular bentwood container, compression, release, and reveal.</p>
+    <dl>
+      <div><dt>FOOD OBJECT</dt><dd>Trout and vinegared rice are layered in a round container lined with bamboo leaves and pressed.</dd></div>
+      <div><dt>RELATIONAL TRANSLATION</dt><dd>Pressure is treated as the latent state. A compatible claim releases that pressure, allowing the leaf structure to unfold and reveal the meal.</dd></div>
+      <div><dt>TRUTHFULNESS</dt><dd>This is a conceptual RELATIONAL KEY interface. The registration mechanism is fictional; the food, regional context, ingredients, and photography are real sources.</dd></div>
+    </dl>
+    <details open>
+      <summary>SOURCES & IMAGE RIGHTS</summary>
+      <p>MAFF documents Masu-zushi as a Toyama pressed sushi made with trout, rice, bamboo leaves and a bentwood container, traditionally pressed under weight. Wikimedia Commons hosts a large Masu-zushi image corpus. The hirotomo images used here are CC BY-SA 2.0; the Sasa-Zushi image by Naotake Murayama is CC BY 2.0.</p>
+      <a href="https://www.maff.go.jp/e/policies/market/k_ryouri/search_menu/6192/index.html" target="_blank" rel="noreferrer">MAFF · Regional cuisine ↗</a>
+      <a href="https://commons.wikimedia.org/wiki/Category:Masu-zushi" target="_blank" rel="noreferrer">Wikimedia Commons · Masu-zushi corpus ↗</a>
+      <a href="https://commons.wikimedia.org/wiki/File:Masu_no_sushi_4_by_hirotomo.jpg" target="_blank" rel="noreferrer">hirotomo · CC BY-SA 2.0 ↗</a>
+      <a href="https://commons.wikimedia.org/wiki/File:Sasa-Zushi_(Trout_Sushi_wrapped_in_Bamboo_Grass)_(6639289453).jpg" target="_blank" rel="noreferrer">Naotake Murayama · CC BY 2.0 ↗</a>
     </details>
   </aside>
 
-  <script type="module" src="./cross.js"></script>
+  <script src="./food.js"></script>
 </body>
 </html>
