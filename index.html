@@ -1,99 +1,119 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f3f0e6" />
-  <meta name="description" content="RELATIONAL KEY — Cross-cultural archive-derived credential prototype." />
-  <title>RELATIONAL KEY — Cultural Editions</title>
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="stylesheet" href="./presentation.css" />
-  <link rel="stylesheet" href="./cross.css" />
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="theme-color" content="#100d09" />
+  <title>RELATIONAL KEY — Cultural Figure Edition</title>
+  <link rel="stylesheet" href="./figure.css" />
 </head>
 <body>
-  <main class="shell cross-shell">
+  <main class="shell">
     <header class="topbar">
       <div>
-        <div class="eyebrow">DAY 17 · CULTURAL EDITIONS · CROSS-CULTURAL PROTOTYPE</div>
+        <div class="eyebrow">DAY 17 · CULTURAL EDITIONS · PILOT 04</div>
         <h1>RELATIONAL KEY</h1>
       </div>
-      <div class="top-actions">
-        <span id="editionBadge" class="edition-badge">CITY PASSAGE · GATINEAU</span>
-        <button id="blindToggle" class="micro-btn" aria-pressed="false">BLIND TEST</button>
-        <button id="debugToggle" class="micro-btn" aria-pressed="false">DEBUG</button>
-      </div>
+      <div class="edition-mark"><span>CULTURAL FIGURE</span><strong>FRIDA KAHLO · COYOACÁN</strong></div>
     </header>
 
-    <section class="intro" aria-labelledby="heroTitle">
-      <p id="heroTitle">Different archives. Different fields.</p>
-      <strong>Same relational law.</strong>
+    <section class="hero-copy">
+      <p>A cultural figure is not a portrait on a card.</p>
+      <h2>Their traces become the field in which recognition happens.</h2>
     </section>
 
-    <section class="stage" aria-label="Interactive cross-cultural Relational Key prototype">
-      <canvas id="scene" tabindex="0"></canvas>
-      <div id="phase" class="phase" aria-live="polite">GRAB THE CREDENTIAL</div>
-      <div id="hint" class="hint">Drag the credential toward its counterpart field.</div>
-      <div id="residual" class="residual" hidden></div>
-      <div id="debug" class="debug" hidden></div>
-      <div id="result" class="result" aria-live="polite" hidden></div>
-      <button id="explainTrigger" class="explain-trigger" hidden>WHY THIS WORKS</button>
-      <div id="runtimeError" class="runtime-error" hidden>
-        <strong>3D runtime unavailable</strong>
-        <span>The interface loaded, but the spatial scene could not render.</span>
+    <section class="experience" aria-label="Interactive Cultural Figure credential">
+      <div class="object-zone">
+        <div class="view-tabs" role="group" aria-label="Credential view">
+          <button data-view="front" class="active">FRONT</button>
+          <button data-view="back">BACK</button>
+          <button data-view="detail">MACRO</button>
+        </div>
+
+        <div id="cardWrap" class="card-wrap" tabindex="0" aria-label="Cultural Figure credential">
+          <article id="card" class="credential front-view">
+            <div class="face face-front">
+              <img src="./assets/frida-front.jpg" alt="Generated Cultural Figure Edition art-direction prototype" />
+              <div class="surface-sheen"></div>
+              <div id="pathOverlay" class="path-overlay"><span></span><i></i><span></span></div>
+            </div>
+            <div class="face face-back">
+              <div class="back-kicker">RELATIONAL KEY · CULTURAL FIGURE EDITION</div>
+              <div class="back-number">07 / 2500</div>
+              <h3>FRIDA KAHLO</h3>
+              <div class="back-grid">
+                <div><span>PLACE OF ORIGIN</span><strong>COYOACÁN · MEXICO CITY</strong></div>
+                <div><span>MEMORY FIELD</span><strong>STUDIO · LETTERS · OBJECTS · PLACE</strong></div>
+                <div><span>KEY ID</span><strong>RK-CF-07-FK</strong></div>
+                <div><span>PROTOTYPE STATE</span><strong>ARCHIVE-DERIVED / GENERATED SURFACE</strong></div>
+              </div>
+              <div class="provenance-stamp">RELATIONAL PATH · PROTOTYPE</div>
+              <p class="back-note">Conceptual edition. Not an official Frida Kahlo Museum product.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+
+      <div class="relation-zone">
+        <div class="memory-field" id="memoryField">
+          <div class="field-head"><span>COUNTERPART FIELD</span><strong>COYOACÁN MEMORY FIELD</strong></div>
+          <div class="field-collage">
+            <div class="trace t1"><span>1941</span><b>STUDIO</b></div>
+            <div class="trace t2"><span>1940–41</span><b>CORRESPONDENCE</b></div>
+            <div class="trace t3"><span>PLACE</span><b>CASA AZUL</b></div>
+            <div class="trace t4"><span>MATERIAL</span><b>TEXTILE · BOTANICAL · CERAMIC</b></div>
+            <svg class="field-lines" viewBox="0 0 460 340" aria-hidden="true">
+              <path d="M20 170 C90 95 120 238 180 160 S285 105 330 174 S410 230 444 160" />
+              <path d="M30 225 C105 190 130 260 205 215 S330 170 430 220" />
+            </svg>
+          </div>
+          <div class="field-foot">Research-backed traces → transformed into a conceptual recognition field.</div>
+        </div>
+
+        <div id="junction" class="junction" aria-hidden="true"><div class="half left"></div><div class="core"></div><div class="half right"></div></div>
+      </div>
+
+      <div id="outcome" class="outcome" hidden>
+        <span>RELATIONSHIP REGISTERED</span>
+        <strong>LEGACY PATH CONTINUES</strong>
       </div>
     </section>
 
-    <div class="dock cross-dock" aria-label="Prototype controls">
-      <div class="control-block edition-control">
-        <span class="control-label">EDITION</span>
-        <div class="scenario" role="group" aria-label="Cultural edition">
-          <button data-edition="city" class="active" aria-pressed="true">CITY</button>
-          <button data-edition="service" aria-pressed="false">SERVICE</button>
-          <button data-edition="signal" aria-pressed="false">SIGNAL</button>
-        </div>
+    <div class="controls">
+      <div class="claim-group" role="group" aria-label="Relationship claim">
+        <span>CLAIM</span>
+        <button data-claim="matching" class="active">MEMORY CLAIM</button>
+        <button data-claim="other">OTHER CLAIM</button>
       </div>
-      <div class="control-block">
-        <span class="control-label">CLAIM</span>
-        <div class="scenario" role="group" aria-label="Credential claim">
-          <button data-claim="matching" class="active" aria-pressed="true">MATCHING CLAIM</button>
-          <button data-claim="other" aria-pressed="false">OTHER CLAIM</button>
-        </div>
-      </div>
-      <div class="run-actions">
-        <button id="reset">RESET</button>
-        <button id="auto" class="quiet">TEST RELATIONSHIP</button>
-      </div>
+      <button id="reset" class="quiet">RESET</button>
+      <button id="run" class="primary">TEST RELATIONSHIP</button>
+      <button id="explain" class="quiet" hidden>WHY THIS WORKS</button>
     </div>
 
-    <section class="law" aria-label="Interaction law">
-      <span>GRAB</span><i>→</i><span>COMPARE</span><i>→</i><span>REGISTER / RESIST</span><i>→</i><span>CONTINUE</span>
-    </section>
-    <p id="truthNote" class="truth-note">Archive-derived concept prototype · not an official map, service procedure, or technical diagram.</p>
+    <section class="law"><span>TRACE</span><i>→</i><span>RECOGNITION</span><i>→</i><span>REGISTRATION</span><i>→</i><span>LEGACY</span></section>
+    <p class="truth">Generated art-direction surface · archive-derived mechanism · conceptual cultural credential.</p>
   </main>
 
-  <div id="explainBackdrop" class="explain-backdrop" hidden></div>
-  <aside id="explainPanel" class="explain-panel" aria-hidden="true" aria-labelledby="explainTitle">
-    <div class="explain-handle" aria-hidden="true"></div>
-    <div class="explain-head">
-      <div>
-        <div class="explain-eyebrow">RELATIONSHIP EXPLANATION</div>
-        <h2 id="explainTitle">Why this works</h2>
-      </div>
-      <button id="explainClose" class="explain-close" aria-label="Close explanation">CLOSE</button>
+  <div id="backdrop" class="backdrop" hidden></div>
+  <aside id="drawer" class="drawer" aria-hidden="true">
+    <button id="closeDrawer" class="drawer-close">CLOSE</button>
+    <div class="drawer-eyebrow">WHY THIS WORKS</div>
+    <h3>CULTURAL FIGURE → TRACE SYSTEM</h3>
+    <p>Instead of treating a figure as decoration, the edition uses documented traces — studio, correspondence, place and personal-object context — as the material that the relationship must recognize.</p>
+    <div class="steps">
+      <div><span>01</span><b>TRACE</b><p>The credential carries a memory claim.</p></div>
+      <div><span>02</span><b>FIELD</b><p>The counterpart supplies a Coyoacán / studio / correspondence field.</p></div>
+      <div><span>03</span><b>REGISTER</b><p>Matching traces close the junction.</p></div>
+      <div><span>04</span><b>CONTINUE</b><p>The same path becomes a legacy path.</p></div>
     </div>
-    <p id="explainLead" class="explain-lead"></p>
-    <div id="explainSteps" class="explain-steps"></div>
-    <details class="advanced-detail">
-      <summary>Advanced system detail</summary>
-      <div class="advanced-grid">
-        <div><span>Comparison</span><strong id="advancedComparison"></strong></div>
-        <div><span>Registration residual</span><strong id="advancedResidual"></strong></div>
-        <div><span>Geometry outcome</span><strong id="advancedGeometry"></strong></div>
-      </div>
-      <p>Registration profiles and residual are internal prototype encodings. Archive-derived fields are conceptual translations, not official institutional standards.</p>
+    <details>
+      <summary>Archive & truthfulness</summary>
+      <p>The Smithsonian Archives of American Art documents Emmy Lou Packard’s 1941 photograph of Frida Kahlo’s studio and identifies it as U.S. public domain. The Museo Frida Kahlo describes Casa Azul and Frida’s personal objects as central to understanding her creativity and legacy. This prototype does not reproduce a Frida painting or claim museum affiliation.</p>
+      <a href="https://www.aaa.si.edu/collections/items/detail/frida-kahlos-studio-5527" target="_blank" rel="noreferrer">Smithsonian archive record ↗</a>
+      <a href="https://www.museofridakahlo.org.mx/" target="_blank" rel="noreferrer">Museo Frida Kahlo ↗</a>
     </details>
   </aside>
 
-  <script type="module" src="./cross.js"></script>
+  <script src="./figure.js"></script>
 </body>
 </html>
