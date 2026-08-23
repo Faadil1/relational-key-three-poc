@@ -49,7 +49,7 @@ Deployment: `dpl_4HV3s3QoWeKyBXaRfdR5zmWEFhzs`
 ## Source commits
 Implementation: `8e745f086466fef161f672d0a5bf6cef92d53329`
 Audit linkage: `a0a96c71862aa93bd3145646dbc26ac945f2f6a5`
-Checkpoint lineage: `b17aae4c8d27be3b8afdccc7802e8f3e1b4343a0`
+Current canonical branch includes this checkpoint.
 
 ## Gate
 Do not merge until a live browser recording confirms that the successful state reads as physical edge tessellation rather than a floating connector.
