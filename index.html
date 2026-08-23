@@ -4,45 +4,48 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#f2efe7" />
-  <meta name="description" content="RELATIONAL KEY — a spatial membership credential prototype where access is created by a registered relationship." />
-  <title>RELATIONAL KEY — Registered Seam V2</title>
+  <meta name="description" content="RELATIONAL KEY — a spatial credential where member claims and destination rules become a visible registration geometry." />
+  <title>RELATIONAL KEY — Relational Instrument V3</title>
   <link rel="stylesheet" href="./styles.css" />
 </head>
 <body>
   <main class="shell">
     <header class="topbar">
-      <div class="brand">
-        <div class="eyebrow">DAY 17 · REGISTERED SEAM V2</div>
+      <div>
+        <div class="eyebrow">DAY 17 · RELATIONAL INSTRUMENT V3</div>
         <h1>RELATIONAL KEY</h1>
       </div>
-      <button id="debugToggle" class="micro-btn" aria-pressed="false">DEBUG</button>
+      <div class="top-actions">
+        <button id="debugToggle" class="micro-btn" aria-pressed="false">DEBUG</button>
+      </div>
     </header>
 
     <section class="intro" aria-labelledby="heroTitle">
-      <p id="heroTitle">Your credential is only <em>half</em> the interface.</p>
-      <strong>The relationship completes the path.</strong>
+      <p id="heroTitle">The credential carries a claim. The destination carries a rule.</p>
+      <strong>Access exists only when their geometry registers.</strong>
     </section>
 
     <section class="stage" aria-label="Interactive Relational Key prototype">
       <canvas id="scene" tabindex="0"></canvas>
       <div id="phase" class="phase" aria-live="polite">GRAB THE CREDENTIAL</div>
-      <div id="hint" class="hint">Drag the blue credential toward the ivory destination.</div>
+      <div id="hint" class="hint">Drag the cobalt credential toward the ivory destination.</div>
+      <div id="residual" class="residual" hidden></div>
       <div id="debug" class="debug" hidden></div>
       <div id="result" class="result" aria-live="polite" hidden></div>
-      <button id="inspect" class="inspect" hidden>INSPECT WHY</button>
+      <button id="inspect" class="inspect" hidden>INSPECT RELATION</button>
     </section>
 
     <div class="dock" aria-label="Prototype controls">
       <div class="scenario" role="group" aria-label="Membership tier">
-        <button data-scenario="family" class="active" aria-pressed="true">FAMILY PLUS</button>
-        <button data-scenario="standard" aria-pressed="false">STANDARD</button>
+        <button data-scenario="family" class="active" aria-pressed="true">FAMILY PLUS · ROAM</button>
+        <button data-scenario="standard" aria-pressed="false">STANDARD · ASTC</button>
       </div>
       <button id="reset">TRY AGAIN</button>
       <button id="auto" class="quiet">TEST RELATIONSHIP</button>
     </div>
 
     <section class="law" aria-label="Interaction law">
-      <span>GRAB</span><i>→</i><span>PROXIMITY</span><i>→</i><span>TENSION</span><i>→</i><span>REGISTER / RESIST</span><i>→</i><span>CONTINUE</span><i>→</i><span>INSPECT WHY</span>
+      <span>GRAB</span><i>→</i><span>PROXIMITY</span><i>→</i><span>PROFILE REVEAL</span><i>→</i><span>COMPARE</span><i>→</i><span>ZERO RESIDUAL / INTERFERENCE</span><i>→</i><span>CONTINUE / RECOIL</span>
     </section>
   </main>
   <script type="module" src="./main.js"></script>
