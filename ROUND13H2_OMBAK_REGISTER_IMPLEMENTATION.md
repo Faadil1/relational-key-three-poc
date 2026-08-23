@@ -39,8 +39,12 @@ For this family:
 
 ## Runtime
 Inline JavaScript syntax check: PASS.
-Desktop drag-to-approach retained.
 Responsive single-column behavior included below 920 px.
+
+## Live candidate
+https://relational-key-sound-memory-ombak-v13h1-faadil1s-projects.vercel.app
+Deployment: `dpl_FCTw3Fxo3YYgZTP1iv2zyRyJZxXy`
+Canonical source/live sync commit: `373aa32c9add6405dfef18a4281a890b8a7f9888`
 
 ## Gate
 Do not merge until live review confirms:
