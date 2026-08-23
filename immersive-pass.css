@@ -1,0 +1,285 @@
+/* ROUND 13B.4.2 — SUBTLE SEAM + IMMERSIVE OBJECTS
+   Visual law: OBJECTS FIRST. CONNECTION SECOND. EXPLANATION LAST.
+   The relationship is latent at rest and becomes legible only when registered. */
+
+@media (min-width: 901px) {
+  .topbar {
+    min-height: 60px !important;
+  }
+
+  .experience {
+    grid-template-columns: minmax(560px, 1.16fr) 58px minmax(500px, 1fr) !important;
+    column-gap: 0 !important;
+    margin-top: 14px !important;
+    overflow: visible !important;
+  }
+
+  .artifact-column,
+  .archive-column {
+    overflow: visible !important;
+  }
+
+  .card-wrap {
+    width: min(790px, 100%) !important;
+    perspective: 1900px !important;
+  }
+
+  .credential {
+    border-radius: 24px !important;
+    filter: drop-shadow(0 34px 72px rgba(0,0,0,.56)) !important;
+    transition: transform .72s cubic-bezier(.2,.8,.2,1), filter .35s ease !important;
+  }
+
+  .card-wrap:hover .credential.front-view {
+    transform: translateY(-3px) scale(1.008);
+    filter: drop-shadow(0 42px 82px rgba(0,0,0,.62)) !important;
+  }
+
+  .face {
+    border-radius: 24px !important;
+    border-color: rgba(211,171,105,.20) !important;
+    box-shadow: inset 0 0 0 1px rgba(255,255,255,.025) !important;
+  }
+
+  .front-vignette {
+    background: linear-gradient(90deg,rgba(8,6,4,.03),rgba(8,6,4,.08) 52%,rgba(8,6,4,.34) 79%,rgba(8,6,4,.20)),linear-gradient(0deg,rgba(7,5,4,.57),transparent 38%) !important;
+  }
+
+  .front-title {
+    opacity: .90;
+  }
+
+  .photo-credit,
+  .object-note,
+  .archive-note {
+    opacity: .58;
+  }
+
+  .object-note,
+  .archive-note {
+    display: none !important;
+  }
+
+  .artifact-footer {
+    width: min(790px,100%) !important;
+    margin-top: 7px !important;
+  }
+
+  .view-tabs {
+    background: rgba(11,8,6,.48) !important;
+    border-color: rgba(185,143,77,.22) !important;
+    backdrop-filter: blur(8px);
+  }
+
+  .view-tabs button {
+    padding: 8px 20px !important;
+    color: #746651 !important;
+  }
+
+  .view-tabs button.active {
+    color: #d3b375 !important;
+    background: rgba(185,143,77,.09) !important;
+  }
+
+  /* Archive behaves as a second physical object rather than a dashboard. */
+  .archive-heading {
+    margin: 0 0 7px !important;
+    opacity: .72;
+  }
+
+  .memory-field {
+    width: min(710px,100%) !important;
+    height: 474px !important;
+    min-height: 474px !important;
+    padding: 4px !important;
+    gap: 4px !important;
+    border: 1px solid rgba(192,150,82,.17) !important;
+    border-radius: 22px !important;
+    background: #0f0c09 !important;
+    box-shadow: 0 34px 72px rgba(0,0,0,.52), inset 0 0 0 1px rgba(255,255,255,.018) !important;
+    transform: translateZ(0);
+  }
+
+  .archive-photo {
+    border: 0 !important;
+    border-radius: 14px !important;
+    background: #120e0a !important;
+  }
+
+  .archive-photo img {
+    filter: saturate(.96) contrast(1.045) brightness(.86) !important;
+    transform: scale(1.002);
+    transition: transform .7s cubic-bezier(.2,.8,.2,1), filter .55s ease !important;
+  }
+
+  .archive-photo:hover img {
+    transform: scale(1.035);
+    filter: saturate(1.04) contrast(1.04) brightness(.94) !important;
+  }
+
+  .archive-photo figcaption {
+    padding: 28px 11px 9px !important;
+    background: linear-gradient(transparent,rgba(7,5,4,.76)) !important;
+    opacity: .84;
+  }
+
+  /* The seam is latent at rest. */
+  .seam-column {
+    height: 474px !important;
+    min-height: 474px !important;
+    opacity: .38;
+    transition: opacity .4s ease;
+    pointer-events: none;
+  }
+
+  .seam-rail {
+    width: 14px !important;
+    height: 3px !important;
+    opacity: .16 !important;
+    border: 0 !important;
+    background: linear-gradient(90deg,transparent,rgba(196,157,94,.46),transparent) !important;
+    box-shadow: none !important;
+  }
+
+  .junction {
+    width: 48px !important;
+    height: 48px !important;
+    border: 1px solid rgba(183,139,74,.34) !important;
+    background: radial-gradient(circle,rgba(181,139,75,.17) 0 10%,rgba(68,45,24,.22) 12% 38%,rgba(20,14,9,.86) 40% 100%) !important;
+    filter: none !important;
+    box-shadow: 0 0 0 1px rgba(218,178,108,.025) !important;
+    opacity: .62;
+  }
+
+  .junction:before,
+  .junction:after {
+    display: none !important;
+  }
+
+  .junction i {
+    width: 6px !important;
+    height: 18px !important;
+    border-width: 1px !important;
+    border-color: rgba(213,177,106,.48) !important;
+  }
+
+  .junction b {
+    width: 7px !important;
+    height: 7px !important;
+    border-width: 1px !important;
+    background: rgba(104,39,31,.58) !important;
+    border-color: rgba(207,166,95,.56) !important;
+  }
+
+  /* Registration wakes the connection up without turning it into a spectacle. */
+  .experience.registered .seam-column {
+    opacity: .92 !important;
+  }
+
+  .experience.registered .seam-rail {
+    width: 20px !important;
+    height: 4px !important;
+    opacity: .72 !important;
+    background: linear-gradient(90deg,transparent,rgba(211,173,106,.90),transparent) !important;
+  }
+
+  .experience.registered .junction {
+    width: 58px !important;
+    height: 58px !important;
+    opacity: .96 !important;
+    transform: scale(1.03) !important;
+    border-color: rgba(205,162,92,.72) !important;
+    box-shadow: 0 0 0 1px rgba(218,178,108,.08),0 0 20px rgba(197,145,73,.10) !important;
+  }
+
+  .experience.registered .junction b {
+    background: #9b3a29 !important;
+    box-shadow: 0 0 0 5px rgba(160,85,48,.07) !important;
+  }
+
+  .experience.registered .memory-field {
+    transform: translateX(-1px) !important;
+    border-color: rgba(210,172,105,.27) !important;
+  }
+
+  .experience.registered .archive-photo img {
+    filter: saturate(1.03) contrast(1.04) brightness(.94) !important;
+  }
+
+  .experience.rejected .seam-column {
+    opacity: .24 !important;
+  }
+
+  .experience.rejected .seam-rail {
+    opacity: .08 !important;
+  }
+
+  /* Controls recede so the objects remain primary. */
+  .control-deck {
+    opacity: .88;
+    border-top-color: rgba(199,162,100,.15) !important;
+  }
+
+  .control-block,
+  .run-block,
+  .result-block {
+    background: rgba(15,11,8,.38) !important;
+    border-color: rgba(183,142,76,.12) !important;
+  }
+}
+
+@media (min-width: 1500px) and (min-height: 850px) {
+  .experience {
+    grid-template-columns: minmax(620px,1.18fr) 62px minmax(540px,1fr) !important;
+  }
+
+  .card-wrap,
+  .artifact-footer {
+    width: min(820px,100%) !important;
+  }
+
+  .memory-field {
+    width: min(740px,100%) !important;
+    height: 492px !important;
+    min-height: 492px !important;
+  }
+
+  .seam-column {
+    height: 492px !important;
+    min-height: 492px !important;
+  }
+}
+
+@media (max-width: 900px) {
+  .seam-column {
+    opacity: .50;
+  }
+
+  .seam-rail {
+    height: 2px !important;
+    opacity: .18 !important;
+  }
+
+  .junction {
+    width: 54px !important;
+    height: 54px !important;
+    opacity: .72;
+  }
+
+  .memory-field {
+    border-radius: 18px;
+    padding: 4px;
+    gap: 4px;
+  }
+
+  .archive-photo {
+    border-radius: 12px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .card-wrap:hover .credential.front-view,
+  .archive-photo:hover img {
+    transform: none !important;
+  }
+}
