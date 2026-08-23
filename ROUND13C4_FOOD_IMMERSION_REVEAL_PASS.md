@@ -3,13 +3,8 @@
 ## Product
 RELATIONAL KEY — Food Memory / Toyama / Masu no Sushi
 
-## Promotion
-The V13C.3.1 standalone runtime recovery remains the technical recovery baseline. V13C.4 changes the visual/product presentation materially.
-
 ## Core change
-The interface no longer presents a closed object and a revealed object side by side.
-
-There is now one food object in the hero.
+The interface no longer presents a closed object and a revealed object side by side. There is now one food object in the hero.
 
 A compatible relationship transforms that same object in place:
 
@@ -32,7 +27,7 @@ The relationship is not drawn as an external seam. It is represented by the inte
 - progress encoded as a restrained ring around the object
 - controls collapsed into a low dock
 - sequence and material explanation moved out of the permanent hero
-- materials/provenance are available on demand
+- materials/provenance available on demand
 - no-match causes restrained recoil and keeps the object sealed/valid
 - reduced-motion behavior preserved
 
