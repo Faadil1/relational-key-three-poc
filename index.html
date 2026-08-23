@@ -3,8 +3,8 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#0e0c09" />
-  <meta name="description" content="RELATIONAL KEY — Cultural Figure Edition. A real-image archive-derived credential prototype." />
+  <meta name="theme-color" content="#0d0b08" />
+  <meta name="description" content="RELATIONAL KEY — Cultural Figure Edition. Real photographic traces connected through a relational credential." />
   <title>RELATIONAL KEY — Frida Kahlo · Coyoacán</title>
   <link rel="stylesheet" href="./figure.css" />
 </head>
@@ -15,6 +15,14 @@
         <span class="brand-mark" aria-hidden="true"><i></i></span>
         <span><b>RELATIONAL KEY</b><small>CULTURAL FIGURE</small></span>
       </a>
+      <div class="title-strip">
+        <div>
+          <span class="kicker">REAL-IMAGE ARCHIVE EDITION</span>
+          <h1>Frida Kahlo · Coyoacán</h1>
+        </div>
+        <p>Real photographs carry the memory. The relationship makes the path visible.</p>
+      </div>
+      <div class="edition-index"><span>EDITION</span><b>CF · 07 / 2500</b></div>
       <nav class="nav" aria-label="Prototype navigation">
         <button id="aboutBtn" type="button">ABOUT</button>
         <button id="collectionBtn" type="button">COLLECTION</button>
@@ -22,26 +30,8 @@
       </nav>
     </header>
 
-    <section class="intro" aria-labelledby="pageTitle">
-      <div>
-        <p class="kicker">CULTURAL FIGURE · REAL-IMAGE ARCHIVE PASS</p>
-        <h1 id="pageTitle">Frida Kahlo · Coyoacán</h1>
-        <p class="lead">Real photographs carry the memory. RELATIONAL KEY only designs the relationship between them.</p>
-      </div>
-      <div class="edition-index"><span>EDITION</span><b>CF · 07 / 2500</b></div>
-    </section>
-
     <section id="experience" class="experience" aria-label="Interactive cultural figure credential">
       <div class="artifact-column">
-        <div class="section-bar">
-          <div class="view-tabs" role="group" aria-label="Credential view">
-            <button data-view="front" class="active" aria-pressed="true">FRONT</button>
-            <button data-view="back" aria-pressed="false">BACK</button>
-            <button data-view="detail" aria-pressed="false">MACRO</button>
-          </div>
-          <span class="section-line"></span>
-        </div>
-
         <div id="cardWrap" class="card-wrap" tabindex="0" aria-label="Frida Kahlo cultural figure credential">
           <article id="card" class="credential front-view">
             <div class="face face-front">
@@ -54,13 +44,12 @@
               <div class="front-vignette"></div>
               <div class="front-title"><span>CULTURAL FIGURE</span><strong>FRIDA KAHLO</strong><small>COYOACÁN · MEXICO CITY</small></div>
               <div class="front-number">07 / 2500</div>
-
               <div class="registered-path" aria-hidden="true">
                 <span class="path-segment path-a"></span>
-                <span class="path-label l1">MEMORY</span>
+                <span class="path-label l1">REMEMBRANCE</span>
                 <span class="path-segment path-b"></span>
-                <span class="path-label l2">RECOGNITION</span>
                 <span class="card-junction"><i></i><b></b><i></i></span>
+                <span class="path-label l2">RECOGNITION</span>
                 <span class="path-segment path-c"></span>
               </div>
               <div class="photo-credit">GUILLERMO KAHLO · 1932 · PUBLIC DOMAIN</div>
@@ -69,7 +58,7 @@
             <div class="face face-back">
               <div class="back-head"><span>RELATIONAL KEY · CULTURAL FIGURE</span><b>07 / 2500</b></div>
               <h2>FRIDA KAHLO</h2>
-              <p class="back-intro">A conceptual credential built from documented photographic traces rather than synthetic cultural imagery.</p>
+              <p class="back-intro">A conceptual credential assembled from documented photographic traces rather than synthetic cultural imagery.</p>
               <div class="back-grid">
                 <div><span>PLACE</span><strong>COYOACÁN · MEXICO CITY</strong></div>
                 <div><span>TRACE FAMILY</span><strong>PORTRAIT · HOME · STUDIO · OBJECT</strong></div>
@@ -85,6 +74,15 @@
             </div>
           </article>
         </div>
+
+        <div class="artifact-footer">
+          <div class="view-tabs" role="group" aria-label="Credential view">
+            <button data-view="front" class="active" aria-pressed="true">FRONT</button>
+            <button data-view="back" aria-pressed="false">BACK</button>
+            <button data-view="detail" aria-pressed="false">MACRO</button>
+          </div>
+          <div class="object-note"><span>COLLECTIBLE OBJECT</span><b>REAL PHOTOGRAPHIC TRACE</b></div>
+        </div>
       </div>
 
       <div class="seam-column" aria-hidden="true">
@@ -94,7 +92,7 @@
       </div>
 
       <div class="archive-column">
-        <div class="section-bar archive-bar"><span class="section-line"></span><strong>TRACE ARCHIVE · MEMORY FIELD</strong></div>
+        <div class="archive-heading"><span>TRACE ARCHIVE</span><strong>COYOACÁN · MEMORY FIELD</strong></div>
         <div id="memoryField" class="memory-field">
           <figure class="archive-photo exterior">
             <img src="https://upload.wikimedia.org/wikipedia/commons/8/88/La_Casa_Azul_%28The_Blue_House%29%2C_better_known_as_the_Frida_Kahlo_Museum%2C_located_in_the_Coyoac%C3%A1n_neighborhood_of_Mexico_City.jpg" alt="Exterior of La Casa Azul" />
@@ -114,6 +112,7 @@
           </figure>
           <div class="field-register" aria-hidden="true"><span></span><i></i><span></span></div>
         </div>
+        <div class="archive-note"><span>DOCUMENTED SOURCES</span><b>PLACE · STUDIO · HOME · PORTRAIT</b></div>
       </div>
 
       <div id="outcome" class="outcome" hidden>
@@ -130,12 +129,10 @@
           <button data-claim="other" aria-pressed="false"><i></i>OTHER CLAIM</button>
         </div>
       </div>
-      <div class="control-divider"></div>
       <div class="run-block">
         <button id="reset" class="reset-btn" type="button">RESET</button>
         <button id="run" class="run-btn" type="button">TEST RELATIONSHIP <span>→</span></button>
       </div>
-      <div class="control-divider"></div>
       <div class="result-block">
         <span class="control-label">RESULT</span>
         <div id="resultPlaque" class="result-plaque idle"><span class="mini-mark"></span><b>AWAITING TEST</b></div>
