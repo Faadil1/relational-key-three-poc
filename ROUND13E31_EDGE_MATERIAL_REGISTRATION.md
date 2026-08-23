@@ -46,8 +46,9 @@ Inline JavaScript: syntax check PASS.
 https://relational-key-craft-memory-zellige-v13e31-faadil1s-projects.vercel.app
 Deployment: `dpl_4HV3s3QoWeKyBXaRfdR5zmWEFhzs`
 
-## Source commit
-`8e745f086466fef161f672d0a5bf6cef92d53329`
+## Source commits
+Implementation: `8e745f086466fef161f672d0a5bf6cef92d53329`
+Audit linkage: `a0a96c71862aa93bd3145646dbc26ac945f2f6a5`
 
 ## Gate
 Do not merge until a live browser recording confirms that the successful state reads as physical edge tessellation rather than a floating connector.
