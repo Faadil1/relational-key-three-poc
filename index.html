@@ -4,34 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#f3f0e6" />
-  <meta name="description" content="RELATIONAL KEY — Registered City Passage cultural credential prototype." />
-  <title>RELATIONAL KEY — Registered City Passage</title>
+  <meta name="description" content="RELATIONAL KEY — Cross-cultural archive-derived credential prototype." />
+  <title>RELATIONAL KEY — Cultural Editions</title>
   <link rel="stylesheet" href="./styles.css" />
   <link rel="stylesheet" href="./presentation.css" />
-  <link rel="stylesheet" href="./city.css" />
+  <link rel="stylesheet" href="./cross.css" />
 </head>
 <body>
-  <main class="shell city-shell">
+  <main class="shell cross-shell">
     <header class="topbar">
       <div>
-        <div class="eyebrow">DAY 17 · CULTURAL EDITIONS · PROTOTYPE 01</div>
+        <div class="eyebrow">DAY 17 · CULTURAL EDITIONS · CROSS-CULTURAL PROTOTYPE</div>
         <h1>RELATIONAL KEY</h1>
       </div>
       <div class="top-actions">
-        <span id="territoryBadge" class="territory-badge">HULL · CIVIC GRID</span>
+        <span id="editionBadge" class="edition-badge">CITY PASSAGE · GATINEAU</span>
+        <button id="blindToggle" class="micro-btn" aria-pressed="false">BLIND TEST</button>
         <button id="debugToggle" class="micro-btn" aria-pressed="false">DEBUG</button>
       </div>
     </header>
 
     <section class="intro" aria-labelledby="heroTitle">
-      <p id="heroTitle">The city is not a backdrop.</p>
-      <strong>The relationship makes passage visible.</strong>
+      <p id="heroTitle">Different archives. Different fields.</p>
+      <strong>Same relational law.</strong>
     </section>
 
-    <section class="stage" aria-label="Interactive Registered City Passage prototype">
+    <section class="stage" aria-label="Interactive cross-cultural Relational Key prototype">
       <canvas id="scene" tabindex="0"></canvas>
       <div id="phase" class="phase" aria-live="polite">GRAB THE CREDENTIAL</div>
-      <div id="hint" class="hint">Drag the credential toward its city field.</div>
+      <div id="hint" class="hint">Drag the credential toward its counterpart field.</div>
       <div id="residual" class="residual" hidden></div>
       <div id="debug" class="debug" hidden></div>
       <div id="result" class="result" aria-live="polite" hidden></div>
@@ -42,20 +43,20 @@
       </div>
     </section>
 
-    <div class="dock city-dock" aria-label="Prototype controls">
-      <div class="control-block">
-        <span class="control-label">TERRITORY</span>
-        <div class="scenario" role="group" aria-label="Territory variant">
-          <button data-territory="hull" class="active" aria-pressed="true">HULL</button>
-          <button data-territory="gatineau" aria-pressed="false">GATINEAU</button>
-          <button data-territory="eastern" aria-pressed="false">EASTERN PAIR</button>
+    <div class="dock cross-dock" aria-label="Prototype controls">
+      <div class="control-block edition-control">
+        <span class="control-label">EDITION</span>
+        <div class="scenario" role="group" aria-label="Cultural edition">
+          <button data-edition="city" class="active" aria-pressed="true">CITY</button>
+          <button data-edition="service" aria-pressed="false">SERVICE</button>
+          <button data-edition="signal" aria-pressed="false">SIGNAL</button>
         </div>
       </div>
       <div class="control-block">
         <span class="control-label">CLAIM</span>
         <div class="scenario" role="group" aria-label="Credential claim">
-          <button data-claim="local" class="active" aria-pressed="true">LOCAL CLAIM</button>
-          <button data-claim="external" aria-pressed="false">EXTERNAL CLAIM</button>
+          <button data-claim="matching" class="active" aria-pressed="true">MATCHING CLAIM</button>
+          <button data-claim="other" aria-pressed="false">OTHER CLAIM</button>
         </div>
       </div>
       <div class="run-actions">
@@ -67,6 +68,7 @@
     <section class="law" aria-label="Interaction law">
       <span>GRAB</span><i>→</i><span>COMPARE</span><i>→</i><span>REGISTER / RESIST</span><i>→</i><span>CONTINUE</span>
     </section>
+    <p id="truthNote" class="truth-note">Archive-derived concept prototype · not an official map, service procedure, or technical diagram.</p>
   </main>
 
   <div id="explainBackdrop" class="explain-backdrop" hidden></div>
@@ -88,10 +90,10 @@
         <div><span>Registration residual</span><strong id="advancedResidual"></strong></div>
         <div><span>Geometry outcome</span><strong id="advancedGeometry"></strong></div>
       </div>
-      <p>The registration profile and residual are internal prototype encodings. They are not official transit, geographic, or municipal standards.</p>
+      <p>Registration profiles and residual are internal prototype encodings. Archive-derived fields are conceptual translations, not official institutional standards.</p>
     </details>
   </aside>
 
-  <script type="module" src="./city.js"></script>
+  <script type="module" src="./cross.js"></script>
 </body>
 </html>
