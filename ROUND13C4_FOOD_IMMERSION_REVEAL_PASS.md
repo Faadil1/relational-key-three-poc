@@ -50,8 +50,14 @@ The food tradition and physical preparation logic are source-grounded.
 The pressure register, claim matching, interaction states and reveal are conceptual RELATIONAL KEY interface mechanics.
 No producer, rail operator or institutional affiliation is claimed.
 
+## Live candidate
+https://relational-key-food-memory-ekiben-v13c4-faadil1s-projects.vercel.app
+
+Deployment:
+`dpl_B7wRm6kAMc9xFk6Ck4AMmmJ6GNqi`
+
 ## Gate
-Current state: IMPLEMENTED / DEPLOYMENT NEXT / BROWSER FOOD-IMMERSION AUDIT REQUIRED
+Current state: IMPLEMENTED / DEPLOYED / BROWSER FOOD-IMMERSION AUDIT REQUIRED
 
 Do not merge PR #7 until:
 1. the single object renders immediately,
