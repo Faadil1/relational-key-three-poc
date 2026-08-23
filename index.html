@@ -3,47 +3,65 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f2efe7" />
-  <meta name="description" content="RELATIONAL KEY — a spatial credential where member claims and destination rules become a visible registration geometry." />
-  <title>RELATIONAL KEY — V3.1 Presentation Cleanup</title>
+  <meta name="theme-color" content="#f3f0e6" />
+  <meta name="description" content="RELATIONAL KEY — Registered City Passage cultural credential prototype." />
+  <title>RELATIONAL KEY — Registered City Passage</title>
   <link rel="stylesheet" href="./styles.css" />
   <link rel="stylesheet" href="./presentation.css" />
+  <link rel="stylesheet" href="./city.css" />
 </head>
 <body>
-  <main class="shell">
+  <main class="shell city-shell">
     <header class="topbar">
       <div>
-        <div class="eyebrow">DAY 17 · RELATIONAL INSTRUMENT V3.1</div>
+        <div class="eyebrow">DAY 17 · CULTURAL EDITIONS · PROTOTYPE 01</div>
         <h1>RELATIONAL KEY</h1>
       </div>
       <div class="top-actions">
+        <span id="territoryBadge" class="territory-badge">HULL · CIVIC GRID</span>
         <button id="debugToggle" class="micro-btn" aria-pressed="false">DEBUG</button>
       </div>
     </header>
 
     <section class="intro" aria-labelledby="heroTitle">
-      <p id="heroTitle">Your credential is only <em>half</em> the interface.</p>
-      <strong>The relationship completes the path.</strong>
+      <p id="heroTitle">The city is not a backdrop.</p>
+      <strong>The relationship makes passage visible.</strong>
     </section>
 
-    <section class="stage" aria-label="Interactive Relational Key prototype">
+    <section class="stage" aria-label="Interactive Registered City Passage prototype">
       <canvas id="scene" tabindex="0"></canvas>
       <div id="phase" class="phase" aria-live="polite">GRAB THE CREDENTIAL</div>
-      <div id="hint" class="hint">Drag the cobalt credential toward the ivory destination.</div>
+      <div id="hint" class="hint">Drag the credential toward its city field.</div>
       <div id="residual" class="residual" hidden></div>
       <div id="debug" class="debug" hidden></div>
       <div id="result" class="result" aria-live="polite" hidden></div>
-      <button id="inspect" class="technical-inspect" hidden tabindex="-1" aria-hidden="true">INSPECT RELATION</button>
       <button id="explainTrigger" class="explain-trigger" hidden>WHY THIS WORKS</button>
+      <div id="runtimeError" class="runtime-error" hidden>
+        <strong>3D runtime unavailable</strong>
+        <span>The interface loaded, but the spatial scene could not render.</span>
+      </div>
     </section>
 
-    <div class="dock" aria-label="Prototype controls">
-      <div class="scenario" role="group" aria-label="Membership tier">
-        <button data-scenario="family" class="active" aria-pressed="true">FAMILY PLUS · ROAM</button>
-        <button data-scenario="standard" aria-pressed="false">STANDARD · ASTC</button>
+    <div class="dock city-dock" aria-label="Prototype controls">
+      <div class="control-block">
+        <span class="control-label">TERRITORY</span>
+        <div class="scenario" role="group" aria-label="Territory variant">
+          <button data-territory="hull" class="active" aria-pressed="true">HULL</button>
+          <button data-territory="gatineau" aria-pressed="false">GATINEAU</button>
+          <button data-territory="eastern" aria-pressed="false">EASTERN PAIR</button>
+        </div>
       </div>
-      <button id="reset">TRY AGAIN</button>
-      <button id="auto" class="quiet">TEST RELATIONSHIP</button>
+      <div class="control-block">
+        <span class="control-label">CLAIM</span>
+        <div class="scenario" role="group" aria-label="Credential claim">
+          <button data-claim="local" class="active" aria-pressed="true">LOCAL CLAIM</button>
+          <button data-claim="external" aria-pressed="false">EXTERNAL CLAIM</button>
+        </div>
+      </div>
+      <div class="run-actions">
+        <button id="reset">RESET</button>
+        <button id="auto" class="quiet">TEST RELATIONSHIP</button>
+      </div>
     </div>
 
     <section class="law" aria-label="Interaction law">
@@ -70,11 +88,10 @@
         <div><span>Registration residual</span><strong id="advancedResidual"></strong></div>
         <div><span>Geometry outcome</span><strong id="advancedGeometry"></strong></div>
       </div>
-      <p>Registration profiles are a conceptual interaction encoding used by this prototype. They are not official technical representations of ROAM or ASTC.</p>
+      <p>The registration profile and residual are internal prototype encodings. They are not official transit, geographic, or municipal standards.</p>
     </details>
   </aside>
 
-  <script type="module" src="./main.js"></script>
-  <script type="module" src="./presentation.js"></script>
+  <script type="module" src="./city.js"></script>
 </body>
 </html>
