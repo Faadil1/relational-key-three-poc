@@ -1,151 +1,123 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="theme-color" content="#090a08" />
-  <meta name="description" content="RELATIONAL KEY — Food Memory / Edible Passage. Toyama Masu no Sushi interactive prototype." />
-  <title>RELATIONAL KEY — Edible Passage · Toyama</title>
-  <link rel="stylesheet" href="./food.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="#090a08" />
+<title>RELATIONAL KEY — Edible Passage / Toyama</title>
+<style>
+:root{
+  --bg:#090a08;--ink:#eee8dc;--muted:#8d826d;--gold:#b58b4a;--gold2:#dbba7a;
+  --line:rgba(207,169,99,.18);--leaf:#27372a;--salmon:#d98668;--ok:#86b88c;--fail:#b5796f;
+  font-family:Arial,Helvetica,sans-serif;color:var(--ink);background:var(--bg)
+}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--bg);color:var(--ink)}
+body{background:radial-gradient(circle at 50% -20%,rgba(96,75,40,.15),transparent 36%),linear-gradient(180deg,#0b0c09,#070806)}
+button{font:inherit}.shell{min-height:100vh;padding:10px clamp(12px,2vw,34px) 18px;overflow:hidden;position:relative}
+.shell:before{content:"";position:fixed;inset:0;pointer-events:none;opacity:.055;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='140' height='140'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.72' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.28'/%3E%3C/svg%3E")}
+.top{height:62px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px;position:relative;z-index:20}
+.brand{display:flex;gap:11px;align-items:center}.mark{width:37px;height:37px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;position:relative}.mark:before,.mark:after{content:"";position:absolute;background:var(--gold)}.mark:before{width:1px;height:23px}.mark:after{height:1px;width:23px}.mark i{width:13px;height:13px;border:1px solid var(--gold);border-radius:50%}.brandText{display:grid;gap:3px}.brandText b{font:600 10px monospace;letter-spacing:.2em;color:var(--gold2)}.brandText small{font:600 6px monospace;letter-spacing:.18em;color:#78694d}
+.title{text-align:center}.title span{font:600 8px monospace;letter-spacing:.15em;color:#bd9b63}.title h1{display:inline;margin-left:7px;font:600 21px Georgia,serif}.title p{margin:2px 0 0;font:italic 10px Georgia,serif;color:#958267}.about{border:0;background:none;color:#987e54;font:600 7px monospace;letter-spacing:.11em;cursor:pointer;padding:10px}
+.hero{width:min(1540px,100%);height:calc(100vh - 185px);min-height:590px;margin:0 auto;position:relative;display:grid;place-items:center;z-index:4}
+.hero:before{content:"";position:absolute;width:min(900px,74vw);height:min(900px,74vw);border-radius:50%;background:radial-gradient(circle,rgba(80,68,42,.13),rgba(9,10,8,0) 64%);filter:blur(4px)}
+.kicker{position:absolute;top:28px;left:0;font:600 6px monospace;letter-spacing:.16em;color:#74674e}.edition{position:absolute;top:28px;right:0;text-align:right;font:600 6px monospace;letter-spacing:.13em;color:#74674e}.edition b{display:block;margin-top:4px;color:#ac8b58}
+.objectWrap{width:min(720px,73vw);aspect-ratio:1;position:relative;display:grid;place-items:center;filter:drop-shadow(0 42px 60px rgba(0,0,0,.55));transition:transform .8s cubic-bezier(.2,.8,.2,1),filter .8s ease;z-index:5}
+.objectWrap:hover{transform:translateY(-4px) scale(1.006);filter:drop-shadow(0 52px 70px rgba(0,0,0,.6))}
+.wood{position:absolute;width:70%;height:70%;border-radius:50%;background:radial-gradient(circle at 50% 42%,#6c4e31 0 52%,#92704a 53% 58%,#3f2c1c 59% 100%);box-shadow:inset 0 0 0 1px rgba(231,193,124,.2),inset 0 -18px 34px rgba(31,20,12,.35);transition:.75s ease}
+.meal{position:absolute;width:54%;height:54%;border-radius:50%;overflow:hidden;margin:0;z-index:4;border:7px solid #85643e;background:#24150e;box-shadow:0 20px 42px rgba(0,0,0,.45);opacity:0;transform:scale(.82);transition:opacity .9s ease .15s,transform 1s cubic-bezier(.2,.8,.2,1) .12s}
+.meal img{width:100%;height:100%;object-fit:cover;display:block;transform:scale(1.18);filter:saturate(1.08) contrast(1.04)}
+.leaves{position:absolute;width:75%;height:75%;z-index:6;pointer-events:none}.leaf{position:absolute;left:50%;top:50%;width:57%;height:17%;transform-origin:0 50%;border-radius:100% 12px 12px 100%;overflow:hidden;transition:transform 1.05s cubic-bezier(.16,.84,.22,1),filter .8s ease,opacity .8s ease;filter:saturate(.86) brightness(.60) contrast(1.08);box-shadow:0 0 0 1px rgba(220,201,147,.06)}.leaf img{width:100%;height:100%;object-fit:cover;display:block}.l0{transform:translate(0,-50%) rotate(0deg) scaleX(.92)}.l45{transform:translate(0,-50%) rotate(45deg) scaleX(.92)}.l90{transform:translate(0,-50%) rotate(90deg) scaleX(.92)}.l135{transform:translate(0,-50%) rotate(135deg) scaleX(.92)}.l180{transform:translate(0,-50%) rotate(180deg) scaleX(.92)}.l225{transform:translate(0,-50%) rotate(225deg) scaleX(.92)}.l270{transform:translate(0,-50%) rotate(270deg) scaleX(.92)}.l315{transform:translate(0,-50%) rotate(315deg) scaleX(.92)}
+.band{position:absolute;width:53%;height:42px;z-index:10;background:linear-gradient(180deg,rgba(76,57,33,.95),rgba(26,22,15,.97));border-top:1px solid rgba(214,176,106,.32);border-bottom:1px solid rgba(103,78,42,.76);display:flex;align-items:center;justify-content:center;gap:12px;color:#aa956b;font:600 6px monospace;letter-spacing:.15em;box-shadow:0 7px 19px rgba(0,0,0,.42);transition:opacity .55s ease,transform .75s cubic-bezier(.2,.8,.2,1)}
+.bandTop{transform:translateY(-12px)}.bandBottom{transform:translateY(12px);opacity:.48}
+.pressureCore{position:absolute;width:76px;height:76px;border-radius:50%;z-index:12;display:grid;place-items:center;background:rgba(14,15,10,.9);border:1px solid rgba(202,163,89,.42);box-shadow:0 0 0 8px rgba(188,145,71,.04);transition:transform .6s ease,border-color .6s ease,box-shadow .6s ease,opacity .6s ease;cursor:pointer}
+.pressureCore:before,.pressureCore:after{content:"";position:absolute;background:#c29a59}.pressureCore:before{width:1px;height:34px}.pressureCore:after{height:1px;width:34px}.pressureCore b{width:10px;height:10px;border-radius:50%;background:#7e5530;border:1px solid #d6af6d;z-index:3}.pressureCore span{position:absolute;top:88px;white-space:nowrap;font:600 6px monospace;letter-spacing:.12em;color:#796a4e;transition:.45s ease}
+.rings{position:absolute;width:58%;height:58%;border-radius:50%;z-index:8;pointer-events:none;opacity:.5;transition:opacity .55s ease,transform .8s ease}.rings:before,.rings:after{content:"";position:absolute;border-radius:50%;inset:0;border:1px solid rgba(190,150,82,.1)}.rings:after{inset:10%;border-color:rgba(190,150,82,.07)}
+.orbit{position:absolute;width:80%;height:80%;border-radius:50%;z-index:2;pointer-events:none;opacity:.22}.orbit:before{content:"";position:absolute;inset:0;border-radius:50%;border:1px dashed rgba(193,154,85,.18)}
+.stateLabel{position:absolute;left:50%;bottom:26px;transform:translateX(-50%);font:600 6px monospace;letter-spacing:.14em;color:#776b55;white-space:nowrap;transition:.45s ease}.stateLabel b{color:#b18f5b;margin-left:8px}
+.progressArc{position:absolute;width:84%;height:84%;border-radius:50%;z-index:13;pointer-events:none;transform:rotate(-90deg)}.progressArc svg{width:100%;height:100%}.progressArc circle{fill:none;stroke-width:.7}.progressArc .track{stroke:rgba(205,168,100,.05)}.progressArc .meter{stroke:rgba(216,176,103,.56);stroke-dasharray:314;stroke-dashoffset:314;transition:stroke-dashoffset .5s ease}
+.whisper{position:absolute;right:3%;top:50%;transform:translateY(-50%);max-width:185px;font:italic 13px/1.5 Georgia,serif;color:#776d5b;opacity:.72}.whisper b{display:block;margin-top:10px;font:600 6px monospace;letter-spacing:.12em;color:#987d51}
+.dock{width:min(1180px,94vw);position:absolute;left:50%;bottom:16px;transform:translateX(-50%);z-index:18;display:grid;grid-template-columns:auto 1fr auto;gap:10px;align-items:center;padding:8px;background:rgba(12,13,10,.82);border:1px solid rgba(196,156,86,.14);backdrop-filter:blur(14px);box-shadow:0 16px 34px rgba(0,0,0,.24)}
+.claims{display:flex;gap:5px}.claims button{height:42px;min-width:132px;border:1px solid rgba(182,144,78,.18);background:transparent;color:#716956;padding:0 11px;text-align:left;cursor:pointer}.claims button b{display:block;font:600 6px monospace;letter-spacing:.1em}.claims button small{font:500 8px Georgia,serif;color:#686153}.claims button.active{border-color:rgba(211,171,103,.45);color:#d8b778;background:rgba(151,113,54,.08)}.claims button.active small{color:#958363}
+.run{height:42px;border:1px solid #ae864b;background:linear-gradient(140deg,#b89459,#d0b173);color:#241b12;font:600 7px monospace;letter-spacing:.12em;cursor:pointer;padding:0 28px;justify-self:center}.run:disabled{opacity:.5;cursor:wait}.reset{height:42px;border:0;background:transparent;color:#6f6550;font:600 6px monospace;letter-spacing:.11em;cursor:pointer;padding:0 13px}.result{justify-self:end;min-width:210px;text-align:right;display:grid;gap:3px}.result small{font:600 5px monospace;letter-spacing:.12em;color:#655e50}.result b{font:600 7px monospace;letter-spacing:.1em;color:#8a806e}.result.success b{color:#8cc792}.result.failure b{color:#bb8479}
+.lowerHint{position:absolute;left:2%;bottom:82px;font:600 5px monospace;letter-spacing:.12em;color:#5f594b}.materialsBtn{position:absolute;right:2%;bottom:82px;border:0;background:none;color:#816e51;font:600 6px monospace;letter-spacing:.11em;cursor:pointer}
+.registered .meal{opacity:1;transform:scale(1)}.registered .bandTop{opacity:0;transform:translateY(-92px) scaleX(.82)}.registered .bandBottom{opacity:0;transform:translateY(92px) scaleX(.82)}.registered .pressureCore{transform:scale(.72);border-color:rgba(201,164,92,.18);box-shadow:none;opacity:.7}.registered .pressureCore span{opacity:0}.registered .rings{opacity:.18;transform:scale(1.12)}.registered .wood{transform:scale(1.02)}
+.registered .l0{transform:translate(0,-50%) rotate(0deg) scaleX(.72) translateX(28%)}.registered .l45{transform:translate(0,-50%) rotate(45deg) scaleX(.72) translateX(28%)}.registered .l90{transform:translate(0,-50%) rotate(90deg) scaleX(.72) translateX(28%)}.registered .l135{transform:translate(0,-50%) rotate(135deg) scaleX(.72) translateX(28%)}.registered .l180{transform:translate(0,-50%) rotate(180deg) scaleX(.72) translateX(28%)}.registered .l225{transform:translate(0,-50%) rotate(225deg) scaleX(.72) translateX(28%)}.registered .l270{transform:translate(0,-50%) rotate(270deg) scaleX(.72) translateX(28%)}.registered .l315{transform:translate(0,-50%) rotate(315deg) scaleX(.72) translateX(28%)}.registered .leaf{filter:saturate(1) brightness(.8) contrast(1.05)}.registered .stateLabel{color:#7f8a70}.registered .stateLabel b{color:#8cc792}
+.rejected .objectWrap{animation:recoil .46s ease}.rejected .pressureCore{border-color:rgba(168,105,92,.4)}.rejected .meter{stroke:rgba(172,105,91,.48)}
+@keyframes recoil{0%,100%{transform:translateX(0)}45%{transform:translateX(8px)}72%{transform:translateX(-4px)}}
+.drawer{position:fixed;right:12px;top:12px;bottom:12px;width:min(470px,calc(100vw - 24px));background:#eadfcd;color:#2c2117;border:1px solid #ab8851;padding:24px;z-index:40;transform:translateX(calc(100% + 30px));transition:.35s ease;overflow:auto}.drawer.open{transform:translateX(0)}.drawer h2{font:600 31px Georgia,serif;margin:12px 0}.drawer p,.drawer li{font-size:11px;line-height:1.55;color:#5e4e3c}.drawer a{color:#7d4e33;font-size:9px}.drawer .macroGrid{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin:16px 0}.drawer figure{margin:0;position:relative;aspect-ratio:1.25;overflow:hidden;background:#cdbc9f}.drawer figure img{width:100%;height:100%;object-fit:cover}.drawer figcaption{position:absolute;left:0;right:0;bottom:0;padding:20px 8px 7px;background:linear-gradient(transparent,rgba(20,13,8,.75));color:#efe4cf;font:600 6px monospace;letter-spacing:.08em}.close{float:right;border:0;background:none;font-size:20px;cursor:pointer}.backdrop{position:fixed;inset:0;background:rgba(0,0,0,.62);backdrop-filter:blur(5px);z-index:35;display:none}.backdrop.open{display:block}
+@media(max-width:1050px){.hero{height:auto;min-height:760px}.objectWrap{width:min(700px,88vw)}.whisper{top:auto;bottom:92px;right:50%;transform:translateX(50%);text-align:center;max-width:300px}.dock{grid-template-columns:1fr;bottom:10px}.claims{justify-content:center}.run{justify-self:stretch}.result{justify-self:center;text-align:center}.lowerHint,.materialsBtn{bottom:155px}}
+@media(max-width:650px){.top{grid-template-columns:1fr auto}.brandText{display:none}.title{text-align:left}.title h1{font-size:17px}.title p{display:none}.hero{min-height:720px}.objectWrap{width:96vw}.kicker,.edition{top:18px}.dock{width:96vw}.claims{display:grid;grid-template-columns:1fr 1fr}.claims button{min-width:0}.whisper{bottom:166px}.lowerHint,.materialsBtn{display:none}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+</style>
 </head>
 <body>
-  <main class="shell">
-    <header class="topbar">
-      <a class="brand" href="#" aria-label="RELATIONAL KEY home">
-        <span class="mark" aria-hidden="true"><i></i></span>
-        <span><b>RELATIONAL KEY</b><small>FOOD MEMORY EDITION</small></span>
-      </a>
-      <div class="title">
-        <span>EDIBLE PASSAGE</span>
-        <h1>Toyama · Masu no Sushi</h1>
-        <p>The food object becomes the credential.</p>
-      </div>
-      <div class="header-actions">
-        <button id="aboutBtn" type="button">ABOUT</button>
-        <button id="sourcesBtn" type="button">SOURCES</button>
-        <span class="edition">FM · 001</span>
-      </div>
-    </header>
-
-    <section id="stage" class="stage" aria-label="Edible Passage interactive food memory object">
-      <article class="food-state closed-state">
-        <div class="state-label"><span>RESTING STATE</span><b>SEALED / COMPRESSED</b></div>
-        <div id="closedObject" class="food-object closed-object" aria-label="Closed bamboo-wrapped Masu no Sushi">
-          <div class="wood-ring"></div>
-          <div class="leaf-disc" aria-hidden="true">
-            <span class="leaf l1"></span><span class="leaf l2"></span><span class="leaf l3"></span><span class="leaf l4"></span>
-            <span class="leaf l5"></span><span class="leaf l6"></span><span class="leaf l7"></span><span class="leaf l8"></span>
-          </div>
-          <div class="pressure-band"><span>RELATIONAL KEY</span><i></i><span>TOYAMA</span></div>
-          <div class="pressure-core" aria-hidden="true"><i></i><b></b><i></i></div>
-        </div>
-        <p class="state-copy">At rest, pressure holds the meal memory closed. The relationship is latent.</p>
-      </article>
-
-      <div class="relation-zone" aria-hidden="true">
-        <span class="relation-label">RELATIONSHIP</span>
-        <div class="relation-line"><i></i><b></b><i></i></div>
-        <small id="relationStatus">PRESSURE / ALIGNMENT DORMANT</small>
-      </div>
-
-      <article class="food-state revealed-state">
-        <div class="state-label"><span>REGISTERED STATE</span><b>UNFOLDED / REVEALED</b></div>
-        <div id="revealedObject" class="food-object revealed-object" aria-label="Revealed Masu no Sushi">
-          <div class="open-leaves" aria-hidden="true">
-            <span class="open-leaf o1"></span><span class="open-leaf o2"></span><span class="open-leaf o3"></span><span class="open-leaf o4"></span>
-            <span class="open-leaf o5"></span><span class="open-leaf o6"></span><span class="open-leaf o7"></span><span class="open-leaf o8"></span>
-          </div>
-          <figure class="meal-photo">
-            <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Masu_no_sushi_4_by_hirotomo.jpg?width=1600" alt="Masu no sushi from Toyama, photograph by hirotomo" />
-          </figure>
-          <div class="reveal-ring"></div>
-        </div>
-        <p class="state-copy">When the relationship registers, pressure releases and the meal becomes visible.</p>
-      </article>
-    </section>
-
-    <section class="sequence" aria-label="Edible Passage sequence">
-      <span class="sequence-title">THE SEQUENCE</span>
-      <ol>
-        <li data-step="1"><i>01</i><b>PRESS</b><small>Apply pressure</small></li>
-        <li data-step="2"><i>02</i><b>ALIGN</b><small>Find the natural fit</small></li>
-        <li data-step="3"><i>03</i><b>REGISTER</b><small>Relationship resolves</small></li>
-        <li data-step="4"><i>04</i><b>RELEASE</b><small>Pressure gives way</small></li>
-        <li data-step="5"><i>05</i><b>UNFOLD</b><small>Leaves respond</small></li>
-        <li data-step="6"><i>06</i><b>REVEAL</b><small>Meal memory appears</small></li>
-      </ol>
-    </section>
-
-    <section class="lower-grid">
-      <div class="material-strip" aria-label="Food material details">
-        <figure>
-          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Sasa-Zushi_%28Trout_Sushi_wrapped_in_Bamboo_Grass%29_%286639289453%29.jpg?width=900" alt="Trout sushi wrapped in bamboo grass" />
-          <figcaption><span>BAMBOO</span><b>FRAGRANT · RESILIENT</b></figcaption>
-        </figure>
-        <figure>
-          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Masu_no_sushi_2_by_hirotomo.jpg?width=900" alt="Masu no sushi showing trout and rice" />
-          <figcaption><span>MASU / TROUT</span><b>PRESSED · VINEGARED</b></figcaption>
-        </figure>
-        <figure class="rice-crop">
-          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Masu_no_sushi_4_by_hirotomo.jpg?width=900" alt="Masu no sushi close view" />
-          <figcaption><span>RICE</span><b>TOYAMA · VINEGARED</b></figcaption>
-        </figure>
-        <figure class="wood-crop">
-          <img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Masu_no_sushi_3_by_hirotomo.jpg?width=900" alt="Masu no sushi packaging and container" />
-          <figcaption><span>CONTAINER</span><b>PORTABLE · PRESSED</b></figcaption>
-        </figure>
-      </div>
-
-      <div class="control-panel">
-        <span class="panel-label">CLAIM TYPE</span>
-        <div class="claim-toggle" role="group" aria-label="Food memory relationship claim">
-          <button data-claim="matching" class="active" aria-pressed="true"><i></i><span><b>MATCHING CLAIM</b><small>Toyama food memory</small></span></button>
-          <button data-claim="other" aria-pressed="false"><i></i><span><b>OTHER CLAIM</b><small>Incompatible relation</small></span></button>
-        </div>
-      </div>
-
-      <div class="action-panel">
-        <span class="panel-label">ACTION</span>
-        <button id="run" class="run-btn" type="button">TEST RELATIONSHIP <span>→</span></button>
-        <div id="result" class="result idle" aria-live="polite">
-          <span class="result-mark"></span>
-          <div><small>RESULT</small><b>AWAITING REGISTRATION</b></div>
-        </div>
-        <div class="secondary-actions">
-          <button id="reset" type="button">RESET</button>
-          <button id="explain" type="button" hidden>WHY THIS WORKS</button>
-        </div>
-      </div>
-    </section>
-
-    <footer class="footer">
-      <span>REGION <b>TOYAMA</b></span>
-      <span>MEAL <b>MASU NO SUSHI</b></span>
-      <span>TYPE <b>PRESSED SUSHI / EKIBEN</b></span>
-      <span>SOURCE RULE <b>REAL IMAGE FIRST</b></span>
-    </footer>
-  </main>
-
-  <div id="backdrop" class="backdrop" hidden></div>
-  <aside id="drawer" class="drawer" aria-hidden="true" aria-labelledby="drawerTitle">
-    <div class="drawer-head"><span>FOOD MEMORY / SOURCE TRACE</span><button id="closeDrawer" type="button">×</button></div>
-    <h2 id="drawerTitle">Why this relationship works</h2>
-    <p class="drawer-lead">Masu-zushi already contains its own relational grammar: radial bamboo leaves, a circular bentwood container, compression, release, and reveal.</p>
-    <dl>
-      <div><dt>FOOD OBJECT</dt><dd>Trout and vinegared rice are layered in a round container lined with bamboo leaves and pressed.</dd></div>
-      <div><dt>RELATIONAL TRANSLATION</dt><dd>Pressure is treated as the latent state. A compatible claim releases that pressure, allowing the leaf structure to unfold and reveal the meal.</dd></div>
-      <div><dt>TRUTHFULNESS</dt><dd>This is a conceptual RELATIONAL KEY interface. The registration mechanism is fictional; the food, regional context, ingredients, and photography are real sources.</dd></div>
-    </dl>
-    <details open>
-      <summary>SOURCES & IMAGE RIGHTS</summary>
-      <p>MAFF documents Masu-zushi as a Toyama pressed sushi made with trout, rice, bamboo leaves and a bentwood container, traditionally pressed under weight. Wikimedia Commons hosts a large Masu-zushi image corpus. The hirotomo images used here are CC BY-SA 2.0; the Sasa-Zushi image by Naotake Murayama is CC BY 2.0.</p>
-      <a href="https://www.maff.go.jp/e/policies/market/k_ryouri/search_menu/6192/index.html" target="_blank" rel="noreferrer">MAFF · Regional cuisine ↗</a>
-      <a href="https://commons.wikimedia.org/wiki/Category:Masu-zushi" target="_blank" rel="noreferrer">Wikimedia Commons · Masu-zushi corpus ↗</a>
-      <a href="https://commons.wikimedia.org/wiki/File:Masu_no_sushi_4_by_hirotomo.jpg" target="_blank" rel="noreferrer">hirotomo · CC BY-SA 2.0 ↗</a>
-      <a href="https://commons.wikimedia.org/wiki/File:Sasa-Zushi_(Trout_Sushi_wrapped_in_Bamboo_Grass)_(6639289453).jpg" target="_blank" rel="noreferrer">Naotake Murayama · CC BY 2.0 ↗</a>
-    </details>
-  </aside>
-
-  <script src="./food.js"></script>
+<main class="shell">
+<header class="top">
+  <div class="brand"><span class="mark"><i></i></span><span class="brandText"><b>RELATIONAL KEY</b><small>FOOD MEMORY EDITION</small></span></div>
+  <div class="title"><span>EDIBLE PASSAGE</span><h1>Toyama / Masu no Sushi</h1><p>The food object becomes the credential.</p></div>
+  <button id="about" class="about">ABOUT / SOURCES</button>
+</header>
+<section class="hero" id="stage">
+  <div class="kicker">PRESSURE-BASED FOOD MEMORY · TOYAMA</div>
+  <div class="edition">FOOD MEMORY EDITION<b>001 / MASU-ZUSHI</b></div>
+  <div class="objectWrap" id="objectWrap" aria-label="Interactive Masu no Sushi food memory object">
+    <div class="orbit"></div>
+    <div class="wood"></div>
+    <figure class="meal"><img id="mealImg" src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Masu_no_sushi_4_by_hirotomo.jpg" alt="Masu no Sushi, trout pressed sushi from Toyama"></figure>
+    <div class="leaves" id="leaves"></div>
+    <div class="rings"></div>
+    <div class="band bandTop">RELATIONAL KEY · TOYAMA · PRESSURE FIELD</div>
+    <div class="band bandBottom">BAMBOO · TROUT · RICE · BENTWOOD</div>
+    <button id="core" class="pressureCore" aria-label="Test the relationship"><b></b><span>PRESS TO REGISTER</span></button>
+    <div class="progressArc" aria-hidden="true"><svg viewBox="0 0 100 100"><circle class="track" cx="50" cy="50" r="50"></circle><circle id="meter" class="meter" cx="50" cy="50" r="50"></circle></svg></div>
+    <div class="stateLabel" id="stateLabel">OBJECT STATE <b>COMPRESSED / SEALED</b></div>
+  </div>
+  <div class="whisper" id="whisper">The relationship is not a line between objects. Here, it lives inside the pressure that holds the meal together.<b id="status">PRESSURE FIELD DORMANT</b></div>
+  <span class="lowerHint">REAL FOOD PHOTOGRAPHY · CONCEPTUAL RELATIONAL KEY MECHANISM</span>
+  <button id="materialsBtn" class="materialsBtn">MATERIALS / PROVENANCE ↗</button>
+  <div class="dock">
+    <div class="claims" role="group" aria-label="Claim type">
+      <button data-claim="matching" class="active" aria-pressed="true"><b>MATCHING CLAIM</b><small>Regional memory aligns</small></button>
+      <button data-claim="other" aria-pressed="false"><b>OTHER CLAIM</b><small>Pressure path incompatible</small></button>
+    </div>
+    <div><button id="run" class="run">TEST RELATIONSHIP</button><button id="reset" class="reset">RESET</button></div>
+    <div id="result" class="result"><small>RESULT</small><b>AWAITING REGISTRATION</b></div>
+  </div>
+</section>
+</main>
+<div id="backdrop" class="backdrop"></div>
+<aside id="drawer" class="drawer" aria-hidden="true">
+  <button id="close" class="close">×</button><small>FOOD MEMORY / SOURCE LAYER</small>
+  <h2>Why this relationship works</h2>
+  <p>Masu-zushi is a Toyama pressed sushi made with trout, vinegared rice, bamboo leaves and a bentwood container. The real food object is portable because wrapping and pressure hold the meal together. RELATIONAL KEY translates that physical logic into the interface: a compatible relationship releases the pressure and reveals the meal.</p>
+  <div class="macroGrid">
+    <figure><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Sasa-Zushi_%28Trout_Sushi_wrapped_in_Bamboo_Grass%29_%286639289453%29.jpg?width=900" alt="Bamboo wrapped trout sushi"><figcaption>BAMBOO / WRAP / PRESSURE</figcaption></figure>
+    <figure><img src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Masu_no_sushi_4_by_hirotomo.jpg" alt="Masu no Sushi"><figcaption>TROUT / RICE / REVEAL</figcaption></figure>
+    <figure><img src="https://upload.wikimedia.org/wikipedia/commons/a/a4/Masu_no_sushi_2_by_hirotomo.jpg" alt="Masu no Sushi detail"><figcaption>PRESSED FORM / PORTABILITY</figcaption></figure>
+    <figure><img src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Sasa-Zushi_%28Trout_Sushi_wrapped_in_Bamboo_Grass%29_%286639289453%29.jpg?width=900" alt="Leaf detail"><figcaption>LEAF TEXTURE / MATERIAL MEMORY</figcaption></figure>
+  </div>
+  <ul><li>Visible food imagery is real photography, not generated food.</li><li>The pressure register, claim matching and release sequence are conceptual RELATIONAL KEY mechanics.</li><li>No producer, rail operator or institutional affiliation is claimed.</li></ul>
+  <p><a href="https://www.maff.go.jp/e/policies/market/dento_syoku/menu/masu_zusi.html" target="_blank" rel="noreferrer">MAFF — Masu-zushi ↗</a></p>
+  <p><a href="https://commons.wikimedia.org/wiki/Category:Masu-zushi" target="_blank" rel="noreferrer">Wikimedia Commons — Masu-zushi corpus ↗</a></p>
+</aside>
+<script>
+const LEAF='https://commons.wikimedia.org/wiki/Special:Redirect/file/Sasa-Zushi_%28Trout_Sushi_wrapped_in_Bamboo_Grass%29_%286639289453%29.jpg?width=900';
+const rotations=[0,45,90,135,180,225,270,315];
+const leaves=document.getElementById('leaves');
+leaves.innerHTML=rotations.map(d=>`<div class="leaf l${d}"><img src="${LEAF}" alt="bamboo leaf"></div>`).join('');
+const stage=document.getElementById('stage'),run=document.getElementById('run'),reset=document.getElementById('reset'),core=document.getElementById('core'),status=document.getElementById('status'),result=document.getElementById('result'),meter=document.getElementById('meter'),stateLabel=document.getElementById('stateLabel'),whisper=document.getElementById('whisper');
+const claims=[...document.querySelectorAll('[data-claim]')];
+let claim='matching',timers=[],running=false;
+function haptic(p){if('vibrate' in navigator){try{navigator.vibrate(p)}catch(_){}}}
+function clear(){timers.forEach(clearTimeout);timers=[]}
+function setProgress(p){meter.style.strokeDashoffset=314-(314*p)}
+function idle(){clear();running=false;run.disabled=false;stage.classList.remove('registered','rejected');setProgress(0);status.textContent='PRESSURE FIELD DORMANT';stateLabel.innerHTML='OBJECT STATE <b>COMPRESSED / SEALED</b>';result.className='result';result.innerHTML='<small>RESULT</small><b>AWAITING REGISTRATION</b>';whisper.firstChild.textContent='The relationship is not a line between objects. Here, it lives inside the pressure that holds the meal together.'}
+function success(){stage.classList.add('registered');setProgress(1);status.textContent='PRESSURE RELEASED · MEMORY REVEALED';stateLabel.innerHTML='OBJECT STATE <b>OPEN / REVEALED</b>';result.className='result success';result.innerHTML='<small>RESULT</small><b>MEAL MEMORY REVEALED</b>';whisper.firstChild.textContent='The pressure has released. The same object now reveals the meal it was carrying.';haptic(14);running=false;run.disabled=false}
+function fail(){stage.classList.add('rejected');setProgress(.38);status.textContent='NO COMPATIBLE PRESSURE PATH';stateLabel.innerHTML='OBJECT STATE <b>SEALED / VALID</b>';result.className='result failure';result.innerHTML='<small>RESULT</small><b>RELATIONSHIP NOT REGISTERED</b>';whisper.firstChild.textContent='The object remains intact. The relationship did not register, but the food object itself is still valid.';haptic([8,18,8]);running=false;run.disabled=false}
+function sequence(){if(running)return;idle();running=true;run.disabled=true;const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;if(reduced){claim==='matching'?success():fail();return}const cues=claim==='matching'?[['PRESSURE DETECTED',.16],['NATURAL ALIGNMENT FOUND',.34],['RELATIONSHIP REGISTERING',.54],['PRESSURE RELEASING',.72],['BAMBOO FIELD UNFOLDING',.88],['MEAL MEMORY REVEALED',1]]:[['PRESSURE DETECTED',.14],['ALIGNMENT SEARCH',.27],['RESIDUAL MISMATCH',.38]];cues.forEach((c,i)=>timers.push(setTimeout(()=>{status.textContent=c[0];setProgress(c[1])},i*330)));timers.push(setTimeout(()=>claim==='matching'?success():fail(),claim==='matching'?2050:1080))}
+claims.forEach(btn=>btn.addEventListener('click',()=>{if(running)return;claim=btn.dataset.claim;claims.forEach(b=>{const a=b===btn;b.classList.toggle('active',a);b.setAttribute('aria-pressed',String(a))});idle()}));run.addEventListener('click',sequence);core.addEventListener('click',sequence);reset.addEventListener('click',idle);
+const drawer=document.getElementById('drawer'),backdrop=document.getElementById('backdrop');function open(){backdrop.classList.add('open');drawer.classList.add('open');drawer.setAttribute('aria-hidden','false')}function close(){backdrop.classList.remove('open');drawer.classList.remove('open');drawer.setAttribute('aria-hidden','true')}document.getElementById('about').addEventListener('click',open);document.getElementById('materialsBtn').addEventListener('click',open);document.getElementById('close').addEventListener('click',close);backdrop.addEventListener('click',close);document.addEventListener('keydown',e=>{if(e.key==='Escape')close();if(e.key==='Enter'&&document.activeElement===core)sequence()});
+document.querySelectorAll('img').forEach(img=>img.addEventListener('error',()=>{img.style.opacity='.08';img.parentElement.style.background='linear-gradient(135deg,#2a3b2c,#14180f)'}));idle();
+</script>
 </body>
 </html>
