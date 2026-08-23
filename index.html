@@ -8,112 +8,78 @@
   <link rel="stylesheet" href="./figure.css" />
 </head>
 <body>
-  <main class="shell">
-    <header class="topbar">
-      <div>
-        <div class="eyebrow">DAY 17 · CULTURAL EDITIONS · PILOT 04</div>
-        <h1>RELATIONAL KEY</h1>
+<main class="shell">
+  <header class="topbar">
+    <div><div class="eyebrow">DAY 17 · CULTURAL EDITIONS · PILOT 04</div><h1>RELATIONAL KEY</h1></div>
+    <div class="edition-mark"><span>CULTURAL FIGURE</span><strong>FRIDA KAHLO · COYOACÁN</strong></div>
+  </header>
+
+  <section class="hero-copy">
+    <p>A figure is not placed on the credential.</p>
+    <h2>Their traces become the material the credential must recognize.</h2>
+  </section>
+
+  <section id="experience" class="experience" aria-label="Interactive Cultural Figure credential">
+    <div class="artifact-side">
+      <div class="view-tabs" role="group" aria-label="Credential view">
+        <button data-view="front" class="active">FRONT</button><button data-view="back">BACK</button><button data-view="detail">MACRO</button>
       </div>
-      <div class="edition-mark"><span>CULTURAL FIGURE</span><strong>FRIDA KAHLO · COYOACÁN</strong></div>
-    </header>
-
-    <section class="hero-copy">
-      <p>A cultural figure is not a portrait on a card.</p>
-      <h2>Their traces become the field in which recognition happens.</h2>
-    </section>
-
-    <section class="experience" aria-label="Interactive Cultural Figure credential">
-      <div class="object-zone">
-        <div class="view-tabs" role="group" aria-label="Credential view">
-          <button data-view="front" class="active">FRONT</button>
-          <button data-view="back">BACK</button>
-          <button data-view="detail">MACRO</button>
-        </div>
-
-        <div id="cardWrap" class="card-wrap" tabindex="0" aria-label="Cultural Figure credential">
-          <article id="card" class="credential front-view">
-            <div class="face face-front">
-              <img src="./assets/frida-front.jpg" alt="Generated Cultural Figure Edition art-direction prototype" />
-              <div class="surface-sheen"></div>
-              <div id="pathOverlay" class="path-overlay"><span></span><i></i><span></span></div>
-            </div>
-            <div class="face face-back">
-              <div class="back-kicker">RELATIONAL KEY · CULTURAL FIGURE EDITION</div>
-              <div class="back-number">07 / 2500</div>
-              <h3>FRIDA KAHLO</h3>
-              <div class="back-grid">
-                <div><span>PLACE OF ORIGIN</span><strong>COYOACÁN · MEXICO CITY</strong></div>
-                <div><span>MEMORY FIELD</span><strong>STUDIO · LETTERS · OBJECTS · PLACE</strong></div>
-                <div><span>KEY ID</span><strong>RK-CF-07-FK</strong></div>
-                <div><span>PROTOTYPE STATE</span><strong>ARCHIVE-DERIVED / GENERATED SURFACE</strong></div>
-              </div>
-              <div class="provenance-stamp">RELATIONAL PATH · PROTOTYPE</div>
-              <p class="back-note">Conceptual edition. Not an official Frida Kahlo Museum product.</p>
-            </div>
-          </article>
-        </div>
-      </div>
-
-      <div class="relation-zone">
-        <div class="memory-field" id="memoryField">
-          <div class="field-head"><span>COUNTERPART FIELD</span><strong>COYOACÁN MEMORY FIELD</strong></div>
-          <div class="field-collage">
-            <div class="trace t1"><span>1941</span><b>STUDIO</b></div>
-            <div class="trace t2"><span>1940–41</span><b>CORRESPONDENCE</b></div>
-            <div class="trace t3"><span>PLACE</span><b>CASA AZUL</b></div>
-            <div class="trace t4"><span>MATERIAL</span><b>TEXTILE · BOTANICAL · CERAMIC</b></div>
-            <svg class="field-lines" viewBox="0 0 460 340" aria-hidden="true">
-              <path d="M20 170 C90 95 120 238 180 160 S285 105 330 174 S410 230 444 160" />
-              <path d="M30 225 C105 190 130 260 205 215 S330 170 430 220" />
-            </svg>
+      <div id="cardWrap" class="card-wrap" tabindex="0" aria-label="Cultural Figure credential">
+        <article id="card" class="credential front-view">
+          <div class="face face-front">
+            <img id="frontImage" src="https://raw.githubusercontent.com/Faadil1/relational-key-three-poc/ad3129652c463f716a3e412d5504926560a7e765/assets/frida-front.jpg" alt="Generated Cultural Figure Edition art-direction prototype" />
+            <div class="asset-fallback" aria-hidden="true"><span>GENERATED SURFACE</span><b>CULTURAL FIGURE · TRACE FIELD</b><i></i></div>
+            <div class="surface-sheen"></div>
+            <div class="edge-port left-port"></div><div class="edge-port right-port"></div>
+            <div id="pathOverlay" class="path-overlay"><span></span><i></i><span></span></div>
           </div>
-          <div class="field-foot">Research-backed traces → transformed into a conceptual recognition field.</div>
+          <div class="face face-back">
+            <div class="back-kicker">RELATIONAL KEY · CULTURAL FIGURE EDITION</div><div class="back-number">07 / 2500</div>
+            <h3>FRIDA KAHLO</h3>
+            <div class="back-grid">
+              <div><span>PLACE</span><strong>COYOACÁN · MEXICO CITY</strong></div><div><span>TRACE FAMILY</span><strong>STUDIO · LETTERS · OBJECTS · PLACE</strong></div>
+              <div><span>KEY ID</span><strong>RK-CF-07-FK</strong></div><div><span>SURFACE</span><strong>GENERATED / ARCHIVE-LED</strong></div>
+            </div>
+            <div class="provenance-stamp">TRACE REGISTRY · PROTOTYPE</div><p class="back-note">Conceptual edition · no museum affiliation.</p>
+          </div>
+        </article>
+      </div>
+      <div class="artifact-caption"><span>COLLECTIBLE OBJECT</span><b>Generated surface · archive-derived mechanism</b></div>
+    </div>
+
+    <div class="relation-seam" aria-hidden="true"><span class="rail rail-left"></span><div id="junction" class="junction"><i></i><b></b><i></i></div><span class="rail rail-right"></span></div>
+
+    <div class="field-side">
+      <div id="memoryField" class="memory-field">
+        <div class="field-head"><span>COUNTERPART FIELD</span><strong>COYOACÁN · TRACE ARCHIVE</strong></div>
+        <div class="archive-grid">
+          <article class="archive-tile studio"><small>1941</small><b>STUDIO</b><em>work surface / interior trace</em></article>
+          <article class="archive-tile letter"><small>CORRESPONDENCE</small><b>HAND · VOICE</b><em>personal mark / written trace</em></article>
+          <article class="archive-tile casa"><small>PLACE</small><b>CASA AZUL</b><em>home / making / memory</em></article>
+          <article class="archive-tile material"><small>MATERIAL</small><b>TEXTILE · BOTANICAL</b><em>surface / object / environment</em></article>
         </div>
-
-        <div id="junction" class="junction" aria-hidden="true"><div class="half left"></div><div class="core"></div><div class="half right"></div></div>
+        <svg class="trace-map" viewBox="0 0 520 340" aria-hidden="true"><path d="M10 170 C86 88 146 247 211 160 S330 89 379 169 S462 239 510 162"/><path d="M30 255 C120 184 175 280 252 220 S406 187 492 238"/></svg>
+        <div class="field-foot"><span>ARCHIVE → TRACE → RECOGNITION</span><b>Conceptual field, not an official museum diagram.</b></div>
       </div>
-
-      <div id="outcome" class="outcome" hidden>
-        <span>RELATIONSHIP REGISTERED</span>
-        <strong>LEGACY PATH CONTINUES</strong>
-      </div>
-    </section>
-
-    <div class="controls">
-      <div class="claim-group" role="group" aria-label="Relationship claim">
-        <span>CLAIM</span>
-        <button data-claim="matching" class="active">MEMORY CLAIM</button>
-        <button data-claim="other">OTHER CLAIM</button>
-      </div>
-      <button id="reset" class="quiet">RESET</button>
-      <button id="run" class="primary">TEST RELATIONSHIP</button>
-      <button id="explain" class="quiet" hidden>WHY THIS WORKS</button>
     </div>
 
-    <section class="law"><span>TRACE</span><i>→</i><span>RECOGNITION</span><i>→</i><span>REGISTRATION</span><i>→</i><span>LEGACY</span></section>
-    <p class="truth">Generated art-direction surface · archive-derived mechanism · conceptual cultural credential.</p>
-  </main>
+    <div id="outcome" class="outcome" hidden><span>RELATIONSHIP REGISTERED</span><strong>LEGACY PATH CONTINUES</strong></div>
+  </section>
 
-  <div id="backdrop" class="backdrop" hidden></div>
-  <aside id="drawer" class="drawer" aria-hidden="true">
-    <button id="closeDrawer" class="drawer-close">CLOSE</button>
-    <div class="drawer-eyebrow">WHY THIS WORKS</div>
-    <h3>CULTURAL FIGURE → TRACE SYSTEM</h3>
-    <p>Instead of treating a figure as decoration, the edition uses documented traces — studio, correspondence, place and personal-object context — as the material that the relationship must recognize.</p>
-    <div class="steps">
-      <div><span>01</span><b>TRACE</b><p>The credential carries a memory claim.</p></div>
-      <div><span>02</span><b>FIELD</b><p>The counterpart supplies a Coyoacán / studio / correspondence field.</p></div>
-      <div><span>03</span><b>REGISTER</b><p>Matching traces close the junction.</p></div>
-      <div><span>04</span><b>CONTINUE</b><p>The same path becomes a legacy path.</p></div>
-    </div>
-    <details>
-      <summary>Archive & truthfulness</summary>
-      <p>The Smithsonian Archives of American Art documents Emmy Lou Packard’s 1941 photograph of Frida Kahlo’s studio and identifies it as U.S. public domain. The Museo Frida Kahlo describes Casa Azul and Frida’s personal objects as central to understanding her creativity and legacy. This prototype does not reproduce a Frida painting or claim museum affiliation.</p>
-      <a href="https://www.aaa.si.edu/collections/items/detail/frida-kahlos-studio-5527" target="_blank" rel="noreferrer">Smithsonian archive record ↗</a>
-      <a href="https://www.museofridakahlo.org.mx/" target="_blank" rel="noreferrer">Museo Frida Kahlo ↗</a>
-    </details>
-  </aside>
+  <div class="controls">
+    <div class="claim-group"><span>CLAIM</span><button data-claim="matching" class="active">MEMORY CLAIM</button><button data-claim="other">OTHER CLAIM</button></div>
+    <button id="reset" class="quiet">RESET</button><button id="run" class="primary">TEST RELATIONSHIP</button><button id="explain" class="quiet" hidden>WHY THIS WORKS</button>
+  </div>
+  <section class="law"><span>TRACE</span><i>→</i><span>RECOGNITION</span><i>→</i><span>REGISTRATION</span><i>→</i><span>LEGACY</span></section>
+  <p class="truth">Generated art-direction surface · archive-derived mechanism · conceptual cultural credential.</p>
+</main>
 
-  <script src="./figure.js"></script>
-</body>
-</html>
+<div id="backdrop" class="backdrop" hidden></div>
+<aside id="drawer" class="drawer" aria-hidden="true">
+  <button id="closeDrawer" class="drawer-close">CLOSE</button><div class="drawer-eyebrow">WHY THIS WORKS</div><h3>CULTURAL FIGURE → TRACE SYSTEM</h3>
+  <p>The credential does not reproduce an artwork. It treats documented traces — studio, correspondence, place and personal-object context — as a recognition field.</p>
+  <div class="steps"><div><span>01</span><b>TRACE</b><p>The credential carries a memory claim.</p></div><div><span>02</span><b>FIELD</b><p>The counterpart supplies a trace field.</p></div><div><span>03</span><b>REGISTER</b><p>Compatible traces close the seam.</p></div><div><span>04</span><b>CONTINUE</b><p>The same path becomes a legacy path.</p></div></div>
+  <details><summary>Archive & truthfulness</summary><p>Smithsonian Archives of American Art documents Emmy Lou Packard’s 1941 photograph of Frida Kahlo’s studio and identifies it as U.S. public domain. Museo Frida Kahlo describes Casa Azul and Frida’s personal objects as central to understanding her creative world. The visible card surface is generated art direction, not an archival image or official museum product.</p><a href="https://www.aaa.si.edu/collections/items/detail/frida-kahlos-studio-5527" target="_blank" rel="noreferrer">Smithsonian archive record ↗</a><a href="https://www.museofridakahlo.org.mx/" target="_blank" rel="noreferrer">Museo Frida Kahlo ↗</a></details>
+</aside>
+<script src="./figure.js"></script>
+</body></html>
