@@ -1,99 +1,40 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f3f0e6" />
-  <meta name="description" content="RELATIONAL KEY — Cross-cultural archive-derived credential prototype." />
-  <title>RELATIONAL KEY — Cultural Editions</title>
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="stylesheet" href="./presentation.css" />
-  <link rel="stylesheet" href="./cross.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="#0c0d0b" />
+<title>RELATIONAL KEY — Pair Restoration</title>
+<style>
+:root{--bg:#0c0d0b;--ink:#f2eee5;--muted:#8f8779;--line:rgba(230,201,145,.18);--gold:#d3aa61;--ok:#93c791;--bad:#bd8277;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}*{box-sizing:border-box}html,body{margin:0;min-width:320px;min-height:100%;background:var(--bg);color:var(--ink)}body{background:radial-gradient(circle at 50% -12%,rgba(146,108,45,.16),transparent 34%),#0c0d0b;overflow-x:hidden}button{font:inherit}.shell{min-height:100vh;padding:12px clamp(14px,2.4vw,40px) 28px}.top{min-height:66px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px;border-bottom:1px solid var(--line)}.brand{font:700 10px ui-monospace,monospace;letter-spacing:.19em;color:#e2bd75}.headline{text-align:center}.headline small,.meta{display:block;font:700 6px ui-monospace,monospace;letter-spacing:.14em;color:#7f7566}.headline b{display:block;margin-top:3px;font:600 21px Georgia,serif}.meta{text-align:right}.tabs{display:flex;gap:6px;justify-content:center;flex-wrap:wrap;margin:15px auto 0}.tabs button,.controls button{min-height:40px;border:1px solid rgba(215,174,98,.22);background:#151711;color:#928879;padding:0 12px;font:700 6px ui-monospace,monospace;letter-spacing:.09em;cursor:pointer}.tabs button.active,.controls button.active{border-color:#cca45e;background:rgba(193,143,57,.11);color:#f0d08d}.intro{text-align:center;margin:19px auto 16px}.intro span{font:700 6px ui-monospace,monospace;letter-spacing:.15em;color:#907a55}.intro h1{margin:6px 0 4px;font:600 clamp(27px,3.2vw,43px) Georgia,serif}.intro p{margin:0;font:italic 12px Georgia,serif;color:#9b907e}.stage{width:min(1260px,100%);margin:auto}.pair{display:grid;grid-template-columns:minmax(0,1fr) 168px minmax(0,1fr);align-items:center;gap:12px;perspective:1600px}.slot{transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .5s ease}.pair[data-phase="approach"] .slot.left{transform:translateX(28px)}.pair[data-phase="approach"] .slot.right{transform:translateX(-28px)}.pair[data-phase="registered"] .slot.left{transform:translateX(18px)}.pair[data-phase="registered"] .slot.right{transform:translateX(-18px)}.pair[data-phase="rejected"]{animation:recoil .42s ease}@keyframes recoil{0%,100%{transform:translateX(0)}45%{transform:translateX(8px)}72%{transform:translateX(-4px)}}.card{position:relative;aspect-ratio:856/540;border-radius:26px;overflow:hidden;background:#151611;border:1px solid rgba(234,209,161,.19);box-shadow:0 34px 62px rgba(0,0,0,.48);isolation:isolate;user-select:none}.card:before{content:"";position:absolute;left:2%;right:2%;bottom:-8px;height:11px;border-radius:0 0 24px 24px;background:linear-gradient(180deg,#6d5335,#2b2118);z-index:-1}.material{position:absolute;inset:0;overflow:hidden}.material img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:opacity .8s ease,transform 1s ease,filter .8s ease}.shade{position:absolute;inset:0;z-index:3;background:linear-gradient(90deg,rgba(7,8,6,.78),rgba(7,8,6,.18) 58%,rgba(7,8,6,.08)),linear-gradient(180deg,transparent 50%,rgba(4,5,4,.58))}.role{position:absolute;z-index:8;left:5%;top:6%;padding:6px 8px;border-radius:999px;background:rgba(7,8,6,.64);font:700 6px ui-monospace,monospace;letter-spacing:.13em;color:#eadcc1}.copy{position:absolute;z-index:8;left:6%;right:6%;bottom:8%;text-shadow:0 2px 14px #000}.copy span{font:700 6px ui-monospace,monospace;letter-spacing:.12em;color:#ddb66c}.copy strong{display:block;margin-top:4px;font:600 clamp(20px,2.3vw,33px) Georgia,serif}.copy small{display:block;margin-top:6px;font:700 6px ui-monospace,monospace;letter-spacing:.08em;color:#b7ad9c}.edge{position:absolute;right:4%;top:6%;z-index:8;font:700 5px ui-monospace,monospace;letter-spacing:.1em;color:#8f826c}.bridge{height:178px;position:relative;display:grid;place-items:center}.rail{position:absolute;left:0;right:0;top:50%;height:1px;background:linear-gradient(90deg,transparent,rgba(216,176,99,.28) 18%,rgba(216,176,99,.28) 82%,transparent)}.junction{width:44px;height:44px;border:1px solid rgba(221,178,97,.46);border-radius:50%;background:#11120e;position:relative;z-index:4;transition:.5s ease}.junction:before,.junction:after{content:"";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);background:#c9a05b}.junction:before{width:1px;height:18px}.junction:after{height:1px;width:18px}.junction i{position:absolute;inset:16px;border:1px solid #ddb66d;border-radius:50%}.bridgeLabel{position:absolute;top:calc(50% + 34px);font:700 5px ui-monospace,monospace;letter-spacing:.11em;color:#756d61;text-align:center}.connection{position:absolute;left:3%;right:3%;top:50%;height:58px;transform:translateY(-50%);opacity:0;transition:opacity .65s ease;z-index:3}.pair[data-phase="registered"] .connection{opacity:1}.pair[data-phase="registered"] .junction{border-color:#edc879;box-shadow:0 0 0 7px rgba(221,174,84,.06),0 0 30px rgba(221,174,84,.2)}.city .material{background:#172136}.city .grid{position:absolute;inset:0;background-image:linear-gradient(rgba(83,133,202,.22) 1px,transparent 1px),linear-gradient(90deg,rgba(83,133,202,.22) 1px,transparent 1px);background-size:34px 34px}.city .route{position:absolute;left:6%;right:6%;top:54%;height:7px;border-radius:9px;background:linear-gradient(90deg,#377fff,#ef684d);transform:rotate(-6deg);box-shadow:0 0 18px rgba(55,127,255,.25)}.cityConn{height:8px;margin-top:25px;border-radius:10px;background:linear-gradient(90deg,#377fff,#ef684d);box-shadow:0 0 18px rgba(65,127,255,.38)}.service .material{background:#d9ccb0}.steps{position:absolute;inset:18% 8%;display:grid;grid-template-columns:repeat(4,1fr);gap:7px}.steps i{display:grid;place-items:center;border:1px solid rgba(63,44,24,.24);background:rgba(255,255,255,.28);color:#553d25;font:700 8px ui-monospace,monospace}.steps .miss{border-style:dashed;background:rgba(177,62,44,.08)}.serviceConn{display:flex;gap:6px;align-items:center;height:58px}.serviceConn i{flex:1;height:16px;border:1px solid rgba(222,178,92,.55);background:rgba(211,157,68,.18)}.signal .material{background:radial-gradient(circle at 64% 48%,rgba(231,137,77,.19),transparent 23%),#111821}.tower{position:absolute;left:64%;top:20%;width:4px;height:60%;background:#e7894d}.tower:before,.tower:after{content:"";position:absolute;left:50%;top:17%;transform:translate(-50%,-50%);border:1px solid rgba(231,137,77,.48);border-radius:50%}.tower:before{width:86px;height:86px}.tower:after{width:130px;height:130px}.signalConn{height:46px;border-top:2px solid #e7894d;border-radius:50%;box-shadow:0 -9px 24px rgba(231,137,77,.2)}.frida .material img{filter:saturate(.82) contrast(1.04)}.fridaConn{height:2px;margin-top:28px;background:linear-gradient(90deg,transparent,#d3a35d 16%,#d9cfbb 50%,#d3a35d 84%,transparent);box-shadow:0 0 14px rgba(211,163,93,.2)}.food .material{background:#233025}.food .closed{filter:saturate(.76) brightness(.64) contrast(1.05)}.food .open{opacity:.12;transform:scale(1.08);filter:saturate(1.08) brightness(.92)}.pair[data-phase="registered"].food .closed{opacity:.1;transform:scale(1.02)}.pair[data-phase="registered"].food .open{opacity:1;transform:scale(1.01)}.pressure{position:absolute;left:8%;right:8%;top:49%;height:18px;border-top:1px solid #d0a85f;border-bottom:1px solid #d0a85f;background:rgba(58,44,26,.62);z-index:4;transition:.7s ease}.pair[data-phase="registered"].food .pressure{opacity:.22;transform:scaleX(.92)}.foodConn{height:18px;margin-top:20px;border-top:1px solid #d3aa62;border-bottom:1px solid #d3aa62;background:linear-gradient(90deg,#4c3820,rgba(209,166,92,.3),#4c3820)}.textile .material{background-image:url('https://commons.wikimedia.org/wiki/Special:Redirect/file/Kente_Cloth_MET_1972.56.1_d1.jpg?width=1600');background-size:cover;background-position:center}.strip{position:absolute;top:-4%;bottom:-4%;width:30%;background-image:url('https://commons.wikimedia.org/wiki/Special:Redirect/file/Kente_Cloth_MET_1972.56.1_d2.jpg?width=1400');background-size:320% 110%;z-index:5;transition:transform .8s cubic-bezier(.2,.8,.2,1)}.leftCard .strip{right:0;background-position:52% center;transform:translateY(17px)}.rightCard .strip{left:0;background-position:54% center;transform:translateY(-13px)}.pair[data-phase="registered"].textile .strip{transform:translateY(0)}.textileConn{display:grid;grid-template-columns:repeat(15,1fr);gap:3px;margin-top:27px}.textileConn i{height:3px;background:#d9aa54}.textileConn i:nth-child(3n){background:#a8392c}.textileConn i:nth-child(4n){background:#2e694d}.controls{width:min(940px,96vw);margin:18px auto 0;display:grid;grid-template-columns:1fr auto auto;gap:7px}.claims{display:flex;gap:6px}.claims button{flex:1}.run{min-width:210px!important;background:linear-gradient(145deg,#b99355,#d5b572)!important;color:#211a11!important;border-color:#c39c5b!important}.result{text-align:center;min-height:30px;margin-top:8px;font:700 6px ui-monospace,monospace;letter-spacing:.1em;color:#837a6c}.result.ok{color:var(--ok)}.result.bad{color:var(--bad)}.dots{display:flex;justify-content:center;gap:7px;margin-top:7px}.dots i{width:5px;height:5px;border-radius:50%;background:#484238}.dots i.on{background:#d2aa67;box-shadow:0 0 0 3px rgba(210,170,103,.05)}.law,.truth{text-align:center;font:700 6px ui-monospace,monospace;letter-spacing:.09em;color:#6f685d}.law{margin-top:8px}.truth{font-size:5px;margin-top:11px}.dragHint{text-align:center;margin-top:7px;font:600 6px ui-monospace,monospace;letter-spacing:.08em;color:#5f5a51}.left.dragging{transition:none!important}.pair.drag-mode .left{transform:translateX(var(--drag,0px))}.pair.drag-mode .right{transform:none}.pair.drag-mode[data-phase="registered"] .left{transform:translateX(var(--drag,0px))}.pair.drag-mode[data-phase="registered"] .right{transform:translateX(-10px)}@media(max-width:900px){.pair{grid-template-columns:1fr}.bridge{height:98px}.rail{left:50%;right:auto;top:0;bottom:0;width:1px;height:auto;background:linear-gradient(transparent,rgba(216,176,99,.3),transparent)}.pair[data-phase="approach"] .slot.left{transform:translateY(9px)}.pair[data-phase="approach"] .slot.right{transform:translateY(-9px)}.pair[data-phase="registered"] .slot.left,.pair[data-phase="registered"] .slot.right{transform:none}.top{grid-template-columns:auto 1fr}.meta{display:none}.headline{text-align:right}.controls{grid-template-columns:1fr 1fr}.claims{grid-column:1/-1}.run{min-width:0!important}.dragHint{display:none}}@media(max-width:560px){.brand{font-size:0}.tabs{justify-content:flex-start;flex-wrap:nowrap;overflow-x:auto;padding-bottom:4px}.tabs button{flex:0 0 auto}.copy strong{font-size:20px}}
+</style>
 </head>
 <body>
-  <main class="shell cross-shell">
-    <header class="topbar">
-      <div>
-        <div class="eyebrow">DAY 17 · CULTURAL EDITIONS · CROSS-CULTURAL PROTOTYPE</div>
-        <h1>RELATIONAL KEY</h1>
-      </div>
-      <div class="top-actions">
-        <span id="editionBadge" class="edition-badge">CITY PASSAGE · GATINEAU</span>
-        <button id="blindToggle" class="micro-btn" aria-pressed="false">BLIND TEST</button>
-        <button id="debugToggle" class="micro-btn" aria-pressed="false">DEBUG</button>
-      </div>
-    </header>
-
-    <section class="intro" aria-labelledby="heroTitle">
-      <p id="heroTitle">Different archives. Different fields.</p>
-      <strong>Same relational law.</strong>
-    </section>
-
-    <section class="stage" aria-label="Interactive cross-cultural Relational Key prototype">
-      <canvas id="scene" tabindex="0"></canvas>
-      <div id="phase" class="phase" aria-live="polite">GRAB THE CREDENTIAL</div>
-      <div id="hint" class="hint">Drag the credential toward its counterpart field.</div>
-      <div id="residual" class="residual" hidden></div>
-      <div id="debug" class="debug" hidden></div>
-      <div id="result" class="result" aria-live="polite" hidden></div>
-      <button id="explainTrigger" class="explain-trigger" hidden>WHY THIS WORKS</button>
-      <div id="runtimeError" class="runtime-error" hidden>
-        <strong>3D runtime unavailable</strong>
-        <span>The interface loaded, but the spatial scene could not render.</span>
-      </div>
-    </section>
-
-    <div class="dock cross-dock" aria-label="Prototype controls">
-      <div class="control-block edition-control">
-        <span class="control-label">EDITION</span>
-        <div class="scenario" role="group" aria-label="Cultural edition">
-          <button data-edition="city" class="active" aria-pressed="true">CITY</button>
-          <button data-edition="service" aria-pressed="false">SERVICE</button>
-          <button data-edition="signal" aria-pressed="false">SIGNAL</button>
-        </div>
-      </div>
-      <div class="control-block">
-        <span class="control-label">CLAIM</span>
-        <div class="scenario" role="group" aria-label="Credential claim">
-          <button data-claim="matching" class="active" aria-pressed="true">MATCHING CLAIM</button>
-          <button data-claim="other" aria-pressed="false">OTHER CLAIM</button>
-        </div>
-      </div>
-      <div class="run-actions">
-        <button id="reset">RESET</button>
-        <button id="auto" class="quiet">TEST RELATIONSHIP</button>
-      </div>
-    </div>
-
-    <section class="law" aria-label="Interaction law">
-      <span>GRAB</span><i>→</i><span>COMPARE</span><i>→</i><span>REGISTER / RESIST</span><i>→</i><span>CONTINUE</span>
-    </section>
-    <p id="truthNote" class="truth-note">Archive-derived concept prototype · not an official map, service procedure, or technical diagram.</p>
-  </main>
-
-  <div id="explainBackdrop" class="explain-backdrop" hidden></div>
-  <aside id="explainPanel" class="explain-panel" aria-hidden="true" aria-labelledby="explainTitle">
-    <div class="explain-handle" aria-hidden="true"></div>
-    <div class="explain-head">
-      <div>
-        <div class="explain-eyebrow">RELATIONSHIP EXPLANATION</div>
-        <h2 id="explainTitle">Why this works</h2>
-      </div>
-      <button id="explainClose" class="explain-close" aria-label="Close explanation">CLOSE</button>
-    </div>
-    <p id="explainLead" class="explain-lead"></p>
-    <div id="explainSteps" class="explain-steps"></div>
-    <details class="advanced-detail">
-      <summary>Advanced system detail</summary>
-      <div class="advanced-grid">
-        <div><span>Comparison</span><strong id="advancedComparison"></strong></div>
-        <div><span>Registration residual</span><strong id="advancedResidual"></strong></div>
-        <div><span>Geometry outcome</span><strong id="advancedGeometry"></strong></div>
-      </div>
-      <p>Registration profiles and residual are internal prototype encodings. Archive-derived fields are conceptual translations, not official institutional standards.</p>
-    </details>
-  </aside>
-
-  <script type="module" src="./cross.js"></script>
+<main class="shell">
+<header class="top"><div class="brand">RELATIONAL KEY</div><div class="headline"><small>ROUND 13R · RELATIONAL PAIR RESTORATION</small><b>Two objects. One relationship.</b></div><div class="meta">6 VARIANTS<br/>ONE INVARIANT</div></header>
+<nav class="tabs" id="tabs" aria-label="Current variants"></nav>
+<section class="intro"><span id="kicker"></span><h1 id="name"></h1><p id="desc"></p></section>
+<section class="stage"><div class="pair" id="pair" data-phase="idle"><div class="slot left"><article class="card leftCard" id="leftCard"><div class="material" id="lm"></div><div class="shade"></div><span class="role" id="lr"></span><span class="edge">CARD A</span><div class="copy"><span id="lk"></span><strong id="lt"></strong><small id="lx"></small></div></article></div><div class="bridge"><div class="rail"></div><div class="connection" id="conn"></div><div class="junction"><i></i></div><div class="bridgeLabel" id="bl"></div></div><div class="slot right"><article class="card rightCard"><div class="material" id="rm"></div><div class="shade"></div><span class="role" id="rr"></span><span class="edge">CARD B</span><div class="copy"><span id="rk"></span><strong id="rt"></strong><small id="rx"></small></div></article></div></div></section>
+<div class="controls"><div class="claims"><button data-claim="matching" class="active">MATCHING CLAIM</button><button data-claim="other">OTHER CLAIM</button></div><button id="reset">RESET</button><button class="run" id="run">TEST RELATIONSHIP</button></div>
+<div class="result" id="result">TWO DISTINCT OBJECTS · RELATIONSHIP UNRESOLVED</div><div class="dots" id="dots"></div><div class="law" id="law"></div><div class="dragHint">DESKTOP · DRAG CARD A TOWARD CARD B OR USE TEST RELATIONSHIP</div><div class="truth" id="truth"></div>
+</main>
+<script>
+const E={
+city:{label:'CITY',name:'REGISTERED CITY PASSAGE',kicker:'GATINEAU · TERRITORY EDITION',desc:'Member credential and destination credential must register before the route can continue.',theme:'city',l:['MEMBER CREDENTIAL','LOCAL / EXTERNAL CLAIM','Member Key','Interrupted route'],r:['DESTINATION CREDENTIAL','TERRITORY RULE','Gatineau Field','Corridor rule'],bridge:'ROUTE GAP',law:'APPROACH → COMPARE → REGISTER → ROUTE CONTINUES',truth:'Conceptual territory geometry · not an operational transit map.',lm:'<div class="grid"></div><i class="route"></i>',rm:'<div class="grid"></div><i class="route"></i>',conn:'<div class="cityConn"></div>'},
+service:{label:'SERVICE',name:'SERVICE REGISTER',kicker:'BENIN · SERVICE-SEQUENCE EDITION',desc:'Two cards carry complementary parts of one service sequence.',theme:'service',l:['MEMBER CREDENTIAL','SERVICE CLAIM','Service Key','Sequence starts here'],r:['SERVICE CONTEXT','SERVICE RULE','Service Context','Sequence completes here'],bridge:'MISSING SERVICE STEP',law:'CLAIM → SERVICE → REGISTER → CONNECT',truth:'Archive-derived service logic · not a current official telecom procedure.',lm:'<div class="steps"><i>01</i><i>02</i><i class="miss">—</i><i>04</i></div>',rm:'<div class="steps"><i>01</i><i class="miss">—</i><i>03</i><i>04</i></div>',conn:'<div class="serviceConn"><i></i><i></i><i></i></div>'},
+signal:{label:'SIGNAL',name:'SIGNAL PORTRAIT',kicker:'NIGERIA · RELAY EDITION',desc:'The signal only crosses when claim and relay counterpart align.',theme:'signal',l:['MEMBER CREDENTIAL','LINK CLAIM','Signal Key','Claim seeks relay'],r:['RELAY CREDENTIAL','INFRASTRUCTURE RULE','Relay Core','Carrying capacity'],bridge:'SIGNAL GAP',law:'CLAIM → RELAY ALIGN → ZERO RESIDUAL → SIGNAL CONTINUES',truth:'Archive-derived infrastructure portrait · not an official technical diagram.',lm:'<div class="tower"></div>',rm:'<div class="tower"></div>',conn:'<div class="signalConn"></div>'},
+frida:{label:'FRIDA',name:'TRACE SYSTEM',kicker:'FRIDA KAHLO · COYOACÁN',desc:'A memory credential meets an archive credential; the trace exists between them.',theme:'frida',l:['MEMORY CREDENTIAL','MEMORY CLAIM','Frida Kahlo','Portrait · 1932'],r:['ARCHIVE CREDENTIAL','COYOACÁN CONTEXT','Casa Azul','Documented place trace'],bridge:'TRACE SEAM',law:'TRACE → APPROACH → ALIGN → REGISTER → MEMORY CONTINUES',truth:'Real photographs · conceptual edition · no museum affiliation.',lm:'<img src="https://upload.wikimedia.org/wikipedia/commons/c/c0/Guillermo_Kahlo%2C_Frida_Kahlo%2C_1932.jpg" alt="Frida Kahlo portrait">',rm:'<img src="https://upload.wikimedia.org/wikipedia/commons/8/88/La_Casa_Azul_%28The_Blue_House%29%2C_better_known_as_the_Frida_Kahlo_Museum%2C_located_in_the_Coyoac%C3%A1n_neighborhood_of_Mexico_City.jpg" alt="Casa Azul">',conn:'<div class="fridaConn"></div>'},
+food:{label:'FOOD',name:'EDIBLE PASSAGE',kicker:'TOYAMA · MASU NO SUSHI',desc:'A food-memory credential and regional context credential share one pressure-and-release relationship.',theme:'food',l:['FOOD MEMORY CREDENTIAL','REGIONAL FOOD CLAIM','Toyama Memory','Pressed / wrapped state'],r:['REGIONAL CONTEXT','TOYAMA RULE','Masu no Sushi','Food reveal context'],bridge:'PRESSURE REGISTER',law:'PRESS → ALIGN → REGISTER → RELEASE → REVEAL ACROSS THE PAIR',truth:'Real-source food photography · conceptual credential · no producer affiliation.',lm:'<img class="closed" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Masunosushi.JPG?width=1400" alt="Wrapped Masu no Sushi"><img class="open" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Masu_no_sushi_4_by_hirotomo.jpg?width=1400" alt="Masu no Sushi"><div class="pressure"></div>',rm:'<img class="closed" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Masu_no_sushi_2_by_hirotomo.jpg?width=1400" alt="Masu no Sushi context"><img class="open" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Masu_no_sushi_4_by_hirotomo.jpg?width=1400" alt="Open Masu no Sushi"><div class="pressure"></div>',conn:'<div class="foodConn"></div>'},
+textile:{label:'TEXTILE',name:'WOVEN REGISTER',kicker:'ASANTE / BONWIRE · TEXTILE MEMORY',desc:'Two textile credentials carry strips that only become continuous when the relationship registers.',theme:'textile',l:['WOVEN CREDENTIAL','WOVEN CLAIM','Asante Textile Key','Strip ends at edge'],r:['WEAVING CONTEXT','JOIN RULE','Bonwire Context','Corresponding strip'],bridge:'WOVEN GAP',law:'STRIP → APPROACH → ALIGN → INTERLACE → JOIN → CONTINUE',truth:'Real textile imagery · no invented pattern meaning · Bonwire used as process context.',lm:'<div class="strip"></div>',rm:'<div class="strip"></div>',conn:'<div class="textileConn">'+Array.from({length:15},()=>'<i></i>').join('')+'</div>'}
+};
+let edition='city',claim='matching',busy=false,dragX=0;const $=s=>document.querySelector(s),pair=$('#pair'),left=$('.slot.left'),tabs=$('#tabs'),result=$('#result');
+function render(){const e=E[edition];pair.className='pair '+e.theme;pair.dataset.phase='idle';pair.style.removeProperty('--drag');pair.classList.remove('drag-mode');dragX=0;$('#kicker').textContent=e.kicker;$('#name').textContent=e.name;$('#desc').textContent=e.desc;$('#lr').textContent=e.l[0];$('#lk').textContent=e.l[1];$('#lt').textContent=e.l[2];$('#lx').textContent=e.l[3];$('#rr').textContent=e.r[0];$('#rk').textContent=e.r[1];$('#rt').textContent=e.r[2];$('#rx').textContent=e.r[3];$('#bl').textContent=e.bridge;$('#law').textContent=e.law;$('#truth').textContent=e.truth;$('#lm').innerHTML=e.lm;$('#rm').innerHTML=e.rm;$('#conn').innerHTML=e.conn;result.className='result';result.textContent='TWO DISTINCT OBJECTS · RELATIONSHIP UNRESOLVED';$('#dots').innerHTML='<i></i><i></i><i></i><i></i>';tabs.querySelectorAll('button').forEach(b=>b.classList.toggle('active',b.dataset.edition===edition));}
+Object.entries(E).forEach(([k,v])=>{const b=document.createElement('button');b.textContent=v.label;b.dataset.edition=k;b.onclick=()=>{if(!busy){edition=k;render()}};tabs.appendChild(b)});
+document.querySelectorAll('[data-claim]').forEach(b=>b.onclick=()=>{if(busy)return;claim=b.dataset.claim;document.querySelectorAll('[data-claim]').forEach(x=>x.classList.toggle('active',x===b));reset()});
+const wait=ms=>new Promise(r=>setTimeout(r,ms));function dot(n){[...$('#dots').children].forEach((d,i)=>d.classList.toggle('on',i<=n))}
+async function run(){if(busy)return;busy=true;$('#run').disabled=true;pair.classList.remove('drag-mode');pair.dataset.phase='approach';result.textContent='APPROACH · COMPARING CLAIM TO COUNTERPART';dot(0);await wait(650);if(claim==='other'){pair.dataset.phase='rejected';result.className='result bad';result.textContent='RELATIONSHIP DOES NOT REGISTER · BOTH CREDENTIALS REMAIN VALID';dot(1);await wait(520);pair.dataset.phase='idle';busy=false;$('#run').disabled=false;return}result.textContent='REGISTERING RELATIONSHIP ACROSS THE GAP';dot(1);await wait(650);pair.dataset.phase='registered';dot(3);result.className='result ok';result.textContent='RELATIONSHIP REGISTERED · CONTINUATION NOW EXISTS BETWEEN CARD A AND CARD B';await wait(800);busy=false;$('#run').disabled=false}
+function reset(){busy=false;$('#run').disabled=false;render();document.querySelectorAll('[data-claim]').forEach(x=>x.classList.toggle('active',x.dataset.claim===claim))}$('#run').onclick=run;$('#reset').onclick=reset;
+let sx=0,start=0,dragging=false;$('#leftCard').addEventListener('pointerdown',e=>{if(innerWidth<901||busy)return;dragging=true;sx=e.clientX;start=dragX;left.classList.add('dragging');left.setPointerCapture(e.pointerId);pair.classList.add('drag-mode')});$('#leftCard').addEventListener('pointermove',e=>{if(!dragging)return;dragX=Math.max(0,Math.min(118,start+e.clientX-sx));pair.style.setProperty('--drag',dragX+'px');if(dragX>45){pair.dataset.phase='approach';result.textContent='APPROACH · RELEASE NEAR THE COUNTERPART TO TEST'}else{pair.dataset.phase='idle'}});function endDrag(){if(!dragging)return;dragging=false;left.classList.remove('dragging');if(dragX>82){run()}else{dragX=0;pair.style.setProperty('--drag','0px');pair.dataset.phase='idle';result.textContent='TWO DISTINCT OBJECTS · RELATIONSHIP UNRESOLVED'}}$('#leftCard').addEventListener('pointerup',endDrag);$('#leftCard').addEventListener('pointercancel',endDrag);render();
+</script>
 </body>
 </html>
