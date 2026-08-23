@@ -57,3 +57,7 @@ Tessellation as material mechanism: NOT PASS
 Final connection distinctiveness: NOT PASS
 
 Do not proceed to Round 13F until 13E.3.1 demonstrates that the relationship is resolved by the card-edge material itself rather than by a floating connector.
+
+## Correction status
+Implemented in Round 13E.3.1 and deployed for re-audit:
+https://relational-key-craft-memory-zellige-v13e31-faadil1s-projects.vercel.app
