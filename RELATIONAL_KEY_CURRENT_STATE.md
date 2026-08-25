@@ -3,7 +3,7 @@
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/consolidation-gate-1`
-Latest verified milestone: `COLLECTION_C3_1_VERCEL_PREVIEW_TRIGGER.md`
+Latest verified milestone: `COLLECTION_C3_1_LIVE_ROOT_PASS.md`
 Consolidation PR: **#20 — RELATIONAL KEY — Collection Consolidation Gate**
 PR status: `DRAFT / DO NOT MERGE`
 
@@ -22,11 +22,7 @@ Family expansion remains paused.
 
 # **15 / 15 families have documented user visual or visual+audio gates.**
 
-Final validation debt closed:
-- Japan / Kento Register
-- audit `COLLECTION_C1_KENTO_USER_VISUAL_AUDIT_PASS.md`
-- verdict `VISUAL PASS WITH POLISH / PROMOTE`
-- golden deployment `dpl_J74TMsqZS2uSWv8PuhLVGPfQfBev`
+Japan / Kento was the final validation debt and is now `VISUAL PASS WITH POLISH / PROMOTE`.
 
 # ACTIVE PHASE — COLLECTION CONSOLIDATION GATE
 
@@ -48,60 +44,65 @@ Family-native interactions remain frozen until explicit Global Refinement.
 ## C3 — Collection Shell
 
 Status:
-# **IMPLEMENTED / SOURCE PASS / LIVE PREVIEW BLOCKED ON VERCEL BRANCH DEPLOY**
+# **IMPLEMENTED / SOURCE PASS**
 
 Register: `COLLECTION_CONSOLIDATION_C3_SHELL_IMPLEMENTATION.md`
 Implementation: `f7416092c64fd7fd17b5771f002fdae5b0e1433f`
 Registry phase: `9b2c503462c96e93ae5c65d365f7a5bc49785139`
 Draft PR: **#20**
 
-Root collection experience:
+Root includes:
 - thesis `The pair is the product.`;
 - continental balance `4 / 3 / 2 / 2 / 2 / 2`;
 - 15-family relational atlas;
 - continent filters;
 - search across place / memory / mechanism / law;
-- direct navigation to every frozen family route;
+- direct family routes;
 - responsive layout;
-- abstract pair thumbnails rather than generic cultural skinning.
+- abstract pair thumbnails.
 
-## C3 source verification
+## C3.1 — Dedicated collection live
 
-Verified:
-- root title `RELATIONAL KEY — Collection`;
-- registry `validated_count: 15`, `candidate_count: 0`;
-- all 15 family records contain routes;
-- C3 implementation changed root `index.html` only;
-- C2 family snapshots were not modified by C3.
+Vercel project:
+- project ID `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
+- actual project name `relational-key-collectionrelational-key-collection`
+- linked repo `Faadil1/relational-key-three-poc`
 
-# C3.1 — Dedicated Vercel collection project
+Legacy initial production:
+- `dpl_8VgY6p2WQw2oC92NncYU1EPG5qt1`
+- branch `main`
+- commit `11f21f6875c4a3b3e4ae2ecce8fd25a5a5a8835d`
+- NOT the consolidation candidate.
 
-User created and Git-connected a dedicated project.
+Manual Preview Deployment created successfully:
+- deployment `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ`
+- URL `https://relational-key-collectionrelational-key-collection-4834ctm8z.vercel.app`
+- branch `collection/consolidation-gate-1`
+- Vercel state `READY`
+- visible deployment source checkpoint `7dd9d82…`
 
-Verified project:
-- project ID: `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
-- actual Vercel name: `relational-key-collectionrelational-key-collection`
-- linked repo: `Faadil1/relational-key-three-poc`
-- initial production deployment: `dpl_8VgY6p2WQw2oC92NncYU1EPG5qt1`
-- initial source: `main`
-- initial state: `READY`
+Root authenticated Vercel fetch:
+- HTTP 200;
+- title `RELATIONAL KEY — Collection`;
+- hero `The pair is the product.`;
+- continental balance present;
+- `Relational atlas` present;
+- shell fetches `/collection/families.json`;
+- served HTML identifies deployment `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ`.
 
-Initial production is intentionally not treated as the consolidation live because it serves legacy `main` commit `11f21f6875c4a3b3e4ae2ecce8fd25a5a5a8835d`.
+Verdict:
+# `C3.1 ROOT LIVE = PASS`
 
-Preview trigger commit pushed after Git connection:
-`1beca9a6bb0233ad18982942d20cf49a978324aa`
+Register:
+`COLLECTION_C3_1_LIVE_ROOT_PASS.md`
 
-Trigger register:
-`COLLECTION_C3_1_VERCEL_PREVIEW_TRIGGER.md`
+### Live sub-route verification constraint
 
-Verified Vercel result after trigger:
-- no new deployment created;
-- project still contains only `dpl_8VgY6p2WQw2oC92NncYU1EPG5qt1` from `main`;
-- therefore `collection/consolidation-gate-1` has **not** yet received a Vercel preview deployment.
+The Preview Deployment is protected by Vercel Authentication. Independent connector requests to `/collection/families.json` and `/families/<slug>/` receive HTTP 302 to Vercel SSO.
 
-Current blocker is deployment triggering/configuration only. No code or snapshot defect has been established.
+This is an access-control condition, not evidence of a route defect.
 
-`C3 SOURCE PASS ≠ LIVE ROUTE PASS ≠ COLLECTION VISUAL PASS`.
+Do NOT claim `15/15 LIVE ROUTE PASS` until the routes are traversed in the user's authenticated browser walkthrough.
 
 # Consolidation architecture — LOCKED
 
@@ -113,23 +114,26 @@ Current blocker is deployment triggering/configuration only. No code or snapshot
 
 # Immediate next output
 
-# **C3.1A — MANUAL BRANCH PREVIEW TRIGGER**
+# **C3.2 — COLLECTION USER WALKTHROUGH / LIVE ROUTE + VISUAL USABILITY GATE**
 
-Required external action:
-- create a Vercel Preview Deployment from Git branch `collection/consolidation-gate-1` in project `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`.
+Required user walkthrough:
+1. open the authenticated consolidation Preview root;
+2. show hero + continental balance;
+3. scroll the relational atlas;
+4. test one continent filter;
+5. test one text search;
+6. open the six shared-runtime routes and confirm CITY / SERVICE / SIGNAL / FRIDA / FOOD / TEXTILE initialize correctly;
+7. spot-check the nine autonomous family routes;
+8. return to collection shell;
+9. capture enough navigation to judge whether the experience reads as one coherent product.
 
-Once that deployment exists, assistant will:
-1. identify deployment ID + URL;
-2. wait for `READY`;
-3. verify root HTML and `collection/families.json`;
-4. verify all 15 family routes;
-5. spot-check CITY / SERVICE / SIGNAL / FRIDA / FOOD / TEXTILE initialization;
-6. record live-route verdict;
-7. request collection-level visual/usability recording;
-8. keep PR #20 Draft and Global Refinement closed until visual pass.
+After the walkthrough:
+- assistant records `LIVE ROUTE PASS / PATCH`;
+- assistant records `COLLECTION VISUAL PASS / PATCH`;
+- only after those gates may **GLOBAL REFINEMENT** open.
 
 Status vocabulary:
-`SOURCE CAPTURE ≠ COLLECTION SHELL ≠ LIVE ROUTE PASS ≠ COLLECTION VISUAL PASS ≠ GLOBAL REFINEMENT ≠ FINAL COLLECTION PASS`.
+`SOURCE CAPTURE ≠ COLLECTION SHELL ≠ ROOT LIVE PASS ≠ LIVE ROUTE PASS ≠ COLLECTION VISUAL PASS ≠ GLOBAL REFINEMENT ≠ FINAL COLLECTION PASS`.
 
 ## Persistence protocol
 
