@@ -3,7 +3,7 @@
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/consolidation-gate-1`
-Latest verified milestone: `COLLECTION_CONSOLIDATION_C2_SOURCE_CAPTURE_PASS.md`
+Latest verified milestone: `COLLECTION_CONSOLIDATION_C3_SHELL_IMPLEMENTATION.md`
 
 ## Product invariant
 
@@ -11,14 +11,25 @@ Latest verified milestone: `COLLECTION_CONSOLIDATION_C2_SOURCE_CAPTURE_PASS.md`
 
 # CONTINENTAL BALANCE GATE 1 — CLOSED
 
-Final merged distribution:
+Final distribution:
 # `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-Round 13K / Siku merge: `ca8851db034fac0cc60507d310b1623fb459366c`
-Round 13L / Hika Ahi merge: `2e9cf84a11b2f5c08a7cf974b1f9b9530be88a4b`
-Round 13M / Boulle merge: `540923b02a8b8c8490809a8c381d9e9bfee29d99`
+Latest family merges:
+- 13K / Siku — `ca8851db034fac0cc60507d310b1623fb459366c`
+- 13L / Hika Ahi — `2e9cf84a11b2f5c08a7cf974b1f9b9530be88a4b`
+- 13M / Boulle — `540923b02a8b8c8490809a8c381d9e9bfee29d99`
 
-Family expansion is paused.
+Family expansion remains paused.
+
+# COLLECTION VALIDATION LEDGER
+
+# **15 / 15 families have documented user visual or visual+audio gates.**
+
+Final validation debt closed:
+- Japan / Kento Register
+- audit `COLLECTION_C1_KENTO_USER_VISUAL_AUDIT_PASS.md`
+- verdict `VISUAL PASS WITH POLISH / PROMOTE`
+- golden deployment `dpl_J74TMsqZS2uSWv8PuhLVGPfQfBev`
 
 # ACTIVE PHASE — COLLECTION CONSOLIDATION GATE
 
@@ -26,123 +37,83 @@ Family expansion is paused.
 
 Status: `PASS`
 Register: `COLLECTION_CONSOLIDATION_C1_INVENTORY_ARCHITECTURE.md`
-Registry: `collection/families.json`
-
-## Kento validation debt — CLOSED
-
-Family:
-`PRINT MEMORY — JAPAN / UKIYO-E — KENTO REGISTER`
-
-Golden deployment:
-`dpl_J74TMsqZS2uSWv8PuhLVGPfQfBev`
-
-User recording audited:
-- ~10.3 s
-- 1904×960
-- 30 fps
-- Matching + Other captured.
-
-Verdict:
-# **VISUAL PASS WITH POLISH / PROMOTE**
-
-Audit register:
-`COLLECTION_C1_KENTO_USER_VISUAL_AUDIT_PASS.md`
-
-Verified:
-- block and paper remain distinct physical roles;
-- edge registration marks remain visible through approach/alignment;
-- pressure follows alignment;
-- Matching resolves displaced colour layers toward one print position;
-- Other retains visible registration residual;
-- no red/error-dominant invalidation;
-- both objects remain valid.
-
-Collection validation ledger is now:
-# **15 / 15 families with documented user visual or visual+audio gates.**
 
 ## C2 — Source Capture & Snapshot Import
 
+Status: `PASS`
+Register: `COLLECTION_CONSOLIDATION_C2_SOURCE_CAPTURE_PASS.md`
+
+Regression anchors:
+- nine autonomous exact snapshots — `e7e1473b0d789fa09b33e2e5b8961c33f32227d2`
+- six restored-family shared runtime + launch routes — `9321844cac8c2e9ccedda7e206b1ee03445bed83`
+
+All family routes live under `/families/<slug>/`.
+Family-native interactions are frozen until an explicit Global Refinement gate.
+
+## C3 — Collection Shell
+
 Status:
-# **PASS**
+# **IMPLEMENTED / SOURCE PASS / LIVE PREVIEW REQUIRED**
 
 Register:
-`COLLECTION_CONSOLIDATION_C2_SOURCE_CAPTURE_PASS.md`
+`COLLECTION_CONSOLIDATION_C3_SHELL_IMPLEMENTATION.md`
 
-### C2A — autonomous family snapshots
+Implementation commit:
+`f7416092c64fd7fd17b5771f002fdae5b0e1433f`
 
-Commit:
-`e7e1473b0d789fa09b33e2e5b8961c33f32227d2`
+Registry state commit:
+`9b2c503462c96e93ae5c65d365f7a5bc49785139`
 
-Exact source blobs imported under `/families/<slug>/index.html` for:
-- Zellige / Fès
-- Khipu / Peru
-- Kento / Japan
-- Ombak / Bali
-- Swell / Marshall Islands
-- Stereoscopy / UK
-- Siku / Bolivia
-- Hika Ahi / Aotearoa
-- Boulle / France
+Root collection experience now includes:
+- thesis `The pair is the product.`;
+- continental balance overview `4 / 3 / 2 / 2 / 2 / 2`;
+- 15-family relational atlas;
+- continent filters;
+- text search across place / memory / mechanism / law;
+- direct navigation into every frozen family route;
+- responsive collection layout;
+- abstract pair thumbnails rather than generic cultural skinning.
 
-No source blob was rewritten.
+## C3 source verification
 
-### C2B — restored six-family runtime
+Verified:
+- root title is `RELATIONAL KEY — Collection`;
+- registry has `validated_count: 15` and `candidate_count: 0`;
+- all 15 family records contain direct routes;
+- the C3 implementation commit changes root `index.html` only;
+- therefore no C2 family snapshot was modified by the shell implementation.
 
-Commit:
-`9321844cac8c2e9ccedda7e206b1ee03445bed83`
+`C3 SOURCE PASS ≠ LIVE ROUTE PASS ≠ COLLECTION VISUAL PASS`.
 
-Exact shared audited runtime:
-`/families/_shared/round13r/index.html`
-
-Source blob:
-`bed8c2fa6d2f40b9677d327ecfcd6c581238e14d`
-
-Thin route launchers select the existing family tab without changing the shared mechanism:
-- `/families/city-gatineau/`
-- `/families/service-benin/`
-- `/families/signal-nigeria/`
-- `/families/frida-coyoacan/`
-- `/families/food-toyama/`
-- `/families/textile-bonwire/`
-
-## Consolidation architecture — LOCKED
+# Consolidation architecture — LOCKED
 
 1. Family snapshots are regression anchors.
-2. Collection navigation must wrap families, not flatten their mechanisms.
-3. Family CSS / interaction remains frozen until an explicit Global Refinement sub-gate.
-4. Registry remains `collection/families.json`.
-5. Existing per-family Vercel lives remain golden comparison references.
-6. Final product becomes one canonical RELATIONAL KEY experience + one canonical Vercel project.
+2. Collection shell wraps families; it does not flatten their mechanisms.
+3. No family CSS / JS refinement until Global Refinement opens explicitly.
+4. Existing per-family Vercel deployments remain golden references.
+5. Final output becomes one canonical RELATIONAL KEY product + one canonical Vercel project.
 
 # Immediate next output
 
-# **C3 — COLLECTION SHELL**
+# **C3.1 — DEDICATED CONSOLIDATION LIVE**
 
-Build the root collection experience around the 15 frozen family routes.
-
-Allowed in C3:
-- collection landing page;
-- continent balance overview;
-- mechanism / memory taxonomy;
-- filters and discovery;
-- direct family navigation;
-- collection-level metadata / framing.
-
-Not allowed yet:
-- rewriting family-native interactions;
-- flattening all mechanisms into one generic resolver;
-- Global Refinement inside family snapshots.
-
-After C3 implementation: deploy one consolidation preview, verify all 15 routes, then run collection-level visual/usability audit.
+Required:
+1. identify or create one dedicated collection Vercel project;
+2. deploy `collection/consolidation-gate-1`;
+3. verify root registry loads;
+4. verify all 15 family routes return successfully;
+5. spot-check the six shared-runtime launchers initialize CITY / SERVICE / SIGNAL / FRIDA / FOOD / TEXTILE correctly;
+6. request a collection-level user visual/usability recording;
+7. keep Global Refinement closed until that audit passes.
 
 Status vocabulary:
-`SOURCE CAPTURE ≠ COLLECTION SHELL ≠ GLOBAL REFINEMENT ≠ FINAL COLLECTION PASS`.
+`SOURCE CAPTURE ≠ COLLECTION SHELL ≠ LIVE ROUTE PASS ≠ COLLECTION VISUAL PASS ≠ GLOBAL REFINEMENT ≠ FINAL COLLECTION PASS`.
 
 ## Persistence protocol
 
 After every significant milestone:
 1. update this file;
 2. update `RELATIONAL_KEY_HANDOVER.md`;
-3. record source / commit / deployment identifiers;
+3. record exact commits / deployments / routes;
 4. state next output explicitly;
 5. never infer an unverified pass.
