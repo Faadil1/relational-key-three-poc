@@ -3,6 +3,8 @@
 Updated: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
 Working branch: `collection/global-refinement-1`
+Draft PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
+PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
@@ -58,6 +60,9 @@ Existing individual family Vercel deployments remain golden references.
 Working branch:
 `collection/global-refinement-1`
 
+Draft review surface:
+**PR #21**
+
 Register:
 `GLOBAL_REFINEMENT_G0_BASELINE.md`
 
@@ -66,6 +71,9 @@ G0 register commit:
 
 State transition commit:
 `11d3a34c91785a0c2aa35e87a8f6b2c288d8fdbe`
+
+PR/state checkpoint:
+`4656c35d2e93cee888735b11819b5ebb390a1d34`
 
 ## Locked rules
 
