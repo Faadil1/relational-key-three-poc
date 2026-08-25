@@ -17,18 +17,16 @@ Current merged distribution:
 Balance Gate 1:
 - 13K — South America #2 — MERGED / CLOSED
 - 13L — Oceania #2 — MERGED / CLOSED
-- 13M — Europe #2 — **IMPLEMENTED / LIVE CANDIDATE NEXT**
+- 13M — Europe #2 — **LIVE CANDIDATE / VISUAL AUDIT NEXT**
 
-Target:
+Target after 13M merge:
 `4 / 3 / 2 / 2 / 2 / 2`
 
-After 13M merges: **COLLECTION CONSOLIDATION GATE**.
+After 13M merge, stop expansion and start **COLLECTION CONSOLIDATION GATE**.
 
 ## Last closed family — 13L
 
 **EMBER MEMORY — AOTEAROA / HIKA AHI — FRICTION REGISTER**
-Law: `SUSTAINED FRICTION PRODUCES EMBER.`
-Proof: `HIKA ≠ KAUAHI → FRICTION → HEAT → EMBER`
 PR #17: MERGED
 Merge SHA: `2e9cf84a11b2f5c08a7cf974b1f9b9530be88a4b`
 Golden reference: `dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
@@ -71,64 +69,93 @@ Signature:
 - branch `round13m/complement-memory-boulle`
 - implementation `d9067507c1db464a97defdbdd63346b9d82a3a29`
 - register `ROUND13M4_BOULLE_IMPLEMENTATION.md`
+- Draft PR #18
 
-### SHARED CUT
+### Matching — SHARED CUT
 
-- two distinct fields approach;
-- one common cut path resolves across both cards + center layers;
-- center layers separate;
-- reciprocal exchange cue appears;
-- opposite material fills appear in the same vector region;
-- PARTIE + CONTREPARTIE register as inverses, not copies.
+- two distinct material fields align;
+- one common cut path resolves across both;
+- layers separate;
+- reciprocal exchange occurs;
+- PARTIE receives light inlay / CONTREPARTIE receives dark inverse;
+- both cards remain distinct;
+- reciprocity registers.
 
-### OTHER CUT
+### Other — OTHER CUT
 
 - both material fields remain valid;
 - paths remain offset/non-shared;
-- no reciprocal inlay exchange;
+- no complete reciprocal exchange;
 - no red X;
 - selected relation does not register.
 
 ### Ethical boundary
 
-Historical tortoiseshell is source evidence only. Prototype uses abstract simulated fields, makes no wildlife-material recommendation and provides no exact modern fabrication recipe.
+Historical tortoiseshell is evidence only. Prototype uses abstract simulated materials, recommends no wildlife material and provides no exact modern fabrication recipe.
 
-### Local validation
+## 13M.5 — Verified Live Candidate
 
-PASS:
-- no duplicate DOM IDs;
-- SHARED CUT + OTHER CUT modes;
-- target-only reciprocal exchange;
-- no red invalidation;
-- responsive layout;
-- inline JavaScript `node --check` PASS.
+Status:
+# **READY / SOURCE-LIVE SYNC VERIFIED**
+
+Checkpoint:
+`ROUND13M5_VERCEL_PROJECT_CHECKPOINT.md`
+
+Dedicated project:
+`relational-key-complement-memory-boulle-v13m1`
+
+Project ID:
+`prj_1u0bwUIMeY1fB9trbA4sccHfRKAb`
+
+Ignore old import:
+- `dpl_DApvk97q8BShPgeL4v94y77KxrBW`
+- source `main`
+- old baseline / not audit evidence.
+
+Current Boulle preview:
+- deployment `dpl_3LhrCjMj4amTCbeeq2o8MVXV5FfF`
+- URL `https://relational-key-complement-memory-boulle-v13m1-ccu3jzusf.vercel.app`
+- branch `round13m/complement-memory-boulle`
+- trigger commit `392e88baa397ed5a6a9739c5f0a3caacbacd31d4`
+- state `READY`
+- served HTML directly verified
+- title `RELATIONAL KEY — Boulle Reciprocal Cut Register`
+- source/live sync `VERIFIED`.
 
 ## Immediate next task
 
-# ROUND 13M.5 — DEDICATED LIVE CANDIDATE
+# ROUND 13M.6 — USER VISUAL AUDIT
 
-Suggested Vercel project name:
-`relational-key-complement-memory-boulle-v13m1`
+Use:
+`https://relational-key-complement-memory-boulle-v13m1-ccu3jzusf.vercel.app`
 
-Do not overwrite existing family projects.
+Record in one video:
+1. `SHARED CUT → TEST RELATIONSHIP` through `CONTINUE`;
+2. `OTHER CUT → TEST RELATIONSHIP` through `CONTINUE`.
 
-Once project exists:
-1. identify project ID;
-2. trigger branch preview from `round13m/complement-memory-boulle`;
-3. verify READY;
-4. verify served HTML title + Boulle contents;
-5. update canonical state + this handover;
-6. user records SHARED CUT and OTHER CUT;
-7. decide PASS / PATCH / REJECT;
-8. keep PR Draft until visual pass.
+Audit SHARED CUT:
+- one common path is unmistakable;
+- separation happens before exchange;
+- reciprocal inversion is visually obvious;
+- cards become complementary inverses, not copies;
+- pair remains the product.
 
-## Deployment policy
+Audit OTHER CUT:
+- paths stay non-shared/offset;
+- no complete reciprocal exchange;
+- both cards remain valid;
+- no error-dominant invalidation.
 
-Individual family projects are audit labs / golden references only.
-After 13M merge, consolidate into one canonical RELATIONAL KEY product + one canonical Vercel project.
+Decision: `PASS / PATCH / REJECT`.
+PR #18 stays `DRAFT / DO NOT MERGE` until visual pass.
+
+## Deployment Architecture Policy — LOCKED
+
+Individual family Vercel projects are audit laboratories / golden references only.
+After 13M merge: **COLLECTION CONSOLIDATION GATE** → one canonical RELATIONAL KEY product + one canonical Vercel project.
 
 ## Persistence protocol
 
-After every milestone update canonical state + this handover, record identifiers, and state next output explicitly.
+After every significant milestone update canonical state + this handover, record identifiers, and state next output explicitly.
 
-If a new conversation starts here, resume directly at `ROUND 13M.5 — DEDICATED LIVE CANDIDATE`.
+If a new conversation starts here, resume directly at `ROUND 13M.6 — USER VISUAL AUDIT`.
