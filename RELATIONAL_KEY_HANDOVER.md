@@ -2,9 +2,7 @@
 
 Updated: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
-Working branch: `collection/consolidation-gate-1`
-Draft PR: **#20 — RELATIONAL KEY — Collection Consolidation Gate**
-PR status: `DRAFT / DO NOT MERGE`
+Working branch: `collection/global-refinement-1`
 
 # RESUME HERE
 
@@ -12,12 +10,13 @@ RELATIONAL KEY has completed:
 - Continental Balance Gate 1;
 - C1 — Inventory + Architecture Freeze;
 - C2 — Source Capture & Snapshot Import;
-- C3 — Collection Shell implementation + source pass;
-- C3.1 — dedicated Preview root live pass;
-- C3.2A — shell visual pass;
-- C3.2B — functional shell pass;
-- C3.2C — route completion to 13/15;
-- C3.2D — final two-route closeout.
+- C3 — Collection Shell;
+- dedicated collection Preview root live pass;
+- shell visual pass;
+- functional filter/search pass;
+- 15 / 15 direct consolidated route verification;
+- collection usability `PASS WITH POLISH`;
+- PR #20 consolidation squash merge.
 
 Canonical invariant:
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
@@ -25,72 +24,85 @@ Canonical invariant:
 Distribution:
 `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-# FINAL CONSOLIDATION VALIDATION
+Family expansion remains paused during refinement.
 
-**15 / 15 families** have independent user visual or visual+audio gates.
+# PRE-REFINEMENT BASELINE
 
-**15 / 15 consolidated direct routes are verified live in the authenticated Vercel Preview.**
+Consolidation PR #20:
+`MERGED`
 
-Final closeout register:
-`COLLECTION_C3_2D_TWO_ROUTE_CLOSEOUT_PASS.md`
+Squash merge / immutable regression anchor:
+# `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
 
-Final two routes verified:
-- `/families/zellige-fes/` → Fès / Zellige Tessellated Register ✅
-- `/families/food-toyama/` → EDIBLE PASSAGE / Toyama ✅
+This anchor already proves:
+- 15 / 15 independent family gates;
+- 15 / 15 consolidated direct live routes;
+- coherent collection shell;
+- working continent filters;
+- working text search / zero-result state;
+- collection usability pass with polish.
 
-Consolidation Preview:
-- project `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
-- deployment `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ`
-- URL `https://relational-key-collectionrelational-key-collection-4834ctm8z.vercel.app`
-- branch `collection/consolidation-gate-1`
-- state `READY`
+Historic collection Preview golden reference:
+- project `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`;
+- deployment `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ`;
+- URL `https://relational-key-collectionrelational-key-collection-4834ctm8z.vercel.app`;
+- branch `collection/consolidation-gate-1`;
+- state `READY`.
 
-Collection verdict:
-# `ROOT LIVE PASS`
-# `SHELL VISUAL PASS`
-# `15/15 LIVE ROUTE PASS`
-# `COLLECTION USABILITY PASS WITH POLISH`
-
-Shell controls already verified:
-- continent filtering;
-- text search;
-- combined filter/search zero-result state;
-- clearing query restores results;
-- browser Back returns to atlas.
+Existing individual family Vercel deployments remain golden references.
 
 # GLOBAL REFINEMENT
 
-# **OPEN — IMPLEMENTATION NOT YET STARTED**
+# **OPEN / G0 BASELINE FROZEN**
 
-Do not mutate family snapshots on the current consolidation branch before PR #20's explicit merge gate.
+Working branch:
+`collection/global-refinement-1`
 
-Global Refinement backlog:
-1. add explicit collection-level `← Back to Atlas` navigation around family views;
-2. enlarge/clarify tiny secondary mono metadata, chips and card labels where needed;
-3. increase shell-level family individuality without generic cultural skinning;
-4. preserve all golden family mechanisms and source regression anchors;
-5. address family `PASS WITH POLISH` backlog systematically;
-6. improve collection-to-family and family-to-collection transition/cohesion;
-7. keep the pair as the product; never make the center/gap the primary product.
+Register:
+`GLOBAL_REFINEMENT_G0_BASELINE.md`
 
-# IMMEDIATE NEXT TASK — C3.3 CONSOLIDATION MERGE GATE
+G0 register commit:
+`9cbedfaaec7857d7d9ad924257a4ccd1b8fd7e58`
 
-PR #20 is still Draft.
+State transition commit:
+`11d3a34c91785a0c2aa35e87a8f6b2c288d8fdbe`
 
-Wait for explicit user authorization before:
-- marking PR #20 Ready;
-- squash-merging it;
-- creating the fresh Global Refinement branch.
+## Locked rules
 
-After merge:
-1. freeze the merge SHA as the consolidated pre-refinement anchor;
-2. create a fresh refinement branch from that SHA;
-3. execute refinement in staged gates with regression checks against the golden family references.
+1. Never rewrite all families into one generic interaction model.
+2. Keep `79ba99ec…` as immutable pre-refinement comparison point.
+3. Existing family golden deployments stay valid regression references.
+4. Route/wrapper changes require route regression checks.
+5. Family presentation changes require targeted family regression checks.
+6. Do not let the center/gap become the product.
+7. No new family expansion during the current refinement cycle.
 
-Do not reopen route validation unless a future refinement changes routing.
+# IMMEDIATE NEXT TASK — G1 COLLECTION NAVIGATION FRAME
+
+Goal:
+add an explicit collection-level `← Back to Atlas` affordance around every family view without modifying the family-native interaction mechanism.
+
+G1 should prefer a collection wrapper/frame rather than editing each golden family prototype independently.
+
+Required G1 checks:
+- root collection remains intact;
+- all 15 family routes continue to resolve;
+- Back to Atlas works from representative shared-runtime + autonomous families;
+- overlay/frame does not cover family controls or critical content;
+- family mechanisms remain unchanged beneath the wrapper where possible;
+- responsive behavior is acceptable.
+
+After G1 passes, proceed to:
+- G2 Shell Legibility;
+- G3 Atlas Family Individuality;
+- G4 PASS WITH POLISH backlog;
+- G5 Collection Cohesion;
+- G6 Final Collection Validation.
+
+Do not reopen old discovery or continental balancing unless a future explicit strategy changes scope.
 
 ## Persistence protocol
 
-After every significant milestone update `RELATIONAL_KEY_CURRENT_STATE.md` + this handover.
+After every significant milestone update `RELATIONAL_KEY_CURRENT_STATE.md` + this handover with exact commits, deployments, gate verdicts and next action.
 
-If a new conversation starts here, resume at **C3.3 — CONSOLIDATION MERGE GATE**.
+If a new conversation starts here, resume directly at **G1 — COLLECTION NAVIGATION FRAME**.
