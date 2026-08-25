@@ -2,9 +2,8 @@
 
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
-Canonical working branch: `round13k/melody-memory-siku`
-Latest verified milestone: `ROUND13K6_USER_VISUAL_AUDIO_AUDIT_PASS.md`
-Audit checkpoint commit: `ece199b2054be323a93dba2bfe1f8cafd9b131dc`
+Canonical working branch: `round13l/oceania-balance-discovery`
+Latest verified milestone: `ROUND13L1_OCEANIA_BALANCE_BROAD_DISCOVERY.md`
 
 ## Product invariant
 
@@ -14,187 +13,131 @@ Every Cultural Edition must preserve two distinct relational objects, a visible 
 
 # CONTINENTAL BALANCE GATE
 
-Round 13K has now passed its user visual + audio gate and is **PROMOTED**, but PR #16 is not yet merged.
-
-Promoted-family distribution after 13K:
+Current promoted + merged distribution:
 `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 1 / EUROPE 1`
 
-Balance Gate 1 sequence:
-1. `ROUND 13K` — SOUTH AMERICA #2 — **VISUAL+AUDIO PASS / PROMOTE / MERGE APPROVAL NEXT**
-2. `ROUND 13L` — OCEANIA #2
+Balance Gate 1:
+1. `ROUND 13K` — SOUTH AMERICA #2 — **MERGED / CLOSED**
+2. `ROUND 13L` — OCEANIA #2 — **BROAD DISCOVERY PASS / DEEP QUALIFICATION NEXT**
 3. `ROUND 13M` — EUROPE #2
 
 Target after Gate 1:
 `4 / 3 / 2 / 2 / 2 / 2`
 
-## Last closed merged family — Round 13J
+## Round 13K — CLOSED
 
-**DEPTH MEMORY — UNITED KINGDOM / STEREOSCOPY — BINOCULAR REGISTER**
-
-Law: **CONTROLLED DISPARITY PRODUCES DEPTH.**
-Proof: `LEFT ≠ RIGHT → FUSION → DEPTH`
-Status: `VISUAL PASS / PROMOTE / MERGED`
-Deployment: `dpl_4qQoTiev64vzU7tRLXmrYxtbrHjY`
-PR #15: merged
-Merge commit: `54806b281f411f82c4c6f2fdc94919b8aa5f275d`
-
-# ROUND 13K — SOUTH AMERICA #2
-
-## Edition
-
+Edition:
 **MELODY MEMORY — BOLIVIA / SIKU — INTERLOCK REGISTER**
 
-Canonical law:
+Law:
 **COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.**
 
 Proof:
 `IRA ≠ ARKA → ALTERNATION → ONE MELODY`
 
-Pair architecture:
-- Card A — IRA / Complement A
-- Card B — ARKA / Complement B
-- Gap — MELODY INTERLOCK FIELD
+User visual + audio audit:
+`PASS / PROMOTE`
 
-Signature:
-`NOTE → GAP → ANSWER → INTERLOCK → SCALE → MELODY → REGISTER → CONTINUE`
-
-Critical distinction from Ombak:
-- Ombak = simultaneous near-unison difference → beat / resonance.
-- Siku = distributed complementary notes → alternation → continuity.
-
-## Research / build chain
-
-### 13K.1 — Broad Discovery
-Status: `PASS`
-Register: `ROUND13K1_SOUTH_AMERICA_BALANCE_BROAD_DISCOVERY.md`
-Commit: `0b19c69d50b574d7b14c428c9b08cb39742478a1`
-
-### 13K.2 — Deep Qualification
-Status: `FINALIST GATE PASS`
-Register: `ROUND13K2_DEEP_QUALIFICATION_FINALISTS.md`
-Commit: `25304b3d8a8da6f05c8325b4a0ceab180aef4bfb`
-Finalists: Bolivia / Siku and Colombia / Pasto Varnish.
-Pasto remains a high-quality reserve.
-
-### 13K.3 — Concept Gate
-Status: `PASS / SIKU SELECTED`
-Register: `ROUND13K3_TWO_FINALIST_CONCEPT_GATE.md`
-Commit: `2d352f88f5a8a2d2f918c3786fb41f9f5d1c5757`
-
-### 13K.4 — Implementation Gate
-Status: `IMPLEMENTED / LOCAL STRUCTURE + SYNTAX PASS`
-Implementation commit: `2522c651055404fd78dc9748eee75bfd9ee2dd5d`
-Register: `ROUND13K4_SIKU_IMPLEMENTATION.md`
-Checkpoint commit: `bb85774df5f89698e18470bb94985aec42c23c1a`
-
-Real-source visual:
-`Wikimedia Commons — Siku bipolar.jpg` / public domain.
-Mapping preserved:
-- source left half = Arka → Card B;
-- source right half = Ira → Card A.
-
-Matching uses 8 illustrative temporal slots alternating:
-`IRA / ARKA / IRA / ARKA / IRA / ARKA / IRA / ARKA`.
-
-Other Interlock leaves selected target positions silent, does not create a complete route, keeps both complements valid and uses no red invalidation.
-
-Audio is browser-synthesized and explicitly illustrative. Generic frequencies are not claimed as documented siku tuning or a traditional melody.
-
-### 13K.5 — Dedicated Live Candidate
-
-Dedicated Vercel project:
-`relational-key-melody-memory-siku-v13k1`
-
-Project ID:
-`prj_sVSWA4YxfvqtJm0yAzUYIegeyM9Z`
-
-Ignore initial production import:
-`dpl_4VuurNFo93XnW3jYAJ7MVqpvgpX3`
-— old `main` baseline, not audit evidence.
-
-Verified Siku preview:
+Dedicated live candidate:
 `dpl_AgwdotABtjmYKDvnx3qoprtPEMsr`
 
-URL:
-`https://relational-key-melody-memory-siku-v13k1-pujv92nn5.vercel.app`
+PR #16:
+`MERGED`
 
-Branch:
-`round13k/melody-memory-siku`
+Squash merge commit:
+`ca8851db034fac0cc60507d310b1623fb459366c`
 
-State:
-`READY`
+Round 13K is closed. Do not reopen without concrete evidence of a defect.
 
-Source/live sync: **VERIFIED**.
+# ROUND 13L — OCEANIA #2
 
-### 13K.6 — User Visual + Audio Audit
-
-Status: **VISUAL+AUDIO PASS / PROMOTE**
-
-Audit register:
-`ROUND13K6_USER_VISUAL_AUDIO_AUDIT_PASS.md`
-
-Audit checkpoint commit:
-`ece199b2054be323a93dba2bfe1f8cafd9b131dc`
-
-User recording properties observed:
-- ~13.53 s
-- 1890×956 / 30 fps
-- stereo audio / 48 kHz
-
-Matching gate:
-- two cards remain distinct;
-- central field reads as temporal interlock, not waveform;
-- recorded note events alternate stereo sides consistently;
-- complete glowing route appears only after both complements contribute;
-- registered state preserves warm/cool IRA / ARKA ownership.
-
-Other gate:
-- two target positions remain visibly silent;
-- the same positions are genuine audio absences;
-- no complete glowing route appears;
-- both instruments remain visually valid;
-- no red/error-dominant invalidation appears.
-
-Recording begins just after the first IRA event has visually occurred, so the first audible note is not captured. This is a recording-start artifact, not a build defect; the remaining matching events alternate correctly and the first slot is visibly filled in the opening frame.
-
-Non-blocking polish:
-- central field / bottom microcopy are small at desktop capture scale;
-- defer typography/scale polish to the collection-wide Global Refinement Pass.
-
-No interaction patch is required before promotion.
-
-## PR status
-
-Draft PR:
-**#16 — Round 13K — Melody Memory / Bolivia Siku / Interlock Register**
+## 13L.1 — Broad Discovery
 
 Status:
-`DRAFT / DO NOT MERGE UNTIL EXPLICIT APPROVAL`
+# **DISCOVERY GATE — PASS**
 
-The family has passed its visual/audio gate. PR #16 is now eligible to move to Ready + squash merge when explicit merge approval is given.
+Branch:
+`round13l/oceania-balance-discovery`
+
+Research register:
+`ROUND13L1_OCEANIA_BALANCE_BROAD_DISCOVERY.md`
+
+Discovery commit:
+`9633f07006aeeee145a528eb67455b2a370989eb`
+
+Existing Oceania territory already occupied by Marshall Islands Swell:
+- environmental wave deflection;
+- navigation / orientation;
+- ocean-swell reading.
+
+13L must add a materially different relation.
+
+### Tier A — Deep qualify next
+
+1. **Aotearoa / Māori — Hika Ahi / fire-plough pair**
+   - hika stick + kauahi base stick;
+   - repeated friction → heat → ember;
+   - candidate law: `RECIPROCAL FRICTION RELEASES LATENT HEAT INTO EMBER.`
+   - pair-native strength: VERY HIGH;
+   - key risk: cultural sensitivity + avoid turning prototype into practical fire-starting instruction; visual rights unresolved.
+
+2. **Aboriginal Australia — Millstone + Muller / Grindstones**
+   - lower millstone + upper muller;
+   - pressure / movement → grinding / prepared matter;
+   - candidate law: `RECIPROCAL ABRASION TURNS WHOLE MATERIAL INTO PREPARED MATTER.`
+   - pair-native strength: HIGH;
+   - key risk: third processed material is necessary; avoid collapsing into another Food Memory.
+
+3. **Polynesia — Double-Hulled Canoe**
+   - two joined parallel hulls;
+   - distributed buoyancy → stability / seaworthiness / capacity;
+   - candidate law: `DISTRIBUTED BUOYANCY PRODUCES STABILITY.`
+   - pair-native strength: VERY HIGH;
+   - key risk: maritime context may feel too close to Swell unless framed strictly as structural coupling.
+
+4. **Sāmoa / Tahiti / West Polynesia — Tapa Beater + Anvil**
+   - beater + wooden anvil + bark substrate;
+   - repeated impact / compression → bark widens into cloth surface;
+   - candidate law: `REPEATED COMPRESSION TURNS A STRIP INTO A SURFACE.`
+   - pair-native strength: HIGH-MEDIUM;
+   - key risk: third substrate necessary; avoid decorative / print framing that would overlap Kento.
+
+### Tier B — Preserve
+
+5. **Aotearoa / Māori — Paired Poi**
+   - candidate law: `COUNTER-MOTION PRODUCES A SHARED PATTERN.`
+   - downgraded because single poi is also valid and sound/rhythm territory is already crowded.
+
+6. **Aotearoa / Māori — Toki + Hoanga**
+   - candidate law: `CONTROLLED ABRASION PRODUCES AN EDGE.`
+   - downgraded because it is adjacent to the grindstone mechanism and one object is primarily being worked into a final state.
 
 ## Next required output
 
-# ROUND 13K.7 — MERGE GATE
+# ROUND 13L.2 — DEEP QUALIFICATION
 
-Required sequence:
-1. obtain explicit merge approval;
-2. verify PR #16 head has not changed unexpectedly;
-3. mark Ready for review if still Draft;
-4. squash merge with expected head SHA;
-5. record merge SHA;
-6. update this canonical state + handover;
-7. close Round 13K;
-8. begin `ROUND 13L — OCEANIA #2 — BROAD DISCOVERY`.
+Deep-qualify Tier A only.
 
-Status vocabulary remains separate:
-`RESEARCH PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL+AUDIO PASS ≠ PROMOTE ≠ MERGED`.
+Required checks:
+1. authoritative source verification;
+2. native two-object necessity;
+3. distinctness from Marshall Islands Swell and all existing families;
+4. strength of emergent third result;
+5. visual-source rights / reusable anchor strategy;
+6. smallest truthful two-card translation;
+7. culturally truthful `OTHER` state;
+8. interaction legibility;
+9. select at most two finalists;
+10. no implementation before finalist gate is recorded.
 
 ## Persistence protocol
 
 After every significant milestone:
 1. update this file;
 2. update `RELATIONAL_KEY_HANDOVER.md`;
-3. record verified branch / commit / deployment / PR IDs;
+3. record verified branch / commit / deployment / PR identifiers;
 4. state the next required output explicitly;
 5. never infer an unverified pass.
+
+Status vocabulary remains separate:
+`RESEARCH PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL/AUDIO PASS ≠ PROMOTE ≠ MERGED`.
