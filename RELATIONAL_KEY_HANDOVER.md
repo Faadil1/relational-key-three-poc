@@ -16,7 +16,7 @@ Current merged distribution:
 
 Balance Gate 1:
 - 13K — South America #2 — MERGED / CLOSED
-- 13L — Oceania #2 — FINALIST GATE PASS / CONCEPT GATE NEXT
+- 13L — Oceania #2 — CONCEPT PASS / WINNER SELECTED / IMPLEMENTATION NEXT
 - 13M — Europe #2
 
 Target after Gate 1:
@@ -27,8 +27,7 @@ Target after Gate 1:
 **MELODY MEMORY — BOLIVIA / SIKU — INTERLOCK REGISTER**
 Law: `COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.`
 Proof: `IRA ≠ ARKA → ALTERNATION → ONE MELODY`
-Audit: `VISUAL+AUDIO PASS / PROMOTE`
-PR #16: `MERGED`
+PR #16: MERGED
 Merge SHA: `ca8851db034fac0cc60507d310b1623fb459366c`
 
 Do not reopen without a concrete defect.
@@ -36,109 +35,113 @@ Do not reopen without a concrete defect.
 # CURRENT ACTIVE ROUND — 13L / OCEANIA #2
 
 ## 13L.1 — Broad Discovery
-Status: PASS
-Register: `ROUND13L1_OCEANIA_BALANCE_BROAD_DISCOVERY.md`
+PASS — `ROUND13L1_OCEANIA_BALANCE_BROAD_DISCOVERY.md`
 Commit: `9633f07006aeeee145a528eb67455b2a370989eb`
 
 ## 13L.2 — Deep Qualification
+FINALIST GATE PASS — `ROUND13L2_DEEP_QUALIFICATION_FINALISTS.md`
+Commit: `96b421203832af8618029a9af7c83b9049158bee`
+Finalists: Māori Hika Ahi; Polynesian Double-Hulled Canoe.
+Reserves: Aboriginal Grindstones; Pacific Tapa Beater + Anvil.
+
+## 13L.3 — Concept Gate
 
 Status:
-# **FINALIST GATE PASS**
+# **PASS / WINNER SELECTED**
 
 Register:
-`ROUND13L2_DEEP_QUALIFICATION_FINALISTS.md`
+`ROUND13L3_TWO_FINALIST_CONCEPT_GATE.md`
 
 Commit:
-`96b421203832af8618029a9af7c83b9049158bee`
+`99697a137313ada569d469476dbf83d5d4eb5f39`
 
 Canonical update:
-`9eabe661e24b231f1213337cb61c54f778bb4349`
+`49c245453a68884979d2655235a9d13674be9b28`
 
-### Finalist A — Māori Hika Ahi
+# WINNER — EMBER MEMORY / AOTEAROA / HIKA AHI / FRICTION REGISTER
 
-Pair:
-- HIKA fire-making stick
-- KAUAHI grooved base stick
-
-Mechanism:
-friction in selected groove → heat → ember.
-
-Candidate law:
-**RECIPROCAL FRICTION RELEASES LATENT HEAT INTO EMBER.**
+Law:
+**SUSTAINED FRICTION PRODUCES EMBER.**
 
 Proof:
-`HIKA ≠ KAUAHI → CONTACT → FRICTION → HEAT → EMBER`
-
-Why strong:
-- natively two-object;
-- clear emergent third result;
-- highly distinct from all current families;
-- Other Contact can simply fail to register the target ember while preserving both objects.
-
-Guardrails:
-- do not turn prototype into practical fire-starting instruction;
-- no claimed exact temperatures/timing/moisture/stroke calibration;
-- use precise Māori terminology and sources;
-- no generic Indigenous decoration;
-- Māori-specific visual rights are currently the main implementation risk.
-
-### Finalist B — Polynesian Double-Hulled Canoe
+`HIKA ≠ KAUAHI → FRICTION → HEAT → EMBER`
 
 Pair:
-- HULL A
-- HULL B
+- Card A — HIKA / ACTIVE STICK
+- Card B — KAUAHI / GROOVED BASE
+- Gap — FRICTION / HEAT FIELD
 
-Mechanism:
-parallel joined hulls → distributed buoyancy → stability / seaworthiness.
+Signature:
+`CONTACT → STROKE → TRACE → ACCUMULATE → HEAT → EMBER → REGISTER → CONTINUE`
 
-Candidate law:
-**DISTRIBUTED BUOYANCY PRODUCES STABILITY.**
+### Matching concept
 
-Proof:
-`HULL A + HULL B → JOIN → DISTRIBUTE → STABILIZE`
+`TARGET GROOVE`
+- pair begins separate;
+- hika approaches selected groove relation;
+- abstract editorial contact passes accumulate a heat trace;
+- ember cue appears only after the complete relation is sustained;
+- register preserves both objects.
 
-Why strong:
-- natively pair-based;
-- emergent system property is clear;
-- strong usable visual route via CC BY-SA Wikimedia Commons.
+### Other concept
 
-Guardrail:
-Must stay structural. Do not use navigation, swell reading or ocean-orientation language because Marshall Islands Swell already occupies that territory.
+`OTHER CONTACT`
+- both tools remain valid;
+- partial trace/warmth may appear;
+- selected groove relation does not sustain;
+- no ember registers;
+- no red X.
 
-### Reserves
+### Safety / truthfulness boundary
 
-- Aboriginal Australia Grindstones — strong but more triadic / rights burden.
-- Pacific Tapa Beater + Anvil — strong compression law but third bark substrate + terminology/rights burden.
+This must not become a practical fire-starting tutorial.
+
+Do not expose or claim real-world:
+- speed;
+- duration;
+- dimensions;
+- moisture;
+- temperature;
+- tinder preparation;
+- survival instructions.
+
+UI stroke counts, heat values and timing are purely editorial.
+
+### Visual strategy
+
+- original source-grounded rendering only;
+- do not copy restricted Māori historical photographs;
+- no generic Indigenous ornament;
+- culture is carried by accurate naming + documented mechanism.
+
+### Double Hull
+
+HIGH-QUALITY OCEANIA RESERVE.
+Lost 13L because maritime imagery risks repeating Swell even though the structural law is valid.
 
 ## Immediate next task
 
-# ROUND 13L.3 — TWO-FINALIST CONCEPT GATE
+# ROUND 13L.4 — HIKA AHI IMPLEMENTATION GATE
 
-Compare Hika Ahi vs Double Hull.
+Create dedicated implementation branch.
 
-Winner must maximize:
-1. pair necessity;
-2. emergent third result;
-3. distinction from Swell;
-4. truthful Matching / Other states;
-5. visual/source feasibility;
-6. mechanism-native cultural identity;
-7. interaction surprise + clarity.
-
-Select one winner or `NO BUILD`.
-Do not implement before recording the concept gate.
+Requirements:
+1. two cards visible from first frame;
+2. original hika / kauahi rendering;
+3. center = friction / heat accumulation field;
+4. ember only after sustained target relation;
+5. Other Contact = incomplete trace, no ember, tools remain valid;
+6. no red invalidation;
+7. no operational fire-making details;
+8. responsive pair logic;
+9. local syntax/runtime validation before deployment.
 
 ## Status vocabulary
 
-`RESEARCH PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL/AUDIO PASS ≠ PROMOTE ≠ MERGED`.
+`RESEARCH PASS ≠ CONCEPT PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL PASS ≠ PROMOTE ≠ MERGED`.
 
 ## Persistence protocol
 
-After every significant milestone:
-1. update `RELATIONAL_KEY_CURRENT_STATE.md`;
-2. update this handover;
-3. record branch / commit / deployment / PR identifiers;
-4. state next required output explicitly;
-5. never infer an unverified pass.
+After every significant milestone update canonical state + this handover, record verified identifiers and state the next output explicitly.
 
-If a new conversation starts here, read canonical state + this handover and continue directly at `ROUND 13L.3 — TWO-FINALIST CONCEPT GATE`.
+If a new conversation starts here, read canonical state + this handover, then continue directly at `ROUND 13L.4 — HIKA AHI IMPLEMENTATION GATE`.
