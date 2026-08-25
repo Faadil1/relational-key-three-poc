@@ -3,8 +3,8 @@
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `round13l/ember-memory-hika-ahi`
-Latest verified milestone: `ROUND13L6_USER_VISUAL_AUDIT_CONDITIONAL.md`
-Audit checkpoint: `44b25d3b896aac08ce8f8e0c77391c34b49a9d03`
+Latest verified milestone: `ROUND13L6_TARGET_RECAPTURE_VISUAL_PASS.md`
+Audit checkpoint: `79875324bd41fad575381c78bd09a31d8f71986c`
 
 ## Product invariant
 
@@ -17,7 +17,7 @@ Current merged distribution:
 
 Balance Gate 1:
 1. Round 13K — South America #2 — `MERGED / CLOSED`
-2. Round 13L — Oceania #2 — `LIVE CANDIDATE / CONDITIONAL VISUAL PASS / TARGET RE-CAPTURE REQUIRED`
+2. Round 13L — Oceania #2 — `VISUAL PASS / PROMOTE / MERGE APPROVAL NEXT`
 3. Round 13M — Europe #2
 
 Target after Gate 1:
@@ -60,7 +60,7 @@ Signature:
 13L.2 Deep Qualification — FINALIST PASS
 - `ROUND13L2_DEEP_QUALIFICATION_FINALISTS.md`
 - `96b421203832af8618029a9af7c83b9049158bee`
-- finalist reserve: Polynesian Double-Hulled Canoe
+- reserve: Polynesian Double-Hulled Canoe
 
 13L.3 Concept Gate — PASS / HIKA AHI SELECTED
 - `ROUND13L3_TWO_FINALIST_CONCEPT_GATE.md`
@@ -81,41 +81,52 @@ Signature:
 ## 13L.6 — User Visual Audit
 
 Status:
-# **CONDITIONAL PASS / TARGET RE-CAPTURE REQUIRED**
+# **VISUAL PASS / PROMOTE**
 
-Register:
+Initial conditional audit:
 `ROUND13L6_USER_VISUAL_AUDIT_CONDITIONAL.md`
 
-Checkpoint:
-`44b25d3b896aac08ce8f8e0c77391c34b49a9d03`
+Final Target re-capture audit:
+`ROUND13L6_TARGET_RECAPTURE_VISUAL_PASS.md`
 
-Verified from user video:
-- Target final registered state shows full heat trace + bright ember at the relation field;
-- HIKA and KAUAHI remain distinct;
-- Other Contact demonstrates partial/offset trace with no ember;
+Final audit checkpoint:
+`79875324bd41fad575381c78bd09a31d8f71986c`
+
+Final re-capture properties observed:
+- 12.0 s
+- 1908×964
+- 30 fps
+- TARGET GROOVE begins from reset/unresolved state
+
+Verified Target progression:
+`UNRESOLVED → CONTACT → TRACE → ACCUMULATE → HEAT → EMBER → REGISTER`
+
+The heat trace grows before the ember appears; the field intensifies first, then the ember emerges at the interface and stabilizes in the registered state. HIKA and KAUAHI remain distinct.
+
+Previous capture already verified Other Contact:
+- partial/offset trace;
+- no ember;
 - both tools remain valid;
 - no red/error-dominant invalidation;
-- interaction remains editorial/non-operational.
+- no practical fire-starting guidance.
 
-Not verified:
-- Target begins before recording;
-- first frame already contains completed heat trace + ember;
-- therefore the perceptual emergence `FRICTION → HEAT → EMBER` is not directly captured.
-
-No code patch is requested.
+No code or visual patch is required before promotion.
 
 ## Next required output
 
-Re-record **TARGET GROOVE only**:
-1. RESET;
-2. TARGET GROOVE selected;
-3. start recording while center is idle/unresolved;
-4. press TEST RELATIONSHIP;
-5. capture through EMBER → REGISTER → CONTINUE.
+# ROUND 13L.7 — MERGE GATE
 
-Then decide `PASS / PATCH / REJECT`.
+Required sequence:
+1. obtain explicit merge approval;
+2. verify PR #17 head has not changed unexpectedly;
+3. mark Ready for review if still Draft;
+4. squash merge with expected head SHA;
+5. record merge SHA;
+6. update canonical state + handover;
+7. close Round 13L;
+8. begin `ROUND 13M — EUROPE #2 — BROAD DISCOVERY`.
 
-PR #17 remains `DRAFT / DO NOT MERGE` until the full visual gate passes.
+PR #17 remains `DRAFT / DO NOT MERGE` until explicit merge approval.
 
 ## Deployment Architecture Policy — LOCKED
 
