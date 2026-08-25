@@ -2,8 +2,8 @@
 
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
-Canonical working branch: `round13r/relational-pair-restoration`
-Canonical branch HEAD at this checkpoint: `54806b281f411f82c4c6f2fdc94919b8aa5f275d`
+Canonical working branch: `round13k/south-america-balance-discovery`
+Last verified discovery commit: `0b19c69d50b574d7b14c428c9b08cb39742478a1`
 
 ## Product invariant
 
@@ -38,7 +38,7 @@ Distribution: `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 1 / OCEANIA 1
 
 ### Balance Gate 1 — minimum 2 families per continent
 
-Next required sequence:
+Required sequence:
 
 1. `ROUND 13K` — SOUTH AMERICA #2
 2. `ROUND 13L` — OCEANIA #2
@@ -50,7 +50,6 @@ Target after Gate 1:
 ### Balance Gate 2 — minimum 3 families per continent
 
 Provisional sequence after Gate 1:
-
 - North America #3
 - South America #3
 - Oceania #3
@@ -63,16 +62,11 @@ A later Gate 3 may move toward four families per continent only if each candidat
 
 ## Selection law for all new families
 
-A candidate must be evaluated across:
+Evaluate across:
 
 `GEOGRAPHY × MATERIAL × RELATIONAL MECHANISM × MEMORY TYPE × INTERACTION`
 
 Do not rebalance continents by repeating an existing mechanism with different cultural decoration.
-
-Examples of forbidden shortcut logic:
-- South America #2 must not simply repeat Khipu tension / knot logic.
-- Oceania #2 must not simply repeat swell / wave navigation logic.
-- Europe #2 must not simply repeat stereoscopic optical disparity.
 
 Preferred discovery pattern:
 
@@ -96,21 +90,77 @@ Squash merge commit: `54806b281f411f82c4c6f2fdc94919b8aa5f275d`
 
 Round 13J is closed. Do not reopen it without new evidence of a defect.
 
+## Round 13K.1 — SOUTH AMERICA #2 / BROAD DISCOVERY
+
+Status: **DISCOVERY GATE — PASS**
+
+Research register:
+`ROUND13K1_SOUTH_AMERICA_BALANCE_BROAD_DISCOVERY.md`
+
+Discovery commit:
+`0b19c69d50b574d7b14c428c9b08cb39742478a1`
+
+Six credible mechanisms survived the initial anti-duplication filter.
+
+### Tier A — advance to deep qualification
+
+1. **Colombia / Pasto Varnish Mopa-Mopa**
+   - mechanism: heat → stretch → layer → cut → reveal
+   - candidate law: **A LAYER BECOMES INFORMATION THROUGH WHAT IT REVEALS BENEATH IT.**
+   - major advantage: strong material transformation and visual reveal; distinct from Khipu.
+   - key risk: historical craft decorates a single object, so a two-card translation must remain explicitly editorial.
+
+2. **Brazil / Pernambuco / Cobogó**
+   - mechanism: screen → incident light → filter → project → shadow
+   - candidate law: **PERFORATION TURNS LIGHT INTO SPATIAL INFORMATION.**
+   - major advantage: exceptional visual proof; projection/occlusion is new to the system.
+   - key risk: one side is environmental and must not collapse into Swell-style environment response.
+
+3. **Bolivia / Aymara Siku / Ira + Arka**
+   - mechanism: complementary notes → alternation → complete scale → melody
+   - candidate law: **COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.**
+   - proof concept: `IRA ≠ ARKA → ALTERNATION → ONE MELODY`
+   - major advantage: strongest literal pair-native mechanism in the field; neither half contains the full scale.
+   - key risk: another sound family after Ombak; must remain about distributed notes, never beat/resonance.
+
+4. **Argentina / Uruguay / Mate + Bombilla**
+   - mechanism: infusion → particulate field → filter → selective passage → flow
+   - candidate law: **SELECTIVE PASSAGE PRODUCES A CLEAN CONTINUATION.**
+   - major advantage: two clearly legible physical objects and a novel filtration relation.
+   - key risk: deeper technical sourcing is required before precise filter/flow claims.
+
+### Tier B — preserve but higher risk
+
+5. **Colombia / Quimbaya Poporo + Palillo**
+   - candidate law: **REPEATED CONTACT LEAVES A MATERIAL MEMORY.**
+   - conceptually powerful temporal accretion mechanism.
+   - high sensitivity burden because the documented use involves coca, saliva residue and specific social/ritual meanings.
+
+6. **Ecuador / Bahía Double-Chambered Whistling Bottle**
+   - candidate law: **TRANSFER BETWEEN CHAMBERS PRODUCES VOICE.**
+   - strong fluid-to-pressure-to-sound mechanism.
+   - weaker product fit because both chambers are components of one vessel and sound overlaps an existing memory category.
+
+### Round 13K.1 decision
+
+**NO WINNER SELECTED YET.**
+
+Broad Discovery passes because multiple credible South American mechanisms survive without repeating Khipu.
+
 ## Next required output
 
-# ROUND 13K — SOUTH AMERICA #2 — BROAD DISCOVERY
+# ROUND 13K.2 — DEEP QUALIFICATION / VISUAL + SOURCE + PAIR-NATIVE COMPARISON
 
-Do not choose a country, object or visual style prematurely.
+Deep-qualify Tier A only before any build.
 
-Research multiple South American countries / traditions / technical or material systems and shortlist only candidates where:
-
-1. the relationship is genuinely pair-native;
-2. the mechanism is documented by reliable sources;
-3. the mechanism is materially and relationally distinct from Khipu;
-4. the pair produces an emergent result or meaningful registration event;
-5. the visual material can be grounded in real source material;
-6. the truthfulness boundary can be stated clearly;
-7. the mechanism can survive the RELATIONAL KEY two-object invariant.
+Required checks:
+1. verify the mechanism through first-party, museum, university or heritage sources;
+2. locate usable visual anchors and verify usage rights where possible;
+3. test whether two distinct relational objects exist natively or only editorially;
+4. compare explicitly against Khipu, Ombak, Fès, Swell, Kento and Binocular Register;
+5. test interaction legibility before aesthetic convergence;
+6. select at most two finalists;
+7. no implementation until the finalist gate is recorded.
 
 ## Canonical-state protocol
 
@@ -120,4 +170,5 @@ A significant milestone includes research gate, candidate selection, implementat
 
 Also update `RELATIONAL_KEY_HANDOVER.md` after each significant milestone so a new conversation can resume from the latest verified state without reconstructing prior history.
 
-If a live candidate is only READY but has not passed visual audit, record it as such. Never collapse `READY`, `LIVE CANDIDATE`, `VISUAL PASS`, `PROMOTE`, and `MERGED` into the same status.
+Keep status vocabulary separate:
+`RESEARCH PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL PASS ≠ PROMOTE ≠ MERGED`.
