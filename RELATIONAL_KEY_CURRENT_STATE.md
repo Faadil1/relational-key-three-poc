@@ -2,9 +2,9 @@
 
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
-Canonical working branch: `round13k/south-america-balance-discovery`
-Latest verified milestone: `ROUND13K3_TWO_FINALIST_CONCEPT_GATE.md`
-Concept-gate commit: `2d352f88f5a8a2d2f918c3786fb41f9f5d1c5757`
+Canonical working branch: `round13k/melody-memory-siku`
+Latest verified milestone: `ROUND13K4_SIKU_IMPLEMENTATION.md`
+Implementation checkpoint commit: `bb85774df5f89698e18470bb94985aec42c23c1a`
 
 ## Product invariant
 
@@ -12,55 +12,20 @@ Concept-gate commit: `2d352f88f5a8a2d2f918c3786fb41f9f5d1c5757`
 
 Every Cultural Edition must preserve two distinct relational objects, a visible unresolved relationship, a culturally grounded relation event, and a continuation / registration / calm resistance outcome.
 
-The cultural mechanism must live inside the pair rather than replacing the pair with a decorative cultural skin.
-
 ## Current strategic phase
 
 # CONTINENTAL BALANCE GATE
 
-The six-continent diversity milestone is complete. The collection is now being balanced geographically while increasing relational, material and interaction diversity.
+Current distribution:
+`AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 1 / OCEANIA 1 / EUROPE 1`
 
-## Current 12-family distribution
-
-| Continent | Count | Current families |
-| --- | ---: | --- |
-| Africa | 4 | Benin Service; Nigeria Signal; Asante / Bonwire Textile; Fès Zellige |
-| Asia | 3 | Toyama Food; Japan Kento Print; Bali Gamelan Ombak |
-| North America | 2 | Gatineau City; Frida / Coyoacán Cultural Figure |
-| South America | 1 | Peru Khipu |
-| Oceania | 1 | Marshall Islands Swell |
-| Europe | 1 | UK Stereoscopy / Binocular Register |
-
-Distribution: `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 1 / OCEANIA 1 / EUROPE 1`
-
-## Balance roadmap
-
-### Balance Gate 1
-1. `ROUND 13K` — SOUTH AMERICA #2 — WINNER SELECTED / IMPLEMENTATION NEXT
+Balance Gate 1:
+1. `ROUND 13K` — SOUTH AMERICA #2 — IMPLEMENTED / DEPLOYMENT NEXT
 2. `ROUND 13L` — OCEANIA #2
 3. `ROUND 13M` — EUROPE #2
 
 Target after Gate 1:
 `4 / 3 / 2 / 2 / 2 / 2`
-
-### Balance Gate 2 — provisional
-- North America #3
-- South America #3
-- Oceania #3
-- Europe #3
-
-Target:
-`4 / 3 / 3 / 3 / 3 / 3`
-
-## Selection law
-
-Evaluate every candidate across:
-`GEOGRAPHY × MATERIAL × RELATIONAL MECHANISM × MEMORY TYPE × INTERACTION`
-
-Preferred causal chain:
-`REAL PAIR-NATIVE MECHANISM → SOURCE GROUNDING → DISTINCT RELATIONAL LAW → REAL VISUAL MATERIAL → INTERACTION → USER VISUAL GATE`
-
-Do not rebalance continents by creating cultural skins around existing interactions.
 
 ## Last closed build milestone — Round 13J
 
@@ -68,141 +33,161 @@ Edition: **DEPTH MEMORY — UNITED KINGDOM / STEREOSCOPY — BINOCULAR REGISTER*
 Law: **CONTROLLED DISPARITY PRODUCES DEPTH.**
 Proof: `LEFT ≠ RIGHT → FUSION → DEPTH`
 Status: `VISUAL PASS / PROMOTE / MERGED`
-Production deployment: `dpl_4qQoTiev64vzU7tRLXmrYxtbrHjY`
+Deployment: `dpl_4qQoTiev64vzU7tRLXmrYxtbrHjY`
 PR #15: merged
-Squash merge commit: `54806b281f411f82c4c6f2fdc94919b8aa5f275d`
-
-Round 13J is closed.
+Merge commit: `54806b281f411f82c4c6f2fdc94919b8aa5f275d`
 
 # ROUND 13K — SOUTH AMERICA #2
 
-## Round 13K.1 — Broad Discovery
-Status: **PASS**
+## 13K.1 — Broad Discovery
+Status: `PASS`
 Register: `ROUND13K1_SOUTH_AMERICA_BALANCE_BROAD_DISCOVERY.md`
 Commit: `0b19c69d50b574d7b14c428c9b08cb39742478a1`
 
-Six credible mechanisms survived the initial anti-duplication filter.
-
-## Round 13K.2 — Deep Qualification
-Status: **FINALIST GATE — PASS**
+## 13K.2 — Deep Qualification
+Status: `FINALIST GATE PASS`
 Register: `ROUND13K2_DEEP_QUALIFICATION_FINALISTS.md`
 Commit: `25304b3d8a8da6f05c8325b4a0ceab180aef4bfb`
 
 Finalists:
-1. Bolivia / Siku — Ira + Arka
-2. Colombia / Pasto Varnish Mopa-Mopa
+- Bolivia / Siku — Ira + Arka
+- Colombia / Pasto Varnish Mopa-Mopa
 
 Reserves:
 - Brazil / Cobogó
 - Argentina / Uruguay / Mate + Bombilla
 
-## Round 13K.3 — Two-Finalist Concept Gate
+## 13K.3 — Two-Finalist Concept Gate
+Status: `PASS / WINNER SELECTED`
+Register: `ROUND13K3_TWO_FINALIST_CONCEPT_GATE.md`
+Commit: `2d352f88f5a8a2d2f918c3786fb41f9f5d1c5757`
 
-Status: **CONCEPT GATE — PASS / WINNER SELECTED**
-
-Register:
-`ROUND13K3_TWO_FINALIST_CONCEPT_GATE.md`
-
-Commit:
-`2d352f88f5a8a2d2f918c3786fb41f9f5d1c5757`
-
-# WINNER — BOLIVIA / SIKU — IRA + ARKA
-
-Promoted edition:
-
+Winner:
 **MELODY MEMORY — BOLIVIA / SIKU — INTERLOCK REGISTER**
 
-Canonical law:
+Law:
+**COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.**
 
-# **COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.**
+Proof:
+`IRA ≠ ARKA → ALTERNATION → ONE MELODY`
 
-Canonical proof:
+Pasto remains a high-quality reserve.
 
-# `IRA ≠ ARKA → ALTERNATION → ONE MELODY`
+## 13K.4 — Siku Implementation Gate
 
-### Why Siku won
+Status: **IMPLEMENTED / LOCAL STRUCTURE + SYNTAX PASS / DEPLOYMENT REQUIRED**
 
-- the two complementary halves are separate physical objects natively rather than an editorial split;
-- neither half contains the complete scale alone;
-- alternating / hocketed contribution creates one continuous scale and melody;
-- removal of either half destroys the documented relational outcome;
-- the relation is distinct from Ombak: distributed alternating notes, not simultaneous near-unison beating;
-- mismatch can preserve both instruments while an editorial target sequence remains incomplete;
-- a public-domain visual anchor shows the separated pair.
+Implementation branch:
+`round13k/melody-memory-siku`
 
-### Proposed pair architecture
+Implementation commit:
+`2522c651055404fd78dc9748eee75bfd9ee2dd5d`
 
-**CARD A — IRA / COMPLEMENT A**
+Implementation register:
+`ROUND13K4_SIKU_IMPLEMENTATION.md`
 
-**CARD B — ARKA / COMPLEMENT B**
+Checkpoint commit:
+`bb85774df5f89698e18470bb94985aec42c23c1a`
 
-**GAP — MELODY INTERLOCK FIELD**
+Draft PR:
+**#16 — Round 13K — Melody Memory / Bolivia Siku / Interlock Register**
+
+PR status:
+`DRAFT / DO NOT MERGE`
+
+PR head at creation:
+`bb85774df5f89698e18470bb94985aec42c23c1a`
+
+### Pair architecture
+
+- Card A — `IRA / COMPLEMENT A`
+- Card B — `ARKA / COMPLEMENT B`
+- Gap — `MELODY INTERLOCK FIELD`
 
 Signature:
-
 `NOTE → GAP → ANSWER → INTERLOCK → SCALE → MELODY → REGISTER → CONTINUE`
 
-Matching proof:
-- IRA contributes one note position;
-- a missing next position remains visibly absent;
-- ARKA supplies the complementary position;
-- alternating left/right events progressively fill a central score route;
-- only after both halves contribute does the route become continuous;
-- source ownership remains visible after registration.
+### Real-source visual
 
-Other state:
-**OTHER INTERLOCK**
-- both cards remain valid;
-- selected editorial note slots leave silent positions in the central route;
-- no red X;
-- result does not claim a historical instrument is invalid.
+Primary source:
+`Wikimedia Commons — Siku bipolar.jpg`
 
-Audio truthfulness:
-- browser synthesis is illustrative only;
-- no claim of authentic siku timbre;
-- no claim that the demonstration phrase is a traditional melody unless directly sourced;
-- notes should alternate without overlapping near-unison beating.
+License: public domain.
 
-Visual truthfulness:
-- use real-source separated Ira / Arka imagery;
-- avoid generic Andean ornamental styling as the identity system;
-- editorial note markers and score route must be labeled as illustrative translation.
+Source mapping is preserved:
+- source left half = Arka → Card B;
+- source right half = Ira → Card A.
 
-## Pasto Varnish status
+### Matching Interlock
 
-**HIGH-QUALITY RESERVE / NOT SELECTED FOR 13K.**
+Eight illustrative temporal slots alternate source ownership:
+`IRA / ARKA / IRA / ARKA / IRA / ARKA / IRA / ARKA`.
 
-Preserve for a later South America balancing round or future Layer Memory exploration.
+The center is explicitly a temporal score/interlock lane, not a waveform or resonance field.
 
-Reason for second place:
-- excellent material novelty and cut/reveal law;
-- but the historical process is layered on a receiving object and the two-card product split would be more editorial than Siku.
+The continuous route becomes visible only after both cards contribute.
+
+### Other Interlock
+
+- selected target slots remain visibly silent;
+- route does not become continuous;
+- both complements remain valid;
+- no red invalidation state.
+
+### Audio
+
+Browser synthesis is illustrative.
+
+Current frequency map:
+`261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88, 523.25 Hz`.
+
+These values are not claimed as documented siku tuning.
+
+IRA is panned left, ARKA right; tones are short and predominantly non-overlapping to prove alternation rather than beating.
+
+### Local validation
+
+PASS:
+- no duplicate DOM IDs;
+- 8 central score slots;
+- 4 IRA source markers;
+- 4 ARKA source markers;
+- Matching + Other states present;
+- explicit non-waveform guardrail present;
+- silent-slot semantics present;
+- AudioContext implementation present;
+- inline JavaScript `node --check` PASS.
+
+### Deployment constraint
+
+A dedicated Vercel candidate is required. Existing family projects must not be overwritten.
+
+The currently connected Vercel tool can deploy an existing current project but does not expose creation of a new project. No alternate installed plugin exposes Vercel project creation.
+
+Therefore **no deployment has been performed yet**. This is a tooling boundary, not a build pass/fail.
+
+Do not use the 13J, 13I, 13H or base RELATIONAL KEY Vercel projects as substitutes.
 
 ## Next required output
 
-# ROUND 13K.4 — SIKU IMPLEMENTATION GATE
+# ROUND 13K.5 — DEDICATED LIVE CANDIDATE + USER VISUAL/AUDIO AUDIT
 
-Create a dedicated implementation branch from this verified concept state.
+Required sequence:
+1. create a blank dedicated Vercel project for the Siku candidate;
+2. deploy the current `index.html` without overwriting another family;
+3. verify `READY` and source/live sync;
+4. user records `MATCHING INTERLOCK` and `OTHER INTERLOCK` with audio;
+5. audit visual alternation, audible alternation, route emergence, silent gaps, pair persistence and non-Ombak distinction;
+6. decide `PASS / PATCH / REJECT`;
+7. keep PR #16 Draft until visual/audio gate passes.
 
-Constraints:
-1. two relational cards visible from first frame;
-2. real-source separated Ira / Arka material;
-3. center reads as temporal interlock, never waveform/resonance;
-4. matching alternates source ownership left/right;
-5. melodic continuity appears only after both halves contribute;
-6. illustrative audio is non-overlapping and truthfully labeled;
-7. Other Interlock leaves visible silent positions and preserves both objects;
-8. no red invalidation;
-9. responsive layout preserves pair logic;
-10. local runtime/syntax checks before deployment.
-
-`CONCEPT PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL PASS`.
+`IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL/AUDIO PASS ≠ PROMOTE ≠ MERGED`.
 
 ## Persistence protocol
 
 After every significant milestone:
 1. update this file;
 2. update `RELATIONAL_KEY_HANDOVER.md`;
-3. record verified branch / commit / deployment / PR identifiers;
+3. record verified branch / commit / deployment / PR IDs;
 4. state the next required output explicitly;
 5. never infer an unverified pass.
