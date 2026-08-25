@@ -3,7 +3,7 @@
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `round13m/complement-memory-boulle`
-Latest verified milestone: `ROUND13M4_BOULLE_IMPLEMENTATION.md`
+Latest verified milestone: `ROUND13M5_VERCEL_PROJECT_CHECKPOINT.md`
 
 ## Product invariant
 
@@ -17,23 +17,25 @@ Current merged distribution:
 Balance Gate 1:
 1. 13K — South America #2 — `MERGED / CLOSED`
 2. 13L — Oceania #2 — `MERGED / CLOSED`
-3. 13M — Europe #2 — `IMPLEMENTED / LOCAL PASS / LIVE CANDIDATE NEXT`
+3. 13M — Europe #2 — `LIVE CANDIDATE / USER VISUAL AUDIT NEXT`
 
 Target after Gate 1:
-`4 / 3 / 2 / 2 / 2 / 2`
+`AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-After 13M merges, pause expansion and run **COLLECTION CONSOLIDATION GATE**.
+After 13M passes and merges, pause family expansion and run the **COLLECTION CONSOLIDATION GATE**.
 
 ## Last closed family — Round 13L
 
 **EMBER MEMORY — AOTEAROA / HIKA AHI — FRICTION REGISTER**
 Law: `SUSTAINED FRICTION PRODUCES EMBER.`
 Proof: `HIKA ≠ KAUAHI → FRICTION → HEAT → EMBER`
-PR #17: merged
+PR #17: `MERGED`
 Merge SHA: `2e9cf84a11b2f5c08a7cf974b1f9b9530be88a4b`
 Golden reference: `dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
 
 # ROUND 13M — EUROPE #2
+
+## Verified research chain
 
 13M.1 Broad Discovery — PASS
 - `ROUND13M1_EUROPE_BALANCE_BROAD_DISCOVERY.md`
@@ -47,6 +49,7 @@ Golden reference: `dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
 13M.3 Concept Gate — PASS / BOULLE SELECTED
 - `ROUND13M3_TWO_FINALIST_CONCEPT_GATE.md`
 - `b6faf0a188d241ffe4408b076ac0df42a72a7c2d`
+- Reticello remains Europe reserve.
 
 # COMPLEMENT MEMORY — FRANCE / BOULLE — RECIPROCAL CUT REGISTER
 
@@ -66,58 +69,89 @@ Signature:
 
 ## 13M.4 — Implementation Gate
 
-Status:
-# **IMPLEMENTED / LOCAL STRUCTURE + SYNTAX PASS**
+Status: `IMPLEMENTED / LOCAL STRUCTURE + SYNTAX PASS`
+Branch: `round13m/complement-memory-boulle`
+Implementation commit: `d9067507c1db464a97defdbdd63346b9d82a3a29`
+Register: `ROUND13M4_BOULLE_IMPLEMENTATION.md`
+Draft PR: **#18 — Round 13M — Complement Memory / France Boulle / Reciprocal Cut Register**
+PR status: `DRAFT / DO NOT MERGE`
 
-Implementation branch:
-`round13m/complement-memory-boulle`
-
-Implementation commit:
-`d9067507c1db464a97defdbdd63346b9d82a3a29`
-
-Register:
-`ROUND13M4_BOULLE_IMPLEMENTATION.md`
-
-Implementation properties:
-- two cards visible immediately as different material fields;
-- original vector motif, not copied Baroque ornament;
-- SHARED CUT resolves one identical editorial path across both;
-- separation + exchange fills the same region with opposite material roles;
-- registered PARTIE and CONTREPARTIE remain distinct material inverses, not identical cards;
-- OTHER CUT uses offset/non-shared paths and never shows reciprocal inlay exchange;
+Verified implementation:
+- two distinct cards visible immediately;
+- original vector/material simulation, not copied Baroque ornament;
+- SHARED CUT uses one common editorial cut path;
+- reciprocal exchange fills the same region with opposite material roles;
+- PARTIE + CONTREPARTIE remain material inverses, not identical;
+- OTHER CUT stays non-shared and does not register reciprocity;
 - both fields remain valid; no red invalidation;
-- historical tortoiseshell is evidence only; no wildlife material is used or recommended;
-- no exact cutting dimensions/tools/modern fabrication recipe claimed;
-- responsive pair logic;
-- duplicate DOM IDs none;
-- inline JS `node --check` PASS.
+- no wildlife material used/recommended;
+- no exact fabrication recipe claimed;
+- local JS syntax + structure checks pass.
 
-Reticello remains the high-quality Europe reserve.
+## 13M.5 — Dedicated Live Candidate
+
+Status:
+# **READY / SOURCE-LIVE SYNC VERIFIED / USER VISUAL AUDIT REQUIRED**
+
+Checkpoint:
+`ROUND13M5_VERCEL_PROJECT_CHECKPOINT.md`
+
+Dedicated project:
+`relational-key-complement-memory-boulle-v13m1`
+
+Project ID:
+`prj_1u0bwUIMeY1fB9trbA4sccHfRKAb`
+
+Ignore initial production import:
+- deployment `dpl_DApvk97q8BShPgeL4v94y77KxrBW`
+- source `main` @ `11f21f6875c4a3b3e4ae2ecce8fd25a5a5a8835d`
+- old baseline, not audit evidence.
+
+Current Boulle preview:
+- trigger commit `392e88baa397ed5a6a9739c5f0a3caacbacd31d4`
+- deployment `dpl_3LhrCjMj4amTCbeeq2o8MVXV5FfF`
+- URL `https://relational-key-complement-memory-boulle-v13m1-ccu3jzusf.vercel.app`
+- source branch `round13m/complement-memory-boulle`
+- state `READY`
+- target `preview`
+- direct served-HTML verification `PASS`
+- title `RELATIONAL KEY — Boulle Reciprocal Cut Register`
+- source/live sync `VERIFIED`.
+
+`READY / SOURCE-LIVE SYNC VERIFIED ≠ VISUAL PASS`.
 
 ## Next required output
 
-# ROUND 13M.5 — DEDICATED VERCEL LIVE CANDIDATE
+# ROUND 13M.6 — USER VISUAL AUDIT
 
-Suggested project:
-`relational-key-complement-memory-boulle-v13m1`
+Record:
+1. `SHARED CUT → TEST RELATIONSHIP → CONTINUE`;
+2. `OTHER CUT → TEST RELATIONSHIP → CONTINUE`.
 
-Required:
-1. dedicated project connected to `Faadil1/relational-key-three-poc`;
-2. preview from `round13m/complement-memory-boulle`;
-3. `READY` verification;
-4. direct served-HTML verification;
-5. user visual audit of SHARED CUT + OTHER CUT;
-6. decide `PASS / PATCH / REJECT`;
-7. no merge before visual pass.
+Audit SHARED CUT for:
+- common cut path is visually undeniable;
+- separation precedes reciprocal exchange;
+- Card A and B become obvious material inverses;
+- neither card becomes a copy of the other;
+- reciprocity is the emergent relation.
+
+Audit OTHER CUT for:
+- paths remain visibly non-shared/offset;
+- no complete reciprocal exchange;
+- both fields remain valid;
+- no error-dominant invalidation.
+
+Decision: `PASS / PATCH / REJECT`.
+Keep PR #18 Draft until the visual gate passes.
 
 # DEPLOYMENT ARCHITECTURE POLICY — LOCKED
 
-Per-family projects are audit labs / golden references only.
+Per-family Vercel projects are isolated audit laboratories / golden references only.
 After 13M merge: **COLLECTION CONSOLIDATION GATE** → one canonical RELATIONAL KEY product + one canonical Vercel project.
 
 ## Persistence protocol
 
-After every milestone update this file + `RELATIONAL_KEY_HANDOVER.md`, record identifiers and state next output explicitly.
+After every milestone update this file + `RELATIONAL_KEY_HANDOVER.md`, record verified identifiers and state next output explicitly.
 
 Status vocabulary:
 `RESEARCH PASS ≠ CONCEPT PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL PASS ≠ PROMOTE ≠ MERGED`.
