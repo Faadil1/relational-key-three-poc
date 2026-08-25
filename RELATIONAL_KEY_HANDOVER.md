@@ -14,25 +14,24 @@ RELATIONAL KEY has completed:
 - C2 — Source Capture & Snapshot Import;
 - C3 — Collection Shell implementation + source pass;
 - C3.1 — dedicated Preview root live pass;
-- C3.2A — collection shell visual pass from user recording.
+- C3.2A — shell visual pass;
+- C3.2B — functional shell pass + partial direct-route pass.
 
 Canonical invariant:
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
-Final distribution:
+Distribution:
 `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
 Family expansion is paused.
 
 # VALIDATION
 
-**15 / 15 families** have documented user visual or visual+audio gates.
+**15 / 15 families** already have their independent user visual or visual+audio gates.
 
 # C2 — FROZEN FAMILY TOPOLOGY
 
-Register: `COLLECTION_CONSOLIDATION_C2_SOURCE_CAPTURE_PASS.md`
-
-Nine exact autonomous snapshots:
+Nine autonomous exact snapshots:
 `e7e1473b0d789fa09b33e2e5b8961c33f32227d2`
 
 Six-family shared runtime + launch routes:
@@ -41,119 +40,107 @@ Six-family shared runtime + launch routes:
 Shared runtime:
 `/families/_shared/round13r/index.html`
 
-Do not modify family snapshot CSS / JS until Global Refinement explicitly opens.
+Do not modify family-native CSS / JS until Global Refinement explicitly opens.
 
 # C3 — COLLECTION SHELL
-
-Status:
-# **IMPLEMENTED / SOURCE PASS**
 
 Implementation:
 `f7416092c64fd7fd17b5771f002fdae5b0e1433f`
 
-Register:
-`COLLECTION_CONSOLIDATION_C3_SHELL_IMPLEMENTATION.md`
-
-Root includes:
-- `The pair is the product.`;
-- continental balance;
-- 15-family atlas;
-- continent filters;
-- text search;
-- direct family navigation;
-- responsive editorial layout.
-
-# C3.1 — COLLECTION PREVIEW LIVE
-
-Vercel project:
-- ID `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
-- actual name `relational-key-collectionrelational-key-collection`
-
-Consolidation preview:
+Preview:
+- Vercel project `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
 - deployment `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ`
 - URL `https://relational-key-collectionrelational-key-collection-4834ctm8z.vercel.app`
 - branch `collection/consolidation-gate-1`
 - state `READY`
 
-Verdict:
+C3.1 verdict:
 # `ROOT LIVE PASS`
 
-Register:
-`COLLECTION_C3_1_LIVE_ROOT_PASS.md`
-
-Vercel Authentication protects preview sub-routes from stateless connector verification. Do not infer route pass from source alone.
-
-# C3.2A — USER SHELL VISUAL AUDIT
-
-User capture:
-- 10.6 s;
-- 1912×966;
-- 30 fps;
-- scrolls from hero through the final family row.
-
-Verdict:
-# `SHELL VISUAL PASS / FUNCTIONAL WALKTHROUGH REQUIRED`
+# C3.2A — SHELL VISUAL
 
 Register:
 `COLLECTION_C3_2_SHELL_VISUAL_AUDIT_PARTIAL.md`
 
-What passes:
-- collection reads as one coherent editorial product;
-- hero thesis and balance hierarchy are strong;
-- Relational Atlas has stable three-column rhythm;
-- all 15 family cards are visibly represented;
-- final Siku / Hika Ahi / Boulle row is visible;
-- no obvious desktop layout break;
-- abstract pair thumbnails support the invariant without cultural skinning.
+Verdict:
+# `SHELL VISUAL PASS`
 
-Future non-blocking polish:
-- small secondary mono labels / filter-chip / card metadata;
-- repeated shell thumbnails favor system coherence over family individuality.
+The root reads as one coherent editorial product. Hero, continental balance, atlas rhythm and all 15 cards were visually confirmed. Future polish: small mono metadata and stronger family individuality at shell level.
 
-What remains unverified because the user only scrolled:
-- continent filter behavior;
-- search behavior;
-- six restored/shared route launchers;
-- nine autonomous routes;
-- return navigation;
-- 15/15 live-route gate.
+# C3.2B — FUNCTIONAL ROUTE WALKTHROUGH
 
-# IMMEDIATE NEXT TASK — C3.2B FUNCTIONAL ROUTE WALKTHROUGH
+Register:
+`COLLECTION_C3_2B_FUNCTIONAL_ROUTE_AUDIT_PARTIAL.md`
 
-Record an interaction-focused walkthrough only; no need to repeat the long shell scroll or replay family-native mechanisms.
+User recording:
+- 94.07 s;
+- 1900×964;
+- 30 fps.
 
-Required:
-1. activate one continent filter and return to `All`;
-2. search for one known family/mechanism and clear the query;
-3. open the six restored/shared launch routes and show correct initialization:
-   - Gatineau / CITY;
-   - Benin / SERVICE;
-   - Nigeria / SIGNAL;
-   - Frida / FRIDA;
-   - Toyama / FOOD;
-   - Bonwire / TEXTILE;
-4. spot-check the nine autonomous routes:
-   - Zellige;
-   - Khipu;
-   - Kento;
-   - Ombak;
-   - Swell;
-   - Stereoscopy;
-   - Siku;
-   - Hika Ahi;
-   - Boulle;
-5. demonstrate at least one return path to the collection.
+Verdict:
+# `FUNCTIONAL SHELL PASS / PARTIAL LIVE ROUTE PASS`
 
-Assistant then records:
-- `15/15 LIVE ROUTE PASS / PATCH`;
-- `COLLECTION USABILITY PASS / PATCH`.
+Verified shell behavior:
+- continent filters work;
+- search works;
+- combined filter + search empty state works;
+- clearing search restores results;
+- browser Back returns from family pages to atlas.
 
-Only after both pass may **GLOBAL REFINEMENT** open.
+Direct consolidated URLs verified live:
+1. `/families/city-gatineau/` ✅
+2. `/families/signal-nigeria/` ✅
+3. `/families/textile-bonwire/` ✅
+4. `/families/kento-japan/` ✅
 
-PR #20 remains Draft.
+Additional correct family states observed inside the shared runtime while URL remained City:
+- SERVICE ✅
+- FRIDA ✅
+- FOOD ✅
+
+These internal states do NOT substitute for direct launcher verification.
+
+# ROUTES STILL TO VERIFY DIRECTLY — 11
+
+1. `/families/service-benin/`
+2. `/families/frida-coyoacan/`
+3. `/families/food-toyama/`
+4. `/families/zellige-fes/`
+5. `/families/khipu-peru/`
+6. `/families/ombak-bali/`
+7. `/families/swell-marshall/`
+8. `/families/stereoscopy-uk/`
+9. `/families/siku-bolivia/`
+10. `/families/hika-ahi-aotearoa/`
+11. `/families/boulle-france/`
+
+Do not claim `15/15 LIVE ROUTE PASS` until these are opened directly in the authenticated Preview browser.
+
+# USABILITY FINDING
+
+Current collection usability is:
+# `PASS WITH POLISH — ROUTE COMPLETENESS OPEN`
+
+Browser Back works, but no explicit in-product `Back to Atlas` affordance is visible in family snapshots. Add this to the Global Refinement backlog rather than modifying frozen snapshots during C3.
+
+# IMMEDIATE NEXT TASK — C3.2C
+
+Record one short route-completion capture only:
+- open each of the 11 remaining direct routes;
+- hold ~1–2 seconds on the loaded title/state;
+- return to atlas between routes however convenient;
+- do NOT replay family-native interactions;
+- no need to retest filters/search.
+
+If all eleven resolve correctly, assistant records:
+- `15/15 LIVE ROUTE PASS`;
+- `COLLECTION USABILITY PASS WITH POLISH`;
+- opens **GLOBAL REFINEMENT**.
+
+PR #20 remains Draft until that gate is closed.
 
 ## Persistence protocol
 
 After every significant milestone update `RELATIONAL_KEY_CURRENT_STATE.md` + this handover.
 
-If a new conversation starts here, resume directly at **C3.2B — FUNCTIONAL ROUTE WALKTHROUGH**.
+If a new conversation starts here, resume directly at **C3.2C — DIRECT ROUTE COMPLETION**.
