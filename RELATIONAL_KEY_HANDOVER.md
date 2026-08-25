@@ -3,6 +3,8 @@
 Updated: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
 Working branch: `collection/consolidation-gate-1`
+Draft PR: **#20 — RELATIONAL KEY — Collection Consolidation Gate**
+PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
@@ -11,31 +13,30 @@ RELATIONAL KEY has completed:
 - C1 — Inventory + Architecture Freeze;
 - C2 — Source Capture & Snapshot Import.
 
-C3 — Collection Shell is now implemented and source-verified.
+C3 — Collection Shell is implemented and source-verified.
 
 Canonical invariant:
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
-Final continental distribution:
+Final distribution:
 `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
 Family expansion is paused.
 
-# COLLECTION VALIDATION
+# VALIDATION
 
-**15 / 15 families have documented user visual or visual+audio gates.**
+**15 / 15 families** have documented user visual or visual+audio gates.
 
-Japan / Kento was the final debt:
+Final debt was Japan / Kento:
 - `COLLECTION_C1_KENTO_USER_VISUAL_AUDIT_PASS.md`
-- verdict `VISUAL PASS WITH POLISH / PROMOTE`
-- golden deployment `dpl_J74TMsqZS2uSWv8PuhLVGPfQfBev`.
+- `VISUAL PASS WITH POLISH / PROMOTE`
+- golden `dpl_J74TMsqZS2uSWv8PuhLVGPfQfBev`.
 
 # C2 — FROZEN FAMILY TOPOLOGY
 
-C2 register:
-`COLLECTION_CONSOLIDATION_C2_SOURCE_CAPTURE_PASS.md`
+Register: `COLLECTION_CONSOLIDATION_C2_SOURCE_CAPTURE_PASS.md`
 
-Nine autonomous exact snapshots:
+Nine exact autonomous snapshots:
 `e7e1473b0d789fa09b33e2e5b8961c33f32227d2`
 
 Six-family shared restored runtime + launch routes:
@@ -44,9 +45,7 @@ Six-family shared restored runtime + launch routes:
 Shared runtime:
 `/families/_shared/round13r/index.html`
 
-All 15 collection routes are represented in:
-`collection/families.json`
-
+All 15 routes are represented in `collection/families.json`.
 Do not modify family snapshot CSS / JS during C3.
 
 # C3 — COLLECTION SHELL
@@ -60,54 +59,70 @@ Implementation:
 Register:
 `COLLECTION_CONSOLIDATION_C3_SHELL_IMPLEMENTATION.md`
 
-Registry phase update:
+Registry phase:
 `9b2c503462c96e93ae5c65d365f7a5bc49785139`
 
-Implemented root experience:
-- `RELATIONAL KEY — Collection`;
-- hero thesis `The pair is the product.`;
-- continent balance display;
+Draft review surface:
+**PR #20**
+
+Root includes:
+- thesis `The pair is the product.`;
+- continental balance;
 - 15-family atlas;
 - continent filters;
-- search across place, memory, mechanism and law;
-- direct links to `/families/<slug>/`;
-- responsive grid;
-- abstract two-object thumbnails so the collection home does not reduce cultures to decorative skins.
+- search across place / memory / mechanism / law;
+- direct family links;
+- responsive layout;
+- abstract relational thumbnails instead of cultural skinning.
 
 Source checks:
-- registry `validated_count = 15`;
-- registry `candidate_count = 0`;
-- 15 direct family records/routes;
-- C3 implementation changes root `index.html` only;
-- family snapshot regression anchors remain untouched.
+- registry validated=15 / candidate=0;
+- 15 family records/routes;
+- C3 changes root `index.html` only;
+- frozen family snapshots remain untouched.
 
 # LOCKED RULES
 
-1. The collection shell wraps family mechanisms; it does not replace them.
+1. Collection shell wraps family mechanisms; it does not replace them.
 2. Family snapshots remain frozen until explicit Global Refinement.
 3. Existing family Vercel projects remain golden references.
-4. Final goal = one canonical RELATIONAL KEY collection + one canonical Vercel project.
+4. Final product = one canonical RELATIONAL KEY collection + one canonical Vercel project.
 5. `SOURCE PASS ≠ LIVE ROUTE PASS ≠ COLLECTION VISUAL PASS`.
 
-# IMMEDIATE NEXT TASK
+# VERCEL CHECK
 
-# **C3.1 — DEDICATED CONSOLIDATION LIVE**
+No dedicated collection project exists yet.
 
-1. Check whether a dedicated collection Vercel project already exists.
-2. If absent, user creates one by importing `Faadil1/relational-key-three-poc` (the connector historically cannot create a new Vercel project).
-3. Deploy/trigger branch `collection/consolidation-gate-1`.
-4. Verify root HTTP/render + registry loading.
-5. Verify all 15 family routes.
-6. Spot-check the six shared-runtime launch routes initialize the intended family.
-7. Ask user for a collection-level visual/usability recording.
-8. Only after collection visual pass may Global Refinement open.
+Do not silently reuse the old unlinked `relational-key-three-poc` Vercel experiment.
+
+Create a clean Git-imported project named exactly:
+# `relational-key-collection`
+
+Import repository:
+`Faadil1/relational-key-three-poc`
+
+The first deployment may show `main`; that is expected. Do not change branch settings manually.
+
+# IMMEDIATE NEXT TASK — C3.1
+
+Once `relational-key-collection` exists:
+1. assistant finds project ID;
+2. pushes a consolidation checkpoint to trigger `collection/consolidation-gate-1`;
+3. waits for preview `READY`;
+4. verifies root HTML + registry load;
+5. verifies all 15 family routes;
+6. spot-checks CITY / SERVICE / SIGNAL / FRIDA / FOOD / TEXTILE launch routes;
+7. user records collection-level visual/usability walkthrough;
+8. only after pass may Global Refinement open.
+
+PR #20 remains Draft throughout this gate.
 
 ## Accidental PR note
 
-PR #19 was an accidental placeholder during transition. It was immediately closed, unmerged, no code change. Ignore it.
+PR #19 was an accidental placeholder. It was immediately closed, unmerged, no code change. Ignore it.
 
 ## Persistence protocol
 
 After every significant milestone update `RELATIONAL_KEY_CURRENT_STATE.md` + this handover.
 
-If a new conversation starts here, resume directly at **C3.1 — DEDICATED CONSOLIDATION LIVE**.
+If a new conversation starts here, resume at **C3.1 — create/identify `relational-key-collection` Vercel project**.
