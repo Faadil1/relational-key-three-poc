@@ -2,10 +2,8 @@
 
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
-Canonical working branch: `collection/consolidation-gate-1`
-Consolidation PR: **#20 — RELATIONAL KEY — Collection Consolidation Gate**
-PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `COLLECTION_C3_2D_TWO_ROUTE_CLOSEOUT_PASS.md`
+Canonical working branch: `collection/global-refinement-1`
+Latest verified milestone: `GLOBAL_REFINEMENT_G0_BASELINE.md`
 
 ## Product invariant
 
@@ -18,83 +16,90 @@ Status: `CLOSED`
 Distribution:
 # `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-Family expansion remains paused.
+Family expansion remains paused during Global Refinement.
 
-## Collection validation ledger
+## Consolidation baseline — MERGED
 
-# **15 / 15 families have independent user visual or visual+audio gates.**
-# **15 / 15 consolidated direct family routes have now been verified live.**
+PR #20 — `RELATIONAL KEY — Collection Consolidation Gate`
+Status: `MERGED`
+Merge method: `SQUASH`
+Pre-refinement regression anchor:
+# `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
 
-## Collection Consolidation Gate
+Validated at that anchor:
+- 15 / 15 families have independent user visual or visual+audio gates;
+- 15 / 15 consolidated direct family routes verified live;
+- collection root live pass;
+- shell visual pass;
+- continent filters pass;
+- search + zero-result state pass;
+- collection usability `PASS WITH POLISH`.
 
-### C1 — Inventory + Architecture Freeze
-Status: `PASS`
-Register: `COLLECTION_CONSOLIDATION_C1_INVENTORY_ARCHITECTURE.md`
+Historic consolidation Preview golden reference:
+- Vercel project `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`;
+- deployment `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ`;
+- URL `https://relational-key-collectionrelational-key-collection-4834ctm8z.vercel.app`;
+- branch `collection/consolidation-gate-1`;
+- state `READY`.
 
-### C2 — Source Capture & Snapshot Import
-Status: `PASS`
-Register: `COLLECTION_CONSOLIDATION_C2_SOURCE_CAPTURE_PASS.md`
+## ACTIVE PHASE — GLOBAL REFINEMENT
 
-Regression anchors:
-- nine autonomous exact snapshots — `e7e1473b0d789fa09b33e2e5b8961c33f32227d2`
-- six-family shared runtime + launch routes — `9321844cac8c2e9ccedda7e206b1ee03445bed83`
+# **STATUS: OPEN / G0 BASELINE FROZEN**
 
-### C3 — Collection Shell
-Status: `PASS WITH POLISH`
-Implementation: `f7416092c64fd7fd17b5771f002fdae5b0e1433f`
+Working branch:
+`collection/global-refinement-1`
 
-Dedicated consolidation Preview:
-- project ID: `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
-- deployment: `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ`
-- URL: `https://relational-key-collectionrelational-key-collection-4834ctm8z.vercel.app`
-- branch: `collection/consolidation-gate-1`
-- state: `READY`
+G0 register:
+`GLOBAL_REFINEMENT_G0_BASELINE.md`
 
-Verified collection gates:
-- `ROOT LIVE PASS` ✅
-- `SHELL VISUAL PASS` ✅
-- continent filters ✅
-- search + zero-result state ✅
-- return via browser Back ✅ with polish backlog
-- `15 / 15 LIVE ROUTE PASS` ✅
-- `COLLECTION USABILITY PASS WITH POLISH` ✅
+G0 commit:
+`9cbedfaaec7857d7d9ad924257a4ccd1b8fd7e58`
 
-Route-closeout register:
-`COLLECTION_C3_2D_TWO_ROUTE_CLOSEOUT_PASS.md`
+### Locked regression policy
 
-Final two routes closed in the 21.03 s user capture:
-- `/families/zellige-fes/` → `Fès · Zellige` / Tessellated Register ✅
-- `/families/food-toyama/` → `EDIBLE PASSAGE` / Toyama ✅
+1. `79ba99ec…` is the immutable pre-refinement collection anchor.
+2. Existing per-family Vercel deployments remain golden references.
+3. Family-native mechanisms may not be flattened or replaced by one generic interaction model.
+4. Any wrapper/navigation change that touches family routes requires route regression checks.
+5. Any family presentation change requires targeted comparison to its golden reference.
+6. The center/gap remains relational evidence, never the primary product.
 
-## GLOBAL REFINEMENT
+## Staged Global Refinement plan
 
-# **STATUS: OPEN**
+### G1 — Collection Navigation Frame — NEXT
+Add an explicit lightweight `← Back to Atlas` affordance around family views without rewriting family-native interactions.
 
-Global Refinement may now be planned, but implementation should begin only from a clean consolidated baseline after PR #20's explicit merge gate.
+Required G1 gate:
+- collection root still works;
+- all family routes still resolve;
+- wrapper does not cover or break family controls;
+- return to Atlas works without relying on browser Back;
+- family mechanism source remains unchanged beneath the wrapper where possible.
 
-Priority refinement backlog:
-1. explicit `← Back to Atlas` around family views;
-2. improve very small mono/chip/card metadata;
-3. improve family individuality at shell level without cultural skinning;
-4. preserve golden family mechanisms and regression anchors;
-5. systematically address `PASS WITH POLISH` family backlog;
-6. improve collection ↔ family transition/cohesion;
-7. maintain the pair as the product; do not turn the gap into the product.
+### G2 — Shell Legibility
+Improve tiny mono labels, filter chips and card metadata, including responsive readability.
+
+### G3 — Family Individuality at Atlas Level
+Increase family distinguishability without flags, stereotyped motifs, generic cultural skinning or decorative appropriation.
+
+### G4 — PASS WITH POLISH Backlog
+Resolve documented family polish items in staged regression-safe passes.
+
+### G5 — Collection Cohesion
+Improve transitions and shared framing while preserving family-native distinction.
+
+### G6 — Final Collection Validation
+Re-audit root, routes affected by refinement, targeted family regressions, responsive behavior and final deployment readiness.
 
 ## Immediate next output
 
-# **C3.3 — CONSOLIDATION MERGE GATE**
+# **G1 — COLLECTION NAVIGATION FRAME**
 
-Do not merge PR #20 without explicit user authorization.
-
-After merge:
-- create a fresh branch for Global Refinement from the merged consolidated baseline;
-- freeze that merge SHA as the pre-refinement regression anchor;
-- begin refinement in staged gates, not as one uncontrolled redesign.
+Do not begin broad visual restyling before G1 is implemented and route-regression checked.
 
 Status vocabulary:
-`15/15 LIVE ROUTE PASS ≠ GLOBAL REFINEMENT IMPLEMENTED ≠ FINAL COLLECTION PASS`.
+`CONSOLIDATION MERGED ≠ G0 BASELINE FROZEN ≠ G1 PASS ≠ GLOBAL REFINEMENT COMPLETE ≠ FINAL COLLECTION PASS`.
 
 ## Persistence protocol
 
-After every significant milestone, update this file + `RELATIONAL_KEY_HANDOVER.md` with exact branches, commits, deployments, gates and next output.
+After every significant milestone update this file + `RELATIONAL_KEY_HANDOVER.md`, recording exact branch, commits, deployments, regression anchors, gate result and next required output.
