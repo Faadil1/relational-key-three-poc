@@ -4,131 +4,133 @@ Updated: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
 Working branch: `collection/consolidation-gate-1`
 
-## Resume here
+# RESUME HERE
 
-RELATIONAL KEY has completed **CONTINENTAL BALANCE GATE 1**.
+RELATIONAL KEY has completed:
+- Continental Balance Gate 1;
+- Collection Consolidation C1 — Inventory + Architecture Freeze;
+- Collection Consolidation C2 — Source Capture & Snapshot Import.
 
 Canonical invariant:
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
-Final merged distribution:
+Final continental distribution:
 `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
-
-Latest family merge:
-- Round 13M / Boulle
-- squash merge `540923b02a8b8c8490809a8c381d9e9bfee29d99`
 
 Family expansion is paused.
 
-# ACTIVE PHASE — COLLECTION CONSOLIDATION GATE
+# VALIDATION LEDGER
 
-C1 status:
-# **INVENTORY + ARCHITECTURE FREEZE — PASS**
+All **15 / 15 families** now have documented user visual or visual+audio gates.
 
-Read first:
-1. `RELATIONAL_KEY_CURRENT_STATE.md`
-2. `COLLECTION_CONSOLIDATION_C1_INVENTORY_ARCHITECTURE.md`
-3. `collection/families.json`
-4. `COLLECTION_C1_KENTO_VALIDATION_DEBT.md`
+The final missing gate was Japan / Kento Register.
 
-## Collection ledger
+Kento audit:
+`COLLECTION_C1_KENTO_USER_VISUAL_AUDIT_PASS.md`
 
-15 family slots total.
+Verdict:
+`VISUAL PASS WITH POLISH / PROMOTE`
 
-Validation:
-- 14 documented user visual / visual+audio gates;
-- 1 pending gate: Japan / Kento Register.
+Golden deployment:
+`dpl_J74TMsqZS2uSWv8PuhLVGPfQfBev`
 
-## Kento — immediate blocker before calling all 15 promoted
+User recording:
+~10.3 s / 1904×960 / 30 fps.
 
-Branch:
-`round13g/print-memory-kento`
+Matching verified print registration; Other verified visible misregistration while both cards remain valid.
 
-Implementation doc:
-`ROUND13G2_KENTO_REGISTER_IMPLEMENTATION.md`
+# C2 — SOURCE CAPTURE COMPLETE
 
-Doc status:
-`IMPLEMENTED / LIVE VISUAL AUDIT REQUIRED`
+Register:
+`COLLECTION_CONSOLIDATION_C2_SOURCE_CAPTURE_PASS.md`
 
-Vercel:
-- project `relational-key-print-memory-kento-v13g1`
-- deployment `dpl_J74TMsqZS2uSWv8PuhLVGPfQfBev`
-- URL `https://relational-key-print-memory-kento-v13g1-gbdy0lbk4.vercel.app`
-- state `READY`
+## Nine autonomous exact snapshots
 
-Direct live fetch:
-`HTTP 200 / SOURCE-LIVE CONTENT VERIFIED`
+Import commit:
+`e7e1473b0d789fa09b33e2e5b8961c33f32227d2`
 
-Observed live:
-- Kento Register title;
-- BLOCK CLAIM + PAPER / IMAGE RULE;
-- kagi + hikitsuki edge registration;
-- MATCHING BLOCK / OTHER BLOCK;
-- matching progression ends in registered print alignment;
-- other retains visible misregistration while both cards remain valid.
+Routes:
+- `/families/zellige-fes/`
+- `/families/khipu-peru/`
+- `/families/kento-japan/`
+- `/families/ombak-bali/`
+- `/families/swell-marshall/`
+- `/families/stereoscopy-uk/`
+- `/families/siku-bolivia/`
+- `/families/hika-ahi-aotearoa/`
+- `/families/boulle-france/`
 
-Required user recording:
-1. idle state visible;
-2. MATCHING BLOCK → TEST REGISTRATION → final registered state;
-3. OTHER BLOCK → TEST REGISTRATION → final misregistration state;
-4. keep both cards visible.
+Each `index.html` is the exact canonical branch blob; no mechanism rewrite occurred.
 
-Audit criteria:
-- two physical roles are distinct;
-- edge registration marks make alignment causal;
-- final print alignment dominates the center graphic;
-- Other reads as print misregistration, not UI failure;
-- both cards remain valid.
+## Six restored-base families
 
-Until reviewed:
-# `KENTO = LIVE CANDIDATE / NOT PROMOTED`
+Import commit:
+`9321844cac8c2e9ccedda7e206b1ee03445bed83`
 
-## Source topology for C2
+Exact shared runtime:
+`/families/_shared/round13r/index.html`
 
-Six-family restored base:
-`round13r/relational-pair-restoration`
+Source blob:
+`bed8c2fa6d2f40b9677d327ecfcd6c581238e14d`
 
-Dedicated validated branches:
-- `round13e/craft-memory-zellige`
-- `round13f/record-memory-khipu`
-- `round13h/sound-memory-ombak`
-- `round13i/navigation-memory-marshall`
+Family routes use invisible same-origin launchers that load that unchanged runtime and select one existing tab:
+- `/families/city-gatineau/` → CITY
+- `/families/service-benin/` → SERVICE
+- `/families/signal-nigeria/` → SIGNAL
+- `/families/frida-coyoacan/` → FRIDA
+- `/families/food-toyama/` → FOOD
+- `/families/textile-bonwire/` → TEXTILE
 
-Candidate branch:
-- `round13g/print-memory-kento`
+Do not replace these wrappers with copied/reimplemented mechanisms during C3.
 
-Later promoted / merged family sources:
-- `round13j/depth-memory-stereoscopy`
-- `round13k/melody-memory-siku`
-- `round13l/ember-memory-hika-ahi`
-- `round13m/complement-memory-boulle`
+# MACHINE REGISTRY
 
-## Consolidation architecture — LOCKED
+`collection/families.json`
 
-- snapshots at `/families/<slug>/index.html`;
-- immutable source capture first;
-- no CSS / interaction normalization during import;
-- registry at `/collection/families.json`;
-- root collection shell only after snapshots exist;
-- existing Vercel lives remain golden regression anchors;
-- final result = one canonical RELATIONAL KEY product + one canonical Vercel project.
+Current counts:
+- validated: 15
+- candidate: 0
 
-## Immediate next task
+# LOCKED CONSOLIDATION RULES
 
-# **KENTO USER VISUAL GATE**
+1. Family snapshots are regression anchors.
+2. Collection shell wraps the family experiences; it does not normalize their mechanism.
+3. No family-native CSS / JS refactor until an explicit Global Refinement gate.
+4. Existing Vercel family projects remain golden comparison lives.
+5. Final goal = one canonical RELATIONAL KEY collection + one canonical Vercel project.
 
-After verdict:
-1. update canonical state + this handover;
-2. update Kento validation in `collection/families.json`;
-3. begin **C2 — SOURCE CAPTURE & SNAPSHOT IMPORT**;
-4. do not start Global Refinement yet.
+# IMMEDIATE NEXT TASK
 
-## Accidental PR note
+# **C3 — COLLECTION SHELL**
 
-PR #19 was an accidental placeholder. It was immediately closed, unmerged, with no code change. Ignore it.
+Build a new root `index.html` for the collection branch only.
+
+C3 should make the 15-family system legible as a collection before entering any family.
+
+Required capabilities:
+- 15 family entries;
+- continent overview using the locked 4/3/2/2/2/2 distribution;
+- filtering by continent;
+- filtering / grouping by memory or mechanism;
+- direct links to all `/families/<slug>/` routes;
+- preserve a strong product thesis: relationships, not credentials alone, create meaning;
+- no generic cultural skinning;
+- no modification to family snapshot files.
+
+After implementation:
+1. source/static checks;
+2. create a dedicated consolidation Vercel project if none exists;
+3. deploy branch preview;
+4. verify root + all 15 routes;
+5. run collection-level user visual/usability audit;
+6. only then open Global Refinement.
+
+## Important note
+
+PR #19 was an accidental placeholder from the transition to consolidation. It was immediately closed, unmerged, with no code change. Ignore it.
 
 ## Persistence protocol
 
-After every significant milestone update canonical state + this handover and record exact identifiers.
+After every significant milestone update `RELATIONAL_KEY_CURRENT_STATE.md` + this handover.
 
-If a new conversation starts here, resume at **KENTO USER VISUAL GATE**, then C2.
+If a new conversation starts here, resume directly at **C3 — COLLECTION SHELL**.
