@@ -15,7 +15,8 @@ RELATIONAL KEY has completed:
 - C3 — Collection Shell implementation + source pass;
 - C3.1 — dedicated Preview root live pass;
 - C3.2A — shell visual pass;
-- C3.2B — functional shell pass + partial direct-route pass.
+- C3.2B — functional shell pass;
+- C3.2C — direct route completion to **13 / 15 verified routes**.
 
 Canonical invariant:
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
@@ -27,7 +28,7 @@ Family expansion is paused.
 
 # VALIDATION
 
-**15 / 15 families** already have their independent user visual or visual+audio gates.
+**15 / 15 families** have independent user visual or visual+audio gates.
 
 # C2 — FROZEN FAMILY TOPOLOGY
 
@@ -54,93 +55,88 @@ Preview:
 - branch `collection/consolidation-gate-1`
 - state `READY`
 
-C3.1 verdict:
-# `ROOT LIVE PASS`
+# C3.1
+Verdict: `ROOT LIVE PASS`
 
-# C3.2A — SHELL VISUAL
+# C3.2A
+Register: `COLLECTION_C3_2_SHELL_VISUAL_AUDIT_PARTIAL.md`
+Verdict: `SHELL VISUAL PASS`
 
-Register:
-`COLLECTION_C3_2_SHELL_VISUAL_AUDIT_PARTIAL.md`
+Root reads as one coherent editorial product. Hero, balance, atlas rhythm and all 15 cards were visually confirmed.
 
-Verdict:
-# `SHELL VISUAL PASS`
-
-The root reads as one coherent editorial product. Hero, continental balance, atlas rhythm and all 15 cards were visually confirmed. Future polish: small mono metadata and stronger family individuality at shell level.
-
-# C3.2B — FUNCTIONAL ROUTE WALKTHROUGH
-
-Register:
-`COLLECTION_C3_2B_FUNCTIONAL_ROUTE_AUDIT_PARTIAL.md`
-
-User recording:
-- 94.07 s;
-- 1900×964;
-- 30 fps.
-
-Verdict:
-# `FUNCTIONAL SHELL PASS / PARTIAL LIVE ROUTE PASS`
+# C3.2B
+Register: `COLLECTION_C3_2B_FUNCTIONAL_ROUTE_AUDIT_PARTIAL.md`
+Verdict: `FUNCTIONAL SHELL PASS / PARTIAL LIVE ROUTE PASS`
 
 Verified shell behavior:
-- continent filters work;
+- continent filtering works;
 - search works;
-- combined filter + search empty state works;
-- clearing search restores results;
-- browser Back returns from family pages to atlas.
+- combined filter/search empty state works;
+- clearing query restores results;
+- browser Back returns to atlas.
 
-Direct consolidated URLs verified live:
-1. `/families/city-gatineau/` ✅
-2. `/families/signal-nigeria/` ✅
-3. `/families/textile-bonwire/` ✅
-4. `/families/kento-japan/` ✅
+Previously direct-verified routes:
+- City / Gatineau ✅
+- Signal / Nigeria ✅
+- Textile / Bonwire ✅
+- Kento / Japan ✅
 
-Additional correct family states observed inside the shared runtime while URL remained City:
-- SERVICE ✅
-- FRIDA ✅
-- FOOD ✅
+# C3.2C — DIRECT ROUTE COMPLETION PARTIAL
 
-These internal states do NOT substitute for direct launcher verification.
+Register:
+`COLLECTION_C3_2C_DIRECT_ROUTE_COMPLETION_PARTIAL.md`
 
-# ROUTES STILL TO VERIFY DIRECTLY — 11
+User recording:
+- 70.33 s;
+- 1908×958;
+- 30 fps.
 
-1. `/families/service-benin/`
-2. `/families/frida-coyoacan/`
-3. `/families/food-toyama/`
-4. `/families/zellige-fes/`
-5. `/families/khipu-peru/`
-6. `/families/ombak-bali/`
-7. `/families/swell-marshall/`
-8. `/families/stereoscopy-uk/`
-9. `/families/siku-bolivia/`
-10. `/families/hika-ahi-aotearoa/`
-11. `/families/boulle-france/`
+New direct routes verified:
+- Service / Benin ✅
+- Frida / Coyoacán ✅
+- Khipu / Peru ✅
+- Ombak / Bali ✅
+- Swell / Marshall Islands ✅
+- Stereoscopy / UK ✅
+- Siku / Bolivia ✅
+- Hika Ahi / Aotearoa ✅
+- Boulle / France ✅
 
-Do not claim `15/15 LIVE ROUTE PASS` until these are opened directly in the authenticated Preview browser.
+Current direct consolidated route count:
+# **13 / 15 VERIFIED**
 
-# USABILITY FINDING
+Only these two direct launchers remain:
+1. `/families/food-toyama/`
+2. `/families/zellige-fes/`
 
-Current collection usability is:
+Do not infer them from atlas visibility or previous golden deployments.
+
+# USABILITY STATE
+
 # `PASS WITH POLISH — ROUTE COMPLETENESS OPEN`
 
-Browser Back works, but no explicit in-product `Back to Atlas` affordance is visible in family snapshots. Add this to the Global Refinement backlog rather than modifying frozen snapshots during C3.
+Global Refinement backlog already identified:
+- add a collection-level `← Back to Atlas` affordance around family snapshots;
+- review very small mono metadata/chip labels;
+- increase family individuality at shell level without cultural skinning or flattening mechanisms.
 
-# IMMEDIATE NEXT TASK — C3.2C
+# IMMEDIATE NEXT TASK — C3.2D
 
-Record one short route-completion capture only:
-- open each of the 11 remaining direct routes;
-- hold ~1–2 seconds on the loaded title/state;
-- return to atlas between routes however convenient;
-- do NOT replay family-native interactions;
-- no need to retest filters/search.
+Record a tiny closeout capture with only two direct routes:
+1. Food / Toyama — `/families/food-toyama/` → hold on `EDIBLE PASSAGE`;
+2. Zellige / Fès — `/families/zellige-fes/` → hold on Zellige Register.
 
-If all eleven resolve correctly, assistant records:
+No filters, search, or interaction replay needed.
+
+If both load correctly, assistant must record:
 - `15/15 LIVE ROUTE PASS`;
 - `COLLECTION USABILITY PASS WITH POLISH`;
-- opens **GLOBAL REFINEMENT**.
+- **GLOBAL REFINEMENT = OPEN**.
 
-PR #20 remains Draft until that gate is closed.
+PR #20 remains Draft until the collection consolidation gate is closed.
 
 ## Persistence protocol
 
 After every significant milestone update `RELATIONAL_KEY_CURRENT_STATE.md` + this handover.
 
-If a new conversation starts here, resume directly at **C3.2C — DIRECT ROUTE COMPLETION**.
+If a new conversation starts here, resume directly at **C3.2D — TWO-ROUTE CLOSEOUT: Food/Toyama + Zellige/Fès**.
