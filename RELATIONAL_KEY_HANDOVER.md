@@ -2,147 +2,149 @@
 
 Updated: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
-Working branch: `round13l/ember-memory-hika-ahi`
+Working branch: `round13m/complement-memory-boulle`
 
 ## Resume here
 
-RELATIONAL KEY is in the **CONTINENTAL BALANCE GATE**.
+RELATIONAL KEY is completing the **CONTINENTAL BALANCE GATE — Gate 1**.
 
 Canonical invariant:
 **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
 Current merged distribution:
-`AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 1 / EUROPE 1`
+`AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 1`
 
 Balance Gate 1:
 - 13K — South America #2 — MERGED / CLOSED
-- 13L — Oceania #2 — **VISUAL PASS / PROMOTE / MERGE APPROVAL NEXT**
-- 13M — Europe #2
+- 13L — Oceania #2 — MERGED / CLOSED
+- 13M — Europe #2 — **VISUAL PASS / PROMOTE / MERGE APPROVAL NEXT**
 
-Target after Gate 1:
+Target after 13M merge:
 `4 / 3 / 2 / 2 / 2 / 2`
 
-## Last closed family — 13K
+Immediately after 13M merge: stop family expansion and start **COLLECTION CONSOLIDATION GATE**.
 
-**MELODY MEMORY — BOLIVIA / SIKU — INTERLOCK REGISTER**
-Law: `COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.`
-Proof: `IRA ≠ ARKA → ALTERNATION → ONE MELODY`
-PR #16: merged
-Merge SHA: `ca8851db034fac0cc60507d310b1623fb459366c`
-Golden reference: `dpl_AgwdotABtjmYKDvnx3qoprtPEMsr`
-
-# ACTIVE FAMILY — ROUND 13L
+## Last closed family — 13L
 
 **EMBER MEMORY — AOTEAROA / HIKA AHI — FRICTION REGISTER**
+PR #17: MERGED
+Merge SHA: `2e9cf84a11b2f5c08a7cf974b1f9b9530be88a4b`
+Golden reference: `dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
+
+# ACTIVE FAMILY — ROUND 13M
+
+**COMPLEMENT MEMORY — FRANCE / BOULLE — RECIPROCAL CUT REGISTER**
 
 Law:
-**SUSTAINED FRICTION PRODUCES EMBER.**
+**ONE SHARED CUT PRODUCES TWO COMPLEMENTARY INVERSES.**
 
 Proof:
-`HIKA ≠ KAUAHI → FRICTION → HEAT → EMBER`
+`SHEET A ≠ SHEET B → STACK → SHARED CUT → SEPARATE → EXCHANGE → PARTIE ↔ CONTREPARTIE`
 
 Pair:
-- HIKA / active stick
-- KAUAHI / grooved base
-- center = FRICTION / HEAT FIELD
+- Card A — PARTIE / dark ground + light inlay
+- Card B — CONTREPARTIE / light ground + dark inlay
+- center — SHARED CUT / RECIPROCAL EXCHANGE FIELD
 
 Signature:
-`CONTACT → STROKE → TRACE → ACCUMULATE → HEAT → EMBER → REGISTER → CONTINUE`
+`ALIGN → STACK → CUT → SEPARATE → EXCHANGE → INVERT → REGISTER → CONTINUE`
 
 ## Verified chain
 
-13L.1 Broad Discovery — PASS
-- `ROUND13L1_OCEANIA_BALANCE_BROAD_DISCOVERY.md`
-- `9633f07006aeeee145a528eb67455b2a370989eb`
+13M.1 Broad Discovery — PASS
+- `ROUND13M1_EUROPE_BALANCE_BROAD_DISCOVERY.md`
+- `6e16915b7b9ef8d4c27381d1ab1550e7093fbca2`
 
-13L.2 Finalist Gate — PASS
-- `ROUND13L2_DEEP_QUALIFICATION_FINALISTS.md`
-- `96b421203832af8618029a9af7c83b9049158bee`
-- reserve: Double-Hulled Canoe
+13M.2 Deep Qualification — FINALIST PASS
+- `ROUND13M2_DEEP_QUALIFICATION_FINALISTS.md`
+- `6206e33ea3c202edb77b6a7924ac7d5e7909d0fb`
+- finalists: Boulle / Reticello
 
-13L.3 Concept Gate — PASS / Hika Ahi selected
-- `ROUND13L3_TWO_FINALIST_CONCEPT_GATE.md`
-- `99697a137313ada569d469476dbf83d5d4eb5f39`
+13M.3 Concept — PASS / BOULLE SELECTED
+- `ROUND13M3_TWO_FINALIST_CONCEPT_GATE.md`
+- `b6faf0a188d241ffe4408b076ac0df42a72a7c2d`
+- Reticello remains Europe reserve.
 
-13L.4 Implementation — LOCAL PASS
-- implementation `3b550206171e3ad5bfd7a0ad7e6f00f44748a2d7`
-- checkpoint `7c0a327f333407d2654b80b7f8c00facff85f326`
-- PR #17 Draft
+13M.4 Implementation — LOCAL PASS
+- branch `round13m/complement-memory-boulle`
+- implementation `d9067507c1db464a97defdbdd63346b9d82a3a29`
+- register `ROUND13M4_BOULLE_IMPLEMENTATION.md`
+- PR #18 Draft
 
-13L.5 Live Candidate — READY / SOURCE-LIVE SYNC VERIFIED
-- project `relational-key-ember-memory-hika-v13l1`
-- project ID `prj_bxE1WIkaiKvyGG9vP7SrvrMxTmTj`
-- preview `dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
-- URL `https://relational-key-ember-memory-hika-v13l1-89yj1dgb2.vercel.app`
-- ignore old `main` import `dpl_3w5PoFYCKoWgs359S5unxgWTBpmT`
+13M.5 Live Candidate — READY / SOURCE-LIVE SYNC VERIFIED
+- project `relational-key-complement-memory-boulle-v13m1`
+- project ID `prj_1u0bwUIMeY1fB9trbA4sccHfRKAb`
+- ignore initial main import `dpl_DApvk97q8BShPgeL4v94y77KxrBW`
+- verified exact-head preview before audit: `dpl_EK1wW4peLBk1f9KHg4T6nerJ4jFy`
 
-## 13L.6 — User Visual Audit
+## 13M.6 — User Visual Audit
 
 Status:
 # **PASS / PROMOTE**
 
-Initial conditional register:
-`ROUND13L6_USER_VISUAL_AUDIT_CONDITIONAL.md`
+Register:
+`ROUND13M6_USER_VISUAL_AUDIT_PASS.md`
 
-Final Target re-capture register:
-`ROUND13L6_TARGET_RECAPTURE_VISUAL_PASS.md`
+Checkpoint:
+`9e5ab35422978f0773bd613400412dc0c2da424a`
 
-Final checkpoint:
-`79875324bd41fad575381c78bd09a31d8f71986c`
+Evidence:
+- ~25.93 s recording
+- 1908×962
+- 30 fps
+- both SHARED CUT and OTHER CUT captured through completion.
 
-### Target — PASS
-
-User re-capture starts from reset/unresolved state and visibly demonstrates:
-`UNRESOLVED → CONTACT → TRACE → ACCUMULATE → HEAT → EMBER → REGISTER`
+### SHARED CUT — PASS
 
 Observed:
-- no ember at the beginning;
-- contact trace grows progressively;
-- field becomes warmer/brighter before ember appearance;
-- ember emerges only after the accumulated heat phase;
-- registered state preserves HIKA + KAUAHI as distinct objects.
+- same cut contour appears on both fields;
+- center shows one shared division;
+- layers separate;
+- reciprocal material outcome then appears;
+- Card A resolves dark ground + light inlay;
+- Card B resolves light ground + dark inlay;
+- final cards are reciprocal inverses, not copies;
+- pair remains the dominant product.
 
-Capture properties observed:
-- 12.0 s
-- 1908×964
-- 30 fps
+### OTHER CUT — PASS
 
-### Other — PASS from prior recording
+Observed:
+- partial/offset paths only;
+- no reciprocal filled inlays;
+- no complete PARTIE ↔ CONTREPARTIE registration;
+- both material fields remain valid;
+- no red/error-dominant invalidation.
 
-- partial/offset trace;
-- no ember;
-- both tools remain valid;
-- no red invalidation;
-- no practical fire-starting instructions.
+No blocking patch required.
 
-No visual/code patch is required.
+Non-blocking future polish: center exchange marker / microcopy may be enlarged during collection-wide refinement for small-screen legibility.
+
+## Ethical boundary
+
+Historical tortoiseshell is evidence only. Prototype materials are editorial simulations; no wildlife material is used/recommended and no exact fabrication recipe is claimed.
 
 ## Immediate next task
 
-# ROUND 13L.7 — MERGE GATE
+# ROUND 13M.7 — MERGE GATE
 
 On explicit user approval:
-1. verify PR #17 current head;
+1. verify PR #18 current head;
 2. mark Ready if still Draft;
 3. squash merge using expected head SHA;
 4. record merge SHA;
-5. update canonical state + this handover;
-6. close 13L;
-7. begin `ROUND 13M — EUROPE #2 — BROAD DISCOVERY`.
+5. update distribution to `4 / 3 / 2 / 2 / 2 / 2`;
+6. close Continental Balance Gate 1;
+7. begin **COLLECTION CONSOLIDATION GATE**.
 
-PR #17 remains `DRAFT / DO NOT MERGE` until explicit approval.
+PR #18 remains `DRAFT / DO NOT MERGE` until explicit approval.
 
 ## Deployment Architecture Policy — LOCKED
 
-Individual Vercel family projects are audit laboratories / golden references only.
-After Round 13M, run **COLLECTION CONSOLIDATION GATE** and build one canonical RELATIONAL KEY product + one canonical Vercel project, retaining family lives only for regression comparison.
-
-## Truthfulness boundary
-
-Hika interaction is editorial, not operational fire-making guidance. Do not describe UI timing, trace, glow or movement as real-world speed, duration, dimensions, moisture, temperature, tinder preparation or survival technique.
+Individual family Vercel projects are audit laboratories / golden references only.
+After 13M merge, build one canonical RELATIONAL KEY product + one canonical Vercel project, retaining family lives only for regression comparison.
 
 ## Persistence protocol
 
-After every significant milestone update canonical state + this handover, record verified identifiers, and state the next output explicitly.
+After every significant milestone update canonical state + this handover, record identifiers, and state next output explicitly.
 
-If a new conversation starts here, read `RELATIONAL_KEY_CURRENT_STATE.md`, then this file, then resume at **ROUND 13L.7 — MERGE GATE**.
+If a new conversation starts here, read `RELATIONAL_KEY_CURRENT_STATE.md`, then this file, and resume directly at **ROUND 13M.7 — MERGE GATE**.
