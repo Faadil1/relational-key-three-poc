@@ -2,7 +2,7 @@
 
 Updated: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
-Working branch: `round13l/oceania-balance-discovery`
+Working branch: `round13l/ember-memory-hika-ahi`
 
 ## Resume here
 
@@ -16,7 +16,7 @@ Current merged distribution:
 
 Balance Gate 1:
 - 13K — South America #2 — MERGED / CLOSED
-- 13L — Oceania #2 — CONCEPT PASS / WINNER SELECTED / IMPLEMENTATION NEXT
+- 13L — Oceania #2 — IMPLEMENTED / LIVE CANDIDATE NEXT
 - 13M — Europe #2
 
 Target after Gate 1:
@@ -45,20 +45,11 @@ Finalists: Māori Hika Ahi; Polynesian Double-Hulled Canoe.
 Reserves: Aboriginal Grindstones; Pacific Tapa Beater + Anvil.
 
 ## 13L.3 — Concept Gate
+PASS / WINNER SELECTED — `ROUND13L3_TWO_FINALIST_CONCEPT_GATE.md`
+Commit: `99697a137313ada569d469476dbf83d5d4eb5f39`
 
-Status:
-# **PASS / WINNER SELECTED**
-
-Register:
-`ROUND13L3_TWO_FINALIST_CONCEPT_GATE.md`
-
-Commit:
-`99697a137313ada569d469476dbf83d5d4eb5f39`
-
-Canonical update:
-`49c245453a68884979d2655235a9d13674be9b28`
-
-# WINNER — EMBER MEMORY / AOTEAROA / HIKA AHI / FRICTION REGISTER
+Winner:
+**EMBER MEMORY — AOTEAROA / HIKA AHI — FRICTION REGISTER**
 
 Law:
 **SUSTAINED FRICTION PRODUCES EMBER.**
@@ -74,67 +65,100 @@ Pair:
 Signature:
 `CONTACT → STROKE → TRACE → ACCUMULATE → HEAT → EMBER → REGISTER → CONTINUE`
 
-### Matching concept
+Double-Hulled Canoe remains a high-quality Oceania reserve.
 
-`TARGET GROOVE`
-- pair begins separate;
-- hika approaches selected groove relation;
-- abstract editorial contact passes accumulate a heat trace;
-- ember cue appears only after the complete relation is sustained;
-- register preserves both objects.
+## 13L.4 — Hika Ahi Implementation Gate
 
-### Other concept
+Status:
+# **IMPLEMENTED / LOCAL STRUCTURE + SYNTAX PASS**
 
-`OTHER CONTACT`
-- both tools remain valid;
-- partial trace/warmth may appear;
-- selected groove relation does not sustain;
+Branch:
+`round13l/ember-memory-hika-ahi`
+
+Implementation commit:
+`3b550206171e3ad5bfd7a0ad7e6f00f44748a2d7`
+
+Implementation checkpoint:
+`ROUND13L4_HIKA_AHI_IMPLEMENTATION.md`
+
+Checkpoint commit:
+`7c0a327f333407d2654b80b7f8c00facff85f326`
+
+Draft PR:
+**#17 — Round 13L — Ember Memory / Aotearoa Hika Ahi / Friction Register**
+
+PR status:
+`DRAFT / DO NOT MERGE`
+
+PR head at creation:
+`7c0a327f333407d2654b80b7f8c00facff85f326`
+
+### TARGET GROOVE
+
+- two cards are visible from first frame;
+- editorial sweeps build an interface heat trace;
+- center progresses through contact / trace / accumulation / heat;
+- ember cue appears only in the target sequence;
+- register preserves Hika and Kauahi as distinct objects.
+
+### OTHER CONTACT
+
+- trace remains offset / partial;
 - no ember registers;
-- no red X.
+- both tools remain valid;
+- no red X / invalid-tool state.
 
-### Safety / truthfulness boundary
+### Visual strategy
 
-This must not become a practical fire-starting tutorial.
+- original source-grounded CSS/material rendering;
+- no restricted historical image copied;
+- no generic Māori / Indigenous decoration;
+- source grounding remains Te Papa / Te Ara / Science Museum Group.
 
-Do not expose or claim real-world:
+### Safety + truthfulness boundary
+
+This is not practical fire-starting guidance.
+
+Never describe the interface timing or values as real:
 - speed;
 - duration;
 - dimensions;
 - moisture;
 - temperature;
 - tinder preparation;
-- survival instructions.
+- survival technique.
 
-UI stroke counts, heat values and timing are purely editorial.
+UI timing, heat trace and ember cue are editorial only.
 
-### Visual strategy
+### Local validation
 
-- original source-grounded rendering only;
-- do not copy restricted Māori historical photographs;
-- no generic Indigenous ornament;
-- culture is carried by accurate naming + documented mechanism.
-
-### Double Hull
-
-HIGH-QUALITY OCEANIA RESERVE.
-Lost 13L because maritime imagery risks repeating Swell even though the structural law is valid.
+PASS:
+- no duplicate IDs;
+- TARGET + OTHER states;
+- ember target-only;
+- no red invalidation;
+- responsive pair logic;
+- `node --check` inline JavaScript PASS.
 
 ## Immediate next task
 
-# ROUND 13L.4 — HIKA AHI IMPLEMENTATION GATE
+# ROUND 13L.5 — DEDICATED LIVE CANDIDATE
 
-Create dedicated implementation branch.
+Create a new dedicated Vercel project connected to `Faadil1/relational-key-three-poc`.
+Suggested name:
+`relational-key-ember-memory-hika-v13l1`
 
-Requirements:
-1. two cards visible from first frame;
-2. original hika / kauahi rendering;
-3. center = friction / heat accumulation field;
-4. ember only after sustained target relation;
-5. Other Contact = incomplete trace, no ember, tools remain valid;
-6. no red invalidation;
-7. no operational fire-making details;
-8. responsive pair logic;
-9. local syntax/runtime validation before deployment.
+Do not overwrite any existing family project.
+
+Once it exists:
+1. identify its Vercel project ID;
+2. trigger branch preview from `round13l/ember-memory-hika-ahi`;
+3. verify `READY`;
+4. directly verify served HTML is Hika Ahi Friction Register;
+5. record deployment + source/live sync in canonical state + handover;
+6. user records `TARGET GROOVE → TEST RELATIONSHIP → CONTINUE` and `OTHER CONTACT → TEST RELATIONSHIP → CONTINUE`;
+7. audit `PASS / PATCH / REJECT`;
+8. keep PR #17 Draft until pass.
 
 ## Status vocabulary
 
@@ -142,6 +166,6 @@ Requirements:
 
 ## Persistence protocol
 
-After every significant milestone update canonical state + this handover, record verified identifiers and state the next output explicitly.
+After every significant milestone update canonical state + this handover, record verified identifiers and state next output explicitly.
 
-If a new conversation starts here, read canonical state + this handover, then continue directly at `ROUND 13L.4 — HIKA AHI IMPLEMENTATION GATE`.
+If a new conversation starts here, read canonical state + this handover, then continue directly at `ROUND 13L.5 — DEDICATED LIVE CANDIDATE`.
