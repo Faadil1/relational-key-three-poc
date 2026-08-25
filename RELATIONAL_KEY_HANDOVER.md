@@ -16,7 +16,7 @@ Current merged distribution:
 
 Balance Gate 1:
 - 13K — South America #2 — MERGED / CLOSED
-- 13L — Oceania #2 — BROAD DISCOVERY PASS / DEEP QUALIFICATION NEXT
+- 13L — Oceania #2 — FINALIST GATE PASS / CONCEPT GATE NEXT
 - 13M — Europe #2
 
 Target after Gate 1:
@@ -25,105 +25,108 @@ Target after Gate 1:
 ## Last closed family — Round 13K
 
 **MELODY MEMORY — BOLIVIA / SIKU — INTERLOCK REGISTER**
+Law: `COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.`
+Proof: `IRA ≠ ARKA → ALTERNATION → ONE MELODY`
+Audit: `VISUAL+AUDIO PASS / PROMOTE`
+PR #16: `MERGED`
+Merge SHA: `ca8851db034fac0cc60507d310b1623fb459366c`
 
-Law:
-**COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.**
-
-Proof:
-`IRA ≠ ARKA → ALTERNATION → ONE MELODY`
-
-Live candidate:
-`dpl_AgwdotABtjmYKDvnx3qoprtPEMsr`
-
-User visual + audio audit:
-`PASS / PROMOTE`
-
-PR #16:
-`MERGED`
-
-Squash merge commit:
-`ca8851db034fac0cc60507d310b1623fb459366c`
-
-Do not reopen 13K without a concrete defect.
+Do not reopen without a concrete defect.
 
 # CURRENT ACTIVE ROUND — 13L / OCEANIA #2
 
 ## 13L.1 — Broad Discovery
+Status: PASS
+Register: `ROUND13L1_OCEANIA_BALANCE_BROAD_DISCOVERY.md`
+Commit: `9633f07006aeeee145a528eb67455b2a370989eb`
+
+## 13L.2 — Deep Qualification
 
 Status:
-**DISCOVERY GATE PASS**
-
-Branch:
-`round13l/oceania-balance-discovery`
+# **FINALIST GATE PASS**
 
 Register:
-`ROUND13L1_OCEANIA_BALANCE_BROAD_DISCOVERY.md`
+`ROUND13L2_DEEP_QUALIFICATION_FINALISTS.md`
 
-Discovery commit:
-`9633f07006aeeee145a528eb67455b2a370989eb`
+Commit:
+`96b421203832af8618029a9af7c83b9049158bee`
 
-Canonical-state update:
-`108423ceb7c985f1131c650d462486248b7aca53`
+Canonical update:
+`9eabe661e24b231f1213337cb61c54f778bb4349`
 
-### Existing Oceania mechanism to avoid repeating
+### Finalist A — Māori Hika Ahi
 
-Marshall Islands Swell already occupies:
-- environmental wave deflection;
-- navigation / orientation;
-- ocean swell as information.
+Pair:
+- HIKA fire-making stick
+- KAUAHI grooved base stick
 
-13L should therefore prefer friction, abrasion, structural coupling or compression rather than another navigation/water-reading family.
+Mechanism:
+friction in selected groove → heat → ember.
 
-### Tier A — Deep qualify next
+Candidate law:
+**RECIPROCAL FRICTION RELEASES LATENT HEAT INTO EMBER.**
 
-1. **Aotearoa / Māori — Hika Ahi**
-   - pair: hika fire-making stick + kauahi grooved base stick
-   - mechanism: back/forth friction → heat → ember
-   - candidate law: `RECIPROCAL FRICTION RELEASES LATENT HEAT INTO EMBER.`
-   - native pair strength: VERY HIGH
-   - risk: cultural sensitivity / fire-instruction boundary / reusable visual source rights.
+Proof:
+`HIKA ≠ KAUAHI → CONTACT → FRICTION → HEAT → EMBER`
 
-2. **Aboriginal Australia — Millstone + Muller / Grindstones**
-   - mechanism: lower millstone + upper muller → pressure/motion → grinding
-   - candidate law: `RECIPROCAL ABRASION TURNS WHOLE MATERIAL INTO PREPARED MATTER.`
-   - native pair strength: HIGH
-   - risk: processed seed/pigment is a third material; do not make this another food story.
+Why strong:
+- natively two-object;
+- clear emergent third result;
+- highly distinct from all current families;
+- Other Contact can simply fail to register the target ember while preserving both objects.
 
-3. **Polynesia — Double-Hulled Canoe**
-   - mechanism: two hulls joined in parallel → distributed buoyancy → stability / seaworthiness
-   - candidate law: `DISTRIBUTED BUOYANCY PRODUCES STABILITY.`
-   - native pair strength: VERY HIGH
-   - risk: maritime setting may feel too close to Swell unless interaction is strictly structural.
-   - usable visual path: CC BY-SA Wikimedia Commons image exists.
+Guardrails:
+- do not turn prototype into practical fire-starting instruction;
+- no claimed exact temperatures/timing/moisture/stroke calibration;
+- use precise Māori terminology and sources;
+- no generic Indigenous decoration;
+- Māori-specific visual rights are currently the main implementation risk.
 
-4. **Sāmoa / Tahiti / West Polynesia — Tapa Beater + Anvil**
-   - mechanism: repeated impact/compression widens bark into cloth
-   - candidate law: `REPEATED COMPRESSION TURNS A STRIP INTO A SURFACE.`
-   - native pair strength: HIGH-MEDIUM
-   - risk: bark is a necessary third substrate; avoid decorative transfer/Kento overlap.
+### Finalist B — Polynesian Double-Hulled Canoe
 
-### Tier B reserves
+Pair:
+- HULL A
+- HULL B
 
-- Paired Poi — pair optional; sound/rhythm territory already crowded.
-- Toki + Hoanga — strong abrasion, but adjacent to Grindstone and less co-equal as two product objects.
+Mechanism:
+parallel joined hulls → distributed buoyancy → stability / seaworthiness.
+
+Candidate law:
+**DISTRIBUTED BUOYANCY PRODUCES STABILITY.**
+
+Proof:
+`HULL A + HULL B → JOIN → DISTRIBUTE → STABILIZE`
+
+Why strong:
+- natively pair-based;
+- emergent system property is clear;
+- strong usable visual route via CC BY-SA Wikimedia Commons.
+
+Guardrail:
+Must stay structural. Do not use navigation, swell reading or ocean-orientation language because Marshall Islands Swell already occupies that territory.
+
+### Reserves
+
+- Aboriginal Australia Grindstones — strong but more triadic / rights burden.
+- Pacific Tapa Beater + Anvil — strong compression law but third bark substrate + terminology/rights burden.
 
 ## Immediate next task
 
-# ROUND 13L.2 — DEEP QUALIFICATION
+# ROUND 13L.3 — TWO-FINALIST CONCEPT GATE
 
-Deep-qualify Tier A only and select at most two finalists.
+Compare Hika Ahi vs Double Hull.
 
-Required checks:
-1. verify exact mechanism through museum / heritage / scholarly sources;
-2. test whether both objects are truly required natively;
-3. compare explicitly against Swell and the rest of the collection;
-4. test whether a clear third emergent result appears;
-5. solve or clearly flag visual-rights strategy;
-6. define the smallest truthful two-card translation;
-7. define a culturally truthful Other state that does not falsely invalidate objects;
-8. score interaction legibility and novelty;
-9. select at most two finalists;
-10. do not implement before finalist gate is recorded.
+Winner must maximize:
+1. pair necessity;
+2. emergent third result;
+3. distinction from Swell;
+4. truthful Matching / Other states;
+5. visual/source feasibility;
+6. mechanism-native cultural identity;
+7. interaction surprise + clarity.
+
+Select one winner or `NO BUILD`.
+Do not implement before recording the concept gate.
 
 ## Status vocabulary
 
@@ -134,8 +137,8 @@ Required checks:
 After every significant milestone:
 1. update `RELATIONAL_KEY_CURRENT_STATE.md`;
 2. update this handover;
-3. record verified branch / commit / deployment / PR IDs;
+3. record branch / commit / deployment / PR identifiers;
 4. state next required output explicitly;
 5. never infer an unverified pass.
 
-If a new conversation starts here, read the canonical state, then this handover, then continue directly with `ROUND 13L.2 — DEEP QUALIFICATION`.
+If a new conversation starts here, read canonical state + this handover and continue directly at `ROUND 13L.3 — TWO-FINALIST CONCEPT GATE`.
