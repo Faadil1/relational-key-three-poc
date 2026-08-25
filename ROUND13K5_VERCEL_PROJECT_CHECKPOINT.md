@@ -8,9 +8,9 @@ Project name: `relational-key-melody-memory-siku-v13k1`
 Project ID: `prj_sVSWA4YxfvqtJm0yAzUYIegeyM9Z`
 Team: `team_twDc66jGM0sPvNM4I5Huc0x7`
 
-The dedicated Vercel project now exists and is connected to `Faadil1/relational-key-three-poc`.
+The dedicated Vercel project exists and is connected to `Faadil1/relational-key-three-poc`.
 
-## Initial deployment is NOT the Siku candidate
+## Initial production deployment is NOT the Siku candidate
 
 Initial production deployment:
 `dpl_4VuurNFo93XnW3jYAJ7MVqpvgpX3`
@@ -20,21 +20,48 @@ Initial deployment URL:
 
 State: `READY`
 
-However, this deployment was created from repository `main` and therefore represents the old baseline, not `round13k/melody-memory-siku`.
+This deployment was created from repository `main` at commit `11f21f6875c4a3b3e4ae2ecce8fd25a5a5a8835d` and represents the old baseline, not Round 13K.
 
-It must not be used as visual/audio evidence for Round 13K.
+It must not be used as visual/audio evidence.
 
-## Branch deployment trigger
+## Verified Siku branch preview
 
-This checkpoint commit is intentionally pushed on:
+Trigger branch:
 `round13k/melody-memory-siku`
 
-Because the new Vercel project is now Git-connected, this push should trigger a branch preview deployment containing the current Siku implementation.
+Trigger commit:
+`cc7cccfc159b0084fe48e973d0f6bddca951a4c9`
 
-Required next verification:
-1. confirm a new deployment exists for the Siku branch;
-2. verify it is `READY`;
-3. confirm the served build is **MELODY MEMORY — BOLIVIA / SIKU — INTERLOCK REGISTER**;
-4. only then record `LIVE CANDIDATE` and begin the user visual/audio audit.
+Deployment:
+`dpl_AgwdotABtjmYKDvnx3qoprtPEMsr`
 
-`INITIAL MAIN READY ≠ SIKU LIVE CANDIDATE`.
+URL:
+`https://relational-key-melody-memory-siku-v13k1-pujv92nn5.vercel.app`
+
+State: `READY`
+
+Vercel metadata confirms:
+- Git branch: `round13k/melody-memory-siku`;
+- PR: `#16`;
+- commit: `cc7cccfc159b0084fe48e973d0f6bddca951a4c9`.
+
+The served HTML was directly fetched and verified. It contains:
+- title `RELATIONAL KEY — Siku Interlock Register`;
+- `MELODY MEMORY — BOLIVIA / SIKU`;
+- Card A IRA and Card B ARKA;
+- 8 alternating score slots;
+- Matching Interlock and Other Interlock;
+- Web Audio synthesis;
+- explicit `NOT A WAVEFORM / NOT A RESONANCE FIELD` guardrail.
+
+Therefore source/live sync is verified for this preview.
+
+## Next gate
+
+User visual + audio audit.
+
+Required recording:
+1. Matching Interlock through Continue, audio enabled;
+2. Other Interlock through Continue, audio enabled.
+
+`READY / SOURCE-LIVE SYNC VERIFIED ≠ VISUAL+AUDIO PASS`.
