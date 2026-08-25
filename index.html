@@ -3,16 +3,378 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>RELATIONAL KEY — Binocular Register</title>
+<title>RELATIONAL KEY — Siku Interlock Register</title>
 <style>
-:root{--bg:#0d1014;--ink:#ece8de;--line:rgba(221,214,199,.2);--amber:#e0b36a;--blue:#7da7d9;--rose:#d98e8b;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-*{box-sizing:border-box}html,body{margin:0;min-width:320px;background:var(--bg);color:var(--ink)}body{overflow-x:hidden;background:radial-gradient(circle at 50% -15%,rgba(125,167,217,.12),transparent 34%),linear-gradient(180deg,#11161d,#0d1014 62%)}button{font:inherit}.shell{min-height:100vh;padding:14px clamp(14px,2.6vw,42px) 30px}.top{min-height:66px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px;border-bottom:1px solid var(--line)}.brand{font:700 10px ui-monospace,monospace;letter-spacing:.18em;color:#d9c295}.headline{text-align:center}.headline small,.meta{display:block;font:700 6px ui-monospace,monospace;letter-spacing:.14em;color:#777d82}.headline b{display:block;margin-top:3px;font:600 21px Georgia,serif}.meta{text-align:right}.intro{text-align:center;margin:25px auto 17px}.intro span{font:700 6px ui-monospace,monospace;letter-spacing:.15em;color:#9f8f77}.intro h1{margin:6px 0 5px;font:600 clamp(28px,3.3vw,44px) Georgia,serif}.intro p{margin:0;font:italic 12px Georgia,serif;color:#98948c}.stage{width:min(1260px,100%);margin:auto}.pair{display:grid;grid-template-columns:minmax(0,1fr) 190px minmax(0,1fr);align-items:center;gap:12px;perspective:1800px}.slot{transition:transform .75s cubic-bezier(.2,.8,.2,1)}.pair[data-phase="approach"] .slot.left,.pair[data-phase="fused"] .slot.left,.pair[data-phase="depth"] .slot.left{transform:translateX(30px) rotateY(2deg)}.pair[data-phase="approach"] .slot.right,.pair[data-phase="fused"] .slot.right,.pair[data-phase="depth"] .slot.right{transform:translateX(-30px) rotateY(-2deg)}.pair[data-phase="registered"] .slot.left{transform:translateX(20px)}.pair[data-phase="registered"] .slot.right{transform:translateX(-20px)}.pair[data-phase="rejected"]{animation:recoil .45s ease}@keyframes recoil{0%,100%{transform:translateX(0)}45%{transform:translateX(7px)}72%{transform:translateX(-4px)}}.card{position:relative;aspect-ratio:856/540;border-radius:26px;overflow:hidden;background:#17191c;border:1px solid rgba(235,229,217,.2);box-shadow:0 34px 64px rgba(0,0,0,.48);isolation:isolate;user-select:none}.stereo{position:absolute;inset:0;background-image:url('https://commons.wikimedia.org/wiki/Special:Redirect/file/InternationalExhibition1871Room6West.jpg');background-repeat:no-repeat;background-size:205% 100%;filter:sepia(.12) contrast(1.04) brightness(.84);transform:scale(1.035)}.leftCard .stereo{background-position:0% 50%}.rightCard .stereo{background-position:100% 50%}.shade{position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,rgba(6,9,12,.76),rgba(6,9,12,.12) 58%,rgba(6,9,12,.15)),linear-gradient(180deg,transparent 52%,rgba(5,7,9,.62))}.rightCard .shade{background:linear-gradient(270deg,rgba(6,9,12,.7),rgba(6,9,12,.1) 58%,rgba(6,9,12,.14)),linear-gradient(180deg,transparent 52%,rgba(5,7,9,.62))}.eyeTag{position:absolute;z-index:7;top:6%;left:5%;padding:6px 9px;border:1px solid rgba(222,204,170,.28);border-radius:999px;background:rgba(7,10,14,.63);font:700 6px ui-monospace,monospace;letter-spacing:.13em;color:#e4d5b6}.rightCard .eyeTag{left:auto;right:5%}.baseline{position:absolute;left:8%;right:8%;top:52%;height:1px;background:rgba(210,221,230,.38);z-index:5}.baseline:before,.baseline:after{content:"";position:absolute;top:-4px;width:9px;height:9px;border:1px solid rgba(224,195,139,.65);border-radius:50%;background:#15191e}.baseline:before{left:22%}.baseline:after{right:22%}.offsetMark{position:absolute;z-index:6;top:calc(52% - 14px);width:34px;height:28px;border-left:1px solid var(--blue);border-right:1px solid var(--rose);opacity:.88}.leftCard .offsetMark{right:7%}.rightCard .offsetMark{left:7%;transform:scaleX(-1)}.copy{position:absolute;z-index:8;left:6%;right:6%;bottom:8%;text-shadow:0 2px 15px #000}.copy span{font:700 6px ui-monospace,monospace;letter-spacing:.12em;color:#d9bc83}.copy strong{display:block;margin-top:4px;font:600 clamp(20px,2.3vw,33px) Georgia,serif}.copy small{display:block;margin-top:6px;font:700 6px ui-monospace,monospace;letter-spacing:.08em;color:#b7b3aa}.bridge{height:190px;position:relative;display:grid;place-items:center}.rail{position:absolute;left:0;right:0;top:50%;height:1px;background:linear-gradient(90deg,transparent,rgba(214,218,218,.28) 18%,rgba(214,218,218,.28) 82%,transparent)}.fusionWindow{position:relative;width:150px;height:126px;border:1px solid rgba(222,218,205,.24);border-radius:22px;overflow:hidden;background:#0d1116;box-shadow:inset 0 0 38px rgba(0,0,0,.58);transition:transform .68s cubic-bezier(.2,.8,.2,1),border-color .6s ease,box-shadow .6s ease;z-index:4}.viewLayer{position:absolute;inset:10px;border-radius:15px;background-image:url('https://commons.wikimedia.org/wiki/Special:Redirect/file/InternationalExhibition1871Room6West.jpg');background-repeat:no-repeat;background-size:205% 100%;filter:grayscale(.25) sepia(.08) brightness(.75);opacity:.28;transition:transform .8s cubic-bezier(.2,.8,.2,1),opacity .6s ease,filter .65s ease}.viewL{background-position:0 50%;transform:translateX(-13px) scale(.98)}.viewR{background-position:100% 50%;transform:translateX(13px) scale(.98);mix-blend-mode:screen}.depthBand{position:absolute;inset:10px;border-radius:15px;opacity:0;pointer-events:none;background-image:url('https://commons.wikimedia.org/wiki/Special:Redirect/file/InternationalExhibition1871Room6West.jpg'),url('https://commons.wikimedia.org/wiki/Special:Redirect/file/InternationalExhibition1871Room6West.jpg');background-repeat:no-repeat,no-repeat;background-size:205% 100%,205% 100%;background-position:0 50%,100% 50%;background-blend-mode:screen;filter:grayscale(.2) sepia(.06) brightness(.82) contrast(1.03);transition:opacity .55s ease,transform .78s cubic-bezier(.2,.8,.2,1),filter .6s ease;will-change:transform,opacity}.depthBack{clip-path:inset(0 0 64% 0);transform:translate3d(-1px,-1px,-10px) scale(.99)}.depthMid{clip-path:inset(31% 0 30% 0);transform:translate3d(0,0,0) scale(1)}.depthFore{clip-path:inset(64% 0 0 0);transform:translate3d(1px,1px,14px) scale(1.015)}.depthPlane{position:absolute;border:1px solid rgba(224,179,106,.6);border-radius:9px;opacity:0;transition:opacity .55s ease,transform .7s ease}.p1{left:24px;right:24px;top:21px;height:22px}.p2{left:33px;right:33px;top:52px;height:26px}.p3{left:43px;right:43px;bottom:18px;height:20px}.fusionDot{position:absolute;left:50%;top:50%;width:8px;height:8px;border-radius:50%;background:var(--amber);transform:translate(-50%,-50%) scale(.6);opacity:.35;box-shadow:0 0 18px rgba(224,179,106,.55);transition:.65s ease}.bridgeLabel{position:absolute;top:calc(50% + 74px);font:700 5px ui-monospace,monospace;letter-spacing:.11em;color:#756f69;text-align:center}.pair[data-phase="approach"] .viewL{transform:translateX(-7px) scale(.99);opacity:.4}.pair[data-phase="approach"] .viewR{transform:translateX(7px) scale(.99);opacity:.4}.pair[data-phase="fused"] .fusionWindow{transform:scale(1.06);border-color:rgba(224,179,106,.4)}.pair[data-phase="fused"] .viewL{transform:translateX(-3px) scale(1.005);opacity:.5}.pair[data-phase="fused"] .viewR{transform:translateX(3px) scale(1.005);opacity:.5}.pair[data-phase="fused"] .depthPlane{opacity:.35}.pair[data-phase="fused"] .p1{transform:scale(1.025)}.pair[data-phase="fused"] .p2{transform:scale(1)}.pair[data-phase="fused"] .p3{transform:scale(.98)}.pair[data-phase="fused"] .fusionDot{opacity:.78;transform:translate(-50%,-50%) scale(.88)}.pair[data-phase="depth"] .fusionWindow{transform:scale(1.12);border-color:rgba(224,179,106,.62);box-shadow:0 0 0 7px rgba(224,179,106,.035),0 0 40px rgba(125,167,217,.16),inset 0 0 34px rgba(0,0,0,.38)}.pair[data-phase="depth"] .viewL{transform:translateX(-2px) scale(1.018);opacity:.42;filter:grayscale(.18) sepia(.06) brightness(.82)}.pair[data-phase="depth"] .viewR{transform:translateX(2px) scale(1.018);opacity:.42;filter:grayscale(.18) sepia(.06) brightness(.82)}.pair[data-phase="depth"] .depthBand{opacity:.52}.pair[data-phase="depth"] .depthBack{transform:translate3d(-2px,-2px,-14px) scale(.985)}.pair[data-phase="depth"] .depthMid{transform:translate3d(.5px,0,0) scale(1.016)}.pair[data-phase="depth"] .depthFore{transform:translate3d(3px,2px,18px) scale(1.04)}.pair[data-phase="depth"] .depthPlane{opacity:.12}.pair[data-phase="depth"] .fusionDot{opacity:1;transform:translate(-50%,-50%) scale(1.08)}.pair[data-phase="registered"] .fusionWindow{transform:scale(1.05);border-color:rgba(224,179,106,.52);box-shadow:0 0 0 5px rgba(224,179,106,.025),0 0 28px rgba(125,167,217,.11),inset 0 0 34px rgba(0,0,0,.42)}.pair[data-phase="registered"] .viewL{transform:translateX(-2px) scale(1.012);opacity:.44}.pair[data-phase="registered"] .viewR{transform:translateX(2px) scale(1.012);opacity:.44}.pair[data-phase="registered"] .depthBand{opacity:.38}.pair[data-phase="registered"] .depthBack{transform:translate3d(-1px,-1px,-10px) scale(.99)}.pair[data-phase="registered"] .depthMid{transform:translate3d(.25px,0,0) scale(1.01)}.pair[data-phase="registered"] .depthFore{transform:translate3d(2px,1px,12px) scale(1.026)}.pair[data-phase="registered"] .depthPlane{opacity:.06}.pair[data-phase="registered"] .fusionDot{opacity:.9;transform:translate(-50%,-50%) scale(.96)}.pair[data-phase="rejected"] .viewL{transform:translateX(-17px) translateY(-3px) scale(.98);opacity:.38}.pair[data-phase="rejected"] .viewR{transform:translateX(11px) translateY(4px) scale(.98);opacity:.38}.pair[data-phase="rejected"] .depthBand{opacity:0}.pair[data-phase="rejected"] .depthPlane{opacity:0}.pair[data-phase="rejected"] .fusionDot{background:#be8d85;opacity:.65;transform:translate(-36%,-50%) scale(.8)}.controls{width:min(940px,96vw);margin:20px auto 0;display:grid;grid-template-columns:1fr auto auto;gap:7px}.claims{display:flex;gap:6px}.controls button{min-height:42px;border:1px solid rgba(222,196,145,.24);background:#161a20;color:#9f9b92;padding:0 14px;font:700 6px ui-monospace,monospace;letter-spacing:.09em;cursor:pointer}.controls button.active{border-color:#d8af68;background:rgba(216,175,104,.09);color:#f0d4a0}.claims button{flex:1}.run{min-width:210px!important}.result,.law,.truth{text-align:center;font:700 6px ui-monospace,monospace;letter-spacing:.09em;color:#827e77}.result{min-height:30px;margin-top:9px}.law{margin-top:5px;color:#9c927f}.truth{margin-top:7px;line-height:1.55}.dots{display:flex;justify-content:center;gap:7px}.dots i{width:5px;height:5px;border-radius:50%;background:#484b4f}.dots i.on{background:#d6b06c}@media(max-width:920px){.pair{grid-template-columns:1fr}.bridge{height:128px}.controls{grid-template-columns:1fr 1fr}.claims{grid-column:1/-1}}@media(max-width:560px){.top{grid-template-columns:1fr}.brand,.meta{text-align:center}.controls{grid-template-columns:1fr}.claims{grid-column:auto;flex-direction:column}.run{min-width:0!important}}
+:root{
+  --bg:#0e0d0b;--panel:#171512;--ink:#f1ede4;--muted:#8f887c;--line:rgba(231,220,197,.18);
+  --warm:#dfb36f;--cool:#8fb4bc;--soft:#c9c0af;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-width:320px;background:var(--bg);color:var(--ink)}
+body{overflow-x:hidden;background:
+  radial-gradient(circle at 50% -12%,rgba(154,111,51,.14),transparent 34%),
+  linear-gradient(180deg,#13110e,#0e0d0b 64%)}
+button{font:inherit}
+.shell{min-height:100vh;padding:14px clamp(14px,2.6vw,42px) 30px}
+.top{min-height:66px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px;border-bottom:1px solid var(--line)}
+.brand{font:700 10px ui-monospace,monospace;letter-spacing:.18em;color:#ddbd83}
+.headline{text-align:center}
+.headline small,.meta{display:block;font:700 6px ui-monospace,monospace;letter-spacing:.14em;color:#7f7a72}
+.headline b{display:block;margin-top:3px;font:600 21px Georgia,serif}
+.meta{text-align:right}
+.intro{text-align:center;margin:24px auto 17px}
+.intro span{font:700 6px ui-monospace,monospace;letter-spacing:.15em;color:#a18c69}
+.intro h1{margin:6px 0 5px;font:600 clamp(28px,3.3vw,44px) Georgia,serif}
+.intro p{margin:0;font:italic 12px Georgia,serif;color:#9c968c}
+.stage{width:min(1280px,100%);margin:auto}
+.pair{display:grid;grid-template-columns:minmax(0,1fr) 220px minmax(0,1fr);align-items:center;gap:12px;perspective:1600px}
+.slotCard{transition:transform .72s cubic-bezier(.2,.8,.2,1),filter .5s ease}
+.pair[data-phase="answer"] .slotCard.left,
+.pair[data-phase="interlock"] .slotCard.left,
+.pair[data-phase="scale"] .slotCard.left,
+.pair[data-phase="melody"] .slotCard.left{transform:translateX(22px)}
+.pair[data-phase="answer"] .slotCard.right,
+.pair[data-phase="interlock"] .slotCard.right,
+.pair[data-phase="scale"] .slotCard.right,
+.pair[data-phase="melody"] .slotCard.right{transform:translateX(-22px)}
+.pair[data-phase="registered"] .slotCard.left{transform:translateX(15px)}
+.pair[data-phase="registered"] .slotCard.right{transform:translateX(-15px)}
+.card{position:relative;aspect-ratio:856/540;border-radius:26px;overflow:hidden;background:
+  linear-gradient(135deg,rgba(63,47,28,.22),transparent 46%),#171512;
+  border:1px solid rgba(235,224,201,.2);box-shadow:0 34px 64px rgba(0,0,0,.48);isolation:isolate;user-select:none}
+.card:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.025),transparent 18%,rgba(0,0,0,.18));z-index:2}
+.instrumentWindow{position:absolute;top:11%;height:76%;aspect-ratio:400/555;border-radius:17px;overflow:hidden;border:1px solid rgba(232,220,194,.22);background:#26211a;box-shadow:inset 0 0 30px rgba(0,0,0,.25);z-index:1}
+.iraCard .instrumentWindow{right:7%}
+.arkaCard .instrumentWindow{left:7%}
+.instrumentWindow img{position:absolute;top:0;height:100%;width:auto;max-width:none;filter:sepia(.1) saturate(.82) contrast(1.05) brightness(.88)}
+.arkaCard .instrumentWindow img{left:0}
+.iraCard .instrumentWindow img{left:-100%}
+.instrumentWindow:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 58%,rgba(8,7,5,.34));pointer-events:none}
+.role{position:absolute;z-index:7;top:6%;padding:6px 9px;border:1px solid rgba(222,204,170,.27);border-radius:999px;background:rgba(9,8,7,.67);font:700 6px ui-monospace,monospace;letter-spacing:.13em;color:#e5d6b9}
+.iraCard .role{left:5%}.arkaCard .role{right:5%}
+.copy{position:absolute;z-index:7;top:29%;width:39%}
+.iraCard .copy{left:6%;text-align:left}
+.arkaCard .copy{right:6%;text-align:right}
+.copy span{font:700 6px ui-monospace,monospace;letter-spacing:.12em;color:#c9aa74}
+.copy strong{display:block;margin-top:6px;font:600 clamp(18px,2vw,29px) Georgia,serif;line-height:1.02}
+.copy small{display:block;margin-top:9px;font:700 6px/1.6 ui-monospace,monospace;letter-spacing:.07em;color:#a9a195}
+.sourceNote{position:absolute;z-index:8;top:71%;font:700 5px ui-monospace,monospace;letter-spacing:.08em;color:#79736b}
+.iraCard .sourceNote{left:6%}.arkaCard .sourceNote{right:6%;text-align:right}
+.noteStack{position:absolute;z-index:8;top:22%;bottom:20%;display:flex;flex-direction:column;justify-content:space-around}
+.iraCard .noteStack{right:1.8%}.arkaCard .noteStack{left:1.8%}
+.noteMarker{width:10px;height:10px;border-radius:50%;border:1px solid rgba(230,219,198,.25);background:#191713;box-shadow:0 0 0 0 transparent;transition:.2s ease}
+.iraCard .noteMarker.active{background:var(--warm);border-color:#f1cc8d;box-shadow:0 0 0 6px rgba(223,179,111,.08),0 0 22px rgba(223,179,111,.45)}
+.arkaCard .noteMarker.active{background:var(--cool);border-color:#bcd6da;box-shadow:0 0 0 6px rgba(143,180,188,.08),0 0 22px rgba(143,180,188,.45)}
+.bridge{height:190px;position:relative;display:grid;place-items:center}
+.bridgeRail{position:absolute;left:-6%;right:-6%;top:50%;height:1px;background:linear-gradient(90deg,transparent,rgba(218,207,184,.2) 18%,rgba(218,207,184,.2) 82%,transparent)}
+.interlockField{position:relative;width:208px;height:138px;border:1px solid rgba(224,214,194,.22);border-radius:22px;background:#11100e;overflow:hidden;box-shadow:inset 0 0 38px rgba(0,0,0,.5);transition:.6s ease;z-index:4}
+.fieldLabel{position:absolute;left:0;right:0;top:10px;text-align:center;font:700 5px ui-monospace,monospace;letter-spacing:.11em;color:#756f66;z-index:5}
+.score{position:absolute;left:11px;right:11px;top:31px;bottom:19px}
+.route{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.routeBase{fill:none;stroke:rgba(207,198,179,.14);stroke-width:1.2;stroke-dasharray:3 5}
+.routeGlow{fill:none;stroke:url(#routeGradient);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:420;stroke-dashoffset:420;opacity:0;transition:stroke-dashoffset .9s cubic-bezier(.2,.8,.2,1),opacity .5s ease}
+.scoreSlots{position:absolute;inset:0}
+.scoreSlot{position:absolute;width:13px;height:13px;border-radius:50%;transform:translate(-50%,-50%);background:#171512;border:1px solid rgba(222,211,190,.24);transition:.25s ease;z-index:4}
+.scoreSlot.a.filled{background:var(--warm);border-color:#f0cb8a;box-shadow:0 0 17px rgba(223,179,111,.35)}
+.scoreSlot.b.filled{background:var(--cool);border-color:#b8d4d9;box-shadow:0 0 17px rgba(143,180,188,.35)}
+.scoreSlot.missing{background:#11100e;border-style:dashed;border-color:rgba(221,213,198,.48);box-shadow:0 0 0 5px rgba(221,213,198,.025)}
+.scoreSlot:after{position:absolute;top:17px;left:50%;transform:translateX(-50%);font:700 4px ui-monospace,monospace;letter-spacing:.05em;color:#625d55}
+.scoreSlot.a:after{content:"IRA"}.scoreSlot.b:after{content:"ARKA"}
+.s1{left:6%;top:58%}.s2{left:18%;top:34%}.s3{left:31%;top:57%}.s4{left:44%;top:33%}.s5{left:57%;top:57%}.s6{left:70%;top:34%}.s7{left:83%;top:57%}.s8{left:95%;top:34%}
+.pair[data-phase="interlock"] .interlockField,.pair[data-phase="scale"] .interlockField{border-color:rgba(218,187,130,.38);box-shadow:0 0 28px rgba(145,121,78,.08),inset 0 0 34px rgba(0,0,0,.42)}
+.pair[data-phase="melody"] .interlockField{transform:scale(1.07);border-color:rgba(222,190,130,.58);box-shadow:0 0 0 6px rgba(222,190,130,.03),0 0 38px rgba(143,180,188,.12),inset 0 0 32px rgba(0,0,0,.38)}
+.pair[data-phase="registered"] .interlockField{transform:scale(1.035);border-color:rgba(222,190,130,.48)}
+.pair[data-phase="melody"] .routeGlow,.pair[data-phase="registered"] .routeGlow{opacity:1;stroke-dashoffset:0}
+.pair[data-phase="other"] .interlockField{border-color:rgba(211,203,189,.28)}
+.bridgeLabel{position:absolute;top:calc(50% + 80px);font:700 5px ui-monospace,monospace;letter-spacing:.11em;color:#756f69;text-align:center}
+.controls{width:min(1040px,97vw);margin:20px auto 0;display:grid;grid-template-columns:1fr auto auto auto;gap:7px}
+.claims{display:flex;gap:6px}
+.controls button{min-height:42px;border:1px solid rgba(222,196,145,.22);background:#171512;color:#9d978d;padding:0 14px;font:700 6px ui-monospace,monospace;letter-spacing:.09em;cursor:pointer}
+.controls button.active{border-color:#d5ad6a;background:rgba(213,173,106,.08);color:#eed29f}
+.claims button{flex:1}
+.run{min-width:210px!important}
+.audio{min-width:94px}
+.result,.law,.truth{text-align:center;font:700 6px ui-monospace,monospace;letter-spacing:.09em;color:#827d74}
+.result{min-height:30px;margin-top:9px}
+.law{margin-top:5px;color:#a29886}
+.truth{max-width:1100px;margin:7px auto 0;line-height:1.55}
+.dots{display:flex;justify-content:center;gap:7px}
+.dots i{width:5px;height:5px;border-radius:50%;background:#484641}
+.dots i.on{background:#d7af6b}
+.legend{display:flex;justify-content:center;gap:16px;margin-top:6px;font:700 5px ui-monospace,monospace;letter-spacing:.08em;color:#706b62}
+.legend span:before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+.legend .la:before{background:var(--warm)}.legend .lb:before{background:var(--cool)}
+@media(max-width:960px){
+  .pair{grid-template-columns:1fr}.bridge{height:165px}
+  .slotCard.left,.slotCard.right,.pair[data-phase] .slotCard.left,.pair[data-phase] .slotCard.right{transform:none}
+  .controls{grid-template-columns:1fr 1fr}.claims{grid-column:1/-1}
+}
+@media(max-width:560px){
+  .top{grid-template-columns:1fr}.brand,.meta{text-align:center}
+  .controls{grid-template-columns:1fr}.claims{grid-column:auto;flex-direction:column}.run,.audio{min-width:0!important}
+  .copy{width:43%}.instrumentWindow{height:70%;top:15%}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.slotCard,.interlockField,.routeGlow,.scoreSlot{transition-duration:.01ms!important}}
 </style>
 </head>
 <body>
-<main class="shell"><header class="top"><div class="brand">RELATIONAL KEY</div><div class="headline"><small>ROUND 13J · CONTINENTAL DIVERSITY GATE</small><b>European Depth Memory</b></div><div class="meta">EUROPE · UNITED KINGDOM<br>STEREOSCOPY · 1838 LINEAGE</div></header><section class="intro"><span>DEPTH MEMORY — UNITED KINGDOM / STEREOSCOPY</span><h1>Binocular Register</h1><p>Two different views become informative only when their difference can be fused.</p></section><section class="stage"><div class="pair" id="pair" data-phase="idle"><div class="slot left"><div class="card leftCard"><div class="stereo"></div><div class="shade"></div><div class="eyeTag">CARD A · LEFT VIEW</div><div class="baseline"></div><div class="offsetMark"></div><div class="copy"><span>VIEW A · PERSISTENT</span><strong>Left-eye claim</strong><small>London stereocard · 1871 · public domain</small></div></div></div><div class="bridge"><div class="rail"></div><div class="fusionWindow"><div class="viewLayer viewL"></div><div class="viewLayer viewR"></div><div class="depthBand depthBack"></div><div class="depthBand depthMid"></div><div class="depthBand depthFore"></div><i class="depthPlane p1"></i><i class="depthPlane p2"></i><i class="depthPlane p3"></i><b class="fusionDot"></b></div><div class="bridgeLabel">BINOCULAR FUSION FIELD<br>ILLUSTRATIVE DEPTH TRANSLATION</div></div><div class="slot right"><div class="card rightCard"><div class="stereo"></div><div class="shade"></div><div class="eyeTag">CARD B · RIGHT VIEW</div><div class="baseline"></div><div class="offsetMark"></div><div class="copy"><span>VIEW B · PERSISTENT</span><strong>Right-eye context</strong><small>same subject · different viewpoint</small></div></div></div></div></section><section class="controls"><div class="claims"><button class="active" data-mode="match">MATCHING VIEW</button><button data-mode="other">OTHER VIEW</button></div><button class="run" id="run">TEST RELATIONSHIP</button><button id="reset">RESET</button></section><div class="result" id="result">SELECT A VIEW RELATIONSHIP, THEN TEST</div><div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="law">OFFSET → APPROACH → PAIR → FUSE → DEPTH → REGISTER → CONTINUE</div><div class="truth">Historical principle: two images of the same subject from slightly different viewpoints can fuse into stereoscopic depth. Central layered parallax is an editorial translation, not a reconstructed historical depth map.</div></main>
+<main class="shell">
+  <header class="top">
+    <div class="brand">RELATIONAL KEY</div>
+    <div class="headline"><small>ROUND 13K · CONTINENTAL BALANCE GATE</small><b>South American Melody Memory</b></div>
+    <div class="meta">SOUTH AMERICA · BOLIVIA<br>SIKU · IRA + ARKA</div>
+  </header>
+
+  <section class="intro">
+    <span>MELODY MEMORY — BOLIVIA / SIKU</span>
+    <h1>Interlock Register</h1>
+    <p>Two complementary absences alternate into one continuity.</p>
+  </section>
+
+  <section class="stage">
+    <div class="pair" id="pair" data-phase="idle">
+      <div class="slotCard left">
+        <div class="card iraCard">
+          <div class="role">CARD A · IRA</div>
+          <div class="copy">
+            <span>COMPLEMENT A · DISTINCT</span>
+            <strong>Distributed notes</strong>
+            <small>One half of the pair<br>does not contain the whole scale.</small>
+          </div>
+          <div class="sourceNote">PUBLIC-DOMAIN BOLIVIAN PAIR · RIGHT HALF</div>
+          <div class="instrumentWindow"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Siku_bipolar.jpg" alt="Ira half of a separated Bolivian siku pair"></div>
+          <div class="noteStack" id="iraMarkers"><i class="noteMarker"></i><i class="noteMarker"></i><i class="noteMarker"></i><i class="noteMarker"></i></div>
+        </div>
+      </div>
+
+      <div class="bridge">
+        <div class="bridgeRail"></div>
+        <div class="interlockField">
+          <div class="fieldLabel">MELODY INTERLOCK FIELD · ILLUSTRATIVE SLOT MAP</div>
+          <div class="score">
+            <svg class="route" viewBox="0 0 186 88" preserveAspectRatio="none" aria-hidden="true">
+              <defs><linearGradient id="routeGradient" x1="0" x2="1"><stop offset="0" stop-color="#dfb36f"/><stop offset=".52" stop-color="#c8bd9f"/><stop offset="1" stop-color="#8fb4bc"/></linearGradient></defs>
+              <path class="routeBase" d="M11 51 L34 29 L58 50 L82 28 L106 50 L130 29 L154 50 L177 29"/>
+              <path class="routeGlow" d="M11 51 L34 29 L58 50 L82 28 L106 50 L130 29 L154 50 L177 29"/>
+            </svg>
+            <div class="scoreSlots">
+              <i class="scoreSlot a s1" data-step="0"></i>
+              <i class="scoreSlot b s2" data-step="1"></i>
+              <i class="scoreSlot a s3" data-step="2"></i>
+              <i class="scoreSlot b s4" data-step="3"></i>
+              <i class="scoreSlot a s5" data-step="4"></i>
+              <i class="scoreSlot b s6" data-step="5"></i>
+              <i class="scoreSlot a s7" data-step="6"></i>
+              <i class="scoreSlot b s8" data-step="7"></i>
+            </div>
+          </div>
+        </div>
+        <div class="bridgeLabel">ALTERNATING OWNERSHIP → ONE CONTINUOUS ROUTE<br>NOT A WAVEFORM / NOT A RESONANCE FIELD</div>
+      </div>
+
+      <div class="slotCard right">
+        <div class="card arkaCard">
+          <div class="role">CARD B · ARKA</div>
+          <div class="copy">
+            <span>COMPLEMENT B · DISTINCT</span>
+            <strong>Answering notes</strong>
+            <small>Complementary positions<br>complete what the other half lacks.</small>
+          </div>
+          <div class="sourceNote">PUBLIC-DOMAIN BOLIVIAN PAIR · LEFT HALF</div>
+          <div class="instrumentWindow"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Siku_bipolar.jpg" alt="Arka half of a separated Bolivian siku pair"></div>
+          <div class="noteStack" id="arkaMarkers"><i class="noteMarker"></i><i class="noteMarker"></i><i class="noteMarker"></i><i class="noteMarker"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="controls">
+    <div class="claims">
+      <button class="active" data-mode="match">MATCHING INTERLOCK</button>
+      <button data-mode="other">OTHER INTERLOCK</button>
+    </div>
+    <button class="run" id="run">TEST RELATIONSHIP</button>
+    <button class="audio active" id="audio">AUDIO · ON</button>
+    <button id="reset">RESET</button>
+  </section>
+
+  <div class="result" id="result">SELECT AN INTERLOCK, THEN TEST</div>
+  <div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="legend"><span class="la">IRA SOURCE</span><span class="lb">ARKA SOURCE</span></div>
+  <div class="law">NOTE → GAP → ANSWER → INTERLOCK → SCALE → MELODY → REGISTER → CONTINUE</div>
+  <div class="truth">Historical principle: complementary siku halves distribute notes and can be played by two musicians in alternation / hocket to form one scale and melody. The slot map, exact phrase and browser-synthesized tones here are illustrative — not instrument calibration, archival audio or a claimed traditional melody.</div>
+</main>
+
 <script>
-const pair=document.getElementById('pair'),run=document.getElementById('run'),reset=document.getElementById('reset'),result=document.getElementById('result'),dots=[...document.querySelectorAll('#dots i')],buttons=[...document.querySelectorAll('[data-mode]')];let mode='match',busy=false;buttons.forEach(b=>b.onclick=()=>{if(busy)return;mode=b.dataset.mode;buttons.forEach(x=>x.classList.toggle('active',x===b));result.textContent=mode==='match'?'MATCHING LEFT / RIGHT VIEWS SELECTED':'OTHER VIEW SELECTED · BOTH VIEWS REMAIN VALID'});const sleep=ms=>new Promise(r=>setTimeout(r,ms));function step(n,text,phase){dots.forEach((d,i)=>d.classList.toggle('on',i<=n));if(text)result.textContent=text;if(phase)pair.dataset.phase=phase}async function test(){if(busy)return;busy=true;step(0,'OFFSET · BOTH VIEWS REMAIN DISTINCT','idle');await sleep(650);step(1,'APPROACH · PAIR ENTERS A SHARED VIEWING FIELD','approach');await sleep(720);step(2,mode==='match'?'PAIR · DISPARITY IS SMALL AND STRUCTURED':'PAIR · VIEWPOINT RESIDUAL DOES NOT FIT THIS PAIR','approach');await sleep(760);if(mode==='match'){step(3,'FUSE · GHOSTING STABILIZES WITHOUT ERASING DIFFERENCE','fused');await sleep(760);step(4,'DEPTH · THE PAIRED IMAGE OPENS INTO LAYERED SPACE','depth');await sleep(860);step(5,'REGISTER · CONTROLLED DISPARITY IS PRESERVED','registered');await sleep(660);step(6,'CONTINUE · BOTH VIEWS REMAIN DISTINCT','registered')}else{step(3,'FUSE ATTEMPT · RESIDUAL OFFSET REMAINS VISIBLE','rejected');await sleep(760);step(4,'NO SINGLE DEPTH CUE SELECTED FOR THIS PAIR','rejected');await sleep(620);step(5,'BOTH VIEWS REMAIN VALID','rejected');await sleep(520);step(6,'CONTINUE · RELATION NOT REGISTERED','idle')}busy=false}run.onclick=test;reset.onclick=()=>{busy=false;pair.dataset.phase='idle';dots.forEach((d,i)=>d.classList.toggle('on',i===0));result.textContent='RESET · BOTH VIEWS PERSIST'};
+const pair=document.getElementById('pair');
+const run=document.getElementById('run');
+const reset=document.getElementById('reset');
+const audioButton=document.getElementById('audio');
+const result=document.getElementById('result');
+const dots=[...document.querySelectorAll('#dots i')];
+const modeButtons=[...document.querySelectorAll('[data-mode]')];
+const scoreSlots=[...document.querySelectorAll('.scoreSlot')];
+const iraMarkers=[...document.querySelectorAll('#iraMarkers .noteMarker')];
+const arkaMarkers=[...document.querySelectorAll('#arkaMarkers .noteMarker')];
+
+let mode='match',busy=false,audioEnabled=true,audioCtx=null;
+const frequencies=[261.63,293.66,329.63,349.23,392.00,440.00,493.88,523.25];
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+
+modeButtons.forEach(b=>b.onclick=()=>{
+  if(busy)return;
+  mode=b.dataset.mode;
+  modeButtons.forEach(x=>x.classList.toggle('active',x===b));
+  result.textContent=mode==='match'?'MATCHING INTERLOCK SELECTED · COMPLEMENTARY TARGET ROUTE':'OTHER INTERLOCK SELECTED · BOTH COMPLEMENTS REMAIN VALID';
+  clearScore();
+});
+
+audioButton.onclick=async()=>{
+  audioEnabled=!audioEnabled;
+  audioButton.classList.toggle('active',audioEnabled);
+  audioButton.textContent=audioEnabled?'AUDIO · ON':'AUDIO · OFF';
+  if(audioEnabled) await ensureAudio();
+};
+
+async function ensureAudio(){
+  if(!audioEnabled)return null;
+  const AC=window.AudioContext||window.webkitAudioContext;
+  if(!AC)return null;
+  if(!audioCtx)audioCtx=new AC();
+  if(audioCtx.state==='suspended')await audioCtx.resume();
+  return audioCtx;
+}
+
+function playTone(index,source){
+  if(!audioEnabled||!audioCtx)return;
+  const now=audioCtx.currentTime;
+  const osc=audioCtx.createOscillator();
+  const overtone=audioCtx.createOscillator();
+  const gain=audioCtx.createGain();
+  const overGain=audioCtx.createGain();
+  const pan=audioCtx.createStereoPanner?audioCtx.createStereoPanner():null;
+  osc.type='sine'; overtone.type='triangle';
+  osc.frequency.value=frequencies[index];
+  overtone.frequency.value=frequencies[index]*2;
+  gain.gain.setValueAtTime(.0001,now);
+  gain.gain.exponentialRampToValueAtTime(.13,now+.025);
+  gain.gain.exponentialRampToValueAtTime(.0001,now+.31);
+  overGain.gain.setValueAtTime(.018,now);
+  overGain.gain.exponentialRampToValueAtTime(.0001,now+.24);
+  if(pan){pan.pan.value=source==='ira'?-.55:.55;gain.connect(pan);overGain.connect(pan);pan.connect(audioCtx.destination)}
+  else{gain.connect(audioCtx.destination);overGain.connect(audioCtx.destination)}
+  osc.connect(gain);overtone.connect(overGain);
+  osc.start(now);overtone.start(now);
+  osc.stop(now+.34);overtone.stop(now+.28);
+}
+
+function setStage(n,text,phase){
+  dots.forEach((d,i)=>d.classList.toggle('on',i<=n));
+  if(text)result.textContent=text;
+  if(phase)pair.dataset.phase=phase;
+}
+
+function clearMarkers(){
+  [...iraMarkers,...arkaMarkers].forEach(m=>m.classList.remove('active'));
+}
+
+function clearScore(){
+  scoreSlots.forEach(s=>s.classList.remove('filled','missing'));
+  clearMarkers();
+  pair.dataset.phase='idle';
+  dots.forEach((d,i)=>d.classList.toggle('on',i===0));
+}
+
+async function emit(index){
+  const source=index%2===0?'ira':'arka';
+  const markerIndex=Math.floor(index/2);
+  clearMarkers();
+  const marker=source==='ira'?iraMarkers[markerIndex]:arkaMarkers[markerIndex];
+  if(marker)marker.classList.add('active');
+  scoreSlots[index].classList.add('filled');
+  playTone(index,source);
+  await sleep(355);
+  clearMarkers();
+  await sleep(95);
+}
+
+async function silent(index,text){
+  clearMarkers();
+  scoreSlots[index].classList.add('missing');
+  result.textContent=text;
+  await sleep(500);
+}
+
+async function testMatching(){
+  setStage(0,'NOTE · IRA CONTRIBUTES THE FIRST ILLUSTRATIVE EVENT','note');
+  await emit(0);
+
+  setStage(1,'GAP · THE NEXT POSITION IS ABSENT ON IRA','note');
+  await sleep(430);
+
+  setStage(2,'ANSWER · ARKA OCCUPIES THE COMPLEMENTARY POSITION','answer');
+  await emit(1);
+
+  setStage(3,'INTERLOCK · OWNERSHIP ALTERNATES LEFT / RIGHT','interlock');
+  await emit(2);await emit(3);await emit(4);await emit(5);
+
+  setStage(4,'SCALE · DISTRIBUTED POSITIONS ARE BECOMING ONE ROUTE','scale');
+  await emit(6);
+
+  setStage(5,'MELODY · ARKA COMPLETES THE FINAL TARGET SLOT','melody');
+  await emit(7);
+  await sleep(450);
+
+  setStage(6,'REGISTER · CONTINUITY EXISTS ONLY ACROSS THE PAIR','registered');
+  await sleep(620);
+  setStage(7,'CONTINUE · IRA + ARKA REMAIN DISTINCT SOURCES','registered');
+}
+
+async function testOther(){
+  setStage(0,'NOTE · BOTH COMPLEMENTS BEGIN WITH VALID EVENTS','note');
+  await emit(0);
+  await emit(1);
+
+  setStage(1,'GAP · TARGET ROUTE STILL REQUIRES ALTERNATING POSITIONS','answer');
+  await emit(2);
+
+  setStage(2,'OTHER INTERLOCK · ONE TARGET POSITION REMAINS SILENT','interlock');
+  await silent(3,'SILENT SLOT · TARGET PHRASE REMAINS OPEN');
+
+  setStage(3,'INTERLOCK ATTEMPT · VALID EVENTS CONTINUE','interlock');
+  await emit(4);
+  await emit(5);
+
+  setStage(4,'SECOND SILENT SLOT · CONTINUITY DOES NOT CLOSE','other');
+  await silent(6,'SILENT SLOT · NO COMPLETE TARGET ROUTE SELECTED');
+
+  setStage(5,'OTHER INTERLOCK · FINAL VALID EVENT ARRIVES','other');
+  await emit(7);
+  await sleep(300);
+
+  setStage(6,'BOTH COMPLEMENTS REMAIN VALID','other');
+  await sleep(520);
+  setStage(7,'CONTINUE · TARGET PHRASE NOT COMPLETED','other');
+}
+
+async function test(){
+  if(busy)return;
+  busy=true;
+  clearScore();
+  await ensureAudio();
+  if(mode==='match')await testMatching();
+  else await testOther();
+  clearMarkers();
+  busy=false;
+}
+
+run.onclick=test;
+reset.onclick=()=>{
+  busy=false;
+  clearScore();
+  result.textContent='RESET · BOTH COMPLEMENTS PERSIST';
+};
 </script>
 </body>
 </html>
