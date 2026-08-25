@@ -17,118 +17,123 @@ Current merged distribution:
 Balance Gate 1:
 - 13K — South America #2 — MERGED / CLOSED
 - 13L — Oceania #2 — MERGED / CLOSED
-- 13M — Europe #2 — BROAD DISCOVERY PASS / DEEP QUALIFICATION NEXT
+- 13M — Europe #2 — **CONCEPT PASS / BOULLE SELECTED / IMPLEMENTATION NEXT**
 
 Target:
 `4 / 3 / 2 / 2 / 2 / 2`
 
-After 13M merges, stop expansion and run **COLLECTION CONSOLIDATION GATE**.
+After 13M merge, pause expansion and run **COLLECTION CONSOLIDATION GATE**.
 
-## Last closed family — Round 13L
+## Last closed family — 13L
 
 **EMBER MEMORY — AOTEAROA / HIKA AHI — FRICTION REGISTER**
+Law: `SUSTAINED FRICTION PRODUCES EMBER.`
+Proof: `HIKA ≠ KAUAHI → FRICTION → HEAT → EMBER`
+PR #17: MERGED
+Merge SHA: `2e9cf84a11b2f5c08a7cf974b1f9b9530be88a4b`
+Golden reference: `dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
 
-Law:
-`SUSTAINED FRICTION PRODUCES EMBER.`
+# ACTIVE ROUND — 13M / EUROPE #2
 
-Proof:
-`HIKA ≠ KAUAHI → FRICTION → HEAT → EMBER`
+## 13M.1 Broad Discovery — PASS
+Register: `ROUND13M1_EUROPE_BALANCE_BROAD_DISCOVERY.md`
+Commit: `6e16915b7b9ef8d4c27381d1ab1550e7093fbca2`
 
-Visual audit:
-`PASS / PROMOTE`
+Tier A: Boulle, Reticello, Löyly.
 
-Golden-reference preview:
-`dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
+## 13M.2 Deep Qualification — FINALIST PASS
+Register: `ROUND13M2_DEEP_QUALIFICATION_FINALISTS.md`
+Commit: `6206e33ea3c202edb77b6a7924ac7d5e7909d0fb`
 
-PR #17:
-`MERGED`
+Finalists:
+- France / Boulle
+- Venice / Reticello
 
-Merge SHA:
-`2e9cf84a11b2f5c08a7cf974b1f9b9530be88a4b`
+Löyly remains a reserve for a future asymmetric-relation format.
 
-Do not reopen without concrete evidence of a defect.
-
-# CURRENT ACTIVE ROUND — 13M / EUROPE #2
-
-Existing Europe territory to avoid:
-- UK stereoscopy;
-- controlled disparity;
-- binocular fusion;
-- emergent depth.
-
-## 13M.1 — Broad Discovery
-
-Status:
-**DISCOVERY GATE PASS**
+## 13M.3 Concept Gate — PASS / BOULLE SELECTED
 
 Register:
-`ROUND13M1_EUROPE_BALANCE_BROAD_DISCOVERY.md`
+`ROUND13M3_TWO_FINALIST_CONCEPT_GATE.md`
 
 Commit:
-`6e16915b7b9ef8d4c27381d1ab1550e7093fbca2`
+`b6faf0a188d241ffe4408b076ac0df42a72a7c2d`
 
-Canonical update:
-`3f870eeeb6ef029d6d97f26f8a40648ee6a7d62f`
+# COMPLEMENT MEMORY — FRANCE / BOULLE — RECIPROCAL CUT REGISTER
 
-### Tier A
+Law:
+**ONE SHARED CUT PRODUCES TWO COMPLEMENTARY INVERSES.**
 
-1. **France — Boulle partie / contrepartie**
-   - two thin material sheets stacked + cut together;
-   - separated pieces recombine into reciprocal inverse surfaces;
-   - law: `A SHARED CUT PRODUCES COMPLEMENTARY INVERSION.`
-   - proof: `A + B → STACK → CUT ONCE → SEPARATE → EXCHANGE → PARTIE + CONTREPARTIE`;
-   - strongest early pair-native candidate;
-   - Met public-domain image path available;
-   - ethical boundary: historical tortoiseshell evidence only, never recommend current wildlife material.
+Proof:
+`SHEET A ≠ SHEET B → STACK → SHARED CUT → SEPARATE → EXCHANGE → PARTIE ↔ CONTREPARTIE`
 
-2. **Venice — Reticello**
-   - two superimposed glass cane layers spiral in opposite directions;
-   - overlap creates a network and characteristic intersections/bubbles;
-   - law: `OPPOSING SPIRALS PRODUCE A NETWORK.`
-   - proof: `LAYER A ≠ LAYER B → SUPERIMPOSE → CROSS → NETWORK`;
-   - very strong visual emergence;
-   - risk: layers belong to one glass object, so two-card translation must be justified.
+Pair:
+- Card A — PARTIE / dark ground + light inlay
+- Card B — CONTREPARTIE / light ground + dark inlay
+- center — SHARED CUT / RECIPROCAL EXCHANGE FIELD
 
-3. **Finland — Löyly**
-   - water + heated sauna stones → löyly / steam;
-   - law: `CONTACT BETWEEN WATER AND HEATED STONE RELEASES LÖYLY.`
-   - proof: `WATER ≠ HOT STONES → CONTACT → STEAM → LÖYLY`;
-   - UNESCO living-cultural grounding;
-   - risk: asymmetrical pair and possible simple input/output reading.
+Signature:
+`ALIGN → STACK → CUT → SEPARATE → EXCHANGE → INVERT → REGISTER → CONTINUE`
 
-### Tier B reserves
+### Matching
 
-- catoptric anamorphosis — too close to optical territory;
-- horological escapement — full mechanism needs additional oscillator parts;
-- bobbin lace — many pairs + textile overlap.
+`SHARED CUT`
+- different material fields align;
+- one editorial cut path is common to both;
+- fragments separate and exchange;
+- resulting cards become reciprocal material inverses;
+- both remain distinct;
+- reciprocity registers.
+
+### Other
+
+`OTHER CUT`
+- both material fields remain valid;
+- paths are non-shared / offset;
+- no complete inverse exchange registers;
+- no red X.
+
+### Critical distinction
+
+- Fès = geometric/material fit.
+- Kento = print/transfer registration.
+- Stereoscopy = perceptual disparity/fusion.
+- Boulle = **one shared material division creates reciprocal positive/negative outcomes**.
+
+### Ethical boundary
+
+Historical tortoiseshell is evidence only. Prototype must use simulated/abstract materials, make no wildlife-material recommendation, and make no exact modern fabrication claim.
+
+### Reticello
+
+HIGH-QUALITY EUROPE RESERVE.
+Lost 13M because its two historical components are layers within one glass object; Boulle better preserves two reciprocal finished objects after registration.
 
 ## Immediate next task
 
-# ROUND 13M.2 — DEEP QUALIFICATION
+# ROUND 13M.4 — BOULLE IMPLEMENTATION GATE
 
-Deep-qualify Boulle, Reticello and Löyly only.
+Create dedicated branch and implement.
 
-Required comparison:
-1. native pair necessity;
-2. emergent third result;
-3. removal test — does either missing side destroy the target relation?;
-4. distinctness from all promoted mechanisms;
-5. source and rights feasibility;
-6. ethical/material truthfulness;
-7. smallest truthful Card A / Card B / Gap translation;
-8. truthful Matching / Other relation;
-9. portfolio interaction surprise and clarity;
-10. select at most two finalists.
+Must pass:
+1. two cards visible immediately;
+2. clear shared cut path on Matching;
+3. reciprocal exchange visually legible;
+4. registered Card A/B remain material inverses, not identical;
+5. Other Cut leaves both valid but does not register reciprocity;
+6. no red invalidation;
+7. original editorial materials / vector motif;
+8. no wildlife material use/recommendation;
+9. responsive layout;
+10. local JS syntax + structure checks.
 
-Do not implement before this finalist gate is recorded.
+## Deployment policy
 
-## Deployment Architecture Policy — LOCKED
-
-Individual Vercel family projects are audit laboratories / golden references only.
-After Round 13M, build one canonical RELATIONAL KEY product + one canonical Vercel project, retaining family lives for regression comparison.
+Per-family Vercel projects = audit laboratories / golden references only.
+After 13M: one canonical collection product + one canonical Vercel project.
 
 ## Persistence protocol
 
-After every significant milestone update canonical state + this handover, record verified identifiers and state the next output explicitly.
+After every significant milestone update canonical state + this handover, record identifiers, and state next output explicitly.
 
-If a new conversation starts here, read `RELATIONAL_KEY_CURRENT_STATE.md`, then this file, then continue directly at `ROUND 13M.2 — DEEP QUALIFICATION`.
+If a new conversation starts here, read canonical state + this handover and resume directly at `ROUND 13M.4 — BOULLE IMPLEMENTATION GATE`.
