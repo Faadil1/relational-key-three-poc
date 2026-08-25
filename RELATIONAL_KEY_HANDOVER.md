@@ -16,7 +16,7 @@ Current merged distribution:
 
 Balance Gate 1:
 - 13K — South America #2 — MERGED / CLOSED
-- 13L — Oceania #2 — **LIVE CANDIDATE / CONDITIONAL VISUAL PASS / TARGET RE-CAPTURE REQUIRED**
+- 13L — Oceania #2 — **VISUAL PASS / PROMOTE / MERGE APPROVAL NEXT**
 - 13M — Europe #2
 
 Target after Gate 1:
@@ -49,27 +49,27 @@ Pair:
 Signature:
 `CONTACT → STROKE → TRACE → ACCUMULATE → HEAT → EMBER → REGISTER → CONTINUE`
 
-### Verified chain
+## Verified chain
 
-13L.1 — Broad Discovery PASS
+13L.1 Broad Discovery — PASS
 - `ROUND13L1_OCEANIA_BALANCE_BROAD_DISCOVERY.md`
 - `9633f07006aeeee145a528eb67455b2a370989eb`
 
-13L.2 — Finalist Gate PASS
+13L.2 Finalist Gate — PASS
 - `ROUND13L2_DEEP_QUALIFICATION_FINALISTS.md`
 - `96b421203832af8618029a9af7c83b9049158bee`
 - reserve: Double-Hulled Canoe
 
-13L.3 — Concept PASS / Hika Ahi selected
+13L.3 Concept Gate — PASS / Hika Ahi selected
 - `ROUND13L3_TWO_FINALIST_CONCEPT_GATE.md`
 - `99697a137313ada569d469476dbf83d5d4eb5f39`
 
-13L.4 — Implementation LOCAL PASS
+13L.4 Implementation — LOCAL PASS
 - implementation `3b550206171e3ad5bfd7a0ad7e6f00f44748a2d7`
 - checkpoint `7c0a327f333407d2654b80b7f8c00facff85f326`
 - PR #17 Draft
 
-13L.5 — Live Candidate READY / SOURCE-LIVE SYNC VERIFIED
+13L.5 Live Candidate — READY / SOURCE-LIVE SYNC VERIFIED
 - project `relational-key-ember-memory-hika-v13l1`
 - project ID `prj_bxE1WIkaiKvyGG9vP7SrvrMxTmTj`
 - preview `dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
@@ -79,50 +79,58 @@ Signature:
 ## 13L.6 — User Visual Audit
 
 Status:
-# **CONDITIONAL PASS / TARGET RE-CAPTURE REQUIRED**
+# **PASS / PROMOTE**
 
-Register:
+Initial conditional register:
 `ROUND13L6_USER_VISUAL_AUDIT_CONDITIONAL.md`
 
-Checkpoint:
-`44b25d3b896aac08ce8f8e0c77391c34b49a9d03`
+Final Target re-capture register:
+`ROUND13L6_TARGET_RECAPTURE_VISUAL_PASS.md`
 
-### Verified
+Final checkpoint:
+`79875324bd41fad575381c78bd09a31d8f71986c`
 
-TARGET final state:
-- video begins with full heat trace + ember already present;
-- ember is located at the relation field;
-- both tools remain distinct.
+### Target — PASS
 
-OTHER CONTACT:
-- partial/offset trace is clearly demonstrated;
-- no ember appears;
+User re-capture starts from reset/unresolved state and visibly demonstrates:
+`UNRESOLVED → CONTACT → TRACE → ACCUMULATE → HEAT → EMBER → REGISTER`
+
+Observed:
+- no ember at the beginning;
+- contact trace grows progressively;
+- field becomes warmer/brighter before ember appearance;
+- ember emerges only after the accumulated heat phase;
+- registered state preserves HIKA + KAUAHI as distinct objects.
+
+Capture properties observed:
+- 12.0 s
+- 1908×964
+- 30 fps
+
+### Other — PASS from prior recording
+
+- partial/offset trace;
+- no ember;
 - both tools remain valid;
 - no red invalidation;
-- no practical fire-starting instruction is introduced.
+- no practical fire-starting instructions.
 
-### Missing evidence
-
-The entire Target emergence occurs before the recording starts. Therefore visual audit cannot yet certify that the spectator experiences:
-
-`UNRESOLVED → FRICTION → HEAT → EMBER`
-
-No code patch is requested.
+No visual/code patch is required.
 
 ## Immediate next task
 
-Re-record TARGET GROOVE only:
-1. press RESET;
-2. keep TARGET GROOVE selected;
-3. start recording before TEST RELATIONSHIP;
-4. press TEST RELATIONSHIP;
-5. wait through EMBER → REGISTER → CONTINUE.
+# ROUND 13L.7 — MERGE GATE
 
-OTHER CONTACT does not need another recording.
+On explicit user approval:
+1. verify PR #17 current head;
+2. mark Ready if still Draft;
+3. squash merge using expected head SHA;
+4. record merge SHA;
+5. update canonical state + this handover;
+6. close 13L;
+7. begin `ROUND 13M — EUROPE #2 — BROAD DISCOVERY`.
 
-After that capture, decide `PASS / PATCH / REJECT`.
-
-PR #17 stays `DRAFT / DO NOT MERGE` until full visual pass.
+PR #17 remains `DRAFT / DO NOT MERGE` until explicit approval.
 
 ## Deployment Architecture Policy — LOCKED
 
@@ -137,4 +145,4 @@ Hika interaction is editorial, not operational fire-making guidance. Do not desc
 
 After every significant milestone update canonical state + this handover, record verified identifiers, and state the next output explicitly.
 
-If a new conversation starts here, read `RELATIONAL_KEY_CURRENT_STATE.md`, then this file, then resume at the **TARGET GROOVE re-capture**.
+If a new conversation starts here, read `RELATIONAL_KEY_CURRENT_STATE.md`, then this file, then resume at **ROUND 13L.7 — MERGE GATE**.
