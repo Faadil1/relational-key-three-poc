@@ -2,149 +2,116 @@
 
 Updated: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
-Working branch: `round13m/complement-memory-boulle`
+Working branch: `collection/consolidation-gate-1`
 
 ## Resume here
 
-RELATIONAL KEY is completing the **CONTINENTAL BALANCE GATE — Gate 1**.
+RELATIONAL KEY has completed **CONTINENTAL BALANCE GATE 1**.
 
 Canonical invariant:
-**THE RELATIONAL PAIR REMAINS THE PRODUCT.**
+# **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
-Current merged distribution:
-`AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 1`
+Final merged distribution:
+`AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-Balance Gate 1:
-- 13K — South America #2 — MERGED / CLOSED
-- 13L — Oceania #2 — MERGED / CLOSED
-- 13M — Europe #2 — **VISUAL PASS / PROMOTE / MERGE APPROVAL NEXT**
+Latest family merge:
+- Round 13M / Boulle
+- squash merge `540923b02a8b8c8490809a8c381d9e9bfee29d99`
 
-Target after 13M merge:
-`4 / 3 / 2 / 2 / 2 / 2`
+Family expansion is paused.
 
-Immediately after 13M merge: stop family expansion and start **COLLECTION CONSOLIDATION GATE**.
+# ACTIVE PHASE — COLLECTION CONSOLIDATION GATE
 
-## Last closed family — 13L
+C1 status:
+# **INVENTORY + ARCHITECTURE FREEZE — PASS**
 
-**EMBER MEMORY — AOTEAROA / HIKA AHI — FRICTION REGISTER**
-PR #17: MERGED
-Merge SHA: `2e9cf84a11b2f5c08a7cf974b1f9b9530be88a4b`
-Golden reference: `dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
+Read first:
+1. `RELATIONAL_KEY_CURRENT_STATE.md`
+2. `COLLECTION_CONSOLIDATION_C1_INVENTORY_ARCHITECTURE.md`
+3. `collection/families.json`
 
-# ACTIVE FAMILY — ROUND 13M
+## Critical discovery
 
-**COMPLEMENT MEMORY — FRANCE / BOULLE — RECIPROCAL CUT REGISTER**
+The collection has 15 family slots, but validation is not perfectly uniform.
 
-Law:
-**ONE SHARED CUT PRODUCES TWO COMPLEMENTARY INVERSES.**
+- 14 have documented user visual / visual+audio gates.
+- Japan / Kento Register is the single debt.
 
-Proof:
-`SHEET A ≠ SHEET B → STACK → SHARED CUT → SEPARATE → EXCHANGE → PARTIE ↔ CONTREPARTIE`
+Kento:
+- branch `round13g/print-memory-kento`
+- implementation doc `ROUND13G2_KENTO_REGISTER_IMPLEMENTATION.md`
+- doc status `IMPLEMENTED / LIVE VISUAL AUDIT REQUIRED`
+- live deployment `dpl_J74TMsqZS2uSWv8PuhLVGPfQfBev`
+- Vercel state `READY`
+- do not label PROMOTED until user visual audit closes this gate.
 
-Pair:
-- Card A — PARTIE / dark ground + light inlay
-- Card B — CONTREPARTIE / light ground + dark inlay
-- center — SHARED CUT / RECIPROCAL EXCHANGE FIELD
+## Family source topology
 
-Signature:
-`ALIGN → STACK → CUT → SEPARATE → EXCHANGE → INVERT → REGISTER → CONTINUE`
+### Six-family restored base
+Source branch:
+`round13r/relational-pair-restoration`
 
-## Verified chain
+Contains the canonical restored versions of:
+- Gatineau / Registered City Passage
+- Benin / Service Register
+- Nigeria / Signal Portrait
+- Coyoacán / Frida Trace System
+- Toyama / Edible Passage
+- Asante-Bonwire / Woven Register
 
-13M.1 Broad Discovery — PASS
-- `ROUND13M1_EUROPE_BALANCE_BROAD_DISCOVERY.md`
-- `6e16915b7b9ef8d4c27381d1ab1550e7093fbca2`
+User audit:
+`ROUND13R4_USER_LIVE_VISUAL_AUDIT.md` → PASS WITH POLISH
 
-13M.2 Deep Qualification — FINALIST PASS
-- `ROUND13M2_DEEP_QUALIFICATION_FINALISTS.md`
-- `6206e33ea3c202edb77b6a7924ac7d5e7909d0fb`
-- finalists: Boulle / Reticello
+Golden multi-family deployment:
+`dpl_26HsTL8cVqyzkkqm4oGtnVZZqehn`
 
-13M.3 Concept — PASS / BOULLE SELECTED
-- `ROUND13M3_TWO_FINALIST_CONCEPT_GATE.md`
-- `b6faf0a188d241ffe4408b076ac0df42a72a7c2d`
-- Reticello remains Europe reserve.
+### Dedicated validated branches still requiring source capture
+- `round13e/craft-memory-zellige` → `dpl_4HV3s3QoWeKyBXaRfdR5zmWEFhzs`
+- `round13f/record-memory-khipu` → `dpl_FidjRh6mX1XeDxVE6aXVKnFQbW9Z`
+- `round13h/sound-memory-ombak` → `dpl_FCTw3Fxo3YYgZTP1iv2zyRyJZxXy`
+- `round13i/navigation-memory-marshall` → `dpl_9ZypFYUDHAthPHpEM3AoxYG3PqUB`
 
-13M.4 Implementation — LOCAL PASS
-- branch `round13m/complement-memory-boulle`
-- implementation `d9067507c1db464a97defdbdd63346b9d82a3a29`
-- register `ROUND13M4_BOULLE_IMPLEMENTATION.md`
-- PR #18 Draft
+### Candidate branch
+- `round13g/print-memory-kento` → `dpl_J74TMsqZS2uSWv8PuhLVGPfQfBev` → audit required
 
-13M.5 Live Candidate — READY / SOURCE-LIVE SYNC VERIFIED
-- project `relational-key-complement-memory-boulle-v13m1`
-- project ID `prj_1u0bwUIMeY1fB9trbA4sccHfRKAb`
-- ignore initial main import `dpl_DApvk97q8BShPgeL4v94y77KxrBW`
-- verified exact-head preview before audit: `dpl_EK1wW4peLBk1f9KHg4T6nerJ4jFy`
+### Later promoted / merged family sources
+- `round13j/depth-memory-stereoscopy` → `dpl_4qQoTiev64vzU7tRLXmrYxtbrHjY`
+- `round13k/melody-memory-siku` → `dpl_AgwdotABtjmYKDvnx3qoprtPEMsr`
+- `round13l/ember-memory-hika-ahi` → `dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
+- `round13m/complement-memory-boulle` → `dpl_EK1wW4peLBk1f9KHg4T6nerJ4jFy`
 
-## 13M.6 — User Visual Audit
+## Architecture locked for consolidation
 
-Status:
-# **PASS / PROMOTE**
-
-Register:
-`ROUND13M6_USER_VISUAL_AUDIT_PASS.md`
-
-Checkpoint:
-`9e5ab35422978f0773bd613400412dc0c2da424a`
-
-Evidence:
-- ~25.93 s recording
-- 1908×962
-- 30 fps
-- both SHARED CUT and OTHER CUT captured through completion.
-
-### SHARED CUT — PASS
-
-Observed:
-- same cut contour appears on both fields;
-- center shows one shared division;
-- layers separate;
-- reciprocal material outcome then appears;
-- Card A resolves dark ground + light inlay;
-- Card B resolves light ground + dark inlay;
-- final cards are reciprocal inverses, not copies;
-- pair remains the dominant product.
-
-### OTHER CUT — PASS
-
-Observed:
-- partial/offset paths only;
-- no reciprocal filled inlays;
-- no complete PARTIE ↔ CONTREPARTIE registration;
-- both material fields remain valid;
-- no red/error-dominant invalidation.
-
-No blocking patch required.
-
-Non-blocking future polish: center exchange marker / microcopy may be enlarged during collection-wide refinement for small-screen legibility.
-
-## Ethical boundary
-
-Historical tortoiseshell is evidence only. Prototype materials are editorial simulations; no wildlife material is used/recommended and no exact fabrication recipe is claimed.
+- snapshots live at `/families/<slug>/index.html`;
+- source capture is immutable on import;
+- no CSS/mechanism normalization during C2;
+- machine registry is `/collection/families.json`;
+- root collection shell comes only after snapshots exist;
+- existing Vercel family projects remain golden regression references;
+- final deployment will be one canonical RELATIONAL KEY project.
 
 ## Immediate next task
 
-# ROUND 13M.7 — MERGE GATE
+# **C2 — SOURCE CAPTURE & SNAPSHOT IMPORT**
 
-On explicit user approval:
-1. verify PR #18 current head;
-2. mark Ready if still Draft;
-3. squash merge using expected head SHA;
-4. record merge SHA;
-5. update distribution to `4 / 3 / 2 / 2 / 2 / 2`;
-6. close Continental Balance Gate 1;
-7. begin **COLLECTION CONSOLIDATION GATE**.
+Recommended order:
+1. close Kento audit debt or explicitly mark candidate-only;
+2. capture six restored base families;
+3. capture Zellige / Khipu / Ombak / Swell;
+4. capture Stereoscopy / Siku / Hika / Boulle;
+5. add Kento only at its verified status;
+6. verify all `/families/<slug>/` direct routes;
+7. compare against golden references;
+8. then proceed to C3 Collection Shell.
 
-PR #18 remains `DRAFT / DO NOT MERGE` until explicit approval.
+Do not start Global Refinement during source capture.
 
-## Deployment Architecture Policy — LOCKED
+## Accidental PR note
 
-Individual family Vercel projects are audit laboratories / golden references only.
-After 13M merge, build one canonical RELATIONAL KEY product + one canonical Vercel project, retaining family lives only for regression comparison.
+PR #19 was an accidental placeholder created during the transition to consolidation. It was immediately closed, unmerged, with no code change. Ignore it.
 
 ## Persistence protocol
 
-After every significant milestone update canonical state + this handover, record identifiers, and state next output explicitly.
+After every significant milestone update canonical state + this handover and state the next output explicitly.
 
-If a new conversation starts here, read `RELATIONAL_KEY_CURRENT_STATE.md`, then this file, and resume directly at **ROUND 13M.7 — MERGE GATE**.
+If a new conversation starts here, resume at **C2 — SOURCE CAPTURE & SNAPSHOT IMPORT**.
