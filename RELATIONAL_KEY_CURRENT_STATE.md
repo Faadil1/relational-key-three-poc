@@ -3,7 +3,7 @@
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `round13l/oceania-balance-discovery`
-Latest verified milestone: `ROUND13L1_OCEANIA_BALANCE_BROAD_DISCOVERY.md`
+Latest verified milestone: `ROUND13L2_DEEP_QUALIFICATION_FINALISTS.md`
 
 ## Product invariant
 
@@ -13,12 +13,12 @@ Every Cultural Edition must preserve two distinct relational objects, a visible 
 
 # CONTINENTAL BALANCE GATE
 
-Current promoted + merged distribution:
+Current merged distribution:
 `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 1 / EUROPE 1`
 
 Balance Gate 1:
 1. `ROUND 13K` — SOUTH AMERICA #2 — **MERGED / CLOSED**
-2. `ROUND 13L` — OCEANIA #2 — **BROAD DISCOVERY PASS / DEEP QUALIFICATION NEXT**
+2. `ROUND 13L` — OCEANIA #2 — **FINALIST GATE PASS / CONCEPT GATE NEXT**
 3. `ROUND 13M` — EUROPE #2
 
 Target after Gate 1:
@@ -26,109 +26,117 @@ Target after Gate 1:
 
 ## Round 13K — CLOSED
 
-Edition:
-**MELODY MEMORY — BOLIVIA / SIKU — INTERLOCK REGISTER**
+Edition: **MELODY MEMORY — BOLIVIA / SIKU — INTERLOCK REGISTER**
+Law: **COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.**
+Proof: `IRA ≠ ARKA → ALTERNATION → ONE MELODY`
+Audit: `VISUAL+AUDIO PASS / PROMOTE`
+PR #16: `MERGED`
+Squash merge commit: `ca8851db034fac0cc60507d310b1623fb459366c`
 
-Law:
-**COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.**
-
-Proof:
-`IRA ≠ ARKA → ALTERNATION → ONE MELODY`
-
-User visual + audio audit:
-`PASS / PROMOTE`
-
-Dedicated live candidate:
-`dpl_AgwdotABtjmYKDvnx3qoprtPEMsr`
-
-PR #16:
-`MERGED`
-
-Squash merge commit:
-`ca8851db034fac0cc60507d310b1623fb459366c`
-
-Round 13K is closed. Do not reopen without concrete evidence of a defect.
+Do not reopen 13K without concrete evidence of a defect.
 
 # ROUND 13L — OCEANIA #2
 
 ## 13L.1 — Broad Discovery
+Status: `DISCOVERY GATE PASS`
+Register: `ROUND13L1_OCEANIA_BALANCE_BROAD_DISCOVERY.md`
+Commit: `9633f07006aeeee145a528eb67455b2a370989eb`
+
+Tier A originally advanced:
+- Māori Hika Ahi
+- Aboriginal Australian Grindstones
+- Polynesian Double-Hulled Canoe
+- Pacific Tapa Beater + Anvil
+
+## 13L.2 — Deep Qualification
 
 Status:
-# **DISCOVERY GATE — PASS**
+# **FINALIST GATE — PASS**
 
-Branch:
-`round13l/oceania-balance-discovery`
+Register:
+`ROUND13L2_DEEP_QUALIFICATION_FINALISTS.md`
 
-Research register:
-`ROUND13L1_OCEANIA_BALANCE_BROAD_DISCOVERY.md`
+Commit:
+`96b421203832af8618029a9af7c83b9049158bee`
 
-Discovery commit:
-`9633f07006aeeee145a528eb67455b2a370989eb`
+### Finalist 1 — Aotearoa / Māori Hika Ahi
 
-Existing Oceania territory already occupied by Marshall Islands Swell:
-- environmental wave deflection;
-- navigation / orientation;
-- ocean-swell reading.
+Pair:
+- `HIKA` — pointed fire-making stick
+- `KAUAHI` — grooved base stick
 
-13L must add a materially different relation.
+Documented mechanism:
+back/forth friction in the groove → heat → smouldering wood dust / ember.
 
-### Tier A — Deep qualify next
+Candidate law:
+**RECIPROCAL FRICTION RELEASES LATENT HEAT INTO EMBER.**
 
-1. **Aotearoa / Māori — Hika Ahi / fire-plough pair**
-   - hika stick + kauahi base stick;
-   - repeated friction → heat → ember;
-   - candidate law: `RECIPROCAL FRICTION RELEASES LATENT HEAT INTO EMBER.`
-   - pair-native strength: VERY HIGH;
-   - key risk: cultural sensitivity + avoid turning prototype into practical fire-starting instruction; visual rights unresolved.
+Proof:
+`HIKA ≠ KAUAHI → CONTACT → FRICTION → HEAT → EMBER`
 
-2. **Aboriginal Australia — Millstone + Muller / Grindstones**
-   - lower millstone + upper muller;
-   - pressure / movement → grinding / prepared matter;
-   - candidate law: `RECIPROCAL ABRASION TURNS WHOLE MATERIAL INTO PREPARED MATTER.`
-   - pair-native strength: HIGH;
-   - key risk: third processed material is necessary; avoid collapsing into another Food Memory.
+Strengths:
+- native two-object necessity: VERY HIGH;
+- emergent third result: VERY HIGH;
+- system novelty: VERY HIGH;
+- Other state can preserve both sticks while no target ember registers.
 
-3. **Polynesia — Double-Hulled Canoe**
-   - two joined parallel hulls;
-   - distributed buoyancy → stability / seaworthiness / capacity;
-   - candidate law: `DISTRIBUTED BUOYANCY PRODUCES STABILITY.`
-   - pair-native strength: VERY HIGH;
-   - key risk: maritime context may feel too close to Swell unless framed strictly as structural coupling.
+Risks / boundaries:
+- living Māori cultural knowledge must be sourced and named accurately;
+- no generic Indigenous decoration;
+- no exact ignition temperature, stroke speed, moisture, wood calibration or practical fire-starting instruction;
+- most Māori-specific historical imagery found so far has restrictive reuse rights, so implementation may require an original source-grounded tool rendering.
 
-4. **Sāmoa / Tahiti / West Polynesia — Tapa Beater + Anvil**
-   - beater + wooden anvil + bark substrate;
-   - repeated impact / compression → bark widens into cloth surface;
-   - candidate law: `REPEATED COMPRESSION TURNS A STRIP INTO A SURFACE.`
-   - pair-native strength: HIGH-MEDIUM;
-   - key risk: third substrate necessary; avoid decorative / print framing that would overlap Kento.
+### Finalist 2 — Polynesia / Double-Hulled Canoe
 
-### Tier B — Preserve
+Pair:
+- `HULL A`
+- `HULL B`
 
-5. **Aotearoa / Māori — Paired Poi**
-   - candidate law: `COUNTER-MOTION PRODUCES A SHARED PATTERN.`
-   - downgraded because single poi is also valid and sound/rhythm territory is already crowded.
+Documented mechanism:
+two parallel hulls joined by structural coupling → distributed buoyancy → stability / seaworthiness / capacity.
 
-6. **Aotearoa / Māori — Toki + Hoanga**
-   - candidate law: `CONTROLLED ABRASION PRODUCES AN EDGE.`
-   - downgraded because it is adjacent to the grindstone mechanism and one object is primarily being worked into a final state.
+Candidate law:
+**DISTRIBUTED BUOYANCY PRODUCES STABILITY.**
+
+Proof:
+`HULL A + HULL B → JOIN → DISTRIBUTE → STABILIZE`
+
+Strengths:
+- native two-object necessity: VERY HIGH;
+- emergent structural property: VERY HIGH;
+- strong rights path via CC BY-SA Wikimedia Commons image;
+- clear structural interaction potential.
+
+Risks / boundaries:
+- maritime setting risks perceptual overlap with Marshall Islands Swell;
+- must be framed only as structural coupling / load distribution, never navigation or swell reading.
+
+### Reserves
+
+**Aboriginal Australia — Grindstones**
+- law: `RECIPROCAL ABRASION TURNS WHOLE MATERIAL INTO PREPARED MATTER.`
+- strong but more triadic because processed material is necessary; cultural specificity / visual-rights burden remains.
+
+**Pacific Tapa — Beater + Anvil**
+- law: `REPEATED COMPRESSION TURNS A STRIP INTO A SURFACE.`
+- tactile and strong, but bark substrate is necessary and cross-cultural terminology / rights require more work.
 
 ## Next required output
 
-# ROUND 13L.2 — DEEP QUALIFICATION
+# ROUND 13L.3 — TWO-FINALIST CONCEPT GATE
 
-Deep-qualify Tier A only.
+Compare Hika Ahi vs Double-Hulled Canoe on:
+1. removing either object destroys the target relation;
+2. third result is immediately perceptible;
+3. Matching + Other can remain culturally truthful;
+4. distinctness from Swell;
+5. visual-rights feasibility;
+6. cultural meaning comes from mechanism, not decoration;
+7. portfolio interaction surprise / clarity.
 
-Required checks:
-1. authoritative source verification;
-2. native two-object necessity;
-3. distinctness from Marshall Islands Swell and all existing families;
-4. strength of emergent third result;
-5. visual-source rights / reusable anchor strategy;
-6. smallest truthful two-card translation;
-7. culturally truthful `OTHER` state;
-8. interaction legibility;
-9. select at most two finalists;
-10. no implementation before finalist gate is recorded.
+Select exactly one winner or `NO BUILD`.
+
+No implementation before this concept gate is recorded.
 
 ## Persistence protocol
 
@@ -136,7 +144,7 @@ After every significant milestone:
 1. update this file;
 2. update `RELATIONAL_KEY_HANDOVER.md`;
 3. record verified branch / commit / deployment / PR identifiers;
-4. state the next required output explicitly;
+4. state next output explicitly;
 5. never infer an unverified pass.
 
 Status vocabulary remains separate:
