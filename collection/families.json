@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.0",
+  "schema_version": "1.1",
   "collection": "RELATIONAL KEY",
-  "phase": "COLLECTION_CONSOLIDATION_GATE_C1",
+  "phase": "COLLECTION_CONSOLIDATION_GATE_C2_SOURCE_CAPTURE",
   "distribution": {
     "Africa": 4,
     "Asia": 3,
@@ -10,8 +10,8 @@
     "Oceania": 2,
     "Europe": 2
   },
-  "validated_count": 14,
-  "candidate_count": 1,
+  "validated_count": 15,
+  "candidate_count": 0,
   "families": [
     {"id":"city-gatineau","edition":"Registered City Passage","place":"Gatineau, Canada","continent":"North America","memory":"City / Passage","mechanism":"registered continuation","source_branch":"round13r/relational-pair-restoration","golden_deployment":"dpl_26HsTL8cVqyzkkqm4oGtnVZZqehn","validation":"PASS_WITH_POLISH","route":"/families/city-gatineau/","polish_backlog":true},
     {"id":"service-benin","edition":"Service Register","place":"Benin","continent":"Africa","memory":"Service Memory","mechanism":"service as storyboard / switch registration","source_branch":"round13r/relational-pair-restoration","golden_deployment":"dpl_26HsTL8cVqyzkkqm4oGtnVZZqehn","validation":"PASS_WITH_POLISH","route":"/families/service-benin/","polish_backlog":true},
@@ -21,7 +21,7 @@
     {"id":"textile-bonwire","edition":"Woven Register","place":"Asante / Bonwire, Ghana","continent":"Africa","memory":"Textile Memory","mechanism":"interlacing / woven continuation","source_branch":"round13r/relational-pair-restoration","golden_deployment":"dpl_26HsTL8cVqyzkkqm4oGtnVZZqehn","validation":"PASS_WITH_POLISH","route":"/families/textile-bonwire/","polish_backlog":true},
     {"id":"zellige-fes","edition":"Craft Memory / Zellige Register","place":"Fès, Morocco","continent":"Africa","memory":"Craft Memory","mechanism":"material fit / tessellation","source_branch":"round13e/craft-memory-zellige","golden_deployment":"dpl_4HV3s3QoWeKyBXaRfdR5zmWEFhzs","validation":"PASS_WITH_POLISH","route":"/families/zellige-fes/","polish_backlog":true},
     {"id":"khipu-peru","edition":"Record Memory / Knotted Register","place":"Peru","continent":"South America","memory":"Record Memory","mechanism":"tension / knot registration","source_branch":"round13f/record-memory-khipu","golden_deployment":"dpl_FidjRh6mX1XeDxVE6aXVKnFQbW9Z","validation":"PASS_WITH_POLISH","route":"/families/khipu-peru/","polish_backlog":true},
-    {"id":"kento-japan","edition":"Print Memory / Kento Register","place":"Japan","continent":"Asia","memory":"Print Memory","mechanism":"registration / transfer alignment","source_branch":"round13g/print-memory-kento","golden_deployment":"dpl_J74TMsqZS2uSWv8PuhLVGPfQfBev","validation":"LIVE_AUDIT_REQUIRED","route":"/families/kento-japan/","polish_backlog":false},
+    {"id":"kento-japan","edition":"Print Memory / Kento Register","place":"Japan","continent":"Asia","memory":"Print Memory","mechanism":"registration / transfer alignment","source_branch":"round13g/print-memory-kento","golden_deployment":"dpl_J74TMsqZS2uSWv8PuhLVGPfQfBev","validation":"PASS_WITH_POLISH","route":"/families/kento-japan/","polish_backlog":true},
     {"id":"ombak-bali","edition":"Sound Memory / Ombak Register","place":"Bali, Indonesia","continent":"Asia","memory":"Sound Memory","mechanism":"controlled difference / beat resonance","source_branch":"round13h/sound-memory-ombak","golden_deployment":"dpl_FCTw3Fxo3YYgZTP1iv2zyRyJZxXy","validation":"PASS_WITH_POLISH","route":"/families/ombak-bali/","polish_backlog":true},
     {"id":"swell-marshall","edition":"Navigation Memory / Swell Register","place":"Marshall Islands","continent":"Oceania","memory":"Navigation Memory","mechanism":"environmental interaction / swell deflection","source_branch":"round13i/navigation-memory-marshall","golden_deployment":"dpl_9ZypFYUDHAthPHpEM3AoxYG3PqUB","validation":"PASS_WITH_POLISH","route":"/families/swell-marshall/","polish_backlog":true},
     {"id":"stereoscopy-uk","edition":"Depth Memory / Binocular Register","place":"United Kingdom","continent":"Europe","memory":"Depth Memory","mechanism":"controlled disparity / binocular fusion","law":"CONTROLLED DISPARITY PRODUCES DEPTH","source_branch":"round13j/depth-memory-stereoscopy","golden_deployment":"dpl_4qQoTiev64vzU7tRLXmrYxtbrHjY","validation":"VISUAL_PASS_MERGED","route":"/families/stereoscopy-uk/","polish_backlog":false},
