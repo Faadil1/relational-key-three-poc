@@ -2,149 +2,95 @@
 
 Updated: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
-Working branch: `round13m/complement-memory-boulle`
+Working branch: `collection/consolidation-gate-1`
+Draft PR: **#20 — RELATIONAL KEY — Collection Consolidation Gate**
+PR status: `DRAFT / DO NOT MERGE`
 
-## Resume here
+# RESUME HERE
 
-RELATIONAL KEY is completing the **CONTINENTAL BALANCE GATE — Gate 1**.
+RELATIONAL KEY has completed:
+- Continental Balance Gate 1;
+- C1 — Inventory + Architecture Freeze;
+- C2 — Source Capture & Snapshot Import;
+- C3 — Collection Shell implementation + source pass;
+- C3.1 — dedicated Preview root live pass;
+- C3.2A — shell visual pass;
+- C3.2B — functional shell pass;
+- C3.2C — route completion to 13/15;
+- C3.2D — final two-route closeout.
 
 Canonical invariant:
-**THE RELATIONAL PAIR REMAINS THE PRODUCT.**
+# **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
-Current merged distribution:
-`AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 1`
+Distribution:
+`AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-Balance Gate 1:
-- 13K — South America #2 — MERGED / CLOSED
-- 13L — Oceania #2 — MERGED / CLOSED
-- 13M — Europe #2 — **VISUAL PASS / PROMOTE / MERGE APPROVAL NEXT**
+# FINAL CONSOLIDATION VALIDATION
 
-Target after 13M merge:
-`4 / 3 / 2 / 2 / 2 / 2`
+**15 / 15 families** have independent user visual or visual+audio gates.
 
-Immediately after 13M merge: stop family expansion and start **COLLECTION CONSOLIDATION GATE**.
+**15 / 15 consolidated direct routes are verified live in the authenticated Vercel Preview.**
 
-## Last closed family — 13L
+Final closeout register:
+`COLLECTION_C3_2D_TWO_ROUTE_CLOSEOUT_PASS.md`
 
-**EMBER MEMORY — AOTEAROA / HIKA AHI — FRICTION REGISTER**
-PR #17: MERGED
-Merge SHA: `2e9cf84a11b2f5c08a7cf974b1f9b9530be88a4b`
-Golden reference: `dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
+Final two routes verified:
+- `/families/zellige-fes/` → Fès / Zellige Tessellated Register ✅
+- `/families/food-toyama/` → EDIBLE PASSAGE / Toyama ✅
 
-# ACTIVE FAMILY — ROUND 13M
+Consolidation Preview:
+- project `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
+- deployment `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ`
+- URL `https://relational-key-collectionrelational-key-collection-4834ctm8z.vercel.app`
+- branch `collection/consolidation-gate-1`
+- state `READY`
 
-**COMPLEMENT MEMORY — FRANCE / BOULLE — RECIPROCAL CUT REGISTER**
+Collection verdict:
+# `ROOT LIVE PASS`
+# `SHELL VISUAL PASS`
+# `15/15 LIVE ROUTE PASS`
+# `COLLECTION USABILITY PASS WITH POLISH`
 
-Law:
-**ONE SHARED CUT PRODUCES TWO COMPLEMENTARY INVERSES.**
+Shell controls already verified:
+- continent filtering;
+- text search;
+- combined filter/search zero-result state;
+- clearing query restores results;
+- browser Back returns to atlas.
 
-Proof:
-`SHEET A ≠ SHEET B → STACK → SHARED CUT → SEPARATE → EXCHANGE → PARTIE ↔ CONTREPARTIE`
+# GLOBAL REFINEMENT
 
-Pair:
-- Card A — PARTIE / dark ground + light inlay
-- Card B — CONTREPARTIE / light ground + dark inlay
-- center — SHARED CUT / RECIPROCAL EXCHANGE FIELD
+# **OPEN — IMPLEMENTATION NOT YET STARTED**
 
-Signature:
-`ALIGN → STACK → CUT → SEPARATE → EXCHANGE → INVERT → REGISTER → CONTINUE`
+Do not mutate family snapshots on the current consolidation branch before PR #20's explicit merge gate.
 
-## Verified chain
+Global Refinement backlog:
+1. add explicit collection-level `← Back to Atlas` navigation around family views;
+2. enlarge/clarify tiny secondary mono metadata, chips and card labels where needed;
+3. increase shell-level family individuality without generic cultural skinning;
+4. preserve all golden family mechanisms and source regression anchors;
+5. address family `PASS WITH POLISH` backlog systematically;
+6. improve collection-to-family and family-to-collection transition/cohesion;
+7. keep the pair as the product; never make the center/gap the primary product.
 
-13M.1 Broad Discovery — PASS
-- `ROUND13M1_EUROPE_BALANCE_BROAD_DISCOVERY.md`
-- `6e16915b7b9ef8d4c27381d1ab1550e7093fbca2`
+# IMMEDIATE NEXT TASK — C3.3 CONSOLIDATION MERGE GATE
 
-13M.2 Deep Qualification — FINALIST PASS
-- `ROUND13M2_DEEP_QUALIFICATION_FINALISTS.md`
-- `6206e33ea3c202edb77b6a7924ac7d5e7909d0fb`
-- finalists: Boulle / Reticello
+PR #20 is still Draft.
 
-13M.3 Concept — PASS / BOULLE SELECTED
-- `ROUND13M3_TWO_FINALIST_CONCEPT_GATE.md`
-- `b6faf0a188d241ffe4408b076ac0df42a72a7c2d`
-- Reticello remains Europe reserve.
+Wait for explicit user authorization before:
+- marking PR #20 Ready;
+- squash-merging it;
+- creating the fresh Global Refinement branch.
 
-13M.4 Implementation — LOCAL PASS
-- branch `round13m/complement-memory-boulle`
-- implementation `d9067507c1db464a97defdbdd63346b9d82a3a29`
-- register `ROUND13M4_BOULLE_IMPLEMENTATION.md`
-- PR #18 Draft
+After merge:
+1. freeze the merge SHA as the consolidated pre-refinement anchor;
+2. create a fresh refinement branch from that SHA;
+3. execute refinement in staged gates with regression checks against the golden family references.
 
-13M.5 Live Candidate — READY / SOURCE-LIVE SYNC VERIFIED
-- project `relational-key-complement-memory-boulle-v13m1`
-- project ID `prj_1u0bwUIMeY1fB9trbA4sccHfRKAb`
-- ignore initial main import `dpl_DApvk97q8BShPgeL4v94y77KxrBW`
-- verified exact-head preview before audit: `dpl_EK1wW4peLBk1f9KHg4T6nerJ4jFy`
-
-## 13M.6 — User Visual Audit
-
-Status:
-# **PASS / PROMOTE**
-
-Register:
-`ROUND13M6_USER_VISUAL_AUDIT_PASS.md`
-
-Checkpoint:
-`9e5ab35422978f0773bd613400412dc0c2da424a`
-
-Evidence:
-- ~25.93 s recording
-- 1908×962
-- 30 fps
-- both SHARED CUT and OTHER CUT captured through completion.
-
-### SHARED CUT — PASS
-
-Observed:
-- same cut contour appears on both fields;
-- center shows one shared division;
-- layers separate;
-- reciprocal material outcome then appears;
-- Card A resolves dark ground + light inlay;
-- Card B resolves light ground + dark inlay;
-- final cards are reciprocal inverses, not copies;
-- pair remains the dominant product.
-
-### OTHER CUT — PASS
-
-Observed:
-- partial/offset paths only;
-- no reciprocal filled inlays;
-- no complete PARTIE ↔ CONTREPARTIE registration;
-- both material fields remain valid;
-- no red/error-dominant invalidation.
-
-No blocking patch required.
-
-Non-blocking future polish: center exchange marker / microcopy may be enlarged during collection-wide refinement for small-screen legibility.
-
-## Ethical boundary
-
-Historical tortoiseshell is evidence only. Prototype materials are editorial simulations; no wildlife material is used/recommended and no exact fabrication recipe is claimed.
-
-## Immediate next task
-
-# ROUND 13M.7 — MERGE GATE
-
-On explicit user approval:
-1. verify PR #18 current head;
-2. mark Ready if still Draft;
-3. squash merge using expected head SHA;
-4. record merge SHA;
-5. update distribution to `4 / 3 / 2 / 2 / 2 / 2`;
-6. close Continental Balance Gate 1;
-7. begin **COLLECTION CONSOLIDATION GATE**.
-
-PR #18 remains `DRAFT / DO NOT MERGE` until explicit approval.
-
-## Deployment Architecture Policy — LOCKED
-
-Individual family Vercel projects are audit laboratories / golden references only.
-After 13M merge, build one canonical RELATIONAL KEY product + one canonical Vercel project, retaining family lives only for regression comparison.
+Do not reopen route validation unless a future refinement changes routing.
 
 ## Persistence protocol
 
-After every significant milestone update canonical state + this handover, record identifiers, and state next output explicitly.
+After every significant milestone update `RELATIONAL_KEY_CURRENT_STATE.md` + this handover.
 
-If a new conversation starts here, read `RELATIONAL_KEY_CURRENT_STATE.md`, then this file, and resume directly at **ROUND 13M.7 — MERGE GATE**.
+If a new conversation starts here, resume at **C3.3 — CONSOLIDATION MERGE GATE**.

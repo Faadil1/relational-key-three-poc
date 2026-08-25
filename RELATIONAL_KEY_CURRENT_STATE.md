@@ -2,169 +2,99 @@
 
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
-Canonical working branch: `round13m/complement-memory-boulle`
-Latest verified milestone: `ROUND13M6_USER_VISUAL_AUDIT_PASS.md`
-Visual-audit checkpoint: `9e5ab35422978f0773bd613400412dc0c2da424a`
+Canonical working branch: `collection/consolidation-gate-1`
+Consolidation PR: **#20 — RELATIONAL KEY — Collection Consolidation Gate**
+PR status: `DRAFT / DO NOT MERGE`
+Latest verified milestone: `COLLECTION_C3_2D_TWO_ROUTE_CLOSEOUT_PASS.md`
 
 ## Product invariant
 
-**THE RELATIONAL PAIR REMAINS THE PRODUCT.**
+# **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
-# CONTINENTAL BALANCE GATE
+## Continental Balance Gate 1
 
-Current merged distribution:
-`AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 1`
+Status: `CLOSED`
 
-Balance Gate 1:
-1. 13K — South America #2 — `MERGED / CLOSED`
-2. 13L — Oceania #2 — `MERGED / CLOSED`
-3. 13M — Europe #2 — `VISUAL PASS / PROMOTE / MERGE APPROVAL NEXT`
+Distribution:
+# `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-Target after 13M merge:
-`AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
+Family expansion remains paused.
 
-After 13M merges, stop family expansion and begin the **COLLECTION CONSOLIDATION GATE**.
+## Collection validation ledger
 
-## Last closed family — Round 13L
+# **15 / 15 families have independent user visual or visual+audio gates.**
+# **15 / 15 consolidated direct family routes have now been verified live.**
 
-**EMBER MEMORY — AOTEAROA / HIKA AHI — FRICTION REGISTER**
-PR #17: `MERGED`
-Merge SHA: `2e9cf84a11b2f5c08a7cf974b1f9b9530be88a4b`
-Golden reference: `dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
+## Collection Consolidation Gate
 
-# ROUND 13M — EUROPE #2
+### C1 — Inventory + Architecture Freeze
+Status: `PASS`
+Register: `COLLECTION_CONSOLIDATION_C1_INVENTORY_ARCHITECTURE.md`
 
-## Verified chain
+### C2 — Source Capture & Snapshot Import
+Status: `PASS`
+Register: `COLLECTION_CONSOLIDATION_C2_SOURCE_CAPTURE_PASS.md`
 
-13M.1 Broad Discovery — PASS
-- `ROUND13M1_EUROPE_BALANCE_BROAD_DISCOVERY.md`
-- `6e16915b7b9ef8d4c27381d1ab1550e7093fbca2`
+Regression anchors:
+- nine autonomous exact snapshots — `e7e1473b0d789fa09b33e2e5b8961c33f32227d2`
+- six-family shared runtime + launch routes — `9321844cac8c2e9ccedda7e206b1ee03445bed83`
 
-13M.2 Deep Qualification — FINALIST PASS
-- `ROUND13M2_DEEP_QUALIFICATION_FINALISTS.md`
-- `6206e33ea3c202edb77b6a7924ac7d5e7909d0fb`
-- finalists: Boulle / Reticello
+### C3 — Collection Shell
+Status: `PASS WITH POLISH`
+Implementation: `f7416092c64fd7fd17b5771f002fdae5b0e1433f`
 
-13M.3 Concept Gate — PASS / BOULLE SELECTED
-- `ROUND13M3_TWO_FINALIST_CONCEPT_GATE.md`
-- `b6faf0a188d241ffe4408b076ac0df42a72a7c2d`
+Dedicated consolidation Preview:
+- project ID: `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
+- deployment: `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ`
+- URL: `https://relational-key-collectionrelational-key-collection-4834ctm8z.vercel.app`
+- branch: `collection/consolidation-gate-1`
+- state: `READY`
 
-## Active edition
+Verified collection gates:
+- `ROOT LIVE PASS` ✅
+- `SHELL VISUAL PASS` ✅
+- continent filters ✅
+- search + zero-result state ✅
+- return via browser Back ✅ with polish backlog
+- `15 / 15 LIVE ROUTE PASS` ✅
+- `COLLECTION USABILITY PASS WITH POLISH` ✅
 
-**COMPLEMENT MEMORY — FRANCE / BOULLE — RECIPROCAL CUT REGISTER**
+Route-closeout register:
+`COLLECTION_C3_2D_TWO_ROUTE_CLOSEOUT_PASS.md`
 
-Law:
-**ONE SHARED CUT PRODUCES TWO COMPLEMENTARY INVERSES.**
+Final two routes closed in the 21.03 s user capture:
+- `/families/zellige-fes/` → `Fès · Zellige` / Tessellated Register ✅
+- `/families/food-toyama/` → `EDIBLE PASSAGE` / Toyama ✅
 
-Proof:
-`SHEET A ≠ SHEET B → STACK → SHARED CUT → SEPARATE → EXCHANGE → PARTIE ↔ CONTREPARTIE`
+## GLOBAL REFINEMENT
 
-Pair:
-- Card A — PARTIE / dark ground + light inlay
-- Card B — CONTREPARTIE / light ground + dark inlay
-- Gap — SHARED CUT / RECIPROCAL EXCHANGE FIELD
+# **STATUS: OPEN**
 
-Signature:
-`ALIGN → STACK → CUT → SEPARATE → EXCHANGE → INVERT → REGISTER → CONTINUE`
+Global Refinement may now be planned, but implementation should begin only from a clean consolidated baseline after PR #20's explicit merge gate.
 
-## 13M.4 — Implementation Gate
+Priority refinement backlog:
+1. explicit `← Back to Atlas` around family views;
+2. improve very small mono/chip/card metadata;
+3. improve family individuality at shell level without cultural skinning;
+4. preserve golden family mechanisms and regression anchors;
+5. systematically address `PASS WITH POLISH` family backlog;
+6. improve collection ↔ family transition/cohesion;
+7. maintain the pair as the product; do not turn the gap into the product.
 
-Status: `IMPLEMENTED / LOCAL PASS`
-Branch: `round13m/complement-memory-boulle`
-Implementation commit: `d9067507c1db464a97defdbdd63346b9d82a3a29`
-Register: `ROUND13M4_BOULLE_IMPLEMENTATION.md`
-Draft PR: #18
+## Immediate next output
 
-Verified:
-- two distinct cards visible immediately;
-- shared target path across both material fields;
-- reciprocal inverse fills appear only on target relation;
-- OTHER CUT remains non-shared and non-invalidating;
-- original vector/material simulation;
-- historical tortoiseshell = evidence only;
-- no wildlife material used/recommended;
-- local JS syntax + structure checks PASS.
+# **C3.3 — CONSOLIDATION MERGE GATE**
 
-## 13M.5 — Dedicated Live Candidate
+Do not merge PR #20 without explicit user authorization.
 
-Status: `READY / SOURCE-LIVE SYNC VERIFIED`
-Project: `relational-key-complement-memory-boulle-v13m1`
-Project ID: `prj_1u0bwUIMeY1fB9trbA4sccHfRKAb`
+After merge:
+- create a fresh branch for Global Refinement from the merged consolidated baseline;
+- freeze that merge SHA as the pre-refinement regression anchor;
+- begin refinement in staged gates, not as one uncontrolled redesign.
 
-Ignore initial `main` deployment:
-`dpl_DApvk97q8BShPgeL4v94y77KxrBW`
-
-Verified branch preview family:
-`round13m/complement-memory-boulle`
-
-Exact latest audited-head preview before audit:
-`dpl_EK1wW4peLBk1f9KHg4T6nerJ4jFy`
-
-Source/live content verified as `RELATIONAL KEY — Boulle Reciprocal Cut Register`.
-
-## 13M.6 — User Visual Audit
-
-Status:
-# **VISUAL PASS / PROMOTE**
-
-Register:
-`ROUND13M6_USER_VISUAL_AUDIT_PASS.md`
-
-Checkpoint:
-`9e5ab35422978f0773bd613400412dc0c2da424a`
-
-User evidence:
-- ~25.93 s
-- 1908×962
-- 30 fps
-- includes SHARED CUT and OTHER CUT through completion.
-
-SHARED CUT verified:
-- same contour resolves on both cards;
-- shared center division is visible;
-- separation occurs before reciprocal result;
-- opposite material fills appear in the same vector region;
-- PARTIE and CONTREPARTIE become complementary inverses, not copies;
-- pair remains the product.
-
-OTHER CUT verified:
-- paths remain partial/offset;
-- no reciprocal fills emerge;
-- no complete inversion registers;
-- both fields remain valid;
-- no error-dominant invalidation.
-
-No blocking patch required.
-
-## Next required output
-
-# ROUND 13M.7 — MERGE GATE
-
-On explicit user approval:
-1. verify PR #18 head;
-2. mark Ready if Draft;
-3. squash merge with expected head SHA;
-4. record merge SHA;
-5. close Round 13M;
-6. update merged distribution to `4 / 3 / 2 / 2 / 2 / 2`;
-7. declare Balance Gate 1 complete;
-8. begin **COLLECTION CONSOLIDATION GATE**.
-
-PR #18 remains `DRAFT / DO NOT MERGE` until explicit approval.
-
-# DEPLOYMENT ARCHITECTURE POLICY — LOCKED
-
-Per-family Vercel projects are audit laboratories / golden references only.
-After 13M merge: build one canonical RELATIONAL KEY product + one canonical Vercel project, retaining isolated family lives for regression comparison.
+Status vocabulary:
+`15/15 LIVE ROUTE PASS ≠ GLOBAL REFINEMENT IMPLEMENTED ≠ FINAL COLLECTION PASS`.
 
 ## Persistence protocol
 
-After every significant milestone:
-1. update this file;
-2. update `RELATIONAL_KEY_HANDOVER.md`;
-3. record verified identifiers;
-4. state next output explicitly;
-5. never infer an unverified pass.
-
-Status vocabulary:
-`RESEARCH PASS ≠ CONCEPT PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL PASS ≠ PROMOTE ≠ MERGED`.
+After every significant milestone, update this file + `RELATIONAL_KEY_HANDOVER.md` with exact branches, commits, deployments, gates and next output.
