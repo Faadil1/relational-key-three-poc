@@ -3,7 +3,7 @@
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/consolidation-gate-1`
-Latest verified milestone: `COLLECTION_CONSOLIDATION_C3_SHELL_IMPLEMENTATION.md`
+Latest verified milestone: `COLLECTION_C3_1_VERCEL_PREVIEW_TRIGGER.md`
 Consolidation PR: **#20 — RELATIONAL KEY — Collection Consolidation Gate**
 PR status: `DRAFT / DO NOT MERGE`
 
@@ -15,11 +15,6 @@ PR status: `DRAFT / DO NOT MERGE`
 
 Final distribution:
 # `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
-
-Latest family merges:
-- 13K / Siku — `ca8851db034fac0cc60507d310b1623fb459366c`
-- 13L / Hika Ahi — `2e9cf84a11b2f5c08a7cf974b1f9b9530be88a4b`
-- 13M / Boulle — `540923b02a8b8c8490809a8c381d9e9bfee29d99`
 
 Family expansion remains paused.
 
@@ -48,12 +43,12 @@ Regression anchors:
 - six restored-family shared runtime + launch routes — `9321844cac8c2e9ccedda7e206b1ee03445bed83`
 
 All family routes live under `/families/<slug>/`.
-Family-native interactions are frozen until an explicit Global Refinement gate.
+Family-native interactions remain frozen until explicit Global Refinement.
 
 ## C3 — Collection Shell
 
 Status:
-# **IMPLEMENTED / SOURCE PASS / LIVE PREVIEW REQUIRED**
+# **IMPLEMENTED / SOURCE PASS / LIVE PREVIEW BLOCKED ON VERCEL BRANCH DEPLOY**
 
 Register: `COLLECTION_CONSOLIDATION_C3_SHELL_IMPLEMENTATION.md`
 Implementation: `f7416092c64fd7fd17b5771f002fdae5b0e1433f`
@@ -79,6 +74,33 @@ Verified:
 - C3 implementation changed root `index.html` only;
 - C2 family snapshots were not modified by C3.
 
+# C3.1 — Dedicated Vercel collection project
+
+User created and Git-connected a dedicated project.
+
+Verified project:
+- project ID: `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
+- actual Vercel name: `relational-key-collectionrelational-key-collection`
+- linked repo: `Faadil1/relational-key-three-poc`
+- initial production deployment: `dpl_8VgY6p2WQw2oC92NncYU1EPG5qt1`
+- initial source: `main`
+- initial state: `READY`
+
+Initial production is intentionally not treated as the consolidation live because it serves legacy `main` commit `11f21f6875c4a3b3e4ae2ecce8fd25a5a5a8835d`.
+
+Preview trigger commit pushed after Git connection:
+`1beca9a6bb0233ad18982942d20cf49a978324aa`
+
+Trigger register:
+`COLLECTION_C3_1_VERCEL_PREVIEW_TRIGGER.md`
+
+Verified Vercel result after trigger:
+- no new deployment created;
+- project still contains only `dpl_8VgY6p2WQw2oC92NncYU1EPG5qt1` from `main`;
+- therefore `collection/consolidation-gate-1` has **not** yet received a Vercel preview deployment.
+
+Current blocker is deployment triggering/configuration only. No code or snapshot defect has been established.
+
 `C3 SOURCE PASS ≠ LIVE ROUTE PASS ≠ COLLECTION VISUAL PASS`.
 
 # Consolidation architecture — LOCKED
@@ -89,26 +111,22 @@ Verified:
 4. Existing per-family Vercel deployments remain golden references.
 5. Final output = one canonical RELATIONAL KEY product + one canonical Vercel project.
 
-# Vercel collection project check
-
-No dedicated collection project currently exists in the Vercel project list.
-
-An older project named `relational-key-three-poc` exists but is not Git-linked and will not be silently repurposed.
-
-Required clean project name:
-# `relational-key-collection`
-
 # Immediate next output
 
-# **C3.1 — DEDICATED CONSOLIDATION LIVE**
+# **C3.1A — MANUAL BRANCH PREVIEW TRIGGER**
 
-1. user creates Vercel project `relational-key-collection` by importing `Faadil1/relational-key-three-poc`;
-2. do not change its initial main deployment manually;
-3. assistant identifies project ID and triggers `collection/consolidation-gate-1` with a checkpoint push;
-4. verify root registry + all 15 routes;
-5. spot-check CITY / SERVICE / SIGNAL / FRIDA / FOOD / TEXTILE route initialization;
-6. run collection-level user visual/usability audit;
-7. keep PR #20 Draft and Global Refinement closed until the audit passes.
+Required external action:
+- create a Vercel Preview Deployment from Git branch `collection/consolidation-gate-1` in project `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`.
+
+Once that deployment exists, assistant will:
+1. identify deployment ID + URL;
+2. wait for `READY`;
+3. verify root HTML and `collection/families.json`;
+4. verify all 15 family routes;
+5. spot-check CITY / SERVICE / SIGNAL / FRIDA / FOOD / TEXTILE initialization;
+6. record live-route verdict;
+7. request collection-level visual/usability recording;
+8. keep PR #20 Draft and Global Refinement closed until visual pass.
 
 Status vocabulary:
 `SOURCE CAPTURE ≠ COLLECTION SHELL ≠ LIVE ROUTE PASS ≠ COLLECTION VISUAL PASS ≠ GLOBAL REFINEMENT ≠ FINAL COLLECTION PASS`.
