@@ -2,7 +2,7 @@
 
 Updated: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
-Working branch: `round13m/europe-balance-discovery`
+Working branch: `round13m/complement-memory-boulle`
 
 ## Resume here
 
@@ -17,12 +17,12 @@ Current merged distribution:
 Balance Gate 1:
 - 13K — South America #2 — MERGED / CLOSED
 - 13L — Oceania #2 — MERGED / CLOSED
-- 13M — Europe #2 — **CONCEPT PASS / BOULLE SELECTED / IMPLEMENTATION NEXT**
+- 13M — Europe #2 — **IMPLEMENTED / LIVE CANDIDATE NEXT**
 
 Target:
 `4 / 3 / 2 / 2 / 2 / 2`
 
-After 13M merge, pause expansion and run **COLLECTION CONSOLIDATION GATE**.
+After 13M merges: **COLLECTION CONSOLIDATION GATE**.
 
 ## Last closed family — 13L
 
@@ -33,33 +33,9 @@ PR #17: MERGED
 Merge SHA: `2e9cf84a11b2f5c08a7cf974b1f9b9530be88a4b`
 Golden reference: `dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
 
-# ACTIVE ROUND — 13M / EUROPE #2
+# ACTIVE FAMILY — ROUND 13M
 
-## 13M.1 Broad Discovery — PASS
-Register: `ROUND13M1_EUROPE_BALANCE_BROAD_DISCOVERY.md`
-Commit: `6e16915b7b9ef8d4c27381d1ab1550e7093fbca2`
-
-Tier A: Boulle, Reticello, Löyly.
-
-## 13M.2 Deep Qualification — FINALIST PASS
-Register: `ROUND13M2_DEEP_QUALIFICATION_FINALISTS.md`
-Commit: `6206e33ea3c202edb77b6a7924ac7d5e7909d0fb`
-
-Finalists:
-- France / Boulle
-- Venice / Reticello
-
-Löyly remains a reserve for a future asymmetric-relation format.
-
-## 13M.3 Concept Gate — PASS / BOULLE SELECTED
-
-Register:
-`ROUND13M3_TWO_FINALIST_CONCEPT_GATE.md`
-
-Commit:
-`b6faf0a188d241ffe4408b076ac0df42a72a7c2d`
-
-# COMPLEMENT MEMORY — FRANCE / BOULLE — RECIPROCAL CUT REGISTER
+**COMPLEMENT MEMORY — FRANCE / BOULLE — RECIPROCAL CUT REGISTER**
 
 Law:
 **ONE SHARED CUT PRODUCES TWO COMPLEMENTARY INVERSES.**
@@ -75,65 +51,84 @@ Pair:
 Signature:
 `ALIGN → STACK → CUT → SEPARATE → EXCHANGE → INVERT → REGISTER → CONTINUE`
 
-### Matching
+## Verified chain
 
-`SHARED CUT`
-- different material fields align;
-- one editorial cut path is common to both;
-- fragments separate and exchange;
-- resulting cards become reciprocal material inverses;
-- both remain distinct;
-- reciprocity registers.
+13M.1 Broad Discovery — PASS
+- `ROUND13M1_EUROPE_BALANCE_BROAD_DISCOVERY.md`
+- `6e16915b7b9ef8d4c27381d1ab1550e7093fbca2`
 
-### Other
+13M.2 Deep Qualification — FINALIST PASS
+- `ROUND13M2_DEEP_QUALIFICATION_FINALISTS.md`
+- `6206e33ea3c202edb77b6a7924ac7d5e7909d0fb`
+- finalists: Boulle / Reticello
 
-`OTHER CUT`
+13M.3 Concept — PASS / BOULLE SELECTED
+- `ROUND13M3_TWO_FINALIST_CONCEPT_GATE.md`
+- `b6faf0a188d241ffe4408b076ac0df42a72a7c2d`
+- Reticello remains Europe reserve.
+
+13M.4 Implementation — LOCAL PASS
+- branch `round13m/complement-memory-boulle`
+- implementation `d9067507c1db464a97defdbdd63346b9d82a3a29`
+- register `ROUND13M4_BOULLE_IMPLEMENTATION.md`
+
+### SHARED CUT
+
+- two distinct fields approach;
+- one common cut path resolves across both cards + center layers;
+- center layers separate;
+- reciprocal exchange cue appears;
+- opposite material fills appear in the same vector region;
+- PARTIE + CONTREPARTIE register as inverses, not copies.
+
+### OTHER CUT
+
 - both material fields remain valid;
-- paths are non-shared / offset;
-- no complete inverse exchange registers;
-- no red X.
-
-### Critical distinction
-
-- Fès = geometric/material fit.
-- Kento = print/transfer registration.
-- Stereoscopy = perceptual disparity/fusion.
-- Boulle = **one shared material division creates reciprocal positive/negative outcomes**.
+- paths remain offset/non-shared;
+- no reciprocal inlay exchange;
+- no red X;
+- selected relation does not register.
 
 ### Ethical boundary
 
-Historical tortoiseshell is evidence only. Prototype must use simulated/abstract materials, make no wildlife-material recommendation, and make no exact modern fabrication claim.
+Historical tortoiseshell is source evidence only. Prototype uses abstract simulated fields, makes no wildlife-material recommendation and provides no exact modern fabrication recipe.
 
-### Reticello
+### Local validation
 
-HIGH-QUALITY EUROPE RESERVE.
-Lost 13M because its two historical components are layers within one glass object; Boulle better preserves two reciprocal finished objects after registration.
+PASS:
+- no duplicate DOM IDs;
+- SHARED CUT + OTHER CUT modes;
+- target-only reciprocal exchange;
+- no red invalidation;
+- responsive layout;
+- inline JavaScript `node --check` PASS.
 
 ## Immediate next task
 
-# ROUND 13M.4 — BOULLE IMPLEMENTATION GATE
+# ROUND 13M.5 — DEDICATED LIVE CANDIDATE
 
-Create dedicated branch and implement.
+Suggested Vercel project name:
+`relational-key-complement-memory-boulle-v13m1`
 
-Must pass:
-1. two cards visible immediately;
-2. clear shared cut path on Matching;
-3. reciprocal exchange visually legible;
-4. registered Card A/B remain material inverses, not identical;
-5. Other Cut leaves both valid but does not register reciprocity;
-6. no red invalidation;
-7. original editorial materials / vector motif;
-8. no wildlife material use/recommendation;
-9. responsive layout;
-10. local JS syntax + structure checks.
+Do not overwrite existing family projects.
+
+Once project exists:
+1. identify project ID;
+2. trigger branch preview from `round13m/complement-memory-boulle`;
+3. verify READY;
+4. verify served HTML title + Boulle contents;
+5. update canonical state + this handover;
+6. user records SHARED CUT and OTHER CUT;
+7. decide PASS / PATCH / REJECT;
+8. keep PR Draft until visual pass.
 
 ## Deployment policy
 
-Per-family Vercel projects = audit laboratories / golden references only.
-After 13M: one canonical collection product + one canonical Vercel project.
+Individual family projects are audit labs / golden references only.
+After 13M merge, consolidate into one canonical RELATIONAL KEY product + one canonical Vercel project.
 
 ## Persistence protocol
 
-After every significant milestone update canonical state + this handover, record identifiers, and state next output explicitly.
+After every milestone update canonical state + this handover, record identifiers, and state next output explicitly.
 
-If a new conversation starts here, read canonical state + this handover and resume directly at `ROUND 13M.4 — BOULLE IMPLEMENTATION GATE`.
+If a new conversation starts here, resume directly at `ROUND 13M.5 — DEDICATED LIVE CANDIDATE`.
