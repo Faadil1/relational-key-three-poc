@@ -1,99 +1,88 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="theme-color" content="#f3f0e6" />
-  <meta name="description" content="RELATIONAL KEY — Cross-cultural archive-derived credential prototype." />
-  <title>RELATIONAL KEY — Cultural Editions</title>
-  <link rel="stylesheet" href="./styles.css" />
-  <link rel="stylesheet" href="./presentation.css" />
-  <link rel="stylesheet" href="./cross.css" />
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<meta name="theme-color" content="#0a0b09" />
+<title>RELATIONAL KEY — Edible Credential / Toyama</title>
+<style>
+:root{
+  --bg:#0a0b09;--ink:#eee8dc;--muted:#8f8471;--gold:#b99459;--gold2:#d6b875;
+  --green:#223126;--salmon:#e38a6c;--line:rgba(206,170,105,.18);--ivory:#e7ddc9;
+  --progress:0%;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}html,body{margin:0;min-width:320px;min-height:100%;background:var(--bg);color:var(--ink)}
+body{background:radial-gradient(circle at 50% -8%,rgba(104,82,43,.13),transparent 34%),#0a0b09;overflow-x:hidden}
+button{font:inherit}.shell{min-height:100vh;padding:10px clamp(14px,2.3vw,38px) 24px}
+.topbar{height:66px;border-bottom:1px solid var(--line);display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:20px}
+.brand{display:flex;align-items:center;gap:11px}.mark{width:38px;height:38px;border:1px solid var(--gold);border-radius:50%;display:grid;place-items:center;position:relative}
+.mark:before,.mark:after{content:"";position:absolute;background:var(--gold)}.mark:before{width:1px;height:24px}.mark:after{height:1px;width:24px}.mark i{width:13px;height:13px;border:1px solid var(--gold);border-radius:50%}
+.brandCopy{display:grid;gap:3px}.brandCopy b{font:600 10px ui-monospace,monospace;letter-spacing:.22em;color:#d0aa69}.brandCopy small{font:600 6px ui-monospace,monospace;letter-spacing:.17em;color:#75684f}
+.title{text-align:center}.title span{font:600 8px ui-monospace,monospace;letter-spacing:.16em;color:#ad9368}.title h1{display:inline;margin:0 0 0 8px;font:600 22px Georgia,serif}.title p{margin:2px 0 0;font:italic 11px Georgia,serif;color:#9a886b}
+.about{border:0;background:none;color:#9d855a;font:600 7px ui-monospace,monospace;letter-spacing:.11em;cursor:pointer;padding:10px}
+.hero{min-height:calc(100vh - 102px);display:grid;grid-template-rows:1fr auto;align-items:center}
+.stage{width:min(1180px,100%);margin:0 auto;display:grid;justify-items:center;align-content:center;padding:26px 0 14px}
+.eyebrow{font:600 6px ui-monospace,monospace;letter-spacing:.18em;color:#806e51;margin-bottom:12px}
+.card-wrap{width:min(980px,92vw);perspective:1800px;position:relative}
+.card{width:100%;aspect-ratio:856/540;position:relative;transform-style:preserve-3d;transition:transform .7s cubic-bezier(.2,.8,.2,1),filter .5s ease;filter:drop-shadow(0 36px 58px rgba(0,0,0,.48));border-radius:clamp(20px,2.6vw,36px)}
+.card:hover{filter:drop-shadow(0 46px 70px rgba(0,0,0,.56))}.card.is-back{transform:rotateY(180deg)}
+.face{position:absolute;inset:0;border-radius:inherit;overflow:hidden;backface-visibility:hidden;border:1px solid rgba(224,191,128,.18);box-shadow:inset 0 0 0 1px rgba(255,255,255,.025)}
+.front{background:linear-gradient(135deg,#11130f 0%,#161711 44%,#0e100d 100%)}
+.front:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(90deg,rgba(5,6,4,.95) 0 27%,rgba(5,6,4,.42) 43%,rgba(5,6,4,.06) 72%),linear-gradient(180deg,rgba(255,255,255,.015),transparent 24%,rgba(0,0,0,.14));z-index:5}
+.food-field{position:absolute;inset:0 0 0 22%;overflow:hidden;background:#223126}
+.food-field img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;transition:opacity .9s ease,transform 1.25s cubic-bezier(.2,.8,.2,1),filter .8s ease}
+.closed-photo{opacity:1;transform:scale(1.05);object-position:50% 48%;filter:saturate(.88) brightness(.64) contrast(1.07)}
+.open-photo{opacity:0;transform:scale(1.12);object-position:50% 46%;filter:saturate(1.08) brightness(.94) contrast(1.02)}
+.food-fallback{position:absolute;inset:0;background:radial-gradient(circle at 62% 50%,#344531 0 34%,#1f2d22 35% 62%,#4f3a26 63% 100%)}
+.leaf-mask{position:absolute;inset:0;z-index:3;pointer-events:none;opacity:.72;transition:opacity .8s ease}
+.leaf-mask i{position:absolute;left:45%;top:50%;width:44%;height:20%;transform-origin:0 50%;border-radius:100% 8px 8px 100%;background-image:linear-gradient(90deg,rgba(6,18,8,.04),rgba(4,12,5,.26)),url('https://commons.wikimedia.org/wiki/Special:Redirect/file/Sasa-Zushi_%28Trout_Sushi_wrapped_in_Bamboo_Grass%29_%286639289453%29.jpg?width=1200');background-size:cover;background-position:center;filter:saturate(.9) brightness(.63);transition:transform 1.15s cubic-bezier(.15,.75,.12,1),opacity .8s ease,filter .8s ease}
+.leaf-mask i:nth-child(1){transform:translate(0,-50%) rotate(-18deg) scaleX(1.16)}.leaf-mask i:nth-child(2){transform:translate(0,-50%) rotate(18deg) scaleX(1.16)}.leaf-mask i:nth-child(3){transform:translate(0,-50%) rotate(162deg) scaleX(1.16)}.leaf-mask i:nth-child(4){transform:translate(0,-50%) rotate(198deg) scaleX(1.16)}
+.card[data-phase="unfold"] .leaf-mask i:nth-child(1),.card[data-phase="reveal"] .leaf-mask i:nth-child(1){transform:translate(44%,-50%) rotate(-26deg) scaleX(.92)}
+.card[data-phase="unfold"] .leaf-mask i:nth-child(2),.card[data-phase="reveal"] .leaf-mask i:nth-child(2){transform:translate(44%,-50%) rotate(26deg) scaleX(.92)}
+.card[data-phase="unfold"] .leaf-mask i:nth-child(3),.card[data-phase="reveal"] .leaf-mask i:nth-child(3){transform:translate(44%,-50%) rotate(154deg) scaleX(.92)}
+.card[data-phase="unfold"] .leaf-mask i:nth-child(4),.card[data-phase="reveal"] .leaf-mask i:nth-child(4){transform:translate(44%,-50%) rotate(206deg) scaleX(.92)}
+.card[data-phase="reveal"] .leaf-mask{opacity:.22}.card[data-phase="reveal"] .closed-photo{opacity:.03;transform:scale(1.01)}.card[data-phase="reveal"] .open-photo{opacity:1;transform:scale(1.02);filter:saturate(1.08) brightness(1.02) contrast(1.03)}
+.card-copy{position:absolute;z-index:10;left:5.2%;top:9.5%;width:28%;display:grid;gap:12px}.card-kicker{font:600 6px ui-monospace,monospace;letter-spacing:.2em;color:#ae9367}.card-title{font:600 clamp(24px,3.2vw,43px)/.96 Georgia,serif;max-width:230px}.card-sub{font:italic 11px/1.45 Georgia,serif;color:#a99c86;max-width:215px}
+.card-meta{display:grid;grid-template-columns:auto 1fr;gap:5px 10px;margin-top:8px;font:600 6px ui-monospace,monospace;letter-spacing:.1em}.card-meta span{color:#6f6657}.card-meta b{color:#b79d70;font-weight:600}
+.edition-tag{position:absolute;z-index:10;right:4.5%;top:6%;font:600 6px ui-monospace,monospace;letter-spacing:.15em;color:rgba(235,214,174,.7);text-shadow:0 1px 8px rgba(0,0,0,.4)}
+.card-id{position:absolute;z-index:10;left:5.2%;bottom:7%;display:flex;align-items:center;gap:12px;font:600 6px ui-monospace,monospace;letter-spacing:.12em;color:#8e826d}.nfc{width:19px;height:19px;border:1px solid rgba(196,159,91,.36);border-radius:50%;position:relative}.nfc:before,.nfc:after{content:"";position:absolute;border:1px solid rgba(196,159,91,.55);border-left-color:transparent;border-bottom-color:transparent;border-radius:50%;transform:rotate(45deg)}.nfc:before{inset:5px}.nfc:after{inset:8px}
+.path{position:absolute;z-index:11;left:5.2%;right:5.2%;top:61.5%;height:26px;display:flex;align-items:center;pointer-events:none}.path-left,.path-right{height:1px;background:linear-gradient(90deg,rgba(197,159,92,.2),rgba(221,183,112,.62));transition:opacity .5s ease,transform .7s ease}.path-left{width:43%}.path-right{flex:1;background:linear-gradient(90deg,rgba(221,183,112,.62),rgba(197,159,92,.16));opacity:.06;transform:scaleX(.05);transform-origin:left}.seal{width:30px;height:30px;margin:0 8px;border:1px solid rgba(214,173,100,.43);border-radius:50%;background:rgba(15,15,11,.84);display:grid;place-items:center;box-shadow:0 0 0 5px rgba(192,148,73,.03);transition:.42s ease}.seal:before,.seal:after{content:"";position:absolute;background:#b99050}.seal:before{width:1px;height:14px}.seal:after{height:1px;width:14px}.seal i{width:6px;height:6px;border:1px solid #d0a561;border-radius:50%;background:#704d2b;z-index:2}
+.card[data-phase="press"]{transform:scale(.992)}.card[data-phase="align"] .seal{transform:scale(.93);border-color:rgba(231,194,118,.75)}.card[data-phase="register"] .seal{box-shadow:0 0 0 6px rgba(214,169,89,.06),0 0 24px rgba(214,169,89,.14)}.card[data-phase="release"] .leaf-mask{filter:brightness(1.05)}.card[data-phase="unfold"] .path-right,.card[data-phase="reveal"] .path-right{opacity:.55;transform:scaleX(1)}.card[data-phase="reveal"] .seal{opacity:.55;transform:scale(.82)}
+.card.rejected{animation:recoil .42s ease}.card.rejected .seal{border-color:rgba(164,97,84,.58);box-shadow:0 0 0 5px rgba(164,97,84,.04)}@keyframes recoil{0%,100%{transform:translateX(0)}45%{transform:translateX(7px)}72%{transform:translateX(-3px)}}
+.back{background:linear-gradient(135deg,#e7ddc9,#d9ceb8);color:#2b2117;transform:rotateY(180deg);padding:8% 8.5%}.back:after{content:"";position:absolute;inset:0;background:linear-gradient(120deg,transparent 0 64%,rgba(134,103,57,.08) 64% 100%);pointer-events:none}.back h2{font:600 34px Georgia,serif;margin:0 0 10px}.back .back-kicker{font:600 7px ui-monospace,monospace;letter-spacing:.16em;color:#82673d}.back-grid{display:grid;grid-template-columns:1fr 1fr;gap:26px;margin-top:28px;position:relative;z-index:2}.back-col{display:grid;gap:12px}.back-row{display:grid;grid-template-columns:110px 1fr;gap:10px;padding-bottom:8px;border-bottom:1px solid rgba(91,67,36,.14);font:600 7px ui-monospace,monospace;letter-spacing:.08em}.back-row span{color:#8b7657}.back-row b{color:#3d2d1e}.back-note{font:italic 13px/1.5 Georgia,serif;color:#6c5943;max-width:360px}.back-code{position:absolute;right:8%;bottom:8%;width:84px;height:84px;background:repeating-linear-gradient(90deg,#2c2218 0 4px,transparent 4px 8px),repeating-linear-gradient(#2c2218 0 4px,transparent 4px 8px);opacity:.24}
+.controls{width:min(980px,92vw);margin:15px auto 0;display:grid;grid-template-columns:auto 1fr auto auto;gap:7px;align-items:stretch}.view-tabs,.claims{display:flex;gap:6px}.controls button{border:1px solid rgba(187,149,82,.22);background:rgba(17,18,14,.76);color:#8d826f;min-height:46px;padding:0 14px;cursor:pointer;font:600 7px ui-monospace,monospace;letter-spacing:.08em}.controls button.active{border-color:rgba(214,174,104,.52);background:rgba(169,127,62,.08);color:#dfc080}.claims button{min-width:150px}.run{min-width:190px!important;background:linear-gradient(145deg,#b79358,#d1b379)!important;color:#241c12!important;border-color:#ba9458!important}.run:disabled{opacity:.55;cursor:wait}.reset{min-width:76px}.result{width:min(980px,92vw);min-height:34px;margin:7px auto 0;text-align:center;font:600 6px ui-monospace,monospace;letter-spacing:.12em;color:#7f7767}.result.success{color:#8dc28d}.result.failure{color:#bd887c}.state-line{display:flex;justify-content:center;gap:7px;margin-top:8px}.state-line i{width:5px;height:5px;border-radius:50%;background:#4b4335}.state-line i.active{background:#d1aa67;box-shadow:0 0 0 3px rgba(209,170,103,.05)}
+.drawer{position:fixed;right:12px;top:12px;bottom:12px;width:min(450px,calc(100vw - 24px));padding:24px;background:#e9deca;color:#2c2117;border:1px solid #aa8750;z-index:50;transform:translateX(calc(100% + 34px));transition:.35s ease;overflow:auto}.drawer.open{transform:translateX(0)}.drawer h2{font:600 31px Georgia,serif;margin:12px 0}.drawer h3{font:600 8px ui-monospace,monospace;letter-spacing:.12em;color:#765c38;margin-top:20px}.drawer p,.drawer li{font-size:11px;line-height:1.55;color:#5d4d3b}.drawer a{color:#7d4d33}.close{float:right;border:0;background:none;font-size:20px;cursor:pointer}.backdrop{position:fixed;inset:0;background:rgba(0,0,0,.64);backdrop-filter:blur(4px);z-index:45;display:none}.backdrop.open{display:block}
+@media(max-width:900px){.topbar{grid-template-columns:auto 1fr}.brandCopy{display:none}.about{display:none}.title{text-align:right}.title h1{font-size:17px}.title p{display:none}.hero{min-height:auto}.stage{padding-top:28px}.controls{grid-template-columns:1fr 1fr}.view-tabs,.claims{grid-column:1/-1}.claims button{min-width:0;flex:1}.run,.reset{min-width:0!important}.card-copy{width:34%}.card-title{font-size:clamp(18px,4vw,34px)}}
+@media(max-width:560px){.card-wrap,.controls,.result{width:96vw}.card{border-radius:20px}.card-copy{left:5%;top:8%;width:41%;gap:7px}.card-kicker{font-size:5px}.card-title{font-size:18px}.card-sub{display:none}.card-meta{font-size:5px;gap:4px 6px}.edition-tag{font-size:5px}.path{top:64%}.card-id{font-size:5px}.controls{grid-template-columns:1fr 1fr}.view-tabs button,.claims button{padding:0 8px;font-size:6px}.back{padding:8%}.back h2{font-size:24px}.back-grid{grid-template-columns:1fr;gap:10px;margin-top:15px}.back-row{font-size:6px;grid-template-columns:85px 1fr}.back-note{display:none}.back-code{width:56px;height:56px}}
+@media(prefers-reduced-motion:reduce){*,*:before,*:after{animation-duration:.001ms!important;transition-duration:.001ms!important}}
+</style>
 </head>
 <body>
-  <main class="shell cross-shell">
-    <header class="topbar">
-      <div>
-        <div class="eyebrow">DAY 17 · CULTURAL EDITIONS · CROSS-CULTURAL PROTOTYPE</div>
-        <h1>RELATIONAL KEY</h1>
-      </div>
-      <div class="top-actions">
-        <span id="editionBadge" class="edition-badge">CITY PASSAGE · GATINEAU</span>
-        <button id="blindToggle" class="micro-btn" aria-pressed="false">BLIND TEST</button>
-        <button id="debugToggle" class="micro-btn" aria-pressed="false">DEBUG</button>
-      </div>
-    </header>
-
-    <section class="intro" aria-labelledby="heroTitle">
-      <p id="heroTitle">Different archives. Different fields.</p>
-      <strong>Same relational law.</strong>
-    </section>
-
-    <section class="stage" aria-label="Interactive cross-cultural Relational Key prototype">
-      <canvas id="scene" tabindex="0"></canvas>
-      <div id="phase" class="phase" aria-live="polite">GRAB THE CREDENTIAL</div>
-      <div id="hint" class="hint">Drag the credential toward its counterpart field.</div>
-      <div id="residual" class="residual" hidden></div>
-      <div id="debug" class="debug" hidden></div>
-      <div id="result" class="result" aria-live="polite" hidden></div>
-      <button id="explainTrigger" class="explain-trigger" hidden>WHY THIS WORKS</button>
-      <div id="runtimeError" class="runtime-error" hidden>
-        <strong>3D runtime unavailable</strong>
-        <span>The interface loaded, but the spatial scene could not render.</span>
-      </div>
-    </section>
-
-    <div class="dock cross-dock" aria-label="Prototype controls">
-      <div class="control-block edition-control">
-        <span class="control-label">EDITION</span>
-        <div class="scenario" role="group" aria-label="Cultural edition">
-          <button data-edition="city" class="active" aria-pressed="true">CITY</button>
-          <button data-edition="service" aria-pressed="false">SERVICE</button>
-          <button data-edition="signal" aria-pressed="false">SIGNAL</button>
-        </div>
-      </div>
-      <div class="control-block">
-        <span class="control-label">CLAIM</span>
-        <div class="scenario" role="group" aria-label="Credential claim">
-          <button data-claim="matching" class="active" aria-pressed="true">MATCHING CLAIM</button>
-          <button data-claim="other" aria-pressed="false">OTHER CLAIM</button>
-        </div>
-      </div>
-      <div class="run-actions">
-        <button id="reset">RESET</button>
-        <button id="auto" class="quiet">TEST RELATIONSHIP</button>
-      </div>
-    </div>
-
-    <section class="law" aria-label="Interaction law">
-      <span>GRAB</span><i>→</i><span>COMPARE</span><i>→</i><span>REGISTER / RESIST</span><i>→</i><span>CONTINUE</span>
-    </section>
-    <p id="truthNote" class="truth-note">Archive-derived concept prototype · not an official map, service procedure, or technical diagram.</p>
-  </main>
-
-  <div id="explainBackdrop" class="explain-backdrop" hidden></div>
-  <aside id="explainPanel" class="explain-panel" aria-hidden="true" aria-labelledby="explainTitle">
-    <div class="explain-handle" aria-hidden="true"></div>
-    <div class="explain-head">
-      <div>
-        <div class="explain-eyebrow">RELATIONSHIP EXPLANATION</div>
-        <h2 id="explainTitle">Why this works</h2>
-      </div>
-      <button id="explainClose" class="explain-close" aria-label="Close explanation">CLOSE</button>
-    </div>
-    <p id="explainLead" class="explain-lead"></p>
-    <div id="explainSteps" class="explain-steps"></div>
-    <details class="advanced-detail">
-      <summary>Advanced system detail</summary>
-      <div class="advanced-grid">
-        <div><span>Comparison</span><strong id="advancedComparison"></strong></div>
-        <div><span>Registration residual</span><strong id="advancedResidual"></strong></div>
-        <div><span>Geometry outcome</span><strong id="advancedGeometry"></strong></div>
-      </div>
-      <p>Registration profiles and residual are internal prototype encodings. Archive-derived fields are conceptual translations, not official institutional standards.</p>
-    </details>
-  </aside>
-
-  <script type="module" src="./cross.js"></script>
-</body>
-</html>
+<main class="shell">
+<header class="topbar"><div class="brand"><span class="mark"><i></i></span><span class="brandCopy"><b>RELATIONAL KEY</b><small>FOOD MEMORY EDITION</small></span></div><div class="title"><span>EDIBLE CREDENTIAL</span><h1>Toyama · Masu no Sushi</h1><p>The food memory lives inside the card.</p></div><button class="about" id="about">MATERIALS / SOURCES</button></header>
+<section class="hero"><div class="stage"><div class="eyebrow">ROUND 13C.5.1 · CARD TRANSLATION</div>
+<div class="card-wrap"><div class="card" id="card" data-phase="idle">
+<section class="face front"><div class="food-field"><div class="food-fallback"></div><img class="closed-photo" alt="Masu-zushi wrapped in bamboo leaves" src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Masunosushi.JPG?width=1800"><img class="open-photo" alt="Masu no sushi revealed" src="https://upload.wikimedia.org/wikipedia/commons/7/7f/Masu_no_sushi_4_by_hirotomo.jpg"><div class="leaf-mask" aria-hidden="true"><i></i><i></i><i></i><i></i></div></div>
+<div class="card-copy"><span class="card-kicker">RELATIONAL KEY · FOOD MEMORY</span><strong class="card-title">Edible<br>Passage</strong><span class="card-sub">Toyama regional memory compressed into a portable credential.</span><div class="card-meta"><span>REGION</span><b>TOYAMA</b><span>MEMORY</span><b>MASU NO SUSHI</b><span>CLAIM</span><b id="claimMeta">REGIONAL FOOD</b></div></div>
+<div class="edition-tag">FM · 01 / 2500</div><div class="card-id"><span class="nfc"></span><span>RK–FM–TYM–001</span></div>
+<div class="path"><span class="path-left"></span><span class="seal"><i></i></span><span class="path-right"></span></div></section>
+<section class="face back"><span class="back-kicker">RELATIONAL KEY · FOOD MEMORY / PROVENANCE</span><h2>Toyama · Masu no Sushi</h2><p class="back-note">The physical food ritual is translated into the credential: pressure holds the memory closed; a registered relationship completes the path and reveals the meal.</p><div class="back-grid"><div class="back-col"><div class="back-row"><span>FORMAT</span><b>CR80 · 85.60 × 53.98 MM</b></div><div class="back-row"><span>REGION</span><b>TOYAMA, JAPAN</b></div><div class="back-row"><span>FOOD</span><b>MASU NO SUSHI</b></div><div class="back-row"><span>MECHANISM</span><b>EDIBLE PASSAGE</b></div></div><div class="back-col"><div class="back-row"><span>VISIBLE SOURCE</span><b>REAL PHOTOGRAPHY</b></div><div class="back-row"><span>RELATION</span><b>PROTOTYPE / CONCEPTUAL</b></div><div class="back-row"><span>ACCESS</span><b>NFC / QR FALLBACK</b></div><div class="back-row"><span>VALIDITY</span><b>COLLECTION EDITION</b></div></div></div><div class="back-code"></div></section>
+</div></div>
+<div class="controls"><div class="view-tabs"><button id="frontBtn" class="active">FRONT</button><button id="backBtn">BACK</button></div><div class="claims"><button data-claim="matching" class="active">REGIONAL FOOD CLAIM</button><button data-claim="other">OTHER CLAIM</button></div><button class="run" id="run">TEST RELATIONSHIP →</button><button class="reset" id="reset">RESET</button></div>
+<div class="state-line" id="steps"><i></i><i></i><i></i><i></i><i></i><i></i></div><div class="result" id="result">CARD READY · RELATIONSHIP DORMANT</div>
+</div></section>
+</main>
+<div class="backdrop" id="backdrop"></div><aside class="drawer" id="drawer"><button class="close" id="close">×</button><span class="back-kicker">REAL SOURCE FIRST</span><h2>Why this remains a card</h2><p>The Food Memory expansion keeps the same CR80 credential object as the rest of RELATIONAL KEY. The category-specific idea is expressed inside the card surface rather than replacing the credential form.</p><h3>VISIBLE MATERIAL</h3><p>Real Masu no Sushi photography, bamboo-leaf texture and wood-toned material cues.</p><h3>RELATIONAL TRANSLATION</h3><p>Before registration, the continuation path stops at the pressure seal. A matching claim registers the seal, the path continues through the credential, and the photographic food reveal happens within the same card.</p><h3>TRUTHFULNESS</h3><p>Food and preparation context are source-grounded. Claim matching, NFC behavior and the reveal are conceptual prototype mechanics.</p><h3>IMAGE REFERENCES</h3><ul><li>Masunosushi.JPG — Ippukucho — CC BY 3.0.</li><li>Masu no sushi 4 by hirotomo — CC BY-SA 2.0.</li><li>Sasa-Zushi — Naotake Murayama — CC BY 2.0.</li></ul></aside>
+<script>
+const card=document.getElementById('card'),run=document.getElementById('run'),reset=document.getElementById('reset'),result=document.getElementById('result'),claimMeta=document.getElementById('claimMeta');const claimBtns=[...document.querySelectorAll('[data-claim]')],dots=[...document.querySelectorAll('#steps i')];let claim='matching',timers=[],running=false;const reduced=matchMedia('(prefers-reduced-motion: reduce)').matches;
+function clearTimers(){timers.forEach(clearTimeout);timers=[]}function setDots(n){dots.forEach((d,i)=>d.classList.toggle('active',i<=n))}function idle(){clearTimers();running=false;run.disabled=false;card.classList.remove('rejected');card.dataset.phase='idle';setDots(-1);result.className='result';result.textContent='CARD READY · RELATIONSHIP DORMANT'}
+function success(){card.dataset.phase='reveal';setDots(5);result.className='result success';result.textContent='REGISTERED CONTINUATION · FOOD MEMORY REVEALED';running=false;run.disabled=false;if(navigator.vibrate)try{navigator.vibrate(14)}catch(e){}}
+function fail(){card.dataset.phase='idle';card.classList.add('rejected');result.className='result failure';result.textContent='NO RECIPROCAL MATCH · CREDENTIAL REMAINS VALID';running=false;run.disabled=false;if(navigator.vibrate)try{navigator.vibrate([8,18,8])}catch(e){}}
+function play(){if(running)return;idle();running=true;run.disabled=true;if(reduced){claim==='matching'?success():fail();return}const phases=['press','align','register','release','unfold'];const cadence=[0,360,720,1080,1450];cadence.forEach((t,i)=>timers.push(setTimeout(()=>{setDots(i);card.dataset.phase=phases[i];if(claim==='other'&&i===2){fail()}},t)));if(claim==='matching')timers.push(setTimeout(success,1880))}
+claimBtns.forEach(btn=>btn.onclick=()=>{if(running)return;claim=btn.dataset.claim;claimBtns.forEach(b=>b.classList.toggle('active',b===btn));claimMeta.textContent=claim==='matching'?'REGIONAL FOOD':'OTHER CLAIM';idle()});run.onclick=play;reset.onclick=idle;
+document.getElementById('frontBtn').onclick=()=>{card.classList.remove('is-back');document.getElementById('frontBtn').classList.add('active');document.getElementById('backBtn').classList.remove('active')};document.getElementById('backBtn').onclick=()=>{card.classList.add('is-back');document.getElementById('backBtn').classList.add('active');document.getElementById('frontBtn').classList.remove('active')};
+const drawer=document.getElementById('drawer'),backdrop=document.getElementById('backdrop');function openDrawer(){drawer.classList.add('open');backdrop.classList.add('open')}function closeDrawer(){drawer.classList.remove('open');backdrop.classList.remove('open')}document.getElementById('about').onclick=openDrawer;document.getElementById('close').onclick=closeDrawer;backdrop.onclick=closeDrawer;
+const wrap=document.querySelector('.card-wrap');wrap.addEventListener('pointermove',e=>{if(card.classList.contains('is-back')||running)return;const r=wrap.getBoundingClientRect(),x=(e.clientX-r.left)/r.width-.5,y=(e.clientY-r.top)/r.height-.5;card.style.transform=`rotateX(${-y*3.2}deg) rotateY(${x*4.2}deg) translateY(-2px)`});wrap.addEventListener('pointerleave',()=>{card.style.transform=card.classList.contains('is-back')?'rotateY(180deg)':''});
+document.querySelectorAll('img').forEach(img=>img.addEventListener('error',()=>img.style.visibility='hidden'));idle();
+</script>
+</body></html>
