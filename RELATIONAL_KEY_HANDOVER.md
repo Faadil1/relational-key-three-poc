@@ -16,7 +16,8 @@ RELATIONAL KEY has completed:
 - C3.1 — dedicated Preview root live pass;
 - C3.2A — shell visual pass;
 - C3.2B — functional shell pass;
-- C3.2C — direct route completion to **13 / 15 verified routes**.
+- C3.2C — route completion to 13/15;
+- C3.2D — final two-route closeout.
 
 Canonical invariant:
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
@@ -24,119 +25,72 @@ Canonical invariant:
 Distribution:
 `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-Family expansion is paused.
-
-# VALIDATION
+# FINAL CONSOLIDATION VALIDATION
 
 **15 / 15 families** have independent user visual or visual+audio gates.
 
-# C2 — FROZEN FAMILY TOPOLOGY
+**15 / 15 consolidated direct routes are verified live in the authenticated Vercel Preview.**
 
-Nine autonomous exact snapshots:
-`e7e1473b0d789fa09b33e2e5b8961c33f32227d2`
+Final closeout register:
+`COLLECTION_C3_2D_TWO_ROUTE_CLOSEOUT_PASS.md`
 
-Six-family shared runtime + launch routes:
-`9321844cac8c2e9ccedda7e206b1ee03445bed83`
+Final two routes verified:
+- `/families/zellige-fes/` → Fès / Zellige Tessellated Register ✅
+- `/families/food-toyama/` → EDIBLE PASSAGE / Toyama ✅
 
-Shared runtime:
-`/families/_shared/round13r/index.html`
-
-Do not modify family-native CSS / JS until Global Refinement explicitly opens.
-
-# C3 — COLLECTION SHELL
-
-Implementation:
-`f7416092c64fd7fd17b5771f002fdae5b0e1433f`
-
-Preview:
-- Vercel project `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
+Consolidation Preview:
+- project `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
 - deployment `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ`
 - URL `https://relational-key-collectionrelational-key-collection-4834ctm8z.vercel.app`
 - branch `collection/consolidation-gate-1`
 - state `READY`
 
-# C3.1
-Verdict: `ROOT LIVE PASS`
+Collection verdict:
+# `ROOT LIVE PASS`
+# `SHELL VISUAL PASS`
+# `15/15 LIVE ROUTE PASS`
+# `COLLECTION USABILITY PASS WITH POLISH`
 
-# C3.2A
-Register: `COLLECTION_C3_2_SHELL_VISUAL_AUDIT_PARTIAL.md`
-Verdict: `SHELL VISUAL PASS`
-
-Root reads as one coherent editorial product. Hero, balance, atlas rhythm and all 15 cards were visually confirmed.
-
-# C3.2B
-Register: `COLLECTION_C3_2B_FUNCTIONAL_ROUTE_AUDIT_PARTIAL.md`
-Verdict: `FUNCTIONAL SHELL PASS / PARTIAL LIVE ROUTE PASS`
-
-Verified shell behavior:
-- continent filtering works;
-- search works;
-- combined filter/search empty state works;
+Shell controls already verified:
+- continent filtering;
+- text search;
+- combined filter/search zero-result state;
 - clearing query restores results;
 - browser Back returns to atlas.
 
-Previously direct-verified routes:
-- City / Gatineau ✅
-- Signal / Nigeria ✅
-- Textile / Bonwire ✅
-- Kento / Japan ✅
+# GLOBAL REFINEMENT
 
-# C3.2C — DIRECT ROUTE COMPLETION PARTIAL
+# **OPEN — IMPLEMENTATION NOT YET STARTED**
 
-Register:
-`COLLECTION_C3_2C_DIRECT_ROUTE_COMPLETION_PARTIAL.md`
+Do not mutate family snapshots on the current consolidation branch before PR #20's explicit merge gate.
 
-User recording:
-- 70.33 s;
-- 1908×958;
-- 30 fps.
+Global Refinement backlog:
+1. add explicit collection-level `← Back to Atlas` navigation around family views;
+2. enlarge/clarify tiny secondary mono metadata, chips and card labels where needed;
+3. increase shell-level family individuality without generic cultural skinning;
+4. preserve all golden family mechanisms and source regression anchors;
+5. address family `PASS WITH POLISH` backlog systematically;
+6. improve collection-to-family and family-to-collection transition/cohesion;
+7. keep the pair as the product; never make the center/gap the primary product.
 
-New direct routes verified:
-- Service / Benin ✅
-- Frida / Coyoacán ✅
-- Khipu / Peru ✅
-- Ombak / Bali ✅
-- Swell / Marshall Islands ✅
-- Stereoscopy / UK ✅
-- Siku / Bolivia ✅
-- Hika Ahi / Aotearoa ✅
-- Boulle / France ✅
+# IMMEDIATE NEXT TASK — C3.3 CONSOLIDATION MERGE GATE
 
-Current direct consolidated route count:
-# **13 / 15 VERIFIED**
+PR #20 is still Draft.
 
-Only these two direct launchers remain:
-1. `/families/food-toyama/`
-2. `/families/zellige-fes/`
+Wait for explicit user authorization before:
+- marking PR #20 Ready;
+- squash-merging it;
+- creating the fresh Global Refinement branch.
 
-Do not infer them from atlas visibility or previous golden deployments.
+After merge:
+1. freeze the merge SHA as the consolidated pre-refinement anchor;
+2. create a fresh refinement branch from that SHA;
+3. execute refinement in staged gates with regression checks against the golden family references.
 
-# USABILITY STATE
-
-# `PASS WITH POLISH — ROUTE COMPLETENESS OPEN`
-
-Global Refinement backlog already identified:
-- add a collection-level `← Back to Atlas` affordance around family snapshots;
-- review very small mono metadata/chip labels;
-- increase family individuality at shell level without cultural skinning or flattening mechanisms.
-
-# IMMEDIATE NEXT TASK — C3.2D
-
-Record a tiny closeout capture with only two direct routes:
-1. Food / Toyama — `/families/food-toyama/` → hold on `EDIBLE PASSAGE`;
-2. Zellige / Fès — `/families/zellige-fes/` → hold on Zellige Register.
-
-No filters, search, or interaction replay needed.
-
-If both load correctly, assistant must record:
-- `15/15 LIVE ROUTE PASS`;
-- `COLLECTION USABILITY PASS WITH POLISH`;
-- **GLOBAL REFINEMENT = OPEN**.
-
-PR #20 remains Draft until the collection consolidation gate is closed.
+Do not reopen route validation unless a future refinement changes routing.
 
 ## Persistence protocol
 
 After every significant milestone update `RELATIONAL_KEY_CURRENT_STATE.md` + this handover.
 
-If a new conversation starts here, resume directly at **C3.2D — TWO-ROUTE CLOSEOUT: Food/Toyama + Zellige/Fès**.
+If a new conversation starts here, resume at **C3.3 — CONSOLIDATION MERGE GATE**.
