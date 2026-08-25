@@ -1,6 +1,6 @@
 # ROUND 13J.3 — LIVE CANDIDATE
 
-Status: PATCHED + REDEPLOYED / USER VISUAL RE-AUDIT REQUIRED
+Status: VISUAL PASS / PROMOTE
 
 ## Edition
 **DEPTH MEMORY — UNITED KINGDOM / STEREOSCOPY — BINOCULAR REGISTER**
@@ -14,7 +14,7 @@ Status: PATCHED + REDEPLOYED / USER VISUAL RE-AUDIT REQUIRED
 - Target: `production`
 
 ## Previous deployment
-`dpl_9zTHMY9Nm9WQLJCtuCjiWkWWhdd4` predates the depth-emergence patch and must not be used as evidence for the patched build.
+`dpl_9zTHMY9Nm9WQLJCtuCjiWkWWhdd4` predates the depth-emergence patch and must not be used as evidence for the promoted build.
 
 ## Current source state
 The branch includes the Round 13J.4 depth-emergence patch.
@@ -25,18 +25,22 @@ Visual implementation commit:
 ## Canonical law
 **CONTROLLED DISPARITY PRODUCES DEPTH.**
 
-## Patch objective
-The first visual audit confirmed the pair, controlled disparity, and Other View, but found that the center still read too much like a UI overlay.
+## Final visual audit — PASS
+The patched production capture was reviewed on 2026-08-25.
 
-The patched Matching View separates `FUSE`, `DEPTH`, and `REGISTER` into distinct visual phases. `DEPTH` introduces subtle layered parallax inside the photographic material, while the rectangular diagram becomes a secondary cue.
+Confirmed:
+- Card A and Card B remain immediately legible as a relational pair;
+- the two source views remain related but visibly different;
+- `FUSE` stabilizes ghosting without collapsing the pair into equality;
+- `DEPTH` now acts inside the photographic material through layered parallax and temporary center enlargement;
+- the rectangular depth planes have become secondary cues rather than the main proof;
+- `REGISTER` preserves controlled disparity;
+- `OTHER VIEW` remains visibly unresolved without invalidating either card;
+- the center remains a relational gap and does not become a third product card.
 
-## Required user gate
-Check especially the center during Matching View:
-- do both source views remain visibly distinct before fusion?
-- does ghosting stabilize rather than simply disappear?
-- does the photograph itself open into layered space during `DEPTH`?
-- do the rectangular depth planes feel secondary?
-- does the temporary center enlargement remain a relational gap rather than becoming a third card?
-- does Other View still read as unresolved disparity without invalidating either card?
+## Gate result
+**VISUAL PASS / PROMOTE.**
 
-`PATCH DEPLOYED ≠ VISUAL PASS.`
+`LEFT ≠ RIGHT → FUSION → DEPTH`
+
+Round 13J is no longer blocked by the visual gate. PR #15 may leave Draft / DO NOT MERGE status once explicit merge approval is given.
