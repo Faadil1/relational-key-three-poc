@@ -5,14 +5,15 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta name="theme-color" content="#f2efe7" />
   <meta name="description" content="RELATIONAL KEY — a spatial credential where member claims and destination rules become a visible registration geometry." />
-  <title>RELATIONAL KEY — Relational Instrument V3</title>
+  <title>RELATIONAL KEY — V3.1 Presentation Cleanup</title>
   <link rel="stylesheet" href="./styles.css" />
+  <link rel="stylesheet" href="./presentation.css" />
 </head>
 <body>
   <main class="shell">
     <header class="topbar">
       <div>
-        <div class="eyebrow">DAY 17 · RELATIONAL INSTRUMENT V3</div>
+        <div class="eyebrow">DAY 17 · RELATIONAL INSTRUMENT V3.1</div>
         <h1>RELATIONAL KEY</h1>
       </div>
       <div class="top-actions">
@@ -21,8 +22,8 @@
     </header>
 
     <section class="intro" aria-labelledby="heroTitle">
-      <p id="heroTitle">The credential carries a claim. The destination carries a rule.</p>
-      <strong>Access exists only when their geometry registers.</strong>
+      <p id="heroTitle">Your credential is only <em>half</em> the interface.</p>
+      <strong>The relationship completes the path.</strong>
     </section>
 
     <section class="stage" aria-label="Interactive Relational Key prototype">
@@ -32,7 +33,8 @@
       <div id="residual" class="residual" hidden></div>
       <div id="debug" class="debug" hidden></div>
       <div id="result" class="result" aria-live="polite" hidden></div>
-      <button id="inspect" class="inspect" hidden>INSPECT RELATION</button>
+      <button id="inspect" class="technical-inspect" hidden tabindex="-1" aria-hidden="true">INSPECT RELATION</button>
+      <button id="explainTrigger" class="explain-trigger" hidden>WHY THIS WORKS</button>
     </section>
 
     <div class="dock" aria-label="Prototype controls">
@@ -45,9 +47,34 @@
     </div>
 
     <section class="law" aria-label="Interaction law">
-      <span>GRAB</span><i>→</i><span>PROXIMITY</span><i>→</i><span>PROFILE REVEAL</span><i>→</i><span>COMPARE</span><i>→</i><span>ZERO RESIDUAL / INTERFERENCE</span><i>→</i><span>CONTINUE / RECOIL</span>
+      <span>GRAB</span><i>→</i><span>COMPARE</span><i>→</i><span>REGISTER / RESIST</span><i>→</i><span>CONTINUE</span>
     </section>
   </main>
+
+  <div id="explainBackdrop" class="explain-backdrop" hidden></div>
+  <aside id="explainPanel" class="explain-panel" aria-hidden="true" aria-labelledby="explainTitle">
+    <div class="explain-handle" aria-hidden="true"></div>
+    <div class="explain-head">
+      <div>
+        <div class="explain-eyebrow">RELATIONSHIP EXPLANATION</div>
+        <h2 id="explainTitle">Why this works</h2>
+      </div>
+      <button id="explainClose" class="explain-close" aria-label="Close explanation">CLOSE</button>
+    </div>
+    <p id="explainLead" class="explain-lead"></p>
+    <div id="explainSteps" class="explain-steps"></div>
+    <details class="advanced-detail">
+      <summary>Advanced system detail</summary>
+      <div class="advanced-grid">
+        <div><span>Comparison</span><strong id="advancedComparison"></strong></div>
+        <div><span>Registration residual</span><strong id="advancedResidual"></strong></div>
+        <div><span>Geometry outcome</span><strong id="advancedGeometry"></strong></div>
+      </div>
+      <p>Registration profiles are a conceptual interaction encoding used by this prototype. They are not official technical representations of ROAM or ASTC.</p>
+    </details>
+  </aside>
+
   <script type="module" src="./main.js"></script>
+  <script type="module" src="./presentation.js"></script>
 </body>
 </html>
