@@ -1,0 +1,94 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>RELATIONAL KEY — KNOTTED REGISTER</title>
+<style>
+:root{
+  --bg:#0b0a08;--paper:#d6c5a5;--ink:#f2eadc;--muted:#9c8b74;
+  --fiber:#b88b52;--fiber2:#6f4a2e;--indigo:#304d66;--red:#8d4738;--line:rgba(230,213,183,.18);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif
+}
+*{box-sizing:border-box}html,body{margin:0;min-width:320px;min-height:100%;background:var(--bg);color:var(--ink)}
+body{overflow-x:hidden;background:radial-gradient(circle at 50% -15%,rgba(125,86,48,.18),transparent 35%),linear-gradient(#0b0a08,#0d0c09)}
+button{font:inherit}.shell{min-height:100vh;padding:14px clamp(14px,2.3vw,38px) 28px}.top{min-height:68px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px;border-bottom:1px solid var(--line)}
+.brand{font:700 10px ui-monospace,monospace;letter-spacing:.2em;color:#d8b987}.headline{text-align:center}.headline small,.meta{display:block;font:700 6px ui-monospace,monospace;letter-spacing:.15em;color:#7e705e}.headline b{display:block;margin-top:3px;font:600 21px Georgia,serif}.meta{text-align:right}
+.intro{text-align:center;margin:20px auto 16px}.intro span{font:700 6px ui-monospace,monospace;letter-spacing:.16em;color:#a67c4f}.intro h1{margin:6px 0 4px;font:600 clamp(28px,3.4vw,46px) Georgia,serif}.intro p{margin:0;font:italic 12px Georgia,serif;color:#a29685}
+.stage{width:min(1280px,100%);margin:auto}.pair{display:grid;grid-template-columns:minmax(0,1fr) 180px minmax(0,1fr);align-items:center;gap:12px;perspective:1600px;--leftShift:0px;--rightShift:0px}
+.slot{transition:transform .8s cubic-bezier(.2,.8,.2,1),filter .6s ease}.pair[data-phase="approach"] .left{transform:translateX(28px)}.pair[data-phase="approach"] .right{transform:translateX(-28px)}.pair[data-phase="tension"] .left,.pair[data-phase="registered"] .left{transform:translateX(36px)}.pair[data-phase="tension"] .right,.pair[data-phase="registered"] .right{transform:translateX(-36px)}
+.pair[data-phase="rejected"]{animation:recoil .48s ease}@keyframes recoil{0%,100%{transform:translateX(0)}40%{transform:translateX(9px)}70%{transform:translateX(-5px)}}
+.card{position:relative;aspect-ratio:856/540;border-radius:26px;overflow:hidden;background:#17130e;border:1px solid rgba(231,212,179,.18);box-shadow:0 34px 64px rgba(0,0,0,.5);isolation:isolate}
+.photo{position:absolute;inset:0;background-image:url('https://upload.wikimedia.org/wikipedia/commons/thumb/b/b4/Fragmentary_quipu_%28khipu%29%2C_a_main_cord_with_top%2C_subsidiary%2C_%26_tertiary_cords%2C_Inca%2C_Peru%2C_Late_Horizon%2C_1476-1534_AD%2C_cotton%2C_plant_%26_camelid_fiber%2C_indigo_%26_red_dye_-_Dallas_Museum_of_Art_-_DSC04704.jpg/1280px-thumbnail.jpg');background-size:cover;background-position:38% 48%;filter:saturate(.76) sepia(.08) brightness(.56) contrast(1.04);transform:scale(1.02)}
+.right .photo{background-position:78% 48%;transform:scale(1.08)}
+.shade{position:absolute;inset:0;z-index:2;background:linear-gradient(90deg,rgba(9,7,5,.78),rgba(9,7,5,.1) 58%,rgba(9,7,5,.22)),linear-gradient(180deg,rgba(7,6,4,.12),transparent 38%,rgba(7,6,4,.58))}.right .shade{background:linear-gradient(270deg,rgba(9,7,5,.78),rgba(9,7,5,.1) 58%,rgba(9,7,5,.22)),linear-gradient(180deg,rgba(7,6,4,.12),transparent 38%,rgba(7,6,4,.58))}
+.role{position:absolute;z-index:9;left:5%;top:6%;padding:6px 8px;border-radius:999px;background:rgba(9,7,5,.66);font:700 6px ui-monospace,monospace;letter-spacing:.13em;color:#e6d6bb}.right .role{left:auto;right:5%}
+.copy{position:absolute;z-index:9;left:6%;right:6%;bottom:7%;text-shadow:0 2px 14px #000}.right .copy{text-align:right}.copy span{font:700 6px ui-monospace,monospace;letter-spacing:.12em;color:#d3ad72}.copy strong{display:block;margin-top:4px;font:600 clamp(20px,2.25vw,32px) Georgia,serif}.copy small{display:block;margin-top:6px;font:700 6px ui-monospace,monospace;letter-spacing:.08em;color:#b3a791}
+.recordGrid{position:absolute;inset:0;z-index:5}.primaryCord{position:absolute;top:34%;height:7px;border-radius:999px;background:linear-gradient(#caa574,#765238 48%,#c7a06e);box-shadow:0 1px 0 rgba(255,255,255,.12),0 2px 8px rgba(0,0,0,.38)}.left .primaryCord{left:8%;right:-2%}.right .primaryCord{left:-2%;right:8%}
+.primaryCord:after{content:"";position:absolute;inset:1px 0;background:repeating-linear-gradient(100deg,transparent 0 8px,rgba(61,38,24,.46) 8px 10px);border-radius:inherit}
+.pendant{position:absolute;top:35%;width:3px;border-radius:99px;background:linear-gradient(90deg,#6e4a2f,#b78955,#6e4a2f);transform-origin:top center;box-shadow:1px 0 rgba(255,255,255,.06);transition:transform .8s ease,height .8s ease}.pendant::before,.pendant::after{content:"";position:absolute;left:50%;transform:translateX(-50%);border:2px solid #b89260;border-radius:50%;width:8px;height:5px;box-shadow:0 3px 0 -1px #6e4a2f}.pendant::before{top:40%}.pendant::after{top:65%}.p1{left:24%;height:34%;transform:rotate(4deg)}.p2{left:39%;height:43%;transform:rotate(-3deg)}.p3{left:56%;height:30%;transform:rotate(2deg)}.p4{left:72%;height:39%;transform:rotate(-4deg)}.right .p1{left:26%;height:41%}.right .p2{left:44%;height:31%}.right .p3{left:62%;height:44%}.right .p4{left:78%;height:28%}
+.pair[data-phase="tension"] .pendant,.pair[data-phase="registered"] .pendant{transform:rotate(0deg)}
+.edgeCord{position:absolute;z-index:7;top:33.25%;height:10px;width:25%;transition:transform .9s cubic-bezier(.2,.8,.2,1),filter .6s ease}.left .edgeCord{right:-2%}.right .edgeCord{left:-2%}.edgeCord i{position:absolute;left:0;right:0;top:2px;height:6px;border-radius:99px;background:linear-gradient(#c49a67,#6c4930 55%,#bc8e5e);box-shadow:0 2px 7px rgba(0,0,0,.5)}.edgeCord i:after{content:"";position:absolute;inset:1px 0;border-radius:inherit;background:repeating-linear-gradient(100deg,transparent 0 7px,rgba(56,35,22,.48) 7px 9px)}
+.left .edgeCord{transform:translateX(12px) rotate(2deg)}.right .edgeCord{transform:translateX(-12px) rotate(-3deg)}.pair[data-phase="approach"] .left .edgeCord{transform:translateX(26px) rotate(1deg)}.pair[data-phase="approach"] .right .edgeCord{transform:translateX(-26px) rotate(-1deg)}.pair[data-phase="tension"] .left .edgeCord,.pair[data-phase="registered"] .left .edgeCord{transform:translateX(42px) rotate(0)}.pair[data-phase="tension"] .right .edgeCord,.pair[data-phase="registered"] .right .edgeCord{transform:translateX(-42px) rotate(0)}
+.bridge{height:210px;position:relative;display:grid;place-items:center}.bridge:before{content:"";position:absolute;left:4%;right:4%;top:50%;height:1px;background:linear-gradient(90deg,transparent,rgba(199,159,103,.25) 16%,rgba(199,159,103,.25) 84%,transparent)}
+.tensionCord{position:absolute;left:0;right:0;top:50%;height:10px;transform:translateY(-50%);opacity:.18;transition:opacity .55s ease}.tensionCord:before,.tensionCord:after{content:"";position:absolute;top:3px;height:4px;width:46%;border-radius:99px;background:linear-gradient(#c49a67,#725039)}.tensionCord:before{left:0;transform:translateY(-5px) rotate(-2deg);transform-origin:right center}.tensionCord:after{right:0;transform:translateY(5px) rotate(3deg);transform-origin:left center}.pair[data-phase="approach"] .tensionCord{opacity:.5}.pair[data-phase="tension"] .tensionCord,.pair[data-phase="registered"] .tensionCord{opacity:1}.pair[data-phase="tension"] .tensionCord:before,.pair[data-phase="registered"] .tensionCord:before{transform:translateY(0) rotate(0)}.pair[data-phase="tension"] .tensionCord:after,.pair[data-phase="registered"] .tensionCord:after{transform:translateY(0) rotate(0)}
+.knotCore{position:relative;z-index:5;width:60px;height:60px;transition:transform .75s cubic-bezier(.2,.8,.2,1),opacity .55s ease;opacity:.36}.knotCore .loop{position:absolute;left:50%;top:50%;width:30px;height:18px;border:5px solid #b88b52;border-radius:50%;transform:translate(-50%,-50%) rotate(20deg);box-shadow:0 0 0 1px rgba(255,255,255,.05)}.knotCore .loop:after{content:"";position:absolute;left:11px;top:-12px;width:8px;height:36px;border-radius:99px;background:linear-gradient(90deg,#7a5234,#c09a67,#704a30);transform:rotate(-22deg)}.knotCore .ring{position:absolute;inset:5px;border:1px solid rgba(207,166,108,.26);border-radius:50%}.pair[data-phase="registered"] .knotCore{opacity:1;transform:scale(.82) rotate(-18deg)}.pair[data-phase="tension"] .knotCore{opacity:.72;transform:scale(1.08)}
+.residual{position:absolute;z-index:7;left:50%;top:50%;width:50px;height:24px;transform:translate(-50%,-50%);opacity:0;transition:opacity .35s}.residual:before,.residual:after{content:"";position:absolute;height:4px;width:28px;border-radius:99px;background:#a96b55}.residual:before{left:0;top:5px;transform:rotate(12deg)}.residual:after{right:0;bottom:4px;transform:rotate(-10deg)}.pair[data-phase="rejected"] .residual{opacity:1}.pair[data-phase="rejected"] .knotCore{opacity:.1}
+.bridgeLabel{position:absolute;top:calc(50% + 43px);font:700 5px ui-monospace,monospace;letter-spacing:.13em;color:#756858;text-align:center}.stateDots{position:absolute;top:calc(50% - 59px);display:flex;gap:6px}.stateDots i{width:4px;height:4px;border-radius:50%;background:#40382f}.stateDots i.on{background:#c19660}.pair[data-phase="registered"] .stateDots i{background:#c19660}
+.controls{width:min(960px,96vw);margin:18px auto 0;display:grid;grid-template-columns:1fr auto;gap:8px}.claims{display:flex;gap:7px}.controls button{min-height:42px;border:1px solid rgba(210,174,119,.22);background:#15120e;color:#988774;padding:0 14px;font:700 6px ui-monospace,monospace;letter-spacing:.1em;cursor:pointer}.controls button.active{border-color:#c39a63;color:#f0d5ac;background:rgba(166,118,66,.12)}.run{min-width:230px}.result{text-align:center;min-height:36px;margin-top:9px;font:700 6px ui-monospace,monospace;letter-spacing:.1em;color:#867865}.truth{text-align:center;margin-top:8px;font:700 5px ui-monospace,monospace;letter-spacing:.08em;color:#665d52}.source{text-align:center;margin-top:8px;font:500 10px Georgia,serif;color:#766c5e}.dragHint{text-align:center;margin-top:8px;font:700 5px ui-monospace,monospace;letter-spacing:.1em;color:#61584d}
+.left.dragging{transition:none!important}.pair.drag-mode .left{transform:translateX(var(--drag,0px))}
+@media(max-width:920px){.pair{grid-template-columns:1fr}.bridge{height:110px}.bridge:before{left:50%;right:auto;top:0;bottom:0;width:1px;height:auto}.tensionCord{left:50%;right:auto;top:0;bottom:0;width:10px;height:auto;transform:translateX(-50%)}.tensionCord:before,.tensionCord:after{width:4px;height:46%;left:3px;right:auto}.tensionCord:before{top:0}.tensionCord:after{top:auto;bottom:0}.controls{grid-template-columns:1fr}.run{width:100%}.dragHint{display:none}}
+@media(max-width:560px){.claims{flex-direction:column}}
+</style>
+</head>
+<body>
+<main class="shell">
+<header class="top"><div class="brand">RELATIONAL KEY</div><div class="headline"><small>ROUND 13F · RECORD MEMORY · SOUTH AMERICA</small><b>Knotted Register</b></div><div class="meta">PAIR-NATIVE<br>REAL SOURCE FIRST</div></header>
+<section class="intro"><span>PERU · KHIPU · STRUCTURAL TRANSLATION</span><h1>Two record fragments become readable together.</h1><p>The cords belong to the cards before the relationship begins.</p></section>
+<section class="stage">
+<div class="pair" id="pair" data-phase="idle">
+  <div class="slot left" id="leftSlot">
+    <article class="card leftCard">
+      <div class="photo"></div><div class="shade"></div>
+      <div class="role">CARD A · RECORD CLAIM</div>
+      <div class="recordGrid"><div class="primaryCord"></div><i class="pendant p1"></i><i class="pendant p2"></i><i class="pendant p3"></i><i class="pendant p4"></i><div class="edgeCord"><i></i></div></div>
+      <div class="copy"><span>RECORD MEMORY · FRAGMENT A</span><strong>Claim Cord</strong><small>PRIMARY / PENDANT / KNOT POSITION</small></div>
+    </article>
+  </div>
+  <div class="bridge">
+    <div class="stateDots"><i></i><i></i><i></i><i></i></div>
+    <div class="tensionCord"></div>
+    <div class="knotCore"><div class="ring"></div><div class="loop"></div></div>
+    <div class="residual"></div>
+    <div class="bridgeLabel" id="bridgeLabel">UNRESOLVED RECORD GAP</div>
+  </div>
+  <div class="slot right">
+    <article class="card rightCard">
+      <div class="photo"></div><div class="shade"></div>
+      <div class="role">CARD B · CONTEXT RULE</div>
+      <div class="recordGrid"><div class="primaryCord"></div><i class="pendant p1"></i><i class="pendant p2"></i><i class="pendant p3"></i><i class="pendant p4"></i><div class="edgeCord"><i></i></div></div>
+      <div class="copy"><span>RECORD MEMORY · FRAGMENT B</span><strong>Context Cord</strong><small>ATTACHMENT / TENSION / STRUCTURAL CONTINUATION</small></div>
+    </article>
+  </div>
+</div>
+<div class="controls"><div class="claims"><button id="match" class="active">MATCHING RECORD</button><button id="other">OTHER RECORD</button></div><button class="run" id="run">TEST RELATIONSHIP</button></div>
+<div class="result" id="result">CORD → APPROACH → TENSION → KNOT → REGISTER → READ → CONTINUE</div>
+<div class="dragHint">DESKTOP · GRAB CARD A AND PULL TOWARD CARD B</div>
+<div class="truth">CONCEPTUAL CULTURAL EDITION · NO CLAIM OF HISTORIC KHIPU DECODING · NO INSTITUTIONAL AFFILIATION</div>
+<div class="source">Visual anchor: fragmentary Inka khipu, Peru, Late Horizon, photographed by Daderot / Wikimedia Commons · CC0. Structural research: Smithsonian Institution + Khipu Field Guide.</div>
+</section>
+</main>
+<script>
+const pair=document.getElementById('pair'),run=document.getElementById('run'),match=document.getElementById('match'),other=document.getElementById('other'),result=document.getElementById('result'),bridgeLabel=document.getElementById('bridgeLabel'),leftSlot=document.getElementById('leftSlot');
+let claim='match',timer=[],dragging=false,startX=0,drag=0;
+function clearTimers(){timer.forEach(clearTimeout);timer=[]}
+function setPhase(p,label){pair.dataset.phase=p;if(label)bridgeLabel.textContent=label}
+function reset(){clearTimers();setPhase('idle','UNRESOLVED RECORD GAP');result.textContent='CORD → APPROACH → TENSION → KNOT → REGISTER → READ → CONTINUE'}
+function choose(v){claim=v;match.classList.toggle('active',v==='match');other.classList.toggle('active',v==='other');reset()}
+match.onclick=()=>choose('match');other.onclick=()=>choose('other');
+run.onclick=()=>{reset();setPhase('approach','CORDS APPROACH');result.textContent='APPROACH · record fragments move without changing identity';timer.push(setTimeout(()=>{setPhase('tension','TENSION / ATTACHMENT TEST');result.textContent='TENSION · cord alignment becomes the evidence';},650));timer.push(setTimeout(()=>{if(claim==='match'){setPhase('registered','KNOT REGISTERED · STRUCTURE CONTINUES');result.textContent='REGISTERED · structural continuation resolved — meaning not inferred';}else{setPhase('rejected','RESIDUAL · RECORDS REMAIN VALID');result.textContent='RESIST · tension and knot position retain residual — both records remain valid';}},1450));};
+leftSlot.addEventListener('pointerdown',e=>{if(innerWidth<921)return;dragging=true;startX=e.clientX;drag=0;leftSlot.classList.add('dragging');leftSlot.setPointerCapture(e.pointerId)});
+leftSlot.addEventListener('pointermove',e=>{if(!dragging)return;drag=Math.max(0,Math.min(125,e.clientX-startX));pair.classList.add('drag-mode');pair.style.setProperty('--drag',drag+'px');if(drag>35)setPhase('approach','CORDS APPROACH');if(drag>75)setPhase('tension','TENSION / ATTACHMENT TEST')});
+leftSlot.addEventListener('pointerup',e=>{if(!dragging)return;dragging=false;leftSlot.classList.remove('dragging');pair.classList.remove('drag-mode');pair.style.removeProperty('--drag');if(drag>88){setPhase(claim==='match'?'registered':'rejected',claim==='match'?'KNOT REGISTERED · STRUCTURE CONTINUES':'RESIDUAL · RECORDS REMAIN VALID');result.textContent=claim==='match'?'REGISTERED · structural continuation resolved — meaning not inferred':'RESIST · visible residual remains; neither record is invalid';}else reset();try{leftSlot.releasePointerCapture(e.pointerId)}catch{} });
+</script>
+</body></html>
