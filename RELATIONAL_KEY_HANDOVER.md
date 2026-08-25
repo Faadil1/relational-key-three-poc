@@ -10,15 +10,13 @@ PR status: `DRAFT / DO NOT MERGE`
 
 RELATIONAL KEY has completed:
 - Continental Balance Gate 1;
-- C1 — Inventory + Architecture Freeze;
-- C2 — Source Capture & Snapshot Import;
-- C3 — Collection Shell;
-- dedicated collection Preview root live pass;
-- shell visual pass;
-- functional filter/search pass;
-- 15 / 15 direct consolidated route verification;
-- collection usability `PASS WITH POLISH`;
-- PR #20 consolidation squash merge.
+- full Collection Consolidation;
+- 15 / 15 independent family user gates;
+- 15 / 15 consolidated direct live route verification;
+- collection shell visual + functional pass with polish;
+- PR #20 consolidation squash merge;
+- Global Refinement G0 baseline freeze;
+- G1 Collection Navigation Frame implementation + source gate.
 
 Canonical invariant:
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
@@ -26,91 +24,95 @@ Canonical invariant:
 Distribution:
 `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-Family expansion remains paused during refinement.
+Family expansion remains paused.
 
-# PRE-REFINEMENT BASELINE
+# IMMUTABLE PRE-REFINEMENT BASELINE
 
-Consolidation PR #20:
-`MERGED`
-
-Squash merge / immutable regression anchor:
+Consolidation merge / regression anchor:
 # `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
-
-This anchor already proves:
-- 15 / 15 independent family gates;
-- 15 / 15 consolidated direct live routes;
-- coherent collection shell;
-- working continent filters;
-- working text search / zero-result state;
-- collection usability pass with polish.
 
 Historic collection Preview golden reference:
 - project `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`;
 - deployment `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ`;
 - URL `https://relational-key-collectionrelational-key-collection-4834ctm8z.vercel.app`;
-- branch `collection/consolidation-gate-1`;
 - state `READY`.
 
-Existing individual family Vercel deployments remain golden references.
+Existing per-family Vercel deployments also remain golden references.
 
 # GLOBAL REFINEMENT
 
-# **OPEN / G0 BASELINE FROZEN**
+## G0 — BASELINE FREEZE
+Status: `PASS`
+Register: `GLOBAL_REFINEMENT_G0_BASELINE.md`
 
-Working branch:
-`collection/global-refinement-1`
+## G1 — COLLECTION NAVIGATION FRAME
 
-Draft review surface:
-**PR #21**
+Status:
+# `IMPLEMENTED / SOURCE PASS / LIVE REGRESSION REQUIRED`
 
 Register:
-`GLOBAL_REFINEMENT_G0_BASELINE.md`
+`GLOBAL_REFINEMENT_G1_NAVIGATION_FRAME.md`
 
-G0 register commit:
-`9cbedfaaec7857d7d9ad924257a4ccd1b8fd7e58`
+Implementation:
+- `760f4058a017cc761c8111aaffb27a308fe4ce65` — create wrappers + exact autonomous snapshot copies;
+- `9644849b323db8af8dc659f5d12e744a064647da` — harden all wrapper paths to absolute collection routes;
+- `cdb91ba401c87087e385eb719f1fcc6851067cae` — record source gate.
 
-State transition commit:
-`11d3a34c91785a0c2aa35e87a8f6b2c288d8fdbe`
+Current state update:
+`74c51804ad3f605a2eb17d987e14d645afe70e52`
 
-PR/state checkpoint:
-`4656c35d2e93cee888735b11819b5ebb390a1d34`
+### G1 architecture
 
-## Locked rules
+Every public `/families/<slug>/` now loads through the same collection-owned wrapper.
 
-1. Never rewrite all families into one generic interaction model.
-2. Keep `79ba99ec…` as immutable pre-refinement comparison point.
-3. Existing family golden deployments stay valid regression references.
-4. Route/wrapper changes require route regression checks.
-5. Family presentation changes require targeted family regression checks.
-6. Do not let the center/gap become the product.
-7. No new family expansion during the current refinement cycle.
+Wrapper provides:
+- `← BACK TO ATLAS` → `/#grid`;
+- family context label;
+- collection law `THE PAIR IS THE PRODUCT`;
+- separate 44px desktop / 42px mobile navigation row;
+- family iframe below it, not covered by overlay UI.
 
-# IMMEDIATE NEXT TASK — G1 COLLECTION NAVIGATION FRAME
+Shared historical routes:
+- CITY / SERVICE / SIGNAL / FRIDA / FOOD / TEXTILE still load the exact shared runtime;
+- shared runtime blob unchanged: `bed8c2fa6d2f40b9677d327ecfcd6c581238e14d`.
 
-Goal:
-add an explicit collection-level `← Back to Atlas` affordance around every family view without modifying the family-native interaction mechanism.
+Autonomous routes:
+- Zellige / Khipu / Kento / Ombak / Swell / Stereoscopy / Siku / Hika Ahi / Boulle now keep their exact pre-wrapper prototype as `snapshot.html` in the same directory;
+- public index only wraps the snapshot;
+- wrapper blob: `86f6b85796bec16dcb9077ed594a1ec86736b663`.
 
-G1 should prefer a collection wrapper/frame rather than editing each golden family prototype independently.
+Important: the mechanism-level source is intentionally preserved beneath the wrapper. Do not edit these snapshots during G1.
 
-Required G1 checks:
-- root collection remains intact;
-- all 15 family routes continue to resolve;
-- Back to Atlas works from representative shared-runtime + autonomous families;
-- overlay/frame does not cover family controls or critical content;
-- family mechanisms remain unchanged beneath the wrapper where possible;
-- responsive behavior is acceptable.
+# IMMEDIATE NEXT TASK — G1.1 LIVE REGRESSION
 
-After G1 passes, proceed to:
-- G2 Shell Legibility;
-- G3 Atlas Family Individuality;
-- G4 PASS WITH POLISH backlog;
-- G5 Collection Cohesion;
-- G6 Final Collection Validation.
+1. Check Vercel project `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny` for a Preview from branch `collection/global-refinement-1`.
+2. If none exists, create a Preview Deployment manually for that branch in the same project.
+3. Keep the consolidation Preview `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ` untouched as golden baseline.
+4. On the new refinement Preview verify:
+   - root collection loads;
+   - at least one shared route initializes the intended state;
+   - at least one autonomous route loads its exact snapshot;
+   - `← BACK TO ATLAS` works;
+   - wrapper does not cover family controls;
+   - responsive/mobile frame remains acceptable;
+   - route integrity remains intact.
+5. Record G1 `PASS / PATCH`.
+6. Only after G1 PASS begin G2 — Shell Legibility.
 
-Do not reopen old discovery or continental balancing unless a future explicit strategy changes scope.
+# FUTURE GATES
+
+G2 — Shell Legibility.
+G3 — Atlas Family Individuality.
+G4 — Family PASS WITH POLISH backlog.
+G5 — Collection Cohesion.
+G6 — Final Collection Validation.
+
+## Recovery note
+
+A transient documentation-only branch update was detected during G1 construction and immediately discarded before live/deployment. Canonical branch history was restored to the atomic G1 implementation before further work. No validated family source or live deployment was affected.
 
 ## Persistence protocol
 
-After every significant milestone update `RELATIONAL_KEY_CURRENT_STATE.md` + this handover with exact commits, deployments, gate verdicts and next action.
+After every significant milestone update `RELATIONAL_KEY_CURRENT_STATE.md` + this handover with exact commits, deployments and next gate.
 
-If a new conversation starts here, resume directly at **G1 — COLLECTION NAVIGATION FRAME**.
+If a new conversation starts here, resume directly at **G1.1 — GLOBAL REFINEMENT PREVIEW + LIVE REGRESSION**.
