@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RELATIONAL KEY — Boulle Reciprocal Cut Register</title>
+<style>
+:root{
+  --bg:#0c0b0a;--panel:#151310;--ink:#f1eadf;--muted:#8c8477;--line:rgba(235,220,191,.18);
+  --dark:#3a2117;--dark2:#6b3b26;--amber:#9d5b31;--gold:#d5aa5f;--gold2:#f0cc86;--soft:#c9bda9;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-width:320px;background:var(--bg);color:var(--ink)}
+body{overflow-x:hidden;background:
+  radial-gradient(circle at 50% -12%,rgba(193,139,66,.13),transparent 34%),
+  linear-gradient(180deg,#12100e,#0c0b0a 68%)}
+button{font:inherit}
+.shell{min-height:100vh;padding:14px clamp(14px,2.6vw,42px) 30px}
+.top{min-height:66px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px;border-bottom:1px solid var(--line)}
+.brand{font:700 10px ui-monospace,monospace;letter-spacing:.18em;color:#dcb879}
+.headline{text-align:center}.headline small,.meta{display:block;font:700 6px ui-monospace,monospace;letter-spacing:.14em;color:#777068}
+.headline b{display:block;margin-top:3px;font:600 21px Georgia,serif}.meta{text-align:right}
+.intro{text-align:center;margin:24px auto 17px}.intro span{font:700 6px ui-monospace,monospace;letter-spacing:.15em;color:#a68f69}
+.intro h1{margin:6px 0 5px;font:600 clamp(28px,3.3vw,44px) Georgia,serif}.intro p{margin:0;font:italic 12px Georgia,serif;color:#9d968b}
+.stage{width:min(1280px,100%);margin:auto}
+.pair{display:grid;grid-template-columns:minmax(0,1fr) 230px minmax(0,1fr);align-items:center;gap:12px;perspective:1600px}
+.slot{transition:transform .72s cubic-bezier(.2,.8,.2,1)}
+.pair[data-phase="align"] .slot.left,.pair[data-phase="stack"] .slot.left,.pair[data-phase="cut"] .slot.left,.pair[data-phase="separate"] .slot.left,.pair[data-phase="exchange"] .slot.left,.pair[data-phase="invert"] .slot.left{transform:translateX(22px)}
+.pair[data-phase="align"] .slot.right,.pair[data-phase="stack"] .slot.right,.pair[data-phase="cut"] .slot.right,.pair[data-phase="separate"] .slot.right,.pair[data-phase="exchange"] .slot.right,.pair[data-phase="invert"] .slot.right{transform:translateX(-22px)}
+.pair[data-phase="registered"] .slot.left{transform:translateX(14px)}
+.pair[data-phase="registered"] .slot.right{transform:translateX(-14px)}
+.card{position:relative;aspect-ratio:856/540;border-radius:26px;overflow:hidden;border:1px solid rgba(235,224,201,.2);box-shadow:0 34px 64px rgba(0,0,0,.48);isolation:isolate;user-select:none}
+.card.partie{background:
+  radial-gradient(circle at 22% 20%,rgba(255,255,255,.04),transparent 18%),
+  linear-gradient(145deg,#502b1d,#291913 68%,#17110e)}
+.card.contre{background:
+  radial-gradient(circle at 78% 18%,rgba(255,255,255,.18),transparent 16%),
+  linear-gradient(145deg,#e0b86c,#b7813f 62%,#8c5b2e)}
+.card:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.025),transparent 18%,rgba(0,0,0,.16));z-index:6}
+.role{position:absolute;z-index:10;top:6%;padding:6px 9px;border:1px solid rgba(222,204,170,.27);border-radius:999px;background:rgba(9,8,7,.68);font:700 6px ui-monospace,monospace;letter-spacing:.13em;color:#e5d6b9}
+.partie .role{left:5%}.contre .role{right:5%}
+.copy{position:absolute;z-index:10;top:25%;width:39%}.partie .copy{left:6%;text-align:left}.contre .copy{right:6%;text-align:right}
+.copy span{font:700 6px ui-monospace,monospace;letter-spacing:.12em;color:#c6a570}
+.copy strong{display:block;margin-top:6px;font:600 clamp(18px,2vw,29px) Georgia,serif;line-height:1.02}
+.copy small{display:block;margin-top:9px;font:700 6px/1.6 ui-monospace,monospace;letter-spacing:.07em;color:#aaa195}
+.contre .copy span,.contre .copy small{color:#4a2c1d}.contre .copy strong{color:#261710}
+.sourceNote{position:absolute;z-index:10;bottom:7%;font:700 5px/1.5 ui-monospace,monospace;letter-spacing:.07em;color:#786f64}
+.partie .sourceNote{left:6%;max-width:45%}.contre .sourceNote{right:6%;max-width:46%;text-align:right;color:#51331f}
+.materialPanel{position:absolute;top:14%;bottom:14%;width:49%;z-index:3;display:grid;place-items:center}
+.partie .materialPanel{right:3%}.contre .materialPanel{left:3%}
+.materialPanel:before{content:"";position:absolute;inset:4%;border:1px solid rgba(241,222,185,.16);border-radius:20px}
+.contre .materialPanel:before{border-color:rgba(69,42,26,.2)}
+.motif{width:83%;height:83%;overflow:visible}
+.motif .ghost{fill:none;stroke:rgba(239,217,179,.22);stroke-width:1.2;stroke-dasharray:4 5}
+.contre .motif .ghost{stroke:rgba(67,40,25,.24)}
+.motif .inlay{opacity:0;transition:opacity .5s ease,filter .5s ease}
+.partie .motif .inlay{fill:url(#goldFill)}
+.contre .motif .inlay{fill:url(#darkFill)}
+.motif .cutline{fill:none;stroke:#f0cf8b;stroke-width:1.5;stroke-linecap:round;stroke-dasharray:360;stroke-dashoffset:360;opacity:0;transition:stroke-dashoffset .8s cubic-bezier(.2,.8,.2,1),opacity .35s ease}
+.contre .motif .cutline{stroke:#4a2a1b}
+.pair[data-phase="cut"] .cutline,.pair[data-phase="separate"] .cutline,.pair[data-phase="exchange"] .cutline,.pair[data-phase="invert"] .cutline,.pair[data-phase="registered"] .cutline{opacity:.95;stroke-dashoffset:0}
+.pair[data-phase="exchange"] .inlay,.pair[data-phase="invert"] .inlay,.pair[data-phase="registered"] .inlay{opacity:1}
+.pair[data-phase="invert"] .inlay,.pair[data-phase="registered"] .inlay{filter:drop-shadow(0 0 10px rgba(213,170,95,.17))}
+.pair[data-phase="other"] .inlay{opacity:0!important}
+.pair[data-phase="other"] .cutline{opacity:.38;stroke-dashoffset:150;transform:translate(5px,-4px)}
+.bridge{height:190px;position:relative;display:grid;place-items:center}
+.bridgeRail{position:absolute;left:-5%;right:-5%;top:50%;height:1px;background:linear-gradient(90deg,transparent,rgba(218,207,184,.2) 18%,rgba(218,207,184,.2) 82%,transparent)}
+.field{position:relative;width:218px;height:144px;border:1px solid rgba(224,214,194,.22);border-radius:22px;background:#11100e;overflow:hidden;box-shadow:inset 0 0 38px rgba(0,0,0,.5);transition:.55s ease;z-index:4}
+.fieldLabel{position:absolute;left:0;right:0;top:10px;text-align:center;font:700 5px ui-monospace,monospace;letter-spacing:.11em;color:#756f66;z-index:8}
+.layer{position:absolute;left:39px;width:140px;height:54px;border-radius:16px;border:1px solid rgba(235,218,187,.2);transition:transform .55s cubic-bezier(.2,.8,.2,1),opacity .4s ease,box-shadow .5s ease}
+.layer.a{top:42px;background:linear-gradient(135deg,#4d2c20,#231713);z-index:4}
+.layer.b{top:49px;background:linear-gradient(135deg,#d9b468,#9c6735);z-index:3}
+.layer svg{width:100%;height:100%;opacity:.8}
+.layerPath{fill:none;stroke-width:1.4;stroke-dasharray:280;stroke-dashoffset:280;transition:stroke-dashoffset .75s ease}
+.layer.a .layerPath{stroke:#f0ca80}.layer.b .layerPath{stroke:#4a2a1b}
+.pair[data-phase="stack"] .layer.a{transform:translateY(3px)}.pair[data-phase="stack"] .layer.b{transform:translateY(-4px)}
+.pair[data-phase="cut"] .layerPath,.pair[data-phase="separate"] .layerPath,.pair[data-phase="exchange"] .layerPath,.pair[data-phase="invert"] .layerPath,.pair[data-phase="registered"] .layerPath{stroke-dashoffset:0}
+.pair[data-phase="separate"] .layer.a,.pair[data-phase="exchange"] .layer.a,.pair[data-phase="invert"] .layer.a{transform:translate(-17px,-15px)}
+.pair[data-phase="separate"] .layer.b,.pair[data-phase="exchange"] .layer.b,.pair[data-phase="invert"] .layer.b{transform:translate(17px,15px)}
+.swap{position:absolute;inset:0;opacity:0;transition:opacity .35s ease;z-index:6;pointer-events:none}
+.swap:before,.swap:after{content:"";position:absolute;width:24px;height:9px;border-radius:999px;top:66px}
+.swap:before{left:72px;background:linear-gradient(90deg,#d8ad60,#f1cf87);transform:rotate(-17deg)}
+.swap:after{right:72px;background:linear-gradient(90deg,#502c20,#2a1813);transform:rotate(17deg)}
+.pair[data-phase="exchange"] .swap,.pair[data-phase="invert"] .swap{opacity:1}
+.reciprocal{position:absolute;left:45px;right:45px;bottom:15px;height:15px;opacity:0;transition:opacity .45s ease}
+.reciprocal:before{content:"PARTIE  ↔  CONTREPARTIE";position:absolute;inset:0;text-align:center;font:700 5px ui-monospace,monospace;letter-spacing:.12em;color:#d5af6f}
+.pair[data-phase="invert"] .reciprocal,.pair[data-phase="registered"] .reciprocal{opacity:1}
+.pair[data-phase="invert"] .field{transform:scale(1.08);border-color:rgba(218,172,91,.58);box-shadow:0 0 38px rgba(180,129,56,.12),inset 0 0 32px rgba(0,0,0,.4)}
+.pair[data-phase="registered"] .field{transform:scale(1.035);border-color:rgba(218,172,91,.45)}
+.pair[data-phase="other"] .field{border-color:rgba(211,203,189,.28)}
+.pair[data-phase="other"] .layer.a{transform:translate(-10px,-9px) rotate(-2deg)}
+.pair[data-phase="other"] .layer.b{transform:translate(10px,9px) rotate(3deg)}
+.pair[data-phase="other"] .layer.a .layerPath{stroke-dashoffset:80}
+.pair[data-phase="other"] .layer.b .layerPath{stroke-dashoffset:150}
+.pair[data-phase="other"] .reciprocal{opacity:0}
+.bridgeLabel{position:absolute;top:calc(50% + 83px);font:700 5px/1.5 ui-monospace,monospace;letter-spacing:.1em;color:#756f68;text-align:center}
+.controls{width:min(1040px,97vw);margin:20px auto 0;display:grid;grid-template-columns:1fr auto auto;gap:7px}
+.claims{display:flex;gap:6px}.controls button{min-height:42px;border:1px solid rgba(222,196,145,.22);background:#171512;color:#9d978d;padding:0 14px;font:700 6px ui-monospace,monospace;letter-spacing:.09em;cursor:pointer}
+.controls button.active{border-color:#d5ad6a;background:rgba(213,173,106,.08);color:#eed29f}.claims button{flex:1}.run{min-width:210px!important}
+.result,.law,.truth{text-align:center;font:700 6px ui-monospace,monospace;letter-spacing:.09em;color:#827d74}.result{min-height:30px;margin-top:9px}.law{margin-top:5px;color:#a29886}.truth{max-width:1130px;margin:7px auto 0;line-height:1.55}
+.dots{display:flex;justify-content:center;gap:7px}.dots i{width:5px;height:5px;border-radius:50%;background:#484641}.dots i.on{background:#d7af6b}
+@media(max-width:960px){.pair{grid-template-columns:1fr}.bridge{height:170px}.slot.left,.slot.right,.pair[data-phase] .slot.left,.pair[data-phase] .slot.right{transform:none}.controls{grid-template-columns:1fr 1fr}.claims{grid-column:1/-1}}
+@media(max-width:560px){.top{grid-template-columns:1fr}.brand,.meta{text-align:center}.controls{grid-template-columns:1fr}.claims{grid-column:auto;flex-direction:column}.run{min-width:0!important}.copy{width:43%}}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.slot,.field,.layer,.cutline,.inlay{transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<main class="shell">
+<header class="top">
+  <div class="brand">RELATIONAL KEY</div>
+  <div class="headline"><small>ROUND 13M · CONTINENTAL BALANCE GATE</small><b>European Complement Memory</b></div>
+  <div class="meta">EUROPE · FRANCE<br>BOULLE · PARTIE / CONTREPARTIE</div>
+</header>
+
+<section class="intro">
+  <span>COMPLEMENT MEMORY — FRANCE / BOULLE</span>
+  <h1>Reciprocal Cut Register</h1>
+  <p>One shared division produces two material inverses.</p>
+</section>
+
+<section class="stage">
+<div class="pair" id="pair" data-phase="idle">
+  <div class="slot left">
+    <div class="card partie">
+      <div class="role">CARD A · PARTIE</div>
+      <div class="copy">
+        <span>DARK GROUND · DISTINCT</span>
+        <strong>Receives the light cut</strong>
+        <small>Its final pattern only becomes reciprocal when the same cut exists in the second material field.</small>
+      </div>
+      <div class="materialPanel">
+        <svg class="motif" viewBox="0 0 220 220" aria-hidden="true">
+          <defs>
+            <linearGradient id="goldFill" x1="0" x2="1"><stop offset="0" stop-color="#b67e37"/><stop offset=".5" stop-color="#f0cf88"/><stop offset="1" stop-color="#b57c36"/></linearGradient>
+          </defs>
+          <path class="ghost" d="M110 21 C92 45 67 43 55 69 C44 92 57 108 78 112 C55 119 42 139 51 159 C62 183 88 177 110 199 C132 177 158 183 169 159 C178 139 165 119 142 112 C163 108 176 92 165 69 C153 43 128 45 110 21 Z"/>
+          <path class="inlay" d="M110 33 C94 53 73 53 64 73 C56 91 68 103 88 109 C68 117 57 135 64 151 C73 170 94 166 110 184 C126 166 147 170 156 151 C163 135 152 117 132 109 C152 103 164 91 156 73 C147 53 126 53 110 33 Z"/>
+          <path class="cutline" d="M110 33 C94 53 73 53 64 73 C56 91 68 103 88 109 C68 117 57 135 64 151 C73 170 94 166 110 184 C126 166 147 170 156 151 C163 135 152 117 132 109 C152 103 164 91 156 73 C147 53 126 53 110 33 Z"/>
+        </svg>
+      </div>
+      <div class="sourceNote">EDITORIAL MATERIAL SIMULATION · NO WILDLIFE MATERIAL<br>HISTORICAL PROCESS SOURCED TO THE MET</div>
+    </div>
+  </div>
+
+  <div class="bridge">
+    <div class="bridgeRail"></div>
+    <div class="field">
+      <div class="fieldLabel">SHARED CUT / RECIPROCAL EXCHANGE FIELD</div>
+      <div class="layer a">
+        <svg viewBox="0 0 140 54"><path class="layerPath" d="M12 28 C31 6 52 10 70 27 C88 44 109 48 128 26"/></svg>
+      </div>
+      <div class="layer b">
+        <svg viewBox="0 0 140 54"><path class="layerPath" d="M12 28 C31 6 52 10 70 27 C88 44 109 48 128 26"/></svg>
+      </div>
+      <div class="swap"></div>
+      <div class="reciprocal"></div>
+    </div>
+    <div class="bridgeLabel">ONE EDITORIAL CUT PATH → TWO RECIPROCAL MATERIAL MAPS<br>NOT A MODERN FABRICATION RECIPE</div>
+  </div>
+
+  <div class="slot right">
+    <div class="card contre">
+      <div class="role">CARD B · CONTREPARTIE</div>
+      <div class="copy">
+        <span>LIGHT GROUND · DISTINCT</span>
+        <strong>Receives the dark cut</strong>
+        <small>The same division returns as its material inverse rather than as a copy of Card A.</small>
+      </div>
+      <div class="materialPanel">
+        <svg class="motif" viewBox="0 0 220 220" aria-hidden="true">
+          <defs>
+            <linearGradient id="darkFill" x1="0" x2="1"><stop offset="0" stop-color="#6c3b26"/><stop offset=".5" stop-color="#2a1813"/><stop offset="1" stop-color="#6a3924"/></linearGradient>
+          </defs>
+          <path class="ghost" d="M110 21 C92 45 67 43 55 69 C44 92 57 108 78 112 C55 119 42 139 51 159 C62 183 88 177 110 199 C132 177 158 183 169 159 C178 139 165 119 142 112 C163 108 176 92 165 69 C153 43 128 45 110 21 Z"/>
+          <path class="inlay" d="M110 33 C94 53 73 53 64 73 C56 91 68 103 88 109 C68 117 57 135 64 151 C73 170 94 166 110 184 C126 166 147 170 156 151 C163 135 152 117 132 109 C152 103 164 91 156 73 C147 53 126 53 110 33 Z"/>
+          <path class="cutline" d="M110 33 C94 53 73 53 64 73 C56 91 68 103 88 109 C68 117 57 135 64 151 C73 170 94 166 110 184 C126 166 147 170 156 151 C163 135 152 117 132 109 C152 103 164 91 156 73 C147 53 126 53 110 33 Z"/>
+        </svg>
+      </div>
+      <div class="sourceNote">EDITORIAL METAL-LIKE MATERIAL SIMULATION<br>PARTIE / CONTREPARTIE LOGIC · SOURCE-GROUNDED</div>
+    </div>
+  </div>
+</div>
+</section>
+
+<section class="controls">
+  <div class="claims">
+    <button class="active" data-mode="match">SHARED CUT</button>
+    <button data-mode="other">OTHER CUT</button>
+  </div>
+  <button class="run" id="run">TEST RELATIONSHIP</button>
+  <button id="reset">RESET</button>
+</section>
+<div class="result" id="result">SELECT A CUT RELATION, THEN TEST</div>
+<div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+<div class="law">ALIGN → STACK → CUT → SEPARATE → EXCHANGE → INVERT → REGISTER → CONTINUE</div>
+<div class="truth">Historical grounding: Boulle work documented by The Metropolitan Museum of Art places thin material sheets together, cuts through them according to one design, then separates and recombines the complementary pieces as partie / contrepartie. Historical tortoiseshell is referenced only as evidence. All materials, timing, cut paths and exchange animation here are editorial simulations; no wildlife material is used or recommended, and this is not an exact fabrication recipe.</div>
+</main>
+
+<script>
+const pair=document.getElementById('pair'),run=document.getElementById('run'),reset=document.getElementById('reset'),result=document.getElementById('result'),dots=[...document.querySelectorAll('#dots i')],modeButtons=[...document.querySelectorAll('[data-mode]')];
+let mode='match',busy=false;
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+modeButtons.forEach(b=>b.onclick=()=>{if(busy)return;mode=b.dataset.mode;modeButtons.forEach(x=>x.classList.toggle('active',x===b));resetVisual(false);result.textContent=mode==='match'?'SHARED CUT SELECTED · ONE PATH ACROSS BOTH MATERIAL FIELDS':'OTHER CUT SELECTED · BOTH MATERIAL FIELDS REMAIN VALID'});
+function stage(n,text,phase){dots.forEach((d,i)=>d.classList.toggle('on',i<=n));if(text)result.textContent=text;if(phase)pair.dataset.phase=phase}
+function resetVisual(resetText=true){pair.dataset.phase='idle';dots.forEach((d,i)=>d.classList.toggle('on',i===0));if(resetText)result.textContent='RESET · PARTIE + CONTREPARTIE PERSIST'}
+async function matching(){
+  stage(0,'ALIGN · TWO DISTINCT MATERIAL FIELDS ENTER ONE RELATION','align');await sleep(520);
+  stage(1,'STACK · THE EDITORIAL CUT FIELD BECOMES SHARED','stack');await sleep(620);
+  stage(2,'CUT · ONE PATH IS REGISTERED ACROSS BOTH','cut');await sleep(850);
+  stage(3,'SEPARATE · THE TWO MATERIAL SETS MOVE APART','separate');await sleep(720);
+  stage(4,'EXCHANGE · COMPLEMENTARY PIECES CROSS THE RELATION','exchange');await sleep(760);
+  stage(5,'INVERT · EACH CARD RECEIVES THE OTHER MATERIAL','invert');await sleep(800);
+  stage(6,'REGISTER · PARTIE AND CONTREPARTIE ARE RECIPROCAL, NOT IDENTICAL','registered');await sleep(650);
+  stage(7,'CONTINUE · BOTH OBJECTS REMAIN DISTINCT','registered')
+}
+async function other(){
+  stage(0,'ALIGN · BOTH MATERIAL FIELDS REMAIN VALID','align');await sleep(520);
+  stage(1,'OTHER CUT · PATHS DO NOT SHARE ONE RECIPROCAL MAP','other');await sleep(720);
+  stage(2,'TRACE · EACH FIELD RETAINS ITS OWN PARTIAL DIVISION','other');await sleep(680);
+  stage(3,'SEPARATE · NO COMMON COMPLEMENTARY SET EMERGES','other');await sleep(650);
+  stage(4,'EXCHANGE NOT REGISTERED FOR THIS RELATION','other');await sleep(620);
+  stage(5,'NO COMPLETE PARTIE ↔ CONTREPARTIE INVERSION','other');await sleep(620);
+  stage(6,'BOTH MATERIAL FIELDS REMAIN VALID','other');await sleep(520);
+  stage(7,'CONTINUE · SELECTED RELATION NOT REGISTERED','idle')
+}
+async function test(){if(busy)return;busy=true;resetVisual(false);if(mode==='match')await matching();else await other();busy=false}
+run.onclick=test;reset.onclick=()=>{busy=false;resetVisual(true)}
+</script>
+</body>
+</html>

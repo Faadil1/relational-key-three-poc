@@ -1,0 +1,380 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RELATIONAL KEY — Siku Interlock Register</title>
+<style>
+:root{
+  --bg:#0e0d0b;--panel:#171512;--ink:#f1ede4;--muted:#8f887c;--line:rgba(231,220,197,.18);
+  --warm:#dfb36f;--cool:#8fb4bc;--soft:#c9c0af;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif
+}
+*{box-sizing:border-box}
+html,body{margin:0;min-width:320px;background:var(--bg);color:var(--ink)}
+body{overflow-x:hidden;background:
+  radial-gradient(circle at 50% -12%,rgba(154,111,51,.14),transparent 34%),
+  linear-gradient(180deg,#13110e,#0e0d0b 64%)}
+button{font:inherit}
+.shell{min-height:100vh;padding:14px clamp(14px,2.6vw,42px) 30px}
+.top{min-height:66px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:18px;border-bottom:1px solid var(--line)}
+.brand{font:700 10px ui-monospace,monospace;letter-spacing:.18em;color:#ddbd83}
+.headline{text-align:center}
+.headline small,.meta{display:block;font:700 6px ui-monospace,monospace;letter-spacing:.14em;color:#7f7a72}
+.headline b{display:block;margin-top:3px;font:600 21px Georgia,serif}
+.meta{text-align:right}
+.intro{text-align:center;margin:24px auto 17px}
+.intro span{font:700 6px ui-monospace,monospace;letter-spacing:.15em;color:#a18c69}
+.intro h1{margin:6px 0 5px;font:600 clamp(28px,3.3vw,44px) Georgia,serif}
+.intro p{margin:0;font:italic 12px Georgia,serif;color:#9c968c}
+.stage{width:min(1280px,100%);margin:auto}
+.pair{display:grid;grid-template-columns:minmax(0,1fr) 220px minmax(0,1fr);align-items:center;gap:12px;perspective:1600px}
+.slotCard{transition:transform .72s cubic-bezier(.2,.8,.2,1),filter .5s ease}
+.pair[data-phase="answer"] .slotCard.left,
+.pair[data-phase="interlock"] .slotCard.left,
+.pair[data-phase="scale"] .slotCard.left,
+.pair[data-phase="melody"] .slotCard.left{transform:translateX(22px)}
+.pair[data-phase="answer"] .slotCard.right,
+.pair[data-phase="interlock"] .slotCard.right,
+.pair[data-phase="scale"] .slotCard.right,
+.pair[data-phase="melody"] .slotCard.right{transform:translateX(-22px)}
+.pair[data-phase="registered"] .slotCard.left{transform:translateX(15px)}
+.pair[data-phase="registered"] .slotCard.right{transform:translateX(-15px)}
+.card{position:relative;aspect-ratio:856/540;border-radius:26px;overflow:hidden;background:
+  linear-gradient(135deg,rgba(63,47,28,.22),transparent 46%),#171512;
+  border:1px solid rgba(235,224,201,.2);box-shadow:0 34px 64px rgba(0,0,0,.48);isolation:isolate;user-select:none}
+.card:after{content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(255,255,255,.025),transparent 18%,rgba(0,0,0,.18));z-index:2}
+.instrumentWindow{position:absolute;top:11%;height:76%;aspect-ratio:400/555;border-radius:17px;overflow:hidden;border:1px solid rgba(232,220,194,.22);background:#26211a;box-shadow:inset 0 0 30px rgba(0,0,0,.25);z-index:1}
+.iraCard .instrumentWindow{right:7%}
+.arkaCard .instrumentWindow{left:7%}
+.instrumentWindow img{position:absolute;top:0;height:100%;width:auto;max-width:none;filter:sepia(.1) saturate(.82) contrast(1.05) brightness(.88)}
+.arkaCard .instrumentWindow img{left:0}
+.iraCard .instrumentWindow img{left:-100%}
+.instrumentWindow:after{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 58%,rgba(8,7,5,.34));pointer-events:none}
+.role{position:absolute;z-index:7;top:6%;padding:6px 9px;border:1px solid rgba(222,204,170,.27);border-radius:999px;background:rgba(9,8,7,.67);font:700 6px ui-monospace,monospace;letter-spacing:.13em;color:#e5d6b9}
+.iraCard .role{left:5%}.arkaCard .role{right:5%}
+.copy{position:absolute;z-index:7;top:29%;width:39%}
+.iraCard .copy{left:6%;text-align:left}
+.arkaCard .copy{right:6%;text-align:right}
+.copy span{font:700 6px ui-monospace,monospace;letter-spacing:.12em;color:#c9aa74}
+.copy strong{display:block;margin-top:6px;font:600 clamp(18px,2vw,29px) Georgia,serif;line-height:1.02}
+.copy small{display:block;margin-top:9px;font:700 6px/1.6 ui-monospace,monospace;letter-spacing:.07em;color:#a9a195}
+.sourceNote{position:absolute;z-index:8;top:71%;font:700 5px ui-monospace,monospace;letter-spacing:.08em;color:#79736b}
+.iraCard .sourceNote{left:6%}.arkaCard .sourceNote{right:6%;text-align:right}
+.noteStack{position:absolute;z-index:8;top:22%;bottom:20%;display:flex;flex-direction:column;justify-content:space-around}
+.iraCard .noteStack{right:1.8%}.arkaCard .noteStack{left:1.8%}
+.noteMarker{width:10px;height:10px;border-radius:50%;border:1px solid rgba(230,219,198,.25);background:#191713;box-shadow:0 0 0 0 transparent;transition:.2s ease}
+.iraCard .noteMarker.active{background:var(--warm);border-color:#f1cc8d;box-shadow:0 0 0 6px rgba(223,179,111,.08),0 0 22px rgba(223,179,111,.45)}
+.arkaCard .noteMarker.active{background:var(--cool);border-color:#bcd6da;box-shadow:0 0 0 6px rgba(143,180,188,.08),0 0 22px rgba(143,180,188,.45)}
+.bridge{height:190px;position:relative;display:grid;place-items:center}
+.bridgeRail{position:absolute;left:-6%;right:-6%;top:50%;height:1px;background:linear-gradient(90deg,transparent,rgba(218,207,184,.2) 18%,rgba(218,207,184,.2) 82%,transparent)}
+.interlockField{position:relative;width:208px;height:138px;border:1px solid rgba(224,214,194,.22);border-radius:22px;background:#11100e;overflow:hidden;box-shadow:inset 0 0 38px rgba(0,0,0,.5);transition:.6s ease;z-index:4}
+.fieldLabel{position:absolute;left:0;right:0;top:10px;text-align:center;font:700 5px ui-monospace,monospace;letter-spacing:.11em;color:#756f66;z-index:5}
+.score{position:absolute;left:11px;right:11px;top:31px;bottom:19px}
+.route{position:absolute;inset:0;width:100%;height:100%;overflow:visible}
+.routeBase{fill:none;stroke:rgba(207,198,179,.14);stroke-width:1.2;stroke-dasharray:3 5}
+.routeGlow{fill:none;stroke:url(#routeGradient);stroke-width:2;stroke-linecap:round;stroke-linejoin:round;stroke-dasharray:420;stroke-dashoffset:420;opacity:0;transition:stroke-dashoffset .9s cubic-bezier(.2,.8,.2,1),opacity .5s ease}
+.scoreSlots{position:absolute;inset:0}
+.scoreSlot{position:absolute;width:13px;height:13px;border-radius:50%;transform:translate(-50%,-50%);background:#171512;border:1px solid rgba(222,211,190,.24);transition:.25s ease;z-index:4}
+.scoreSlot.a.filled{background:var(--warm);border-color:#f0cb8a;box-shadow:0 0 17px rgba(223,179,111,.35)}
+.scoreSlot.b.filled{background:var(--cool);border-color:#b8d4d9;box-shadow:0 0 17px rgba(143,180,188,.35)}
+.scoreSlot.missing{background:#11100e;border-style:dashed;border-color:rgba(221,213,198,.48);box-shadow:0 0 0 5px rgba(221,213,198,.025)}
+.scoreSlot:after{position:absolute;top:17px;left:50%;transform:translateX(-50%);font:700 4px ui-monospace,monospace;letter-spacing:.05em;color:#625d55}
+.scoreSlot.a:after{content:"IRA"}.scoreSlot.b:after{content:"ARKA"}
+.s1{left:6%;top:58%}.s2{left:18%;top:34%}.s3{left:31%;top:57%}.s4{left:44%;top:33%}.s5{left:57%;top:57%}.s6{left:70%;top:34%}.s7{left:83%;top:57%}.s8{left:95%;top:34%}
+.pair[data-phase="interlock"] .interlockField,.pair[data-phase="scale"] .interlockField{border-color:rgba(218,187,130,.38);box-shadow:0 0 28px rgba(145,121,78,.08),inset 0 0 34px rgba(0,0,0,.42)}
+.pair[data-phase="melody"] .interlockField{transform:scale(1.07);border-color:rgba(222,190,130,.58);box-shadow:0 0 0 6px rgba(222,190,130,.03),0 0 38px rgba(143,180,188,.12),inset 0 0 32px rgba(0,0,0,.38)}
+.pair[data-phase="registered"] .interlockField{transform:scale(1.035);border-color:rgba(222,190,130,.48)}
+.pair[data-phase="melody"] .routeGlow,.pair[data-phase="registered"] .routeGlow{opacity:1;stroke-dashoffset:0}
+.pair[data-phase="other"] .interlockField{border-color:rgba(211,203,189,.28)}
+.bridgeLabel{position:absolute;top:calc(50% + 80px);font:700 5px ui-monospace,monospace;letter-spacing:.11em;color:#756f69;text-align:center}
+.controls{width:min(1040px,97vw);margin:20px auto 0;display:grid;grid-template-columns:1fr auto auto auto;gap:7px}
+.claims{display:flex;gap:6px}
+.controls button{min-height:42px;border:1px solid rgba(222,196,145,.22);background:#171512;color:#9d978d;padding:0 14px;font:700 6px ui-monospace,monospace;letter-spacing:.09em;cursor:pointer}
+.controls button.active{border-color:#d5ad6a;background:rgba(213,173,106,.08);color:#eed29f}
+.claims button{flex:1}
+.run{min-width:210px!important}
+.audio{min-width:94px}
+.result,.law,.truth{text-align:center;font:700 6px ui-monospace,monospace;letter-spacing:.09em;color:#827d74}
+.result{min-height:30px;margin-top:9px}
+.law{margin-top:5px;color:#a29886}
+.truth{max-width:1100px;margin:7px auto 0;line-height:1.55}
+.dots{display:flex;justify-content:center;gap:7px}
+.dots i{width:5px;height:5px;border-radius:50%;background:#484641}
+.dots i.on{background:#d7af6b}
+.legend{display:flex;justify-content:center;gap:16px;margin-top:6px;font:700 5px ui-monospace,monospace;letter-spacing:.08em;color:#706b62}
+.legend span:before{content:"";display:inline-block;width:6px;height:6px;border-radius:50%;margin-right:5px;vertical-align:-1px}
+.legend .la:before{background:var(--warm)}.legend .lb:before{background:var(--cool)}
+@media(max-width:960px){
+  .pair{grid-template-columns:1fr}.bridge{height:165px}
+  .slotCard.left,.slotCard.right,.pair[data-phase] .slotCard.left,.pair[data-phase] .slotCard.right{transform:none}
+  .controls{grid-template-columns:1fr 1fr}.claims{grid-column:1/-1}
+}
+@media(max-width:560px){
+  .top{grid-template-columns:1fr}.brand,.meta{text-align:center}
+  .controls{grid-template-columns:1fr}.claims{grid-column:auto;flex-direction:column}.run,.audio{min-width:0!important}
+  .copy{width:43%}.instrumentWindow{height:70%;top:15%}
+}
+@media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important}.slotCard,.interlockField,.routeGlow,.scoreSlot{transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<main class="shell">
+  <header class="top">
+    <div class="brand">RELATIONAL KEY</div>
+    <div class="headline"><small>ROUND 13K · CONTINENTAL BALANCE GATE</small><b>South American Melody Memory</b></div>
+    <div class="meta">SOUTH AMERICA · BOLIVIA<br>SIKU · IRA + ARKA</div>
+  </header>
+
+  <section class="intro">
+    <span>MELODY MEMORY — BOLIVIA / SIKU</span>
+    <h1>Interlock Register</h1>
+    <p>Two complementary absences alternate into one continuity.</p>
+  </section>
+
+  <section class="stage">
+    <div class="pair" id="pair" data-phase="idle">
+      <div class="slotCard left">
+        <div class="card iraCard">
+          <div class="role">CARD A · IRA</div>
+          <div class="copy">
+            <span>COMPLEMENT A · DISTINCT</span>
+            <strong>Distributed notes</strong>
+            <small>One half of the pair<br>does not contain the whole scale.</small>
+          </div>
+          <div class="sourceNote">PUBLIC-DOMAIN BOLIVIAN PAIR · RIGHT HALF</div>
+          <div class="instrumentWindow"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Siku_bipolar.jpg" alt="Ira half of a separated Bolivian siku pair"></div>
+          <div class="noteStack" id="iraMarkers"><i class="noteMarker"></i><i class="noteMarker"></i><i class="noteMarker"></i><i class="noteMarker"></i></div>
+        </div>
+      </div>
+
+      <div class="bridge">
+        <div class="bridgeRail"></div>
+        <div class="interlockField">
+          <div class="fieldLabel">MELODY INTERLOCK FIELD · ILLUSTRATIVE SLOT MAP</div>
+          <div class="score">
+            <svg class="route" viewBox="0 0 186 88" preserveAspectRatio="none" aria-hidden="true">
+              <defs><linearGradient id="routeGradient" x1="0" x2="1"><stop offset="0" stop-color="#dfb36f"/><stop offset=".52" stop-color="#c8bd9f"/><stop offset="1" stop-color="#8fb4bc"/></linearGradient></defs>
+              <path class="routeBase" d="M11 51 L34 29 L58 50 L82 28 L106 50 L130 29 L154 50 L177 29"/>
+              <path class="routeGlow" d="M11 51 L34 29 L58 50 L82 28 L106 50 L130 29 L154 50 L177 29"/>
+            </svg>
+            <div class="scoreSlots">
+              <i class="scoreSlot a s1" data-step="0"></i>
+              <i class="scoreSlot b s2" data-step="1"></i>
+              <i class="scoreSlot a s3" data-step="2"></i>
+              <i class="scoreSlot b s4" data-step="3"></i>
+              <i class="scoreSlot a s5" data-step="4"></i>
+              <i class="scoreSlot b s6" data-step="5"></i>
+              <i class="scoreSlot a s7" data-step="6"></i>
+              <i class="scoreSlot b s8" data-step="7"></i>
+            </div>
+          </div>
+        </div>
+        <div class="bridgeLabel">ALTERNATING OWNERSHIP → ONE CONTINUOUS ROUTE<br>NOT A WAVEFORM / NOT A RESONANCE FIELD</div>
+      </div>
+
+      <div class="slotCard right">
+        <div class="card arkaCard">
+          <div class="role">CARD B · ARKA</div>
+          <div class="copy">
+            <span>COMPLEMENT B · DISTINCT</span>
+            <strong>Answering notes</strong>
+            <small>Complementary positions<br>complete what the other half lacks.</small>
+          </div>
+          <div class="sourceNote">PUBLIC-DOMAIN BOLIVIAN PAIR · LEFT HALF</div>
+          <div class="instrumentWindow"><img src="https://upload.wikimedia.org/wikipedia/commons/c/ce/Siku_bipolar.jpg" alt="Arka half of a separated Bolivian siku pair"></div>
+          <div class="noteStack" id="arkaMarkers"><i class="noteMarker"></i><i class="noteMarker"></i><i class="noteMarker"></i><i class="noteMarker"></i></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="controls">
+    <div class="claims">
+      <button class="active" data-mode="match">MATCHING INTERLOCK</button>
+      <button data-mode="other">OTHER INTERLOCK</button>
+    </div>
+    <button class="run" id="run">TEST RELATIONSHIP</button>
+    <button class="audio active" id="audio">AUDIO · ON</button>
+    <button id="reset">RESET</button>
+  </section>
+
+  <div class="result" id="result">SELECT AN INTERLOCK, THEN TEST</div>
+  <div class="dots" id="dots"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
+  <div class="legend"><span class="la">IRA SOURCE</span><span class="lb">ARKA SOURCE</span></div>
+  <div class="law">NOTE → GAP → ANSWER → INTERLOCK → SCALE → MELODY → REGISTER → CONTINUE</div>
+  <div class="truth">Historical principle: complementary siku halves distribute notes and can be played by two musicians in alternation / hocket to form one scale and melody. The slot map, exact phrase and browser-synthesized tones here are illustrative — not instrument calibration, archival audio or a claimed traditional melody.</div>
+</main>
+
+<script>
+const pair=document.getElementById('pair');
+const run=document.getElementById('run');
+const reset=document.getElementById('reset');
+const audioButton=document.getElementById('audio');
+const result=document.getElementById('result');
+const dots=[...document.querySelectorAll('#dots i')];
+const modeButtons=[...document.querySelectorAll('[data-mode]')];
+const scoreSlots=[...document.querySelectorAll('.scoreSlot')];
+const iraMarkers=[...document.querySelectorAll('#iraMarkers .noteMarker')];
+const arkaMarkers=[...document.querySelectorAll('#arkaMarkers .noteMarker')];
+
+let mode='match',busy=false,audioEnabled=true,audioCtx=null;
+const frequencies=[261.63,293.66,329.63,349.23,392.00,440.00,493.88,523.25];
+const sleep=ms=>new Promise(r=>setTimeout(r,ms));
+
+modeButtons.forEach(b=>b.onclick=()=>{
+  if(busy)return;
+  mode=b.dataset.mode;
+  modeButtons.forEach(x=>x.classList.toggle('active',x===b));
+  result.textContent=mode==='match'?'MATCHING INTERLOCK SELECTED · COMPLEMENTARY TARGET ROUTE':'OTHER INTERLOCK SELECTED · BOTH COMPLEMENTS REMAIN VALID';
+  clearScore();
+});
+
+audioButton.onclick=async()=>{
+  audioEnabled=!audioEnabled;
+  audioButton.classList.toggle('active',audioEnabled);
+  audioButton.textContent=audioEnabled?'AUDIO · ON':'AUDIO · OFF';
+  if(audioEnabled) await ensureAudio();
+};
+
+async function ensureAudio(){
+  if(!audioEnabled)return null;
+  const AC=window.AudioContext||window.webkitAudioContext;
+  if(!AC)return null;
+  if(!audioCtx)audioCtx=new AC();
+  if(audioCtx.state==='suspended')await audioCtx.resume();
+  return audioCtx;
+}
+
+function playTone(index,source){
+  if(!audioEnabled||!audioCtx)return;
+  const now=audioCtx.currentTime;
+  const osc=audioCtx.createOscillator();
+  const overtone=audioCtx.createOscillator();
+  const gain=audioCtx.createGain();
+  const overGain=audioCtx.createGain();
+  const pan=audioCtx.createStereoPanner?audioCtx.createStereoPanner():null;
+  osc.type='sine'; overtone.type='triangle';
+  osc.frequency.value=frequencies[index];
+  overtone.frequency.value=frequencies[index]*2;
+  gain.gain.setValueAtTime(.0001,now);
+  gain.gain.exponentialRampToValueAtTime(.13,now+.025);
+  gain.gain.exponentialRampToValueAtTime(.0001,now+.31);
+  overGain.gain.setValueAtTime(.018,now);
+  overGain.gain.exponentialRampToValueAtTime(.0001,now+.24);
+  if(pan){pan.pan.value=source==='ira'?-.55:.55;gain.connect(pan);overGain.connect(pan);pan.connect(audioCtx.destination)}
+  else{gain.connect(audioCtx.destination);overGain.connect(audioCtx.destination)}
+  osc.connect(gain);overtone.connect(overGain);
+  osc.start(now);overtone.start(now);
+  osc.stop(now+.34);overtone.stop(now+.28);
+}
+
+function setStage(n,text,phase){
+  dots.forEach((d,i)=>d.classList.toggle('on',i<=n));
+  if(text)result.textContent=text;
+  if(phase)pair.dataset.phase=phase;
+}
+
+function clearMarkers(){
+  [...iraMarkers,...arkaMarkers].forEach(m=>m.classList.remove('active'));
+}
+
+function clearScore(){
+  scoreSlots.forEach(s=>s.classList.remove('filled','missing'));
+  clearMarkers();
+  pair.dataset.phase='idle';
+  dots.forEach((d,i)=>d.classList.toggle('on',i===0));
+}
+
+async function emit(index){
+  const source=index%2===0?'ira':'arka';
+  const markerIndex=Math.floor(index/2);
+  clearMarkers();
+  const marker=source==='ira'?iraMarkers[markerIndex]:arkaMarkers[markerIndex];
+  if(marker)marker.classList.add('active');
+  scoreSlots[index].classList.add('filled');
+  playTone(index,source);
+  await sleep(355);
+  clearMarkers();
+  await sleep(95);
+}
+
+async function silent(index,text){
+  clearMarkers();
+  scoreSlots[index].classList.add('missing');
+  result.textContent=text;
+  await sleep(500);
+}
+
+async function testMatching(){
+  setStage(0,'NOTE · IRA CONTRIBUTES THE FIRST ILLUSTRATIVE EVENT','note');
+  await emit(0);
+
+  setStage(1,'GAP · THE NEXT POSITION IS ABSENT ON IRA','note');
+  await sleep(430);
+
+  setStage(2,'ANSWER · ARKA OCCUPIES THE COMPLEMENTARY POSITION','answer');
+  await emit(1);
+
+  setStage(3,'INTERLOCK · OWNERSHIP ALTERNATES LEFT / RIGHT','interlock');
+  await emit(2);await emit(3);await emit(4);await emit(5);
+
+  setStage(4,'SCALE · DISTRIBUTED POSITIONS ARE BECOMING ONE ROUTE','scale');
+  await emit(6);
+
+  setStage(5,'MELODY · ARKA COMPLETES THE FINAL TARGET SLOT','melody');
+  await emit(7);
+  await sleep(450);
+
+  setStage(6,'REGISTER · CONTINUITY EXISTS ONLY ACROSS THE PAIR','registered');
+  await sleep(620);
+  setStage(7,'CONTINUE · IRA + ARKA REMAIN DISTINCT SOURCES','registered');
+}
+
+async function testOther(){
+  setStage(0,'NOTE · BOTH COMPLEMENTS BEGIN WITH VALID EVENTS','note');
+  await emit(0);
+  await emit(1);
+
+  setStage(1,'GAP · TARGET ROUTE STILL REQUIRES ALTERNATING POSITIONS','answer');
+  await emit(2);
+
+  setStage(2,'OTHER INTERLOCK · ONE TARGET POSITION REMAINS SILENT','interlock');
+  await silent(3,'SILENT SLOT · TARGET PHRASE REMAINS OPEN');
+
+  setStage(3,'INTERLOCK ATTEMPT · VALID EVENTS CONTINUE','interlock');
+  await emit(4);
+  await emit(5);
+
+  setStage(4,'SECOND SILENT SLOT · CONTINUITY DOES NOT CLOSE','other');
+  await silent(6,'SILENT SLOT · NO COMPLETE TARGET ROUTE SELECTED');
+
+  setStage(5,'OTHER INTERLOCK · FINAL VALID EVENT ARRIVES','other');
+  await emit(7);
+  await sleep(300);
+
+  setStage(6,'BOTH COMPLEMENTS REMAIN VALID','other');
+  await sleep(520);
+  setStage(7,'CONTINUE · TARGET PHRASE NOT COMPLETED','other');
+}
+
+async function test(){
+  if(busy)return;
+  busy=true;
+  clearScore();
+  await ensureAudio();
+  if(mode==='match')await testMatching();
+  else await testOther();
+  clearMarkers();
+  busy=false;
+}
+
+run.onclick=test;
+reset.onclick=()=>{
+  busy=false;
+  clearScore();
+  result.textContent='RESET · BOTH COMPLEMENTS PERSIST';
+};
+</script>
+</body>
+</html>
