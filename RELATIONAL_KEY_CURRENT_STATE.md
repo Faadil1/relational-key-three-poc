@@ -3,13 +3,11 @@
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `round13l/oceania-balance-discovery`
-Latest verified milestone: `ROUND13L2_DEEP_QUALIFICATION_FINALISTS.md`
+Latest verified milestone: `ROUND13L3_TWO_FINALIST_CONCEPT_GATE.md`
 
 ## Product invariant
 
 **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
-
-Every Cultural Edition must preserve two distinct relational objects, a visible unresolved relationship, a culturally grounded relation event, and a continuation / registration / calm resistance outcome.
 
 # CONTINENTAL BALANCE GATE
 
@@ -17,8 +15,8 @@ Current merged distribution:
 `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 1 / EUROPE 1`
 
 Balance Gate 1:
-1. `ROUND 13K` — SOUTH AMERICA #2 — **MERGED / CLOSED**
-2. `ROUND 13L` — OCEANIA #2 — **FINALIST GATE PASS / CONCEPT GATE NEXT**
+1. `ROUND 13K` — SOUTH AMERICA #2 — MERGED / CLOSED
+2. `ROUND 13L` — OCEANIA #2 — **CONCEPT PASS / WINNER SELECTED / IMPLEMENTATION NEXT**
 3. `ROUND 13M` — EUROPE #2
 
 Target after Gate 1:
@@ -27,125 +25,108 @@ Target after Gate 1:
 ## Round 13K — CLOSED
 
 Edition: **MELODY MEMORY — BOLIVIA / SIKU — INTERLOCK REGISTER**
-Law: **COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.**
+Law: `COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.`
 Proof: `IRA ≠ ARKA → ALTERNATION → ONE MELODY`
-Audit: `VISUAL+AUDIO PASS / PROMOTE`
-PR #16: `MERGED`
-Squash merge commit: `ca8851db034fac0cc60507d310b1623fb459366c`
-
-Do not reopen 13K without concrete evidence of a defect.
+PR #16: MERGED
+Merge SHA: `ca8851db034fac0cc60507d310b1623fb459366c`
 
 # ROUND 13L — OCEANIA #2
 
 ## 13L.1 — Broad Discovery
-Status: `DISCOVERY GATE PASS`
+Status: PASS
 Register: `ROUND13L1_OCEANIA_BALANCE_BROAD_DISCOVERY.md`
 Commit: `9633f07006aeeee145a528eb67455b2a370989eb`
 
-Tier A originally advanced:
-- Māori Hika Ahi
-- Aboriginal Australian Grindstones
-- Polynesian Double-Hulled Canoe
-- Pacific Tapa Beater + Anvil
-
 ## 13L.2 — Deep Qualification
+Status: FINALIST GATE PASS
+Register: `ROUND13L2_DEEP_QUALIFICATION_FINALISTS.md`
+Commit: `96b421203832af8618029a9af7c83b9049158bee`
+Finalists: Māori Hika Ahi and Polynesian Double-Hulled Canoe.
+Reserves: Aboriginal Australian Grindstones; Pacific Tapa Beater + Anvil.
+
+## 13L.3 — Two-Finalist Concept Gate
 
 Status:
-# **FINALIST GATE — PASS**
+# **PASS / WINNER SELECTED**
 
 Register:
-`ROUND13L2_DEEP_QUALIFICATION_FINALISTS.md`
+`ROUND13L3_TWO_FINALIST_CONCEPT_GATE.md`
 
 Commit:
-`96b421203832af8618029a9af7c83b9049158bee`
+`99697a137313ada569d469476dbf83d5d4eb5f39`
 
-### Finalist 1 — Aotearoa / Māori Hika Ahi
+# WINNER — AOTEAROA / MĀORI HIKA AHI
 
-Pair:
-- `HIKA` — pointed fire-making stick
-- `KAUAHI` — grooved base stick
+Promoted edition:
+**EMBER MEMORY — AOTEAROA / HIKA AHI — FRICTION REGISTER**
 
-Documented mechanism:
-back/forth friction in the groove → heat → smouldering wood dust / ember.
-
-Candidate law:
-**RECIPROCAL FRICTION RELEASES LATENT HEAT INTO EMBER.**
+Canonical law:
+**SUSTAINED FRICTION PRODUCES EMBER.**
 
 Proof:
-`HIKA ≠ KAUAHI → CONTACT → FRICTION → HEAT → EMBER`
+`HIKA ≠ KAUAHI → FRICTION → HEAT → EMBER`
 
-Strengths:
-- native two-object necessity: VERY HIGH;
-- emergent third result: VERY HIGH;
-- system novelty: VERY HIGH;
-- Other state can preserve both sticks while no target ember registers.
+Pair architecture:
+- Card A — HIKA / ACTIVE STICK
+- Card B — KAUAHI / GROOVED BASE
+- Gap — FRICTION / HEAT FIELD
 
-Risks / boundaries:
-- living Māori cultural knowledge must be sourced and named accurately;
-- no generic Indigenous decoration;
-- no exact ignition temperature, stroke speed, moisture, wood calibration or practical fire-starting instruction;
-- most Māori-specific historical imagery found so far has restrictive reuse rights, so implementation may require an original source-grounded tool rendering.
+Signature:
+`CONTACT → STROKE → TRACE → ACCUMULATE → HEAT → EMBER → REGISTER → CONTINUE`
 
-### Finalist 2 — Polynesia / Double-Hulled Canoe
+### Why Hika Ahi won
 
-Pair:
-- `HULL A`
-- `HULL B`
+- two documented tool roles interact directly;
+- neither object contains the third state beforehand;
+- ember / heat emerges at the interface;
+- removing either object destroys the selected relation;
+- interaction is highly distinct from Marshall Islands Swell and all current families;
+- Other Contact can preserve both tools without target ember registration;
+- Oceania expands beyond maritime imagery into material/energy relation.
 
-Documented mechanism:
-two parallel hulls joined by structural coupling → distributed buoyancy → stability / seaworthiness / capacity.
+Double-Hulled Canoe remains a high-quality Oceania reserve.
 
-Candidate law:
-**DISTRIBUTED BUOYANCY PRODUCES STABILITY.**
+### Safety + truthfulness boundary
 
-Proof:
-`HULL A + HULL B → JOIN → DISTRIBUTE → STABILIZE`
+The prototype is **not a fire-starting tutorial**.
 
-Strengths:
-- native two-object necessity: VERY HIGH;
-- emergent structural property: VERY HIGH;
-- strong rights path via CC BY-SA Wikimedia Commons image;
-- clear structural interaction potential.
+Never expose or claim:
+- exact stroke speed or duration;
+- wood dimensions;
+- moisture conditions;
+- ignition temperature;
+- tinder preparation procedure;
+- survival / operational fire-making guidance.
 
-Risks / boundaries:
-- maritime setting risks perceptual overlap with Marshall Islands Swell;
-- must be framed only as structural coupling / load distribution, never navigation or swell reading.
+All heat maps, stroke counts, timing and glow are editorial translations.
 
-### Reserves
+### Visual strategy
 
-**Aboriginal Australia — Grindstones**
-- law: `RECIPROCAL ABRASION TURNS WHOLE MATERIAL INTO PREPARED MATTER.`
-- strong but more triadic because processed material is necessary; cultural specificity / visual-rights burden remains.
-
-**Pacific Tapa — Beater + Anvil**
-- law: `REPEATED COMPRESSION TURNS A STRIP INTO A SURFACE.`
-- tactile and strong, but bark substrate is necessary and cross-cultural terminology / rights require more work.
+- do not copy restricted historical Māori photographs;
+- use an original source-grounded rendering of hika and kauahi tool roles;
+- no generic Māori / Indigenous ornament as identity skin;
+- identity comes from accurate naming, material relation and mechanism.
 
 ## Next required output
 
-# ROUND 13L.3 — TWO-FINALIST CONCEPT GATE
+# ROUND 13L.4 — HIKA AHI IMPLEMENTATION GATE
 
-Compare Hika Ahi vs Double-Hulled Canoe on:
-1. removing either object destroys the target relation;
-2. third result is immediately perceptible;
-3. Matching + Other can remain culturally truthful;
-4. distinctness from Swell;
-5. visual-rights feasibility;
-6. cultural meaning comes from mechanism, not decoration;
-7. portfolio interaction surprise / clarity.
+Create a dedicated implementation branch.
 
-Select exactly one winner or `NO BUILD`.
-
-No implementation before this concept gate is recorded.
+Constraints:
+1. two cards visible immediately;
+2. original source-grounded tool rendering;
+3. center reads as friction / heat accumulation;
+4. ember appears only after sustained target relation;
+5. Other Contact leaves partial trace / no ember while both tools remain valid;
+6. no red X;
+7. no practical ignition instructions or calibration;
+8. responsive pair logic;
+9. local syntax/runtime checks before deployment.
 
 ## Persistence protocol
 
-After every significant milestone:
-1. update this file;
-2. update `RELATIONAL_KEY_HANDOVER.md`;
-3. record verified branch / commit / deployment / PR identifiers;
-4. state next output explicitly;
-5. never infer an unverified pass.
+After every significant milestone update this file + `RELATIONAL_KEY_HANDOVER.md`, record verified identifiers, and state the next output explicitly.
 
-Status vocabulary remains separate:
-`RESEARCH PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL/AUDIO PASS ≠ PROMOTE ≠ MERGED`.
+Status vocabulary:
+`RESEARCH PASS ≠ CONCEPT PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL PASS ≠ PROMOTE ≠ MERGED`.
