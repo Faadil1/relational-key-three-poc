@@ -16,10 +16,10 @@ Current merged distribution:
 
 Balance Gate 1:
 - 13K — South America #2 — MERGED / CLOSED
-- 13L — Oceania #2 — IMPLEMENTED / LIVE CANDIDATE NEXT
+- 13L — Oceania #2 — **LIVE CANDIDATE / USER VISUAL AUDIT NEXT**
 - 13M — Europe #2
 
-Target after Gate 1:
+Target:
 `4 / 3 / 2 / 2 / 2 / 2`
 
 ## Last closed family — Round 13K
@@ -27,28 +27,17 @@ Target after Gate 1:
 **MELODY MEMORY — BOLIVIA / SIKU — INTERLOCK REGISTER**
 Law: `COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.`
 Proof: `IRA ≠ ARKA → ALTERNATION → ONE MELODY`
-PR #16: MERGED
+Status: `VISUAL+AUDIO PASS / PROMOTE / MERGED`
+PR #16: merged
 Merge SHA: `ca8851db034fac0cc60507d310b1623fb459366c`
+Golden-reference preview: `dpl_AgwdotABtjmYKDvnx3qoprtPEMsr`
 
-Do not reopen without a concrete defect.
+Do not reopen 13K without a concrete defect.
 
-# CURRENT ACTIVE ROUND — 13L / OCEANIA #2
+# CURRENT ACTIVE FAMILY — ROUND 13L
 
-## 13L.1 — Broad Discovery
-PASS — `ROUND13L1_OCEANIA_BALANCE_BROAD_DISCOVERY.md`
-Commit: `9633f07006aeeee145a528eb67455b2a370989eb`
+## Edition
 
-## 13L.2 — Deep Qualification
-FINALIST GATE PASS — `ROUND13L2_DEEP_QUALIFICATION_FINALISTS.md`
-Commit: `96b421203832af8618029a9af7c83b9049158bee`
-Finalists: Māori Hika Ahi; Polynesian Double-Hulled Canoe.
-Reserves: Aboriginal Grindstones; Pacific Tapa Beater + Anvil.
-
-## 13L.3 — Concept Gate
-PASS / WINNER SELECTED — `ROUND13L3_TWO_FINALIST_CONCEPT_GATE.md`
-Commit: `99697a137313ada569d469476dbf83d5d4eb5f39`
-
-Winner:
 **EMBER MEMORY — AOTEAROA / HIKA AHI — FRICTION REGISTER**
 
 Law:
@@ -58,107 +47,128 @@ Proof:
 `HIKA ≠ KAUAHI → FRICTION → HEAT → EMBER`
 
 Pair:
-- Card A — HIKA / ACTIVE STICK
-- Card B — KAUAHI / GROOVED BASE
+- Card A — HIKA / active stick
+- Card B — KAUAHI / grooved base
 - Gap — FRICTION / HEAT FIELD
 
 Signature:
 `CONTACT → STROKE → TRACE → ACCUMULATE → HEAT → EMBER → REGISTER → CONTINUE`
 
-Double-Hulled Canoe remains a high-quality Oceania reserve.
+## Verified chain
 
-## 13L.4 — Hika Ahi Implementation Gate
+13L.1 Broad Discovery — PASS
+- `ROUND13L1_OCEANIA_BALANCE_BROAD_DISCOVERY.md`
+- commit `9633f07006aeeee145a528eb67455b2a370989eb`
+
+13L.2 Deep Qualification — FINALIST GATE PASS
+- `ROUND13L2_DEEP_QUALIFICATION_FINALISTS.md`
+- commit `96b421203832af8618029a9af7c83b9049158bee`
+- finalists: Hika Ahi; Double-Hulled Canoe
+- reserves: Grindstones; Tapa Beater + Anvil
+
+13L.3 Concept Gate — PASS / HIKA AHI SELECTED
+- `ROUND13L3_TWO_FINALIST_CONCEPT_GATE.md`
+- commit `99697a137313ada569d469476dbf83d5d4eb5f39`
+- Double-Hulled Canoe remains a high-quality Oceania reserve.
+
+13L.4 Implementation — PASS LOCAL
+- branch `round13l/ember-memory-hika-ahi`
+- implementation `3b550206171e3ad5bfd7a0ad7e6f00f44748a2d7`
+- checkpoint `7c0a327f333407d2654b80b7f8c00facff85f326`
+- Draft PR #17
+
+Implementation:
+- two distinct cards visible immediately;
+- original source-grounded CSS/material tool rendering;
+- no restricted historical Māori photo copied;
+- no generic Indigenous decorative skin;
+- TARGET GROOVE builds an editorial heat trace and reveals ember only after full target relation;
+- OTHER CONTACT leaves a partial/offset trace with no ember;
+- both tools remain valid; no red X;
+- responsive pair logic;
+- JS syntax check PASS.
+
+### Critical truthfulness / safety boundary
+
+This interaction is an editorial relation model, **not practical fire-starting guidance**.
+
+Do not describe animation values as real-world speed, duration, dimensions, moisture, temperature, tinder preparation or survival technique.
+
+## 13L.5 — Dedicated Live Candidate
 
 Status:
-# **IMPLEMENTED / LOCAL STRUCTURE + SYNTAX PASS**
+# **READY / SOURCE-LIVE SYNC VERIFIED**
 
-Branch:
-`round13l/ember-memory-hika-ahi`
+Checkpoint:
+`ROUND13L5_VERCEL_PROJECT_CHECKPOINT.md`
 
-Implementation commit:
-`3b550206171e3ad5bfd7a0ad7e6f00f44748a2d7`
+Dedicated project:
+`relational-key-ember-memory-hika-v13l1`
 
-Implementation checkpoint:
-`ROUND13L4_HIKA_AHI_IMPLEMENTATION.md`
+Project ID:
+`prj_bxE1WIkaiKvyGG9vP7SrvrMxTmTj`
 
-Checkpoint commit:
-`7c0a327f333407d2654b80b7f8c00facff85f326`
+Ignore initial import:
+- deployment `dpl_3w5PoFYCKoWgs359S5unxgWTBpmT`
+- source `main` / old baseline
+- not audit evidence.
 
-Draft PR:
-**#17 — Round 13L — Ember Memory / Aotearoa Hika Ahi / Friction Register**
+Current Hika preview:
+- deployment `dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
+- URL `https://relational-key-ember-memory-hika-v13l1-89yj1dgb2.vercel.app`
+- source branch `round13l/ember-memory-hika-ahi`
+- trigger commit `4c1544cb327d57d956ef461b3d0f5fde7c5af524`
+- state `READY`
+- served HTML directly verified
+- title `RELATIONAL KEY — Hika Ahi Friction Register`
+- source/live sync VERIFIED.
 
-PR status:
-`DRAFT / DO NOT MERGE`
+## Deployment Architecture Policy — LOCKED
 
-PR head at creation:
-`7c0a327f333407d2654b80b7f8c00facff85f326`
+Per-family Vercel projects are **audit laboratories / golden references**, not final product architecture.
 
-### TARGET GROOVE
+During rounds:
+`1 family → 1 branch → 1 isolated audit deployment`
 
-- two cards are visible from first frame;
-- editorial sweeps build an interface heat trace;
-- center progresses through contact / trace / accumulation / heat;
-- ember cue appears only in the target sequence;
-- register preserves Hika and Kauahi as distinct objects.
+After validation:
+- merge source into canonical repository lineage;
+- retain isolated live only as validation/regression reference.
 
-### OTHER CONTACT
+After 13M / Balance Gate 1:
+# **COLLECTION CONSOLIDATION GATE**
 
-- trace remains offset / partial;
-- no ember registers;
-- both tools remain valid;
-- no red X / invalid-tool state.
+Build one canonical RELATIONAL KEY product + one canonical Vercel project, with validated families available as internal routes/views. Use isolated family lives as golden references when comparing the consolidated implementation.
 
-### Visual strategy
-
-- original source-grounded CSS/material rendering;
-- no restricted historical image copied;
-- no generic Māori / Indigenous decoration;
-- source grounding remains Te Papa / Te Ara / Science Museum Group.
-
-### Safety + truthfulness boundary
-
-This is not practical fire-starting guidance.
-
-Never describe the interface timing or values as real:
-- speed;
-- duration;
-- dimensions;
-- moisture;
-- temperature;
-- tinder preparation;
-- survival technique.
-
-UI timing, heat trace and ember cue are editorial only.
-
-### Local validation
-
-PASS:
-- no duplicate IDs;
-- TARGET + OTHER states;
-- ember target-only;
-- no red invalidation;
-- responsive pair logic;
-- `node --check` inline JavaScript PASS.
+Do not mistake individual Vercel projects for the final architecture.
 
 ## Immediate next task
 
-# ROUND 13L.5 — DEDICATED LIVE CANDIDATE
+# ROUND 13L.6 — USER VISUAL AUDIT
 
-Create a new dedicated Vercel project connected to `Faadil1/relational-key-three-poc`.
-Suggested name:
-`relational-key-ember-memory-hika-v13l1`
+Use:
+`https://relational-key-ember-memory-hika-v13l1-89yj1dgb2.vercel.app`
 
-Do not overwrite any existing family project.
+Record:
+1. `TARGET GROOVE → TEST RELATIONSHIP` through `CONTINUE`;
+2. `OTHER CONTACT → TEST RELATIONSHIP` through `CONTINUE`.
 
-Once it exists:
-1. identify its Vercel project ID;
-2. trigger branch preview from `round13l/ember-memory-hika-ahi`;
-3. verify `READY`;
-4. directly verify served HTML is Hika Ahi Friction Register;
-5. record deployment + source/live sync in canonical state + handover;
-6. user records `TARGET GROOVE → TEST RELATIONSHIP → CONTINUE` and `OTHER CONTACT → TEST RELATIONSHIP → CONTINUE`;
-7. audit `PASS / PATCH / REJECT`;
-8. keep PR #17 Draft until pass.
+Audit Target:
+- two cards remain distinct;
+- friction/heat accumulation is legible;
+- ember clearly emerges only because of the pair;
+- ember appears only after sustained Target relation;
+- registered state preserves both tools.
+
+Audit Other:
+- offset/partial trace remains visible;
+- no ember;
+- both tools remain valid;
+- no error-state dominance;
+- interaction still reads as editorial relation, not practical instruction.
+
+Decision: `PASS / PATCH / REJECT`.
+
+Keep PR #17 Draft until visual gate passes.
 
 ## Status vocabulary
 
@@ -166,6 +176,11 @@ Once it exists:
 
 ## Persistence protocol
 
-After every significant milestone update canonical state + this handover, record verified identifiers and state next output explicitly.
+After every significant milestone:
+1. update `RELATIONAL_KEY_CURRENT_STATE.md`;
+2. update this handover;
+3. record branch / commit / deployment / PR IDs;
+4. state next output explicitly;
+5. never infer an unverified pass.
 
-If a new conversation starts here, read canonical state + this handover, then continue directly at `ROUND 13L.5 — DEDICATED LIVE CANDIDATE`.
+If a new conversation starts here, read canonical state + this handover, then resume directly at `ROUND 13L.6 — USER VISUAL AUDIT`.
