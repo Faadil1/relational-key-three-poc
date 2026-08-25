@@ -15,7 +15,7 @@ Current 12-family distribution:
 `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 1 / OCEANIA 1 / EUROPE 1`
 
 Balance Gate 1 sequence:
-- 13K — South America #2
+- 13K — South America #2 — ACTIVE
 - 13L — Oceania #2
 - 13M — Europe #2
 
@@ -33,9 +33,6 @@ Proof:
 `LEFT ≠ RIGHT → FUSION → DEPTH`
 
 Status:
-- research PASS
-- pair-native PASS
-- depth-emergence patch PASS
 - production READY
 - user visual re-audit PASS
 - PROMOTED
@@ -49,85 +46,121 @@ Merge commit:
 
 Do not reopen 13J unless a concrete defect appears.
 
-## Current active milestone
+# ROUND 13K — SOUTH AMERICA #2
 
-# ROUND 13K.1 — SOUTH AMERICA #2 / BROAD DISCOVERY
+## Round 13K.1 — Broad Discovery
 
 Status: **PASS**
 
-Branch:
-`round13k/south-america-balance-discovery`
-
-Research register:
+Register:
 `ROUND13K1_SOUTH_AMERICA_BALANCE_BROAD_DISCOVERY.md`
 
-Discovery commit:
+Commit:
 `0b19c69d50b574d7b14c428c9b08cb39742478a1`
 
-Canonical-state update commit:
-`8b28ad710cdc42d3ea1acf373268f19e3a2485f2`
+Six mechanisms survived the anti-duplication filter.
 
-No winner has been selected.
+## Round 13K.2 — Deep Qualification
 
-### Tier A — deep qualify next
+Status: **FINALIST GATE — PASS**
 
-1. **Colombia / Pasto Varnish Mopa-Mopa**
-   - heat → stretch → layer → cut → reveal
-   - candidate law: `A LAYER BECOMES INFORMATION THROUGH WHAT IT REVEALS BENEATH IT.`
-   - strongest material/reveal candidate.
+Register:
+`ROUND13K2_DEEP_QUALIFICATION_FINALISTS.md`
 
-2. **Brazil / Pernambuco / Cobogó**
-   - screen → light → filter → projection → shadow
-   - candidate law: `PERFORATION TURNS LIGHT INTO SPATIAL INFORMATION.`
-   - strongest spatial/light candidate.
+Commit:
+`25304b3d8a8da6f05c8325b4a0ceab180aef4bfb`
 
-3. **Bolivia / Aymara Siku / Ira + Arka**
-   - complementary notes → alternation → complete scale → melody
-   - candidate law: `COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.`
-   - proof idea: `IRA ≠ ARKA → ALTERNATION → ONE MELODY`
-   - strongest literal pair-native candidate, but overlaps the collection's sound territory.
+Canonical-state update:
+`4e1e057973184958ccba3adea91d14335346ca73`
 
-4. **Argentina / Uruguay / Mate + Bombilla**
-   - infusion → filter → selective passage → flow
-   - candidate law: `SELECTIVE PASSAGE PRODUCES A CLEAN CONTINUATION.`
-   - strong two-object everyday-material candidate; needs deeper technical sourcing.
+### FINALIST A — BOLIVIA / AYMARA SIKU — IRA + ARKA
 
-### Tier B — preserve, do not prioritize yet
+Status: fully pair-native.
 
-5. **Colombia / Quimbaya Poporo + Palillo**
-   - repeated contact → deposit → accretion
-   - law: `REPEATED CONTACT LEAVES A MATERIAL MEMORY.`
-   - conceptually excellent but culturally sensitive and tied to coca use / saliva residue.
+Core relation:
+- complementary pitch sets are physically divided between two instruments;
+- two musicians alternate / hocket notes;
+- the two halves together produce one complete scale and melody;
+- neither half contains the complete scale alone.
 
-6. **Ecuador / Bahía Double-Chambered Whistling Bottle**
-   - liquid transfer → pressure → airflow → whistle
-   - law: `TRANSFER BETWEEN CHAMBERS PRODUCES VOICE.`
-   - excellent causal mechanism but both chambers are part of one vessel and it adds another sound outcome.
+Law:
+**COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.**
+
+Proof concept:
+`IRA ≠ ARKA → ALTERNATION → ONE SCALE / ONE MELODY`
+
+Key system distinction:
+- not Ombak beating;
+- not simultaneous near-unison difference;
+- proof comes from distributed notes interlocking across time.
+
+Visual strategy:
+- public-domain separated Ira / Arka image available;
+- additional reusable Bolivian performance imagery available.
+
+Truthfulness:
+- any synthesized tones are illustrative unless authentic timbre is directly sourced;
+- do not call an invented demonstration sequence a traditional melody.
+
+### FINALIST B — COLOMBIA / PASTO VARNISH MOPA-MOPA
+
+Status: material-pair native / product-pair editorial.
+
+Core relation:
+- resin is heated, colored and stretched into sheets;
+- multiple layers are applied;
+- cutting / defining an upper layer can expose or combine different color layers in the final decoration.
+
+Law:
+**A LAYER BECOMES INFORMATION THROUGH WHAT IT REVEALS BENEATH IT.**
+
+Potential sequence:
+`HEAT → STRETCH → OVERLAY → CUT → REVEAL → REGISTER → CONTINUE`
+
+Key system distinction:
+- unlike Kento, proof is layered/subtractive reveal rather than press/transfer;
+- unlike Fès, proof is not complementary physical fit.
+
+Visual strategy:
+- usable Pasto varnish imagery exists under CC BY-SA / similar Creative Commons terms.
+
+Truthfulness:
+- the two-card product is an editorial translation of the documented layering process;
+- do not imply artisans historically used cards;
+- do not label an invented cut path as an authenticated historical motif.
+
+### Reserves
+
+1. Brazil / Cobogó — exceptional visual projection mechanism, but triadic screen × light × receiving field.
+2. Argentina / Uruguay / Mate + Bombilla — strong physical pair, but filter proof depends on yerba / infusion.
 
 ## Immediate next task
 
-# ROUND 13K.2 — DEEP QUALIFICATION
+# ROUND 13K.3 — TWO-FINALIST CONCEPT GATE
 
-Deep-qualify Tier A only. Do not build yet.
+Do not implement before this gate closes.
 
-For each Tier A candidate:
-1. verify the exact mechanism with authoritative sources;
-2. locate real visual material and record usage rights;
-3. test whether two separate relational objects are native or editorially constructed;
-4. define the smallest truthful two-card translation;
-5. compare against existing system mechanisms;
-6. score interaction legibility and novelty;
-7. select at most two finalists.
+For BOTH Siku and Pasto define:
+1. Card A;
+2. Card B;
+3. relationship field;
+4. signature sequence;
+5. matching proof;
+6. Other / mismatch semantics;
+7. visual-source treatment;
+8. truthfulness boundary;
+9. interaction storyboard;
+10. direct comparison.
 
-No implementation until this finalist gate is recorded.
+Then select **one winner**.
 
 ## Existing mechanism territories to avoid duplicating
 
 - City — interrupted path / exact registration
 - Benin Service — service storyboard / switch register
-- Nigeria Signal — infrastructure / relay alignment
+- Nigeria Signal — relay alignment
 - Frida — archive/credential seam
-- Toyama Food — physical edible transformation
+- Toyama Food — edible physical transformation
 - Asante / Bonwire — woven strip relation
 - Fès — cut-tile material fit / tessellation
 - Peru Khipu — cord tension / knot structural record
@@ -136,37 +169,16 @@ No implementation until this finalist gate is recorded.
 - Marshall Islands Swell — environmental wave deflection / orientation
 - UK Stereoscopy — controlled optical disparity / depth
 
-## Non-negotiable selection rule
-
-Evaluate every new family across:
-
-`GEOGRAPHY × MATERIAL × RELATIONAL MECHANISM × MEMORY TYPE × INTERACTION`
-
-Do not create cultural skins around an existing interaction.
-
-Preferred causal chain:
-
-`REAL PAIR-NATIVE MECHANISM → SOURCE GROUNDING → DISTINCT RELATIONAL LAW → REAL VISUAL MATERIAL → INTERACTION → USER VISUAL GATE`
-
-## Truthfulness rules
-
-- Distinguish historical/cultural fact from editorial interface translation.
-- Do not claim exact decoding, calibration, measurement or historical UI when the prototype is illustrative.
-- Prefer real-source visual material where possible.
-- A mismatch should normally preserve object validity unless the underlying source mechanism truly implies invalidity.
-
-## Status vocabulary
-
-Keep separate:
-`RESEARCH PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL PASS ≠ PROMOTE ≠ MERGED`
-
 ## Persistence protocol
 
 After every significant milestone:
 1. update `RELATIONAL_KEY_CURRENT_STATE.md`;
 2. update this handover;
-3. include branch / commit / deployment / PR identifiers when verified;
+3. record verified branch / commit / deployment / PR IDs;
 4. state the next required output explicitly;
-5. never infer a pass that has not been directly verified.
+5. never infer an unverified pass.
 
-If a future conversation starts here, read `RELATIONAL_KEY_CURRENT_STATE.md`, then this file, then continue directly with `ROUND 13K.2 — DEEP QUALIFICATION`.
+Keep status vocabulary separate:
+`RESEARCH PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL PASS ≠ PROMOTE ≠ MERGED`.
+
+If a new conversation starts here, read `RELATIONAL_KEY_CURRENT_STATE.md`, then this file, then continue directly with `ROUND 13K.3 — TWO-FINALIST CONCEPT GATE`.
