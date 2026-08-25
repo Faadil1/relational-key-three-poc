@@ -2,8 +2,8 @@
 
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
-Canonical working branch: `round13m/europe-balance-discovery`
-Latest verified milestone: `ROUND13M3_TWO_FINALIST_CONCEPT_GATE.md`
+Canonical working branch: `round13m/complement-memory-boulle`
+Latest verified milestone: `ROUND13M4_BOULLE_IMPLEMENTATION.md`
 
 ## Product invariant
 
@@ -17,7 +17,7 @@ Current merged distribution:
 Balance Gate 1:
 1. 13K — South America #2 — `MERGED / CLOSED`
 2. 13L — Oceania #2 — `MERGED / CLOSED`
-3. 13M — Europe #2 — `CONCEPT PASS / BOULLE SELECTED / IMPLEMENTATION NEXT`
+3. 13M — Europe #2 — `IMPLEMENTED / LOCAL PASS / LIVE CANDIDATE NEXT`
 
 Target after Gate 1:
 `4 / 3 / 2 / 2 / 2 / 2`
@@ -35,118 +35,89 @@ Golden reference: `dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
 
 # ROUND 13M — EUROPE #2
 
-## 13M.1 — Broad Discovery
-Status: PASS
-Register: `ROUND13M1_EUROPE_BALANCE_BROAD_DISCOVERY.md`
-Commit: `6e16915b7b9ef8d4c27381d1ab1550e7093fbca2`
+13M.1 Broad Discovery — PASS
+- `ROUND13M1_EUROPE_BALANCE_BROAD_DISCOVERY.md`
+- `6e16915b7b9ef8d4c27381d1ab1550e7093fbca2`
 
-Tier A explored:
-- France — Boulle partie / contrepartie
-- Venice — Reticello opposing spiral layers
-- Finland — Löyly
+13M.2 Deep Qualification — FINALIST PASS
+- `ROUND13M2_DEEP_QUALIFICATION_FINALISTS.md`
+- `6206e33ea3c202edb77b6a7924ac7d5e7909d0fb`
+- finalists: Boulle / Reticello
 
-## 13M.2 — Deep Qualification
-Status: `FINALIST GATE PASS`
-Register: `ROUND13M2_DEEP_QUALIFICATION_FINALISTS.md`
-Commit: `6206e33ea3c202edb77b6a7924ac7d5e7909d0fb`
+13M.3 Concept Gate — PASS / BOULLE SELECTED
+- `ROUND13M3_TWO_FINALIST_CONCEPT_GATE.md`
+- `b6faf0a188d241ffe4408b076ac0df42a72a7c2d`
 
-Finalists:
-1. France — Boulle
-2. Venice — Reticello
+# COMPLEMENT MEMORY — FRANCE / BOULLE — RECIPROCAL CUT REGISTER
 
-Löyly disposition:
-`HIGH-QUALITY RESERVE / ASYMMETRIC PAIR`
-
-## 13M.3 — Concept Gate
-
-Status:
-# **PASS / BOULLE SELECTED**
-
-Register:
-`ROUND13M3_TWO_FINALIST_CONCEPT_GATE.md`
-
-Commit:
-`b6faf0a188d241ffe4408b076ac0df42a72a7c2d`
-
-# WINNER — COMPLEMENT MEMORY / FRANCE / BOULLE / RECIPROCAL CUT REGISTER
-
-Canonical law:
-# **ONE SHARED CUT PRODUCES TWO COMPLEMENTARY INVERSES.**
+Law:
+**ONE SHARED CUT PRODUCES TWO COMPLEMENTARY INVERSES.**
 
 Proof:
 `SHEET A ≠ SHEET B → STACK → SHARED CUT → SEPARATE → EXCHANGE → PARTIE ↔ CONTREPARTIE`
 
-Pair architecture:
-- Card A — `PARTIE / DARK GROUND + LIGHT INLAY`
-- Card B — `CONTREPARTIE / LIGHT GROUND + DARK INLAY`
-- Gap — `SHARED CUT / RECIPROCAL EXCHANGE FIELD`
+Pair:
+- Card A — PARTIE / dark ground + light inlay
+- Card B — CONTREPARTIE / light ground + dark inlay
+- Gap — SHARED CUT / RECIPROCAL EXCHANGE FIELD
 
 Signature:
 `ALIGN → STACK → CUT → SEPARATE → EXCHANGE → INVERT → REGISTER → CONTINUE`
 
-### Why Boulle won
+## 13M.4 — Implementation Gate
 
-- the shared event creates two reciprocal finished outcomes;
-- both objects remain equally meaningful after registration;
-- removing either material destroys the partie ↔ contrepartie relation;
-- the reciprocal inversion is documented in the historical fabrication logic, not invented by the UI;
-- mechanism is distinct from Fès fit, Kento print registration and Stereoscopy depth fusion.
+Status:
+# **IMPLEMENTED / LOCAL STRUCTURE + SYNTAX PASS**
 
-Reticello remains a high-quality Europe reserve.
+Implementation branch:
+`round13m/complement-memory-boulle`
 
-### Matching concept
+Implementation commit:
+`d9067507c1db464a97defdbdd63346b9d82a3a29`
 
-`SHARED CUT`
-- two different editorial material fields align;
-- one cut path appears across both;
-- fragments separate;
-- reciprocal exchange occurs;
-- Card A and B become material inverses;
-- both remain distinct;
-- reciprocity registers.
+Register:
+`ROUND13M4_BOULLE_IMPLEMENTATION.md`
 
-### Other concept
+Implementation properties:
+- two cards visible immediately as different material fields;
+- original vector motif, not copied Baroque ornament;
+- SHARED CUT resolves one identical editorial path across both;
+- separation + exchange fills the same region with opposite material roles;
+- registered PARTIE and CONTREPARTIE remain distinct material inverses, not identical cards;
+- OTHER CUT uses offset/non-shared paths and never shows reciprocal inlay exchange;
+- both fields remain valid; no red invalidation;
+- historical tortoiseshell is evidence only; no wildlife material is used or recommended;
+- no exact cutting dimensions/tools/modern fabrication recipe claimed;
+- responsive pair logic;
+- duplicate DOM IDs none;
+- inline JS `node --check` PASS.
 
-`OTHER CUT`
-- both material fields remain valid;
-- cut paths do not derive from one shared reciprocal map;
-- no complete inverse exchange registers;
-- no red invalidation.
-
-### Ethical / wildlife-material boundary
-
-Historical Boulle work often used tortoiseshell. Implementation must:
-- treat it as historical evidence only;
-- use simulated/abstract editorial material fields;
-- never recommend wildlife material procurement/use;
-- never claim a modern material reconstruction or exact fabrication recipe.
+Reticello remains the high-quality Europe reserve.
 
 ## Next required output
 
-# ROUND 13M.4 — BOULLE IMPLEMENTATION GATE
+# ROUND 13M.5 — DEDICATED VERCEL LIVE CANDIDATE
 
-Create a dedicated implementation branch and build the reciprocal cut interaction.
+Suggested project:
+`relational-key-complement-memory-boulle-v13m1`
 
-Requirements:
-1. two cards visible immediately;
-2. different material fields;
-3. one shared editorial cut path in Matching;
-4. reciprocal exchange becomes visually undeniable;
-5. both cards remain distinct after registration;
-6. Other Cut = non-shared paths / no complete reciprocity;
-7. no red invalidation;
-8. original vector/material rendering, not decorative Baroque skin;
-9. no wildlife material use/recommendation;
-10. local structure + JS syntax checks before deployment.
+Required:
+1. dedicated project connected to `Faadil1/relational-key-three-poc`;
+2. preview from `round13m/complement-memory-boulle`;
+3. `READY` verification;
+4. direct served-HTML verification;
+5. user visual audit of SHARED CUT + OTHER CUT;
+6. decide `PASS / PATCH / REJECT`;
+7. no merge before visual pass.
 
 # DEPLOYMENT ARCHITECTURE POLICY — LOCKED
 
-Individual family Vercel projects remain audit labs / golden references only.
+Per-family projects are audit labs / golden references only.
 After 13M merge: **COLLECTION CONSOLIDATION GATE** → one canonical RELATIONAL KEY product + one canonical Vercel project.
 
 ## Persistence protocol
 
-After every milestone update this file + `RELATIONAL_KEY_HANDOVER.md`, record verified identifiers and state the next output explicitly.
+After every milestone update this file + `RELATIONAL_KEY_HANDOVER.md`, record identifiers and state next output explicitly.
 
 Status vocabulary:
 `RESEARCH PASS ≠ CONCEPT PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL PASS ≠ PROMOTE ≠ MERGED`.
