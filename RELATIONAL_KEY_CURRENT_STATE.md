@@ -3,8 +3,8 @@
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `round13k/south-america-balance-discovery`
-Latest verified research milestone: `ROUND13K2_DEEP_QUALIFICATION_FINALISTS.md`
-Finalist-gate commit: `25304b3d8a8da6f05c8325b4a0ceab180aef4bfb`
+Latest verified milestone: `ROUND13K3_TWO_FINALIST_CONCEPT_GATE.md`
+Concept-gate commit: `2d352f88f5a8a2d2f918c3786fb41f9f5d1c5757`
 
 ## Product invariant
 
@@ -18,9 +18,7 @@ The cultural mechanism must live inside the pair rather than replacing the pair 
 
 # CONTINENTAL BALANCE GATE
 
-The Continental Diversity Gate is complete: all six inhabited continents are represented.
-
-The collection is now being balanced geographically while increasing relational, material and interaction diversity.
+The six-continent diversity milestone is complete. The collection is now being balanced geographically while increasing relational, material and interaction diversity.
 
 ## Current 12-family distribution
 
@@ -37,8 +35,8 @@ Distribution: `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 1 / OCEANIA 1
 
 ## Balance roadmap
 
-### Balance Gate 1 — minimum 2 families per continent
-1. `ROUND 13K` — SOUTH AMERICA #2 — ACTIVE
+### Balance Gate 1
+1. `ROUND 13K` — SOUTH AMERICA #2 — WINNER SELECTED / IMPLEMENTATION NEXT
 2. `ROUND 13L` — OCEANIA #2
 3. `ROUND 13M` — EUROPE #2
 
@@ -54,16 +52,12 @@ Target after Gate 1:
 Target:
 `4 / 3 / 3 / 3 / 3 / 3`
 
-A later Gate 3 may move toward four families per continent only when each new family adds genuine system value.
-
 ## Selection law
 
 Evaluate every candidate across:
-
 `GEOGRAPHY × MATERIAL × RELATIONAL MECHANISM × MEMORY TYPE × INTERACTION`
 
 Preferred causal chain:
-
 `REAL PAIR-NATIVE MECHANISM → SOURCE GROUNDING → DISTINCT RELATIONAL LAW → REAL VISUAL MATERIAL → INTERACTION → USER VISUAL GATE`
 
 Do not rebalance continents by creating cultural skins around existing interactions.
@@ -71,150 +65,144 @@ Do not rebalance continents by creating cultural skins around existing interacti
 ## Last closed build milestone — Round 13J
 
 Edition: **DEPTH MEMORY — UNITED KINGDOM / STEREOSCOPY — BINOCULAR REGISTER**
-
 Law: **CONTROLLED DISPARITY PRODUCES DEPTH.**
-
-Proof:
-`LEFT ≠ RIGHT → FUSION → DEPTH`
-
+Proof: `LEFT ≠ RIGHT → FUSION → DEPTH`
 Status: `VISUAL PASS / PROMOTE / MERGED`
 Production deployment: `dpl_4qQoTiev64vzU7tRLXmrYxtbrHjY`
 PR #15: merged
 Squash merge commit: `54806b281f411f82c4c6f2fdc94919b8aa5f275d`
 
-Round 13J is closed. Do not reopen without a concrete defect.
+Round 13J is closed.
 
 # ROUND 13K — SOUTH AMERICA #2
 
 ## Round 13K.1 — Broad Discovery
-
-Status: **DISCOVERY GATE — PASS**
-
-Research register:
-`ROUND13K1_SOUTH_AMERICA_BALANCE_BROAD_DISCOVERY.md`
-
-Discovery commit:
-`0b19c69d50b574d7b14c428c9b08cb39742478a1`
+Status: **PASS**
+Register: `ROUND13K1_SOUTH_AMERICA_BALANCE_BROAD_DISCOVERY.md`
+Commit: `0b19c69d50b574d7b14c428c9b08cb39742478a1`
 
 Six credible mechanisms survived the initial anti-duplication filter.
 
-Tier A entering deep qualification:
-- Colombia / Pasto Varnish Mopa-Mopa
-- Brazil / Pernambuco / Cobogó
-- Bolivia / Aymara Siku / Ira + Arka
+## Round 13K.2 — Deep Qualification
+Status: **FINALIST GATE — PASS**
+Register: `ROUND13K2_DEEP_QUALIFICATION_FINALISTS.md`
+Commit: `25304b3d8a8da6f05c8325b4a0ceab180aef4bfb`
+
+Finalists:
+1. Bolivia / Siku — Ira + Arka
+2. Colombia / Pasto Varnish Mopa-Mopa
+
+Reserves:
+- Brazil / Cobogó
 - Argentina / Uruguay / Mate + Bombilla
 
-Tier B preserved:
-- Colombia / Quimbaya Poporo + Palillo
-- Ecuador / Bahía Double-Chambered Whistling Bottle
+## Round 13K.3 — Two-Finalist Concept Gate
 
-## Round 13K.2 — Deep Qualification
+Status: **CONCEPT GATE — PASS / WINNER SELECTED**
 
-Status: **FINALIST GATE — PASS**
-
-Research register:
-`ROUND13K2_DEEP_QUALIFICATION_FINALISTS.md`
+Register:
+`ROUND13K3_TWO_FINALIST_CONCEPT_GATE.md`
 
 Commit:
-`25304b3d8a8da6f05c8325b4a0ceab180aef4bfb`
+`2d352f88f5a8a2d2f918c3786fb41f9f5d1c5757`
 
-### FINALIST A — BOLIVIA / AYMARA SIKU — IRA + ARKA
+# WINNER — BOLIVIA / SIKU — IRA + ARKA
 
-Native pair status: **FULLY PAIR-NATIVE**.
+Promoted edition:
 
-Verified relation:
-- the scale is distributed between two complementary pipe rows;
-- the two separate instruments are played by separate musicians;
-- alternating / hocketed notes combine into one scale and melody;
-- neither half contains the complete scale alone.
+**MELODY MEMORY — BOLIVIA / SIKU — INTERLOCK REGISTER**
 
-Core law:
-**COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.**
+Canonical law:
 
-Proof concept:
-`IRA ≠ ARKA → ALTERNATION → ONE SCALE / ONE MELODY`
+# **COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.**
 
-Key distinction from Ombak:
-- Ombak = simultaneous near-unison difference → beat / resonance;
-- Siku = distributed non-overlapping notes → alternation → complete melody.
+Canonical proof:
 
-Visual-source position:
-- public-domain separated Ira / Arka visual is available;
-- additional reusable Bolivian performance imagery exists.
+# `IRA ≠ ARKA → ALTERNATION → ONE MELODY`
 
-Truthfulness boundary:
-- synthesized tones may be illustrative only;
-- do not claim authentic instrument timbre or an authenticated traditional melody without direct sourcing.
+### Why Siku won
 
-### FINALIST B — COLOMBIA / PASTO VARNISH MOPA-MOPA
+- the two complementary halves are separate physical objects natively rather than an editorial split;
+- neither half contains the complete scale alone;
+- alternating / hocketed contribution creates one continuous scale and melody;
+- removal of either half destroys the documented relational outcome;
+- the relation is distinct from Ombak: distributed alternating notes, not simultaneous near-unison beating;
+- mismatch can preserve both instruments while an editorial target sequence remains incomplete;
+- a public-domain visual anchor shows the separated pair.
 
-Native pair status: **MATERIAL-PAIR NATIVE / PRODUCT-PAIR EDITORIAL**.
+### Proposed pair architecture
 
-Verified relation:
-- mopa-mopa resin is heated, pigmented and stretched into thin sheets;
-- layers are applied to a receiving object;
-- cutting / defining the upper material allows multiple color layers to form the finished decoration.
+**CARD A — IRA / COMPLEMENT A**
 
-Core law:
-**A LAYER BECOMES INFORMATION THROUGH WHAT IT REVEALS BENEATH IT.**
+**CARD B — ARKA / COMPLEMENT B**
 
-Potential causal chain:
-`HEAT → STRETCH → OVERLAY → CUT → REVEAL → REGISTER → CONTINUE`
+**GAP — MELODY INTERLOCK FIELD**
 
-Key distinction from Kento:
-- Kento = block + paper → alignment → press → transfer;
-- Pasto = layer + underlayer → overlay → cut → reveal.
+Signature:
 
-Visual-source position:
-- usable Pasto varnish imagery exists under Creative Commons attribution/share-alike licenses.
+`NOTE → GAP → ANSWER → INTERLOCK → SCALE → MELODY → REGISTER → CONTINUE`
 
-Truthfulness boundary:
-- two physical RELATIONAL KEY cards are an editorial translation, not a historical claim;
-- do not present an invented cut pattern as an authenticated historical motif.
+Matching proof:
+- IRA contributes one note position;
+- a missing next position remains visibly absent;
+- ARKA supplies the complementary position;
+- alternating left/right events progressively fill a central score route;
+- only after both halves contribute does the route become continuous;
+- source ownership remains visible after registration.
 
-### Reserves
+Other state:
+**OTHER INTERLOCK**
+- both cards remain valid;
+- selected editorial note slots leave silent positions in the central route;
+- no red X;
+- result does not claim a historical instrument is invalid.
 
-**Reserve #1 — Brazil / Cobogó**
-Strong projection/occlusion law but semi-pair-native because incident light is a third causal input.
+Audio truthfulness:
+- browser synthesis is illustrative only;
+- no claim of authentic siku timbre;
+- no claim that the demonstration phrase is a traditional melody unless directly sourced;
+- notes should alternate without overlapping near-unison beating.
 
-**Reserve #2 — Argentina / Uruguay / Mate + Bombilla**
-Strong functional object pair but the visible filtering proof depends on a third material field: yerba / infusion.
+Visual truthfulness:
+- use real-source separated Ira / Arka imagery;
+- avoid generic Andean ornamental styling as the identity system;
+- editorial note markers and score route must be labeled as illustrative translation.
 
-## Finalist decision
+## Pasto Varnish status
 
-Advance exactly two to the concept gate:
+**HIGH-QUALITY RESERVE / NOT SELECTED FOR 13K.**
 
-1. **Siku Ira + Arka** — strongest native relational purity.
-2. **Pasto Varnish Mopa-Mopa** — strongest material novelty and strongest non-sound alternative.
+Preserve for a later South America balancing round or future Layer Memory exploration.
 
-**NO IMPLEMENTATION YET.**
+Reason for second place:
+- excellent material novelty and cut/reveal law;
+- but the historical process is layered on a receiving object and the two-card product split would be more editorial than Siku.
 
 ## Next required output
 
-# ROUND 13K.3 — TWO-FINALIST CONCEPT GATE
+# ROUND 13K.4 — SIKU IMPLEMENTATION GATE
 
-For each finalist define:
-1. Card A role;
-2. Card B role;
-3. gap / relationship field;
-4. signature interaction sequence;
-5. matching proof state;
-6. other / mismatch semantics;
-7. visual-source strategy;
-8. truthfulness boundary;
-9. static wireframe / interaction storyboard in words;
-10. explicit finalist-vs-finalist comparison.
+Create a dedicated implementation branch from this verified concept state.
 
-The gate must select **one winner** for implementation.
+Constraints:
+1. two relational cards visible from first frame;
+2. real-source separated Ira / Arka material;
+3. center reads as temporal interlock, never waveform/resonance;
+4. matching alternates source ownership left/right;
+5. melodic continuity appears only after both halves contribute;
+6. illustrative audio is non-overlapping and truthfully labeled;
+7. Other Interlock leaves visible silent positions and preserves both objects;
+8. no red invalidation;
+9. responsive layout preserves pair logic;
+10. local runtime/syntax checks before deployment.
 
-## Canonical-state protocol
+`CONCEPT PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL PASS`.
+
+## Persistence protocol
 
 After every significant milestone:
-1. update this file as the single canonical current state;
+1. update this file;
 2. update `RELATIONAL_KEY_HANDOVER.md`;
-3. include branch / commit / deployment / PR identifiers when verified;
+3. record verified branch / commit / deployment / PR identifiers;
 4. state the next required output explicitly;
-5. never infer a pass that has not been directly verified.
-
-Keep status vocabulary separate:
-`RESEARCH PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL PASS ≠ PROMOTE ≠ MERGED`.
+5. never infer an unverified pass.
