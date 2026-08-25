@@ -1,7 +1,7 @@
 {
-  "schema_version": "1.1",
+  "schema_version": "1.2",
   "collection": "RELATIONAL KEY",
-  "phase": "COLLECTION_CONSOLIDATION_GATE_C2_SOURCE_CAPTURE",
+  "phase": "COLLECTION_CONSOLIDATION_GATE_C3_LIVE_PREVIEW",
   "distribution": {
     "Africa": 4,
     "Asia": 3,
