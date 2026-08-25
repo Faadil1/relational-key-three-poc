@@ -2,169 +2,118 @@
 
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
-Canonical working branch: `round13m/complement-memory-boulle`
-Latest verified milestone: `ROUND13M6_USER_VISUAL_AUDIT_PASS.md`
-Visual-audit checkpoint: `9e5ab35422978f0773bd613400412dc0c2da424a`
+Canonical working branch: `collection/consolidation-gate-1`
+Latest verified milestone: `COLLECTION_CONSOLIDATION_C1_INVENTORY_ARCHITECTURE.md`
 
 ## Product invariant
 
-**THE RELATIONAL PAIR REMAINS THE PRODUCT.**
+# **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
-# CONTINENTAL BALANCE GATE
+## Continental Balance Gate 1 — CLOSED
 
-Current merged distribution:
-`AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 1`
+Round 13K — South America #2 — MERGED / CLOSED
+- Siku / Interlock Register
+- merge: `ca8851db034fac0cc60507d310b1623fb459366c`
 
-Balance Gate 1:
-1. 13K — South America #2 — `MERGED / CLOSED`
-2. 13L — Oceania #2 — `MERGED / CLOSED`
-3. 13M — Europe #2 — `VISUAL PASS / PROMOTE / MERGE APPROVAL NEXT`
+Round 13L — Oceania #2 — MERGED / CLOSED
+- Hika Ahi / Friction Register
+- merge: `2e9cf84a11b2f5c08a7cf974b1f9b9530be88a4b`
 
-Target after 13M merge:
-`AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
+Round 13M — Europe #2 — MERGED / CLOSED
+- Boulle / Reciprocal Cut Register
+- merge: `540923b02a8b8c8490809a8c381d9e9bfee29d99`
 
-After 13M merges, stop family expansion and begin the **COLLECTION CONSOLIDATION GATE**.
+Final Gate 1 distribution:
+# `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-## Last closed family — Round 13L
+Family expansion is paused.
 
-**EMBER MEMORY — AOTEAROA / HIKA AHI — FRICTION REGISTER**
-PR #17: `MERGED`
-Merge SHA: `2e9cf84a11b2f5c08a7cf974b1f9b9530be88a4b`
-Golden reference: `dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
+# ACTIVE PHASE — COLLECTION CONSOLIDATION GATE
 
-# ROUND 13M — EUROPE #2
+Branch:
+`collection/consolidation-gate-1`
 
-## Verified chain
+C1 register:
+`COLLECTION_CONSOLIDATION_C1_INVENTORY_ARCHITECTURE.md`
 
-13M.1 Broad Discovery — PASS
-- `ROUND13M1_EUROPE_BALANCE_BROAD_DISCOVERY.md`
-- `6e16915b7b9ef8d4c27381d1ab1550e7093fbca2`
+Machine-readable registry:
+`collection/families.json`
 
-13M.2 Deep Qualification — FINALIST PASS
-- `ROUND13M2_DEEP_QUALIFICATION_FINALISTS.md`
-- `6206e33ea3c202edb77b6a7924ac7d5e7909d0fb`
-- finalists: Boulle / Reticello
-
-13M.3 Concept Gate — PASS / BOULLE SELECTED
-- `ROUND13M3_TWO_FINALIST_CONCEPT_GATE.md`
-- `b6faf0a188d241ffe4408b076ac0df42a72a7c2d`
-
-## Active edition
-
-**COMPLEMENT MEMORY — FRANCE / BOULLE — RECIPROCAL CUT REGISTER**
-
-Law:
-**ONE SHARED CUT PRODUCES TWO COMPLEMENTARY INVERSES.**
-
-Proof:
-`SHEET A ≠ SHEET B → STACK → SHARED CUT → SEPARATE → EXCHANGE → PARTIE ↔ CONTREPARTIE`
-
-Pair:
-- Card A — PARTIE / dark ground + light inlay
-- Card B — CONTREPARTIE / light ground + dark inlay
-- Gap — SHARED CUT / RECIPROCAL EXCHANGE FIELD
-
-Signature:
-`ALIGN → STACK → CUT → SEPARATE → EXCHANGE → INVERT → REGISTER → CONTINUE`
-
-## 13M.4 — Implementation Gate
-
-Status: `IMPLEMENTED / LOCAL PASS`
-Branch: `round13m/complement-memory-boulle`
-Implementation commit: `d9067507c1db464a97defdbdd63346b9d82a3a29`
-Register: `ROUND13M4_BOULLE_IMPLEMENTATION.md`
-Draft PR: #18
-
-Verified:
-- two distinct cards visible immediately;
-- shared target path across both material fields;
-- reciprocal inverse fills appear only on target relation;
-- OTHER CUT remains non-shared and non-invalidating;
-- original vector/material simulation;
-- historical tortoiseshell = evidence only;
-- no wildlife material used/recommended;
-- local JS syntax + structure checks PASS.
-
-## 13M.5 — Dedicated Live Candidate
-
-Status: `READY / SOURCE-LIVE SYNC VERIFIED`
-Project: `relational-key-complement-memory-boulle-v13m1`
-Project ID: `prj_1u0bwUIMeY1fB9trbA4sccHfRKAb`
-
-Ignore initial `main` deployment:
-`dpl_DApvk97q8BShPgeL4v94y77KxrBW`
-
-Verified branch preview family:
-`round13m/complement-memory-boulle`
-
-Exact latest audited-head preview before audit:
-`dpl_EK1wW4peLBk1f9KHg4T6nerJ4jFy`
-
-Source/live content verified as `RELATIONAL KEY — Boulle Reciprocal Cut Register`.
-
-## 13M.6 — User Visual Audit
+## C1 verdict
 
 Status:
-# **VISUAL PASS / PROMOTE**
+# **INVENTORY + ARCHITECTURE FREEZE — PASS**
 
-Register:
-`ROUND13M6_USER_VISUAL_AUDIT_PASS.md`
+The collection contains 15 family slots.
 
-Checkpoint:
-`9e5ab35422978f0773bd613400412dc0c2da424a`
+Validation ledger:
+- **14 families have documented user visual / visual+audio gates**;
+- **1 family — Japan / Kento Register — is READY but still lacks a documented user visual audit**.
 
-User evidence:
-- ~25.93 s
-- 1908×962
-- 30 fps
-- includes SHARED CUT and OTHER CUT through completion.
+Kento source evidence:
+`ROUND13G2_KENTO_REGISTER_IMPLEMENTATION.md` explicitly states `IMPLEMENTED / LIVE VISUAL AUDIT REQUIRED`.
 
-SHARED CUT verified:
-- same contour resolves on both cards;
-- shared center division is visible;
-- separation occurs before reciprocal result;
-- opposite material fills appear in the same vector region;
-- PARTIE and CONTREPARTIE become complementary inverses, not copies;
-- pair remains the product.
+Kento golden live:
+`dpl_J74TMsqZS2uSWv8PuhLVGPfQfBev`
 
-OTHER CUT verified:
-- paths remain partial/offset;
-- no reciprocal fills emerge;
-- no complete inversion registers;
-- both fields remain valid;
-- no error-dominant invalidation.
+Therefore do not call Kento PROMOTED until that visual gate is closed.
 
-No blocking patch required.
+## Consolidation architecture — LOCKED
 
-## Next required output
+1. Capture each family as an immutable source snapshot first.
+2. Store family routes under `/families/<slug>/index.html`.
+3. Do not normalize or rewrite family CSS / mechanism during import.
+4. Maintain one registry at `/collection/families.json`.
+5. Build one root collection shell after snapshots are captured.
+6. Collection shell may normalize navigation / metadata / framing, but must not replace family-native mechanisms with one generic resolver.
+7. Keep existing family Vercel deployments as golden regression references.
+8. Final output becomes one canonical RELATIONAL KEY product + one canonical Vercel project.
 
-# ROUND 13M.7 — MERGE GATE
+## Source topology discovered
 
-On explicit user approval:
-1. verify PR #18 head;
-2. mark Ready if Draft;
-3. squash merge with expected head SHA;
-4. record merge SHA;
-5. close Round 13M;
-6. update merged distribution to `4 / 3 / 2 / 2 / 2 / 2`;
-7. declare Balance Gate 1 complete;
-8. begin **COLLECTION CONSOLIDATION GATE**.
+Not all validated families exist in the current base `index.html`.
 
-PR #18 remains `DRAFT / DO NOT MERGE` until explicit approval.
+Six restored families live in:
+`round13r/relational-pair-restoration`
 
-# DEPLOYMENT ARCHITECTURE POLICY — LOCKED
+Additional validated family sources remain on dedicated branches:
+- `round13e/craft-memory-zellige`
+- `round13f/record-memory-khipu`
+- `round13h/sound-memory-ombak`
+- `round13i/navigation-memory-marshall`
 
-Per-family Vercel projects are audit laboratories / golden references only.
-After 13M merge: build one canonical RELATIONAL KEY product + one canonical Vercel project, retaining isolated family lives for regression comparison.
+Kento candidate source:
+- `round13g/print-memory-kento`
+
+Merged later-family sources:
+- `round13j/depth-memory-stereoscopy`
+- `round13k/melody-memory-siku`
+- `round13l/ember-memory-hika-ahi`
+- `round13m/complement-memory-boulle`
+
+This means consolidation must be a deliberate source capture, not a simple refactor of the current `index.html`.
+
+## Immediate next output
+
+# **C2 — SOURCE CAPTURE & SNAPSHOT IMPORT**
+
+Before final collection promotion:
+1. close the missing Kento user visual gate, or retain it explicitly as candidate-only;
+2. capture each validated family from its canonical source branch;
+3. write immutable snapshots to `/families/<slug>/index.html`;
+4. verify all direct routes;
+5. compare imports against golden deployments;
+6. no global refinement yet;
+7. update canonical state + handover.
+
+Status vocabulary:
+`SOURCE CAPTURE ≠ COLLECTION SHELL ≠ GLOBAL REFINEMENT ≠ FINAL COLLECTION PASS`.
 
 ## Persistence protocol
 
 After every significant milestone:
 1. update this file;
 2. update `RELATIONAL_KEY_HANDOVER.md`;
-3. record verified identifiers;
+3. record source branch / commit / deployment / route identifiers;
 4. state next output explicitly;
 5. never infer an unverified pass.
-
-Status vocabulary:
-`RESEARCH PASS ≠ CONCEPT PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL PASS ≠ PROMOTE ≠ MERGED`.
