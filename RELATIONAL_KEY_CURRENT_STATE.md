@@ -5,22 +5,20 @@ Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
 Global Refinement PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `GLOBAL_REFINEMENT_G0_BASELINE.md`
+Latest verified milestone: `GLOBAL_REFINEMENT_G1_NAVIGATION_FRAME.md`
 
 ## Product invariant
 
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
 ## Continental Balance Gate 1
-
 Status: `CLOSED`
-
 Distribution:
 # `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
 Family expansion remains paused during Global Refinement.
 
-## Consolidation baseline — MERGED
+## Consolidation baseline — MERGED / IMMUTABLE
 
 PR #20 — `RELATIONAL KEY — Collection Consolidation Gate`
 Status: `MERGED`
@@ -29,82 +27,107 @@ Pre-refinement regression anchor:
 # `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
 
 Validated at that anchor:
-- 15 / 15 families have independent user visual or visual+audio gates;
-- 15 / 15 consolidated direct family routes verified live;
+- 15 / 15 independent family user gates;
+- 15 / 15 consolidated direct live routes;
 - collection root live pass;
 - shell visual pass;
-- continent filters pass;
-- search + zero-result state pass;
+- filters/search pass;
 - collection usability `PASS WITH POLISH`.
 
 Historic consolidation Preview golden reference:
-- Vercel project `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`;
+- project `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`;
 - deployment `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ`;
 - URL `https://relational-key-collectionrelational-key-collection-4834ctm8z.vercel.app`;
-- branch `collection/consolidation-gate-1`;
 - state `READY`.
 
-## ACTIVE PHASE — GLOBAL REFINEMENT
+Existing individual family deployments remain golden references.
 
-# **STATUS: OPEN / G0 BASELINE FROZEN**
+# ACTIVE PHASE — GLOBAL REFINEMENT
 
-Working branch:
-`collection/global-refinement-1`
+## G0 — Baseline Freeze
+Status: `PASS`
+Register: `GLOBAL_REFINEMENT_G0_BASELINE.md`
+G0 commit: `9cbedfaaec7857d7d9ad924257a4ccd1b8fd7e58`
 
-Draft review surface:
-**PR #21**
+## G1 — Collection Navigation Frame
 
-G0 register:
-`GLOBAL_REFINEMENT_G0_BASELINE.md`
+Status:
+# **IMPLEMENTED / SOURCE PASS / LIVE REGRESSION REQUIRED**
 
-G0 commit:
-`9cbedfaaec7857d7d9ad924257a4ccd1b8fd7e58`
+Register:
+`GLOBAL_REFINEMENT_G1_NAVIGATION_FRAME.md`
 
-### Locked regression policy
+Implementation commits:
+- `760f4058a017cc761c8111aaffb27a308fe4ce65`
+- `9644849b323db8af8dc659f5d12e744a064647da`
 
-1. `79ba99ec…` is the immutable pre-refinement collection anchor.
-2. Existing per-family Vercel deployments remain golden references.
-3. Family-native mechanisms may not be flattened or replaced by one generic interaction model.
-4. Any wrapper/navigation change that touches family routes requires route regression checks.
-5. Any family presentation change requires targeted comparison to its golden reference.
-6. The center/gap remains relational evidence, never the primary product.
+Source-gate register commit:
+`cdb91ba401c87087e385eb719f1fcc6851067cae`
 
-## Staged Global Refinement plan
+### G1 architecture
 
-### G1 — Collection Navigation Frame — NEXT
-Add an explicit lightweight `← Back to Atlas` affordance around family views without rewriting family-native interactions.
+All 15 public family routes now use one collection-owned navigation wrapper.
 
-Required G1 gate:
-- collection root still works;
-- all family routes still resolve;
-- wrapper does not cover or break family controls;
-- return to Atlas works without relying on browser Back;
-- family mechanism source remains unchanged beneath the wrapper where possible.
+Frame:
+- `← BACK TO ATLAS` → `/#grid`;
+- family context label;
+- `THE PAIR IS THE PRODUCT` collection law;
+- 44px desktop / 42px mobile layout row;
+- iframe fills the remaining viewport rather than being covered by an overlay.
+
+Shared six-family runtime remains unchanged:
+`/families/_shared/round13r/index.html`
+blob:
+`bed8c2fa6d2f40b9677d327ecfcd6c581238e14d`
+
+Nine autonomous validated prototypes are preserved byte-identical as `snapshot.html` inside their existing family directory. Their original validated blob SHAs remain unchanged.
+
+Wrapper blob used by all 15 route indexes:
+`86f6b85796bec16dcb9077ed594a1ec86736b663`
+
+### Locked regression rule
+
+Do not count wrapper introduction as permission to rewrite family mechanisms. `snapshot.html` and the shared runtime are the mechanism-level regression anchors beneath G1.
+
+### Required G1 live gate
+
+Need one Global Refinement Preview from branch `collection/global-refinement-1`, then verify:
+1. root collection;
+2. representative shared route (e.g. City or Service);
+3. representative autonomous route (e.g. Kento or Boulle);
+4. `← BACK TO ATLAS` return;
+5. controls not obscured;
+6. mobile frame acceptability;
+7. route regression after wrapper introduction.
+
+Only then may G1 become `PASS`.
+
+## Future staged gates
 
 ### G2 — Shell Legibility
-Improve tiny mono labels, filter chips and card metadata, including responsive readability.
+Tiny mono labels, filter chips, card metadata, responsive readability.
 
-### G3 — Family Individuality at Atlas Level
-Increase family distinguishability without flags, stereotyped motifs, generic cultural skinning or decorative appropriation.
+### G3 — Atlas Family Individuality
+Increase family distinguishability without flags, stereotypes, generic cultural skinning or decorative appropriation.
 
 ### G4 — PASS WITH POLISH Backlog
-Resolve documented family polish items in staged regression-safe passes.
+Address family-specific polish items with targeted golden-reference regression.
 
 ### G5 — Collection Cohesion
-Improve transitions and shared framing while preserving family-native distinction.
+Improve collection ↔ family transitions and shared framing while preserving family-native distinction.
 
 ### G6 — Final Collection Validation
-Re-audit root, routes affected by refinement, targeted family regressions, responsive behavior and final deployment readiness.
+Final root, routing, responsive, mechanism regression and deployment audit.
 
-## Immediate next output
+# Immediate next output
 
-# **G1 — COLLECTION NAVIGATION FRAME**
+# **G1.1 — GLOBAL REFINEMENT PREVIEW + LIVE REGRESSION**
 
-Do not begin broad visual restyling before G1 is implemented and route-regression checked.
+First check whether Vercel auto-created a Preview for `collection/global-refinement-1`; if not, manually create one in the existing collection project. Preserve consolidation deployment `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ` as a golden reference.
 
 Status vocabulary:
-`CONSOLIDATION MERGED ≠ G0 BASELINE FROZEN ≠ G1 PASS ≠ GLOBAL REFINEMENT COMPLETE ≠ FINAL COLLECTION PASS`.
+`CONSOLIDATION MERGED ≠ G0 PASS ≠ G1 SOURCE PASS ≠ G1 LIVE PASS ≠ GLOBAL REFINEMENT COMPLETE ≠ FINAL COLLECTION PASS`.
 
 ## Persistence protocol
 
-After every significant milestone update this file + `RELATIONAL_KEY_HANDOVER.md`, recording exact branch, commits, deployments, regression anchors, gate result and next required output.
+After every significant milestone update this file + `RELATIONAL_KEY_HANDOVER.md` with exact branch, commits, deployments, regression anchors, gate result and next required output.
