@@ -2,37 +2,31 @@
 
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
-Canonical working branch: `round13l/ember-memory-hika-ahi`
-Latest verified milestone: `ROUND13L6_TARGET_RECAPTURE_VISUAL_PASS.md`
-Audit checkpoint: `79875324bd41fad575381c78bd09a31d8f71986c`
+Canonical working branch: `round13m/europe-balance-discovery`
+Latest verified milestone: `ROUND13M1_EUROPE_BALANCE_BROAD_DISCOVERY.md`
 
 ## Product invariant
 
 **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
-## Continental Balance Gate
+Every Cultural Edition must preserve two distinct relational objects/layers, a visible unresolved relationship, a culturally grounded relation event, and a continuation / registration / calm resistance outcome.
+
+# CONTINENTAL BALANCE GATE
 
 Current merged distribution:
-`AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 1 / EUROPE 1`
+`AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 1`
 
 Balance Gate 1:
-1. Round 13K — South America #2 — `MERGED / CLOSED`
-2. Round 13L — Oceania #2 — `VISUAL PASS / PROMOTE / MERGE APPROVAL NEXT`
-3. Round 13M — Europe #2
+1. `ROUND 13K` — SOUTH AMERICA #2 — **MERGED / CLOSED**
+2. `ROUND 13L` — OCEANIA #2 — **MERGED / CLOSED**
+3. `ROUND 13M` — EUROPE #2 — **BROAD DISCOVERY PASS / DEEP QUALIFICATION NEXT**
 
 Target after Gate 1:
 `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-## Last closed family — Round 13K
+After Round 13M passes and merges, pause family expansion and run the **COLLECTION CONSOLIDATION GATE**.
 
-**MELODY MEMORY — BOLIVIA / SIKU — INTERLOCK REGISTER**
-Law: **COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.**
-Proof: `IRA ≠ ARKA → ALTERNATION → ONE MELODY`
-PR #16: merged
-Merge SHA: `ca8851db034fac0cc60507d310b1623fb459366c`
-Golden reference: `dpl_AgwdotABtjmYKDvnx3qoprtPEMsr`
-
-# ROUND 13L — OCEANIA #2
+# ROUND 13L — CLOSED
 
 Edition:
 **EMBER MEMORY — AOTEAROA / HIKA AHI — FRICTION REGISTER**
@@ -43,106 +37,118 @@ Law:
 Proof:
 `HIKA ≠ KAUAHI → FRICTION → HEAT → EMBER`
 
-Pair:
-- Card A — HIKA / ACTIVE STICK
-- Card B — KAUAHI / GROOVED BASE
-- Gap — FRICTION / HEAT FIELD
+Visual audit:
+`VISUAL PASS / PROMOTE`
 
-Signature:
-`CONTACT → STROKE → TRACE → ACCUMULATE → HEAT → EMBER → REGISTER → CONTINUE`
+Golden-reference preview:
+`dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
 
-## Verified chain
+PR #17:
+`MERGED`
 
-13L.1 Broad Discovery — PASS
-- `ROUND13L1_OCEANIA_BALANCE_BROAD_DISCOVERY.md`
-- `9633f07006aeeee145a528eb67455b2a370989eb`
+Squash merge commit:
+`2e9cf84a11b2f5c08a7cf974b1f9b9530be88a4b`
 
-13L.2 Deep Qualification — FINALIST PASS
-- `ROUND13L2_DEEP_QUALIFICATION_FINALISTS.md`
-- `96b421203832af8618029a9af7c83b9049158bee`
-- reserve: Polynesian Double-Hulled Canoe
+Round 13L is closed. Do not reopen without concrete evidence of a defect.
 
-13L.3 Concept Gate — PASS / HIKA AHI SELECTED
-- `ROUND13L3_TWO_FINALIST_CONCEPT_GATE.md`
-- `99697a137313ada569d469476dbf83d5d4eb5f39`
+# ROUND 13M — EUROPE #2
 
-13L.4 Implementation — LOCAL PASS
-- implementation `3b550206171e3ad5bfd7a0ad7e6f00f44748a2d7`
-- checkpoint `7c0a327f333407d2654b80b7f8c00facff85f326`
-- Draft PR #17
+Existing Europe family:
+**DEPTH MEMORY — UNITED KINGDOM / STEREOSCOPY — BINOCULAR REGISTER**
 
-13L.5 Live Candidate — READY / SOURCE-LIVE SYNC VERIFIED
-- project `relational-key-ember-memory-hika-v13l1`
-- project ID `prj_bxE1WIkaiKvyGG9vP7SrvrMxTmTj`
-- preview `dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
-- URL `https://relational-key-ember-memory-hika-v13l1-89yj1dgb2.vercel.app`
-- ignore initial `main` deployment `dpl_3w5PoFYCKoWgs359S5unxgWTBpmT`
+Occupied law:
+`CONTROLLED DISPARITY PRODUCES DEPTH.`
 
-## 13L.6 — User Visual Audit
+13M must not repeat binocular fusion, controlled disparity, stereographic depth or generic optical overlap.
+
+## 13M.1 — Broad Discovery
 
 Status:
-# **VISUAL PASS / PROMOTE**
+# **DISCOVERY GATE — PASS**
 
-Initial conditional audit:
-`ROUND13L6_USER_VISUAL_AUDIT_CONDITIONAL.md`
+Branch:
+`round13m/europe-balance-discovery`
 
-Final Target re-capture audit:
-`ROUND13L6_TARGET_RECAPTURE_VISUAL_PASS.md`
+Register:
+`ROUND13M1_EUROPE_BALANCE_BROAD_DISCOVERY.md`
 
-Final audit checkpoint:
-`79875324bd41fad575381c78bd09a31d8f71986c`
+Commit:
+`6e16915b7b9ef8d4c27381d1ab1550e7093fbca2`
 
-Final re-capture properties observed:
-- 12.0 s
-- 1908×964
-- 30 fps
-- TARGET GROOVE begins from reset/unresolved state
+### Tier A — Deep qualify next
 
-Verified Target progression:
-`UNRESOLVED → CONTACT → TRACE → ACCUMULATE → HEAT → EMBER → REGISTER`
+1. **France — Boulle marquetry / première partie + contre partie**
+   - mechanism: two stacked material sheets are cut together, separated, then recombined as inverse versions;
+   - candidate law: `A SHARED CUT PRODUCES COMPLEMENTARY INVERSION.`
+   - proof candidate: `A + B → STACK → CUT ONCE → SEPARATE → EXCHANGE → PARTIE + CONTREPARTIE`;
+   - pair-native strength: VERY HIGH;
+   - public-domain Met visual path available;
+   - boundary: historical tortoiseshell must be treated as historical evidence only, not recommended as a present-day material.
 
-The heat trace grows before the ember appears; the field intensifies first, then the ember emerges at the interface and stabilizes in the registered state. HIKA and KAUAHI remain distinct.
+2. **Italy / Venice — Reticello glass / opposing spiral layers**
+   - mechanism: two superimposed glass-cane layers spiral in different directions and create a crossing network;
+   - candidate law: `OPPOSING SPIRALS PRODUCE A NETWORK.`
+   - proof candidate: `LAYER A ≠ LAYER B → SUPERIMPOSE → CROSS → NETWORK`;
+   - visual emergence: VERY HIGH;
+   - public-domain Met visual path available;
+   - risk: historical technique is two layers in one glass object, so two-card translation must remain truthful.
 
-Previous capture already verified Other Contact:
-- partial/offset trace;
-- no ember;
-- both tools remain valid;
-- no red/error-dominant invalidation;
-- no practical fire-starting guidance.
+3. **Finland — Sauna / löyly**
+   - mechanism: water contacts heated sauna stones and releases löyly / steam;
+   - candidate law: `CONTACT BETWEEN WATER AND HEATED STONE RELEASES LÖYLY.`
+   - proof candidate: `WATER ≠ HOT STONES → CONTACT → STEAM → LÖYLY`;
+   - living-cultural grounding: VERY HIGH / UNESCO;
+   - risk: pair is asymmetrical and could read as simple input/output rather than two co-equal relational objects.
 
-No code or visual patch is required before promotion.
+### Tier B reserves
+
+- France/Germany catoptric anamorphosis — strong pair but too optically adjacent to Stereoscopy.
+- European horological escapement — strong lock/release behavior but full mechanism depends on additional oscillator components.
+- Italian/Flemish bobbin lace — real cross/twist relation but requires many bobbin pairs and overlaps textile territory.
+
+### Early ranking
+
+1. Boulle
+2. Reticello
+3. Löyly
+
+No winner selected yet.
 
 ## Next required output
 
-# ROUND 13L.7 — MERGE GATE
+# ROUND 13M.2 — DEEP QUALIFICATION
 
-Required sequence:
-1. obtain explicit merge approval;
-2. verify PR #17 head has not changed unexpectedly;
-3. mark Ready for review if still Draft;
-4. squash merge with expected head SHA;
-5. record merge SHA;
-6. update canonical state + handover;
-7. close Round 13L;
-8. begin `ROUND 13M — EUROPE #2 — BROAD DISCOVERY`.
+Deep-qualify Tier A only.
 
-PR #17 remains `DRAFT / DO NOT MERGE` until explicit merge approval.
+Required checks:
+1. authoritative mechanism verification;
+2. native two-object/two-layer necessity;
+3. removing either side destroys target relation;
+4. explicit distinctness from UK Stereoscopy and all current families;
+5. strength of emergent third result;
+6. public-domain/reusable visual anchor strategy;
+7. ethical/material boundaries;
+8. smallest truthful two-card translation;
+9. truthful Matching + Other states;
+10. select at most two finalists.
 
-## Deployment Architecture Policy — LOCKED
+No implementation before the finalist gate is recorded.
+
+# DEPLOYMENT ARCHITECTURE POLICY — LOCKED
 
 Per-family Vercel deployments are isolated audit laboratories / golden references, not final product architecture.
 
 After Round 13M / Balance Gate 1:
 # **COLLECTION CONSOLIDATION GATE**
 
-Build one canonical RELATIONAL KEY product + one canonical Vercel project with validated families as internal routes/views. Retain isolated family deployments only as regression/golden references.
+Build one canonical RELATIONAL KEY product + one canonical Vercel project with validated families as internal routes/views. Retain isolated family lives only as regression/golden references.
 
 ## Persistence protocol
 
 After every significant milestone:
 1. update this file;
 2. update `RELATIONAL_KEY_HANDOVER.md`;
-3. record verified branch / commit / deployment / PR IDs;
+3. record verified branch / commit / deployment / PR identifiers;
 4. state next output explicitly;
 5. never infer an unverified pass.
 
