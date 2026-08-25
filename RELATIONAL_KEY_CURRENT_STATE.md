@@ -2,8 +2,9 @@
 
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
-Canonical working branch: `round13r/relational-pair-restoration`
-Canonical branch HEAD at this checkpoint: `54806b281f411f82c4c6f2fdc94919b8aa5f275d`
+Canonical working branch: `round13k/melody-memory-siku`
+Latest verified milestone: `ROUND13K6_USER_VISUAL_AUDIO_AUDIT_PASS.md`
+Audit checkpoint commit: `ece199b2054be323a93dba2bfe1f8cafd9b131dc`
 
 ## Product invariant
 
@@ -11,113 +12,189 @@ Canonical branch HEAD at this checkpoint: `54806b281f411f82c4c6f2fdc94919b8aa5f2
 
 Every Cultural Edition must preserve two distinct relational objects, a visible unresolved relationship, a culturally grounded relation event, and a continuation / registration / calm resistance outcome.
 
-The cultural mechanism must live inside the pair rather than replacing the pair with a decorative cultural skin.
-
-## Current strategic phase
-
 # CONTINENTAL BALANCE GATE
 
-The previous Continental Diversity Gate is complete: all six inhabited continents are represented.
+Round 13K has now passed its user visual + audio gate and is **PROMOTED**, but PR #16 is not yet merged.
 
-The next objective is not unrestricted expansion. The collection must now be balanced geographically while also increasing relational, material and interaction diversity.
+Promoted-family distribution after 13K:
+`AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 1 / EUROPE 1`
 
-## Current 12-family distribution
-
-| Continent | Count | Current families |
-| --- | ---: | --- |
-| Africa | 4 | Benin Service; Nigeria Signal; Asante / Bonwire Textile; Fès Zellige |
-| Asia | 3 | Toyama Food; Japan Kento Print; Bali Gamelan Ombak |
-| North America | 2 | Gatineau City; Frida / Coyoacán Cultural Figure |
-| South America | 1 | Peru Khipu |
-| Oceania | 1 | Marshall Islands Swell |
-| Europe | 1 | UK Stereoscopy / Binocular Register |
-
-Distribution: `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 1 / OCEANIA 1 / EUROPE 1`
-
-## Balance strategy
-
-### Balance Gate 1 — minimum 2 families per continent
-
-Next required sequence:
-
-1. `ROUND 13K` — SOUTH AMERICA #2
+Balance Gate 1 sequence:
+1. `ROUND 13K` — SOUTH AMERICA #2 — **VISUAL+AUDIO PASS / PROMOTE / MERGE APPROVAL NEXT**
 2. `ROUND 13L` — OCEANIA #2
 3. `ROUND 13M` — EUROPE #2
 
 Target after Gate 1:
 `4 / 3 / 2 / 2 / 2 / 2`
 
-### Balance Gate 2 — minimum 3 families per continent
+## Last closed merged family — Round 13J
 
-Provisional sequence after Gate 1:
-
-- North America #3
-- South America #3
-- Oceania #3
-- Europe #3
-
-Target:
-`4 / 3 / 3 / 3 / 3 / 3`
-
-A later Gate 3 may move toward four families per continent only if each candidate adds genuine system value. Numerical balance alone is not sufficient reason to build a family.
-
-## Selection law for all new families
-
-A candidate must be evaluated across:
-
-`GEOGRAPHY × MATERIAL × RELATIONAL MECHANISM × MEMORY TYPE × INTERACTION`
-
-Do not rebalance continents by repeating an existing mechanism with different cultural decoration.
-
-Examples of forbidden shortcut logic:
-- South America #2 must not simply repeat Khipu tension / knot logic.
-- Oceania #2 must not simply repeat swell / wave navigation logic.
-- Europe #2 must not simply repeat stereoscopic optical disparity.
-
-Preferred discovery pattern:
-
-`REAL PAIR-NATIVE MECHANISM → CULTURAL GROUNDING → DISTINCT RELATIONAL LAW → VISUAL / MATERIAL PROOF → INTERACTION`
-
-The relation should create, reveal, transform, register or stabilize information that neither object supplies alone.
-
-## Round 13J — closed milestone
-
-Edition: **DEPTH MEMORY — UNITED KINGDOM / STEREOSCOPY — BINOCULAR REGISTER**
+**DEPTH MEMORY — UNITED KINGDOM / STEREOSCOPY — BINOCULAR REGISTER**
 
 Law: **CONTROLLED DISPARITY PRODUCES DEPTH.**
-
-Proof state:
-`LEFT ≠ RIGHT → FUSION → DEPTH`
-
-Visual audit: `PASS / PROMOTE`
-Production deployment: `dpl_4qQoTiev64vzU7tRLXmrYxtbrHjY`
+Proof: `LEFT ≠ RIGHT → FUSION → DEPTH`
+Status: `VISUAL PASS / PROMOTE / MERGED`
+Deployment: `dpl_4qQoTiev64vzU7tRLXmrYxtbrHjY`
 PR #15: merged
-Squash merge commit: `54806b281f411f82c4c6f2fdc94919b8aa5f275d`
+Merge commit: `54806b281f411f82c4c6f2fdc94919b8aa5f275d`
 
-Round 13J is closed. Do not reopen it without new evidence of a defect.
+# ROUND 13K — SOUTH AMERICA #2
+
+## Edition
+
+**MELODY MEMORY — BOLIVIA / SIKU — INTERLOCK REGISTER**
+
+Canonical law:
+**COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.**
+
+Proof:
+`IRA ≠ ARKA → ALTERNATION → ONE MELODY`
+
+Pair architecture:
+- Card A — IRA / Complement A
+- Card B — ARKA / Complement B
+- Gap — MELODY INTERLOCK FIELD
+
+Signature:
+`NOTE → GAP → ANSWER → INTERLOCK → SCALE → MELODY → REGISTER → CONTINUE`
+
+Critical distinction from Ombak:
+- Ombak = simultaneous near-unison difference → beat / resonance.
+- Siku = distributed complementary notes → alternation → continuity.
+
+## Research / build chain
+
+### 13K.1 — Broad Discovery
+Status: `PASS`
+Register: `ROUND13K1_SOUTH_AMERICA_BALANCE_BROAD_DISCOVERY.md`
+Commit: `0b19c69d50b574d7b14c428c9b08cb39742478a1`
+
+### 13K.2 — Deep Qualification
+Status: `FINALIST GATE PASS`
+Register: `ROUND13K2_DEEP_QUALIFICATION_FINALISTS.md`
+Commit: `25304b3d8a8da6f05c8325b4a0ceab180aef4bfb`
+Finalists: Bolivia / Siku and Colombia / Pasto Varnish.
+Pasto remains a high-quality reserve.
+
+### 13K.3 — Concept Gate
+Status: `PASS / SIKU SELECTED`
+Register: `ROUND13K3_TWO_FINALIST_CONCEPT_GATE.md`
+Commit: `2d352f88f5a8a2d2f918c3786fb41f9f5d1c5757`
+
+### 13K.4 — Implementation Gate
+Status: `IMPLEMENTED / LOCAL STRUCTURE + SYNTAX PASS`
+Implementation commit: `2522c651055404fd78dc9748eee75bfd9ee2dd5d`
+Register: `ROUND13K4_SIKU_IMPLEMENTATION.md`
+Checkpoint commit: `bb85774df5f89698e18470bb94985aec42c23c1a`
+
+Real-source visual:
+`Wikimedia Commons — Siku bipolar.jpg` / public domain.
+Mapping preserved:
+- source left half = Arka → Card B;
+- source right half = Ira → Card A.
+
+Matching uses 8 illustrative temporal slots alternating:
+`IRA / ARKA / IRA / ARKA / IRA / ARKA / IRA / ARKA`.
+
+Other Interlock leaves selected target positions silent, does not create a complete route, keeps both complements valid and uses no red invalidation.
+
+Audio is browser-synthesized and explicitly illustrative. Generic frequencies are not claimed as documented siku tuning or a traditional melody.
+
+### 13K.5 — Dedicated Live Candidate
+
+Dedicated Vercel project:
+`relational-key-melody-memory-siku-v13k1`
+
+Project ID:
+`prj_sVSWA4YxfvqtJm0yAzUYIegeyM9Z`
+
+Ignore initial production import:
+`dpl_4VuurNFo93XnW3jYAJ7MVqpvgpX3`
+— old `main` baseline, not audit evidence.
+
+Verified Siku preview:
+`dpl_AgwdotABtjmYKDvnx3qoprtPEMsr`
+
+URL:
+`https://relational-key-melody-memory-siku-v13k1-pujv92nn5.vercel.app`
+
+Branch:
+`round13k/melody-memory-siku`
+
+State:
+`READY`
+
+Source/live sync: **VERIFIED**.
+
+### 13K.6 — User Visual + Audio Audit
+
+Status: **VISUAL+AUDIO PASS / PROMOTE**
+
+Audit register:
+`ROUND13K6_USER_VISUAL_AUDIO_AUDIT_PASS.md`
+
+Audit checkpoint commit:
+`ece199b2054be323a93dba2bfe1f8cafd9b131dc`
+
+User recording properties observed:
+- ~13.53 s
+- 1890×956 / 30 fps
+- stereo audio / 48 kHz
+
+Matching gate:
+- two cards remain distinct;
+- central field reads as temporal interlock, not waveform;
+- recorded note events alternate stereo sides consistently;
+- complete glowing route appears only after both complements contribute;
+- registered state preserves warm/cool IRA / ARKA ownership.
+
+Other gate:
+- two target positions remain visibly silent;
+- the same positions are genuine audio absences;
+- no complete glowing route appears;
+- both instruments remain visually valid;
+- no red/error-dominant invalidation appears.
+
+Recording begins just after the first IRA event has visually occurred, so the first audible note is not captured. This is a recording-start artifact, not a build defect; the remaining matching events alternate correctly and the first slot is visibly filled in the opening frame.
+
+Non-blocking polish:
+- central field / bottom microcopy are small at desktop capture scale;
+- defer typography/scale polish to the collection-wide Global Refinement Pass.
+
+No interaction patch is required before promotion.
+
+## PR status
+
+Draft PR:
+**#16 — Round 13K — Melody Memory / Bolivia Siku / Interlock Register**
+
+Status:
+`DRAFT / DO NOT MERGE UNTIL EXPLICIT APPROVAL`
+
+The family has passed its visual/audio gate. PR #16 is now eligible to move to Ready + squash merge when explicit merge approval is given.
 
 ## Next required output
 
-# ROUND 13K — SOUTH AMERICA #2 — BROAD DISCOVERY
+# ROUND 13K.7 — MERGE GATE
 
-Do not choose a country, object or visual style prematurely.
+Required sequence:
+1. obtain explicit merge approval;
+2. verify PR #16 head has not changed unexpectedly;
+3. mark Ready for review if still Draft;
+4. squash merge with expected head SHA;
+5. record merge SHA;
+6. update this canonical state + handover;
+7. close Round 13K;
+8. begin `ROUND 13L — OCEANIA #2 — BROAD DISCOVERY`.
 
-Research multiple South American countries / traditions / technical or material systems and shortlist only candidates where:
+Status vocabulary remains separate:
+`RESEARCH PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL+AUDIO PASS ≠ PROMOTE ≠ MERGED`.
 
-1. the relationship is genuinely pair-native;
-2. the mechanism is documented by reliable sources;
-3. the mechanism is materially and relationally distinct from Khipu;
-4. the pair produces an emergent result or meaningful registration event;
-5. the visual material can be grounded in real source material;
-6. the truthfulness boundary can be stated clearly;
-7. the mechanism can survive the RELATIONAL KEY two-object invariant.
+## Persistence protocol
 
-## Canonical-state protocol
-
-After every significant milestone, update this file rather than creating competing current-state documents.
-
-A significant milestone includes research gate, candidate selection, implementation gate, deployment, visual audit, promotion / rejection, merge, or strategic phase change.
-
-Also update `RELATIONAL_KEY_HANDOVER.md` after each significant milestone so a new conversation can resume from the latest verified state without reconstructing prior history.
-
-If a live candidate is only READY but has not passed visual audit, record it as such. Never collapse `READY`, `LIVE CANDIDATE`, `VISUAL PASS`, `PROMOTE`, and `MERGED` into the same status.
+After every significant milestone:
+1. update this file;
+2. update `RELATIONAL_KEY_HANDOVER.md`;
+3. record verified branch / commit / deployment / PR IDs;
+4. state the next required output explicitly;
+5. never infer an unverified pass.
