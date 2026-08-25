@@ -3,6 +3,8 @@
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
+Global Refinement PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
+PR status: `DRAFT / DO NOT MERGE`
 Latest verified milestone: `GLOBAL_REFINEMENT_G0_BASELINE.md`
 
 ## Product invariant
@@ -48,6 +50,9 @@ Historic consolidation Preview golden reference:
 
 Working branch:
 `collection/global-refinement-1`
+
+Draft review surface:
+**PR #21**
 
 G0 register:
 `GLOBAL_REFINEMENT_G0_BASELINE.md`
