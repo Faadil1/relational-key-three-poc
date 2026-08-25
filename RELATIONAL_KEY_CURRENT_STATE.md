@@ -3,13 +3,11 @@
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `round13m/europe-balance-discovery`
-Latest verified milestone: `ROUND13M1_EUROPE_BALANCE_BROAD_DISCOVERY.md`
+Latest verified milestone: `ROUND13M3_TWO_FINALIST_CONCEPT_GATE.md`
 
 ## Product invariant
 
 **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
-
-Every Cultural Edition must preserve two distinct relational objects/layers, a visible unresolved relationship, a culturally grounded relation event, and a continuation / registration / calm resistance outcome.
 
 # CONTINENTAL BALANCE GATE
 
@@ -17,140 +15,138 @@ Current merged distribution:
 `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 1`
 
 Balance Gate 1:
-1. `ROUND 13K` — SOUTH AMERICA #2 — **MERGED / CLOSED**
-2. `ROUND 13L` — OCEANIA #2 — **MERGED / CLOSED**
-3. `ROUND 13M` — EUROPE #2 — **BROAD DISCOVERY PASS / DEEP QUALIFICATION NEXT**
+1. 13K — South America #2 — `MERGED / CLOSED`
+2. 13L — Oceania #2 — `MERGED / CLOSED`
+3. 13M — Europe #2 — `CONCEPT PASS / BOULLE SELECTED / IMPLEMENTATION NEXT`
 
 Target after Gate 1:
-`AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
+`4 / 3 / 2 / 2 / 2 / 2`
 
-After Round 13M passes and merges, pause family expansion and run the **COLLECTION CONSOLIDATION GATE**.
+After 13M merges, pause expansion and run **COLLECTION CONSOLIDATION GATE**.
 
-# ROUND 13L — CLOSED
+## Last closed family — Round 13L
 
-Edition:
 **EMBER MEMORY — AOTEAROA / HIKA AHI — FRICTION REGISTER**
-
-Law:
-**SUSTAINED FRICTION PRODUCES EMBER.**
-
-Proof:
-`HIKA ≠ KAUAHI → FRICTION → HEAT → EMBER`
-
-Visual audit:
-`VISUAL PASS / PROMOTE`
-
-Golden-reference preview:
-`dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
-
-PR #17:
-`MERGED`
-
-Squash merge commit:
-`2e9cf84a11b2f5c08a7cf974b1f9b9530be88a4b`
-
-Round 13L is closed. Do not reopen without concrete evidence of a defect.
+Law: `SUSTAINED FRICTION PRODUCES EMBER.`
+Proof: `HIKA ≠ KAUAHI → FRICTION → HEAT → EMBER`
+PR #17: merged
+Merge SHA: `2e9cf84a11b2f5c08a7cf974b1f9b9530be88a4b`
+Golden reference: `dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
 
 # ROUND 13M — EUROPE #2
 
-Existing Europe family:
-**DEPTH MEMORY — UNITED KINGDOM / STEREOSCOPY — BINOCULAR REGISTER**
-
-Occupied law:
-`CONTROLLED DISPARITY PRODUCES DEPTH.`
-
-13M must not repeat binocular fusion, controlled disparity, stereographic depth or generic optical overlap.
-
 ## 13M.1 — Broad Discovery
+Status: PASS
+Register: `ROUND13M1_EUROPE_BALANCE_BROAD_DISCOVERY.md`
+Commit: `6e16915b7b9ef8d4c27381d1ab1550e7093fbca2`
+
+Tier A explored:
+- France — Boulle partie / contrepartie
+- Venice — Reticello opposing spiral layers
+- Finland — Löyly
+
+## 13M.2 — Deep Qualification
+Status: `FINALIST GATE PASS`
+Register: `ROUND13M2_DEEP_QUALIFICATION_FINALISTS.md`
+Commit: `6206e33ea3c202edb77b6a7924ac7d5e7909d0fb`
+
+Finalists:
+1. France — Boulle
+2. Venice — Reticello
+
+Löyly disposition:
+`HIGH-QUALITY RESERVE / ASYMMETRIC PAIR`
+
+## 13M.3 — Concept Gate
 
 Status:
-# **DISCOVERY GATE — PASS**
-
-Branch:
-`round13m/europe-balance-discovery`
+# **PASS / BOULLE SELECTED**
 
 Register:
-`ROUND13M1_EUROPE_BALANCE_BROAD_DISCOVERY.md`
+`ROUND13M3_TWO_FINALIST_CONCEPT_GATE.md`
 
 Commit:
-`6e16915b7b9ef8d4c27381d1ab1550e7093fbca2`
+`b6faf0a188d241ffe4408b076ac0df42a72a7c2d`
 
-### Tier A — Deep qualify next
+# WINNER — COMPLEMENT MEMORY / FRANCE / BOULLE / RECIPROCAL CUT REGISTER
 
-1. **France — Boulle marquetry / première partie + contre partie**
-   - mechanism: two stacked material sheets are cut together, separated, then recombined as inverse versions;
-   - candidate law: `A SHARED CUT PRODUCES COMPLEMENTARY INVERSION.`
-   - proof candidate: `A + B → STACK → CUT ONCE → SEPARATE → EXCHANGE → PARTIE + CONTREPARTIE`;
-   - pair-native strength: VERY HIGH;
-   - public-domain Met visual path available;
-   - boundary: historical tortoiseshell must be treated as historical evidence only, not recommended as a present-day material.
+Canonical law:
+# **ONE SHARED CUT PRODUCES TWO COMPLEMENTARY INVERSES.**
 
-2. **Italy / Venice — Reticello glass / opposing spiral layers**
-   - mechanism: two superimposed glass-cane layers spiral in different directions and create a crossing network;
-   - candidate law: `OPPOSING SPIRALS PRODUCE A NETWORK.`
-   - proof candidate: `LAYER A ≠ LAYER B → SUPERIMPOSE → CROSS → NETWORK`;
-   - visual emergence: VERY HIGH;
-   - public-domain Met visual path available;
-   - risk: historical technique is two layers in one glass object, so two-card translation must remain truthful.
+Proof:
+`SHEET A ≠ SHEET B → STACK → SHARED CUT → SEPARATE → EXCHANGE → PARTIE ↔ CONTREPARTIE`
 
-3. **Finland — Sauna / löyly**
-   - mechanism: water contacts heated sauna stones and releases löyly / steam;
-   - candidate law: `CONTACT BETWEEN WATER AND HEATED STONE RELEASES LÖYLY.`
-   - proof candidate: `WATER ≠ HOT STONES → CONTACT → STEAM → LÖYLY`;
-   - living-cultural grounding: VERY HIGH / UNESCO;
-   - risk: pair is asymmetrical and could read as simple input/output rather than two co-equal relational objects.
+Pair architecture:
+- Card A — `PARTIE / DARK GROUND + LIGHT INLAY`
+- Card B — `CONTREPARTIE / LIGHT GROUND + DARK INLAY`
+- Gap — `SHARED CUT / RECIPROCAL EXCHANGE FIELD`
 
-### Tier B reserves
+Signature:
+`ALIGN → STACK → CUT → SEPARATE → EXCHANGE → INVERT → REGISTER → CONTINUE`
 
-- France/Germany catoptric anamorphosis — strong pair but too optically adjacent to Stereoscopy.
-- European horological escapement — strong lock/release behavior but full mechanism depends on additional oscillator components.
-- Italian/Flemish bobbin lace — real cross/twist relation but requires many bobbin pairs and overlaps textile territory.
+### Why Boulle won
 
-### Early ranking
+- the shared event creates two reciprocal finished outcomes;
+- both objects remain equally meaningful after registration;
+- removing either material destroys the partie ↔ contrepartie relation;
+- the reciprocal inversion is documented in the historical fabrication logic, not invented by the UI;
+- mechanism is distinct from Fès fit, Kento print registration and Stereoscopy depth fusion.
 
-1. Boulle
-2. Reticello
-3. Löyly
+Reticello remains a high-quality Europe reserve.
 
-No winner selected yet.
+### Matching concept
+
+`SHARED CUT`
+- two different editorial material fields align;
+- one cut path appears across both;
+- fragments separate;
+- reciprocal exchange occurs;
+- Card A and B become material inverses;
+- both remain distinct;
+- reciprocity registers.
+
+### Other concept
+
+`OTHER CUT`
+- both material fields remain valid;
+- cut paths do not derive from one shared reciprocal map;
+- no complete inverse exchange registers;
+- no red invalidation.
+
+### Ethical / wildlife-material boundary
+
+Historical Boulle work often used tortoiseshell. Implementation must:
+- treat it as historical evidence only;
+- use simulated/abstract editorial material fields;
+- never recommend wildlife material procurement/use;
+- never claim a modern material reconstruction or exact fabrication recipe.
 
 ## Next required output
 
-# ROUND 13M.2 — DEEP QUALIFICATION
+# ROUND 13M.4 — BOULLE IMPLEMENTATION GATE
 
-Deep-qualify Tier A only.
+Create a dedicated implementation branch and build the reciprocal cut interaction.
 
-Required checks:
-1. authoritative mechanism verification;
-2. native two-object/two-layer necessity;
-3. removing either side destroys target relation;
-4. explicit distinctness from UK Stereoscopy and all current families;
-5. strength of emergent third result;
-6. public-domain/reusable visual anchor strategy;
-7. ethical/material boundaries;
-8. smallest truthful two-card translation;
-9. truthful Matching + Other states;
-10. select at most two finalists.
-
-No implementation before the finalist gate is recorded.
+Requirements:
+1. two cards visible immediately;
+2. different material fields;
+3. one shared editorial cut path in Matching;
+4. reciprocal exchange becomes visually undeniable;
+5. both cards remain distinct after registration;
+6. Other Cut = non-shared paths / no complete reciprocity;
+7. no red invalidation;
+8. original vector/material rendering, not decorative Baroque skin;
+9. no wildlife material use/recommendation;
+10. local structure + JS syntax checks before deployment.
 
 # DEPLOYMENT ARCHITECTURE POLICY — LOCKED
 
-Per-family Vercel deployments are isolated audit laboratories / golden references, not final product architecture.
-
-After Round 13M / Balance Gate 1:
-# **COLLECTION CONSOLIDATION GATE**
-
-Build one canonical RELATIONAL KEY product + one canonical Vercel project with validated families as internal routes/views. Retain isolated family lives only as regression/golden references.
+Individual family Vercel projects remain audit labs / golden references only.
+After 13M merge: **COLLECTION CONSOLIDATION GATE** → one canonical RELATIONAL KEY product + one canonical Vercel project.
 
 ## Persistence protocol
 
-After every significant milestone:
-1. update this file;
-2. update `RELATIONAL_KEY_HANDOVER.md`;
-3. record verified branch / commit / deployment / PR identifiers;
-4. state next output explicitly;
-5. never infer an unverified pass.
+After every milestone update this file + `RELATIONAL_KEY_HANDOVER.md`, record verified identifiers and state the next output explicitly.
 
 Status vocabulary:
 `RESEARCH PASS ≠ CONCEPT PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL PASS ≠ PROMOTE ≠ MERGED`.
