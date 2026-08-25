@@ -4,6 +4,8 @@ Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/consolidation-gate-1`
 Latest verified milestone: `COLLECTION_CONSOLIDATION_C3_SHELL_IMPLEMENTATION.md`
+Consolidation PR: **#20 — RELATIONAL KEY — Collection Consolidation Gate**
+PR status: `DRAFT / DO NOT MERGE`
 
 ## Product invariant
 
@@ -34,12 +36,10 @@ Final validation debt closed:
 # ACTIVE PHASE — COLLECTION CONSOLIDATION GATE
 
 ## C1 — Inventory + Architecture Freeze
-
 Status: `PASS`
 Register: `COLLECTION_CONSOLIDATION_C1_INVENTORY_ARCHITECTURE.md`
 
 ## C2 — Source Capture & Snapshot Import
-
 Status: `PASS`
 Register: `COLLECTION_CONSOLIDATION_C2_SOURCE_CAPTURE_PASS.md`
 
@@ -55,33 +55,29 @@ Family-native interactions are frozen until an explicit Global Refinement gate.
 Status:
 # **IMPLEMENTED / SOURCE PASS / LIVE PREVIEW REQUIRED**
 
-Register:
-`COLLECTION_CONSOLIDATION_C3_SHELL_IMPLEMENTATION.md`
+Register: `COLLECTION_CONSOLIDATION_C3_SHELL_IMPLEMENTATION.md`
+Implementation: `f7416092c64fd7fd17b5771f002fdae5b0e1433f`
+Registry phase: `9b2c503462c96e93ae5c65d365f7a5bc49785139`
+Draft PR: **#20**
 
-Implementation commit:
-`f7416092c64fd7fd17b5771f002fdae5b0e1433f`
-
-Registry state commit:
-`9b2c503462c96e93ae5c65d365f7a5bc49785139`
-
-Root collection experience now includes:
+Root collection experience:
 - thesis `The pair is the product.`;
-- continental balance overview `4 / 3 / 2 / 2 / 2 / 2`;
+- continental balance `4 / 3 / 2 / 2 / 2 / 2`;
 - 15-family relational atlas;
 - continent filters;
-- text search across place / memory / mechanism / law;
-- direct navigation into every frozen family route;
-- responsive collection layout;
+- search across place / memory / mechanism / law;
+- direct navigation to every frozen family route;
+- responsive layout;
 - abstract pair thumbnails rather than generic cultural skinning.
 
 ## C3 source verification
 
 Verified:
-- root title is `RELATIONAL KEY — Collection`;
-- registry has `validated_count: 15` and `candidate_count: 0`;
-- all 15 family records contain direct routes;
-- the C3 implementation commit changes root `index.html` only;
-- therefore no C2 family snapshot was modified by the shell implementation.
+- root title `RELATIONAL KEY — Collection`;
+- registry `validated_count: 15`, `candidate_count: 0`;
+- all 15 family records contain routes;
+- C3 implementation changed root `index.html` only;
+- C2 family snapshots were not modified by C3.
 
 `C3 SOURCE PASS ≠ LIVE ROUTE PASS ≠ COLLECTION VISUAL PASS`.
 
@@ -91,29 +87,32 @@ Verified:
 2. Collection shell wraps families; it does not flatten their mechanisms.
 3. No family CSS / JS refinement until Global Refinement opens explicitly.
 4. Existing per-family Vercel deployments remain golden references.
-5. Final output becomes one canonical RELATIONAL KEY product + one canonical Vercel project.
+5. Final output = one canonical RELATIONAL KEY product + one canonical Vercel project.
+
+# Vercel collection project check
+
+No dedicated collection project currently exists in the Vercel project list.
+
+An older project named `relational-key-three-poc` exists but is not Git-linked and will not be silently repurposed.
+
+Required clean project name:
+# `relational-key-collection`
 
 # Immediate next output
 
 # **C3.1 — DEDICATED CONSOLIDATION LIVE**
 
-Required:
-1. identify or create one dedicated collection Vercel project;
-2. deploy `collection/consolidation-gate-1`;
-3. verify root registry loads;
-4. verify all 15 family routes return successfully;
-5. spot-check the six shared-runtime launchers initialize CITY / SERVICE / SIGNAL / FRIDA / FOOD / TEXTILE correctly;
-6. request a collection-level user visual/usability recording;
-7. keep Global Refinement closed until that audit passes.
+1. user creates Vercel project `relational-key-collection` by importing `Faadil1/relational-key-three-poc`;
+2. do not change its initial main deployment manually;
+3. assistant identifies project ID and triggers `collection/consolidation-gate-1` with a checkpoint push;
+4. verify root registry + all 15 routes;
+5. spot-check CITY / SERVICE / SIGNAL / FRIDA / FOOD / TEXTILE route initialization;
+6. run collection-level user visual/usability audit;
+7. keep PR #20 Draft and Global Refinement closed until the audit passes.
 
 Status vocabulary:
 `SOURCE CAPTURE ≠ COLLECTION SHELL ≠ LIVE ROUTE PASS ≠ COLLECTION VISUAL PASS ≠ GLOBAL REFINEMENT ≠ FINAL COLLECTION PASS`.
 
 ## Persistence protocol
 
-After every significant milestone:
-1. update this file;
-2. update `RELATIONAL_KEY_HANDOVER.md`;
-3. record exact commits / deployments / routes;
-4. state next output explicitly;
-5. never infer an unverified pass.
+After every significant milestone update this file + `RELATIONAL_KEY_HANDOVER.md`, record exact commits/deployments/routes, and never infer an unverified pass.
