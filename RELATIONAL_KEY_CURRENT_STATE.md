@@ -3,8 +3,7 @@
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `round13k/melody-memory-siku`
-Latest verified milestone: `ROUND13K4_SIKU_IMPLEMENTATION.md`
-Implementation checkpoint commit: `bb85774df5f89698e18470bb94985aec42c23c1a`
+Latest verified milestone: `ROUND 13K.5 — DEDICATED LIVE CANDIDATE`
 
 ## Product invariant
 
@@ -16,18 +15,18 @@ Every Cultural Edition must preserve two distinct relational objects, a visible 
 
 # CONTINENTAL BALANCE GATE
 
-Current distribution:
+Current distribution before 13K promotion:
 `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 1 / OCEANIA 1 / EUROPE 1`
 
 Balance Gate 1:
-1. `ROUND 13K` — SOUTH AMERICA #2 — IMPLEMENTED / DEPLOYMENT NEXT
+1. `ROUND 13K` — SOUTH AMERICA #2 — LIVE CANDIDATE / VISUAL+AUDIO AUDIT NEXT
 2. `ROUND 13L` — OCEANIA #2
 3. `ROUND 13M` — EUROPE #2
 
 Target after Gate 1:
 `4 / 3 / 2 / 2 / 2 / 2`
 
-## Last closed build milestone — Round 13J
+## Last closed family — Round 13J
 
 Edition: **DEPTH MEMORY — UNITED KINGDOM / STEREOSCOPY — BINOCULAR REGISTER**
 Law: **CONTROLLED DISPARITY PRODUCES DEPTH.**
@@ -53,11 +52,9 @@ Finalists:
 - Bolivia / Siku — Ira + Arka
 - Colombia / Pasto Varnish Mopa-Mopa
 
-Reserves:
-- Brazil / Cobogó
-- Argentina / Uruguay / Mate + Bombilla
+Pasto remains a high-quality reserve.
 
-## 13K.3 — Two-Finalist Concept Gate
+## 13K.3 — Concept Gate
 Status: `PASS / WINNER SELECTED`
 Register: `ROUND13K3_TWO_FINALIST_CONCEPT_GATE.md`
 Commit: `2d352f88f5a8a2d2f918c3786fb41f9f5d1c5757`
@@ -65,17 +62,27 @@ Commit: `2d352f88f5a8a2d2f918c3786fb41f9f5d1c5757`
 Winner:
 **MELODY MEMORY — BOLIVIA / SIKU — INTERLOCK REGISTER**
 
-Law:
+Canonical law:
 **COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.**
 
 Proof:
 `IRA ≠ ARKA → ALTERNATION → ONE MELODY`
 
-Pasto remains a high-quality reserve.
+Pair architecture:
+- Card A — IRA / Complement A
+- Card B — ARKA / Complement B
+- Gap — MELODY INTERLOCK FIELD
 
-## 13K.4 — Siku Implementation Gate
+Signature:
+`NOTE → GAP → ANSWER → INTERLOCK → SCALE → MELODY → REGISTER → CONTINUE`
 
-Status: **IMPLEMENTED / LOCAL STRUCTURE + SYNTAX PASS / DEPLOYMENT REQUIRED**
+Critical distinction from Ombak:
+- Ombak = simultaneous near-unison difference → beat / resonance.
+- Siku = distributed complementary notes → alternation → continuity.
+
+## 13K.4 — Implementation Gate
+
+Status: `IMPLEMENTED / LOCAL STRUCTURE + SYNTAX PASS`
 
 Implementation branch:
 `round13k/melody-memory-siku`
@@ -95,26 +102,13 @@ Draft PR:
 PR status:
 `DRAFT / DO NOT MERGE`
 
-PR head at creation:
-`bb85774df5f89698e18470bb94985aec42c23c1a`
-
-### Pair architecture
-
-- Card A — `IRA / COMPLEMENT A`
-- Card B — `ARKA / COMPLEMENT B`
-- Gap — `MELODY INTERLOCK FIELD`
-
-Signature:
-`NOTE → GAP → ANSWER → INTERLOCK → SCALE → MELODY → REGISTER → CONTINUE`
-
 ### Real-source visual
 
 Primary source:
 `Wikimedia Commons — Siku bipolar.jpg`
-
 License: public domain.
 
-Source mapping is preserved:
+Source mapping preserved:
 - source left half = Arka → Card B;
 - source right half = Ira → Card A.
 
@@ -123,9 +117,9 @@ Source mapping is preserved:
 Eight illustrative temporal slots alternate source ownership:
 `IRA / ARKA / IRA / ARKA / IRA / ARKA / IRA / ARKA`.
 
-The center is explicitly a temporal score/interlock lane, not a waveform or resonance field.
+The center is a temporal score/interlock lane, explicitly not a waveform or resonance field.
 
-The continuous route becomes visible only after both cards contribute.
+Continuity appears only after both halves contribute.
 
 ### Other Interlock
 
@@ -134,54 +128,95 @@ The continuous route becomes visible only after both cards contribute.
 - both complements remain valid;
 - no red invalidation state.
 
-### Audio
+### Audio truthfulness
 
-Browser synthesis is illustrative.
-
-Current frequency map:
+Browser synthesis is illustrative only.
+Current generic demonstration frequencies:
 `261.63, 293.66, 329.63, 349.23, 392.00, 440.00, 493.88, 523.25 Hz`.
 
-These values are not claimed as documented siku tuning.
+These are not claimed as documented siku tuning or a traditional melody.
+IRA is panned left, ARKA right; tones are short and predominantly non-overlapping.
 
-IRA is panned left, ARKA right; tones are short and predominantly non-overlapping to prove alternation rather than beating.
+## 13K.5 — Dedicated Live Candidate
 
-### Local validation
+Status: **READY / SOURCE-LIVE SYNC VERIFIED / USER VISUAL+AUDIO AUDIT REQUIRED**
 
-PASS:
-- no duplicate DOM IDs;
-- 8 central score slots;
-- 4 IRA source markers;
-- 4 ARKA source markers;
-- Matching + Other states present;
-- explicit non-waveform guardrail present;
-- silent-slot semantics present;
-- AudioContext implementation present;
-- inline JavaScript `node --check` PASS.
+Dedicated Vercel project:
+`relational-key-melody-memory-siku-v13k1`
 
-### Deployment constraint
+Project ID:
+`prj_sVSWA4YxfvqtJm0yAzUYIegeyM9Z`
 
-A dedicated Vercel candidate is required. Existing family projects must not be overwritten.
+### Initial production deployment — NOT AUDIT EVIDENCE
 
-The currently connected Vercel tool can deploy an existing current project but does not expose creation of a new project. No alternate installed plugin exposes Vercel project creation.
+Deployment:
+`dpl_4VuurNFo93XnW3jYAJ7MVqpvgpX3`
 
-Therefore **no deployment has been performed yet**. This is a tooling boundary, not a build pass/fail.
+This deployment is `READY` but was imported from `main` at commit `11f21f6875c4a3b3e4ae2ecce8fd25a5a5a8835d` and is the old baseline. Do not use it for Round 13K audit evidence.
 
-Do not use the 13J, 13I, 13H or base RELATIONAL KEY Vercel projects as substitutes.
+### Siku branch preview — CURRENT LIVE CANDIDATE
+
+Trigger checkpoint:
+`ROUND13K5_VERCEL_PROJECT_CHECKPOINT.md`
+
+Trigger commit:
+`cc7cccfc159b0084fe48e973d0f6bddca951a4c9`
+
+Deployment:
+`dpl_AgwdotABtjmYKDvnx3qoprtPEMsr`
+
+Deployment URL:
+`https://relational-key-melody-memory-siku-v13k1-pujv92nn5.vercel.app`
+
+Branch:
+`round13k/melody-memory-siku`
+
+State:
+`READY`
+
+Target:
+`preview`
+
+Verified served build title:
+`RELATIONAL KEY — Siku Interlock Register`
+
+Verified live contents include:
+- `MELODY MEMORY — BOLIVIA / SIKU`;
+- IRA and ARKA cards;
+- 8 alternating score slots;
+- `MATCHING INTERLOCK` and `OTHER INTERLOCK`;
+- Web Audio synthesis;
+- explicit non-waveform / non-resonance guardrail.
+
+Therefore source/live sync is verified for the Siku preview.
+
+`READY / SOURCE-LIVE SYNC VERIFIED ≠ VISUAL+AUDIO PASS`.
 
 ## Next required output
 
-# ROUND 13K.5 — DEDICATED LIVE CANDIDATE + USER VISUAL/AUDIO AUDIT
+# ROUND 13K.6 — USER VISUAL + AUDIO AUDIT
 
-Required sequence:
-1. create a blank dedicated Vercel project for the Siku candidate;
-2. deploy the current `index.html` without overwriting another family;
-3. verify `READY` and source/live sync;
-4. user records `MATCHING INTERLOCK` and `OTHER INTERLOCK` with audio;
-5. audit visual alternation, audible alternation, route emergence, silent gaps, pair persistence and non-Ombak distinction;
-6. decide `PASS / PATCH / REJECT`;
-7. keep PR #16 Draft until visual/audio gate passes.
+User should record the current Siku preview with audio enabled and demonstrate:
+1. `MATCHING INTERLOCK → TEST RELATIONSHIP` through `CONTINUE`;
+2. `OTHER INTERLOCK → TEST RELATIONSHIP` through `CONTINUE`.
 
-`IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL/AUDIO PASS ≠ PROMOTE ≠ MERGED`.
+Audit criteria — Matching:
+- two cards are immediate and distinct;
+- audible notes clearly alternate left/right;
+- center reads as temporal interlock, not waveform;
+- route continuity appears only after both cards contribute;
+- registered route preserves IRA / ARKA source ownership.
+
+Audit criteria — Other:
+- silent positions are obvious;
+- no complete route emerges;
+- both instruments remain visually valid;
+- no error-state language dominates.
+
+Decision after capture:
+`PASS / PATCH / REJECT`.
+
+Keep PR #16 Draft until this visual/audio gate passes.
 
 ## Persistence protocol
 
@@ -191,3 +226,6 @@ After every significant milestone:
 3. record verified branch / commit / deployment / PR IDs;
 4. state the next required output explicitly;
 5. never infer an unverified pass.
+
+Status vocabulary remains separate:
+`RESEARCH PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL/AUDIO PASS ≠ PROMOTE ≠ MERGED`.
