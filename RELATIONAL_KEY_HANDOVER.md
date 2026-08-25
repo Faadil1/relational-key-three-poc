@@ -11,163 +11,142 @@ RELATIONAL KEY is in the **CONTINENTAL BALANCE GATE**.
 Canonical invariant:
 **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
-Current 12-family distribution:
+Current distribution:
 `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 1 / OCEANIA 1 / EUROPE 1`
 
-Balance Gate 1 sequence:
-- 13K — South America #2 — ACTIVE
+Balance Gate 1:
+- 13K — South America #2 — WINNER SELECTED / IMPLEMENTATION NEXT
 - 13L — Oceania #2
 - 13M — Europe #2
 
-Target after Gate 1:
+Target:
 `4 / 3 / 2 / 2 / 2 / 2`
 
 ## Last closed build milestone
 
-`ROUND 13J — DEPTH MEMORY / UNITED KINGDOM / STEREOSCOPY — BINOCULAR REGISTER`
+`ROUND 13J — DEPTH MEMORY / UK STEREOSCOPY — BINOCULAR REGISTER`
 
-Law:
-**CONTROLLED DISPARITY PRODUCES DEPTH.**
+Law: **CONTROLLED DISPARITY PRODUCES DEPTH.**
+Proof: `LEFT ≠ RIGHT → FUSION → DEPTH`
+Status: `VISUAL PASS / PROMOTE / MERGED`
+Deployment: `dpl_4qQoTiev64vzU7tRLXmrYxtbrHjY`
+Merge commit: `54806b281f411f82c4c6f2fdc94919b8aa5f275d`
 
-Proof:
-`LEFT ≠ RIGHT → FUSION → DEPTH`
+Do not reopen 13J without a concrete defect.
 
-Status:
-- production READY
-- user visual re-audit PASS
-- PROMOTED
-- PR #15 MERGED
+# CURRENT ACTIVE ROUND — 13K / SOUTH AMERICA #2
 
-Production deployment:
-`dpl_4qQoTiev64vzU7tRLXmrYxtbrHjY`
+## 13K.1 — Broad Discovery
+Status: PASS
+Register: `ROUND13K1_SOUTH_AMERICA_BALANCE_BROAD_DISCOVERY.md`
+Commit: `0b19c69d50b574d7b14c428c9b08cb39742478a1`
 
-Merge commit:
-`54806b281f411f82c4c6f2fdc94919b8aa5f275d`
+## 13K.2 — Deep Qualification
+Status: FINALIST GATE PASS
+Register: `ROUND13K2_DEEP_QUALIFICATION_FINALISTS.md`
+Commit: `25304b3d8a8da6f05c8325b4a0ceab180aef4bfb`
 
-Do not reopen 13J unless a concrete defect appears.
+Finalists:
+- Bolivia / Siku — Ira + Arka
+- Colombia / Pasto Varnish Mopa-Mopa
 
-# ROUND 13K — SOUTH AMERICA #2
+Reserves:
+- Brazil / Cobogó
+- Argentina / Uruguay / Mate + Bombilla
 
-## Round 13K.1 — Broad Discovery
+## 13K.3 — Two-Finalist Concept Gate
 
-Status: **PASS**
-
-Register:
-`ROUND13K1_SOUTH_AMERICA_BALANCE_BROAD_DISCOVERY.md`
-
-Commit:
-`0b19c69d50b574d7b14c428c9b08cb39742478a1`
-
-Six mechanisms survived the anti-duplication filter.
-
-## Round 13K.2 — Deep Qualification
-
-Status: **FINALIST GATE — PASS**
+Status: **PASS / WINNER SELECTED**
 
 Register:
-`ROUND13K2_DEEP_QUALIFICATION_FINALISTS.md`
+`ROUND13K3_TWO_FINALIST_CONCEPT_GATE.md`
 
 Commit:
-`25304b3d8a8da6f05c8325b4a0ceab180aef4bfb`
+`2d352f88f5a8a2d2f918c3786fb41f9f5d1c5757`
 
 Canonical-state update:
-`4e1e057973184958ccba3adea91d14335346ca73`
+`3ec5084d03d90a248a0e2acf0c410c33f8e5f962`
 
-### FINALIST A — BOLIVIA / AYMARA SIKU — IRA + ARKA
+# WINNER — BOLIVIA / SIKU — IRA + ARKA
 
-Status: fully pair-native.
-
-Core relation:
-- complementary pitch sets are physically divided between two instruments;
-- two musicians alternate / hocket notes;
-- the two halves together produce one complete scale and melody;
-- neither half contains the complete scale alone.
+Edition:
+**MELODY MEMORY — BOLIVIA / SIKU — INTERLOCK REGISTER**
 
 Law:
 **COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.**
 
-Proof concept:
-`IRA ≠ ARKA → ALTERNATION → ONE SCALE / ONE MELODY`
+Proof:
+`IRA ≠ ARKA → ALTERNATION → ONE MELODY`
 
-Key system distinction:
-- not Ombak beating;
-- not simultaneous near-unison difference;
-- proof comes from distributed notes interlocking across time.
+Pair architecture:
+- Card A — IRA / COMPLEMENT A
+- Card B — ARKA / COMPLEMENT B
+- Gap — MELODY INTERLOCK FIELD
 
-Visual strategy:
-- public-domain separated Ira / Arka image available;
-- additional reusable Bolivian performance imagery available.
+Signature:
+`NOTE → GAP → ANSWER → INTERLOCK → SCALE → MELODY → REGISTER → CONTINUE`
 
-Truthfulness:
-- any synthesized tones are illustrative unless authentic timbre is directly sourced;
-- do not call an invented demonstration sequence a traditional melody.
+### Matching behavior
+- note ownership alternates left/right;
+- IRA visibly lacks positions supplied by ARKA and vice versa;
+- central score route fills only through alternating contribution;
+- continuous route appears only after both halves contribute;
+- registration preserves source ownership of each note event.
 
-### FINALIST B — COLOMBIA / PASTO VARNISH MOPA-MOPA
+### OTHER INTERLOCK
+- both instruments remain valid;
+- selected illustrative sequence leaves visible silent slots;
+- no red invalidation;
+- target phrase simply does not complete.
 
-Status: material-pair native / product-pair editorial.
+### Critical distinction from Ombak
 
-Core relation:
-- resin is heated, colored and stretched into sheets;
-- multiple layers are applied;
-- cutting / defining an upper layer can expose or combine different color layers in the final decoration.
+Ombak:
+`SIMULTANEOUS NEAR-UNISON DIFFERENCE → BEAT / RESONANCE`
 
-Law:
-**A LAYER BECOMES INFORMATION THROUGH WHAT IT REVEALS BENEATH IT.**
+Siku:
+`DISTRIBUTED COMPLEMENTARY NOTES → ALTERNATION → COMPLETE CONTINUITY`
 
-Potential sequence:
-`HEAT → STRETCH → OVERLAY → CUT → REVEAL → REGISTER → CONTINUE`
+Do not use waveform/resonance visual language for Siku.
 
-Key system distinction:
-- unlike Kento, proof is layered/subtractive reveal rather than press/transfer;
-- unlike Fès, proof is not complementary physical fit.
+### Visual-source strategy
 
-Visual strategy:
-- usable Pasto varnish imagery exists under CC BY-SA / similar Creative Commons terms.
+Use a public-domain image showing the separated Ira / Arka halves as the primary material anchor. Cultural identity should come from the real instrument pair and its documented relational behavior, not decorative Andean motifs.
 
-Truthfulness:
-- the two-card product is an editorial translation of the documented layering process;
-- do not imply artisans historically used cards;
-- do not label an invented cut path as an authenticated historical motif.
+### Audio truthfulness
 
-### Reserves
+- synthesis may be illustrative;
+- do not claim authentic siku timbre unless directly sourced;
+- do not claim the demonstration phrase is traditional unless directly sourced;
+- notes should be short and predominantly non-overlapping so the proof is alternation, not beating.
 
-1. Brazil / Cobogó — exceptional visual projection mechanism, but triadic screen × light × receiving field.
-2. Argentina / Uruguay / Mate + Bombilla — strong physical pair, but filter proof depends on yerba / infusion.
+### Pasto status
+
+**HIGH-QUALITY RESERVE.**
+
+Pasto remains valuable for later South America balancing / Layer Memory exploration but loses 13K because its two-card split is more editorial than Siku's native pair.
 
 ## Immediate next task
 
-# ROUND 13K.3 — TWO-FINALIST CONCEPT GATE
+# ROUND 13K.4 — SIKU IMPLEMENTATION GATE
 
-Do not implement before this gate closes.
+Create a dedicated implementation branch from the verified concept state.
 
-For BOTH Siku and Pasto define:
-1. Card A;
-2. Card B;
-3. relationship field;
-4. signature sequence;
-5. matching proof;
-6. Other / mismatch semantics;
-7. visual-source treatment;
-8. truthfulness boundary;
-9. interaction storyboard;
-10. direct comparison.
+Implementation constraints:
+1. two cards visible from first frame;
+2. real-source separated Ira / Arka material;
+3. central field is a temporal interlock lane, not a waveform;
+4. matching note events alternate source ownership;
+5. continuity emerges only after both halves contribute;
+6. illustrative audio has explicit truthfulness labeling;
+7. Other Interlock leaves silent positions and preserves both cards;
+8. no red X;
+9. responsive behavior preserves pair logic;
+10. syntax/runtime check before deployment.
 
-Then select **one winner**.
+No implementation has been promoted yet.
 
-## Existing mechanism territories to avoid duplicating
-
-- City — interrupted path / exact registration
-- Benin Service — service storyboard / switch register
-- Nigeria Signal — relay alignment
-- Frida — archive/credential seam
-- Toyama Food — edible physical transformation
-- Asante / Bonwire — woven strip relation
-- Fès — cut-tile material fit / tessellation
-- Peru Khipu — cord tension / knot structural record
-- Japan Kento — block/paper registration + transfer
-- Bali Ombak — controlled acoustic difference / beat
-- Marshall Islands Swell — environmental wave deflection / orientation
-- UK Stereoscopy — controlled optical disparity / depth
+`CONCEPT PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL PASS`.
 
 ## Persistence protocol
 
@@ -178,7 +157,4 @@ After every significant milestone:
 4. state the next required output explicitly;
 5. never infer an unverified pass.
 
-Keep status vocabulary separate:
-`RESEARCH PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL PASS ≠ PROMOTE ≠ MERGED`.
-
-If a new conversation starts here, read `RELATIONAL_KEY_CURRENT_STATE.md`, then this file, then continue directly with `ROUND 13K.3 — TWO-FINALIST CONCEPT GATE`.
+If a new conversation starts here, read the canonical state, then this handover, then begin `ROUND 13K.4 — SIKU IMPLEMENTATION GATE`.
