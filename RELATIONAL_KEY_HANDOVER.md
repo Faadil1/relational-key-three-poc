@@ -16,27 +16,22 @@ Current merged distribution:
 
 Balance Gate 1:
 - 13K — South America #2 — MERGED / CLOSED
-- 13L — Oceania #2 — **LIVE CANDIDATE / USER VISUAL AUDIT NEXT**
+- 13L — Oceania #2 — **LIVE CANDIDATE / CONDITIONAL VISUAL PASS / TARGET RE-CAPTURE REQUIRED**
 - 13M — Europe #2
 
-Target:
+Target after Gate 1:
 `4 / 3 / 2 / 2 / 2 / 2`
 
-## Last closed family — Round 13K
+## Last closed family — 13K
 
 **MELODY MEMORY — BOLIVIA / SIKU — INTERLOCK REGISTER**
 Law: `COMPLEMENTARY ABSENCE PRODUCES CONTINUITY.`
 Proof: `IRA ≠ ARKA → ALTERNATION → ONE MELODY`
-Status: `VISUAL+AUDIO PASS / PROMOTE / MERGED`
 PR #16: merged
 Merge SHA: `ca8851db034fac0cc60507d310b1623fb459366c`
-Golden-reference preview: `dpl_AgwdotABtjmYKDvnx3qoprtPEMsr`
+Golden reference: `dpl_AgwdotABtjmYKDvnx3qoprtPEMsr`
 
-Do not reopen 13K without a concrete defect.
-
-# CURRENT ACTIVE FAMILY — ROUND 13L
-
-## Edition
+# ACTIVE FAMILY — ROUND 13L
 
 **EMBER MEMORY — AOTEAROA / HIKA AHI — FRICTION REGISTER**
 
@@ -47,140 +42,99 @@ Proof:
 `HIKA ≠ KAUAHI → FRICTION → HEAT → EMBER`
 
 Pair:
-- Card A — HIKA / active stick
-- Card B — KAUAHI / grooved base
-- Gap — FRICTION / HEAT FIELD
+- HIKA / active stick
+- KAUAHI / grooved base
+- center = FRICTION / HEAT FIELD
 
 Signature:
 `CONTACT → STROKE → TRACE → ACCUMULATE → HEAT → EMBER → REGISTER → CONTINUE`
 
-## Verified chain
+### Verified chain
 
-13L.1 Broad Discovery — PASS
+13L.1 — Broad Discovery PASS
 - `ROUND13L1_OCEANIA_BALANCE_BROAD_DISCOVERY.md`
-- commit `9633f07006aeeee145a528eb67455b2a370989eb`
+- `9633f07006aeeee145a528eb67455b2a370989eb`
 
-13L.2 Deep Qualification — FINALIST GATE PASS
+13L.2 — Finalist Gate PASS
 - `ROUND13L2_DEEP_QUALIFICATION_FINALISTS.md`
-- commit `96b421203832af8618029a9af7c83b9049158bee`
-- finalists: Hika Ahi; Double-Hulled Canoe
-- reserves: Grindstones; Tapa Beater + Anvil
+- `96b421203832af8618029a9af7c83b9049158bee`
+- reserve: Double-Hulled Canoe
 
-13L.3 Concept Gate — PASS / HIKA AHI SELECTED
+13L.3 — Concept PASS / Hika Ahi selected
 - `ROUND13L3_TWO_FINALIST_CONCEPT_GATE.md`
-- commit `99697a137313ada569d469476dbf83d5d4eb5f39`
-- Double-Hulled Canoe remains a high-quality Oceania reserve.
+- `99697a137313ada569d469476dbf83d5d4eb5f39`
 
-13L.4 Implementation — PASS LOCAL
-- branch `round13l/ember-memory-hika-ahi`
+13L.4 — Implementation LOCAL PASS
 - implementation `3b550206171e3ad5bfd7a0ad7e6f00f44748a2d7`
 - checkpoint `7c0a327f333407d2654b80b7f8c00facff85f326`
-- Draft PR #17
+- PR #17 Draft
 
-Implementation:
-- two distinct cards visible immediately;
-- original source-grounded CSS/material tool rendering;
-- no restricted historical Māori photo copied;
-- no generic Indigenous decorative skin;
-- TARGET GROOVE builds an editorial heat trace and reveals ember only after full target relation;
-- OTHER CONTACT leaves a partial/offset trace with no ember;
-- both tools remain valid; no red X;
-- responsive pair logic;
-- JS syntax check PASS.
+13L.5 — Live Candidate READY / SOURCE-LIVE SYNC VERIFIED
+- project `relational-key-ember-memory-hika-v13l1`
+- project ID `prj_bxE1WIkaiKvyGG9vP7SrvrMxTmTj`
+- preview `dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
+- URL `https://relational-key-ember-memory-hika-v13l1-89yj1dgb2.vercel.app`
+- ignore old `main` import `dpl_3w5PoFYCKoWgs359S5unxgWTBpmT`
 
-### Critical truthfulness / safety boundary
-
-This interaction is an editorial relation model, **not practical fire-starting guidance**.
-
-Do not describe animation values as real-world speed, duration, dimensions, moisture, temperature, tinder preparation or survival technique.
-
-## 13L.5 — Dedicated Live Candidate
+## 13L.6 — User Visual Audit
 
 Status:
-# **READY / SOURCE-LIVE SYNC VERIFIED**
+# **CONDITIONAL PASS / TARGET RE-CAPTURE REQUIRED**
+
+Register:
+`ROUND13L6_USER_VISUAL_AUDIT_CONDITIONAL.md`
 
 Checkpoint:
-`ROUND13L5_VERCEL_PROJECT_CHECKPOINT.md`
+`44b25d3b896aac08ce8f8e0c77391c34b49a9d03`
 
-Dedicated project:
-`relational-key-ember-memory-hika-v13l1`
+### Verified
 
-Project ID:
-`prj_bxE1WIkaiKvyGG9vP7SrvrMxTmTj`
+TARGET final state:
+- video begins with full heat trace + ember already present;
+- ember is located at the relation field;
+- both tools remain distinct.
 
-Ignore initial import:
-- deployment `dpl_3w5PoFYCKoWgs359S5unxgWTBpmT`
-- source `main` / old baseline
-- not audit evidence.
+OTHER CONTACT:
+- partial/offset trace is clearly demonstrated;
+- no ember appears;
+- both tools remain valid;
+- no red invalidation;
+- no practical fire-starting instruction is introduced.
 
-Current Hika preview:
-- deployment `dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
-- URL `https://relational-key-ember-memory-hika-v13l1-89yj1dgb2.vercel.app`
-- source branch `round13l/ember-memory-hika-ahi`
-- trigger commit `4c1544cb327d57d956ef461b3d0f5fde7c5af524`
-- state `READY`
-- served HTML directly verified
-- title `RELATIONAL KEY — Hika Ahi Friction Register`
-- source/live sync VERIFIED.
+### Missing evidence
 
-## Deployment Architecture Policy — LOCKED
+The entire Target emergence occurs before the recording starts. Therefore visual audit cannot yet certify that the spectator experiences:
 
-Per-family Vercel projects are **audit laboratories / golden references**, not final product architecture.
+`UNRESOLVED → FRICTION → HEAT → EMBER`
 
-During rounds:
-`1 family → 1 branch → 1 isolated audit deployment`
-
-After validation:
-- merge source into canonical repository lineage;
-- retain isolated live only as validation/regression reference.
-
-After 13M / Balance Gate 1:
-# **COLLECTION CONSOLIDATION GATE**
-
-Build one canonical RELATIONAL KEY product + one canonical Vercel project, with validated families available as internal routes/views. Use isolated family lives as golden references when comparing the consolidated implementation.
-
-Do not mistake individual Vercel projects for the final architecture.
+No code patch is requested.
 
 ## Immediate next task
 
-# ROUND 13L.6 — USER VISUAL AUDIT
+Re-record TARGET GROOVE only:
+1. press RESET;
+2. keep TARGET GROOVE selected;
+3. start recording before TEST RELATIONSHIP;
+4. press TEST RELATIONSHIP;
+5. wait through EMBER → REGISTER → CONTINUE.
 
-Use:
-`https://relational-key-ember-memory-hika-v13l1-89yj1dgb2.vercel.app`
+OTHER CONTACT does not need another recording.
 
-Record:
-1. `TARGET GROOVE → TEST RELATIONSHIP` through `CONTINUE`;
-2. `OTHER CONTACT → TEST RELATIONSHIP` through `CONTINUE`.
+After that capture, decide `PASS / PATCH / REJECT`.
 
-Audit Target:
-- two cards remain distinct;
-- friction/heat accumulation is legible;
-- ember clearly emerges only because of the pair;
-- ember appears only after sustained Target relation;
-- registered state preserves both tools.
+PR #17 stays `DRAFT / DO NOT MERGE` until full visual pass.
 
-Audit Other:
-- offset/partial trace remains visible;
-- no ember;
-- both tools remain valid;
-- no error-state dominance;
-- interaction still reads as editorial relation, not practical instruction.
+## Deployment Architecture Policy — LOCKED
 
-Decision: `PASS / PATCH / REJECT`.
+Individual Vercel family projects are audit laboratories / golden references only.
+After Round 13M, run **COLLECTION CONSOLIDATION GATE** and build one canonical RELATIONAL KEY product + one canonical Vercel project, retaining family lives only for regression comparison.
 
-Keep PR #17 Draft until visual gate passes.
+## Truthfulness boundary
 
-## Status vocabulary
-
-`RESEARCH PASS ≠ CONCEPT PASS ≠ IMPLEMENTED ≠ READY ≠ LIVE CANDIDATE ≠ VISUAL PASS ≠ PROMOTE ≠ MERGED`.
+Hika interaction is editorial, not operational fire-making guidance. Do not describe UI timing, trace, glow or movement as real-world speed, duration, dimensions, moisture, temperature, tinder preparation or survival technique.
 
 ## Persistence protocol
 
-After every significant milestone:
-1. update `RELATIONAL_KEY_CURRENT_STATE.md`;
-2. update this handover;
-3. record branch / commit / deployment / PR IDs;
-4. state next output explicitly;
-5. never infer an unverified pass.
+After every significant milestone update canonical state + this handover, record verified identifiers, and state the next output explicitly.
 
-If a new conversation starts here, read canonical state + this handover, then resume directly at `ROUND 13L.6 — USER VISUAL AUDIT`.
+If a new conversation starts here, read `RELATIONAL_KEY_CURRENT_STATE.md`, then this file, then resume at the **TARGET GROOVE re-capture**.
