@@ -51,7 +51,7 @@ Do not modify family snapshot CSS / JS during C3.
 # C3 — COLLECTION SHELL
 
 Status:
-# **IMPLEMENTED / SOURCE PASS / LIVE PREVIEW REQUIRED**
+# **IMPLEMENTED / SOURCE PASS / LIVE PREVIEW BLOCKED ON VERCEL BRANCH DEPLOY**
 
 Implementation:
 `f7416092c64fd7fd17b5771f002fdae5b0e1433f`
@@ -81,6 +81,30 @@ Source checks:
 - C3 changes root `index.html` only;
 - frozen family snapshots remain untouched.
 
+# C3.1 — VERCEL PROJECT CREATED
+
+Verified project:
+- ID `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
+- current Vercel name `relational-key-collectionrelational-key-collection`
+- Git repo `Faadil1/relational-key-three-poc`
+- initial production `dpl_8VgY6p2WQw2oC92NncYU1EPG5qt1`
+- initial branch `main`
+- state `READY`
+- commit `11f21f6875c4a3b3e4ae2ecce8fd25a5a5a8835d`
+
+This initial production is legacy main, not the consolidation candidate.
+
+Assistant pushed documentation-only preview trigger:
+`1beca9a6bb0233ad18982942d20cf49a978324aa`
+
+Register:
+`COLLECTION_C3_1_VERCEL_PREVIEW_TRIGGER.md`
+
+Vercel was re-queried after the push and still returned only the original main deployment. Automatic Git preview did not trigger.
+
+No code defect is implied. The current blocker is strictly obtaining one Preview Deployment for branch:
+`collection/consolidation-gate-1`.
+
 # LOCKED RULES
 
 1. Collection shell wraps family mechanisms; it does not replace them.
@@ -89,33 +113,25 @@ Source checks:
 4. Final product = one canonical RELATIONAL KEY collection + one canonical Vercel project.
 5. `SOURCE PASS ≠ LIVE ROUTE PASS ≠ COLLECTION VISUAL PASS`.
 
-# VERCEL CHECK
+# IMMEDIATE NEXT TASK — C3.1A
 
-No dedicated collection project exists yet.
+User manually creates/triggers one Preview Deployment from Git branch:
+`collection/consolidation-gate-1`
+inside project:
+`prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`.
 
-Do not silently reuse the old unlinked `relational-key-three-poc` Vercel experiment.
+Once visible, assistant resumes without further setup:
+1. identify preview deployment ID + URL;
+2. confirm `READY`;
+3. verify root collection HTML;
+4. verify `collection/families.json`;
+5. verify all 15 family routes;
+6. spot-check CITY / SERVICE / SIGNAL / FRIDA / FOOD / TEXTILE launch routes;
+7. record Live Route Pass or defects;
+8. ask user for collection-level visual/usability recording;
+9. Global Refinement remains closed until that visual gate passes.
 
-Create a clean Git-imported project named exactly:
-# `relational-key-collection`
-
-Import repository:
-`Faadil1/relational-key-three-poc`
-
-The first deployment may show `main`; that is expected. Do not change branch settings manually.
-
-# IMMEDIATE NEXT TASK — C3.1
-
-Once `relational-key-collection` exists:
-1. assistant finds project ID;
-2. pushes a consolidation checkpoint to trigger `collection/consolidation-gate-1`;
-3. waits for preview `READY`;
-4. verifies root HTML + registry load;
-5. verifies all 15 family routes;
-6. spot-checks CITY / SERVICE / SIGNAL / FRIDA / FOOD / TEXTILE launch routes;
-7. user records collection-level visual/usability walkthrough;
-8. only after pass may Global Refinement open.
-
-PR #20 remains Draft throughout this gate.
+PR #20 remains Draft throughout.
 
 ## Accidental PR note
 
@@ -125,4 +141,4 @@ PR #19 was an accidental placeholder. It was immediately closed, unmerged, no co
 
 After every significant milestone update `RELATIONAL_KEY_CURRENT_STATE.md` + this handover.
 
-If a new conversation starts here, resume at **C3.1 — create/identify `relational-key-collection` Vercel project**.
+If a new conversation starts here, resume at **C3.1A — create the Vercel preview for `collection/consolidation-gate-1`**.
