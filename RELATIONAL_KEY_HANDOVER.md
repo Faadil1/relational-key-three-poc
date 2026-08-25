@@ -13,7 +13,8 @@ RELATIONAL KEY has completed:
 - C1 — Inventory + Architecture Freeze;
 - C2 — Source Capture & Snapshot Import;
 - C3 — Collection Shell implementation + source pass;
-- C3.1 — dedicated Preview root live pass.
+- C3.1 — dedicated Preview root live pass;
+- C3.2A — collection shell visual pass from user recording.
 
 Canonical invariant:
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
@@ -73,48 +74,65 @@ Consolidation preview:
 - URL `https://relational-key-collectionrelational-key-collection-4834ctm8z.vercel.app`
 - branch `collection/consolidation-gate-1`
 - state `READY`
-- visible source checkpoint `7dd9d82…`
-
-Authenticated Vercel root fetch:
-- HTTP 200;
-- correct Collection title;
-- hero thesis present;
-- balance present;
-- relational atlas present;
-- served HTML identifies the expected deployment.
-
-Register:
-`COLLECTION_C3_1_LIVE_ROOT_PASS.md`
 
 Verdict:
 # `ROOT LIVE PASS`
 
-## Route verification constraint
+Register:
+`COLLECTION_C3_1_LIVE_ROOT_PASS.md`
 
-Vercel Authentication protects Preview sub-routes. Stateless connector fetches to `/collection/families.json` or `/families/<slug>/` redirect HTTP 302 to Vercel SSO.
+Vercel Authentication protects preview sub-routes from stateless connector verification. Do not infer route pass from source alone.
 
-Do not infer a 15/15 live-route pass from source alone.
+# C3.2A — USER SHELL VISUAL AUDIT
 
-The user's authenticated browser can traverse those routes, so the next walkthrough doubles as:
-- live-route validation;
-- collection visual/usability audit.
+User capture:
+- 10.6 s;
+- 1912×966;
+- 30 fps;
+- scrolls from hero through the final family row.
 
-# IMMEDIATE NEXT TASK — C3.2
+Verdict:
+# `SHELL VISUAL PASS / FUNCTIONAL WALKTHROUGH REQUIRED`
 
-User records one collection walkthrough from the Preview:
+Register:
+`COLLECTION_C3_2_SHELL_VISUAL_AUDIT_PARTIAL.md`
 
-1. show root hero + continental balance;
-2. scroll Relational atlas;
-3. activate one continent filter and return to All;
-4. run one text search and clear it;
-5. open all six restored/shared launch routes and verify intended family:
-   - City / Gatineau;
-   - Service / Benin;
-   - Signal / Nigeria;
-   - Frida / Coyoacán;
-   - Food / Toyama;
-   - Textile / Bonwire;
-6. spot-check the nine autonomous routes:
+What passes:
+- collection reads as one coherent editorial product;
+- hero thesis and balance hierarchy are strong;
+- Relational Atlas has stable three-column rhythm;
+- all 15 family cards are visibly represented;
+- final Siku / Hika Ahi / Boulle row is visible;
+- no obvious desktop layout break;
+- abstract pair thumbnails support the invariant without cultural skinning.
+
+Future non-blocking polish:
+- small secondary mono labels / filter-chip / card metadata;
+- repeated shell thumbnails favor system coherence over family individuality.
+
+What remains unverified because the user only scrolled:
+- continent filter behavior;
+- search behavior;
+- six restored/shared route launchers;
+- nine autonomous routes;
+- return navigation;
+- 15/15 live-route gate.
+
+# IMMEDIATE NEXT TASK — C3.2B FUNCTIONAL ROUTE WALKTHROUGH
+
+Record an interaction-focused walkthrough only; no need to repeat the long shell scroll or replay family-native mechanisms.
+
+Required:
+1. activate one continent filter and return to `All`;
+2. search for one known family/mechanism and clear the query;
+3. open the six restored/shared launch routes and show correct initialization:
+   - Gatineau / CITY;
+   - Benin / SERVICE;
+   - Nigeria / SIGNAL;
+   - Frida / FRIDA;
+   - Toyama / FOOD;
+   - Bonwire / TEXTILE;
+4. spot-check the nine autonomous routes:
    - Zellige;
    - Khipu;
    - Kento;
@@ -124,22 +142,13 @@ User records one collection walkthrough from the Preview:
    - Siku;
    - Hika Ahi;
    - Boulle;
-7. return to the root.
+5. demonstrate at least one return path to the collection.
 
-Assistant then audits:
-- any broken route;
-- wrong shared-runtime initialization;
-- return/navigation friction;
-- filter/search behavior;
-- collection hierarchy and coherence;
-- whether the shell supports rather than flattens family-native mechanisms.
+Assistant then records:
+- `15/15 LIVE ROUTE PASS / PATCH`;
+- `COLLECTION USABILITY PASS / PATCH`.
 
-Possible verdicts:
-- `LIVE ROUTE PASS + COLLECTION VISUAL PASS`;
-- `PASS WITH POLISH`;
-- `PATCH REQUIRED`.
-
-Only after this may **GLOBAL REFINEMENT** open.
+Only after both pass may **GLOBAL REFINEMENT** open.
 
 PR #20 remains Draft.
 
@@ -147,4 +156,4 @@ PR #20 remains Draft.
 
 After every significant milestone update `RELATIONAL_KEY_CURRENT_STATE.md` + this handover.
 
-If a new conversation starts here, resume directly at **C3.2 — COLLECTION USER WALKTHROUGH / LIVE ROUTE + VISUAL USABILITY GATE**.
+If a new conversation starts here, resume directly at **C3.2B — FUNCTIONAL ROUTE WALKTHROUGH**.
