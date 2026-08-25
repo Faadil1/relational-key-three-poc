@@ -3,7 +3,7 @@
 Date: 2026-08-25
 Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/consolidation-gate-1`
-Latest verified milestone: `COLLECTION_C3_1_LIVE_ROOT_PASS.md`
+Latest verified milestone: `COLLECTION_C3_2_SHELL_VISUAL_AUDIT_PARTIAL.md`
 Consolidation PR: **#20 — RELATIONAL KEY — Collection Consolidation Gate**
 PR status: `DRAFT / DO NOT MERGE`
 
@@ -74,21 +74,18 @@ Legacy initial production:
 - commit `11f21f6875c4a3b3e4ae2ecce8fd25a5a5a8835d`
 - NOT the consolidation candidate.
 
-Manual Preview Deployment created successfully:
+Manual Preview Deployment:
 - deployment `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ`
 - URL `https://relational-key-collectionrelational-key-collection-4834ctm8z.vercel.app`
 - branch `collection/consolidation-gate-1`
 - Vercel state `READY`
-- visible deployment source checkpoint `7dd9d82…`
 
-Root authenticated Vercel fetch:
+Root live verification:
 - HTTP 200;
 - title `RELATIONAL KEY — Collection`;
 - hero `The pair is the product.`;
 - continental balance present;
-- `Relational atlas` present;
-- shell fetches `/collection/families.json`;
-- served HTML identifies deployment `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ`.
+- `Relational atlas` present.
 
 Verdict:
 # `C3.1 ROOT LIVE = PASS`
@@ -96,13 +93,45 @@ Verdict:
 Register:
 `COLLECTION_C3_1_LIVE_ROOT_PASS.md`
 
-### Live sub-route verification constraint
+## C3.2A — User shell visual audit
 
-The Preview Deployment is protected by Vercel Authentication. Independent connector requests to `/collection/families.json` and `/families/<slug>/` receive HTTP 302 to Vercel SSO.
+User recording audited:
+- 10.6 s;
+- 1912×966;
+- 30 fps;
+- full desktop scroll from hero through the final atlas row.
 
-This is an access-control condition, not evidence of a route defect.
+Verdict:
+# `SHELL VISUAL PASS / FUNCTIONAL WALKTHROUGH REQUIRED`
 
-Do NOT claim `15/15 LIVE ROUTE PASS` until the routes are traversed in the user's authenticated browser walkthrough.
+Register:
+`COLLECTION_C3_2_SHELL_VISUAL_AUDIT_PARTIAL.md`
+
+Verified visually:
+- root reads as one coherent RELATIONAL KEY collection rather than a prototype selector;
+- thesis + continental balance have clear hierarchy;
+- atlas maintains a stable three-column editorial rhythm;
+- all 15 family cards are visibly represented in the captured scroll;
+- final row with Siku / Hika Ahi / Boulle is visible;
+- no obvious desktop layout break appears in the recording;
+- abstract pair thumbnails preserve the collection invariant without generic cultural skinning.
+
+Non-blocking future polish:
+- secondary mono labels and chip/card metadata are very small at desktop scale;
+- repeated abstract pair thumbnails favor collection coherence over family individuality;
+- revisit only during Global Refinement.
+
+Not verified in the recording:
+- continent filter behavior;
+- text search behavior;
+- six restored/shared runtime route initializations;
+- nine autonomous routes;
+- return navigation;
+- 15/15 live-route gate.
+
+Because Vercel Authentication redirects stateless sub-route requests to SSO, do not replace this missing user-browser evidence with inference.
+
+`SHELL VISUAL PASS ≠ LIVE ROUTE PASS ≠ COLLECTION USABILITY PASS`.
 
 # Consolidation architecture — LOCKED
 
@@ -114,26 +143,39 @@ Do NOT claim `15/15 LIVE ROUTE PASS` until the routes are traversed in the user'
 
 # Immediate next output
 
-# **C3.2 — COLLECTION USER WALKTHROUGH / LIVE ROUTE + VISUAL USABILITY GATE**
+# **C3.2B — FUNCTIONAL ROUTE WALKTHROUGH**
 
-Required user walkthrough:
-1. open the authenticated consolidation Preview root;
-2. show hero + continental balance;
-3. scroll the relational atlas;
-4. test one continent filter;
-5. test one text search;
-6. open the six shared-runtime routes and confirm CITY / SERVICE / SIGNAL / FRIDA / FOOD / TEXTILE initialize correctly;
-7. spot-check the nine autonomous family routes;
-8. return to collection shell;
-9. capture enough navigation to judge whether the experience reads as one coherent product.
+Required user evidence:
+1. activate one continent filter and return to `All`;
+2. run one text search and clear it;
+3. open the six restored/shared launch routes and confirm intended family:
+   - Gatineau / CITY;
+   - Benin / SERVICE;
+   - Nigeria / SIGNAL;
+   - Frida / FRIDA;
+   - Toyama / FOOD;
+   - Bonwire / TEXTILE;
+4. spot-check the nine autonomous family routes:
+   - Zellige;
+   - Khipu;
+   - Kento;
+   - Ombak;
+   - Swell;
+   - Stereoscopy;
+   - Siku;
+   - Hika Ahi;
+   - Boulle;
+5. demonstrate at least one return path to the collection.
 
-After the walkthrough:
-- assistant records `LIVE ROUTE PASS / PATCH`;
-- assistant records `COLLECTION VISUAL PASS / PATCH`;
+No need to replay family-native interactions; they already have independent gates.
+
+After this walkthrough:
+- record `15/15 LIVE ROUTE PASS / PATCH`;
+- record `COLLECTION USABILITY PASS / PATCH`;
 - only after those gates may **GLOBAL REFINEMENT** open.
 
 Status vocabulary:
-`SOURCE CAPTURE ≠ COLLECTION SHELL ≠ ROOT LIVE PASS ≠ LIVE ROUTE PASS ≠ COLLECTION VISUAL PASS ≠ GLOBAL REFINEMENT ≠ FINAL COLLECTION PASS`.
+`SOURCE CAPTURE ≠ COLLECTION SHELL ≠ ROOT LIVE PASS ≠ SHELL VISUAL PASS ≠ LIVE ROUTE PASS ≠ COLLECTION USABILITY PASS ≠ GLOBAL REFINEMENT ≠ FINAL COLLECTION PASS`.
 
 ## Persistence protocol
 
