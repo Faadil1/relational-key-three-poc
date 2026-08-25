@@ -29,89 +29,106 @@ Read first:
 1. `RELATIONAL_KEY_CURRENT_STATE.md`
 2. `COLLECTION_CONSOLIDATION_C1_INVENTORY_ARCHITECTURE.md`
 3. `collection/families.json`
+4. `COLLECTION_C1_KENTO_VALIDATION_DEBT.md`
 
-## Critical discovery
+## Collection ledger
 
-The collection has 15 family slots, but validation is not perfectly uniform.
+15 family slots total.
 
-- 14 have documented user visual / visual+audio gates.
-- Japan / Kento Register is the single debt.
+Validation:
+- 14 documented user visual / visual+audio gates;
+- 1 pending gate: Japan / Kento Register.
 
-Kento:
-- branch `round13g/print-memory-kento`
-- implementation doc `ROUND13G2_KENTO_REGISTER_IMPLEMENTATION.md`
-- doc status `IMPLEMENTED / LIVE VISUAL AUDIT REQUIRED`
-- live deployment `dpl_J74TMsqZS2uSWv8PuhLVGPfQfBev`
-- Vercel state `READY`
-- do not label PROMOTED until user visual audit closes this gate.
+## Kento — immediate blocker before calling all 15 promoted
 
-## Family source topology
+Branch:
+`round13g/print-memory-kento`
 
-### Six-family restored base
-Source branch:
+Implementation doc:
+`ROUND13G2_KENTO_REGISTER_IMPLEMENTATION.md`
+
+Doc status:
+`IMPLEMENTED / LIVE VISUAL AUDIT REQUIRED`
+
+Vercel:
+- project `relational-key-print-memory-kento-v13g1`
+- deployment `dpl_J74TMsqZS2uSWv8PuhLVGPfQfBev`
+- URL `https://relational-key-print-memory-kento-v13g1-gbdy0lbk4.vercel.app`
+- state `READY`
+
+Direct live fetch:
+`HTTP 200 / SOURCE-LIVE CONTENT VERIFIED`
+
+Observed live:
+- Kento Register title;
+- BLOCK CLAIM + PAPER / IMAGE RULE;
+- kagi + hikitsuki edge registration;
+- MATCHING BLOCK / OTHER BLOCK;
+- matching progression ends in registered print alignment;
+- other retains visible misregistration while both cards remain valid.
+
+Required user recording:
+1. idle state visible;
+2. MATCHING BLOCK → TEST REGISTRATION → final registered state;
+3. OTHER BLOCK → TEST REGISTRATION → final misregistration state;
+4. keep both cards visible.
+
+Audit criteria:
+- two physical roles are distinct;
+- edge registration marks make alignment causal;
+- final print alignment dominates the center graphic;
+- Other reads as print misregistration, not UI failure;
+- both cards remain valid.
+
+Until reviewed:
+# `KENTO = LIVE CANDIDATE / NOT PROMOTED`
+
+## Source topology for C2
+
+Six-family restored base:
 `round13r/relational-pair-restoration`
 
-Contains the canonical restored versions of:
-- Gatineau / Registered City Passage
-- Benin / Service Register
-- Nigeria / Signal Portrait
-- Coyoacán / Frida Trace System
-- Toyama / Edible Passage
-- Asante-Bonwire / Woven Register
+Dedicated validated branches:
+- `round13e/craft-memory-zellige`
+- `round13f/record-memory-khipu`
+- `round13h/sound-memory-ombak`
+- `round13i/navigation-memory-marshall`
 
-User audit:
-`ROUND13R4_USER_LIVE_VISUAL_AUDIT.md` → PASS WITH POLISH
+Candidate branch:
+- `round13g/print-memory-kento`
 
-Golden multi-family deployment:
-`dpl_26HsTL8cVqyzkkqm4oGtnVZZqehn`
+Later promoted / merged family sources:
+- `round13j/depth-memory-stereoscopy`
+- `round13k/melody-memory-siku`
+- `round13l/ember-memory-hika-ahi`
+- `round13m/complement-memory-boulle`
 
-### Dedicated validated branches still requiring source capture
-- `round13e/craft-memory-zellige` → `dpl_4HV3s3QoWeKyBXaRfdR5zmWEFhzs`
-- `round13f/record-memory-khipu` → `dpl_FidjRh6mX1XeDxVE6aXVKnFQbW9Z`
-- `round13h/sound-memory-ombak` → `dpl_FCTw3Fxo3YYgZTP1iv2zyRyJZxXy`
-- `round13i/navigation-memory-marshall` → `dpl_9ZypFYUDHAthPHpEM3AoxYG3PqUB`
+## Consolidation architecture — LOCKED
 
-### Candidate branch
-- `round13g/print-memory-kento` → `dpl_J74TMsqZS2uSWv8PuhLVGPfQfBev` → audit required
-
-### Later promoted / merged family sources
-- `round13j/depth-memory-stereoscopy` → `dpl_4qQoTiev64vzU7tRLXmrYxtbrHjY`
-- `round13k/melody-memory-siku` → `dpl_AgwdotABtjmYKDvnx3qoprtPEMsr`
-- `round13l/ember-memory-hika-ahi` → `dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR`
-- `round13m/complement-memory-boulle` → `dpl_EK1wW4peLBk1f9KHg4T6nerJ4jFy`
-
-## Architecture locked for consolidation
-
-- snapshots live at `/families/<slug>/index.html`;
-- source capture is immutable on import;
-- no CSS/mechanism normalization during C2;
-- machine registry is `/collection/families.json`;
-- root collection shell comes only after snapshots exist;
-- existing Vercel family projects remain golden regression references;
-- final deployment will be one canonical RELATIONAL KEY project.
+- snapshots at `/families/<slug>/index.html`;
+- immutable source capture first;
+- no CSS / interaction normalization during import;
+- registry at `/collection/families.json`;
+- root collection shell only after snapshots exist;
+- existing Vercel lives remain golden regression anchors;
+- final result = one canonical RELATIONAL KEY product + one canonical Vercel project.
 
 ## Immediate next task
 
-# **C2 — SOURCE CAPTURE & SNAPSHOT IMPORT**
+# **KENTO USER VISUAL GATE**
 
-Recommended order:
-1. close Kento audit debt or explicitly mark candidate-only;
-2. capture six restored base families;
-3. capture Zellige / Khipu / Ombak / Swell;
-4. capture Stereoscopy / Siku / Hika / Boulle;
-5. add Kento only at its verified status;
-6. verify all `/families/<slug>/` direct routes;
-7. compare against golden references;
-8. then proceed to C3 Collection Shell.
-
-Do not start Global Refinement during source capture.
+After verdict:
+1. update canonical state + this handover;
+2. update Kento validation in `collection/families.json`;
+3. begin **C2 — SOURCE CAPTURE & SNAPSHOT IMPORT**;
+4. do not start Global Refinement yet.
 
 ## Accidental PR note
 
-PR #19 was an accidental placeholder created during the transition to consolidation. It was immediately closed, unmerged, with no code change. Ignore it.
+PR #19 was an accidental placeholder. It was immediately closed, unmerged, with no code change. Ignore it.
 
 ## Persistence protocol
 
-After every significant milestone update canonical state + this handover and state the next output explicitly.
+After every significant milestone update canonical state + this handover and record exact identifiers.
 
-If a new conversation starts here, resume at **C2 — SOURCE CAPTURE & SNAPSHOT IMPORT**.
+If a new conversation starts here, resume at **KENTO USER VISUAL GATE**, then C2.
