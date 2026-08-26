@@ -5,7 +5,7 @@ Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
 Global Refinement PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `GLOBAL_REFINEMENT_G1_1_LIVE_TECHNICAL_PASS.md`
+Latest verified milestone: `GLOBAL_REFINEMENT_G2_SHELL_LEGIBILITY.md`
 
 ## Product invariant
 
@@ -20,9 +20,7 @@ Family expansion remains paused during Global Refinement.
 
 ## Consolidation baseline — MERGED / IMMUTABLE
 
-PR #20 — `RELATIONAL KEY — Collection Consolidation Gate`
-Status: `MERGED`
-Merge method: `SQUASH`
+PR #20: `MERGED / SQUASH`
 Pre-refinement regression anchor:
 # `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
 
@@ -34,116 +32,95 @@ Validated at that anchor:
 - filters/search pass;
 - collection usability `PASS WITH POLISH`.
 
-Historic consolidation Preview golden reference:
+Historic consolidation golden preview:
 - project `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`;
 - deployment `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ`;
-- URL `https://relational-key-collectionrelational-key-collection-4834ctm8z.vercel.app`;
-- state `READY`.
-
-Existing individual family deployments remain golden references.
+- URL `https://relational-key-collectionrelational-key-collection-4834ctm8z.vercel.app`.
 
 # ACTIVE PHASE — GLOBAL REFINEMENT
 
 ## G0 — Baseline Freeze
 Status: `PASS`
 Register: `GLOBAL_REFINEMENT_G0_BASELINE.md`
-G0 commit: `9cbedfaaec7857d7d9ad924257a4ccd1b8fd7e58`
 
 ## G1 — Collection Navigation Frame
 
 Status:
-# **SOURCE PASS / LIVE TECHNICAL PASS / USER VISUAL CHECK REQUIRED**
+# **PASS**
 
 Registers:
 - `GLOBAL_REFINEMENT_G1_NAVIGATION_FRAME.md`
 - `GLOBAL_REFINEMENT_G1_1_LIVE_TECHNICAL_PASS.md`
+- `GLOBAL_REFINEMENT_G1_2_USER_VISUAL_PASS.md`
 
-Implementation commits:
-- `760f4058a017cc761c8111aaffb27a308fe4ce65`
-- `9644849b323db8af8dc659f5d12e744a064647da`
+Implementation:
+- `760f4058a017cc761c8111aaffb27a308fe4ce65` — wrapper + exact autonomous snapshots;
+- `9644849b323db8af8dc659f5d12e744a064647da` — absolute-path hardening.
 
-Source-gate register commit:
-`cdb91ba401c87087e385eb719f1fcc6851067cae`
+G1 preview used for validation:
+- deployment `dpl_87Bjr4pRX1sMQTBUE731gt42WeQA`;
+- URL `https://relational-key-collectionrelational-key-collection-gsdndspjm.vercel.app`;
+- deployed SHA `ffdbb21a4553e997e387e879c1a5c692b677c787`;
+- environment `Preview`;
+- state `READY`.
 
-Live technical checkpoint commit:
-`91b017e58061b265dbb9b1623683472db85e1242`
+User visual regression capture:
+- 6.13 s;
+- 1908 × 962;
+- 30 fps.
 
-### G1 architecture
+Confirmed:
+- collection-owned frame visible above Gatineau;
+- native family controls remain unobscured;
+- `← BACK TO ATLAS` returns to `/#grid` at the atlas;
+- shared runtime remains intact;
+- autonomous Zellige launcher was technically verified on the same live;
+- all 15 public routes use the same wrapper blob;
+- mechanism snapshots remain regression anchors beneath G1.
 
-All 15 public family routes use one collection-owned navigation wrapper.
+G1 architecture remains locked:
+- shared six-family runtime blob `bed8c2fa6d2f40b9677d327ecfcd6c581238e14d` unchanged;
+- autonomous family `snapshot.html` sources remain byte-identical;
+- wrapper is collection infrastructure, not part of the native family mechanism.
 
-Frame:
-- `← BACK TO ATLAS` → `/#grid`;
-- family context label;
-- `THE PAIR IS THE PRODUCT` collection law;
-- 44px desktop / 42px mobile layout row;
-- iframe fills the remaining viewport rather than being covered by an overlay.
+## G2 — Shell Legibility
 
-Shared six-family runtime remains unchanged:
-`/families/_shared/round13r/index.html`
-blob:
-`bed8c2fa6d2f40b9677d327ecfcd6c581238e14d`
+Status:
+# **IMPLEMENTED / SOURCE PASS / LIVE VISUAL REQUIRED**
 
-Nine autonomous validated prototypes are preserved byte-identical as `snapshot.html` inside their existing family directory. Their original validated blob SHAs remain unchanged.
+Register:
+`GLOBAL_REFINEMENT_G2_SHELL_LEGIBILITY.md`
 
-Wrapper blob used by all 15 route indexes:
-`86f6b85796bec16dcb9077ed594a1ec86736b663`
+Implementation commit:
+# `eaee31ec38dcc2f31c46cb630e28357b30357a90`
 
-### Current Global Refinement Preview
+Source-gate commit:
+`1ba6d73c7c083ddf92ef2839130cbf3ef690e9b4`
 
-Vercel project:
-`prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
+Compare from G1 visual checkpoint to G2 implementation:
+- only `index.html` changed;
+- 37 lines added;
+- 0 deletions;
+- no family wrappers, routes, registry, shared runtime or snapshots modified.
 
-Deployment:
-# `dpl_87Bjr4pRX1sMQTBUE731gt42WeQA`
+G2 changes:
+- raise tiny mono metadata from the 6 px regime into a 7–8 px hierarchy;
+- improve muted-text contrast without changing the collection palette;
+- enlarge search/chip controls and mobile touch targets;
+- improve place, memory, mechanism and footer readability;
+- add focus-visible treatment;
+- allow narrow pair-proof/status layouts to wrap safely.
 
-URL:
-`https://relational-key-collectionrelational-key-collection-gsdndspjm.vercel.app`
-
-Environment: `Preview`
-State: `READY`
-Git branch: `collection/global-refinement-1`
-Deployed SHA:
-`ffdbb21a4553e997e387e879c1a5c692b677c787`
-
-Confirmed live technically:
-- root `/` → HTTP 200;
-- shared launcher `/families/city-gatineau/` → HTTP 200;
-- exact shared runtime `/families/_shared/round13r/index.html` → HTTP 200;
-- autonomous launcher `/families/zellige-fes/` → HTTP 200;
-- wrapper includes `← BACK TO ATLAS` → `/#grid`;
-- root contains `id="grid"`;
-- wrapper uses a separate row rather than overlaying the family UI;
-- mobile frame CSS is present and reduces the frame to Back + family context below 680px.
-
-Vercel Authentication makes direct automated iframe-snapshot fetches path-scoped through temporary share tokens, so this does not replace the user visual check.
-
-### Locked regression rule
-
-Do not count wrapper introduction as permission to rewrite family mechanisms. `snapshot.html` and the shared runtime are the mechanism-level regression anchors beneath G1.
-
-### Remaining G1 user visual gate
-
-Need one short authenticated-browser walkthrough:
-1. open one shared family (recommended: Gatineau);
-2. confirm the navigation frame is visible and native controls are not obscured;
-3. click `← BACK TO ATLAS` and confirm return to the atlas;
-4. open one autonomous family (recommended: Zellige or Boulle);
-5. confirm the exact native prototype is visible below the same frame;
-6. optional narrow/mobile check for Back + context usability.
-
-Only then may G1 become `PASS` and G2 begin.
+Locked G2 rule:
+# `LEGIBILITY ↑ ≠ FAMILY MECHANISM CHANGE`
 
 ## Future staged gates
-
-### G2 — Shell Legibility
-Tiny mono labels, filter chips, card metadata, responsive readability.
 
 ### G3 — Atlas Family Individuality
 Increase family distinguishability without flags, stereotypes, generic cultural skinning or decorative appropriation.
 
 ### G4 — PASS WITH POLISH Backlog
-Address family-specific polish items with targeted golden-reference regression.
+Address family-specific polish with targeted golden-reference regression.
 
 ### G5 — Collection Cohesion
 Improve collection ↔ family transitions and shared framing while preserving family-native distinction.
@@ -153,12 +130,12 @@ Final root, routing, responsive, mechanism regression and deployment audit.
 
 # Immediate next output
 
-# **G1.2 — USER VISUAL NAVIGATION REGRESSION**
+# **G2.1 — SHELL LEGIBILITY LIVE VISUAL REGRESSION**
 
-Use deployment `dpl_87Bjr4pRX1sMQTBUE731gt42WeQA` and verify one shared family + Back to Atlas + one autonomous family. No family interaction replay required.
+Use the latest Preview from `collection/global-refinement-1` after commit `eaee31ec…` (or a later documentation-only SHA containing the same root code). Verify desktop shell hierarchy, filters/search, card metadata and a narrow/mobile view. Confirm one family still opens through G1 unchanged.
 
 Status vocabulary:
-`CONSOLIDATION MERGED ≠ G0 PASS ≠ G1 SOURCE PASS ≠ G1 LIVE TECHNICAL PASS ≠ G1 USER VISUAL PASS ≠ G1 PASS ≠ GLOBAL REFINEMENT COMPLETE ≠ FINAL COLLECTION PASS`.
+`G1 PASS ≠ G2 SOURCE PASS ≠ G2 LIVE PASS ≠ G3 PASS ≠ GLOBAL REFINEMENT COMPLETE ≠ FINAL COLLECTION PASS`.
 
 ## Persistence protocol
 
