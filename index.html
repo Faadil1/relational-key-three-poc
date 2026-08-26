@@ -11,6 +11,43 @@
 @media(max-width:1100px){.hero{grid-template-columns:1fr}.balance{max-width:760px}.grid{grid-template-columns:repeat(2,minmax(0,1fr))}.filters{grid-template-columns:1fr}.chips{justify-content:flex-start}.sectionHead{grid-template-columns:1fr}.sectionHead p{text-align:left}.topCenter{display:none}.top{grid-template-columns:1fr auto}}
 @media(max-width:680px){.shell{padding-inline:14px}.top{height:66px}.filters{top:66px}.hero{padding-top:50px}.hero h1{font-size:58px}.grid{grid-template-columns:1fr}.family{min-height:292px}.miniPair{height:100px}.miniCard{height:70px}.balanceRow{grid-template-columns:92px 1fr 20px}.topMeta{font-size:5px}.foot{grid-template-columns:1fr}.foot .right{text-align:left}}
 </style>
+<style id="g2-legibility">
+:root{--muted:#a49c8f}
+.topCenter{font-size:7.5px;line-height:1.4;color:#8f877a}
+.topMeta{font-size:7px;color:#91887a}
+.eyebrow{font-size:8px}
+.proof{font-size:7px;color:#999184}
+.balanceHead span{font-size:7px;color:#8e8578}
+.balanceRow span,.balanceRow em{font-size:7.5px;color:#a49a8b}
+.balanceRow em{color:#d6b879}
+.sectionHead p{font-size:13px;color:#a59c8f}
+.search{height:46px;font-size:8px;color:#f0e9de}
+.search::placeholder{color:#8f877b;opacity:1}
+.chip{height:42px;font-size:7.5px;padding:0 14px;color:#948b7e}
+.status{font-size:7px;color:#8a8276}
+.index,.continent{font-size:7px;color:#8a8174}
+.continent{padding:7px 9px}
+.place{font-size:7.5px}
+.family h3{font-size:clamp(25px,2.15vw,35px)}
+.mechanism{font-size:13px;color:#aaa194}
+.memory,.open{font-size:7px}
+.foot{font-size:7px;color:#887f73}
+.family a:focus-visible,.chip:focus-visible,.search:focus-visible{outline:2px solid #c9a66d;outline-offset:3px}
+@media(max-width:680px){
+  .hero h1{font-size:clamp(48px,15vw,58px)}
+  .proof{flex-wrap:wrap;gap:10px}
+  .proof i{width:38px}
+  .topMeta{font-size:6px}
+  .status{align-items:flex-start;gap:12px}
+  .status span:last-child{text-align:right;max-width:48%}
+  .chip{height:44px;font-size:8px}
+  .search{height:48px;font-size:8px}
+  .family{min-height:312px}
+  .family a{padding:17px}
+  .place{font-size:8px}
+  .memory,.open{font-size:7.5px}
+}
+</style>
 </head>
 <body>
 <main class="shell">
