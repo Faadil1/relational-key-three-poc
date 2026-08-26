@@ -13,11 +13,9 @@ RELATIONAL KEY has completed:
 - full Collection Consolidation;
 - 15 / 15 independent family user gates;
 - 15 / 15 consolidated direct live route verification;
-- collection shell visual + functional pass with polish;
 - PR #20 consolidation squash merge;
 - Global Refinement G0 baseline freeze;
-- G1 Collection Navigation Frame implementation + source gate;
-- G1.1 Global Refinement Preview deployment + live technical regression.
+- **G1 Collection Navigation Frame PASS**.
 
 Canonical invariant:
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
@@ -32,117 +30,88 @@ Family expansion remains paused.
 Consolidation merge / regression anchor:
 # `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
 
-Historic collection Preview golden reference:
-- project `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`;
+Historic collection golden preview:
 - deployment `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ`;
-- URL `https://relational-key-collectionrelational-key-collection-4834ctm8z.vercel.app`;
-- state `READY`.
+- URL `https://relational-key-collectionrelational-key-collection-4834ctm8z.vercel.app`.
 
-Existing per-family Vercel deployments also remain golden references.
-
-# GLOBAL REFINEMENT
-
-## G0 — BASELINE FREEZE
-Status: `PASS`
-Register: `GLOBAL_REFINEMENT_G0_BASELINE.md`
-
-## G1 — COLLECTION NAVIGATION FRAME
-
-Status:
-# `SOURCE PASS / LIVE TECHNICAL PASS / USER VISUAL CHECK REQUIRED`
+# G1 — CLOSED / PASS
 
 Registers:
 - `GLOBAL_REFINEMENT_G1_NAVIGATION_FRAME.md`
 - `GLOBAL_REFINEMENT_G1_1_LIVE_TECHNICAL_PASS.md`
+- `GLOBAL_REFINEMENT_G1_2_USER_VISUAL_PASS.md`
 
-Implementation:
-- `760f4058a017cc761c8111aaffb27a308fe4ce65` — create wrappers + exact autonomous snapshot copies;
-- `9644849b323db8af8dc659f5d12e744a064647da` — harden wrapper paths;
-- `cdb91ba401c87087e385eb719f1fcc6851067cae` — source gate;
-- `91b017e58061b265dbb9b1623683472db85e1242` — live technical checkpoint.
+Validated G1 preview:
+- deployment `dpl_87Bjr4pRX1sMQTBUE731gt42WeQA`;
+- URL `https://relational-key-collectionrelational-key-collection-gsdndspjm.vercel.app`;
+- deployed SHA `ffdbb21a4553e997e387e879c1a5c692b677c787`;
+- `READY / Preview`.
 
-### Current G1 Preview
+User visual evidence:
+- 6.13 s, 1908 × 962, 30 fps;
+- frame visible above shared Gatineau runtime;
+- family controls unobscured;
+- `← BACK TO ATLAS` returns to `/#grid`;
+- atlas structure remains intact after return.
 
-Project:
-`prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
+Autonomous Zellige launcher was already verified technically on the same deployment; all 15 public indexes use the same wrapper blob. Nine autonomous snapshots and the shared six-family runtime remain mechanism-level regression anchors.
 
-Deployment:
-# `dpl_87Bjr4pRX1sMQTBUE731gt42WeQA`
+# G2 — ACTIVE
 
-URL:
-`https://relational-key-collectionrelational-key-collection-gsdndspjm.vercel.app`
+## SHELL LEGIBILITY
 
-Environment: `Preview`
-State: `READY`
-Git ref: `collection/global-refinement-1`
-Deployed SHA:
-`ffdbb21a4553e997e387e879c1a5c692b677c787`
+Status:
+# `IMPLEMENTED / SOURCE PASS / LIVE VISUAL REQUIRED`
 
-Live technical evidence already confirmed:
-- root `/` HTTP 200 and correct collection shell;
-- shared launcher `/families/city-gatineau/` HTTP 200;
-- shared runtime `/families/_shared/round13r/index.html` HTTP 200;
-- autonomous launcher `/families/zellige-fes/` HTTP 200;
-- G1 wrapper contains `← BACK TO ATLAS` → `/#grid`;
-- atlas root contains `id="grid"`;
-- wrapper has a dedicated 44px desktop / 42px mobile row, not an overlay;
-- mobile CSS keeps Back + context and removes the tertiary law below 680px.
+Register:
+`GLOBAL_REFINEMENT_G2_SHELL_LEGIBILITY.md`
 
-Vercel Authentication can redirect direct automated fetches of nested iframe snapshot paths because temporary share tokens are path-scoped. Treat this as tooling/auth limitation, not visual evidence.
+Implementation commit:
+# `eaee31ec38dcc2f31c46cb630e28357b30357a90`
 
-### G1 architecture
+Source register commit:
+`1ba6d73c7c083ddf92ef2839130cbf3ef690e9b4`
 
-Every public `/families/<slug>/` loads through the same collection-owned wrapper.
+Only `index.html` changes for G2: 37 CSS lines added, 0 removed.
 
-Wrapper provides:
-- `← BACK TO ATLAS` → `/#grid`;
-- family context label;
-- collection law `THE PAIR IS THE PRODUCT`;
-- separate 44px desktop / 42px mobile navigation row;
-- family iframe below it, not covered by overlay UI.
+No changes to:
+- wrappers;
+- routes;
+- collection registry;
+- shared runtime;
+- autonomous snapshots;
+- family mechanisms.
 
-Shared historical routes:
-- CITY / SERVICE / SIGNAL / FRIDA / FOOD / TEXTILE still load the exact shared runtime;
-- shared runtime blob unchanged: `bed8c2fa6d2f40b9677d327ecfcd6c581238e14d`.
+G2 adjustments:
+- tiny 6 px mono layer raised into a 7–8 px hierarchy;
+- muted contrast improved;
+- search/chips enlarged;
+- family place/memory/mechanism metadata improved;
+- mobile touch targets enlarged;
+- focus-visible treatment added;
+- narrow proof/status layouts made safer.
 
-Autonomous routes:
-- Zellige / Khipu / Kento / Ombak / Swell / Stereoscopy / Siku / Hika Ahi / Boulle keep their exact pre-wrapper prototype as `snapshot.html`;
-- public index only wraps the snapshot;
-- wrapper blob: `86f6b85796bec16dcb9077ed594a1ec86736b663`.
+# IMMEDIATE NEXT TASK — G2.1 LIVE VISUAL REGRESSION
 
-Important: the mechanism-level source is intentionally preserved beneath the wrapper. Do not edit these snapshots during G1.
-
-# IMMEDIATE NEXT TASK — G1.2 USER VISUAL NAVIGATION REGRESSION
-
-In the authenticated browser using deployment `dpl_87Bjr4pRX1sMQTBUE731gt42WeQA`:
-
-1. open one shared family, preferably Gatineau;
-2. confirm `← BACK TO ATLAS` is visible and the family controls remain unobscured;
-3. click Back to Atlas and confirm return to the atlas section;
-4. open one autonomous family, preferably Zellige or Boulle;
-5. confirm its native prototype appears correctly below the same frame;
-6. optionally narrow the viewport and confirm Back + context remain usable.
-
-No need to replay the family relationship interactions.
-
-If this visual regression passes:
-- record `G1 PASS`;
-- immediately begin **G2 — Shell Legibility**.
+1. Inspect latest Vercel Preview for branch `collection/global-refinement-1` containing `eaee31ec…` or a later documentation-only SHA.
+2. Confirm root is `READY` and serves the G2 CSS.
+3. Visually check desktop hero + balance + atlas.
+4. Test search + one continent chip.
+5. Confirm family metadata is easier to read without making the atlas visually heavy.
+6. Check a narrow/mobile viewport for search/chips/card metadata.
+7. Open one family and confirm G1 navigation remains unchanged.
+8. Record G2 `PASS / PATCH`.
+9. Only after G2 PASS begin G3 — Atlas Family Individuality.
 
 # FUTURE GATES
 
-G2 — Shell Legibility.
 G3 — Atlas Family Individuality.
 G4 — Family PASS WITH POLISH backlog.
 G5 — Collection Cohesion.
 G6 — Final Collection Validation.
 
-## Recovery note
-
-A transient documentation-only branch update was detected during G1 construction and immediately discarded before live/deployment. Canonical branch history was restored to the atomic G1 implementation before further work. No validated family source or live deployment was affected.
-
 ## Persistence protocol
 
 After every significant milestone update `RELATIONAL_KEY_CURRENT_STATE.md` + this handover with exact commits, deployments and next gate.
 
-If a new conversation starts here, resume directly at **G1.2 — USER VISUAL NAVIGATION REGRESSION**.
+If a new conversation starts here, resume directly at **G2.1 — SHELL LEGIBILITY LIVE VISUAL REGRESSION**.
