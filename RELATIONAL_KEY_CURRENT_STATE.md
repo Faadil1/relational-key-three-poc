@@ -5,7 +5,7 @@ Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
 Global Refinement PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `GLOBAL_REFINEMENT_G2_SHELL_LEGIBILITY.md`
+Latest verified milestone: `GLOBAL_REFINEMENT_G2_1_LIVE_TECHNICAL_PASS.md`
 
 ## Product invariant
 
@@ -57,26 +57,12 @@ Implementation:
 - `760f4058a017cc761c8111aaffb27a308fe4ce65` — wrapper + exact autonomous snapshots;
 - `9644849b323db8af8dc659f5d12e744a064647da` — absolute-path hardening.
 
-G1 preview used for validation:
+Validated G1 preview:
 - deployment `dpl_87Bjr4pRX1sMQTBUE731gt42WeQA`;
 - URL `https://relational-key-collectionrelational-key-collection-gsdndspjm.vercel.app`;
 - deployed SHA `ffdbb21a4553e997e387e879c1a5c692b677c787`;
 - environment `Preview`;
 - state `READY`.
-
-User visual regression capture:
-- 6.13 s;
-- 1908 × 962;
-- 30 fps.
-
-Confirmed:
-- collection-owned frame visible above Gatineau;
-- native family controls remain unobscured;
-- `← BACK TO ATLAS` returns to `/#grid` at the atlas;
-- shared runtime remains intact;
-- autonomous Zellige launcher was technically verified on the same live;
-- all 15 public routes use the same wrapper blob;
-- mechanism snapshots remain regression anchors beneath G1.
 
 G1 architecture remains locked:
 - shared six-family runtime blob `bed8c2fa6d2f40b9677d327ecfcd6c581238e14d` unchanged;
@@ -86,10 +72,11 @@ G1 architecture remains locked:
 ## G2 — Shell Legibility
 
 Status:
-# **IMPLEMENTED / SOURCE PASS / LIVE VISUAL REQUIRED**
+# **SOURCE PASS / LIVE TECHNICAL PASS / USER VISUAL REQUIRED**
 
-Register:
-`GLOBAL_REFINEMENT_G2_SHELL_LEGIBILITY.md`
+Registers:
+- `GLOBAL_REFINEMENT_G2_SHELL_LEGIBILITY.md`
+- `GLOBAL_REFINEMENT_G2_1_LIVE_TECHNICAL_PASS.md`
 
 Implementation commit:
 # `eaee31ec38dcc2f31c46cb630e28357b30357a90`
@@ -97,7 +84,16 @@ Implementation commit:
 Source-gate commit:
 `1ba6d73c7c083ddf92ef2839130cbf3ef690e9b4`
 
-Compare from G1 visual checkpoint to G2 implementation:
+Current G2 Preview:
+- project `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`;
+- deployment `dpl_3hRXrW6TF8Ms6phXnXURfVQD8aqV`;
+- URL `https://relational-key-collectionrelational-key-collection-5zunbmuyw.vercel.app`;
+- environment `Preview`;
+- state `READY`;
+- Git ref `collection/global-refinement-1`;
+- deployed SHA `7ce047d7a47099fc94cb3d60b9399eb63830de55`.
+
+G2 source compare:
 - only `index.html` changed;
 - 37 lines added;
 - 0 deletions;
@@ -113,6 +109,8 @@ G2 changes:
 
 Locked G2 rule:
 # `LEGIBILITY ↑ ≠ FAMILY MECHANISM CHANGE`
+
+Remaining G2 gate: authenticated-browser visual walkthrough of desktop hierarchy, filters/search, card metadata, narrow/mobile layout and one family-open regression.
 
 ## Future staged gates
 
@@ -130,12 +128,12 @@ Final root, routing, responsive, mechanism regression and deployment audit.
 
 # Immediate next output
 
-# **G2.1 — SHELL LEGIBILITY LIVE VISUAL REGRESSION**
+# **G2.2 — SHELL LEGIBILITY USER VISUAL REGRESSION**
 
-Use the latest Preview from `collection/global-refinement-1` after commit `eaee31ec…` (or a later documentation-only SHA containing the same root code). Verify desktop shell hierarchy, filters/search, card metadata and a narrow/mobile view. Confirm one family still opens through G1 unchanged.
+Use deployment `dpl_3hRXrW6TF8Ms6phXnXURfVQD8aqV`. Verify desktop hero + balance + atlas, one filter/search interaction, metadata readability, narrow/mobile view, and one family-open G1 regression. Then record `G2 PASS / PATCH`.
 
 Status vocabulary:
-`G1 PASS ≠ G2 SOURCE PASS ≠ G2 LIVE PASS ≠ G3 PASS ≠ GLOBAL REFINEMENT COMPLETE ≠ FINAL COLLECTION PASS`.
+`G1 PASS ≠ G2 SOURCE PASS ≠ G2 LIVE TECHNICAL PASS ≠ G2 USER VISUAL PASS ≠ G2 PASS ≠ G3 PASS ≠ GLOBAL REFINEMENT COMPLETE ≠ FINAL COLLECTION PASS`.
 
 ## Persistence protocol
 
