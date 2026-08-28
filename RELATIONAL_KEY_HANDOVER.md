@@ -8,40 +8,38 @@ PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
+# **B2.2E — SOUTH AMERICA +2 SOURCE-FIRST CANDIDATE POOL**
+
+Do NOT resume G4 polish. Do NOT add source-pass candidates to the public atlas or validated counts.
+
 Canonical invariant:
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
-Pre-refinement regression anchor:
+Immutable pre-refinement regression anchor:
 `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
 
-Completed before Balance Gate 2:
-- PR #20 consolidation merge;
-- 15/15 original independent family gates + consolidated routes;
-- G0 Baseline Freeze PASS;
-- G1 Collection Navigation Frame PASS;
-- G2 Shell Legibility PASS;
-- G3 Atlas Family Individuality PASS.
-
-# CONTINENTAL BALANCE GATE 2 — ACTIVE
+# CURRENT COLLECTION STATE
 
 Target:
-# `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
+`AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 
 Current validated distribution:
-# `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
+`AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
 Target total: 24 validated families.
 
-Law:
-# **BALANCE IS A TARGET, NOT A LICENSE TO ADD WEAK FAMILIES.**
+Balance law:
+**BALANCE IS A TARGET, NOT A LICENSE TO ADD WEAK FAMILIES.**
 
-Gap-map rule:
-# **SOURCE CHOOSES THE MECHANISM. THE GAP MAP ONLY GUIDES DISCOVERY.**
+Discovery law:
+**SOURCE CHOOSES THE MECHANISM. THE GAP MAP ONLY GUIDES DISCOVERY.**
 
-# ASIA — BUILT CANDIDATE / COUNT STILL 3/4
+Gap map:
+`CONTINENTAL_BALANCE_B2_1_RELATIONSHIP_GAP_MAP.md`
 
-Candidate:
-**Persian Planispheric Astrolabe / Isfahan — Rete Register**
+# COMPLETED EXPANSION SOURCE GATES
+
+## Asia candidate — Astrolabe / Isfahan
 
 Path:
 `families/astrolabe-isfahan/candidate.html`
@@ -59,39 +57,21 @@ Blob:
 Status:
 `SOURCE PASS / LIVE + USER VISUAL PENDING`
 
-# NORTH AMERICA — COUNT STILL 2/4
+Asia remains `3/4`.
 
-Promotion matrix:
-`CONTINENTAL_BALANCE_B2_2D_NORTH_AMERICA_PROMOTION_MATRIX.md`
+## North America candidate 1 — Janney / Virginia
 
-Promoted family rounds:
-1. Janney Automatic Rail Coupler / United States
-2. Metate + Metlapil / Mexico
-
-Reserve:
-- Yale Pin-Tumbler Lock.
-
-Maya Calendar Round remains on context-sensitivity hold.
-
-## JANNEY — BUILT / SOURCE PASS
-
-Spec:
-`CONTINENTAL_BALANCE_B2_3C_NORTH_AMERICA_JANNEY_SPEC.md`
-
-Build register:
-`CONTINENTAL_BALANCE_B2_3D_NORTH_AMERICA_JANNEY_BUILD_CANDIDATE.md`
-
-Candidate:
+Path:
 `families/coupler-virginia/candidate.html`
+
+Law:
+`MATING KNUCKLES TURN CONTACT INTO A LOCKED LOAD PATH.`
 
 Implementation:
 `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`
 
 Blob:
 `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
-
-Law:
-# **MATING KNUCKLES TURN CONTACT INTO A LOCKED LOAD PATH.**
 
 READY:
 `APPROACH → CONTACT → PIVOT → LATCH → LOAD PATH`
@@ -102,112 +82,132 @@ Alternate-valid:
 Status:
 `SOURCE PASS / LIVE + USER VISUAL PENDING`
 
-## METATE + METLAPIL — SPEC FROZEN
+## North America candidate 2 — Metate + Metlapil / Teotitlán del Valle
 
-Register:
+Spec:
 `CONTINENTAL_BALANCE_B2_3E_NORTH_AMERICA_METATE_SPEC.md`
+
+Build register:
+`CONTINENTAL_BALANCE_B2_3F_NORTH_AMERICA_METATE_BUILD_CANDIDATE.md`
 
 Spec commit:
 `38d766100cc6ce9bd38d7af26a25495ec5f8f659`
 
-Working identity:
-- slug `metate-teotitlan`;
-- place/context `Teotitlán del Valle, Oaxaca, Mexico`;
-- edition `Grinding Register`;
-- memory `Grinding / Material Memory`;
-- topology `R10 pressure + reciprocal abrasion`.
-
-Law:
-# **PRESSURE AND RECIPROCAL STROKE BETWEEN COMPLEMENTARY STONES PRODUCE GRINDING.**
-
-Pair:
-- Card A = `METATE / RECEIVING GRINDING SURFACE`;
-- Card B = `METLAPIL / MOVING GRINDING MEMBER`.
-
-Source anchors:
-- Museo Nacional de Antropología / INAH `Metate zapoteco`;
-- INAH glossary for metate/metlapil;
-- INAH grinding research and Mediateca object evidence.
-
-Key truth:
-- primary museum source explicitly calls the metlapil the metate's complement;
-- source naming explanation is approximately `two that grind something`;
-- maize and cacao are both documented contexts;
-- do NOT claim the technology as uniquely Zapotec/Mexican;
-- no copied motifs / generic Mesoamerican ornament.
-
-Frozen interaction:
-`METATE ≠ METLAPIL → CONTACT → RECIPROCAL STROKE → ABRASION ACCUMULATES → FINER GRIND → CONTINUE`
-
-Required mechanics:
-- direct pointer/touch drag of metlapil;
-- meaningful travel threshold before counting a reciprocal pass;
-- progression based on completed passes, not timers;
-- material feedback stays in Card A and subordinate;
-- MAIZE / CACAO both valid;
-- reset restores separate/coarse state;
-- no binary mismatch necessary.
-
-Status:
-# `B2.3E SOURCE PASS / INTERACTION SPEC FROZEN`
-
-North America validated count is still `2 / 4`.
-
-# IMMEDIATE NEXT TASK — B2.3F METATE AUTONOMOUS BUILD + SOURCE GATE
-
-Create only:
+Path:
 `families/metate-teotitlan/candidate.html`
 
-Acceptance:
-1. no atlas / registry / public-route mutation;
-2. two bounded stone members remain primary;
-3. pair button creates contact but does not auto-grind;
-4. direct metlapil drag is the main action;
-5. detect deliberate reciprocal travel; pointer jitter must not advance grind materially;
-6. progressive coarse → medium → fine material state;
-7. MAIZE and CACAO remain equally valid contexts;
-8. `RESET` restores initial separate/coarse state;
-9. source + structural-translation disclaimer present;
-10. JavaScript syntax passes;
-11. responsive CSS present; actual responsive visual PASS waits for live/user audit.
+Implementation:
+`f62e6c2d2371205bdae4f498fe2f7670e17f09bd`
 
-After build:
-- create `CONTINENTAL_BALANCE_B2_3F_NORTH_AMERICA_METATE_BUILD_CANDIDATE.md`;
-- immediately update CURRENT_STATE + this HANDOVER again;
-- if Vercel is still rate-limited, begin South America +2 discovery while Astrolabe / Janney / Metate remain in grouped live-validation queue.
+Blob:
+`8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
+
+Law:
+`PRESSURE AND RECIPROCAL STROKE BETWEEN COMPLEMENTARY STONES PRODUCE GRINDING.`
+
+Relation:
+`METATE ≠ METLAPIL → PAIR → CONTACT → DIRECT RECIPROCAL STROKE → ABRASION ACCUMULATES → FINER GRIND → CONTINUE`
+
+Source-gate implementation facts:
+- direct pointer/touch metlapil drag;
+- keyboard Left/Right fallback;
+- drag limit ±100;
+- extreme threshold 72;
+- first extreme primes, opposite extreme counts one pass;
+- jitter or same-side shaking cannot trivially add passes;
+- max represented progress 8 passes;
+- COARSE <4, MEDIUM ≥4, FINE ≥7;
+- material field remains inside Card A;
+- MAIZE and CACAO both valid;
+- reset restores separate/coarse state;
+- source + non-exclusivity disclaimer present;
+- responsive CSS 980px/560px;
+- JavaScript passes `node --check`.
+
+Status:
+`SOURCE PASS / LIVE + USER VISUAL PENDING`
+
+North America remains `2/4`.
 
 # GROUPED LIVE VALIDATION QUEUE
 
-When Vercel capacity returns, prefer one descendant Preview containing all source-pass candidates:
-1. Astrolabe;
-2. Janney;
-3. Metate.
+When Vercel Hobby deployment capacity returns, prefer one descendant Preview containing all three source-pass candidates:
+1. Astrolabe
+2. Janney
+3. Metate
 
-Each still needs its own live/user verdict. Do not change continental counts merely because they share a Preview.
+Then audit each independently. Sharing a deployment does NOT merge gates and does NOT change counts automatically.
 
-# NEXT CONTINENT AFTER NORTH AMERICA SOURCE BUILD
-
-South America +2.
-
-Existing:
-- Khipu / Peru — tension + knot registration;
-- Siku / Bolivia — complementary absence + temporal interlock.
-
-Find two source-grounded relations materially distinct from both.
-
-# INFRASTRUCTURE
-
-Recent Vercel Hobby status:
+Recent blocker:
 `Deployment rate limited — retry in 24 hours.`
 
-No invented live PASS.
+# IMMEDIATE RESEARCH — SOUTH AMERICA +2
+
+Existing validated South America mechanisms:
+1. Peru / Khipu — `tension / knot registration`
+2. Bolivia / Siku — `complementary absence / temporal interlock`
+
+Need TWO additions materially distinct from both.
+
+## B2.2E requirements
+
+Research at least 6 credible candidates before promotion.
+
+For each candidate record:
+- country/place/community/object or practice;
+- authoritative source anchors;
+- bounded Pair A + Pair B;
+- primary relational topology;
+- candidate law;
+- interaction translation;
+- alternate-valid state;
+- overlap with Khipu / Siku / global 18-candidate topology set;
+- cultural/truthfulness risk;
+- build complexity.
+
+Prefer:
+- museum collections;
+- heritage institutions;
+- academic/technical research;
+- primary archives/patents where appropriate.
+
+Avoid:
+- generic national icons;
+- sacred/living systems that would be reduced merely for visual novelty;
+- relations requiring an unseen third participant;
+- mechanisms whose pair can be collapsed into one object;
+- another knot/tension or alternating musical system.
+
+Possible gap lanes to explore, not prescriptions:
+- R1 balance / counterweight
+- R2 articulation / hinge
+- R3 fold / overlap
+- R4 load / accumulation
+- R6 projection / shadow
+- R7 transfer / containment
+- R8 exchange / role reversal
+- R9 synchronization (but NOT another Siku-like temporal alternation)
+- R11 encode/decode
+- R12 calibrate/measure
+
+## Next after pool
+
+# `B2.2F — SOUTH AMERICA TWO-SLOT PROMOTION MATRIX`
+
+Do not build until that matrix promotes exactly two candidates.
+
+# NORTH AMERICA RESERVES
+
+1. Yale Pin-Tumbler Lock — strongest reserve
+2. Lacrosse stick + ball — community-context review reserve
+3. Métis Red River Cart — topology-overlap reserve
+4. Maya Calendar Round — context-sensitivity hold, not routine fallback
 
 # G4 POLISH — PARKED
 
-Khipu G4.1 remains preserved:
-- `families/khipu-peru/g4-1.html`;
-- implementation `64647ea78b04439ea9a57ece47f19490d9185d45`;
-- not promoted.
+Khipu candidate preserved only:
+- `families/khipu-peru/g4-1.html`
+- `64647ea78b04439ea9a57ece47f19490d9185d45`
 
 After 24-family equilibrium:
 B2.5 collection regression → G4 polish → G5 cohesion → G6 final validation.
@@ -215,9 +215,9 @@ B2.5 collection regression → G4 polish → G5 cohesion → G6 final validation
 # PERSISTENCE PROTOCOL — MANDATORY
 
 After every significant research, promotion, spec, build, deployment or user-validation milestone:
-1. create/update the dedicated milestone register;
+1. write/update the dedicated milestone register;
 2. update `RELATIONAL_KEY_CURRENT_STATE.md`;
-3. update this file;
-4. record exact branch, commit/blob/deployment IDs;
-5. distinguish SOURCE PASS / LIVE PASS / USER PASS / VALIDATED COUNT;
-6. leave one explicit next required output for a new conversation.
+3. update this handover;
+4. record exact branch + commit/blob/deployment IDs;
+5. explicitly separate SOURCE PASS / LIVE PASS / USER PASS / VALIDATED COUNT;
+6. leave exactly one immediate next output.
