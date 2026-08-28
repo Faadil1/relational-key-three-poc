@@ -96,7 +96,7 @@ Technical checks:
 - `node --check` on the SVG generator → PASS;
 - explicit `case` count → 15.
 
-## Current preview
+## Exact implementation preview for visual audit
 
 Vercel project:
 `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
@@ -113,6 +113,8 @@ Deployed SHA:
 `239f076fb9fc2936b16d793caa14c486eb182d05`
 
 Root live fetch: HTTP 200 with `g3-individuality`, `pairViz(f)` and the deployed 15-case generator present.
+
+Later documentation-only previews must not replace this deployment as the G3.1 visual-audit anchor.
 
 ## G3 gate
 
