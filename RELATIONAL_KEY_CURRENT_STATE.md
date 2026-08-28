@@ -75,6 +75,7 @@ Validated G2 preview:
 - `READY / Preview`.
 
 User visual evidence:
+- capture `958cd0da-ce32-4093-89ee-d3624621b54e.mp4`;
 - 55.23 s;
 - 1918 × 966;
 - 30 fps.
