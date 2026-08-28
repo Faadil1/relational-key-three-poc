@@ -5,7 +5,7 @@ Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
 Draft PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `CONTINENTAL_BALANCE_B2_3K_OCEANIA_TONGIAKI_SPEC.md`
+Latest verified milestone: `CONTINENTAL_BALANCE_B2_3L_OCEANIA_TONGIAKI_BUILD_CANDIDATE.md`
 
 # PRODUCT INVARIANT
 
@@ -33,126 +33,95 @@ Core laws:
 
 # SOURCE-PASS BUILD QUEUE — LIVE/USER PENDING
 
-1. Astrolabe / Isfahan — build `ade670ad03513d972180ef78d717f174f585ed6c`, fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`, blob `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
-2. Janney / Virginia — build `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`, blob `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
-3. Metate + Metlapil — build `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`, blob `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
-4. Valparaíso Funicular — spec `f06731fc0e001c09524e21fc81da8fe6697aa313`, build `7aff21b59ff88fcbe3e526958cf9fdf67c0d3750`, blob `1e71497d7f9f5411eca2347b36bc0402db8b905b`
-5. Mate + Bombilla — spec `36c778af5e69e1419ed4b011ca74cf19cce96ab6`, build `6b1a12b166b3be5612ba5b1d5a1f731281186379`, blob `6bdebcff2bd3c2b8c57f0c75dc72b20fcba37d55`
+1. **Astrolabe / Isfahan**
+   - build `ade670ad03513d972180ef78d717f174f585ed6c`
+   - fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`
+   - blob `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
 
-All are `SOURCE PASS / LIVE + USER PENDING`.
+2. **Janney / Virginia**
+   - build `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`
+   - blob `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
 
-# OCEANIA +2 — ACTIVE FAMILY ROUNDS
+3. **Metate + Metlapil / Teotitlán del Valle**
+   - build `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`
+   - blob `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
+
+4. **Valparaíso Funicular / Chile**
+   - spec `f06731fc0e001c09524e21fc81da8fe6697aa313`
+   - build `7aff21b59ff88fcbe3e526958cf9fdf67c0d3750`
+   - blob `1e71497d7f9f5411eca2347b36bc0402db8b905b`
+
+5. **Mate + Bombilla / Argentina + regional context**
+   - spec `36c778af5e69e1419ed4b011ca74cf19cce96ab6`
+   - build `6b1a12b166b3be5612ba5b1d5a1f731281186379`
+   - blob `6bdebcff2bd3c2b8c57f0c75dc72b20fcba37d55`
+
+6. **Tongiaki Double Hull / Tonga**
+   - spec `CONTINENTAL_BALANCE_B2_3K_OCEANIA_TONGIAKI_SPEC.md`
+   - build register `CONTINENTAL_BALANCE_B2_3L_OCEANIA_TONGIAKI_BUILD_CANDIDATE.md`
+   - candidate `families/tongiaki-tonga/candidate.html`
+   - law `TWO HULLS JOINED IN PARALLEL FORM A SHARED, MORE STABLE VOYAGING PLATFORM.`
+   - spec commit `00f5a984ae4c376753b2ed6f64dc955307c9e38d`
+   - build `e577bd6669c0d32f41078fa3124a03539cecd460`
+   - blob `55053022e5312274a250a3384a28c07abdcb2f6f`
+   - source register commit `e086134795c61ee97240af2dd50609340f8a6601`
+   - atomic diff: one file / 73 additions / 0 deletions
+   - both hulls direct pointer/touch draggable + keyboard arrows
+   - coupling requires both inboard approach and fore/aft alignment
+   - outside threshold: `UNCOUPLED · TWO VALID HULLS`
+   - no auto-snap/timer, fake stability score, wave, star, route or navigation UI
+   - local JS `node --check` PASS
+   - Oceania remains `2/4`
+
+All six builds remain:
+# `SOURCE PASS / LIVE + USER VISUAL PENDING`
+
+# OCEANIA +2 — ACTIVE
 
 Validated Oceania remains:
 # `2 / 4`
 
 Existing validated:
-- Marshall Islands / Swell — wave deflection / navigation memory;
-- Aotearoa / Hika Ahi — friction → heat → ember.
+- Marshall Islands / Swell;
+- Aotearoa / Hika Ahi.
 
-## B2.2G — Candidate Pool
+Research promotions:
+1. Tonga / Tongiaki Double Hull — build SOURCE PASS complete
+2. East Sepik-Ramu PNG / Garamut + Wooden Pounder — spec/build pending
 
-PASS.
-Register: `CONTINENTAL_BALANCE_B2_2G_OCEANIA_CANDIDATE_POOL.md`
-Commit: `64cfdb8ad343992f0f589bf968fc4c624d9a9d1a`
+Pool:
+`CONTINENTAL_BALANCE_B2_2G_OCEANIA_CANDIDATE_POOL.md` @ `64cfdb8ad343992f0f589bf968fc4c624d9a9d1a`
 
-## B2.2H — Promotion Matrix
+Promotion:
+`CONTINENTAL_BALANCE_B2_2H_OCEANIA_PROMOTION_MATRIX.md` @ `9fbc4541a585980dd7991f22b7e0dddd64008991`
 
-PASS / two research promotions.
-Register: `CONTINENTAL_BALANCE_B2_2H_OCEANIA_PROMOTION_MATRIX.md`
-Commit: `9fbc4541a585980dd7991f22b7e0dddd64008991`
+Kula remains:
+`CONTEXT-SENSITIVITY HOLD / NOT AUTOMATIC FALLBACK`.
 
-Promoted:
-1. **Tongiaki Double-Hulled Canoe / Tonga** — R4 structural coupling / distributed buoyancy
-2. **Garamut + Wooden Pounder / East Sepik-Ramu PNG** — R11 encode/signal through ordered impact
-
-Kula remains `CONTEXT-SENSITIVITY HOLD / NOT AUTOMATIC FALLBACK`.
-
-Reserve order:
+Fallback order if Garamut fails safeguarding:
 1. Sāmoa I‘e + Wooden Anvil
 2. Tokelau Toki Blade + Haft System
-3. Kula — context hold
+3. Kula — hold
 4. Jawoyn Music Sticks
-
-## B2.3K — Tongiaki Source + Interaction Spec
-
-Status:
-# **SOURCE PASS / INTERACTION SPEC FROZEN**
-
-Register:
-`CONTINENTAL_BALANCE_B2_3K_OCEANIA_TONGIAKI_SPEC.md`
-
-Spec commit:
-`00f5a984ae4c376753b2ed6f64dc955307c9e38d`
-
-Working identity:
-- slug `tongiaki-tonga`;
-- place `Tongatapu / Tonga`;
-- memory `Structural / Voyaging Memory`;
-- edition `Twin Hull Register`;
-- topology `R4 structural coupling / distributed support`.
-
-Canonical law:
-# **TWO HULLS JOINED IN PARALLEL FORM A SHARED, MORE STABLE VOYAGING PLATFORM.**
-
-Interaction proof deliberately narrower:
-# `TWO HULLS → PARALLEL ALIGNMENT → COUPLING → ONE STRUCTURAL PLATFORM`
-
-Truth boundary:
-- sources support qualitative stability/seaworthiness context;
-- UI must NOT simulate exact hydrodynamics, righting moments, capsize, displacement, load equations or historical dimensions;
-- no stability percentage or fake performance benchmark.
-
-Pair:
-- Card A = `HULL A / PORT MEMBER`;
-- Card B = `HULL B / STARBOARD MEMBER`;
-- both directly draggable and equal in product hierarchy.
-
-Relationship field:
-- only thin boom/deck connector evidence;
-- no third card/gauge/map/ocean hero.
-
-Interaction:
-- start distinct/uncoupled;
-- user directly adjusts fore/aft alignment + small inboard approach;
-- broad editorial tolerance detects parallel coupling;
-- connection appears only inside tolerance;
-- breaking tolerance returns to `UNCOUPLED / TWO VALID HULLS` without error.
-
-Hard Swell non-overlap:
-- no swell arrows;
-- no stars;
-- no routes/island targets;
-- no heading/navigation interaction;
-- neutral structural background only.
-
-Required footer:
-`STRUCTURAL TRANSLATION · TONGAN TONGIAKI DOUBLE-HULL RELATION · EDITORIAL ALIGNMENT THRESHOLD · NOT A HYDRODYNAMIC OR NAVIGATION SIMULATOR`
-
-Oceania remains `2/4`.
 
 # IMMEDIATE NEXT OUTPUT
 
-# **B2.3L — TONGIAKI AUTONOMOUS BUILD CANDIDATE + SOURCE GATE**
+# **B2.3M — OCEANIA FAMILY ROUND 2: GARAMUT SOURCE + INTERACTION SPEC**
 
-Required path:
-`families/tongiaki-tonga/candidate.html`
+Required hard gate:
+1. choose one defensible East Sepik/Ramu regional source anchor;
+2. Card A / Card B remain two bounded members;
+3. direct strike input required;
+4. ordered timing may create only an editorial signal trace;
+5. no invented sequence may be called authentic community code;
+6. no warning/death/invitation/personal-name message teaching;
+7. no copied clan/spirit carvings as decorative UI;
+8. audio strategy must prove ordered impacts, not simulate cultural authenticity;
+9. alternate-valid sequence must preserve both objects;
+10. explicit truthfulness footer before any code.
 
-Acceptance:
-1. autonomous candidate only;
-2. no atlas/registry/public-route mutation;
-3. two bounded hull cards visible immediately;
-4. both hulls directly draggable;
-5. keyboard fallback;
-6. coupling only after approach + parallel alignment threshold;
-7. connector/deck subordinate;
-8. breaking alignment returns cleanly to valid uncoupled state;
-9. no stability numbers/fake physics/navigation UI;
-10. truth/source footer + responsive CSS + JS syntax pass.
-
-After Tongiaki SOURCE PASS:
-- update CURRENT_STATE + HANDOVER immediately;
-- then freeze `B2.3M — GARAMUT SOURCE + INTERACTION SPEC` before any Garamut code.
+Then:
+`B2.3N — GARAMUT AUTONOMOUS BUILD CANDIDATE + SOURCE GATE`.
 
 # SOUTH AMERICA RESERVES
 
