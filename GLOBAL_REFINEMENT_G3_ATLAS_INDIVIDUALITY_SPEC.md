@@ -4,26 +4,24 @@
 
 Date: 2026-08-27
 Branch: `collection/global-refinement-1`
-Status: `DESIGN SPEC LOCKED / IMPLEMENTATION NEXT`
+Status: `G3.1 IMPLEMENTED / SOURCE PASS / LIVE TECHNICAL PASS / USER VISUAL REQUIRED`
 
 ## Problem
 
-The collection shell is now coherent and legible, but the current 15 atlas mini-pairs are intentionally almost identical. That proves system cohesion, yet it suppresses family individuality before the user opens a route.
-
-G3 must increase recognizability without turning culture into decorative skinning.
+The collection shell is coherent and legible, but the original atlas mini-pairs were intentionally almost identical. That proved system cohesion while suppressing family individuality before route entry.
 
 ## Locked rule
 
 # `INDIVIDUALITY = RELATIONSHIP MECHANISM, NOT CULTURAL ORNAMENT`
 
-Do not use:
+Forbidden:
 - flags or national palettes;
 - generic ethnic / folk patterns;
 - decorative appropriation of archive motifs;
 - stereotyped landmarks;
-- one-off cultural illustrations unrelated to the actual pair law.
+- one-off cultural illustrations unrelated to the pair law.
 
-Do use:
+Allowed differentiation:
 - edge behavior;
 - seam geometry;
 - phase / offset / tension / interlock;
@@ -31,95 +29,102 @@ Do use:
 - registration cues;
 - mechanism-native directional structure.
 
-The two mini-cards remain abstract credentials. The distinctive information lives primarily in the relation field between and inside them.
+The two mini-cards remain abstract credentials. Distinctive information lives in the relation field and mechanism-linked linework.
 
 ## Family signature map
 
-1. `city-gatineau` — Registered continuation
-   - signature: route segments approaching one seam and continuing after exact registration.
-
-2. `service-benin` — Service storyboard / switch registration
-   - signature: segmented service steps with one complementary switch state across the gap.
-
-3. `signal-nigeria` — Relay alignment
-   - signature: paired signal arcs converging on a relay node rather than a generic straight seam.
-
-4. `frida-coyoacan` — Photographic trace / archive counterpart
-   - signature: offset trace lines / ghost registration, emphasizing source ↔ archive trace rather than portrait imagery.
-
-5. `food-toyama` — Physical transformation / edible reveal
-   - signature: compression bands that release across the relationship field.
-
-6. `textile-bonwire` — Interlacing / woven continuation
-   - signature: two strip systems crossing at the seam and continuing as an interlace.
-
-7. `zellige-fes` — Material fit / tessellation
-   - signature: complementary angular edges that only close when the pair meets.
-
-8. `khipu-peru` — Tension / knot registration
-   - signature: two tension lines terminating in a registered knot at the relation field.
-
-9. `kento-japan` — Registration / transfer alignment
-   - signature: paired corner registration marks and a transfer offset collapsing toward one print position.
-
-10. `ombak-bali` — Controlled difference / beat resonance
-    - signature: two phase-wave traces with visible controlled difference creating a beat field.
-
-11. `swell-marshall` — Environmental interaction / swell deflection
-    - signature: a directional swell line bending around / through the paired field rather than meeting straight-on.
-
-12. `stereoscopy-uk` — Controlled disparity / binocular fusion
-    - signature: two slightly offset view traces converging into one depth cue; never identical twins.
-
-13. `siku-bolivia` — Complementary absence / temporal interlock
-    - signature: alternating bars / rests that interlock across time; continuity emerges from missing parts.
-
-14. `hika-ahi-aotearoa` — Sustained friction / emergent ember
-    - signature: opposing friction strokes accumulating toward a small central ember cue.
-
-15. `boulle-france` — Shared cut / reciprocal inversion
-    - signature: one shared cut silhouette appears as reciprocal positive / negative material inverses.
+1. `city-gatineau` — registered route continuation.
+2. `service-benin` — stepped storyboard + switch registration.
+3. `signal-nigeria` — relay arcs converging on a center node.
+4. `frida-coyoacan` — offset photographic/archive trace registration.
+5. `food-toyama` — compression bands + release field.
+6. `textile-bonwire` — interlacing strip systems.
+7. `zellige-fes` — complementary angular material fit.
+8. `khipu-peru` — tension lines + registered knot.
+9. `kento-japan` — registration marks + transfer alignment.
+10. `ombak-bali` — controlled phase difference + beat field.
+11. `swell-marshall` — directional swell deflection.
+12. `stereoscopy-uk` — controlled disparity + fusion cue.
+13. `siku-bolivia` — alternating bars/rests + temporal interlock.
+14. `hika-ahi-aotearoa` — opposing friction strokes + ember.
+15. `boulle-france` — reciprocal positive/negative shared-cut states.
 
 ## Visual system
 
-Keep common collection constants:
+Common constants remain:
 - same card proportions;
 - same shell palette family;
 - same typography;
 - same grid rhythm;
-- same overall mini-pair footprint.
+- same mini-pair footprint.
 
-Allow family variation only through:
+Family variation is limited to:
 - relation glyph;
-- internal card linework tied to that relation;
-- limited neutral material contrast;
-- hover micro-motion that demonstrates the relationship principle.
+- mechanism-native internal linework;
+- neutral material contrast;
+- brief hover micro-motion.
 
-No family glyph may become a logo or cultural emblem.
+No family glyph is a logo or cultural emblem.
 
 ## Hover rule
 
-Hover should preview the law in under ~500 ms without replaying the full family interaction.
+Hover previews the law in under ~500 ms without replaying the family interaction.
 
 Examples:
-- registration families: offsets collapse;
-- tension/interlock families: lines tighten / cross;
+- registration families: offsets approach / converge;
+- tension/interlock: lines tighten / cross;
 - disparity: traces converge without becoming identical;
-- friction: tiny ember appears after opposing strokes;
-- reciprocal cut: positive / negative cut states swap emphasis.
+- friction: ember emerges;
+- reciprocal cut: positive / negative emphasis swaps.
 
-Respect `prefers-reduced-motion`.
+`prefers-reduced-motion` disables the motion preview.
 
-## Gate
+## Implementation
 
-G3 passes only if:
-1. the 15 cards are distinguishable at a glance more than the current generic pair template;
-2. the atlas still reads as one collection;
-3. no family depends on flags, stereotypes or ornamental cultural coding;
-4. mechanism descriptions and routes remain unchanged;
-5. mobile cards retain legibility;
-6. no family snapshot, wrapper or native mechanism is modified.
+G3.1 commit:
+`239f076fb9fc2936b16d793caa14c486eb182d05`
+
+Implementation register:
+`GLOBAL_REFINEMENT_G3_1_MECHANISM_NATIVE_MINIPAIRS.md`
+
+Source compare from pre-G3 head `755ff10b9b08672d817655479f2e56b8d2ab2ab0`:
+- only root `index.html` changed;
+- 44 additions / 1 deletion;
+- no wrapper, registry, shared runtime, autonomous snapshot, route, timing or native family mechanism change.
+
+Technical checks:
+- `node --check` on the SVG generator → PASS;
+- explicit `case` count → 15.
+
+## Current preview
+
+Vercel project:
+`prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
+
+Deployment:
+`dpl_EgKHruAvbW6exjHq8DGWvpEv8kV6`
+
+URL:
+`https://relational-key-collectionrelational-key-collection-3lco5dm3j.vercel.app`
+
+State: `READY / Preview`
+Git ref: `collection/global-refinement-1`
+Deployed SHA:
+`239f076fb9fc2936b16d793caa14c486eb182d05`
+
+Root live fetch: HTTP 200 with `g3-individuality`, `pairViz(f)` and the deployed 15-case generator present.
+
+## G3 gate
+
+G3 passes only if user visual audit confirms:
+1. 15 cards are materially more distinguishable at a glance;
+2. atlas still reads as one collection;
+3. glyphs read as relationship mechanisms rather than decoration/logos;
+4. hover previews are subtle and useful;
+5. mobile retains legibility;
+6. one family route still opens normally through G1;
+7. no family snapshot, wrapper or native mechanism was modified.
 
 ## Next output
 
-`G3.1 — mechanism-native mini-pair implementation in root index.html only`.
+# `G3.2 — USER VISUAL INDIVIDUALITY AUDIT`
