@@ -18,10 +18,13 @@ Completed:
 - G3 Atlas Family Individuality PASS;
 - Continental Balance Gate 2 opened;
 - B2.1 Relationship Gap Map PASS;
-- B2.2A Asia candidate pool PASS;
-- B2.2B Asia promotion matrix PASS;
-- B2.3A Persian Astrolabe source/interaction spec frozen;
-- B2.3B Persian Astrolabe build candidate SOURCE PASS.
+- B2.2A/B Asia pool + promotion PASS;
+- B2.3A Persian Astrolabe spec frozen;
+- B2.3B Persian Astrolabe build candidate SOURCE PASS;
+- B2.2C North America six-candidate pool PASS;
+- B2.2D North America two-slot promotion PASS;
+- B2.3C Janney source/interaction spec frozen;
+- B2.3D Janney build candidate SOURCE PASS.
 
 Canonical invariant:
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
@@ -38,7 +41,6 @@ Current validated distribution:
 # `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
 Target total: 24 validated families.
-Missing: Asia +1, North America +2, South America +2, Oceania +2, Europe +2.
 
 Law:
 # **BALANCE IS A TARGET, NOT A LICENSE TO ADD WEAK FAMILIES.**
@@ -46,139 +48,158 @@ Law:
 Gap-map rule:
 # **SOURCE CHOOSES THE MECHANISM. THE GAP MAP ONLY GUIDES DISCOVERY.**
 
-# ASIA — CANDIDATE BUILT, NOT YET VALIDATED
-
-Validated count remains:
-# `3 / 4`
-
-## Candidate selection
-
-Pool register:
-`CONTINENTAL_BALANCE_B2_2A_ASIA_CANDIDATE_POOL.md`
-
-Promotion matrix:
-`CONTINENTAL_BALANCE_B2_2B_ASIA_PROMOTION_MATRIX.md`
+# ASIA — ONE BUILT CANDIDATE / VALIDATED COUNT STILL 3/4
 
 Promoted:
-# **Persian Planispheric Astrolabe / Isfahan, Iran**
-
-Reserves:
-- Jeongnang / Jeju;
-- Chinese timber joinery, after a specific documented joint is isolated.
-
-## Astrolabe spec
-
-Register:
-`CONTINENTAL_BALANCE_B2_3A_ASIA_PERSIAN_ASTROLABE_SPEC.md`
-
-Working identity:
-- slug `astrolabe-isfahan`;
-- edition `Rete Register`;
-- memory `Celestial / Instrument Memory`.
+**Persian Planispheric Astrolabe / Isfahan — Rete Register**
 
 Law:
-# **RELATIVE ROTATION BETWEEN STAR MAP AND HORIZON PRODUCES A CELESTIAL READING.**
+`RELATIVE ROTATION BETWEEN STAR MAP AND HORIZON PRODUCES A CELESTIAL READING.`
 
-Pair:
-- Card A = RETE / CELESTIAL MAP;
-- Card B = LATITUDE PLATE / LOCAL HORIZON;
-- center = shared axis/pin only.
-
-Truth boundary:
-`STRUCTURAL TRANSLATION · RETE ↔ LATITUDE-PLATE SUBSYSTEM · NOT AN ASTRONOMICAL CALCULATOR`
-
-## Astrolabe build candidate
-
-Register:
-`CONTINENTAL_BALANCE_B2_3B_ASIA_ASTROLABE_BUILD_CANDIDATE.md`
-
-Status:
-# **SOURCE PASS / LIVE + USER VISUAL GATE PENDING**
-
-Path:
+Candidate:
 `families/astrolabe-isfahan/candidate.html`
 
-Initial implementation:
-`ade670ad03513d972180ef78d717f174f585ed6c`
-
-Formatter fix:
-`a756e58d0bead32b90ca1f6470e68592be0c3d00`
+Commits:
+- implementation `ade670ad03513d972180ef78d717f174f585ed6c`
+- signed-angle fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`
 
 Blob:
 `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
 
-Verified:
-- candidate-only source changes;
-- Card A/B remain bounded;
-- shared axis is subordinate;
-- direct pointer rotation;
-- range slider fallback;
-- LOCAL and OTHER latitude-plate contexts both valid;
-- disclaimer/source footer present;
-- JS syntax check passed;
-- signed angle formatting corrected (`−005°`, `+000°`, `+042°`, `−180°`).
+Status:
+`SOURCE PASS / LIVE + USER VISUAL PENDING`
 
-Not yet done:
-- no live deployment containing candidate has been confirmed;
-- no user visual/interaction gate;
-- not in atlas;
-- not in `collection/families.json`;
-- Asia count is NOT 4 yet.
+Truth boundary:
+`STRUCTURAL TRANSLATION · RETE ↔ LATITUDE-PLATE SUBSYSTEM · NOT AN ASTRONOMICAL CALCULATOR`
 
-# ASIA NEXT LIVE GATE — B2.4A
+# NORTH AMERICA — TWO PROMOTED FAMILY ROUNDS / VALIDATED COUNT STILL 2/4
 
-When Vercel capacity returns, create/identify a Preview containing `a756e58d…` or later descendant and audit:
-1. initial two-member hierarchy;
-2. pair → shared axis;
-3. direct rete rotation;
-4. slider agreement;
-5. local vs other plate valid context;
-6. positive/negative angle formatting;
-7. narrow layout;
-8. precision-instrument visual language.
+Pool:
+`CONTINENTAL_BALANCE_B2_2C_NORTH_AMERICA_CANDIDATE_POOL.md`
 
-Only after PASS can Asia become `4 / 4`.
+Promotion matrix:
+`CONTINENTAL_BALANCE_B2_2D_NORTH_AMERICA_PROMOTION_MATRIX.md`
+
+Promoted:
+1. Janney Automatic Rail Coupler / United States
+2. Metate + Metlapil / Mexico
+
+First reserve:
+- Yale Pin-Tumbler Lock.
+
+Context hold:
+- Maya Calendar Round — do not use as current fallback without materially stronger community-led framing.
+
+## JANNEY — SOURCE PASS
+
+Spec:
+`CONTINENTAL_BALANCE_B2_3C_NORTH_AMERICA_JANNEY_SPEC.md`
+
+Build register:
+`CONTINENTAL_BALANCE_B2_3D_NORTH_AMERICA_JANNEY_BUILD_CANDIDATE.md`
+
+Candidate:
+`families/coupler-virginia/candidate.html`
+
+Implementation:
+`fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`
+
+Blob:
+`c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
+
+Law:
+# **MATING KNUCKLES TURN CONTACT INTO A LOCKED LOAD PATH.**
+
+READY sequence:
+`HEAD A ≠ HEAD B → APPROACH → CONTACT → PIVOT → LATCH → LOAD PATH → RELEASE`
+
+Alternate-valid state:
+`BOTH KNUCKLES CLOSED → CONTACT WITHOUT COUPLING`
+
+Verified source gate:
+- one autonomous candidate file only;
+- no atlas/registry/validated-family mutation;
+- JS syntax passes;
+- release restores valid independent members.
+
+Status:
+`SOURCE PASS / LIVE + USER VISUAL PENDING`
+
+# IMMEDIATE NEXT TASK — B2.3E METATE + METLAPIL SPEC
+
+Build the source + interaction specification for North America Slot 2.
+
+Authoritative source anchors already identified:
+- Museo Nacional de Antropología / INAH, `Metate zapoteco`: https://mna.inah.gob.mx/detalle_pieza_mes.php?id=252
+- INAH glossary/documentation on metate + metlapil;
+- INAH research on pre-Hispanic maize/grinding technologies documenting the pair as a continuing technological complex.
+
+Important evidence:
+- MNA states that speaking of a metate requires speaking of its `metlapil`, its complement;
+- MNA derives the terms through an expression interpreted as `two that grind something`;
+- INAH documents the pair used for maize and additional materials including cacao and other substances.
+
+Required family law direction:
+# **PRESSURE AND RECIPROCAL STROKE BETWEEN COMPLEMENTARY STONES PRODUCE GRINDING.**
+
+Interaction constraints:
+1. two members remain visibly primary;
+2. Card A = METATE / receiving grinding surface;
+3. Card B = METLAPIL / moving grinding member;
+4. pair/engage brings the stones into working relation;
+5. user should perform direct reciprocal drag rather than watch an ornamental animation;
+6. grinding progression should accumulate on direction reversals / passes;
+7. outcome feedback remains subordinate to the stones;
+8. documented material contexts such as MAIZE / CACAO may both remain valid rather than creating a right/wrong mismatch;
+9. avoid claiming this technology as uniquely Mexican/Zapotec/Kikapu; anchor to the chosen museum context while acknowledging wider grinding-stone traditions;
+10. no decorative copying of carved motifs as cultural skin.
+
+After spec freeze:
+- create `families/metate-mexico/candidate.html` (slug may be refined by spec);
+- autonomous candidate only;
+- source gate before any atlas/registry mutation.
+
+# GROUPED LIVE VALIDATION QUEUE
+
+When Vercel Hobby deployment capacity clears, validate in one descendant Preview where possible:
+1. Astrolabe candidate;
+2. Janney candidate;
+3. Metate candidate (after source pass).
+
+No candidate enters `collection/families.json`, public atlas, validated counts or public family routes before its independent live/user gate passes.
+
+# NEXT CONTINENT AFTER NORTH AMERICA SOURCE BUILDS
+
+South America +2 source-first candidate discovery.
+
+Existing South America:
+- Peru / Khipu — tension / knot registration;
+- Bolivia / Siku — complementary absence / temporal interlock.
+
+Need two mechanisms materially distinct from both.
 
 # INFRASTRUCTURE
 
-Vercel Hobby recently reported:
+Recent Vercel Hobby status:
 `Deployment rate limited — retry in 24 hours.`
 
-Do not invent a live PASS while this remains unresolved.
-
-# IMMEDIATE ACTIVE RESEARCH — NORTH AMERICA +2
-
-Proceed with:
-# **B2.2C — NORTH AMERICA SOURCE-FIRST CANDIDATE POOL**
-
-Current North America:
-- Gatineau / Canada — registered continuation;
-- Coyoacán / Mexico — photographic trace / archive counterpart.
-
-Avoid:
-- another pass/credential/route continuation;
-- another photograph/archive counterpart.
-
-High-value discovery lanes:
-- R1 Balance / Counterweight;
-- R5 Latch / Engagement;
-- R6 Projection / Shadow / Occlusion;
-- R8 Exchange / Role Reversal;
-- R10 Compression / Stored Force;
-- R11 Encode / Decode.
-
-Need at least 6 credible source-grounded candidates for the two open North American slots before promotion.
+Do not invent a live PASS while blocked.
 
 # G4 POLISH — PARKED
 
-Do not resume family polish while Balance Gate 2 is active.
-
-Khipu G4.1 preserved:
+Khipu G4.1 remains preserved and unpromoted:
 - `families/khipu-peru/g4-1.html`;
-- implementation `64647ea78b04439ea9a57ece47f19490d9185d45`;
-- not promoted.
+- implementation `64647ea78b04439ea9a57ece47f19490d9185d45`.
 
 After 24-family equilibrium:
 B2.5 collection regression → G4 polish → G5 cohesion → G6 final validation.
 
-Persistence protocol: update current state + handover after every meaningful milestone.
+# PERSISTENCE PROTOCOL — MANDATORY
+
+After every significant research, promotion, spec, build, deployment or user-validation milestone:
+1. create/update the dedicated milestone register;
+2. update `RELATIONAL_KEY_CURRENT_STATE.md`;
+3. update `RELATIONAL_KEY_HANDOVER.md`;
+4. include exact branch, commit/blob/deployment IDs when available;
+5. distinguish SOURCE PASS, LIVE PASS, USER PASS and VALIDATED FAMILY COUNT explicitly;
+6. record the single next required output so a new conversation can take lead immediately.
