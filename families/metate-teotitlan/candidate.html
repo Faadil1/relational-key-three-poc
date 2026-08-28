@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>RELATIONAL KEY — Grinding Register / Teotitlán del Valle</title>
+<style>
+:root{
+  --bg:#0b0a08;--ink:#eee6d8;--muted:#8e8170;--line:rgba(227,208,177,.15);
+  --stone:#706a60;--stone2:#37342f;--stone3:#9a9285;--warm:#b98b55;--maize:#caa35e;--cacao:#74503a;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}html,body{margin:0;min-width:320px;min-height:100%;background:var(--bg);color:var(--ink)}
+body{overflow-x:hidden;background:radial-gradient(circle at 50% -10%,rgba(127,94,56,.12),transparent 36%),linear-gradient(#090806,#0d0b08)}
+button{font:inherit}.shell{min-height:100vh;padding:14px clamp(12px,2.2vw,36px) 26px}.top{min-height:68px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px;border-bottom:1px solid var(--line)}
+.brand{font:800 9px ui-monospace,monospace;letter-spacing:.2em;color:#c7a67e}.headline{text-align:center}.headline small,.meta{display:block;font:700 6px ui-monospace,monospace;letter-spacing:.14em;color:#756b5e}.headline b{display:block;margin-top:3px;font:600 21px Georgia,serif}.meta{text-align:right}
+.intro{text-align:center;margin:18px auto 15px}.intro span{font:800 6px ui-monospace,monospace;letter-spacing:.15em;color:#9e764d}.intro h1{margin:6px 0 4px;font:600 clamp(27px,3vw,43px) Georgia,serif}.intro p{margin:0;font:italic 12px Georgia,serif;color:#999082}
+.stage{width:min(1320px,100%);margin:auto}.pair{display:grid;grid-template-columns:minmax(0,1.2fr) 118px minmax(300px,.8fr);align-items:center;gap:10px;position:relative;perspective:1400px}.slot{position:relative;transition:transform .72s cubic-bezier(.2,.8,.2,1)}
+.card{position:relative;overflow:hidden;border:1px solid rgba(225,211,188,.16);background:linear-gradient(145deg,#1b1814,#0f0e0c 72%);box-shadow:0 28px 58px rgba(0,0,0,.44)}.metateCard{aspect-ratio:856/540;border-radius:27px}.metlapilCard{aspect-ratio:3.55/1;border-radius:999px;margin:auto;width:min(92%,520px);min-height:128px}.card:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(94deg,transparent 0 30px,rgba(255,255,255,.012) 31px),radial-gradient(circle at 50% 45%,rgba(167,130,86,.07),transparent 48%)}
+.role{position:absolute;z-index:8;left:6%;top:6%;font:800 6px ui-monospace,monospace;letter-spacing:.12em;color:#c3a27c}.metlapilCard .role{left:7%;top:14%}.copy{position:absolute;z-index:9;left:6%;right:6%;bottom:7%}.metlapilCard .copy{left:auto;right:7%;bottom:15%;text-align:right}.copy span{font:800 6px ui-monospace,monospace;letter-spacing:.1em;color:#8d6c4d}.copy strong{display:block;margin-top:4px;font:600 clamp(20px,2.1vw,30px) Georgia,serif}.copy small{display:block;margin-top:6px;font:700 6px ui-monospace,monospace;letter-spacing:.08em;color:#999083;line-height:1.45}
+.metateStone{position:absolute;z-index:3;inset:15% 10% 18%;border-radius:22px 22px 42px 42px;background:linear-gradient(160deg,#817a6e,#4a4640 54%,#292723);border:1px solid rgba(210,203,189,.19);box-shadow:inset 0 13px 20px rgba(255,255,255,.035),inset 0 -18px 24px rgba(0,0,0,.28),0 16px 24px rgba(0,0,0,.3);transform:perspective(700px) rotateX(7deg)}.metateStone:after{content:"";position:absolute;inset:12% 9% 14%;border-radius:32% 32% 38% 38%;background:radial-gradient(ellipse at center,rgba(19,18,16,.28),transparent 68%);border:1px solid rgba(229,217,198,.06)}
+.workLane{position:absolute;z-index:5;left:17%;right:17%;top:31%;bottom:25%;border-left:1px dashed rgba(225,207,177,.13);border-right:1px dashed rgba(225,207,177,.13);pointer-events:none}.workLane:before{content:"RECIPROCAL WORKING LANE";position:absolute;left:50%;bottom:-20px;transform:translateX(-50%);font:800 5px ui-monospace,monospace;letter-spacing:.11em;color:#665f56;white-space:nowrap}
+.material{--grain-scale:1;position:absolute;z-index:6;left:24%;right:24%;top:42%;height:30%;pointer-events:none;transition:opacity .35s}.material i{position:absolute;width:10px;height:7px;border-radius:50%;background:var(--maize);opacity:.76;transform:scale(var(--grain-scale)) rotate(var(--r,0deg));transition:transform .42s ease,opacity .42s ease,background .35s}.material.cacao i{background:var(--cacao)}.material i:nth-child(1){left:3%;top:18%;--r:14deg}.material i:nth-child(2){left:12%;top:54%;--r:-18deg}.material i:nth-child(3){left:21%;top:30%;--r:8deg}.material i:nth-child(4){left:30%;top:67%;--r:23deg}.material i:nth-child(5){left:39%;top:15%;--r:-12deg}.material i:nth-child(6){left:48%;top:50%;--r:19deg}.material i:nth-child(7){left:57%;top:31%;--r:-25deg}.material i:nth-child(8){left:66%;top:66%;--r:10deg}.material i:nth-child(9){left:75%;top:20%;--r:28deg}.material i:nth-child(10){left:84%;top:52%;--r:-9deg}.material i:nth-child(11){left:91%;top:33%;--r:15deg}.material i:nth-child(12){left:7%;top:76%;--r:-20deg}.material i:nth-child(13){left:17%;top:8%;--r:31deg}.material i:nth-child(14){left:27%;top:43%;--r:-7deg}.material i:nth-child(15){left:36%;top:78%;--r:16deg}.material i:nth-child(16){left:45%;top:27%;--r:-29deg}.material i:nth-child(17){left:55%;top:77%;--r:11deg}.material i:nth-child(18){left:64%;top:5%;--r:25deg}.material i:nth-child(19){left:72%;top:44%;--r:-15deg}.material i:nth-child(20){left:82%;top:78%;--r:21deg}.material i:nth-child(21){left:94%;top:70%;--r:-12deg}.material i:nth-child(22){left:43%;top:62%;--r:7deg}.material i:nth-child(23){left:59%;top:48%;--r:-20deg}.material i:nth-child(24){left:88%;top:10%;--r:13deg}
+.metlapilStone{--drag-x:0px;position:absolute;z-index:16;left:50%;top:50%;width:min(74%,360px);height:72px;border-radius:999px;background:linear-gradient(180deg,#8c8579,#625d55 48%,#3a3732);border:1px solid rgba(223,216,202,.22);box-shadow:inset 0 9px 12px rgba(255,255,255,.045),inset 0 -10px 15px rgba(0,0,0,.26),0 14px 21px rgba(0,0,0,.35);transform:translate(calc(-50% + var(--drag-x)),-50%) rotate(-2deg);transition:transform .18s ease,filter .35s ease;touch-action:none;cursor:grab;outline:none}.metlapilStone:before{content:"";position:absolute;inset:11px 24px;border-radius:999px;background:repeating-linear-gradient(92deg,rgba(255,255,255,.025) 0 2px,transparent 2px 16px)}.metlapilStone:after{content:"DRAG ↔";position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:800 6px ui-monospace,monospace;letter-spacing:.13em;color:rgba(238,229,213,.58)}.metlapilStone.dragging{cursor:grabbing;transition:none;filter:brightness(1.07)}.metlapilStone:focus-visible{box-shadow:inset 0 9px 12px rgba(255,255,255,.045),0 0 0 2px rgba(196,153,98,.6),0 14px 21px rgba(0,0,0,.35)}
+.bridge{height:180px;position:relative;display:grid;place-items:center;pointer-events:none}.contactMark{width:50px;height:50px;border:1px solid rgba(194,159,113,.12);border-radius:50%;opacity:.2;transition:opacity .4s,transform .55s,border-color .4s;position:relative}.contactMark:before,.contactMark:after{content:"";position:absolute;left:50%;top:50%;background:rgba(196,161,116,.14);transform:translate(-50%,-50%)}.contactMark:before{width:76px;height:1px}.contactMark:after{width:1px;height:76px}.bridgeLabel{position:absolute;top:calc(50% + 47px);width:115px;text-align:center;font:800 5px ui-monospace,monospace;letter-spacing:.11em;color:#71685d;line-height:1.55}
+.pair[data-phase="approach"] .leftSlot{transform:translateX(20px)}.pair[data-phase="approach"] .rightSlot{transform:translateX(-28px)}.pair[data-phase="approach"] .contactMark{opacity:.45;transform:scale(.88)}.pair[data-phase="contact"] .leftSlot,.pair[data-phase="working"] .leftSlot{transform:translateX(34px)}.pair[data-phase="contact"] .rightSlot,.pair[data-phase="working"] .rightSlot{transform:translateX(-74px)}.pair[data-phase="contact"] .contactMark,.pair[data-phase="working"] .contactMark{opacity:.85;transform:scale(.7);border-color:rgba(190,142,84,.38)}.pair[data-phase="working"] .contactMark{opacity:1;border-color:rgba(190,142,84,.54)}
+.pair:not([data-phase="contact"]):not([data-phase="working"]) .metlapilStone{pointer-events:none;cursor:default}.pair[data-phase="working"] .metlapilStone{filter:brightness(1.04)}
+.controls{width:min(1060px,96vw);margin:16px auto 0;display:grid;grid-template-columns:1fr auto;gap:9px}.controlGroup{display:flex;gap:7px;flex-wrap:wrap}.controls button{min-height:42px;border:1px solid rgba(207,190,164,.19);background:#13110e;color:#918476;padding:0 13px;font:800 6px ui-monospace,monospace;letter-spacing:.1em;cursor:pointer}.controls button.active{border-color:#a97d4d;color:#efd7b8;background:rgba(161,112,63,.11)}.controls button:disabled{opacity:.34;cursor:not-allowed}.controls button:focus-visible{outline:2px solid rgba(197,156,103,.7);outline-offset:2px}.pairBtn{min-width:208px;color:#d7b68f!important}.readout{width:min(1060px,96vw);margin:8px auto 0;display:grid;grid-template-columns:1fr auto;gap:9px;align-items:center;border:1px solid rgba(207,190,164,.12);background:rgba(15,13,10,.74);padding:9px 11px}.progressTrack{height:3px;background:#29251f;border-radius:99px;overflow:hidden}.progressFill{height:100%;width:0;background:linear-gradient(90deg,#76543a,#bd915c);transition:width .35s ease}.strokeCount{font:800 6px ui-monospace,monospace;letter-spacing:.1em;color:#a49077;min-width:112px;text-align:right}.result{text-align:center;min-height:40px;margin-top:8px;font:800 6px ui-monospace,monospace;letter-spacing:.09em;color:#8f8170;line-height:1.6}.result strong{color:#c59d6e}.truth{text-align:center;margin-top:7px;font:800 5px ui-monospace,monospace;letter-spacing:.08em;color:#655e55}.source{text-align:center;margin:8px auto 0;max-width:1060px;font:500 10px Georgia,serif;color:#766d62;line-height:1.5}
+@media(max-width:980px){.pair{grid-template-columns:1fr;gap:0}.slot{width:min(760px,100%);margin:auto}.bridge{height:116px}.metlapilCard{width:min(86%,580px)}.pair[data-phase="approach"] .leftSlot{transform:translateY(14px)}.pair[data-phase="approach"] .rightSlot{transform:translateY(-14px)}.pair[data-phase="contact"] .leftSlot,.pair[data-phase="working"] .leftSlot{transform:translateY(28px)}.pair[data-phase="contact"] .rightSlot,.pair[data-phase="working"] .rightSlot{transform:translateY(-52px)}.bridge:before{content:"";position:absolute;left:50%;top:6%;bottom:6%;width:1px;background:linear-gradient(transparent,rgba(194,159,113,.18),transparent)}.controls{grid-template-columns:1fr}.pairBtn{width:100%}.top{grid-template-columns:auto 1fr}.meta{display:none}}
+@media(max-width:560px){.shell{padding-left:9px;padding-right:9px}.headline b{font-size:18px}.brand{font-size:8px}.intro h1{font-size:28px}.controlGroup{display:grid;grid-template-columns:1fr 1fr}.controls button{padding:0 8px}.metlapilCard{width:94%;min-height:112px}.metlapilStone{width:68%;height:62px}.copy strong{font-size:20px}.copy small,.role{font-size:5px}.source{font-size:9px}.readout{grid-template-columns:1fr}.strokeCount{text-align:left}.workLane:before{font-size:4px}}
+</style>
+</head>
+<body>
+<main class="shell">
+<header class="top">
+  <div class="brand">RELATIONAL KEY</div>
+  <div class="headline"><small>CONTINENTAL BALANCE B2 · NORTH AMERICA CANDIDATE</small><b>Grinding Register</b></div>
+  <div class="meta">TEOTITLÁN DEL VALLE · OAXACA<br>STRUCTURAL TRANSLATION</div>
+</header>
+<section class="intro">
+  <span>METATE ↔ METLAPIL · COMPLEMENTARY GRINDING STONES</span>
+  <h1>Repeated work between two stones changes material state.</h1>
+  <p>Pairing creates contact. Grinding begins only when the moving member is worked back and forth.</p>
+</section>
+<section class="stage">
+  <div class="pair" id="pair" data-phase="idle">
+    <div class="slot leftSlot">
+      <article class="card metateCard">
+        <div class="role">CARD A · METATE / RECEIVING GRINDING SURFACE</div>
+        <div class="metateStone"></div><div class="workLane"></div>
+        <div class="material" id="material" aria-label="Material being ground">
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+          <i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i>
+        </div>
+        <div class="copy"><span>RECEIVING MEMBER</span><strong>Metate</strong><small id="materialMeta">COARSE MAIZE · CONTACT SURFACE · ACCUMULATED ABRASION</small></div>
+      </article>
+    </div>
+
+    <div class="bridge"><div class="contactMark"></div><div class="bridgeLabel" id="bridgeLabel">TWO STONES · NO ACTIVE GRINDING</div></div>
+
+    <div class="slot rightSlot">
+      <article class="card metlapilCard">
+        <div class="role">CARD B · METLAPIL / MOVING GRINDING MEMBER</div>
+        <div class="copy"><span>MOVING MEMBER</span><strong>Metlapil</strong><small>DIRECT RECIPROCAL STROKE · SAME-STONE COMPLEMENT</small></div>
+        <div class="metlapilStone" id="metlapil" tabindex="0" role="slider" aria-label="Move the metlapil left and right" aria-valuemin="-100" aria-valuemax="100" aria-valuenow="0"></div>
+      </article>
+    </div>
+  </div>
+
+  <div class="controls">
+    <div class="controlGroup">
+      <button id="maize" class="active">MAIZE</button>
+      <button id="cacao">CACAO</button>
+      <button id="reset">RESET</button>
+    </div>
+    <button class="pairBtn" id="pairBtn">PAIR STONES</button>
+  </div>
+
+  <div class="readout"><div class="progressTrack"><div class="progressFill" id="progressFill"></div></div><div class="strokeCount" id="strokeCount">0 PASSES · COARSE</div></div>
+  <div class="result" id="result"><strong>OFFSET</strong> · metate and metlapil are separate; no grinding work is credited.</div>
+  <div class="truth">STRUCTURAL TRANSLATION · DOCUMENTED METATE ↔ METLAPIL GRINDING RELATION · NOT A UNIVERSAL OR EXCLUSIVE CULTURAL CLAIM</div>
+  <div class="source">Source anchors: Museo Nacional de Antropología / INAH, “Metate zapoteco”; INAH glossary documentation for metate/metlapil; INAH research on Mesoamerican grinding technologies. Teotitlán del Valle is the specific museum-context anchor, not an exclusivity claim for the technology.</div>
+</section>
+</main>
+<script>
+const pair=document.getElementById('pair'),metlapil=document.getElementById('metlapil'),material=document.getElementById('material'),materialMeta=document.getElementById('materialMeta'),maize=document.getElementById('maize'),cacao=document.getElementById('cacao'),resetBtn=document.getElementById('reset'),pairBtn=document.getElementById('pairBtn'),bridgeLabel=document.getElementById('bridgeLabel'),result=document.getElementById('result'),progressFill=document.getElementById('progressFill'),strokeCount=document.getElementById('strokeCount');
+let context='maize',phase='idle',dragging=false,pointerStart=0,dragStart=0,dragX=0,lastExtreme=null,passes=0,timers=[];
+const LIMIT=100,EXTREME=72,MAX_PASSES=8;
+function clearTimers(){timers.forEach(clearTimeout);timers=[]}
+function clamp(v,min,max){return Math.max(min,Math.min(max,v))}
+function labelState(){if(passes>=7)return'FINE';if(passes>=4)return'MEDIUM';return'COARSE'}
+function renderMaterial(){const progress=Math.min(1,passes/MAX_PASSES),scale=(1-progress*.66).toFixed(3);material.style.setProperty('--grain-scale',scale);progressFill.style.width=`${Math.round(progress*100)}%`;strokeCount.textContent=`${passes} ${passes===1?'PASS':'PASSES'} · ${labelState()}`;material.classList.toggle('cacao',context==='cacao');materialMeta.textContent=`${labelState()} ${context.toUpperCase()} · CONTACT SURFACE · ACCUMULATED ABRASION`}
+function setDrag(v){dragX=clamp(v,-LIMIT,LIMIT);metlapil.style.setProperty('--drag-x',`${dragX}px`);metlapil.setAttribute('aria-valuenow',String(Math.round(dragX)));checkPass()}
+function addPass(){passes=Math.min(MAX_PASSES,passes+1);phase='working';pair.dataset.phase='working';renderMaterial();bridgeLabel.textContent=`RECIPROCAL WORK · ${passes} ${passes===1?'PASS':'PASSES'}`;result.innerHTML=`<strong>${labelState()} ${context.toUpperCase()}</strong> · repeated reciprocal contact is reducing the represented particle size.`}
+function checkPass(){if(phase!=='contact'&&phase!=='working')return;if(dragX>=EXTREME&&lastExtreme!=='right'){if(lastExtreme==='left')addPass();lastExtreme='right'}else if(dragX<=-EXTREME&&lastExtreme!=='left'){if(lastExtreme==='right')addPass();lastExtreme='left'}}
+function chooseContext(v){context=v;maize.classList.toggle('active',v==='maize');cacao.classList.toggle('active',v==='cacao');renderMaterial();if(phase==='contact'||phase==='working')result.innerHTML=`<strong>${v.toUpperCase()} CONTEXT</strong> · same valid grinding law; continue reciprocal work.`}
+function reset(){clearTimers();phase='idle';pair.dataset.phase='idle';pairBtn.disabled=false;pairBtn.textContent='PAIR STONES';dragging=false;passes=0;lastExtreme=null;metlapil.classList.remove('dragging');setDrag(0);bridgeLabel.textContent='TWO STONES · NO ACTIVE GRINDING';result.innerHTML='<strong>OFFSET</strong> · metate and metlapil are separate; no grinding work is credited.';renderMaterial()}
+function startPair(){if(phase!=='idle')return;clearTimers();phase='approach';pair.dataset.phase='approach';pairBtn.disabled=true;pairBtn.textContent='APPROACHING';bridgeLabel.textContent='APPROACH · BRING COMPLEMENTS INTO CONTACT';result.innerHTML='<strong>APPROACH</strong> · both stone members retain identity; no grinding yet.';timers.push(setTimeout(()=>{phase='contact';pair.dataset.phase='contact';pairBtn.textContent='CONTACT ACTIVE';bridgeLabel.textContent='CONTACT · DRAG METLAPIL ↔';result.innerHTML='<strong>CONTACT</strong> · direct reciprocal stroke now produces grinding work.';metlapil.focus({preventScroll:true})},680))}
+function beginPointer(e){if(phase!=='contact'&&phase!=='working')return;dragging=true;pointerStart=e.clientX;dragStart=dragX;metlapil.classList.add('dragging');metlapil.setPointerCapture(e.pointerId)}
+function movePointer(e){if(!dragging)return;setDrag(dragStart+(e.clientX-pointerStart))}
+function endPointer(e){dragging=false;metlapil.classList.remove('dragging');try{metlapil.releasePointerCapture(e.pointerId)}catch{}}
+metlapil.addEventListener('pointerdown',beginPointer);metlapil.addEventListener('pointermove',movePointer);metlapil.addEventListener('pointerup',endPointer);metlapil.addEventListener('pointercancel',()=>{dragging=false;metlapil.classList.remove('dragging')});
+metlapil.addEventListener('keydown',e=>{if(phase!=='contact'&&phase!=='working')return;if(e.key==='ArrowLeft'||e.key==='ArrowRight'){e.preventDefault();setDrag(dragX+(e.key==='ArrowRight'?18:-18))}});
+maize.onclick=()=>chooseContext('maize');cacao.onclick=()=>chooseContext('cacao');resetBtn.onclick=reset;pairBtn.onclick=startPair;chooseContext('maize');reset();
+</script>
+</body>
+</html>
