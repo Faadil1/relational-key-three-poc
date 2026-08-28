@@ -5,7 +5,7 @@ Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
 Global Refinement PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `GLOBAL_REFINEMENT_G3_2A_STATIC_INDIVIDUALITY_PASS.md`
+Latest verified milestone: `GLOBAL_REFINEMENT_G3_2B_HOVER_MOBILE_PASS.md`
 
 ## Product invariant
 
@@ -24,7 +24,7 @@ PR #20: `MERGED / SQUASH`
 Pre-refinement regression anchor:
 # `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
 
-Validated there:
+Validated at the anchor:
 - 15 / 15 independent family user gates;
 - 15 / 15 consolidated direct live routes;
 - root + shell + filters/search pass;
@@ -47,10 +47,10 @@ Golden preview:
 - `https://relational-key-collectionrelational-key-collection-gsdndspjm.vercel.app`.
 
 Locked:
-- all 15 public routes use collection-owned frame;
+- all 15 public routes use the collection-owned frame;
 - `← BACK TO ATLAS` → `/#grid`;
 - shared runtime unchanged;
-- autonomous snapshots remain regression anchors.
+- autonomous snapshots remain mechanism-level regression anchors.
 
 ## G2 — Shell Legibility
 Status: `PASS`
@@ -68,18 +68,11 @@ Locked rule:
 
 ## G3 — Atlas Family Individuality
 
-G3 law:
-# `INDIVIDUALITY = RELATIONSHIP MECHANISM, NOT CULTURAL ORNAMENT`
-
-Registers:
-- `GLOBAL_REFINEMENT_G3_ATLAS_INDIVIDUALITY_SPEC.md`
-- `GLOBAL_REFINEMENT_G3_1_MECHANISM_NATIVE_MINIPAIRS.md`
-- `GLOBAL_REFINEMENT_G3_2A_STATIC_INDIVIDUALITY_PASS.md`
-
-### G3.1 implementation
-
 Status:
-# `SOURCE PASS / LIVE TECHNICAL PASS`
+# **PASS**
+
+Law:
+# `INDIVIDUALITY = RELATIONSHIP MECHANISM, NOT CULTURAL ORNAMENT`
 
 Implementation commit:
 `239f076fb9fc2936b16d793caa14c486eb182d05`
@@ -90,60 +83,80 @@ Exact implementation preview:
 - state `READY / Preview`;
 - deployed SHA `239f076fb9fc2936b16d793caa14c486eb182d05`.
 
-Source compare from pre-G3 head `755ff10b9b08672d817655479f2e56b8d2ab2ab0`:
-- only root `index.html` changed;
-- 44 additions / 1 deletion;
-- no wrapper, route, registry, shared runtime, snapshot, timing or native family mechanism change.
+Registers:
+- `GLOBAL_REFINEMENT_G3_ATLAS_INDIVIDUALITY_SPEC.md`
+- `GLOBAL_REFINEMENT_G3_1_MECHANISM_NATIVE_MINIPAIRS.md`
+- `GLOBAL_REFINEMENT_G3_2A_STATIC_INDIVIDUALITY_PASS.md`
+- `GLOBAL_REFINEMENT_G3_2B_HOVER_MOBILE_PASS.md`
 
-Fifteen explicit mechanism-native SVG signatures exist in `pairViz(f)` and `prefers-reduced-motion` is supported.
+G3.2A evidence:
+- `388cd19c-e93c-41f3-9548-7f32addf1883.mp4`;
+- ~10.11 s, 1912×964, 30 fps;
+- fifteen signatures materially more distinguishable while the atlas remains one system;
+- no cultural skinning, flags, stereotypes or logo-like replacement.
 
-### G3.2A — Static Individuality User Visual Audit
+G3.2B evidence:
+- `cb023959-0e6b-4f64-bd23-721c02a9be2f.mp4`;
+- ~20.10 s, 1896×964, 30 fps;
+- hover movement remains micro/subordinate;
+- narrow-width rendering keeps SVGs and card hierarchy clean;
+- no visible overflow or distorted mechanism geometry.
+
+Residual final regression:
+- perform an explicit ~390 px viewport check during G6. The G3.2B capture demonstrates narrowing but is not treated as a measured 390 px device gate.
+
+No G3 patch remains open.
+
+## G4 — PASS WITH POLISH Backlog
 
 Status:
-# **STATIC INDIVIDUALITY PASS / DYNAMIC + MOBILE CLOSEOUT REQUIRED**
+# **ACTIVE — INVENTORY LOCKED / G4.1 KHIPU NEXT**
 
-User evidence:
-- `388cd19c-e93c-41f3-9548-7f32addf1883.mp4`;
-- ~10.11 s;
-- 1912×964;
-- 30 fps.
+Register:
+`GLOBAL_REFINEMENT_G4_POLISH_INVENTORY.md`
 
-Confirmed visually:
-- all 15 mechanism signatures are materially more distinguishable at atlas scale;
-- the atlas still feels like one collection because footprint, palette, typography, grid and relation-ink language remain common;
-- signatures read as mechanism diagrams rather than logos or cultural ornament;
-- no flags, national palettes, stereotype/landmark skinning or generic folk decoration appears.
+G4 governing rule:
+# `POLISH MUST INCREASE LEGIBILITY WITHOUT REWRITING THE RELATIONSHIP.`
 
-Not demonstrated in this capture:
-- representative hover micro-previews;
-- narrow/mobile rendering after SVG replacement.
+Evidence tiers:
 
-A fresh family-open regression is low risk and non-blocking here because G3 changed only root `index.html` and routes/wrappers remain unchanged.
+### Tier A — actionable documented debt
+1. **Khipu / Peru** — central knot hierarchy + tension change perceptibility.
+2. **Kento / Japan** — `kagi` / `hikitsuki` hierarchy + OTHER BLOCK colour-layer displacement readability; center remains subordinate.
+3. **Siku / Bolivia** — central interlock field + bottom microcopy are small at desktop scale.
 
-### Remaining G3 gate
+### Tier B — historical PASS WITH POLISH but no precise patch authorization yet
+- **Zellige / Fès** — re-audit before mutation.
+- **Ombak / Bali** — re-audit before mutation; preserve controlled difference.
+- **Swell / Marshall Islands** — re-audit before mutation.
 
-# **G3.2B — HOVER + MOBILE CLOSEOUT**
+### Tier C — no current G4 patch evidence
+- Stereoscopy / UK;
+- Hika Ahi / Aotearoa;
+- Boulle / France;
+- shared-runtime City / Service / Signal / Frida / Food / Textile, unless a new issue is reproduced.
 
-Minimal required evidence:
-1. hover 3–5 contrasting cards, ideally Zellige, Ombak, Hika Ahi and Boulle;
-2. narrow browser to mobile-ish width and show 2–3 cards;
-3. no need to re-scroll all fifteen families.
+Candidate architecture:
+- existing autonomous `snapshot.html` remains the golden reference;
+- create a separate reversible polish candidate;
+- do not overwrite golden evidence before a dedicated live/user regression gate.
 
-Only after this closeout may G3 become `PASS` and G4 begin.
+### Immediate next output
+
+# **G4.1 — KHIPU POLISH CANDIDATE DESIGN + IMPLEMENTATION**
+
+Inspect the Khipu wrapper and snapshot first. Apply only the smallest reversible changes needed to strengthen central-knot hierarchy and tension perceptibility while preserving timing, truthfulness, mismatch semantics and pair architecture.
 
 ## Future gates
 
-### G4 — PASS WITH POLISH Backlog
-Target family-specific polish against golden references.
-
 ### G5 — Collection Cohesion
-Improve collection ↔ family transitions while preserving native distinction.
+Improve collection ↔ family transitions while preserving family-native distinction.
 
 ### G6 — Final Collection Validation
-Final root, routes, responsive, mechanism regression and deployment audit.
+Final root, routes, exact responsive regression including ~390 px, family mechanism regression and deployment audit.
 
 Status vocabulary:
-`G1 PASS ≠ G2 PASS ≠ G3.2A STATIC PASS ≠ G3 PASS ≠ GLOBAL REFINEMENT COMPLETE ≠ FINAL COLLECTION PASS`.
+`G3 PASS ≠ G4 INVENTORY LOCKED ≠ G4 PASS ≠ GLOBAL REFINEMENT COMPLETE ≠ FINAL COLLECTION PASS`.
 
 ## Persistence protocol
 
