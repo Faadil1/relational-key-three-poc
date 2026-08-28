@@ -5,7 +5,7 @@ Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
 Draft PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `CONTINENTAL_BALANCE_B2_3O_EUROPE_ANAMORPHOSIS_SPEC.md`
+Latest verified milestone: `CONTINENTAL_BALANCE_B2_3P_EUROPE_ANAMORPHOSIS_BUILD_CANDIDATE.md`
 
 # PRODUCT INVARIANT
 
@@ -27,10 +27,6 @@ Current validated:
 
 No research promotion, SOURCE PASS, READY deployment or route availability alone changes a validated count.
 
-Core laws:
-- **BALANCE IS A TARGET, NOT A LICENSE TO ADD WEAK FAMILIES.**
-- **SOURCE CHOOSES THE MECHANISM. THE GAP MAP ONLY GUIDES DISCOVERY.**
-
 # SOURCE-PASS BUILD QUEUE — LIVE/USER PENDING
 
 1. Astrolabe / Isfahan — build `ade670ad03513d972180ef78d717f174f585ed6c`, fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`, blob `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
@@ -40,8 +36,10 @@ Core laws:
 5. Mate + Bombilla — build `6b1a12b166b3be5612ba5b1d5a1f731281186379`, blob `6bdebcff2bd3c2b8c57f0c75dc72b20fcba37d55`
 6. Tongiaki / Tonga — build `e577bd6669c0d32f41078fa3124a03539cecd460`, blob `55053022e5312274a250a3384a28c07abdcb2f6f`
 7. Garamut / East Sepik-Ramu PNG — build `acb90a987f17c35ee94828f9433f5dd0055a0609`, blob `d78ec124d1111ba6a82137b58c0922fa7fdc1a36`
+8. Catoptric Anamorphosis / Paris-France — build `a1e4ab388a1c75c4a90350d19a22ca478a43dc7d`, blob `ee44725b47b38079b3264f64e3fd0eb7c3837609`, source register `08a8c1cd57849b07fc501aad4dcb439ce7d0722e`
 
-All seven remain `SOURCE PASS / LIVE + USER PENDING`.
+All eight remain:
+# `SOURCE PASS / LIVE + USER VISUAL OR VISUAL+AUDIO PENDING`
 
 # OCEANIA
 
@@ -53,13 +51,14 @@ Promoted/source-passed:
 # VERCEL CURRENT STATUS
 
 Latest identified READY Preview:
-- `dpl_8GgBz2Kt81mr1YTLTR3UTk9UgMi4`
-- `https://relational-key-collectionrelational-key-collection-55w553e3i.vercel.app`
+- deployment `dpl_8GgBz2Kt81mr1YTLTR3UTk9UgMi4`
+- URL `https://relational-key-collectionrelational-key-collection-55w553e3i.vercel.app`
 - Git SHA `32b67f69b7ead0ff30f443e1efe803222afb31cd`
 
-It contains ancestry through Mate + Bombilla, not Tongiaki/Garamut.
+It contains ancestry through Mate + Bombilla only among newer builds.
 Astrolabe route fetched at HTTP 200.
 Janney probe hit SSO 302; neither fail nor PASS.
+A newer full-queue READY Preview still needs identification.
 
 # EUROPE +2 — ACTIVE
 
@@ -69,83 +68,79 @@ Promotion matrix:
 `CONTINENTAL_BALANCE_B2_2J_EUROPE_PROMOTION_MATRIX.md`
 commit `e1c4cbfd1c24a34424402dea8eab18acee0b080d`
 
-Promoted family rounds:
-1. Catoptric Cylinder Anamorphosis / Paris-France + early-modern Europe
+Promoted:
+1. Catoptric Cylinder Anamorphosis / Paris-France
 2. Swiss Cylinder Music Box / Swiss Jura
 
-## B2.3O — Catoptric Anamorphosis Source + Interaction Spec
+## Europe Slot 1 — Anamorphosis
 
-Status:
-# **SOURCE PASS / INTERACTION SPEC FROZEN**
+Spec:
+`CONTINENTAL_BALANCE_B2_3O_EUROPE_ANAMORPHOSIS_SPEC.md`
+commit `b1c2c073df73cfc2fcfd829685f0d5f52a1d69e8`
 
-Register:
-# `CONTINENTAL_BALANCE_B2_3O_EUROPE_ANAMORPHOSIS_SPEC.md`
+Build register:
+# `CONTINENTAL_BALANCE_B2_3P_EUROPE_ANAMORPHOSIS_BUILD_CANDIDATE.md`
 
-Spec commit:
-# `b1c2c073df73cfc2fcfd829685f0d5f52a1d69e8`
+Build register commit:
+# `08a8c1cd57849b07fc501aad4dcb439ce7d0722e`
 
-Working identity:
-- slug `anamorphosis-paris`
-- place `Paris / France · Niceron / catoptric-anamorphosis tradition`
-- memory `Reflection Memory`
-- edition `Rectification Register`
-- topology `R6 curved reflection / optical decode`
+Candidate:
+`families/anamorphosis-paris/candidate.html`
 
-Canonical law:
+Implementation:
+# `a1e4ab388a1c75c4a90350d19a22ca478a43dc7d`
+
+Blob:
+# `ee44725b47b38079b3264f64e3fd0eb7c3837609`
+
+Law:
 # **CURVED REFLECTION RE-MAPS ANAMORPHIC DISTORTION INTO A LEGIBLE FORM.**
 
-Proof:
-`DISTORTED IMAGE ≠ CYLINDRICAL MIRROR → POSITION → REFLECT → RE-MAP → LEGIBLE FORM`
+Source gate proof:
+- one candidate file only, 91 additions / 0 deletions;
+- no atlas/registry/public-route mutation;
+- local JS `node --check` PASS;
+- local `git hash-object` exactly equals GitHub blob;
+- direct 2D mirror drag + arrow keys;
+- Card A never resolves;
+- legible editorial elephant remains inside Card B mirror;
+- target/partial/valid-offset states continuous;
+- visible non-ray-traced truth boundary;
+- responsive and reduced-motion CSS present.
 
-Historical/source anchors:
-- Science Museum Group object `1948-326/2` = cylindrical mirror for viewing anamorphosis paintings;
-- companion `1948-326/1` resolves a distorted ship image in cylindrical reflection;
-- Met public-domain `Satyrs Admiring the Anamorphosis of an Elephant`, 17th c., linked to Niceron's 1652 Paris treatise.
+Status:
+# `SOURCE PASS / LIVE + USER VISUAL PENDING`
 
-Pair contract:
-- Card A = anamorphic/distorted image field;
-- Card B = cylindrical mirror;
-- Card A remains distorted even at target relation;
-- reflected proof stays on Card B mirror surface;
-- direct mirror position/offset interaction;
-- OTHER position = valid unresolved reflection;
-- no pair button required;
-- no stereoscopy/depth semantics.
+Validated Europe still `2/4`.
 
-Truth boundary:
-`STRUCTURAL CATOPTRIC TRANSLATION · SOURCE-GROUNDED RELATION · EDITORIAL REFLECTION GEOMETRY · NOT A RAY-TRACED HISTORICAL RECONSTRUCTION`
-
-Validated Europe still `2/4`; spec freeze does not validate a family.
-
-# EUROPE SLOT 2 — PROMOTED / SPEC NOT YET FROZEN
+# EUROPE SLOT 2 — NEXT
 
 Swiss Cylinder Music Box / Swiss Jura.
+
 Law direction:
-`STORED PIN GEOMETRY BECOMES ORDERED NOTES WHEN A CYLINDER ENGAGES A TUNED COMB.`
+# **STORED PIN GEOMETRY BECOMES ORDERED NOTES WHEN A CYLINDER ENGAGES A TUNED COMB.**
+
+Source anchors already verified:
+- Swiss federal Museum of Music Automatons: cylinder is sound carrier; set pins transmit stored information and directly pluck tuned teeth in sequence; cylinder+comb is traditional Swiss music-box principle;
+- Smithsonian Paillard & Cie objects from St. Croix, Switzerland: cylinder + one-piece comb;
+- Museo Nicolis independent mechanism description.
 
 # IMMEDIATE NEXT OUTPUT
 
-# **B2.3P — CATOPTRIC ANAMORPHOSIS AUTONOMOUS BUILD CANDIDATE + SOURCE GATE**
+# **B2.3Q — EUROPE FAMILY ROUND 2: SWISS CYLINDER MUSIC BOX SOURCE + INTERACTION SPEC**
 
-Required path:
-`families/anamorphosis-paris/candidate.html`
+Spec must decide:
+- exact Swiss object/geographic anchor;
+- Card A cylinder / Card B tuned comb roles;
+- manual rotation interaction;
+- spring drive explicitly contextual/external;
+- editorial pin sequence and synthetic audio truth boundaries;
+- alternate valid cylinder/phrase semantics;
+- no build before spec freeze.
 
-Acceptance:
-1. autonomous candidate only;
-2. no atlas/registry/public route mutation;
-3. direct mirror drag + keyboard fallback;
-4. continuous resolved/unresolved reflection state;
-5. Card A remains distorted;
-6. proof remains inside Card B mirror;
-7. no stereoscopy/depth semantics;
-8. visible truth boundary;
-9. JS syntax pass;
-10. responsive CSS present;
-11. live/user validation deferred.
-
-After B2.3P SOURCE PASS:
+After B2.3Q:
 - update CURRENT_STATE + HANDOVER immediately;
-- then B2.3Q Swiss Music Box source + interaction spec.
+- then B2.3R autonomous candidate + source gate.
 
 # G4 POLISH — PARKED
 
