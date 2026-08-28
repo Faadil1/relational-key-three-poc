@@ -65,6 +65,7 @@ Validated G2 preview:
 - `READY / Preview`.
 
 User visual evidence:
+- `958cd0da-ce32-4093-89ee-d3624621b54e.mp4`;
 - 55.23 s, 1918×966, 30 fps;
 - desktop hierarchy remains light while metadata is easier to read;
 - progressive narrowing preserves search/chips/card readability and reaches a usable single-column state;
