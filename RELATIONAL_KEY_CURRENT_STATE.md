@@ -5,7 +5,7 @@ Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
 Draft PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `CONTINENTAL_BALANCE_B2_3Q_EUROPE_SWISS_MUSIC_BOX_SPEC.md`
+Latest verified milestone: `CONTINENTAL_BALANCE_B2_3R_EUROPE_SWISS_MUSIC_BOX_BUILD_CANDIDATE.md`
 
 # PRODUCT INVARIANT
 
@@ -20,138 +20,183 @@ G4 polish remains PARKED until Balance Gate 2 closes.
 # CONTINENTAL BALANCE GATE 2 — ACTIVE
 
 Target:
-`AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
+# `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 
-Current validated:
+Current VALIDATED distribution remains:
 # `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-No research promotion, SOURCE PASS, READY deployment or route availability alone changes a validated count.
+No research promotion, spec freeze, SOURCE PASS, READY deployment or route availability alone changes a validated count.
 
-# SOURCE-PASS BUILD QUEUE — LIVE/USER PENDING
+Core laws:
+- **BALANCE IS A TARGET, NOT A LICENSE TO ADD WEAK FAMILIES.**
+- **SOURCE CHOOSES THE MECHANISM. THE GAP MAP ONLY GUIDES DISCOVERY.**
 
-1. Astrolabe / Isfahan — build `ade670ad03513d972180ef78d717f174f585ed6c`, fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`, blob `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
-2. Janney / Virginia — build `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`, blob `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
-3. Metate + Metlapil — build `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`, blob `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
-4. Valparaíso Funicular — build `7aff21b59ff88fcbe3e526958cf9fdf67c0d3750`, blob `1e71497d7f9f5411eca2347b36bc0402db8b905b`
-5. Mate + Bombilla — build `6b1a12b166b3be5612ba5b1d5a1f731281186379`, blob `6bdebcff2bd3c2b8c57f0c75dc72b20fcba37d55`
-6. Tongiaki / Tonga — build `e577bd6669c0d32f41078fa3124a03539cecd460`, blob `55053022e5312274a250a3384a28c07abdcb2f6f`
-7. Garamut / East Sepik-Ramu PNG — build `acb90a987f17c35ee94828f9433f5dd0055a0609`, blob `d78ec124d1111ba6a82137b58c0922fa7fdc1a36`
-8. Catoptric Anamorphosis / Paris-France — build `a1e4ab388a1c75c4a90350d19a22ca478a43dc7d`, blob `ee44725b47b38079b3264f64e3fd0eb7c3837609`, source register `08a8c1cd57849b07fc501aad4dcb439ce7d0722e`
+# ALL 9 BALANCE-GATE ADDITIONS NOW HAVE SOURCE-PASS BUILDS
 
-All eight remain `SOURCE PASS / LIVE + USER PENDING`.
+## 1 — Asia / Persian Astrolabe / Isfahan
+- candidate `families/astrolabe-isfahan/candidate.html`
+- build `ade670ad03513d972180ef78d717f174f585ed6c`
+- signed-angle fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`
+- blob `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
+- law `RELATIVE ROTATION BETWEEN STAR MAP AND HORIZON PRODUCES A CELESTIAL READING.`
+- status `SOURCE PASS / LIVE + USER VISUAL PENDING`
 
-# VERCEL
+## 2 — North America / Janney Coupler / Virginia
+- candidate `families/coupler-virginia/candidate.html`
+- build `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`
+- blob `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
+- law `MATING KNUCKLES TURN CONTACT INTO A LOCKED LOAD PATH.`
+- status `SOURCE PASS / LIVE + USER VISUAL PENDING`
 
-Latest identified READY Preview:
-- `dpl_8GgBz2Kt81mr1YTLTR3UTk9UgMi4`
-- URL `https://relational-key-collectionrelational-key-collection-55w553e3i.vercel.app`
-- Git SHA `32b67f69b7ead0ff30f443e1efe803222afb31cd`
+## 3 — North America / Metate + Metlapil / Teotitlán del Valle
+- candidate `families/metate-teotitlan/candidate.html`
+- spec `38d766100cc6ce9bd38d7af26a25495ec5f8f659`
+- build `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`
+- blob `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
+- law `PRESSURE AND RECIPROCAL STROKE BETWEEN COMPLEMENTARY STONES PRODUCE GRINDING.`
+- status `SOURCE PASS / LIVE + USER VISUAL PENDING`
 
-It contains ancestry through Mate + Bombilla, not the later Tongiaki/Garamut/Anamorphosis builds.
-Astrolabe route fetched at HTTP 200.
-Janney probe hit SSO 302; neither fail nor PASS.
+## 4 — South America / Valparaíso Funicular / Chile
+- candidate `families/funicular-valparaiso/candidate.html`
+- spec `f06731fc0e001c09524e21fc81da8fe6697aa313`
+- build `7aff21b59ff88fcbe3e526958cf9fdf67c0d3750`
+- blob `1e71497d7f9f5411eca2347b36bc0402db8b905b`
+- law `ON A SHARED FUNICULAR, ONE CAR'S ASCENT IS COUNTERBALANCED BY THE OTHER'S DESCENT.`
+- status `SOURCE PASS / LIVE + USER VISUAL PENDING`
 
-# EUROPE +2 — ACTIVE
+## 5 — South America / Mate + Bombilla / Argentina + regional context
+- candidate `families/mate-bombilla-argentina/candidate.html`
+- spec `36c778af5e69e1419ed4b011ca74cf19cce96ab6`
+- build `6b1a12b166b3be5612ba5b1d5a1f731281186379`
+- blob `6bdebcff2bd3c2b8c57f0c75dc72b20fcba37d55`
+- law `A SUBMERGED BOMBILLA ALLOWS INFUSION TO PASS WHILE YERBA REMAINS IN THE MATE.`
+- status `SOURCE PASS / LIVE + USER VISUAL PENDING`
 
-Validated Europe remains `2/4`.
+## 6 — Oceania / Tongiaki Double Hull / Tonga
+- candidate `families/tongiaki-tonga/candidate.html`
+- spec `00f5a984ae4c376753b2ed6f64dc955307c9e38d`
+- build `e577bd6669c0d32f41078fa3124a03539cecd460`
+- blob `55053022e5312274a250a3384a28c07abdcb2f6f`
+- source register `e086134795c61ee97240af2dd50609340f8a6601`
+- status `SOURCE PASS / LIVE + USER VISUAL PENDING`
+
+## 7 — Oceania / Garamut + Wooden Pounder / East Sepik-Ramu PNG
+- candidate `families/garamut-sepik-ramu/candidate.html`
+- spec `64359d37f5e7ceccbd7b244ed79a590951e3ab8f`
+- build `acb90a987f17c35ee94828f9433f5dd0055a0609`
+- blob `d78ec124d1111ba6a82137b58c0922fa7fdc1a36`
+- source register `312722e0df95c44e137fe19618c445d541ffd23a`
+- community-code boundary: editorial event timing only; no authentic code claim
+- status `SOURCE PASS / LIVE + USER VISUAL+AUDIO PENDING`
+
+## 8 — Europe / Catoptric Anamorphosis / Paris-France
+- candidate `families/anamorphosis-paris/candidate.html`
+- spec `b1c2c073df73cfc2fcfd829685f0d5f52a1d69e8`
+- build `a1e4ab388a1c75c4a90350d19a22ca478a43dc7d`
+- blob `ee44725b47b38079b3264f64e3fd0eb7c3837609`
+- source register `08a8c1cd57849b07fc501aad4dcb439ce7d0722e`
+- law `CURVED REFLECTION RE-MAPS ANAMORPHIC DISTORTION INTO A LEGIBLE FORM.`
+- status `SOURCE PASS / LIVE + USER VISUAL PENDING`
+
+## 9 — Europe / Swiss Cylinder Music Box / Sainte-Croix
+
+Spec:
+`CONTINENTAL_BALANCE_B2_3Q_EUROPE_SWISS_MUSIC_BOX_SPEC.md`
+
+Build register:
+# `CONTINENTAL_BALANCE_B2_3R_EUROPE_SWISS_MUSIC_BOX_BUILD_CANDIDATE.md`
+
+Build-register commit:
+# `be6adf096512fc00390ced92db7ddedc4452d3e9`
+
+Candidate:
+`families/music-box-sainte-croix/candidate.html`
+
+Implementation:
+# `c8c1af1afe7c9e9ff8cce8efc68ce3094976fe97`
+
+Blob:
+# `1f07e969dea9a47ec591afe835766f1d2443e427`
+
+Exact anchor:
+`Paillard & Cie. · Sainte-Croix, Switzerland · 1841`
+
+Law:
+# **STORED PIN GEOMETRY BECOMES ORDERED NOTES WHEN A CYLINDER ENGAGES A TUNED COMB.**
+
+Source gate:
+- atomic diff: one new file, 95 additions / 0 deletions;
+- no atlas/registry/public-route mutation;
+- `node --check` PASS;
+- local `git hash-object` = GitHub blob exactly;
+- engagement creates contact but `NO AUTOPLAY`;
+- direct manual cylinder drag + Left/Right keyboard rotation;
+- deterministic pin→tooth crossings in forward/reverse motion;
+- visible tooth response without audio;
+- restrained synthetic audio only;
+- `OTHER CYLINDER` = different valid editorial pin sequence;
+- historical spring drive explicitly remains contextual;
+- editorial pins/tones explicitly not authentic Paillard tuning/tunes;
+- responsive/reduced-motion source support present.
+
+Status:
+# `SOURCE PASS / LIVE + USER VISUAL+AUDIO PENDING`
+
+# EUROPE RESEARCH STATUS
 
 Promotion matrix:
 `CONTINENTAL_BALANCE_B2_2J_EUROPE_PROMOTION_MATRIX.md`
 commit `e1c4cbfd1c24a34424402dea8eab18acee0b080d`
 
-Promoted:
-1. Catoptric Cylinder Anamorphosis / Paris-France
-2. Swiss Cylinder Music Box / Swiss Jura
-
-## Europe Slot 1 — Anamorphosis
-
-Spec `CONTINENTAL_BALANCE_B2_3O_EUROPE_ANAMORPHOSIS_SPEC.md`, commit `b1c2c073df73cfc2fcfd829685f0d5f52a1d69e8`.
-Build register `CONTINENTAL_BALANCE_B2_3P_EUROPE_ANAMORPHOSIS_BUILD_CANDIDATE.md`, register commit `08a8c1cd57849b07fc501aad4dcb439ce7d0722e`.
-Candidate `families/anamorphosis-paris/candidate.html`, build `a1e4ab388a1c75c4a90350d19a22ca478a43dc7d`, blob `ee44725b47b38079b3264f64e3fd0eb7c3837609`.
-Status `SOURCE PASS / LIVE + USER VISUAL PENDING`.
-
-## B2.3Q — Europe Slot 2 Swiss Music Box Spec
-
-Status:
-# **SOURCE PASS / INTERACTION SPEC FROZEN**
-
-Register:
-# `CONTINENTAL_BALANCE_B2_3Q_EUROPE_SWISS_MUSIC_BOX_SPEC.md`
-
-Spec commit:
-# `988c2d0b9878008500aaf29a68107e171f2e03ca`
-
-Identity:
-- slug `music-box-sainte-croix`
-- exact object anchor `Paillard & Cie. cylinder music box, Sainte-Croix, Switzerland, 1841`
-- broader context `Swiss Jura mechanical-music tradition`
-- memory `Mechanical Memory`
-- edition `Pin-to-Comb Register`
-- topology `R11 mechanical encode/decode`
-
-Canonical law:
-# **STORED PIN GEOMETRY BECOMES ORDERED NOTES WHEN A CYLINDER ENGAGES A TUNED COMB.**
-
-Proof:
-`PINNED CYLINDER ≠ TUNED COMB → ENGAGE → ROTATE → PIN CONTACT → TOOTH PLUCK → ORDERED NOTES`
-
-Source truth:
-- Swiss federal Museum of Music Automatons documents cylinders as sound carriers/storage media and set pins directly plucking tuned teeth in sequence;
-- museum documentation states cylinder+comb is the traditional Swiss music-box principle;
-- Smithsonian Paillard 1841 object documents cylinder + one-piece 51-tooth comb;
-- companion 1838–1842 object documents spring/key drive;
-- Museo Nicolis independently confirms pins on rotating cylinder pluck steel-comb teeth in predetermined sequence.
-
-Interaction contract:
-- Card A = pinned cylinder / stored sequence;
-- Card B = tuned comb / physical decoder;
-- explicit editorial engage stage allowed;
-- after engagement, user directly rotates cylinder;
-- no autoplay and no spring-motor simulation;
-- deterministic editorial pin→tooth events;
-- tooth visual response must work without audio;
-- short synthetic tones only;
-- OTHER CYLINDER = different valid editorial phrase;
-- no wrong phrase state.
-
-Truth boundaries:
-- manual rotation substitutes for historical drive only to isolate cylinder↔comb relation;
-- historical spring drive remains contextual;
-- simplified pins/teeth and exact phrase are editorial;
-- synthetic audio is not authentic Paillard timbre/tuning.
-
+Both promoted Europe slots now have SOURCE-PASS builds.
 Validated Europe remains `2/4`.
+
+Reserves:
+1. Slide Rule / UK
+2. Pantograph / Germany — architecture hold
+3. Cardan Grille / Italy — source-deepening required
+4. Jacquard Card + Reader / France
+5. Anchor Escapement
+
+# VERCEL — LAST VERIFIED INFRASTRUCTURE STATE
+
+Project ID `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
+Team ID `team_twDc66jGM0sPvNM4I5Huc0x7`
+
+Last identified READY Preview:
+- deployment `dpl_8GgBz2Kt81mr1YTLTR3UTk9UgMi4`
+- URL `https://relational-key-collectionrelational-key-collection-55w553e3i.vercel.app`
+- deployed Git SHA `32b67f69b7ead0ff30f443e1efe803222afb31cd`
+
+That Preview contains source ancestry through Mate + Bombilla but not later Tongiaki/Garamut/Anamorphosis/Music Box.
+Astrolabe route was fetched at HTTP 200.
+Janney route probe hit SSO 302; neither fail nor PASS.
+
+The old blanket 24-hour rate-limit assumption is stale.
 
 # IMMEDIATE NEXT OUTPUT
 
-# **B2.3R — SWISS CYLINDER MUSIC BOX AUTONOMOUS BUILD CANDIDATE + SOURCE GATE**
+# **B2.4A — FULL NINE-CANDIDATE PREVIEW IDENTIFICATION + LIVE TECHNICAL AVAILABILITY GATE**
 
-Required path:
-`families/music-box-sainte-croix/candidate.html`
+Required:
+1. list Vercel deployments for the canonical collection project;
+2. identify a READY Preview whose Git SHA descends from Music Box build `c8c1af1...` or a later docs-only state;
+3. verify branch `collection/global-refinement-1`;
+4. confirm candidate route availability without inventing PASS when Vercel SSO blocks a probe;
+5. persist deployment ID / URL / deployed SHA / route findings;
+6. only then request grouped user visual walkthroughs;
+7. each of the 9 candidates requires an independent user verdict even if audited on one shared Preview.
 
-Acceptance:
-- autonomous file only;
-- separate cylinder + comb visible;
-- engage stage;
-- direct manual cylinder rotation;
-- deterministic pin→tooth mapping;
-- visible tooth response without audio;
-- synthetic-audio and editorial-sequence labels;
-- spring-drive context label;
-- OTHER CYLINDER alternate-valid state;
-- reset + keyboard fallback;
-- JS syntax PASS;
-- responsive CSS;
-- no atlas/registry/public route mutation.
-
-After B2.3R SOURCE PASS:
-- update CURRENT_STATE + HANDOVER immediately;
-- identify latest READY Preview containing all nine expansion candidates if available;
-- then begin grouped live/user validation before any validated-count changes.
+Validated counts remain unchanged until those user gates pass.
 
 # G4 POLISH — PARKED
 
-Khipu reversible candidate: `families/khipu-peru/g4-1.html`, commit `64647ea78b04439ea9a57ece47f19490d9185d45`.
+Khipu reversible candidate preserved:
+`families/khipu-peru/g4-1.html`
+implementation `64647ea78b04439ea9a57ece47f19490d9185d45`
+
+After 24-family equilibrium:
+B2.5 24-family collection regression → G4 polish → G5 cohesion → G6 final validation.
 
 # PERSISTENCE PROTOCOL — MANDATORY
 
