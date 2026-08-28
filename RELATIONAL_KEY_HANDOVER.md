@@ -8,29 +8,19 @@ PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-Completed:
-- Continental Balance Gate 1;
-- Collection Consolidation + 15/15 direct live routes;
-- PR #20 merge;
-- G0 Baseline Freeze PASS;
-- G1 Collection Navigation Frame PASS;
-- G2 Shell Legibility PASS;
-- G3 Atlas Family Individuality PASS;
-- Continental Balance Gate 2 opened;
-- B2.1 Relationship Gap Map PASS;
-- B2.2A/B Asia pool + promotion PASS;
-- B2.3A Persian Astrolabe spec frozen;
-- B2.3B Persian Astrolabe build candidate SOURCE PASS;
-- B2.2C North America six-candidate pool PASS;
-- B2.2D North America two-slot promotion PASS;
-- B2.3C Janney source/interaction spec frozen;
-- B2.3D Janney build candidate SOURCE PASS.
-
 Canonical invariant:
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
 Pre-refinement regression anchor:
 `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
+
+Completed before Balance Gate 2:
+- PR #20 consolidation merge;
+- 15/15 original independent family gates + consolidated routes;
+- G0 Baseline Freeze PASS;
+- G1 Collection Navigation Frame PASS;
+- G2 Shell Legibility PASS;
+- G3 Atlas Family Individuality PASS.
 
 # CONTINENTAL BALANCE GATE 2 — ACTIVE
 
@@ -48,19 +38,19 @@ Law:
 Gap-map rule:
 # **SOURCE CHOOSES THE MECHANISM. THE GAP MAP ONLY GUIDES DISCOVERY.**
 
-# ASIA — ONE BUILT CANDIDATE / VALIDATED COUNT STILL 3/4
+# ASIA — BUILT CANDIDATE / COUNT STILL 3/4
 
-Promoted:
+Candidate:
 **Persian Planispheric Astrolabe / Isfahan — Rete Register**
+
+Path:
+`families/astrolabe-isfahan/candidate.html`
 
 Law:
 `RELATIVE ROTATION BETWEEN STAR MAP AND HORIZON PRODUCES A CELESTIAL READING.`
 
-Candidate:
-`families/astrolabe-isfahan/candidate.html`
-
 Commits:
-- implementation `ade670ad03513d972180ef78d717f174f585ed6c`
+- build `ade670ad03513d972180ef78d717f174f585ed6c`
 - signed-angle fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`
 
 Blob:
@@ -69,28 +59,21 @@ Blob:
 Status:
 `SOURCE PASS / LIVE + USER VISUAL PENDING`
 
-Truth boundary:
-`STRUCTURAL TRANSLATION · RETE ↔ LATITUDE-PLATE SUBSYSTEM · NOT AN ASTRONOMICAL CALCULATOR`
-
-# NORTH AMERICA — TWO PROMOTED FAMILY ROUNDS / VALIDATED COUNT STILL 2/4
-
-Pool:
-`CONTINENTAL_BALANCE_B2_2C_NORTH_AMERICA_CANDIDATE_POOL.md`
+# NORTH AMERICA — COUNT STILL 2/4
 
 Promotion matrix:
 `CONTINENTAL_BALANCE_B2_2D_NORTH_AMERICA_PROMOTION_MATRIX.md`
 
-Promoted:
+Promoted family rounds:
 1. Janney Automatic Rail Coupler / United States
 2. Metate + Metlapil / Mexico
 
-First reserve:
+Reserve:
 - Yale Pin-Tumbler Lock.
 
-Context hold:
-- Maya Calendar Round — do not use as current fallback without materially stronger community-led framing.
+Maya Calendar Round remains on context-sensitivity hold.
 
-## JANNEY — SOURCE PASS
+## JANNEY — BUILT / SOURCE PASS
 
 Spec:
 `CONTINENTAL_BALANCE_B2_3C_NORTH_AMERICA_JANNEY_SPEC.md`
@@ -110,86 +93,121 @@ Blob:
 Law:
 # **MATING KNUCKLES TURN CONTACT INTO A LOCKED LOAD PATH.**
 
-READY sequence:
-`HEAD A ≠ HEAD B → APPROACH → CONTACT → PIVOT → LATCH → LOAD PATH → RELEASE`
+READY:
+`APPROACH → CONTACT → PIVOT → LATCH → LOAD PATH`
 
-Alternate-valid state:
+Alternate-valid:
 `BOTH KNUCKLES CLOSED → CONTACT WITHOUT COUPLING`
-
-Verified source gate:
-- one autonomous candidate file only;
-- no atlas/registry/validated-family mutation;
-- JS syntax passes;
-- release restores valid independent members.
 
 Status:
 `SOURCE PASS / LIVE + USER VISUAL PENDING`
 
-# IMMEDIATE NEXT TASK — B2.3E METATE + METLAPIL SPEC
+## METATE + METLAPIL — SPEC FROZEN
 
-Build the source + interaction specification for North America Slot 2.
+Register:
+`CONTINENTAL_BALANCE_B2_3E_NORTH_AMERICA_METATE_SPEC.md`
 
-Authoritative source anchors already identified:
-- Museo Nacional de Antropología / INAH, `Metate zapoteco`: https://mna.inah.gob.mx/detalle_pieza_mes.php?id=252
-- INAH glossary/documentation on metate + metlapil;
-- INAH research on pre-Hispanic maize/grinding technologies documenting the pair as a continuing technological complex.
+Spec commit:
+`38d766100cc6ce9bd38d7af26a25495ec5f8f659`
 
-Important evidence:
-- MNA states that speaking of a metate requires speaking of its `metlapil`, its complement;
-- MNA derives the terms through an expression interpreted as `two that grind something`;
-- INAH documents the pair used for maize and additional materials including cacao and other substances.
+Working identity:
+- slug `metate-teotitlan`;
+- place/context `Teotitlán del Valle, Oaxaca, Mexico`;
+- edition `Grinding Register`;
+- memory `Grinding / Material Memory`;
+- topology `R10 pressure + reciprocal abrasion`.
 
-Required family law direction:
+Law:
 # **PRESSURE AND RECIPROCAL STROKE BETWEEN COMPLEMENTARY STONES PRODUCE GRINDING.**
 
-Interaction constraints:
-1. two members remain visibly primary;
-2. Card A = METATE / receiving grinding surface;
-3. Card B = METLAPIL / moving grinding member;
-4. pair/engage brings the stones into working relation;
-5. user should perform direct reciprocal drag rather than watch an ornamental animation;
-6. grinding progression should accumulate on direction reversals / passes;
-7. outcome feedback remains subordinate to the stones;
-8. documented material contexts such as MAIZE / CACAO may both remain valid rather than creating a right/wrong mismatch;
-9. avoid claiming this technology as uniquely Mexican/Zapotec/Kikapu; anchor to the chosen museum context while acknowledging wider grinding-stone traditions;
-10. no decorative copying of carved motifs as cultural skin.
+Pair:
+- Card A = `METATE / RECEIVING GRINDING SURFACE`;
+- Card B = `METLAPIL / MOVING GRINDING MEMBER`.
 
-After spec freeze:
-- create `families/metate-mexico/candidate.html` (slug may be refined by spec);
-- autonomous candidate only;
-- source gate before any atlas/registry mutation.
+Source anchors:
+- Museo Nacional de Antropología / INAH `Metate zapoteco`;
+- INAH glossary for metate/metlapil;
+- INAH grinding research and Mediateca object evidence.
+
+Key truth:
+- primary museum source explicitly calls the metlapil the metate's complement;
+- source naming explanation is approximately `two that grind something`;
+- maize and cacao are both documented contexts;
+- do NOT claim the technology as uniquely Zapotec/Mexican;
+- no copied motifs / generic Mesoamerican ornament.
+
+Frozen interaction:
+`METATE ≠ METLAPIL → CONTACT → RECIPROCAL STROKE → ABRASION ACCUMULATES → FINER GRIND → CONTINUE`
+
+Required mechanics:
+- direct pointer/touch drag of metlapil;
+- meaningful travel threshold before counting a reciprocal pass;
+- progression based on completed passes, not timers;
+- material feedback stays in Card A and subordinate;
+- MAIZE / CACAO both valid;
+- reset restores separate/coarse state;
+- no binary mismatch necessary.
+
+Status:
+# `B2.3E SOURCE PASS / INTERACTION SPEC FROZEN`
+
+North America validated count is still `2 / 4`.
+
+# IMMEDIATE NEXT TASK — B2.3F METATE AUTONOMOUS BUILD + SOURCE GATE
+
+Create only:
+`families/metate-teotitlan/candidate.html`
+
+Acceptance:
+1. no atlas / registry / public-route mutation;
+2. two bounded stone members remain primary;
+3. pair button creates contact but does not auto-grind;
+4. direct metlapil drag is the main action;
+5. detect deliberate reciprocal travel; pointer jitter must not advance grind materially;
+6. progressive coarse → medium → fine material state;
+7. MAIZE and CACAO remain equally valid contexts;
+8. `RESET` restores initial separate/coarse state;
+9. source + structural-translation disclaimer present;
+10. JavaScript syntax passes;
+11. responsive CSS present; actual responsive visual PASS waits for live/user audit.
+
+After build:
+- create `CONTINENTAL_BALANCE_B2_3F_NORTH_AMERICA_METATE_BUILD_CANDIDATE.md`;
+- immediately update CURRENT_STATE + this HANDOVER again;
+- if Vercel is still rate-limited, begin South America +2 discovery while Astrolabe / Janney / Metate remain in grouped live-validation queue.
 
 # GROUPED LIVE VALIDATION QUEUE
 
-When Vercel Hobby deployment capacity clears, validate in one descendant Preview where possible:
-1. Astrolabe candidate;
-2. Janney candidate;
-3. Metate candidate (after source pass).
+When Vercel capacity returns, prefer one descendant Preview containing all source-pass candidates:
+1. Astrolabe;
+2. Janney;
+3. Metate.
 
-No candidate enters `collection/families.json`, public atlas, validated counts or public family routes before its independent live/user gate passes.
+Each still needs its own live/user verdict. Do not change continental counts merely because they share a Preview.
 
-# NEXT CONTINENT AFTER NORTH AMERICA SOURCE BUILDS
+# NEXT CONTINENT AFTER NORTH AMERICA SOURCE BUILD
 
-South America +2 source-first candidate discovery.
+South America +2.
 
-Existing South America:
-- Peru / Khipu — tension / knot registration;
-- Bolivia / Siku — complementary absence / temporal interlock.
+Existing:
+- Khipu / Peru — tension + knot registration;
+- Siku / Bolivia — complementary absence + temporal interlock.
 
-Need two mechanisms materially distinct from both.
+Find two source-grounded relations materially distinct from both.
 
 # INFRASTRUCTURE
 
 Recent Vercel Hobby status:
 `Deployment rate limited — retry in 24 hours.`
 
-Do not invent a live PASS while blocked.
+No invented live PASS.
 
 # G4 POLISH — PARKED
 
-Khipu G4.1 remains preserved and unpromoted:
+Khipu G4.1 remains preserved:
 - `families/khipu-peru/g4-1.html`;
-- implementation `64647ea78b04439ea9a57ece47f19490d9185d45`.
+- implementation `64647ea78b04439ea9a57ece47f19490d9185d45`;
+- not promoted.
 
 After 24-family equilibrium:
 B2.5 collection regression → G4 polish → G5 cohesion → G6 final validation.
@@ -199,7 +217,7 @@ B2.5 collection regression → G4 polish → G5 cohesion → G6 final validation
 After every significant research, promotion, spec, build, deployment or user-validation milestone:
 1. create/update the dedicated milestone register;
 2. update `RELATIONAL_KEY_CURRENT_STATE.md`;
-3. update `RELATIONAL_KEY_HANDOVER.md`;
-4. include exact branch, commit/blob/deployment IDs when available;
-5. distinguish SOURCE PASS, LIVE PASS, USER PASS and VALIDATED FAMILY COUNT explicitly;
-6. record the single next required output so a new conversation can take lead immediately.
+3. update this file;
+4. record exact branch, commit/blob/deployment IDs;
+5. distinguish SOURCE PASS / LIVE PASS / USER PASS / VALIDATED COUNT;
+6. leave one explicit next required output for a new conversation.
