@@ -8,7 +8,7 @@ PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **B2.3Q — EUROPE FAMILY ROUND 2: SWISS CYLINDER MUSIC BOX SOURCE + INTERACTION SPEC**
+# **B2.3R — SWISS CYLINDER MUSIC BOX AUTONOMOUS BUILD CANDIDATE + SOURCE GATE**
 
 Do not resume G4 polish. Do not mutate public atlas/registry/counts for research-promoted, SOURCE PASS or merely deployed candidates.
 
@@ -52,95 +52,92 @@ It contains ancestry through Mate + Bombilla, not later Tongiaki/Garamut/Anamorp
 Astrolabe route fetched at HTTP 200.
 Janney probe hit SSO 302; neither fail nor PASS.
 
-# EUROPE — PROMOTION + SLOT 1 BUILD COMPLETE
+# EUROPE — SLOT 1 SOURCE PASS / SLOT 2 SPEC FROZEN
 
 Promotion matrix:
 `CONTINENTAL_BALANCE_B2_2J_EUROPE_PROMOTION_MATRIX.md`
 commit `e1c4cbfd1c24a34424402dea8eab18acee0b080d`
 
-Promoted:
-1. Catoptric Cylinder Anamorphosis / Paris-France
-2. Swiss Cylinder Music Box / Swiss Jura
-
 Validated Europe remains `2/4`.
 
-## SLOT 1 — ANAMORPHOSIS SOURCE PASS
+## Slot 1 — Catoptric Anamorphosis
 
-Spec:
-`CONTINENTAL_BALANCE_B2_3O_EUROPE_ANAMORPHOSIS_SPEC.md`
-commit `b1c2c073df73cfc2fcfd829685f0d5f52a1d69e8`
+Spec `CONTINENTAL_BALANCE_B2_3O_EUROPE_ANAMORPHOSIS_SPEC.md`, commit `b1c2c073df73cfc2fcfd829685f0d5f52a1d69e8`.
+Build register `CONTINENTAL_BALANCE_B2_3P_EUROPE_ANAMORPHOSIS_BUILD_CANDIDATE.md`, commit `08a8c1cd57849b07fc501aad4dcb439ce7d0722e`.
+Candidate `families/anamorphosis-paris/candidate.html`, build `a1e4ab388a1c75c4a90350d19a22ca478a43dc7d`, blob `ee44725b47b38079b3264f64e3fd0eb7c3837609`.
+Status `SOURCE PASS / LIVE + USER VISUAL PENDING`.
 
-Build register:
-`CONTINENTAL_BALANCE_B2_3P_EUROPE_ANAMORPHOSIS_BUILD_CANDIDATE.md`
-register commit `08a8c1cd57849b07fc501aad4dcb439ce7d0722e`
+## Slot 2 — Swiss Cylinder Music Box
 
-Candidate:
-`families/anamorphosis-paris/candidate.html`
+Spec register:
+# `CONTINENTAL_BALANCE_B2_3Q_EUROPE_SWISS_MUSIC_BOX_SPEC.md`
 
-Build:
-`a1e4ab388a1c75c4a90350d19a22ca478a43dc7d`
+Spec commit:
+# `988c2d0b9878008500aaf29a68107e171f2e03ca`
 
-Blob:
-`ee44725b47b38079b3264f64e3fd0eb7c3837609`
+Identity:
+- slug `music-box-sainte-croix`
+- exact object anchor `Paillard & Cie., Sainte-Croix, Switzerland, 1841`
+- context `Swiss Jura mechanical-music tradition`
+- memory `Mechanical Memory`
+- edition `Pin-to-Comb Register`
+- topology `R11 mechanical encode/decode`
 
 Law:
-`CURVED REFLECTION RE-MAPS ANAMORPHIC DISTORTION INTO A LEGIBLE FORM.`
-
-Verified source gate:
-- one new autonomous candidate file only;
-- 91 additions / 0 deletions;
-- local `node --check` PASS;
-- local `git hash-object` == GitHub blob exactly;
-- direct 2D mirror drag + arrow-key fallback;
-- Card A never resolves;
-- reflection proof inside Card B mirror;
-- target / partial / valid-offset states;
-- no depth/stereoscopy semantics;
-- visible non-ray-traced truth boundary;
-- responsive + reduced-motion CSS.
-
-Status:
-`SOURCE PASS / LIVE + USER VISUAL PENDING`.
-
-# IMMEDIATE TASK — B2.3Q SWISS MUSIC BOX SPEC
-
-Promoted candidate:
-# **SWISS CYLINDER MUSIC BOX / SWISS JURA / SAINTE-CROIX-SEEWEN CONTEXT**
-
-Source evidence already deep-verified:
-- Swiss federal Museum of Music Automatons: Swiss cylinder/disc music-box collection; craft rooted in Jura arc; cylinders are storage media;
-- museum education: cylinder turns and transmits stored information through set pins, which directly pluck tuned teeth in sequence; cylinder+comb is the traditional Swiss music-box principle;
-- Smithsonian Paillard & Cie, St. Croix, Switzerland, around 1838–1842 and 1841: physical cylinder + one-piece tuned comb objects;
-- independent Museo Nicolis explanation: pins on revolving cylinder pluck tuned steel-comb teeth in a predetermined sequence.
-
-Choose exact working anchor:
-Preferred: `Sainte-Croix / Switzerland · Paillard & Cie. cylinder music box, 1841` with Swiss federal museum for broader Jura craft/mechanism context.
-
-Working identity:
-- memory `Mechanical Memory`;
-- edition `Pin-to-Comb Register`;
-- topology `R11 mechanical encode/decode`.
-
-Canonical law direction:
 # `STORED PIN GEOMETRY BECOMES ORDERED NOTES WHEN A CYLINDER ENGAGES A TUNED COMB.`
 
-Spec decisions required:
-1. Card A = pinned cylinder / stored sequence;
-2. Card B = tuned comb / physical decoder;
-3. manual user rotation is the only drive in prototype;
-4. historical spring drive acknowledged as external subsystem, not denied;
-5. exact pin map/phrase is editorial unless source-mapped;
-6. synthetic audio is interaction proof only, not authentic timbre;
-7. manual rotation must trigger pins/teeth in deterministic order;
-8. alternate cylinder/pin pattern remains another valid phrase;
-9. neither phrase is wrong;
-10. comb/cylinder remain visible primary objects; audio visualization subordinate;
-11. no autonomous playback that makes the pair passive;
-12. no build before spec freeze.
+Proof:
+`PINNED CYLINDER ≠ TUNED COMB → ENGAGE → ROTATE → PIN CONTACT → TOOTH PLUCK → ORDERED NOTES`
 
-After B2.3Q:
+Source truth:
+- Swiss federal Museum of Music Automatons: cylinder = sound carrier/storage medium; set pins directly pluck tuned teeth in sequence; cylinder+comb is traditional Swiss music-box principle;
+- Smithsonian Paillard 1841: cylinder + one-piece 51-tooth comb;
+- companion 1838–1842 object: spring/key drive documented;
+- Museo Nicolis independently confirms rotating pin cylinder → tuned-comb sequence.
+
+Build contract:
+- Card A = pinned cylinder / stored sequence;
+- Card B = tuned comb / physical decoder;
+- explicit engage stage allowed;
+- NO autoplay after engagement;
+- direct manual cylinder rotation only;
+- deterministic editorial pin→tooth mapping;
+- tooth visual response works without sound;
+- synthetic tones only;
+- OTHER CYLINDER selects a second valid editorial phrase;
+- no wrong phrase;
+- historical spring drive remains explicitly contextual;
+- manual rotation is an editorial input substitution, not a historical-operation claim;
+- no central waveform/score hero.
+
+# IMMEDIATE TASK — B2.3R
+
+Create:
+`families/music-box-sainte-croix/candidate.html`
+
+Required source gate:
+1. one autonomous file only;
+2. no atlas/registry/public-route mutation;
+3. separate cylinder + comb primary members;
+4. engage stage;
+5. direct manual cylinder rotation;
+6. deterministic pin→tooth events;
+7. visible tooth response independent of audio;
+8. synthetic audio label;
+9. editorial sequence label;
+10. historical spring-drive context label;
+11. OTHER CYLINDER alternate-valid pattern;
+12. reset;
+13. keyboard rotation fallback;
+14. JS syntax PASS;
+15. responsive CSS;
+16. local checked blob == GitHub blob before SOURCE PASS.
+
+After B2.3R SOURCE PASS:
+- create build register;
 - update CURRENT_STATE + HANDOVER immediately;
-- then B2.3R autonomous build candidate + source gate.
+- inspect Vercel for newest READY descendant containing all nine expansion candidates;
+- then start grouped live/user validation. No validated-count change before independent user gates.
 
 # G4 POLISH — PARKED
 
