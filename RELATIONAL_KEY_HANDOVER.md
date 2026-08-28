@@ -8,7 +8,7 @@ PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **B2.3J — MATE + BOMBILLA AUTONOMOUS BUILD CANDIDATE + SOURCE GATE**
+# **B2.2G — OCEANIA +2 SOURCE-FIRST CANDIDATE POOL**
 
 Do not resume G4 polish. Do not change public atlas/registry/counts for source-pass candidates.
 
@@ -29,118 +29,118 @@ Current validated:
 
 # SOURCE-PASS BUILDS AWAITING LIVE/USER
 
-1. Astrolabe / Isfahan
+1. **Astrolabe / Isfahan**
    - `families/astrolabe-isfahan/candidate.html`
    - build `ade670ad03513d972180ef78d717f174f585ed6c`
    - fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`
    - blob `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
 
-2. Janney / Virginia
+2. **Janney / Virginia**
    - `families/coupler-virginia/candidate.html`
    - build `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`
    - blob `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
 
-3. Metate + Metlapil / Teotitlán del Valle
+3. **Metate + Metlapil / Teotitlán del Valle**
    - `families/metate-teotitlan/candidate.html`
    - build `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`
    - blob `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
-   - direct thresholded reciprocal work / MAIZE+CACAO / JS PASS
+   - thresholded reciprocal drag / MAIZE+CACAO / JS PASS
 
-4. Valparaíso Funicular / Chile
+4. **Valparaíso Funicular / Chile**
    - `families/funicular-valparaiso/candidate.html`
-   - law `ON A SHARED FUNICULAR, ONE CAR'S ASCENT IS COUNTERBALANCED BY THE OTHER'S DESCENT.`
    - spec `f06731fc0e001c09524e21fc81da8fe6697aa313`
    - build `7aff21b59ff88fcbe3e526958cf9fdf67c0d3750`
    - blob `1e71497d7f9f5411eca2347b36bc0402db8b905b`
-   - direct A↔B inverse drag / keyboard / swap+reset / JS PASS
+   - exact inverse A↔B drag + keyboard + swap/reset + JS PASS
 
-All remain `SOURCE PASS / LIVE + USER PENDING`; no counts changed.
+5. **Mate + Bombilla / Argentina + regional context**
+   - spec `CONTINENTAL_BALANCE_B2_3I_SOUTH_AMERICA_MATE_BOMBILLA_SPEC.md`
+   - build register `CONTINENTAL_BALANCE_B2_3J_SOUTH_AMERICA_MATE_BOMBILLA_BUILD_CANDIDATE.md`
+   - `families/mate-bombilla-argentina/candidate.html`
+   - law `A SUBMERGED BOMBILLA ALLOWS INFUSION TO PASS WHILE YERBA REMAINS IN THE MATE.`
+   - spec commit `36c778af5e69e1419ed4b011ca74cf19cce96ab6`
+   - build `6b1a12b166b3be5612ba5b1d5a1f731281186379`
+   - blob `6bdebcff2bd3c2b8c57f0c75dc72b20fcba37d55`
+   - register commit `a8ae1c38fa629234778a4171f4023937c62f139b`
+   - INSERT no auto-flow; hold starts flow; release/cancel/lost capture stops; Space/Enter fallback; yerba remains Card A; JS PASS; local checked blob == GitHub blob
 
-# SOUTH AMERICA SLOT 2 — MATE + BOMBILLA SPEC FROZEN
+All are `SOURCE PASS / LIVE + USER PENDING`.
+No validated counts have changed.
 
-Register:
-`CONTINENTAL_BALANCE_B2_3I_SOUTH_AMERICA_MATE_BOMBILLA_SPEC.md`
+# OCEANIA CURRENT BASELINE
 
-Spec commit:
-`36c778af5e69e1419ed4b011ca74cf19cce96ab6`
+Validated Oceania:
+`2/4`
 
-Working:
-- slug `mate-bombilla-argentina`
-- primary context `Argentina / Entre Ríos`
-- broader South American context acknowledged
-- edition `Filter Register`
-- topology `R7 selective passage / containment / filtration`
+Existing families:
+1. Marshall Islands / Swell Register
+   - environmental interaction / swell deflection
+   - navigation memory
+2. Aotearoa / Hika Ahi
+   - sustained friction / emergent ember
+   - law `SUSTAINED FRICTION PRODUCES EMBER`
 
-Canonical law:
-# **A SUBMERGED BOMBILLA ALLOWS INFUSION TO PASS WHILE YERBA REMAINS IN THE MATE.**
+Need two additions materially distinct from both.
 
-Source evidence:
-- Argentina official heritage inventory: yerba + vessel + hot water + bombilla, individual/shared practice;
-- British Museum: `bombilla` classified as `mate-strainer`, with objects across multiple South American contexts;
-- Smithsonian NMAI: South American Bombilla object evidence.
+# B2.2G POOL REQUIREMENTS
 
-Truth boundary:
-- only translate vessel↔bombilla filtering subsystem;
-- do not claim to represent full social/ritual mate practice;
-- no Argentine exclusivity;
-- no hydraulic/physiological accuracy claim;
-- no mouth/person depiction;
-- no national/stereotyped decorative skin.
+Research minimum six credible candidates before promotion.
 
-Interaction contract:
-`MATE ≠ BOMBILLA → INSERT → FILTER SUBMERGED → DRAW → LIQUID PASSES / YERBA REMAINS → RELEASE → CONTINUE`
+For each candidate record:
+- island/country/community/object or practice;
+- authoritative source anchors;
+- bounded Pair A + Pair B;
+- primary relationship topology;
+- candidate law;
+- digital interaction translation;
+- alternate-valid state;
+- overlap with Swell / Hika Ahi and with global expansion queue;
+- cultural/truthfulness risk;
+- build complexity.
 
-Required mechanics:
-- first frame shows separate Mate + Bombilla;
-- `INSERT BOMBILLA` creates relation but does not auto-flow;
-- after insertion, sustained pointer/touch HOLD on Bombilla activates represented flow;
-- pointerup/cancel stops flow immediately;
-- Space/Enter hold fallback recommended;
-- liquid-flow marks stay within Bombilla/source-vessel relation;
-- particulate yerba remains Card A content;
-- no finished-drink/mouth third hero;
-- no final success state;
-- reset stops flow, separates objects, restores initial presentation.
+Prefer:
+- museum / cultural-heritage institutions;
+- academic or technical research;
+- practitioner/community sources when dealing with living Indigenous knowledge;
+- source relationships whose two members are physically/functionally necessary.
 
-# IMMEDIATE TASK — B2.3J
+Avoid:
+- generic Pacific motifs;
+- sacred or living knowledge translated merely for visual novelty;
+- another wave/navigation relation;
+- another friction/heat relation;
+- weapon/hunting mechanisms when equally strong non-weapon alternatives exist;
+- pair splits invented from a single object/process.
 
-Create only:
-`families/mate-bombilla-argentina/candidate.html`
+Useful underrepresented topology lanes after current expansion queue:
+- R3 fold/overlap/layer
+- R4 accumulation/load
+- R6 projection/shadow
+- R8 exchange/role reversal
+- R9 synchronization if not Siku-like alternation
+- R11 encode/decode
 
-Source-gate acceptance:
-1. autonomous candidate only;
-2. no atlas/registry/public-route changes;
-3. two bounded members visible from first frame;
-4. INSERT no auto-flow;
-5. sustained hold activates flow;
-6. release stops immediately;
-7. keyboard hold fallback if practical;
-8. flow local to Bombilla/Mate relation;
-9. yerba remains Card A;
-10. no third hero / no success state;
-11. reset separates/restores;
-12. source + non-exclusive truth footer;
-13. responsive CSS;
-14. extracted JS passes `node --check`.
+R1/R2/R5/R7/R10/R12 are now already represented in the current expansion candidate field, so a new Oceania pair in those lanes must be exceptionally distinct to justify overlap.
 
-After build/source gate:
-- create `CONTINENTAL_BALANCE_B2_3J_SOUTH_AMERICA_MATE_BOMBILLA_BUILD_CANDIDATE.md`;
-- immediately update CURRENT_STATE + HANDOVER;
-- if Vercel still blocked, next output becomes `B2.2G — OCEANIA +2 SOURCE-FIRST CANDIDATE POOL`.
+# NEXT AFTER POOL
+
+# `B2.2H — OCEANIA TWO-SLOT PROMOTION MATRIX`
+
+Do not build until exactly two candidates are promoted.
 
 # SOUTH AMERICA RESERVES
 
-1. Cobogó / Brazil — R6
-2. Pasto Varnish / Colombia — R3 / safeguarding burden
+1. Cobogó / Brazil
+2. Pasto Varnish / Colombia
 3. Bahía Whistling Bottle / Ecuador
 4. Poporo + Palillo — HOLD
 
-# INFRASTRUCTURE
+# LIVE INFRASTRUCTURE
 
 Recent Vercel Hobby blocker:
 `Deployment rate limited — retry in 24 hours.`
 
-No invented live pass.
+When capacity returns, prefer a descendant Preview containing current source-pass candidates, but audit each independently.
 
 # G4 POLISH — PARKED
 
