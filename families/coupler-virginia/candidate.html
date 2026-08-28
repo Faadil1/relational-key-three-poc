@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>RELATIONAL KEY — Knuckle Register / Virginia</title>
+<style>
+:root{
+  --bg:#090a09;--panel:#121412;--ink:#ece9e2;--muted:#7e807a;--line:rgba(229,224,212,.14);
+  --iron:#8d918c;--edge:#c0c2bc;--rust:#9a6847;--warm:#c39a73;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}html,body{margin:0;min-width:320px;min-height:100%;background:var(--bg);color:var(--ink)}
+body{overflow-x:hidden;background:radial-gradient(circle at 50% -10%,rgba(117,92,67,.12),transparent 34%),linear-gradient(#080908,#0b0c0b)}
+button{font:inherit}.shell{min-height:100vh;padding:14px clamp(14px,2.2vw,36px) 26px}.top{min-height:68px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px;border-bottom:1px solid var(--line)}
+.brand{font:800 9px ui-monospace,monospace;letter-spacing:.2em;color:#c6aa8d}.headline{text-align:center}.headline small,.meta{display:block;font:700 6px ui-monospace,monospace;letter-spacing:.14em;color:#70746e}.headline b{display:block;margin-top:3px;font:600 21px Georgia,serif}.meta{text-align:right}
+.intro{text-align:center;margin:18px auto 15px}.intro span{font:800 6px ui-monospace,monospace;letter-spacing:.15em;color:#9a775b}.intro h1{margin:6px 0 4px;font:600 clamp(27px,3vw,43px) Georgia,serif}.intro p{margin:0;font:italic 12px Georgia,serif;color:#95968f}
+.stage{width:min(1320px,100%);margin:auto}.pair{display:grid;grid-template-columns:minmax(0,1fr) 170px minmax(0,1fr);align-items:center;gap:10px;position:relative;perspective:1400px}
+.slot{position:relative;transition:transform .72s cubic-bezier(.2,.8,.2,1),filter .45s ease}.card{position:relative;aspect-ratio:856/540;border-radius:24px;overflow:hidden;border:1px solid rgba(214,211,201,.17);background:linear-gradient(150deg,#1d201e,#0e100f 66%);box-shadow:0 28px 58px rgba(0,0,0,.43)}
+.card:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(88deg,transparent 0 36px,rgba(255,255,255,.012) 37px),radial-gradient(circle at 50% 50%,rgba(162,122,87,.07),transparent 44%)}.role{position:absolute;z-index:8;left:6%;top:6%;font:800 6px ui-monospace,monospace;letter-spacing:.12em;color:#c6a583}.rightCard .role{left:auto;right:6%;text-align:right}.copy{position:absolute;z-index:8;left:6%;right:6%;bottom:7%}.rightCard .copy{text-align:right}.copy span{font:800 6px ui-monospace,monospace;letter-spacing:.1em;color:#846b57}.copy strong{display:block;margin-top:4px;font:600 clamp(20px,2.15vw,31px) Georgia,serif}.copy small{display:block;margin-top:6px;font:700 6px ui-monospace,monospace;letter-spacing:.08em;color:#96978f;line-height:1.45}
+.cast{position:absolute;inset:17% 10%;border-radius:18px;background:linear-gradient(145deg,rgba(133,137,131,.12),rgba(255,255,255,.015));border:1px solid rgba(189,191,184,.08)}
+.coupler{position:absolute;z-index:12;top:50%;width:222px;height:168px;transform:translateY(-50%);filter:drop-shadow(0 18px 22px rgba(0,0,0,.45));transition:filter .45s ease;pointer-events:none}.left .coupler{right:-72px}.right .coupler{left:-72px}.coupler svg{width:100%;height:100%;overflow:visible}.bodyShape{fill:#3b403d;stroke:#9b9e98;stroke-width:1.2}.bodyInner{fill:#252a27;stroke:#656a65;stroke-width:1}.guard{fill:#555a56;stroke:#a6aaa3;stroke-width:1}.knuckle{fill:#676b67;stroke:#c1c3bc;stroke-width:1.25;transform-box:fill-box;transform-origin:center;transition:transform .64s cubic-bezier(.2,.8,.2,1),fill .4s ease}.left .knuckle{transform:rotate(-34deg)}.right .knuckle{transform:rotate(0deg)}.pivot{fill:#b18a65;stroke:#463526;stroke-width:1}.latch{fill:#b38b68;opacity:.16;transition:opacity .35s ease,transform .35s ease}.guideMark{fill:none;stroke:rgba(194,196,189,.34);stroke-width:1;stroke-dasharray:3 3}.loadMark{fill:none;stroke:#b58c68;stroke-width:1.8;opacity:0;transition:opacity .35s ease}.closedMode .left .knuckle{transform:rotate(0deg)}
+.bridge{height:210px;position:relative;display:grid;place-items:center;pointer-events:none}.bridge:before{content:"";position:absolute;left:10%;right:10%;top:50%;height:1px;background:linear-gradient(90deg,transparent,rgba(194,196,189,.16),transparent)}.contact{width:42px;height:42px;border:1px solid rgba(190,191,184,.12);border-radius:50%;opacity:.18;transition:opacity .35s,transform .5s,border-color .35s;position:relative}.contact:before,.contact:after{content:"";position:absolute;left:50%;top:50%;background:rgba(195,197,190,.15);transform:translate(-50%,-50%)}.contact:before{width:64px;height:1px}.contact:after{width:1px;height:64px}.bridgeLabel{position:absolute;top:calc(50% + 42px);width:162px;text-align:center;font:800 5px ui-monospace,monospace;letter-spacing:.11em;color:#73766f;line-height:1.55}
+.pair[data-phase="approach"] .left{transform:translateX(28px)}.pair[data-phase="approach"] .right{transform:translateX(-28px)}.pair[data-phase="approach"] .contact{opacity:.5;transform:scale(.88)}
+.pair[data-phase="contact"] .left,.pair[data-phase="pivot"] .left,.pair[data-phase="latched"] .left,.pair[data-phase="load"] .left{transform:translateX(45px)}.pair[data-phase="contact"] .right,.pair[data-phase="pivot"] .right,.pair[data-phase="latched"] .right,.pair[data-phase="load"] .right{transform:translateX(-45px)}.pair[data-phase="contact"] .contact,.pair[data-phase="pivot"] .contact,.pair[data-phase="latched"] .contact,.pair[data-phase="load"] .contact{opacity:.8;transform:scale(.72);border-color:rgba(181,140,104,.34)}
+.pair[data-phase="pivot"]:not(.closedMode) .left .knuckle,.pair[data-phase="latched"]:not(.closedMode) .left .knuckle,.pair[data-phase="load"]:not(.closedMode) .left .knuckle{transform:rotate(0deg);fill:#737772}.pair[data-phase="latched"] .latch,.pair[data-phase="load"] .latch{opacity:.88;transform:translateY(2px)}.pair[data-phase="latched"] .contact,.pair[data-phase="load"] .contact{border-color:rgba(181,140,104,.62);opacity:1}
+.pair[data-phase="load"] .left{transform:translateX(39px)}.pair[data-phase="load"] .right{transform:translateX(-39px)}.pair[data-phase="load"] .loadMark{opacity:1}.pair[data-phase="load"] .coupler{filter:drop-shadow(0 10px 15px rgba(0,0,0,.42)) brightness(1.04)}
+.pair[data-phase="blocked"] .left{transform:translateX(38px)}.pair[data-phase="blocked"] .right{transform:translateX(-38px)}.pair[data-phase="blocked"] .contact{opacity:.88;transform:scale(.82);border-color:rgba(150,151,146,.36)}
+.pair[data-phase="release"] .left .knuckle{transform:rotate(-34deg)}.pair[data-phase="release"] .latch{opacity:.12}
+.controls{width:min(1040px,96vw);margin:16px auto 0;display:grid;grid-template-columns:1fr auto;gap:9px}.controlGroup{display:flex;gap:7px;flex-wrap:wrap}.controls button{min-height:42px;border:1px solid rgba(196,190,179,.2);background:#121412;color:#8d918a;padding:0 13px;font:800 6px ui-monospace,monospace;letter-spacing:.1em;cursor:pointer}.controls button.active{border-color:#9b7659;color:#ead3bc;background:rgba(154,104,71,.1)}.controls button:disabled{opacity:.35;cursor:not-allowed}.controls button:focus-visible{outline:2px solid rgba(195,154,115,.7);outline-offset:2px}.run{min-width:214px;color:#d0b398!important}.secondary{width:min(1040px,96vw);margin:8px auto 0;display:flex;justify-content:flex-end}.release{min-height:38px;border:1px solid rgba(196,190,179,.18);background:#101210;color:#858980;padding:0 15px;font:800 6px ui-monospace,monospace;letter-spacing:.1em;cursor:pointer}.release:disabled{opacity:.3;cursor:not-allowed}.result{text-align:center;min-height:40px;margin-top:8px;font:800 6px ui-monospace,monospace;letter-spacing:.09em;color:#858a82;line-height:1.6}.result strong{color:#c7a381}.truth{text-align:center;margin-top:7px;font:800 5px ui-monospace,monospace;letter-spacing:.08em;color:#636861}.source{text-align:center;margin:8px auto 0;max-width:1040px;font:500 10px Georgia,serif;color:#747970;line-height:1.5}
+@media(max-width:980px){.pair{grid-template-columns:1fr;gap:0}.slot{width:min(720px,100%);margin:auto}.bridge{height:124px}.coupler{width:190px;height:144px;top:auto}.left .coupler{right:50%;bottom:-62px;transform:translateX(50%) rotate(90deg)}.right .coupler{left:50%;top:-62px;transform:translateX(-50%) rotate(90deg)}.pair[data-phase="approach"] .left{transform:translateY(16px)}.pair[data-phase="approach"] .right{transform:translateY(-16px)}.pair[data-phase="contact"] .left,.pair[data-phase="pivot"] .left,.pair[data-phase="latched"] .left,.pair[data-phase="load"] .left,.pair[data-phase="blocked"] .left{transform:translateY(30px)}.pair[data-phase="contact"] .right,.pair[data-phase="pivot"] .right,.pair[data-phase="latched"] .right,.pair[data-phase="load"] .right,.pair[data-phase="blocked"] .right{transform:translateY(-30px)}.pair[data-phase="load"] .left{transform:translateY(25px)}.pair[data-phase="load"] .right{transform:translateY(-25px)}.bridge:before{left:50%;right:auto;top:8%;bottom:8%;height:auto;width:1px}.controls{grid-template-columns:1fr}.run{width:100%}.top{grid-template-columns:auto 1fr}.meta{display:none}}
+@media(max-width:560px){.shell{padding-left:10px;padding-right:10px}.headline b{font-size:18px}.brand{font-size:8px}.intro h1{font-size:28px}.controlGroup{display:grid;grid-template-columns:1fr 1fr}.controls button{padding:0 8px}.coupler{width:164px;height:124px}.left .coupler{bottom:-54px}.right .coupler{top:-54px}.bridge{height:108px}.copy strong{font-size:21px}.copy small,.role{font-size:5px}.source{font-size:9px}}
+</style>
+</head>
+<body>
+<main class="shell">
+<header class="top">
+  <div class="brand">RELATIONAL KEY</div>
+  <div class="headline"><small>CONTINENTAL BALANCE B2 · NORTH AMERICA CANDIDATE</small><b>Knuckle Register</b></div>
+  <div class="meta">ALEXANDRIA · VIRGINIA<br>1873 STRUCTURAL TRANSLATION</div>
+</header>
+<section class="intro">
+  <span>JANNEY CAR COUPLING · COUPLER HEAD ↔ COUPLER HEAD</span>
+  <h1>Two coupling heads become one load path.</h1>
+  <p>A simplified interaction study of documented knuckle, guard-arm and latch behavior.</p>
+</section>
+<section class="stage">
+  <div class="pair" id="pair" data-phase="idle">
+    <div class="slot left">
+      <article class="card leftCard"><div class="cast"></div><div class="role">CARD A · COUPLER HEAD / KNUCKLE</div><div class="copy"><span>MECHANICAL MEMBER A</span><strong>Pivoting Head</strong><small>GUARD ARM · KNUCKLE · PIVOT · LATCH</small></div></article>
+      <div class="coupler" aria-label="Coupler head A">
+        <svg viewBox="0 0 240 180" role="img" aria-label="Structural translation of Janney coupler head A">
+          <path class="bodyShape" d="M18 50 H105 C125 50 141 60 153 78 L168 100 L148 132 C136 150 118 157 96 157 H18 Z"/>
+          <path class="bodyInner" d="M55 76 H113 C126 76 135 83 141 94 L149 104 L139 120 C132 130 120 134 106 134 H55 Z"/>
+          <path class="guard" d="M140 47 C173 49 202 64 220 89 L207 105 C190 87 173 80 153 79 Z"/>
+          <g class="knuckle"><path d="M150 92 C174 82 204 87 220 108 C211 126 194 140 171 142 L151 128 C162 119 166 109 164 100 Z"/><path class="guideMark" d="M166 101 Q190 100 207 113"/></g>
+          <circle class="pivot" cx="154" cy="106" r="6"/><rect class="latch" x="130" y="82" width="11" height="27" rx="3"/>
+          <path class="loadMark" d="M32 103 H111 M194 113 H225"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="bridge"><div class="contact"></div><div class="bridgeLabel" id="bridgeLabel">TWO COUPLERS · NO LOAD PATH</div></div>
+
+    <div class="slot right">
+      <article class="card rightCard"><div class="cast"></div><div class="role">CARD B · COUPLER HEAD / MATING GEOMETRY</div><div class="copy"><span>MECHANICAL MEMBER B</span><strong>Mating Head</strong><small>GUARD ARM · KNUCKLE · PIVOT · LATCH</small></div></article>
+      <div class="coupler" aria-label="Coupler head B">
+        <svg viewBox="0 0 240 180" role="img" aria-label="Structural translation of Janney coupler head B">
+          <g transform="translate(240 0) scale(-1 1)">
+            <path class="bodyShape" d="M18 50 H105 C125 50 141 60 153 78 L168 100 L148 132 C136 150 118 157 96 157 H18 Z"/>
+            <path class="bodyInner" d="M55 76 H113 C126 76 135 83 141 94 L149 104 L139 120 C132 130 120 134 106 134 H55 Z"/>
+            <path class="guard" d="M140 47 C173 49 202 64 220 89 L207 105 C190 87 173 80 153 79 Z"/>
+            <g class="knuckle"><path d="M150 92 C174 82 204 87 220 108 C211 126 194 140 171 142 L151 128 C162 119 166 109 164 100 Z"/><path class="guideMark" d="M166 101 Q190 100 207 113"/></g>
+            <circle class="pivot" cx="154" cy="106" r="6"/><rect class="latch" x="130" y="82" width="11" height="27" rx="3"/>
+            <path class="loadMark" d="M32 103 H111 M194 113 H225"/>
+          </g>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <div class="controlGroup">
+      <button id="ready" class="active">COUPLING READY</button>
+      <button id="closed">BOTH KNUCKLES CLOSED</button>
+      <button id="reset">RESET</button>
+    </div>
+    <button class="run" id="run">TEST COUPLING</button>
+  </div>
+  <div class="secondary"><button class="release" id="release" disabled>RELEASE LATCH</button></div>
+  <div class="result" id="result"><strong>READY</strong> · one knuckle is open; both coupling heads remain independent.</div>
+  <div class="truth">STRUCTURAL TRANSLATION · JANNEY 1873 COUPLING LAW · NOT AN ENGINEERING LOAD-RATING MODEL</div>
+  <div class="source">Source anchors: Eli H. Janney, U.S. Patent 138,405 (1873); Janney Coupler objects/models, National Museum of American History; Janney-type classification, U.S. Patent and Trademark Office.</div>
+</section>
+</main>
+<script>
+const pair=document.getElementById('pair'),ready=document.getElementById('ready'),closed=document.getElementById('closed'),resetBtn=document.getElementById('reset'),run=document.getElementById('run'),release=document.getElementById('release'),bridgeLabel=document.getElementById('bridgeLabel'),result=document.getElementById('result');
+let mode='ready',timers=[];
+function clearTimers(){timers.forEach(clearTimeout);timers=[]}
+function setPhase(p,label,copy){pair.dataset.phase=p;if(label)bridgeLabel.textContent=label;if(copy)result.innerHTML=copy}
+function choose(v){mode=v;ready.classList.toggle('active',v==='ready');closed.classList.toggle('active',v==='closed');pair.classList.toggle('closedMode',v==='closed');resetState()}
+function resetState(){clearTimers();setPhase('idle',mode==='ready'?'TWO COUPLERS · NO LOAD PATH':'CLOSED HEADS · SEPARATE',mode==='ready'?'<strong>READY</strong> · one knuckle is open; both coupling heads remain independent.':'<strong>CLOSED / VALID</strong> · both knuckles are closed; the heads are not prepared to couple.');run.disabled=false;release.disabled=true;run.textContent='TEST COUPLING'}
+function test(){clearTimers();run.disabled=true;release.disabled=true;setPhase('approach','APPROACH · CONTACT GEOMETRY ACTIVE','<strong>APPROACH</strong> · two independent heads move into relation.');timers.push(setTimeout(()=>{setPhase('contact',mode==='ready'?'GUIDE / CONTACT':'BUMPER CONTACT',mode==='ready'?'<strong>CONTACT</strong> · head geometry begins to rotate the open knuckle.':'<strong>CONTACT WITHOUT COUPLING</strong> · closed heads meet; both couplers remain valid.');},520));timers.push(setTimeout(()=>{if(mode==='closed'){setPhase('blocked','CLOSED HEADS · CONTACT WITHOUT COUPLING','<strong>NO LATCH</strong> · patent-derived closed-head state: contact occurs, coupling does not.');run.disabled=false;run.textContent='TEST AGAIN';return}setPhase('pivot','KNUCKLE PIVOT · LATCH APPROACHES','<strong>PIVOT</strong> · contact turns translation into knuckle rotation.');},1030));if(mode==='ready'){timers.push(setTimeout(()=>{setPhase('latched','KNUCKLE CLOSED · LATCH HOLDS','<strong>LATCHED</strong> · the coupled state is mechanically retained.');},1580));timers.push(setTimeout(()=>{setPhase('load','ENGAGED · LOAD THROUGH BOTH HEADS','<strong>LOAD PATH</strong> · restrained pull test is carried through both coupled members.');release.disabled=false;run.textContent='COUPLED';},2180))}}
+function releasePair(){if(pair.dataset.phase!=='load'&&pair.dataset.phase!=='latched')return;clearTimers();setPhase('release','RELEASE · LOAD PATH OPENS','<strong>RELEASE</strong> · latch clears and the open knuckle is restored.');release.disabled=true;timers.push(setTimeout(()=>{setPhase('idle','TWO COUPLERS · NO LOAD PATH','<strong>INDEPENDENT AGAIN</strong> · both coupling heads remain valid and reusable.');run.disabled=false;run.textContent='TEST COUPLING'},720))}
+ready.onclick=()=>choose('ready');closed.onclick=()=>choose('closed');resetBtn.onclick=resetState;run.onclick=test;release.onclick=releasePair;choose('ready');
+</script>
+</body>
+</html>
