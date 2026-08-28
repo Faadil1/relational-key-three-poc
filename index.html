@@ -48,6 +48,28 @@
   .memory,.open{font-size:7.5px}
 }
 </style>
+<style id="g3-individuality">
+.mechanismPair{display:block;height:120px;margin:16px 0 15px;overflow:hidden}
+.pairSvg{display:block;width:100%;height:100%;overflow:visible}
+.pairSvg .cardL{fill:#191813;stroke:rgba(235,221,194,.18);stroke-width:1.2}
+.pairSvg .cardR{fill:#a99b84;stroke:rgba(244,232,210,.24);stroke-width:1.2}
+.pairSvg .ink{fill:none;stroke:#d0aa68;stroke-width:2;stroke-linecap:round;stroke-linejoin:round}
+.pairSvg .mutedInk{fill:none;stroke:#78674b;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round}
+.pairSvg .darkInk{fill:none;stroke:#3c3428;stroke-width:1.8;stroke-linecap:round;stroke-linejoin:round}
+.pairSvg .warmFill{fill:#c6a366}.pairSvg .darkFill{fill:#211e18}.pairSvg .softFill{fill:rgba(210,173,110,.16)}
+.pairSvg .node{fill:#11100d;stroke:#c29a5f;stroke-width:1.4}
+.pairSvg .motion{transition:transform .42s cubic-bezier(.22,.75,.22,1),opacity .35s ease,stroke-dashoffset .42s ease}
+.pairSvg .ember{opacity:.18;transition:opacity .42s ease,filter .42s ease}
+.family:hover .pairSvg .approachL{transform:translateX(4px)}.family:hover .pairSvg .approachR{transform:translateX(-4px)}
+.family:hover .pairSvg .rise{transform:translateY(-3px)}.family:hover .pairSvg .drop{transform:translateY(3px)}
+.family:hover .pairSvg .convergeL{transform:translateX(3px)}.family:hover .pairSvg .convergeR{transform:translateX(-3px)}
+.family:hover .pairSvg .tighten{transform:scaleX(.94);transform-origin:center}
+.family:hover .pairSvg .phaseA{transform:translateY(-2px)}.family:hover .pairSvg .phaseB{transform:translateY(2px)}
+.family:hover .pairSvg .ember{opacity:1;filter:drop-shadow(0 0 5px rgba(210,150,68,.75))}
+.family:hover .pairSvg .swapA{opacity:.45}.family:hover .pairSvg .swapB{opacity:1}
+@media(max-width:680px){.mechanismPair{height:104px;margin:14px 0 13px}}
+@media(prefers-reduced-motion:reduce){.pairSvg .motion,.pairSvg .ember{transition:none!important}.family:hover .pairSvg .motion{transform:none!important}}
+</style>
 </head>
 <body>
 <main class="shell">
@@ -82,7 +104,28 @@ const safe=s=>String(s||'');
 function chipLabel(c){return c==='North America'?'N. America':c==='South America'?'S. America':c}
 function drawChips(){chips.innerHTML=continents.map(c=>`<button class="chip ${c===active?'active':''}" data-c="${c}">${chipLabel(c)}</button>`).join('');chips.querySelectorAll('button').forEach(b=>b.onclick=()=>{active=b.dataset.c;drawChips();render()})}
 function matches(f){const q=search.value.trim().toLowerCase();const geo=active==='All'||f.continent===active;if(!geo)return false;if(!q)return true;return [f.place,f.edition,f.memory,f.mechanism,f.law].some(v=>safe(v).toLowerCase().includes(q))}
-function render(){const visible=families.filter(matches);count.textContent=`${visible.length} ${visible.length===1?'FAMILY':'FAMILIES'}`;empty.style.display=visible.length?'none':'block';grid.innerHTML=visible.map((f,i)=>`<article class="family"><a href="${f.route}"><div class="familyTop"><span class="index">${String(families.indexOf(f)+1).padStart(2,'0')}</span><span class="continent">${safe(f.continent).toUpperCase()}</span></div><div class="miniPair"><div class="miniCard left"></div><div class="gap"></div><div class="miniCard right"></div></div><span class="place">${safe(f.place)}</span><h3>${safe(f.edition)}</h3><p class="mechanism">${safe(f.mechanism)}</p><div class="tags"><span class="memory">${safe(f.memory).toUpperCase()}</span><span class="open">OPEN FAMILY →</span></div></a></article>`).join('')}
+function pairViz(f){
+  const frame=(inner,cls='')=>`<svg class="pairSvg ${cls}" viewBox="0 0 300 110" role="img" aria-label="Abstract relationship preview for ${safe(f.edition)}"><rect class="cardL" x="8" y="14" width="105" height="78" rx="13"/><rect class="cardR" x="187" y="14" width="105" height="78" rx="13"/>${inner}</svg>`;
+  switch(f.id){
+    case 'city-gatineau':return frame(`<path class="ink motion approachL" d="M20 68 L48 50 L78 61 L111 45"/><path class="ink motion approachR" d="M189 45 L219 61 L247 42 L280 56"/><path class="mutedInk" d="M113 45 H187"/><circle class="node" cx="150" cy="45" r="4"/>`,'sig-city');
+    case 'service-benin':return frame(`<path class="mutedInk" d="M24 34 H47 V52 H72 V70 H101"/><path class="darkInk" d="M199 70 H224 V52 H249 V34 H276"/><path class="ink motion approachL" d="M96 52 H143"/><path class="ink motion approachR" d="M157 52 H204"/><circle class="node" cx="150" cy="52" r="6"/><path class="ink motion rise" d="M146 48 L154 56"/>`,'sig-service');
+    case 'signal-nigeria':return frame(`<path class="ink motion approachL" d="M31 70 Q62 27 106 54"/><path class="mutedInk" d="M44 75 Q66 43 99 58"/><path class="darkInk motion approachR" d="M194 54 Q237 26 270 68"/><path class="mutedInk" d="M202 58 Q234 43 258 75"/><path class="ink" d="M108 54 Q130 43 145 52 M155 52 Q172 43 192 54"/><circle class="node" cx="150" cy="52" r="7"/>`,'sig-signal');
+    case 'frida-coyoacan':return frame(`<rect class="mutedInk motion rise" x="31" y="31" width="52" height="38" rx="3"/><rect class="ink motion drop" x="39" y="37" width="52" height="38" rx="3"/><rect class="darkInk motion rise" x="209" y="31" width="52" height="38" rx="3"/><rect class="mutedInk motion drop" x="201" y="37" width="52" height="38" rx="3"/><path class="ink" d="M91 56 H141 M159 56 H201"/><path class="mutedInk" d="M142 50 L158 62 M142 62 L158 50"/>`,'sig-trace');
+    case 'food-toyama':return frame(`<path class="mutedInk motion tighten" d="M28 35 H98 M28 46 H104 M28 57 H108 M28 68 H101"/><path class="darkInk motion tighten" d="M202 35 H272 M196 46 H272 M192 57 H272 M199 68 H272"/><path class="ink" d="M111 40 C128 44 135 48 145 55 M155 55 C166 62 174 66 189 70"/><circle class="node" cx="150" cy="55" r="5"/>`,'sig-food');
+    case 'textile-bonwire':return frame(`<path class="ink" d="M25 40 H111 M25 61 H111 M189 40 H275 M189 61 H275"/><path class="mutedInk" d="M52 26 V79 M76 26 V79 M224 26 V79 M248 26 V79"/><path class="ink motion approachL" d="M111 40 C127 40 132 61 150 61 C168 61 173 40 189 40"/><path class="mutedInk motion approachR" d="M111 61 C127 61 132 40 150 40 C168 40 173 61 189 61"/>`,'sig-textile');
+    case 'zellige-fes':return frame(`<path class="ink motion approachL" d="M78 28 L105 28 L105 42 L94 53 L105 64 L105 78 L78 78"/><path class="darkInk motion approachR" d="M222 28 L195 28 L195 42 L206 53 L195 64 L195 78 L222 78"/><path class="mutedInk" d="M113 53 H132 L142 43 L150 53 L158 43 L168 53 H187"/>`,'sig-zellige');
+    case 'khipu-peru':return frame(`<path class="ink motion approachL" d="M34 32 C59 42 75 47 108 54"/><path class="darkInk motion approachR" d="M266 32 C241 42 225 47 192 54"/><path class="mutedInk" d="M108 54 H139 M161 54 H192"/><circle class="node" cx="150" cy="54" r="8"/><path class="ink motion tighten" d="M144 49 C149 43 156 47 156 53 C156 59 149 63 144 58 C139 53 143 48 149 50"/><circle class="warmFill" cx="61" cy="42" r="3"/><circle class="darkFill" cx="239" cy="42" r="3"/>`,'sig-khipu');
+    case 'kento-japan':return frame(`<path class="ink" d="M25 32 H42 M33 24 V41 M79 66 H96 M88 57 V74"/><path class="darkInk" d="M204 32 H221 M212 24 V41 M258 66 H275 M266 57 V74"/><rect class="mutedInk motion convergeL" x="55" y="38" width="39" height="28"/><rect class="darkInk motion convergeR" x="206" y="38" width="39" height="28"/><path class="ink" d="M113 52 H187"/><circle class="node" cx="150" cy="52" r="4"/>`,'sig-kento');
+    case 'ombak-bali':return frame(`<path class="ink motion phaseA" d="M22 55 C34 38 48 38 60 55 C72 72 86 72 101 55"/><path class="mutedInk motion phaseB" d="M199 59 C211 42 225 42 237 59 C249 76 263 76 278 59"/><path class="ink" d="M111 55 C123 44 133 44 143 55 C153 66 163 66 175 55 C180 50 184 49 189 51"/><circle class="softFill" cx="150" cy="55" r="14"/>`,'sig-ombak');
+    case 'swell-marshall':return frame(`<path class="ink motion rise" d="M20 61 C52 55 77 47 109 52 C127 55 135 69 150 69 C165 69 173 48 191 46 C221 42 247 49 280 43"/><path class="mutedInk" d="M22 70 C54 64 82 60 107 63 M193 57 C222 53 250 58 278 52"/><circle class="node" cx="150" cy="55" r="9"/><path class="darkInk" d="M144 55 Q150 44 156 55 Q150 65 144 55"/>`,'sig-swell');
+    case 'stereoscopy-uk':return frame(`<rect class="mutedInk motion convergeL" x="35" y="33" width="43" height="35" rx="3"/><rect class="ink motion convergeL" x="43" y="37" width="43" height="35" rx="3"/><rect class="darkInk motion convergeR" x="214" y="33" width="43" height="35" rx="3"/><rect class="mutedInk motion convergeR" x="206" y="37" width="43" height="35" rx="3"/><path class="ink" d="M101 53 H132 M168 53 H199"/><ellipse class="node" cx="150" cy="53" rx="14" ry="9"/><ellipse class="mutedInk" cx="150" cy="53" rx="7" ry="14"/>`,'sig-stereo');
+    case 'siku-bolivia':return frame(`<path class="ink" d="M29 32 V50 M45 56 V75 M61 32 V50 M77 56 V75 M93 32 V50"/><path class="darkInk" d="M207 56 V75 M223 32 V50 M239 56 V75 M255 32 V50 M271 56 V75"/><path class="mutedInk motion approachL" d="M108 32 V50 M124 56 V75 M140 32 V50"/><path class="ink motion approachR" d="M160 56 V75 M176 32 V50 M192 56 V75"/><path class="mutedInk" d="M111 83 H189"/>`,'sig-siku');
+    case 'hika-ahi-aotearoa':return frame(`<path class="ink motion approachL" d="M34 70 L62 39 M52 74 L80 43 M70 76 L98 47 M89 77 L112 52"/><path class="darkInk motion approachR" d="M266 70 L238 39 M248 74 L220 43 M230 76 L202 47 M211 77 L188 52"/><path class="mutedInk" d="M113 55 L139 55 M161 55 L187 55"/><circle class="warmFill ember" cx="150" cy="55" r="6"/>`,'sig-hika');
+    case 'boulle-france':return frame(`<path class="warmFill motion swapA" d="M44 35 C58 27 77 31 83 43 C91 57 79 70 62 69 C49 68 39 60 41 50 C42 44 47 41 52 39 C49 38 46 37 44 35Z"/><path class="ink" d="M44 35 C58 27 77 31 83 43 C91 57 79 70 62 69 C49 68 39 60 41 50 C42 44 47 41 52 39 C49 38 46 37 44 35Z"/><path class="darkFill motion swapB" d="M216 35 C230 27 249 31 255 43 C263 57 251 70 234 69 C221 68 211 60 213 50 C214 44 219 41 224 39 C221 38 218 37 216 35Z"/><path class="darkInk" d="M216 35 C230 27 249 31 255 43 C263 57 251 70 234 69 C221 68 211 60 213 50 C214 44 219 41 224 39 C221 38 218 37 216 35Z"/><path class="ink" d="M111 54 H137 L145 46 L154 62 L163 54 H189"/>`,'sig-boulle');
+    default:return frame(`<path class="ink" d="M30 54 H111 M189 54 H270"/><circle class="node" cx="150" cy="54" r="5"/>`,'sig-default');
+  }
+}
+function render(){const visible=families.filter(matches);count.textContent=`${visible.length} ${visible.length===1?'FAMILY':'FAMILIES'}`;empty.style.display=visible.length?'none':'block';grid.innerHTML=visible.map((f,i)=>`<article class="family"><a href="${f.route}"><div class="familyTop"><span class="index">${String(families.indexOf(f)+1).padStart(2,'0')}</span><span class="continent">${safe(f.continent).toUpperCase()}</span></div><div class="mechanismPair">${pairViz(f)}</div><span class="place">${safe(f.place)}</span><h3>${safe(f.edition)}</h3><p class="mechanism">${safe(f.mechanism)}</p><div class="tags"><span class="memory">${safe(f.memory).toUpperCase()}</span><span class="open">OPEN FAMILY →</span></div></a></article>`).join('')}
 search.addEventListener('input',render);drawChips();
 fetch('/collection/families.json').then(r=>{if(!r.ok)throw new Error('registry');return r.json()}).then(data=>{families=data.families||[];render()}).catch(()=>{grid.innerHTML='<article class="family"><div style="padding:24px;font:italic 14px Georgia,serif;color:#9b9285">Collection registry could not be loaded.</div></article>';count.textContent='REGISTRY UNAVAILABLE'});
 </script>
