@@ -8,9 +8,9 @@ PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **B2.3H — VALPARAÍSO FUNICULAR AUTONOMOUS BUILD CANDIDATE + SOURCE GATE**
+# **B2.3I — MATE + BOMBILLA SOURCE + INTERACTION SPEC**
 
-Do not resume G4 polish. Do not add any source-pass expansion candidate to public atlas/registry/counts.
+Do not resume G4 polish. Do not change validated counts for source-pass candidates.
 
 # CANONICAL INVARIANT
 
@@ -27,121 +27,169 @@ Target:
 Current validated:
 `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-# SOURCE-PASS BUILD QUEUE
+# CURRENT SOURCE-PASS BUILDS
 
-Astrolabe:
-- `families/astrolabe-isfahan/candidate.html`
-- build `ade670ad03513d972180ef78d717f174f585ed6c`
-- fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`
-- blob `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
+1. Astrolabe / Isfahan
+   - `families/astrolabe-isfahan/candidate.html`
+   - build `ade670ad03513d972180ef78d717f174f585ed6c`
+   - fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`
+   - blob `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
 
-Janney:
-- `families/coupler-virginia/candidate.html`
-- build `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`
-- blob `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
+2. Janney / Virginia
+   - `families/coupler-virginia/candidate.html`
+   - build `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`
+   - blob `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
 
-Metate:
-- `families/metate-teotitlan/candidate.html`
-- build `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`
-- blob `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
-- direct thresholded reciprocal drag + MAIZE/CACAO + node syntax PASS
+3. Metate / Teotitlán del Valle
+   - `families/metate-teotitlan/candidate.html`
+   - build `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`
+   - blob `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
+   - direct thresholded reciprocal work / MAIZE+CACAO / JS PASS
 
-All remain `SOURCE PASS / LIVE + USER PENDING`.
+4. Valparaíso Funicular / Chile
+   - spec `CONTINENTAL_BALANCE_B2_3G_SOUTH_AMERICA_VALPARAISO_FUNicular_SPEC.md`
+   - build register `CONTINENTAL_BALANCE_B2_3H_SOUTH_AMERICA_VALPARAISO_BUILD_CANDIDATE.md`
+   - `families/funicular-valparaiso/candidate.html`
+   - law `ON A SHARED FUNICULAR, ONE CAR'S ASCENT IS COUNTERBALANCED BY THE OTHER'S DESCENT.`
+   - spec `f06731fc0e001c09524e21fc81da8fe6697aa313`
+   - build `7aff21b59ff88fcbe3e526958cf9fdf67c0d3750`
+   - blob `1e71497d7f9f5411eca2347b36bc0402db8b905b`
+   - build register commit `2c928f57f5a22208ae078974ac9f5a500cb1f782`
+   - direct A↔B inverse drag + keyboard + swap/reset + JS PASS
 
-# SOUTH AMERICA PROMOTION
+All status:
+`SOURCE PASS / LIVE + USER PENDING`.
 
-Pool:
-`CONTINENTAL_BALANCE_B2_2E_SOUTH_AMERICA_CANDIDATE_POOL.md`
+No continental count changes.
 
-Matrix:
+# SOUTH AMERICA SLOT 2 — MATE + BOMBILLA
+
+Promotion source:
 `CONTINENTAL_BALANCE_B2_2F_SOUTH_AMERICA_PROMOTION_MATRIX.md`
 
-Promoted:
-1. Valparaíso Funicular / Chile
-2. Mate + Bombilla / Argentina
+Working identity:
+- context anchor `Argentina`, broader South American mate context acknowledged;
+- edition `Filter Register`;
+- memory `Flow / Infusion Memory`;
+- topology `R7 selective passage / containment`.
 
-Validated South America still `2/4`.
+Candidate law:
+# **A FILTERING STRAW TURNS A PARTICULATE INFUSION INTO SELECTIVE FLOW.**
 
-# VALPARAÍSO SPEC — FROZEN
+Authoritative evidence already verified:
 
-Register:
-`CONTINENTAL_BALANCE_B2_3G_SOUTH_AMERICA_VALPARAISO_FUNicular_SPEC.md`
+Argentina cultural heritage inventory:
+https://www.argentina.gob.ar/cultura/manifestaciones-del-patrimonio-cultural-inmaterial/entre-rios/mate
+- describes yerba mate placed in a vessel;
+- hot water poured in;
+- beverage taken through a bombilla;
+- practice may be individual/shared and has broader social meaning.
 
-Spec commit:
-`f06731fc0e001c09524e21fc81da8fe6697aa313`
+British Museum:
+https://www.britishmuseum.org/collection/term/x7826
+- classifies bombilla explicitly as `mate-strainer`.
 
-Working:
-- slug `funicular-valparaiso`
-- edition `Counterweight Register`
-- place `Valparaíso, Chile`
-- anchor `Ascensor Concepción / historic funicular system`
-- topology `R1 balance / counterweight`
+Smithsonian NMAI:
+https://www.si.edu/object/mate-strawbombilla%3ANMAI_207196
+- documented South American bombilla object evidence.
 
-Canonical law:
-# **ON A SHARED FUNICULAR, ONE CAR'S ASCENT IS COUNTERBALANCED BY THE OTHER'S DESCENT.**
+# B2.3I SPEC REQUIREMENTS
 
-Truth boundary:
-- heritage sources document two cars moving simultaneously in opposite directions and one counterbalancing the other;
-- do NOT model or claim exact traction, power, cable tension, speed, braking, passenger load or energy;
-- UI isolates positional counterbalance only.
+## Pair
 
-Pair architecture:
-- Card A = Car A / bounded vertical track
-- Card B = Car B / bounded vertical track
-- center = thin shared cable/reference only
+Card A:
+`MATE VESSEL / INFUSION FIELD`
 
-Interaction:
-- no Pair button;
-- initial A low / B high, system linked at rest;
-- direct vertical drag A → B solves instantaneously as `1-A`;
-- direct vertical drag B → A solves instantaneously as `1-B`;
-- no causal lag;
-- crossing and endpoints are states, not success;
-- SWAP START gives A high/B low valid role reversal;
-- RESET restores default.
+Owns:
+- vessel;
+- yerba/particulate field;
+- represented liquid level.
 
-Responsive:
-- preserve simultaneous two-track geometry on mobile;
-- simplify labels before collapsing relation.
+Card B:
+`BOMBILLA / FILTERING STRAW`
 
-# B2.3H BUILD ACCEPTANCE
+Owns:
+- filtering end;
+- tube / flow path;
+- insertion depth/position.
 
-Create only:
-`families/funicular-valparaiso/candidate.html`
+Center:
+- relation/insertion guidance only;
+- never a mouth, person, cup of finished drink or separate filter dashboard.
 
-Must include:
-1. two visible vertical cards/tracks;
-2. direct pointer/touch drag either car;
-3. keyboard Up/Down fallback if practical;
-4. exact inverse normalized relation;
-5. SWAP START;
-6. RESET;
-7. no Pair button;
-8. restrained shared-cable center;
-9. no engineering numeric claims;
-10. source + structural-translation disclaimer;
-11. mobile CSS preserving both members;
-12. JS syntax pass;
-13. no atlas/registry/public-route mutation.
+## Interaction
 
-After source gate:
-- create `CONTINENTAL_BALANCE_B2_3H_SOUTH_AMERICA_VALPARAISO_BUILD_CANDIDATE.md`;
-- update CURRENT_STATE + HANDOVER immediately;
-- next output becomes `B2.3I — MATE + BOMBILLA SOURCE + INTERACTION SPEC`.
+Preferred sequence:
+`MATE ≠ BOMBILLA → INSERT → FILTER SUBMERGED → DRAW → LIQUID PASSES / YERBA REMAINS → RELEASE → CONTINUE`
+
+Important:
+- insertion establishes the functional relation;
+- user must apply a restrained DRAW action after insertion;
+- flow visualization should stay inside Card B / tube and source vessel;
+- particulate yerba stays inside Card A;
+- no human mouth/body depiction is necessary;
+- no claim of accurate fluid dynamics.
+
+Potential direct control:
+- drag bombilla into vessel or use INSERT control if direct spatial move is cleaner;
+- DRAW can be press-and-hold, drag along tube, or restrained slider;
+- must not become a one-click particle animation.
+
+## Alternate-valid semantics
+
+No fake wrong mate state required.
+
+Potential valid contexts only if source-grounded:
+- different vessel/yerba fill presentation;
+- shared vs individual contextual label should NOT alter filter mechanics.
+
+Safer first build:
+- one documented particulate infusion context;
+- no mismatch;
+- RESET separates Bombilla and restores flow state.
+
+## Truth boundary
+
+Must say:
+- interaction translates only the vessel↔bombilla filtering subsystem;
+- does not represent the full social/ritual practice;
+- does not claim mate as exclusively Argentine;
+- does not simulate drinking physiology or accurate hydraulic resistance.
+
+## Anti-overlap
+
+Not Metate:
+- selective passage/filtration rather than abrasion.
+
+Not Toyama:
+- no edible reveal/transformation.
+
+Not Janney:
+- no latch.
+
+Not Valparaíso:
+- no linked inverse motion.
+
+# NEXT AFTER SPEC
+
+Create dedicated register:
+`CONTINENTAL_BALANCE_B2_3I_SOUTH_AMERICA_MATE_BOMBILLA_SPEC.md`
+
+Immediately update CURRENT_STATE + HANDOVER.
+
+Then:
+# `B2.3J — MATE + BOMBILLA AUTONOMOUS BUILD CANDIDATE + SOURCE GATE`
+
+Candidate path target:
+`families/mate-bombilla-argentina/candidate.html`
 
 # INFRASTRUCTURE
 
 Recent Vercel Hobby blocker:
 `Deployment rate limited — retry in 24 hours.`
 
-No live claim while blocked.
-
-# G4 POLISH — PARKED
-
-Khipu reversible candidate:
-`families/khipu-peru/g4-1.html`
-implementation `64647ea78b04439ea9a57ece47f19490d9185d45`
+No invented live pass.
 
 # PERSISTENCE — MANDATORY
 
-Dedicated register → CURRENT_STATE → HANDOVER after every meaningful milestone, exact IDs, explicit SOURCE/LIVE/USER/VALIDATED states, one next output.
+Dedicated register → CURRENT_STATE → HANDOVER after every meaningful milestone; exact IDs; explicit SOURCE/LIVE/USER/VALIDATED status; exactly one next output.
