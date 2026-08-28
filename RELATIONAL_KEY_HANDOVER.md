@@ -8,7 +8,7 @@ PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **B2.3L — TONGIAKI AUTONOMOUS BUILD CANDIDATE + SOURCE GATE**
+# **B2.3M — OCEANIA FAMILY ROUND 2: GARAMUT SOURCE + INTERACTION SPEC**
 
 Do not resume G4 polish. Do not change public atlas/registry/counts for research-promoted or source-pass candidates.
 
@@ -29,15 +29,24 @@ Current validated:
 
 # BUILT SOURCE-PASS QUEUE — LIVE/USER PENDING
 
-1. Astrolabe / Isfahan — `ade670ad03513d972180ef78d717f174f585ed6c`, fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`, blob `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
-2. Janney / Virginia — `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`, blob `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
-3. Metate + Metlapil — `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`, blob `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
+1. Astrolabe / Isfahan — build `ade670ad03513d972180ef78d717f174f585ed6c`, fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`, blob `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
+2. Janney / Virginia — build `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`, blob `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
+3. Metate + Metlapil — build `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`, blob `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
 4. Valparaíso Funicular — spec `f06731fc0e001c09524e21fc81da8fe6697aa313`, build `7aff21b59ff88fcbe3e526958cf9fdf67c0d3750`, blob `1e71497d7f9f5411eca2347b36bc0402db8b905b`
 5. Mate + Bombilla — spec `36c778af5e69e1419ed4b011ca74cf19cce96ab6`, build `6b1a12b166b3be5612ba5b1d5a1f731281186379`, blob `6bdebcff2bd3c2b8c57f0c75dc72b20fcba37d55`
+6. Tongiaki / Tonga — spec `00f5a984ae4c376753b2ed6f64dc955307c9e38d`, build `e577bd6669c0d32f41078fa3124a03539cecd460`, blob `55053022e5312274a250a3384a28c07abdcb2f6f`, source register `e086134795c61ee97240af2dd50609340f8a6601`
 
 All remain `SOURCE PASS / LIVE + USER PENDING`.
 
-# OCEANIA — PROMOTED RESEARCH ROUNDS / COUNT STILL 2/4
+# OCEANIA — COUNT STILL 2/4
+
+Validated:
+1. Marshall Islands / Swell Register
+2. Aotearoa / Hika Ahi
+
+Promoted research rounds:
+1. Tonga / Tongiaki Double Hull — SOURCE PASS BUILD COMPLETE
+2. East Sepik-Ramu PNG / Garamut + Wooden Pounder — SPEC NEXT
 
 Pool:
 `CONTINENTAL_BALANCE_B2_2G_OCEANIA_CANDIDATE_POOL.md`
@@ -47,86 +56,83 @@ Promotion:
 `CONTINENTAL_BALANCE_B2_2H_OCEANIA_PROMOTION_MATRIX.md`
 commit `9fbc4541a585980dd7991f22b7e0dddd64008991`
 
-Promoted:
-1. Tonga / Tongiaki Double Hull
-2. East Sepik-Ramu PNG / Garamut + Wooden Pounder
+# TONGIAKI — SOURCE PASS BUILD COMPLETE
 
-Kula remains `CONTEXT-SENSITIVITY HOLD`.
-Fallback order: Sāmoa I‘e → Tokelau Toki → Kula hold → Jawoyn music sticks.
-
-# B2.3K — TONGIAKI SPEC FROZEN
-
-Register:
+Spec:
 `CONTINENTAL_BALANCE_B2_3K_OCEANIA_TONGIAKI_SPEC.md`
+commit `00f5a984ae4c376753b2ed6f64dc955307c9e38d`
 
-Commit:
-`00f5a984ae4c376753b2ed6f64dc955307c9e38d`
+Build register:
+`CONTINENTAL_BALANCE_B2_3L_OCEANIA_TONGIAKI_BUILD_CANDIDATE.md`
+commit `e086134795c61ee97240af2dd50609340f8a6601`
 
-Working identity:
-- slug `tongiaki-tonga`;
-- Tongatapu / Tonga;
-- `Structural / Voyaging Memory`;
-- `Twin Hull Register`;
-- R4 structural coupling / distributed support.
-
-Canonical law:
-# **TWO HULLS JOINED IN PARALLEL FORM A SHARED, MORE STABLE VOYAGING PLATFORM.**
-
-UI proof:
-# `TWO HULLS → PARALLEL ALIGNMENT → COUPLING → ONE STRUCTURAL PLATFORM`
-
-Truth rule:
-- source supports qualitative stability/seaworthiness;
-- UI only demonstrates documented geometry/structural coupling;
-- NO fake hydrodynamic calculations, righting-force gauges, capsize thresholds, displacement/load equations, speed claims or historical dimensions.
-
-Pair:
-- Card A = HULL A / PORT MEMBER;
-- Card B = HULL B / STARBOARD MEMBER.
-
-Interaction:
-- both bounded cards present from first frame;
-- both hulls directly draggable;
-- constrained fore/aft + inboard adjustment;
-- broad editorial tolerance for approach + alignment;
-- inside tolerance: thin booms/deck resolve as subordinate evidence;
-- outside tolerance: connectors withdraw, both hulls remain valid;
-- no timer completes relationship.
-
-Swells/navigation are forbidden:
-- no swell arrows;
-- no stars;
-- no route/island targets;
-- no heading changes;
-- neutral structural background.
-
-Required footer:
-`STRUCTURAL TRANSLATION · TONGAN TONGIAKI DOUBLE-HULL RELATION · EDITORIAL ALIGNMENT THRESHOLD · NOT A HYDRODYNAMIC OR NAVIGATION SIMULATOR`
-
-# IMMEDIATE TASK — B2.3L BUILD
-
-Create:
+Candidate:
 `families/tongiaki-tonga/candidate.html`
 
-Acceptance:
-1. candidate-only source change;
-2. two hull cards immediate;
-3. both direct pointer/touch draggable;
-4. keyboard fallback;
-5. approach + parallel alignment threshold;
-6. connector subordinate;
-7. uncoupling preserves both hulls;
-8. reset restores distinct state;
-9. responsive CSS;
-10. source/truth footer;
-11. no navigation/fake physics;
-12. JS syntax pass;
-13. source gate diff before any atlas/registry mutation.
+Build:
+`e577bd6669c0d32f41078fa3124a03539cecd460`
 
-After B2.3L SOURCE PASS:
-- update CURRENT_STATE + HANDOVER immediately;
-- then proceed to `B2.3M — GARAMUT SOURCE + INTERACTION SPEC`;
-- no Garamut code before that spec freezes safeguarding.
+Blob:
+`55053022e5312274a250a3384a28c07abdcb2f6f`
+
+Verified:
+- one file only, 73 additions / 0 deletions;
+- Card A/B both visible immediately;
+- both direct pointer/touch draggable;
+- keyboard arrows;
+- coupling requires both inboard approach + fore/aft alignment;
+- outside threshold returns to `UNCOUPLED · TWO VALID HULLS`;
+- no auto-snap/timer;
+- no fake hydrodynamics/stability score;
+- no wave/star/route/navigation UI;
+- responsive CSS;
+- local JS `node --check` PASS.
+
+# IMMEDIATE TASK — B2.3M GARAMUT SPEC
+
+Working promoted family:
+# **GARAMUT + WOODEN POUNDER / EAST SEPIK-RAMU, PAPUA NEW GUINEA**
+
+Primary topology:
+`R11 encode / signal through ordered impact`
+
+Law direction:
+# **ORDERED IMPACTS ON A GARAMUT TURN RHYTHM INTO A LONG-DISTANCE SIGNAL.**
+
+Authoritative source anchors already approved:
+- National Gallery of Australia garamut / East Sepik-Ramu;
+- Fralin Museum `Voices of Connection`, developed with Papua New Guinean scholarly/museum consultation;
+- University of Papua New Guinea indigenous-knowledge work on garamut signaling.
+
+Spec must freeze:
+1. one defensible regional anchor — do not claim one universal PNG system;
+2. Card A = WOODEN POUNDER / input member;
+3. Card B = GARAMUT / resonant signal body;
+4. direct strike input only — no autoplay as primary interaction;
+5. user-authored/editorial timing sequence may be recorded;
+6. central trace remains subordinate proof metadata;
+7. exact label `EDITORIAL SIGNAL SEQUENCE · NOT COMMUNITY CODE` or equivalent;
+8. no invented beat pattern mapped to a real warning/death/invitation/name meaning;
+9. no restricted ceremonial-code teaching;
+10. no copied clan/spirit carvings as visual decoration;
+11. browser audio may use restrained synthetic impact tones only, with no authenticity claim;
+12. Other Sequence preserves both members and says only editorial pattern not completed;
+13. no red invalidation state;
+14. truth footer must distinguish signal-structure translation from community code reproduction.
+
+Compare against:
+- Ombak = near-unison simultaneous beating;
+- Siku = alternating distributed notes → melody;
+- Garamut = ordered impacts → information-bearing signal sequence.
+
+If the spec cannot keep this boundary clean, STOP and fall back to Sāmoa I‘e + Wooden Anvil. Do not jump to Kula automatically.
+
+After spec freeze:
+`B2.3N — GARAMUT AUTONOMOUS BUILD CANDIDATE + SOURCE GATE`.
+
+# KULA STATUS
+
+`CONTEXT-SENSITIVITY HOLD / NOT AUTOMATIC FALLBACK`.
 
 # LIVE INFRASTRUCTURE
 
