@@ -11,13 +11,17 @@ PR status: `DRAFT / DO NOT MERGE`
 Completed:
 - Continental Balance Gate 1;
 - Collection Consolidation + 15/15 direct live routes;
-- PR #20 consolidation merge;
+- PR #20 merge;
 - G0 Baseline Freeze PASS;
 - G1 Collection Navigation Frame PASS;
 - G2 Shell Legibility PASS;
 - G3 Atlas Family Individuality PASS;
 - Continental Balance Gate 2 opened;
-- B2.1 Relationship Gap Map PASS.
+- B2.1 Relationship Gap Map PASS;
+- B2.2A Asia candidate pool PASS;
+- B2.2B Asia promotion matrix PASS;
+- B2.3A Persian Astrolabe source/interaction spec frozen;
+- B2.3B Persian Astrolabe build candidate SOURCE PASS.
 
 Canonical invariant:
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
@@ -27,89 +31,154 @@ Pre-refinement regression anchor:
 
 # CONTINENTAL BALANCE GATE 2 — ACTIVE
 
-Register:
-`CONTINENTAL_BALANCE_GATE_2_24_FAMILY_EQUILIBRIUM.md`
+Target:
+# `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 
 Current validated distribution:
-`AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
+# `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-Target:
-# `4 / 4 / 4 / 4 / 4 / 4`
+Target total: 24 validated families.
+Missing: Asia +1, North America +2, South America +2, Oceania +2, Europe +2.
 
-Target collection size:
-# **24 validated families**
-
-Missing:
-- Asia +1
-- North America +2
-- South America +2
-- Oceania +2
-- Europe +2
-
-Total additions required: 9.
-
-Balance law:
+Law:
 # **BALANCE IS A TARGET, NOT A LICENSE TO ADD WEAK FAMILIES.**
 
-No slot is filled until a source-grounded pair-native law passes its own evidence and interaction gate.
-
-# B2.1 — CLOSED / PASS
-
-Register:
-`CONTINENTAL_BALANCE_B2_1_RELATIONSHIP_GAP_MAP.md`
-
-Discovery territories:
-- R1 Balance / Counterweight
-- R2 Hinge / Rotation / Articulation
-- R3 Fold / Overlap / Layer Reveal
-- R4 Load / Stack / Accumulation
-- R5 Latch / Clasp / Discrete Engagement
-- R6 Projection / Shadow / Occlusion
-- R7 Transfer / Pour / Containment
-- R8 Exchange / Role Reversal
-- R9 Cycle / Synchronization
-- R10 Compression / Expansion / Stored Force
-- R11 Encode / Decode / Completion
-- R12 Calibrate / Tune / Measure
-
-Rule:
+Gap-map rule:
 # **SOURCE CHOOSES THE MECHANISM. THE GAP MAP ONLY GUIDES DISCOVERY.**
 
-Diversity target for the nine additions:
-- at least seven materially different primary topologies;
-- no more than two share one primary topology unless their interaction laws are demonstrably different.
+# ASIA — CANDIDATE BUILT, NOT YET VALIDATED
 
-# IMMEDIATE NEXT TASK — B2.2A ASIA
+Validated count remains:
+# `3 / 4`
 
-Build a source-first candidate pool for Asia's single open slot.
+## Candidate selection
 
-Requirements:
-1. minimum four credible candidates;
-2. prefer museum, institutional, academic, heritage or primary archival sources;
-3. for each candidate state the source object/practice, pair-native relationship, candidate law, digital interaction translation and risks;
-4. reject mechanisms that merely duplicate Toyama transformation/reveal, Kento print registration or Ombak beat resonance;
-5. do not code yet;
-6. compare candidates before promotion.
+Pool register:
+`CONTINENTAL_BALANCE_B2_2A_ASIA_CANDIDATE_POOL.md`
 
-Then research:
-North America +2 → South America +2 → Oceania +2 → Europe +2.
+Promotion matrix:
+`CONTINENTAL_BALANCE_B2_2B_ASIA_PROMOTION_MATRIX.md`
 
-# G4 FAMILY POLISH — PARKED
+Promoted:
+# **Persian Planispheric Astrolabe / Isfahan, Iran**
 
-Do not continue family polish while Balance Gate 2 is active.
+Reserves:
+- Jeongnang / Jeju;
+- Chinese timber joinery, after a specific documented joint is isolated.
 
-Khipu G4.1 work is preserved:
+## Astrolabe spec
+
+Register:
+`CONTINENTAL_BALANCE_B2_3A_ASIA_PERSIAN_ASTROLABE_SPEC.md`
+
+Working identity:
+- slug `astrolabe-isfahan`;
+- edition `Rete Register`;
+- memory `Celestial / Instrument Memory`.
+
+Law:
+# **RELATIVE ROTATION BETWEEN STAR MAP AND HORIZON PRODUCES A CELESTIAL READING.**
+
+Pair:
+- Card A = RETE / CELESTIAL MAP;
+- Card B = LATITUDE PLATE / LOCAL HORIZON;
+- center = shared axis/pin only.
+
+Truth boundary:
+`STRUCTURAL TRANSLATION · RETE ↔ LATITUDE-PLATE SUBSYSTEM · NOT AN ASTRONOMICAL CALCULATOR`
+
+## Astrolabe build candidate
+
+Register:
+`CONTINENTAL_BALANCE_B2_3B_ASIA_ASTROLABE_BUILD_CANDIDATE.md`
+
+Status:
+# **SOURCE PASS / LIVE + USER VISUAL GATE PENDING**
+
+Path:
+`families/astrolabe-isfahan/candidate.html`
+
+Initial implementation:
+`ade670ad03513d972180ef78d717f174f585ed6c`
+
+Formatter fix:
+`a756e58d0bead32b90ca1f6470e68592be0c3d00`
+
+Blob:
+`2903d6a8023e3ba56168f3efc05994c91a7e49f6`
+
+Verified:
+- candidate-only source changes;
+- Card A/B remain bounded;
+- shared axis is subordinate;
+- direct pointer rotation;
+- range slider fallback;
+- LOCAL and OTHER latitude-plate contexts both valid;
+- disclaimer/source footer present;
+- JS syntax check passed;
+- signed angle formatting corrected (`−005°`, `+000°`, `+042°`, `−180°`).
+
+Not yet done:
+- no live deployment containing candidate has been confirmed;
+- no user visual/interaction gate;
+- not in atlas;
+- not in `collection/families.json`;
+- Asia count is NOT 4 yet.
+
+# ASIA NEXT LIVE GATE — B2.4A
+
+When Vercel capacity returns, create/identify a Preview containing `a756e58d…` or later descendant and audit:
+1. initial two-member hierarchy;
+2. pair → shared axis;
+3. direct rete rotation;
+4. slider agreement;
+5. local vs other plate valid context;
+6. positive/negative angle formatting;
+7. narrow layout;
+8. precision-instrument visual language.
+
+Only after PASS can Asia become `4 / 4`.
+
+# INFRASTRUCTURE
+
+Vercel Hobby recently reported:
+`Deployment rate limited — retry in 24 hours.`
+
+Do not invent a live PASS while this remains unresolved.
+
+# IMMEDIATE ACTIVE RESEARCH — NORTH AMERICA +2
+
+Proceed with:
+# **B2.2C — NORTH AMERICA SOURCE-FIRST CANDIDATE POOL**
+
+Current North America:
+- Gatineau / Canada — registered continuation;
+- Coyoacán / Mexico — photographic trace / archive counterpart.
+
+Avoid:
+- another pass/credential/route continuation;
+- another photograph/archive counterpart.
+
+High-value discovery lanes:
+- R1 Balance / Counterweight;
+- R5 Latch / Engagement;
+- R6 Projection / Shadow / Occlusion;
+- R8 Exchange / Role Reversal;
+- R10 Compression / Stored Force;
+- R11 Encode / Decode.
+
+Need at least 6 credible source-grounded candidates for the two open North American slots before promotion.
+
+# G4 POLISH — PARKED
+
+Do not resume family polish while Balance Gate 2 is active.
+
+Khipu G4.1 preserved:
 - `families/khipu-peru/g4-1.html`;
 - implementation `64647ea78b04439ea9a57ece47f19490d9185d45`;
-- golden and public route unchanged;
-- status `PARKED / NOT PROMOTED`.
-
-External Vercel quota blocker remains documented in:
-`GLOBAL_REFINEMENT_G4_1A_VERCEL_RATE_LIMIT_BLOCKER.md`
-
-It is no longer the immediate gate.
+- not promoted.
 
 After 24-family equilibrium:
-B2.5 collection regression → resume G4 family polish → G5 cohesion → G6 final validation.
+B2.5 collection regression → G4 polish → G5 cohesion → G6 final validation.
 
 Persistence protocol: update current state + handover after every meaningful milestone.
