@@ -8,7 +8,7 @@ PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **B2.3M — OCEANIA FAMILY ROUND 2: GARAMUT SOURCE + INTERACTION SPEC**
+# **B2.3N — GARAMUT AUTONOMOUS BUILD CANDIDATE + SOURCE GATE**
 
 Do not resume G4 polish. Do not change public atlas/registry/counts for research-promoted or source-pass candidates.
 
@@ -45,8 +45,8 @@ Validated:
 2. Aotearoa / Hika Ahi
 
 Promoted research rounds:
-1. Tonga / Tongiaki Double Hull — SOURCE PASS BUILD COMPLETE
-2. East Sepik-Ramu PNG / Garamut + Wooden Pounder — SPEC NEXT
+1. Tonga / Tongiaki — SOURCE PASS build complete
+2. East Sepik-Ramu PNG / Garamut + Wooden Pounder — SPEC FROZEN / BUILD NEXT
 
 Pool:
 `CONTINENTAL_BALANCE_B2_2G_OCEANIA_CANDIDATE_POOL.md`
@@ -56,79 +56,88 @@ Promotion:
 `CONTINENTAL_BALANCE_B2_2H_OCEANIA_PROMOTION_MATRIX.md`
 commit `9fbc4541a585980dd7991f22b7e0dddd64008991`
 
-# TONGIAKI — SOURCE PASS BUILD COMPLETE
+# B2.3M — GARAMUT SPEC FROZEN
 
-Spec:
-`CONTINENTAL_BALANCE_B2_3K_OCEANIA_TONGIAKI_SPEC.md`
-commit `00f5a984ae4c376753b2ed6f64dc955307c9e38d`
+Register:
+`CONTINENTAL_BALANCE_B2_3M_OCEANIA_GARAMUT_SPEC.md`
 
-Build register:
-`CONTINENTAL_BALANCE_B2_3L_OCEANIA_TONGIAKI_BUILD_CANDIDATE.md`
-commit `e086134795c61ee97240af2dd50609340f8a6601`
+Commit:
+`64359d37f5e7ceccbd7b244ed79a590951e3ab8f`
 
-Candidate:
-`families/tongiaki-tonga/candidate.html`
+Working identity:
+- slug `garamut-sepik-ramu`;
+- East Sepik / Ramu River region, Papua New Guinea;
+- `Signal / Communication Memory`;
+- `Signal Register`;
+- R11 encode / signal through ordered impact.
 
-Build:
-`e577bd6669c0d32f41078fa3124a03539cecd460`
-
-Blob:
-`55053022e5312274a250a3384a28c07abdcb2f6f`
-
-Verified:
-- one file only, 73 additions / 0 deletions;
-- Card A/B both visible immediately;
-- both direct pointer/touch draggable;
-- keyboard arrows;
-- coupling requires both inboard approach + fore/aft alignment;
-- outside threshold returns to `UNCOUPLED · TWO VALID HULLS`;
-- no auto-snap/timer;
-- no fake hydrodynamics/stability score;
-- no wave/star/route/navigation UI;
-- responsive CSS;
-- local JS `node --check` PASS.
-
-# IMMEDIATE TASK — B2.3M GARAMUT SPEC
-
-Working promoted family:
-# **GARAMUT + WOODEN POUNDER / EAST SEPIK-RAMU, PAPUA NEW GUINEA**
-
-Primary topology:
-`R11 encode / signal through ordered impact`
-
-Law direction:
+Canonical law:
 # **ORDERED IMPACTS ON A GARAMUT TURN RHYTHM INTO A LONG-DISTANCE SIGNAL.**
 
-Authoritative source anchors already approved:
-- National Gallery of Australia garamut / East Sepik-Ramu;
-- Fralin Museum `Voices of Connection`, developed with Papua New Guinean scholarly/museum consultation;
-- University of Papua New Guinea indigenous-knowledge work on garamut signaling.
+Interface proof:
+# `DIRECT IMPACTS → TIMED EVENTS → EDITORIAL SIGNAL SEQUENCE`
 
-Spec must freeze:
-1. one defensible regional anchor — do not claim one universal PNG system;
-2. Card A = WOODEN POUNDER / input member;
-3. Card B = GARAMUT / resonant signal body;
-4. direct strike input only — no autoplay as primary interaction;
-5. user-authored/editorial timing sequence may be recorded;
-6. central trace remains subordinate proof metadata;
-7. exact label `EDITORIAL SIGNAL SEQUENCE · NOT COMMUNITY CODE` or equivalent;
-8. no invented beat pattern mapped to a real warning/death/invitation/name meaning;
-9. no restricted ceremonial-code teaching;
-10. no copied clan/spirit carvings as visual decoration;
-11. browser audio may use restrained synthetic impact tones only, with no authenticity claim;
-12. Other Sequence preserves both members and says only editorial pattern not completed;
-13. no red invalidation state;
-14. truth footer must distinguish signal-structure translation from community code reproduction.
+Pair:
+- Card A = WOODEN POUNDER / INPUT MEMBER;
+- Card B = GARAMUT / RESONANT SIGNAL BODY.
 
-Compare against:
-- Ombak = near-unison simultaneous beating;
-- Siku = alternating distributed notes → melody;
-- Garamut = ordered impacts → information-bearing signal sequence.
+Hard safeguarding:
+# **EDITORIAL SIGNAL SEQUENCE · NOT COMMUNITY CODE**
 
-If the spec cannot keep this boundary clean, STOP and fall back to Sāmoa I‘e + Wooden Anvil. Do not jump to Kula automatically.
+Never:
+- map invented timing to real warning/death/meeting/invitation/name meanings;
+- teach community codes;
+- claim one universal PNG signaling system;
+- copy clan/spirit carvings as decorative UI;
+- claim authentic garamut timbre.
 
-After spec freeze:
-`B2.3N — GARAMUT AUTONOMOUS BUILD CANDIDATE + SOURCE GATE`.
+Interaction contract:
+- direct pounder drag to strike zone;
+- one event only when contact threshold is crossed;
+- withdraw before re-arm;
+- event order + relative timing captured;
+- one event = no sequence claim;
+- 2+ events = editorial ordered sequence;
+- NO correct/incorrect target and NO terminal success state;
+- every different user-authored timing pattern remains valid.
+
+Audio:
+`SYNTHETIC IMPACT AUDIO · INTERACTION PROOF ONLY · NOT AUTHENTIC GARAMUT TIMBRE`.
+
+Keyboard:
+- Space/Enter = one editorial strike;
+- repeated keydown ignored;
+- keyup re-arms.
+
+If implementation cannot preserve these boundaries, STOP and use Sāmoa I‘e reserve first. Do not substitute Kula automatically.
+
+# IMMEDIATE TASK — B2.3N BUILD
+
+Create:
+`families/garamut-sepik-ramu/candidate.html`
+
+Acceptance:
+1. one autonomous candidate file only;
+2. Card A pounder + Card B garamut visible immediately;
+3. direct pointer/touch strike;
+4. withdraw/re-arm hysteresis;
+5. Space/Enter fallback;
+6. short synthetic percussive audio only;
+7. event order + relative timing trace subordinate;
+8. exact `NOT COMMUNITY CODE` label;
+9. no real-message decoding;
+10. no ceremonial/clan decoration;
+11. no waveform hero;
+12. no target success/failure;
+13. reset clears events;
+14. responsive CSS;
+15. JS `node --check`;
+16. source-gate atomic diff before atlas/registry mutation.
+
+After B2.3N SOURCE PASS:
+- update CURRENT_STATE + HANDOVER immediately;
+- Oceania remains `2/4` until live/user PASS;
+- if deployment still blocked, begin Europe +2 source-first pool.
 
 # KULA STATUS
 
