@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>RELATIONAL KEY — Rete Register / Isfahan</title>
+<style>
+:root{
+  --bg:#0b0a08;--panel:#15120e;--panel2:#1b1711;--ink:#eee5d7;--muted:#8f826f;
+  --brass:#b8925c;--brass2:#6f5032;--silver:#c8c2b6;--line:rgba(224,199,157,.17);
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}html,body{margin:0;min-width:320px;min-height:100%;background:var(--bg);color:var(--ink)}
+body{overflow-x:hidden;background:radial-gradient(circle at 50% -10%,rgba(151,105,55,.12),transparent 34%),linear-gradient(#090806,#0d0b08)}
+button,input{font:inherit}.shell{min-height:100vh;padding:14px clamp(14px,2.2vw,36px) 26px}
+.top{min-height:68px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px;border-bottom:1px solid var(--line)}
+.brand{font:800 9px ui-monospace,monospace;letter-spacing:.2em;color:#d5b17a}.headline{text-align:center}.headline small,.meta{display:block;font:700 6px ui-monospace,monospace;letter-spacing:.14em;color:#756b5d}.headline b{display:block;margin-top:3px;font:600 21px Georgia,serif}.meta{text-align:right}
+.intro{text-align:center;margin:18px auto 15px}.intro span{font:800 6px ui-monospace,monospace;letter-spacing:.15em;color:#aa8050}.intro h1{margin:6px 0 4px;font:600 clamp(27px,3vw,43px) Georgia,serif}.intro p{margin:0;font:italic 12px Georgia,serif;color:#9b9080}
+.stage{width:min(1320px,100%);margin:auto}.pair{display:grid;grid-template-columns:minmax(0,1fr) 188px minmax(0,1fr);align-items:center;gap:10px;perspective:1400px;position:relative}
+.slot{position:relative;transition:transform .75s cubic-bezier(.2,.8,.2,1)}
+.card{position:relative;aspect-ratio:856/540;border-radius:25px;overflow:hidden;border:1px solid rgba(221,195,151,.18);background:linear-gradient(145deg,rgba(33,27,19,.98),rgba(16,13,9,.98));box-shadow:0 28px 58px rgba(0,0,0,.45)}
+.card:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(96deg,transparent 0 27px,rgba(255,255,255,.012) 28px),radial-gradient(circle at 50% 45%,rgba(184,146,92,.1),transparent 48%);pointer-events:none}.leftCard:after,.rightCard:after{content:"";position:absolute;top:0;bottom:0;width:38%;pointer-events:none}.leftCard:after{right:0;background:linear-gradient(90deg,transparent,rgba(9,8,6,.5))}.rightCard:after{left:0;background:linear-gradient(270deg,transparent,rgba(9,8,6,.5))}
+.role{position:absolute;z-index:8;top:6%;left:6%;font:800 6px ui-monospace,monospace;letter-spacing:.12em;color:#d6b47e}.rightCard .role{left:auto;right:6%;text-align:right}.copy{position:absolute;z-index:8;left:6%;right:6%;bottom:7%}.rightCard .copy{text-align:right}.copy span{font:800 6px ui-monospace,monospace;letter-spacing:.11em;color:#98764c}.copy strong{display:block;margin-top:4px;font:600 clamp(20px,2.2vw,31px) Georgia,serif}.copy small{display:block;margin-top:6px;font:700 6px ui-monospace,monospace;letter-spacing:.08em;color:#9d927f;line-height:1.45}
+.engrave{position:absolute;inset:15% 11%;opacity:.42;background:repeating-radial-gradient(circle at 50% 50%,transparent 0 19px,rgba(185,143,83,.11) 20px 21px);border-radius:18px}.rightCard .engrave{background:repeating-radial-gradient(ellipse at 42% 50%,transparent 0 17px,rgba(185,143,83,.1) 18px 19px)}
+.instrument{position:absolute;z-index:12;width:202px;height:202px;top:50%;transform:translateY(-50%);border-radius:50%;transition:transform .75s cubic-bezier(.2,.8,.2,1),filter .55s ease,opacity .4s ease;filter:drop-shadow(0 16px 22px rgba(0,0,0,.42));touch-action:none}
+.left .instrument{right:-52px}.right .instrument{left:-52px}.instrument svg{display:block;width:100%;height:100%;overflow:visible}.discback{fill:rgba(15,12,8,.9);stroke:rgba(205,164,103,.45);stroke-width:1.4}.metal{fill:none;stroke:#b88f57;stroke-width:1.25}.metalFine{fill:none;stroke:rgba(198,157,96,.62);stroke-width:.7}.silver{fill:#c9c1b2}.star{fill:#d6b276}.dimstar{fill:#806b51}.axis{fill:#d1aa6b;stroke:#5c422b;stroke-width:1}.horizonLocal{fill:none;stroke:#c6a36d;stroke-width:1.35}.horizonOther{fill:none;stroke:#8d6850;stroke-width:1.2;opacity:0}.plateAlt .horizonLocal{opacity:.18}.plateAlt .horizonOther{opacity:1}.plateAlt .plate-local-only{opacity:.28}.plate-alt-only{opacity:0}.plateAlt .plate-alt-only{opacity:1}
+.bridge{height:228px;position:relative;display:grid;place-items:center;pointer-events:none}.bridge:before{content:"";position:absolute;left:8%;right:8%;top:50%;height:1px;background:linear-gradient(90deg,transparent,rgba(185,143,83,.18),transparent)}.pinField{position:relative;width:62px;height:62px;border:1px solid rgba(184,143,83,.12);border-radius:50%;display:grid;place-items:center;opacity:.22;transition:opacity .4s,transform .6s}.pinField:before,.pinField:after{content:"";position:absolute;background:rgba(184,143,83,.14)}.pinField:before{width:1px;height:90px}.pinField:after{height:1px;width:90px}.pin{width:8px;height:8px;border-radius:50%;background:#3f3224;border:1px solid rgba(205,164,103,.4);transition:background .4s,box-shadow .4s}.bridgeLabel{position:absolute;top:calc(50% + 48px);width:170px;text-align:center;font:800 5px ui-monospace,monospace;letter-spacing:.12em;color:#716658;line-height:1.55}
+.pair[data-phase="approach"] .left{transform:translateX(22px)}.pair[data-phase="approach"] .right{transform:translateX(-22px)}.pair[data-phase="approach"] .pinField{opacity:.46}.pair[data-phase="pinned"] .left,.pair[data-phase="reading"] .left{transform:translateX(42px)}.pair[data-phase="pinned"] .right,.pair[data-phase="reading"] .right{transform:translateX(-42px)}.pair[data-phase="pinned"] .pinField,.pair[data-phase="reading"] .pinField{opacity:1;transform:scale(.86)}.pair[data-phase="pinned"] .pin,.pair[data-phase="reading"] .pin{background:#bb925a;box-shadow:0 0 14px rgba(187,146,90,.28)}
+.pair[data-phase="pinned"] .left .instrument,.pair[data-phase="reading"] .left .instrument{filter:drop-shadow(0 10px 18px rgba(0,0,0,.38)) brightness(1.03)}.pair[data-phase="pinned"] .right .instrument,.pair[data-phase="reading"] .right .instrument{filter:drop-shadow(0 10px 18px rgba(0,0,0,.38)) brightness(1.03)}
+.controls{width:min(1040px,96vw);margin:16px auto 0;display:grid;grid-template-columns:1fr auto;gap:9px;align-items:stretch}.controlGroup{display:flex;gap:7px;flex-wrap:wrap}.controls button{min-height:42px;border:1px solid rgba(202,163,104,.22);background:#14110d;color:#958774;padding:0 13px;font:800 6px ui-monospace,monospace;letter-spacing:.1em;cursor:pointer}.controls button.active{border-color:#b78c56;color:#efd5ad;background:rgba(168,118,66,.12)}.controls button:focus-visible,.rotation input:focus-visible{outline:2px solid rgba(206,168,109,.72);outline-offset:2px}.pairBtn{min-width:210px;color:#d8bd92!important}.pairBtn:disabled{opacity:.4;cursor:not-allowed}
+.rotation{width:min(1040px,96vw);margin:8px auto 0;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:10px;border:1px solid rgba(202,163,104,.13);background:rgba(16,13,10,.72);padding:9px 11px}.rotation label,.angle{font:800 6px ui-monospace,monospace;letter-spacing:.1em;color:#8d7f6d}.rotation input{width:100%;accent-color:#ad814c}.rotation input:disabled{opacity:.3}.angle{min-width:62px;text-align:right;color:#caa56e}.result{text-align:center;min-height:38px;margin-top:8px;font:800 6px ui-monospace,monospace;letter-spacing:.09em;color:#8e806d;line-height:1.6}.result strong{color:#d4b27c}.truth{text-align:center;margin-top:7px;font:800 5px ui-monospace,monospace;letter-spacing:.08em;color:#675e53}.source{text-align:center;margin:8px auto 0;max-width:1040px;font:500 10px Georgia,serif;color:#786e61;line-height:1.5}
+@media(max-width:980px){
+  .pair{grid-template-columns:1fr;gap:0}.bridge{height:132px}.slot{width:min(720px,100%);margin:auto}.instrument{width:172px;height:172px;top:auto}.left .instrument{right:50%;bottom:-70px;transform:translateX(50%)}.right .instrument{left:50%;top:-70px;transform:translateX(-50%)}.pair[data-phase="approach"] .left{transform:translateY(14px)}.pair[data-phase="approach"] .right{transform:translateY(-14px)}.pair[data-phase="pinned"] .left,.pair[data-phase="reading"] .left{transform:translateY(28px)}.pair[data-phase="pinned"] .right,.pair[data-phase="reading"] .right{transform:translateY(-28px)}.bridge:before{top:8%;bottom:8%;left:50%;right:auto;width:1px;height:auto}.controls{grid-template-columns:1fr}.pairBtn{width:100%}.rotation{grid-template-columns:1fr auto}.rotation label{grid-column:1/-1}.top{grid-template-columns:auto 1fr}.meta{display:none}}
+@media(max-width:560px){.shell{padding-left:10px;padding-right:10px}.headline b{font-size:18px}.brand{font-size:8px}.intro{margin-top:15px}.intro h1{font-size:28px}.controlGroup{display:grid;grid-template-columns:1fr 1fr}.controls button{padding:0 8px}.instrument{width:148px;height:148px}.left .instrument{bottom:-62px}.right .instrument{top:-62px}.bridge{height:118px}.copy strong{font-size:21px}.copy small{font-size:5px}.role{font-size:5px}.source{font-size:9px}}
+</style>
+</head>
+<body>
+<main class="shell">
+<header class="top">
+  <div class="brand">RELATIONAL KEY</div>
+  <div class="headline"><small>CONTINENTAL BALANCE B2 · ASIA CANDIDATE</small><b>Rete Register</b></div>
+  <div class="meta">ISFAHAN · IRAN<br>STRUCTURAL TRANSLATION</div>
+</header>
+<section class="intro">
+  <span>PERSIAN PLANISPHERIC ASTROLABE · RETE ↔ LATITUDE PLATE</span>
+  <h1>A star map becomes readable against a local horizon.</h1>
+  <p>This edition isolates one documented astrolabe subsystem. It is not a complete astrolabe simulator.</p>
+</section>
+<section class="stage">
+  <div class="pair" id="pair" data-phase="idle">
+    <div class="slot left">
+      <article class="card leftCard">
+        <div class="engrave"></div>
+        <div class="role">CARD A · RETE / CELESTIAL MAP</div>
+        <div class="copy"><span>CELESTIAL MEMBER</span><strong>Star Map</strong><small>OPENWORK RETE · STAR POINTERS · ECLIPTIC RING</small></div>
+      </article>
+      <div class="instrument rete" id="rete" aria-label="Rotatable rete star map">
+        <svg viewBox="0 0 200 200" role="img" aria-label="Structural translation of an astrolabe rete">
+          <circle class="discback" cx="100" cy="100" r="96"/>
+          <g id="reteRotor">
+            <circle class="metal" cx="100" cy="100" r="88"/>
+            <circle class="metalFine" cx="100" cy="100" r="65"/>
+            <ellipse class="metal" cx="100" cy="100" rx="77" ry="52" transform="rotate(-18 100 100)"/>
+            <path class="metal" d="M100 12 L113 71 L169 45 L132 87 L186 102 L130 108 L163 158 L116 128 L99 188 L91 128 L39 160 L70 110 L13 99 L70 87 L35 43 L87 72 Z" opacity=".62"/>
+            <path class="metalFine" d="M43 72 Q99 118 157 70 M48 132 Q99 84 154 131 M72 40 Q92 100 65 163 M133 37 Q108 96 139 162"/>
+            <circle class="star" cx="113" cy="39" r="3.3"/><circle class="star" cx="150" cy="71" r="3"/><circle class="star" cx="141" cy="135" r="3.1"/><circle class="star" cx="77" cy="151" r="2.9"/><circle class="star" cx="47" cy="92" r="2.8"/><circle class="dimstar" cx="91" cy="63" r="2.3"/><circle class="dimstar" cx="123" cy="105" r="2.4"/>
+            <path class="metal" d="M113 39 L100 100 L150 71 M100 100 L141 135 M100 100 L77 151 M100 100 L47 92" opacity=".8"/>
+          </g>
+          <circle class="axis" cx="100" cy="100" r="5.6"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="bridge">
+      <div class="pinField"><div class="pin"></div></div>
+      <div class="bridgeLabel" id="bridgeLabel">STAR MAP ≠ LOCAL HORIZON</div>
+    </div>
+
+    <div class="slot right">
+      <article class="card rightCard">
+        <div class="engrave"></div>
+        <div class="role">CARD B · LATITUDE PLATE / LOCAL HORIZON</div>
+        <div class="copy"><span>LOCAL REFERENCE MEMBER</span><strong id="plateTitle">Local Horizon</strong><small id="plateMeta">ALTITUDE · AZIMUTH · LATITUDE CONTEXT</small></div>
+      </article>
+      <div class="instrument plate" id="plate" aria-label="Stationary latitude plate">
+        <svg viewBox="0 0 200 200" role="img" aria-label="Structural translation of an astrolabe latitude plate">
+          <circle class="discback" cx="100" cy="100" r="96"/>
+          <circle class="metal" cx="100" cy="100" r="88"/>
+          <circle class="metalFine" cx="100" cy="100" r="72"/><circle class="metalFine" cx="100" cy="100" r="55"/><circle class="metalFine" cx="100" cy="100" r="38"/>
+          <path class="horizonLocal" d="M22 116 Q100 65 178 116"/>
+          <path class="horizonOther" d="M22 126 Q100 48 178 126"/>
+          <path class="metalFine plate-local-only" d="M36 142 Q100 87 164 142 M47 155 Q100 110 153 155 M34 91 Q100 127 166 91"/>
+          <path class="metalFine plate-local-only" d="M68 20 Q111 100 67 179 M99 12 Q129 100 102 188 M132 21 Q89 100 134 179"/>
+          <path class="metalFine plate-alt-only" d="M34 150 Q100 74 166 150 M44 166 Q100 109 156 166 M30 101 Q100 139 170 101"/>
+          <path class="metalFine plate-alt-only" d="M57 25 Q118 99 58 175 M94 13 Q138 100 95 188 M139 27 Q82 98 140 174"/>
+          <path class="metal" d="M100 15 V185 M15 100 H185" opacity=".5"/>
+          <circle class="axis" cx="100" cy="100" r="5.6"/>
+        </svg>
+      </div>
+    </div>
+  </div>
+
+  <div class="controls">
+    <div class="controlGroup">
+      <button id="local" class="active">LOCAL LATITUDE PLATE</button>
+      <button id="other">OTHER LATITUDE PLATE</button>
+      <button id="reset">RESET</button>
+    </div>
+    <button class="pairBtn" id="pairBtn">PAIR RETE + PLATE</button>
+  </div>
+
+  <div class="rotation">
+    <label for="angle">ROTATE RETE · RELATIVE ANGLE</label>
+    <input id="angle" type="range" min="-180" max="180" value="0" step="1" disabled />
+    <div class="angle" id="angleValue">+000°</div>
+  </div>
+
+  <div class="result" id="result"><strong>OFFSET</strong> · star map and horizon are separate.</div>
+  <div class="truth">STRUCTURAL TRANSLATION · RETE ↔ LATITUDE-PLATE SUBSYSTEM · NOT AN ASTRONOMICAL CALCULATOR</div>
+  <div class="source">Source anchors: Persian planispheric astrolabe, Isfahan, ca. 1715, Smithsonian Institution; Persian/Safavid astrolabe, Iran, 1712, British Museum; astrolabe mechanism documentation, Oxford History of Science Museum.</div>
+</section>
+</main>
+<script>
+const pair=document.getElementById('pair');
+const pairBtn=document.getElementById('pairBtn');
+const resetBtn=document.getElementById('reset');
+const localBtn=document.getElementById('local');
+const otherBtn=document.getElementById('other');
+const angle=document.getElementById('angle');
+const angleValue=document.getElementById('angleValue');
+const rotor=document.getElementById('reteRotor');
+const rete=document.getElementById('rete');
+const plate=document.getElementById('plate');
+const bridgeLabel=document.getElementById('bridgeLabel');
+const result=document.getElementById('result');
+const plateTitle=document.getElementById('plateTitle');
+const plateMeta=document.getElementById('plateMeta');
+let plateMode='local',phase='idle',dragging=false,lastPointerAngle=0,currentAngle=0,timers=[];
+function clearTimers(){timers.forEach(clearTimeout);timers=[]}
+function fmt(v){const n=Math.round(Number(v));return (n>=0?'+':'')+String(n).padStart(n<0?4:3,'0')+'°'}
+function renderAngle(v){currentAngle=Math.max(-180,Math.min(180,Number(v)));angle.value=String(Math.round(currentAngle));angleValue.textContent=fmt(currentAngle);rotor.setAttribute('transform',`rotate(${currentAngle} 100 100)`);if(phase==='pinned'||phase==='reading'){phase='reading';pair.dataset.phase='reading';bridgeLabel.textContent=plateMode==='local'?'LOCAL HORIZON · RELATION ACTIVE':'DIFFERENT HORIZON · VALID CONTEXT';result.innerHTML=`<strong>${plateMode==='local'?'LOCAL HORIZON ACTIVE':'VALID PLATE · DIFFERENT HORIZON'}</strong> · relative rete angle ${fmt(currentAngle)}.`}}
+function choosePlate(mode){plateMode=mode;localBtn.classList.toggle('active',mode==='local');otherBtn.classList.toggle('active',mode==='other');plate.classList.toggle('plateAlt',mode==='other');plateTitle.textContent=mode==='local'?'Local Horizon':'Other Horizon';plateMeta.textContent=mode==='local'?'ALTITUDE · AZIMUTH · LATITUDE CONTEXT':'VALID PLATE · DIFFERENT LATITUDE CONTEXT';if(phase==='reading'||phase==='pinned')renderAngle(currentAngle)}
+function reset(){clearTimers();phase='idle';pair.dataset.phase='idle';pairBtn.disabled=false;pairBtn.textContent='PAIR RETE + PLATE';angle.disabled=true;bridgeLabel.textContent='STAR MAP ≠ LOCAL HORIZON';result.innerHTML='<strong>OFFSET</strong> · star map and horizon are separate.';renderAngle(0);pair.dataset.phase='idle';phase='idle'}
+function startPair(){if(phase!=='idle')return;clearTimers();phase='approach';pair.dataset.phase='approach';pairBtn.disabled=true;bridgeLabel.textContent='APPROACH · BRING MAP TO HORIZON';result.innerHTML='<strong>APPROACH</strong> · both members retain identity.';timers.push(setTimeout(()=>{phase='pinned';pair.dataset.phase='pinned';bridgeLabel.textContent='SHARED AXIS · ROTATE RETE';result.innerHTML='<strong>PINNED</strong> · shared axis engaged; reading not yet set.';angle.disabled=false;pairBtn.textContent='AXIS ENGAGED';},720))}
+pairBtn.onclick=startPair;resetBtn.onclick=reset;localBtn.onclick=()=>choosePlate('local');otherBtn.onclick=()=>choosePlate('other');angle.oninput=e=>renderAngle(e.target.value);
+function pointerAngle(e){const r=rete.getBoundingClientRect(),cx=r.left+r.width/2,cy=r.top+r.height/2;return Math.atan2(e.clientY-cy,e.clientX-cx)*180/Math.PI}
+rete.addEventListener('pointerdown',e=>{if(angle.disabled)return;dragging=true;lastPointerAngle=pointerAngle(e);rete.setPointerCapture(e.pointerId)});
+rete.addEventListener('pointermove',e=>{if(!dragging)return;const a=pointerAngle(e),delta=a-lastPointerAngle;lastPointerAngle=a;let d=delta;if(d>180)d-=360;if(d<-180)d+=360;renderAngle(currentAngle+d)});
+rete.addEventListener('pointerup',e=>{dragging=false;try{rete.releasePointerCapture(e.pointerId)}catch{}});
+rete.addEventListener('pointercancel',()=>dragging=false);
+choosePlate('local');reset();
+</script>
+</body>
+</html>
