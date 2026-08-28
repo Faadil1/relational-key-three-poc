@@ -23,88 +23,96 @@ Canonical invariant:
 Distribution:
 `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-Family expansion remains paused.
-
 Pre-refinement regression anchor:
 `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
 
 # G3 — CLOSED / PASS
 
-Law:
-`INDIVIDUALITY = RELATIONSHIP MECHANISM, NOT CULTURAL ORNAMENT`
+Implementation: `239f076fb9fc2936b16d793caa14c486eb182d05`
+Preview: `dpl_EgKHruAvbW6exjHq8DGWvpEv8kV6`
 
-Implementation:
-`239f076fb9fc2936b16d793caa14c486eb182d05`
+Evidence:
+- `388cd19c-e93c-41f3-9548-7f32addf1883.mp4` — static individuality;
+- `cb023959-0e6b-4f64-bd23-721c02a9be2f.mp4` — hover + narrowed closeout.
 
-Exact implementation preview:
-- `dpl_EgKHruAvbW6exjHq8DGWvpEv8kV6`
-- `https://relational-key-collectionrelational-key-collection-3lco5dm3j.vercel.app`
-- deployed SHA `239f076fb9fc2936b16d793caa14c486eb182d05`
+Verdict:
+- 15 signatures more distinguishable;
+- common system preserved;
+- hover remains micro;
+- narrow rendering clean;
+- exact ~390 px regression deferred to G6.
 
 Registers:
-- `GLOBAL_REFINEMENT_G3_ATLAS_INDIVIDUALITY_SPEC.md`
-- `GLOBAL_REFINEMENT_G3_1_MECHANISM_NATIVE_MINIPAIRS.md`
 - `GLOBAL_REFINEMENT_G3_2A_STATIC_INDIVIDUALITY_PASS.md`
 - `GLOBAL_REFINEMENT_G3_2B_HOVER_MOBILE_PASS.md`
 
-User evidence A:
-`388cd19c-e93c-41f3-9548-7f32addf1883.mp4` — ~10.11 s, 1912×964, 30 fps.
-
-User evidence B:
-`cb023959-0e6b-4f64-bd23-721c02a9be2f.mp4` — ~20.10 s, 1896×964, 30 fps.
-
-Final G3 finding:
-- all 15 signatures are more distinguishable at atlas scale;
-- atlas remains one RELATIONAL KEY system;
-- hover previews remain subtle and mechanism-native;
-- narrowed layout shows no visible SVG overflow/distortion;
-- no cultural ornament/flags/stereotype skinning introduced.
-
-Residual final regression:
-- explicit measured ~390 px viewport test is deferred to G6.
-
 # G4 — ACTIVE
-
-## PASS WITH POLISH BACKLOG
 
 Inventory:
 `GLOBAL_REFINEMENT_G4_POLISH_INVENTORY.md`
 
-G4 law:
+Law:
 # `POLISH MUST INCREASE LEGIBILITY WITHOUT REWRITING THE RELATIONSHIP.`
 
-### Tier A — explicit actionable debt
-1. **Khipu / Peru** — central knot hierarchy/readability + tension-change perceptibility.
-2. **Kento / Japan** — `kagi` / `hikitsuki` hierarchy + OTHER BLOCK colour-layer displacement readability; center remains subordinate.
-3. **Siku / Bolivia** — central interlock field + bottom microcopy desktop-scale legibility.
+Priority:
+1. Khipu — explicit knot/tension debt.
+2. Kento — explicit registration/mismatch debt.
+3. Siku — explicit center/microcopy debt.
+4. Re-audit Zellige / Ombak / Swell before any mutation.
 
-### Tier B — re-audit before any patch
-- Zellige / Fès;
-- Ombak / Bali;
-- Swell / Marshall Islands.
+# G4.1 — KHIPU
 
-Their historical PRs say `PASS WITH POLISH`, but do not define a sufficiently precise current patch target. Reproduce debt first; do not invent polish.
+Status:
+# **SOURCE PASS / LIVE CANDIDATE NEXT**
 
-### No current G4 patch evidence
-- Stereoscopy / UK;
-- Hika Ahi / Aotearoa;
-- Boulle / France;
-- City / Service / Signal / Frida / Food / Textile shared runtime unless a new issue is reproduced.
+Register:
+`GLOBAL_REFINEMENT_G4_1_KHIPU_POLISH_CANDIDATE.md`
 
-# IMMEDIATE NEXT TASK — G4.1 KHIPU
+Golden source remains untouched:
+- `families/khipu-peru/snapshot.html`
+- blob `cdc06bebbc2054463f4d2f61e59e5de261979ef9`
 
-Before mutation:
-1. inspect `families/khipu-peru/index.html` wrapper;
-2. inspect `families/khipu-peru/snapshot.html` golden source;
-3. keep the current snapshot recoverable and unchanged as golden evidence;
-4. create a separate reversible Khipu polish candidate;
-5. target only central-knot hierarchy and perceptibility of tension change;
-6. preserve `CORD → APPROACH → TENSION → KNOT → REGISTER → READ → CONTINUE`;
-7. preserve OTHER RECORD residual and both-records-valid semantics;
-8. create a dedicated Preview and compare candidate against golden before promotion.
+Public route remains untouched:
+`families/khipu-peru/index.html`
 
-Do not begin Kento until Khipu receives its own source/live/user gate.
+Isolated candidate:
+`families/khipu-peru/g4-1.html`
 
-Future: G4.2 Kento → G4.3 Siku → G4.4 evidence re-audit Zellige/Ombak/Swell → G5 Collection Cohesion → G6 Final Validation.
+Implementation commit:
+# `64647ea78b04439ea9a57ece47f19490d9185d45`
+
+Source compare:
+- one new candidate file only;
+- 52 additions / 0 deletions.
+
+Candidate method:
+- normal collection frame;
+- loads unchanged golden `snapshot.html`;
+- same-origin CSS override injection only;
+- no JavaScript, timing, drag threshold, matching or OTHER semantic change.
+
+Candidate change:
+- knot modestly larger / clearer;
+- tension state contrast strengthened;
+- registered tension settles below peak emphasis;
+- rejected knot remains demoted;
+- two record cards remain primary.
+
+# IMMEDIATE NEXT TASK — G4.1A LIVE CANDIDATE REGRESSION
+
+Identify a Vercel Preview containing commit `64647ea…` (or a later docs-only commit that includes it), then open:
+`/families/khipu-peru/g4-1.html`
+
+Audit:
+1. MATCHING RECORD from reset → TEST RELATIONSHIP;
+2. tension should become visibly taut before registration;
+3. knot should be easier to read but remain subordinate;
+4. OTHER RECORD → TEST RELATIONSHIP;
+5. residual should remain clear, with both records valid;
+6. optionally compare with golden `/families/khipu-peru/`.
+
+Do not promote Khipu and do not begin Kento until this live/user gate passes.
+
+Future: G4.2 Kento → G4.3 Siku → G4.4 evidence re-audit Zellige/Ombak/Swell → G5 → G6.
 
 Persistence protocol: update current state + handover after every meaningful milestone.
