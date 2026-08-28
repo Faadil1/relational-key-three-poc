@@ -1,0 +1,32 @@
+{
+  "schema_version": "1.2",
+  "collection": "RELATIONAL KEY",
+  "phase": "COLLECTION_CONSOLIDATION_GATE_C3_LIVE_PREVIEW",
+  "distribution": {
+    "Africa": 4,
+    "Asia": 3,
+    "North America": 2,
+    "South America": 2,
+    "Oceania": 2,
+    "Europe": 2
+  },
+  "validated_count": 15,
+  "candidate_count": 0,
+  "families": [
+    {"id":"city-gatineau","edition":"Registered City Passage","place":"Gatineau, Canada","continent":"North America","memory":"City / Passage","mechanism":"registered continuation","source_branch":"round13r/relational-pair-restoration","golden_deployment":"dpl_26HsTL8cVqyzkkqm4oGtnVZZqehn","validation":"PASS_WITH_POLISH","route":"/families/city-gatineau/","polish_backlog":true},
+    {"id":"service-benin","edition":"Service Register","place":"Benin","continent":"Africa","memory":"Service Memory","mechanism":"service as storyboard / switch registration","source_branch":"round13r/relational-pair-restoration","golden_deployment":"dpl_26HsTL8cVqyzkkqm4oGtnVZZqehn","validation":"PASS_WITH_POLISH","route":"/families/service-benin/","polish_backlog":true},
+    {"id":"signal-nigeria","edition":"Signal Portrait","place":"Nigeria","continent":"Africa","memory":"Signal Memory","mechanism":"infrastructure as portrait / relay alignment","source_branch":"round13r/relational-pair-restoration","golden_deployment":"dpl_26HsTL8cVqyzkkqm4oGtnVZZqehn","validation":"PASS_WITH_POLISH","route":"/families/signal-nigeria/","polish_backlog":true},
+    {"id":"frida-coyoacan","edition":"Cultural Figure / Trace System","place":"Coyoacán, Mexico","continent":"North America","memory":"Cultural Figure Memory","mechanism":"photographic trace / archive counterpart","source_branch":"round13r/relational-pair-restoration","golden_deployment":"dpl_26HsTL8cVqyzkkqm4oGtnVZZqehn","validation":"PASS_WITH_POLISH","route":"/families/frida-coyoacan/","polish_backlog":true},
+    {"id":"food-toyama","edition":"Edible Passage","place":"Toyama, Japan","continent":"Asia","memory":"Food Memory","mechanism":"physical transformation / edible reveal","source_branch":"round13r/relational-pair-restoration","golden_deployment":"dpl_26HsTL8cVqyzkkqm4oGtnVZZqehn","validation":"PASS_WITH_POLISH","route":"/families/food-toyama/","polish_backlog":true},
+    {"id":"textile-bonwire","edition":"Woven Register","place":"Asante / Bonwire, Ghana","continent":"Africa","memory":"Textile Memory","mechanism":"interlacing / woven continuation","source_branch":"round13r/relational-pair-restoration","golden_deployment":"dpl_26HsTL8cVqyzkkqm4oGtnVZZqehn","validation":"PASS_WITH_POLISH","route":"/families/textile-bonwire/","polish_backlog":true},
+    {"id":"zellige-fes","edition":"Craft Memory / Zellige Register","place":"Fès, Morocco","continent":"Africa","memory":"Craft Memory","mechanism":"material fit / tessellation","source_branch":"round13e/craft-memory-zellige","golden_deployment":"dpl_4HV3s3QoWeKyBXaRfdR5zmWEFhzs","validation":"PASS_WITH_POLISH","route":"/families/zellige-fes/","polish_backlog":true},
+    {"id":"khipu-peru","edition":"Record Memory / Knotted Register","place":"Peru","continent":"South America","memory":"Record Memory","mechanism":"tension / knot registration","source_branch":"round13f/record-memory-khipu","golden_deployment":"dpl_FidjRh6mX1XeDxVE6aXVKnFQbW9Z","validation":"PASS_WITH_POLISH","route":"/families/khipu-peru/","polish_backlog":true},
+    {"id":"kento-japan","edition":"Print Memory / Kento Register","place":"Japan","continent":"Asia","memory":"Print Memory","mechanism":"registration / transfer alignment","source_branch":"round13g/print-memory-kento","golden_deployment":"dpl_J74TMsqZS2uSWv8PuhLVGPfQfBev","validation":"PASS_WITH_POLISH","route":"/families/kento-japan/","polish_backlog":true},
+    {"id":"ombak-bali","edition":"Sound Memory / Ombak Register","place":"Bali, Indonesia","continent":"Asia","memory":"Sound Memory","mechanism":"controlled difference / beat resonance","source_branch":"round13h/sound-memory-ombak","golden_deployment":"dpl_FCTw3Fxo3YYgZTP1iv2zyRyJZxXy","validation":"PASS_WITH_POLISH","route":"/families/ombak-bali/","polish_backlog":true},
+    {"id":"swell-marshall","edition":"Navigation Memory / Swell Register","place":"Marshall Islands","continent":"Oceania","memory":"Navigation Memory","mechanism":"environmental interaction / swell deflection","source_branch":"round13i/navigation-memory-marshall","golden_deployment":"dpl_9ZypFYUDHAthPHpEM3AoxYG3PqUB","validation":"PASS_WITH_POLISH","route":"/families/swell-marshall/","polish_backlog":true},
+    {"id":"stereoscopy-uk","edition":"Depth Memory / Binocular Register","place":"United Kingdom","continent":"Europe","memory":"Depth Memory","mechanism":"controlled disparity / binocular fusion","law":"CONTROLLED DISPARITY PRODUCES DEPTH","source_branch":"round13j/depth-memory-stereoscopy","golden_deployment":"dpl_4qQoTiev64vzU7tRLXmrYxtbrHjY","validation":"VISUAL_PASS_MERGED","route":"/families/stereoscopy-uk/","polish_backlog":false},
+    {"id":"siku-bolivia","edition":"Melody Memory / Interlock Register","place":"Bolivia","continent":"South America","memory":"Melody Memory","mechanism":"complementary absence / temporal interlock","law":"COMPLEMENTARY ABSENCE PRODUCES CONTINUITY","source_branch":"round13k/melody-memory-siku","golden_deployment":"dpl_AgwdotABtjmYKDvnx3qoprtPEMsr","validation":"VISUAL_AUDIO_PASS_MERGED","route":"/families/siku-bolivia/","polish_backlog":true},
+    {"id":"hika-ahi-aotearoa","edition":"Ember Memory / Friction Register","place":"Aotearoa New Zealand","continent":"Oceania","memory":"Ember Memory","mechanism":"sustained friction / emergent ember","law":"SUSTAINED FRICTION PRODUCES EMBER","source_branch":"round13l/ember-memory-hika-ahi","golden_deployment":"dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR","validation":"VISUAL_PASS_MERGED","route":"/families/hika-ahi-aotearoa/","polish_backlog":false},
+    {"id":"boulle-france","edition":"Complement Memory / Reciprocal Cut Register","place":"France","continent":"Europe","memory":"Complement Memory","mechanism":"shared cut / reciprocal inversion","law":"ONE SHARED CUT PRODUCES TWO COMPLEMENTARY INVERSES","source_branch":"round13m/complement-memory-boulle","golden_deployment":"dpl_EK1wW4peLBk1f9KHg4T6nerJ4jFy","validation":"VISUAL_PASS_MERGED","route":"/families/boulle-france/","polish_backlog":true}
+  ]
+}
