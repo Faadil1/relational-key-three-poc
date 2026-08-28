@@ -8,9 +8,9 @@ PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **B2.2I — EUROPE +2 SOURCE-FIRST CANDIDATE POOL**
+# **B2.2J — EUROPE DEEP-SOURCE / TWO-SLOT PROMOTION MATRIX**
 
-Do not resume G4 polish. Do not change public atlas/registry/counts for research-promoted, source-pass or merely deployed candidates.
+Do not resume G4 polish. Do not mutate public atlas/registry/counts for research-promoted, SOURCE PASS or merely deployed candidates.
 
 # CANONICAL INVARIANT
 
@@ -34,118 +34,108 @@ Current validated:
 3. Metate + Metlapil — build `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`, blob `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
 4. Valparaíso Funicular — spec `f06731fc0e001c09524e21fc81da8fe6697aa313`, build `7aff21b59ff88fcbe3e526958cf9fdf67c0d3750`, blob `1e71497d7f9f5411eca2347b36bc0402db8b905b`
 5. Mate + Bombilla — spec `36c778af5e69e1419ed4b011ca74cf19cce96ab6`, build `6b1a12b166b3be5612ba5b1d5a1f731281186379`, blob `6bdebcff2bd3c2b8c57f0c75dc72b20fcba37d55`
-6. Tongiaki / Tonga — spec `00f5a984ae4c376753b2ed6f64dc955307c9e38d`, build `e577bd6669c0d32f41078fa3124a03539cecd460`, blob `55053022e5312274a250a3384a28c07abdcb2f6f`, source register `e086134795c61ee97240af2dd50609340f8a6601`
-7. Garamut / East Sepik-Ramu PNG — spec `64359d37f5e7ceccbd7b244ed79a590951e3ab8f`, build `acb90a987f17c35ee94828f9433f5dd0055a0609`, blob `d78ec124d1111ba6a82137b58c0922fa7fdc1a36`, source register `312722e0df95c44e137fe19618c445d541ffd23a`
+6. Tongiaki / Tonga — spec `00f5a984ae4c376753b2ed6f64dc955307c9e38d`, build `e577bd6669c0d32f41078fa3124a03539cecd460`, blob `55053022e5312274a250a3384a28c07abdcb2f6f`
+7. Garamut / East Sepik-Ramu PNG — spec `64359d37f5e7ceccbd7b244ed79a590951e3ab8f`, build `acb90a987f17c35ee94828f9433f5dd0055a0609`, blob `d78ec124d1111ba6a82137b58c0922fa7fdc1a36`
 
-All seven are `SOURCE PASS / LIVE + USER PENDING`.
+All seven remain `SOURCE PASS / LIVE + USER PENDING`.
+No validated counts changed.
 
 # OCEANIA
 
-Research/build complete; validated count remains `2/4`.
-Promoted additions:
-- Tongiaki Double Hull / Tonga;
-- Garamut + Wooden Pounder / East Sepik-Ramu PNG.
+Research/build complete; validated `2/4`.
+Promoted/source-passed additions:
+- Tongiaki Double Hull / Tonga
+- Garamut + Wooden Pounder / East Sepik-Ramu PNG
 
-Kula remains `CONTEXT-SENSITIVITY HOLD / NOT AUTOMATIC FALLBACK`.
+Kula = `CONTEXT-SENSITIVITY HOLD / NOT AUTOMATIC FALLBACK`.
 
-# VERCEL — CURRENT REAL STATE
+# VERCEL CURRENT REAL STATE
 
 Infrastructure register:
 `CONTINENTAL_BALANCE_B2_LIVE_INFRASTRUCTURE_CHECKPOINT_2026_08_28.md`
 
-Checkpoint commit:
-`9a4921ebb2c15e658113c66e2bed6ae2015888c7`
+Latest identified READY Preview:
+- deployment `dpl_8GgBz2Kt81mr1YTLTR3UTk9UgMi4`
+- URL `https://relational-key-collectionrelational-key-collection-55w553e3i.vercel.app`
+- Git SHA `32b67f69b7ead0ff30f443e1efe803222afb31cd`
 
-Project:
-`relational-key-collectionrelational-key-collection`
-Project ID `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
-Team ID `team_twDc66jGM0sPvNM4I5Huc0x7`
+It contains source ancestry through Mate + Bombilla, but not Tongiaki/Garamut.
+Astrolabe route authenticated/fetched at HTTP 200.
+Janney route probe hit SSO 302; do not treat as fail or PASS.
 
-Latest identified READY branch Preview:
-`dpl_8GgBz2Kt81mr1YTLTR3UTk9UgMi4`
-URL `https://relational-key-collectionrelational-key-collection-55w553e3i.vercel.app`
-Git SHA `32b67f69b7ead0ff30f443e1efe803222afb31cd`
+Infrastructure verdict:
+# `VERCEL CAPACITY PARTIALLY RECOVERED / CURRENT FULL-QUEUE PREVIEW NOT YET IDENTIFIED`
 
-Mate build `6b1a12b…` is an ancestor; therefore source ancestry includes the first five new candidates through Mate/Bombilla.
+# EUROPE +2 — B2.2I COMPLETE
 
-Astrolabe candidate route was fetched successfully with authenticated Vercel access:
-`HTTP 200`.
+Register:
+`CONTINENTAL_BALANCE_B2_2I_EUROPE_CANDIDATE_POOL.md`
 
-Janney subroute probe encountered SSO 302 behavior. Do not convert that to route failure or PASS. Other routes still need independent live checks.
+Pool commit:
+# `073aedf891cce84281e0e26798b2df87ac706ef3`
 
-No READY Preview containing later Tongiaki/Garamut has been identified yet.
+Status:
+# `PASS / 7 CANDIDATES / NO PROMOTION YET`
 
-Canonical infrastructure verdict:
-# **VERCEL CAPACITY PARTIALLY RECOVERED / CURRENT FULL-QUEUE PREVIEW NOT YET IDENTIFIED**
+Current Europe validated:
+1. UK / Stereoscopy — controlled disparity → depth
+2. France / Boulle — shared cut → complementary inverse
 
-The prior blanket `retry in 24h` assumption is stale.
+Seven Europe candidates:
+1. Catoptric Cylinder Anamorphosis / France + early-modern Europe
+   - primary R6 reflection / optical decode
+   - law direction: curved reflection rectifies a deliberately distorted image
+   - strongest visual proof; must stay distinct from stereoscopic depth
+2. Straight Slide Rule / London, UK
+   - R11 relative logarithmic scale translation
+   - strong pair, but overlaps Astrolabe through relative scale motion and duplicates UK geography
+3. Swiss Cylinder Music Box / Jura, Switzerland
+   - R11 mechanical encode/decode
+   - pinned cylinder + tuned comb → ordered notes
+   - strong pair; sound-medium crowding and third drive subsystem must be bounded
+4. Pantograph / Scheiner / Dillingen-Germany
+   - proportional linked transformation
+   - tracer ↔ writer through parallelogram
+   - strong law; major center/linkage-product risk
+5. Anchor Escapement / English-European clockmaking
+   - R9 alternating lock/release regulation
+   - three-subsystem causality risk and UK duplication
+6. Cardan Grille / Italy
+   - R6 selective visibility / decode
+   - clean two-layer pair; weaker museum/object source trail than top candidates
+7. Jacquard Card + Reader / Lyon-France
+   - R11 punched instruction / mechanical decode
+   - excellent source evidence; textile/system complexity + France duplication
 
-# IMMEDIATE TASK — B2.2I EUROPE POOL
+Deep-review priority:
+- Catoptric Anamorphosis
+- Pantograph
+- Swiss Cylinder Music Box
+- Straight Slide Rule
 
-Europe currently:
-1. UK / Stereoscopy — `CONTROLLED DISPARITY PRODUCES DEPTH`
-2. France / Boulle — `ONE SHARED CUT PRODUCES TWO COMPLEMENTARY INVERSES`
+# IMMEDIATE TASK — B2.2J
 
-Need **+2 validated eventually**, but first minimum six source-grounded candidates.
+Create `CONTINENTAL_BALANCE_B2_2J_EUROPE_PROMOTION_MATRIX.md`.
 
-Avoid simple duplication of:
-- stereoscopic disparity;
-- reciprocal/shared cutting;
-- astrolabe relative rotation;
-- Janney latch/load path;
-- Metate abrasion;
-- Valparaíso counterweight;
-- Mate filtration;
-- Tongiaki structural coupling;
-- Garamut ordered-impact signaling.
+Deep-source/stress-test at minimum the four priority candidates. Score:
+1. source authority / object specificity;
+2. native pair necessity;
+3. emergent result;
+4. topology novelty vs 15 validated + 7 queued builds;
+5. interaction legibility;
+6. alternate-valid semantics;
+7. geographic contribution;
+8. truthfulness / pair-reduction risk;
+9. center-product risk;
+10. build feasibility.
 
-Current promising discovery lanes and source leads:
+Select exactly two family rounds OR leave a slot open if the evidence is not strong enough.
+Prefer a combination with materially different relational laws.
 
-## Catoptric anamorphosis / France-Europe
-- Science Museum Group cylindrical mirror for viewing anamorphosis paintings;
-- Science Museum catoptric cylinder + coloured pictures before 1753;
-- Met / Niceron evidence: distorted picture becomes legible in cylindrical mirror;
-- likely R6 reflection/decode.
-
-## Straight slide rule / London, UK
-- Science Museum Robert Bissaker 1654, earliest-known dated straight slide rule;
-- Oughtred first used logarithmic scales that could move relative to one another;
-- likely linear relative-displacement computation;
-- must compare against Astrolabe relative rotation and avoid another UK slot if stronger geographic options exist.
-
-## Swiss cylinder music box / Jura-Switzerland
-- Museum of Music Automatons, major Swiss cylinder/disc music-box collection and living Jura craft tradition;
-- storage media include pin-studded cylinders;
-- Smithsonian examples explicitly pair cylinder with tuned comb;
-- likely `stored pin geometry → comb excitation → ordered notes`;
-- sound-medium crowding must be reviewed against Ombak/Siku/Garamut.
-
-## Pantograph / Scheiner / Europe
-- Smithsonian NMAH: devised by Christoph Scheiner in 1603; instrument enlarges/reduces figures;
-- likely tracer point ↔ drawing point via linkage;
-- strong proportional transformation but central linkage may become product.
-
-## Anchor escapement / UK-European clockmaking
-- Science Museum Group has multiple anchor escapement models and longcase-clock examples;
-- possible law: reciprocal locking/release converts continuous drive into regulated steps;
-- pendulum/drive dependencies create pair-reduction risk.
-
-## Cardan grille / Italy
-- National Cryptologic Foundation historical description: perforated card laid over text, only letters through holes are read;
-- very strong selective visibility / decode pair;
-- source quality/object anchor must be deepened before promotion.
-
-## Jacquard card + reader/loom / France
-- Science Museum: holes in cards control which pins pass and which warp threads rise;
-- excellent physical encode/decode source;
-- textile-output overlap and complex reader/loom system must be considered.
-
-Pool should choose at least six credible candidates, score pair-native necessity, third-result strength, novelty, geographic contribution, translation risk and cultural/historical specificity.
-
-After B2.2I PASS:
-- update CURRENT_STATE + HANDOVER immediately;
-- proceed to B2.2J deep-source/two-slot promotion matrix;
-- no family build before promotion + source/interaction spec freeze.
+After B2.2J:
+1. update CURRENT_STATE + HANDOVER immediately;
+2. then freeze the source/interaction spec for Europe Slot 1;
+3. no Europe build before spec freeze.
 
 # G4 POLISH — PARKED
 
