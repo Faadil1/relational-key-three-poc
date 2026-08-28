@@ -5,7 +5,7 @@ Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
 Global Refinement PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `GLOBAL_REFINEMENT_G3_2B_HOVER_MOBILE_PASS.md`
+Latest verified milestone: `GLOBAL_REFINEMENT_G4_1_KHIPU_POLISH_CANDIDATE.md`
 
 ## Product invariant
 
@@ -30,58 +30,39 @@ Validated at the anchor:
 - root + shell + filters/search pass;
 - collection usability `PASS WITH POLISH`.
 
-Historic consolidation golden preview:
-- `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ`;
-- `https://relational-key-collectionrelational-key-collection-4834ctm8z.vercel.app`.
-
-# ACTIVE PHASE — GLOBAL REFINEMENT
+# GLOBAL REFINEMENT STATUS
 
 ## G0 — Baseline Freeze
-Status: `PASS`
+`PASS`
 
 ## G1 — Collection Navigation Frame
-Status: `PASS`
+`PASS`
 
-Golden preview:
-- `dpl_87Bjr4pRX1sMQTBUE731gt42WeQA`;
-- `https://relational-key-collectionrelational-key-collection-gsdndspjm.vercel.app`.
+Golden preview: `dpl_87Bjr4pRX1sMQTBUE731gt42WeQA`
 
 Locked:
-- all 15 public routes use the collection-owned frame;
+- all 15 public routes use collection-owned frame;
 - `← BACK TO ATLAS` → `/#grid`;
-- shared runtime unchanged;
-- autonomous snapshots remain mechanism-level regression anchors.
+- shared runtime and autonomous snapshots remain regression anchors.
 
 ## G2 — Shell Legibility
-Status: `PASS`
+`PASS`
 
-Implementation:
-`eaee31ec38dcc2f31c46cb630e28357b30357a90`
+Implementation: `eaee31ec38dcc2f31c46cb630e28357b30357a90`
+Golden preview: `dpl_3hRXrW6TF8Ms6phXnXURfVQD8aqV`
 
-Golden preview:
-- `dpl_3hRXrW6TF8Ms6phXnXURfVQD8aqV`;
-- `https://relational-key-collectionrelational-key-collection-5zunbmuyw.vercel.app`;
-- deployed SHA `7ce047d7a47099fc94cb3d60b9399eb63830de55`.
-
-Locked rule:
+Law:
 # `LEGIBILITY ↑ ≠ FAMILY MECHANISM CHANGE`
 
 ## G3 — Atlas Family Individuality
 
-Status:
 # **PASS**
 
 Law:
 # `INDIVIDUALITY = RELATIONSHIP MECHANISM, NOT CULTURAL ORNAMENT`
 
-Implementation commit:
-`239f076fb9fc2936b16d793caa14c486eb182d05`
-
-Exact implementation preview:
-- deployment `dpl_EgKHruAvbW6exjHq8DGWvpEv8kV6`;
-- URL `https://relational-key-collectionrelational-key-collection-3lco5dm3j.vercel.app`;
-- state `READY / Preview`;
-- deployed SHA `239f076fb9fc2936b16d793caa14c486eb182d05`.
+Implementation: `239f076fb9fc2936b16d793caa14c486eb182d05`
+Exact implementation preview: `dpl_EgKHruAvbW6exjHq8DGWvpEv8kV6`
 
 Registers:
 - `GLOBAL_REFINEMENT_G3_ATLAS_INDIVIDUALITY_SPEC.md`
@@ -89,74 +70,99 @@ Registers:
 - `GLOBAL_REFINEMENT_G3_2A_STATIC_INDIVIDUALITY_PASS.md`
 - `GLOBAL_REFINEMENT_G3_2B_HOVER_MOBILE_PASS.md`
 
-G3.2A evidence:
-- `388cd19c-e93c-41f3-9548-7f32addf1883.mp4`;
-- ~10.11 s, 1912×964, 30 fps;
-- fifteen signatures materially more distinguishable while the atlas remains one system;
-- no cultural skinning, flags, stereotypes or logo-like replacement.
+User evidence:
+- `388cd19c-e93c-41f3-9548-7f32addf1883.mp4` — static 15-family differentiation pass;
+- `cb023959-0e6b-4f64-bd23-721c02a9be2f.mp4` — hover + narrowed-layout closeout.
 
-G3.2B evidence:
-- `cb023959-0e6b-4f64-bd23-721c02a9be2f.mp4`;
-- ~20.10 s, 1896×964, 30 fps;
-- hover movement remains micro/subordinate;
-- narrow-width rendering keeps SVGs and card hierarchy clean;
-- no visible overflow or distorted mechanism geometry.
+Confirmed:
+- all 15 signatures materially more distinguishable;
+- one common RELATIONAL KEY system remains visible;
+- hover remains micro/subordinate;
+- narrowed SVG presentation shows no visible overflow/distortion.
 
-Residual final regression:
-- perform an explicit ~390 px viewport check during G6. The G3.2B capture demonstrates narrowing but is not treated as a measured 390 px device gate.
-
-No G3 patch remains open.
+Residual G6 check:
+- run an explicit measured ~390 px viewport regression.
 
 ## G4 — PASS WITH POLISH Backlog
 
 Status:
-# **ACTIVE — INVENTORY LOCKED / G4.1 KHIPU NEXT**
+# **ACTIVE — G4.1 KHIPU SOURCE PASS / LIVE CANDIDATE NEXT**
 
-Register:
+Inventory:
 `GLOBAL_REFINEMENT_G4_POLISH_INVENTORY.md`
 
-G4 governing rule:
+G4 law:
 # `POLISH MUST INCREASE LEGIBILITY WITHOUT REWRITING THE RELATIONSHIP.`
 
-Evidence tiers:
+### Evidence tiers
 
-### Tier A — actionable documented debt
-1. **Khipu / Peru** — central knot hierarchy + tension change perceptibility.
-2. **Kento / Japan** — `kagi` / `hikitsuki` hierarchy + OTHER BLOCK colour-layer displacement readability; center remains subordinate.
-3. **Siku / Bolivia** — central interlock field + bottom microcopy are small at desktop scale.
+Tier A — actionable documented debt:
+1. Khipu — central knot hierarchy + tension-change perceptibility.
+2. Kento — kagi/hikitsuki + OTHER BLOCK displacement legibility.
+3. Siku — central interlock field + bottom microcopy legibility.
 
-### Tier B — historical PASS WITH POLISH but no precise patch authorization yet
-- **Zellige / Fès** — re-audit before mutation.
-- **Ombak / Bali** — re-audit before mutation; preserve controlled difference.
-- **Swell / Marshall Islands** — re-audit before mutation.
+Tier B — re-audit before patch:
+- Zellige;
+- Ombak;
+- Swell.
 
-### Tier C — no current G4 patch evidence
-- Stereoscopy / UK;
-- Hika Ahi / Aotearoa;
-- Boulle / France;
-- shared-runtime City / Service / Signal / Frida / Food / Textile, unless a new issue is reproduced.
+Tier C — no current patch evidence:
+- Stereoscopy;
+- Hika Ahi;
+- Boulle;
+- City / Service / Signal / Frida / Food / Textile unless a new issue is reproduced.
 
-Candidate architecture:
-- existing autonomous `snapshot.html` remains the golden reference;
-- create a separate reversible polish candidate;
-- do not overwrite golden evidence before a dedicated live/user regression gate.
+### G4.1 — Khipu candidate
 
-### Immediate next output
+Register:
+`GLOBAL_REFINEMENT_G4_1_KHIPU_POLISH_CANDIDATE.md`
 
-# **G4.1 — KHIPU POLISH CANDIDATE DESIGN + IMPLEMENTATION**
+Golden source remains unchanged:
+- `families/khipu-peru/snapshot.html`
+- blob `cdc06bebbc2054463f4d2f61e59e5de261979ef9`
 
-Inspect the Khipu wrapper and snapshot first. Apply only the smallest reversible changes needed to strengthen central-knot hierarchy and tension perceptibility while preserving timing, truthfulness, mismatch semantics and pair architecture.
+Public route remains unchanged:
+- `families/khipu-peru/index.html`
 
-## Future gates
+Isolated candidate route:
+- `families/khipu-peru/g4-1.html`
 
-### G5 — Collection Cohesion
-Improve collection ↔ family transitions while preserving family-native distinction.
+Candidate implementation commit:
+# `64647ea78b04439ea9a57ece47f19490d9185d45`
 
-### G6 — Final Collection Validation
-Final root, routes, exact responsive regression including ~390 px, family mechanism regression and deployment audit.
+Source compare:
+- only `families/khipu-peru/g4-1.html` added;
+- 52 additions / 0 deletions;
+- no golden, wrapper, timing, JS, state or semantic mutation.
+
+Candidate technique:
+- load unchanged golden snapshot;
+- inject CSS-only override after same-origin iframe load;
+- modestly increase knot hierarchy;
+- make `approach → tension → registered` cord-state contrast easier to perceive;
+- preserve rejected residual and both-records-valid semantics.
+
+# IMMEDIATE NEXT GATE
+
+# **G4.1A — KHIPU LIVE CANDIDATE REGRESSION**
+
+Wait for / identify a Preview containing commit `64647ea…`, then audit `/families/khipu-peru/g4-1.html` against the golden public route.
+
+Required user sequence:
+- RESET / MATCHING RECORD → TEST RELATIONSHIP;
+- judge tension and knot hierarchy;
+- OTHER RECORD → TEST RELATIONSHIP;
+- verify residual + no invalidation;
+- compare to golden if needed.
+
+Do not promote or start Kento before Khipu receives source/live/user PASS.
+
+## Future
+
+G4.2 Kento → G4.3 Siku → G4.4 evidence re-audit Zellige/Ombak/Swell → G5 Collection Cohesion → G6 Final Collection Validation.
 
 Status vocabulary:
-`G3 PASS ≠ G4 INVENTORY LOCKED ≠ G4 PASS ≠ GLOBAL REFINEMENT COMPLETE ≠ FINAL COLLECTION PASS`.
+`G3 PASS ≠ G4.1 SOURCE PASS ≠ G4.1 USER PASS ≠ G4 PASS ≠ FINAL COLLECTION PASS`.
 
 ## Persistence protocol
 
