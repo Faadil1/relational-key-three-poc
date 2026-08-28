@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>RELATIONAL KEY — Counterweight Register / Valparaíso</title>
+<style>
+:root{
+  --bg:#090a09;--ink:#eee9df;--muted:#7f817b;--line:rgba(225,218,205,.14);
+  --rail:#656965;--steel:#a4a59f;--car:#9b714f;--car2:#6f5039;--warm:#c49b74;
+  font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}html,body{margin:0;min-width:320px;min-height:100%;background:var(--bg);color:var(--ink)}
+body{overflow-x:hidden;background:radial-gradient(circle at 50% -12%,rgba(122,92,68,.12),transparent 34%),linear-gradient(#080908,#0b0c0b)}
+button{font:inherit}.shell{min-height:100vh;padding:14px clamp(10px,2vw,34px) 24px}.top{min-height:66px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px;border-bottom:1px solid var(--line)}
+.brand{font:800 9px ui-monospace,monospace;letter-spacing:.2em;color:#c2a185}.headline{text-align:center}.headline small,.meta{display:block;font:700 6px ui-monospace,monospace;letter-spacing:.14em;color:#74776f}.headline b{display:block;margin-top:3px;font:600 21px Georgia,serif}.meta{text-align:right}
+.intro{text-align:center;margin:17px auto 14px}.intro span{font:800 6px ui-monospace,monospace;letter-spacing:.15em;color:#98755d}.intro h1{margin:6px 0 4px;font:600 clamp(26px,3vw,42px) Georgia,serif}.intro p{margin:0;font:italic 12px Georgia,serif;color:#96958f}
+.stage{width:min(900px,100%);margin:auto}.pair{display:grid;grid-template-columns:minmax(0,1fr) 92px minmax(0,1fr);align-items:stretch;gap:10px}.trackCard{position:relative;height:min(57vh,530px);min-height:390px;border-radius:26px;overflow:hidden;border:1px solid rgba(220,215,205,.16);background:linear-gradient(165deg,#171a18,#0d0f0e 72%);box-shadow:0 28px 58px rgba(0,0,0,.42)}
+.trackCard:before{content:"";position:absolute;inset:0;background:linear-gradient(115deg,transparent 0 44%,rgba(255,255,255,.018) 45%,transparent 46%),repeating-linear-gradient(90deg,transparent 0 32px,rgba(255,255,255,.011) 33px)}.role{position:absolute;z-index:8;left:7%;top:5%;font:800 6px ui-monospace,monospace;letter-spacing:.12em;color:#bca083}.rightCard .role{left:auto;right:7%;text-align:right}.copy{position:absolute;z-index:8;left:7%;right:7%;bottom:5%}.rightCard .copy{text-align:right}.copy span{font:800 6px ui-monospace,monospace;letter-spacing:.1em;color:#826d5c}.copy strong{display:block;margin-top:4px;font:600 clamp(18px,2vw,27px) Georgia,serif}.copy small{display:block;margin-top:5px;font:700 5px ui-monospace,monospace;letter-spacing:.08em;color:#858a82;line-height:1.4}
+.track{position:absolute;z-index:3;left:50%;top:12%;bottom:14%;width:54%;transform:translateX(-50%) skewY(-4deg);border-left:2px solid #515652;border-right:2px solid #515652}.track:before,.track:after{content:"";position:absolute;top:0;bottom:0;width:1px;background:repeating-linear-gradient(to bottom,rgba(188,191,184,.34) 0 7px,transparent 7px 15px)}.track:before{left:33%}.track:after{right:33%}.sleepers{position:absolute;inset:0;background:repeating-linear-gradient(to bottom,transparent 0 17px,rgba(113,117,111,.32) 18px 20px,transparent 21px 28px)}
+.terminal{position:absolute;z-index:4;left:50%;width:70%;height:1px;transform:translateX(-50%);background:linear-gradient(90deg,transparent,rgba(188,191,184,.32),transparent)}.terminal.topT{top:13%}.terminal.bottomT{bottom:15%}.terminal:after{content:attr(data-label);position:absolute;left:50%;transform:translateX(-50%);top:5px;font:800 4px ui-monospace,monospace;letter-spacing:.1em;color:#5f645e;white-space:nowrap}
+.car{position:absolute;z-index:12;left:50%;top:72%;width:min(60%,132px);height:72px;transform:translate(-50%,-50%) skewY(-3deg);border-radius:12px 12px 8px 8px;background:linear-gradient(180deg,#a77b58,#79563e 55%,#4f3d31);border:1px solid rgba(226,213,196,.26);box-shadow:0 13px 19px rgba(0,0,0,.42),inset 0 6px 8px rgba(255,255,255,.04);cursor:grab;touch-action:none;outline:none;transition:top .08s linear,filter .25s ease}.car:before{content:"";position:absolute;left:11%;right:11%;top:18%;height:29%;border-radius:5px;background:linear-gradient(90deg,#242a29 0 29%,#746754 30% 34%,#242a29 35% 64%,#746754 65% 69%,#242a29 70%);border:1px solid rgba(214,208,197,.15)}.car:after{content:"";position:absolute;left:17%;right:17%;bottom:-7px;height:8px;background:radial-gradient(circle at 10% 50%,#313431 0 4px,transparent 5px),radial-gradient(circle at 90% 50%,#313431 0 4px,transparent 5px)}.car.dragging{cursor:grabbing;filter:brightness(1.08);transition:none}.car:focus-visible{box-shadow:0 0 0 2px rgba(196,155,116,.72),0 13px 19px rgba(0,0,0,.42)}.carLabel{position:absolute;left:50%;bottom:8px;transform:translateX(-50%);font:800 5px ui-monospace,monospace;letter-spacing:.12em;color:rgba(239,225,207,.7);white-space:nowrap}
+.relation{position:relative;min-height:390px;display:grid;place-items:center}.cable{position:absolute;left:50%;top:12%;bottom:14%;width:1px;background:linear-gradient(#4d504d,#969995 18%,#6e726e 50%,#969995 82%,#4d504d);opacity:.65}.pulley{position:absolute;top:10.5%;left:50%;width:34px;height:34px;border:1px solid rgba(187,190,184,.27);border-radius:50%;transform:translateX(-50%);background:#111310}.pulley:after{content:"";position:absolute;inset:7px;border:1px solid rgba(187,190,184,.18);border-radius:50%}.cross{position:absolute;left:50%;top:50%;width:48px;height:1px;background:rgba(190,191,185,.17);transform:translate(-50%,-50%)}.cross:after{content:"CROSS";position:absolute;left:50%;top:6px;transform:translateX(-50%);font:800 4px ui-monospace,monospace;letter-spacing:.11em;color:#565b56}.relationLabel{position:absolute;left:50%;bottom:8%;width:88px;transform:translateX(-50%);text-align:center;font:800 5px ui-monospace,monospace;letter-spacing:.1em;color:#747970;line-height:1.55}.pair.motion .cable{box-shadow:0 0 8px rgba(196,155,116,.08)}
+.controls{width:min(900px,96vw);margin:12px auto 0;display:flex;justify-content:center;gap:7px;flex-wrap:wrap}.controls button{min-height:40px;border:1px solid rgba(199,194,184,.19);background:#111310;color:#898d86;padding:0 14px;font:800 6px ui-monospace,monospace;letter-spacing:.1em;cursor:pointer}.controls button:hover{border-color:rgba(196,155,116,.4);color:#cfb69f}.controls button:focus-visible{outline:2px solid rgba(196,155,116,.65);outline-offset:2px}.state{text-align:center;min-height:40px;margin-top:7px;font:800 6px ui-monospace,monospace;letter-spacing:.09em;color:#858a82;line-height:1.6}.state strong{color:#c5a280}.truth{text-align:center;margin-top:6px;font:800 5px ui-monospace,monospace;letter-spacing:.08em;color:#626761}.source{text-align:center;margin:8px auto 0;max-width:900px;font:500 10px Georgia,serif;color:#737870;line-height:1.5}.hint{text-align:center;margin-top:6px;font:800 5px ui-monospace,monospace;letter-spacing:.1em;color:#5f645e}
+@media(max-width:650px){.shell{padding-left:7px;padding-right:7px}.top{grid-template-columns:auto 1fr}.meta{display:none}.headline b{font-size:18px}.brand{font-size:8px}.intro h1{font-size:27px}.stage{width:100%}.pair{grid-template-columns:minmax(0,1fr) 42px minmax(0,1fr);gap:4px}.trackCard{height:min(58vh,470px);min-height:390px;border-radius:18px}.relation{min-height:390px}.pulley{width:25px;height:25px}.relationLabel{width:40px;font-size:4px;letter-spacing:.06em}.copy strong{font-size:17px}.copy small,.role{font-size:4px}.car{width:min(72%,106px);height:62px}.carLabel{font-size:4px}.terminal:after{font-size:3px}.source{font-size:9px}.controls button{min-height:38px;padding:0 11px}.hint{font-size:4px}}
+</style>
+</head>
+<body>
+<main class="shell">
+<header class="top">
+  <div class="brand">RELATIONAL KEY</div>
+  <div class="headline"><small>CONTINENTAL BALANCE B2 · SOUTH AMERICA CANDIDATE</small><b>Counterweight Register</b></div>
+  <div class="meta">VALPARAÍSO · CHILE<br>TWO-CAR FUNICULAR RELATION</div>
+</header>
+<section class="intro">
+  <span>HISTORIC VALPARAÍSO ASCENSORES · LINKED OPPOSITE MOTION</span>
+  <h1>Move either car. The other must answer in reverse.</h1>
+  <p>The interaction isolates the documented two-car counterbalancing relation, not the traction engineering.</p>
+</section>
+<section class="stage">
+  <div class="pair" id="pair">
+    <article class="trackCard leftCard">
+      <div class="role">CARD A · FUNICULAR CAR A</div><div class="track"><div class="sleepers"></div></div><div class="terminal topT" data-label="HILL TERMINAL"></div><div class="terminal bottomT" data-label="LOW TERMINAL"></div>
+      <div class="car" id="carA" tabindex="0" role="slider" aria-label="Funicular car A height" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div class="carLabel">CAR A</div></div>
+      <div class="copy"><span>COUNTERWEIGHT MEMBER A</span><strong>Car A</strong><small>DIRECT VERTICAL INPUT · SHARED FUNICULAR RELATION</small></div>
+    </article>
+
+    <div class="relation"><div class="pulley"></div><div class="cable"></div><div class="cross"></div><div class="relationLabel" id="relationLabel">SHARED SYSTEM · AT REST</div></div>
+
+    <article class="trackCard rightCard">
+      <div class="role">CARD B · FUNICULAR CAR B</div><div class="track"><div class="sleepers"></div></div><div class="terminal topT" data-label="HILL TERMINAL"></div><div class="terminal bottomT" data-label="LOW TERMINAL"></div>
+      <div class="car" id="carB" tabindex="0" role="slider" aria-label="Funicular car B height" aria-valuemin="0" aria-valuemax="100" aria-valuenow="100"><div class="carLabel">CAR B</div></div>
+      <div class="copy"><span>COUNTERWEIGHT MEMBER B</span><strong>Car B</strong><small>EQUAL / OPPOSITE POSITION · SAME RELATIONAL RATE</small></div>
+    </article>
+  </div>
+
+  <div class="controls"><button id="swap">SWAP START</button><button id="reset">RESET</button></div>
+  <div class="state" id="state"><strong>A LOW / B HIGH</strong> · opposed positions; shared relation at rest.</div>
+  <div class="hint">DRAG EITHER CAR VERTICALLY · ↑ / ↓ ARROW KEYS ALSO WORK</div>
+  <div class="truth">STRUCTURAL TRANSLATION · DOCUMENTED TWO-CAR VALPARAÍSO FUNICULAR RELATION · NOT A TRACTION OR LOAD ENGINEERING MODEL</div>
+  <div class="source">Source anchors: Consejo de Monumentos Nacionales de Chile — Ascensores de Valparaíso / Ascensor Concepción; Chilean heritage technical documentation describing two cars moving simultaneously in opposite directions, with one counterbalancing the other.</div>
+</section>
+</main>
+<script>
+const pair=document.getElementById('pair'),carA=document.getElementById('carA'),carB=document.getElementById('carB'),state=document.getElementById('state'),relationLabel=document.getElementById('relationLabel'),swap=document.getElementById('swap'),resetBtn=document.getElementById('reset');
+const TOP=14,BOTTOM=72,RANGE=BOTTOM-TOP;
+let posA=0,lastPosA=0,drag=null;
+function clamp(v){return Math.max(0,Math.min(1,v))}
+function carTop(pos){return BOTTOM-pos*RANGE}
+function describe(delta){if(Math.abs(posA-.5)<.045){state.innerHTML='<strong>CROSSING</strong> · equal height, opposite movement remains linked.';relationLabel.textContent='CROSSING · A ↕ B';return}if(posA<=.035){state.innerHTML='<strong>A LOW / B HIGH</strong> · opposed terminal positions; relation remains active.';relationLabel.textContent='OPPOSED HEIGHTS';return}if(posA>=.965){state.innerHTML='<strong>A HIGH / B LOW</strong> · heights exchanged; relation remains active.';relationLabel.textContent='HEIGHTS EXCHANGED';return}if(delta>0){state.innerHTML='<strong>A ↑ / B ↓</strong> · one positional change is answered by its exact inverse.';relationLabel.textContent='OPPOSITE MOTION'}else if(delta<0){state.innerHTML='<strong>A ↓ / B ↑</strong> · reversing one member reverses the other.';relationLabel.textContent='OPPOSITE MOTION'}else{state.innerHTML='<strong>LINKED POSITION</strong> · two members remain counterposed on one funicular relation.';relationLabel.textContent='SHARED SYSTEM · AT REST'}}
+function render(next,source='system'){next=clamp(next);const delta=next-lastPosA;posA=next;const posB=1-posA;carA.style.top=`${carTop(posA)}%`;carB.style.top=`${carTop(posB)}%`;carA.setAttribute('aria-valuenow',String(Math.round(posA*100)));carB.setAttribute('aria-valuenow',String(Math.round(posB*100)));pair.classList.toggle('motion',Math.abs(delta)>.0001);describe(delta);lastPosA=posA}
+function normalizedFromPointer(e,card){const r=card.getBoundingClientRect();const top=r.top+r.height*(TOP/100),bottom=r.top+r.height*(BOTTOM/100);return clamp(1-(e.clientY-top)/(bottom-top))}
+function begin(e,which){drag={which,id:e.pointerId};const car=which==='A'?carA:carB;car.classList.add('dragging');car.setPointerCapture(e.pointerId);move(e,which)}
+function move(e,which){if(!drag||drag.which!==which)return;const card=(which==='A'?carA:carB).parentElement;const p=normalizedFromPointer(e,card);render(which==='A'?p:1-p,which)}
+function end(e,which){const car=which==='A'?carA:carB;car.classList.remove('dragging');if(drag){try{car.releasePointerCapture(drag.id)}catch{}drag=null}pair.classList.remove('motion')}
+function keyMove(e,which){if(!['ArrowUp','ArrowDown'].includes(e.key))return;e.preventDefault();const step=e.key==='ArrowUp'?.055:-.055;render(which==='A'?posA+step:posA-step,which)}
+carA.addEventListener('pointerdown',e=>begin(e,'A'));carA.addEventListener('pointermove',e=>move(e,'A'));carA.addEventListener('pointerup',e=>end(e,'A'));carA.addEventListener('pointercancel',e=>end(e,'A'));carA.addEventListener('keydown',e=>keyMove(e,'A'));
+carB.addEventListener('pointerdown',e=>begin(e,'B'));carB.addEventListener('pointermove',e=>move(e,'B'));carB.addEventListener('pointerup',e=>end(e,'B'));carB.addEventListener('pointercancel',e=>end(e,'B'));carB.addEventListener('keydown',e=>keyMove(e,'B'));
+swap.onclick=()=>render(1-posA,'swap');resetBtn.onclick=()=>render(0,'reset');render(0);
+</script>
+</body>
+</html>
