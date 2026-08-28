@@ -84,84 +84,70 @@ All nine Balance Gate 2 additions have autonomous SOURCE-PASS candidates:
    - build register `CONTINENTAL_BALANCE_B2_3R_EUROPE_SWISS_MUSIC_BOX_BUILD_CANDIDATE.md`
    - register commit `be6adf096512fc00390ced92db7ddedc4452d3e9`
 
-All nine are still:
+All nine remain:
 # `SOURCE PASS / LIVE + USER VISUAL OR VISUAL+AUDIO PENDING`
 
 # B2.4A — FULL NINE-CANDIDATE LIVE TECHNICAL GATE
 
 Register:
-# `CONTINENTAL_BALANCE_B2_4A_FULL_QUEUE_LIVE_TECHNICAL_GATE.md`
+`CONTINENTAL_BALANCE_B2_4A_FULL_QUEUE_LIVE_TECHNICAL_GATE.md`
 
 Register commit:
-# `95eb03cad2b80d5344401d950f10263e71add490`
+`95eb03cad2b80d5344401d950f10263e71add490`
 
 Status:
 # **BLOCKED — VERCEL BUILD RATE LIMIT / NO FULL-QUEUE PREVIEW YET**
 
-This is an external infrastructure blocker, not a candidate/source failure.
+Vercel project:
+- Project ID `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
+- Team ID `team_twDc66jGM0sPvNM4I5Huc0x7`
+- Branch `collection/global-refinement-1`
 
-## Vercel project
+Latest READY Preview found:
+- deployment `dpl_8GgBz2Kt81mr1YTLTR3UTk9UgMi4`
+- URL `https://relational-key-collectionrelational-key-collection-55w553e3i.vercel.app`
+- SHA `32b67f69b7ead0ff30f443e1efe803222afb31cd`
 
-Project `relational-key-collectionrelational-key-collection`
-Project ID `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
-Team ID `team_twDc66jGM0sPvNM4I5Huc0x7`
-Branch `collection/global-refinement-1`
+This deployment contains ancestry through Mate + Bombilla but predates Tongiaki, Garamut, Anamorphosis and Swiss Music Box. It is not a full-queue validation environment.
 
-## Latest READY Preview found
-
-Deployment:
-`dpl_8GgBz2Kt81mr1YTLTR3UTk9UgMi4`
-
-URL:
-`https://relational-key-collectionrelational-key-collection-55w553e3i.vercel.app`
-
-Deployed SHA:
-`32b67f69b7ead0ff30f443e1efe803222afb31cd`
-
-This deployment contains ancestry through Mate + Bombilla, but predates Tongiaki, Garamut, Anamorphosis and Swiss Music Box.
-It is NOT a full-queue validation environment.
-
-Previously:
-- Astrolabe route authenticated/fetched at HTTP 200;
-- Janney probe encountered SSO 302; no PASS or FAIL inferred.
-
-## Current-head Vercel status
-
-Commit checked:
-`b1eeddf6c531f411c299260289893a4c2c6a2851`
-
-GitHub/Vercel status explicitly reports failure targets containing:
-`upgradeToPro=build-rate-limit`
-
-Collection context affected:
-`Vercel – relational-key-collectionrelational-key-collection`
-
-Additional older family-linked Vercel contexts on the same repository also report the same build-rate-limit failure.
+Current-head Vercel check:
+- checked commit `b1eeddf6c531f411c299260289893a4c2c6a2851`
+- collection deployment status = failure
+- target contains `upgradeToPro=build-rate-limit`
+- several older family-linked Vercel contexts attached to the repo show the same rate-limit condition.
 
 Canonical verdict:
 # **FULL-QUEUE PREVIEW CREATION CURRENTLY BLOCKED BY VERCEL BUILD RATE LIMIT.**
 
-Do not invent LIVE PASS.
-Do not use the older partial Preview as a nine-candidate Preview.
-Do not change validated counts.
+Do not invent LIVE PASS or change validated counts.
 
-# RECOVERY PROTOCOL
+# PR #21 SYNCHRONIZATION
 
-When build capacity clears:
-1. list Vercel deployments;
-2. identify first READY Preview on `collection/global-refinement-1` whose SHA contains Music Box build `c8c1af1...` as ancestor;
-3. record exact deployment ID, URL and SHA;
-4. probe all nine routes and classify only from evidence: HTTP 200 / SSO-AUTH BLOCKED / MISSING-ERROR;
-5. persist B2.4A-R immediately;
-6. begin grouped user walkthroughs;
-7. every candidate receives an independent PASS/PATCH/REJECT verdict.
+PR remains:
+# `DRAFT / DO NOT MERGE`
 
-# IMMEDIATE NEXT OUTPUT
+Its body must reflect:
+- G0–G3 PASS;
+- G4 PARKED;
+- Continental Balance Gate 2 active;
+- all 9 required expansion candidates SOURCE PASS;
+- validated counts unchanged;
+- B2.4A blocked only by Vercel build-rate-limit;
+- next action = retry full-queue Preview identification, then independent user gates.
+
+# RECOVERY PROTOCOL / NEXT OUTPUT
 
 # **B2.4A-R — RETRY FULL-QUEUE PREVIEW IDENTIFICATION WHEN VERCEL BUILD CAPACITY CLEARS**
 
-No additional family research/build is required for continental parity at this stage.
-The next meaningful Balance Gate work is independent live/user validation of these nine candidates.
+When capacity clears:
+1. list current deployments;
+2. identify first READY Preview on `collection/global-refinement-1` whose SHA contains Music Box build `c8c1af1...` as ancestor;
+3. record exact deployment ID / URL / SHA;
+4. probe all nine routes and classify evidence only as HTTP 200 / SSO-AUTH BLOCKED / MISSING-ERROR;
+5. persist recovery gate immediately;
+6. begin grouped user walkthroughs with independent verdict for each candidate.
+
+No additional family research/build is required for continental parity before these validation gates.
 
 # G4 POLISH — PARKED
 
@@ -169,7 +155,7 @@ Khipu reversible candidate preserved:
 `families/khipu-peru/g4-1.html`
 implementation `64647ea78b04439ea9a57ece47f19490d9185d45`
 
-After 24-family equilibrium:
+After validated 24-family equilibrium:
 B2.5 24-family collection regression → G4 polish → G5 cohesion → G6 final validation.
 
 # PERSISTENCE PROTOCOL — MANDATORY
