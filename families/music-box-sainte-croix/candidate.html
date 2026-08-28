@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>RELATIONAL KEY — Pin-to-Comb Register / Sainte-Croix</title>
+<style>
+:root{--bg:#090907;--panel:#15130f;--ink:#eee7da;--muted:#8c8274;--brass:#b88d54;--steel:#c9c6bf;--line:rgba(223,203,170,.16);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html,body{margin:0;min-width:320px;min-height:100%;background:var(--bg);color:var(--ink)}body{overflow-x:hidden;background:radial-gradient(circle at 50% -8%,rgba(145,112,65,.11),transparent 36%),linear-gradient(#080806,#0d0b08)}button{font:inherit}.shell{min-height:100vh;padding:14px clamp(12px,2.2vw,34px) 26px}.top{min-height:68px;display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:16px;border-bottom:1px solid var(--line)}.brand{font:800 9px ui-monospace,monospace;letter-spacing:.2em;color:#d3ad73}.headline{text-align:center}.headline small,.meta{display:block;font:700 6px ui-monospace,monospace;letter-spacing:.14em;color:#72695e}.headline b{display:block;margin-top:3px;font:600 21px Georgia,serif}.meta{text-align:right}.intro{text-align:center;margin:18px auto 16px}.intro span{font:800 6px ui-monospace,monospace;letter-spacing:.15em;color:#a78052}.intro h1{margin:6px 0 4px;font:600 clamp(27px,3vw,43px) Georgia,serif}.intro p{margin:0;font:italic 12px Georgia,serif;color:#958b7d}.stage{width:min(1320px,100%);margin:auto}.pair{display:grid;grid-template-columns:minmax(0,1fr) 138px minmax(0,1fr);align-items:center;gap:10px}.slot{position:relative;transition:transform .55s cubic-bezier(.2,.8,.2,1)}.card{position:relative;aspect-ratio:856/540;border-radius:25px;overflow:hidden;border:1px solid rgba(221,198,159,.18);background:linear-gradient(145deg,rgba(31,28,21,.99),rgba(14,12,9,.99));box-shadow:0 28px 58px rgba(0,0,0,.44)}.card:before{content:"";position:absolute;inset:0;background:repeating-linear-gradient(95deg,transparent 0 30px,rgba(255,255,255,.011) 31px),radial-gradient(circle at 50% 45%,rgba(184,141,84,.08),transparent 50%);pointer-events:none}.role{position:absolute;z-index:8;top:6%;left:6%;font:800 6px ui-monospace,monospace;letter-spacing:.12em;color:#d1ad77}.rightCard .role{left:auto;right:6%;text-align:right}.copy{position:absolute;z-index:8;left:6%;right:6%;bottom:7%}.rightCard .copy{text-align:right}.copy span{font:800 6px ui-monospace,monospace;letter-spacing:.11em;color:#97734a}.copy strong{display:block;margin-top:4px;font:600 clamp(20px,2.15vw,31px) Georgia,serif}.copy small{display:block;margin-top:6px;font:700 6px ui-monospace,monospace;letter-spacing:.08em;color:#948a7c;line-height:1.45}.mechanism{position:absolute;inset:16% 7% 19%;display:grid;place-items:center}.cylinderWrap{width:82%;max-width:390px;position:relative;touch-action:none;cursor:grab;outline:none;transition:transform .55s cubic-bezier(.2,.8,.2,1)}.cylinderWrap.dragging{cursor:grabbing}.cylinderWrap:focus-visible{filter:drop-shadow(0 0 8px rgba(213,177,117,.5))}.cylinder{height:112px;border-radius:56px / 23px;position:relative;overflow:hidden;border:1px solid rgba(220,190,144,.42);background:linear-gradient(180deg,#59452e 0%,#9a7449 16%,#c69a61 35%,#6c5034 58%,#b18555 77%,#4c3a29 100%);box-shadow:inset 0 10px 18px rgba(255,255,255,.09),inset 0 -12px 22px rgba(0,0,0,.32),0 20px 30px rgba(0,0,0,.34)}.cylinder:before,.cylinder:after{content:"";position:absolute;top:0;height:100%;width:36px;border-radius:50%;border:1px solid rgba(221,196,157,.28);background:radial-gradient(ellipse at 45% 50%,#bd925c,#5b442d 66%,#31271d 100%)}.cylinder:before{left:-3px}.cylinder:after{right:-3px}.pinLayer{position:absolute;inset:0 25px;pointer-events:none}.pin{position:absolute;width:8px;height:8px;border-radius:50%;background:#ead5ac;border:1px solid #735637;box-shadow:0 2px 4px rgba(0,0,0,.45);transform:translate(-50%,-50%);transition:opacity .08s linear,filter .08s linear}.axisLabel{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);font:800 6px ui-monospace,monospace;letter-spacing:.12em;color:rgba(32,25,18,.65);pointer-events:none}.angleRead{margin-top:10px;text-align:center;font:800 6px ui-monospace,monospace;letter-spacing:.1em;color:#a69175}.combWrap{width:84%;max-width:390px;position:relative;transition:transform .55s cubic-bezier(.2,.8,.2,1)}.combBase{height:52px;border-radius:8px;background:linear-gradient(180deg,#9a958b,#514e49);border:1px solid rgba(240,235,226,.34);box-shadow:0 18px 28px rgba(0,0,0,.36);position:relative}.teeth{position:absolute;left:7%;right:7%;bottom:42px;height:120px;display:flex;align-items:flex-end;justify-content:center;gap:5px}.tooth{width:10px;height:var(--h);border-radius:4px 4px 1px 1px;background:linear-gradient(90deg,#5a5752,#dedbd4 45%,#7a7771);border:1px solid rgba(239,235,226,.35);transform-origin:bottom center;transition:filter .08s,transform .08s,box-shadow .08s}.tooth.hit{transform:rotate(2.2deg) translateX(2px);filter:brightness(1.45);box-shadow:0 0 12px rgba(224,195,143,.45)}.combLabel{text-align:center;margin-top:9px;font:800 6px ui-monospace,monospace;letter-spacing:.1em;color:#a49279}.eventTrace{height:14px;margin:10px auto 0;width:84%;display:flex;justify-content:center;gap:5px;align-items:center}.eventTrace i{width:5px;height:5px;border-radius:50%;background:#5f5548}.eventTrace i.live{background:#d0aa70;box-shadow:0 0 8px rgba(208,170,112,.35)}.bridge{height:226px;position:relative;display:grid;place-items:center;pointer-events:none}.bridge:before{content:"";position:absolute;left:7%;right:7%;top:50%;height:1px;background:linear-gradient(90deg,transparent,rgba(190,151,94,.23),transparent)}.contact{width:44px;height:80px;border:1px solid rgba(190,151,94,.16);border-radius:22px;display:grid;place-items:center;opacity:.3;transition:opacity .35s,transform .35s}.contact:before{content:"";width:2px;height:52px;background:repeating-linear-gradient(180deg,#6c5840 0 4px,transparent 4px 8px)}.bridgeLabel{position:absolute;top:calc(50% + 52px);width:132px;text-align:center;font:800 5px ui-monospace,monospace;letter-spacing:.1em;color:#70665a;line-height:1.45}.pair.engaged .left{transform:translateX(24px)}.pair.engaged .right{transform:translateX(-24px)}.pair.engaged .contact{opacity:1;transform:scale(.9)}.pair.engaged .cylinderWrap{transform:translateX(20px)}.pair.engaged .combWrap{transform:translateX(-20px)}.controls{width:min(1050px,96vw);margin:15px auto 0;display:flex;justify-content:center;gap:8px;flex-wrap:wrap}.controls button{min-height:42px;border:1px solid rgba(202,163,104,.22);background:#14110d;color:#9a8a77;padding:0 14px;font:800 6px ui-monospace,monospace;letter-spacing:.1em;cursor:pointer}.controls button.active{color:#ebd0a6;border-color:#b68b56;background:rgba(172,122,67,.11)}.controls button:focus-visible{outline:2px solid rgba(206,168,109,.72);outline-offset:2px}.readout{text-align:center;min-height:38px;margin-top:9px;font:800 6px ui-monospace,monospace;letter-spacing:.09em;color:#8e806d;line-height:1.6}.readout strong{color:#d4b27c}.truth{text-align:center;margin-top:7px;font:800 5px ui-monospace,monospace;letter-spacing:.08em;color:#675e53}.source{text-align:center;margin:8px auto 0;max-width:1060px;font:500 10px Georgia,serif;color:#786e61;line-height:1.5}.history{text-align:center;margin:7px auto 0;max-width:980px;font:800 5px ui-monospace,monospace;letter-spacing:.08em;color:#665e54}
+@media(max-width:980px){.pair{grid-template-columns:1fr;gap:0}.bridge{height:112px}.card{width:min(720px,100%);margin:auto}.bridge:before{left:50%;right:auto;top:6%;bottom:6%;width:1px;height:auto}.bridgeLabel{top:calc(50% + 36px)}.pair.engaged .left{transform:translateY(12px)}.pair.engaged .right{transform:translateY(-12px)}.pair.engaged .cylinderWrap{transform:translateY(7px)}.pair.engaged .combWrap{transform:translateY(-7px)}.top{grid-template-columns:auto 1fr}.meta{display:none}}
+@media(max-width:560px){.shell{padding-left:10px;padding-right:10px}.headline b{font-size:18px}.brand{font-size:8px}.intro h1{font-size:28px}.copy strong{font-size:21px}.copy small,.role{font-size:5px}.cylinder{height:90px}.teeth{height:95px;bottom:38px;gap:4px}.tooth{width:8px}.combBase{height:46px}.source{font-size:9px}.controls{display:grid;grid-template-columns:1fr 1fr}.controls button:last-child{grid-column:1/-1}}
+@media(prefers-reduced-motion:reduce){.slot,.cylinderWrap,.combWrap,.contact,.tooth{transition:none!important}}
+</style>
+</head>
+<body>
+<main class="shell">
+<header class="top">
+  <div class="brand">RELATIONAL KEY</div>
+  <div class="headline"><small>CONTINENTAL BALANCE B2 · EUROPE CANDIDATE</small><b>Pin-to-Comb Register</b></div>
+  <div class="meta">SAINTE-CROIX · SWITZERLAND<br>STRUCTURAL TRANSLATION</div>
+</header>
+<section class="intro">
+  <span>SWISS CYLINDER MUSIC BOX · PINNED CYLINDER ↔ TUNED COMB</span>
+  <h1>Stored geometry becomes ordered sound through contact.</h1>
+  <p>Engage the pair, then rotate the cylinder yourself. Nothing plays automatically.</p>
+</section>
+<section class="stage">
+  <div class="pair" id="pair">
+    <div class="slot left">
+      <article class="card leftCard">
+        <div class="role">CARD A · PINNED CYLINDER / STORED SEQUENCE</div>
+        <div class="mechanism">
+          <div class="cylinderWrap" id="cylinderWrap" tabindex="0" role="slider" aria-label="Rotate editorial pinned cylinder" aria-valuemin="0" aria-valuemax="359" aria-valuenow="0" aria-valuetext="cylinder not engaged">
+            <div class="cylinder"><div class="pinLayer" id="pinLayer"></div><div class="axisLabel">EDITORIAL PIN MAP</div></div>
+            <div class="angleRead" id="angleRead">+000° · MANUAL ROTATION</div>
+          </div>
+        </div>
+        <div class="copy"><span>STORED MECHANICAL INFORMATION MEMBER</span><strong id="cylinderTitle">Cylinder A</strong><small id="cylinderMeta">EDITORIAL SEQUENCE · DIRECT ROTATION AFTER ENGAGE</small></div>
+      </article>
+    </div>
+
+    <div class="bridge"><div class="contact"></div><div class="bridgeLabel" id="bridgeLabel">SEPARATE · NO PIN/TOOTH CONTACT</div></div>
+
+    <div class="slot right">
+      <article class="card rightCard">
+        <div class="role">CARD B · TUNED COMB / PHYSICAL DECODER</div>
+        <div class="mechanism">
+          <div class="combWrap">
+            <div class="teeth" id="teeth"></div>
+            <div class="combBase"></div>
+            <div class="combLabel" id="combLabel">6 EDITORIAL TEETH · VISUAL RESPONSE ACTIVE</div>
+            <div class="eventTrace" id="eventTrace" aria-label="Recent decoded events"></div>
+          </div>
+        </div>
+        <div class="copy"><span>PHYSICAL DECODER MEMBER</span><strong>Comb response</strong><small>SYNTHETIC TONE · INTERACTION PROOF ONLY</small></div>
+      </article>
+    </div>
+  </div>
+
+  <div class="controls"><button id="engageBtn">ENGAGE CYLINDER + COMB</button><button id="otherBtn">OTHER CYLINDER</button><button id="resetBtn">RESET</button></div>
+  <div class="readout" id="readout"><strong>SEPARATE</strong> · both members are visible; no stored sequence is being decoded.</div>
+  <div class="truth">MANUAL ROTATION IS AN EDITORIAL INPUT SUBSTITUTION FOR THE ISOLATED CYLINDER↔COMB RELATION · HISTORICAL SPRING DRIVE REMAINS CONTEXTUAL</div>
+  <div class="truth">EDITORIAL PIN SEQUENCES · SYNTHETIC TONES · NOT AUTHENTIC PAILLARD TUNING OR HISTORICAL TUNES</div>
+  <div class="history">OBJECT ANCHOR · PAILLARD & CIE. · SAINTE-CROIX · 1841 · HISTORICAL OBJECT HAS CYLINDER + ONE-PIECE 51-TOOTH COMB</div>
+  <div class="source">Source anchors: Swiss federal Museum of Music Automatons — cylinder as sound carrier, set pins transmitting stored information and directly plucking tuned teeth in sequence; Smithsonian Paillard & Cie. 1841 and 1838–1842 cylinder music boxes; Museo Nicolis mechanism confirmation.</div>
+</section>
+</main>
+<script>
+const pair=document.getElementById('pair'),cylinderWrap=document.getElementById('cylinderWrap'),pinLayer=document.getElementById('pinLayer'),teethEl=document.getElementById('teeth'),eventTrace=document.getElementById('eventTrace'),angleRead=document.getElementById('angleRead'),bridgeLabel=document.getElementById('bridgeLabel'),readout=document.getElementById('readout'),cylinderTitle=document.getElementById('cylinderTitle'),cylinderMeta=document.getElementById('cylinderMeta'),engageBtn=document.getElementById('engageBtn'),otherBtn=document.getElementById('otherBtn'),resetBtn=document.getElementById('resetBtn');
+const patterns={A:[{a:18,l:0},{a:54,l:2},{a:94,l:4},{a:132,l:1},{a:176,l:5},{a:218,l:3},{a:266,l:2},{a:318,l:4}],B:[{a:12,l:5},{a:70,l:3},{a:116,l:0},{a:162,l:4},{a:207,l:1},{a:251,l:5},{a:302,l:2},{a:342,l:3}]};
+const freqs=[392,440,494,523.25,587.33,659.25],heights=[76,88,100,112,124,136];
+let patternKey='A',angle=0,engaged=false,drag=null,audioCtx=null,events=[];
+function mod(v,m){return((v%m)+m)%m}function fmt(v){const n=Math.round(mod(v,360));return'+'+String(n).padStart(3,'0')+'°'}
+function activePattern(){return patterns[patternKey]}
+function renderTeeth(){teethEl.replaceChildren();heights.forEach((h,i)=>{const t=document.createElement('i');t.className='tooth';t.style.setProperty('--h',`${h}px`);t.dataset.lane=String(i);teethEl.appendChild(t)})}
+function renderPins(){pinLayer.replaceChildren();activePattern().forEach((p,i)=>{const el=document.createElement('i');el.className='pin';el.dataset.index=String(i);pinLayer.appendChild(el)});renderPinPositions()}
+function renderPinPositions(){const pins=[...pinLayer.children];activePattern().forEach((p,i)=>{const rad=(p.a-angle)*Math.PI/180,front=(Math.cos(rad)+1)/2,x=8+(i/(activePattern().length-1))*84,y=50+Math.sin(rad)*34;pins[i].style.left=`${x}%`;pins[i].style.top=`${y}%`;pins[i].style.opacity=String(.28+front*.72);pins[i].style.filter=`brightness(${(.72+front*.58).toFixed(2)})`})}
+function synth(lane){try{audioCtx=audioCtx||new(window.AudioContext||window.webkitAudioContext)();const o=audioCtx.createOscillator(),g=audioCtx.createGain();o.type='triangle';o.frequency.setValueAtTime(freqs[lane],audioCtx.currentTime);g.gain.setValueAtTime(.085,audioCtx.currentTime);g.gain.exponentialRampToValueAtTime(.001,audioCtx.currentTime+.18);o.connect(g);g.connect(audioCtx.destination);o.start();o.stop(audioCtx.currentTime+.19)}catch{}}
+function flashTooth(lane){const tooth=teethEl.querySelector(`[data-lane="${lane}"]`);if(!tooth)return;tooth.classList.remove('hit');void tooth.offsetWidth;tooth.classList.add('hit');setTimeout(()=>tooth.classList.remove('hit'),120)}
+function renderTrace(){eventTrace.replaceChildren();events.slice(-8).forEach((e,i,arr)=>{const dot=document.createElement('i');dot.className='live';dot.style.opacity=String(.35+.65*((i+1)/arr.length));eventTrace.appendChild(dot)})}
+function trigger(pin,dir){events.push({lane:pin.l,dir});flashTooth(pin.l);renderTrace();synth(pin.l);bridgeLabel.textContent=`PIN → TOOTH ${pin.l+1} · ${dir>0?'FORWARD':'REVERSE'} CONTACT`;readout.innerHTML=`<strong>${events.length} DECODED ${events.length===1?'EVENT':'EVENTS'}</strong> · editorial pin geometry is producing an ordered visual${audioCtx?' + synthetic audio':''} sequence.`}
+function crossings(prev,next){if(!engaged||prev===next)return;const forward=next>prev;for(const p of activePattern()){if(forward){const k0=Math.floor((prev-p.a)/360)+1,k1=Math.floor((next-p.a)/360);for(let k=k0;k<=k1;k++)trigger(p,1)}else{const k0=Math.ceil((prev-p.a)/360)-1,k1=Math.ceil((next-p.a)/360);for(let k=k0;k>=k1;k--)trigger(p,-1)}}}
+function setAngle(next){const prev=angle;angle=next;crossings(prev,angle);renderPinPositions();angleRead.textContent=`${fmt(angle)} · MANUAL ROTATION`;cylinderWrap.setAttribute('aria-valuenow',String(Math.round(mod(angle,360))));cylinderWrap.setAttribute('aria-valuetext',engaged?`${patternKey==='A'?'cylinder A':'other cylinder'} engaged at ${fmt(angle)}`:'cylinder not engaged')}
+function engage(){if(engaged)return;engaged=true;pair.classList.add('engaged');engageBtn.disabled=true;engageBtn.textContent='CONTACT ENGAGED';bridgeLabel.textContent='CONTACT LINE · ROTATE CYLINDER MANUALLY';readout.innerHTML='<strong>ENGAGED · NO AUTOPLAY</strong> · direct cylinder rotation is now the only active drive.';cylinderWrap.focus({preventScroll:true});cylinderWrap.setAttribute('aria-valuetext',`cylinder ${patternKey} engaged at ${fmt(angle)}`)}
+function chooseOther(){patternKey=patternKey==='A'?'B':'A';events=[];angle=0;renderPins();renderTrace();cylinderTitle.textContent=patternKey==='A'?'Cylinder A':'Other Cylinder';cylinderMeta.textContent=patternKey==='A'?'EDITORIAL SEQUENCE A · VALID STORED GEOMETRY':'EDITORIAL SEQUENCE B · DIFFERENT VALID GEOMETRY';otherBtn.classList.toggle('active',patternKey==='B');readout.innerHTML='<strong>DIFFERENT STORED GEOMETRY</strong> · different valid phrase; no sequence is marked wrong.';bridgeLabel.textContent=engaged?'CONTACT LINE · ROTATE NEW CYLINDER':'SEPARATE · NO PIN/TOOTH CONTACT';cylinderWrap.setAttribute('aria-valuetext',engaged?`other valid cylinder selected at ${fmt(angle)}`:'cylinder not engaged')}
+function reset(){engaged=false;pair.classList.remove('engaged');engageBtn.disabled=false;engageBtn.textContent='ENGAGE CYLINDER + COMB';patternKey='A';angle=0;events=[];otherBtn.classList.remove('active');cylinderTitle.textContent='Cylinder A';cylinderMeta.textContent='EDITORIAL SEQUENCE · DIRECT ROTATION AFTER ENGAGE';renderPins();renderTrace();bridgeLabel.textContent='SEPARATE · NO PIN/TOOTH CONTACT';readout.innerHTML='<strong>SEPARATE</strong> · both members are visible; no stored sequence is being decoded.';angleRead.textContent='+000° · MANUAL ROTATION';cylinderWrap.setAttribute('aria-valuenow','0');cylinderWrap.setAttribute('aria-valuetext','cylinder not engaged');if(audioCtx){try{audioCtx.close()}catch{}audioCtx=null}}
+function startDrag(e){if(!engaged)return;drag={id:e.pointerId,startX:e.clientX,angle};cylinderWrap.classList.add('dragging');cylinderWrap.setPointerCapture(e.pointerId)}
+function moveDrag(e){if(!drag)return;setAngle(drag.angle+(e.clientX-drag.startX)*1.15)}
+function endDrag(){cylinderWrap.classList.remove('dragging');if(drag){try{cylinderWrap.releasePointerCapture(drag.id)}catch{}drag=null}}
+function keyMove(e){if(!engaged||!['ArrowLeft','ArrowRight'].includes(e.key))return;e.preventDefault();setAngle(angle+(e.key==='ArrowRight'?8:-8))}
+cylinderWrap.addEventListener('pointerdown',startDrag);cylinderWrap.addEventListener('pointermove',moveDrag);cylinderWrap.addEventListener('pointerup',endDrag);cylinderWrap.addEventListener('pointercancel',endDrag);cylinderWrap.addEventListener('lostpointercapture',endDrag);cylinderWrap.addEventListener('keydown',keyMove);
+engageBtn.onclick=engage;otherBtn.onclick=chooseOther;resetBtn.onclick=reset;renderTeeth();reset();
+</script>
+</body>
+</html>
