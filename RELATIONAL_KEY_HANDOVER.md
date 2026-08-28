@@ -8,7 +8,7 @@ PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **B2.3K — OCEANIA FAMILY ROUND 1: TONGIAKI DOUBLE-HULL SOURCE + INTERACTION SPEC**
+# **B2.3L — TONGIAKI AUTONOMOUS BUILD CANDIDATE + SOURCE GATE**
 
 Do not resume G4 polish. Do not change public atlas/registry/counts for research-promoted or source-pass candidates.
 
@@ -29,162 +29,111 @@ Current validated:
 
 # BUILT SOURCE-PASS QUEUE — LIVE/USER PENDING
 
-1. Astrolabe / Isfahan
-   - build `ade670ad03513d972180ef78d717f174f585ed6c`
-   - fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`
-   - blob `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
+1. Astrolabe / Isfahan — `ade670ad03513d972180ef78d717f174f585ed6c`, fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`, blob `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
+2. Janney / Virginia — `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`, blob `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
+3. Metate + Metlapil — `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`, blob `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
+4. Valparaíso Funicular — spec `f06731fc0e001c09524e21fc81da8fe6697aa313`, build `7aff21b59ff88fcbe3e526958cf9fdf67c0d3750`, blob `1e71497d7f9f5411eca2347b36bc0402db8b905b`
+5. Mate + Bombilla — spec `36c778af5e69e1419ed4b011ca74cf19cce96ab6`, build `6b1a12b166b3be5612ba5b1d5a1f731281186379`, blob `6bdebcff2bd3c2b8c57f0c75dc72b20fcba37d55`
 
-2. Janney / Virginia
-   - build `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`
-   - blob `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
+All remain `SOURCE PASS / LIVE + USER PENDING`.
 
-3. Metate + Metlapil / Teotitlán del Valle
-   - build `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`
-   - blob `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
+# OCEANIA — PROMOTED RESEARCH ROUNDS / COUNT STILL 2/4
 
-4. Valparaíso Funicular / Chile
-   - spec `f06731fc0e001c09524e21fc81da8fe6697aa313`
-   - build `7aff21b59ff88fcbe3e526958cf9fdf67c0d3750`
-   - blob `1e71497d7f9f5411eca2347b36bc0402db8b905b`
-
-5. Mate + Bombilla / Argentina + regional context
-   - spec `36c778af5e69e1419ed4b011ca74cf19cce96ab6`
-   - build `6b1a12b166b3be5612ba5b1d5a1f731281186379`
-   - blob `6bdebcff2bd3c2b8c57f0c75dc72b20fcba37d55`
-
-All are `SOURCE PASS / LIVE + USER PENDING`.
-No validated counts changed.
-
-# OCEANIA — PROMOTION COMPLETE / COUNT STILL 2/4
-
-## B2.2G Pool
-
-Register:
+Pool:
 `CONTINENTAL_BALANCE_B2_2G_OCEANIA_CANDIDATE_POOL.md`
+commit `64cfdb8ad343992f0f589bf968fc4c624d9a9d1a`
 
-Commit:
-`64cfdb8ad343992f0f589bf968fc4c624d9a9d1a`
+Promotion:
+`CONTINENTAL_BALANCE_B2_2H_OCEANIA_PROMOTION_MATRIX.md`
+commit `9fbc4541a585980dd7991f22b7e0dddd64008991`
 
-Six candidates:
-- Tonga / Tongiaki Double Hull
-- Sāmoa / I‘e + Wooden Anvil
-- Tokelau / Toki Blade + Haft System
-- Massim PNG / Kula Soulava + Mwali
-- Jawoyn Australia / Music Sticks
-- East Sepik-Ramu PNG / Garamut + Wooden Pounder
+Promoted:
+1. Tonga / Tongiaki Double Hull
+2. East Sepik-Ramu PNG / Garamut + Wooden Pounder
 
-## B2.2H Promotion Matrix
+Kula remains `CONTEXT-SENSITIVITY HOLD`.
+Fallback order: Sāmoa I‘e → Tokelau Toki → Kula hold → Jawoyn music sticks.
+
+# B2.3K — TONGIAKI SPEC FROZEN
 
 Register:
-`CONTINENTAL_BALANCE_B2_2H_OCEANIA_PROMOTION_MATRIX.md`
+`CONTINENTAL_BALANCE_B2_3K_OCEANIA_TONGIAKI_SPEC.md`
 
 Commit:
-`9fbc4541a585980dd7991f22b7e0dddd64008991`
+`00f5a984ae4c376753b2ed6f64dc955307c9e38d`
 
-### SLOT 1 — PROMOTED
-
-# **TONGIAKI DOUBLE-HULLED CANOE / TONGA**
-
-Topology:
-`R4 structural coupling / distributed buoyancy`
-
-Law direction:
-`LASHED PARALLEL HULLS DISTRIBUTE BUOYANCY INTO A MORE STABLE PLATFORM.`
-
-Why:
-- literal two-hull system;
-- specific Tonga/Tongatapu source trail;
-- pair remains visible and bounded;
-- strong structural result;
-- maritime context differs causally from Swell.
-
-Hard boundary:
-- no navigation/swell/star/route system;
-- no speed/capsize/displacement engineering claims;
-- booms/deck subordinate only.
-
-### SLOT 2 — PROMOTED
-
-# **GARAMUT + WOODEN POUNDER / EAST SEPIK-RAMU, PAPUA NEW GUINEA**
-
-Topology:
-`R11 encode / signal through ordered impact`
-
-Law direction:
-`ORDERED IMPACTS ON A GARAMUT TURN RHYTHM INTO A LONG-DISTANCE SIGNAL.`
-
-Why:
-- rare encode/signal topology;
-- direct physical beater/instrument relation;
-- information law distinct from Ombak and Siku;
-- PNG geographic contribution.
-
-Safeguarding:
-- no invented sequence may be called authentic community code;
-- no warning/death/invitation/name code teaching;
-- no clan/spirit carving copied decoratively;
-- spec must choose a defensible regional source context;
-- use explicit `EDITORIAL SIGNAL SEQUENCE · NOT COMMUNITY CODE` boundary.
-
-### KULA HOLD
-
-Kula has exceptional R8 novelty but is NOT promoted.
-Reason: its meaningful causal unit is a living distributed social network, not simply two valuables. A two-token orbit would flatten partnership/history/obligation.
-
-Status:
-`CONTEXT-SENSITIVITY HOLD / NOT AUTOMATIC FALLBACK`
-
-### Reserve order
-
-1. Sāmoa I‘e + Wooden Anvil
-2. Tokelau Toki Blade + Haft System
-3. Kula — context hold
-4. Jawoyn Music Sticks
-
-If Garamut fails safeguarding, use Sāmoa I‘e first.
-
-# IMMEDIATE TASK — B2.3K TONGIAKI SPEC
-
-Freeze a narrow truthful interaction before any code.
-
-Required source anchors:
-- Te Ara Polynesian double hull / Tongatapu 1643;
-- Te Ara Tongiaki in Tonga;
-- Te Papa Tongan Tongiaki model;
-- Te Papa Pacific canoes documentation.
-
-Required pair:
-- Card A = HULL A
-- Card B = HULL B
-
-Spec must resolve:
-1. how the two hulls approach/align;
-2. how coupling is represented without center becoming product;
-3. how to demonstrate `distributed buoyancy / stability` without fake hydrodynamics;
-4. a direct user action rather than timer-only spectacle;
-5. an alternate-valid state where both hulls remain valid;
-6. responsive pair geometry;
-7. exact truthfulness footer;
-8. explicit Swell non-overlap.
-
-Candidate working identity may use:
+Working identity:
 - slug `tongiaki-tonga`;
-- memory `Structural / Voyaging Memory`;
-- edition `Twin Hull Register`.
+- Tongatapu / Tonga;
+- `Structural / Voyaging Memory`;
+- `Twin Hull Register`;
+- R4 structural coupling / distributed support.
 
-Do not build until spec is frozen.
+Canonical law:
+# **TWO HULLS JOINED IN PARALLEL FORM A SHARED, MORE STABLE VOYAGING PLATFORM.**
 
-After spec:
-`B2.3L — TONGIAKI AUTONOMOUS BUILD CANDIDATE + SOURCE GATE`.
+UI proof:
+# `TWO HULLS → PARALLEL ALIGNMENT → COUPLING → ONE STRUCTURAL PLATFORM`
 
-Then freeze Garamut spec as Oceania round 2.
+Truth rule:
+- source supports qualitative stability/seaworthiness;
+- UI only demonstrates documented geometry/structural coupling;
+- NO fake hydrodynamic calculations, righting-force gauges, capsize thresholds, displacement/load equations, speed claims or historical dimensions.
+
+Pair:
+- Card A = HULL A / PORT MEMBER;
+- Card B = HULL B / STARBOARD MEMBER.
+
+Interaction:
+- both bounded cards present from first frame;
+- both hulls directly draggable;
+- constrained fore/aft + inboard adjustment;
+- broad editorial tolerance for approach + alignment;
+- inside tolerance: thin booms/deck resolve as subordinate evidence;
+- outside tolerance: connectors withdraw, both hulls remain valid;
+- no timer completes relationship.
+
+Swells/navigation are forbidden:
+- no swell arrows;
+- no stars;
+- no route/island targets;
+- no heading changes;
+- neutral structural background.
+
+Required footer:
+`STRUCTURAL TRANSLATION · TONGAN TONGIAKI DOUBLE-HULL RELATION · EDITORIAL ALIGNMENT THRESHOLD · NOT A HYDRODYNAMIC OR NAVIGATION SIMULATOR`
+
+# IMMEDIATE TASK — B2.3L BUILD
+
+Create:
+`families/tongiaki-tonga/candidate.html`
+
+Acceptance:
+1. candidate-only source change;
+2. two hull cards immediate;
+3. both direct pointer/touch draggable;
+4. keyboard fallback;
+5. approach + parallel alignment threshold;
+6. connector subordinate;
+7. uncoupling preserves both hulls;
+8. reset restores distinct state;
+9. responsive CSS;
+10. source/truth footer;
+11. no navigation/fake physics;
+12. JS syntax pass;
+13. source gate diff before any atlas/registry mutation.
+
+After B2.3L SOURCE PASS:
+- update CURRENT_STATE + HANDOVER immediately;
+- then proceed to `B2.3M — GARAMUT SOURCE + INTERACTION SPEC`;
+- no Garamut code before that spec freezes safeguarding.
 
 # LIVE INFRASTRUCTURE
 
 Recent Vercel Hobby blocker:
 `Deployment rate limited — retry in 24 hours.`
 
-When capacity returns, one descendant Preview may host multiple candidates, but every family gets an independent live/user verdict.
+No invented LIVE PASS.
 
 # G4 POLISH — PARKED
 
