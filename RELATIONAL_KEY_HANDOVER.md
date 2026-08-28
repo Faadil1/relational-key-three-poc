@@ -8,9 +8,9 @@ PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **B2.2H — OCEANIA DEEP SOURCE + TWO-SLOT PROMOTION MATRIX**
+# **B2.3K — OCEANIA FAMILY ROUND 1: TONGIAKI DOUBLE-HULL SOURCE + INTERACTION SPEC**
 
-Do not resume G4 polish. Do not change public atlas/registry/counts for source-pass or research-promoted candidates.
+Do not resume G4 polish. Do not change public atlas/registry/counts for research-promoted or source-pass candidates.
 
 # CANONICAL INVARIANT
 
@@ -27,32 +27,27 @@ Target:
 Current validated:
 # `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-# SOURCE-PASS BUILDS AWAITING LIVE/USER
+# BUILT SOURCE-PASS QUEUE — LIVE/USER PENDING
 
 1. Astrolabe / Isfahan
-   - `families/astrolabe-isfahan/candidate.html`
    - build `ade670ad03513d972180ef78d717f174f585ed6c`
    - fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`
    - blob `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
 
 2. Janney / Virginia
-   - `families/coupler-virginia/candidate.html`
    - build `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`
    - blob `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
 
 3. Metate + Metlapil / Teotitlán del Valle
-   - `families/metate-teotitlan/candidate.html`
    - build `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`
    - blob `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
 
 4. Valparaíso Funicular / Chile
-   - `families/funicular-valparaiso/candidate.html`
    - spec `f06731fc0e001c09524e21fc81da8fe6697aa313`
    - build `7aff21b59ff88fcbe3e526958cf9fdf67c0d3750`
    - blob `1e71497d7f9f5411eca2347b36bc0402db8b905b`
 
 5. Mate + Bombilla / Argentina + regional context
-   - `families/mate-bombilla-argentina/candidate.html`
    - spec `36c778af5e69e1419ed4b011ca74cf19cce96ab6`
    - build `6b1a12b166b3be5612ba5b1d5a1f731281186379`
    - blob `6bdebcff2bd3c2b8c57f0c75dc72b20fcba37d55`
@@ -60,115 +55,136 @@ Current validated:
 All are `SOURCE PASS / LIVE + USER PENDING`.
 No validated counts changed.
 
-# OCEANIA BASELINE
+# OCEANIA — PROMOTION COMPLETE / COUNT STILL 2/4
 
-Validated Oceania:
-# `2 / 4`
-
-Existing:
-1. Marshall Islands / Swell Register — wave deflection / navigation memory
-2. Aotearoa / Hika Ahi — friction → heat → ember
-
-# B2.2G — COMPLETED
+## B2.2G Pool
 
 Register:
 `CONTINENTAL_BALANCE_B2_2G_OCEANIA_CANDIDATE_POOL.md`
 
-Status:
-# **SOURCE-FIRST CANDIDATE POOL PASS**
-
-Pool commit:
+Commit:
 `64cfdb8ad343992f0f589bf968fc4c624d9a9d1a`
 
 Six candidates:
+- Tonga / Tongiaki Double Hull
+- Sāmoa / I‘e + Wooden Anvil
+- Tokelau / Toki Blade + Haft System
+- Massim PNG / Kula Soulava + Mwali
+- Jawoyn Australia / Music Sticks
+- East Sepik-Ramu PNG / Garamut + Wooden Pounder
 
-## O1 — Tonga / Tongiaki Double Hull
-- topology: R4 structural coupling / distributed buoyancy
-- law: `LASHED PARALLEL HULLS DISTRIBUTE BUOYANCY INTO A MORE STABLE PLATFORM.`
-- very high pair-native strength
-- explicit comparison required against Swell: structural stability only, never navigation/swell reading
+## B2.2H Promotion Matrix
 
-## O2 — Sāmoa / I‘e Tapa Beater + Wooden Anvil
-- topology: R10 impact/compression/material spread
-- law: `REPEATED IMPACT BETWEEN BEATER AND ANVIL WIDENS BARK INTO CLOTH.`
-- genuine tool pair but bark is a necessary third material
-- must be compared against Metate; impact/compression differs from reciprocal abrasion but global R10 is already occupied
+Register:
+`CONTINENTAL_BALANCE_B2_2H_OCEANIA_PROMOTION_MATRIX.md`
 
-## O3 — Tokelau / Toki Blade + Haft System
-- topology: R4 hafting/load transfer
-- law: `HAFTING TURNS A SEPARATE BLADE AND HANDLE INTO ONE CONTROLLED LOAD PATH.`
-- strong continuing-practice source
-- Te Papa explicitly names three parts: kau toki / lau toki / lau kafa
-- pair reduction must not erase the lashing as a third named component
+Commit:
+`9fbc4541a585980dd7991f22b7e0dddd64008991`
 
-## O4 — Massim PNG / Kula Soulava + Mwali
-- topology: R8 exchange / counter-circulation / reciprocity
-- law: `OPPOSITE CIRCULATION OF SOULAVA AND MWALI SUSTAINS A RECIPROCAL EXCHANGE NETWORK.`
-- exceptional topology novelty
-- high living-social-system sensitivity
-- do NOT invent a direct simultaneous barter; documented law is opposite circulation through partners/network
+### SLOT 1 — PROMOTED
 
-## O5 — Jawoyn / Australia Music Sticks
-- topology: paired impact / temporal pulse
-- law: `CONTACT BETWEEN A PAIRED STRIKER AND BASE STICK PRODUCES RHYTHMIC PULSE.`
-- literal pair and precise Jawoyn object anchor
-- sound field already crowded by Ombak + Siku; likely reserve unless deeper distinction emerges
+# **TONGIAKI DOUBLE-HULLED CANOE / TONGA**
 
-## O6 — East Sepik-Ramu PNG / Garamut + Wooden Pounder
-- topology: R11 encode/signal
-- law: `ORDERED IMPACTS ON A GARAMUT TURN RHYTHM INTO A LONG-DISTANCE SIGNAL.`
-- direct beater/instrument pair; strong rare topology
-- high cultural-context discipline: meanings/codes/restrictions differ by community
-- never invent or teach a supposedly authentic ceremonial/warning/death code
+Topology:
+`R4 structural coupling / distributed buoyancy`
 
-Explicit pool non-promotions:
-- Australian First Nations grindstones — too close to Metate pressure/abrasion
-- Māori Whatu/Tāniko — current extraction too close to Bonwire / Woven Register
-- paired poi — weaker pair necessity + crowded sound/performance lane
+Law direction:
+`LASHED PARALLEL HULLS DISTRIBUTE BUOYANCY INTO A MORE STABLE PLATFORM.`
 
-# IMMEDIATE TASK — B2.2H
+Why:
+- literal two-hull system;
+- specific Tonga/Tongatapu source trail;
+- pair remains visible and bounded;
+- strong structural result;
+- maritime context differs causally from Swell.
 
-Create a deep-source comparison and promote exactly two only if justified.
+Hard boundary:
+- no navigation/swell/star/route system;
+- no speed/capsize/displacement engineering claims;
+- booms/deck subordinate only.
 
-Decision criteria:
-1. pair-native necessity;
-2. third-result strength;
-3. topology novelty after Astrolabe/Janney/Metate/Valparaíso/Mate queue;
-4. interaction legibility;
-5. truthful alternate-valid state;
-6. cultural/context safeguarding;
-7. geographic diversity within Oceania;
-8. translation/build risk.
+### SLOT 2 — PROMOTED
 
-Likely high-value finalists to stress-test first:
-- Tongiaki Double Hull;
-- Garamut + Pounder;
-- Kula counter-circulation.
+# **GARAMUT + WOODEN POUNDER / EAST SEPIK-RAMU, PAPUA NEW GUINEA**
 
-Do not automatically promote Kula merely because R8 is rare; its social-system reduction risk may outweigh novelty.
+Topology:
+`R11 encode / signal through ordered impact`
 
-Do not automatically promote Garamut merely because R11 is rare; community-specific restricted codes must remain outside the prototype.
+Law direction:
+`ORDERED IMPACTS ON A GARAMUT TURN RHYTHM INTO A LONG-DISTANCE SIGNAL.`
 
-Promotion does NOT change Oceania from `2/4`.
+Why:
+- rare encode/signal topology;
+- direct physical beater/instrument relation;
+- information law distinct from Ombak and Siku;
+- PNG geographic contribution.
 
-After B2.2H PASS:
-- update CURRENT_STATE + HANDOVER immediately;
-- proceed to `B2.3K — OCEANIA FAMILY ROUND 1 SOURCE + INTERACTION SPEC` for Slot 1;
-- no build until that spec is frozen.
+Safeguarding:
+- no invented sequence may be called authentic community code;
+- no warning/death/invitation/name code teaching;
+- no clan/spirit carving copied decoratively;
+- spec must choose a defensible regional source context;
+- use explicit `EDITORIAL SIGNAL SEQUENCE · NOT COMMUNITY CODE` boundary.
 
-# SOUTH AMERICA RESERVES
+### KULA HOLD
 
-1. Cobogó / Brazil
-2. Pasto Varnish / Colombia
-3. Bahía Whistling Bottle / Ecuador
-4. Poporo + Palillo — HOLD
+Kula has exceptional R8 novelty but is NOT promoted.
+Reason: its meaningful causal unit is a living distributed social network, not simply two valuables. A two-token orbit would flatten partnership/history/obligation.
+
+Status:
+`CONTEXT-SENSITIVITY HOLD / NOT AUTOMATIC FALLBACK`
+
+### Reserve order
+
+1. Sāmoa I‘e + Wooden Anvil
+2. Tokelau Toki Blade + Haft System
+3. Kula — context hold
+4. Jawoyn Music Sticks
+
+If Garamut fails safeguarding, use Sāmoa I‘e first.
+
+# IMMEDIATE TASK — B2.3K TONGIAKI SPEC
+
+Freeze a narrow truthful interaction before any code.
+
+Required source anchors:
+- Te Ara Polynesian double hull / Tongatapu 1643;
+- Te Ara Tongiaki in Tonga;
+- Te Papa Tongan Tongiaki model;
+- Te Papa Pacific canoes documentation.
+
+Required pair:
+- Card A = HULL A
+- Card B = HULL B
+
+Spec must resolve:
+1. how the two hulls approach/align;
+2. how coupling is represented without center becoming product;
+3. how to demonstrate `distributed buoyancy / stability` without fake hydrodynamics;
+4. a direct user action rather than timer-only spectacle;
+5. an alternate-valid state where both hulls remain valid;
+6. responsive pair geometry;
+7. exact truthfulness footer;
+8. explicit Swell non-overlap.
+
+Candidate working identity may use:
+- slug `tongiaki-tonga`;
+- memory `Structural / Voyaging Memory`;
+- edition `Twin Hull Register`.
+
+Do not build until spec is frozen.
+
+After spec:
+`B2.3L — TONGIAKI AUTONOMOUS BUILD CANDIDATE + SOURCE GATE`.
+
+Then freeze Garamut spec as Oceania round 2.
 
 # LIVE INFRASTRUCTURE
 
 Recent Vercel Hobby blocker:
 `Deployment rate limited — retry in 24 hours.`
 
-When capacity returns, prefer one descendant Preview containing current candidates, but each family receives an independent live/user verdict.
+When capacity returns, one descendant Preview may host multiple candidates, but every family gets an independent live/user verdict.
 
 # G4 POLISH — PARKED
 
