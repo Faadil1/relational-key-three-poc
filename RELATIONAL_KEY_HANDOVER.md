@@ -1,6 +1,6 @@
 # RELATIONAL KEY — HANDOVER
 
-Updated: 2026-08-26
+Updated: 2026-08-27
 Repository: `Faadil1/relational-key-three-poc`
 Working branch: `collection/global-refinement-1`
 Draft PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
@@ -16,7 +16,7 @@ RELATIONAL KEY has completed:
 - PR #20 consolidation squash merge;
 - Global Refinement G0 baseline freeze;
 - **G1 Collection Navigation Frame PASS**;
-- G2 shell-legibility implementation + source gate + live technical deployment verification.
+- **G2 Shell Legibility PASS**.
 
 Canonical invariant:
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
@@ -37,78 +37,103 @@ Historic collection golden preview:
 
 # G1 — CLOSED / PASS
 
-Validated G1 preview:
-- deployment `dpl_87Bjr4pRX1sMQTBUE731gt42WeQA`;
-- URL `https://relational-key-collectionrelational-key-collection-gsdndspjm.vercel.app`;
-- deployed SHA `ffdbb21a4553e997e387e879c1a5c692b677c787`;
-- `READY / Preview`.
+Validated preview:
+- `dpl_87Bjr4pRX1sMQTBUE731gt42WeQA`;
+- `https://relational-key-collectionrelational-key-collection-gsdndspjm.vercel.app`.
 
 Validated:
-- collection-owned navigation frame;
-- `← BACK TO ATLAS` returns to `/#grid`;
+- collection-owned frame across all public family routes;
+- `← BACK TO ATLAS` → `/#grid`;
 - family controls unobscured;
-- shared runtime preserved;
-- autonomous snapshots preserved;
-- all 15 public indexes use the same wrapper.
+- shared runtime unchanged;
+- autonomous snapshots preserved.
 
-# G2 — ACTIVE
-
-## SHELL LEGIBILITY
-
-Status:
-# `SOURCE PASS / LIVE TECHNICAL PASS / USER VISUAL REQUIRED`
+# G2 — CLOSED / PASS
 
 Registers:
 - `GLOBAL_REFINEMENT_G2_SHELL_LEGIBILITY.md`
 - `GLOBAL_REFINEMENT_G2_1_LIVE_TECHNICAL_PASS.md`
+- `GLOBAL_REFINEMENT_G2_2_USER_VISUAL_PASS.md`
 
-Implementation commit:
-# `eaee31ec38dcc2f31c46cb630e28357b30357a90`
+Implementation:
+`eaee31ec38dcc2f31c46cb630e28357b30357a90`
 
-Source register commit:
-`1ba6d73c7c083ddf92ef2839130cbf3ef690e9b4`
-
-Current G2 Preview:
-- project `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`;
+Validated G2 preview:
 - deployment `dpl_3hRXrW6TF8Ms6phXnXURfVQD8aqV`;
 - URL `https://relational-key-collectionrelational-key-collection-5zunbmuyw.vercel.app`;
-- environment `Preview`;
-- state `READY`;
-- Git ref `collection/global-refinement-1`;
-- deployed SHA `7ce047d7a47099fc94cb3d60b9399eb63830de55`.
+- deployed SHA `7ce047d7a47099fc94cb3d60b9399eb63830de55`;
+- `READY / Preview`.
 
-G2 source scope:
-- only root `index.html` changed;
-- 37 CSS lines added, 0 removed;
-- no wrapper, route, registry, shared runtime, snapshot, family timing or mechanism change.
+User visual evidence:
+- 55.23 s, 1918×966, 30 fps;
+- desktop hierarchy remains light while metadata is easier to read;
+- progressive narrowing preserves search/chips/card readability and reaches a usable single-column state;
+- Boulle opens correctly through the unchanged G1 frame;
+- no native family mechanism changed.
 
-G2 adjustments:
-- tiny mono layer raised into 7–8 px hierarchy;
-- muted contrast improved;
-- search/chips enlarged;
-- card place/memory/mechanism readability improved;
-- mobile touch targets enlarged;
-- focus-visible treatment added;
-- narrow proof/status layout made safer.
+The capture did not replay a full filter/search state transition. This is non-blocking because G2 changed only CSS in the root shell; filter/search JavaScript was unchanged and had previously passed the consolidation functional gate.
 
-# IMMEDIATE NEXT TASK — G2.2 USER VISUAL LEGIBILITY REGRESSION
+# G3 — ACTIVE
 
-Using deployment `dpl_3hRXrW6TF8Ms6phXnXURfVQD8aqV`:
-1. show desktop hero + Continental Balance + Relational Atlas;
-2. click one continent chip, then return to All;
-3. perform one text search, then clear it;
-4. show enough atlas cards to judge place / mechanism / memory readability;
-5. narrow the browser to a mobile-ish width and show search, chips and one or two cards;
-6. open one family and confirm the G1 Back-to-Atlas frame is unchanged;
-7. record G2 `PASS / PATCH`.
+## ATLAS FAMILY INDIVIDUALITY
 
-No family interaction replay is required.
+Status:
+# `DESIGN SPEC LOCKED / IMPLEMENTATION NEXT`
 
-If G2 passes, begin **G3 — Atlas Family Individuality**.
+Register:
+`GLOBAL_REFINEMENT_G3_ATLAS_INDIVIDUALITY_SPEC.md`
+
+G3 law:
+# `INDIVIDUALITY = RELATIONSHIP MECHANISM, NOT CULTURAL ORNAMENT`
+
+Mechanism-native signature plan:
+- City → registered route continuation;
+- Service → segmented storyboard / switch;
+- Signal → relay arcs;
+- Frida → trace / ghost registration;
+- Food → compression / release;
+- Textile → interlace;
+- Zellige → complementary angular fit;
+- Khipu → tension + knot;
+- Kento → registration marks / transfer alignment;
+- Ombak → controlled phase difference / beat;
+- Swell → directional deflection;
+- Stereoscopy → controlled disparity / fusion;
+- Siku → alternating absence / temporal interlock;
+- Hika Ahi → friction strokes → ember;
+- Boulle → shared cut / reciprocal positive-negative inversion.
+
+Common constants remain:
+- credential proportions;
+- collection palette family;
+- typography;
+- grid rhythm;
+- mini-pair footprint.
+
+Forbidden:
+- flags;
+- national palettes;
+- stereotypes;
+- generic ethnic/folk patterns;
+- decorative cultural appropriation;
+- unrelated landmarks or illustrations.
+
+# IMMEDIATE NEXT TASK — G3.1
+
+Implement mechanism-native mini-pairs in the root `index.html` only.
+
+Requirements:
+1. fifteen cards become more distinguishable at a glance;
+2. atlas still reads as one system;
+3. relation glyphs preview mechanism, not cultural decoration;
+4. hover motion stays brief and respects `prefers-reduced-motion`;
+5. no wrappers, registry routes, shared runtime, snapshots or family interaction code change;
+6. run source compare before live deployment.
+
+After implementation: create/verify a Preview, run G3 visual audit, then only proceed to G4.
 
 # FUTURE GATES
 
-G3 — Atlas Family Individuality.
 G4 — Family PASS WITH POLISH backlog.
 G5 — Collection Cohesion.
 G6 — Final Collection Validation.
@@ -117,4 +142,4 @@ G6 — Final Collection Validation.
 
 After every significant milestone update `RELATIONAL_KEY_CURRENT_STATE.md` + this handover with exact commits, deployments and next gate.
 
-If a new conversation starts here, resume directly at **G2.2 — USER VISUAL LEGIBILITY REGRESSION**.
+If a new conversation starts here, resume directly at **G3.1 — MECHANISM-NATIVE MINI-PAIR IMPLEMENTATION**.
