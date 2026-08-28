@@ -8,7 +8,7 @@ PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **B2.2J — EUROPE DEEP-SOURCE / TWO-SLOT PROMOTION MATRIX**
+# **B2.3O — EUROPE FAMILY ROUND 1: CATOPTRIC ANAMORPHOSIS SOURCE + INTERACTION SPEC**
 
 Do not resume G4 polish. Do not mutate public atlas/registry/counts for research-promoted, SOURCE PASS or merely deployed candidates.
 
@@ -40,102 +40,117 @@ Current validated:
 All seven remain `SOURCE PASS / LIVE + USER PENDING`.
 No validated counts changed.
 
+# VERCEL
+
+Latest identified READY Preview:
+- `dpl_8GgBz2Kt81mr1YTLTR3UTk9UgMi4`
+- `https://relational-key-collectionrelational-key-collection-55w553e3i.vercel.app`
+- Git SHA `32b67f69b7ead0ff30f443e1efe803222afb31cd`
+
+It contains ancestry through Mate + Bombilla, not Tongiaki/Garamut.
+Astrolabe route fetched at HTTP 200.
+Janney probe hit SSO 302; do not treat as failure or PASS.
+
 # OCEANIA
 
 Research/build complete; validated `2/4`.
-Promoted/source-passed additions:
-- Tongiaki Double Hull / Tonga
-- Garamut + Wooden Pounder / East Sepik-Ramu PNG
+Promoted/source-passed:
+- Tongiaki / Tonga
+- Garamut / East Sepik-Ramu PNG
 
-Kula = `CONTEXT-SENSITIVITY HOLD / NOT AUTOMATIC FALLBACK`.
+# EUROPE — B2.2I + B2.2J COMPLETE
 
-# VERCEL CURRENT REAL STATE
-
-Infrastructure register:
-`CONTINENTAL_BALANCE_B2_LIVE_INFRASTRUCTURE_CHECKPOINT_2026_08_28.md`
-
-Latest identified READY Preview:
-- deployment `dpl_8GgBz2Kt81mr1YTLTR3UTk9UgMi4`
-- URL `https://relational-key-collectionrelational-key-collection-55w553e3i.vercel.app`
-- Git SHA `32b67f69b7ead0ff30f443e1efe803222afb31cd`
-
-It contains source ancestry through Mate + Bombilla, but not Tongiaki/Garamut.
-Astrolabe route authenticated/fetched at HTTP 200.
-Janney route probe hit SSO 302; do not treat as fail or PASS.
-
-Infrastructure verdict:
-# `VERCEL CAPACITY PARTIALLY RECOVERED / CURRENT FULL-QUEUE PREVIEW NOT YET IDENTIFIED`
-
-# EUROPE +2 — B2.2I COMPLETE
-
-Register:
+Pool:
 `CONTINENTAL_BALANCE_B2_2I_EUROPE_CANDIDATE_POOL.md`
+commit `073aedf891cce84281e0e26798b2df87ac706ef3`
 
-Pool commit:
-# `073aedf891cce84281e0e26798b2df87ac706ef3`
+Promotion matrix:
+# `CONTINENTAL_BALANCE_B2_2J_EUROPE_PROMOTION_MATRIX.md`
+commit:
+# `e1c4cbfd1c24a34424402dea8eab18acee0b080d`
 
-Status:
-# `PASS / 7 CANDIDATES / NO PROMOTION YET`
+Validated Europe still:
+# `2/4`
 
-Current Europe validated:
-1. UK / Stereoscopy — controlled disparity → depth
-2. France / Boulle — shared cut → complementary inverse
+## PROMOTED EUROPE SLOT 1
 
-Seven Europe candidates:
-1. Catoptric Cylinder Anamorphosis / France + early-modern Europe
-   - primary R6 reflection / optical decode
-   - law direction: curved reflection rectifies a deliberately distorted image
-   - strongest visual proof; must stay distinct from stereoscopic depth
-2. Straight Slide Rule / London, UK
-   - R11 relative logarithmic scale translation
-   - strong pair, but overlaps Astrolabe through relative scale motion and duplicates UK geography
-3. Swiss Cylinder Music Box / Jura, Switzerland
-   - R11 mechanical encode/decode
-   - pinned cylinder + tuned comb → ordered notes
-   - strong pair; sound-medium crowding and third drive subsystem must be bounded
-4. Pantograph / Scheiner / Dillingen-Germany
-   - proportional linked transformation
-   - tracer ↔ writer through parallelogram
-   - strong law; major center/linkage-product risk
-5. Anchor Escapement / English-European clockmaking
-   - R9 alternating lock/release regulation
-   - three-subsystem causality risk and UK duplication
-6. Cardan Grille / Italy
-   - R6 selective visibility / decode
-   - clean two-layer pair; weaker museum/object source trail than top candidates
-7. Jacquard Card + Reader / Lyon-France
-   - R11 punched instruction / mechanical decode
-   - excellent source evidence; textile/system complexity + France duplication
+# **CATOPTRIC CYLINDER ANAMORPHOSIS / PARIS-FRANCE + EARLY-MODERN EUROPE**
 
-Deep-review priority:
-- Catoptric Anamorphosis
-- Pantograph
-- Swiss Cylinder Music Box
-- Straight Slide Rule
+Sources verified:
+- Science Museum Group cylindrical mirror explicitly for viewing anamorphosis paintings;
+- Science Museum companion painting resolves only with cylinder positioned at intended point;
+- Met public-domain seventeenth-century engraving: distorted drawing clarified as elephant in cylindrical reflection; linked to Niceron's 1652 Paris treatise.
 
-# IMMEDIATE TASK — B2.2J
+Topology:
+`R6 reflection / optical decode`
 
-Create `CONTINENTAL_BALANCE_B2_2J_EUROPE_PROMOTION_MATRIX.md`.
+Law direction:
+# `CURVED REFLECTION TURNS A DISTORTED IMAGE INTO A LEGIBLE FORM.`
 
-Deep-source/stress-test at minimum the four priority candidates. Score:
-1. source authority / object specificity;
-2. native pair necessity;
-3. emergent result;
-4. topology novelty vs 15 validated + 7 queued builds;
-5. interaction legibility;
-6. alternate-valid semantics;
-7. geographic contribution;
-8. truthfulness / pair-reduction risk;
-9. center-product risk;
-10. build feasibility.
+Working edition:
+`Reflection Memory / Rectification Register`
 
-Select exactly two family rounds OR leave a slot open if the evidence is not strong enough.
-Prefer a combination with materially different relational laws.
+Spec must preserve:
+- A = distorted image field;
+- B = cylindrical mirror;
+- proof bounded to mirror/reflection, no third hero;
+- direct mirror position/offset;
+- OTHER position valid but unresolved;
+- no stereoscopy/depth semantics;
+- exact-vs-editorial optics clearly labeled.
 
-After B2.2J:
-1. update CURRENT_STATE + HANDOVER immediately;
-2. then freeze the source/interaction spec for Europe Slot 1;
-3. no Europe build before spec freeze.
+## PROMOTED EUROPE SLOT 2
+
+# **SWISS CYLINDER MUSIC BOX / SWISS JURA**
+
+Sources verified:
+- Swiss federal Museum of Music Automatons identifies cylinder as sound carrier and set pins as stored information that directly pluck tuned teeth in sequence;
+- traditional Swiss music-box principle = cylinder + comb;
+- Smithsonian Paillard objects from St. Croix document cylinder + one-piece comb.
+
+Topology:
+`R11 mechanical encode/decode`
+
+Law direction:
+# `STORED PIN GEOMETRY BECOMES ORDERED NOTES WHEN A CYLINDER ENGAGES A TUNED COMB.`
+
+Working edition:
+`Mechanical Memory / Pin-to-Comb Register`
+
+Future spec constraints:
+- direct manual cylinder rotation;
+- spring drive is contextual/external, not erased from history;
+- synthetic tone only unless authentic source is licensed;
+- alternate pin sequence is another valid phrase, not wrong.
+
+## EUROPE RESERVES
+
+1. Slide Rule / UK — Reserve #1
+2. Pantograph / Germany — Reserve #2 / center-product architecture hold
+3. Cardan Grille / Italy — Reserve #3 / source deepening required
+4. Jacquard Card + Reader / France — Reserve #4
+5. Anchor Escapement — Reserve #5
+
+# IMMEDIATE TASK — B2.3O
+
+Create `CONTINENTAL_BALANCE_B2_3O_EUROPE_ANAMORPHOSIS_SPEC.md`.
+
+Required spec decisions:
+1. choose exact visual anchor: preferred public-domain Met `Satyrs Admiring the Anamorphosis of an Elephant`, Hans Troschel after Simon Vouet, 17th c., linked to Niceron 1652;
+2. separate historical visual anchor from editorial interaction geometry;
+3. Card A = anamorphic/distorted image field;
+4. Card B = cylindrical mirror;
+5. direct mirror drag; no pair button required unless source logic needs approach staging;
+6. reflected legible form stays on mirror/Card B;
+7. target alignment may resolve an editorial elephant demonstration; offset remains a valid unresolved reflection;
+8. no ray-tracing accuracy claim unless mathematically verified;
+9. no depth/binocular language;
+10. no build before spec is frozen.
+
+After spec:
+- update CURRENT_STATE + HANDOVER immediately;
+- then B2.3P autonomous candidate + source gate;
+- then Europe Slot 2 spec/build.
 
 # G4 POLISH — PARKED
 
