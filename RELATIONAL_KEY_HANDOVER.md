@@ -8,18 +8,18 @@ PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **B2.2F — SOUTH AMERICA TWO-SLOT PROMOTION MATRIX**
+# **B2.3G — SOUTH AMERICA FAMILY ROUND 1: VALPARAÍSO FUNICULAR SOURCE + INTERACTION SPEC**
 
-Do not resume G4 polish. Do not build any South America candidate before the matrix promotes exactly two.
+Do not code Valparaíso before the spec freezes. Do not resume G4 polish.
 
 # CANONICAL INVARIANT
 
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
-Immutable pre-refinement anchor:
+Immutable anchor:
 `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
 
-# CONTINENTAL BALANCE GATE 2
+# BALANCE GATE 2
 
 Target:
 `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
@@ -27,140 +27,110 @@ Target:
 Current validated:
 `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-Balance law:
-**BALANCE IS A TARGET, NOT A LICENSE TO ADD WEAK FAMILIES.**
+No source-pass candidate has changed a continental count.
 
-Discovery law:
-**SOURCE CHOOSES THE MECHANISM. THE GAP MAP ONLY GUIDES DISCOVERY.**
-
-# CURRENT SOURCE-PASS BUILD QUEUE
+# SOURCE-PASS BUILDS AWAITING LIVE/USER
 
 ## Astrolabe / Isfahan
-- path `families/astrolabe-isfahan/candidate.html`
+- `families/astrolabe-isfahan/candidate.html`
 - law `RELATIVE ROTATION BETWEEN STAR MAP AND HORIZON PRODUCES A CELESTIAL READING.`
 - build `ade670ad03513d972180ef78d717f174f585ed6c`
 - fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`
 - blob `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
-- status `SOURCE PASS / LIVE + USER PENDING`
 
 ## Janney / Virginia
-- path `families/coupler-virginia/candidate.html`
+- `families/coupler-virginia/candidate.html`
 - law `MATING KNUCKLES TURN CONTACT INTO A LOCKED LOAD PATH.`
-- implementation `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`
+- build `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`
 - blob `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
-- status `SOURCE PASS / LIVE + USER PENDING`
 
 ## Metate + Metlapil / Teotitlán del Valle
 - spec `CONTINENTAL_BALANCE_B2_3E_NORTH_AMERICA_METATE_SPEC.md`
 - build register `CONTINENTAL_BALANCE_B2_3F_NORTH_AMERICA_METATE_BUILD_CANDIDATE.md`
-- path `families/metate-teotitlan/candidate.html`
+- `families/metate-teotitlan/candidate.html`
 - law `PRESSURE AND RECIPROCAL STROKE BETWEEN COMPLEMENTARY STONES PRODUCE GRINDING.`
-- implementation `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`
+- build `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`
 - blob `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
-- direct drag + reciprocal extreme threshold + MAIZE/CACAO valid + node syntax pass
-- status `SOURCE PASS / LIVE + USER PENDING`
+- direct reciprocal threshold logic + MAIZE/CACAO + JS syntax PASS
 
-No continental counts change yet.
+# SOUTH AMERICA PROMOTION — B2.2F PASS
 
-# SOUTH AMERICA B2.2E — POOL PASS
-
-Register:
+Pool:
 `CONTINENTAL_BALANCE_B2_2E_SOUTH_AMERICA_CANDIDATE_POOL.md`
 
-Commit:
-`2f6c2b463cf40c8a4329c292f4ec5bf76b920e7e`
+Promotion matrix:
+`CONTINENTAL_BALANCE_B2_2F_SOUTH_AMERICA_PROMOTION_MATRIX.md`
 
-Validated South America remains `2/4`:
-- Khipu / Peru — tension + knot registration
-- Siku / Bolivia — complementary absence + temporal interlock
+Promotion commit:
+`1e6aeba4b3f71621e76ddd957a7f8b837cd8d973`
 
-Six qualified candidates:
+Promote exactly:
+1. **Valparaíso Funicular / Chile**
+2. **Mate + Bombilla / Argentina**
 
-### A — Valparaíso Funicular / Chile
-- topology `R1 balance / counterweight`
-- documented two cars moving simultaneously in opposite directions; one counterbalances the other
-- law candidate `ONE CAR'S OPPOSITE MOTION COUNTERBALANCES THE OTHER ON A SHARED CABLE.`
-- pair purity VERY HIGH
-- tier A / favorite
+Validated South America remains `2/4` until both independently pass source/build/live/user gates.
 
-### B — Mate + Bombilla / Argentina + broader regional context
-- topology `R7 selective passage / containment`
-- separate vessel + mate-strainer/bombilla
-- law candidate `A FILTERING STRAW TURNS A PARTICULATE INFUSION INTO SELECTIVE FLOW.`
-- pair purity HIGH
-- tier A / finalist
+## Slot 1 — Valparaíso
 
-### C — Pasto Varnish Mopa-Mopa / Colombia
-- topology `R3 layer / cut reveal`
-- excellent novelty, medium pair purity because two-card split is editorial
-- UNESCO living heritage on Urgent Safeguarding List; practitioner/community framing required
-- tier B reserve
+Working edition:
+`Counterweight Register`
 
-### D — Cobogó / Recife-Pernambuco, Brazil
-- topology `R6 projection / shadow`
-- strong visual novelty
-- triadic causality screen + incident light + receiving field
-- tier B reserve
+Topology:
+`R1 balance / counterweight`
 
-### E — Poporo + Palillo / Early Quimbaya, Colombia
-- mechanically pair-native and cumulative
-- coca/ritual/sexual-symbolic/living-context burden is unnecessary
-- HOLD / do not promote this round
+Law candidate:
+# **ONE CAR'S OPPOSITE MOTION COUNTERBALANCES THE OTHER ON A SHARED CABLE.**
 
-### F — Bahía Double-Chambered Whistling Bottle / Ecuador
-- transfer/airflow/sound
-- two chambers belong to one vessel, weak pair invariant
-- reserve
+Authoritative evidence already identified:
+- Consejo de Monumentos Nacionales de Chile pages for Valparaíso ascensores;
+- heritage technical document states the systems consist of two wood/metal cars moving simultaneously in opposite directions;
+- technical seminar documentation explicitly distinguishes funicular from inclined elevator: in the Valparaíso case there are two cars and one counterbalances the other.
 
-# IMMEDIATE TASK — B2.2F MATRIX
+Important source refs/URLs to use in spec:
+- https://www.monumentos.gob.cl/monumentos/monumentos-historicos/ascensores-de-valparaiso-artilleria-cordillera-hospital-van-buren
+- https://www.monumentos.gob.cl/sites/default/files/articles-45668_doc_pdf.pdf
+- Ascensor Concepción / heritage pages as concrete place/object anchor.
 
-Compare front-runners:
-1. Valparaíso Funicular
-2. Mate + Bombilla
-3. Pasto Varnish
-4. Cobogó
+Spec requirements:
+1. Card A = CAR A, Card B = CAR B;
+2. both remain equally bounded/visible;
+3. direct drag either car after pairing;
+4. other car moves equal/opposite;
+5. shared cable/track is relationship infrastructure only;
+6. do not claim cars alone power system;
+7. no fake failure required — alternate starting height/direction can remain valid;
+8. no Valparaíso color-house decorative skin;
+9. responsive relation must preserve linked opposite motion;
+10. truth footer must say structural translation of documented funicular counterbalancing relation, not engineering traction model.
 
-Choose exactly TWO.
+Potential signature:
+`CAR A LOW ≠ CAR B HIGH → LINK → A ASCENDS / B DESCENDS → CROSS → EXCHANGE HEIGHT → REVERSE → CONTINUE`
 
-Optimize the two-slot combination for:
-- native pair necessity;
-- source authority;
-- cultural truthfulness;
-- interaction legibility;
-- buildability;
-- differentiation from Khipu + Siku;
-- differentiation from current expansion candidates Astrolabe + Janney + Metate;
-- global topology spread.
+## Slot 2 — Mate + Bombilla
 
-Likely combination hypothesis to test, NOT pre-approved:
-`Valparaíso R1 + Mate/Bombilla R7`.
+Do NOT spec/build until Valparaíso B2.3G/H closes source gate.
 
-Why this hypothesis is strong:
-- both have more literal two-object/member relationships than Pasto/Cobogó;
-- adds two entirely new topology lanes;
-- avoids another material surface family after Metate;
-- avoids another semi-triadic environmental relation;
-- lower translation burden than Pasto while still culturally grounded.
+Working edition `Filter Register`.
+Law:
+`A FILTERING STRAW TURNS A PARTICULATE INFUSION INTO SELECTIVE FLOW.`
 
-But matrix must explicitly test alternatives:
-- Funicular + Pasto
-- Funicular + Cobogó
-- Mate + Pasto
-- Mate + Cobogó
+# RESERVES
 
-Do not code until matrix closes.
+1. Cobogó / Brazil — R6
+2. Pasto Varnish / Colombia — R3, urgent-safeguarding/editorial burden
+3. Bahía whistling bottle / Ecuador
+4. Poporo + Palillo — HOLD, not routine fallback
 
-# LIVE VALIDATION QUEUE
+# LIVE INFRASTRUCTURE
 
-Vercel Hobby recently returned:
+Recent Vercel Hobby result:
 `Deployment rate limited — retry in 24 hours.`
 
-When capacity returns, prefer one descendant Preview for:
-Astrolabe + Janney + Metate, then audit separately.
+Prefer one descendant Preview for Astrolabe + Janney + Metate when capacity returns, but audit independently.
 
 # G4 POLISH — PARKED
 
-Khipu polish candidate preserved:
+Khipu reversible candidate remains:
 `families/khipu-peru/g4-1.html`
 implementation `64647ea78b04439ea9a57ece47f19490d9185d45`
 
@@ -168,8 +138,8 @@ implementation `64647ea78b04439ea9a57ece47f19490d9185d45`
 
 After every meaningful milestone:
 1. dedicated register;
-2. CURRENT_STATE update;
-3. HANDOVER update;
-4. exact branch + commit/blob/deployment IDs;
-5. explicit SOURCE/LIVE/USER/VALIDATED status;
-6. one explicit next output.
+2. update CURRENT_STATE;
+3. update HANDOVER;
+4. exact commit/blob/deployment IDs;
+5. SOURCE/LIVE/USER/VALIDATED separated;
+6. exactly one next output.
