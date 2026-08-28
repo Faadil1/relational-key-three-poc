@@ -5,147 +5,214 @@ Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
 Global Refinement PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `CONTINENTAL_BALANCE_B2_1_RELATIONSHIP_GAP_MAP.md`
+Latest verified milestone: `CONTINENTAL_BALANCE_B2_3B_ASIA_ASTROLABE_BUILD_CANDIDATE.md`
 
 ## Product invariant
 
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
-## Consolidation baseline — MERGED / IMMUTABLE
+## Immutable consolidated baseline
 
 PR #20: `MERGED / SQUASH`
 Pre-refinement regression anchor:
 `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
 
-Validated baseline:
-- 15 / 15 independent family gates;
-- 15 / 15 consolidated direct live routes;
-- root + shell + filters/search pass;
-- collection usability pass with polish debt.
+Validated there:
+- 15/15 independent family gates;
+- 15/15 consolidated direct routes;
+- root + shell + filters/search;
+- collection usability.
 
-## Global Refinement completed gates
+## Completed Global Refinement gates
 
 - G0 Baseline Freeze — `PASS`
 - G1 Collection Navigation Frame — `PASS`
 - G2 Shell Legibility — `PASS`
 - G3 Atlas Family Individuality — `PASS`
 
-G3 implementation:
-`239f076fb9fc2936b16d793caa14c486eb182d05`
+G3 implementation: `239f076fb9fc2936b16d793caa14c486eb182d05`
+Golden G3 preview: `dpl_EgKHruAvbW6exjHq8DGWvpEv8kV6`
 
-G3 exact implementation preview:
-`dpl_EgKHruAvbW6exjHq8DGWvpEv8kV6`
-
-Residual final check:
-- exact measured ~390 px atlas regression remains deferred to final validation.
+Measured ~390 px collection regression remains scheduled for final validation.
 
 # CONTINENTAL BALANCE GATE 2 — ACTIVE
 
 Parent register:
 `CONTINENTAL_BALANCE_GATE_2_24_FAMILY_EQUILIBRIUM.md`
 
-## Why Gate 2 reopened expansion
-
-Continental Balance Gate 1 prevented geographic collapse but did not create numerical parity.
-
 Current validated distribution:
-
 # `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-Current validated count: **15**.
-
-New target:
-
+Target:
 # `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 
-Target validated count:
+Target total: **24 validated families**.
 
-# **24 FAMILIES**
+Open slots:
+- Asia +1
+- North America +2
+- South America +2
+- Oceania +2
+- Europe +2
 
-Open validated-family slots:
-- Africa `+0`
-- Asia `+1`
-- North America `+2`
-- South America `+2`
-- Oceania `+2`
-- Europe `+2`
-
-Total required additions: **9**.
-
-## Balance law
-
+Law:
 # **BALANCE IS A TARGET, NOT A LICENSE TO ADD WEAK FAMILIES.**
-
-Every new family must be source-grounded, pair-native, mechanism-novel, culturally specific without stereotype, interaction-translatable and independently validated before joining the 24-family count.
 
 ## B2.1 — Relationship Gap Map
 
-Register:
-`CONTINENTAL_BALANCE_B2_1_RELATIONSHIP_GAP_MAP.md`
+Status: `PASS`
+Register: `CONTINENTAL_BALANCE_B2_1_RELATIONSHIP_GAP_MAP.md`
+
+Discovery map contains R1–R12 relationship territories. Rule:
+# **SOURCE CHOOSES THE MECHANISM. THE GAP MAP ONLY GUIDES DISCOVERY.**
+
+Nine-addition diversity target:
+- at least seven materially different primary topologies;
+- no more than two new families share a topology unless interaction laws differ materially.
+
+# ASIA +1 — ACTIVE FAMILY GATE
+
+Validated Asia count remains:
+# `3 / 4`
+
+## B2.2A — Asia Candidate Pool
+
+Status: `PASS`
+Register: `CONTINENTAL_BALANCE_B2_2A_ASIA_CANDIDATE_POOL.md`
+
+Six source-first candidates reviewed:
+- Persian planispheric astrolabe / Iran;
+- Chinese timber tenon-joint craftsmanship / China;
+- Jeongnang communicating gate / Jeju;
+- Joseon Moon Jar / Korea;
+- Jeju Gireumteul oil press;
+- Korean Maetdol rotary quern.
+
+## B2.2B — Asia Promotion Matrix
+
+Status: `PASS / ONE CANDIDATE PROMOTED`
+Register: `CONTINENTAL_BALANCE_B2_2B_ASIA_PROMOTION_MATRIX.md`
+
+Ranking:
+1. Persian Planispheric Astrolabe / Isfahan — **PROMOTE**
+2. Jeongnang / Jeju — strong reserve
+3. Chinese timber joinery — strong reserve; specific joint required
+
+Promoted working family:
+- slug `astrolabe-isfahan`;
+- place `Isfahan, Iran`;
+- memory `Celestial / Instrument Memory`;
+- edition `Rete Register`;
+- mechanism `relative rotation / horizon calibration`.
+
+Law:
+# **RELATIVE ROTATION BETWEEN STAR MAP AND HORIZON PRODUCES A CELESTIAL READING.**
+
+## B2.3A — Astrolabe Source + Interaction Spec
 
 Status:
-# `PASS / GAP MAP READY`
+# `SOURCE PASS / INTERACTION SPEC FROZEN`
 
-Twelve underrepresented discovery territories are mapped:
-- R1 Balance / Counterweight
-- R2 Hinge / Rotation / Articulation
-- R3 Fold / Overlap / Layer Reveal
-- R4 Load / Stack / Accumulation
-- R5 Latch / Clasp / Discrete Engagement
-- R6 Projection / Shadow / Occlusion
-- R7 Transfer / Pour / Containment
-- R8 Exchange / Role Reversal
-- R9 Cycle / Synchronization
-- R10 Compression / Expansion / Stored Force
-- R11 Encode / Decode / Completion
-- R12 Calibrate / Tune / Measure
+Register:
+`CONTINENTAL_BALANCE_B2_3A_ASIA_PERSIAN_ASTROLABE_SPEC.md`
 
-These are discovery lanes only. The source chooses the final mechanism.
+Truthfulness boundary:
+- isolate only the documented `RETE ↔ LATITUDE PLATE` subsystem;
+- do not claim a complete astrolabe simulation;
+- no exact astronomical calculation claim unless independently verified.
 
-Final nine-family diversity target:
-- occupy at least 7 materially different relationship territories;
-- no more than two new families share the same primary topology unless interaction laws are demonstrably different.
+Pair:
+- Card A = `RETE / CELESTIAL MAP`;
+- Card B = `LATITUDE PLATE / LOCAL HORIZON`;
+- center = shared axis/pin relation only.
 
-## Immediate research order
+Alternate controls:
+- `LOCAL LATITUDE PLATE`;
+- `OTHER LATITUDE PLATE`;
+- both contexts remain valid.
 
-1. Asia `+1`
-2. North America `+2`
-3. South America `+2`
-4. Oceania `+2`
-5. Europe `+2`
+## B2.3B — Astrolabe Build Candidate
 
-Operational order only; no continental priority is implied.
+Status:
+# **SOURCE PASS / LIVE + USER VISUAL GATE PENDING**
 
-# G4 POLISH — PARKED
+Register:
+`CONTINENTAL_BALANCE_B2_3B_ASIA_ASTROLABE_BUILD_CANDIDATE.md`
 
-G4 is paused until Continental Balance Gate 2 reaches its 24-family collection regression or is explicitly abandoned.
+Candidate:
+`families/astrolabe-isfahan/candidate.html`
 
-Existing Khipu work is preserved and not lost:
-- candidate `families/khipu-peru/g4-1.html`;
-- implementation `64647ea78b04439ea9a57ece47f19490d9185d45`;
-- golden `snapshot.html` remains unchanged;
-- public route remains unchanged;
-- status `PARKED / NOT PROMOTED`.
+Initial implementation:
+`ade670ad03513d972180ef78d717f174f585ed6c`
 
-Vercel rate-limit evidence remains recorded in:
-`GLOBAL_REFINEMENT_G4_1A_VERCEL_RATE_LIMIT_BLOCKER.md`
+Signed-angle formatter fix:
+`a756e58d0bead32b90ca1f6470e68592be0c3d00`
 
-It is no longer the immediate project gate.
+Current candidate blob:
+`2903d6a8023e3ba56168f3efc05994c91a7e49f6`
 
-# IMMEDIATE NEXT OUTPUT
+Source checks:
+- initial implementation added only the autonomous candidate file;
+- formatter patch changed one line in that file only;
+- direct pointer rotation preserved;
+- range slider preserved;
+- local/other plate controls preserved;
+- source footer + structural-translation disclaimer preserved;
+- JS syntax check passed;
+- signed angle examples verified: `−005° / +000° / +042° / −180°`.
 
-# **B2.2A — ASIA SOURCE-FIRST CANDIDATE POOL**
+Candidate is NOT in `collection/families.json`, atlas, validated count or public routes.
 
-Requirements:
-- minimum four credible candidates for the one open Asian slot;
-- use authoritative sources where possible;
-- reject candidates that duplicate Toyama transformation, Kento registration or Ombak resonance;
-- no build before candidate comparison/promotion matrix.
+# B2.4A — NEXT ASIA GATE
 
-After Asia selection: North America → South America → Oceania → Europe.
+# **ASTROLABE LIVE + USER VISUAL VALIDATION**
 
-After 24-family balance: atlas regression → resume family polish → collection cohesion → final validation.
+Required evidence when deployment capacity is available:
+1. two bounded members remain primary;
+2. approach/pin does not turn center into product;
+3. rete direct drag clearly rotates;
+4. slider and direct rotation agree;
+5. local/other plate changes valid horizon context;
+6. signed angles display correctly;
+7. narrow layout remains usable;
+8. visual language reads as precision instrument, not generic sci-fi/cultural ornament.
+
+Only after B2.4A PASS may Asia become `4 / 4` and the candidate be promoted to atlas/registry.
+
+## Vercel infrastructure state
+
+Vercel Hobby recently reported:
+`Deployment rate limited — retry in 24 hours.`
+
+No fresh Astrolabe live preview is claimed until an actual deployment containing `a756e58d…` or descendant is confirmed.
+
+While this gate waits on infrastructure, source-first discovery may continue for North America's two missing slots. This does not waive the Asia validation gate.
+
+# NORTH AMERICA — NEXT RESEARCH LANE
+
+Current North America:
+- Gatineau — registered continuation;
+- Coyoacán — photographic trace / archive counterpart.
+
+Need: **+2**.
+
+Next output:
+# **B2.2C — NORTH AMERICA SOURCE-FIRST CANDIDATE POOL**
+
+Prefer mechanisms outside registration/pass and archive/photo trace; high-value gap lanes include balance/counterweight, latch/engagement, projection/occlusion, exchange/role reversal, compression/stored force and encode/decode.
+
+# G4 FAMILY POLISH — PARKED
+
+Do not resume family polish while Balance Gate 2 is active.
+
+Khipu candidate remains preserved and unpromoted:
+- `families/khipu-peru/g4-1.html`;
+- commit `64647ea78b04439ea9a57ece47f19490d9185d45`;
+- golden/public route unchanged.
+
+After 24-family equilibrium:
+B2.5 collection regression → resume G4 polish → G5 cohesion → G6 final validation.
 
 ## Persistence protocol
 
-Update this file + `RELATIONAL_KEY_HANDOVER.md` after every significant research, promotion, build or validation milestone.
+Update this file + `RELATIONAL_KEY_HANDOVER.md` after every meaningful source, promotion, build, deployment or user-validation milestone.
