@@ -5,7 +5,7 @@ Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
 Global Refinement PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `GLOBAL_REFINEMENT_G4_1_KHIPU_POLISH_CANDIDATE.md`
+Latest verified milestone: `GLOBAL_REFINEMENT_G4_1A_VERCEL_RATE_LIMIT_BLOCKER.md`
 
 ## Product invariant
 
@@ -86,7 +86,7 @@ Residual G6 check:
 ## G4 — PASS WITH POLISH Backlog
 
 Status:
-# **ACTIVE — G4.1 KHIPU SOURCE PASS / LIVE CANDIDATE NEXT**
+# **ACTIVE — G4.1 KHIPU SOURCE PASS / LIVE BLOCKED BY VERCEL QUOTA**
 
 Inventory:
 `GLOBAL_REFINEMENT_G4_POLISH_INVENTORY.md`
@@ -142,27 +142,44 @@ Candidate technique:
 - make `approach → tension → registered` cord-state contrast easier to perceive;
 - preserve rejected residual and both-records-valid semantics.
 
+### G4.1A — External live blocker
+
+Register:
+`GLOBAL_REFINEMENT_G4_1A_VERCEL_RATE_LIMIT_BLOCKER.md`
+
+Verified GitHub commit status on the branch head reports:
+# `Deployment rate limited — retry in 24 hours.`
+
+This affects the canonical collection project and several legacy RELATIONAL KEY projects tied to the repo. It is an external Vercel Hobby quota limit, not a Khipu source/build failure.
+
+Canonical collection Vercel project:
+- project ID `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`;
+- team ID `team_twDc66jGM0sPvNM4I5Huc0x7`;
+- latest successful deployment remains `dpl_ExZkfTQqiiDscdkU2K8t2LGgz1Ta`;
+- that deployment is G3.2B at commit `f1797ccaf141c97732b32adbb2227a87b7cc827f`.
+
 # IMMEDIATE NEXT GATE
 
-# **G4.1A — KHIPU LIVE CANDIDATE REGRESSION**
+# **G4.1A — RETRY KHIPU LIVE CANDIDATE AFTER VERCEL QUOTA CLEARS**
 
-Wait for / identify a Preview containing commit `64647ea…`, then audit `/families/khipu-peru/g4-1.html` against the golden public route.
+After the quota window clears:
+1. trigger or identify the first Preview containing `64647ea…` or later descendant;
+2. verify state `READY` and deployed SHA ancestry;
+3. open `/families/khipu-peru/g4-1.html`;
+4. MATCHING RECORD from reset → TEST RELATIONSHIP;
+5. judge tension and knot hierarchy;
+6. OTHER RECORD → TEST RELATIONSHIP;
+7. verify residual + no invalidation;
+8. only then decide `G4.1 USER PASS / PROMOTE` or revise.
 
-Required user sequence:
-- RESET / MATCHING RECORD → TEST RELATIONSHIP;
-- judge tension and knot hierarchy;
-- OTHER RECORD → TEST RELATIONSHIP;
-- verify residual + no invalidation;
-- compare to golden if needed.
-
-Do not promote or start Kento before Khipu receives source/live/user PASS.
+Do not promote Khipu or begin Kento before this live/user gate passes.
 
 ## Future
 
 G4.2 Kento → G4.3 Siku → G4.4 evidence re-audit Zellige/Ombak/Swell → G5 Collection Cohesion → G6 Final Collection Validation.
 
 Status vocabulary:
-`G3 PASS ≠ G4.1 SOURCE PASS ≠ G4.1 USER PASS ≠ G4 PASS ≠ FINAL COLLECTION PASS`.
+`G3 PASS ≠ G4.1 SOURCE PASS ≠ G4.1 LIVE PASS ≠ G4 PASS ≠ FINAL COLLECTION PASS`.
 
 ## Persistence protocol
 
