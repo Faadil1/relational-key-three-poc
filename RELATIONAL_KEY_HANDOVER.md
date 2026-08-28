@@ -8,25 +8,24 @@ PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **B2.2E — SOUTH AMERICA +2 SOURCE-FIRST CANDIDATE POOL**
+# **B2.2F — SOUTH AMERICA TWO-SLOT PROMOTION MATRIX**
 
-Do NOT resume G4 polish. Do NOT add source-pass candidates to the public atlas or validated counts.
+Do not resume G4 polish. Do not build any South America candidate before the matrix promotes exactly two.
 
-Canonical invariant:
+# CANONICAL INVARIANT
+
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
-Immutable pre-refinement regression anchor:
+Immutable pre-refinement anchor:
 `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
 
-# CURRENT COLLECTION STATE
+# CONTINENTAL BALANCE GATE 2
 
 Target:
 `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 
-Current validated distribution:
+Current validated:
 `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
-
-Target total: 24 validated families.
 
 Balance law:
 **BALANCE IS A TARGET, NOT A LICENSE TO ADD WEAK FAMILIES.**
@@ -34,190 +33,143 @@ Balance law:
 Discovery law:
 **SOURCE CHOOSES THE MECHANISM. THE GAP MAP ONLY GUIDES DISCOVERY.**
 
-Gap map:
-`CONTINENTAL_BALANCE_B2_1_RELATIONSHIP_GAP_MAP.md`
+# CURRENT SOURCE-PASS BUILD QUEUE
 
-# COMPLETED EXPANSION SOURCE GATES
-
-## Asia candidate — Astrolabe / Isfahan
-
-Path:
-`families/astrolabe-isfahan/candidate.html`
-
-Law:
-`RELATIVE ROTATION BETWEEN STAR MAP AND HORIZON PRODUCES A CELESTIAL READING.`
-
-Commits:
+## Astrolabe / Isfahan
+- path `families/astrolabe-isfahan/candidate.html`
+- law `RELATIVE ROTATION BETWEEN STAR MAP AND HORIZON PRODUCES A CELESTIAL READING.`
 - build `ade670ad03513d972180ef78d717f174f585ed6c`
-- signed-angle fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`
+- fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`
+- blob `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
+- status `SOURCE PASS / LIVE + USER PENDING`
 
-Blob:
-`2903d6a8023e3ba56168f3efc05994c91a7e49f6`
+## Janney / Virginia
+- path `families/coupler-virginia/candidate.html`
+- law `MATING KNUCKLES TURN CONTACT INTO A LOCKED LOAD PATH.`
+- implementation `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`
+- blob `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
+- status `SOURCE PASS / LIVE + USER PENDING`
 
-Status:
-`SOURCE PASS / LIVE + USER VISUAL PENDING`
+## Metate + Metlapil / Teotitlán del Valle
+- spec `CONTINENTAL_BALANCE_B2_3E_NORTH_AMERICA_METATE_SPEC.md`
+- build register `CONTINENTAL_BALANCE_B2_3F_NORTH_AMERICA_METATE_BUILD_CANDIDATE.md`
+- path `families/metate-teotitlan/candidate.html`
+- law `PRESSURE AND RECIPROCAL STROKE BETWEEN COMPLEMENTARY STONES PRODUCE GRINDING.`
+- implementation `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`
+- blob `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
+- direct drag + reciprocal extreme threshold + MAIZE/CACAO valid + node syntax pass
+- status `SOURCE PASS / LIVE + USER PENDING`
 
-Asia remains `3/4`.
+No continental counts change yet.
 
-## North America candidate 1 — Janney / Virginia
+# SOUTH AMERICA B2.2E — POOL PASS
 
-Path:
-`families/coupler-virginia/candidate.html`
+Register:
+`CONTINENTAL_BALANCE_B2_2E_SOUTH_AMERICA_CANDIDATE_POOL.md`
 
-Law:
-`MATING KNUCKLES TURN CONTACT INTO A LOCKED LOAD PATH.`
+Commit:
+`2f6c2b463cf40c8a4329c292f4ec5bf76b920e7e`
 
-Implementation:
-`fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`
+Validated South America remains `2/4`:
+- Khipu / Peru — tension + knot registration
+- Siku / Bolivia — complementary absence + temporal interlock
 
-Blob:
-`c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
+Six qualified candidates:
 
-READY:
-`APPROACH → CONTACT → PIVOT → LATCH → LOAD PATH`
+### A — Valparaíso Funicular / Chile
+- topology `R1 balance / counterweight`
+- documented two cars moving simultaneously in opposite directions; one counterbalances the other
+- law candidate `ONE CAR'S OPPOSITE MOTION COUNTERBALANCES THE OTHER ON A SHARED CABLE.`
+- pair purity VERY HIGH
+- tier A / favorite
 
-Alternate-valid:
-`BOTH KNUCKLES CLOSED → CONTACT WITHOUT COUPLING`
+### B — Mate + Bombilla / Argentina + broader regional context
+- topology `R7 selective passage / containment`
+- separate vessel + mate-strainer/bombilla
+- law candidate `A FILTERING STRAW TURNS A PARTICULATE INFUSION INTO SELECTIVE FLOW.`
+- pair purity HIGH
+- tier A / finalist
 
-Status:
-`SOURCE PASS / LIVE + USER VISUAL PENDING`
+### C — Pasto Varnish Mopa-Mopa / Colombia
+- topology `R3 layer / cut reveal`
+- excellent novelty, medium pair purity because two-card split is editorial
+- UNESCO living heritage on Urgent Safeguarding List; practitioner/community framing required
+- tier B reserve
 
-## North America candidate 2 — Metate + Metlapil / Teotitlán del Valle
+### D — Cobogó / Recife-Pernambuco, Brazil
+- topology `R6 projection / shadow`
+- strong visual novelty
+- triadic causality screen + incident light + receiving field
+- tier B reserve
 
-Spec:
-`CONTINENTAL_BALANCE_B2_3E_NORTH_AMERICA_METATE_SPEC.md`
+### E — Poporo + Palillo / Early Quimbaya, Colombia
+- mechanically pair-native and cumulative
+- coca/ritual/sexual-symbolic/living-context burden is unnecessary
+- HOLD / do not promote this round
 
-Build register:
-`CONTINENTAL_BALANCE_B2_3F_NORTH_AMERICA_METATE_BUILD_CANDIDATE.md`
+### F — Bahía Double-Chambered Whistling Bottle / Ecuador
+- transfer/airflow/sound
+- two chambers belong to one vessel, weak pair invariant
+- reserve
 
-Spec commit:
-`38d766100cc6ce9bd38d7af26a25495ec5f8f659`
+# IMMEDIATE TASK — B2.2F MATRIX
 
-Path:
-`families/metate-teotitlan/candidate.html`
+Compare front-runners:
+1. Valparaíso Funicular
+2. Mate + Bombilla
+3. Pasto Varnish
+4. Cobogó
 
-Implementation:
-`f62e6c2d2371205bdae4f498fe2f7670e17f09bd`
+Choose exactly TWO.
 
-Blob:
-`8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
+Optimize the two-slot combination for:
+- native pair necessity;
+- source authority;
+- cultural truthfulness;
+- interaction legibility;
+- buildability;
+- differentiation from Khipu + Siku;
+- differentiation from current expansion candidates Astrolabe + Janney + Metate;
+- global topology spread.
 
-Law:
-`PRESSURE AND RECIPROCAL STROKE BETWEEN COMPLEMENTARY STONES PRODUCE GRINDING.`
+Likely combination hypothesis to test, NOT pre-approved:
+`Valparaíso R1 + Mate/Bombilla R7`.
 
-Relation:
-`METATE ≠ METLAPIL → PAIR → CONTACT → DIRECT RECIPROCAL STROKE → ABRASION ACCUMULATES → FINER GRIND → CONTINUE`
+Why this hypothesis is strong:
+- both have more literal two-object/member relationships than Pasto/Cobogó;
+- adds two entirely new topology lanes;
+- avoids another material surface family after Metate;
+- avoids another semi-triadic environmental relation;
+- lower translation burden than Pasto while still culturally grounded.
 
-Source-gate implementation facts:
-- direct pointer/touch metlapil drag;
-- keyboard Left/Right fallback;
-- drag limit ±100;
-- extreme threshold 72;
-- first extreme primes, opposite extreme counts one pass;
-- jitter or same-side shaking cannot trivially add passes;
-- max represented progress 8 passes;
-- COARSE <4, MEDIUM ≥4, FINE ≥7;
-- material field remains inside Card A;
-- MAIZE and CACAO both valid;
-- reset restores separate/coarse state;
-- source + non-exclusivity disclaimer present;
-- responsive CSS 980px/560px;
-- JavaScript passes `node --check`.
+But matrix must explicitly test alternatives:
+- Funicular + Pasto
+- Funicular + Cobogó
+- Mate + Pasto
+- Mate + Cobogó
 
-Status:
-`SOURCE PASS / LIVE + USER VISUAL PENDING`
+Do not code until matrix closes.
 
-North America remains `2/4`.
+# LIVE VALIDATION QUEUE
 
-# GROUPED LIVE VALIDATION QUEUE
-
-When Vercel Hobby deployment capacity returns, prefer one descendant Preview containing all three source-pass candidates:
-1. Astrolabe
-2. Janney
-3. Metate
-
-Then audit each independently. Sharing a deployment does NOT merge gates and does NOT change counts automatically.
-
-Recent blocker:
+Vercel Hobby recently returned:
 `Deployment rate limited — retry in 24 hours.`
 
-# IMMEDIATE RESEARCH — SOUTH AMERICA +2
-
-Existing validated South America mechanisms:
-1. Peru / Khipu — `tension / knot registration`
-2. Bolivia / Siku — `complementary absence / temporal interlock`
-
-Need TWO additions materially distinct from both.
-
-## B2.2E requirements
-
-Research at least 6 credible candidates before promotion.
-
-For each candidate record:
-- country/place/community/object or practice;
-- authoritative source anchors;
-- bounded Pair A + Pair B;
-- primary relational topology;
-- candidate law;
-- interaction translation;
-- alternate-valid state;
-- overlap with Khipu / Siku / global 18-candidate topology set;
-- cultural/truthfulness risk;
-- build complexity.
-
-Prefer:
-- museum collections;
-- heritage institutions;
-- academic/technical research;
-- primary archives/patents where appropriate.
-
-Avoid:
-- generic national icons;
-- sacred/living systems that would be reduced merely for visual novelty;
-- relations requiring an unseen third participant;
-- mechanisms whose pair can be collapsed into one object;
-- another knot/tension or alternating musical system.
-
-Possible gap lanes to explore, not prescriptions:
-- R1 balance / counterweight
-- R2 articulation / hinge
-- R3 fold / overlap
-- R4 load / accumulation
-- R6 projection / shadow
-- R7 transfer / containment
-- R8 exchange / role reversal
-- R9 synchronization (but NOT another Siku-like temporal alternation)
-- R11 encode/decode
-- R12 calibrate/measure
-
-## Next after pool
-
-# `B2.2F — SOUTH AMERICA TWO-SLOT PROMOTION MATRIX`
-
-Do not build until that matrix promotes exactly two candidates.
-
-# NORTH AMERICA RESERVES
-
-1. Yale Pin-Tumbler Lock — strongest reserve
-2. Lacrosse stick + ball — community-context review reserve
-3. Métis Red River Cart — topology-overlap reserve
-4. Maya Calendar Round — context-sensitivity hold, not routine fallback
+When capacity returns, prefer one descendant Preview for:
+Astrolabe + Janney + Metate, then audit separately.
 
 # G4 POLISH — PARKED
 
-Khipu candidate preserved only:
-- `families/khipu-peru/g4-1.html`
-- `64647ea78b04439ea9a57ece47f19490d9185d45`
-
-After 24-family equilibrium:
-B2.5 collection regression → G4 polish → G5 cohesion → G6 final validation.
+Khipu polish candidate preserved:
+`families/khipu-peru/g4-1.html`
+implementation `64647ea78b04439ea9a57ece47f19490d9185d45`
 
 # PERSISTENCE PROTOCOL — MANDATORY
 
-After every significant research, promotion, spec, build, deployment or user-validation milestone:
-1. write/update the dedicated milestone register;
-2. update `RELATIONAL_KEY_CURRENT_STATE.md`;
-3. update this handover;
-4. record exact branch + commit/blob/deployment IDs;
-5. explicitly separate SOURCE PASS / LIVE PASS / USER PASS / VALIDATED COUNT;
-6. leave exactly one immediate next output.
+After every meaningful milestone:
+1. dedicated register;
+2. CURRENT_STATE update;
+3. HANDOVER update;
+4. exact branch + commit/blob/deployment IDs;
+5. explicit SOURCE/LIVE/USER/VALIDATED status;
+6. one explicit next output.
