@@ -5,7 +5,7 @@ Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
 Draft PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `CONTINENTAL_BALANCE_B2_2H_OCEANIA_PROMOTION_MATRIX.md`
+Latest verified milestone: `CONTINENTAL_BALANCE_B2_3K_OCEANIA_TONGIAKI_SPEC.md`
 
 # PRODUCT INVARIANT
 
@@ -31,48 +31,15 @@ Core laws:
 - **BALANCE IS A TARGET, NOT A LICENSE TO ADD WEAK FAMILIES.**
 - **SOURCE CHOOSES THE MECHANISM. THE GAP MAP ONLY GUIDES DISCOVERY.**
 
-# SOURCE-PASS BUILD QUEUE — ALL LIVE/USER PENDING
+# SOURCE-PASS BUILD QUEUE — LIVE/USER PENDING
 
-1. **Astrolabe / Isfahan**
-   - `families/astrolabe-isfahan/candidate.html`
-   - build `ade670ad03513d972180ef78d717f174f585ed6c`
-   - fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`
-   - blob `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
-   - Asia remains `3/4`
+1. Astrolabe / Isfahan — build `ade670ad03513d972180ef78d717f174f585ed6c`, fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`, blob `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
+2. Janney / Virginia — build `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`, blob `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
+3. Metate + Metlapil — build `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`, blob `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
+4. Valparaíso Funicular — spec `f06731fc0e001c09524e21fc81da8fe6697aa313`, build `7aff21b59ff88fcbe3e526958cf9fdf67c0d3750`, blob `1e71497d7f9f5411eca2347b36bc0402db8b905b`
+5. Mate + Bombilla — spec `36c778af5e69e1419ed4b011ca74cf19cce96ab6`, build `6b1a12b166b3be5612ba5b1d5a1f731281186379`, blob `6bdebcff2bd3c2b8c57f0c75dc72b20fcba37d55`
 
-2. **Janney / Virginia**
-   - `families/coupler-virginia/candidate.html`
-   - build `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`
-   - blob `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
-
-3. **Metate + Metlapil / Teotitlán del Valle**
-   - `families/metate-teotitlan/candidate.html`
-   - build `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`
-   - blob `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
-   - thresholded reciprocal drag / MAIZE+CACAO valid / JS PASS
-   - North America remains `2/4`
-
-4. **Valparaíso Funicular / Chile**
-   - `families/funicular-valparaiso/candidate.html`
-   - spec `f06731fc0e001c09524e21fc81da8fe6697aa313`
-   - build `7aff21b59ff88fcbe3e526958cf9fdf67c0d3750`
-   - blob `1e71497d7f9f5411eca2347b36bc0402db8b905b`
-   - exact inverse A↔B drag + keyboard + swap/reset / JS PASS
-
-5. **Mate + Bombilla / Argentina + regional context**
-   - `families/mate-bombilla-argentina/candidate.html`
-   - spec `36c778af5e69e1419ed4b011ca74cf19cce96ab6`
-   - build `6b1a12b166b3be5612ba5b1d5a1f731281186379`
-   - blob `6bdebcff2bd3c2b8c57f0c75dc72b20fcba37d55`
-   - INSERT no auto-flow; hold starts flow; release stops / JS PASS
-   - South America remains `2/4`
-
-# SOUTH AMERICA RESERVES
-
-1. Cobogó / Brazil — R6 projection
-2. Pasto Varnish / Colombia — R3 layer, higher safeguarding/editorial burden
-3. Bahía Whistling Bottle / Ecuador
-4. Poporo + Palillo — HOLD
+All are `SOURCE PASS / LIVE + USER PENDING`.
 
 # OCEANIA +2 — ACTIVE FAMILY ROUNDS
 
@@ -80,111 +47,121 @@ Validated Oceania remains:
 # `2 / 4`
 
 Existing validated:
-- Marshall Islands / Swell — environmental wave deflection / navigation memory;
+- Marshall Islands / Swell — wave deflection / navigation memory;
 - Aotearoa / Hika Ahi — friction → heat → ember.
 
 ## B2.2G — Candidate Pool
 
-Status: `PASS`
+PASS.
 Register: `CONTINENTAL_BALANCE_B2_2G_OCEANIA_CANDIDATE_POOL.md`
 Commit: `64cfdb8ad343992f0f589bf968fc4c624d9a9d1a`
 
-Six candidates reviewed:
-- Tonga / Tongiaki Double Hull;
-- Sāmoa / I‘e Tapa Beater + Wooden Anvil;
-- Tokelau / Toki Blade + Haft System;
-- Massim PNG / Kula Soulava + Mwali;
-- Jawoyn Australia / Music Sticks;
-- East Sepik-Ramu PNG / Garamut + Wooden Pounder.
+## B2.2H — Promotion Matrix
 
-## B2.2H — Two-Slot Promotion Matrix
+PASS / two research promotions.
+Register: `CONTINENTAL_BALANCE_B2_2H_OCEANIA_PROMOTION_MATRIX.md`
+Commit: `9fbc4541a585980dd7991f22b7e0dddd64008991`
 
-Status:
-# **PASS / TWO CANDIDATES PROMOTED TO FAMILY ROUNDS**
+Promoted:
+1. **Tongiaki Double-Hulled Canoe / Tonga** — R4 structural coupling / distributed buoyancy
+2. **Garamut + Wooden Pounder / East Sepik-Ramu PNG** — R11 encode/signal through ordered impact
 
-Register:
-`CONTINENTAL_BALANCE_B2_2H_OCEANIA_PROMOTION_MATRIX.md`
+Kula remains `CONTEXT-SENSITIVITY HOLD / NOT AUTOMATIC FALLBACK`.
 
-Promotion matrix commit:
-`9fbc4541a585980dd7991f22b7e0dddd64008991`
-
-### Oceania Slot 1
-
-# **TONGIAKI DOUBLE-HULLED CANOE / TONGA — PROMOTE**
-
-Primary topology:
-`R4 structural coupling / distributed buoyancy`
-
-Law direction:
-# **LASHED PARALLEL HULLS DISTRIBUTE BUOYANCY INTO A MORE STABLE PLATFORM.**
-
-Key boundary:
-- structural stability only;
-- no swell reading, star navigation, route finding or exact naval-performance simulation;
-- booms/deck remain subordinate connector evidence;
-- both hulls remain product members.
-
-### Oceania Slot 2
-
-# **GARAMUT + WOODEN POUNDER / EAST SEPIK-RAMU, PAPUA NEW GUINEA — PROMOTE**
-
-Primary topology:
-`R11 encode / signal through ordered impact`
-
-Law direction:
-# **ORDERED IMPACTS ON A GARAMUT TURN RHYTHM INTO A LONG-DISTANCE SIGNAL.**
-
-Hard safeguarding boundary:
-- no invented sequence may be labeled an authentic community code;
-- do not teach warning/death/invitation/personal-name signals;
-- do not copy clan/spirit carving as decorative UI;
-- choose one defensible regional source anchor at spec stage;
-- timing demonstration must be explicitly editorial.
-
-### Kula decision
-
-Kula counter-circulation is mechanically exceptional R8 but:
-# **DO NOT PROMOTE IN CURRENT ROUND / CONTEXT-SENSITIVITY HOLD**
-
-Reason: the actual causal unit is a living distributed network of partners, histories, journeys and reciprocal relations; a two-token orbit would preserve geometry while flattening the social system.
-
-### Reserve order
-
+Reserve order:
 1. Sāmoa I‘e + Wooden Anvil
 2. Tokelau Toki Blade + Haft System
-3. Kula Soulava + Mwali — context hold, not automatic fallback
+3. Kula — context hold
 4. Jawoyn Music Sticks
 
-If Garamut fails its safeguarding/spec gate, Sāmoa I‘e is first fallback; do not automatically substitute Kula.
+## B2.3K — Tongiaki Source + Interaction Spec
+
+Status:
+# **SOURCE PASS / INTERACTION SPEC FROZEN**
+
+Register:
+`CONTINENTAL_BALANCE_B2_3K_OCEANIA_TONGIAKI_SPEC.md`
+
+Spec commit:
+`00f5a984ae4c376753b2ed6f64dc955307c9e38d`
+
+Working identity:
+- slug `tongiaki-tonga`;
+- place `Tongatapu / Tonga`;
+- memory `Structural / Voyaging Memory`;
+- edition `Twin Hull Register`;
+- topology `R4 structural coupling / distributed support`.
+
+Canonical law:
+# **TWO HULLS JOINED IN PARALLEL FORM A SHARED, MORE STABLE VOYAGING PLATFORM.**
+
+Interaction proof deliberately narrower:
+# `TWO HULLS → PARALLEL ALIGNMENT → COUPLING → ONE STRUCTURAL PLATFORM`
+
+Truth boundary:
+- sources support qualitative stability/seaworthiness context;
+- UI must NOT simulate exact hydrodynamics, righting moments, capsize, displacement, load equations or historical dimensions;
+- no stability percentage or fake performance benchmark.
+
+Pair:
+- Card A = `HULL A / PORT MEMBER`;
+- Card B = `HULL B / STARBOARD MEMBER`;
+- both directly draggable and equal in product hierarchy.
+
+Relationship field:
+- only thin boom/deck connector evidence;
+- no third card/gauge/map/ocean hero.
+
+Interaction:
+- start distinct/uncoupled;
+- user directly adjusts fore/aft alignment + small inboard approach;
+- broad editorial tolerance detects parallel coupling;
+- connection appears only inside tolerance;
+- breaking tolerance returns to `UNCOUPLED / TWO VALID HULLS` without error.
+
+Hard Swell non-overlap:
+- no swell arrows;
+- no stars;
+- no routes/island targets;
+- no heading/navigation interaction;
+- neutral structural background only.
+
+Required footer:
+`STRUCTURAL TRANSLATION · TONGAN TONGIAKI DOUBLE-HULL RELATION · EDITORIAL ALIGNMENT THRESHOLD · NOT A HYDRODYNAMIC OR NAVIGATION SIMULATOR`
+
+Oceania remains `2/4`.
 
 # IMMEDIATE NEXT OUTPUT
 
-# **B2.3K — OCEANIA FAMILY ROUND 1: TONGIAKI DOUBLE-HULL SOURCE + INTERACTION SPEC**
+# **B2.3L — TONGIAKI AUTONOMOUS BUILD CANDIDATE + SOURCE GATE**
 
-Required:
-1. anchor to Tongatapu/Tonga source evidence;
-2. freeze Card A = Hull A and Card B = Hull B;
-3. connector/booms/deck stay subordinate;
-4. define a truthful interaction that demonstrates structural coupling/stability without pretending to be a hydrodynamic simulator;
-5. alternate-valid state must preserve both hulls;
-6. explicitly prevent Swell/navigation overlap;
-7. no build before spec freeze.
+Required path:
+`families/tongiaki-tonga/candidate.html`
 
-Then:
-`B2.3L — TONGIAKI AUTONOMOUS BUILD CANDIDATE + SOURCE GATE`.
+Acceptance:
+1. autonomous candidate only;
+2. no atlas/registry/public-route mutation;
+3. two bounded hull cards visible immediately;
+4. both hulls directly draggable;
+5. keyboard fallback;
+6. coupling only after approach + parallel alignment threshold;
+7. connector/deck subordinate;
+8. breaking alignment returns cleanly to valid uncoupled state;
+9. no stability numbers/fake physics/navigation UI;
+10. truth/source footer + responsive CSS + JS syntax pass.
 
-After Tongiaki source pass, freeze Garamut as Oceania family round 2.
+After Tongiaki SOURCE PASS:
+- update CURRENT_STATE + HANDOVER immediately;
+- then freeze `B2.3M — GARAMUT SOURCE + INTERACTION SPEC` before any Garamut code.
 
-# GROUPED LIVE VALIDATION QUEUE
+# SOUTH AMERICA RESERVES
 
-Current built candidates:
-1. Astrolabe
-2. Janney
-3. Metate
-4. Valparaíso
-5. Mate + Bombilla
+1. Cobogó / Brazil
+2. Pasto Varnish / Colombia
+3. Bahía Whistling Bottle / Ecuador
+4. Poporo + Palillo — HOLD
 
-Each requires an independent live/user verdict.
+# LIVE INFRASTRUCTURE
 
 Recent Vercel Hobby blocker:
 `Deployment rate limited — retry in 24 hours.`
