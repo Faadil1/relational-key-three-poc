@@ -5,7 +5,7 @@ Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
 Draft PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `CONTINENTAL_BALANCE_B2_LIVE_INFRASTRUCTURE_CHECKPOINT_2026_08_28.md`
+Latest verified milestone: `CONTINENTAL_BALANCE_B2_2I_EUROPE_CANDIDATE_POOL.md`
 
 # PRODUCT INVARIANT
 
@@ -47,13 +47,12 @@ All seven remain:
 # OCEANIA RESEARCH/BUILD COMPLETE — VALIDATION PENDING
 
 Validated Oceania remains `2/4`.
-
 Promoted/source-passed additions:
 - Tonga / Tongiaki Double Hull;
 - East Sepik-Ramu PNG / Garamut + Wooden Pounder.
 
 Kula remains `CONTEXT-SENSITIVITY HOLD / NOT AUTOMATIC FALLBACK`.
-Fallback if a promoted Oceania candidate fails:
+Fallback order if needed:
 1. Sāmoa I‘e + Wooden Anvil
 2. Tokelau Toki Blade + Haft System
 3. Kula hold
@@ -67,77 +66,78 @@ Register:
 Checkpoint commit:
 `9a4921ebb2c15e658113c66e2bed6ae2015888c7`
 
-Project ID:
-`prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
-
-Team ID:
-`team_twDc66jGM0sPvNM4I5Huc0x7`
+Project ID: `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
+Team ID: `team_twDc66jGM0sPvNM4I5Huc0x7`
 
 Latest identified READY branch Preview:
 `dpl_8GgBz2Kt81mr1YTLTR3UTk9UgMi4`
+URL `https://relational-key-collectionrelational-key-collection-55w553e3i.vercel.app`
+Git SHA `32b67f69b7ead0ff30f443e1efe803222afb31cd`
 
-URL:
-`https://relational-key-collectionrelational-key-collection-55w553e3i.vercel.app`
-
-Git commit deployed:
-`32b67f69b7ead0ff30f443e1efe803222afb31cd`
-
-Ancestry proof:
-- Mate build `6b1a12b…` is an ancestor;
-- deployed head is ahead by 5 / behind 0.
-
-Therefore Preview contains source ancestry for:
-1. Astrolabe
-2. Janney
-3. Metate
-4. Valparaíso
-5. Mate + Bombilla
-
-It does NOT contain later Tongiaki/Garamut builds.
-
-Astrolabe route:
-`/families/astrolabe-isfahan/candidate.html`
-→ authenticated Vercel fetch returned `HTTP 200` and expected live candidate source.
-
-Janney route probe encountered Vercel SSO 302 behavior after share-link regeneration. This is NOT a 404 and NOT a live pass. Do not claim independent 200 for Janney/Metate/Valparaíso/Mate from this checkpoint.
+The deployed head contains source ancestry through Mate + Bombilla but not later Tongiaki/Garamut builds.
+Astrolabe candidate route was authenticated/fetched at `HTTP 200` with expected candidate source.
+Janney probe encountered Vercel SSO 302 behavior; this is neither route failure nor live PASS.
 
 Infrastructure verdict:
 # **VERCEL CAPACITY PARTIALLY RECOVERED / CURRENT FULL-QUEUE PREVIEW NOT YET IDENTIFIED**
 
-Old blanket rate-limit statement is stale.
-No READY Preview containing Tongiaki+Garamut was identified yet.
+# EUROPE +2 — ACTIVE
+
+Validated Europe remains:
+# `2/4`
+
+Existing validated Europe:
+1. United Kingdom / Stereoscopy — `CONTROLLED DISPARITY PRODUCES DEPTH`
+2. France / Boulle — `ONE SHARED CUT PRODUCES TWO COMPLEMENTARY INVERSES`
+
+## B2.2I — Europe Source-First Candidate Pool
+
+Status:
+# **PASS / 7 CANDIDATES RECORDED / NO PROMOTION YET**
+
+Register:
+`CONTINENTAL_BALANCE_B2_2I_EUROPE_CANDIDATE_POOL.md`
+
+Pool commit:
+# `073aedf891cce84281e0e26798b2df87ac706ef3`
+
+Seven candidates:
+1. Catoptric Cylinder Anamorphosis / France + early-modern Europe — R6 reflection/optical decode
+2. Straight Slide Rule / London, UK — R11 logarithmic scale translation
+3. Swiss Cylinder Music Box / Jura, Switzerland — R11 mechanical encode/decode
+4. Pantograph / Dillingen-Germany / Scheiner — proportional linked transformation
+5. Anchor Escapement / English-European clockmaking — R9 regulated lock/release
+6. Cardan Grille / Italy — R6 selective visibility / decode
+7. Jacquard Card + Reader / Lyon-France — R11 punched instruction / mechanical decode
+
+Primary deep-review group:
+- Catoptric Anamorphosis
+- Pantograph
+- Swiss Cylinder Music Box
+- Straight Slide Rule
+
+Important overlap/risk notes:
+- Anamorphosis must stay `distortion → curved reflection → rectification`, never stereoscopic depth;
+- Pantograph has center/linkage-product risk;
+- Music Box is excellent stored-information→action but sound medium is crowded;
+- Slide Rule is strong but overlaps Astrolabe through relative scale motion and adds another UK family;
+- Cardan Grille is clean but currently has weaker object/museum sourcing and shares R6 decode with Anamorphosis;
+- Anchor Escapement has a three-subsystem causality risk;
+- Jacquard has strong source evidence but textile/system complexity and France duplication.
+
+No Europe build is authorized yet.
 
 # IMMEDIATE NEXT OUTPUT
 
-# **B2.2I — EUROPE +2 SOURCE-FIRST CANDIDATE POOL**
+# **B2.2J — EUROPE DEEP-SOURCE / TWO-SLOT PROMOTION MATRIX**
 
-Europe baseline:
-- UK / Stereoscopy — `CONTROLLED DISPARITY PRODUCES DEPTH`;
-- France / Boulle — `ONE SHARED CUT PRODUCES TWO COMPLEMENTARY INVERSES`.
-
-Need minimum six credible source-grounded candidates for two slots.
-
-Avoid unneeded overlap with expansion queue:
-- relative astrolabe rotation;
-- Janney latch/load path;
-- Metate abrasion;
-- Valparaíso counterweight;
-- Mate filtration;
-- Tongiaki structural coupling;
-- Garamut ordered-impact signal.
-
-Prefer rare lanes such as:
-- reflection / optical decode not stereoscopic;
-- selective visibility / occlusion;
-- synchronization / regulated stepping;
-- stored mechanical information → action;
-- proportional transformation;
-- layer/fold or other pair-native processes.
-
-After B2.2I:
-- update CURRENT_STATE + HANDOVER immediately;
-- then B2.2J deep-source/two-slot promotion matrix;
-- no Europe family build until promotion + spec freeze.
+Requirements:
+1. deepen source verification for the strongest candidates;
+2. score native pair necessity, emergent result, topology novelty, interaction legibility, geographic contribution, truthfulness risk and center-product risk;
+3. select exactly two family rounds or return NO BUILD for any weak slot;
+4. prefer a two-candidate combination with materially different laws;
+5. update CURRENT_STATE + HANDOVER immediately after promotion;
+6. only then freeze the first Europe source/interaction spec; no build before spec freeze.
 
 # G4 POLISH — PARKED
 
