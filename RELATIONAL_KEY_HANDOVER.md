@@ -35,16 +35,8 @@ Evidence:
 - `388cd19c-e93c-41f3-9548-7f32addf1883.mp4` — static individuality;
 - `cb023959-0e6b-4f64-bd23-721c02a9be2f.mp4` — hover + narrowed closeout.
 
-Verdict:
-- 15 signatures more distinguishable;
-- common system preserved;
-- hover remains micro;
-- narrow rendering clean;
-- exact ~390 px regression deferred to G6.
-
-Registers:
-- `GLOBAL_REFINEMENT_G3_2A_STATIC_INDIVIDUALITY_PASS.md`
-- `GLOBAL_REFINEMENT_G3_2B_HOVER_MOBILE_PASS.md`
+Residual final check:
+- exact measured ~390 px regression deferred to G6.
 
 # G4 — ACTIVE
 
@@ -63,10 +55,13 @@ Priority:
 # G4.1 — KHIPU
 
 Status:
-# **SOURCE PASS / LIVE CANDIDATE NEXT**
+# **SOURCE PASS / LIVE BLOCKED BY EXTERNAL VERCEL QUOTA**
 
-Register:
+Candidate register:
 `GLOBAL_REFINEMENT_G4_1_KHIPU_POLISH_CANDIDATE.md`
+
+Blocker register:
+`GLOBAL_REFINEMENT_G4_1A_VERCEL_RATE_LIMIT_BLOCKER.md`
 
 Golden source remains untouched:
 - `families/khipu-peru/snapshot.html`
@@ -83,13 +78,8 @@ Implementation commit:
 
 Source compare:
 - one new candidate file only;
-- 52 additions / 0 deletions.
-
-Candidate method:
-- normal collection frame;
-- loads unchanged golden `snapshot.html`;
-- same-origin CSS override injection only;
-- no JavaScript, timing, drag threshold, matching or OTHER semantic change.
+- 52 additions / 0 deletions;
+- no JS, timing, drag threshold, golden source or semantic change.
 
 Candidate change:
 - knot modestly larger / clearer;
@@ -98,20 +88,38 @@ Candidate change:
 - rejected knot remains demoted;
 - two record cards remain primary.
 
-# IMMEDIATE NEXT TASK — G4.1A LIVE CANDIDATE REGRESSION
+# EXTERNAL BLOCKER — VERCEL
 
-Identify a Vercel Preview containing commit `64647ea…` (or a later docs-only commit that includes it), then open:
-`/families/khipu-peru/g4-1.html`
+Current branch head status reports:
+# `Deployment rate limited — retry in 24 hours.`
 
-Audit:
-1. MATCHING RECORD from reset → TEST RELATIONSHIP;
-2. tension should become visibly taut before registration;
-3. knot should be easier to read but remain subordinate;
-4. OTHER RECORD → TEST RELATIONSHIP;
-5. residual should remain clear, with both records valid;
-6. optionally compare with golden `/families/khipu-peru/`.
+This is a Vercel Hobby deployment quota limit, not a Khipu source/build failure.
 
-Do not promote Khipu and do not begin Kento until this live/user gate passes.
+Canonical Vercel project:
+- `relational-key-collectionrelational-key-collection`;
+- project ID `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`;
+- team ID `team_twDc66jGM0sPvNM4I5Huc0x7`.
+
+Latest successful deployment:
+- `dpl_ExZkfTQqiiDscdkU2K8t2LGgz1Ta`;
+- commit `f1797ccaf141c97732b32adbb2227a87b7cc827f`;
+- G3.2B checkpoint only, therefore it does NOT contain G4.1.
+
+# IMMEDIATE NEXT TASK — RETRY G4.1A LIVE CANDIDATE
+
+After Vercel quota clears:
+1. identify/trigger Preview containing `64647ea…` or a later descendant;
+2. confirm `READY` and deployed SHA ancestry;
+3. open `/families/khipu-peru/g4-1.html`;
+4. MATCHING RECORD from reset → TEST RELATIONSHIP;
+5. tension should become visibly taut before registration;
+6. knot should be clearer but still subordinate;
+7. OTHER RECORD → TEST RELATIONSHIP;
+8. residual remains clear and both records remain valid;
+9. compare with golden `/families/khipu-peru/` if needed;
+10. then decide `G4.1 USER PASS / PROMOTE` or revise.
+
+Do not promote Khipu and do not begin Kento until this gate passes.
 
 Future: G4.2 Kento → G4.3 Siku → G4.4 evidence re-audit Zellige/Ombak/Swell → G5 → G6.
 
