@@ -5,7 +5,7 @@ Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
 Draft PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `CONTINENTAL_BALANCE_B2_3M_OCEANIA_GARAMUT_SPEC.md`
+Latest verified milestone: `CONTINENTAL_BALANCE_B2_3N_OCEANIA_GARAMUT_BUILD_CANDIDATE.md`
 
 # PRODUCT INVARIANT
 
@@ -33,16 +33,71 @@ Core laws:
 
 # SOURCE-PASS BUILD QUEUE — LIVE/USER PENDING
 
-1. Astrolabe / Isfahan — build `ade670ad03513d972180ef78d717f174f585ed6c`, fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`, blob `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
-2. Janney / Virginia — build `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`, blob `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
-3. Metate + Metlapil — build `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`, blob `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
-4. Valparaíso Funicular — spec `f06731fc0e001c09524e21fc81da8fe6697aa313`, build `7aff21b59ff88fcbe3e526958cf9fdf67c0d3750`, blob `1e71497d7f9f5411eca2347b36bc0402db8b905b`
-5. Mate + Bombilla — spec `36c778af5e69e1419ed4b011ca74cf19cce96ab6`, build `6b1a12b166b3be5612ba5b1d5a1f731281186379`, blob `6bdebcff2bd3c2b8c57f0c75dc72b20fcba37d55`
-6. Tongiaki / Tonga — spec `00f5a984ae4c376753b2ed6f64dc955307c9e38d`, build `e577bd6669c0d32f41078fa3124a03539cecd460`, blob `55053022e5312274a250a3384a28c07abdcb2f6f`, source register `e086134795c61ee97240af2dd50609340f8a6601`
+1. **Astrolabe / Isfahan**
+   - candidate `families/astrolabe-isfahan/candidate.html`
+   - build `ade670ad03513d972180ef78d717f174f585ed6c`
+   - signed-angle fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`
+   - blob `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
+   - Asia remains `3/4`
 
-All six remain `SOURCE PASS / LIVE + USER PENDING`.
+2. **Janney / Virginia**
+   - candidate `families/coupler-virginia/candidate.html`
+   - build `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`
+   - blob `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
 
-# OCEANIA +2 — ACTIVE
+3. **Metate + Metlapil / Teotitlán del Valle**
+   - candidate `families/metate-teotitlan/candidate.html`
+   - build `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`
+   - blob `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
+   - North America remains `2/4`
+
+4. **Valparaíso Funicular / Chile**
+   - candidate `families/funicular-valparaiso/candidate.html`
+   - spec `f06731fc0e001c09524e21fc81da8fe6697aa313`
+   - build `7aff21b59ff88fcbe3e526958cf9fdf67c0d3750`
+   - blob `1e71497d7f9f5411eca2347b36bc0402db8b905b`
+
+5. **Mate + Bombilla / Argentina + regional context**
+   - candidate `families/mate-bombilla-argentina/candidate.html`
+   - spec `36c778af5e69e1419ed4b011ca74cf19cce96ab6`
+   - build `6b1a12b166b3be5612ba5b1d5a1f731281186379`
+   - blob `6bdebcff2bd3c2b8c57f0c75dc72b20fcba37d55`
+   - South America remains `2/4`
+
+6. **Tongiaki Double Hull / Tonga**
+   - candidate `families/tongiaki-tonga/candidate.html`
+   - spec `00f5a984ae4c376753b2ed6f64dc955307c9e38d`
+   - build `e577bd6669c0d32f41078fa3124a03539cecd460`
+   - blob `55053022e5312274a250a3384a28c07abdcb2f6f`
+   - source register `e086134795c61ee97240af2dd50609340f8a6601`
+
+7. **Garamut + Wooden Pounder / East Sepik-Ramu PNG**
+   - spec `CONTINENTAL_BALANCE_B2_3M_OCEANIA_GARAMUT_SPEC.md`
+   - build register `CONTINENTAL_BALANCE_B2_3N_OCEANIA_GARAMUT_BUILD_CANDIDATE.md`
+   - candidate `families/garamut-sepik-ramu/candidate.html`
+   - law `ORDERED IMPACTS ON A GARAMUT TURN RHYTHM INTO A LONG-DISTANCE SIGNAL.`
+   - spec commit `64359d37f5e7ceccbd7b244ed79a590951e3ab8f`
+   - build `acb90a987f17c35ee94828f9433f5dd0055a0609`
+   - blob `d78ec124d1111ba6a82137b58c0922fa7fdc1a36`
+   - source register commit `312722e0df95c44e137fe19618c445d541ffd23a`
+   - atomic diff: one file / 76 additions / 0 deletions
+   - local `git hash-object` equals GitHub blob exactly
+   - local `node --check` PASS
+   - direct pounder drag only; no autoplay
+   - hysteresis `STRIKE=92 / REARM=46`
+   - one approach → one event; withdrawal required to re-arm
+   - Space/Enter fallback uses same strike path
+   - event order + relative timing trace only
+   - no target code / no correct-incorrect state / no decoded message
+   - exact visible boundary `NOT COMMUNITY CODE`
+   - synthetic impact audio only, explicitly not authentic timbre
+   - no clan/spirit/ceremonial decoration
+   - Oceania remains `2/4`
+
+All seven builds remain:
+# `SOURCE PASS / LIVE + USER VISUAL OR VISUAL+AUDIO PENDING`
+
+# OCEANIA +2 — RESEARCH/BUILD LANE COMPLETE, VALIDATION PENDING
 
 Validated Oceania remains:
 # `2 / 4`
@@ -51,9 +106,9 @@ Existing validated:
 - Marshall Islands / Swell;
 - Aotearoa / Hika Ahi.
 
-Promoted research rounds:
-1. Tonga / Tongiaki Double Hull — build SOURCE PASS complete
-2. East Sepik-Ramu PNG / Garamut + Wooden Pounder — spec frozen / build next
+Promoted additions now built/source-passed:
+1. Tonga / Tongiaki Double Hull
+2. East Sepik-Ramu PNG / Garamut + Wooden Pounder
 
 Pool:
 `CONTINENTAL_BALANCE_B2_2G_OCEANIA_CANDIDATE_POOL.md` @ `64cfdb8ad343992f0f589bf968fc4c624d9a9d1a`
@@ -61,93 +116,47 @@ Pool:
 Promotion:
 `CONTINENTAL_BALANCE_B2_2H_OCEANIA_PROMOTION_MATRIX.md` @ `9fbc4541a585980dd7991f22b7e0dddd64008991`
 
-## B2.3M — Garamut Source + Safeguarding Interaction Spec
+Kula remains:
+`CONTEXT-SENSITIVITY HOLD / NOT AUTOMATIC FALLBACK`.
 
-Status:
-# **SOURCE PASS / SAFEGUARDING + INTERACTION SPEC FROZEN**
+Fallback order if a promoted Oceania candidate fails independent validation:
+1. Sāmoa I‘e + Wooden Anvil
+2. Tokelau Toki Blade + Haft System
+3. Kula — context hold
+4. Jawoyn Music Sticks
 
-Register:
-`CONTINENTAL_BALANCE_B2_3M_OCEANIA_GARAMUT_SPEC.md`
+# GARAMUT SAFEGUARDING — LOCKED
 
-Spec commit:
-`64359d37f5e7ceccbd7b244ed79a590951e3ab8f`
+Canonical interface proof:
+`DIRECT IMPACTS → TIMED EVENTS → EDITORIAL SIGNAL SEQUENCE`
 
-Working identity:
-- slug `garamut-sepik-ramu`;
-- context `East Sepik / Ramu River region, Papua New Guinea`;
-- memory `Signal / Communication Memory`;
-- edition `Signal Register`;
-- topology `R11 encode / signal through ordered impact`.
-
-Canonical law:
-# **ORDERED IMPACTS ON A GARAMUT TURN RHYTHM INTO A LONG-DISTANCE SIGNAL.**
-
-Interface proof:
-# `DIRECT IMPACTS → TIMED EVENTS → EDITORIAL SIGNAL SEQUENCE`
-
-Pair:
-- Card A = `WOODEN POUNDER / INPUT MEMBER`;
-- Card B = `GARAMUT / RESONANT SIGNAL BODY`.
-
-Direct interaction:
-- user drags pounder to strike zone;
-- one event per approach/contact cycle;
-- must withdraw before re-arm;
-- event order + relative timing captured;
-- after one hit: no sequence claim;
-- after 2+ hits: `ORDERED EVENTS · EDITORIAL SIGNAL SEQUENCE`;
-- no target success/failure state.
-
-Safeguarding hard boundary:
+Hard boundary:
 # `EDITORIAL SIGNAL SEQUENCE · NOT COMMUNITY CODE`
 
-Forbidden:
-- mapping invented beats to warning/death/meeting/invitation/personal-name meanings;
-- claiming one universal PNG code;
-- teaching restricted community-specific signals;
-- copying clan/spirit carvings as decorative UI;
-- claiming authentic garamut timbre.
+Forbidden permanently unless new community-authorized evidence materially changes scope:
+- warning/death/meeting/invitation/name decoding;
+- universal PNG code claim;
+- teaching community-specific signaling rules;
+- copied clan/spirit carvings;
+- authentic-timbre claim.
 
 Audio boundary:
 `SYNTHETIC IMPACT AUDIO · INTERACTION PROOF ONLY · NOT AUTHENTIC GARAMUT TIMBRE`.
 
-Alternate semantics:
-- every user-authored timing pattern is simply another valid editorial sequence;
-- no mismatch/error state.
-
-If later implementation cannot preserve this boundary, STOP and use Sāmoa I‘e reserve first; do not jump to Kula automatically.
-
-# KULA STATUS
-
-`CONTEXT-SENSITIVITY HOLD / NOT AUTOMATIC FALLBACK`.
-
 # IMMEDIATE NEXT OUTPUT
 
-# **B2.3N — GARAMUT AUTONOMOUS BUILD CANDIDATE + SOURCE GATE**
+First check whether Vercel now has a fresh READY descendant Preview containing the current source-pass branch.
 
-Required path:
-`families/garamut-sepik-ramu/candidate.html`
+If no usable current Preview exists:
+# **B2.2I — EUROPE +2 SOURCE-FIRST CANDIDATE POOL**
 
-Acceptance:
-1. autonomous file only;
-2. no atlas/registry/public-route mutation;
-3. Card A pounder + Card B garamut visible immediately;
-4. direct drag strike;
-5. withdraw/re-arm hysteresis;
-6. Space/Enter strike fallback;
-7. short synthetic impact audio only;
-8. ordered event/timing trace subordinate;
-9. exact `NOT COMMUNITY CODE` boundary;
-10. no real-message mapping / clan decoration / waveform hero;
-11. no terminal success/failure state;
-12. reset clears sequence;
-13. responsive CSS;
-14. JS syntax pass.
+Europe baseline:
+- UK / Stereoscopy — controlled disparity → depth;
+- France / Boulle — shared cut → complementary inverse.
 
-After B2.3N SOURCE PASS:
-- update CURRENT_STATE + HANDOVER immediately;
-- Oceania still remains `2/4` until live/user validation;
-- then proceed to Europe +2 source-first discovery while deployment capacity is blocked.
+Need two new family laws materially distinct from both and from the seven current expansion candidates.
+
+If a fresh Preview is available, live validation may begin, but each candidate must receive an independent verdict and no validated count changes before USER PASS.
 
 # SOUTH AMERICA RESERVES
 
@@ -158,8 +167,10 @@ After B2.3N SOURCE PASS:
 
 # LIVE INFRASTRUCTURE
 
-Recent Vercel Hobby blocker:
+Previous Vercel Hobby blocker:
 `Deployment rate limited — retry in 24 hours.`
+
+Do not assume it still applies; check actual current deployment state before choosing next lane.
 
 No invented LIVE PASS.
 
