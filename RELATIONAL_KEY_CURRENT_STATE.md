@@ -5,182 +5,147 @@ Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
 Global Refinement PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `GLOBAL_REFINEMENT_G4_1A_VERCEL_RATE_LIMIT_BLOCKER.md`
+Latest verified milestone: `CONTINENTAL_BALANCE_B2_1_RELATIONSHIP_GAP_MAP.md`
 
 ## Product invariant
 
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
-## Continental Balance Gate 1
-Status: `CLOSED`
-Distribution:
-# `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
-
-Family expansion remains paused during Global Refinement.
-
 ## Consolidation baseline — MERGED / IMMUTABLE
 
 PR #20: `MERGED / SQUASH`
 Pre-refinement regression anchor:
-# `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
+`79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
 
-Validated at the anchor:
-- 15 / 15 independent family user gates;
+Validated baseline:
+- 15 / 15 independent family gates;
 - 15 / 15 consolidated direct live routes;
 - root + shell + filters/search pass;
-- collection usability `PASS WITH POLISH`.
+- collection usability pass with polish debt.
 
-# GLOBAL REFINEMENT STATUS
+## Global Refinement completed gates
 
-## G0 — Baseline Freeze
-`PASS`
+- G0 Baseline Freeze — `PASS`
+- G1 Collection Navigation Frame — `PASS`
+- G2 Shell Legibility — `PASS`
+- G3 Atlas Family Individuality — `PASS`
 
-## G1 — Collection Navigation Frame
-`PASS`
+G3 implementation:
+`239f076fb9fc2936b16d793caa14c486eb182d05`
 
-Golden preview: `dpl_87Bjr4pRX1sMQTBUE731gt42WeQA`
+G3 exact implementation preview:
+`dpl_EgKHruAvbW6exjHq8DGWvpEv8kV6`
 
-Locked:
-- all 15 public routes use collection-owned frame;
-- `← BACK TO ATLAS` → `/#grid`;
-- shared runtime and autonomous snapshots remain regression anchors.
+Residual final check:
+- exact measured ~390 px atlas regression remains deferred to final validation.
 
-## G2 — Shell Legibility
-`PASS`
+# CONTINENTAL BALANCE GATE 2 — ACTIVE
 
-Implementation: `eaee31ec38dcc2f31c46cb630e28357b30357a90`
-Golden preview: `dpl_3hRXrW6TF8Ms6phXnXURfVQD8aqV`
+Parent register:
+`CONTINENTAL_BALANCE_GATE_2_24_FAMILY_EQUILIBRIUM.md`
 
-Law:
-# `LEGIBILITY ↑ ≠ FAMILY MECHANISM CHANGE`
+## Why Gate 2 reopened expansion
 
-## G3 — Atlas Family Individuality
+Continental Balance Gate 1 prevented geographic collapse but did not create numerical parity.
 
-# **PASS**
+Current validated distribution:
 
-Law:
-# `INDIVIDUALITY = RELATIONSHIP MECHANISM, NOT CULTURAL ORNAMENT`
+# `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-Implementation: `239f076fb9fc2936b16d793caa14c486eb182d05`
-Exact implementation preview: `dpl_EgKHruAvbW6exjHq8DGWvpEv8kV6`
+Current validated count: **15**.
 
-Registers:
-- `GLOBAL_REFINEMENT_G3_ATLAS_INDIVIDUALITY_SPEC.md`
-- `GLOBAL_REFINEMENT_G3_1_MECHANISM_NATIVE_MINIPAIRS.md`
-- `GLOBAL_REFINEMENT_G3_2A_STATIC_INDIVIDUALITY_PASS.md`
-- `GLOBAL_REFINEMENT_G3_2B_HOVER_MOBILE_PASS.md`
+New target:
 
-User evidence:
-- `388cd19c-e93c-41f3-9548-7f32addf1883.mp4` — static 15-family differentiation pass;
-- `cb023959-0e6b-4f64-bd23-721c02a9be2f.mp4` — hover + narrowed-layout closeout.
+# `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 
-Confirmed:
-- all 15 signatures materially more distinguishable;
-- one common RELATIONAL KEY system remains visible;
-- hover remains micro/subordinate;
-- narrowed SVG presentation shows no visible overflow/distortion.
+Target validated count:
 
-Residual G6 check:
-- run an explicit measured ~390 px viewport regression.
+# **24 FAMILIES**
 
-## G4 — PASS WITH POLISH Backlog
+Open validated-family slots:
+- Africa `+0`
+- Asia `+1`
+- North America `+2`
+- South America `+2`
+- Oceania `+2`
+- Europe `+2`
+
+Total required additions: **9**.
+
+## Balance law
+
+# **BALANCE IS A TARGET, NOT A LICENSE TO ADD WEAK FAMILIES.**
+
+Every new family must be source-grounded, pair-native, mechanism-novel, culturally specific without stereotype, interaction-translatable and independently validated before joining the 24-family count.
+
+## B2.1 — Relationship Gap Map
+
+Register:
+`CONTINENTAL_BALANCE_B2_1_RELATIONSHIP_GAP_MAP.md`
 
 Status:
-# **ACTIVE — G4.1 KHIPU SOURCE PASS / LIVE BLOCKED BY VERCEL QUOTA**
+# `PASS / GAP MAP READY`
 
-Inventory:
-`GLOBAL_REFINEMENT_G4_POLISH_INVENTORY.md`
+Twelve underrepresented discovery territories are mapped:
+- R1 Balance / Counterweight
+- R2 Hinge / Rotation / Articulation
+- R3 Fold / Overlap / Layer Reveal
+- R4 Load / Stack / Accumulation
+- R5 Latch / Clasp / Discrete Engagement
+- R6 Projection / Shadow / Occlusion
+- R7 Transfer / Pour / Containment
+- R8 Exchange / Role Reversal
+- R9 Cycle / Synchronization
+- R10 Compression / Expansion / Stored Force
+- R11 Encode / Decode / Completion
+- R12 Calibrate / Tune / Measure
 
-G4 law:
-# `POLISH MUST INCREASE LEGIBILITY WITHOUT REWRITING THE RELATIONSHIP.`
+These are discovery lanes only. The source chooses the final mechanism.
 
-### Evidence tiers
+Final nine-family diversity target:
+- occupy at least 7 materially different relationship territories;
+- no more than two new families share the same primary topology unless interaction laws are demonstrably different.
 
-Tier A — actionable documented debt:
-1. Khipu — central knot hierarchy + tension-change perceptibility.
-2. Kento — kagi/hikitsuki + OTHER BLOCK displacement legibility.
-3. Siku — central interlock field + bottom microcopy legibility.
+## Immediate research order
 
-Tier B — re-audit before patch:
-- Zellige;
-- Ombak;
-- Swell.
+1. Asia `+1`
+2. North America `+2`
+3. South America `+2`
+4. Oceania `+2`
+5. Europe `+2`
 
-Tier C — no current patch evidence:
-- Stereoscopy;
-- Hika Ahi;
-- Boulle;
-- City / Service / Signal / Frida / Food / Textile unless a new issue is reproduced.
+Operational order only; no continental priority is implied.
 
-### G4.1 — Khipu candidate
+# G4 POLISH — PARKED
 
-Register:
-`GLOBAL_REFINEMENT_G4_1_KHIPU_POLISH_CANDIDATE.md`
+G4 is paused until Continental Balance Gate 2 reaches its 24-family collection regression or is explicitly abandoned.
 
-Golden source remains unchanged:
-- `families/khipu-peru/snapshot.html`
-- blob `cdc06bebbc2054463f4d2f61e59e5de261979ef9`
+Existing Khipu work is preserved and not lost:
+- candidate `families/khipu-peru/g4-1.html`;
+- implementation `64647ea78b04439ea9a57ece47f19490d9185d45`;
+- golden `snapshot.html` remains unchanged;
+- public route remains unchanged;
+- status `PARKED / NOT PROMOTED`.
 
-Public route remains unchanged:
-- `families/khipu-peru/index.html`
-
-Isolated candidate route:
-- `families/khipu-peru/g4-1.html`
-
-Candidate implementation commit:
-# `64647ea78b04439ea9a57ece47f19490d9185d45`
-
-Source compare:
-- only `families/khipu-peru/g4-1.html` added;
-- 52 additions / 0 deletions;
-- no golden, wrapper, timing, JS, state or semantic mutation.
-
-Candidate technique:
-- load unchanged golden snapshot;
-- inject CSS-only override after same-origin iframe load;
-- modestly increase knot hierarchy;
-- make `approach → tension → registered` cord-state contrast easier to perceive;
-- preserve rejected residual and both-records-valid semantics.
-
-### G4.1A — External live blocker
-
-Register:
+Vercel rate-limit evidence remains recorded in:
 `GLOBAL_REFINEMENT_G4_1A_VERCEL_RATE_LIMIT_BLOCKER.md`
 
-Verified GitHub commit status on the branch head reports:
-# `Deployment rate limited — retry in 24 hours.`
+It is no longer the immediate project gate.
 
-This affects the canonical collection project and several legacy RELATIONAL KEY projects tied to the repo. It is an external Vercel Hobby quota limit, not a Khipu source/build failure.
+# IMMEDIATE NEXT OUTPUT
 
-Canonical collection Vercel project:
-- project ID `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`;
-- team ID `team_twDc66jGM0sPvNM4I5Huc0x7`;
-- latest successful deployment remains `dpl_ExZkfTQqiiDscdkU2K8t2LGgz1Ta`;
-- that deployment is G3.2B at commit `f1797ccaf141c97732b32adbb2227a87b7cc827f`.
+# **B2.2A — ASIA SOURCE-FIRST CANDIDATE POOL**
 
-# IMMEDIATE NEXT GATE
+Requirements:
+- minimum four credible candidates for the one open Asian slot;
+- use authoritative sources where possible;
+- reject candidates that duplicate Toyama transformation, Kento registration or Ombak resonance;
+- no build before candidate comparison/promotion matrix.
 
-# **G4.1A — RETRY KHIPU LIVE CANDIDATE AFTER VERCEL QUOTA CLEARS**
+After Asia selection: North America → South America → Oceania → Europe.
 
-After the quota window clears:
-1. trigger or identify the first Preview containing `64647ea…` or later descendant;
-2. verify state `READY` and deployed SHA ancestry;
-3. open `/families/khipu-peru/g4-1.html`;
-4. MATCHING RECORD from reset → TEST RELATIONSHIP;
-5. judge tension and knot hierarchy;
-6. OTHER RECORD → TEST RELATIONSHIP;
-7. verify residual + no invalidation;
-8. only then decide `G4.1 USER PASS / PROMOTE` or revise.
-
-Do not promote Khipu or begin Kento before this live/user gate passes.
-
-## Future
-
-G4.2 Kento → G4.3 Siku → G4.4 evidence re-audit Zellige/Ombak/Swell → G5 Collection Cohesion → G6 Final Collection Validation.
-
-Status vocabulary:
-`G3 PASS ≠ G4.1 SOURCE PASS ≠ G4.1 LIVE PASS ≠ G4 PASS ≠ FINAL COLLECTION PASS`.
+After 24-family balance: atlas regression → resume family polish → collection cohesion → final validation.
 
 ## Persistence protocol
 
-After every significant milestone update this file + `RELATIONAL_KEY_HANDOVER.md` with exact branch, commits, deployments, regression anchors, gate result and next required output.
+Update this file + `RELATIONAL_KEY_HANDOVER.md` after every significant research, promotion, build or validation milestone.
