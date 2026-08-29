@@ -1,16 +1,16 @@
 {
-  "schema_version": "1.2",
+  "schema_version": "1.3",
   "collection": "RELATIONAL KEY",
-  "phase": "COLLECTION_CONSOLIDATION_GATE_C3_LIVE_PREVIEW",
+  "phase": "GLOBAL_REFINEMENT_B2_5_24_FAMILY_REGRESSION",
   "distribution": {
     "Africa": 4,
-    "Asia": 3,
-    "North America": 2,
-    "South America": 2,
-    "Oceania": 2,
-    "Europe": 2
+    "Asia": 4,
+    "North America": 4,
+    "South America": 4,
+    "Oceania": 4,
+    "Europe": 4
   },
-  "validated_count": 15,
+  "validated_count": 24,
   "candidate_count": 0,
   "families": [
     {"id":"city-gatineau","edition":"Registered City Passage","place":"Gatineau, Canada","continent":"North America","memory":"City / Passage","mechanism":"registered continuation","source_branch":"round13r/relational-pair-restoration","golden_deployment":"dpl_26HsTL8cVqyzkkqm4oGtnVZZqehn","validation":"PASS_WITH_POLISH","route":"/families/city-gatineau/","polish_backlog":true},
@@ -27,6 +27,15 @@
     {"id":"stereoscopy-uk","edition":"Depth Memory / Binocular Register","place":"United Kingdom","continent":"Europe","memory":"Depth Memory","mechanism":"controlled disparity / binocular fusion","law":"CONTROLLED DISPARITY PRODUCES DEPTH","source_branch":"round13j/depth-memory-stereoscopy","golden_deployment":"dpl_4qQoTiev64vzU7tRLXmrYxtbrHjY","validation":"VISUAL_PASS_MERGED","route":"/families/stereoscopy-uk/","polish_backlog":false},
     {"id":"siku-bolivia","edition":"Melody Memory / Interlock Register","place":"Bolivia","continent":"South America","memory":"Melody Memory","mechanism":"complementary absence / temporal interlock","law":"COMPLEMENTARY ABSENCE PRODUCES CONTINUITY","source_branch":"round13k/melody-memory-siku","golden_deployment":"dpl_AgwdotABtjmYKDvnx3qoprtPEMsr","validation":"VISUAL_AUDIO_PASS_MERGED","route":"/families/siku-bolivia/","polish_backlog":true},
     {"id":"hika-ahi-aotearoa","edition":"Ember Memory / Friction Register","place":"Aotearoa New Zealand","continent":"Oceania","memory":"Ember Memory","mechanism":"sustained friction / emergent ember","law":"SUSTAINED FRICTION PRODUCES EMBER","source_branch":"round13l/ember-memory-hika-ahi","golden_deployment":"dpl_5nPKiFCMmRERDbDBug3bVvZzyQpR","validation":"VISUAL_PASS_MERGED","route":"/families/hika-ahi-aotearoa/","polish_backlog":false},
-    {"id":"boulle-france","edition":"Complement Memory / Reciprocal Cut Register","place":"France","continent":"Europe","memory":"Complement Memory","mechanism":"shared cut / reciprocal inversion","law":"ONE SHARED CUT PRODUCES TWO COMPLEMENTARY INVERSES","source_branch":"round13m/complement-memory-boulle","golden_deployment":"dpl_EK1wW4peLBk1f9KHg4T6nerJ4jFy","validation":"VISUAL_PASS_MERGED","route":"/families/boulle-france/","polish_backlog":true}
+    {"id":"boulle-france","edition":"Complement Memory / Reciprocal Cut Register","place":"France","continent":"Europe","memory":"Complement Memory","mechanism":"shared cut / reciprocal inversion","law":"ONE SHARED CUT PRODUCES TWO COMPLEMENTARY INVERSES","source_branch":"round13m/complement-memory-boulle","golden_deployment":"dpl_EK1wW4peLBk1f9KHg4T6nerJ4jFy","validation":"VISUAL_PASS_MERGED","route":"/families/boulle-france/","polish_backlog":true},
+    {"id":"astrolabe-isfahan","edition":"Rete Register","place":"Isfahan, Iran","continent":"Asia","memory":"Celestial / Instrument Memory","mechanism":"relative rotation / star map against local horizon","law":"RELATIVE ROTATION BETWEEN STAR MAP AND HORIZON PRODUCES A CELESTIAL READING","source_branch":"collection/global-refinement-1","validation":"USER_PASS_BALANCE_GATE_2","route":"/families/astrolabe-isfahan/","polish_backlog":true},
+    {"id":"coupler-virginia","edition":"Knuckle Register","place":"Alexandria, Virginia, United States","continent":"North America","memory":"Coupling / Rail Memory","mechanism":"contact / knuckle pivot / latch / load path","law":"MATING KNUCKLES TURN CONTACT INTO A LOCKED LOAD PATH","source_branch":"collection/global-refinement-1","validation":"USER_PASS_BALANCE_GATE_2","route":"/families/coupler-virginia/","polish_backlog":true},
+    {"id":"metate-teotitlan","edition":"Grinding Register","place":"Teotitlán del Valle, Oaxaca, Mexico","continent":"North America","memory":"Grinding / Material Memory","mechanism":"applied pressure / reciprocal abrasion / accumulated grind","law":"PRESSURE AND RECIPROCAL STROKE BETWEEN COMPLEMENTARY STONES PRODUCE GRINDING","source_branch":"collection/global-refinement-1","validation":"USER_PASS_BALANCE_GATE_2","route":"/families/metate-teotitlan/","polish_backlog":true},
+    {"id":"funicular-valparaiso","edition":"Counterweight Register","place":"Valparaíso, Chile","continent":"South America","memory":"Transport / Counterweight Memory","mechanism":"linked equal-opposite positional motion","law":"ON A SHARED FUNICULAR, ONE CAR'S ASCENT IS COUNTERBALANCED BY THE OTHER'S DESCENT","source_branch":"collection/global-refinement-1","validation":"USER_PASS_BALANCE_GATE_2","route":"/families/funicular-valparaiso/","polish_backlog":true},
+    {"id":"mate-bombilla-argentina","edition":"Filter Register","place":"Argentina / South American mate context","continent":"South America","memory":"Flow / Infusion Memory","mechanism":"insertion / selective passage / particulate containment","law":"A SUBMERGED BOMBILLA ALLOWS INFUSION TO PASS WHILE YERBA REMAINS IN THE MATE","source_branch":"collection/global-refinement-1","validation":"USER_PASS_BALANCE_GATE_2","route":"/families/mate-bombilla-argentina/","polish_backlog":true},
+    {"id":"tongiaki-tonga","edition":"Twin Hull Register","place":"Tongatapu / Tonga","continent":"Oceania","memory":"Structural / Voyaging Memory","mechanism":"parallel hull alignment / structural coupling / shared platform","law":"TWO HULLS JOINED IN PARALLEL FORM A SHARED, MORE STABLE VOYAGING PLATFORM","source_branch":"collection/global-refinement-1","validation":"USER_PASS_BALANCE_GATE_2","route":"/families/tongiaki-tonga/","polish_backlog":true},
+    {"id":"garamut-sepik-ramu","edition":"Signal Register","place":"East Sepik / Ramu River region, Papua New Guinea","continent":"Oceania","memory":"Signal / Communication Memory","mechanism":"direct impact / ordered events / editorial signal sequence","law":"ORDERED IMPACTS ON A GARAMUT TURN RHYTHM INTO A LONG-DISTANCE SIGNAL","source_branch":"collection/global-refinement-1","validation":"USER_PASS_BALANCE_GATE_2","route":"/families/garamut-sepik-ramu/","polish_backlog":true},
+    {"id":"anamorphosis-paris","edition":"Rectification Register","place":"Paris / France","continent":"Europe","memory":"Reflection Memory","mechanism":"curved reflection / optical remapping / rectification","law":"CURVED REFLECTION RE-MAPS ANAMORPHIC DISTORTION INTO A LEGIBLE FORM","source_branch":"collection/global-refinement-1","validation":"USER_PASS_BALANCE_GATE_2","route":"/families/anamorphosis-paris/","polish_backlog":true},
+    {"id":"music-box-sainte-croix","edition":"Pin-to-Comb Register","place":"Sainte-Croix, Switzerland","continent":"Europe","memory":"Mechanical Memory","mechanism":"stored pin geometry / contact / tuned-comb decode","law":"STORED PIN GEOMETRY BECOMES ORDERED NOTES WHEN A CYLINDER ENGAGES A TUNED COMB","source_branch":"collection/global-refinement-1","validation":"USER_PASS_BALANCE_GATE_2","route":"/families/music-box-sainte-croix/","polish_backlog":true}
   ]
 }
