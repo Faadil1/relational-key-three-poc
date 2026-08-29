@@ -108,6 +108,16 @@ Do not redesign merely because a family has Experience Debt. Patch only if relat
 After Batch A PASS:
 open Batch B — Kento / Stereoscopy / Astrolabe / Anamorphosis / Valparaíso / Swell.
 
+# PERSISTENCE IDS
+
+B2.5D final PASS register commit:
+`259c4926e9f704717f89a1b18f95a6fe90c6c04d`
+
+CURRENT_STATE final sync commit:
+`543a82e2c01bbdc2927d36f21d50de7c116e336f`
+
+This HANDOVER commit is the final canonical head for the milestone.
+
 PR remains Draft / DO NOT MERGE.
 G4 remains PARKED until all B2.5 regression work closes.
 
