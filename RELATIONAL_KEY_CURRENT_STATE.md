@@ -5,8 +5,7 @@ Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
 Draft PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
-Latest technical milestone: `VERCEL_LEGACY_GIT_INTEGRATION_CLEANUP_PASS.md`
-Latest terminology correction: `CONTINENTAL_BALANCE_B2_EXISTING_NINE_TERMINOLOGY_CORRECTION.md`
+Latest verified milestone: `CONTINENTAL_BALANCE_B2_4B_USER_WALKTHROUGH_GROUP_A_PASS.md`
 
 # PRODUCT INVARIANT
 
@@ -23,10 +22,10 @@ G4 polish remains PARKED until Continental Balance Gate 2 closes.
 Target validated distribution:
 # `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 
-Current VALIDATED distribution remains:
-# `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
+Current VALIDATED distribution after B2.4B:
+# `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-No research promotion, spec freeze, SOURCE PASS, READY deployment or route availability alone changes a validated count.
+No research promotion, spec freeze, SOURCE PASS, READY deployment or route availability alone changes a validated count. Only independent user validation gates do.
 
 Core laws:
 - **BALANCE IS A TARGET, NOT A LICENSE TO ADD WEAK FAMILIES.**
@@ -35,8 +34,7 @@ Core laws:
 
 # TERMINOLOGY — EXISTING NINE
 
-The nine candidates grouped in this Balance Gate are **not nine newly invented additions created at this stage**.
-They already existed in the RELATIONAL KEY project/workstream. Current Gate 2 work is consolidating and validating them for continental equilibrium.
+The nine Balance-Gate candidates/families are not nine newly created additions. They already existed in the RELATIONAL KEY project/workstream. Current Gate 2 work is consolidating and validating them for continental equilibrium.
 
 Preferred wording:
 # **9 EXISTING BALANCE-GATE CANDIDATES / FAMILIES**
@@ -45,43 +43,31 @@ Correction register:
 `CONTINENTAL_BALANCE_B2_EXISTING_NINE_TERMINOLOGY_CORRECTION.md`
 commit `a6b191252f023edd9411232af0e9d46e07bce93e`
 
-# EXISTING NINE — SOURCE PASS
-
-1. Astrolabe / Isfahan — `families/astrolabe-isfahan/candidate.html` — build `ade670ad03513d972180ef78d717f174f585ed6c`, fix `a756e58d0bead32b90ca1f6470e68592be0c3d00`, blob `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
-2. Janney / Virginia — `families/coupler-virginia/candidate.html` — build `fa561bf4ebb20becaaee81856dc59f81b1e8b4c6`, blob `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
-3. Metate + Metlapil / Teotitlán del Valle — `families/metate-teotitlan/candidate.html` — build `f62e6c2d2371205bdae4f498fe2f7670e17f09bd`, blob `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
-4. Valparaíso Funicular / Chile — `families/funicular-valparaiso/candidate.html` — build `7aff21b59ff88fcbe3e526958cf9fdf67c0d3750`, blob `1e71497d7f9f5411eca2347b36bc0402db8b905b`
-5. Mate + Bombilla / Argentina — `families/mate-bombilla-argentina/candidate.html` — build `6b1a12b166b3be5612ba5b1d5a1f731281186379`, blob `6bdebcff2bd3c2b8c57f0c75dc72b20fcba37d55`
-6. Tongiaki / Tonga — `families/tongiaki-tonga/candidate.html` — build `e577bd6669c0d32f41078fa3124a03539cecd460`, blob `55053022e5312274a250a3384a28c07abdcb2f6f`
-7. Garamut / East Sepik-Ramu PNG — `families/garamut-sepik-ramu/candidate.html` — build `acb90a987f17c35ee94828f9433f5dd0055a0609`, blob `d78ec124d1111ba6a82137b58c0922fa7fdc1a36`
-8. Catoptric Anamorphosis / Paris-France — `families/anamorphosis-paris/candidate.html` — build `a1e4ab388a1c75c4a90350d19a22ca478a43dc7d`, blob `ee44725b47b38079b3264f64e3fd0eb7c3837609`
-9. Swiss Cylinder Music Box / Sainte-Croix — `families/music-box-sainte-croix/candidate.html` — build `c8c1af1afe7c9e9ff8cce8efc68ce3094976fe97`, blob `1f07e969dea9a47ec591afe835766f1d2443e427`
-
-All nine:
-# `SOURCE PASS / FULL PREVIEW PRESENT / USER VISUAL OR VISUAL+AUDIO PENDING`
-
 # FULL PREVIEW — READY
 
-Recovery register:
-`CONTINENTAL_BALANCE_B2_4A_R2_FULL_PREVIEW_RECOVERED.md`
+Audit deployment:
+`dpl_AQ5B2Wmn6VMH1qczrAsDVUVuHuCw`
 
-Audit anchor:
-- deployment `dpl_AQ5B2Wmn6VMH1qczrAsDVUVuHuCw`
-- URL `https://relational-key-collectionrelational-key-collection-1wq2g2b7e.vercel.app`
-- deployed SHA `0ddd5ad598cf79782acf32aa79fe65463765c4a5`
-- state `READY`
+URL:
+`https://relational-key-collectionrelational-key-collection-1wq2g2b7e.vercel.app`
+
+Deployed SHA:
+`0ddd5ad598cf79782acf32aa79fe65463765c4a5`
+
+State:
+`READY`
 
 Music Box build `c8c1af1...` is an ancestor, therefore this Preview contains all nine existing Balance-Gate candidates.
-Automated candidate subroute probes are intercepted by Vercel SSO `302`; user-browser walkthrough is the next evidence layer.
+Automated subroute fetches are intercepted by Vercel SSO `302`; user-browser walkthrough is the evidence layer for candidate validation.
 
 # VERCEL LEGACY GIT-INTEGRATION CLEANUP — PASS
 
 Register:
 `VERCEL_LEGACY_GIT_INTEGRATION_CLEANUP_PASS.md`
-register commit `1509442da5b6553d091064db5247ca6098276094`
+commit `1509442da5b6553d091064db5247ca6098276094`
 
-Verified Vercel project-link state:
-- Collection `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny` → Git link PRESENT → `Faadil1/relational-key-three-poc`
+Verified topology:
+- Collection `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny` → Git-linked to `Faadil1/relational-key-three-poc`
 - Boulle `prj_1u0bwUIMeY1fB9trbA4sccHfRKAb` → `link: null`
 - Hika Ahi `prj_bxE1WIkaiKvyGG9vP7SrvrMxTmTj` → `link: null`
 - Siku `prj_sVSWA4YxfvqtJm0yAzUYIegeyM9Z` → `link: null`
@@ -89,26 +75,79 @@ Verified Vercel project-link state:
 Result:
 # `1 Git push → canonical Collection Vercel project only`
 
-The three legacy projects were not deleted; their existing deployments remain historical/golden regression references.
-This closes the known four-project build fan-out that was accelerating Hobby build-rate-limit exhaustion.
+Legacy projects/deployments remain preserved as golden references.
+
+# B2.4B — USER WALKTHROUGH GROUP A — PASS
+
+Register:
+`CONTINENTAL_BALANCE_B2_4B_USER_WALKTHROUGH_GROUP_A_PASS.md`
+register commit `545d3e4e829e5773e8773eb4bddcd9b81690dd93`
+
+User evidence:
+`c21ae326-0425-451f-8c85-e78081da4eee.mp4`
+
+Observed metadata:
+- ~71.53 s
+- 1902 × 960
+- 30 fps
+
+Independent verdicts:
+
+1. Astrolabe / Isfahan — **PASS**
+   - relative star-map/horizon registration visibly manipulated;
+   - LOCAL and OTHER horizon contexts both demonstrated;
+   - pair remains product.
+
+2. Janney / Virginia — **PASS**
+   - COUPLING READY → contact/pivot/latch → continuous load path demonstrated;
+   - BOTH KNUCKLES CLOSED demonstrated as valid contact without coupling;
+   - no false error/invalidation.
+
+3. Metate + Metlapil / Teotitlán del Valle — **PASS**
+   - direct Metlapil reciprocal drag demonstrated;
+   - repeated passes visibly change represented material state;
+   - MAIZE and CACAO both demonstrated as valid contexts using the same law.
+
+Count changes authorized by those three independent user PASS verdicts only:
+- Asia: `3/4 → 4/4`
+- North America: `2/4 → 4/4`
+
+# VALIDATED / PENDING STATUS OF EXISTING NINE
+
+VALIDATED in B2.4B:
+- Astrolabe / Isfahan — VALIDATED
+- Janney / Virginia — VALIDATED
+- Metate + Metlapil / Teotitlán del Valle — VALIDATED
+
+Still SOURCE PASS + full Preview present, user gate pending:
+- Valparaíso Funicular / Chile
+- Mate + Bombilla / Argentina
+- Tongiaki / Tonga
+- Garamut / East Sepik-Ramu PNG
+- Catoptric Anamorphosis / Paris-France
+- Swiss Cylinder Music Box / Sainte-Croix
 
 # NEXT EXACT OUTPUT
 
-# **B2.4B — USER WALKTHROUGH GROUP A**
+# **B2.4C — USER WALKTHROUGH GROUP B**
 
-Use the full Preview anchor above.
+Audit independently:
+1. Valparaíso Funicular / Chile
+2. Mate + Bombilla / Argentina
+3. Tongiaki / Tonga
 
-Group A:
-1. Astrolabe / Isfahan
-2. Janney / Virginia
-3. Metate + Metlapil / Teotitlán del Valle
+Issue an independent `PASS / PATCH / REJECT` for every candidate.
 
-Record one continuous walkthrough if convenient, but issue an independent `PASS / PATCH / REJECT` for every candidate.
-Do not increment validated continental counts before the corresponding user gate passes.
+If all three independently PASS, validated distribution becomes:
+`AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 3 / EUROPE 2`
 
 Then:
-- B2.4C — Group B: Valparaíso + Mate/Bombilla + Tongiaki
-- B2.4D — Group C: Garamut + Anamorphosis + Swiss Music Box
+- B2.4D — Garamut + Anamorphosis + Swiss Music Box
+- B2.5 — 24-family collection regression after all candidate user gates close
+
+# RESPONSIVE SCOPE
+
+B2.4B is a desktop mechanism-validation gate. Explicit true ~390 px collection/family regression remains reserved for B2.5 / final collection validation.
 
 # G4 POLISH — PARKED
 
@@ -128,7 +167,3 @@ After every meaningful milestone:
 4. exact branch/commit/blob/deployment IDs;
 5. SOURCE/LIVE/USER/VALIDATED separated;
 6. exactly one next output.
-
-# PR SYNCHRONIZATION
-
-PR #21 must remain `DRAFT / DO NOT MERGE` and reflect cleanup PASS plus next gate `B2.4B`.
