@@ -73,8 +73,5 @@ Do not begin Batch B until Batch A is classified.
 Do not resume G4 yet.
 PR #21 remains Draft / DO NOT MERGE.
 
-Canonical HANDOVER head for this milestone:
-`082b535a0a7c2b6cae1dbe9e444c1fb1b088fa1e`.
-
 Persistence protocol:
 dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output.
