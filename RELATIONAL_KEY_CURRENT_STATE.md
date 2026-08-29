@@ -7,25 +7,53 @@ Draft PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
 
 Latest verified milestone:
-`CONTINENTAL_BALANCE_B2_4D_R1B_SWISS_MUSIC_BOX_DIRECT_DRAG_USER_PASS.md`
-register commit: `3f956f399349a1de5eba536e65d783c1e474994d`
+`B2_5A_24_FAMILY_REGRESSION_MATRIX_EXECUTION_ORDER.md`
+register commit: `6c827a8d00e75dd80ec7976d7243bf30fe43b6f6`
 
 # PRODUCT INVARIANT
 
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
-Signature reference: `RELATIONAL KEY — Three.js Signature POC`
+Signature reference:
+`RELATIONAL KEY — Three.js Signature POC`
 `https://relational-key-collectionrelational.vercel.app/`
 
 Primary causal model:
 `PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
 
-Center/gap/register/buttons remain subordinate. SOURCE/LIVE evidence cannot substitute for USER evidence where a user gate is required.
+Original product meaning remains binding through every expansion: identity/membership alone is insufficient; the meaningful state emerges through a relationship between two distinct members.
+
+# EXPANSION INVARIANT — CANONICAL
+
+Frozen document:
+`RELATIONAL_KEY_EXPANSION_INVARIANT.md`
+commit `8e1d85e70447e19d870e4a65ffa405cfad09fbc3`
+
+Canonical laws:
+
+# **EXPANSION MUST DEEPEN THE RELATION, NOT REPLACE IT.**
+
+# **TECHNOLOGY SERVES THE RELATIONAL MECHANISM.**
+
+# **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
+
+Three.js / WebGL / WebGPU / shaders / physics / Web Audio / spatial depth / particles / material simulation / advanced motion are encouraged when they make the family-native relation more physical, spatial, sensory, causal or memorable.
+
+They must never turn RELATIONAL KEY into:
+- one hero object with two labels;
+- a passive 3D museum viewer;
+- generic cinematic spectacle;
+- a mini-game detached from the pair;
+- a technology showcase where the relation becomes secondary.
+
+Every future expansion must explicitly preserve:
+`MEMBER A ↔ RELATION ↔ MEMBER B`.
+
+# IMMUTABLE ANCHOR / REFINEMENT
 
 Immutable pre-refinement anchor:
 `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
 
-Completed refinement:
 G0 PASS → G1 PASS → G2 PASS → G3 PASS.
 G4 remains PARKED until B2.5 closes.
 
@@ -35,93 +63,76 @@ Final validated distribution:
 
 # `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 
-# **ALL SIX CONTINENTS = 4/4.**
+# **ALL SIX CONTINENTS = 4/4 / 24 VALIDATED FAMILIES.**
 
-Only independent USER validation gates changed the validated counts.
+Group A: Astrolabe / Janney / Metate — PASS.
+Group B: Mate + Bombilla / Tongiaki / Valparaíso — PASS.
+Group C: Garamut / Catoptric Anamorphosis / Swiss Cylinder Music Box — PASS.
 
-## Group A — PASS
-Astrolabe / Janney / Metate.
-Asia `4/4`; North America `4/4`.
-
-## Group B — PASS
-Mate + Bombilla / Tongiaki / Valparaíso.
-South America `4/4`; Oceania reached `3/4` before Group C.
-
-## Group C — PASS / CLOSED
-Garamut — PASS / VALIDATED → Oceania `4/4`.
-Catoptric Anamorphosis — PASS / VALIDATED → Europe `3/4`.
-Swiss Cylinder Music Box — PASS / VALIDATED → Europe `4/4`.
-
-# SWISS MUSIC BOX — FINAL USER PASS
-
-UX hardening patch:
-`families/music-box-sainte-croix/candidate.html`
-patch commit `1054722fa8d72a092c61ffd41eabacae30c9cd07`
-SOURCE/LIVE patch register:
-`CONTINENTAL_BALANCE_B2_4D_R1A_SWISS_MUSIC_BOX_DIRECT_DRAG_UX_PATCH.md`
-register commit `206d99f4f6c3c687d155e79c43f89a7301ffab37`
-
-Final USER evidence:
-`8af53be2-ad31-49c6-b6de-a68a07e6498d.mp4`
-Observed metadata: ~35.7 s / 1906×960 / 30 fps.
-
-Observed causal proof:
-- pair engaged with `ENGAGED · NO AUTOPLAY`;
-- cursor directly manipulates Card A cylinder;
-- angle visibly leaves `+000°` and progresses through non-zero states;
-- pin positions visibly move with cylinder rotation;
-- bridge reports `PIN → TOOTH 5 · REVERSE CONTACT`;
-- readout reports `1 DECODED EVENT`;
-- event trace shows a live decoded event.
-
-Validated chain:
-
-`PINNED CYLINDER → PIN/TOOTH CONTACT → TUNED COMB RESPONSE`
-
-Verdict:
-**PASS / VALIDATED ✅**
-
-Final Swiss register:
+Swiss final USER register:
 `CONTINENTAL_BALANCE_B2_4D_R1B_SWISS_MUSIC_BOX_DIRECT_DRAG_USER_PASS.md`
-commit `3f956f399349a1de5eba536e65d783c1e474994d`
+commit `3f956f399349a1de5eba536e65d783c1e474994d`.
 
-# CANONICAL COLLECTION / VERCEL
+# B2.5A — MATRIX PASS / INTEGRATION BLOCKER DISCOVERED
 
-Canonical Collection:
+Register:
+`B2_5A_24_FAMILY_REGRESSION_MATRIX_EXECUTION_ORDER.md`
+commit `6c827a8d00e75dd80ec7976d7243bf30fe43b6f6`
+
+B2.5A froze:
+- exact 24-family regression matrix;
+- each family’s blocking minimum causal proof;
+- four efficient USER audit batches;
+- desktop + true ~390 px requirements;
+- separate `RELATIONAL INTEGRITY` vs `EXPERIENTIAL AMBITION / EXPERIENCE DEBT` evaluation;
+- advanced-rendering fallback rule.
+
+## Blocking discovery
+
+The workstream has **24 validated families**, but the canonical Collection shell is still a **15-family Atlas**:
+
+- root `index.html` still says `fifteen pair-native cultural relationship studies`;
+- root header still says `15 PAIR-NATIVE FAMILIES`;
+- root Atlas data/mini-pair cases remain the original 15;
+- `collection/families.json` schema 1.2 still contains 15 families and stale continent distribution.
+
+The nine Balance-Gate families exist as independently validated autonomous routes but are not yet reconciled into the canonical Atlas/registry.
+
+Therefore:
+
+# **DO NOT RUN THE 24-FAMILY USER REGRESSION YET.**
+
+This is collection-integration debt, not a failure of any validated family.
+
+# CANONICAL COLLECTION
+
+Current collection URL:
 `https://relational-key-collectionrelational-key-collection-1wq2g2b7e.vercel.app`
-
-Direct Swiss route:
-`https://relational-key-collectionrelational-key-collection-1wq2g2b7e.vercel.app/families/music-box-sainte-croix/candidate.html`
 
 Vercel cleanup remains PASS: only canonical Collection remains Git-linked; Boulle/Hika Ahi/Siku remain disconnected and preserved as golden references.
 
 # ACTIVE GATE
 
-# **B2.5 — 24-FAMILY COLLECTION REGRESSION**
+# **B2.5B — 24-FAMILY CANONICAL ATLAS INTEGRATION SPEC + SAFE REGISTRY MIGRATION**
 
-Purpose: prove that the now-balanced complete collection still behaves coherently as one product after the global refinement and Balance Gate work.
+B2.5B must define the safe 15 → 24 collection integration before runtime mutation.
 
-B2.5 must cover all 24 families and preserve the invariant:
-`PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
+Required:
+1. preserve all original 15 Atlas entries and G3 mechanism-native individuality;
+2. add the nine validated Balance-Gate families exactly once;
+3. update all 15-family framing/copy/count metadata to 24;
+4. update continental distribution to `4 / 4 / 4 / 4 / 4 / 4`;
+5. create mechanism-native Atlas mini-pair signatures for all nine new families;
+6. link each Atlas entry to its validated implementation;
+7. preserve the original Signature POC idea in collection framing;
+8. honor the Expansion Invariant without making the Atlas a technology showcase;
+9. do not alter family-native interaction logic during collection integration;
+10. define rollback checkpoint and technical verification before USER regression.
 
-Required dimensions:
-1. route/navigation integrity for all 24 families;
-2. direct pair-member interaction remains functional where applicable;
-3. no helper UI substitutes for the pair itself;
-4. no family lost its individual mechanism grammar;
-5. desktop collection regression;
-6. explicit true ~390 px responsive regression;
-7. reset/re-entry/navigation state must not create cross-family contamination;
-8. SOURCE / LIVE / USER / VALIDATED evidence must remain separated.
+After B2.5B spec: implement the safe 24-family collection integration, then technical route gate, then USER regression batches.
 
-G4 remains PARKED until B2.5 closes.
 PR #21 remains `DRAFT / DO NOT MERGE`.
-
-# NEXT EXACT OUTPUT
-
-# **B2.5A — 24-FAMILY REGRESSION MATRIX + EXECUTION ORDER**
-
-Create the exact 24-family regression matrix from the canonical collection, group families into efficient audit batches, identify each family’s minimum causal proof, and define the shortest complete USER regression capture plan before running the full audit.
+G4 remains PARKED.
 
 # PERSISTENCE PROTOCOL
 
