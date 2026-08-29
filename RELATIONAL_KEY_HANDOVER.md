@@ -111,7 +111,8 @@ B2.5D final PASS register commit:
 CURRENT_STATE final sync commit:
 `a51980167824966b3d335d480f76ac955b0337bd`
 
-This HANDOVER commit is the final canonical milestone head.
+HANDOVER final sync commit:
+`aa0199df53b61809303f135c00af328d818ca185`
 
 PR remains Draft / DO NOT MERGE.
 G4 remains PARKED until all B2.5 regression work closes.
