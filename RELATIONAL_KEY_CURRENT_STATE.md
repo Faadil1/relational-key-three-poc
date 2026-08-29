@@ -26,12 +26,12 @@ Continental Balance Gate 2 PASS / CLOSED.
 
 Total VALIDATED families: **24**.
 
-# B2.5A — PASS
+# B2.5A — MATRIX / EXECUTION ORDER PASS
 
 `B2_5A_24_FAMILY_REGRESSION_MATRIX_EXECUTION_ORDER.md`
 commit `6c827a8d00e75dd80ec7976d7243bf30fe43b6f6`
 
-Frozen causal USER batches A–D and true ~390 px requirement.
+Frozen causal USER batches A–D and responsive rules.
 
 # B2.5B — PASS
 
@@ -43,74 +43,81 @@ commit `89e0a2f577633120fbdadb165f2aa0c36edaaae1`
 Runtime integration source:
 `a073af05cb16c3934e06ce353a2e0017690b611d`
 
-READY deployment:
-`dpl_ERZaEXq8vs4knBEsgdUTNshmoCaB`
-
-Authenticated B2.5C-R1A live proof:
-- registry HTTP 200 / schema 1.3;
-- 24 validated / 0 candidates;
-- 24 unique IDs / 24 unique routes;
-- six continents × 4;
-- 24/24 canonical routes HTTP 200;
-- 24/24 route responses contain `BACK TO ATLAS`;
-- 9/9 Balance-Gate wrappers reference candidate;
-- 9/9 candidate targets HTTP 200.
-
-PASS register:
+Authenticated route/live PASS register:
 `B2_5C_R1A_AUTHENTICATED_24_ROUTE_SMOKE_PASS.md`
 commit `f9e67670bd22ece1f6979c21af432c7b30e083d7`
 
-# B2.5D — PARTIAL USER PASS
+Frozen technical proof:
+- registry HTTP 200 / schema 1.3;
+- 24 validated / 0 candidates;
+- six continents × 4;
+- 24 unique IDs / 24 unique routes;
+- 24/24 canonical routes HTTP 200;
+- 24/24 Back-to-Atlas contract;
+- 9/9 Balance-Gate candidate targets HTTP 200.
 
-Register:
-`B2_5D_R1_USER_VISUAL_NAVIGATION_PARTIAL_PASS_390_RETEST.md`
-commit `180f2ea56c2e6c538d55fdf83dd04fe4a771d63f`
+# B2.5D — USER VISUAL + NAVIGATION PASS / CLOSED ✅
 
-User video reviewed:
-- ~96.7 s;
-- 1910 × 966 capture;
-- 30 fps.
+Final PASS register:
+`B2_5D_R1B_390_MUSIC_SEARCH_MUSIC_BOX_WRAPPER_USER_PASS.md`
+commit `259c4926e9f704717f89a1b18f95a6fe90c6c04d`
 
-Retained USER PASS evidence:
+Retained USER evidence chain proves:
 - desktop Atlas visual coherence;
-- pair-product framing remains perceptually dominant;
-- continental balance readable;
-- search field + continental controls discoverable;
-- Europe filtering observed;
-- `stereoscopy-uk` historical wrapper opens and returns to Atlas;
-- `zellige-fes` historical wrapper also shown and returns to Atlas;
-- `music-box-sainte-croix` Balance-Gate wrapper loads in narrow responsive state and returns to Atlas;
-- responsive one-column Atlas state visually activates;
-- no obvious critical horizontal clipping observed in the recorded narrow state.
+- original pair-product framing remains perceptually dominant;
+- continental filtering works;
+- historical + Balance-Gate wrappers navigate and return;
+- true Chrome Device Toolbar `390 × 844` is visually proven;
+- one-column narrow Atlas is coherent;
+- no critical horizontal overflow/clipping;
+- Music Box discoverability via `music` works after minimal registry patch;
+- Music Box wrapper opens at 390 and `← BACK TO ATLAS` returns to `/#grid`.
 
-Not yet accepted:
-- **true 390 × 844 USER proof**.
+Music discoverability patch:
+`f674cf336149612b7f3d344b43893b7e5fbdb543`
 
-Reason:
-The recording shows a manually narrowed browser window but does not expose an exact Chrome Device Toolbar `390 × 844` viewport. The frozen true-390 requirement cannot be inferred from a narrow window.
+Patch scope:
+`Mechanical Memory` → `Music / Mechanical Memory` only.
+No candidate, law, mechanism, visual or causal interaction changed.
 
-Do NOT repeat already-passed desktop/navigation evidence.
+READY patched deployment:
+`dpl_CmbssprQDD8aQtGVSBjDNpKKC4eU`
+
+# EVIDENCE SEPARATION
+
+- SOURCE integration: PASS
+- LIVE technical integration: PASS
+- USER Atlas visual/navigation: PASS
+- USER causal family regression: ACTIVE / not yet classified
+- VALIDATED family count: 24 unchanged
 
 # ACTIVE GATE / NEXT EXACT OUTPUT
 
-# **B2.5D-R1A — TRUE 390 × 844 MICRO-RETEST**
+# **B2.5A CAUSAL USER REGRESSION — BATCH A / ORIGINAL SIGNATURE + REGISTRATION**
 
-Only remaining proof:
-1. Chrome Device Toolbar visibly set to `390 × 844`;
-2. reload Atlas;
-3. show product-law/hero + Atlas controls;
-4. type `music` in search and show filtered result;
-5. clear search, click `Europe`;
-6. scroll enough to prove no horizontal overflow / clipped critical UI;
-7. open Music Box / Sainte-Croix and return `← BACK TO ATLAS`.
+Frozen order:
+1. City / Gatineau
+2. Service / Benin
+3. Signal / Nigeria
+4. Frida / Coyoacán
+5. Textile / Bonwire
+6. Zellige / Fès
 
-Target length: ~15–25 seconds. No mechanism interaction required.
+Purpose: fast confirmation that the foundational families still obey:
 
-If PASS:
-- close B2.5D;
-- open B2.5A causal USER regression Batch A.
+`PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
 
-PR #21 remains Draft / DO NOT MERGE. G4 remains PARKED.
+Blocking proof targets:
+- City: relationship resolution visibly completes route across both members;
+- Service: direct relation changes incomplete sequence into registered continuation;
+- Signal: relay relation changes blocked/separate signal into continuation across both members;
+- Frida: trace alignment across pair visibly changes archive relation;
+- Textile: both strip systems visibly interlace across the relationship field;
+- Zellige: direct fit changes two valid pieces into a registered tessellated relation.
+
+Do not begin Batch B until Batch A is classified.
+Do not resume G4 yet.
+PR #21 remains Draft / DO NOT MERGE.
 
 Persistence protocol:
 dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output.
