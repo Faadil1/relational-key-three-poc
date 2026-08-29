@@ -16,9 +16,10 @@ Signature reference:
 `https://relational-key-collectionrelational.vercel.app/`
 
 Operational consequence:
-- the two members must carry the primary interaction;
+- the two members carry the primary causal interaction;
 - center/gap/register/buttons remain subordinate;
-- a helper button cannot substitute for direct relational evidence.
+- a helper control cannot substitute for direct relational evidence;
+- validation judges the relationship, not merely whether an animation moves.
 
 Immutable pre-refinement anchor:
 `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
@@ -67,7 +68,6 @@ Deployed SHA:
 State: `READY`
 
 This Preview contains all nine existing Balance-Gate candidates.
-Automated subroute fetches may be intercepted by Vercel SSO `302`; user-browser walkthrough remains the evidence layer.
 
 # VERCEL LEGACY GIT-INTEGRATION CLEANUP — PASS
 
@@ -116,8 +116,8 @@ Observed metadata:
 Independent evidence verdicts:
 
 1. Valparaíso Funicular / Chile — **RETEST REQUIRED / NOT VALIDATED**
-   - inverse terminal states are visible;
-   - recording visibly uses subordinate `SWAP START` utility;
+   - inverse states are visible;
+   - recording uses subordinate `SWAP START` utility;
    - direct Car A and direct Car B manipulation are not demonstrated;
    - utility control cannot substitute for pair-member evidence.
 
@@ -132,7 +132,6 @@ Independent evidence verdicts:
    - coupled structural state is not evidenced.
 
 No source mutation is authorized yet: missing evidence is not automatically a code failure.
-
 No Group B count change is authorized.
 
 # VALIDATED / PENDING STATUS OF EXISTING NINE
