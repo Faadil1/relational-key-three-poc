@@ -1,175 +1,68 @@
-# RELATIONAL KEY — CONTINENTAL BALANCE GATE 2
+# CONTINENTAL BALANCE GATE 2 — 24-FAMILY EQUILIBRIUM
 
-Date: 2026-08-28
+Date: 2026-08-29
+Repository: `Faadil1/relational-key-three-poc`
 Branch: `collection/global-refinement-1`
 PR: #21 — `DRAFT / DO NOT MERGE`
 
-# Gate
-
-# **24 FAMILY EQUILIBRIUM**
-
-## Why this gate exists
-
-Continental Balance Gate 1 prevented geographic collapse, but it did not create numerical parity.
-
-Current validated distribution:
-
-- Africa: **4**
-- Asia: **3**
-- North America: **2**
-- South America: **2**
-- Oceania: **2**
-- Europe: **2**
-
-Current validated collection: **15 families**.
-
-New equilibrium target:
-
-# `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
-
-Target collection size:
-
-# **24 VALIDATED FAMILIES**
-
-Required additions:
-
-- Africa: `+0`
-- Asia: `+1`
-- North America: `+2`
-- South America: `+2`
-- Oceania: `+2`
-- Europe: `+2`
-
-Total new validated families required: **9**.
-
-## Roadmap decision
-
-Global family polish is **PAUSED before promotion**.
-
-The existing G4.1 Khipu candidate is preserved as reversible work but is not promoted while Balance Gate 2 is active.
-
-Reason:
-
-Polishing the 15-family collection before expanding to 24 risks optimizing a temporary composition. New families can change atlas density, mechanism contrast, cross-family hierarchy and collection cohesion. Structural balance therefore precedes final family polish.
-
 ## Product invariant
 
-# **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
+**THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
-The new balance target does not authorize generic cultural skinning or quota-filling.
+Validation rule:
+`PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
 
-## Selection law
+## Final result
 
-# **BALANCE IS A TARGET, NOT A LICENSE TO ADD WEAK FAMILIES.**
+# **PASS / CLOSED ✅**
 
-A geographic slot remains open until a source-grounded relationship mechanism is strong enough to deserve promotion.
+Validated continental distribution:
 
-## Candidate admission requirements
+`AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 
-Every new family must satisfy all of the following before implementation:
+All six continents are now `4/4`.
 
-1. **Source-first grounding** — a real documented object, practice, technique, system, archive or material relationship.
-2. **Pair-native law** — the relationship must require two distinct objects/states/roles; the center cannot become the product.
-3. **Mechanism novelty** — materially different from the 15 validated family mechanisms, not merely a new visual skin.
-4. **Cultural specificity without stereotype** — no flags, national palettes, generic folk motifs, landmark shorthand or decorative appropriation.
-5. **Interaction translatability** — the source relationship can become a clear digital interaction without pretending to reproduce ritual, sacred or expert-only meaning.
-6. **Mismatch validity** — when applicable, the OTHER / mismatch state should preserve the validity of both members rather than treat one as wrong.
-7. **Manufacturable visual logic** — relation should remain understandable as two bounded objects/cards, even if implemented digitally.
-8. **Evidence gate before build** — source quality + law + mechanism must be reviewed before code.
+The Balance-Gate families were existing RELATIONAL KEY families/candidates, not newly invented additions for this gate.
 
-## Existing 15 mechanism baseline
+## Closing evidence sequence
 
-The collection already covers:
+Group A PASS:
+- Astrolabe / Isfahan
+- Janney / Virginia
+- Metate + Metlapil / Teotitlán del Valle
 
-- registered continuation;
-- service storyboard / switch registration;
-- relay alignment;
-- photographic trace / archive counterpart;
-- physical transformation / edible reveal;
-- interlacing / woven continuation;
-- material fit / tessellation;
-- tension / knot registration;
-- print registration / transfer alignment;
-- controlled difference / beat resonance;
-- environmental interaction / swell deflection;
-- controlled disparity / binocular fusion;
-- complementary absence / temporal interlock;
-- sustained friction / emergent ember;
-- shared cut / reciprocal inversion.
+Group B PASS:
+- Mate + Bombilla
+- Tongiaki
+- Valparaíso funicular
 
-New candidates should not simply duplicate one of these mechanisms with different cultural imagery.
+Group C PASS:
+- Garamut / East Sepik-Ramu PNG
+- Catoptric Anamorphosis / Paris-France
+- Swiss Cylinder Music Box / Sainte-Croix
 
-# Balance Gate 2 stages
+Swiss closeout register:
+`CONTINENTAL_BALANCE_B2_4D_R1B_SWISS_MUSIC_BOX_DIRECT_DRAG_USER_PASS.md`
+commit `3f956f399349a1de5eba536e65d783c1e474994d`
 
-## B2.1 — RELATIONSHIP GAP MAP
+Final Swiss user evidence:
+`8af53be2-ad31-49c6-b6de-a68a07e6498d.mp4`
 
-Map underrepresented relationship topologies before naming final cultural candidates.
+Observed causal chain:
+`PINNED CYLINDER → PIN/TOOTH CONTACT → TUNED COMB RESPONSE`
 
-Output:
-`CONTINENTAL_BALANCE_B2_1_RELATIONSHIP_GAP_MAP.md`
+Visible proof includes direct cylinder manipulation, non-zero manual angle progression, `PIN → TOOTH 5 · REVERSE CONTACT`, `1 DECODED EVENT`, and a live event trace marker.
 
-## B2.2 — SOURCE-FIRST CANDIDATE POOL
+## Gate transition
 
-Research multiple credible candidates for each missing continental slot.
+Continental Balance Gate 2 is no longer active.
 
-Required search volume:
-- Asia: minimum 4 credible candidates for 1 slot;
-- North America: minimum 6 credible candidates for 2 slots;
-- South America: minimum 6 credible candidates for 2 slots;
-- Oceania: minimum 6 credible candidates for 2 slots;
-- Europe: minimum 6 credible candidates for 2 slots.
+Next active gate:
 
-Do not promote directly from a single attractive reference.
+# **B2.5 — 24-FAMILY COLLECTION REGRESSION**
 
-## B2.3 — CANDIDATE PROMOTION MATRIX
+Next exact output:
+`B2.5A — 24-FAMILY REGRESSION MATRIX + EXECUTION ORDER`
 
-Score candidate strength on:
-- source authority;
-- pair-native necessity;
-- mechanism novelty;
-- interaction clarity;
-- visual potential;
-- cultural specificity;
-- appropriation / truthfulness risk;
-- overlap with existing 15;
-- build complexity;
-- collection contribution.
-
-Promote only the strongest candidates to family build rounds.
-
-## B2.4 — FAMILY BUILD + INDEPENDENT GATES
-
-Each promoted candidate receives its own source, interaction, live and visual gate.
-
-No candidate becomes part of the 24-family validated count until its independent gate passes.
-
-## B2.5 — 24-FAMILY COLLECTION REGRESSION
-
-After `4 / 4 / 4 / 4 / 4 / 4` is reached:
-
-- rebuild/extend the atlas to 24;
-- verify all continental counts;
-- verify mechanism individuality;
-- verify no continent dominates through visual spectacle alone;
-- verify search/filter behavior;
-- verify responsive density;
-- verify all 24 direct routes;
-- re-run atlas individuality and collection cohesion gates.
-
-Only after B2.5 passes does final family polish resume.
-
-## Parked work
-
-G4.1 Khipu:
-- candidate: `families/khipu-peru/g4-1.html`;
-- implementation: `64647ea78b04439ea9a57ece47f19490d9185d45`;
-- golden remains unchanged;
-- status: `PARKED / NOT PROMOTED`.
-
-The Vercel rate-limit blocker remains recorded but is no longer the immediate project gate.
-
-## Immediate next output
-
-# **B2.1 — RELATIONSHIP GAP MAP**
-
-Do not begin another family polish round before Balance Gate 2 is resolved or explicitly abandoned.
+G4 remains PARKED until B2.5 closes.
+PR #21 remains `DRAFT / DO NOT MERGE`.
