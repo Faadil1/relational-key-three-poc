@@ -26,7 +26,6 @@ Expansion laws:
 - **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
 
 # GLOBAL STATE
-
 G0 / G1 / G2 / G3 PASS. G4 PARKED.
 Continental Balance Gate 2 PASS / CLOSED.
 24 VALIDATED families, six continents × 4.
@@ -44,34 +43,23 @@ B2.5C-R1A PASS register:
 `B2_5C_R1A_AUTHENTICATED_24_ROUTE_SMOKE_PASS.md`
 commit `f9e67670bd22ece1f6979c21af432c7b30e083d7`
 
-Technical proof frozen:
-- registry 200 / schema 1.3;
-- 24 validated / 0 candidates;
-- six continents × 4;
-- 24/24 canonical routes HTTP 200;
-- 24/24 Back-to-Atlas;
-- 9/9 Balance-Gate candidate targets HTTP 200.
-
 # B2.5D — USER VISUAL + NAVIGATION PASS / CLOSED
 Final PASS register:
 `B2_5D_R1B_390_MUSIC_SEARCH_MUSIC_BOX_WRAPPER_USER_PASS.md`
 commit `259c4926e9f704717f89a1b18f95a6fe90c6c04d`
 
-USER proof retained:
-- desktop Atlas coherence;
-- pair-product framing dominant;
-- continental filtering works;
-- historical/Balance-Gate wrapper navigation works;
-- exact Chrome Device Toolbar `390 × 844` proven;
-- narrow one-column Atlas coherent;
-- no critical horizontal overflow/clipping;
-- Music Box discoverable via `music`;
-- Music Box wrapper opens and returns to Atlas at 390.
-
 Discoverability patch:
 `f674cf336149612b7f3d344b43893b7e5fbdb543`
 READY patched deployment:
 `dpl_CmbssprQDD8aQtGVSBjDNpKKC4eU`
+
+USER proof retained:
+- desktop Atlas coherence;
+- exact Chrome Device Toolbar `390 × 844`;
+- no critical horizontal overflow/clipping;
+- continental filtering and wrapper navigation;
+- `music` resolves Music Box;
+- Music Box opens and `← BACK TO ATLAS` returns at 390.
 
 # EXACT NEXT WORK — USER BATCH A
 
@@ -99,15 +87,6 @@ Do not redesign merely because a family has Experience Debt. Patch only if relat
 
 After Batch A PASS:
 open Batch B — Kento / Stereoscopy / Astrolabe / Anamorphosis / Valparaíso / Swell.
-
-# CANONICAL PERSISTENCE
-B2.5D final PASS register commit:
-`259c4926e9f704717f89a1b18f95a6fe90c6c04d`
-
-CURRENT_STATE latest sync commit:
-`91d2542ae0e79bd342f15018fbfe46816cd6c7e0`
-
-This HANDOVER commit is the canonical final head for the B2.5D milestone.
 
 PR remains Draft / DO NOT MERGE.
 G4 remains PARKED until all B2.5 regression work closes.
