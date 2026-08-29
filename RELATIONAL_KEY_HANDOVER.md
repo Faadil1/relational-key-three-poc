@@ -40,7 +40,6 @@ B2.5B PASS:
 commit `89e0a2f577633120fbdadb165f2aa0c36edaaae1`
 
 # B2.5C — TECHNICAL PASS / CLOSED
-
 B2.5C-R1A PASS register:
 `B2_5C_R1A_AUTHENTICATED_24_ROUTE_SMOKE_PASS.md`
 commit `f9e67670bd22ece1f6979c21af432c7b30e083d7`
@@ -54,7 +53,6 @@ Technical proof frozen:
 - 9/9 Balance-Gate candidate targets HTTP 200.
 
 # B2.5D — USER VISUAL + NAVIGATION PASS / CLOSED
-
 Final PASS register:
 `B2_5D_R1B_390_MUSIC_SEARCH_MUSIC_BOX_WRAPPER_USER_PASS.md`
 commit `259c4926e9f704717f89a1b18f95a6fe90c6c04d`
@@ -72,7 +70,6 @@ USER proof retained:
 
 Discoverability patch:
 `f674cf336149612b7f3d344b43893b7e5fbdb543`
-
 READY patched deployment:
 `dpl_CmbssprQDD8aQtGVSBjDNpKKC4eU`
 
@@ -104,15 +101,13 @@ After Batch A PASS:
 open Batch B — Kento / Stereoscopy / Astrolabe / Anamorphosis / Valparaíso / Swell.
 
 # CANONICAL PERSISTENCE
-
 B2.5D final PASS register commit:
 `259c4926e9f704717f89a1b18f95a6fe90c6c04d`
 
-CURRENT_STATE final sync commit:
-`a51980167824966b3d335d480f76ac955b0337bd`
+CURRENT_STATE latest sync commit:
+`91d2542ae0e79bd342f15018fbfe46816cd6c7e0`
 
-HANDOVER final sync commit:
-`aa0199df53b61809303f135c00af328d818ca185`
+This HANDOVER commit is the canonical final head for the B2.5D milestone.
 
 PR remains Draft / DO NOT MERGE.
 G4 remains PARKED until all B2.5 regression work closes.
