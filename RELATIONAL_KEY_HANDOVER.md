@@ -1,6 +1,6 @@
 # RELATIONAL KEY — HANDOVER
 
-Updated: 2026-08-28
+Updated: 2026-08-29
 Repository: `Faadil1/relational-key-three-poc`
 Working branch: `collection/global-refinement-1`
 Draft PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
@@ -8,7 +8,7 @@ PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **B2.4A-R — RETRY FULL-QUEUE PREVIEW IDENTIFICATION WHEN VERCEL BUILD CAPACITY CLEARS**
+# **B2.4A-R2 — RETRY FULL-QUEUE PREVIEW IDENTIFICATION AFTER VERCEL BUILD CAPACITY CLEARS**
 
 Do not resume family research: all nine Balance Gate 2 additions already have SOURCE-PASS autonomous builds.
 Do not resume G4 polish.
@@ -80,24 +80,21 @@ No SOURCE/LIVE infrastructure status alone changes counts.
    - spec `988c2d0b9878008500aaf29a68107e171f2e03ca`
    - build `c8c1af1afe7c9e9ff8cce8efc68ce3094976fe97`
    - blob `1f07e969dea9a47ec591afe835766f1d2443e427`
-   - build register `CONTINENTAL_BALANCE_B2_3R_EUROPE_SWISS_MUSIC_BOX_BUILD_CANDIDATE.md`
-   - register commit `be6adf096512fc00390ced92db7ddedc4452d3e9`
-   - atomic +95/-0; node syntax PASS; local hash == GitHub blob
    - no autoplay; user-driven rotation; deterministic pin→tooth events; visible response without audio
 
 All nine:
 # `SOURCE PASS / LIVE + USER VISUAL OR VISUAL+AUDIO PENDING`
 
-# B2.4A — CURRENT BLOCKER
+# B2.4A-R1 — LATEST RETRY
 
-Register:
-# `CONTINENTAL_BALANCE_B2_4A_FULL_QUEUE_LIVE_TECHNICAL_GATE.md`
+Retry register:
+`CONTINENTAL_BALANCE_B2_4A_R1_RETRY_STILL_BLOCKED.md`
 
-Register commit:
-# `95eb03cad2b80d5344401d950f10263e71add490`
+Retry register commit:
+`f4f3e072ffaec7a7170f77f20e8d764ff1778950`
 
 Verdict:
-# **BLOCKED — VERCEL BUILD RATE LIMIT / NO FULL-QUEUE PREVIEW YET**
+# **RETRY ATTEMPTED / STILL BLOCKED BY VERCEL BUILD RATE LIMIT**
 
 Vercel project ID:
 `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
@@ -108,7 +105,7 @@ Team ID:
 Branch:
 `collection/global-refinement-1`
 
-Latest READY Preview currently found:
+Latest READY Preview still found:
 - deployment `dpl_8GgBz2Kt81mr1YTLTR3UTk9UgMi4`
 - URL `https://relational-key-collectionrelational-key-collection-55w553e3i.vercel.app`
 - deployed SHA `32b67f69b7ead0ff30f443e1efe803222afb31cd`
@@ -116,27 +113,24 @@ Latest READY Preview currently found:
 This is PARTIAL ONLY: it predates Tongiaki, Garamut, Anamorphosis and Music Box.
 Do not use it for nine-candidate user validation.
 
-Previous partial evidence:
-- Astrolabe route authenticated/fetched HTTP 200.
-- Janney route probe hit Vercel SSO 302; no PASS/failure inferred.
-
-Current-head deployment-status evidence:
-- commit checked `b1eeddf6c531f411c299260289893a4c2c6a2851`
-- `Vercel – relational-key-collectionrelational-key-collection` = failure
-- target contains `upgradeToPro=build-rate-limit`
-- three older family-linked Vercel contexts attached to repo show same build-rate-limit failure.
+Retry evidence:
+- PR #21 head checked `ce2759bf42eb94ea5065aaba8c3ae024299765b6`;
+- `Vercel – relational-key-collectionrelational-key-collection` remains `failure`;
+- target contains `upgradeToPro=build-rate-limit`;
+- several family-linked Vercel contexts show the same rate-limit condition;
+- no newer READY descendant of Music Box build `c8c1af1...` appears in deployment listing.
 
 This is an external infrastructure blocker, not source/candidate failure.
 
 # RECOVERY — DO THIS FIRST
 
-When resuming:
-1. call Vercel deployment list for project/team above;
-2. find first `READY` Preview on branch `collection/global-refinement-1` whose Git SHA descends from Music Box build `c8c1af1afe7c9e9ff8cce8efc68ce3094976fe97` (later docs-only SHA is acceptable);
+On next retry:
+1. list Vercel deployments for the project/team above;
+2. identify first `READY` Preview on branch `collection/global-refinement-1` whose Git SHA descends from Music Box build `c8c1af1afe7c9e9ff8cce8efc68ce3094976fe97`;
 3. record deployment ID / URL / deployed SHA;
 4. probe all candidate routes where auth permits;
 5. classify each only as `HTTP 200`, `SSO/AUTH BLOCKED`, or `MISSING/ERROR`;
-6. create a recovery/live-technical register and update CURRENT_STATE + HANDOVER immediately;
+6. create recovery/live-technical register and update CURRENT_STATE + HANDOVER immediately;
 7. then ask user for grouped walkthroughs, but issue an independent verdict for each of the nine.
 
 Required routes:
