@@ -59,7 +59,7 @@ Final PASS register:
 `B2_5D_R1B_390_MUSIC_SEARCH_MUSIC_BOX_WRAPPER_USER_PASS.md`
 commit `259c4926e9f704717f89a1b18f95a6fe90c6c04d`
 
-Retained USER evidence:
+USER proof retained:
 - desktop Atlas coherence;
 - pair-product framing dominant;
 - continental filtering works;
@@ -67,13 +67,11 @@ Retained USER evidence:
 - exact Chrome Device Toolbar `390 × 844` proven;
 - narrow one-column Atlas coherent;
 - no critical horizontal overflow/clipping;
-- Music Box search discoverability and wrapper/back proven at 390.
+- Music Box discoverable via `music`;
+- Music Box wrapper opens and returns to Atlas at 390.
 
 Discoverability patch:
 `f674cf336149612b7f3d344b43893b7e5fbdb543`
-
-Patch changed only Music Box registry memory:
-`Mechanical Memory` → `Music / Mechanical Memory`.
 
 READY patched deployment:
 `dpl_CmbssprQDD8aQtGVSBjDNpKKC4eU`
@@ -87,9 +85,6 @@ Frozen order:
 4. Frida / Coyoacán — `/families/frida-coyoacan/`
 5. Textile / Bonwire — `/families/textile-bonwire/`
 6. Zellige / Fès — `/families/zellige-fes/`
-
-Batch A purpose:
-confirm the original RELATIONAL KEY grammar still reads causally across the foundational families.
 
 Blocking minimum proof:
 - City: relationship resolution visibly completes route across both members;
@@ -108,15 +103,15 @@ Do not redesign merely because a family has Experience Debt. Patch only if relat
 After Batch A PASS:
 open Batch B — Kento / Stereoscopy / Astrolabe / Anamorphosis / Valparaíso / Swell.
 
-# PERSISTENCE IDS
+# CANONICAL PERSISTENCE
 
 B2.5D final PASS register commit:
 `259c4926e9f704717f89a1b18f95a6fe90c6c04d`
 
 CURRENT_STATE final sync commit:
-`543a82e2c01bbdc2927d36f21d50de7c116e336f`
+`a51980167824966b3d335d480f76ac955b0337bd`
 
-This HANDOVER commit is the final canonical head for the milestone.
+This HANDOVER commit is the final canonical milestone head.
 
 PR remains Draft / DO NOT MERGE.
 G4 remains PARKED until all B2.5 regression work closes.
