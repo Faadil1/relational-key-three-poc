@@ -1,15 +1,23 @@
-# V3 — Relational Instrument
+# RELATIONAL KEY — Active Direction
 
-Goal: make the resolver itself visible in geometry.
+Date: 2026-08-29
 
-## New law
-A member claim and a destination rule each carry a registration profile. When the profiles correspond, their residual mis-registration collapses toward zero and the seam becomes continuous. When they do not correspond, residual geometry remains and produces directional resistance.
+**THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
-## Signature
-`GRAB → PROXIMITY → PROFILE REVEAL → COMPARE → ZERO RESIDUAL / INTERFERENCE → CONTINUE / RECOIL → INSPECT WHY`
+`PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
 
-## Product meaning
-Three.js is not used to decorate the card. It visualizes the relationship computation as spatial registration.
+Continental Balance Gate 2 is closed at:
 
-## Promotion gate
-V3 only replaces V2 if a naive viewer can infer that the two sides are being compared, and that the valid case becomes continuous because the profiles correspond.
+`AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
+
+Swiss Cylinder Music Box is PASS / VALIDATED after direct USER evidence of cylinder rotation causing a pin→tooth decoded event.
+
+Active gate:
+
+**B2.5 — 24-FAMILY COLLECTION REGRESSION**
+
+Next exact output:
+
+**B2.5A — 24-FAMILY REGRESSION MATRIX + EXECUTION ORDER**
+
+G4 remains PARKED. PR #21 remains DRAFT / DO NOT MERGE.
