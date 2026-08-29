@@ -7,20 +7,23 @@ PR #21: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **B2.5C-R1A — AUTHENTICATED IN-BROWSER 24-ROUTE SMOKE CHECK**
+# **B2.5D — 24-FAMILY ATLAS USER VISUAL + NAVIGATION GATE**
 
-Do not start B2.5D or causal USER regression until this closes.
+B2.5C technical integration is CLOSED / PASS.
+Do not resume G4 yet.
 
-# PRODUCT INVARIANT
+# CANONICAL INVARIANTS
 
 **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
 `PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
 
-Expansion laws remain frozen:
+Expansion laws:
 - **EXPANSION MUST DEEPEN THE RELATION, NOT REPLACE IT.**
 - **TECHNOLOGY SERVES THE RELATIONAL MECHANISM.**
 - **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
+
+Technology remains implementation detail; mechanism remains family identity.
 
 # GLOBAL STATE
 
@@ -40,104 +43,59 @@ B2.5B PASS:
 `B2_5B_24_FAMILY_CANONICAL_ATLAS_INTEGRATION_SPEC_SAFE_REGISTRY_MIGRATION.md`
 commit `89e0a2f577633120fbdadb165f2aa0c36edaaae1`
 
-Pre-runtime rollback anchor:
-`e9e40b0f610e912410f9b0ff678a3011705aa6e8`
-
-# B2.5C SOURCE INTEGRATION — PASS
+# B2.5C — TECHNICAL PASS / CLOSED
 
 Runtime integration source head:
 `a073af05cb16c3934e06ce353a2e0017690b611d`
 
-Registry:
-- schema 1.3;
-- 24 validated / 0 candidates;
-- six continents × 4;
-- original 15 preserved;
-- nine Balance-Gate families appended 16–24.
+Registry commit:
+`c9e3a04a01fe47e770888bf34cc16a0cd8bd6ab1`
 
-Root Atlas:
-- 24-family framing;
-- original pair-product framing preserved;
-- original 15 G3 signatures preserved;
-- nine new mechanism-native signatures added.
-
-Nine new canonical wrappers:
-- astrolabe-isfahan
-- coupler-virginia
-- metate-teotitlan
-- funicular-valparaiso
-- mate-bombilla-argentina
-- tongiaki-tonga
-- garamut-sepik-ramu
-- anamorphosis-paris
-- music-box-sainte-croix
-
-Candidate immutability PASS 9/9.
-No candidate / snapshot / `_shared` / original-15 wrapper mutation occurred during integration.
-
-# B2.5C-R1 — VERCEL RECOVERY PASS
-
-Register:
-`B2_5C_R1_VERCEL_RECOVERY_READY_PREVIEW_SSO_HTTP_CHECK_BLOCKED.md`
-commit `7b8633c3a7463a9417639711890009206cb7ac84`
-
-Source-neutral retrigger commit:
+Vercel source-neutral retrigger:
 `5d3ed9de5fbbf0427f1ad0eac5b6910b4a220f5a`
-
-No file changes in retrigger.
 
 READY deployment:
 `dpl_ERZaEXq8vs4knBEsgdUTNshmoCaB`
 
-Preview:
-`https://relational-key-collectionrelational-key-collection-3w617k1qt.vercel.app`
+Preview hostname:
+`relational-key-collectionrelational-key-collection-3w617k1qt.vercel.app`
 
-Project:
-`prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
+B2.5C-R1A register:
+`B2_5C_R1A_AUTHENTICATED_24_ROUTE_SMOKE_PASS.md`
 
-Vercel state:
-`READY`
+Authenticated live proof:
+- registry 200 / schema 1.3;
+- validated 24 / candidates 0;
+- 24 families / 24 unique IDs / 24 unique routes;
+- six continents × 4;
+- product law visible;
+- 24/24 canonical routes HTTP 200;
+- 24/24 route responses include `BACK TO ATLAS`;
+- 9/9 new wrappers reference candidate;
+- 9/9 new candidate targets HTTP 200.
 
-GitHub status:
-`Vercel = success`
+The isolated `root24=false` from the diagnostic browser script was a false negative: the script used `innerText`; `.topCenter` is hidden under the root source breakpoint `max-width:1100px`; hidden content is omitted from `innerText`. Exact deployed source includes `24 PAIR-NATIVE FAMILIES`. No code patch required.
 
-Build log proves exact branch/commit clone and successful deployment.
+Candidate immutability remains PASS 9/9.
 
-Former `build-rate-limit` is CLOSED.
+# EXACT NEXT WORK — B2.5D
 
-# CURRENT ACCESS BOUNDARY
+Need the shortest complete USER visual/navigation capture plan.
 
-The preview is protected by Vercel Preview SSO.
+Must prove:
+1. desktop Atlas root coherence and 24-family discoverability;
+2. continental filter/search behavior at least once without needing to exercise every chip;
+3. open one historical-family wrapper and Back-to-Atlas;
+4. open one Balance-Gate wrapper and Back-to-Atlas;
+5. true ~390 px Atlas root coherence;
+6. at ~390 px: no horizontal overflow, no clipped critical controls, cards remain legible, filters/search remain usable;
+7. pair-product framing remains visually dominant;
+8. technology/advanced visual treatment does not replace mechanism identity.
 
-Available assistant-side Vercel fetch returns a 302 SSO redirect before app content. Temporary share bypass also loops because this fetch implementation cannot retain the browser auth cookie.
+Do not ask the user for 24 separate visual walkthroughs in B2.5D; route integrity is already technically proven 24/24.
 
-Therefore do not infer HTTP route PASS from source/build evidence.
-
-# EXACT NEXT ACTION — R1A
-
-Use the authenticated browser that can open the READY preview and execute one same-origin smoke script.
-
-The script must prove:
-1. root contains `24 PAIR-NATIVE FAMILIES`;
-2. root contains `The pair is the product.`;
-3. live `/collection/families.json` is schema `1.3`;
-4. registry contains exactly 24 families and candidate_count 0;
-5. six continent counts are all 4;
-6. all 24 `route` values return HTTP OK;
-7. all 24 wrapper responses contain `BACK TO ATLAS`;
-8. the nine new `<route>candidate.html` targets return HTTP OK;
-9. visible PASS/FAIL summary is produced;
-10. JSON result can be copied back into this conversation.
-
-If R1A PASS:
-- close B2.5C TECHNICAL PASS;
-- create B2.5C PASS register;
-- sync canonical files and PR #21;
-- open exactly `B2.5D — 24-FAMILY ATLAS USER VISUAL + NAVIGATION GATE`.
-
-B2.5D then covers desktop visual coherence and true ~390px user visual/navigation proof.
-
-After B2.5D PASS, execute B2.5A causal USER batches A–D.
+After B2.5D PASS:
+execute B2.5A causal USER regression batches A–D using the pre-frozen capture order.
 
 PR #21 stays Draft / DO NOT MERGE.
 G4 stays PARKED.

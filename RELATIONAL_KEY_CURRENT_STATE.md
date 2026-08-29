@@ -16,8 +16,7 @@ Expansion invariant:
 - **TECHNOLOGY SERVES THE RELATIONAL MECHANISM.**
 - **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
 
-Expansion law:
-`RELATIONAL_KEY_EXPANSION_INVARIANT.md`
+Document: `RELATIONAL_KEY_EXPANSION_INVARIANT.md`
 commit `8e1d85e70447e19d870e4a65ffa405cfad09fbc3`
 
 G0 / G1 / G2 / G3: PASS.
@@ -31,121 +30,100 @@ Total VALIDATED families: **24**.
 
 # B2.5A — PASS
 
-Register:
 `B2_5A_24_FAMILY_REGRESSION_MATRIX_EXECUTION_ORDER.md`
 commit `6c827a8d00e75dd80ec7976d7243bf30fe43b6f6`
 
-Frozen:
-- exact 24-family causal regression matrix;
-- USER batches A–D;
-- desktop + true ~390 px requirements;
-- blocking RELATIONAL INTEGRITY vs diagnostic EXPERIENCE DEBT.
+Frozen: exact 24-family causal matrix, USER batches A–D, desktop + true ~390 px requirements, RELATIONAL INTEGRITY vs EXPERIENCE DEBT.
 
 # B2.5B — PASS
 
-Register:
 `B2_5B_24_FAMILY_CANONICAL_ATLAS_INTEGRATION_SPEC_SAFE_REGISTRY_MIGRATION.md`
 commit `89e0a2f577633120fbdadb165f2aa0c36edaaae1`
 
 Pre-runtime rollback anchor:
 `e9e40b0f610e912410f9b0ff678a3011705aa6e8`
 
-# B2.5C — SOURCE TECHNICAL PASS
-
-Primary register:
-`B2_5C_24_FAMILY_CANONICAL_ATLAS_INTEGRATION_SOURCE_PASS_LIVE_INFRA_BLOCKED.md`
+# B2.5C — TECHNICAL PASS / CLOSED ✅
 
 Runtime integration source head:
 `a073af05cb16c3934e06ce353a2e0017690b611d`
 
-Completed SOURCE integration:
-- registry schema `1.3`;
-- `validated_count = 24`;
-- `candidate_count = 0`;
+Registry migration:
+`c9e3a04a01fe47e770888bf34cc16a0cd8bd6ab1`
+
+Integrated state:
+- schema 1.3;
+- 24 validated / 0 candidates;
 - six continents × 4;
-- root Atlas migrated 15 → 24;
-- `The pair is the product.` preserved;
-- `OBJECT A → RELATION → OBJECT B` preserved;
-- original 15 G3 mini-signatures preserved;
-- nine new mechanism-native Atlas mini-signatures added;
-- nine canonical wrappers added around validated candidates;
-- no family-native interaction code changed.
+- root framing 15 → 24;
+- original pair-product framing preserved;
+- original 15 G3 signatures preserved;
+- nine new mechanism-native signatures added;
+- nine new canonical wrappers added;
+- candidate immutability PASS 9/9.
 
-Candidate immutability: PASS 9/9.
+## Vercel recovery
 
-# B2.5C-R1 — VERCEL RECOVERY PASS / PREVIEW SSO HTTP BOUNDARY
-
-Register:
-`B2_5C_R1_VERCEL_RECOVERY_READY_PREVIEW_SSO_HTTP_CHECK_BLOCKED.md`
-register commit `7b8633c3a7463a9417639711890009206cb7ac84`
-
-Source-neutral Vercel retrigger:
+Source-neutral retrigger:
 `5d3ed9de5fbbf0427f1ad0eac5b6910b4a220f5a`
-
-No files changed in the retrigger commit.
 
 READY deployment:
 `dpl_ERZaEXq8vs4knBEsgdUTNshmoCaB`
 
-Preview hostname:
+Preview:
 `relational-key-collectionrelational-key-collection-3w617k1qt.vercel.app`
 
-Vercel metadata proves:
-- repo `Faadil1/relational-key-three-poc`;
-- branch `collection/global-refinement-1`;
-- exact commit `5d3ed9de5fbbf0427f1ad0eac5b6910b4a220f5a`;
-- state `READY`;
-- source `git`;
-- no alias error.
+Vercel build metadata/logs prove exact branch/commit clone, successful build and READY deployment. GitHub Vercel status = success.
 
-Build log proves exact commit clone, successful `vercel build`, and completed deployment.
+## B2.5C-R1A — PASS / VALIDATED TECHNICAL
 
-GitHub combined status for `5d3ed9de...`:
-`Vercel = success`.
+Register:
+`B2_5C_R1A_AUTHENTICATED_24_ROUTE_SMOKE_PASS.md`
 
-Therefore former `build-rate-limit` blocker is CLOSED.
+Authenticated same-origin browser evidence:
+- registry HTTP 200;
+- schema 1.3;
+- validated 24;
+- candidates 0;
+- exactly 24 families;
+- 24 unique IDs;
+- 24 unique routes;
+- six continents × 4;
+- product law visible;
+- all 24 canonical family routes HTTP 200;
+- all 24 route responses contain `BACK TO ATLAS`;
+- all nine new wrappers reference `candidate.html`;
+- all nine new candidate targets HTTP 200.
 
-## Remaining technical boundary
+The browser script's isolated `root24=false` is classified as a diagnostic false negative: it used `innerText`, while `.topCenter` is hidden below the source breakpoint `max-width:1100px`; `innerText` excludes `display:none` text. Exact deployed source already proves the 24-family label. No runtime patch is required.
 
-The READY preview is protected by Vercel Preview SSO. Available fetch tooling receives a 302 SSO redirect before application content and cannot persist the browser auth cookie/share bypass.
-
-Therefore route-by-route HTTP responses must NOT be marked PASS by inference.
-
-State separation:
-- SOURCE 24-family integration: PASS
-- SOURCE scope / candidate immutability: PASS
-- Vercel recovery: PASS
-- exact 24-family commit deployed: PASS
-- deployment READY: PASS
-- HTTP 24-route smoke test: NOT YET PROVEN
+Evidence separation:
+- SOURCE integration: PASS
+- LIVE deployment/build: PASS
+- LIVE registry/routes: PASS
+- TECHNICAL B2.5C: CLOSED
 - USER Atlas visual/navigation: NOT RUN
 - USER causal regression batches: NOT RUN
 - VALIDATED count: 24 unchanged
 
 # ACTIVE GATE / NEXT EXACT OUTPUT
 
-# **B2.5C-R1A — AUTHENTICATED IN-BROWSER 24-ROUTE SMOKE CHECK**
+# **B2.5D — 24-FAMILY ATLAS USER VISUAL + NAVIGATION GATE**
 
-Required from a browser session that can open the protected READY preview:
-1. root proves `24 PAIR-NATIVE FAMILIES` + `The pair is the product.`;
-2. live registry proves schema `1.3`, 24 / 0 and six × 4;
-3. all 24 canonical routes return OK;
-4. all 24 wrappers expose `BACK TO ATLAS`;
-5. all nine Balance-Gate `<route>candidate.html` targets return OK;
-6. output visible PASS/FAIL summary + JSON evidence.
+Required:
+1. desktop Atlas visual coherence;
+2. true ~390 px viewport visual coherence;
+3. 24-family discoverability + filtering;
+4. wrapper framing + Back-to-Atlas behavior;
+5. no horizontal overflow or clipped critical UI;
+6. pair-product idea remains perceptually dominant;
+7. technology/visual spectacle remains subordinate to family mechanism identity.
 
-If R1A PASS:
-- close B2.5C TECHNICAL PASS;
-- create dedicated PASS register;
-- sync CURRENT_STATE / HANDOVER / PR #21;
-- open exactly:
-
-`B2.5D — 24-FAMILY ATLAS USER VISUAL + NAVIGATION GATE`
-
-After B2.5D PASS, execute B2.5A causal USER batches A–D.
+After B2.5D PASS:
+execute B2.5A causal USER regression batches A–D.
 
 PR #21 remains Draft / DO NOT MERGE.
-G4 remains PARKED.
+G4 remains PARKED until B2.5 closes.
 
 # PERSISTENCE PROTOCOL
 
