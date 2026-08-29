@@ -39,10 +39,10 @@ User evidence: `e0ee2169-7ba8-4e2b-95d4-5d6b75669ea1.mp4`, ~50.77 s / 1906×976 
 
 Validated from Group B R1:
 - Mate + Bombilla — PASS: INSERTED/no flow → direct HOLD/DRAW ACTIVE → RELEASE/FLOW STOPPED. South America `2/4 → 3/4`.
-- Tongiaki — PASS: distinct hulls → SHARED PLATFORM → relation broken → UNCOUPLED/TWO VALID HULLS. Oceania `2/4 → 3/4`.
+- Tongiaki — PASS: distinct hulls → SHARED PLATFORM → break relation → UNCOUPLED/TWO VALID HULLS. Oceania `2/4 → 3/4`.
 
 Pending:
-- Valparaíso — direct Car B → inverse Car A shown. Direct Car A input still required to close explicit `Move either car` claim.
+- Valparaíso — direct Car B → inverse Car A is shown. Direct Car A input is still required to close explicit `Move either car` claim. Source confirms symmetric handlers but USER proof is required.
 
 # FULL PREVIEW / VERCEL
 
