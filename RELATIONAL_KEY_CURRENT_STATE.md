@@ -64,7 +64,6 @@ USER evidence chain proves:
 
 Music discoverability patch:
 `f674cf336149612b7f3d344b43893b7e5fbdb543`
-
 READY patched deployment:
 `dpl_CmbssprQDD8aQtGVSBjDNpKKC4eU`
 
@@ -98,10 +97,10 @@ Do not begin Batch B until Batch A is classified.
 Do not resume G4 yet.
 PR #21 remains Draft / DO NOT MERGE.
 
-Canonical persistence IDs:
+Canonical milestone IDs:
 - B2.5D PASS register `259c4926e9f704717f89a1b18f95a6fe90c6c04d`;
-- CURRENT_STATE sync `543a82e2c01bbdc2927d36f21d50de7c116e336f`;
-- HANDOVER final sync `c0ce165a26cd7bb41406e8e641b76496bba0eb29`.
+- state-sync lineage includes `a51980167824966b3d335d480f76ac955b0337bd`;
+- final HANDOVER head is `48a1d3d193db2817b168a7914d9f8ed3dd3a1411`.
 
 Persistence protocol:
 dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output.
