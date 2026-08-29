@@ -16,114 +16,136 @@ Expansion invariant:
 - **TECHNOLOGY SERVES THE RELATIONAL MECHANISM.**
 - **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
 
-Document: `RELATIONAL_KEY_EXPANSION_INVARIANT.md`
+Expansion law:
+`RELATIONAL_KEY_EXPANSION_INVARIANT.md`
 commit `8e1d85e70447e19d870e4a65ffa405cfad09fbc3`
 
-G0/G1/G2/G3 PASS. G4 PARKED until B2.5 closes.
+G0 / G1 / G2 / G3: PASS.
+G4: PARKED until B2.5 closes.
 
-# BALANCE STATE
-
-Continental Balance Gate 2: **PASS / CLOSED**.
+# CONTINENTAL BALANCE GATE 2 — PASS / CLOSED
 
 `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 
-Total validated families: **24**.
+Total VALIDATED families: **24**.
 
 # B2.5A — PASS
 
+Register:
 `B2_5A_24_FAMILY_REGRESSION_MATRIX_EXECUTION_ORDER.md`
 commit `6c827a8d00e75dd80ec7976d7243bf30fe43b6f6`
 
-24-family causal matrix, USER batches A–D, desktop + ~390px requirements and Experience Debt split are frozen.
+Frozen:
+- exact 24-family causal regression matrix;
+- USER batches A–D;
+- desktop + true ~390 px requirements;
+- blocking RELATIONAL INTEGRITY vs diagnostic EXPERIENCE DEBT.
 
 # B2.5B — PASS
 
+Register:
 `B2_5B_24_FAMILY_CANONICAL_ATLAS_INTEGRATION_SPEC_SAFE_REGISTRY_MIGRATION.md`
 commit `89e0a2f577633120fbdadb165f2aa0c36edaaae1`
 
-Rollback anchor before runtime integration:
+Pre-runtime rollback anchor:
 `e9e40b0f610e912410f9b0ff678a3011705aa6e8`
 
-# B2.5C — SOURCE TECHNICAL PASS / LIVE INFRA BLOCKED
+# B2.5C — SOURCE TECHNICAL PASS
 
-Register:
+Primary register:
 `B2_5C_24_FAMILY_CANONICAL_ATLAS_INTEGRATION_SOURCE_PASS_LIVE_INFRA_BLOCKED.md`
 
 Runtime integration source head:
 `a073af05cb16c3934e06ce353a2e0017690b611d`
 
-Completed SOURCE changes:
+Completed SOURCE integration:
 - registry schema `1.3`;
-- 24 families / candidate_count 0;
+- `validated_count = 24`;
+- `candidate_count = 0`;
 - six continents × 4;
-- root framing migrated 15 → 24;
-- original `The pair is the product.` + `OBJECT A → RELATION → OBJECT B` preserved;
-- original 15 G3 mechanism signatures preserved;
-- nine new mechanism-native Atlas signatures added;
+- root Atlas migrated 15 → 24;
+- `The pair is the product.` preserved;
+- `OBJECT A → RELATION → OBJECT B` preserved;
+- original 15 G3 mini-signatures preserved;
+- nine new mechanism-native Atlas mini-signatures added;
 - nine canonical wrappers added around validated candidates;
-- no family-native code changed.
+- no family-native interaction code changed.
 
-Registry commit:
-`c9e3a04a01fe47e770888bf34cc16a0cd8bd6ab1`
+Candidate immutability: PASS 9/9.
 
-Root Atlas commit:
-`a073af05cb16c3934e06ce353a2e0017690b611d`
+# B2.5C-R1 — VERCEL RECOVERY PASS / PREVIEW SSO HTTP BOUNDARY
 
-## Candidate immutability
+Register:
+`B2_5C_R1_VERCEL_RECOVERY_READY_PREVIEW_SSO_HTTP_CHECK_BLOCKED.md`
+register commit `7b8633c3a7463a9417639711890009206cb7ac84`
 
-PASS 9/9:
-- Astrolabe `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
-- Janney `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
-- Metate `8252beecb7ac6e7c1146cdb092813c2d5cb8a880`
-- Valparaíso `1e71497d7f9f5411eca2347b36bc0402db8b905b`
-- Mate + Bombilla `6bdebcff2bd3c2b8c57f0c75dc72b20fcba37d55`
-- Tongiaki `55053022e5312274a250a3384a28c07abdcb2f6f`
-- Garamut `d78ec124d1111ba6a82137b58c0922fa7fdc1a36`
-- Anamorphosis `ee44725b47b38079b3264f64e3fd0eb7c3837609`
-- Music Box `2a18be19bf852046a73f859fff5895f9329c9b39`
+Source-neutral Vercel retrigger:
+`5d3ed9de5fbbf0427f1ad0eac5b6910b4a220f5a`
 
-Compare from rollback anchor to runtime head shows only root, registry, nine new wrappers and documentation; no candidate/snapshot/_shared/original-wrapper mutation.
+No files changed in the retrigger commit.
 
-## Live blocker
+READY deployment:
+`dpl_ERZaEXq8vs4knBEsgdUTNshmoCaB`
 
-Vercel canonical project:
-`prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
+Preview hostname:
+`relational-key-collectionrelational-key-collection-3w617k1qt.vercel.app`
 
-GitHub status for runtime head `a073af05...`:
-`Vercel = failure`
-reason: `build-rate-limit`
+Vercel metadata proves:
+- repo `Faadil1/relational-key-three-poc`;
+- branch `collection/global-refinement-1`;
+- exact commit `5d3ed9de5fbbf0427f1ad0eac5b6910b4a220f5a`;
+- state `READY`;
+- source `git`;
+- no alias error.
 
-Latest READY deployment is still earlier commit `062d9effe1b46a06036c134def547d2915bfc260`, so the canonical live Atlas has not yet proven the 24-family runtime integration.
+Build log proves exact commit clone, successful `vercel build`, and completed deployment.
 
-This is an infrastructure block, not a family validation failure.
+GitHub combined status for `5d3ed9de...`:
+`Vercel = success`.
+
+Therefore former `build-rate-limit` blocker is CLOSED.
+
+## Remaining technical boundary
+
+The READY preview is protected by Vercel Preview SSO. Available fetch tooling receives a 302 SSO redirect before application content and cannot persist the browser auth cookie/share bypass.
+
+Therefore route-by-route HTTP responses must NOT be marked PASS by inference.
 
 State separation:
-- SOURCE integration: PASS
-- SOURCE scope/immutability: PASS
-- SOURCE responsive contract: PASS
-- LIVE 24-family integration: BLOCKED
-- USER Atlas gate: NOT RUN
-- USER causal regression: NOT RUN
+- SOURCE 24-family integration: PASS
+- SOURCE scope / candidate immutability: PASS
+- Vercel recovery: PASS
+- exact 24-family commit deployed: PASS
+- deployment READY: PASS
+- HTTP 24-route smoke test: NOT YET PROVEN
+- USER Atlas visual/navigation: NOT RUN
+- USER causal regression batches: NOT RUN
 - VALIDATED count: 24 unchanged
 
 # ACTIVE GATE / NEXT EXACT OUTPUT
 
-# **B2.5C-R1 — VERCEL BUILD-RATE-LIMIT RECOVERY + LIVE 24-ROUTE TECHNICAL PRECHECK**
+# **B2.5C-R1A — AUTHENTICATED IN-BROWSER 24-ROUTE SMOKE CHECK**
 
-Required before any USER recording:
-1. READY deployment from current branch containing the 24-family integration;
-2. verify deployed 24-family root + schema 1.3 registry;
-3. live-check all 24 canonical routes;
-4. verify nine wrappers load correct candidate;
-5. verify Back-to-Atlas;
-6. keep 9/9 candidate blobs unchanged.
+Required from a browser session that can open the protected READY preview:
+1. root proves `24 PAIR-NATIVE FAMILIES` + `The pair is the product.`;
+2. live registry proves schema `1.3`, 24 / 0 and six × 4;
+3. all 24 canonical routes return OK;
+4. all 24 wrappers expose `BACK TO ATLAS`;
+5. all nine Balance-Gate `<route>candidate.html` targets return OK;
+6. output visible PASS/FAIL summary + JSON evidence.
 
-After R1 PASS:
+If R1A PASS:
+- close B2.5C TECHNICAL PASS;
+- create dedicated PASS register;
+- sync CURRENT_STATE / HANDOVER / PR #21;
+- open exactly:
+
 `B2.5D — 24-FAMILY ATLAS USER VISUAL + NAVIGATION GATE`
 
-Then B2.5A USER causal batches A–D.
+After B2.5D PASS, execute B2.5A causal USER batches A–D.
 
-PR #21 stays Draft / DO NOT MERGE. G4 remains PARKED.
+PR #21 remains Draft / DO NOT MERGE.
+G4 remains PARKED.
 
 # PERSISTENCE PROTOCOL
 
