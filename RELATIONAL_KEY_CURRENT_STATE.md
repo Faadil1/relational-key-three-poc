@@ -1,11 +1,11 @@
 # RELATIONAL KEY — ÉTAT CANONIQUE COURANT
 
-Date: 2026-08-28
+Date: 2026-08-29
 Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
 Draft PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `CONTINENTAL_BALANCE_B2_4A_FULL_QUEUE_LIVE_TECHNICAL_GATE.md`
+Latest verified milestone: `CONTINENTAL_BALANCE_B2_4A_R1_RETRY_STILL_BLOCKED.md`
 
 # PRODUCT INVARIANT
 
@@ -89,61 +89,64 @@ All nine remain:
 
 # B2.4A — FULL NINE-CANDIDATE LIVE TECHNICAL GATE
 
-Register:
+Initial gate register:
 `CONTINENTAL_BALANCE_B2_4A_FULL_QUEUE_LIVE_TECHNICAL_GATE.md`
+register commit `95eb03cad2b80d5344401d950f10263e71add490`
 
-Register commit:
-`95eb03cad2b80d5344401d950f10263e71add490`
+Latest retry register:
+`CONTINENTAL_BALANCE_B2_4A_R1_RETRY_STILL_BLOCKED.md`
+retry commit `f4f3e072ffaec7a7170f77f20e8d764ff1778950`
 
 Status:
-# **BLOCKED — VERCEL BUILD RATE LIMIT / NO FULL-QUEUE PREVIEW YET**
+# **RETRY ATTEMPTED / STILL BLOCKED — VERCEL BUILD RATE LIMIT / NO FULL-QUEUE PREVIEW YET**
 
 Vercel project:
 - Project ID `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
 - Team ID `team_twDc66jGM0sPvNM4I5Huc0x7`
 - Branch `collection/global-refinement-1`
 
-Latest READY Preview found:
+Latest READY Preview still found at retry:
 - deployment `dpl_8GgBz2Kt81mr1YTLTR3UTk9UgMi4`
 - URL `https://relational-key-collectionrelational-key-collection-55w553e3i.vercel.app`
 - SHA `32b67f69b7ead0ff30f443e1efe803222afb31cd`
 
-This deployment contains ancestry through Mate + Bombilla but predates Tongiaki, Garamut, Anamorphosis and Swiss Music Box. It is not a full-queue validation environment.
+This deployment is partial only. It predates Tongiaki, Garamut, Anamorphosis and Swiss Music Box. It is not a nine-candidate validation environment.
 
-Current-head Vercel check:
-- checked commit `b1eeddf6c531f411c299260289893a4c2c6a2851`
-- collection deployment status = failure
-- target contains `upgradeToPro=build-rate-limit`
-- several older family-linked Vercel contexts attached to the repo show the same rate-limit condition.
+Retry evidence on 2026-08-29:
+- PR #21 head checked: `ce2759bf42eb94ea5065aaba8c3ae024299765b6`;
+- collection Vercel context remains `failure`;
+- target contains `upgradeToPro=build-rate-limit`;
+- several family-linked Vercel contexts attached to the repo show the same build-rate-limit condition;
+- deployment list contains no newer READY descendant of Music Box build `c8c1af1...`.
 
 Canonical verdict:
-# **FULL-QUEUE PREVIEW CREATION CURRENTLY BLOCKED BY VERCEL BUILD RATE LIMIT.**
+# **FULL-QUEUE PREVIEW CREATION REMAINS BLOCKED BY VERCEL BUILD RATE LIMIT.**
 
+This is an infrastructure blocker, not a source/candidate failure.
 Do not invent LIVE PASS or change validated counts.
 
-# PR #21 SYNCHRONIZATION
+# PR #21
 
 PR remains:
 # `DRAFT / DO NOT MERGE`
 
-Its body must reflect:
+Its body reflects:
 - G0–G3 PASS;
 - G4 PARKED;
 - Continental Balance Gate 2 active;
-- all 9 required expansion candidates SOURCE PASS;
-- validated counts unchanged;
-- B2.4A blocked only by Vercel build-rate-limit;
-- next action = retry full-queue Preview identification, then independent user gates.
+- all 9 required additions SOURCE PASS;
+- counts unchanged;
+- B2.4A blocked by Vercel build-rate-limit.
 
-# RECOVERY PROTOCOL / NEXT OUTPUT
+# NEXT EXACT OUTPUT
 
-# **B2.4A-R — RETRY FULL-QUEUE PREVIEW IDENTIFICATION WHEN VERCEL BUILD CAPACITY CLEARS**
+# **B2.4A-R2 — RETRY FULL-QUEUE PREVIEW IDENTIFICATION AFTER VERCEL BUILD CAPACITY CLEARS**
 
 When capacity clears:
 1. list current deployments;
 2. identify first READY Preview on `collection/global-refinement-1` whose SHA contains Music Box build `c8c1af1...` as ancestor;
 3. record exact deployment ID / URL / SHA;
-4. probe all nine routes and classify evidence only as HTTP 200 / SSO-AUTH BLOCKED / MISSING-ERROR;
+4. probe all nine routes and classify evidence only as `HTTP 200` / `SSO-AUTH BLOCKED` / `MISSING-ERROR`;
 5. persist recovery gate immediately;
 6. begin grouped user walkthroughs with independent verdict for each candidate.
 
