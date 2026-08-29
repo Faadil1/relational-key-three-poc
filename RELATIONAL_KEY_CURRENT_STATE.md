@@ -17,7 +17,7 @@ Signature reference:
 
 Operational consequence:
 - primary causal input must come from a pair member;
-- the other member must visibly answer according to the family law;
+- the paired member must visibly answer according to the family law;
 - center/gap/register/buttons remain subordinate;
 - helper controls cannot substitute for direct relational evidence;
 - validation judges the relationship, not merely whether an animation moves.
@@ -30,10 +30,10 @@ G4 polish remains PARKED until Continental Balance Gate 2 closes.
 
 # CONTINENTAL BALANCE GATE 2 — ACTIVE
 
-Target validated distribution:
+Target:
 # `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 
-Current VALIDATED distribution after B2.4C-R1:
+Current VALIDATED distribution:
 # `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 3 / OCEANIA 3 / EUROPE 2`
 
 Only independent USER validation gates change validated counts.
@@ -44,20 +44,28 @@ Core laws:
 - **EXISTENCE IN PROJECT HISTORY ≠ NEW ADDITION NOW ≠ VALIDATED COLLECTION MEMBERSHIP.**
 - **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
-# TERMINOLOGY — EXISTING NINE
+# EXISTING NINE — STATUS
 
-The nine Balance-Gate candidates/families are not nine newly created additions. They already existed in the RELATIONAL KEY project/workstream and are being consolidated/validated for continental equilibrium.
+The nine Balance-Gate candidates/families already existed in the RELATIONAL KEY workstream. They are not nine newly created additions.
 
-Preferred wording:
-# **9 EXISTING BALANCE-GATE CANDIDATES / FAMILIES**
+VALIDATED:
+1. Astrolabe / Isfahan
+2. Janney / Virginia
+3. Metate + Metlapil
+4. Mate + Bombilla
+5. Tongiaki
 
-Correction register:
-`CONTINENTAL_BALANCE_B2_EXISTING_NINE_TERMINOLOGY_CORRECTION.md`
-commit `a6b191252f023edd9411232af0e9d46e07bce93e`
+MICRO-RETEST:
+6. Valparaíso Funicular — direct Car A input only
+
+GROUP C PENDING:
+7. Garamut / East Sepik-Ramu PNG
+8. Catoptric Anamorphosis / Paris-France
+9. Swiss Cylinder Music Box / Sainte-Croix
 
 # FULL PREVIEW — READY
 
-Audit deployment:
+Deployment:
 `dpl_AQ5B2Wmn6VMH1qczrAsDVUVuHuCw`
 
 URL:
@@ -68,30 +76,25 @@ Deployed SHA:
 
 State: `READY`
 
-# VERCEL LEGACY GIT-INTEGRATION CLEANUP — PASS
+# VERCEL CLEANUP — PASS
 
 Register:
 `VERCEL_LEGACY_GIT_INTEGRATION_CLEANUP_PASS.md`
 commit `1509442da5b6553d091064db5247ca6098276094`
 
-Current topology:
-- Collection remains Git-linked to `Faadil1/relational-key-three-poc`
-- Boulle / Hika Ahi / Siku are `link: null`
-- legacy deployments remain preserved as golden references
+Topology:
+- canonical Collection remains Git-linked;
+- Boulle / Hika Ahi / Siku are `link: null`;
+- legacy deployments remain preserved as golden references.
 
-Result:
-# `1 Git push → canonical Collection Vercel project only`
+Expected fan-out:
+# `1 Git push → canonical Collection project only`
 
 # GROUP A — PASS / VALIDATED
 
 Register:
 `CONTINENTAL_BALANCE_B2_4B_USER_WALKTHROUGH_GROUP_A_PASS.md`
 commit `545d3e4e829e5773e8773eb4bddcd9b81690dd93`
-
-Validated:
-- Astrolabe / Isfahan
-- Janney / Virginia
-- Metate + Metlapil / Teotitlán del Valle
 
 Counts:
 - Asia `3/4 → 4/4`
@@ -101,7 +104,7 @@ Counts:
 
 Register:
 `CONTINENTAL_BALANCE_B2_4C_R1_GROUP_B_PARTIAL_PASS_VALPARAISO_MICRO_RETEST.md`
-register commit `f6f585dcd220acc4233fcdc251ebec5675c572d4`
+commit `f6f585dcd220acc4233fcdc251ebec5675c572d4`
 
 User evidence:
 `e0ee2169-7ba8-4e2b-95d4-5d6b75669ea1.mp4`
@@ -110,52 +113,36 @@ Metadata:
 ~50.77 s / 1906×976 / 30 fps.
 
 Independent verdicts:
-- Mate + Bombilla / Argentina — **PASS / VALIDATED**
-  - inserted/no-flow shown;
+
+- Mate + Bombilla — **PASS / VALIDATED**
+  - INSERTED/no-flow visible;
   - direct Bombilla HOLD produces `DRAW ACTIVE`;
   - RELEASE produces `FLOW STOPPED`;
   - South America `2/4 → 3/4`.
 
-- Tongiaki / Tonga — **PASS / VALIDATED**
-  - distinct hulls shown;
-  - approach+alignment reaches `SHARED PLATFORM` with booms/deck;
-  - relation is then broken and returns to `UNCOUPLED · TWO VALID HULLS`;
+- Tongiaki — **PASS / VALIDATED**
+  - distinct valid hulls visible;
+  - approach + longitudinal alignment reaches `SHARED PLATFORM` with booms/deck;
+  - relation is later broken and returns to `UNCOUPLED · TWO VALID HULLS`;
   - Oceania `2/4 → 3/4`.
 
-- Valparaíso Funicular / Chile — **MICRO-RETEST REQUIRED / NOT YET VALIDATED**
-  - direct Car B input now visibly drives Car A inversely without `SWAP START`;
-  - remaining user-evidence gap: direct Car A input for the explicit `Move either car` claim;
-  - source confirms symmetrical handlers but cannot replace missing USER evidence.
-
-# VALIDATED / PENDING EXISTING NINE
-
-VALIDATED:
-- Astrolabe / Isfahan
-- Janney / Virginia
-- Metate + Metlapil
-- Mate + Bombilla
-- Tongiaki
-
-MICRO-RETEST:
-- Valparaíso Funicular — Car A direct input only
-
-GROUP C PENDING:
-- Garamut / East Sepik-Ramu PNG
-- Catoptric Anamorphosis / Paris-France
-- Swiss Cylinder Music Box / Sainte-Croix
+- Valparaíso — **MICRO-RETEST REQUIRED / NOT YET VALIDATED**
+  - direct Car B input visibly drives Car A inversely without `SWAP START`;
+  - remaining user evidence: direct Car A input to close explicit `Move either car` claim;
+  - source confirms symmetric handlers but cannot replace USER evidence.
 
 # NEXT EXACT OUTPUT
 
 # **B2.4C-R2 — VALPARAÍSO CAR A MICRO-RETEST**
 
-Required evidence only:
-- no `SWAP START`;
+Required only:
+- do not use `SWAP START`;
 - drag Car A vertically for 2–3 seconds;
-- Car B visibly responds inversely.
+- show Car B answering in reverse.
 
 A 3–8 second recording is sufficient.
-No source mutation unless the direct Car A mechanic fails.
-Do not proceed to Group C until this micro-gate closes.
+No source mutation unless direct Car A fails.
+Do not proceed to Group C until this closes.
 
 # RESPONSIVE SCOPE
 
