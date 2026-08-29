@@ -5,7 +5,7 @@ Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
 Draft PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `CONTINENTAL_BALANCE_B2_4A_R1_RETRY_STILL_BLOCKED.md`
+Latest verified milestone: `CONTINENTAL_BALANCE_B2_4A_R2_FULL_PREVIEW_RECOVERED.md`
 
 # PRODUCT INVARIANT
 
@@ -31,9 +31,7 @@ Core laws:
 - **BALANCE IS A TARGET, NOT A LICENSE TO ADD WEAK FAMILIES.**
 - **SOURCE CHOOSES THE MECHANISM. THE GAP MAP ONLY GUIDES DISCOVERY.**
 
-# SOURCE BUILD PHASE — COMPLETE FOR ALL 9 REQUIRED ADDITIONS
-
-All nine Balance Gate 2 additions have autonomous SOURCE-PASS candidates:
+# ALL 9 REQUIRED ADDITIONS — SOURCE PASS
 
 1. Asia — Astrolabe / Isfahan
    - `families/astrolabe-isfahan/candidate.html`
@@ -81,76 +79,68 @@ All nine Balance Gate 2 additions have autonomous SOURCE-PASS candidates:
    - spec `988c2d0b9878008500aaf29a68107e171f2e03ca`
    - build `c8c1af1afe7c9e9ff8cce8efc68ce3094976fe97`
    - blob `1f07e969dea9a47ec591afe835766f1d2443e427`
-   - build register `CONTINENTAL_BALANCE_B2_3R_EUROPE_SWISS_MUSIC_BOX_BUILD_CANDIDATE.md`
-   - register commit `be6adf096512fc00390ced92db7ddedc4452d3e9`
 
-All nine remain:
-# `SOURCE PASS / LIVE + USER VISUAL OR VISUAL+AUDIO PENDING`
+All nine:
+# `SOURCE PASS / FULL PREVIEW PRESENT / USER VISUAL OR VISUAL+AUDIO PENDING`
 
-# B2.4A — FULL NINE-CANDIDATE LIVE TECHNICAL GATE
+# B2.4A-R2 — FULL PREVIEW RECOVERED
 
-Initial gate register:
-`CONTINENTAL_BALANCE_B2_4A_FULL_QUEUE_LIVE_TECHNICAL_GATE.md`
-register commit `95eb03cad2b80d5344401d950f10263e71add490`
-
-Latest retry register:
-`CONTINENTAL_BALANCE_B2_4A_R1_RETRY_STILL_BLOCKED.md`
-retry commit `f4f3e072ffaec7a7170f77f20e8d764ff1778950`
-
-Status:
-# **RETRY ATTEMPTED / STILL BLOCKED — VERCEL BUILD RATE LIMIT / NO FULL-QUEUE PREVIEW YET**
+Register:
+`CONTINENTAL_BALANCE_B2_4A_R2_FULL_PREVIEW_RECOVERED.md`
+Register commit:
+`40570955ae412db10361935d980c36ebb034eed7`
 
 Vercel project:
 - Project ID `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
 - Team ID `team_twDc66jGM0sPvNM4I5Huc0x7`
-- Branch `collection/global-refinement-1`
 
-Latest READY Preview still found at retry:
-- deployment `dpl_8GgBz2Kt81mr1YTLTR3UTk9UgMi4`
-- URL `https://relational-key-collectionrelational-key-collection-55w553e3i.vercel.app`
-- SHA `32b67f69b7ead0ff30f443e1efe803222afb31cd`
+Full-queue Preview:
+- deployment `dpl_AQ5B2Wmn6VMH1qczrAsDVUVuHuCw`
+- URL `https://relational-key-collectionrelational-key-collection-1wq2g2b7e.vercel.app`
+- state `READY`
+- deployed SHA `0ddd5ad598cf79782acf32aa79fe65463765c4a5`
+- branch `collection/global-refinement-1`
 
-This deployment is partial only. It predates Tongiaki, Garamut, Anamorphosis and Swiss Music Box. It is not a nine-candidate validation environment.
+Ancestry proof:
+- Music Box build `c8c1af1...` → deployed head `0ddd5ad...`
+- deployed head is ahead by 10 / behind 0
+- therefore all nine candidate builds are present.
 
-Retry evidence on 2026-08-29:
-- PR #21 head checked: `ce2759bf42eb94ea5065aaba8c3ae024299765b6`;
-- collection Vercel context remains `failure`;
-- target contains `upgradeToPro=build-rate-limit`;
-- several family-linked Vercel contexts attached to the repo show the same build-rate-limit condition;
-- deployment list contains no newer READY descendant of Music Box build `c8c1af1...`.
+Automated route probes:
+- Astrolabe candidate → Vercel SSO `302`
+- Swiss Music Box candidate → Vercel SSO `302`
 
-Canonical verdict:
-# **FULL-QUEUE PREVIEW CREATION REMAINS BLOCKED BY VERCEL BUILD RATE LIMIT.**
+Classification:
+# **FULL PREVIEW READY / AUTOMATED SUBROUTE FETCHES SSO-AUTH BLOCKED**
 
-This is an infrastructure blocker, not a source/candidate failure.
-Do not invent LIVE PASS or change validated counts.
+This is not a build failure and not a missing-route verdict. User-browser walkthrough is now the required evidence layer.
 
-# PR #21
+# VERCEL ROOT CAUSE DISCOVERED
 
-PR remains:
-# `DRAFT / DO NOT MERGE`
+The same GitHub repo `Faadil1/relational-key-three-poc` is still Git-linked to four Vercel projects:
+1. canonical collection `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
+2. Boulle `prj_1u0bwUIMeY1fB9trbA4sccHfRKAb`
+3. Hika Ahi `prj_bxE1WIkaiKvyGG9vP7SrvrMxTmTj`
+4. Siku `prj_sVSWA4YxfvqtJm0yAzUYIegeyM9Z`
 
-Its body reflects:
-- G0–G3 PASS;
-- G4 PARKED;
-- Continental Balance Gate 2 active;
-- all 9 required additions SOURCE PASS;
-- counts unchanged;
-- B2.4A blocked by Vercel build-rate-limit.
+A single Git push can therefore create multiple Vercel build attempts and consume Hobby build capacity faster than intended.
+
+Preferred correction after current validation:
+- retain Git integration only on the canonical collection project;
+- disconnect Git from Boulle/Hika/Siku while preserving their existing deployments as golden references;
+- alternatively disable automatic deployments on those legacy projects.
 
 # NEXT EXACT OUTPUT
 
-# **B2.4A-R2 — RETRY FULL-QUEUE PREVIEW IDENTIFICATION AFTER VERCEL BUILD CAPACITY CLEARS**
+# **B2.4B — USER WALKTHROUGH GROUP A**
 
-When capacity clears:
-1. list current deployments;
-2. identify first READY Preview on `collection/global-refinement-1` whose SHA contains Music Box build `c8c1af1...` as ancestor;
-3. record exact deployment ID / URL / SHA;
-4. probe all nine routes and classify evidence only as `HTTP 200` / `SSO-AUTH BLOCKED` / `MISSING-ERROR`;
-5. persist recovery gate immediately;
-6. begin grouped user walkthroughs with independent verdict for each candidate.
+Group A:
+1. Astrolabe
+2. Janney
+3. Metate
 
-No additional family research/build is required for continental parity before these validation gates.
+Issue independent PASS / PATCH / REJECT per candidate.
+Do not increment any validated count until the corresponding user gate passes.
 
 # G4 POLISH — PARKED
 
