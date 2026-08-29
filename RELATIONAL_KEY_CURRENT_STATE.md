@@ -90,7 +90,6 @@ Result:
 # `1 Git push → canonical Collection Vercel project only`
 
 The three legacy projects were not deleted; their existing deployments remain historical/golden regression references.
-
 This closes the known four-project build fan-out that was accelerating Hobby build-rate-limit exhaustion.
 
 # NEXT EXACT OUTPUT
@@ -129,3 +128,7 @@ After every meaningful milestone:
 4. exact branch/commit/blob/deployment IDs;
 5. SOURCE/LIVE/USER/VALIDATED separated;
 6. exactly one next output.
+
+# PR SYNCHRONIZATION
+
+PR #21 must remain `DRAFT / DO NOT MERGE` and reflect cleanup PASS plus next gate `B2.4B`.
