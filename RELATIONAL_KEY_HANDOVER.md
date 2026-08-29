@@ -8,16 +8,26 @@ PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **B2.4C — USER WALKTHROUGH GROUP B**
+# **B2.4C-R1 — TARGETED GROUP B DIRECT-MEMBER RETEST**
 
 Do not resume family research.
 Do not describe the Balance-Gate nine as newly created additions; they already existed in the RELATIONAL KEY workstream.
 Do not resume G4 polish.
-Do not change remaining validated counts before independent user gates pass.
+Do not proceed to Group C until B2.4C closes.
 
 # CANONICAL INVARIANT
 
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
+
+Signature reference:
+`RELATIONAL KEY — Three.js Signature POC`
+`https://relational-key-collectionrelational.vercel.app/`
+
+Interpretation for every family:
+- the two members must carry the primary causal interaction;
+- center/gap/register/buttons are subordinate only;
+- a helper button or animation cannot substitute for direct pair-member evidence;
+- both members remain valid unless the historical mechanism itself says otherwise.
 
 Immutable anchor:
 `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
@@ -27,10 +37,10 @@ Immutable anchor:
 Target:
 `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 
-Current after Group A:
+Current:
 # `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-Asia and North America are now closed at `4/4` because their corresponding user gates passed independently.
+Asia and North America are closed at `4/4` from independent Group A user PASS verdicts.
 
 # TERMINOLOGY
 
@@ -39,10 +49,6 @@ Canonical distinction:
 
 Preferred wording:
 **9 EXISTING BALANCE-GATE CANDIDATES / FAMILIES**
-
-Correction register:
-`CONTINENTAL_BALANCE_B2_EXISTING_NINE_TERMINOLOGY_CORRECTION.md`
-commit `a6b191252f023edd9411232af0e9d46e07bce93e`
 
 # FULL PREVIEW AUDIT ANCHOR
 
@@ -55,10 +61,7 @@ URL:
 Deployed SHA:
 `0ddd5ad598cf79782acf32aa79fe65463765c4a5`
 
-State:
-`READY`
-
-This deployment contains all nine existing Balance-Gate candidates. Automated subroute fetches can be intercepted by Vercel SSO `302`; user-browser evidence is authoritative for the current candidate gates.
+State: `READY`
 
 # VERCEL CLEANUP — PASS
 
@@ -66,72 +69,96 @@ Register:
 `VERCEL_LEGACY_GIT_INTEGRATION_CLEANUP_PASS.md`
 commit `1509442da5b6553d091064db5247ca6098276094`
 
-Current topology:
+Topology:
 - canonical Collection remains Git-linked;
 - Boulle / Hika Ahi / Siku are `link: null`;
 - their deployments remain preserved as golden references.
 
-Expected build fan-out:
+Expected fan-out:
 # `1 Git push → canonical Collection project only`
 
-# B2.4B — GROUP A CLOSED
+# GROUP A — CLOSED / VALIDATED
 
 Register:
 `CONTINENTAL_BALANCE_B2_4B_USER_WALKTHROUGH_GROUP_A_PASS.md`
 commit `545d3e4e829e5773e8773eb4bddcd9b81690dd93`
 
+Validated:
+- Astrolabe / Isfahan — PASS
+- Janney / Virginia — PASS
+- Metate + Metlapil — PASS
+
+# GROUP B — FIRST RECORDING DOES NOT CLOSE THE GATE
+
+Register:
+`CONTINENTAL_BALANCE_B2_4C_USER_WALKTHROUGH_GROUP_B_RETEST_REQUIRED.md`
+commit `f252ac88ed8d455991f42d03de1e9946384dcacb`
+
 User evidence:
-`c21ae326-0425-451f-8c85-e78081da4eee.mp4`
+`cb93bfc9-86c0-4122-9452-b0d8215588fd.mp4`
 
 Video metadata:
-~71.53 s / 1902×960 / 30 fps.
+~42.70 s / 1900×972 / 30 fps.
 
 Independent verdicts:
-- Astrolabe / Isfahan — **PASS / VALIDATED**
-- Janney / Virginia — **PASS / VALIDATED**
-- Metate + Metlapil — **PASS / VALIDATED**
 
-Key evidence:
-- Astrolabe: relative rotation + LOCAL/OTHER horizon contexts both shown.
-- Janney: coupled load path and BOTH KNUCKLES CLOSED valid non-coupling contact both shown.
-- Metate: direct reciprocal work changes material state; MAIZE and CACAO both shown under the same relation law.
+## Valparaíso Funicular / Chile
+**RETEST REQUIRED / NOT VALIDATED**
+- inverse states visibly occur;
+- recording uses `SWAP START` utility;
+- direct Car A and direct Car B dragging are not demonstrated;
+- helper control cannot be the validating evidence.
 
-Resulting count changes:
-- Asia `3/4 → 4/4`
-- North America `2/4 → 4/4`
+Retest:
+- do not press `SWAP START`;
+- drag Car A through a partial path → B must resolve inversely;
+- then drag Car B independently → A resolves inversely.
 
-# REMAINING SIX — USER GATE PENDING
+UX watch:
+If direct dragging works but users continue to choose `SWAP START`, demote/remove that utility before promotion.
 
-Group B:
-1. Valparaíso Funicular / Chile
-   - route `/families/funicular-valparaiso/candidate.html`
-   - law: continuous inverse relation `A=p → B=1−p`
-   - user should drag Car A and Car B independently; opposite car must resolve immediately; no success-state should appear.
+## Mate + Bombilla / Argentina
+**RETEST REQUIRED / NOT VALIDATED**
+- inserted/submerged relation is shown;
+- flow-on caused by direct Bombilla HOLD is not shown;
+- release → flow-off is not shown.
 
-2. Mate + Bombilla / Argentina
-   - route `/families/mate-bombilla-argentina/candidate.html`
-   - law: submerged bombilla allows infusion to pass while yerba remains in mate.
-   - INSERT alone must not create flow; HOLD/press on bombilla produces flow; RELEASE stops it.
+Retest:
+- INSERT;
+- pause on inserted/no-flow;
+- press-and-hold directly on Bombilla ~2 seconds → visible flow;
+- release → flow stops.
 
-3. Tongiaki / Tonga
-   - route `/families/tongiaki-tonga/candidate.html`
-   - law: two hulls approach + align → structural coupling; stability is a sourced property, not simulated physics.
-   - user should move both hulls; connectors/deck appear only when both are sufficiently approached/aligned and disappear when relation is broken.
+## Tongiaki / Tonga
+**RETEST REQUIRED / NOT VALIDATED**
+- visible state remains `TWO HULLS UNCOUPLED` / `DISTINCT`;
+- no deck/connector coupled state appears;
+- no break-relation sequence is shown.
 
-Group C after Group B:
-4. Garamut / East Sepik-Ramu PNG
-5. Catoptric Anamorphosis / Paris-France
-6. Swiss Cylinder Music Box / Sainte-Croix
+Retest:
+- drag both hulls inboard + fore/aft until close and parallel;
+- show deck/connectors;
+- move one hull out of threshold;
+- show connection disappear while both hulls remain valid.
 
-# B2.4C AUDIT RULE
+If coupled state cannot be reached reliably after a deliberate direct attempt, convert to UX PATCH.
 
-Record one continuous Group B video if convenient, but issue independent `PASS / PATCH / REJECT` for every family.
+# COUNT EFFECT
 
-If all Group B candidates independently PASS:
-- South America `2/4 → 4/4`
-- Oceania `2/4 → 3/4`
+No Group B count change from the first recording.
+South America remains `2/4`; Oceania remains `2/4`.
 
-Do not move Europe or final Oceania counts until Group C closes.
+# NEXT EXACT OUTPUT
+
+# **B2.4C-R1 — TARGETED GROUP B DIRECT-MEMBER RETEST**
+
+Do not mutate source unless direct mechanics fail or prove unusable.
+Do not proceed to Group C until B2.4C closes.
+
+After B2.4C passes:
+- South America can move toward `4/4` from Valparaíso + Mate/Bombilla;
+- Oceania can move to `3/4` from Tongiaki;
+- then run B2.4D Group C: Garamut + Anamorphosis + Swiss Music Box.
 
 # RESPONSIVE SCOPE
 
@@ -141,7 +168,7 @@ Current grouped walkthroughs are desktop mechanism gates. Explicit true ~390 px 
 
 Khipu candidate:
 `families/khipu-peru/g4-1.html`
-commit `64647ea78b04439ea9a57ece47f19490d9185d45`
+commit `64647ea78b04439ea9a57ece47f19490d9185d45`.
 
 After validated 24-family equilibrium:
 B2.5 24-family collection regression → G4 polish → G5 cohesion → G6 final validation.
