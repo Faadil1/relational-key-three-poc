@@ -8,13 +8,40 @@ PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **B2.5A — 24-FAMILY REGRESSION MATRIX + EXECUTION ORDER**
+# **B2.5B — 24-FAMILY CANONICAL ATLAS INTEGRATION SPEC + SAFE REGISTRY MIGRATION**
 
-Canonical invariant:
+# PRODUCT ROOT
+
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
-Primary validation chain:
+Primary law:
 `PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
+
+Original Signature POC:
+`https://relational-key-collectionrelational.vercel.app/`
+
+The original idea remains binding through every expansion: membership/object identity alone is insufficient; the meaningful state appears through the relationship between two distinct members.
+
+# EXPANSION INVARIANT — FROZEN
+
+Document:
+`RELATIONAL_KEY_EXPANSION_INVARIANT.md`
+commit `8e1d85e70447e19d870e4a65ffa405cfad09fbc3`
+
+Hard laws:
+
+# **EXPANSION MUST DEEPEN THE RELATION, NOT REPLACE IT.**
+# **TECHNOLOGY SERVES THE RELATIONAL MECHANISM.**
+# **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
+
+Three.js / WebGL / WebGPU / shaders / physics / Web Audio / depth / materials / advanced motion are encouraged only when they expose the native relationship more physically, spatially, sensorially or memorably.
+
+Do not allow advanced technology to collapse two members into one hero artifact, passive 3D viewer, detached cinematic effect or generic mini-game.
+
+Every future expansion must explicitly preserve:
+`MEMBER A ↔ RELATION ↔ MEMBER B`.
+
+# STATE
 
 Immutable anchor:
 `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
@@ -22,98 +49,83 @@ Immutable anchor:
 G0 / G1 / G2 / G3: PASS.
 G4: PARKED until B2.5 closes.
 
-# CONTINENTAL BALANCE GATE 2 — CLOSED / PASS ✅
+Continental Balance Gate 2: **PASS / CLOSED**.
 
 Final validated distribution:
+`AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 
-# `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
+Total validated families: **24**.
 
-# **24 validated continental slots / six continents at 4/4.**
+# B2.5A — COMPLETE
 
-Group A validated Astrolabe / Janney / Metate.
-Group B validated Mate + Bombilla / Tongiaki / Valparaíso.
-Group C validated Garamut / Catoptric Anamorphosis / Swiss Cylinder Music Box.
+Register:
+`B2_5A_24_FAMILY_REGRESSION_MATRIX_EXECUTION_ORDER.md`
+commit `6c827a8d00e75dd80ec7976d7243bf30fe43b6f6`
 
-# SWISS MUSIC BOX CLOSEOUT
+B2.5A contains:
+- exact 24-family matrix;
+- minimum blocking causal proof for each family;
+- memorable expansion direction / experience-depth target per family;
+- four efficient USER regression batches;
+- desktop and true ~390 px gates;
+- advanced-rendering fallback rule;
+- separate blocking `RELATIONAL INTEGRITY` and diagnostic `EXPERIENTIAL AMBITION / EXPERIENCE DEBT` judgments.
 
-Initial Group C recording proved `ENGAGED · NO AUTOPLAY` and `OTHER CYLINDER`, but not direct cylinder-caused decoding.
+# IMPORTANT DISCOVERY — DO NOT START USER 24-FAMILY CAPTURE
 
-User then reported unreliable direct manipulation, triggering the pre-declared UX PATCH route.
+The validated workstream contains 24 families, but the canonical Atlas still exposes only 15.
 
-Patch file:
-`families/music-box-sainte-croix/candidate.html`
-patch commit:
-`1054722fa8d72a092c61ffd41eabacae30c9cd07`
+Verified current source:
 
-SOURCE/LIVE patch register:
-`CONTINENTAL_BALANCE_B2_4D_R1A_SWISS_MUSIC_BOX_DIRECT_DRAG_UX_PATCH.md`
-register commit:
-`206d99f4f6c3c687d155e79c43f89a7301ffab37`
+- root `index.html` meta says `fifteen pair-native cultural relationship studies`;
+- root header says `15 PAIR-NATIVE FAMILIES`;
+- root Atlas/G3 mini-pair logic remains the original 15;
+- `collection/families.json` schema 1.2 contains 15 families with stale continent counts.
 
-Final USER evidence:
-`8af53be2-ad31-49c6-b6de-a68a07e6498d.mp4`
-~35.7 s / 1906×960 / 30 fps.
+The nine validated Balance-Gate families remain autonomous routes and have not yet been integrated into the canonical Atlas/registry.
 
-Observed direct causal proof:
-- Card A cylinder manipulated directly;
-- angle leaves `+000°` and visibly progresses through non-zero states;
-- pin positions move with rotation;
-- `PIN → TOOTH 5 · REVERSE CONTACT` appears;
-- `1 DECODED EVENT` appears;
-- live event marker appears beneath the comb.
+Therefore B2.5 USER regression is blocked until 15 → 24 reconciliation is complete.
 
-Validated relation:
-`PINNED CYLINDER → PIN/TOOTH CONTACT → TUNED COMB RESPONSE`
+# THE 9 FAMILIES TO INTEGRATE
 
-Swiss verdict:
-**PASS / VALIDATED ✅**
+1. Astrolabe / Isfahan — `families/astrolabe-isfahan/candidate.html`
+2. Janney Coupler / Virginia — `families/coupler-virginia/candidate.html`
+3. Metate + Metlapil / Teotitlán — `families/metate-teotitlan/candidate.html`
+4. Valparaíso Funicular — `families/funicular-valparaiso/candidate.html`
+5. Mate + Bombilla — `families/mate-bombilla-argentina/candidate.html`
+6. Tongiaki / Tonga — `families/tongiaki-tonga/candidate.html`
+7. Garamut / East Sepik-Ramu — `families/garamut-sepik-ramu/candidate.html`
+8. Catoptric Anamorphosis / Paris — `families/anamorphosis-paris/candidate.html`
+9. Swiss Cylinder Music Box / Sainte-Croix — `families/music-box-sainte-croix/candidate.html`
 
-Final register:
-`CONTINENTAL_BALANCE_B2_4D_R1B_SWISS_MUSIC_BOX_DIRECT_DRAG_USER_PASS.md`
-commit:
-`3f956f399349a1de5eba536e65d783c1e474994d`
+All nine have independent user validation from Continental Balance Gate 2.
 
-Europe `3/4 → 4/4`.
-Continental Balance Gate 2 closes.
+# NEXT EXACT OUTPUT — B2.5B
 
-# CANONICAL COLLECTION
+Create a source-safe integration specification before mutating the Atlas.
 
-`https://relational-key-collectionrelational-key-collection-1wq2g2b7e.vercel.app`
+B2.5B must define:
 
-Vercel legacy cleanup remains PASS: only canonical Collection stays Git-linked; Boulle/Hika Ahi/Siku stay disconnected and preserved as golden references.
+1. exact 24-family canonical inventory and order;
+2. safe `collection/families.json` schema update;
+3. Atlas root copy/count updates from 15 → 24;
+4. continent counts to six × 4;
+5. nine new mechanism-native mini-pair diagrams;
+6. route/link strategy to validated autonomous implementations;
+7. Back-to-Atlas/re-entry behavior;
+8. no family-native interaction mutation during integration;
+9. original Signature POC framing preserved;
+10. Expansion Invariant visible in architecture but not turned into technology marketing;
+11. rollback anchor before runtime mutation;
+12. technical validation plan before USER regression.
 
-# ACTIVE GATE — B2.5
-
-# **B2.5 — 24-FAMILY COLLECTION REGRESSION**
-
-Goal: validate the complete balanced collection as one product after refinement.
-
-Must verify:
-1. all 24 routes/navigation states;
-2. each family still exposes its intended pair members;
-3. minimum causal interaction for each family;
-4. center/gap/register/buttons remain subordinate;
-5. family-specific mechanism grammar is preserved;
-6. desktop behavior;
-7. true ~390 px responsive behavior;
-8. reset/re-entry/cross-family navigation does not contaminate state;
-9. SOURCE/LIVE/USER/VALIDATED evidence remains separated.
+After B2.5B spec:
+- implement safe 24-family Atlas/registry integration;
+- run technical 24-route precheck;
+- only then begin B2.5 USER batches A–D.
 
 PR #21 stays `DRAFT / DO NOT MERGE`.
 G4 stays PARKED.
-
-# NEXT EXACT OUTPUT
-
-# **B2.5A — 24-FAMILY REGRESSION MATRIX + EXECUTION ORDER**
-
-Next agent must:
-- read the canonical 24-family inventory;
-- enumerate all 24 families exactly once;
-- assign each family its minimum causal proof under the invariant;
-- group the 24 into efficient recording/audit batches;
-- include desktop and true ~390 px checkpoints;
-- define PASS / RETEST / PATCH criteria;
-- produce the shortest complete USER capture plan before asking for another long recording.
 
 Persistence protocol:
 dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output.
