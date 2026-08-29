@@ -80,13 +80,13 @@ Register:
 `VERCEL_LEGACY_GIT_INTEGRATION_CLEANUP_PASS.md`
 commit `1509442da5b6553d091064db5247ca6098276094`
 
-Verified state:
+Vercel `list_projects` verification after user cleanup:
 - Collection `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny` → Git linked to `Faadil1/relational-key-three-poc`
 - Boulle `prj_1u0bwUIMeY1fB9trbA4sccHfRKAb` → `link: null`
 - Hika Ahi `prj_bxE1WIkaiKvyGG9vP7SrvrMxTmTj` → `link: null`
 - Siku `prj_sVSWA4YxfvqtJm0yAzUYIegeyM9Z` → `link: null`
 
-The three legacy projects/deployments were preserved as golden references.
+The legacy projects/deployments remain preserved as golden references.
 Known four-project Git build fan-out is closed.
 Expected topology now:
 # `1 Git push → canonical Collection Vercel project only`
@@ -112,8 +112,6 @@ Issue independent `PASS / PATCH / REJECT` for Astrolabe, Janney and Metate. Do n
 Then:
 - B2.4C — Group B: Valparaíso + Mate/Bombilla + Tongiaki
 - B2.4D — Group C: Garamut + Anamorphosis + Swiss Music Box
-
-Garamut and Swiss Music Box require visual+audio judgment if browser audio works; visible causal proof must still function without audio.
 
 # G4 POLISH — PARKED
 
