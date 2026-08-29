@@ -119,5 +119,10 @@ Do not begin Batch B until Batch A is classified.
 Do not resume G4 yet.
 PR #21 remains Draft / DO NOT MERGE.
 
+Persistence chain:
+- B2.5D final PASS register commit `259c4926e9f704717f89a1b18f95a6fe90c6c04d`;
+- this CURRENT_STATE commit is the state-sync milestone;
+- HANDOVER sync follows immediately after.
+
 Persistence protocol:
 dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output.
