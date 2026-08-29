@@ -8,7 +8,7 @@ PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **VERCEL LEGACY GIT-INTEGRATION CLEANUP**
+# **B2.4B — USER WALKTHROUGH GROUP A**
 
 Do not resume family research. The nine Balance Gate candidates/families already existed in the RELATIONAL KEY workstream and are now all SOURCE PASS.
 Do not describe them as nine newly created additions.
@@ -22,11 +22,7 @@ Do not change validated counts before independent user gates pass.
 Immutable anchor:
 `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
 
-# TERMINOLOGY CORRECTION
-
-Register:
-`CONTINENTAL_BALANCE_B2_EXISTING_NINE_TERMINOLOGY_CORRECTION.md`
-commit `a6b191252f023edd9411232af0e9d46e07bce93e`
+# TERMINOLOGY
 
 Canonical distinction:
 # **EXISTENCE IN PROJECT HISTORY ≠ NEW ADDITION NOW ≠ VALIDATED COLLECTION MEMBERSHIP.**
@@ -34,7 +30,9 @@ Canonical distinction:
 Preferred wording:
 # **9 EXISTING BALANCE-GATE CANDIDATES / FAMILIES**
 
-They pre-existed in the project/workstream. Current Gate 2 work is consolidating and validating them for continental equilibrium.
+Correction register:
+`CONTINENTAL_BALANCE_B2_EXISTING_NINE_TERMINOLOGY_CORRECTION.md`
+commit `a6b191252f023edd9411232af0e9d46e07bce93e`
 
 # BALANCE TARGET / CURRENT VALIDATED
 
@@ -61,69 +59,61 @@ All nine:
 
 # FULL PREVIEW — READY
 
-Recovery register:
-`CONTINENTAL_BALANCE_B2_4A_R2_FULL_PREVIEW_RECOVERED.md`
-commit `40570955ae412db10361935d980c36ebb034eed7`
-
 Deployment:
 `dpl_AQ5B2Wmn6VMH1qczrAsDVUVuHuCw`
 
 URL:
 `https://relational-key-collectionrelational-key-collection-1wq2g2b7e.vercel.app`
 
-State:
-`READY`
-
 Deployed SHA:
 `0ddd5ad598cf79782acf32aa79fe65463765c4a5`
 
+State:
+`READY`
+
 Music Box build `c8c1af1...` is an ancestor, so this Preview contains all nine existing candidates.
+Automated candidate subroute probes hit Vercel SSO `302`; do not classify that as missing or broken.
 
-Automated candidate subroute probes are intercepted by Vercel SSO `302`; do not classify that as missing or broken.
+# VERCEL LEGACY GIT-INTEGRATION CLEANUP — PASS
 
-# VERCEL RATE-LIMIT ROOT CAUSE — CONFIRMED
+Register:
+`VERCEL_LEGACY_GIT_INTEGRATION_CLEANUP_PASS.md`
+commit `1509442da5b6553d091064db5247ca6098276094`
 
-The same repository remains Git-linked to four Vercel projects:
-- canonical collection `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
-- Boulle `prj_1u0bwUIMeY1fB9trbA4sccHfRKAb`
-- Hika Ahi `prj_bxE1WIkaiKvyGG9vP7SrvrMxTmTj`
-- Siku `prj_sVSWA4YxfvqtJm0yAzUYIegeyM9Z`
+Verified state:
+- Collection `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny` → Git linked to `Faadil1/relational-key-three-poc`
+- Boulle `prj_1u0bwUIMeY1fB9trbA4sccHfRKAb` → `link: null`
+- Hika Ahi `prj_bxE1WIkaiKvyGG9vP7SrvrMxTmTj` → `link: null`
+- Siku `prj_sVSWA4YxfvqtJm0yAzUYIegeyM9Z` → `link: null`
 
-A single Git push can therefore trigger several Vercel builds and consume Hobby build capacity much faster than expected.
+The three legacy projects/deployments were preserved as golden references.
+Known four-project Git build fan-out is closed.
+Expected topology now:
+# `1 Git push → canonical Collection Vercel project only`
 
-# DO THIS FIRST — LEGACY GIT CLEANUP
+# USER WALKTHROUGH GROUP A — DO THIS NEXT
 
-Keep Git integration on:
-- canonical collection only.
+Use the full Preview above.
 
-Disconnect Git integration from:
-- Boulle
-- Hika Ahi
-- Siku
-
-Do **not** delete those projects or deployments. Their existing URLs remain golden regression references.
-
-Vercel supports disconnecting a project from its Git repository with `vercel git disconnect` when the project is linked locally, or via Dashboard Project → Settings → Git → Disconnect.
-
-Do not add repository-wide `git.deploymentEnabled=false` unless intentionally disabling canonical Collection deployments too.
-
-# AFTER CLEANUP
-
-Resume:
-# **B2.4B — USER WALKTHROUGH GROUP A**
-
-Use full Preview above.
-
-Group A:
+Routes:
 - `/families/astrolabe-isfahan/candidate.html`
 - `/families/coupler-virginia/candidate.html`
 - `/families/metate-teotitlan/candidate.html`
 
-Record one continuous walkthrough if convenient, but issue an independent PASS/PATCH/REJECT for each candidate.
+Record one continuous video if convenient. For each candidate independently show the primary mechanism and its valid alternate/reset state where available.
+
+Audit requirements:
+- Astrolabe: direct rete rotation; LOCAL and OTHER latitude contexts; pair remains product.
+- Janney: COUPLING READY through latch/load; BOTH KNUCKLES CLOSED valid non-coupling contact; release/reset.
+- Metate: pair stones; direct metlapil drag; enough reciprocal passes to show material progression; MAIZE/CACAO both valid if practical.
+
+Issue independent `PASS / PATCH / REJECT` for Astrolabe, Janney and Metate. Do not bulk-pass the group.
 
 Then:
-- Group B: Valparaíso + Mate/Bombilla + Tongiaki
-- Group C: Garamut + Anamorphosis + Swiss Music Box
+- B2.4C — Group B: Valparaíso + Mate/Bombilla + Tongiaki
+- B2.4D — Group C: Garamut + Anamorphosis + Swiss Music Box
+
+Garamut and Swiss Music Box require visual+audio judgment if browser audio works; visible causal proof must still function without audio.
 
 # G4 POLISH — PARKED
 
