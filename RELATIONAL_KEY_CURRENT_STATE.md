@@ -7,8 +7,8 @@ Draft PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
 
 Latest verified milestone:
-`B2_5A_24_FAMILY_REGRESSION_MATRIX_EXECUTION_ORDER.md`
-register commit: `6c827a8d00e75dd80ec7976d7243bf30fe43b6f6`
+`B2_5B_24_FAMILY_CANONICAL_ATLAS_INTEGRATION_SPEC_SAFE_REGISTRY_MIGRATION.md`
+register commit: `89e0a2f577633120fbdadb165f2aa0c36edaaae1`
 
 # PRODUCT INVARIANT
 
@@ -21,35 +21,26 @@ Signature reference:
 Primary causal model:
 `PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
 
-Original product meaning remains binding through every expansion: identity/membership alone is insufficient; the meaningful state emerges through a relationship between two distinct members.
+The original idea remains binding through all expansion: identity/member A alone and identity/member B alone are insufficient; the meaningful state emerges through their relation.
 
 # EXPANSION INVARIANT — CANONICAL
 
-Frozen document:
+Document:
 `RELATIONAL_KEY_EXPANSION_INVARIANT.md`
 commit `8e1d85e70447e19d870e4a65ffa405cfad09fbc3`
 
-Canonical laws:
+Hard laws:
 
 # **EXPANSION MUST DEEPEN THE RELATION, NOT REPLACE IT.**
-
 # **TECHNOLOGY SERVES THE RELATIONAL MECHANISM.**
-
 # **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
 
-Three.js / WebGL / WebGPU / shaders / physics / Web Audio / spatial depth / particles / material simulation / advanced motion are encouraged when they make the family-native relation more physical, spatial, sensory, causal or memorable.
+Three.js / WebGL / WebGPU / shaders / physics / Web Audio / depth / materials / particles / advanced motion are encouraged only when they expose the family-native relationship more physically, spatially, sensorially, causally or memorably.
 
-They must never turn RELATIONAL KEY into:
-- one hero object with two labels;
-- a passive 3D museum viewer;
-- generic cinematic spectacle;
-- a mini-game detached from the pair;
-- a technology showcase where the relation becomes secondary.
-
-Every future expansion must explicitly preserve:
+Every expansion must preserve:
 `MEMBER A ↔ RELATION ↔ MEMBER B`.
 
-# IMMUTABLE ANCHOR / REFINEMENT
+# REFINEMENT STATE
 
 Immutable pre-refinement anchor:
 `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
@@ -57,23 +48,19 @@ Immutable pre-refinement anchor:
 G0 PASS → G1 PASS → G2 PASS → G3 PASS.
 G4 remains PARKED until B2.5 closes.
 
-# CONTINENTAL BALANCE GATE 2 — CLOSED / PASS ✅
+# CONTINENTAL BALANCE GATE 2 — PASS / CLOSED ✅
 
 Final validated distribution:
 
 # `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 
-# **ALL SIX CONTINENTS = 4/4 / 24 VALIDATED FAMILIES.**
+# **24 VALIDATED FAMILIES / SIX CONTINENTS AT 4/4.**
 
 Group A: Astrolabe / Janney / Metate — PASS.
 Group B: Mate + Bombilla / Tongiaki / Valparaíso — PASS.
 Group C: Garamut / Catoptric Anamorphosis / Swiss Cylinder Music Box — PASS.
 
-Swiss final USER register:
-`CONTINENTAL_BALANCE_B2_4D_R1B_SWISS_MUSIC_BOX_DIRECT_DRAG_USER_PASS.md`
-commit `3f956f399349a1de5eba536e65d783c1e474994d`.
-
-# B2.5A — MATRIX PASS / INTEGRATION BLOCKER DISCOVERED
+# B2.5A — PASS
 
 Register:
 `B2_5A_24_FAMILY_REGRESSION_MATRIX_EXECUTION_ORDER.md`
@@ -81,55 +68,87 @@ commit `6c827a8d00e75dd80ec7976d7243bf30fe43b6f6`
 
 B2.5A froze:
 - exact 24-family regression matrix;
-- each family’s blocking minimum causal proof;
+- minimum causal proof per family;
 - four efficient USER audit batches;
-- desktop + true ~390 px requirements;
-- separate `RELATIONAL INTEGRITY` vs `EXPERIENTIAL AMBITION / EXPERIENCE DEBT` evaluation;
+- desktop + true ~390 px regression requirements;
+- blocking `RELATIONAL INTEGRITY` vs diagnostic `EXPERIENTIAL AMBITION / EXPERIENCE DEBT`;
 - advanced-rendering fallback rule.
 
-## Blocking discovery
+B2.5A also discovered that the validated workstream has 24 families while the canonical Atlas/registry still exposes the old 15-family collection.
 
-The workstream has **24 validated families**, but the canonical Collection shell is still a **15-family Atlas**:
+# B2.5B — PASS / INTEGRATION CONTRACT FROZEN
 
-- root `index.html` still says `fifteen pair-native cultural relationship studies`;
-- root header still says `15 PAIR-NATIVE FAMILIES`;
-- root Atlas data/mini-pair cases remain the original 15;
-- `collection/families.json` schema 1.2 still contains 15 families and stale continent distribution.
+Register:
+`B2_5B_24_FAMILY_CANONICAL_ATLAS_INTEGRATION_SPEC_SAFE_REGISTRY_MIGRATION.md`
+commit `89e0a2f577633120fbdadb165f2aa0c36edaaae1`
 
-The nine Balance-Gate families exist as independently validated autonomous routes but are not yet reconciled into the canonical Atlas/registry.
+Pre-runtime-integration rollback anchor:
+`e9e40b0f610e912410f9b0ff678a3011705aa6e8`
 
-Therefore:
+B2.5B freezes the safe 15 → 24 migration:
 
-# **DO NOT RUN THE 24-FAMILY USER REGRESSION YET.**
+1. preserve original indices/families `01–15` and all G3 mini-pair signatures;
+2. append the nine Balance-Gate families as `16–24`;
+3. migrate `collection/families.json` from schema `1.2 → 1.3`;
+4. set validated count `24`, candidate count `0`, and continent distribution six × `4`;
+5. update root collection framing from `15 → 24` while retaining `The pair is the product.` and `OBJECT A → RELATION → OBJECT B`;
+6. add nine mechanism-native `pairViz(f)` signatures, not generic icons;
+7. create nine new canonical `/families/<slug>/` navigation wrappers that iframe the already-validated `candidate.html` files;
+8. preserve `← BACK TO ATLAS` / re-entry behavior;
+9. do NOT modify any validated `candidate.html`, old `snapshot.html`, `_shared` runtime or original 15 wrapper;
+10. preserve the Expansion Invariant without turning the Atlas into a technology taxonomy/showcase.
 
-This is collection-integration debt, not a failure of any validated family.
+Strict B2.5C runtime mutation scope:
+
+- `index.html`
+- `collection/families.json`
+- nine NEW wrappers:
+  - `families/astrolabe-isfahan/index.html`
+  - `families/coupler-virginia/index.html`
+  - `families/metate-teotitlan/index.html`
+  - `families/funicular-valparaiso/index.html`
+  - `families/mate-bombilla-argentina/index.html`
+  - `families/tongiaki-tonga/index.html`
+  - `families/garamut-sepik-ramu/index.html`
+  - `families/anamorphosis-paris/index.html`
+  - `families/music-box-sainte-croix/index.html`
+
+Any family-native file mutation during this integration is a scope violation and requires a separate patch gate.
+
+Observed candidate blob anchors already recorded in B2.5B include:
+- Astrolabe `2903d6a8023e3ba56168f3efc05994c91a7e49f6`
+- Janney `c054bdb50f8d5beafcbdbf48d66cd0cdadfc2cdc`
+- Catoptric Anamorphosis `ee44725b47b38079b3264f64e3fd0eb7c3837609`
+- Swiss Music Box `2a18be19bf852046a73f859fff5895f9329c9b39`
+- Tongiaki `55053022e5312274a250a3384a28c07abdcb2f6f`
+
+B2.5C must record the remaining four candidate blobs before mutation and prove all nine unchanged afterward.
 
 # CANONICAL COLLECTION
 
-Current collection URL:
+Current pre-integration collection URL:
 `https://relational-key-collectionrelational-key-collection-1wq2g2b7e.vercel.app`
 
-Vercel cleanup remains PASS: only canonical Collection remains Git-linked; Boulle/Hika Ahi/Siku remain disconnected and preserved as golden references.
+At this exact state it still exposes the old 15-family Atlas. Do not start USER 24-family regression yet.
 
 # ACTIVE GATE
 
-# **B2.5B — 24-FAMILY CANONICAL ATLAS INTEGRATION SPEC + SAFE REGISTRY MIGRATION**
+# **B2.5C — IMPLEMENT 24-FAMILY CANONICAL ATLAS + SAFE REGISTRY MIGRATION + TECHNICAL PRECHECK**
 
-B2.5B must define the safe 15 → 24 collection integration before runtime mutation.
+Required technical PASS before USER capture:
 
-Required:
-1. preserve all original 15 Atlas entries and G3 mechanism-native individuality;
-2. add the nine validated Balance-Gate families exactly once;
-3. update all 15-family framing/copy/count metadata to 24;
-4. update continental distribution to `4 / 4 / 4 / 4 / 4 / 4`;
-5. create mechanism-native Atlas mini-pair signatures for all nine new families;
-6. link each Atlas entry to its validated implementation;
-7. preserve the original Signature POC idea in collection framing;
-8. honor the Expansion Invariant without making the Atlas a technology showcase;
-9. do not alter family-native interaction logic during collection integration;
-10. define rollback checkpoint and technical verification before USER regression.
+- registry parses as schema 1.3 with exactly 24 unique families/routes and `4/4` per continent;
+- original 15 entries remain semantically unchanged;
+- root has 24 explicit mechanism-native mini-pair cases and no stale 15-family framing;
+- all 24 canonical routes return/load;
+- all nine new wrappers point to the correct validated `candidate.html`;
+- Back-to-Atlas works;
+- all nine candidate blobs are unchanged;
+- Vercel preview is READY/success;
+- true ~390 px technical/layout precheck passes;
+- SOURCE / LIVE / USER / VALIDATED evidence remains separated.
 
-After B2.5B spec: implement the safe 24-family collection integration, then technical route gate, then USER regression batches.
+Only after B2.5C technical PASS may B2.5 USER batches A–D begin.
 
 PR #21 remains `DRAFT / DO NOT MERGE`.
 G4 remains PARKED.
