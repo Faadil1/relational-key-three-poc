@@ -7,7 +7,20 @@ Branch: `collection/global-refinement-1`
 
 # **FULL-QUEUE PREVIEW RECOVERED / READY / ROUTE FETCHES SSO-PROTECTED**
 
-This closes the infrastructure blocker from B2.4A-R1. It does **not** validate any new family and does **not** change continental counts.
+This closes the infrastructure blocker from B2.4A-R1. It does **not** validate any family and does **not** change continental counts.
+
+# Terminology correction
+
+The nine candidates in this queue are **not nine newly created additions introduced at this stage**. They already existed in the RELATIONAL KEY project/workstream and are being consolidated/validated for the balanced 24-family collection.
+
+Preferred wording:
+# **9 EXISTING BALANCE-GATE CANDIDATES / FAMILIES**
+
+See:
+`CONTINENTAL_BALANCE_B2_EXISTING_NINE_TERMINOLOGY_CORRECTION.md`
+
+Canonical distinction:
+# **EXISTENCE IN PROJECT HISTORY ≠ NEW ADDITION NOW ≠ VALIDATED COLLECTION MEMBERSHIP.**
 
 ## Full-queue Vercel Preview
 
@@ -31,7 +44,7 @@ GitHub compare:
 - status = ahead
 - ahead by 10 / behind 0
 
-Therefore the READY Preview contains all nine Balance Gate 2 candidate builds.
+Therefore the READY Preview contains all nine existing Balance Gate 2 candidate builds.
 
 ## Route-probe evidence
 
@@ -44,9 +57,9 @@ Both returned `HTTP 302` to Vercel SSO despite a temporary share token.
 Classification:
 # **SSO/AUTH BLOCKED — NOT MISSING / NOT A BUILD FAILURE**
 
-Because deployment-level protection is intercepting candidate route fetches, no independent route `HTTP 200` is claimed from this gate. User-browser walkthrough is now the next evidence layer.
+Because deployment-level protection is intercepting candidate route fetches, no independent route `HTTP 200` is claimed from this gate. User-browser walkthrough is the next evidence layer.
 
-## Required candidate queue
+## Existing candidate queue
 
 1. Astrolabe / Isfahan
 2. Janney / Virginia
@@ -68,6 +81,12 @@ Remain strictly:
 
 ## Next gate
 
+First:
+# **VERCEL LEGACY GIT-INTEGRATION CLEANUP**
+
+Keep only canonical Collection Git-linked; disconnect Boulle/Hika Ahi/Siku from automatic Git deployments while preserving their golden deployments.
+
+Then:
 # **B2.4B — USER WALKTHROUGH GROUP A**
 
 Group A:
