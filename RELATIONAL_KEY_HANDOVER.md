@@ -7,9 +7,12 @@ PR #21: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **B2.5D-R1A — TRUE 390 × 844 MICRO-RETEST**
+# **B2.5A CAUSAL USER REGRESSION — BATCH A / ORIGINAL SIGNATURE + REGISTRATION**
 
-Do not repeat desktop B2.5D evidence. Do not start causal USER batches yet.
+B2.5C technical integration is CLOSED / PASS.
+B2.5D Atlas USER visual/navigation is CLOSED / PASS.
+Do not resume G4 yet.
+Do not begin Batch B until Batch A is classified.
 
 # CANONICAL INVARIANTS
 
@@ -28,7 +31,7 @@ G0 / G1 / G2 / G3 PASS. G4 PARKED.
 Continental Balance Gate 2 PASS / CLOSED.
 24 VALIDATED families, six continents × 4.
 
-B2.5A PASS:
+B2.5A matrix/execution order PASS:
 `B2_5A_24_FAMILY_REGRESSION_MATRIX_EXECUTION_ORDER.md`
 commit `6c827a8d00e75dd80ec7976d7243bf30fe43b6f6`
 
@@ -38,66 +41,75 @@ commit `89e0a2f577633120fbdadb165f2aa0c36edaaae1`
 
 # B2.5C — TECHNICAL PASS / CLOSED
 
-READY deployment:
-`dpl_ERZaEXq8vs4knBEsgdUTNshmoCaB`
-
 B2.5C-R1A PASS register:
 `B2_5C_R1A_AUTHENTICATED_24_ROUTE_SMOKE_PASS.md`
 commit `f9e67670bd22ece1f6979c21af432c7b30e083d7`
 
-Live technical proof already frozen:
+Technical proof frozen:
 - registry 200 / schema 1.3;
 - 24 validated / 0 candidates;
-- 24 unique IDs / 24 unique routes;
-- 24/24 routes HTTP 200;
-- 24/24 Back-to-Atlas contract;
-- 9/9 new candidate targets HTTP 200.
+- six continents × 4;
+- 24/24 canonical routes HTTP 200;
+- 24/24 Back-to-Atlas;
+- 9/9 Balance-Gate candidate targets HTTP 200.
 
-# B2.5D-R1 — PARTIAL PASS
+# B2.5D — USER VISUAL + NAVIGATION PASS / CLOSED
 
-Register:
-`B2_5D_R1_USER_VISUAL_NAVIGATION_PARTIAL_PASS_390_RETEST.md`
-commit `180f2ea56c2e6c538d55fdf83dd04fe4a771d63f`
+Final PASS register:
+`B2_5D_R1B_390_MUSIC_SEARCH_MUSIC_BOX_WRAPPER_USER_PASS.md`
+commit `259c4926e9f704717f89a1b18f95a6fe90c6c04d`
 
-User recording reviewed:
-- ~96.7 sec;
-- 1910×966;
-- 30 fps.
-
-PASS evidence to retain:
+Retained USER evidence:
 - desktop Atlas coherence;
 - pair-product framing dominant;
-- continental balance + Atlas controls readable;
-- Europe filter used;
-- Stereoscopy historical wrapper opens and returns;
-- Zellige historical wrapper opens and returns;
-- Music Box Balance-Gate wrapper opens in narrow responsive state and returns;
-- one-column responsive Atlas activates;
-- no obvious critical clipping in captured narrow state.
+- continental filtering works;
+- historical/Balance-Gate wrapper navigation works;
+- exact Chrome Device Toolbar `390 × 844` proven;
+- narrow one-column Atlas coherent;
+- no critical horizontal overflow/clipping;
+- Music Box search discoverability and wrapper/back proven at 390.
 
-Reason B2.5D remains open:
-- exact `390 × 844` viewport is not visibly proven;
-- captured narrow window is not equivalent to frozen true-390 evidence.
+Discoverability patch:
+`f674cf336149612b7f3d344b43893b7e5fbdb543`
 
-# EXACT NEXT ACTION
+Patch changed only Music Box registry memory:
+`Mechanical Memory` → `Music / Mechanical Memory`.
 
-Create one 15–25 sec capture with Chrome Device Toolbar visibly set to `390 × 844`:
-1. reload Atlas;
-2. show hero/product law + Atlas controls;
-3. type `music` in search and show filtered result;
-4. clear search and click `Europe`;
-5. scroll enough to show no horizontal overflow/clipped critical UI;
-6. open Music Box / Sainte-Croix;
-7. click `← BACK TO ATLAS`.
+READY patched deployment:
+`dpl_CmbssprQDD8aQtGVSBjDNpKKC4eU`
 
-No mechanism interaction required.
+# EXACT NEXT WORK — USER BATCH A
 
-If this passes:
-- close B2.5D USER VISUAL + NAVIGATION PASS;
-- sync register / CURRENT_STATE / HANDOVER / PR;
-- next exact gate = B2.5A causal USER regression Batch A.
+Frozen order:
+1. City / Gatineau — `/families/city-gatineau/`
+2. Service / Benin — `/families/service-benin/`
+3. Signal / Nigeria — `/families/signal-nigeria/`
+4. Frida / Coyoacán — `/families/frida-coyoacan/`
+5. Textile / Bonwire — `/families/textile-bonwire/`
+6. Zellige / Fès — `/families/zellige-fes/`
 
-PR remains Draft / DO NOT MERGE. G4 remains PARKED.
+Batch A purpose:
+confirm the original RELATIONAL KEY grammar still reads causally across the foundational families.
+
+Blocking minimum proof:
+- City: relationship resolution visibly completes route across both members;
+- Service: direct relation changes incomplete sequence into registered continuation;
+- Signal: relay relation changes blocked/separate signal into continuation across both members;
+- Frida: trace alignment across pair visibly changes archive relation;
+- Textile: both strip systems visibly interlace across the relationship field;
+- Zellige: direct fit changes two valid pieces into a registered tessellated relation.
+
+For every family classify:
+A. RELATIONAL INTEGRITY — blocking PASS/FAIL.
+B. EXPERIENTIAL AMBITION — STRONG / ADEQUATE / EXPERIENCE DEBT.
+
+Do not redesign merely because a family has Experience Debt. Patch only if relational integrity is broken.
+
+After Batch A PASS:
+open Batch B — Kento / Stereoscopy / Astrolabe / Anamorphosis / Valparaíso / Swell.
+
+PR remains Draft / DO NOT MERGE.
+G4 remains PARKED until all B2.5 regression work closes.
 
 Persistence protocol:
 dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output.
