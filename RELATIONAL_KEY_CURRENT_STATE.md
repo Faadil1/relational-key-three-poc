@@ -68,8 +68,6 @@ Deployed SHA:
 
 State: `READY`
 
-This Preview contains all nine existing Balance-Gate candidates.
-
 # VERCEL LEGACY GIT-INTEGRATION CLEANUP — PASS
 
 Register:
@@ -77,30 +75,29 @@ Register:
 commit `1509442da5b6553d091064db5247ca6098276094`
 
 Current topology:
-- Collection `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny` → Git-linked to `Faadil1/relational-key-three-poc`
-- Boulle `prj_1u0bwUIMeY1fB9trbA4sccHfRKAb` → `link: null`
-- Hika Ahi `prj_bxE1WIkaiKvyGG9vP7SrvrMxTmTj` → `link: null`
-- Siku `prj_sVSWA4YxfvqtJm0yAzUYIegeyM9Z` → `link: null`
+- Collection remains Git-linked to `Faadil1/relational-key-three-poc`
+- Boulle / Hika Ahi / Siku are `link: null`
+- legacy deployments remain preserved as golden references
 
 Result:
 # `1 Git push → canonical Collection Vercel project only`
 
-# B2.4B — USER WALKTHROUGH GROUP A — PASS
+# GROUP A — PASS / VALIDATED
 
 Register:
 `CONTINENTAL_BALANCE_B2_4B_USER_WALKTHROUGH_GROUP_A_PASS.md`
 commit `545d3e4e829e5773e8773eb4bddcd9b81690dd93`
 
-Validated independently:
-- Astrolabe / Isfahan — PASS / VALIDATED
-- Janney / Virginia — PASS / VALIDATED
-- Metate + Metlapil / Teotitlán del Valle — PASS / VALIDATED
+Validated:
+- Astrolabe / Isfahan
+- Janney / Virginia
+- Metate + Metlapil / Teotitlán del Valle
 
-Authorized count changes:
+Counts:
 - Asia `3/4 → 4/4`
 - North America `2/4 → 4/4`
 
-# B2.4C-R1 — GROUP B PARTIAL PASS
+# GROUP B — R1 PARTIAL PASS
 
 Register:
 `CONTINENTAL_BALANCE_B2_4C_R1_GROUP_B_PARTIAL_PASS_VALPARAISO_MICRO_RETEST.md`
@@ -109,50 +106,40 @@ register commit `f6f585dcd220acc4233fcdc251ebec5675c572d4`
 User evidence:
 `e0ee2169-7ba8-4e2b-95d4-5d6b75669ea1.mp4`
 
-Observed metadata:
-- ~50.77 s
-- 1906 × 976
-- 30 fps
+Metadata:
+~50.77 s / 1906×976 / 30 fps.
 
 Independent verdicts:
+- Mate + Bombilla / Argentina — **PASS / VALIDATED**
+  - inserted/no-flow shown;
+  - direct Bombilla HOLD produces `DRAW ACTIVE`;
+  - RELEASE produces `FLOW STOPPED`;
+  - South America `2/4 → 3/4`.
 
-1. Valparaíso Funicular / Chile — **MICRO-RETEST REQUIRED / NOT YET VALIDATED**
-   - direct pair-member manipulation is now shown without `SWAP START`;
-   - Car B is visibly used as direct input and Car A responds inversely;
-   - source confirms symmetric Car A/Car B handlers, but SOURCE cannot replace missing USER evidence for the explicit `Move either car` claim;
-   - remaining evidence: drag Car A directly for 2–3 seconds and show Car B answering in reverse.
+- Tongiaki / Tonga — **PASS / VALIDATED**
+  - distinct hulls shown;
+  - approach+alignment reaches `SHARED PLATFORM` with booms/deck;
+  - relation is then broken and returns to `UNCOUPLED · TWO VALID HULLS`;
+  - Oceania `2/4 → 3/4`.
 
-2. Mate + Bombilla / Argentina — **PASS / VALIDATED**
-   - inserted state visibly says no flow until direct hold;
-   - direct Bombilla HOLD produces `DRAW ACTIVE` / visible flow state;
-   - RELEASE produces `FLOW STOPPED` while Bombilla remains inserted;
-   - causal member is the Bombilla itself; insertion button remains subordinate.
+- Valparaíso Funicular / Chile — **MICRO-RETEST REQUIRED / NOT YET VALIDATED**
+  - direct Car B input now visibly drives Car A inversely without `SWAP START`;
+  - remaining user-evidence gap: direct Car A input for the explicit `Move either car` claim;
+  - source confirms symmetrical handlers but cannot replace missing USER evidence.
 
-   Authorized count change:
-   South America `2/4 → 3/4`.
-
-3. Tongiaki / Tonga — **PASS / VALIDATED**
-   - distinct valid hulls shown;
-   - approach + longitudinal alignment reaches `SHARED PLATFORM` with booms/deck;
-   - subsequent movement breaks the relation and returns to `UNCOUPLED · TWO VALID HULLS`;
-   - no fake hydrodynamic simulation is introduced.
-
-   Authorized count change:
-   Oceania `2/4 → 3/4`.
-
-# VALIDATED / PENDING STATUS OF EXISTING NINE
+# VALIDATED / PENDING EXISTING NINE
 
 VALIDATED:
 - Astrolabe / Isfahan
 - Janney / Virginia
-- Metate + Metlapil / Teotitlán del Valle
-- Mate + Bombilla / Argentina
-- Tongiaki / Tonga
+- Metate + Metlapil
+- Mate + Bombilla
+- Tongiaki
 
-MICRO-RETEST REQUIRED:
-- Valparaíso Funicular / Chile — Car A direct input only
+MICRO-RETEST:
+- Valparaíso Funicular — Car A direct input only
 
-USER GATE PENDING AFTER B2.4C CLOSES:
+GROUP C PENDING:
 - Garamut / East Sepik-Ramu PNG
 - Catoptric Anamorphosis / Paris-France
 - Swiss Cylinder Music Box / Sainte-Croix
@@ -167,8 +154,7 @@ Required evidence only:
 - Car B visibly responds inversely.
 
 A 3–8 second recording is sufficient.
-No source mutation is authorized unless the direct Car A mechanic fails.
-
+No source mutation unless the direct Car A mechanic fails.
 Do not proceed to Group C until this micro-gate closes.
 
 # RESPONSIVE SCOPE
