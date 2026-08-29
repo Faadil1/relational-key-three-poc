@@ -8,9 +8,10 @@ PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **B2.4B — USER WALKTHROUGH GROUP A**
+# **VERCEL LEGACY GIT-INTEGRATION CLEANUP**
 
-Do not resume family research: all nine Balance Gate 2 additions already have SOURCE-PASS builds.
+Do not resume family research. The nine Balance Gate candidates/families already existed in the RELATIONAL KEY workstream and are now all SOURCE PASS.
+Do not describe them as nine newly created additions.
 Do not resume G4 polish.
 Do not change validated counts before independent user gates pass.
 
@@ -21,6 +22,20 @@ Do not change validated counts before independent user gates pass.
 Immutable anchor:
 `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
 
+# TERMINOLOGY CORRECTION
+
+Register:
+`CONTINENTAL_BALANCE_B2_EXISTING_NINE_TERMINOLOGY_CORRECTION.md`
+commit `a6b191252f023edd9411232af0e9d46e07bce93e`
+
+Canonical distinction:
+# **EXISTENCE IN PROJECT HISTORY ≠ NEW ADDITION NOW ≠ VALIDATED COLLECTION MEMBERSHIP.**
+
+Preferred wording:
+# **9 EXISTING BALANCE-GATE CANDIDATES / FAMILIES**
+
+They pre-existed in the project/workstream. Current Gate 2 work is consolidating and validating them for continental equilibrium.
+
 # BALANCE TARGET / CURRENT VALIDATED
 
 Target:
@@ -29,7 +44,7 @@ Target:
 Current VALIDATED:
 # `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
 
-# NINE SOURCE-PASS CANDIDATES
+# EXISTING NINE — SOURCE PASS
 
 1. Astrolabe / Isfahan — `families/astrolabe-isfahan/candidate.html` — build `ade670ad...`, fix `a756e58d...`, blob `2903d6a...`
 2. Janney / Virginia — `families/coupler-virginia/candidate.html` — build `fa561bf4...`, blob `c054bdb...`
@@ -44,14 +59,13 @@ Current VALIDATED:
 All nine:
 `SOURCE PASS / FULL PREVIEW PRESENT / USER VISUAL OR VISUAL+AUDIO PENDING`
 
-# FULL PREVIEW RECOVERED
+# FULL PREVIEW — READY
 
-Register:
+Recovery register:
 `CONTINENTAL_BALANCE_B2_4A_R2_FULL_PREVIEW_RECOVERED.md`
-Register commit:
-`40570955ae412db10361935d980c36ebb034eed7`
+commit `40570955ae412db10361935d980c36ebb034eed7`
 
-Vercel deployment:
+Deployment:
 `dpl_AQ5B2Wmn6VMH1qczrAsDVUVuHuCw`
 
 URL:
@@ -63,28 +77,40 @@ State:
 Deployed SHA:
 `0ddd5ad598cf79782acf32aa79fe65463765c4a5`
 
-Music Box build `c8c1af1...` is an ancestor; deployed SHA is ahead by 10 / behind 0. Therefore the Preview contains all nine candidates.
+Music Box build `c8c1af1...` is an ancestor, so this Preview contains all nine existing candidates.
 
-Automated candidate-route probes are intercepted by Vercel SSO (`HTTP 302`) even with temporary share token. Do not classify as missing/build failure. User browser walkthrough is the next evidence layer.
+Automated candidate subroute probes are intercepted by Vercel SSO `302`; do not classify that as missing or broken.
 
-# VERCEL RATE-LIMIT ROOT CAUSE
+# VERCEL RATE-LIMIT ROOT CAUSE — CONFIRMED
 
-The same repo `Faadil1/relational-key-three-poc` remains Git-linked to four Vercel projects:
+The same repository remains Git-linked to four Vercel projects:
 - canonical collection `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
 - Boulle `prj_1u0bwUIMeY1fB9trbA4sccHfRKAb`
 - Hika Ahi `prj_bxE1WIkaiKvyGG9vP7SrvrMxTmTj`
 - Siku `prj_sVSWA4YxfvqtJm0yAzUYIegeyM9Z`
 
-This can multiply one Git push into multiple Vercel build attempts and exhaust Hobby build capacity much faster.
+A single Git push can therefore trigger several Vercel builds and consume Hobby build capacity much faster than expected.
 
-Preferred correction:
-1. keep Git integration on canonical collection;
-2. disconnect Git from Boulle/Hika/Siku or disable their auto-deploys;
-3. preserve their current golden deployments as immutable references.
+# DO THIS FIRST — LEGACY GIT CLEANUP
 
-Do not add a repository-wide `git.deploymentEnabled=false` in `vercel.json` unless intentionally disabling the canonical project too.
+Keep Git integration on:
+- canonical collection only.
 
-# USER WALKTHROUGH PLAN
+Disconnect Git integration from:
+- Boulle
+- Hika Ahi
+- Siku
+
+Do **not** delete those projects or deployments. Their existing URLs remain golden regression references.
+
+Vercel supports disconnecting a project from its Git repository with `vercel git disconnect` when the project is linked locally, or via Dashboard Project → Settings → Git → Disconnect.
+
+Do not add repository-wide `git.deploymentEnabled=false` unless intentionally disabling canonical Collection deployments too.
+
+# AFTER CLEANUP
+
+Resume:
+# **B2.4B — USER WALKTHROUGH GROUP A**
 
 Use full Preview above.
 
@@ -93,13 +119,11 @@ Group A:
 - `/families/coupler-virginia/candidate.html`
 - `/families/metate-teotitlan/candidate.html`
 
-Record one continuous walkthrough if convenient, but verdict is independent for each candidate.
+Record one continuous walkthrough if convenient, but issue an independent PASS/PATCH/REJECT for each candidate.
 
 Then:
 - Group B: Valparaíso + Mate/Bombilla + Tongiaki
 - Group C: Garamut + Anamorphosis + Swiss Music Box
-
-Garamut and Swiss Music Box need visual+audio judgment if browser audio works; visible causal proof must also work without audio.
 
 # G4 POLISH — PARKED
 
