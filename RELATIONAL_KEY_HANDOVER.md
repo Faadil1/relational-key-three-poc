@@ -8,12 +8,12 @@ PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **B2.4C-R1 — TARGETED GROUP B DIRECT-MEMBER RETEST**
+# **B2.4C-R2 — VALPARAÍSO CAR A MICRO-RETEST**
 
 Do not resume family research.
 Do not describe the Balance-Gate nine as newly created additions; they already existed in the RELATIONAL KEY workstream.
 Do not resume G4 polish.
-Do not proceed to Group C until B2.4C closes.
+Do not proceed to Group C until Valparaíso closes.
 
 # CANONICAL INVARIANT
 
@@ -24,10 +24,11 @@ Signature reference:
 `https://relational-key-collectionrelational.vercel.app/`
 
 Interpretation for every family:
-- the two members must carry the primary causal interaction;
-- center/gap/register/buttons are subordinate only;
-- a helper button or animation cannot substitute for direct pair-member evidence;
-- both members remain valid unless the historical mechanism itself says otherwise.
+- a pair member carries the primary causal input;
+- the paired member visibly answers according to the family law;
+- center/gap/register/buttons remain subordinate;
+- helper controls do not qualify as the primary validation proof;
+- SOURCE evidence cannot substitute for missing USER interaction evidence.
 
 Immutable anchor:
 `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`
@@ -37,10 +38,13 @@ Immutable anchor:
 Target:
 `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 
-Current:
-# `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
+Current after Group B retest R1:
+# `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 3 / OCEANIA 3 / EUROPE 2`
 
-Asia and North America are closed at `4/4` from independent Group A user PASS verdicts.
+Closed at 4/4:
+- Africa
+- Asia
+- North America
 
 # TERMINOLOGY
 
@@ -88,77 +92,97 @@ Validated:
 - Janney / Virginia — PASS
 - Metate + Metlapil — PASS
 
-# GROUP B — FIRST RECORDING DOES NOT CLOSE THE GATE
+Count effect:
+- Asia `3/4 → 4/4`
+- North America `2/4 → 4/4`
+
+# GROUP B — R1 PARTIAL PASS
 
 Register:
-`CONTINENTAL_BALANCE_B2_4C_USER_WALKTHROUGH_GROUP_B_RETEST_REQUIRED.md`
-commit `f252ac88ed8d455991f42d03de1e9946384dcacb`
+`CONTINENTAL_BALANCE_B2_4C_R1_GROUP_B_PARTIAL_PASS_VALPARAISO_MICRO_RETEST.md`
+commit `f6f585dcd220acc4233fcdc251ebec5675c572d4`
 
 User evidence:
-`cb93bfc9-86c0-4122-9452-b0d8215588fd.mp4`
+`e0ee2169-7ba8-4e2b-95d4-5d6b75669ea1.mp4`
 
-Video metadata:
-~42.70 s / 1900×972 / 30 fps.
+Metadata:
+~50.77 s / 1906×976 / 30 fps.
 
-Independent verdicts:
+## Mate + Bombilla / Argentina — PASS / VALIDATED
 
-## Valparaíso Funicular / Chile
-**RETEST REQUIRED / NOT VALIDATED**
-- inverse states visibly occur;
-- recording uses `SWAP START` utility;
-- direct Car A and direct Car B dragging are not demonstrated;
-- helper control cannot be the validating evidence.
+Observed USER evidence:
+- inserted/no-flow state;
+- direct Bombilla HOLD produces `DRAW ACTIVE`;
+- release produces `FLOW STOPPED`;
+- the Bombilla is the causal member; insertion button is subordinate.
 
-Retest:
-- do not press `SWAP START`;
-- drag Car A through a partial path → B must resolve inversely;
-- then drag Car B independently → A resolves inversely.
+Count:
+South America `2/4 → 3/4`.
 
-UX watch:
-If direct dragging works but users continue to choose `SWAP START`, demote/remove that utility before promotion.
+## Tongiaki / Tonga — PASS / VALIDATED
 
-## Mate + Bombilla / Argentina
-**RETEST REQUIRED / NOT VALIDATED**
-- inserted/submerged relation is shown;
-- flow-on caused by direct Bombilla HOLD is not shown;
-- release → flow-off is not shown.
+Observed USER evidence:
+- two distinct valid hulls;
+- approach + longitudinal alignment produces `SHARED PLATFORM` and visible booms/deck;
+- later movement breaks threshold and returns to `UNCOUPLED · TWO VALID HULLS`;
+- both hulls remain valid.
 
-Retest:
-- INSERT;
-- pause on inserted/no-flow;
-- press-and-hold directly on Bombilla ~2 seconds → visible flow;
-- release → flow stops.
+Count:
+Oceania `2/4 → 3/4`.
 
-## Tongiaki / Tonga
-**RETEST REQUIRED / NOT VALIDATED**
-- visible state remains `TWO HULLS UNCOUPLED` / `DISTINCT`;
-- no deck/connector coupled state appears;
-- no break-relation sequence is shown.
+## Valparaíso Funicular / Chile — MICRO-RETEST REQUIRED
 
-Retest:
-- drag both hulls inboard + fore/aft until close and parallel;
-- show deck/connectors;
-- move one hull out of threshold;
-- show connection disappear while both hulls remain valid.
+Improved evidence:
+- no `SWAP START` used as primary proof;
+- direct Car B drag visibly drives Car A in inverse position;
+- this satisfies the pair-member principle for the demonstrated direction.
 
-If coupled state cannot be reached reliably after a deliberate direct attempt, convert to UX PATCH.
+Remaining evidence gap:
+- direct Car A input is not shown clearly enough to close the explicit `Move either car` claim.
 
-# COUNT EFFECT
+Source inspection confirms symmetric handlers:
+- Car A pointer input renders A position directly;
+- Car B pointer input renders inverse A position.
 
-No Group B count change from the first recording.
-South America remains `2/4`; Oceania remains `2/4`.
+But USER evidence is still required for Car A.
+
+Required micro-retest only:
+- drag Car A vertically for 2–3 seconds;
+- show Car B answering immediately in reverse;
+- do not touch `SWAP START`.
+
+A 3–8 second recording is enough.
+No source mutation unless the direct mechanic fails.
+
+# VALIDATED / PENDING EXISTING NINE
+
+VALIDATED:
+- Astrolabe / Isfahan
+- Janney / Virginia
+- Metate + Metlapil
+- Mate + Bombilla
+- Tongiaki
+
+MICRO-RETEST:
+- Valparaíso Funicular — Car A direct input only
+
+GROUP C PENDING:
+- Garamut / East Sepik-Ramu PNG
+- Catoptric Anamorphosis / Paris-France
+- Swiss Cylinder Music Box / Sainte-Croix
 
 # NEXT EXACT OUTPUT
 
-# **B2.4C-R1 — TARGETED GROUP B DIRECT-MEMBER RETEST**
+# **B2.4C-R2 — VALPARAÍSO CAR A MICRO-RETEST**
 
-Do not mutate source unless direct mechanics fail or prove unusable.
-Do not proceed to Group C until B2.4C closes.
+Do not mutate code unless the direct mechanic fails.
+Do not proceed to Group C until this closes.
 
-After B2.4C passes:
-- South America can move toward `4/4` from Valparaíso + Mate/Bombilla;
-- Oceania can move to `3/4` from Tongiaki;
-- then run B2.4D Group C: Garamut + Anamorphosis + Swiss Music Box.
+If Valparaíso PASS:
+- South America `3/4 → 4/4`;
+- then run B2.4D Group C;
+- Garamut can close Oceania `3/4 → 4/4`;
+- Anamorphosis + Swiss Music Box can close Europe `2/4 → 4/4`.
 
 # RESPONSIVE SCOPE
 
