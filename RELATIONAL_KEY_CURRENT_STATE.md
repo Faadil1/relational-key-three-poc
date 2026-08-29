@@ -5,8 +5,9 @@ Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
 Draft PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `CONTINENTAL_BALANCE_B2_4D_GROUP_C_PARTIAL_PASS_MUSIC_BOX_MICRO_RETEST.md`
-register commit: `304825cda9a7fd5a697797945326d3cea5c3a9b8`
+Latest verified milestone: `CONTINENTAL_BALANCE_B2_4D_R1A_SWISS_MUSIC_BOX_DIRECT_DRAG_UX_PATCH.md`
+register commit: `206d99f4f6c3c687d155e79c43f89a7301ffab37`
+patch commit: `1054722fa8d72a092c61ffd41eabacae30c9cd07`
 
 # PRODUCT INVARIANT
 
@@ -16,6 +17,9 @@ Signature reference: `RELATIONAL KEY — Three.js Signature POC` — `https://re
 
 Primary causal model:
 `PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
+
+For Swiss Music Box:
+`PINNED CYLINDER → PIN/TOOTH CONTACT → TUNED COMB RESPONSE`
 
 Center/gap/register/buttons remain subordinate. SOURCE proof cannot substitute for missing USER evidence.
 
@@ -27,7 +31,7 @@ Completed refinement: G0 PASS → G1 PASS → G2 PASS → G3 PASS. G4 remains PA
 Target:
 `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 
-Current VALIDATED distribution after Group C partial pass:
+Current VALIDATED distribution:
 # `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 3`
 
 Only independent USER validation gates change counts.
@@ -36,12 +40,16 @@ The nine Balance-Gate candidates/families already existed in the RELATIONAL KEY 
 
 # FULL PREVIEW / VERCEL
 
-Audit deployment: `dpl_AQ5B2Wmn6VMH1qczrAsDVUVuHuCw`
-URL: `https://relational-key-collectionrelational-key-collection-1wq2g2b7e.vercel.app`
-Deployed SHA: `0ddd5ad598cf79782acf32aa79fe65463765c4a5`
-State: `READY`
+Canonical Collection URL:
+`https://relational-key-collectionrelational-key-collection-1wq2g2b7e.vercel.app`
 
-Vercel cleanup PASS: only canonical Collection remains Git-linked to `Faadil1/relational-key-three-poc`; Boulle/Hika Ahi/Siku are `link: null`; golden deployments preserved.
+Swiss direct-drag UX patch commit:
+`1054722fa8d72a092c61ffd41eabacae30c9cd07`
+
+GitHub commit status:
+`Vercel — success`
+
+Vercel cleanup PASS remains unchanged: only canonical Collection remains Git-linked to `Faadil1/relational-key-three-poc`; Boulle/Hika Ahi/Siku are `link: null`; golden deployments preserved.
 
 # CLOSED USER GATES
 
@@ -61,34 +69,41 @@ commit `2ed80cb0dff8ac4d072b694089b77c93a4179bb0`
 Validated: Valparaíso direct Car A↔B inverse relation.
 Count effects: South America `4/4`; Oceania `3/4` before Group C.
 
-# B2.4D — GROUP C PARTIAL PASS
-
+## Group C — PARTIAL PASS
 Register: `CONTINENTAL_BALANCE_B2_4D_GROUP_C_PARTIAL_PASS_MUSIC_BOX_MICRO_RETEST.md`
 commit `304825cda9a7fd5a697797945326d3cea5c3a9b8`
 User evidence: `041262bd-f7e8-46c1-9dcd-bcccfdb94477.mp4`
-Observed metadata: ~62.07 s / 1904×960 / 30 fps.
 
-Independent verdicts:
+Validated:
+- Garamut / East Sepik-Ramu PNG — **PASS / VALIDATED** → Oceania `4/4`.
+- Catoptric Anamorphosis / Paris-France — **PASS / VALIDATED** → Europe `3/4`.
 
-- **Garamut / East Sepik-Ramu PNG — PASS / VALIDATED**
-  - direct pounder input produces repeated discrete impacts;
-  - withdraw/re-arm cycle is demonstrated;
-  - editorial sequence reaches 20 ordered events;
-  - no community-code meaning is assigned;
-  - pair remains pounder ↔ resonant body.
-  - Oceania `3/4 → 4/4`.
+Swiss Cylinder Music Box remained pending because Group C showed `ENGAGED · NO AUTOPLAY` and `OTHER CYLINDER`, but the cylinder remained at `+000°` with no USER-evidenced pin→tooth decoded event.
 
-- **Catoptric Anamorphosis / Paris-France — PASS / VALIDATED**
-  - direct mirror movement changes reflected legibility through unresolved / partial / legible states and back;
-  - distorted source field remains unresolved;
-  - pair remains distorted image ↔ cylindrical mirror.
-  - Europe `2/4 → 3/4`.
+# B2.4D-R1A — SWISS DIRECT-DRAG UX PATCH
 
-- **Swiss Cylinder Music Box / Sainte-Croix — MICRO-RETEST REQUIRED / NOT YET VALIDATED**
-  - `ENGAGED · NO AUTOPLAY` is shown;
-  - `OTHER CYLINDER` alternate-valid state is shown;
-  - but angle remains `+000°` and no USER-evidenced decoded pin→tooth event appears;
-  - source handlers show intended manual drag behavior, but source cannot replace USER evidence.
+Register:
+`CONTINENTAL_BALANCE_B2_4D_R1A_SWISS_MUSIC_BOX_DIRECT_DRAG_UX_PATCH.md`
+register commit `206d99f4f6c3c687d155e79c43f89a7301ffab37`
+patch commit `1054722fa8d72a092c61ffd41eabacae30c9cd07`
+
+User finding:
+- direct cylinder manipulation could not be made to leave its principal state reliably;
+- this triggered the pre-declared `UX PATCH` path instead of forcing a validation.
+
+Patch:
+- cylinder remains the direct manipulated pair member;
+- no substitute rotation button added;
+- pointer start remains on cylinder;
+- active drag movement/up/cancel now tracked on `window` rather than relying on `setPointerCapture`;
+- `preventDefault`, z-index, user-select suppression and explicit drag feedback added;
+- ArrowLeft/ArrowRight remains accessibility/fallback only.
+
+State separation:
+- SOURCE PATCH: **PASS**
+- LIVE DEPLOYMENT: **PASS** (`Vercel — success`)
+- USER DIRECT-DRAG RETEST: **PENDING**
+- VALIDATED FAMILY: **NO CHANGE**
 
 # VALIDATED BALANCE-GATE CANDIDATES SO FAR
 
@@ -106,19 +121,20 @@ Still pending:
 
 # NEXT EXACT OUTPUT
 
-# **B2.4D-R1 — SWISS MUSIC BOX MANUAL-ROTATION MICRO-RETEST**
+# **B2.4D-R1B — SWISS MUSIC BOX DIRECT-DRAG USER MICRO-RETEST**
 
 Required only:
-1. `ENGAGE CYLINDER + COMB` → briefly show `ENGAGED · NO AUTOPLAY`;
-2. drag the **cylinder itself horizontally** until angle changes away from `+000°`;
-3. show at least one visible `DECODED EVENT` / comb-tooth response caused by that rotation.
+1. open Swiss Music Box from the canonical Collection preview;
+2. press `ENGAGE CYLINDER + COMB` and briefly show `ENGAGED · NO AUTOPLAY`;
+3. press/hold directly on the large gold cylinder in Card A;
+4. drag horizontally approximately 60–100 px;
+5. show angle moving away from `+000°`;
+6. show at least one `DECODED EVENT` and/or visible comb-tooth response caused by that drag.
 
-`OTHER CYLINDER` need not be repeated; already demonstrated in Group C recording.
-Audio is supportive only. ~5–12 seconds is sufficient.
+`OTHER CYLINDER` need not be repeated; already user-evidenced.
+Audio is supportive only. ~5–12 seconds remains sufficient.
 
-If direct drag cannot reliably trigger decoded events, classify as UX PATCH.
-
-Do not open B2.5 until Music Box closes. After Music Box PASS, continental distribution reaches `4/4` across all six continents and next gate is `B2.5 — 24-family collection regression`.
+Do not open B2.5 until Music Box closes. After Music Box PASS, continental distribution reaches `4/4` across all six continents and next gate becomes `B2.5 — 24-FAMILY COLLECTION REGRESSION`.
 
 True ~390 px regression remains reserved for B2.5/final validation. Khipu G4 candidate remains preserved at `families/khipu-peru/g4-1.html`, commit `64647ea78b04439ea9a57ece47f19490d9185d45`.
 
