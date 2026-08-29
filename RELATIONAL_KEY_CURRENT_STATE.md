@@ -30,7 +30,6 @@ commit `89e0a2f577633120fbdadb165f2aa0c36edaaae1`
 # B2.5C — TECHNICAL PASS / CLOSED
 `B2_5C_R1A_AUTHENTICATED_24_ROUTE_SMOKE_PASS.md`
 commit `f9e67670bd22ece1f6979c21af432c7b30e083d7`
-
 Technical proof remains frozen: registry 1.3, 24 validated / 0 candidates, six continents × 4, 24/24 routes HTTP 200, 24/24 Back-to-Atlas, 9/9 new candidate targets HTTP 200.
 
 # B2.5D — USER VISUAL + NAVIGATION PASS / CLOSED ✅
@@ -74,8 +73,8 @@ Do not begin Batch B until Batch A is classified.
 Do not resume G4 yet.
 PR #21 remains Draft / DO NOT MERGE.
 
-Canonical final HANDOVER head for this milestone:
-`450b675dc129f08abb89168ab45e759c135a48b4`.
+Canonical HANDOVER head for this milestone:
+`082b535a0a7c2b6cae1dbe9e444c1fb1b088fa1e`.
 
 Persistence protocol:
 dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output.
