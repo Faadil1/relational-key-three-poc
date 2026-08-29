@@ -11,18 +11,16 @@ Draft PR: #21 — `DRAFT / DO NOT MERGE`
 
 `PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
 
-Expansion invariant:
+Expansion laws remain canonical:
 - **EXPANSION MUST DEEPEN THE RELATION, NOT REPLACE IT.**
 - **TECHNOLOGY SERVES THE RELATIONAL MECHANISM.**
 - **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
 
-Document: `RELATIONAL_KEY_EXPANSION_INVARIANT.md`
-commit `8e1d85e70447e19d870e4a65ffa405cfad09fbc3`
+G0 / G1 / G2 / G3 PASS. G4 PARKED until B2.5 closes.
 
-G0 / G1 / G2 / G3: PASS.
-G4: PARKED until B2.5 closes.
+# BALANCE / COLLECTION STATE
 
-# CONTINENTAL BALANCE GATE 2 — PASS / CLOSED
+Continental Balance Gate 2 PASS / CLOSED.
 
 `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 
@@ -33,98 +31,86 @@ Total VALIDATED families: **24**.
 `B2_5A_24_FAMILY_REGRESSION_MATRIX_EXECUTION_ORDER.md`
 commit `6c827a8d00e75dd80ec7976d7243bf30fe43b6f6`
 
-Frozen: exact 24-family causal matrix, USER batches A–D, desktop + true ~390 px requirements, RELATIONAL INTEGRITY vs EXPERIENCE DEBT.
+Frozen causal USER batches A–D and true ~390 px requirement.
 
 # B2.5B — PASS
 
 `B2_5B_24_FAMILY_CANONICAL_ATLAS_INTEGRATION_SPEC_SAFE_REGISTRY_MIGRATION.md`
 commit `89e0a2f577633120fbdadb165f2aa0c36edaaae1`
 
-Pre-runtime rollback anchor:
-`e9e40b0f610e912410f9b0ff678a3011705aa6e8`
+# B2.5C — TECHNICAL PASS / CLOSED
 
-# B2.5C — TECHNICAL PASS / CLOSED ✅
-
-Runtime integration source head:
+Runtime integration source:
 `a073af05cb16c3934e06ce353a2e0017690b611d`
-
-Registry migration:
-`c9e3a04a01fe47e770888bf34cc16a0cd8bd6ab1`
-
-Integrated state:
-- schema 1.3;
-- 24 validated / 0 candidates;
-- six continents × 4;
-- root framing 15 → 24;
-- original pair-product framing preserved;
-- original 15 G3 signatures preserved;
-- nine new mechanism-native signatures added;
-- nine new canonical wrappers added;
-- candidate immutability PASS 9/9.
-
-## Vercel recovery
-
-Source-neutral retrigger:
-`5d3ed9de5fbbf0427f1ad0eac5b6910b4a220f5a`
 
 READY deployment:
 `dpl_ERZaEXq8vs4knBEsgdUTNshmoCaB`
 
-Preview:
-`relational-key-collectionrelational-key-collection-3w617k1qt.vercel.app`
+Authenticated B2.5C-R1A live proof:
+- registry HTTP 200 / schema 1.3;
+- 24 validated / 0 candidates;
+- 24 unique IDs / 24 unique routes;
+- six continents × 4;
+- 24/24 canonical routes HTTP 200;
+- 24/24 route responses contain `BACK TO ATLAS`;
+- 9/9 Balance-Gate wrappers reference candidate;
+- 9/9 candidate targets HTTP 200.
 
-Vercel build metadata/logs prove exact branch/commit clone, successful build and READY deployment. GitHub Vercel status = success.
+PASS register:
+`B2_5C_R1A_AUTHENTICATED_24_ROUTE_SMOKE_PASS.md`
+commit `f9e67670bd22ece1f6979c21af432c7b30e083d7`
 
-## B2.5C-R1A — PASS / VALIDATED TECHNICAL
+# B2.5D — PARTIAL USER PASS
 
 Register:
-`B2_5C_R1A_AUTHENTICATED_24_ROUTE_SMOKE_PASS.md`
+`B2_5D_R1_USER_VISUAL_NAVIGATION_PARTIAL_PASS_390_RETEST.md`
+commit `180f2ea56c2e6c538d55fdf83dd04fe4a771d63f`
 
-Authenticated same-origin browser evidence:
-- registry HTTP 200;
-- schema 1.3;
-- validated 24;
-- candidates 0;
-- exactly 24 families;
-- 24 unique IDs;
-- 24 unique routes;
-- six continents × 4;
-- product law visible;
-- all 24 canonical family routes HTTP 200;
-- all 24 route responses contain `BACK TO ATLAS`;
-- all nine new wrappers reference `candidate.html`;
-- all nine new candidate targets HTTP 200.
+User video reviewed:
+- ~96.7 s;
+- 1910 × 966 capture;
+- 30 fps.
 
-The browser script's isolated `root24=false` is classified as a diagnostic false negative: it used `innerText`, while `.topCenter` is hidden below the source breakpoint `max-width:1100px`; `innerText` excludes `display:none` text. Exact deployed source already proves the 24-family label. No runtime patch is required.
+Retained USER PASS evidence:
+- desktop Atlas visual coherence;
+- pair-product framing remains perceptually dominant;
+- continental balance readable;
+- search field + continental controls discoverable;
+- Europe filtering observed;
+- `stereoscopy-uk` historical wrapper opens and returns to Atlas;
+- `zellige-fes` historical wrapper also shown and returns to Atlas;
+- `music-box-sainte-croix` Balance-Gate wrapper loads in narrow responsive state and returns to Atlas;
+- responsive one-column Atlas state visually activates;
+- no obvious critical horizontal clipping observed in the recorded narrow state.
 
-Evidence separation:
-- SOURCE integration: PASS
-- LIVE deployment/build: PASS
-- LIVE registry/routes: PASS
-- TECHNICAL B2.5C: CLOSED
-- USER Atlas visual/navigation: NOT RUN
-- USER causal regression batches: NOT RUN
-- VALIDATED count: 24 unchanged
+Not yet accepted:
+- **true 390 × 844 USER proof**.
+
+Reason:
+The recording shows a manually narrowed browser window but does not expose an exact Chrome Device Toolbar `390 × 844` viewport. The frozen true-390 requirement cannot be inferred from a narrow window.
+
+Do NOT repeat already-passed desktop/navigation evidence.
 
 # ACTIVE GATE / NEXT EXACT OUTPUT
 
-# **B2.5D — 24-FAMILY ATLAS USER VISUAL + NAVIGATION GATE**
+# **B2.5D-R1A — TRUE 390 × 844 MICRO-RETEST**
 
-Required:
-1. desktop Atlas visual coherence;
-2. true ~390 px viewport visual coherence;
-3. 24-family discoverability + filtering;
-4. wrapper framing + Back-to-Atlas behavior;
-5. no horizontal overflow or clipped critical UI;
-6. pair-product idea remains perceptually dominant;
-7. technology/visual spectacle remains subordinate to family mechanism identity.
+Only remaining proof:
+1. Chrome Device Toolbar visibly set to `390 × 844`;
+2. reload Atlas;
+3. show product-law/hero + Atlas controls;
+4. type `music` in search and show filtered result;
+5. clear search, click `Europe`;
+6. scroll enough to prove no horizontal overflow / clipped critical UI;
+7. open Music Box / Sainte-Croix and return `← BACK TO ATLAS`.
 
-After B2.5D PASS:
-execute B2.5A causal USER regression batches A–D.
+Target length: ~15–25 seconds. No mechanism interaction required.
 
-PR #21 remains Draft / DO NOT MERGE.
-G4 remains PARKED until B2.5 closes.
+If PASS:
+- close B2.5D;
+- open B2.5A causal USER regression Batch A.
 
-# PERSISTENCE PROTOCOL
+PR #21 remains Draft / DO NOT MERGE. G4 remains PARKED.
 
+Persistence protocol:
 dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output.
