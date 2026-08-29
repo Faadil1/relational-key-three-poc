@@ -19,7 +19,6 @@ Expansion laws remain canonical:
 G0 / G1 / G2 / G3 PASS. G4 PARKED until B2.5 closes.
 
 # BALANCE / COLLECTION STATE
-
 Continental Balance Gate 2 PASS / CLOSED.
 `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 Total VALIDATED families: **24**.
@@ -46,7 +45,6 @@ Frozen technical proof:
 - 9/9 Balance-Gate candidate targets HTTP 200.
 
 # B2.5D — USER VISUAL + NAVIGATION PASS / CLOSED ✅
-
 Final PASS register:
 `B2_5D_R1B_390_MUSIC_SEARCH_MUSIC_BOX_WRAPPER_USER_PASS.md`
 commit `259c4926e9f704717f89a1b18f95a6fe90c6c04d`
@@ -99,8 +97,7 @@ PR #21 remains Draft / DO NOT MERGE.
 
 Canonical milestone IDs:
 - B2.5D PASS register `259c4926e9f704717f89a1b18f95a6fe90c6c04d`;
-- state-sync lineage includes `a51980167824966b3d335d480f76ac955b0337bd`;
-- final HANDOVER head is `48a1d3d193db2817b168a7914d9f8ed3dd3a1411`.
+- final HANDOVER canonical head `b2fcfc18f50f97a42a934c5a2180bd462fa6b6f0`.
 
 Persistence protocol:
 dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output.
