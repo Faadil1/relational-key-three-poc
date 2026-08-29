@@ -8,7 +8,7 @@ PR status: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **B2.4D-R1 — SWISS MUSIC BOX MANUAL-ROTATION MICRO-RETEST**
+# **B2.4D-R1B — SWISS MUSIC BOX DIRECT-DRAG USER MICRO-RETEST**
 
 Canonical invariant:
 # **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
@@ -19,6 +19,9 @@ Signature reference:
 
 Primary validation chain:
 `PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
+
+Swiss chain:
+`PINNED CYLINDER → PIN/TOOTH CONTACT → TUNED COMB RESPONSE`
 
 Buttons, center/gap, status panels and helper animations cannot replace direct pair-member proof.
 
@@ -48,56 +51,71 @@ R1 register: `CONTINENTAL_BALANCE_B2_4C_R1_GROUP_B_PARTIAL_PASS_VALPARAISO_MICRO
 R2 register: `CONTINENTAL_BALANCE_B2_4C_R2_VALPARAISO_CAR_A_MICRO_RETEST_PASS.md`, commit `2ed80cb0dff8ac4d072b694089b77c93a4179bb0`.
 
 ## Group C — PARTIAL PASS
-
 Register: `CONTINENTAL_BALANCE_B2_4D_GROUP_C_PARTIAL_PASS_MUSIC_BOX_MICRO_RETEST.md`
 commit `304825cda9a7fd5a697797945326d3cea5c3a9b8`.
-User evidence: `041262bd-f7e8-46c1-9dcd-bcccfdb94477.mp4`, ~62.07 s / 1904×960 / 30 fps.
 
 Validated:
-- **Garamut — PASS**: direct pounder impacts + repeated re-arm; editorial trace grows to 20 ordered events; no community code claim. Oceania `3/4 → 4/4`.
-- **Catoptric Anamorphosis — PASS**: direct cylindrical mirror movement produces unresolved / partial / legible reflection states and reverses when moved away. Europe `2/4 → 3/4`.
+- Garamut — PASS → Oceania `4/4`.
+- Catoptric Anamorphosis — PASS → Europe `3/4`.
 
-Pending:
-- **Swiss Cylinder Music Box — MICRO-RETEST REQUIRED**.
+Swiss Music Box remained pending because the user recording proved `ENGAGED · NO AUTOPLAY` and `OTHER CYLINDER`, but not a direct cylinder rotation away from `+000°` producing a decoded pin→tooth event.
 
-Current Group C recording proves:
-- `ENGAGED · NO AUTOPLAY`;
-- `OTHER CYLINDER` as another valid stored geometry;
-- reset/separate state.
+# B2.4D-R1A — DIRECT-DRAG UX PATCH
 
-It does **not** yet prove:
-- angle changing away from `+000°` through direct cylinder drag;
-- a visible `DECODED EVENT` / comb-tooth response caused by pin crossing.
+User independently reported that the cylinder could not be made to change reliably and stayed at its principal state.
 
-Source code confirms the intended direct-drag and pin-crossing handlers, but SOURCE cannot replace USER evidence.
+This triggered the pre-declared UX PATCH route rather than a forced validation.
 
-# FULL PREVIEW AUDIT ANCHOR
+Register:
+`CONTINENTAL_BALANCE_B2_4D_R1A_SWISS_MUSIC_BOX_DIRECT_DRAG_UX_PATCH.md`
+register commit `206d99f4f6c3c687d155e79c43f89a7301ffab37`
 
-Deployment: `dpl_AQ5B2Wmn6VMH1qczrAsDVUVuHuCw`
-URL: `https://relational-key-collectionrelational-key-collection-1wq2g2b7e.vercel.app`
-Deployed SHA: `0ddd5ad598cf79782acf32aa79fe65463765c4a5`
-State: `READY`
+Patched file:
+`families/music-box-sainte-croix/candidate.html`
+patch commit `1054722fa8d72a092c61ffd41eabacae30c9cd07`
 
-Vercel cleanup PASS: only canonical Collection remains Git-linked; Boulle/Hika Ahi/Siku are disconnected and preserved as golden references.
+Patch characteristics:
+- direct pointer start remains on the actual cylinder;
+- no substitute rotation button was added;
+- active pointer movement/up/cancel are tracked on `window`;
+- dependency on `setPointerCapture` was removed;
+- drag surface has explicit z-index, `touch-action:none`, `user-select:none` and `preventDefault()` behavior;
+- immediate feedback displays `DIRECT INPUT · CYLINDER DRAG ACTIVE`;
+- if released before a pin crossing, the interface requests a farther drag;
+- keyboard arrow support remains fallback/accessibility only.
+
+Technical state:
+- SOURCE PATCH: **PASS**
+- LIVE DEPLOYMENT: **PASS**
+- GitHub commit status for `1054722f…`: `Vercel — success`
+- USER RETEST: **PENDING**
+- VALIDATED COUNT: **NO CHANGE**
+
+Canonical Collection URL:
+`https://relational-key-collectionrelational-key-collection-1wq2g2b7e.vercel.app`
+
+Direct Swiss route:
+`https://relational-key-collectionrelational-key-collection-1wq2g2b7e.vercel.app/families/music-box-sainte-croix/candidate.html`
 
 # NEXT EXACT OUTPUT
 
-# **B2.4D-R1 — SWISS MUSIC BOX MANUAL-ROTATION MICRO-RETEST**
+# **B2.4D-R1B — SWISS MUSIC BOX DIRECT-DRAG USER MICRO-RETEST**
 
 Required only:
-1. press `ENGAGE CYLINDER + COMB`;
-2. pause briefly on `ENGAGED · NO AUTOPLAY`;
-3. drag **the cylinder itself horizontally**, not a helper button;
-4. angle must visibly change away from `+000°`;
-5. show at least one `DECODED EVENT` / comb-tooth response caused by that drag.
+1. open the direct Swiss route;
+2. press `ENGAGE CYLINDER + COMB`;
+3. pause briefly on `ENGAGED · NO AUTOPLAY`;
+4. press/hold directly on the large gold cylinder in Card A;
+5. drag horizontally approximately 60–100 px;
+6. angle must visibly leave `+000°`;
+7. show at least one `DECODED EVENT` and/or visible comb-tooth response caused by that drag.
 
-No need to demonstrate `OTHER CYLINDER` again; already user-evidenced.
-Audio is supportive, not required if the visual pin→tooth event is clear.
+No need to repeat `OTHER CYLINDER`.
+Audio is supportive only.
 A ~5–12 second recording is sufficient.
 
-If direct cylinder drag cannot reliably trigger the event, classify Swiss Music Box as UX PATCH.
-
-After Swiss Music Box PASS:
+After USER PASS:
+- Swiss Cylinder Music Box → PASS / VALIDATED;
 - Europe `3/4 → 4/4`;
 - all six continents reach `4/4`;
 - next exact gate becomes `B2.5 — 24-FAMILY COLLECTION REGRESSION`.
