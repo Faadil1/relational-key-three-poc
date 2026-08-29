@@ -5,7 +5,8 @@ Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
 Draft PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `CONTINENTAL_BALANCE_B2_4A_R2_FULL_PREVIEW_RECOVERED.md`
+Latest technical milestone: `CONTINENTAL_BALANCE_B2_4A_R2_FULL_PREVIEW_RECOVERED.md`
+Latest terminology correction: `CONTINENTAL_BALANCE_B2_EXISTING_NINE_TERMINOLOGY_CORRECTION.md`
 
 # PRODUCT INVARIANT
 
@@ -19,7 +20,7 @@ G4 polish remains PARKED until Continental Balance Gate 2 closes.
 
 # CONTINENTAL BALANCE GATE 2 — ACTIVE
 
-Target:
+Target validated distribution:
 # `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 
 Current VALIDATED distribution remains:
@@ -30,8 +31,24 @@ No research promotion, spec freeze, SOURCE PASS, READY deployment or route avail
 Core laws:
 - **BALANCE IS A TARGET, NOT A LICENSE TO ADD WEAK FAMILIES.**
 - **SOURCE CHOOSES THE MECHANISM. THE GAP MAP ONLY GUIDES DISCOVERY.**
+- **EXISTENCE IN PROJECT HISTORY ≠ NEW ADDITION NOW ≠ VALIDATED COLLECTION MEMBERSHIP.**
 
-# ALL 9 REQUIRED ADDITIONS — SOURCE PASS
+# TERMINOLOGY CORRECTION — EXISTING NINE
+
+The nine candidates grouped in this Balance Gate are **not nine newly invented additions created at this stage**.
+
+They already existed in the RELATIONAL KEY project/workstream. The current work is consolidating, source-grounding, specifying, building/rebuilding where needed, and validating them for the balanced 24-family collection.
+
+Canonical wording:
+# **9 EXISTING BALANCE-GATE CANDIDATES / FAMILIES**
+
+Do not describe them as nine new creations.
+
+Correction register:
+`CONTINENTAL_BALANCE_B2_EXISTING_NINE_TERMINOLOGY_CORRECTION.md`
+commit `a6b191252f023edd9411232af0e9d46e07bce93e`
+
+# EXISTING NINE — SOURCE PASS
 
 1. Asia — Astrolabe / Isfahan
    - `families/astrolabe-isfahan/candidate.html`
@@ -87,60 +104,49 @@ All nine:
 
 Register:
 `CONTINENTAL_BALANCE_B2_4A_R2_FULL_PREVIEW_RECOVERED.md`
-Register commit:
-`40570955ae412db10361935d980c36ebb034eed7`
+register commit `40570955ae412db10361935d980c36ebb034eed7`
 
-Vercel project:
-- Project ID `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
-- Team ID `team_twDc66jGM0sPvNM4I5Huc0x7`
-
-Full-queue Preview:
+Vercel full-queue Preview:
 - deployment `dpl_AQ5B2Wmn6VMH1qczrAsDVUVuHuCw`
 - URL `https://relational-key-collectionrelational-key-collection-1wq2g2b7e.vercel.app`
 - state `READY`
 - deployed SHA `0ddd5ad598cf79782acf32aa79fe65463765c4a5`
 - branch `collection/global-refinement-1`
 
-Ancestry proof:
-- Music Box build `c8c1af1...` → deployed head `0ddd5ad...`
-- deployed head is ahead by 10 / behind 0
-- therefore all nine candidate builds are present.
+Music Box build `c8c1af1...` is an ancestor of deployed SHA `0ddd5ad...`; therefore the Preview contains all nine existing candidates.
 
-Automated route probes:
-- Astrolabe candidate → Vercel SSO `302`
-- Swiss Music Box candidate → Vercel SSO `302`
+Automated subroute probes are intercepted by Vercel SSO `302`. This is not a build failure or missing-route verdict. User-browser walkthrough remains the visual evidence layer.
 
-Classification:
-# **FULL PREVIEW READY / AUTOMATED SUBROUTE FETCHES SSO-AUTH BLOCKED**
+# VERCEL RATE-LIMIT ROOT CAUSE — CONFIRMED
 
-This is not a build failure and not a missing-route verdict. User-browser walkthrough is now the required evidence layer.
-
-# VERCEL ROOT CAUSE DISCOVERED
-
-The same GitHub repo `Faadil1/relational-key-three-poc` is still Git-linked to four Vercel projects:
+The same repo `Faadil1/relational-key-three-poc` is Git-linked to four Vercel projects:
 1. canonical collection `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
 2. Boulle `prj_1u0bwUIMeY1fB9trbA4sccHfRKAb`
 3. Hika Ahi `prj_bxE1WIkaiKvyGG9vP7SrvrMxTmTj`
 4. Siku `prj_sVSWA4YxfvqtJm0yAzUYIegeyM9Z`
 
-A single Git push can therefore create multiple Vercel build attempts and consume Hobby build capacity faster than intended.
+One Git push can therefore generate multiple Vercel build attempts and consume Hobby build capacity unnecessarily.
 
-Preferred correction after current validation:
-- retain Git integration only on the canonical collection project;
+Preferred cleanup:
+- keep Git integration only on canonical collection;
 - disconnect Git from Boulle/Hika/Siku while preserving their existing deployments as golden references;
-- alternatively disable automatic deployments on those legacy projects.
+- do not delete the legacy projects or golden deployments.
 
 # NEXT EXACT OUTPUT
 
+# **VERCEL LEGACY GIT-INTEGRATION CLEANUP**
+
+Disconnect repository auto-deployment from:
+- Boulle
+- Hika Ahi
+- Siku
+
+Preserve their deployments/URLs.
+Keep canonical collection Git-linked.
+
+After cleanup:
 # **B2.4B — USER WALKTHROUGH GROUP A**
-
-Group A:
-1. Astrolabe
-2. Janney
-3. Metate
-
-Issue independent PASS / PATCH / REJECT per candidate.
-Do not increment any validated count until the corresponding user gate passes.
+Astrolabe + Janney + Metate, with independent PASS/PATCH/REJECT per candidate.
 
 # G4 POLISH — PARKED
 
