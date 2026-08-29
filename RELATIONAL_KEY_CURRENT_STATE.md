@@ -5,7 +5,7 @@ Repository: `Faadil1/relational-key-three-poc`
 Canonical working branch: `collection/global-refinement-1`
 Draft PR: **#21 — RELATIONAL KEY — Global Refinement Pass**
 PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `CONTINENTAL_BALANCE_B2_4C_USER_WALKTHROUGH_GROUP_B_RETEST_REQUIRED.md`
+Latest verified milestone: `CONTINENTAL_BALANCE_B2_4C_R1_GROUP_B_PARTIAL_PASS_VALPARAISO_MICRO_RETEST.md`
 
 # PRODUCT INVARIANT
 
@@ -16,9 +16,10 @@ Signature reference:
 `https://relational-key-collectionrelational.vercel.app/`
 
 Operational consequence:
-- the two members carry the primary causal interaction;
+- primary causal input must come from a pair member;
+- the other member must visibly answer according to the family law;
 - center/gap/register/buttons remain subordinate;
-- a helper control cannot substitute for direct relational evidence;
+- helper controls cannot substitute for direct relational evidence;
 - validation judges the relationship, not merely whether an animation moves.
 
 Immutable pre-refinement anchor:
@@ -32,10 +33,10 @@ G4 polish remains PARKED until Continental Balance Gate 2 closes.
 Target validated distribution:
 # `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 
-Current VALIDATED distribution:
-# `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
+Current VALIDATED distribution after B2.4C-R1:
+# `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 3 / OCEANIA 3 / EUROPE 2`
 
-Only independent user-validation gates change validated counts.
+Only independent USER validation gates change validated counts.
 
 Core laws:
 - **BALANCE IS A TARGET, NOT A LICENSE TO ADD WEAK FAMILIES.**
@@ -99,40 +100,45 @@ Authorized count changes:
 - Asia `3/4 → 4/4`
 - North America `2/4 → 4/4`
 
-# B2.4C — USER WALKTHROUGH GROUP B — RETEST REQUIRED
+# B2.4C-R1 — GROUP B PARTIAL PASS
 
 Register:
-`CONTINENTAL_BALANCE_B2_4C_USER_WALKTHROUGH_GROUP_B_RETEST_REQUIRED.md`
-register commit `f252ac88ed8d455991f42d03de1e9946384dcacb`
+`CONTINENTAL_BALANCE_B2_4C_R1_GROUP_B_PARTIAL_PASS_VALPARAISO_MICRO_RETEST.md`
+register commit `f6f585dcd220acc4233fcdc251ebec5675c572d4`
 
 User evidence:
-`cb93bfc9-86c0-4122-9452-b0d8215588fd.mp4`
+`e0ee2169-7ba8-4e2b-95d4-5d6b75669ea1.mp4`
 
 Observed metadata:
-- ~42.70 s
-- 1900 × 972
+- ~50.77 s
+- 1906 × 976
 - 30 fps
 
-Independent evidence verdicts:
+Independent verdicts:
 
-1. Valparaíso Funicular / Chile — **RETEST REQUIRED / NOT VALIDATED**
-   - inverse states are visible;
-   - recording uses subordinate `SWAP START` utility;
-   - direct Car A and direct Car B manipulation are not demonstrated;
-   - utility control cannot substitute for pair-member evidence.
+1. Valparaíso Funicular / Chile — **MICRO-RETEST REQUIRED / NOT YET VALIDATED**
+   - direct pair-member manipulation is now shown without `SWAP START`;
+   - Car B is visibly used as direct input and Car A responds inversely;
+   - source confirms symmetric Car A/Car B handlers, but SOURCE cannot replace missing USER evidence for the explicit `Move either car` claim;
+   - remaining evidence: drag Car A directly for 2–3 seconds and show Car B answering in reverse.
 
-2. Mate + Bombilla / Argentina — **RETEST REQUIRED / NOT VALIDATED**
-   - inserted/submerged state is reached;
-   - recording does not show direct HOLD on Bombilla producing flow and RELEASE stopping it;
-   - full causal law is not yet evidenced.
+2. Mate + Bombilla / Argentina — **PASS / VALIDATED**
+   - inserted state visibly says no flow until direct hold;
+   - direct Bombilla HOLD produces `DRAW ACTIVE` / visible flow state;
+   - RELEASE produces `FLOW STOPPED` while Bombilla remains inserted;
+   - causal member is the Bombilla itself; insertion button remains subordinate.
 
-3. Tongiaki / Tonga — **RETEST REQUIRED / NOT VALIDATED**
-   - visible state remains `TWO HULLS UNCOUPLED` / `DISTINCT`;
-   - no approach+parallel alignment → deck/connectors → broken-relation sequence appears;
-   - coupled structural state is not evidenced.
+   Authorized count change:
+   South America `2/4 → 3/4`.
 
-No source mutation is authorized yet: missing evidence is not automatically a code failure.
-No Group B count change is authorized.
+3. Tongiaki / Tonga — **PASS / VALIDATED**
+   - distinct valid hulls shown;
+   - approach + longitudinal alignment reaches `SHARED PLATFORM` with booms/deck;
+   - subsequent movement breaks the relation and returns to `UNCOUPLED · TWO VALID HULLS`;
+   - no fake hydrodynamic simulation is introduced.
+
+   Authorized count change:
+   Oceania `2/4 → 3/4`.
 
 # VALIDATED / PENDING STATUS OF EXISTING NINE
 
@@ -140,29 +146,30 @@ VALIDATED:
 - Astrolabe / Isfahan
 - Janney / Virginia
 - Metate + Metlapil / Teotitlán del Valle
-
-TARGETED RETEST REQUIRED:
-- Valparaíso Funicular / Chile
 - Mate + Bombilla / Argentina
 - Tongiaki / Tonga
 
-USER GATE PENDING AFTER B2.4C:
+MICRO-RETEST REQUIRED:
+- Valparaíso Funicular / Chile — Car A direct input only
+
+USER GATE PENDING AFTER B2.4C CLOSES:
 - Garamut / East Sepik-Ramu PNG
 - Catoptric Anamorphosis / Paris-France
 - Swiss Cylinder Music Box / Sainte-Croix
 
 # NEXT EXACT OUTPUT
 
-# **B2.4C-R1 — TARGETED GROUP B DIRECT-MEMBER RETEST**
+# **B2.4C-R2 — VALPARAÍSO CAR A MICRO-RETEST**
 
 Required evidence only:
-- Valparaíso: do not use `SWAP START`; drag Car A, then drag Car B; opposite car resolves immediately.
-- Mate/Bombilla: INSERT → show no flow → HOLD directly on Bombilla ~2 s → visible flow → RELEASE → flow stops.
-- Tongiaki: drag hulls inboard/fore-aft → reach aligned coupled state with deck/connectors → move one hull out → connection disappears.
+- no `SWAP START`;
+- drag Car A vertically for 2–3 seconds;
+- Car B visibly responds inversely.
 
-If a direct mechanic cannot be triggered reliably in the retest, classify that candidate as UX PATCH and mutate only then.
+A 3–8 second recording is sufficient.
+No source mutation is authorized unless the direct Car A mechanic fails.
 
-Do not proceed to Group C until B2.4C closes.
+Do not proceed to Group C until this micro-gate closes.
 
 # RESPONSIVE SCOPE
 
