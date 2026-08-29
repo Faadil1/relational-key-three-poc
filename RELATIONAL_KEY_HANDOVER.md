@@ -140,11 +140,7 @@ Improved evidence:
 Remaining evidence gap:
 - direct Car A input is not shown clearly enough to close the explicit `Move either car` claim.
 
-Source inspection confirms symmetric handlers:
-- Car A pointer input renders A position directly;
-- Car B pointer input renders inverse A position.
-
-But USER evidence is still required for Car A.
+Source inspection confirms symmetric handlers, but USER evidence is still required for Car A.
 
 Required micro-retest only:
 - drag Car A vertically for 2–3 seconds;
