@@ -6,9 +6,7 @@ Canonical branch: `collection/global-refinement-1`
 Draft PR: #21 — `DRAFT / DO NOT MERGE`
 
 # PRODUCT ROOT
-
 **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
-
 `PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
 
 Expansion laws remain canonical:
@@ -17,8 +15,6 @@ Expansion laws remain canonical:
 - **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
 
 G0 / G1 / G2 / G3 PASS. G4 PARKED until B2.5 closes.
-
-# BALANCE / COLLECTION STATE
 Continental Balance Gate 2 PASS / CLOSED.
 `AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
 Total VALIDATED families: **24**.
@@ -32,47 +28,30 @@ commit `6c827a8d00e75dd80ec7976d7243bf30fe43b6f6`
 commit `89e0a2f577633120fbdadb165f2aa0c36edaaae1`
 
 # B2.5C — TECHNICAL PASS / CLOSED
-B2.5C-R1A register:
 `B2_5C_R1A_AUTHENTICATED_24_ROUTE_SMOKE_PASS.md`
 commit `f9e67670bd22ece1f6979c21af432c7b30e083d7`
 
-Frozen technical proof:
-- registry HTTP 200 / schema 1.3;
-- 24 validated / 0 candidates;
-- six continents × 4;
-- 24/24 canonical routes HTTP 200;
-- 24/24 Back-to-Atlas;
-- 9/9 Balance-Gate candidate targets HTTP 200.
+Technical proof remains frozen: registry 1.3, 24 validated / 0 candidates, six continents × 4, 24/24 routes HTTP 200, 24/24 Back-to-Atlas, 9/9 new candidate targets HTTP 200.
 
 # B2.5D — USER VISUAL + NAVIGATION PASS / CLOSED ✅
-Final PASS register:
 `B2_5D_R1B_390_MUSIC_SEARCH_MUSIC_BOX_WRAPPER_USER_PASS.md`
 commit `259c4926e9f704717f89a1b18f95a6fe90c6c04d`
 
-USER evidence chain proves:
-- desktop Atlas coherence;
-- pair-product framing dominant;
-- continental filtering works;
-- historical + Balance-Gate wrapper navigation works;
-- exact Chrome Device Toolbar `390 × 844` proven;
-- narrow one-column Atlas coherent;
-- no critical horizontal overflow/clipping;
-- `music` resolves Music Box after minimal metadata patch;
-- Music Box wrapper opens at 390 and `← BACK TO ATLAS` returns to `/#grid`.
-
-Music discoverability patch:
+Discoverability patch:
 `f674cf336149612b7f3d344b43893b7e5fbdb543`
-READY patched deployment:
+READY deployment:
 `dpl_CmbssprQDD8aQtGVSBjDNpKKC4eU`
 
-# EVIDENCE SEPARATION
+USER proof chain: desktop Atlas PASS; exact `390 × 844` PASS; no critical horizontal overflow/clipping; filtering/navigation PASS; `music` resolves Music Box; Music Box wrapper opens and Back-to-Atlas returns at 390.
+
+Evidence separation:
 - SOURCE integration: PASS
 - LIVE technical integration: PASS
 - USER Atlas visual/navigation: PASS
 - USER causal family regression: ACTIVE / not yet classified
 - VALIDATED family count: 24 unchanged
 
-# ACTIVE GATE / NEXT EXACT OUTPUT
+# ACTIVE GATE
 # **B2.5A CAUSAL USER REGRESSION — BATCH A / ORIGINAL SIGNATURE + REGISTRATION**
 
 Frozen order:
@@ -95,9 +74,8 @@ Do not begin Batch B until Batch A is classified.
 Do not resume G4 yet.
 PR #21 remains Draft / DO NOT MERGE.
 
-Canonical milestone IDs:
-- B2.5D PASS register `259c4926e9f704717f89a1b18f95a6fe90c6c04d`;
-- final HANDOVER canonical head `b2fcfc18f50f97a42a934c5a2180bd462fa6b6f0`.
+Canonical HANDOVER head for this milestone:
+`3da0189531ccc4098ae7fa87a800acbe9dc01d72`.
 
 Persistence protocol:
 dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output.
