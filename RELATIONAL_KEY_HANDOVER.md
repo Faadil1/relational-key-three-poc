@@ -7,75 +7,79 @@ PR #21: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **EXP-3A — SIGNAL / NIGERIA NITEL RELAY USER REGRESSION**
+# **EXP-3A-PROMOTION-LIVE — SIGNAL / NIGERIA**
 
-Do NOT restart B2.5 or the 24-family regression. Do NOT reopen G4. Do NOT reopen City or Service absent contradictory USER evidence. Do NOT mutate `families/_shared/round13r/index.html`. Do NOT promote Signal before valid USER proof. Do NOT start Frida EXP-4 until Signal closes.
+Do NOT restart B2.5 or the 24-family regression. Do NOT reopen G4. Do NOT reopen City or Service. Do NOT mutate `families/_shared/round13r/index.html`. Do NOT ask for another Signal USER video. Do NOT start Frida EXP-4 until Signal public promotion is LIVE and closed.
 
 # GLOBAL STATE
 
-VALIDATED 24. B2.5 PASS/CLOSED. USER relational integrity 24/24 PASS. G4 CLOSED. Experiential matrix STRONG 13 / ADEQUATE 9 / EXPERIENCE DEBT 2 — Signal / Nigeria and Frida / Coyoacán.
+VALIDATED 24. USER relational integrity 24/24 PASS. G4 CLOSED.
+Canonical matrix remains STRONG 13 / ADEQUATE 9 / EXPERIENCE DEBT 2 until Signal LIVE promotion; candidate-level Signal has already earned PASS.
 
 City and Service are CLOSED / ADEQUATE.
 
-# SERVICE / BENIN — CLOSED ✅
-
-EXP-2C USER evidence ~11.97 s / 1920×966 / 30 fps / 359 frames.
-Public wrapper `families/service-benin/index.html` @ `375aa5dc402f4f8935174179fcdb89a46157135b`.
-LIVE `dpl_2GFwQXm9CH5GiXwZ3w3YvzCLZyko` READY.
-Closure register `GLOBAL_REFINEMENT_EXP2C_SERVICE_BENIN_ARCHIVE_PHONECARD_USER_PASS_PROMOTION.md` @ `61f6f4f1cf508a13a461b6278676d54647062d58`.
-Service = ADEQUATE.
-
-# SIGNAL / NIGERIA — ACTIVE
+# SIGNAL / NIGERIA — USER PASS ✅ / LIVE PROMOTION PENDING
 
 Candidate `families/signal-nigeria/exp-3.html` implementation `7529cb83a3ed3cdedb315dce5f40e15f39fff7ec`.
 Candidate register `GLOBAL_REFINEMENT_EXP3_SIGNAL_NIGERIA_NITEL_RELAY_CANDIDATE.md` @ `cc16cff40290ad007e9975998f3ba477c05cafab`.
 Mechanism: **EARTH STATION → RELAY → LINK CONTINUES**.
-Visual source language: documented NITEL 1990s chip phonecards, 100/200/300 UNITS, Earth Station dish, transmission mast, globe, `Your link to the world`.
 
-## Previous invalid USER upload
+Routing-fixed USER-test deployment:
+`dpl_DbbvGjiwxmXAcsmPUBvmRuPaUoUz` READY @ `0c0ee147c1afbb60bb970f215c54c9b5b6f634c6`.
 
-Video ~10.6 s / 1904×968 / 30 fps / 318 frames showed outer NITEL wrapper but inner Vercel `404: NOT_FOUND` throughout.
-It is NOT VALID USER EVIDENCE. No PASS/FAIL for Signal itself.
+Latest valid USER video:
+`/mnt/data/7aa3ce7e-f28f-4cd0-b650-e21bc4ac3a58.mp4`
+- 17.63 s
+- 1910×966
+- 30 fps
+- 529 frames
 
-Root cause: explicit `/families/signal-nigeria/index.html` path; wrapper previously treated `index.html` as slug.
-Routing hardening first landed at `4931445dc0de05e15af07f8a9d4cb88e209048a7`.
-Retry marker commit: `0c0ee147c1afbb60bb970f215c54c9b5b6f634c6`.
-No visual or semantic promotion; shared runtime unchanged.
+USER verdict:
+# **CAUSAL PASS / VISUAL PASS / TRUTH PASS ✅**
 
-## LIVE retry — READY
+Evidence:
+- NITEL phonecard surfaces render correctly;
+- Earth Station member and Transmission Relay member remain distinct;
+- MATCHING creates pair-spanning signal continuation and response pulses;
+- OTHER leaves two offset residual signal fragments while both objects remain valid;
+- Nigeria-specific provenance comes from NITEL / Nigerian Telecommunications Ltd, chip-phonecard units, dish, mast, globe and `Your link to the world` language;
+- truth boundary remains editorial synthesis, not exact historical replica or technical diagram.
 
-Deployment:
-- `dpl_DbbvGjiwxmXAcsmPUBvmRuPaUoUz`
-- READY
-- exact deployed commit `0c0ee147c1afbb60bb970f215c54c9b5b6f634c6`
-- host `relational-key-collectionrelational-key-collection-kvxhfdiqg.vercel.app`
+USER PASS / promotion pending register:
+`GLOBAL_REFINEMENT_EXP3A_SIGNAL_NIGERIA_NITEL_USER_PASS_PROMOTION_PENDING_LIVE.md` @ `84e7dfb9f4226ce374ec5755247253fb2be1935e`.
 
-Fresh share URL:
-`https://relational-key-collectionrelational-key-collection-kvxhfdiqg.vercel.app/families/signal-nigeria/exp-3.html?_vercel_share=pWME7b1ltpCCycqmyk5F3vtYt5oO3uXO`
+# PROMOTION SOURCE
 
-Blocker register `GLOBAL_REFINEMENT_EXP3A_SIGNAL_NIGERIA_LIVE_ROUTING_BLOCKER.md` records the original failure and READY resolution.
+Public wrapper `families/signal-nigeria/index.html` promotion commit:
+`95a009e0ca91f8c1de2bfece4ae5ae001ac061d6`.
 
-State separation:
-- SOURCE EXP-3 PASS
-- SOURCE routing fix PASS
-- LIVE routing-fixed deployment READY
-- previous USER upload INVALID
-- USER EXP-3A PENDING
-- Signal EXPERIENCE DEBT
-- RELATIONAL INTEGRITY unchanged
-- VALIDATED 24 unchanged
+Promotion behavior:
+- direct/public route resolves to validated EXP-3;
+- nested EXP-3 baseline remains non-recursive via referrer-aware routing;
+- shared runtime unchanged;
+- no semantic change to validated NITEL candidate.
 
-# EXACT NEXT USER ACTION
+# BLOCKER
 
-Open the fresh share URL and confirm the NITEL family surface appears instead of 404. Then record ~10–15 s:
-1. MATCHING CLAIM → TEST RELATIONSHIP
-2. hold Earth Station → Relay
-3. OTHER CLAIM → TEST RELATIONSHIP
-4. hold offset residual
+Vercel promotion build for `95a009e...` returned:
+**FAILURE — build-rate-limit / Hobby plan**.
 
-Judge CAUSAL / VISUAL / TRUTH separately.
+Therefore:
+- USER Signal = PASS
+- SOURCE promotion = PASS
+- LIVE promotion = PENDING/BLOCKED
+- Signal not CLOSED yet
+- no reclassification in canonical matrix yet
 
-If PASS: promote Signal only; preserve shared runtime; reclassify Signal; close; then open Frida EXP-4.
-If FAIL: revise isolated Signal candidate only.
+# EXACT NEXT ACTION
+
+Retry deployment of the promotion source when Vercel accepts builds. Once READY:
+1. verify public `/families/signal-nigeria/index.html` resolves to EXP-3 without recursion or 404;
+2. verify shared runtime unchanged;
+3. write final Signal closure register;
+4. set Signal = ADEQUATE;
+5. matrix → STRONG 13 / ADEQUATE 10 / EXPERIENCE DEBT 1;
+6. update CURRENT_STATE + HANDOVER + PR #21;
+7. only then begin **EXP-4 — FRIDA / COYOACÁN LAYERED TRACE ALIGNMENT**.
 
 PR remains Draft / DO NOT MERGE. Trust branch head over documentation-only commit IDs.
