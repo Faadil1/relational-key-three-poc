@@ -41,48 +41,23 @@ Experiential matrix: STRONG 13 / ADEQUATE 7 / EXPERIENCE DEBT 4 (City, Service, 
 
 USER PASS / PROMOTED.
 Promotion `families/khipu-peru/index.html` @ `a4a17eb028d0645c8148e0311bfb6f222b286914`.
-Golden `families/khipu-peru/snapshot.html` preserved.
-Closure register `GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md` @ `b3edcb34efe0b26aee8e68e936350c0ce4c8ac9b`.
+Golden preserved.
 
 # G4.2 KENTO — CLOSED ✅
 
 USER PASS / PROMOTED.
-Candidate `families/kento-japan/g4-2.html` @ `42d546294fefcb79131a3a28b33fa7352f334a38`.
 Promotion `families/kento-japan/index.html` @ `1efaf48610ba06a2db1962d900c65fb45ae411b6`.
 Golden preserved.
-Closure register `GLOBAL_REFINEMENT_G4_2A_KENTO_LIVE_USER_PASS_PROMOTION.md` @ `8b827b417d0ced77f4295a703fca2325cc35b489`.
 
 # G4.3 SIKU — CLOSED ✅
 
 Candidate `families/siku-bolivia/g4-3.html` @ `a2524db6f8fff389d2afc1e66c186e3c88573326`.
-
-USER recording:
-~15.63 s / 1902×958 / 30 fps.
-
-USER PASS:
-- temporal field/microcopy improved;
-- IRA/ARKA ownership preserved;
-- MATCHING complete alternating route preserved;
-- OTHER shows silent/missing positions and no complete route;
-- center remains subordinate;
-- no waveform/resonance drift.
-
-Promotion:
-`families/siku-bolivia/index.html`
-commit `42bce5564e27d62b201d9c3015b32da7c3d9c0b2`.
-
-Golden:
-`families/siku-bolivia/snapshot.html` unchanged.
-
-Promotion deployment:
-`dpl_9icvAQFArzpJHKkdyTYdqXDBmdEo` — READY — exact commit `42bce5564e27d62b201d9c3015b32da7c3d9c0b2`.
-
-Closure register:
-`GLOBAL_REFINEMENT_G4_3A_SIKU_LIVE_USER_PASS_PROMOTION.md`
-commit `18b40548349364b8ca77103a04f3d74f8cba5551`.
-
-CURRENT_STATE closure/open-G4.4 sync:
-`d7ab3c37d23338067f9f9ea5b3e46ffd000cb003`.
+USER recording ~15.63 s / 1902×958 / 30 fps.
+USER PASS: complete alternating continuity preserved; OTHER retains silent/missing positions and no complete route; IRA/ARKA ownership preserved; center subordinate.
+Promotion `families/siku-bolivia/index.html` @ `42bce5564e27d62b201d9c3015b32da7c3d9c0b2`.
+Golden `families/siku-bolivia/snapshot.html` unchanged.
+Promotion deployment `dpl_9icvAQFArzpJHKkdyTYdqXDBmdEo` READY.
+Closure register `GLOBAL_REFINEMENT_G4_3A_SIKU_LIVE_USER_PASS_PROMOTION.md` @ `18b40548349364b8ca77103a04f3d74f8cba5551`.
 
 State separation after G4.3:
 - SOURCE golden PASS / unchanged
@@ -117,6 +92,11 @@ For each:
 - if a real debt is reproduced, create only the smallest reversible candidate;
 - preserve snapshot/golden evidence;
 - do not change family-native semantics.
+
+Canonical persistence IDs after Siku closure:
+- G4.3 closure register `18b40548349364b8ca77103a04f3d74f8cba5551`;
+- CURRENT_STATE G4.4 persistence `891d2757a5bf35e7a4d09239cb8afa03a3966407`;
+- G4 inventory advance `40e2684ac5f47b6d442e5facfe2cb8bb2765eb0f`.
 
 PR remains Draft / DO NOT MERGE.
 
