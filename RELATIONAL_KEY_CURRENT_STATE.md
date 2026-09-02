@@ -27,40 +27,24 @@ Total VALIDATED families: **24**.
 
 # B2.5 — CLOSED / PASS
 
-B2.5A matrix/execution order PASS:
-`B2_5A_24_FAMILY_REGRESSION_MATRIX_EXECUTION_ORDER.md`
-commit `6c827a8d00e75dd80ec7976d7243bf30fe43b6f6`
-
-B2.5B PASS:
-`B2_5B_24_FAMILY_CANONICAL_ATLAS_INTEGRATION_SPEC_SAFE_REGISTRY_MIGRATION.md`
-commit `89e0a2f577633120fbdadb165f2aa0c36edaaae1`
-
-B2.5C technical PASS / CLOSED:
-`B2_5C_R1A_AUTHENTICATED_24_ROUTE_SMOKE_PASS.md`
-commit `f9e67670bd22ece1f6979c21af432c7b30e083d7`
-
-B2.5D USER visual/navigation PASS / CLOSED:
-`B2_5D_R1B_390_MUSIC_SEARCH_MUSIC_BOX_WRAPPER_USER_PASS.md`
-commit `259c4926e9f704717f89a1b18f95a6fe90c6c04d`
-
-B2.5 USER causal regression PASS / CLOSED:
+Final causal register:
 `B2_5_USER_CAUSAL_REGRESSION_FINAL_24_OF_24_PASS_EXPERIENCE_MATRIX.md`
 commit `dcea6d9d4dcc3b4c67f3698454f3ee0e0cd00c4e`
 
 Final classification:
-- USER causal coverage: **24 / 24**;
-- RELATIONAL INTEGRITY: **24 / 24 PASS**;
-- FAIL: **0 / 24**;
-- experiential STRONG: **13 / 24**;
-- experiential ADEQUATE: **7 / 24**;
-- EXPERIENCE DEBT: **4 / 24** — City / Service / Signal / Frida;
-- VALIDATED remains **24**.
+- USER causal coverage: 24/24;
+- RELATIONAL INTEGRITY: 24/24 PASS;
+- FAIL: 0/24;
+- experiential STRONG: 13/24;
+- experiential ADEQUATE: 7/24;
+- EXPERIENCE DEBT: 4/24 — City / Service / Signal / Frida;
+- VALIDATED remains 24.
 
 # G4 — ACTIVE
 
 Canonical inventory:
 `GLOBAL_REFINEMENT_G4_POLISH_INVENTORY.md`
-latest inventory commit `105c68436e477f110f2fa3a0e5ad977823e46c7d`
+commit `105c68436e477f110f2fa3a0e5ad977823e46c7d`
 
 Execution order:
 1. G4.1 Khipu — CLOSED;
@@ -72,7 +56,7 @@ Execution order:
 
 Candidate:
 `families/khipu-peru/g4-1.html`
-original implementation commit `64647ea78b04439ea9a57ece47f19490d9185d45`
+implementation commit `64647ea78b04439ea9a57ece47f19490d9185d45`
 
 USER candidate recording:
 - ~11.33 s;
@@ -86,16 +70,14 @@ Observed result:
 - OTHER RECORD preserves visible residual while both records remain valid;
 - no relational rewrite occurred.
 
-Promotion scope:
+Promotion:
 `families/khipu-peru/index.html`
+commit `a4a17eb028d0645c8148e0311bfb6f222b286914`
 
-Promotion commit:
-`a4a17eb028d0645c8148e0311bfb6f222b286914`
-
-Golden remains unchanged:
+Golden preserved:
 `families/khipu-peru/snapshot.html`
 
-Vercel/GitHub status for promotion commit: `SUCCESS`.
+Vercel/GitHub promotion status: SUCCESS.
 
 Closure register:
 `GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md`
@@ -106,7 +88,7 @@ Candidate spec synchronized:
 commit `2c5f6fb91bb8e4fa255e334398fc7d074bee0f4f`
 
 Latest HANDOVER synchronization commit:
-`458516ef041d59151ee641e8ec537a2be61197fd`
+`8dc3050a1374bea072c6a28722dc561d9110fc31`
 
 State separation:
 - SOURCE candidate: PASS
