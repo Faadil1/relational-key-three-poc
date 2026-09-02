@@ -9,12 +9,7 @@ PR #21: `DRAFT / DO NOT MERGE`
 
 # **EXP-2C — SERVICE / BENIN ARCHIVE-IDENTITY USER REGRESSION**
 
-Do NOT restart B2.5 or the 24-family regression.
-Do NOT reopen G4.
-Do NOT reopen City; City causal + visual is CLOSED.
-Do NOT promote Service EXP-2 or EXP-2B.
-Do NOT start Signal EXP-3 until Service closes.
-Do NOT mutate `families/_shared/round13r/index.html`.
+Do NOT restart B2.5 or the 24-family regression. Do NOT reopen G4. Do NOT reopen City. Do NOT promote Service EXP-2 or EXP-2B. Do NOT start Signal EXP-3 until Service closes. Do NOT mutate `families/_shared/round13r/index.html`.
 
 # CANONICAL INVARIANTS
 
@@ -33,8 +28,7 @@ Persistence protocol:
 
 # GLOBAL STATE
 
-VALIDATED 24. B2.5 PASS / CLOSED. USER relational integrity 24/24 PASS. G4 CLOSED.
-Experiential matrix: STRONG 13 / ADEQUATE 8 / EXPERIENCE DEBT 3 — Service, Signal, Frida.
+VALIDATED 24. B2.5 PASS / CLOSED. USER relational integrity 24/24 PASS. G4 CLOSED. Experiential matrix STRONG 13 / ADEQUATE 8 / EXPERIENCE DEBT 3 — Service, Signal, Frida.
 
 # CITY / GATINEAU — CLOSED ✅
 
@@ -79,6 +73,18 @@ LIVE:
 
 Preview:
 `https://relational-key-collectionrelational-key-collection-k46w5ws8t.vercel.app/families/service-benin/exp-2c.html?_vercel_share=kS5SFekdMBMcGV990tppC6gwwN0fNqjH`
+
+State separation:
+- SOURCE shared runtime PASS / unchanged
+- SOURCE Service mechanical base PASS
+- USER EXP-2B causal PASS
+- USER EXP-2B visual FAIL / REVISE
+- SOURCE EXP-2C PASS
+- LIVE EXP-2C READY / PASS
+- USER EXP-2C PENDING
+- RELATIONAL INTEGRITY PASS unchanged
+- Service EXPERIENCE DEBT pending proof
+- VALIDATED 24 unchanged
 
 # EXACT NEXT USER ACTION
 
