@@ -66,25 +66,10 @@ Visual identity: worn ivory PTT-era smartcard; BÉNIN prominent; PTT / OPT prove
 
 Truth boundary: editorial synthesis of documented Benin phonecard/service markers; not an exact replica and not a current telecom procedure.
 
-LIVE:
-- `dpl_8CLm4dcyBtzsGJTLiqyXsP8G32Xs`
-- READY
-- exact commit `d8c814a0414b55396876f6527f162b151ad66e33`
+LIVE `dpl_8CLm4dcyBtzsGJTLiqyXsP8G32Xs` READY; exact deployed commit `d8c814a0414b55396876f6527f162b151ad66e33`.
+Preview `https://relational-key-collectionrelational-key-collection-k46w5ws8t.vercel.app/families/service-benin/exp-2c.html?_vercel_share=kS5SFekdMBMcGV990tppC6gwwN0fNqjH`.
 
-Preview:
-`https://relational-key-collectionrelational-key-collection-k46w5ws8t.vercel.app/families/service-benin/exp-2c.html?_vercel_share=kS5SFekdMBMcGV990tppC6gwwN0fNqjH`
-
-State separation:
-- SOURCE shared runtime PASS / unchanged
-- SOURCE Service mechanical base PASS
-- USER EXP-2B causal PASS
-- USER EXP-2B visual FAIL / REVISE
-- SOURCE EXP-2C PASS
-- LIVE EXP-2C READY / PASS
-- USER EXP-2C PENDING
-- RELATIONAL INTEGRITY PASS unchanged
-- Service EXPERIENCE DEBT pending proof
-- VALIDATED 24 unchanged
+State separation: SOURCE shared runtime PASS/unchanged; SOURCE Service mechanical PASS; USER EXP-2B causal PASS; USER EXP-2B visual FAIL/REVISE; SOURCE EXP-2C PASS; LIVE EXP-2C READY/PASS; USER EXP-2C PENDING; RELATIONAL INTEGRITY PASS unchanged; Service EXPERIENCE DEBT; VALIDATED 24 unchanged.
 
 # EXACT NEXT USER ACTION
 
@@ -94,10 +79,7 @@ Record only EXP-2C, ~10–15 s:
 3. OTHER CLAIM → TEST RELATIONSHIP
 4. hold split residual
 
-Judge:
-- CAUSAL: handoff remains clear and pair-owned
-- VISUAL: reads as Benin PTT/OPT-era telecom archive/phonecard, not generic UI
-- TRUTH: no false exact historical replica
+Judge: CAUSAL handoff remains pair-owned; VISUAL reads as Benin PTT/OPT-era telecom archive/phonecard, not generic UI; TRUTH no false exact historical replica.
 
 If PASS: promote Service-specific EXP-2C layer; preserve shared runtime; reclassify Service out of Experience Debt; write closure; begin Signal EXP-3.
 If FAIL: revise archive identity only; preserve EXP-2 mechanics.
