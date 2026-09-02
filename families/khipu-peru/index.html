@@ -23,7 +23,31 @@ const labels={
 const shared={'city-gatineau':'city','service-benin':'service','signal-nigeria':'signal','frida-coyoacan':'frida','food-toyama':'food','textile-bonwire':'textile'};
 const frame=document.getElementById('rk'),context=document.getElementById('context');
 context.textContent=labels[slug]||'RELATIONAL KEY · FAMILY';document.title='RELATIONAL KEY — '+(labels[slug]||'Family');frame.title=labels[slug]||'RELATIONAL KEY family';
-if(shared[slug]){frame.src='/families/_shared/round13r/index.html';frame.onload=()=>{try{frame.contentWindow.document.querySelector(`[data-e="${shared[slug]}"]`)?.click()}catch(e){}}}else{frame.src=`/families/${slug}/snapshot.html`}
+function applyKhipuG41Polish(){
+  try{
+    const doc=frame.contentWindow.document;
+    const style=doc.createElement('style');
+    style.id='g4-1-khipu-polish';
+    style.textContent=`
+      /* G4.1 promoted: relation-legibility only. No timing, state or semantic changes. */
+      .tensionCord{opacity:.12;transition:opacity .55s ease,filter .55s ease}
+      .tensionCord:before,.tensionCord:after{height:5px;background:linear-gradient(#d1ad78,#795338);box-shadow:0 1px 0 rgba(255,255,255,.08)}
+      .pair[data-phase="approach"] .tensionCord{opacity:.42}
+      .pair[data-phase="tension"] .tensionCord{opacity:1;filter:brightness(1.14) drop-shadow(0 0 5px rgba(190,142,83,.28))}
+      .pair[data-phase="registered"] .tensionCord{opacity:.88;filter:brightness(1.06)}
+      .knotCore{width:68px;height:68px;opacity:.30}
+      .knotCore .loop{width:34px;height:20px;border-width:5px;box-shadow:0 0 0 1px rgba(255,255,255,.07),0 2px 8px rgba(0,0,0,.28)}
+      .knotCore .loop:after{left:12px;top:-13px;width:9px;height:39px}
+      .knotCore .ring{inset:4px;border-color:rgba(207,166,108,.34)}
+      .pair[data-phase="tension"] .knotCore{opacity:.88;transform:scale(1.08);filter:drop-shadow(0 0 7px rgba(190,142,83,.18))}
+      .pair[data-phase="registered"] .knotCore{opacity:1;transform:scale(.86) rotate(-18deg);filter:drop-shadow(0 0 6px rgba(190,142,83,.20))}
+      .pair[data-phase="rejected"] .knotCore{opacity:.08;filter:none}
+      @media(max-width:920px){.knotCore{width:64px;height:64px}.tensionCord:before,.tensionCord:after{width:5px}}
+    `;
+    doc.head.appendChild(style);
+  }catch(e){console.error('G4.1 Khipu polish injection failed',e)}
+}
+if(shared[slug]){frame.src='/families/_shared/round13r/index.html';frame.onload=()=>{try{frame.contentWindow.document.querySelector(`[data-e="${shared[slug]}"]`)?.click()}catch(e){}}}else{frame.src=`/families/${slug}/snapshot.html`;if(slug==='khipu-peru')frame.onload=applyKhipuG41Polish}
 </script>
 </body>
 </html>
