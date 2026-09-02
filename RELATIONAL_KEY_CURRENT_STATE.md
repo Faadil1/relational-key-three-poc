@@ -103,4 +103,9 @@ Do not patch for visual uniformity.
 If no residual debt is reproduced, close the respective family `NO PATCH NEEDED`.
 If a real debt is reproduced, create the smallest reversible candidate with golden preserved.
 
+Canonical persistence after Siku closure:
+- CURRENT_STATE closure/open-G4.4 commit `d7ab3c37d23338067f9f9ea5b3e46ffd000cb003`;
+- HANDOVER G4.4 resume commit `8b451d2394d9af0da886d9a031e65b44978cbe5b`;
+- G4 inventory advance commit `40e2684ac5f47b6d442e5facfe2cb8bb2765eb0f`.
+
 PR #21 remains Draft / DO NOT MERGE.
