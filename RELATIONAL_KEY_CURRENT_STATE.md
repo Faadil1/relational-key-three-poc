@@ -22,79 +22,74 @@ Persistence protocol:
 # GLOBAL STATE
 
 G0/G1/G2/G3 PASS. Continental Balance Gate 2 PASS/CLOSED. B2.5 PASS/CLOSED. USER RELATIONAL INTEGRITY 24/24 PASS. VALIDATED 24 unchanged. G4 CLOSED.
-Canonical experiential matrix remains **STRONG 13 / ADEQUATE 9 / EXPERIENCE DEBT 2** until Signal public promotion is LIVE; remaining canonical debt: Signal / Nigeria, Frida / Coyoacán.
 
-City / Gatineau and Service / Benin are CLOSED / ADEQUATE.
+Experiential matrix:
+# **STRONG 13 / ADEQUATE 10 / EXPERIENCE DEBT 1**
 
-# SERVICE / BENIN — CLOSED ✅
+Only remaining Experience Debt:
+- Frida / Coyoacán
 
-Public wrapper `families/service-benin/index.html` @ `375aa5dc402f4f8935174179fcdb89a46157135b`.
-LIVE `dpl_2GFwQXm9CH5GiXwZ3w3YvzCLZyko` READY.
-Closure register `GLOBAL_REFINEMENT_EXP2C_SERVICE_BENIN_ARCHIVE_PHONECARD_USER_PASS_PROMOTION.md` @ `61f6f4f1cf508a13a461b6278676d54647062d58`.
-Service = ADEQUATE.
+City / Gatineau, Service / Benin and Signal / Nigeria are CLOSED / ADEQUATE.
 
-# SIGNAL / NIGERIA — USER PASS / PROMOTION LIVE PENDING
+# SIGNAL / NIGERIA — CLOSED ✅
 
 Validated candidate:
 `families/signal-nigeria/exp-3.html` implementation `7529cb83a3ed3cdedb315dce5f40e15f39fff7ec`.
-Candidate register `GLOBAL_REFINEMENT_EXP3_SIGNAL_NIGERIA_NITEL_RELAY_CANDIDATE.md` @ `cc16cff40290ad007e9975998f3ba477c05cafab`.
 Mechanism: **EARTH STATION → RELAY → LINK CONTINUES**.
-Visual anchors: NITEL / Nigerian Telecommunications Ltd; 1990s chip phonecards; 100/200/300 UNITS; globe; Earth Station dish; transmission mast; `Your link to the world` language.
+Visual provenance: NITEL / Nigerian Telecommunications Ltd; 1990s chip phonecards; 100/200/300 UNITS; globe; Earth Station dish; transmission mast; `Your link to the world` language.
 Truth boundary: editorial synthesis, not exact historical card replica or technical diagram.
 
-Routing-fixed candidate LIVE before USER proof:
-- deployment `dpl_DbbvGjiwxmXAcsmPUBvmRuPaUoUz`
+USER proof:
+`/mnt/data/7aa3ce7e-f28f-4cd0-b650-e21bc4ac3a58.mp4` — 17.63 s / 1910×966 / 30 fps / 529 frames.
+Verdict: **CAUSAL PASS / VISUAL PASS / TRUTH PASS — USER PASS ✅**.
+
+Public promotion source:
+`families/signal-nigeria/index.html` first promoted @ `95a009e0ca91f8c1de2bfece4ae5ae001ac061d6`.
+Retry LIVE commit with identical wrapper content:
+`90f8240ba9e42378fd739bb03b5bda2858c7bb7d`.
+
+LIVE:
+- deployment `dpl_Hcmtp2YjMVecmzoExCfJREKD39SE`
 - READY
-- exact deployed commit `0c0ee147c1afbb60bb970f215c54c9b5b6f634c6`
+- exact deployed commit `90f8240ba9e42378fd739bb03b5bda2858c7bb7d`
+- public `/families/signal-nigeria/` verified HTTP 200 and serves promotion wrapper resolving direct access to validated EXP-3
+- no 404 blocker remains
+- shared runtime unchanged
 
-## EXP-3A USER proof — PASS ✅
-
-Video `/mnt/data/7aa3ce7e-f28f-4cd0-b650-e21bc4ac3a58.mp4`:
-- 17.63 s
-- 1910×966
-- 30 fps
-- 529 frames
-
-Observed:
-- NITEL surface renders correctly; no 404;
-- Card A remains Earth Station / signal origin and Card B Transmission Relay / national link;
-- MATCHING shows pair-spanning signal arc and member-edge response pulses;
-- center remains subordinate;
-- OTHER removes the continuous arc and leaves two offset residual fragments while both phonecard objects remain valid;
-- NITEL provenance is visually specific enough to Nigeria;
-- truth boundary remains clear.
-
-Verdict:
-# **CAUSAL PASS / VISUAL PASS / TRUTH PASS — USER PASS ✅**
-
-Dedicated USER PASS / pending-live register:
-`GLOBAL_REFINEMENT_EXP3A_SIGNAL_NIGERIA_NITEL_USER_PASS_PROMOTION_PENDING_LIVE.md` @ `84e7dfb9f4226ce374ec5755247253fb2be1935e`.
-
-## Promotion
-
-Public wrapper source promotion:
-`families/signal-nigeria/index.html` @ `95a009e0ca91f8c1de2bfece4ae5ae001ac061d6`.
-Direct/public access resolves to validated EXP-3; nested EXP-3 baseline access remains non-recursive. Shared runtime unchanged.
-
-LIVE promotion state:
-# **BLOCKED — Vercel build-rate-limit / Hobby plan**
+Closure register:
+`GLOBAL_REFINEMENT_EXP3A_SIGNAL_NIGERIA_NITEL_USER_PASS_PROMOTION_CLOSED.md` @ `f01a98c50631bf8d8139d605b21fbe61d988cded`.
 
 State separation:
-- SOURCE shared runtime PASS / unchanged
-- SOURCE EXP-3 NITEL candidate PASS
+- SOURCE EXP-3 PASS
 - USER EXP-3A PASS
-- SOURCE public promotion PASS
-- LIVE public promotion PENDING / BLOCKED
-- Signal not CLOSED yet
-- Signal canonical reclassification waits for LIVE promotion
+- SOURCE promotion PASS
+- LIVE promotion READY / PASS
+- Signal = ADEQUATE / CLOSED
 - RELATIONAL INTEGRITY PASS unchanged
 - VALIDATED 24 unchanged
 
+# FRIDA / COYOACÁN — ACTIVE
+
+Current baseline remains relationally valid but is the sole remaining Experience Debt.
+Existing family law: a memory claim meets an archive counterpart; the trace exists between them.
+
+Frozen target mechanism:
+# **LAYERED TRACE ALIGNMENT**
+
+Requirements:
+- portrait and place/archive member independently legible before relation;
+- MATCHING aligns paired trace anchors/layers across Card A → relation → Card B;
+- OTHER preserves ghosted / offset trace residue rather than invalidating either member;
+- no fake historical annotations or invented provenance;
+- visual identity must read as Frida / Coyoacán / Casa Azul through documented place/archive/material cues, not generic Mexican styling;
+- isolated candidate first;
+- shared runtime untouched;
+- public Frida wrapper unchanged until USER PASS.
+
 # ACTIVE GATE / NEXT EXACT OUTPUT
 
-# **EXP-3A-PROMOTION-LIVE — RETRY VERCEL PROMOTION DEPLOYMENT**
+# **EXP-4 — FRIDA / COYOACÁN SOURCE + VISUAL IDENTITY DEFINITION**
 
-No additional USER Signal recording is required.
-Once a deployment containing `95a009e...` or later equivalent promotion source is READY: verify public Signal route, close Signal, reclassify EXPERIENCE DEBT → ADEQUATE, update matrix to STRONG 13 / ADEQUATE 10 / EXPERIENCE DEBT 1, then open Frida EXP-4.
-
-Do not start Frida before Signal promotion is LIVE. PR #21 remains Draft / DO NOT MERGE.
+Define documented Frida/Coyoacán/Casa Azul visual anchors and build one isolated EXP-4 candidate around LAYERED TRACE ALIGNMENT.
+Do not reopen Signal absent contradictory USER evidence.
+PR #21 remains Draft / DO NOT MERGE.
