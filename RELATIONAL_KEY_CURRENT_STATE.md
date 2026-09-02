@@ -15,6 +15,7 @@ Expansion laws:
 - **TECHNOLOGY SERVES THE RELATIONAL MECHANISM.**
 - **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
 - **A RELATIONALLY CORRECT FAMILY IS NOT EXPERIENTIALLY COMPLETE IF ITS PLACE / MATERIAL / CULTURAL IDENTITY IS GENERIC.**
+- **BENIN IDENTITY MUST COME FROM DOCUMENTED TELECOM-OBJECT PROVENANCE, NOT GENERIC REGIONAL STYLING.**
 
 Persistence protocol:
 `dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output`.
@@ -32,98 +33,61 @@ Persistence protocol:
 
 # CITY / GATINEAU — CLOSED ✅
 
-Causal EXP-1 USER PASS retained.
-Visual EXP-1B USER PASS / PROMOTED.
-Public wrapper:
-`families/city-gatineau/index.html` @ `4d98008baab39055445ab6d8eff43b8cd25a4746`.
+Public wrapper `families/city-gatineau/index.html` @ `4d98008baab39055445ab6d8eff43b8cd25a4746`.
 LIVE `dpl_9BMcUbceV77JvUoFPVfhuFChHGxV` READY.
-Closure register:
-`GLOBAL_REFINEMENT_EXP1B_CITY_GATINEAU_VISUAL_IDENTITY_USER_PASS_PROMOTION.md` @ `d55481e4ae8d308100182ceb0bfb850174bbd229`.
+Closure register `GLOBAL_REFINEMENT_EXP1B_CITY_GATINEAU_VISUAL_IDENTITY_USER_PASS_PROMOTION.md` @ `d55481e4ae8d308100182ceb0bfb850174bbd229`.
 City = ADEQUATE.
 
 # SERVICE / BENIN — EXP-2C ACTIVE
 
 Mechanical base:
 `families/service-benin/exp-2.html` @ `e2872aeb013e3ab55fd4fc4b2c81e63d3c695e29`.
-Mechanism remains valid:
+Mechanical handoff remains valid:
 - Card A owns 01–02
 - Card B owns 03–04
 - MATCHING completes 01→02→03→04 through relation
 - OTHER preserves both valid fragments + sequence residue
 
-## EXP-2B — REJECTED VISUALLY
+## EXP-2B — USER VISUAL FAIL
 
-Candidate:
-`families/service-benin/exp-2b.html` @ `6f99b6f2ad22a63814f87488f393378b2c2550d0`.
-
-USER evidence:
-- 9.6 s
-- 1906×962
-- 30 fps
-
+Candidate `families/service-benin/exp-2b.html` @ `6f99b6f2ad22a63814f87488f393378b2c2550d0`.
+USER recording: 9.6 s / 1906×962 / 30 fps.
 Verdict:
 # **CAUSAL PASS / VISUAL FAIL — REVISE / DO NOT PROMOTE**
 
-Reason:
-EXP-2B reads as telecom/prepaid but remains too close to a generic green contemporary interface. It borrowed palette/pattern cues without carrying enough documented Benin phonecard/archive provenance.
+Reason: generic green prepaid/telecom styling; insufficient specifically Benin archival provenance.
 
 ## Source re-audit
 
-Official Archives nationales du Bénin Série J covers:
-- posts
-- telephone links
-- transmissions
-- organization/functioning of posts and telecommunications services
-
-Documented Benin phonecard corpus includes:
-- PTT / OPT
-- 25 / 50 / 120 UNITÉS
-- SERVICES PLUS
-- RENVOI TEMPORAIRE
-- CONFÉRENCE À TROIS
-- COMPOSITION ABRÉGÉE
-- telephone tariffs
-- Cotonou / Francophonie 1995 card references
-- recharge / serial-register grammar
-
-New rule:
-# **BENIN IDENTITY MUST COME FROM DOCUMENTED TELECOM-OBJECT PROVENANCE, NOT GENERIC REGIONAL STYLING.**
+Official Archives nationales du Bénin Série J: posts, telephone links, transmissions, and telecommunications administration.
+Documented Benin phonecard corpus: PTT / OPT; 25/50/120 UNITÉS; SERVICES PLUS; RENVOI TEMPORAIRE; CONFÉRENCE À TROIS; COMPOSITION ABRÉGÉE; telephone tariffs; Cotonou/Francophonie 1995; serial/recharge grammar.
 
 ## EXP-2C — ARCHIVE-LED PHONECARD CANDIDATE
 
-Path:
-`families/service-benin/exp-2c.html`
-
-Implementation:
-`d8c814a0414b55396876f6527f162b151ad66e33`
+Path `families/service-benin/exp-2c.html`.
+Implementation `d8c814a0414b55396876f6527f162b151ad66e33`.
+Dedicated register `GLOBAL_REFINEMENT_EXP2C_SERVICE_BENIN_ARCHIVE_PHONECARD_CANDIDATE.md` @ `357ea7d15994e112c17111e6e3718fefec301ee4`.
 
 Architecture:
-- loads EXP-2 mechanical base directly
+- loads EXP-2 directly
 - does not inherit EXP-2B
 - shared runtime unchanged
-- Service public wrapper unchanged
+- public Service wrapper unchanged
 
 Visual identity:
-- worn ivory PTT-era smartcard substrate
-- prominent BÉNIN object identity
-- PTT / OPT editorial provenance
-- Série J wording
-- gold contact chip
+- ivory PTT-era smartcard artifact
+- prominent BÉNIN
+- PTT / OPT provenance
+- Série J archival language
+- gold smartcard chip
 - 50 / 120 UNITÉS
-- COMPOSITION ABRÉGÉE
-- SERVICES PLUS
-- RENVOI TEMPORAIRE
-- CONFÉRENCE À TROIS
-- COTONOU
-- +229
+- COMPOSITION ABRÉGÉE / SERVICES PLUS
+- RENVOI TEMPORAIRE / CONFÉRENCE À TROIS
+- COTONOU / +229
 - serial/register fields
 - restrained green/yellow/red edge rail
 
-Truth boundary:
-`Synthèse éditoriale de marqueurs documentés de télécartes et services téléphoniques béninois · pas une réplique ni une procédure actuelle.`
-
-Dedicated register:
-`GLOBAL_REFINEMENT_EXP2C_SERVICE_BENIN_ARCHIVE_PHONECARD_CANDIDATE.md` @ `357ea7d15994e112c17111e6e3718fefec301ee4`.
+Truth boundary: editorial synthesis of documented Benin phonecard/service markers; not an exact historical replica and not a current telecom procedure.
 
 LIVE:
 - deployment `dpl_8CLm4dcyBtzsGJTLiqyXsP8G32Xs`
@@ -142,7 +106,7 @@ State separation:
 - LIVE EXP-2C READY / PASS
 - USER EXP-2C PENDING
 - RELATIONAL INTEGRITY PASS unchanged
-- Service remains EXPERIENCE DEBT pending USER visual proof
+- Service remains EXPERIENCE DEBT
 - VALIDATED 24 unchanged
 
 # ACTIVE GATE / NEXT EXACT OUTPUT
@@ -157,7 +121,7 @@ Record candidate only, ~10–15 s:
 
 Judge:
 - CAUSAL: handoff remains pair-owned
-- VISUAL: reads as a Benin PTT/OPT-era telecom archive/phonecard system, not generic UI
+- VISUAL: reads as Benin PTT/OPT-era telecom archive/phonecard, not generic UI
 - TRUTH: editorial synthesis is clear; no false exact replica claim
 
 Do not promote Service until USER PASS.
