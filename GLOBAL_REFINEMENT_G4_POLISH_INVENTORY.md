@@ -38,7 +38,7 @@ Closure register:
 `GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md`
 commit `b3edcb34efe0b26aee8e68e936350c0ce4c8ac9b`
 
-## G4.2 — Japan / Kento — ACTIVE
+## G4.2 — Japan / Kento — SOURCE PASS / LIVE READY / USER PENDING
 
 Ground-truth audit:
 `COLLECTION_C1_KENTO_USER_VISUAL_AUDIT_PASS.md`.
@@ -49,11 +49,31 @@ Documented debt:
 - make colour-layer displacement on OTHER BLOCK easier to read from a distant desktop view;
 - keep the center register subordinate to the two cards.
 
+Current re-audit:
+- debt is reproduced by the golden source and the B2.5 USER classification (`PASS / ADEQUATE`, layer displacement hierarchy can improve);
+- golden `snapshot.html` remains unchanged;
+- public Kento wrapper remains unchanged.
+
+Reversible CSS-only candidate:
+`families/kento-japan/g4-2.html`
+implementation commit `42d546294fefcb79131a3a28b33fa7352f334a38`
+
+Candidate register:
+`GLOBAL_REFINEMENT_G4_2_KENTO_POLISH_CANDIDATE_SOURCE_PASS.md`
+commit `b6774afe976f734b075c42f9bda3786492ea8cd3`
+
+READY deployment containing candidate:
+`dpl_6JN1FKFnDU8J2aPR3SmKaHsmUtdT`
+
+Candidate preview:
+`https://relational-key-collectionrelational-key-collection-7jywaxzav.vercel.app/families/kento-japan/g4-2.html?_vercel_share=4Qhk8zqwXTrcKeRvWTIFhAqg53wU4bnj`
+
 Constraint:
 - matching must still read as print registration, not card equality;
-- mismatch must remain printing misregistration, not generic UI failure.
+- mismatch must remain printing misregistration, not generic UI failure;
+- center register remains subordinate.
 
-Status: **RE-AUDIT CURRENT GOLDEN FIRST.**
+Status: **G4.2A USER CANDIDATE REGRESSION REQUIRED.**
 
 ## G4.3 — Bolivia / Siku — QUEUED
 
@@ -102,6 +122,6 @@ Before modifying an autonomous family:
 
 # Immediate next output
 
-# **G4.2 — KENTO POLISH RE-AUDIT + MINIMUM CANDIDATE DECISION**
+# **G4.2A — KENTO LIVE USER CANDIDATE REGRESSION / GOLDEN VS POLISH**
 
-First inspect `families/kento-japan/index.html` and `families/kento-japan/snapshot.html`, reproduce whether the documented debt still exists, and only then define the smallest reversible candidate.
+Record only MATCHING BLOCK and OTHER BLOCK on the candidate preview. Decide `PASS / PROMOTE` or `REVISE / ABANDON` before starting G4.3 Siku.
