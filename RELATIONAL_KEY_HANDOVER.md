@@ -6,13 +6,16 @@ Branch: `collection/global-refinement-1`
 PR #21: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
-# **KHIPU / PERU — SINGLE-FAMILY CAUSAL MICRO-CAPTURE**
 
-Do NOT repeat the other 23 family recordings.
-Do NOT resume G4 yet.
+# **G4.1A — KHIPU LIVE CANDIDATE REGRESSION / GOLDEN VS POLISH**
+
+B2.5 is CLOSED / PASS. Do not ask for any more 24-family causal capture.
+Do not start G4.2 Kento until G4.1A closes.
 
 # CANONICAL INVARIANTS
+
 **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
+
 `PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
 
 Expansion laws:
@@ -20,8 +23,13 @@ Expansion laws:
 - **TECHNOLOGY SERVES THE RELATIONAL MECHANISM.**
 - **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
 
+Reference question reinforced by the final Khipu USER proof:
+
+**DO BOTH MEMBERS EXIST BEFORE THE RELATION, AND DOES THE MEMORABLE MOMENT BELONG TO WHAT HAPPENS BETWEEN THEM?**
+
 # GLOBAL STATE
-G0 / G1 / G2 / G3 PASS. G4 PARKED.
+
+G0 / G1 / G2 / G3 PASS.
 Continental Balance Gate 2 PASS / CLOSED.
 24 VALIDATED families, six continents × 4.
 
@@ -41,48 +49,80 @@ B2.5D USER visual/navigation PASS / CLOSED:
 `B2_5D_R1B_390_MUSIC_SEARCH_MUSIC_BOX_WRAPPER_USER_PASS.md`
 commit `259c4926e9f704717f89a1b18f95a6fe90c6c04d`
 
-READY patched deployment:
-`dpl_CmbssprQDD8aQtGVSBjDNpKKC4eU`
+# B2.5 USER CAUSAL — FINAL PASS / CLOSED
 
-# B2.5 USER CAUSAL VIDEO AUDIT R1
-Register:
-`B2_5_USER_CAUSAL_VIDEO_AUDIT_R1_23_OF_24_KHIPU_EVIDENCE_GAP.md`
-commit `e95bb056753f5a190cafac4cba7a45d22d635759`
+Final register:
+`B2_5_USER_CAUSAL_REGRESSION_FINAL_24_OF_24_PASS_EXPERIENCE_MATRIX.md`
+commit `dcea6d9d4dcc3b4c67f3698454f3ee0e0cd00c4e`
 
-CURRENT_STATE synchronization commit:
-`466f873ef34e949c0598ebac12b95c9d24a4e3cb`
+Final Khipu video:
+- ~9.87 sec;
+- 1910×964;
+- 30 fps;
+- matching state visibly produces a knot/structural continuation between `Claim Cord` and `Context Cord`;
+- OTHER RECORD retains visible residual and both records remain valid.
 
-Initial HANDOVER synchronization commit:
-`bcac8a110647545b80d4425bd02e1423ad36250b`
+Final USER classification:
+- causal coverage 24/24;
+- relational integrity PASS 24/24;
+- relational integrity FAIL 0/24;
+- experiential STRONG 13;
+- experiential ADEQUATE 7;
+- EXPERIENCE DEBT 4: City, Service, Signal, Frida.
 
-Two user videos were audited as one evidence set:
-- ~219.2 s / 1902×962 / 30 fps;
-- ~199.9 s / 1908×962 / 30 fps.
+VALIDATED remains 24.
 
-Observed unique causal family walkthroughs: **23 / 24**.
+# G4 CANONICAL CONTEXT
 
-The only distinct walkthrough not located:
-`Khipu / Peru — /families/khipu-peru/`
+Inventory:
+`GLOBAL_REFINEMENT_G4_POLISH_INVENTORY.md`
 
-The Khipu Atlas card is visible during navigation but there is no separate `Knotted Register` interaction sequence in either supplied recording.
+Historical execution order:
+1. G4.1 Khipu;
+2. G4.2 Kento;
+3. G4.3 Siku;
+4. G4.4 re-audit Zellige / Ombak / Swell.
 
-This is USER evidence coverage only, not validation loss. Total VALIDATED remains 24.
+G4.1 candidate spec:
+`GLOBAL_REFINEMENT_G4_1_KHIPU_POLISH_CANDIDATE.md`
 
-Repeated/revisited families in the videos include Food, Stereoscopy, Boulle and Astrolabe; do not count duplicates as additional family coverage.
+Candidate:
+`families/khipu-peru/g4-1.html`
+implementation commit `64647ea78b04439ea9a57ece47f19490d9185d45`
 
-# EXACT NEXT ACTION
-Capture only `/families/khipu-peru/` for ~10–20 seconds:
-1. idle two-member state;
-2. matching/direct tension-contact interaction;
-3. registered knot relation/result;
-4. alternate/resisting state if available while both members remain valid.
+Candidate is intentionally CSS-only and reversible:
+- golden `snapshot.html` unchanged;
+- public `/families/khipu-peru/` unchanged;
+- no JS timing or semantic changes;
+- intended polish only increases tension perceptibility and knot hierarchy.
 
-After that single proof, classify all 24 together in one final matrix:
-- RELATIONAL INTEGRITY — PASS / FAIL;
-- EXPERIENTIAL AMBITION — STRONG / ADEQUATE / EXPERIENCE DEBT.
+Old G4.1A Vercel quota blocker is obsolete for the current READY deployment: authenticated fetch now returns HTTP 200 for the candidate route.
+
+# EXACT NEXT USER ACTION
+
+Open:
+`https://relational-key-collectionrelational-key-collection-lka6wru7q.vercel.app/families/khipu-peru/g4-1.html?_vercel_share=4BWH6eG1l9Q9mGSywpINqu0omivxATE5`
+
+Record only ~10–15 seconds:
+1. MATCHING RECORD → TEST RELATIONSHIP;
+2. let tension/knot registered state remain visible briefly;
+3. OTHER RECORD → TEST RELATIONSHIP;
+4. leave residual/both-records-valid state visible briefly.
+
+Judge candidate against the golden Khipu video just supplied:
+- tension change should be easier to perceive;
+- knot should be clearer but must remain subordinate to Claim Cord + Context Cord;
+- OTHER must preserve residual + both records valid.
+
+If PASS:
+- promote G4.1 candidate only through the canonical wrapper after recording the user gate;
+- then open G4.2 Kento.
+
+If not better or if knot becomes too central:
+- do not promote;
+- revise or abandon the isolated candidate.
 
 PR remains Draft / DO NOT MERGE.
-G4 remains PARKED.
 
 Persistence protocol:
 dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output.
