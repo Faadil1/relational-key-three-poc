@@ -23,64 +23,64 @@ USER candidate gate: `PASS / PROMOTE`.
 Candidate: `families/kento-japan/g4-2.html` @ `42d546294fefcb79131a3a28b33fa7352f334a38`.
 Promotion: `families/kento-japan/index.html` @ `1efaf48610ba06a2db1962d900c65fb45ae411b6`.
 Golden `families/kento-japan/snapshot.html` preserved.
-GitHub/Vercel promotion status: `SUCCESS`.
 Closure register: `GLOBAL_REFINEMENT_G4_2A_KENTO_LIVE_USER_PASS_PROMOTION.md` @ `8b827b417d0ced77f4295a703fca2325cc35b489`.
 
-## G4.3 — Bolivia / Siku — SOURCE PASS / LIVE READY / USER PENDING
+## G4.3 — Bolivia / Siku — CLOSED ✅
 
-Historical documented debt was reproduced against current golden:
-- central temporal field `208×138 px` is relatively small at desktop capture scale;
-- field/bridge labels around `5 px` are quiet;
-- bottom result/law/truth microcopy around `6 px` is quiet.
+Historical/current legibility debt reproduced:
+- temporal interlock field small at distant desktop scale;
+- field/bridge labels and bottom microcopy quiet.
 
-Golden unchanged:
-`families/siku-bolivia/snapshot.html`.
-
-Public wrapper unchanged:
-`families/siku-bolivia/index.html`.
-
-Reversible CSS-only candidate:
+Candidate:
 `families/siku-bolivia/g4-3.html`
 implementation commit `a2524db6f8fff389d2afc1e66c186e3c88573326`.
 
-Candidate only increases legibility:
-- center column 220 → 236 px;
-- interlock field 208×138 → 224×148 px;
-- field label 5 → 5.5 px;
-- bridge label 5 → 5.8 px;
-- result/law/truth 6 → 6.5 px;
-- legend 5 → 5.6 px.
+USER recording:
+~15.63 s / 1902×958 / 30 fps.
 
-No state, timing, audio, route, IRA/ARKA ownership, matching or OTHER semantics changed.
+USER verdict: `PASS / PROMOTE`.
+Observed:
+- temporal field and microcopy easier to read;
+- IRA / ARKA remain clearly card-owned;
+- MATCHING resolves into complete alternating continuity;
+- OTHER preserves silent/missing positions and no complete route;
+- center remains subordinate;
+- no waveform/resonance drift.
 
-Constraint:
-- preserve IRA / ARKA source ownership;
-- center remains temporal interlock, not waveform/resonance;
-- preserve OTHER INTERLOCK silent positions and no-complete-route semantics;
-- center remains subordinate to both cards.
+Promotion:
+`families/siku-bolivia/index.html`
+commit `42bce5564e27d62b201d9c3015b32da7c3d9c0b2`.
 
-Dedicated register:
-`GLOBAL_REFINEMENT_G4_3_SIKU_POLISH_CANDIDATE_SOURCE_PASS.md`
-commit `2045367ba94acd5aebe01467fdc6c9293a8b7afe`.
+Golden preserved:
+`families/siku-bolivia/snapshot.html` unchanged.
 
-LIVE candidate:
-`dpl_8cKUNdmiyyTBmfv61gppmW88qktM` — READY.
-Exact deployed commit: `a2524db6f8fff389d2afc1e66c186e3c88573326`.
+Promotion deployment:
+`dpl_9icvAQFArzpJHKkdyTYdqXDBmdEo` — READY.
+Exact deployed commit:
+`42bce5564e27d62b201d9c3015b32da7c3d9c0b2`.
 
-Status: **G4.3A USER CANDIDATE REGRESSION REQUIRED.**
+Closure register:
+`GLOBAL_REFINEMENT_G4_3A_SIKU_LIVE_USER_PASS_PROMOTION.md`
+commit `18b40548349364b8ca77103a04f3d74f8cba5551`.
 
-## G4.4 — Re-audit only / patch only if reproduced
+## G4.4 — ACTIVE — RE-AUDIT ONLY / PATCH ONLY IF REPRODUCED
 
 ### Fès / Zellige
-Historical `PASS WITH POLISH`; no sufficiently specific residual debt for mutation until reproduced.
+Historical `PASS WITH POLISH`; no sufficiently specific residual debt authorizes mutation until current re-audit reproduces one.
 Non-negotiable: `THE EDGE MATERIAL RESOLVES THE RELATIONSHIP.`
 
 ### Bali / Ombak
-Historical `PASS WITH POLISH`; reproduce remaining visual/audio legibility debt before mutation.
+Historical `PASS WITH POLISH`; reproduce any remaining visual/audio legibility debt before mutation.
 Non-negotiable: `CONTROLLED DIFFERENCE CAN BE THE RELATIONSHIP.`
 
 ### Marshall Islands / Swell
 Historical `PASS WITH POLISH`; re-audit orientation point and swell × atoll hierarchy before mutation.
+
+For all three:
+- preserve existing golden/snapshot evidence;
+- close `NO PATCH NEEDED` if no residual debt is reproduced;
+- create only a minimal reversible candidate if a specific debt is reproduced;
+- preserve pair dominance and family-native semantics.
 
 ## No current G4 micro-polish evidence
 
@@ -102,6 +102,6 @@ Before modifying an autonomous family:
 
 # Immediate next output
 
-# **G4.3A — SIKU LIVE USER CANDIDATE REGRESSION**
+# **G4.4 — ZELLIGE / OMBAK / SWELL SOURCE RE-AUDIT**
 
-Record MATCHING INTERLOCK then OTHER INTERLOCK on the candidate preview. Decide `PASS / PROMOTE` or `REVISE / ABANDON` before starting G4.4.
+Inspect the current golden/public implementations. Produce either `NO PATCH NEEDED` for each family with no reproducible residual debt, or the smallest isolated candidate for any family with a specific reproduced debt.
