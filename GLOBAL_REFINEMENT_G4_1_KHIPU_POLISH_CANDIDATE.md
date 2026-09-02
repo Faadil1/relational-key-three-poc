@@ -1,9 +1,9 @@
 # RELATIONAL KEY — G4.1 KHIPU POLISH CANDIDATE
 
-Date: 2026-08-28
+Date: 2026-09-02
 Branch: `collection/global-refinement-1`
 Family: Peru / Khipu — Knotted Register
-Status: `SOURCE PASS / LIVE PREVIEW PENDING`
+Status: `USER PASS / PROMOTED / CLOSED`
 
 ## Documented debt
 
@@ -18,17 +18,12 @@ Explicit non-blocking debt:
 Golden consolidated source remains unchanged:
 `families/khipu-peru/snapshot.html`
 
-Golden snapshot blob:
+Golden snapshot blob at candidate creation:
 `cdc06bebbc2054463f4d2f61e59e5de261979ef9`
-
-Public family wrapper remains unchanged:
-`families/khipu-peru/index.html`
-
-No user-facing promotion has occurred.
 
 ## Candidate architecture
 
-New isolated audit route:
+Audit route:
 `families/khipu-peru/g4-1.html`
 
 Implementation commit:
@@ -36,63 +31,57 @@ Implementation commit:
 
 The candidate loads the unchanged golden `snapshot.html` in the normal collection frame and injects one same-origin CSS override after load.
 
-This is intentionally reversible:
-- no HTML inside the Khipu mechanism is rewritten;
-- no JavaScript is changed;
-- no state timing is changed;
-- no drag threshold is changed;
-- no matching / OTHER semantics are changed;
-- deleting the candidate route returns the repository to the prior golden state.
+No mechanism HTML, JavaScript timing, drag threshold, MATCHING semantics or OTHER RECORD semantics were changed.
 
 ## CSS-only polish
 
-### Tension perceptibility
-- idle tension field becomes quieter;
-- approach remains partial;
-- tension becomes brighter and gains a restrained low-radius emphasis;
-- registered tension settles slightly from the peak rather than remaining at identical emphasis;
-- cord segments increase from 4 px to 5 px in the candidate.
-
-The intended visual sequence becomes more legible as:
+Tension progression:
 `LOOSE / FAINT → APPROACH → TAUT / BRIGHTER → REGISTERED / SETTLED`.
 
-### Knot hierarchy
-- knot container increases from 60 px to 68 px on desktop;
-- internal loop increases modestly;
-- tension-state knot opacity/hierarchy rises;
-- registered knot remains compact through scale reduction, preserving the sense of tightening rather than simply enlarging the hero;
-- rejected state remains strongly demoted.
+Knot hierarchy:
+- desktop knot container increased modestly;
+- internal loop increased modestly;
+- tension/registered state hierarchy increased;
+- registered knot remains compact rather than becoming a hero object;
+- rejected state remains demoted.
 
-The knot must still remain subordinate to the two record cards.
+## G4.1A USER evidence
 
-## Source gate
+Candidate video:
+- ~11.33 s;
+- 1912×966;
+- 30 fps.
 
-Compare base:
-`50cc3e857557a4eeffa442d36148ff0c0ffd9494`
+USER verdict:
+# `PASS / PROMOTE`
 
-Candidate head:
-`64647ea78b04439ea9a57ece47f19490d9185d45`
+Observed:
+- tension progression is easier to perceive than golden;
+- knot is clearer but remains subordinate to `Claim Cord` + `Context Cord`;
+- matching preserves registered continuation;
+- OTHER RECORD preserves a visible residual while both records remain valid.
 
-Result:
-- only `families/khipu-peru/g4-1.html` added;
-- 52 additions;
-- 0 deletions;
-- golden `snapshot.html` unchanged;
-- public route unchanged.
+## Promotion
 
-# Remaining gate
+Public wrapper promotion:
+`families/khipu-peru/index.html`
 
-# **G4.1A — KHIPU LIVE CANDIDATE REGRESSION**
+Promotion commit:
+`a4a17eb028d0645c8148e0311bfb6f222b286914`
 
-Need a Preview containing commit `64647ea…` or a later documentation-only commit that includes it.
+The public wrapper now applies the exact validated G4.1 CSS override while continuing to load the unchanged golden snapshot.
 
-Audit sequence:
-1. open `/families/khipu-peru/g4-1.html`;
-2. play MATCHING RECORD from reset;
-3. judge whether tension change is easier to perceive before knot registration;
-4. ensure knot is clearer but not dominant over the cards;
-5. play OTHER RECORD;
-6. verify residual remains legible and both records remain valid;
-7. compare against `/families/khipu-peru/` golden public route if needed.
+Vercel/GitHub status for promotion commit:
+`SUCCESS`.
 
-Promotion is forbidden until user visual regression passes.
+Closure register:
+`GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md`
+commit `b3edcb34efe0b26aee8e68e936350c0ce4c8ac9b`
+
+# G4.1 — CLOSED ✅
+
+# Next exact output
+
+# **G4.2 — KENTO POLISH RE-AUDIT + MINIMUM CANDIDATE DECISION**
+
+Inspect the current Kento wrapper/snapshot and reproduce the documented legibility debt before any mutation.
