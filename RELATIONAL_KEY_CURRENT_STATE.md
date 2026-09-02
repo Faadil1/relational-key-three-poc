@@ -1,6 +1,6 @@
 # RELATIONAL KEY — ÉTAT CANONIQUE COURANT
 
-Date: 2026-08-29
+Date: 2026-09-02
 Repository: `Faadil1/relational-key-three-poc`
 Canonical branch: `collection/global-refinement-1`
 Draft PR: #21 — `DRAFT / DO NOT MERGE`
@@ -30,48 +30,63 @@ commit `89e0a2f577633120fbdadb165f2aa0c36edaaae1`
 # B2.5C — TECHNICAL PASS / CLOSED
 `B2_5C_R1A_AUTHENTICATED_24_ROUTE_SMOKE_PASS.md`
 commit `f9e67670bd22ece1f6979c21af432c7b30e083d7`
-Technical proof remains frozen: registry 1.3, 24 validated / 0 candidates, six continents × 4, 24/24 routes HTTP 200, 24/24 Back-to-Atlas, 9/9 new candidate targets HTTP 200.
 
-# B2.5D — USER VISUAL + NAVIGATION PASS / CLOSED ✅
+# B2.5D — USER VISUAL + NAVIGATION PASS / CLOSED
 `B2_5D_R1B_390_MUSIC_SEARCH_MUSIC_BOX_WRAPPER_USER_PASS.md`
 commit `259c4926e9f704717f89a1b18f95a6fe90c6c04d`
 
 Discoverability patch:
 `f674cf336149612b7f3d344b43893b7e5fbdb543`
-READY deployment:
+READY patched deployment:
 `dpl_CmbssprQDD8aQtGVSBjDNpKKC4eU`
 
-USER proof chain: desktop Atlas PASS; exact `390 × 844` PASS; no critical horizontal overflow/clipping; filtering/navigation PASS; `music` resolves Music Box; Music Box wrapper opens and Back-to-Atlas returns at 390.
+# B2.5 USER CAUSAL VIDEO AUDIT R1 — 23 / 24 UNIQUE WALKTHROUGHS OBSERVED
+
+Register:
+`B2_5_USER_CAUSAL_VIDEO_AUDIT_R1_23_OF_24_KHIPU_EVIDENCE_GAP.md`
+commit `e95bb056753f5a190cafac4cba7a45d22d635759`
+
+Two user recordings reviewed as one evidence set:
+- Video A ~219.2 s, 1902×962, 30 fps;
+- Video B ~199.9 s, 1908×962, 30 fps.
+
+Unique causal walkthroughs observed: **23 / 24**.
+
+Only missing distinct walkthrough:
+- `Khipu / Peru — /families/khipu-peru/`
+
+The Khipu Atlas entry is visible during navigation, but no unique `Knotted Register` interaction sequence is present in the supplied recordings.
+
+This is an **evidence-coverage gap**, not a family failure. VALIDATED remains 24.
+
+Repeated evidence observed for some already-covered families (including Food, Stereoscopy, Boulle, Astrolabe) does not increase unique-family coverage.
 
 Evidence separation:
 - SOURCE integration: PASS
 - LIVE technical integration: PASS
 - USER Atlas visual/navigation: PASS
-- USER causal family regression: ACTIVE / not yet classified
-- VALIDATED family count: 24 unchanged
+- USER causal video coverage: **23/24 uniquely observed**
+- USER causal family classification: pending final 24/24 evidence closure
+- VALIDATED family count: **24 unchanged**
 
-# ACTIVE GATE
-# **B2.5A CAUSAL USER REGRESSION — BATCH A / ORIGINAL SIGNATURE + REGISTRATION**
+# ACTIVE GATE / NEXT EXACT OUTPUT
+# **KHIPU / PERU — SINGLE-FAMILY CAUSAL MICRO-CAPTURE**
 
-Frozen order:
-1. City / Gatineau
-2. Service / Benin
-3. Signal / Nigeria
-4. Frida / Coyoacán
-5. Textile / Bonwire
-6. Zellige / Fès
+Only `/families/khipu-peru/` is required.
+Minimum evidence:
+1. idle two-member state;
+2. matching/direct tension-contact interaction;
+3. registered knot relation/result;
+4. alternate/resisting state if available, preserving both member validity.
 
-Blocking proof targets:
-- City: relationship resolution visibly completes route across both members;
-- Service: direct relation changes incomplete sequence into registered continuation;
-- Signal: relay relation changes blocked/separate signal into continuation across both members;
-- Frida: trace alignment across pair visibly changes archive relation;
-- Textile: both strip systems visibly interlace across the relationship field;
-- Zellige: direct fit changes two valid pieces into a registered tessellated relation.
+Target: ~10–20 seconds.
+Do NOT re-record the other 23 families.
 
-Do not begin Batch B until Batch A is classified.
-Do not resume G4 yet.
-PR #21 remains Draft / DO NOT MERGE.
+After Khipu evidence arrives, freeze one consolidated 24-family matrix:
+- `RELATIONAL INTEGRITY — PASS / FAIL`;
+- `EXPERIENTIAL AMBITION — STRONG / ADEQUATE / EXPERIENCE DEBT`.
+
+PR #21 remains Draft / DO NOT MERGE. G4 remains PARKED.
 
 Persistence protocol:
 dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output.
