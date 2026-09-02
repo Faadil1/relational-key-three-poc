@@ -25,25 +25,36 @@ Signal public wrapper routing was hardened only for explicit `index.html` resolu
 - if last pathname token is `index.html`, use the preceding token as family slug;
 - otherwise preserve prior behavior.
 
-Fix commit: `4931445dc0de05e15af07f8a9d4cb88e209048a7`.
+Fix first landed at `4931445dc0de05e15af07f8a9d4cb88e209048a7`.
+Deployment retry marker commit: `0c0ee147c1afbb60bb970f215c54c9b5b6f634c6`.
 
-This is a routing robustness fix only:
+This remains a routing robustness fix only:
 - no Signal visual promotion;
 - no EXP-3 semantic change;
 - no shared-runtime mutation;
 - no change to the validated NITEL candidate mechanism.
 
-## LIVE state
+## LIVE resolution
 
-Vercel status for `4931445...`: **FAILURE — build-rate-limit / Hobby plan**.
-No new valid deployment exists yet for the routing fix.
+Previous Vercel rate-limit failure is resolved.
+
+Routing-fixed deployment:
+- deployment `dpl_DbbvGjiwxmXAcsmPUBvmRuPaUoUz`
+- state `READY`
+- exact deployed commit `0c0ee147c1afbb60bb970f215c54c9b5b6f634c6`
+- deployment host `relational-key-collectionrelational-key-collection-kvxhfdiqg.vercel.app`
+
+Fresh share URL:
+`https://relational-key-collectionrelational-key-collection-kvxhfdiqg.vercel.app/families/signal-nigeria/exp-3.html?_vercel_share=pWME7b1ltpCCycqmyk5F3vtYt5oO3uXO`
+
+The connector confirms the deployment is READY. Protected-route fetch still redirects through Vercel SSO, so the USER preview remains the final visual check that the inner NITEL surface renders rather than 404.
 
 ## State separation
 
 - SOURCE EXP-3 NITEL candidate PASS / unchanged
 - SOURCE explicit-index routing fix PASS
-- LIVE fixed candidate BLOCKED by Vercel build-rate limit
-- USER uploaded recording INVALID because inner page is 404
+- LIVE routing-fixed deployment READY
+- previous USER uploaded recording INVALID because inner page was 404
 - USER EXP-3A remains PENDING
 - Signal remains EXPERIENCE DEBT
 - RELATIONAL INTEGRITY 24/24 PASS unchanged
@@ -51,6 +62,6 @@ No new valid deployment exists yet for the routing fix.
 
 ## Exact next gate
 
-`EXP-3A-LIVE — SIGNAL / NIGERIA ROUTING FIX DEPLOYMENT`
+`EXP-3A — SIGNAL / NIGERIA NITEL RELAY USER REGRESSION`
 
-Do not ask for another USER recording until a deployment containing `4931445...` (or a later equivalent routing fix) is READY. Once READY, issue one fresh share URL and resume EXP-3A USER regression.
+Use the fresh routing-fixed share URL. Record ~10–15 s only after confirming the NITEL family surface appears. Then run MATCHING → hold Earth Station→Relay; OTHER → hold offset residual. Judge CAUSAL / VISUAL / TRUTH. Do not promote Signal before USER PASS.
