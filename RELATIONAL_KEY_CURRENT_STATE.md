@@ -100,6 +100,10 @@ Closure register:
 `GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md`
 commit `b3edcb34efe0b26aee8e68e936350c0ce4c8ac9b`
 
+Candidate spec synchronized to final state:
+`GLOBAL_REFINEMENT_G4_1_KHIPU_POLISH_CANDIDATE.md`
+commit `2c5f6fb91bb8e4fa255e334398fc7d074bee0f4f`
+
 State separation:
 - SOURCE candidate: PASS
 - USER comparison: PASS
