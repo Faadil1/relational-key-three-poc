@@ -7,13 +7,14 @@ PR #21: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **EXP-2A — SERVICE LIVE USER STEP-HANDOFF REGRESSION**
+# **EXP-1B — CITY / GATINEAU USER VISUAL IDENTITY REGRESSION**
 
 Do NOT restart B2.5 or the 24-family regression.
 Do NOT reopen G4.
-Do NOT reopen City EXP-1; City is USER PASS / PROMOTED / CLOSED.
+Do NOT remove the already USER-proven City route-handoff mechanics.
+Do NOT promote Service EXP-2 as currently designed.
+Do NOT start Signal EXP-3.
 Do NOT mutate `families/_shared/round13r/index.html`.
-Do NOT start Signal EXP-3 until Service EXP-2A closes.
 
 # CANONICAL INVARIANTS
 
@@ -25,162 +26,120 @@ Expansion laws:
 - **TECHNOLOGY SERVES THE RELATIONAL MECHANISM.**
 - **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
 
-Reference question:
-**DO BOTH MEMBERS EXIST BEFORE THE RELATION, AND DOES THE MEMORABLE MOMENT BELONG TO WHAT HAPPENS BETWEEN THEM?**
+Added after USER visual review:
+# **A RELATIONALLY CORRECT FAMILY IS NOT EXPERIENTIALLY COMPLETE IF ITS PLACE / MATERIAL / CULTURAL IDENTITY IS GENERIC.**
 
 Persistence protocol:
 `dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output`.
 
 # GLOBAL STATE
 
-24 VALIDATED families, six continents × 4.
-B2.5 PASS / CLOSED.
-24/24 USER RELATIONAL INTEGRITY PASS.
-G4 micro-polish inventory CLOSED.
+- 24 VALIDATED families
+- B2.5 PASS / CLOSED
+- 24/24 USER RELATIONAL INTEGRITY PASS
+- G4 CLOSED
+- combined experiential matrix currently STRONG 13 / ADEQUATE 7 / EXPERIENCE DEBT 4
+- Experience Debt: City, Service, Signal, Frida
 
-Current experiential matrix:
-- STRONG 13 / 24
-- ADEQUATE 8 / 24
-- EXPERIENCE DEBT 3 / 24 — Service, Signal, Frida.
+# VISUAL IDENTITY CORRECTION
 
-# EXPERIENCE-DEBT DISPOSITION
+Dedicated register:
+`GLOBAL_REFINEMENT_VISUAL_IDENTITY_REOPEN_CITY_SERVICE.md`
+commit `9e5d806654b8ebb3b6f970cac552e6d83dbfff7a`.
 
-Register:
-`GLOBAL_REFINEMENT_CLOSEOUT_EXPERIENCE_DEBT_DISPOSITION.md`
-commit `024d929964196d03285a851d6f6ae0e57a7467f8`.
+USER correction:
+- City EXP-1 causal mechanics PASS, but Gatineau identity too generic.
+- Service EXP-2 handoff readable, but beige workflow language does not visually represent Benin telecom/service.
 
-Frozen expansion order:
-1. City / Gatineau — route handoff — CLOSED.
-2. Service / Benin — step handoff — ACTIVE.
-3. Signal / Nigeria — relay propagation — WAIT.
-4. Frida / Coyoacán — layered trace alignment — WAIT.
+Decision:
+- City prior `EXPERIENCE DEBT → ADEQUATE` is revoked pending new visual proof.
+- City public mechanical promotion stays in place as a safe causal baseline.
+- Service EXP-2 is `REVISE / DO NOT PROMOTE`.
+- Service public wrapper remains unchanged.
 
-Safety rule:
-- isolated candidate first;
-- shared runtime untouched;
-- public family wrapper untouched until USER PASS;
-- no cross-family inheritance;
-- VALIDATED remains 24.
+# CITY MECHANICAL BASELINE — PRESERVE
 
-# EXP-1 CITY / GATINEAU — CLOSED ✅
-
-Candidate:
+Candidate EXP-1:
 `families/city-gatineau/exp-1.html`
-implementation `bed88d8a1dce21e6a70d1757c5466461ae410f2e`.
+commit `bed88d8a1dce21e6a70d1757c5466461ae410f2e`.
 
-USER recording:
-- ~13.0 s;
-- 1900×966;
-- 30 fps.
+USER causal proof:
+- ~13.0 s / 1900×966 / 30 fps
+- MATCHING: continuous route Card A → relation → Card B
+- OTHER: two valid route fragments + visible offset residual
+- center subordinate
 
-USER verdict:
-# **PASS / PROMOTE**
-
-Observed:
-- route spans Member Credential → gap → Gatineau Field;
-- travelling pulse clarifies handoff causality;
-- center stays secondary;
-- OTHER preserves two valid fragments plus visible offset residue.
-
-Promotion:
+Public mechanical wrapper:
 `families/city-gatineau/index.html`
 commit `6fafe5917ac720abc2bb6c601eb7337982adcc95`.
 
-Promotion deployment:
-`dpl_Fjd14H8e4F5XErhSgxfyacHfr2GC` — READY.
+This mechanical improvement is NOT rolled back.
 
-Shared runtime:
-`families/_shared/round13r/index.html` unchanged.
+# EXP-1B CITY / GATINEAU VISUAL IDENTITY CANDIDATE
 
-Closure register:
-`GLOBAL_REFINEMENT_EXP1A_CITY_LIVE_USER_PASS_PROMOTION.md`
-commit `077cb2248034eb225746f7511ad909dafe051550`.
+Path:
+`families/city-gatineau/exp-1b.html`
 
-City experiential classification:
-`EXPERIENCE DEBT → ADEQUATE`.
-
-# EXP-2 SERVICE / BENIN — USER GATE ACTIVE
-
-Public wrapper remains golden pending USER PASS:
-`families/service-benin/index.html`.
-
-Shared fallback remains unchanged:
-`families/_shared/round13r/index.html`.
-
-Candidate:
-`families/service-benin/exp-2.html`
-implementation commit `e2872aeb013e3ab55fd4fc4b2c81e63d3c695e29`.
-
-Mechanism:
-# `SERVICE-STEP HANDOFF / COMPLETION PATH`
-
-MATCHING:
-- Card A owns steps 01–02;
-- Card B owns steps 03–04;
-- completion rail only exists through the relation;
-- a travelling token hands the sequence from A to B;
-- final relation reads `STEP HANDOFF · 01 → 02 → 03 → 04`;
-- center junction is demoted.
-
-OTHER:
-- both owned step fragments remain visible and valid;
-- tracks offset vertically;
-- split sequence residue remains in the gap;
-- state reads `SEQUENCE RESIDUAL · BOTH FRAGMENTS VALID`.
-
-Truth boundary:
-`Archive-derived service logic · not a current official telecom procedure.`
+Implementation:
+`80963aa98d54040d970c69fa10c12843b0f77590`.
 
 Candidate register:
-`GLOBAL_REFINEMENT_EXP2_SERVICE_STEP_HANDOFF_CANDIDATE_SOURCE_PASS.md`
-commit `76e3916998147fd2a36f5e30989589e94838c1e5`.
+`GLOBAL_REFINEMENT_EXP1B_CITY_GATINEAU_VISUAL_IDENTITY_CANDIDATE.md`
+commit `51c66293d6e29922cd8f527460c77e33c4edc033`.
+
+Architecture:
+- isolated outer candidate;
+- loads current City mechanical wrapper;
+- injects visual identity only;
+- no route timing/state mutation;
+- no shared-runtime mutation.
+
+Gatineau visual anchors:
+- five sectors: Aylmer, Hull, Gatineau, Masson-Angers, Buckingham;
+- Ottawa River + Gatineau River territory cues;
+- documented Gatineau blue/green palette;
+- no unofficial logo reproduction;
+- truth boundary: conceptual territory geometry, not operational transit map.
 
 LIVE:
-- deployment `dpl_23H2M7KAhg7kyV6NzBT4rPg5DeJ6`;
-- READY;
-- exact deployed commit `e2872aeb013e3ab55fd4fc4b2c81e63d3c695e29`.
+- deployment `dpl_7guZMbCf8vJBXe7uuCZAnvvJDwUW`
+- READY
+- exact candidate commit `80963aa98d54040d970c69fa10c12843b0f77590`
 
 Preview:
-`https://relational-key-collectionrelational-key-collection-7t8dd5j5r.vercel.app/families/service-benin/exp-2.html?_vercel_share=s498Ey7j867dOpQlTvq2ErBBpBXoKRyY`
-
-CURRENT_STATE after City closure / Service activation:
-`72aef780936f5281d7e03ee99ccba784d201a51f`.
+`https://relational-key-collectionrelational-key-collection-dwfwf46jw.vercel.app/families/city-gatineau/exp-1b.html?_vercel_share=IsfJrLqR2JEcuzJd5XJrhuIU5LVIdOUD`
 
 State separation:
-- SOURCE shared fallback PASS / unchanged
-- SOURCE public Service wrapper PASS / unchanged
-- SOURCE Service candidate PASS
-- LIVE Service candidate READY / PASS
-- USER Service candidate PENDING
-- RELATIONAL INTEGRITY PASS unchanged
+- City RELATIONAL INTEGRITY PASS
+- City route-handoff causal USER PASS / preserved
+- City visual SOURCE candidate PASS
+- City visual LIVE READY / PASS
+- City visual USER PENDING
+- City experiential classification EXPERIENCE DEBT pending proof
+- Service EXP-2 visual verdict REVISE
+- Service public wrapper unchanged
+- shared runtime unchanged
 - VALIDATED 24 unchanged
 
 # EXACT NEXT USER ACTION
 
-Record Service candidate only, ~10–15 seconds:
-1. `MATCHING CLAIM` → `TEST RELATIONSHIP`;
-2. hold the completed 01→02→03→04 handoff long enough to read;
-3. `OTHER CLAIM` → `TEST RELATIONSHIP`;
-4. hold the split sequence residual long enough to read.
+Record only City EXP-1B, ~10–15 seconds:
+1. MATCHING CLAIM → TEST RELATIONSHIP;
+2. hold continuous route state;
+3. OTHER CLAIM → TEST RELATIONSHIP;
+4. hold offset residual.
 
-Judge only:
-- each step pair remains card-owned;
-- the token clarifies handoff/completion causality rather than decoration;
-- center stays secondary;
-- OTHER preserves two valid service fragments plus sequence residue;
-- experience is clearly beyond the old generic shared-runtime treatment.
+Judge two axes independently:
+- CAUSAL: route handoff must remain intact;
+- VISUAL: Gatineau should now be recognizable through water / territory / five-sector identity without relying only on the title.
 
-If PASS:
-- promote only Service-specific treatment through `families/service-benin/index.html`;
-- preserve shared runtime;
-- reclassify Service out of Experience Debt;
+If City visual PASS:
+- promote only the visual identity layer into the City public wrapper;
 - record closure;
-- begin Signal EXP-3.
+- then build Service EXP-2B as Benin telecom-object identity.
 
-If not:
-- revise or abandon isolated Service candidate;
-- do not touch shared runtime.
+If City visual FAIL:
+- revise only EXP-1B visual layer;
+- keep mechanical City baseline intact.
 
 PR remains Draft / DO NOT MERGE.
-
-On resume, trust the branch head if later than IDs above. Documentation-only synchronization commits do not imply product-semantic changes.
