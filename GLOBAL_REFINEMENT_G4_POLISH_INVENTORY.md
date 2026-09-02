@@ -29,9 +29,9 @@ Golden preserved.
 Promotion deployment `dpl_9icvAQFArzpJHKkdyTYdqXDBmdEo` READY.
 Closure register `GLOBAL_REFINEMENT_G4_3A_SIKU_LIVE_USER_PASS_PROMOTION.md` @ `18b40548349364b8ca77103a04f3d74f8cba5551`.
 
-## G4.4 — SOURCE RE-AUDIT
+## G4.4 — CLOSED ✅
 
-Register:
+Source decision register:
 `GLOBAL_REFINEMENT_G4_4_REAUDIT_ZELLIGE_OMBAK_SWELL_SOURCE_DECISION.md`
 commit `ab04b121a028cb0e5ac22fdb8343e17cb2da2d27`.
 
@@ -41,59 +41,58 @@ Current golden remains materially specific and pair-native. Edge material resolv
 ### Bali / Ombak — NO PATCH NEEDED ✅
 Current golden already gives visual + browser-synthesized audio proof of controlled difference. Δ7 matching and Δ12 OTHER remain explicit; beat field belongs to the relation; both tones remain valid in residual. B2.5 `PASS / STRONG` retained. No specific residual visual/audio debt reproduced.
 
-### Marshall Islands / Swell — G4.4A USER GATE ACTIVE
-Residual debt reproduced:
-- golden orientation point ~10×10 px is visually quiet at distant desktop scale;
-- atoll node ~64 px + low-opacity swell paths can overpower orientation response;
-- B2.5 `PASS / ADEQUATE` already notes spatial hierarchy could become more immediate.
+### Marshall Islands / Swell — USER PASS / PROMOTED ✅
 
 Candidate:
 `families/swell-marshall/g4-4.html`
 implementation commit `297bcea827d3cfd578d81bdd89ed682b9ae4337f`.
 
-Candidate is CSS-only and reversible:
-- orientation point 10×10 → 14×14 px desktop;
-- registered/OTHER orientation glow strengthened;
-- registered/OTHER swell path hierarchy slightly strengthened;
-- bridge label slightly more legible;
-- atoll geometry unchanged;
-- no state, timing, drag, path geometry or semantic changes.
+USER evidence:
+~15.97 s / 1904×964 / 30 fps.
+Matching registered orientation and OTHER displaced orientation are both clearly readable; atoll/swell remain contextual relation cues and both cards remain dominant/distinct.
 
-Golden remains unchanged:
-`families/swell-marshall/snapshot.html`.
+Promotion:
+`families/swell-marshall/index.html`
+commit `049dc71ad16044a0debb099728dca473f90943c2`.
 
-Public wrapper remains unchanged:
-`families/swell-marshall/index.html`.
+Golden preserved:
+`families/swell-marshall/snapshot.html` unchanged.
 
-LIVE candidate:
-`dpl_85MDJFxfVwh3hxXUKWUKX1ESTMrt` — READY.
-Exact deployed commit `297bcea827d3cfd578d81bdd89ed682b9ae4337f`.
+Promotion deployment:
+`dpl_AtTAh52sWKHHP4CEx8qUBhX6FhoZ` — READY.
 
-Preview:
-`https://relational-key-collectionrelational-key-collection-3j1goxfxi.vercel.app/families/swell-marshall/g4-4.html?_vercel_share=jgFPVFoYjchBzk3RJOPANDeBmeET2s97`
+Closure register:
+`GLOBAL_REFINEMENT_G4_4A_SWELL_LIVE_USER_PASS_PROMOTION.md`
+commit `56e27bbb6fed8743ae909e7a82cfb5240e7e6748`.
 
 State separation:
-- Zellige SOURCE PASS / NO PATCH
-- Ombak SOURCE PASS / NO PATCH
-- Swell SOURCE golden PASS / unchanged
-- Swell SOURCE candidate PASS
-- Swell LIVE candidate READY / PASS
-- Swell USER comparison PENDING
+- SOURCE golden PASS / preserved
+- SOURCE candidate PASS
+- USER comparison PASS
+- SOURCE promotion PASS
+- LIVE promotion PASS
 - RELATIONAL INTEGRITY PASS unchanged
 - VALIDATED 24 unchanged
 
-## No current G4 micro-polish evidence
+# G4 FINAL STATUS
 
-Do not patch merely for visual uniformity:
+# **G4 CLOSED ✅**
+
+No remaining authorized G4 micro-polish debt.
+Do not patch merely for visual uniformity.
+
+The following remain valid without additional G4 mutation:
 - United Kingdom / Stereoscopy;
 - Aotearoa / Hika Ahi;
 - France / Boulle;
-- six restored shared-runtime families — City, Service, Signal, Frida, Food, Textile.
+- Fès / Zellige;
+- Bali / Ombak;
+- six restored shared-runtime families unless a separate expansion gate authorizes deeper work.
 
-City / Service / Signal / Frida carry separate `EXPERIENCE DEBT` in the B2.5 ambition matrix; that broader debt is not authorization for arbitrary G4 micro-polish.
+City / Service / Signal / Frida still carry `EXPERIENCE DEBT` in the B2.5 ambition matrix. That is broader expansion debt, not G4 micro-polish debt.
 
 # Immediate next output
 
-# **G4.4A — SWELL LIVE USER CANDIDATE REGRESSION / GOLDEN VS POLISH**
+# **GLOBAL REFINEMENT CLOSEOUT — EXPERIENCE-DEBT DISPOSITION**
 
-Record matching/current relation then OTHER on the isolated Swell candidate. Decide `PASS / PROMOTE` or `REVISE / ABANDON` before closing G4.4.
+Re-audit only City / Service / Signal / Frida against the expansion invariant. Decide `EXPAND NOW` or `DEFER / ACCEPT AS VALID` before any new mutation. No USER recording is needed until a real expansion candidate exists.
