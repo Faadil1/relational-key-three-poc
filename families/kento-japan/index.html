@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
-<title>RELATIONAL KEY — Family</title>
+<title>RELATIONAL KEY — Kento Register</title>
 <style>
 :root{--bg:#0b0b09;--ink:#eee8dc;--muted:#7e776b;--line:rgba(235,221,194,.14);--warm:#c9a66d;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
 *{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:var(--bg);color:var(--ink)}body{display:grid;grid-template-rows:44px minmax(0,1fr);overflow:hidden}.framebar{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;padding:0 14px;border-bottom:1px solid var(--line);background:rgba(11,11,9,.96);min-width:0}.back{display:inline-flex;align-items:center;gap:8px;height:30px;padding:0 11px;border:1px solid var(--line);border-radius:999px;color:#d8bd8d;text-decoration:none;font:800 7px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.11em;white-space:nowrap}.back:hover{border-color:rgba(201,166,109,.45);background:rgba(201,166,109,.07)}.context{min-width:0;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font:700 6px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;color:var(--muted)}.law{font:800 6px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;color:#6f685d;white-space:nowrap}.frame{width:100%;height:100%;border:0;background:#0d0e0c;display:block}@media(max-width:680px){body{grid-template-rows:42px minmax(0,1fr)}.framebar{grid-template-columns:auto 1fr;padding:0 9px}.context{text-align:right}.law{display:none}.back{padding:0 9px;font-size:6px}}
@@ -12,18 +12,43 @@
 <body>
 <nav class="framebar" aria-label="Collection navigation">
   <a class="back" href="/#grid">← BACK TO ATLAS</a>
-  <div class="context" id="context">RELATIONAL KEY · FAMILY</div>
+  <div class="context">JAPAN · KENTO REGISTER</div>
   <div class="law">THE PAIR IS THE PRODUCT</div>
 </nav>
-<iframe class="frame" id="rk" title="RELATIONAL KEY family"></iframe>
+<iframe class="frame" id="rk" title="Japan · Kento Register" src="/families/kento-japan/snapshot.html"></iframe>
 <script>
-const slug=location.pathname.split('/').filter(Boolean).pop();
-const labels={
-'city-gatineau':'GATINEAU · REGISTERED CITY PASSAGE','service-benin':'BENIN · SERVICE REGISTER','signal-nigeria':'NIGERIA · SIGNAL PORTRAIT','frida-coyoacan':'COYOACÁN · TRACE SYSTEM','food-toyama':'TOYAMA · EDIBLE PASSAGE','textile-bonwire':'BONWIRE · WOVEN REGISTER','zellige-fes':'FÈS · ZELLIGE REGISTER','khipu-peru':'PERU · KNOTTED REGISTER','kento-japan':'JAPAN · KENTO REGISTER','ombak-bali':'BALI · OMBAK REGISTER','swell-marshall':'MARSHALL ISLANDS · SWELL REGISTER','stereoscopy-uk':'UNITED KINGDOM · BINOCULAR REGISTER','siku-bolivia':'BOLIVIA · INTERLOCK REGISTER','hika-ahi-aotearoa':'AOTEAROA · FRICTION REGISTER','boulle-france':'FRANCE · RECIPROCAL CUT REGISTER'};
-const shared={'city-gatineau':'city','service-benin':'service','signal-nigeria':'signal','frida-coyoacan':'frida','food-toyama':'food','textile-bonwire':'textile'};
-const frame=document.getElementById('rk'),context=document.getElementById('context');
-context.textContent=labels[slug]||'RELATIONAL KEY · FAMILY';document.title='RELATIONAL KEY — '+(labels[slug]||'Family');frame.title=labels[slug]||'RELATIONAL KEY family';
-if(shared[slug]){frame.src='/families/_shared/round13r/index.html';frame.onload=()=>{try{frame.contentWindow.document.querySelector(`[data-e="${shared[slug]}"]`)?.click()}catch(e){}}}else{frame.src=`/families/${slug}/snapshot.html`}
+const frame=document.getElementById('rk');
+frame.onload=()=>{
+  try{
+    const doc=frame.contentWindow.document;
+    const style=doc.createElement('style');
+    style.id='g4-2-kento-polish';
+    style.textContent=`
+      /* G4.2: registration-legibility only. No timing, state or semantic changes. */
+      .leftCard .kento,.rightCard .kento{width:52px;height:92px}
+      .kagi{width:28px;height:28px}
+      .leftCard .kagi{border-width:0 0 4px 4px}
+      .rightCard .kagi{border-width:0 4px 4px 0}
+      .hikitsuki{top:60px;width:37px;height:4px}
+      .pair[data-phase="align"] .kagi,.pair[data-phase="press"] .kagi,.pair[data-phase="registered"] .kagi{filter:drop-shadow(0 0 7px rgba(222,178,103,.76))}
+
+      .pair[data-phase="reject"] .paperColor{
+        transform:translate(22px,-13px);
+        opacity:.64;
+        filter:saturate(1.05) sepia(.04)
+      }
+      .pair[data-phase="reject"] .offsetMarks:before{height:3px;background:rgba(113,143,119,.88);transform:translateY(-7px)}
+      .pair[data-phase="reject"] .offsetMarks:after{height:3px;background:rgba(181,116,82,.86);transform:translateY(7px)}
+
+      @media(max-width:900px){
+        .leftCard .kento,.rightCard .kento{width:49px;height:88px}
+        .kagi{width:27px;height:27px}
+        .hikitsuki{width:35px;height:4px}
+      }
+    `;
+    doc.head.appendChild(style);
+  }catch(e){console.error('G4.2 Kento polish injection failed',e)}
+};
 </script>
 </body>
 </html>
