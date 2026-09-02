@@ -22,14 +22,8 @@ Persistence protocol:
 
 # GLOBAL STATE
 
-- G0 / G1 / G2 / G3 PASS
-- Continental Balance Gate 2 PASS / CLOSED
-- B2.5 PASS / CLOSED
-- USER RELATIONAL INTEGRITY 24/24 PASS
-- VALIDATED 24 unchanged
-- G4 CLOSED
-- experiential matrix: **STRONG 13 / ADEQUATE 8 / EXPERIENCE DEBT 3**
-- remaining debt: Service / Benin, Signal / Nigeria, Frida / Coyoacán
+G0/G1/G2/G3 PASS. Continental Balance Gate 2 PASS/CLOSED. B2.5 PASS/CLOSED. USER RELATIONAL INTEGRITY 24/24 PASS. VALIDATED 24 unchanged. G4 CLOSED.
+Experiential matrix: **STRONG 13 / ADEQUATE 8 / EXPERIENCE DEBT 3** — Service / Benin, Signal / Nigeria, Frida / Coyoacán.
 
 # CITY / GATINEAU — CLOSED ✅
 
@@ -40,27 +34,20 @@ City = ADEQUATE.
 
 # SERVICE / BENIN — EXP-2C ACTIVE
 
-Mechanical base:
-`families/service-benin/exp-2.html` @ `e2872aeb013e3ab55fd4fc4b2c81e63d3c695e29`.
-Mechanical handoff remains valid:
-- Card A owns 01–02
-- Card B owns 03–04
-- MATCHING completes 01→02→03→04 through relation
-- OTHER preserves both valid fragments + sequence residue
+Mechanical base `families/service-benin/exp-2.html` @ `e2872aeb013e3ab55fd4fc4b2c81e63d3c695e29`.
+Mechanical handoff remains valid: Card A owns 01–02; Card B owns 03–04; MATCHING completes through relation; OTHER preserves both fragments + sequence residue.
 
 ## EXP-2B — USER VISUAL FAIL
 
 Candidate `families/service-benin/exp-2b.html` @ `6f99b6f2ad22a63814f87488f393378b2c2550d0`.
 USER recording: 9.6 s / 1906×962 / 30 fps.
-Verdict:
-# **CAUSAL PASS / VISUAL FAIL — REVISE / DO NOT PROMOTE**
-
+Verdict: **CAUSAL PASS / VISUAL FAIL — REVISE / DO NOT PROMOTE**.
 Reason: generic green prepaid/telecom styling; insufficient specifically Benin archival provenance.
 
 ## Source re-audit
 
-Official Archives nationales du Bénin Série J: posts, telephone links, transmissions, and telecommunications administration.
-Documented Benin phonecard corpus: PTT / OPT; 25/50/120 UNITÉS; SERVICES PLUS; RENVOI TEMPORAIRE; CONFÉRENCE À TROIS; COMPOSITION ABRÉGÉE; telephone tariffs; Cotonou/Francophonie 1995; serial/recharge grammar.
+Official Archives nationales du Bénin Série J covers posts, telephone links, transmissions and telecom administration.
+Documented Benin phonecard corpus includes PTT / OPT; 25/50/120 UNITÉS; SERVICES PLUS; RENVOI TEMPORAIRE; CONFÉRENCE À TROIS; COMPOSITION ABRÉGÉE; telephone tariffs; Cotonou/Francophonie 1995 references; recharge/serial grammar.
 
 ## EXP-2C — ARCHIVE-LED PHONECARD CANDIDATE
 
@@ -68,24 +55,9 @@ Path `families/service-benin/exp-2c.html`.
 Implementation `d8c814a0414b55396876f6527f162b151ad66e33`.
 Dedicated register `GLOBAL_REFINEMENT_EXP2C_SERVICE_BENIN_ARCHIVE_PHONECARD_CANDIDATE.md` @ `357ea7d15994e112c17111e6e3718fefec301ee4`.
 
-Architecture:
-- loads EXP-2 directly
-- does not inherit EXP-2B
-- shared runtime unchanged
-- public Service wrapper unchanged
+Architecture: loads EXP-2 directly; does not inherit EXP-2B; shared runtime unchanged; public Service wrapper unchanged.
 
-Visual identity:
-- ivory PTT-era smartcard artifact
-- prominent BÉNIN
-- PTT / OPT provenance
-- Série J archival language
-- gold smartcard chip
-- 50 / 120 UNITÉS
-- COMPOSITION ABRÉGÉE / SERVICES PLUS
-- RENVOI TEMPORAIRE / CONFÉRENCE À TROIS
-- COTONOU / +229
-- serial/register fields
-- restrained green/yellow/red edge rail
+Visual identity: ivory PTT-era smartcard artifact; prominent BÉNIN; PTT/OPT provenance; Série J language; gold smartcard chip; 50/120 UNITÉS; COMPOSITION ABRÉGÉE / SERVICES PLUS; RENVOI TEMPORAIRE / CONFÉRENCE À TROIS; COTONOU / +229; serial/register fields; restrained green/yellow/red edge rail.
 
 Truth boundary: editorial synthesis of documented Benin phonecard/service markers; not an exact historical replica and not a current telecom procedure.
 
