@@ -7,11 +7,12 @@ PR #21: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **G4.4 — ZELLIGE / OMBAK / SWELL RE-AUDIT — PATCH ONLY IF DEBT IS REPRODUCED**
+# **G4.4A — SWELL LIVE USER CANDIDATE REGRESSION / GOLDEN VS POLISH**
 
 Do NOT restart B2.5 or the 24-family regression.
 Do NOT reopen G4.1 Khipu, G4.2 Kento or G4.3 Siku.
-Do NOT patch G4.4 families merely for visual uniformity.
+Zellige and Ombak are already closed `NO PATCH NEEDED` in G4.4 source re-audit.
+Do NOT promote Swell until USER PASS.
 
 # CANONICAL INVARIANTS
 
@@ -23,81 +24,103 @@ Expansion laws:
 - **TECHNOLOGY SERVES THE RELATIONAL MECHANISM.**
 - **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
 
-Reference question:
-**DO BOTH MEMBERS EXIST BEFORE THE RELATION, AND DOES THE MEMORABLE MOMENT BELONG TO WHAT HAPPENS BETWEEN THEM?**
-
 Persistence protocol:
 `dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output`.
 
 # GLOBAL STATE
 
-24 VALIDATED families, six continents × 4.
-Continental Balance Gate 2 PASS / CLOSED.
+24 VALIDATED families.
 B2.5 PASS / CLOSED.
 24/24 USER RELATIONAL INTEGRITY PASS.
-Experiential matrix: STRONG 13 / ADEQUATE 7 / EXPERIENCE DEBT 4 (City, Service, Signal, Frida).
+Experiential matrix STRONG 13 / ADEQUATE 7 / EXPERIENCE DEBT 4.
 
-# G4.1 KHIPU — CLOSED ✅
+# CLOSED G4
 
-USER PASS / PROMOTED.
-Promotion `families/khipu-peru/index.html` @ `a4a17eb028d0645c8148e0311bfb6f222b286914`.
-Golden preserved.
+G4.1 Khipu: USER PASS / PROMOTED / CLOSED.
+G4.2 Kento: USER PASS / PROMOTED / CLOSED.
+G4.3 Siku: USER PASS / PROMOTED / CLOSED.
+Siku promotion `families/siku-bolivia/index.html` @ `42bce5564e27d62b201d9c3015b32da7c3d9c0b2`; golden preserved; deployment `dpl_9icvAQFArzpJHKkdyTYdqXDBmdEo` READY.
 
-# G4.2 KENTO — CLOSED ✅
+# G4.4 SOURCE RE-AUDIT
 
-USER PASS / PROMOTED.
-Promotion `families/kento-japan/index.html` @ `1efaf48610ba06a2db1962d900c65fb45ae411b6`.
-Golden preserved.
+Register:
+`GLOBAL_REFINEMENT_G4_4_REAUDIT_ZELLIGE_OMBAK_SWELL_SOURCE_DECISION.md`
+commit `ab04b121a028cb0e5ac22fdb8343e17cb2da2d27`.
 
-# G4.3 SIKU — CLOSED ✅
+## Zellige / Fès — NO PATCH NEEDED ✅
+- B2.5 `PASS / STRONG` retained.
+- edge-material fit remains legible and pair-native.
+- no specific residual debt reproduced.
+- no mutation.
 
-Candidate `families/siku-bolivia/g4-3.html` @ `a2524db6f8fff389d2afc1e66c186e3c88573326`.
-USER recording ~15.63 s / 1902×958 / 30 fps.
-USER PASS: complete alternating continuity preserved; OTHER retains silent/missing positions and no complete route; IRA/ARKA ownership preserved; center subordinate.
-Promotion `families/siku-bolivia/index.html` @ `42bce5564e27d62b201d9c3015b32da7c3d9c0b2`.
-Golden `families/siku-bolivia/snapshot.html` unchanged.
-Promotion deployment `dpl_9icvAQFArzpJHKkdyTYdqXDBmdEo` READY.
-Closure register `GLOBAL_REFINEMENT_G4_3A_SIKU_LIVE_USER_PASS_PROMOTION.md` @ `18b40548349364b8ca77103a04f3d74f8cba5551`.
+## Ombak / Bali — NO PATCH NEEDED ✅
+- B2.5 `PASS / STRONG` retained.
+- Δ7 / Δ12 relation, beat field and browser-synthesized audio remain legible and truthful.
+- no specific residual visual/audio debt reproduced.
+- no mutation.
 
-State separation after G4.3:
-- SOURCE golden PASS / unchanged
-- SOURCE candidate PASS
-- USER comparison PASS
-- SOURCE promotion PASS
-- LIVE promotion PASS
+## Swell / Marshall Islands — USER GATE ACTIVE
+
+Residual debt reproduced:
+- golden orientation point ~10×10 px visually quiet at distant desktop scale;
+- atoll node ~64 px + low-opacity field can overpower orientation response;
+- B2.5 classification remains `PASS / ADEQUATE` with spatial hierarchy debt.
+
+Golden unchanged:
+`families/swell-marshall/snapshot.html`.
+
+Public wrapper unchanged:
+`families/swell-marshall/index.html`.
+
+Candidate:
+`families/swell-marshall/g4-4.html`
+implementation commit `297bcea827d3cfd578d81bdd89ed682b9ae4337f`.
+
+Candidate is CSS-only/reversible:
+- orientation point 10×10 → 14×14 px desktop;
+- registered/OTHER orientation glow strengthened;
+- relevant swell paths slightly stronger;
+- bridge label slightly more legible;
+- atoll geometry unchanged;
+- no state, timing, drag, path geometry or semantic changes.
+
+LIVE:
+- deployment `dpl_85MDJFxfVwh3hxXUKWUKX1ESTMrt`;
+- READY;
+- exact commit `297bcea827d3cfd578d81bdd89ed682b9ae4337f`.
+
+Preview:
+`https://relational-key-collectionrelational-key-collection-3j1goxfxi.vercel.app/families/swell-marshall/g4-4.html?_vercel_share=jgFPVFoYjchBzk3RJOPANDeBmeET2s97`
+
+CURRENT_STATE active-gate commit:
+`8d9389db4032bf231ae4dd187a3127d5b4715b55`.
+
+State separation:
+- Zellige SOURCE PASS / NO PATCH
+- Ombak SOURCE PASS / NO PATCH
+- Swell SOURCE golden PASS / unchanged
+- Swell SOURCE candidate PASS
+- Swell LIVE candidate READY / PASS
+- Swell USER comparison PENDING
 - RELATIONAL INTEGRITY PASS unchanged
-- experiential STRONG unchanged
 - VALIDATED 24 unchanged
 
-# ACTIVE GATE — G4.4
+# EXACT NEXT USER ACTION
 
-Re-audit only these three preserved families:
+Record only Swell candidate, ~10–15 seconds:
+1. MATCHING/current relation → `TEST RELATIONSHIP`;
+2. hold registered orientation briefly;
+3. OTHER state → `TEST RELATIONSHIP`;
+4. hold displaced orientation briefly.
 
-1. `families/zellige-fes/`
-   - historical PASS WITH POLISH;
-   - no specific mutation unless residual debt is reproduced;
-   - non-negotiable: `THE EDGE MATERIAL RESOLVES THE RELATIONSHIP.`
+Judge only:
+- orientation point easier to locate/read;
+- swell paths remain relation cues, not decorative hero lines;
+- atoll context remains visible without erasing orientation response;
+- both cards remain dominant/distinct;
+- matching/OTHER semantics unchanged.
 
-2. `families/ombak-bali/`
-   - historical PASS WITH POLISH;
-   - reproduce remaining visual/audio legibility debt before mutation;
-   - non-negotiable: `CONTROLLED DIFFERENCE CAN BE THE RELATIONSHIP.`
-
-3. `families/swell-marshall/`
-   - historical PASS WITH POLISH;
-   - re-audit orientation point and swell × atoll hierarchy before mutation.
-
-For each:
-- if no residual debt is reproduced, close `NO PATCH NEEDED`;
-- if a real debt is reproduced, create only the smallest reversible candidate;
-- preserve snapshot/golden evidence;
-- do not change family-native semantics.
-
-Canonical persistence IDs after Siku closure:
-- G4.3 closure register `18b40548349364b8ca77103a04f3d74f8cba5551`;
-- CURRENT_STATE G4.4 persistence `891d2757a5bf35e7a4d09239cb8afa03a3966407`;
-- G4 inventory advance `40e2684ac5f47b6d442e5facfe2cb8bb2765eb0f`.
+If PASS: promote only validated CSS through public Swell wrapper, preserve snapshot golden, close G4.4 and record next exact gate.
+If not: revise or abandon isolated candidate.
 
 PR remains Draft / DO NOT MERGE.
-
-On resume, trust the live branch head if later than IDs above. Documentation-only synchronization commits do not imply product-semantic changes.
