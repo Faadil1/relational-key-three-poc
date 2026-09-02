@@ -84,6 +84,10 @@ commit `b3edcb34efe0b26aee8e68e936350c0ce4c8ac9b`
 CURRENT_STATE synchronization commit:
 `d55f38b823eb71d5fc155dc81954eb92c18c295b`
 
+G4.1 candidate spec synchronized to closed/promoted state:
+`GLOBAL_REFINEMENT_G4_1_KHIPU_POLISH_CANDIDATE.md`
+commit `2c5f6fb91bb8e4fa255e334398fc7d074bee0f4f`
+
 # G4 EXECUTION ORDER
 
 1. G4.1 Khipu — CLOSED;
