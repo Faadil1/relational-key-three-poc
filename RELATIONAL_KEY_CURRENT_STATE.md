@@ -101,9 +101,12 @@ Closure register:
 `GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md`
 commit `b3edcb34efe0b26aee8e68e936350c0ce4c8ac9b`
 
-Candidate spec synchronized to final state:
+Candidate spec synchronized:
 `GLOBAL_REFINEMENT_G4_1_KHIPU_POLISH_CANDIDATE.md`
 commit `2c5f6fb91bb8e4fa255e334398fc7d074bee0f4f`
+
+Latest HANDOVER synchronization commit:
+`458516ef041d59151ee641e8ec537a2be61197fd`
 
 State separation:
 - SOURCE candidate: PASS
