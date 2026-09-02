@@ -49,95 +49,78 @@ Golden preserved.
 Promotion deployment `dpl_9icvAQFArzpJHKkdyTYdqXDBmdEo` READY.
 Closure register `GLOBAL_REFINEMENT_G4_3A_SIKU_LIVE_USER_PASS_PROMOTION.md` @ `18b40548349364b8ca77103a04f3d74f8cba5551`.
 
-# G4.4 SOURCE RE-AUDIT — PARTIAL CLOSED / SWELL USER GATE ACTIVE
+# G4.4 — CLOSED ✅
 
-Dedicated audit/decision register:
+Source re-audit register:
 `GLOBAL_REFINEMENT_G4_4_REAUDIT_ZELLIGE_OMBAK_SWELL_SOURCE_DECISION.md`
 commit `ab04b121a028cb0e5ac22fdb8343e17cb2da2d27`.
 
 ## Zellige / Fès — NO PATCH NEEDED ✅
-
-Current golden/source remains strong and material-native:
-- edge material originates on both cards;
-- fit resolves visibly through the gap;
-- center register recedes in registered state;
-- mismatch preserves both members and fit residue.
-
+Current golden/source remains pair-native and material-native.
 B2.5 classification remains `PASS / STRONG`.
-No specific residual G4 debt reproduced.
 No mutation.
 
 ## Ombak / Bali — NO PATCH NEEDED ✅
-
-Current golden/source already provides distinct visual + browser-synthesized audio relation proof:
-- two different tone sources remain distinct;
-- Δ7 matching vs Δ12 OTHER is explicit;
-- beat field belongs to the difference between both members;
-- OTHER leaves residual while both tones remain valid.
-
+Current golden/source retains explicit Δ7 vs Δ12 controlled-difference proof plus truthful browser-synthesized audio.
 B2.5 classification remains `PASS / STRONG`.
-No specific residual visual/audio G4 defect reproduced.
 No mutation.
 
-## Swell / Marshall Islands — CANDIDATE REQUIRED
+## Swell / Marshall Islands — USER PASS / PROMOTED ✅
 
-Residual debt reproduced:
-- golden orientation point ~10×10 px is visually quiet at distant desktop scale;
-- central atoll node ~64 px and low-opacity swell paths can overpower the orientation response;
-- B2.5 USER classification already noted spatial hierarchy could become more immediate while relational integrity remained PASS.
-
-Golden unchanged:
-`families/swell-marshall/snapshot.html`.
-
-Public wrapper unchanged:
-`families/swell-marshall/index.html`.
-
-Reversible CSS-only candidate:
+Candidate:
 `families/swell-marshall/g4-4.html`
 implementation commit `297bcea827d3cfd578d81bdd89ed682b9ae4337f`.
 
-Candidate changes only hierarchy/readability:
-- orientation point `10×10 → 14×14 px` desktop;
-- registered/OTHER orientation glow strengthened;
-- swell path stroke/opacity slightly strengthened in registered + OTHER states;
-- bridge label slightly more legible;
-- atoll node geometry unchanged;
-- no state, timing, drag, path geometry, truth-boundary or semantic changes.
+USER evidence:
+- ~15.97 s;
+- 1904×964;
+- 30 fps;
+- matching registered orientation clearly readable;
+- OTHER displaced orientation clearly readable;
+- both cards remain dominant/distinct;
+- atoll and swell field remain contextual relation cues.
 
-LIVE candidate:
-- deployment `dpl_85MDJFxfVwh3hxXUKWUKX1ESTMrt`;
-- state READY;
-- exact deployed commit `297bcea827d3cfd578d81bdd89ed682b9ae4337f`.
+Promotion:
+`families/swell-marshall/index.html`
+commit `049dc71ad16044a0debb099728dca473f90943c2`.
 
-Preview:
-`https://relational-key-collectionrelational-key-collection-3j1goxfxi.vercel.app/families/swell-marshall/g4-4.html?_vercel_share=jgFPVFoYjchBzk3RJOPANDeBmeET2s97`
+Golden preserved:
+`families/swell-marshall/snapshot.html` unchanged.
+
+Promotion deployment:
+`dpl_AtTAh52sWKHHP4CEx8qUBhX6FhoZ` — READY.
+Exact deployed commit `049dc71ad16044a0debb099728dca473f90943c2`.
+
+Closure register:
+`GLOBAL_REFINEMENT_G4_4A_SWELL_LIVE_USER_PASS_PROMOTION.md`
+commit `56e27bbb6fed8743ae909e7a82cfb5240e7e6748`.
 
 State separation:
-- Zellige SOURCE golden PASS / NO PATCH
-- Ombak SOURCE golden PASS / NO PATCH
-- Swell SOURCE golden PASS / unchanged
-- Swell SOURCE candidate PASS
-- Swell LIVE candidate READY / PASS
-- Swell USER comparison PENDING
-- RELATIONAL INTEGRITY PASS unchanged for all three
-- VALIDATED 24 unchanged
+- SOURCE golden: PASS / preserved
+- SOURCE candidate: PASS
+- USER candidate comparison: PASS
+- SOURCE promotion: PASS
+- LIVE promotion: PASS
+- RELATIONAL INTEGRITY: PASS unchanged
+- Swell experiential classification: ADEQUATE unchanged
+- VALIDATED: 24 unchanged
 
 # ACTIVE GATE / NEXT EXACT OUTPUT
 
-# **G4.4A — SWELL LIVE USER CANDIDATE REGRESSION / GOLDEN VS POLISH**
+# **GLOBAL REFINEMENT CLOSEOUT — EXPERIENCE-DEBT DISPOSITION**
 
-Record only Swell candidate behavior:
-1. MATCHING/current relation → `TEST RELATIONSHIP`;
-2. hold registered orientation briefly;
-3. OTHER state → `TEST RELATIONSHIP`;
-4. hold displaced orientation briefly.
+Scope only the four families already classified `EXPERIENCE DEBT` in B2.5:
+1. City / Gatineau
+2. Service / Benin
+3. Signal / Nigeria
+4. Frida / Coyoacán
 
-PASS criteria:
-- orientation point easier to locate/read;
-- swell paths remain environmental relation cues, not decorative hero lines;
-- atoll context stays legible without erasing orientation response;
-- both cards remain dominant/distinct;
-- matching and OTHER semantics remain unchanged.
+Goal:
+- re-audit each against the expansion invariant and the base-idea reference;
+- decide `EXPAND NOW` vs `DEFER / ACCEPT AS VALID`;
+- do not treat experience debt as relational failure;
+- do not mutate for visual uniformity;
+- if expansion is warranted, define the smallest pair-native expansion candidate and preserve rollback/golden behavior.
 
-Do not promote Swell until USER PASS.
+No USER recording is required until/unless an expansion candidate is actually created.
 PR #21 remains Draft / DO NOT MERGE.
