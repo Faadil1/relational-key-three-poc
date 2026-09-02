@@ -60,10 +60,11 @@ Final classification:
 
 Canonical inventory:
 `GLOBAL_REFINEMENT_G4_POLISH_INVENTORY.md`
+latest inventory commit `105c68436e477f110f2fa3a0e5ad977823e46c7d`
 
-Historical order:
-1. G4.1 Khipu;
-2. G4.2 Kento;
+Execution order:
+1. G4.1 Khipu — CLOSED;
+2. G4.2 Kento — ACTIVE;
 3. G4.3 Siku;
 4. G4.4 re-audit Zellige / Ombak / Swell.
 
