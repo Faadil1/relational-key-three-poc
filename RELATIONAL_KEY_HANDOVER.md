@@ -44,7 +44,7 @@ Blocker register:
 Root cause: EXP-3 loaded `/families/signal-nigeria/index.html` explicitly; family-wrapper slug resolution treated `index.html` as the slug.
 
 Source fix:
-`families/signal-nigeria/index.html` explicit-index route hardening first landed @ `4931445dc0de05e15af07f8a9d4cb88e209048a7`; branch head contains the same fix.
+`families/signal-nigeria/index.html` explicit-index route hardening first landed @ `4931445dc0de05e15af07f8a9d4cb88e209048a7`; branch head retains the same fix.
 No semantic or visual promotion. Shared runtime unchanged.
 
 Vercel status for the routing-fix build: **FAILURE — build-rate-limit / Hobby plan**.
