@@ -17,7 +17,6 @@ Do not start G4.3 Siku before G4.2 closes.
 # CANONICAL INVARIANTS
 
 **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
-
 `PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
 
 Expansion laws:
@@ -39,7 +38,7 @@ Golden `families/khipu-peru/snapshot.html` remains unchanged.
 Vercel/GitHub promotion status: SUCCESS.
 Closure register: `GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md` @ `b3edcb34efe0b26aee8e68e936350c0ce4c8ac9b`.
 G4 inventory: `GLOBAL_REFINEMENT_G4_POLISH_INVENTORY.md` @ `105c68436e477f110f2fa3a0e5ad977823e46c7d`.
-Latest CURRENT_STATE synchronization: `52d6c488886a07829b4224f658d4085ae81af33e`.
+Latest CURRENT_STATE synchronization: `b85210a3496b254791abf06f9cb82d64d6483293`.
 
 # ACTIVE GATE
 
