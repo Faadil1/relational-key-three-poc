@@ -37,64 +37,82 @@ Promotion commit: `a4a17eb028d0645c8148e0311bfb6f222b286914`.
 Golden preserved: `families/khipu-peru/snapshot.html`.
 Closure register: `GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md` @ `b3edcb34efe0b26aee8e68e936350c0ce4c8ac9b`.
 
-# G4.2 KENTO — USER PASS / PROMOTED / CLOSED ✅
+# G4.2 KENTO — CLOSED ✅
 
-Candidate:
-`families/kento-japan/g4-2.html`
-implementation commit `42d546294fefcb79131a3a28b33fa7352f334a38`.
+USER PASS / PROMOTED.
+Candidate: `families/kento-japan/g4-2.html` @ `42d546294fefcb79131a3a28b33fa7352f334a38`.
+Promotion: `families/kento-japan/index.html` @ `1efaf48610ba06a2db1962d900c65fb45ae411b6`.
+Golden `families/kento-japan/snapshot.html` unchanged.
+LIVE status: SUCCESS.
+Closure register: `GLOBAL_REFINEMENT_G4_2A_KENTO_LIVE_USER_PASS_PROMOTION.md` @ `8b827b417d0ced77f4295a703fca2325cc35b489`.
 
-USER candidate recording:
-- ~9.4 s;
-- 1908 × 966;
-- 30 fps.
+# G4.3 SIKU — SOURCE PASS / LIVE READY / USER PENDING
 
-USER verdict:
-- `kagi / hikitsuki` more legible while remaining edge registration marks;
-- MATCHING still reads as print registration;
-- OTHER BLOCK colour-layer displacement / offset marks are more immediately readable;
-- center remains subordinate;
-- both cards remain distinct and valid.
+Re-audit reproduced only the documented non-blocking debt:
+- interlock field `208×138 px` is relatively small at distant desktop scale;
+- field/bridge labels around `5 px` are quiet;
+- bottom result/law/truth microcopy around `6 px` is quiet.
 
-Promotion:
-`families/kento-japan/index.html`
-commit `1efaf48610ba06a2db1962d900c65fb45ae411b6`.
+Relational integrity remains PASS. Siku remains STRONG in the B2.5 experiential matrix.
 
-Golden preserved:
-`families/kento-japan/snapshot.html` unchanged.
+Golden source unchanged:
+`families/siku-bolivia/snapshot.html`.
 
-Promotion LIVE status:
-GitHub/Vercel `SUCCESS`.
+Public wrapper unchanged:
+`families/siku-bolivia/index.html`.
 
-Closure register:
-`GLOBAL_REFINEMENT_G4_2A_KENTO_LIVE_USER_PASS_PROMOTION.md`
-commit `8b827b417d0ced77f4295a703fca2325cc35b489`.
+Reversible CSS-only candidate:
+`families/siku-bolivia/g4-3.html`
+implementation commit `a2524db6f8fff389d2afc1e66c186e3c88573326`.
+
+Candidate changes only hierarchy/readability:
+- center column `220 → 236 px`;
+- interlock field `208×138 → 224×148 px` desktop;
+- field label `5 → 5.5 px`;
+- bridge label `5 → 5.8 px`;
+- result/law/truth `6 → 6.5 px`;
+- legend `5 → 5.6 px`.
+
+No state, timing, note ownership, audio, route, matching or OTHER semantics changed.
+
+Dedicated register:
+`GLOBAL_REFINEMENT_G4_3_SIKU_POLISH_CANDIDATE_SOURCE_PASS.md`
+commit `2045367ba94acd5aebe01467fdc6c9293a8b7afe`.
+
+LIVE candidate:
+- deployment `dpl_8cKUNdmiyyTBmfv61gppmW88qktM`;
+- state READY;
+- exact deployed commit `a2524db6f8fff389d2afc1e66c186e3c88573326`.
+
+Preview:
+`https://relational-key-collectionrelational-key-collection-iztssim1f.vercel.app/families/siku-bolivia/g4-3.html?_vercel_share=3qBewSiKWuLPJ4Vs2XF1LR5WzKSOad32`
 
 State separation:
 - SOURCE golden: PASS / unchanged
 - SOURCE candidate: PASS
-- USER comparison: PASS
-- SOURCE promotion: PASS
-- LIVE promotion: PASS
+- LIVE candidate: READY / PASS
+- USER candidate comparison: PENDING
 - RELATIONAL INTEGRITY: PASS unchanged
-- B2.5 ambition: ADEQUATE unchanged
+- experiential classification: STRONG unchanged
 - VALIDATED: 24 unchanged
 
 # ACTIVE GATE / NEXT EXACT OUTPUT
 
-# **G4.3 — SIKU POLISH RE-AUDIT + MINIMUM CANDIDATE DECISION**
+# **G4.3A — SIKU LIVE USER CANDIDATE REGRESSION**
 
-Inspect current Siku golden and reproduce only the documented debt:
-- central temporal interlock field relatively small at distant desktop scale;
-- bottom microcopy relatively small.
+Record only candidate behavior:
+1. MATCHING INTERLOCK → run/test;
+2. hold complete/registered continuity briefly;
+3. OTHER INTERLOCK → run/test;
+4. hold incomplete/silent-position state briefly.
 
-Non-negotiable:
-- preserve IRA / ARKA ownership;
-- center remains temporal interlock, not waveform/resonance;
-- OTHER INTERLOCK preserves silent positions and no-complete-route semantics;
-- patch only if current evidence reproduces the debt.
+PASS criteria:
+- temporal field and bottom microcopy are easier to read;
+- IRA / ARKA remain clearly owned by their cards;
+- center remains subordinate;
+- matching remains complementary temporal continuity;
+- OTHER preserves silent positions / no-complete-route semantics;
+- no waveform/resonance drift.
 
-If debt is reproduced: create smallest reversible candidate with golden preserved.
-If not: close G4.3 no-patch-needed.
-
-Do not start G4.4 before G4.3 closes.
+Do not start G4.4 before G4.3A closes.
 PR #21 remains Draft / DO NOT MERGE.
