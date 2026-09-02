@@ -33,12 +33,8 @@ Persistence protocol:
 
 # GLOBAL STATE
 
-- VALIDATED 24
-- B2.5 PASS / CLOSED
-- USER RELATIONAL INTEGRITY 24/24 PASS
-- G4 CLOSED
-- STRONG 13 / ADEQUATE 8 / EXPERIENCE DEBT 3
-- Experience Debt: Service, Signal, Frida
+VALIDATED 24. B2.5 PASS / CLOSED. USER relational integrity 24/24 PASS. G4 CLOSED.
+Experiential matrix: STRONG 13 / ADEQUATE 8 / EXPERIENCE DEBT 3 — Service, Signal, Frida.
 
 # CITY / GATINEAU — CLOSED ✅
 
@@ -50,21 +46,19 @@ City = ADEQUATE.
 # SERVICE / BENIN — ACTIVE
 
 Mechanical base `families/service-benin/exp-2.html` @ `e2872aeb013e3ab55fd4fc4b2c81e63d3c695e29`.
-Mechanical behavior remains valid: A owns 01–02; B owns 03–04; MATCHING completes through relation; OTHER preserves both fragments + residue.
+A owns 01–02; B owns 03–04; MATCHING completes through relation; OTHER preserves both fragments + residue.
 
-## EXP-2B RESULT
+## EXP-2B USER RESULT
 
 Candidate `families/service-benin/exp-2b.html` @ `6f99b6f2ad22a63814f87488f393378b2c2550d0`.
 USER video 9.6 s / 1906×962 / 30 fps.
-Verdict:
-# **CAUSAL PASS / VISUAL FAIL — REVISE / DO NOT PROMOTE**
-
-Reason: green prepaid styling is still too generic and insufficiently grounded in specifically Benin archival phonecard provenance.
+Verdict: **CAUSAL PASS / VISUAL FAIL — REVISE / DO NOT PROMOTE**.
+Reason: generic green prepaid styling; not enough specifically Benin archival provenance.
 
 ## SOURCE RE-AUDIT
 
 Official Archives nationales du Bénin Série J covers posts, telephone links, transmissions and telecom administration.
-Documented Benin phonecard corpus includes PTT / OPT; 25/50/120 UNITÉS; SERVICES PLUS; RENVOI TEMPORAIRE; CONFÉRENCE À TROIS; COMPOSITION ABRÉGÉE; telephone tariffs; Cotonou/Francophonie 1995 references; recharge/serial grammar.
+Documented phonecard corpus includes PTT / OPT; 25/50/120 UNITÉS; SERVICES PLUS; RENVOI TEMPORAIRE; CONFÉRENCE À TROIS; COMPOSITION ABRÉGÉE; telephone tariffs; Cotonou/Francophonie 1995 references; recharge/serial grammar.
 
 ## EXP-2C ACTIVE
 
@@ -72,46 +66,19 @@ Path `families/service-benin/exp-2c.html`.
 Implementation `d8c814a0414b55396876f6527f162b151ad66e33`.
 Dedicated register `GLOBAL_REFINEMENT_EXP2C_SERVICE_BENIN_ARCHIVE_PHONECARD_CANDIDATE.md` @ `357ea7d15994e112c17111e6e3718fefec301ee4`.
 
-Architecture:
-- loads EXP-2 directly
-- no EXP-2B inheritance
-- no shared-runtime mutation
-- public Service wrapper unchanged
+Architecture: loads EXP-2 directly; no EXP-2B inheritance; no shared-runtime mutation; public Service wrapper unchanged.
 
-Visual identity:
-- worn ivory PTT-era smartcard artifact
-- prominent BÉNIN object identity
-- PTT / OPT provenance labels
-- Série J archival language
-- gold chip contacts
-- 50 / 120 UNITÉS
-- COMPOSITION ABRÉGÉE / SERVICES PLUS
-- RENVOI TEMPORAIRE / CONFÉRENCE À TROIS
-- COTONOU / +229
-- serial/register fields
-- restrained green/yellow/red edge rail
+Visual identity: worn ivory PTT-era smartcard; BÉNIN prominent; PTT / OPT provenance; Série J language; gold chip; 50 / 120 UNITÉS; COMPOSITION ABRÉGÉE / SERVICES PLUS; RENVOI TEMPORAIRE / CONFÉRENCE À TROIS; COTONOU / +229; serial/register fields; restrained green/yellow/red edge rail.
 
-Truth boundary: editorial synthesis of documented Benin phonecard/service markers; not an exact historical replica and not a current telecom procedure.
+Truth boundary: editorial synthesis of documented Benin phonecard/service markers; not an exact replica and not a current telecom procedure.
 
 LIVE:
-- deployment `dpl_8CLm4dcyBtzsGJTLiqyXsP8G32Xs`
+- `dpl_8CLm4dcyBtzsGJTLiqyXsP8G32Xs`
 - READY
-- exact deployed commit `d8c814a0414b55396876f6527f162b151ad66e33`
+- exact commit `d8c814a0414b55396876f6527f162b151ad66e33`
 
 Preview:
 `https://relational-key-collectionrelational-key-collection-k46w5ws8t.vercel.app/families/service-benin/exp-2c.html?_vercel_share=kS5SFekdMBMcGV990tppC6gwwN0fNqjH`
-
-State separation:
-- SOURCE shared runtime PASS / unchanged
-- SOURCE Service mechanical base PASS
-- USER EXP-2B causal PASS
-- USER EXP-2B visual FAIL / REVISE
-- SOURCE EXP-2C PASS
-- LIVE EXP-2C READY / PASS
-- USER EXP-2C PENDING
-- RELATIONAL INTEGRITY PASS unchanged
-- Service EXPERIENCE DEBT pending proof
-- VALIDATED 24 unchanged
 
 # EXACT NEXT USER ACTION
 
