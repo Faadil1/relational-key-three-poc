@@ -7,11 +7,11 @@ PR #21: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **G4.2A — KENTO LIVE USER CANDIDATE REGRESSION / GOLDEN VS POLISH**
+# **G4.3 — SIKU POLISH RE-AUDIT + MINIMUM CANDIDATE DECISION**
 
 Do NOT restart B2.5 or the 24-family regression.
-Do NOT reopen Khipu G4.1.
-Do NOT start G4.3 Siku before G4.2A closes.
+Do NOT reopen G4.1 Khipu or G4.2 Kento.
+Do NOT start G4.4 before G4.3 closes.
 
 # CANONICAL INVARIANTS
 
@@ -23,106 +23,88 @@ Expansion laws:
 - **TECHNOLOGY SERVES THE RELATIONAL MECHANISM.**
 - **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
 
+Reference question:
+**DO BOTH MEMBERS EXIST BEFORE THE RELATION, AND DOES THE MEMORABLE MOMENT BELONG TO WHAT HAPPENS BETWEEN THEM?**
+
 Persistence protocol:
 `dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output`.
 
 # GLOBAL STATE
 
-24 VALIDATED families.
-B2.5 CLOSED / PASS.
-24/24 RELATIONAL INTEGRITY PASS.
+24 VALIDATED families, six continents × 4.
+Continental Balance Gate 2 PASS / CLOSED.
+B2.5 PASS / CLOSED.
+24/24 USER RELATIONAL INTEGRITY PASS.
 Experiential matrix: STRONG 13 / ADEQUATE 7 / EXPERIENCE DEBT 4 (City, Service, Signal, Frida).
 
 # G4.1 KHIPU — CLOSED ✅
 
-USER candidate PASS / PROMOTE.
-Public wrapper promotion commit:
-`a4a17eb028d0645c8148e0311bfb6f222b286914`.
-Golden `families/khipu-peru/snapshot.html` remains unchanged.
-Closure register:
-`GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md` @ `b3edcb34efe0b26aee8e68e936350c0ce4c8ac9b`.
+USER PASS / PROMOTED.
+Promotion commit: `a4a17eb028d0645c8148e0311bfb6f222b286914`.
+Golden preserved: `families/khipu-peru/snapshot.html`.
+Closure register: `GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md` @ `b3edcb34efe0b26aee8e68e936350c0ce4c8ac9b`.
 
-# G4.2 KENTO — CURRENT STATE
-
-Historical/current debt is reproduced:
-- `kagi / hikitsuki` slightly too quiet at collection-view scale;
-- OTHER BLOCK colour-layer displacement could be easier to read at distant desktop scale.
-
-B2.5 USER classification remains `PASS / ADEQUATE`; this is non-blocking polish only.
-
-Golden:
-`families/kento-japan/snapshot.html` — unchanged.
-
-Public wrapper:
-`families/kento-japan/index.html` — unchanged.
+# G4.2 KENTO — CLOSED ✅
 
 Candidate:
 `families/kento-japan/g4-2.html`
 implementation commit `42d546294fefcb79131a3a28b33fa7352f334a38`.
 
-Candidate is CSS-only and reversible:
-- kento edge field slightly enlarged;
-- kagi 24×24 → 28×28;
-- kagi stroke 3 → 4;
-- hikitsuki 32×3 → 37×4;
-- OTHER colour displacement 15,-9 → 22,-13;
-- offset guide marks slightly stronger;
-- center register unchanged;
-- no JS, timing, state or semantics changed.
+USER candidate recording:
+~9.4 s / 1908×966 / 30 fps.
 
-Dedicated register:
-`GLOBAL_REFINEMENT_G4_2_KENTO_POLISH_CANDIDATE_SOURCE_PASS.md`
-commit `b6774afe976f734b075c42f9bda3786492ea8cd3`.
+USER PASS evidence:
+- kagi / hikitsuki clearer but remain edge registration marks;
+- matching remains print registration;
+- OTHER BLOCK shows clearer colour-layer displacement and offset marks;
+- center remains subordinate;
+- both cards remain distinct and valid.
 
-G4 inventory:
-`GLOBAL_REFINEMENT_G4_POLISH_INVENTORY.md`
-commit `d2a3061f8abbf07afe0559529e150c3326b5cfd1`.
+Promotion:
+`families/kento-japan/index.html`
+commit `1efaf48610ba06a2db1962d900c65fb45ae411b6`.
+GitHub/Vercel status: SUCCESS.
 
-CURRENT_STATE latest synchronization:
-`b63a6b4a5206545e1cbb5cb5131d33271c9ec406`.
+Golden preserved:
+`families/kento-japan/snapshot.html` unchanged.
 
-LIVE:
-- deployment `dpl_6JN1FKFnDU8J2aPR3SmKaHsmUtdT`;
-- READY;
-- deployment metadata exact candidate commit `42d546294fefcb79131a3a28b33fa7352f334a38`.
+Closure register:
+`GLOBAL_REFINEMENT_G4_2A_KENTO_LIVE_USER_PASS_PROMOTION.md`
+commit `8b827b417d0ced77f4295a703fca2325cc35b489`.
 
-Candidate preview:
-`https://relational-key-collectionrelational-key-collection-7jywaxzav.vercel.app/families/kento-japan/g4-2.html?_vercel_share=4Qhk8zqwXTrcKeRvWTIFhAqg53wU4bnj`
+CURRENT_STATE closure sync:
+`78409c041244d2042debf0194a7fffc1ecd1aa6c`.
 
-State separation:
+State separation after Kento:
 - SOURCE golden PASS / unchanged
 - SOURCE candidate PASS
-- LIVE candidate READY / PASS
-- USER comparison PENDING
+- USER candidate comparison PASS
+- SOURCE promotion PASS
+- LIVE promotion PASS
 - RELATIONAL INTEGRITY PASS unchanged
+- B2.5 ambition ADEQUATE unchanged
 - VALIDATED 24 unchanged
 
-# EXACT NEXT USER ACTION
+# ACTIVE GATE — G4.3 SIKU
 
-Open candidate preview and record ~10–15 seconds:
-1. `MATCHING BLOCK` → `TEST REGISTRATION`;
-2. keep registered state visible briefly;
-3. `OTHER BLOCK` → `TEST REGISTRATION`;
-4. keep misregistration state visible briefly.
+Historical documented debt:
+- central interlock field relatively small at desktop capture scale;
+- bottom microcopy relatively small.
 
-Judge only:
-- kagi / hikitsuki easier to perceive but still edge registration marks;
-- OTHER colour-layer displacement easier to perceive;
-- center register remains subordinate;
-- both cards remain distinct and valid;
-- matching remains print registration;
-- OTHER remains print misregistration.
+Must inspect current:
+- `families/siku-bolivia/index.html`;
+- `families/siku-bolivia/snapshot.html`.
 
-If PASS:
-- record USER gate;
-- promote only the validated CSS treatment through public Kento wrapper;
-- preserve `snapshot.html` golden;
-- then open G4.3 Siku.
+Non-negotiable Siku semantics:
+- preserve IRA / ARKA ownership;
+- center is temporal interlock, not waveform/resonance;
+- matching relies on complementary absence / distributed notes and rests;
+- OTHER INTERLOCK preserves silent positions and no-complete-route semantics;
+- no patch unless debt is still reproduced.
 
-If not better:
-- do not promote;
-- revise or abandon isolated candidate.
+If reproduced: create smallest reversible candidate while preserving snapshot golden.
+If not reproduced: close G4.3 no-patch-needed.
 
 PR remains Draft / DO NOT MERGE.
 
-On resume, trust the live branch head if it is later than the commit IDs listed above; do not infer semantic changes from documentation-only synchronization commits.
+On resume, trust the live branch head if later than IDs above. Documentation-only synchronization commits do not imply product-semantic changes.
