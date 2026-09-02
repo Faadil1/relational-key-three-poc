@@ -85,12 +85,12 @@ Candidate spec sync:
 `GLOBAL_REFINEMENT_G4_1_KHIPU_POLISH_CANDIDATE.md`
 commit `2c5f6fb91bb8e4fa255e334398fc7d074bee0f4f`
 
-CURRENT_STATE latest synchronization:
-`f764819c4a6be826d6fb5db9cc3c5f6a7778aa9d`
-
-G4 inventory advanced to Kento:
+G4 inventory advanced:
 `GLOBAL_REFINEMENT_G4_POLISH_INVENTORY.md`
 commit `105c68436e477f110f2fa3a0e5ad977823e46c7d`
+
+CURRENT_STATE latest synchronization:
+`e7ff5f289d339bd50f2341434e54fc73fd7c145c`
 
 # G4 EXECUTION ORDER
 
