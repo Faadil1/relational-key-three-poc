@@ -81,6 +81,9 @@ commit `d2a3061f8abbf07afe0559529e150c3326b5cfd1`.
 CURRENT_STATE candidate-gate commit:
 `648d02d86bc39921f709b4cecbe4ef7565139cf3`.
 
+Prior HANDOVER synchronization:
+`ca3669e5d5fbdc71c0028addc091f64cc9cbc9b2`.
+
 LIVE:
 - deployment `dpl_6JN1FKFnDU8J2aPR3SmKaHsmUtdT`;
 - READY;
@@ -124,3 +127,5 @@ If not better:
 - revise or abandon isolated candidate.
 
 PR remains Draft / DO NOT MERGE.
+
+Latest canonical branch head after this HANDOVER update is the commit produced by this write; use GitHub branch head as source of truth if resuming in a new conversation.
