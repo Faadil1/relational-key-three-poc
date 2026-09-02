@@ -7,11 +7,11 @@ PR #21: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **G4.3A — SIKU LIVE USER CANDIDATE REGRESSION**
+# **G4.4 — ZELLIGE / OMBAK / SWELL RE-AUDIT — PATCH ONLY IF DEBT IS REPRODUCED**
 
 Do NOT restart B2.5 or the 24-family regression.
-Do NOT reopen G4.1 Khipu or G4.2 Kento.
-Do NOT start G4.4 before G4.3A closes.
+Do NOT reopen G4.1 Khipu, G4.2 Kento or G4.3 Siku.
+Do NOT patch G4.4 families merely for visual uniformity.
 
 # CANONICAL INVARIANTS
 
@@ -40,88 +40,84 @@ Experiential matrix: STRONG 13 / ADEQUATE 7 / EXPERIENCE DEBT 4 (City, Service, 
 # G4.1 KHIPU — CLOSED ✅
 
 USER PASS / PROMOTED.
-Promotion commit: `a4a17eb028d0645c8148e0311bfb6f222b286914`.
-Golden preserved: `families/khipu-peru/snapshot.html`.
-Closure register: `GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md` @ `b3edcb34efe0b26aee8e68e936350c0ce4c8ac9b`.
+Promotion `families/khipu-peru/index.html` @ `a4a17eb028d0645c8148e0311bfb6f222b286914`.
+Golden `families/khipu-peru/snapshot.html` preserved.
+Closure register `GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md` @ `b3edcb34efe0b26aee8e68e936350c0ce4c8ac9b`.
 
 # G4.2 KENTO — CLOSED ✅
 
 USER PASS / PROMOTED.
-Candidate: `families/kento-japan/g4-2.html` @ `42d546294fefcb79131a3a28b33fa7352f334a38`.
-Promotion: `families/kento-japan/index.html` @ `1efaf48610ba06a2db1962d900c65fb45ae411b6`.
-Golden `families/kento-japan/snapshot.html` unchanged.
-LIVE status: SUCCESS.
-Closure register: `GLOBAL_REFINEMENT_G4_2A_KENTO_LIVE_USER_PASS_PROMOTION.md` @ `8b827b417d0ced77f4295a703fca2325cc35b489`.
+Candidate `families/kento-japan/g4-2.html` @ `42d546294fefcb79131a3a28b33fa7352f334a38`.
+Promotion `families/kento-japan/index.html` @ `1efaf48610ba06a2db1962d900c65fb45ae411b6`.
+Golden preserved.
+Closure register `GLOBAL_REFINEMENT_G4_2A_KENTO_LIVE_USER_PASS_PROMOTION.md` @ `8b827b417d0ced77f4295a703fca2325cc35b489`.
 
-# G4.3 SIKU — CURRENT STATE
+# G4.3 SIKU — CLOSED ✅
 
-Re-audit reproduced the historical non-blocking legibility debt:
-- interlock field golden: `208×138 px` desktop;
-- field/bridge labels around `5 px`;
-- bottom result/law/truth microcopy around `6 px`.
+Candidate `families/siku-bolivia/g4-3.html` @ `a2524db6f8fff389d2afc1e66c186e3c88573326`.
 
-Siku relational integrity remains PASS and experiential classification remains STRONG.
+USER recording:
+~15.63 s / 1902×958 / 30 fps.
 
-Golden unchanged:
-`families/siku-bolivia/snapshot.html`.
+USER PASS:
+- temporal field/microcopy improved;
+- IRA/ARKA ownership preserved;
+- MATCHING complete alternating route preserved;
+- OTHER shows silent/missing positions and no complete route;
+- center remains subordinate;
+- no waveform/resonance drift.
 
-Public wrapper unchanged:
-`families/siku-bolivia/index.html`.
+Promotion:
+`families/siku-bolivia/index.html`
+commit `42bce5564e27d62b201d9c3015b32da7c3d9c0b2`.
 
-Candidate:
-`families/siku-bolivia/g4-3.html`
-implementation commit `a2524db6f8fff389d2afc1e66c186e3c88573326`.
+Golden:
+`families/siku-bolivia/snapshot.html` unchanged.
 
-Candidate is CSS-only and reversible:
-- center column 220 → 236 px;
-- interlock field 208×138 → 224×148 px;
-- field label 5 → 5.5 px;
-- bridge label 5 → 5.8 px;
-- result/law/truth 6 → 6.5 px;
-- legend 5 → 5.6 px;
-- no state, timing, audio, note ownership, route or semantic changes.
+Promotion deployment:
+`dpl_9icvAQFArzpJHKkdyTYdqXDBmdEo` — READY — exact commit `42bce5564e27d62b201d9c3015b32da7c3d9c0b2`.
 
-Dedicated register:
-`GLOBAL_REFINEMENT_G4_3_SIKU_POLISH_CANDIDATE_SOURCE_PASS.md`
-commit `2045367ba94acd5aebe01467fdc6c9293a8b7afe`.
+Closure register:
+`GLOBAL_REFINEMENT_G4_3A_SIKU_LIVE_USER_PASS_PROMOTION.md`
+commit `18b40548349364b8ca77103a04f3d74f8cba5551`.
 
-LIVE:
-- deployment `dpl_8cKUNdmiyyTBmfv61gppmW88qktM`;
-- state READY;
-- exact deployed candidate commit `a2524db6f8fff389d2afc1e66c186e3c88573326`.
+CURRENT_STATE closure/open-G4.4 sync:
+`d7ab3c37d23338067f9f9ea5b3e46ffd000cb003`.
 
-Candidate preview:
-`https://relational-key-collectionrelational-key-collection-iztssim1f.vercel.app/families/siku-bolivia/g4-3.html?_vercel_share=3qBewSiKWuLPJ4Vs2XF1LR5WzKSOad32`
-
-CURRENT_STATE Siku candidate sync:
-`570388b1d92e9d6c14796a817c61d3847610b712`.
-
-State separation:
+State separation after G4.3:
 - SOURCE golden PASS / unchanged
 - SOURCE candidate PASS
-- LIVE candidate READY / PASS
-- USER candidate comparison PENDING
+- USER comparison PASS
+- SOURCE promotion PASS
+- LIVE promotion PASS
 - RELATIONAL INTEGRITY PASS unchanged
 - experiential STRONG unchanged
 - VALIDATED 24 unchanged
 
-# EXACT NEXT USER ACTION
+# ACTIVE GATE — G4.4
 
-Record only candidate behavior, ~10–15 seconds:
-1. `MATCHING INTERLOCK` → run/test;
-2. hold registered/complete continuity briefly;
-3. `OTHER INTERLOCK` → run/test;
-4. hold incomplete/silent-position state briefly.
+Re-audit only these three preserved families:
 
-Judge only:
-- central temporal field and bottom microcopy easier to read;
-- IRA / ARKA ownership remains clear;
-- center remains subordinate to both cards;
-- matching remains complementary temporal continuity;
-- OTHER remains silent positions / no complete route;
-- no waveform/resonance drift.
+1. `families/zellige-fes/`
+   - historical PASS WITH POLISH;
+   - no specific mutation unless residual debt is reproduced;
+   - non-negotiable: `THE EDGE MATERIAL RESOLVES THE RELATIONSHIP.`
 
-If PASS: promote only the validated CSS treatment through public Siku wrapper, preserve snapshot golden, record closure, then open G4.4.
-If not: revise or abandon the isolated candidate.
+2. `families/ombak-bali/`
+   - historical PASS WITH POLISH;
+   - reproduce remaining visual/audio legibility debt before mutation;
+   - non-negotiable: `CONTROLLED DIFFERENCE CAN BE THE RELATIONSHIP.`
+
+3. `families/swell-marshall/`
+   - historical PASS WITH POLISH;
+   - re-audit orientation point and swell × atoll hierarchy before mutation.
+
+For each:
+- if no residual debt is reproduced, close `NO PATCH NEEDED`;
+- if a real debt is reproduced, create only the smallest reversible candidate;
+- preserve snapshot/golden evidence;
+- do not change family-native semantics.
 
 PR remains Draft / DO NOT MERGE.
+
+On resume, trust the live branch head if later than IDs above. Documentation-only synchronization commits do not imply product-semantic changes.
