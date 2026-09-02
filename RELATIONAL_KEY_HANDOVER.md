@@ -42,55 +42,35 @@ Persistence protocol:
 
 # CITY / GATINEAU — CLOSED ✅
 
-Public wrapper:
-`families/city-gatineau/index.html` @ `4d98008baab39055445ab6d8eff43b8cd25a4746`.
+Public wrapper `families/city-gatineau/index.html` @ `4d98008baab39055445ab6d8eff43b8cd25a4746`.
 LIVE `dpl_9BMcUbceV77JvUoFPVfhuFChHGxV` READY.
-Closure register:
-`GLOBAL_REFINEMENT_EXP1B_CITY_GATINEAU_VISUAL_IDENTITY_USER_PASS_PROMOTION.md` @ `d55481e4ae8d308100182ceb0bfb850174bbd229`.
+Closure register `GLOBAL_REFINEMENT_EXP1B_CITY_GATINEAU_VISUAL_IDENTITY_USER_PASS_PROMOTION.md` @ `d55481e4ae8d308100182ceb0bfb850174bbd229`.
 City = ADEQUATE.
 
-# SERVICE / BENIN
+# SERVICE / BENIN — ACTIVE
 
-Mechanical base:
-`families/service-benin/exp-2.html` @ `e2872aeb013e3ab55fd4fc4b2c81e63d3c695e29`.
-Mechanical behavior remains valid:
-- Card A 01–02
-- Card B 03–04
-- MATCHING completes 01→02→03→04 through relation
-- OTHER preserves both fragments + sequence residue
+Mechanical base `families/service-benin/exp-2.html` @ `e2872aeb013e3ab55fd4fc4b2c81e63d3c695e29`.
+Mechanical behavior remains valid: A owns 01–02; B owns 03–04; MATCHING completes through relation; OTHER preserves both fragments + residue.
 
-## EXP-2B USER RESULT
+## EXP-2B RESULT
 
-Candidate:
-`families/service-benin/exp-2b.html` @ `6f99b6f2ad22a63814f87488f393378b2c2550d0`.
-
-USER video:
-- 9.6 s / 1906×962 / 30 fps
-
+Candidate `families/service-benin/exp-2b.html` @ `6f99b6f2ad22a63814f87488f393378b2c2550d0`.
+USER video 9.6 s / 1906×962 / 30 fps.
 Verdict:
-# **CAUSAL PASS / VISUAL FAIL — REVISE**
+# **CAUSAL PASS / VISUAL FAIL — REVISE / DO NOT PROMOTE**
 
-Reason:
-Green prepaid/telecom styling is not enough. It remains generic and does not carry the stronger visual/documentary markers found in Benin telecom archives and phonecard catalogues.
+Reason: green prepaid styling is still too generic and insufficiently grounded in specifically Benin archival phonecard provenance.
 
 ## SOURCE RE-AUDIT
 
-Official Archives nationales du Bénin Série J:
-posts / telephone links / transmissions / telecommunications administration.
-
-Documented phonecard markers:
-PTT / OPT; 25/50/120 UNITÉS; SERVICES PLUS; RENVOI TEMPORAIRE; CONFÉRENCE À TROIS; COMPOSITION ABRÉGÉE; telephone tariffs; Cotonou/Francophonie 1995; serial/recharge grammar.
+Official Archives nationales du Bénin Série J covers posts, telephone links, transmissions and telecom administration.
+Documented Benin phonecard corpus includes PTT / OPT; 25/50/120 UNITÉS; SERVICES PLUS; RENVOI TEMPORAIRE; CONFÉRENCE À TROIS; COMPOSITION ABRÉGÉE; telephone tariffs; Cotonou/Francophonie 1995 references; recharge/serial grammar.
 
 ## EXP-2C ACTIVE
 
-Path:
-`families/service-benin/exp-2c.html`
-
-Implementation:
-`d8c814a0414b55396876f6527f162b151ad66e33`
-
-Dedicated register:
-`GLOBAL_REFINEMENT_EXP2C_SERVICE_BENIN_ARCHIVE_PHONECARD_CANDIDATE.md` @ `357ea7d15994e112c17111e6e3718fefec301ee4`.
+Path `families/service-benin/exp-2c.html`.
+Implementation `d8c814a0414b55396876f6527f162b151ad66e33`.
+Dedicated register `GLOBAL_REFINEMENT_EXP2C_SERVICE_BENIN_ARCHIVE_PHONECARD_CANDIDATE.md` @ `357ea7d15994e112c17111e6e3718fefec301ee4`.
 
 Architecture:
 - loads EXP-2 directly
@@ -99,9 +79,9 @@ Architecture:
 - public Service wrapper unchanged
 
 Visual identity:
-- ivory PTT-era smartcard artifact
-- BÉNIN prominent on object
-- PTT / OPT provenance
+- worn ivory PTT-era smartcard artifact
+- prominent BÉNIN object identity
+- PTT / OPT provenance labels
 - Série J archival language
 - gold chip contacts
 - 50 / 120 UNITÉS
@@ -109,38 +89,45 @@ Visual identity:
 - RENVOI TEMPORAIRE / CONFÉRENCE À TROIS
 - COTONOU / +229
 - serial/register fields
-- restrained national color rail
+- restrained green/yellow/red edge rail
 
-Truth boundary:
-editorial synthesis of documented Benin phonecard/service markers; not an exact historical replica and not a current telecom procedure.
+Truth boundary: editorial synthesis of documented Benin phonecard/service markers; not an exact historical replica and not a current telecom procedure.
 
 LIVE:
-- `dpl_8CLm4dcyBtzsGJTLiqyXsP8G32Xs`
+- deployment `dpl_8CLm4dcyBtzsGJTLiqyXsP8G32Xs`
 - READY
-- exact commit `d8c814a0414b55396876f6527f162b151ad66e33`
+- exact deployed commit `d8c814a0414b55396876f6527f162b151ad66e33`
 
 Preview:
 `https://relational-key-collectionrelational-key-collection-k46w5ws8t.vercel.app/families/service-benin/exp-2c.html?_vercel_share=kS5SFekdMBMcGV990tppC6gwwN0fNqjH`
+
+State separation:
+- SOURCE shared runtime PASS / unchanged
+- SOURCE Service mechanical base PASS
+- USER EXP-2B causal PASS
+- USER EXP-2B visual FAIL / REVISE
+- SOURCE EXP-2C PASS
+- LIVE EXP-2C READY / PASS
+- USER EXP-2C PENDING
+- RELATIONAL INTEGRITY PASS unchanged
+- Service EXPERIENCE DEBT pending proof
+- VALIDATED 24 unchanged
 
 # EXACT NEXT USER ACTION
 
 Record only EXP-2C, ~10–15 s:
 1. MATCHING CLAIM → TEST RELATIONSHIP
-2. hold 01→02→03→04 completed state
+2. hold completed 01→02→03→04
 3. OTHER CLAIM → TEST RELATIONSHIP
 4. hold split residual
 
-Judge separately:
+Judge:
 - CAUSAL: handoff remains clear and pair-owned
-- VISUAL: object reads as Benin PTT/OPT-era telecom archive/phonecard, not generic green UI
+- VISUAL: reads as Benin PTT/OPT-era telecom archive/phonecard, not generic UI
 - TRUTH: no false exact historical replica
 
-If PASS:
-promote Service-specific EXP-2C layer; preserve shared runtime; reclassify Service out of Experience Debt; record closure; begin Signal EXP-3.
-
-If FAIL:
-revise only archive identity layer; preserve EXP-2 mechanics.
+If PASS: promote Service-specific EXP-2C layer; preserve shared runtime; reclassify Service out of Experience Debt; write closure; begin Signal EXP-3.
+If FAIL: revise archive identity only; preserve EXP-2 mechanics.
 
 PR remains Draft / DO NOT MERGE.
-
 On resume, trust branch head if later than IDs above.
