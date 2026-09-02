@@ -10,108 +10,91 @@ Draft PR: #21 — `DRAFT / DO NOT MERGE`
 **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 `PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
 
-Expansion laws remain canonical:
+Expansion laws:
 - **EXPANSION MUST DEEPEN THE RELATION, NOT REPLACE IT.**
 - **TECHNOLOGY SERVES THE RELATIONAL MECHANISM.**
 - **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
 
-Persistence protocol remains mandatory at every meaningful gate:
+Regression reference:
+**DO BOTH MEMBERS EXIST BEFORE THE RELATION, AND DOES THE MEMORABLE MOMENT BELONG TO WHAT HAPPENS BETWEEN THEM?**
+
+Persistence protocol is mandatory:
 `dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output`.
 
 # GLOBAL STATE
 
 G0 / G1 / G2 / G3 PASS.
 Continental Balance Gate 2 PASS / CLOSED.
-24 VALIDATED families.
-B2.5 CLOSED / PASS with 24/24 RELATIONAL INTEGRITY PASS.
+24 VALIDATED families, six continents × 4.
+B2.5 PASS / CLOSED.
+USER causal regression: 24/24 RELATIONAL INTEGRITY PASS.
 Experiential matrix: STRONG 13 / ADEQUATE 7 / EXPERIENCE DEBT 4 (City, Service, Signal, Frida).
 
-# G4.1 KHIPU — USER PASS / PROMOTED / CLOSED ✅
+# G4.1 KHIPU — CLOSED ✅
+
+USER PASS / PROMOTED.
+Promotion commit: `a4a17eb028d0645c8148e0311bfb6f222b286914`.
+Golden preserved: `families/khipu-peru/snapshot.html`.
+Closure register: `GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md` @ `b3edcb34efe0b26aee8e68e936350c0ce4c8ac9b`.
+
+# G4.2 KENTO — USER PASS / PROMOTED / CLOSED ✅
+
+Candidate:
+`families/kento-japan/g4-2.html`
+implementation commit `42d546294fefcb79131a3a28b33fa7352f334a38`.
+
+USER candidate recording:
+- ~9.4 s;
+- 1908 × 966;
+- 30 fps.
+
+USER verdict:
+- `kagi / hikitsuki` more legible while remaining edge registration marks;
+- MATCHING still reads as print registration;
+- OTHER BLOCK colour-layer displacement / offset marks are more immediately readable;
+- center remains subordinate;
+- both cards remain distinct and valid.
 
 Promotion:
-`families/khipu-peru/index.html`
-commit `a4a17eb028d0645c8148e0311bfb6f222b286914`
+`families/kento-japan/index.html`
+commit `1efaf48610ba06a2db1962d900c65fb45ae411b6`.
 
 Golden preserved:
-`families/khipu-peru/snapshot.html`
+`families/kento-japan/snapshot.html` unchanged.
+
+Promotion LIVE status:
+GitHub/Vercel `SUCCESS`.
 
 Closure register:
-`GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md`
-commit `b3edcb34efe0b26aee8e68e936350c0ce4c8ac9b`
-
-# G4.2 KENTO — SOURCE PASS / LIVE READY / USER PENDING
-
-Re-audit verdict:
-- historical debt remains reproduced;
-- B2.5 USER classification remains `PASS / ADEQUATE`;
-- Kento relational integrity remains PASS;
-- only legibility polish is authorized.
-
-Golden source unchanged:
-`families/kento-japan/snapshot.html`
-
-Public wrapper unchanged:
-`families/kento-japan/index.html`
-
-Reversible candidate:
-`families/kento-japan/g4-2.html`
-implementation commit `42d546294fefcb79131a3a28b33fa7352f334a38`
-
-Candidate treatment:
-- `kagi / hikitsuki` slightly larger/thicker;
-- OTHER BLOCK colour-layer displacement increased for distant readability;
-- offset marks slightly more legible;
-- center register unchanged and subordinate;
-- no JS/timing/semantic changes.
-
-Dedicated register:
-`GLOBAL_REFINEMENT_G4_2_KENTO_POLISH_CANDIDATE_SOURCE_PASS.md`
-commit `b6774afe976f734b075c42f9bda3786492ea8cd3`
-
-G4 inventory advanced:
-`GLOBAL_REFINEMENT_G4_POLISH_INVENTORY.md`
-commit `d2a3061f8abbf07afe0559529e150c3326b5cfd1`
-
-LIVE deployment:
-- deployment `dpl_6JN1FKFnDU8J2aPR3SmKaHsmUtdT`;
-- state `READY`;
-- deployed candidate commit `42d546294fefcb79131a3a28b33fa7352f334a38`.
-
-Candidate preview:
-`https://relational-key-collectionrelational-key-collection-7jywaxzav.vercel.app/families/kento-japan/g4-2.html?_vercel_share=4Qhk8zqwXTrcKeRvWTIFhAqg53wU4bnj`
-
-Canonical synchronization:
-- CURRENT_STATE candidate-gate commit `648d02d86bc39921f709b4cecbe4ef7565139cf3`;
-- HANDOVER canonical resume commit `cec85a87719e4e7e50a1242a00ae7026d6f5966f`.
+`GLOBAL_REFINEMENT_G4_2A_KENTO_LIVE_USER_PASS_PROMOTION.md`
+commit `8b827b417d0ced77f4295a703fca2325cc35b489`.
 
 State separation:
 - SOURCE golden: PASS / unchanged
 - SOURCE candidate: PASS
-- LIVE candidate: READY / PASS
-- USER candidate comparison: PENDING
+- USER comparison: PASS
+- SOURCE promotion: PASS
+- LIVE promotion: PASS
 - RELATIONAL INTEGRITY: PASS unchanged
+- B2.5 ambition: ADEQUATE unchanged
 - VALIDATED: 24 unchanged
 
 # ACTIVE GATE / NEXT EXACT OUTPUT
 
-# **G4.2A — KENTO LIVE USER CANDIDATE REGRESSION / GOLDEN VS POLISH**
+# **G4.3 — SIKU POLISH RE-AUDIT + MINIMUM CANDIDATE DECISION**
 
-Record only candidate behavior:
-1. MATCHING BLOCK → TEST REGISTRATION;
-2. hold registered state briefly;
-3. OTHER BLOCK → TEST REGISTRATION;
-4. hold misregistration state briefly.
+Inspect current Siku golden and reproduce only the documented debt:
+- central temporal interlock field relatively small at distant desktop scale;
+- bottom microcopy relatively small.
 
-PASS criteria:
-- kagi / hikitsuki easier to perceive while remaining edge registration marks;
-- OTHER colour-layer displacement easier to read;
-- center does not dominate;
-- both cards remain distinct and valid;
-- matching remains print registration;
-- OTHER remains print misregistration.
+Non-negotiable:
+- preserve IRA / ARKA ownership;
+- center remains temporal interlock, not waveform/resonance;
+- OTHER INTERLOCK preserves silent positions and no-complete-route semantics;
+- patch only if current evidence reproduces the debt.
 
-If USER PASS: promote CSS-only treatment through public Kento wrapper while preserving snapshot golden.
-If not: revise or abandon candidate.
+If debt is reproduced: create smallest reversible candidate with golden preserved.
+If not: close G4.3 no-patch-needed.
 
-Do not start G4.3 Siku until G4.2A closes.
+Do not start G4.4 before G4.3 closes.
 PR #21 remains Draft / DO NOT MERGE.
