@@ -19,52 +19,55 @@ Closure register: `GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md` @ 
 
 ## G4.2 — Japan / Kento — CLOSED ✅
 
-Documented debt reproduced:
-- `kagi / hikitsuki` too quiet at collection-view scale;
-- OTHER BLOCK colour-layer displacement subtle at distant desktop scale.
-
-Candidate:
-`families/kento-japan/g4-2.html`
-implementation commit `42d546294fefcb79131a3a28b33fa7352f334a38`.
-
-USER candidate recording:
-~9.4 s / 1908×966 / 30 fps.
-
-USER verdict: `PASS / PROMOTE`.
-Observed:
-- edge registration marks easier to perceive;
-- matching still means print registration;
-- OTHER colour misregistration clearer;
-- center remains subordinate;
-- both cards remain distinct and valid.
-
-Promotion:
-`families/kento-japan/index.html`
-commit `1efaf48610ba06a2db1962d900c65fb45ae411b6`.
-
-Golden preserved:
-`families/kento-japan/snapshot.html` unchanged.
-
+USER candidate gate: `PASS / PROMOTE`.
+Candidate: `families/kento-japan/g4-2.html` @ `42d546294fefcb79131a3a28b33fa7352f334a38`.
+Promotion: `families/kento-japan/index.html` @ `1efaf48610ba06a2db1962d900c65fb45ae411b6`.
+Golden `families/kento-japan/snapshot.html` preserved.
 GitHub/Vercel promotion status: `SUCCESS`.
+Closure register: `GLOBAL_REFINEMENT_G4_2A_KENTO_LIVE_USER_PASS_PROMOTION.md` @ `8b827b417d0ced77f4295a703fca2325cc35b489`.
 
-Closure register:
-`GLOBAL_REFINEMENT_G4_2A_KENTO_LIVE_USER_PASS_PROMOTION.md`
-commit `8b827b417d0ced77f4295a703fca2325cc35b489`.
+## G4.3 — Bolivia / Siku — SOURCE PASS / LIVE READY / USER PENDING
 
-## G4.3 — Bolivia / Siku — ACTIVE
+Historical documented debt was reproduced against current golden:
+- central temporal field `208×138 px` is relatively small at desktop capture scale;
+- field/bridge labels around `5 px` are quiet;
+- bottom result/law/truth microcopy around `6 px` is quiet.
 
-Historical verdict: `PASS / PROMOTE` — PR #16, with explicit non-blocking polish deferred to Global Refinement.
+Golden unchanged:
+`families/siku-bolivia/snapshot.html`.
 
-Documented debt:
-- central interlock field relatively small at desktop capture scale;
-- bottom microcopy relatively small at desktop capture scale.
+Public wrapper unchanged:
+`families/siku-bolivia/index.html`.
+
+Reversible CSS-only candidate:
+`families/siku-bolivia/g4-3.html`
+implementation commit `a2524db6f8fff389d2afc1e66c186e3c88573326`.
+
+Candidate only increases legibility:
+- center column 220 → 236 px;
+- interlock field 208×138 → 224×148 px;
+- field label 5 → 5.5 px;
+- bridge label 5 → 5.8 px;
+- result/law/truth 6 → 6.5 px;
+- legend 5 → 5.6 px.
+
+No state, timing, audio, route, IRA/ARKA ownership, matching or OTHER semantics changed.
 
 Constraint:
 - preserve IRA / ARKA source ownership;
 - center remains temporal interlock, not waveform/resonance;
-- preserve OTHER INTERLOCK silent positions and no-complete-route semantics.
+- preserve OTHER INTERLOCK silent positions and no-complete-route semantics;
+- center remains subordinate to both cards.
 
-Status: **RE-AUDIT CURRENT GOLDEN FIRST.**
+Dedicated register:
+`GLOBAL_REFINEMENT_G4_3_SIKU_POLISH_CANDIDATE_SOURCE_PASS.md`
+commit `2045367ba94acd5aebe01467fdc6c9293a8b7afe`.
+
+LIVE candidate:
+`dpl_8cKUNdmiyyTBmfv61gppmW88qktM` — READY.
+Exact deployed commit: `a2524db6f8fff389d2afc1e66c186e3c88573326`.
+
+Status: **G4.3A USER CANDIDATE REGRESSION REQUIRED.**
 
 ## G4.4 — Re-audit only / patch only if reproduced
 
@@ -99,6 +102,6 @@ Before modifying an autonomous family:
 
 # Immediate next output
 
-# **G4.3 — SIKU POLISH RE-AUDIT + MINIMUM CANDIDATE DECISION**
+# **G4.3A — SIKU LIVE USER CANDIDATE REGRESSION**
 
-Inspect `families/siku-bolivia/index.html` and `families/siku-bolivia/snapshot.html`. Reproduce only the documented center/microcopy legibility debt. If reproduced, create the smallest reversible candidate; otherwise close G4.3 no-patch-needed.
+Record MATCHING INTERLOCK then OTHER INTERLOCK on the candidate preview. Decide `PASS / PROMOTE` or `REVISE / ABANDON` before starting G4.4.
