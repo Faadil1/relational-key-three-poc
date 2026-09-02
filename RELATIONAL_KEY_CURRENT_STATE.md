@@ -29,98 +29,106 @@ Continental Balance Gate 2 PASS / CLOSED.
 B2.5 PASS / CLOSED.
 USER causal regression: 24/24 RELATIONAL INTEGRITY PASS.
 Experiential matrix: STRONG 13 / ADEQUATE 7 / EXPERIENCE DEBT 4 (City, Service, Signal, Frida).
+G4 micro-polish inventory: CLOSED.
 
-# G4.1 KHIPU — CLOSED ✅
-USER PASS / PROMOTED.
-Promotion `families/khipu-peru/index.html` @ `a4a17eb028d0645c8148e0311bfb6f222b286914`.
-Golden preserved.
+# G4 CLOSED ✅
 
-# G4.2 KENTO — CLOSED ✅
-USER PASS / PROMOTED.
-Promotion `families/kento-japan/index.html` @ `1efaf48610ba06a2db1962d900c65fb45ae411b6`.
-Golden preserved.
-Closure register `GLOBAL_REFINEMENT_G4_2A_KENTO_LIVE_USER_PASS_PROMOTION.md` @ `8b827b417d0ced77f4295a703fca2325cc35b489`.
+Khipu, Kento, Siku and Swell USER polish candidates were promoted with golden/fallback preserved.
+Zellige and Ombak closed `NO PATCH NEEDED`.
+G4 final inventory:
+`GLOBAL_REFINEMENT_G4_POLISH_INVENTORY.md` @ `b1cc35662e9649347a53a46175b7352c33e82b98`.
 
-# G4.3 SIKU — CLOSED ✅
-USER PASS / PROMOTED.
-Candidate `families/siku-bolivia/g4-3.html` @ `a2524db6f8fff389d2afc1e66c186e3c88573326`.
-Promotion `families/siku-bolivia/index.html` @ `42bce5564e27d62b201d9c3015b32da7c3d9c0b2`.
-Golden preserved.
-Promotion deployment `dpl_9icvAQFArzpJHKkdyTYdqXDBmdEo` READY.
-Closure register `GLOBAL_REFINEMENT_G4_3A_SIKU_LIVE_USER_PASS_PROMOTION.md` @ `18b40548349364b8ca77103a04f3d74f8cba5551`.
+Latest Swell closure:
+- public wrapper promotion `049dc71ad16044a0debb099728dca473f90943c2`;
+- deployment `dpl_AtTAh52sWKHHP4CEx8qUBhX6FhoZ` READY;
+- closure register `GLOBAL_REFINEMENT_G4_4A_SWELL_LIVE_USER_PASS_PROMOTION.md` @ `56e27bbb6fed8743ae909e7a82cfb5240e7e6748`.
 
-# G4.4 — CLOSED ✅
+# EXPERIENCE-DEBT DISPOSITION — CLOSED / EXPAND NOW ×4 ✅
 
-Source re-audit register:
-`GLOBAL_REFINEMENT_G4_4_REAUDIT_ZELLIGE_OMBAK_SWELL_SOURCE_DECISION.md`
-commit `ab04b121a028cb0e5ac22fdb8343e17cb2da2d27`.
+Dedicated register:
+`GLOBAL_REFINEMENT_CLOSEOUT_EXPERIENCE_DEBT_DISPOSITION.md`
+commit `024d929964196d03285a851d6f6ae0e57a7467f8`.
 
-## Zellige / Fès — NO PATCH NEEDED ✅
-Current golden/source remains pair-native and material-native.
-B2.5 classification remains `PASS / STRONG`.
-No mutation.
+Disposition:
+1. City / Gatineau — `EXPAND NOW` — pair-spanning route handoff.
+2. Service / Benin — `EXPAND NOW` — service-step handoff / completion path.
+3. Signal / Nigeria — `EXPAND NOW` — pair-spanning relay propagation.
+4. Frida / Coyoacán — `EXPAND NOW` — layered trace alignment.
 
-## Ombak / Bali — NO PATCH NEEDED ✅
-Current golden/source retains explicit Δ7 vs Δ12 controlled-difference proof plus truthful browser-synthesized audio.
-B2.5 classification remains `PASS / STRONG`.
-No mutation.
+Execution order is frozen:
+City → Service → Signal → Frida.
 
-## Swell / Marshall Islands — USER PASS / PROMOTED ✅
+Shared-runtime safety rule:
+- do not mutate `families/_shared/round13r/index.html` while testing one family;
+- use isolated family-specific candidates first;
+- public wrappers/fallback remain unchanged until USER PASS;
+- RELATIONAL INTEGRITY 24/24 and VALIDATED 24 remain unchanged during expansion work.
+
+# EXP-1 CITY / GATINEAU — SOURCE PASS / LIVE READY / USER PENDING
+
+Golden / fallback unchanged:
+- `families/city-gatineau/index.html`;
+- `families/_shared/round13r/index.html`.
 
 Candidate:
-`families/swell-marshall/g4-4.html`
-implementation commit `297bcea827d3cfd578d81bdd89ed682b9ae4337f`.
+`families/city-gatineau/exp-1.html`
+implementation commit `bed88d8a1dce21e6a70d1757c5466461ae410f2e`.
 
-USER evidence:
-- ~15.97 s;
-- 1904×964;
-- 30 fps;
-- matching registered orientation clearly readable;
-- OTHER displaced orientation clearly readable;
-- both cards remain dominant/distinct;
-- atoll and swell field remain contextual relation cues.
+Expansion mechanism:
+# `PAIR-SPANNING ROUTE HANDOFF`
 
-Promotion:
-`families/swell-marshall/index.html`
-commit `049dc71ad16044a0debb099728dca473f90943c2`.
+MATCHING:
+- Card A and Card B route fragments visually align through the gap;
+- a continuous corridor spans the pair;
+- a moving handoff pulse clarifies route continuation causality;
+- center junction is reduced in hierarchy;
+- relation reads `ROUTE HANDOFF · CONTINUOUS`.
 
-Golden preserved:
-`families/swell-marshall/snapshot.html` unchanged.
+OTHER:
+- both route fragments remain visible and valid;
+- fragments split vertically rather than collapsing into generic failure;
+- visible offset residue remains in the gap;
+- relation reads `OFFSET RESIDUAL · BOTH ROUTES VALID`.
 
-Promotion deployment:
-`dpl_AtTAh52sWKHHP4CEx8qUBhX6FhoZ` — READY.
-Exact deployed commit `049dc71ad16044a0debb099728dca473f90943c2`.
+Candidate register:
+`GLOBAL_REFINEMENT_EXP1_CITY_ROUTE_HANDOFF_CANDIDATE_SOURCE_PASS.md`
+commit `bc52ec728c78cc5deaad386588f5a1a607670135`.
 
-Closure register:
-`GLOBAL_REFINEMENT_G4_4A_SWELL_LIVE_USER_PASS_PROMOTION.md`
-commit `56e27bbb6fed8743ae909e7a82cfb5240e7e6748`.
+LIVE candidate:
+- deployment `dpl_A7Ju2hjJqVaZkZsiHiNemUUG18LD`;
+- state READY;
+- exact deployed commit `bed88d8a1dce21e6a70d1757c5466461ae410f2e`.
+
+Preview:
+`https://relational-key-collectionrelational-key-collection-dhq8gvdd0.vercel.app/families/city-gatineau/exp-1.html?_vercel_share=JDiurJAvhxip3NeHbjiVVOYKXTMT2vdB`
 
 State separation:
-- SOURCE golden: PASS / preserved
-- SOURCE candidate: PASS
-- USER candidate comparison: PASS
-- SOURCE promotion: PASS
-- LIVE promotion: PASS
+- SOURCE shared golden: PASS / unchanged
+- SOURCE public City wrapper: PASS / unchanged
+- SOURCE City candidate: PASS
+- LIVE City candidate: READY / PASS
+- USER City candidate comparison: PENDING
 - RELATIONAL INTEGRITY: PASS unchanged
-- Swell experiential classification: ADEQUATE unchanged
 - VALIDATED: 24 unchanged
 
 # ACTIVE GATE / NEXT EXACT OUTPUT
 
-# **GLOBAL REFINEMENT CLOSEOUT — EXPERIENCE-DEBT DISPOSITION**
+# **EXP-1A — CITY LIVE USER ROUTE-HANDOFF REGRESSION**
 
-Scope only the four families already classified `EXPERIENCE DEBT` in B2.5:
-1. City / Gatineau
-2. Service / Benin
-3. Signal / Nigeria
-4. Frida / Coyoacán
+Record candidate only:
+1. `MATCHING CLAIM` → `TEST RELATIONSHIP`;
+2. hold continuous route handoff briefly;
+3. `OTHER CLAIM` → `TEST RELATIONSHIP`;
+4. hold offset residual briefly.
 
-Goal:
-- re-audit each against the expansion invariant and the base-idea reference;
-- decide `EXPAND NOW` vs `DEFER / ACCEPT AS VALID`;
-- do not treat experience debt as relational failure;
-- do not mutate for visual uniformity;
-- if expansion is warranted, define the smallest pair-native expansion candidate and preserve rollback/golden behavior.
+PASS criteria:
+- route continuation clearly belongs to Card A + relation + Card B;
+- moving pulse communicates causality, not decoration;
+- center remains secondary;
+- OTHER keeps both route fragments valid and visibly offset;
+- two-card product remains dominant;
+- experience is materially beyond the former generic shared-runtime choreography.
 
-No USER recording is required until/unless an expansion candidate is actually created.
+Do not promote City until USER PASS.
+Do not start Service EXP-2 until City EXP-1A closes.
 PR #21 remains Draft / DO NOT MERGE.
