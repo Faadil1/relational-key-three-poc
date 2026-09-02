@@ -35,7 +35,7 @@ LIVE `dpl_2GFwQXm9CH5GiXwZ3w3YvzCLZyko` READY.
 Closure register `GLOBAL_REFINEMENT_EXP2C_SERVICE_BENIN_ARCHIVE_PHONECARD_USER_PASS_PROMOTION.md` @ `61f6f4f1cf508a13a461b6278676d54647062d58`.
 Service = ADEQUATE.
 
-# SIGNAL / NIGERIA — ACTIVE, LIVE BLOCKED
+# SIGNAL / NIGERIA — ACTIVE
 
 NITEL candidate:
 `families/signal-nigeria/exp-3.html` implementation `7529cb83a3ed3cdedb315dce5f40e15f39fff7ec`.
@@ -44,32 +44,38 @@ Candidate register `GLOBAL_REFINEMENT_EXP3_SIGNAL_NIGERIA_NITEL_RELAY_CANDIDATE.
 Mechanism: **EARTH STATION → RELAY → LINK CONTINUES**.
 Documented visual anchors: Nigerian Telecommunications Ltd / NITEL; 1990s chip phonecards; 100/200/300 UNITS; globe + Earth Station dish + transmission mast; `Your link to the world` language.
 
-## EXP-3A USER upload — INVALID
+## Previous EXP-3A USER upload — INVALID
 
 USER recording: ~10.6 s / 1904×968 / 30 fps / 318 frames.
-Observed: outer NITEL wrapper loads, but inner family surface is `404: NOT_FOUND` throughout.
-Therefore this recording is **NOT USER EXP-3A EVIDENCE** and creates no causal / visual / truth verdict.
+Observed: outer NITEL wrapper loaded, but inner family surface was `404: NOT_FOUND` throughout.
+Therefore it is NOT USER EXP-3A evidence and creates no causal / visual / truth verdict.
 
-Dedicated blocker register:
-`GLOBAL_REFINEMENT_EXP3A_SIGNAL_NIGERIA_LIVE_ROUTING_BLOCKER.md` @ `b1430590928a2305aa51734a2b3a13c6ea82bfae`.
+Blocker register:
+`GLOBAL_REFINEMENT_EXP3A_SIGNAL_NIGERIA_LIVE_ROUTING_BLOCKER.md` — now resolved.
 
-Root cause: EXP-3 explicitly loads `/families/signal-nigeria/index.html`; the generic family wrapper previously interpreted the final pathname token as family slug, resolving `index.html` instead of `signal-nigeria` and requesting a nonexistent internal path.
+## Routing fix and retry
 
-Routing fix:
-`families/signal-nigeria/index.html` now resolves the preceding pathname token when final token is `index.html`.
-Fix first landed at `4931445dc0de05e15af07f8a9d4cb88e209048a7`; branch head retains the same fix.
-This is routing robustness only: no Signal visual promotion, no EXP-3 mechanism change, no shared-runtime mutation.
+Root cause: explicit `/families/signal-nigeria/index.html` path made the wrapper resolve `index.html` as slug.
+Fix: use the preceding pathname token when final token is `index.html`.
+Fix first landed at `4931445dc0de05e15af07f8a9d4cb88e209048a7`.
+Deployment retry marker commit: `0c0ee147c1afbb60bb970f215c54c9b5b6f634c6`.
+No Signal visual promotion, no EXP-3 semantic change, no shared-runtime mutation.
 
-LIVE status:
-**VERCEL FAILURE — build-rate-limit / Hobby plan.**
-No valid fixed deployment exists yet.
+Routing-fixed LIVE deployment:
+- `dpl_DbbvGjiwxmXAcsmPUBvmRuPaUoUz`
+- READY
+- exact deployed commit `0c0ee147c1afbb60bb970f215c54c9b5b6f634c6`
+- host `relational-key-collectionrelational-key-collection-kvxhfdiqg.vercel.app`
+
+Fresh share URL:
+`https://relational-key-collectionrelational-key-collection-kvxhfdiqg.vercel.app/families/signal-nigeria/exp-3.html?_vercel_share=pWME7b1ltpCCycqmyk5F3vtYt5oO3uXO`
 
 State separation:
 - SOURCE shared runtime PASS / unchanged
 - SOURCE EXP-3 NITEL candidate PASS
 - SOURCE routing fix PASS
-- LIVE original EXP-3 deployment INVALID for USER gate because internal 404
-- LIVE routing-fixed build BLOCKED by Vercel build-rate limit
+- LIVE routing-fixed deployment READY
+- previous USER upload INVALID
 - USER EXP-3A PENDING
 - RELATIONAL INTEGRITY PASS unchanged
 - Signal remains EXPERIENCE DEBT
@@ -77,8 +83,14 @@ State separation:
 
 # ACTIVE GATE / NEXT EXACT OUTPUT
 
-# **EXP-3A-LIVE — SIGNAL / NIGERIA ROUTING-FIX DEPLOYMENT**
+# **EXP-3A — SIGNAL / NIGERIA NITEL RELAY USER REGRESSION**
 
-Do not ask for another USER recording until a Vercel deployment containing the routing fix is READY.
-Once READY, issue one fresh share URL and resume the same EXP-3A USER regression.
-Do not promote Signal. Do not start Frida EXP-4. PR #21 remains Draft / DO NOT MERGE.
+Open the fresh share URL and first confirm the NITEL family surface renders, not 404. Then record ~10–15 s:
+1. MATCHING CLAIM → TEST RELATIONSHIP
+2. hold Earth Station → Relay state
+3. OTHER CLAIM → TEST RELATIONSHIP
+4. hold relay-offset residual
+
+Judge CAUSAL, VISUAL and TRUTH separately.
+
+Do not promote Signal until USER PASS. Do not start Frida EXP-4 until Signal closes. PR #21 remains Draft / DO NOT MERGE.
