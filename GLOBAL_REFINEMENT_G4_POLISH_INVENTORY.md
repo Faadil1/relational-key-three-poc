@@ -8,74 +8,50 @@ Phase: Global Refinement — G4
 
 # `POLISH MUST INCREASE LEGIBILITY WITHOUT REWRITING THE RELATIONSHIP.`
 
-A historical `PASS WITH POLISH` label is not by itself authorization to invent a new treatment. A G4 patch requires either:
-1. an explicitly documented non-blocking debt from a prior user audit; or
-2. a newly reproduced issue against the preserved golden family reference.
-
-Family golden references must remain recoverable while a polish candidate is tested.
+A G4 patch requires explicit non-blocking debt or a newly reproduced issue against a preserved golden family reference. Golden references must remain recoverable while candidates are tested.
 
 ## G4.1 — Peru / Khipu — CLOSED ✅
 
-Historical debt:
-- increase hierarchy/readability of the central knot slightly;
-- make tension change more immediately perceptible.
+USER candidate gate: `PASS / PROMOTE`.
+Promotion: `families/khipu-peru/index.html` @ `a4a17eb028d0645c8148e0311bfb6f222b286914`.
+Golden `snapshot.html` preserved.
+Closure register: `GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md` @ `b3edcb34efe0b26aee8e68e936350c0ce4c8ac9b`.
+
+## G4.2 — Japan / Kento — CLOSED ✅
+
+Documented debt reproduced:
+- `kagi / hikitsuki` too quiet at collection-view scale;
+- OTHER BLOCK colour-layer displacement subtle at distant desktop scale.
 
 Candidate:
-`families/khipu-peru/g4-1.html`
-commit `64647ea78b04439ea9a57ece47f19490d9185d45`
+`families/kento-japan/g4-2.html`
+implementation commit `42d546294fefcb79131a3a28b33fa7352f334a38`.
 
-USER candidate gate:
-`PASS / PROMOTE`.
+USER candidate recording:
+~9.4 s / 1908×966 / 30 fps.
+
+USER verdict: `PASS / PROMOTE`.
+Observed:
+- edge registration marks easier to perceive;
+- matching still means print registration;
+- OTHER colour misregistration clearer;
+- center remains subordinate;
+- both cards remain distinct and valid.
 
 Promotion:
-`families/khipu-peru/index.html`
-commit `a4a17eb028d0645c8148e0311bfb6f222b286914`
+`families/kento-japan/index.html`
+commit `1efaf48610ba06a2db1962d900c65fb45ae411b6`.
 
-Golden `snapshot.html` remains unchanged.
-Vercel/GitHub promotion status: `SUCCESS`.
+Golden preserved:
+`families/kento-japan/snapshot.html` unchanged.
+
+GitHub/Vercel promotion status: `SUCCESS`.
 
 Closure register:
-`GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md`
-commit `b3edcb34efe0b26aee8e68e936350c0ce4c8ac9b`
+`GLOBAL_REFINEMENT_G4_2A_KENTO_LIVE_USER_PASS_PROMOTION.md`
+commit `8b827b417d0ced77f4295a703fca2325cc35b489`.
 
-## G4.2 — Japan / Kento — SOURCE PASS / LIVE READY / USER PENDING
-
-Ground-truth audit:
-`COLLECTION_C1_KENTO_USER_VISUAL_AUDIT_PASS.md`.
-Historical verdict: `VISUAL PASS WITH POLISH / PROMOTE`.
-
-Documented debt:
-- increase hierarchy of `kagi` / `hikitsuki` slightly at collection-view scale;
-- make colour-layer displacement on OTHER BLOCK easier to read from a distant desktop view;
-- keep the center register subordinate to the two cards.
-
-Current re-audit:
-- debt is reproduced by the golden source and the B2.5 USER classification (`PASS / ADEQUATE`, layer displacement hierarchy can improve);
-- golden `snapshot.html` remains unchanged;
-- public Kento wrapper remains unchanged.
-
-Reversible CSS-only candidate:
-`families/kento-japan/g4-2.html`
-implementation commit `42d546294fefcb79131a3a28b33fa7352f334a38`
-
-Candidate register:
-`GLOBAL_REFINEMENT_G4_2_KENTO_POLISH_CANDIDATE_SOURCE_PASS.md`
-commit `b6774afe976f734b075c42f9bda3786492ea8cd3`
-
-READY deployment containing candidate:
-`dpl_6JN1FKFnDU8J2aPR3SmKaHsmUtdT`
-
-Candidate preview:
-`https://relational-key-collectionrelational-key-collection-7jywaxzav.vercel.app/families/kento-japan/g4-2.html?_vercel_share=4Qhk8zqwXTrcKeRvWTIFhAqg53wU4bnj`
-
-Constraint:
-- matching must still read as print registration, not card equality;
-- mismatch must remain printing misregistration, not generic UI failure;
-- center register remains subordinate.
-
-Status: **G4.2A USER CANDIDATE REGRESSION REQUIRED.**
-
-## G4.3 — Bolivia / Siku — QUEUED
+## G4.3 — Bolivia / Siku — ACTIVE
 
 Historical verdict: `PASS / PROMOTE` — PR #16, with explicit non-blocking polish deferred to Global Refinement.
 
@@ -84,24 +60,26 @@ Documented debt:
 - bottom microcopy relatively small at desktop capture scale.
 
 Constraint:
-- preserve source ownership IRA / ARKA;
-- center must remain temporal interlock, not waveform/resonance;
+- preserve IRA / ARKA source ownership;
+- center remains temporal interlock, not waveform/resonance;
 - preserve OTHER INTERLOCK silent positions and no-complete-route semantics.
+
+Status: **RE-AUDIT CURRENT GOLDEN FIRST.**
 
 ## G4.4 — Re-audit only / patch only if reproduced
 
 ### Fès / Zellige
-Historical `PASS WITH POLISH`, but no sufficiently specific residual debt for mutation.
+Historical `PASS WITH POLISH`; no sufficiently specific residual debt for mutation until reproduced.
 Non-negotiable: `THE EDGE MATERIAL RESOLVES THE RELATIONSHIP.`
 
 ### Bali / Ombak
-Historical `PASS WITH POLISH`; reproduce any remaining visual/audio legibility debt before mutation.
+Historical `PASS WITH POLISH`; reproduce remaining visual/audio legibility debt before mutation.
 Non-negotiable: `CONTROLLED DIFFERENCE CAN BE THE RELATIONSHIP.`
 
 ### Marshall Islands / Swell
 Historical `PASS WITH POLISH`; re-audit orientation point and swell × atoll hierarchy before mutation.
 
-## No current G4 patch evidence
+## No current G4 micro-polish evidence
 
 Do not patch merely for visual uniformity:
 - United Kingdom / Stereoscopy;
@@ -109,19 +87,18 @@ Do not patch merely for visual uniformity:
 - France / Boulle;
 - six restored shared-runtime families — City, Service, Signal, Frida, Food, Textile.
 
-Note: City / Service / Signal / Frida carry separate `EXPERIENCE DEBT` in the final 24-family ambition matrix. That is broader expansion debt, not permission for arbitrary G4 micro-polish.
+City / Service / Signal / Frida carry separate `EXPERIENCE DEBT` in the B2.5 ambition matrix; that broader debt is not authorization for arbitrary G4 micro-polish.
 
 ## Candidate architecture rule
 
 Before modifying an autonomous family:
-- retain existing `snapshot.html` as golden regression source;
-- create a separate polish candidate rather than overwriting golden evidence;
-- point public wrapper to candidate treatment only after dedicated USER Preview gate passes;
-- compare behavior against golden snapshot;
+- preserve existing `snapshot.html` as golden regression source;
+- create a separate reversible candidate;
+- promote only after dedicated USER Preview PASS;
 - preserve family semantics and pair dominance.
 
 # Immediate next output
 
-# **G4.2A — KENTO LIVE USER CANDIDATE REGRESSION / GOLDEN VS POLISH**
+# **G4.3 — SIKU POLISH RE-AUDIT + MINIMUM CANDIDATE DECISION**
 
-Record only MATCHING BLOCK and OTHER BLOCK on the candidate preview. Decide `PASS / PROMOTE` or `REVISE / ABANDON` before starting G4.3 Siku.
+Inspect `families/siku-bolivia/index.html` and `families/siku-bolivia/snapshot.html`. Reproduce only the documented center/microcopy legibility debt. If reproduced, create the smallest reversible candidate; otherwise close G4.3 no-patch-needed.
