@@ -50,23 +50,7 @@ commit `dcea6d9d4dcc3b4c67f3698454f3ee0e0cd00c4e`
 
 # G4.1 KHIPU — CLOSED ✅
 
-Candidate:
-`families/khipu-peru/g4-1.html`
-implementation commit `64647ea78b04439ea9a57ece47f19490d9185d45`
-
-USER comparison video:
-- ~11.33 sec;
-- 1912×966;
-- 30 fps.
-
-Verdict:
-`USER PASS / PROMOTE`.
-
-Why:
-- tension progression is easier to read;
-- knot hierarchy is stronger without becoming the product;
-- both member cards remain dominant;
-- OTHER RECORD preserves residual and both records remain valid.
+USER verdict: `PASS / PROMOTE`.
 
 Promotion:
 `families/khipu-peru/index.html`
@@ -81,16 +65,12 @@ Closure register:
 `GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md`
 commit `b3edcb34efe0b26aee8e68e936350c0ce4c8ac9b`
 
-Candidate spec sync:
-`GLOBAL_REFINEMENT_G4_1_KHIPU_POLISH_CANDIDATE.md`
-commit `2c5f6fb91bb8e4fa255e334398fc7d074bee0f4f`
-
 G4 inventory advanced:
 `GLOBAL_REFINEMENT_G4_POLISH_INVENTORY.md`
 commit `105c68436e477f110f2fa3a0e5ad977823e46c7d`
 
-CURRENT_STATE latest synchronization:
-`e7ff5f289d339bd50f2341434e54fc73fd7c145c`
+Latest CURRENT_STATE synchronization commit:
+`fb60d09b0260d51e095cb18f72f829ad0ca996f0`
 
 # G4 EXECUTION ORDER
 
