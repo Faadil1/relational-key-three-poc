@@ -161,3 +161,5 @@ Judge independently:
 Do not promote Signal until USER PASS.
 Do not start Frida EXP-4 until Signal closes.
 PR #21 remains Draft / DO NOT MERGE.
+
+Latest synchronized documentation head before PR body update: `756e66752ebb22ed0e010fa82fe2af80a16f2fd2`.
