@@ -88,6 +88,10 @@ commit `2c5f6fb91bb8e4fa255e334398fc7d074bee0f4f`
 CURRENT_STATE latest synchronization:
 `f764819c4a6be826d6fb5db9cc3c5f6a7778aa9d`
 
+G4 inventory advanced to Kento:
+`GLOBAL_REFINEMENT_G4_POLISH_INVENTORY.md`
+commit `105c68436e477f110f2fa3a0e5ad977823e46c7d`
+
 # G4 EXECUTION ORDER
 
 1. G4.1 Khipu — CLOSED;
