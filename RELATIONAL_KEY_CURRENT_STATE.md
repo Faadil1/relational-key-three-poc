@@ -80,6 +80,10 @@ LIVE deployment:
 Candidate preview:
 `https://relational-key-collectionrelational-key-collection-7jywaxzav.vercel.app/families/kento-japan/g4-2.html?_vercel_share=4Qhk8zqwXTrcKeRvWTIFhAqg53wU4bnj`
 
+Canonical synchronization:
+- CURRENT_STATE candidate-gate commit `648d02d86bc39921f709b4cecbe4ef7565139cf3`;
+- HANDOVER canonical resume commit `cec85a87719e4e7e50a1242a00ae7026d6f5966f`.
+
 State separation:
 - SOURCE golden: PASS / unchanged
 - SOURCE candidate: PASS
