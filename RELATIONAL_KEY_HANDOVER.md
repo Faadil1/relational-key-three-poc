@@ -44,15 +44,15 @@ Blocker register:
 Root cause: EXP-3 loaded `/families/signal-nigeria/index.html` explicitly; family-wrapper slug resolution treated `index.html` as the slug.
 
 Source fix:
-`families/signal-nigeria/index.html` explicit-index route hardening @ `4931445dc0de05e15af07f8a9d4cb88e209048a7`.
+`families/signal-nigeria/index.html` explicit-index route hardening first landed @ `4931445dc0de05e15af07f8a9d4cb88e209048a7`; branch head contains the same fix.
 No semantic or visual promotion. Shared runtime unchanged.
 
-Vercel status for fix commit: **FAILURE — build-rate-limit / Hobby plan**.
+Vercel status for the routing-fix build: **FAILURE — build-rate-limit / Hobby plan**.
 Therefore no fresh valid preview exists yet.
 
 # EXACT NEXT ACTION
 
-Wait until Vercel can produce a READY deployment containing `4931445...` or later equivalent fix. Then:
+Wait until Vercel can produce a READY deployment containing the explicit-index routing fix. Then:
 1. generate fresh share URL;
 2. verify the NITEL family surface actually renders, not 404;
 3. ask for exactly one new ~10–15 s EXP-3A recording: MATCHING → hold Earth Station→Relay; OTHER → hold offset residual;
