@@ -17,16 +17,22 @@
 </nav>
 <iframe class="frame" id="rk" title="RELATIONAL KEY family"></iframe>
 <script>
-const parts=location.pathname.split('/').filter(Boolean);
-const last=parts.at(-1);
-const slug=last==='index.html'?parts.at(-2):last;
-const labels={
-'city-gatineau':'GATINEAU · REGISTERED CITY PASSAGE','service-benin':'BENIN · SERVICE REGISTER','signal-nigeria':'NIGERIA · SIGNAL PORTRAIT','frida-coyoacan':'COYOACÁN · TRACE SYSTEM','food-toyama':'TOYAMA · EDIBLE PASSAGE','textile-bonwire':'BONWIRE · WOVEN REGISTER','zellige-fes':'FÈS · ZELLIGE REGISTER','khipu-peru':'PERU · KNOTTED REGISTER','kento-japan':'JAPAN · KENTO REGISTER','ombak-bali':'BALI · OMBAK REGISTER','swell-marshall':'MARSHALL ISLANDS · SWELL REGISTER','stereoscopy-uk':'UNITED KINGDOM · BINOCULAR REGISTER','siku-bolivia':'BOLIVIA · INTERLOCK REGISTER','hika-ahi-aotearoa':'AOTEAROA · FRICTION REGISTER','boulle-france':'FRANCE · RECIPROCAL CUT REGISTER'};
-const shared={'city-gatineau':'city','service-benin':'service','signal-nigeria':'signal','frida-coyoacan':'frida','food-toyama':'food','textile-bonwire':'textile'};
-const frame=document.getElementById('rk'),context=document.getElementById('context');
-context.textContent=labels[slug]||'RELATIONAL KEY · FAMILY';document.title='RELATIONAL KEY — '+(labels[slug]||'Family');frame.title=labels[slug]||'RELATIONAL KEY family';
-if(shared[slug]){frame.src='/families/_shared/round13r/index.html';frame.onload=()=>{try{frame.contentWindow.document.querySelector(`[data-e="${shared[slug]}"]`)?.click()}catch(e){}}}else{frame.src=`/families/${slug}/snapshot.html`}
+// Promotion wrapper: direct/public access resolves to the USER-validated EXP-3 surface.
+// EXP-3 itself embeds this wrapper as its preserved baseline; that nested request must not redirect.
+const fromExp3=document.referrer.includes('/families/signal-nigeria/exp-3.html');
+if(!fromExp3){
+  location.replace('/families/signal-nigeria/exp-3.html');
+}else{
+  const parts=location.pathname.split('/').filter(Boolean);
+  const last=parts.at(-1);
+  const slug=last==='index.html'?parts.at(-2):last;
+  const labels={
+  'city-gatineau':'GATINEAU · REGISTERED CITY PASSAGE','service-benin':'BENIN · SERVICE REGISTER','signal-nigeria':'NIGERIA · SIGNAL PORTRAIT','frida-coyoacan':'COYOACÁN · TRACE SYSTEM','food-toyama':'TOYAMA · EDIBLE PASSAGE','textile-bonwire':'BONWIRE · WOVEN REGISTER','zellige-fes':'FÈS · ZELLIGE REGISTER','khipu-peru':'PERU · KNOTTED REGISTER','kento-japan':'JAPAN · KENTO REGISTER','ombak-bali':'BALI · OMBAK REGISTER','swell-marshall':'MARSHALL ISLANDS · SWELL REGISTER','stereoscopy-uk':'UNITED KINGDOM · BINOCULAR REGISTER','siku-bolivia':'BOLIVIA · INTERLOCK REGISTER','hika-ahi-aotearoa':'AOTEAROA · FRICTION REGISTER','boulle-france':'FRANCE · RECIPROCAL CUT REGISTER'};
+  const shared={'city-gatineau':'city','service-benin':'service','signal-nigeria':'signal','frida-coyoacan':'frida','food-toyama':'food','textile-bonwire':'textile'};
+  const frame=document.getElementById('rk'),context=document.getElementById('context');
+  context.textContent=labels[slug]||'RELATIONAL KEY · FAMILY';document.title='RELATIONAL KEY — '+(labels[slug]||'Family');frame.title=labels[slug]||'RELATIONAL KEY family';
+  if(shared[slug]){frame.src='/families/_shared/round13r/index.html';frame.onload=()=>{try{frame.contentWindow.document.querySelector(`[data-e="${shared[slug]}"]`)?.click()}catch(e){}}}else{frame.src=`/families/${slug}/snapshot.html`}
+}
 </script>
-<!-- deployment retry marker: routing-fix verified source, no behavioral change -->
 </body>
 </html>
