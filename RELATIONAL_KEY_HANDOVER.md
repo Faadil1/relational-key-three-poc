@@ -7,11 +7,11 @@ PR #21: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **G4.3 — SIKU POLISH RE-AUDIT + MINIMUM CANDIDATE DECISION**
+# **G4.3A — SIKU LIVE USER CANDIDATE REGRESSION**
 
 Do NOT restart B2.5 or the 24-family regression.
 Do NOT reopen G4.1 Khipu or G4.2 Kento.
-Do NOT start G4.4 before G4.3 closes.
+Do NOT start G4.4 before G4.3A closes.
 
 # CANONICAL INVARIANTS
 
@@ -46,65 +46,82 @@ Closure register: `GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md` @ 
 
 # G4.2 KENTO — CLOSED ✅
 
+USER PASS / PROMOTED.
+Candidate: `families/kento-japan/g4-2.html` @ `42d546294fefcb79131a3a28b33fa7352f334a38`.
+Promotion: `families/kento-japan/index.html` @ `1efaf48610ba06a2db1962d900c65fb45ae411b6`.
+Golden `families/kento-japan/snapshot.html` unchanged.
+LIVE status: SUCCESS.
+Closure register: `GLOBAL_REFINEMENT_G4_2A_KENTO_LIVE_USER_PASS_PROMOTION.md` @ `8b827b417d0ced77f4295a703fca2325cc35b489`.
+
+# G4.3 SIKU — CURRENT STATE
+
+Re-audit reproduced the historical non-blocking legibility debt:
+- interlock field golden: `208×138 px` desktop;
+- field/bridge labels around `5 px`;
+- bottom result/law/truth microcopy around `6 px`.
+
+Siku relational integrity remains PASS and experiential classification remains STRONG.
+
+Golden unchanged:
+`families/siku-bolivia/snapshot.html`.
+
+Public wrapper unchanged:
+`families/siku-bolivia/index.html`.
+
 Candidate:
-`families/kento-japan/g4-2.html`
-implementation commit `42d546294fefcb79131a3a28b33fa7352f334a38`.
+`families/siku-bolivia/g4-3.html`
+implementation commit `a2524db6f8fff389d2afc1e66c186e3c88573326`.
 
-USER candidate recording:
-~9.4 s / 1908×966 / 30 fps.
+Candidate is CSS-only and reversible:
+- center column 220 → 236 px;
+- interlock field 208×138 → 224×148 px;
+- field label 5 → 5.5 px;
+- bridge label 5 → 5.8 px;
+- result/law/truth 6 → 6.5 px;
+- legend 5 → 5.6 px;
+- no state, timing, audio, note ownership, route or semantic changes.
 
-USER PASS evidence:
-- kagi / hikitsuki clearer but remain edge registration marks;
-- matching remains print registration;
-- OTHER BLOCK shows clearer colour-layer displacement and offset marks;
-- center remains subordinate;
-- both cards remain distinct and valid.
+Dedicated register:
+`GLOBAL_REFINEMENT_G4_3_SIKU_POLISH_CANDIDATE_SOURCE_PASS.md`
+commit `2045367ba94acd5aebe01467fdc6c9293a8b7afe`.
 
-Promotion:
-`families/kento-japan/index.html`
-commit `1efaf48610ba06a2db1962d900c65fb45ae411b6`.
-GitHub/Vercel status: SUCCESS.
+LIVE:
+- deployment `dpl_8cKUNdmiyyTBmfv61gppmW88qktM`;
+- state READY;
+- exact deployed candidate commit `a2524db6f8fff389d2afc1e66c186e3c88573326`.
 
-Golden preserved:
-`families/kento-japan/snapshot.html` unchanged.
+Candidate preview:
+`https://relational-key-collectionrelational-key-collection-iztssim1f.vercel.app/families/siku-bolivia/g4-3.html?_vercel_share=3qBewSiKWuLPJ4Vs2XF1LR5WzKSOad32`
 
-Closure register:
-`GLOBAL_REFINEMENT_G4_2A_KENTO_LIVE_USER_PASS_PROMOTION.md`
-commit `8b827b417d0ced77f4295a703fca2325cc35b489`.
+CURRENT_STATE Siku candidate sync:
+`570388b1d92e9d6c14796a817c61d3847610b712`.
 
-CURRENT_STATE closure sync:
-`78409c041244d2042debf0194a7fffc1ecd1aa6c`.
-
-State separation after Kento:
+State separation:
 - SOURCE golden PASS / unchanged
 - SOURCE candidate PASS
-- USER candidate comparison PASS
-- SOURCE promotion PASS
-- LIVE promotion PASS
+- LIVE candidate READY / PASS
+- USER candidate comparison PENDING
 - RELATIONAL INTEGRITY PASS unchanged
-- B2.5 ambition ADEQUATE unchanged
+- experiential STRONG unchanged
 - VALIDATED 24 unchanged
 
-# ACTIVE GATE — G4.3 SIKU
+# EXACT NEXT USER ACTION
 
-Historical documented debt:
-- central interlock field relatively small at desktop capture scale;
-- bottom microcopy relatively small.
+Record only candidate behavior, ~10–15 seconds:
+1. `MATCHING INTERLOCK` → run/test;
+2. hold registered/complete continuity briefly;
+3. `OTHER INTERLOCK` → run/test;
+4. hold incomplete/silent-position state briefly.
 
-Must inspect current:
-- `families/siku-bolivia/index.html`;
-- `families/siku-bolivia/snapshot.html`.
+Judge only:
+- central temporal field and bottom microcopy easier to read;
+- IRA / ARKA ownership remains clear;
+- center remains subordinate to both cards;
+- matching remains complementary temporal continuity;
+- OTHER remains silent positions / no complete route;
+- no waveform/resonance drift.
 
-Non-negotiable Siku semantics:
-- preserve IRA / ARKA ownership;
-- center is temporal interlock, not waveform/resonance;
-- matching relies on complementary absence / distributed notes and rests;
-- OTHER INTERLOCK preserves silent positions and no-complete-route semantics;
-- no patch unless debt is still reproduced.
-
-If reproduced: create smallest reversible candidate while preserving snapshot golden.
-If not reproduced: close G4.3 no-patch-needed.
+If PASS: promote only the validated CSS treatment through public Siku wrapper, preserve snapshot golden, record closure, then open G4.4.
+If not: revise or abandon the isolated candidate.
 
 PR remains Draft / DO NOT MERGE.
-
-On resume, trust the live branch head if later than IDs above. Documentation-only synchronization commits do not imply product-semantic changes.
