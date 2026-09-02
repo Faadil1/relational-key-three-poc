@@ -57,10 +57,10 @@ Root cause: EXP-3 explicitly loads `/families/signal-nigeria/index.html`; the ge
 
 Routing fix:
 `families/signal-nigeria/index.html` now resolves the preceding pathname token when final token is `index.html`.
-Fix commit `4931445dc0de05e15af07f8a9d4cb88e209048a7`.
+Fix first landed at `4931445dc0de05e15af07f8a9d4cb88e209048a7`; branch head retains the same fix.
 This is routing robustness only: no Signal visual promotion, no EXP-3 mechanism change, no shared-runtime mutation.
 
-LIVE status for routing-fix commit:
+LIVE status:
 **VERCEL FAILURE — build-rate-limit / Hobby plan.**
 No valid fixed deployment exists yet.
 
@@ -79,6 +79,6 @@ State separation:
 
 # **EXP-3A-LIVE — SIGNAL / NIGERIA ROUTING-FIX DEPLOYMENT**
 
-Do not ask for another USER recording until a Vercel deployment containing `4931445...` or later equivalent routing fix is READY.
+Do not ask for another USER recording until a Vercel deployment containing the routing fix is READY.
 Once READY, issue one fresh share URL and resume the same EXP-3A USER regression.
 Do not promote Signal. Do not start Frida EXP-4. PR #21 remains Draft / DO NOT MERGE.
