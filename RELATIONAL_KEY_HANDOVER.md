@@ -1,17 +1,15 @@
 # RELATIONAL KEY — HANDOVER
 
-Updated: 2026-08-29
+Updated: 2026-09-02
 Repository: `Faadil1/relational-key-three-poc`
 Branch: `collection/global-refinement-1`
 PR #21: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
-# **B2.5A CAUSAL USER REGRESSION — BATCH A / ORIGINAL SIGNATURE + REGISTRATION**
+# **KHIPU / PERU — SINGLE-FAMILY CAUSAL MICRO-CAPTURE**
 
-B2.5C technical integration is CLOSED / PASS.
-B2.5D Atlas USER visual/navigation is CLOSED / PASS.
-Do not resume G4 yet.
-Do not begin Batch B until Batch A is classified.
+Do NOT repeat the other 23 family recordings.
+Do NOT resume G4 yet.
 
 # CANONICAL INVARIANTS
 **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
@@ -35,55 +33,50 @@ B2.5B PASS:
 `B2_5B_24_FAMILY_CANONICAL_ATLAS_INTEGRATION_SPEC_SAFE_REGISTRY_MIGRATION.md`
 commit `89e0a2f577633120fbdadb165f2aa0c36edaaae1`
 
-# B2.5C — TECHNICAL PASS / CLOSED
+B2.5C technical PASS / CLOSED:
 `B2_5C_R1A_AUTHENTICATED_24_ROUTE_SMOKE_PASS.md`
 commit `f9e67670bd22ece1f6979c21af432c7b30e083d7`
 
-# B2.5D — USER VISUAL + NAVIGATION PASS / CLOSED
+B2.5D USER visual/navigation PASS / CLOSED:
 `B2_5D_R1B_390_MUSIC_SEARCH_MUSIC_BOX_WRAPPER_USER_PASS.md`
 commit `259c4926e9f704717f89a1b18f95a6fe90c6c04d`
 
-Discoverability patch:
-`f674cf336149612b7f3d344b43893b7e5fbdb543`
-READY deployment:
+READY patched deployment:
 `dpl_CmbssprQDD8aQtGVSBjDNpKKC4eU`
 
-USER proof retained:
-- desktop Atlas coherence;
-- exact Chrome Device Toolbar `390 × 844`;
-- no critical horizontal overflow/clipping;
-- continental filtering and wrapper navigation;
-- `music` resolves Music Box;
-- Music Box opens and `← BACK TO ATLAS` returns at 390.
+# B2.5 USER CAUSAL VIDEO AUDIT R1
+Register:
+`B2_5_USER_CAUSAL_VIDEO_AUDIT_R1_23_OF_24_KHIPU_EVIDENCE_GAP.md`
+commit `e95bb056753f5a190cafac4cba7a45d22d635759`
 
-# EXACT NEXT WORK — USER BATCH A
-Frozen order:
-1. City / Gatineau — `/families/city-gatineau/`
-2. Service / Benin — `/families/service-benin/`
-3. Signal / Nigeria — `/families/signal-nigeria/`
-4. Frida / Coyoacán — `/families/frida-coyoacan/`
-5. Textile / Bonwire — `/families/textile-bonwire/`
-6. Zellige / Fès — `/families/zellige-fes/`
+Two user videos were audited as one evidence set:
+- ~219.2 s / 1902×962 / 30 fps;
+- ~199.9 s / 1908×962 / 30 fps.
 
-Blocking minimum proof:
-- City: relationship resolution visibly completes route across both members;
-- Service: direct relation changes incomplete sequence into registered continuation;
-- Signal: relay relation changes blocked/separate signal into continuation across both members;
-- Frida: trace alignment across pair visibly changes archive relation;
-- Textile: both strip systems visibly interlace across the relationship field;
-- Zellige: direct fit changes two valid pieces into a registered tessellated relation.
+Observed unique causal family walkthroughs: **23 / 24**.
 
-For every family classify:
-A. RELATIONAL INTEGRITY — blocking PASS/FAIL.
-B. EXPERIENTIAL AMBITION — STRONG / ADEQUATE / EXPERIENCE DEBT.
+The only distinct walkthrough not located:
+`Khipu / Peru — /families/khipu-peru/`
 
-Do not redesign merely because a family has Experience Debt. Patch only if relational integrity is broken.
+The Khipu Atlas card is visible during navigation but there is no separate `Knotted Register` interaction sequence in either supplied recording.
 
-After Batch A PASS:
-open Batch B — Kento / Stereoscopy / Astrolabe / Anamorphosis / Valparaíso / Swell.
+This is USER evidence coverage only, not validation loss. Total VALIDATED remains 24.
+
+Repeated/revisited families in the videos include Food, Stereoscopy, Boulle and Astrolabe; do not count duplicates as additional family coverage.
+
+# EXACT NEXT ACTION
+Capture only `/families/khipu-peru/` for ~10–20 seconds:
+1. idle two-member state;
+2. matching/direct tension-contact interaction;
+3. registered knot relation/result;
+4. alternate/resisting state if available while both members remain valid.
+
+After that single proof, classify all 24 together in one final matrix:
+- RELATIONAL INTEGRITY — PASS / FAIL;
+- EXPERIENTIAL AMBITION — STRONG / ADEQUATE / EXPERIENCE DEBT.
 
 PR remains Draft / DO NOT MERGE.
-G4 remains PARKED until all B2.5 regression work closes.
+G4 remains PARKED.
 
 Persistence protocol:
 dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output.
