@@ -17,7 +17,9 @@
 </nav>
 <iframe class="frame" id="rk" title="RELATIONAL KEY family"></iframe>
 <script>
-const slug=location.pathname.split('/').filter(Boolean).pop();
+const parts=location.pathname.split('/').filter(Boolean);
+const last=parts.at(-1);
+const slug=last==='index.html'?parts.at(-2):last;
 const labels={
 'city-gatineau':'GATINEAU · REGISTERED CITY PASSAGE','service-benin':'BENIN · SERVICE REGISTER','signal-nigeria':'NIGERIA · SIGNAL PORTRAIT','frida-coyoacan':'COYOACÁN · TRACE SYSTEM','food-toyama':'TOYAMA · EDIBLE PASSAGE','textile-bonwire':'BONWIRE · WOVEN REGISTER','zellige-fes':'FÈS · ZELLIGE REGISTER','khipu-peru':'PERU · KNOTTED REGISTER','kento-japan':'JAPAN · KENTO REGISTER','ombak-bali':'BALI · OMBAK REGISTER','swell-marshall':'MARSHALL ISLANDS · SWELL REGISTER','stereoscopy-uk':'UNITED KINGDOM · BINOCULAR REGISTER','siku-bolivia':'BOLIVIA · INTERLOCK REGISTER','hika-ahi-aotearoa':'AOTEAROA · FRICTION REGISTER','boulle-france':'FRANCE · RECIPROCAL CUT REGISTER'};
 const shared={'city-gatineau':'city','service-benin':'service','signal-nigeria':'signal','frida-coyoacan':'frida','food-toyama':'food','textile-bonwire':'textile'};
