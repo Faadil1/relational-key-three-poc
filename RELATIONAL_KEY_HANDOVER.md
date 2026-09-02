@@ -49,6 +49,12 @@ Register:
 `B2_5_USER_CAUSAL_VIDEO_AUDIT_R1_23_OF_24_KHIPU_EVIDENCE_GAP.md`
 commit `e95bb056753f5a190cafac4cba7a45d22d635759`
 
+CURRENT_STATE synchronization commit:
+`466f873ef34e949c0598ebac12b95c9d24a4e3cb`
+
+Initial HANDOVER synchronization commit:
+`bcac8a110647545b80d4425bd02e1423ad36250b`
+
 Two user videos were audited as one evidence set:
 - ~219.2 s / 1902×962 / 30 fps;
 - ~199.9 s / 1908×962 / 30 fps.
