@@ -27,5 +27,6 @@ const frame=document.getElementById('rk'),context=document.getElementById('conte
 context.textContent=labels[slug]||'RELATIONAL KEY · FAMILY';document.title='RELATIONAL KEY — '+(labels[slug]||'Family');frame.title=labels[slug]||'RELATIONAL KEY family';
 if(shared[slug]){frame.src='/families/_shared/round13r/index.html';frame.onload=()=>{try{frame.contentWindow.document.querySelector(`[data-e="${shared[slug]}"]`)?.click()}catch(e){}}}else{frame.src=`/families/${slug}/snapshot.html`}
 </script>
+<!-- deployment retry marker: routing-fix verified source, no behavioral change -->
 </body>
 </html>
