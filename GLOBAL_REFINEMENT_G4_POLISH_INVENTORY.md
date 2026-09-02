@@ -11,76 +11,76 @@ Phase: Global Refinement — G4
 A G4 patch requires explicit non-blocking debt or a newly reproduced issue against a preserved golden family reference. Golden references must remain recoverable while candidates are tested.
 
 ## G4.1 — Peru / Khipu — CLOSED ✅
-
-USER candidate gate: `PASS / PROMOTE`.
-Promotion: `families/khipu-peru/index.html` @ `a4a17eb028d0645c8148e0311bfb6f222b286914`.
-Golden `snapshot.html` preserved.
-Closure register: `GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md` @ `b3edcb34efe0b26aee8e68e936350c0ce4c8ac9b`.
+USER PASS / PROMOTED.
+Promotion `families/khipu-peru/index.html` @ `a4a17eb028d0645c8148e0311bfb6f222b286914`.
+Golden preserved.
 
 ## G4.2 — Japan / Kento — CLOSED ✅
-
-USER candidate gate: `PASS / PROMOTE`.
-Candidate: `families/kento-japan/g4-2.html` @ `42d546294fefcb79131a3a28b33fa7352f334a38`.
-Promotion: `families/kento-japan/index.html` @ `1efaf48610ba06a2db1962d900c65fb45ae411b6`.
-Golden `families/kento-japan/snapshot.html` preserved.
-Closure register: `GLOBAL_REFINEMENT_G4_2A_KENTO_LIVE_USER_PASS_PROMOTION.md` @ `8b827b417d0ced77f4295a703fca2325cc35b489`.
+USER PASS / PROMOTED.
+Promotion `families/kento-japan/index.html` @ `1efaf48610ba06a2db1962d900c65fb45ae411b6`.
+Golden preserved.
+Closure register `GLOBAL_REFINEMENT_G4_2A_KENTO_LIVE_USER_PASS_PROMOTION.md` @ `8b827b417d0ced77f4295a703fca2325cc35b489`.
 
 ## G4.3 — Bolivia / Siku — CLOSED ✅
+USER PASS / PROMOTED.
+Candidate `families/siku-bolivia/g4-3.html` @ `a2524db6f8fff389d2afc1e66c186e3c88573326`.
+Promotion `families/siku-bolivia/index.html` @ `42bce5564e27d62b201d9c3015b32da7c3d9c0b2`.
+Golden preserved.
+Promotion deployment `dpl_9icvAQFArzpJHKkdyTYdqXDBmdEo` READY.
+Closure register `GLOBAL_REFINEMENT_G4_3A_SIKU_LIVE_USER_PASS_PROMOTION.md` @ `18b40548349364b8ca77103a04f3d74f8cba5551`.
 
-Historical/current legibility debt reproduced:
-- temporal interlock field small at distant desktop scale;
-- field/bridge labels and bottom microcopy quiet.
+## G4.4 — SOURCE RE-AUDIT
+
+Register:
+`GLOBAL_REFINEMENT_G4_4_REAUDIT_ZELLIGE_OMBAK_SWELL_SOURCE_DECISION.md`
+commit `ab04b121a028cb0e5ac22fdb8343e17cb2da2d27`.
+
+### Fès / Zellige — NO PATCH NEEDED ✅
+Current golden remains materially specific and pair-native. Edge material resolves through fit in the gap; center recedes; mismatch preserves both members. B2.5 `PASS / STRONG` retained. No specific residual G4 debt reproduced.
+
+### Bali / Ombak — NO PATCH NEEDED ✅
+Current golden already gives visual + browser-synthesized audio proof of controlled difference. Δ7 matching and Δ12 OTHER remain explicit; beat field belongs to the relation; both tones remain valid in residual. B2.5 `PASS / STRONG` retained. No specific residual visual/audio debt reproduced.
+
+### Marshall Islands / Swell — G4.4A USER GATE ACTIVE
+Residual debt reproduced:
+- golden orientation point ~10×10 px is visually quiet at distant desktop scale;
+- atoll node ~64 px + low-opacity swell paths can overpower orientation response;
+- B2.5 `PASS / ADEQUATE` already notes spatial hierarchy could become more immediate.
 
 Candidate:
-`families/siku-bolivia/g4-3.html`
-implementation commit `a2524db6f8fff389d2afc1e66c186e3c88573326`.
+`families/swell-marshall/g4-4.html`
+implementation commit `297bcea827d3cfd578d81bdd89ed682b9ae4337f`.
 
-USER recording:
-~15.63 s / 1902×958 / 30 fps.
+Candidate is CSS-only and reversible:
+- orientation point 10×10 → 14×14 px desktop;
+- registered/OTHER orientation glow strengthened;
+- registered/OTHER swell path hierarchy slightly strengthened;
+- bridge label slightly more legible;
+- atoll geometry unchanged;
+- no state, timing, drag, path geometry or semantic changes.
 
-USER verdict: `PASS / PROMOTE`.
-Observed:
-- temporal field and microcopy easier to read;
-- IRA / ARKA remain clearly card-owned;
-- MATCHING resolves into complete alternating continuity;
-- OTHER preserves silent/missing positions and no complete route;
-- center remains subordinate;
-- no waveform/resonance drift.
+Golden remains unchanged:
+`families/swell-marshall/snapshot.html`.
 
-Promotion:
-`families/siku-bolivia/index.html`
-commit `42bce5564e27d62b201d9c3015b32da7c3d9c0b2`.
+Public wrapper remains unchanged:
+`families/swell-marshall/index.html`.
 
-Golden preserved:
-`families/siku-bolivia/snapshot.html` unchanged.
+LIVE candidate:
+`dpl_85MDJFxfVwh3hxXUKWUKX1ESTMrt` — READY.
+Exact deployed commit `297bcea827d3cfd578d81bdd89ed682b9ae4337f`.
 
-Promotion deployment:
-`dpl_9icvAQFArzpJHKkdyTYdqXDBmdEo` — READY.
-Exact deployed commit:
-`42bce5564e27d62b201d9c3015b32da7c3d9c0b2`.
+Preview:
+`https://relational-key-collectionrelational-key-collection-3j1goxfxi.vercel.app/families/swell-marshall/g4-4.html?_vercel_share=jgFPVFoYjchBzk3RJOPANDeBmeET2s97`
 
-Closure register:
-`GLOBAL_REFINEMENT_G4_3A_SIKU_LIVE_USER_PASS_PROMOTION.md`
-commit `18b40548349364b8ca77103a04f3d74f8cba5551`.
-
-## G4.4 — ACTIVE — RE-AUDIT ONLY / PATCH ONLY IF REPRODUCED
-
-### Fès / Zellige
-Historical `PASS WITH POLISH`; no sufficiently specific residual debt authorizes mutation until current re-audit reproduces one.
-Non-negotiable: `THE EDGE MATERIAL RESOLVES THE RELATIONSHIP.`
-
-### Bali / Ombak
-Historical `PASS WITH POLISH`; reproduce any remaining visual/audio legibility debt before mutation.
-Non-negotiable: `CONTROLLED DIFFERENCE CAN BE THE RELATIONSHIP.`
-
-### Marshall Islands / Swell
-Historical `PASS WITH POLISH`; re-audit orientation point and swell × atoll hierarchy before mutation.
-
-For all three:
-- preserve existing golden/snapshot evidence;
-- close `NO PATCH NEEDED` if no residual debt is reproduced;
-- create only a minimal reversible candidate if a specific debt is reproduced;
-- preserve pair dominance and family-native semantics.
+State separation:
+- Zellige SOURCE PASS / NO PATCH
+- Ombak SOURCE PASS / NO PATCH
+- Swell SOURCE golden PASS / unchanged
+- Swell SOURCE candidate PASS
+- Swell LIVE candidate READY / PASS
+- Swell USER comparison PENDING
+- RELATIONAL INTEGRITY PASS unchanged
+- VALIDATED 24 unchanged
 
 ## No current G4 micro-polish evidence
 
@@ -92,16 +92,8 @@ Do not patch merely for visual uniformity:
 
 City / Service / Signal / Frida carry separate `EXPERIENCE DEBT` in the B2.5 ambition matrix; that broader debt is not authorization for arbitrary G4 micro-polish.
 
-## Candidate architecture rule
-
-Before modifying an autonomous family:
-- preserve existing `snapshot.html` as golden regression source;
-- create a separate reversible candidate;
-- promote only after dedicated USER Preview PASS;
-- preserve family semantics and pair dominance.
-
 # Immediate next output
 
-# **G4.4 — ZELLIGE / OMBAK / SWELL SOURCE RE-AUDIT**
+# **G4.4A — SWELL LIVE USER CANDIDATE REGRESSION / GOLDEN VS POLISH**
 
-Inspect the current golden/public implementations. Produce either `NO PATCH NEEDED` for each family with no reproducible residual debt, or the smallest isolated candidate for any family with a specific reproduced debt.
+Record matching/current relation then OTHER on the isolated Swell candidate. Decide `PASS / PROMOTE` or `REVISE / ABANDON` before closing G4.4.
