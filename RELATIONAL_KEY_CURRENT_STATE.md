@@ -8,7 +8,6 @@ Draft PR: #21 — `DRAFT / DO NOT MERGE`
 # PRODUCT ROOT
 
 **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
-
 `PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
 
 Expansion laws remain canonical:
@@ -16,59 +15,23 @@ Expansion laws remain canonical:
 - **TECHNOLOGY SERVES THE RELATIONAL MECHANISM.**
 - **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
 
-Regression reference question reinforced by Khipu:
-
-**DO BOTH MEMBERS EXIST BEFORE THE RELATION, AND DOES THE MEMORABLE MOMENT BELONG TO WHAT HAPPENS BETWEEN THEM?**
+# GLOBAL STATE
 
 G0 / G1 / G2 / G3 PASS.
 Continental Balance Gate 2 PASS / CLOSED.
-`AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
-Total VALIDATED families: **24**.
-
-# B2.5 — CLOSED / PASS
-
-Final causal register:
-`B2_5_USER_CAUSAL_REGRESSION_FINAL_24_OF_24_PASS_EXPERIENCE_MATRIX.md`
-commit `dcea6d9d4dcc3b4c67f3698454f3ee0e0cd00c4e`
-
-Final classification:
-- USER causal coverage: 24/24;
-- RELATIONAL INTEGRITY: 24/24 PASS;
-- FAIL: 0/24;
-- experiential STRONG: 13/24;
-- experiential ADEQUATE: 7/24;
-- EXPERIENCE DEBT: 4/24 — City / Service / Signal / Frida;
-- VALIDATED remains 24.
-
-# G4 — ACTIVE
-
-Canonical inventory:
-`GLOBAL_REFINEMENT_G4_POLISH_INVENTORY.md`
-commit `105c68436e477f110f2fa3a0e5ad977823e46c7d`
-
-Execution order:
-1. G4.1 Khipu — CLOSED;
-2. G4.2 Kento — ACTIVE;
-3. G4.3 Siku;
-4. G4.4 re-audit Zellige / Ombak / Swell.
+24 VALIDATED families.
+B2.5 CLOSED / PASS with 24/24 RELATIONAL INTEGRITY PASS.
+Experiential matrix: STRONG 13 / ADEQUATE 7 / EXPERIENCE DEBT 4 (City, Service, Signal, Frida).
 
 # G4.1 KHIPU — USER PASS / PROMOTED / CLOSED ✅
 
-Candidate:
-`families/khipu-peru/g4-1.html`
-implementation commit `64647ea78b04439ea9a57ece47f19490d9185d45`
+USER candidate recording: ~11.33 s, 1912×966, 30 fps.
 
-USER candidate recording:
-- ~11.33 s;
-- 1912×966;
-- 30 fps.
-
-Observed result:
-- tension progression is more immediate/readable than golden;
-- knot is clearer but remains subordinate to `Claim Cord` + `Context Cord`;
-- MATCHING preserves registered continuation semantics;
-- OTHER RECORD preserves visible residual while both records remain valid;
-- no relational rewrite occurred.
+Observed:
+- tension progression more immediate/readable than golden;
+- knot clearer but subordinate to `Claim Cord` + `Context Cord`;
+- MATCHING registered semantics preserved;
+- OTHER RECORD residual remains visible and both records remain valid.
 
 Promotion:
 `families/khipu-peru/index.html`
@@ -83,12 +46,12 @@ Closure register:
 `GLOBAL_REFINEMENT_G4_1A_KHIPU_LIVE_USER_PASS_PROMOTION.md`
 commit `b3edcb34efe0b26aee8e68e936350c0ce4c8ac9b`
 
-Candidate spec synchronized:
-`GLOBAL_REFINEMENT_G4_1_KHIPU_POLISH_CANDIDATE.md`
-commit `2c5f6fb91bb8e4fa255e334398fc7d074bee0f4f`
+G4 inventory advanced:
+`GLOBAL_REFINEMENT_G4_POLISH_INVENTORY.md`
+commit `105c68436e477f110f2fa3a0e5ad977823e46c7d`
 
-Latest HANDOVER synchronization commit:
-`8dc3050a1374bea072c6a28722dc561d9110fc31`
+Latest HANDOVER synchronization:
+`e0eb7315cd3e535aa5f2828238a5acbc51b6f4f3`
 
 State separation:
 - SOURCE candidate: PASS
@@ -102,16 +65,16 @@ State separation:
 
 # **G4.2 — KENTO POLISH RE-AUDIT + MINIMUM CANDIDATE DECISION**
 
-Documented debt only:
-- slightly increase hierarchy of `kagi` / `hikitsuki` at collection-view scale;
-- make OTHER BLOCK colour-layer displacement easier to read from distant desktop view;
-- keep the center register subordinate to the two cards.
+Inspect:
+- `families/kento-japan/index.html`;
+- `families/kento-japan/snapshot.html`.
 
-Next action:
-1. inspect `families/kento-japan/index.html`;
-2. inspect preserved `families/kento-japan/snapshot.html`;
-3. reproduce the documented legibility debt against the current consolidated source;
-4. define the smallest reversible candidate only if debt is still present.
+Only documented debt is in scope:
+- slightly increase `kagi` / `hikitsuki` hierarchy at collection-view scale;
+- make OTHER BLOCK colour-layer displacement easier to read from distant desktop view;
+- keep center register subordinate to the two cards.
+
+If debt is reproduced, define the smallest reversible candidate. If not, close G4.2 no-patch-needed.
 
 Do not start G4.3 Siku until G4.2 closes.
 PR #21 remains Draft / DO NOT MERGE.
