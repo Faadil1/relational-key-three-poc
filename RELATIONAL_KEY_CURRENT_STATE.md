@@ -24,12 +24,11 @@ Persistence protocol:
 G0/G1/G2/G3 PASS. Continental Balance Gate 2 PASS/CLOSED. B2.5 PASS/CLOSED. USER RELATIONAL INTEGRITY 24/24 PASS. VALIDATED 24 unchanged. G4 CLOSED.
 
 Experiential matrix:
-# **STRONG 13 / ADEQUATE 10 / EXPERIENCE DEBT 1**
+# **STRONG 13 / ADEQUATE 11 / EXPERIENCE DEBT 0**
 
-Only remaining Experience Debt:
-- Frida / Coyoacán
+No family currently remains in Experience Debt.
 
-City / Gatineau, Service / Benin and Signal / Nigeria are CLOSED / ADEQUATE.
+City / Gatineau, Service / Benin, Signal / Nigeria and Frida / Coyoacán are CLOSED / ADEQUATE after USER validation and public promotion.
 
 # SIGNAL / NIGERIA — CLOSED ✅
 
@@ -39,94 +38,100 @@ Public promotion LIVE deployment `dpl_Hcmtp2YjMVecmzoExCfJREKD39SE` READY.
 Closure register `GLOBAL_REFINEMENT_EXP3A_SIGNAL_NIGERIA_NITEL_USER_PASS_PROMOTION_CLOSED.md` @ `f01a98c50631bf8d8139d605b21fbe61d988cded`.
 Signal = ADEQUATE / CLOSED.
 
-# FRIDA / COYOACÁN — ACTIVE
+# FRIDA / COYOACÁN — CLOSED ✅
 
-Baseline relational correctness remains PASS. Frida is the sole remaining experiential debt.
-
-Frozen mechanism:
+Mechanism:
 # **LAYERED TRACE ALIGNMENT**
 
-## EXP-4 source identity definition — PASS
-
-Primary visual/place/archive anchors:
-- Casa Azul as Frida Kahlo's intimate/home universe in Coyoacán;
-- Londres 247, Col. Del Carmen, Coyoacán;
-- museum holdings include photographs, documents, books, personal objects and furniture;
-- official Casa Azul dossier documents 1946 studio use of volcanic stone/basalt and embedded jars;
-- same dossier documents an ADABI-classified/digitized archive including 22,105 documents and 5,387 photographs;
-- public-domain Frida portrait: Guillermo Kahlo, 16 Oct 1932;
-- public-domain Casa Azul patio detail: Wikimedia Commons.
-
-Dedicated source/candidate register:
-`GLOBAL_REFINEMENT_EXP4_FRIDA_COYOACAN_LAYERED_TRACE_CANDIDATE.md` @ `f1340dce97a552f882c0b518619285ab0e3310cc`.
-
-## EXP-4 candidate — READY
-
-Path:
+Candidate:
 `families/frida-coyoacan/exp-4.html`
 
 Implementation commit:
 `9586c52bd538eb9cba980b72230a36c98f369c90`
 
-Architecture:
-- isolated candidate;
-- loads current public Frida wrapper through trailing-slash route;
-- public Frida wrapper unchanged;
-- shared runtime unchanged;
-- no cross-family inheritance.
+Dedicated source/candidate register:
+`GLOBAL_REFINEMENT_EXP4_FRIDA_COYOACAN_LAYERED_TRACE_CANDIDATE.md` @ `f1340dce97a552f882c0b518619285ab0e3310cc`.
 
-Card A:
-- Frida Kahlo photographic memory member;
-- Guillermo Kahlo 1932 public-domain portrait;
-- archival crop/index grid;
-- monochrome field with restrained Casa Azul registration colors.
+Source identity anchors:
+- Museo Frida Kahlo / Casa Azul place and collection documentation;
+- Londres 247 · Coyoacán;
+- documented volcanic stone / basalt and embedded-vessel studio cues;
+- documented archive scale 22,105 documents / 5,387 photographs;
+- Guillermo Kahlo portrait of Frida, 16 Oct 1932, public-domain Wikimedia source;
+- public-domain Casa Azul patio detail.
 
-Card B:
-- Casa Azul place/archive member;
-- public-domain patio material image;
-- cobalt blue + volcanic/basalt + embedded-vessel cues;
-- Londres 247 / Coyoacán index;
-- documented archive-scale reference `22,105 DOCS · 5,387 PHOTOS` explicitly presented as editorial/documented scale, not fake historical labeling.
+## EXP-4A USER proof — PASS ✅
 
-MATCHING:
-- three trace sheets approach alignment on both cards;
-- three pair-spanning trace lines resolve across Card A → relation → Card B;
+Video `/mnt/data/caf72604-43f0-498f-a1f1-2236aa8ed062.mp4`:
+- 9.47 s
+- 1916×968
+- 30 fps
+- 284 frames
+
+Observed MATCHING:
+- portrait-memory and Casa Azul place/archive members remain independently legible;
+- three trace sheets align into three pair-spanning traces;
+- memorable event belongs to relation;
+- center remains subordinate;
 - state `PORTRAIT TRACE → CASA AZUL ALIGN → REGISTER`.
 
-OTHER:
-- both archive members remain valid;
-- continuous trace lines do not resolve;
-- offset residual fragments and ghosted member layers remain;
+Observed OTHER:
+- both members remain valid;
+- continuous alignment does not resolve;
+- three offset residual traces and ghosted member layers remain;
 - state `TRACE OFFSET · BOTH ARCHIVE MEMBERS REMAIN VALID`.
+
+Verdict:
+# **CAUSAL PASS / VISUAL PASS / TRUTH PASS — USER PASS ✅**
 
 Truth boundary:
 `Editorial synthesis from documented Casa Azul place/archive cues and public-domain photographic sources · not an archival facsimile or invented historical annotation layer.`
 
+## Promotion
+
+Public wrapper:
+`families/frida-coyoacan/index.html`
+
+Promotion commit:
+`0f344c3c1c0d8b2e07510e72581191d0aa831ea8`
+
+Promotion behavior:
+- direct/public access resolves to validated EXP-4;
+- nested EXP-4 baseline remains non-recursive;
+- explicit `index.html` route hardened;
+- shared runtime unchanged.
+
 LIVE:
-- deployment `dpl_7Ht487z1RPRVA1cDMhhyZGz88jVj`
+- deployment `dpl_HrxiPAczhzCMEdrgTXh9Gjr3QpEY`
 - READY
-- exact deployed commit `9586c52bd538eb9cba980b72230a36c98f369c90`
-- host `relational-key-collectionrelational-key-collection-5rppykpqe.vercel.app`
+- exact deployed commit `0f344c3c1c0d8b2e07510e72581191d0aa831ea8`
+- host `relational-key-collectionrelational-key-collection-9pqg94wcb.vercel.app`
+- public `/families/frida-coyoacan/` verified HTTP 200 and serves the promotion wrapper.
+
+Closure register:
+`GLOBAL_REFINEMENT_EXP4A_FRIDA_COYOACAN_USER_PASS_PROMOTION_CLOSED.md` @ `05b319e24fd5099fe941029bc52910e76f5aa8f7`.
+
+Frida = ADEQUATE / CLOSED.
 
 State separation:
-- SOURCE baseline Frida relational correctness PASS / unchanged
-- SOURCE EXP-4 identity definition PASS
+- SOURCE baseline relational PASS unchanged
+- SOURCE EXP-4 identity PASS
 - SOURCE EXP-4 candidate PASS
-- LIVE EXP-4 READY
-- USER EXP-4 PENDING
-- Frida remains EXPERIENCE DEBT pending USER PASS + promotion
+- USER EXP-4A PASS
+- SOURCE promotion PASS
+- LIVE promotion READY / PASS
 - VALIDATED 24 unchanged
+- USER RELATIONAL INTEGRITY 24/24 PASS unchanged
 
 # ACTIVE GATE / NEXT EXACT OUTPUT
 
-# **EXP-4A — FRIDA / COYOACÁN LAYERED TRACE USER REGRESSION**
+# **GLOBAL_REFINEMENT_CLOSEOUT — PUBLIC ROUTE + PROMOTION INTEGRITY AUDIT**
 
-Record one ~10–15 s proof:
-1. MATCHING CLAIM → TEST RELATIONSHIP
-2. hold aligned portrait → Casa Azul trace state
-3. OTHER CLAIM → TEST RELATIONSHIP
-4. hold offset trace residual
+Closeout requirements:
+1. verify final public route/promotion integrity across the collection;
+2. confirm promoted City / Service / Signal / Frida surfaces do not regress the shared runtime;
+3. reconcile final dedicated registers with CURRENT_STATE / HANDOVER / PR #21;
+4. confirm Experience Debt remains zero;
+5. stop at a human merge/promotion decision.
 
-Judge CAUSAL / VISUAL / TRUTH separately.
-
-Do not promote Frida until USER PASS. PR #21 remains Draft / DO NOT MERGE.
+Do not merge PR #21 automatically.
