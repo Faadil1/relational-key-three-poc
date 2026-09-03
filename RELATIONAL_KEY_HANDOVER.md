@@ -7,7 +7,7 @@ PR #21: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **R5.1B — FOOD / TOYAMA USER MATCHING + OTHER REGRESSION**
+# **R5.2A — TEXTILE / BONWIRE SOURCE + MATERIAL EMBODIMENT AUDIT**
 
 Do NOT reopen the previous Global Refinement closeout; it remains PASS and frozen.
 Do NOT restart B2.5 or G4.
@@ -20,13 +20,12 @@ Do NOT merge, mark Ready, request review, retarget or change PR state without se
 - USER relational integrity 24/24 PASS
 - route/promotion closeout PASS
 - shared runtime unchanged from PR base
-- frozen matrix: **STRONG 13 / ADEQUATE 11 / EXPERIENCE DEBT 0**
 
 Closeout register:
 `GLOBAL_REFINEMENT_FINAL_CLOSEOUT_PUBLIC_ROUTE_PROMOTION_INTEGRITY_PASS.md`
 @ `dc3c8f0ce6626d63b74599c95bca41b0d598e3de`.
 
-# R5 — NEW HUMAN-AUTHORIZED PHASE
+# R5 — HUMAN-AUTHORIZED PHASE
 
 Queue/rules register:
 `POST_CLOSEOUT_R5_ADEQUATE_TO_STRONG_REFINEMENT_QUEUE.md`
@@ -35,121 +34,97 @@ Queue/rules register:
 Queue:
 Food → Textile → Metate → Tongiaki → Garamut → Kento → Swell → City → Service → Signal → Frida.
 
-R5 raises ADEQUATE → STRONG only with actual pair-native experiential evidence; do not force STRONG.
+Current matrix after Food closure:
+# **STRONG 14 / ADEQUATE 10 / EXPERIENCE DEBT 0**
 
-# R5.1 — FOOD / TOYAMA
+VALIDATED 24 unchanged.
 
-Baseline public wrapper:
-`families/food-toyama/index.html`
-blob `86f6b85796bec16dcb9077ed594a1ec86736b663`.
+# R5.1 — FOOD / TOYAMA — CLOSED ✅
 
-Public route remains unchanged.
-Shared runtime remains unchanged.
-
-Baseline law:
-`PRESS → ALIGN → REGISTER → RELEASE → UNFOLD → REVEAL`.
-
-Source audit PASS:
-Toyama masuzushi source basis documents trout + vinegared rice, bamboo leaves / bamboo grass, round wooden/bentwood container, wrapping, applied pressure/weight, and opening/reveal.
-
-Candidate mechanism:
+Mechanism:
 # **PRESSURE-TO-UNFOLD REVEAL**
 
 Candidate:
 `families/food-toyama/r5-1.html`
-
-Implementation:
-`a9ecd75514d9dfc1aa6b222607ec6278e07c2090`.
+implementation `a9ecd75514d9dfc1aa6b222607ec6278e07c2090`.
 
 Candidate register:
 `POST_CLOSEOUT_R5_1_FOOD_TOYAMA_PRESSURE_TO_UNFOLD_CANDIDATE.md`
 @ `659edc4ff9ff30942b7bc3d955c4b0be726ba4e3`.
 
-MATCHING PRESS:
-- Card A owns Wappa Press / force condition;
-- Card B owns Bamboo-Wrapped Wappa / food member;
-- approach;
-- force visibly transfers through relation;
+USER proof:
+`/mnt/data/8487ea4b-e8a3-4f1e-ac3f-ad5467677015.mp4`
+- 13.90 s
+- 1910×960
+- 30 fps
+- 417 frames
+
+Observed MATCHING:
+- Card A Wappa Press and Card B Bamboo-Wrapped Wappa remain independently valid;
+- force transfers A → relation → B;
 - B compresses;
-- pressure is sustained;
-- release;
+- pressure releases;
 - leaves unfold;
-- masu-zushi reveal appears on B;
-- center remains force-transfer only and subordinate.
+- masu-zushi reveal appears.
 
-Final result:
-`LEAVES UNFOLD · MASU-ZUSHI REVEALED`.
-
-OTHER PRESS:
-- force attempt is offset;
-- press and B pressure band misregister;
-- no complete uniform compression;
+Observed OTHER:
+- pressure remains offset / misregistered;
+- no full compression;
 - bundle remains closed;
-- both members remain valid;
-- residual is process-native.
+- both members remain valid.
 
-Final result:
-`PRESSURE DOES NOT REGISTER · BOTH MEMBERS REMAIN VALID`.
+Verdict:
+# **CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS ✅**
 
-Truth boundary:
-`Editorial visualization of documented Toyama masuzushi material/process cues · not a producer replica, affiliation, or exact recipe.`
+Promotion:
+`families/food-toyama/index.html`
+commit `997358f5c180f10b2a27be5d515ff0a8ae18e0b2`.
 
-# LIVE
+LIVE:
+- deployment `dpl_GgBo4wsWi6wK18u4GQihCCLqrUR2`
+- READY
+- exact deployed commit `997358f5c180f10b2a27be5d515ff0a8ae18e0b2`
+- host `relational-key-collectionrelational-key-collection-gc2uznpgn.vercel.app`
+- public Food route verified HTTP 200.
 
-Deployment:
-`dpl_7vEBe7eRsDrZejyNUgdS8JuuoAob`
+Closure register:
+`POST_CLOSEOUT_R5_1B_FOOD_TOYAMA_USER_PASS_PROMOTION_STRONG.md`
+@ `ae46ac5a0783570da5c1e30191d78f2bd30439a3`.
 
-State:
-`READY`
+Food reclassified:
+`ADEQUATE → STRONG`.
 
-Exact deployed commit:
-`a9ecd75514d9dfc1aa6b222607ec6278e07c2090`
+Shared runtime unchanged.
 
-Host:
-`relational-key-collectionrelational-key-collection-czbloccp5.vercel.app`
+# ACTIVE — R5.2 TEXTILE / BONWIRE
 
-Candidate route verified HTTP 200.
+Baseline classification:
+`ADEQUATE`.
 
-Temporary share URL:
-`https://relational-key-collectionrelational-key-collection-czbloccp5.vercel.app/families/food-toyama/r5-1.html?_vercel_share=053AkygXfk5pazZG8fE8PZaUohmVMBE1`
+Frozen native law:
+`STRIP → ALIGN → INTERLACE → REGISTER → JOIN → CONTINUE`.
 
-# STATE SEPARATION
+Existing baseline already has:
+- Asante / Bonwire identity;
+- facing strip ownership on both members;
+- registered interlace across the relation;
+- family-specific textile imagery.
 
-- PRIOR GLOBAL CLOSEOUT PASS / frozen
-- SOURCE R5 queue PASS
-- SOURCE R5.1 source audit PASS
-- SOURCE R5.1 candidate PASS
-- LIVE R5.1 READY / PASS
-- USER R5.1 PENDING
-- public Food wrapper unchanged
-- public promotion NOT STARTED
-- shared runtime unchanged
-- VALIDATED 24
-- Food remains ADEQUATE
-- matrix remains STRONG 13 / ADEQUATE 11 / EXPERIENCE DEBT 0
+Reason it remained ADEQUATE:
+- current event is largely a flat strip alignment/interlace visualization;
+- future depth/deformation could make the join more physical.
 
-# EXACT NEXT USER ACTION
+# EXACT NEXT ACTION
 
-Record one ~10–15 s proof from the R5.1 share URL:
-1. `MATCHING PRESS` → `TEST RELATIONSHIP`;
-2. hold the final unfolded/revealed state;
-3. `OTHER PRESS` → `TEST RELATIONSHIP`;
-4. hold the offset pressure residual.
+Run a source/material audit for Bonwire / Asante kente weaving and identify the smallest reversible mechanism that can deepen the relation without replacing it.
 
-On upload, judge separately:
-- CAUSAL / relational integrity;
-- EMBODIMENT / whether STRONG threshold is actually reached;
-- VISUAL / Toyama masuzushi specificity;
-- TRUTH boundary.
+Priority questions:
+1. can warp/weft tension or loom-native over-under structure belong separately to the two members?
+2. can approach create visible edge tension before interlace?
+3. can MATCHING physically interleave layers rather than merely align strips?
+4. can OTHER produce a process-native missed shed / over-under misregistration while both textile members remain valid?
+5. what documented Bonwire/Asante visual/material cues are safe to use without inventing symbolic pattern meanings?
 
-If USER PASS:
-1. promote only the Food-specific candidate behavior;
-2. keep shared runtime unchanged;
-3. verify LIVE public Food route;
-4. reclassify Food ADEQUATE → STRONG;
-5. matrix becomes STRONG 14 / ADEQUATE 10 / EXPERIENCE DEBT 0;
-6. update registers + CURRENT_STATE + HANDOVER + PR body;
-7. proceed to R5.2 Textile / Bonwire.
+Only after this audit should an isolated `families/textile-bonwire/r5-2.html` candidate be created.
 
-If USER FAIL:
-revise only the isolated Food candidate; do not invalidate prior Food relational PASS.
+PR #21 remains Draft / DO NOT MERGE.
