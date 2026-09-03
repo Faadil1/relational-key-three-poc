@@ -17,136 +17,124 @@ Expansion laws remain frozen:
 - family-specific depth must not mutate `families/_shared/round13r/index.html`.
 
 # FROZEN PRIOR CHECKPOINT ✅
-
 Previous Global Refinement closeout remains PASS / frozen.
-- VALIDATED 24
-- USER relational integrity 24/24 PASS
-- route/promotion integrity closeout PASS
-- shared runtime unchanged from PR base
+VALIDATED 24.
+USER relational integrity 24/24 PASS.
+Shared runtime unchanged from PR base.
 
 # ACTIVE PHASE
-
 # **R5 — ADEQUATE → STRONG EXPERIENTIAL REFINEMENT**
 
 Queue:
 Food → Textile → Metate → Tongiaki → Garamut → Kento → Swell → City → Service → Signal → Frida.
 
 Current matrix:
-# **STRONG 17 / ADEQUATE 7 / EXPERIENCE DEBT 0**
+# **STRONG 18 / ADEQUATE 6 / EXPERIENCE DEBT 0**
 
-R5 does not authorize merge or review-state changes.
-
-# CLOSED STRONG IN R5 ✅
-
+Closed STRONG in R5:
 - Food / Toyama — `PRESSURE-TO-UNFOLD REVEAL`
 - Textile / Bonwire — `SELVEDGE OVERCAST JOIN`
 - Metate / Teotitlán — `RECIPROCAL ABRASION / FINENESS ACCUMULATION`
 - Tongiaki / Tonga — `CROSSBEAM LASHING → SHARED PLATFORM`
+- Garamut / East Sepik–Ramu — `IMPACT → BODY RESONANCE → DECAY → RE-ARM → INTERVAL MEMORY`
 
-## R5.4 Tongiaki / Tonga closure
+# R5.5 — GARAMUT / EAST SEPIK–RAMU — CLOSED ✅
 USER proof:
-`/mnt/data/3687007b-e3e9-455a-b81b-0d5f92442a0f.mp4`
-13.23 s / 1916×964 / 30 fps / 397 frames.
+`/mnt/data/2742d768-0cb4-4b70-9cc2-d8282f207fbd.mp4`
+15.87 s / 1914×968 / 30 fps / 476 frames.
 
 Verdict:
 `CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
 
 Promotion:
-`families/tongiaki-tonga/index.html`
-@ `e79dbc07caf567e9502c7bbb8e43da0af6197b39`.
+`families/garamut-sepik-ramu/index.html`
+@ `c43d336163c54aeda85f931a2572cf1ed2cf0c11`.
 
 LIVE:
-`dpl_BtpqNFqCqhumeXm9e8tD5gUVATC6` — READY at exact promotion commit.
-Preview fetch is protected by Vercel SSO (`302` to auth); no app failure inferred.
+`dpl_A4EsSUgLDAomktN2hv4DnNmXENjf` — READY at exact promotion commit.
+Public route `/families/garamut-sepik-ramu/` verified HTTP 200.
 
 Closure:
-`POST_CLOSEOUT_R5_4C_TONGIAKI_TONGA_USER_PASS_PROMOTION_STRONG.md`
-@ `372ebc55452647b8c2a46e68d3a01cbcf6ac5f31`.
+`POST_CLOSEOUT_R5_5C_GARAMUT_SEPIK_RAMU_USER_PASS_PROMOTION_STRONG.md`
+@ `7f4271616156272977a090d57247d0614f69dbea`.
 
-Tongiaki = STRONG.
+Garamut = STRONG.
 
-# R5.5 — GARAMUT / EAST SEPIK–RAMU — ACTIVE
-
-Baseline classification: `ADEQUATE`.
+# R5.6 — KENTO / JAPAN — ACTIVE
+Baseline: ADEQUATE.
+G4 registration-legibility polish remains valid and is not being repeated.
 
 Source audit:
-`POST_CLOSEOUT_R5_5A_GARAMUT_SEPIK_RAMU_SOURCE_SIGNAL_MATERIAL_AUDIT.md`
-@ `9efa41cad9c4eaf7e3c038845b803da821433dab`.
+`POST_CLOSEOUT_R5_6A_KENTO_JAPAN_SOURCE_SUCCESSIVE_REGISTRATION_AUDIT.md`
+@ `c19597db6e4ea591ff74901e07250aab1d1c9d2d`.
 
-Source-backed mechanism:
-# **IMPACT → BODY RESONANCE → DECAY → RE-ARM → INTERVAL MEMORY**
+Mechanism:
+# **RETURN-TO-KENTŌ → SUCCESSIVE COLOR BUILD**
 
 Law:
-`POUNDER → CONTACT → RESONANT BODY → DECAY → RE-ARM → NEXT IMPACT → SEQUENCE PERSISTS`
+`BLOCK SET + PAPER → KAGI / HIKITSUKI SEAT → BAREN PRESS → LAYER TRANSFERS → LIFT → RETURN TO SAME KENTŌ → NEXT LAYER → IMAGE ACCUMULATES`
 
 Candidate:
-`families/garamut-sepik-ramu/r5-5.html`
-
-Implementation:
-`c209eb55dd8e2a2ca27dd839967ad722fa1b203f`.
-
+`families/kento-japan/r5-6.html`
+Implementation: `1c9789748c1b3131e4de32487ab539e1d771bb23`.
 Candidate register:
-`POST_CLOSEOUT_R5_5B_GARAMUT_SEPIK_RAMU_RESONANCE_MEMORY_CANDIDATE.md`
-@ `2a6e8e2ef517d83556c1ba7d7d6b2ea09645bb26`.
+`POST_CLOSEOUT_R5_6B_KENTO_JAPAN_SUCCESSIVE_REGISTRATION_CANDIDATE.md`
+@ `f125d41a9ace1be22918a240a440db215edfed7e`.
 
 LIVE candidate:
-- deployment `dpl_5p5hxw8QkshrSta2jyVtPsLaYDmr`
+- deployment `dpl_5nFtxUPJewB4WjvRBrpsjgWF53gv`
 - READY
-- exact deployed commit `c209eb55dd8e2a2ca27dd839967ad722fa1b203f`
-- host `relational-key-collectionrelational-key-collection-61956b787.vercel.app`
-- candidate route `/families/garamut-sepik-ramu/r5-5.html` verified HTTP 200.
+- exact deployed commit `1c9789748c1b3131e4de32487ab539e1d771bb23`
+- host `relational-key-collectionrelational-key-collection-qq3u1hooq.vercel.app`
+- candidate route verified HTTP 200.
 
-MATCHING SIGNAL:
-- three direct pounder impacts;
-- each impact generates body-native resonance in Card B;
-- recoil / decay / re-arm is visible;
-- equal editorial intervals accumulate as internal memory marks on B;
-- final `ORDERED IMPACTS REGISTERED · RESONANT SEQUENCE PERSISTS`.
+MATCHING SERIES:
+- three complete `seat → baren press → transfer → lift` cycles;
+- same kagi + hikitsuki registration anchors each pass;
+- three editorial colour layers accumulate on Card B;
+- final `THREE COLOR LAYERS REGISTERED · ONE IMAGE ACCUMULATED`.
 
-OTHER SIGNAL:
-- same two valid members and three valid impacts;
-- every impact still resonates;
-- editorial intervals remain uneven;
-- internal memory marks stay offset;
-- final `THREE VALID IMPACTS · EDITORIAL INTERVALS DO NOT REGISTER`.
+OTHER SERIES:
+- three valid printing passes;
+- third return is off-register;
+- third colour layer remains shifted as a visible colour-fringe residual;
+- final `THREE VALID PASSES · ONE COLOR LAYER MISREGISTERED`.
 
 Truth boundary:
-`Editorial timing comparison only · no community garamut code is reproduced, decoded or assigned meaning. Synthetic impact audio is interaction feedback, not authentic garamut timbre.`
+`Editorial visualization of documented kentō registration and successive colour-block printing mechanics · not a reconstruction of a specific historical block set, pigment recipe, workshop sequence or original print.`
 
-Public Garamut wrapper remains unchanged.
-Shared runtime remains unchanged.
-Garamut remains ADEQUATE until USER PASS.
+Public Kento wrapper unchanged.
+Shared runtime unchanged.
+Kento remains ADEQUATE until USER PASS.
 
 # STATE SEPARATION
-
 - PRIOR GLOBAL CLOSEOUT: PASS / frozen
 - Food R5.1: STRONG / CLOSED
 - Textile R5.2: STRONG / CLOSED
 - Metate R5.3: STRONG / CLOSED
 - Tongiaki R5.4: STRONG / CLOSED
-- SOURCE Garamut audit: PASS
-- SOURCE Garamut candidate: PASS
-- LIVE Garamut candidate: PASS / HTTP 200
-- USER Garamut: PENDING
-- public Garamut promotion: NOT STARTED
+- Garamut R5.5: STRONG / CLOSED
+- SOURCE Kento audit: PASS
+- SOURCE Kento candidate: PASS
+- LIVE Kento candidate: PASS / HTTP 200
+- USER Kento: PENDING
+- public Kento promotion: NOT STARTED
 - shared runtime: unchanged
 - VALIDATED: 24
-- matrix: STRONG 17 / ADEQUATE 7 / EXPERIENCE DEBT 0
+- matrix: STRONG 18 / ADEQUATE 6 / EXPERIENCE DEBT 0
 - PR #21: DRAFT / DO NOT MERGE
 
 # ACTIVE GATE / NEXT EXACT OUTPUT
+# **R5.6C — KENTO / JAPAN USER MATCHING + OTHER REGRESSION**
 
-# **R5.5C — GARAMUT / EAST SEPIK–RAMU USER MATCHING + OTHER REGRESSION**
-
-Record one ~10–15 s proof:
-1. `MATCHING SIGNAL` → `TEST RELATIONSHIP`;
-2. hold final resonance-memory state;
-3. `OTHER SIGNAL` → `TEST RELATIONSHIP`;
-4. hold offset interval-memory residual.
+Record one ~12–18 s proof:
+1. `MATCHING SERIES` → `TEST REGISTRATION`;
+2. hold the three-layer accumulated image;
+3. `OTHER SERIES` → `TEST REGISTRATION`;
+4. hold the third-layer colour-fringe residual.
 
 Candidate URL:
-`https://relational-key-collectionrelational-key-collection-61956b787.vercel.app/families/garamut-sepik-ramu/r5-5.html?_vercel_share=sMXuKAa5x54VjNVT2quqmTVTU121PQ95`
+`https://relational-key-collectionrelational-key-collection-qq3u1hooq.vercel.app/families/kento-japan/r5-6.html?_vercel_share=82zlSGxspefzMyEMWCf3UNIQxNxEcL9H`
 
 Judge CAUSAL / EMBODIMENT-STRONG / VISUAL-SPECIFICITY / TRUTH separately.
-
-Do not promote or reclassify Garamut before USER PASS.
+Do not promote or reclassify Kento before USER PASS.
