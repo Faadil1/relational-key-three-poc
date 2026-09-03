@@ -31,74 +31,86 @@ Do not force all families to STRONG.
 
 # CURRENT MATRIX
 
-# **STRONG 14 / ADEQUATE 10 / EXPERIENCE DEBT 0**
+# **STRONG 15 / ADEQUATE 9 / EXPERIENCE DEBT 0**
 
 VALIDATED remains 24.
 
 # R5.1 — FOOD / TOYAMA — CLOSED ✅
 
-Mechanism:
-`PRESSURE-TO-UNFOLD REVEAL`.
-
-USER verdict:
-`CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
-
-Promotion:
-`families/food-toyama/index.html`
-@ `997358f5c180f10b2a27be5d515ff0a8ae18e0b2`.
-
-LIVE:
-`dpl_GgBo4wsWi6wK18u4GQihCCLqrUR2` — READY.
-
-Closure:
-`POST_CLOSEOUT_R5_1B_FOOD_TOYAMA_USER_PASS_PROMOTION_STRONG.md`
-@ `ae46ac5a0783570da5c1e30191d78f2bd30439a3`.
-
+Mechanism `PRESSURE-TO-UNFOLD REVEAL`.
 Food = STRONG.
+Closure `POST_CLOSEOUT_R5_1B_FOOD_TOYAMA_USER_PASS_PROMOTION_STRONG.md` @ `ae46ac5a0783570da5c1e30191d78f2bd30439a3`.
 
-# R5.2 — TEXTILE / BONWIRE — ACTIVE
+# R5.2 — TEXTILE / BONWIRE — CLOSED ✅
 
-Baseline:
-`ADEQUATE`.
+Mechanism `SELVEDGE OVERCAST JOIN`.
+USER verdict `CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
+Promotion `families/textile-bonwire/index.html` @ `e2eb119007d432587ec2f44b7799d813facaa589`.
+LIVE `dpl_9EvnuEgRC2g2B28giVQtmmRRC1GQ` READY.
+Closure `POST_CLOSEOUT_R5_2C_TEXTILE_BONWIRE_USER_PASS_PROMOTION_STRONG.md` @ `4855c1815a30a79b2b62295cebe4bed6b24d7795`.
+Textile = STRONG.
 
-Frozen law:
-`STRIP → ALIGN → INTERLACE → REGISTER → JOIN → CONTINUE`.
+# R5.3 — METATE / TEOTITLÁN — ACTIVE
+
+Baseline: ADEQUATE.
+Historical diagnostic: reciprocal abrasion is direct and embodied, but material accumulation needed deeper causal visibility.
 
 Source audit:
-`POST_CLOSEOUT_R5_2A_TEXTILE_BONWIRE_SOURCE_MATERIAL_AUDIT.md`
-@ `35a8b59a8a258bddfaae8ee456d146c83db65496`.
+`POST_CLOSEOUT_R5_3A_METATE_TEOTITLAN_SOURCE_MATERIAL_MOTION_AUDIT.md`
+@ `3e9bf36edd45753b67dd732dbdf4c545bb2fef77`.
 
 Mechanism:
-# **SELVEDGE OVERCAST JOIN**
+# **RECIPROCAL ABRASION / FINENESS ACCUMULATION**
+
+Law:
+`CONTACT → RECIPROCAL STROKE → SHEAR → FINENESS ACCUMULATES → GRIND CONTINUES`
 
 Candidate:
-`families/textile-bonwire/r5-2.html`
+`families/metate-teotitlan/r5-3.html`
 
-Final implementation:
-`4cfdcc56d77da2761ffe8612ec5523ac8149c6b3`.
+Implementation:
+`2618e8400eb74bc247ab4273312ff96c5cf0aeb3`
 
 Candidate register:
-`POST_CLOSEOUT_R5_2B_TEXTILE_BONWIRE_SELVEDGE_OVERCAST_CANDIDATE.md`
-@ `4aaca7a183492f95f68e51a246f13af9dda33aad`.
+`POST_CLOSEOUT_R5_3B_METATE_TEOTITLAN_RECIPROCAL_ABRASION_CANDIDATE.md`
+@ `9864ce35c0fbd9ae4ae42ddc908abee50b81bf28`.
 
 LIVE:
-- deployment `dpl_3jaX4XKW52bmdLWE7k1eBDMWmoQ6`
+- deployment `dpl_J2Va8DZY6S4cBkvttPZQQxz7vsLe`
 - READY
-- exact deployed commit `4cfdcc56d77da2761ffe8612ec5523ac8149c6b3`
-- `/families/textile-bonwire/r5-2.html` HTTP 200.
+- exact deployed commit `2618e8400eb74bc247ab4273312ff96c5cf0aeb3`
+- `/families/metate-teotitlan/r5-3.html` HTTP 200.
 
-Public Textile wrapper remains unchanged.
-Shared runtime remains unchanged.
-Textile remains ADEQUATE until USER proof.
+MATCHING WORK:
+- metate + metlapil approach and register contact;
+- six visible reciprocal reversals;
+- abrasion lane expands;
+- coarse particles shrink/fade;
+- fine material field accumulates;
+- final `RECIPROCAL ABRASION REGISTERED · FINE MATERIAL FIELD FORMED`.
+
+OTHER WORK:
+- edge-biased/off-axis contact;
+- material pushed laterally;
+- coarse ridge remains;
+- both stones remain valid;
+- final `EDGE-BIASED ABRASION · COARSE RIDGE REMAINS`.
+
+Truth boundary:
+`Editorial visualization of documented Teotitlán/Oaxaca metate + metlapil grinding mechanics · material transformation is conceptual, not an exact recipe or ethnographic reconstruction.`
+
+Public Metate wrapper unchanged.
+Shared runtime unchanged.
+Metate remains ADEQUATE pending USER proof.
 
 # ACTIVE GATE
 
-# **R5.2C — TEXTILE / BONWIRE USER MATCHING + OTHER REGRESSION**
+# **R5.3C — METATE / TEOTITLÁN USER MATCHING + OTHER REGRESSION**
 
 Required proof:
-1. `MATCHING JOIN` → `TEST RELATIONSHIP`;
-2. hold final registered seam;
-3. `OTHER JOIN` → `TEST RELATIONSHIP`;
-4. hold missed / offset overcast residual.
+1. `MATCHING WORK` → `TEST RELATIONSHIP`;
+2. hold fine-ground lane;
+3. `OTHER WORK` → `TEST RELATIONSHIP`;
+4. hold coarse-ridge residual.
 
-Only USER PASS may authorize Textile promotion and ADEQUATE → STRONG.
+Only USER PASS may authorize Metate promotion and ADEQUATE → STRONG.
