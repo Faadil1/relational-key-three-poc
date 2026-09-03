@@ -19,7 +19,7 @@ Expansion laws:
 Persistence protocol:
 `dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output`.
 
-# FROZEN CHECKPOINT — PRIOR GLOBAL REFINEMENT ✅
+# FROZEN PRIOR CHECKPOINT ✅
 
 Previous Global Refinement remains complete and valid:
 - VALIDATED 24
@@ -28,123 +28,132 @@ Previous Global Refinement remains complete and valid:
 - route/promotion integrity closeout PASS
 - shared runtime unchanged from PR base
 
-Frozen closeout matrix:
-# **STRONG 13 / ADEQUATE 11 / EXPERIENCE DEBT 0**
-
-Closeout register:
+Frozen closeout register:
 `GLOBAL_REFINEMENT_FINAL_CLOSEOUT_PUBLIC_ROUTE_PROMOTION_INTEGRITY_PASS.md`
 @ `dc3c8f0ce6626d63b74599c95bca41b0d598e3de`.
 
-# ACTIVE NEW PHASE
+# ACTIVE PHASE
 
 # **R5 — ADEQUATE → STRONG EXPERIENTIAL REFINEMENT**
 
-Human-authorized queue register:
+Queue/rules register:
 `POST_CLOSEOUT_R5_ADEQUATE_TO_STRONG_REFINEMENT_QUEUE.md`
 @ `80ed22ba1df441705c5c2557803f6683dc775d89`.
 
-Queue:
+Execution queue:
 **Food → Textile → Metate → Tongiaki → Garamut → Kento → Swell → City → Service → Signal → Frida**.
 
-R5 does not authorize merge or PR review-state changes.
+R5 does not authorize PR merge/review-state changes.
 
-# R5.1 — FOOD / TOYAMA
+# CURRENT R5 MATRIX
 
-Baseline:
-- public `families/food-toyama/index.html` unchanged;
-- public wrapper blob `86f6b85796bec16dcb9077ed594a1ec86736b663`;
-- shared runtime unchanged;
-- baseline ambition `ADEQUATE`;
-- law `PRESS → ALIGN → REGISTER → RELEASE → UNFOLD → REVEAL`.
+After Food / Toyama R5.1B promotion:
+# **STRONG 14 / ADEQUATE 10 / EXPERIENCE DEBT 0**
 
-Source basis PASS:
-Toyama masuzushi is documented as trout + vinegared rice with bamboo leaves / bamboo grass in a round wooden/bentwood container, completed through wrapping and applied pressure/weight before opening/reveal.
+VALIDATED remains 24.
+USER relational integrity remains 24/24 PASS.
 
-Frozen candidate mechanism:
+# R5.1 — FOOD / TOYAMA — CLOSED ✅
+
+Baseline law:
+`PRESS → ALIGN → REGISTER → RELEASE → UNFOLD → REVEAL`.
+
+Promoted mechanism:
 # **PRESSURE-TO-UNFOLD REVEAL**
 
 Candidate:
 `families/food-toyama/r5-1.html`
 
-Implementation commit:
+Implementation:
 `a9ecd75514d9dfc1aa6b222607ec6278e07c2090`
 
-Dedicated candidate register:
+Candidate register:
 `POST_CLOSEOUT_R5_1_FOOD_TOYAMA_PRESSURE_TO_UNFOLD_CANDIDATE.md`
 @ `659edc4ff9ff30942b7bc3d955c4b0be726ba4e3`.
 
-## MATCHING target
+Candidate LIVE:
+- deployment `dpl_7vEBe7eRsDrZejyNUgdS8JuuoAob`
+- READY
+- exact deployed commit `a9ecd75514d9dfc1aa6b222607ec6278e07c2090`.
 
-Card A = pressing member / force condition.
-Card B = wrapped wappa food member.
+## USER R5.1B proof
 
-Sequence:
-`APPROACH → PRESSURE TRANSFER → COMPRESSION → RELEASE → UNFOLD → REVEAL`.
+Video:
+`/mnt/data/8487ea4b-e8a3-4f1e-ac3f-ad5467677015.mp4`
 
-Final candidate result:
-`LEAVES UNFOLD · MASU-ZUSHI REVEALED`.
+Metadata:
+- 13.90 s
+- 1910×960
+- 30 fps
+- 417 frames
 
-## OTHER target
+MATCHING observed:
+- Wappa Press and Bamboo-Wrapped Wappa remain distinct members before relation;
+- force transfers A → relation → B;
+- B visibly compresses;
+- pressure releases;
+- bamboo leaves unfold;
+- masu-zushi is revealed;
+- center remains subordinate force-transfer evidence.
 
-Offset/incomplete pressure registration:
-- press assembly and pressure band remain misregistered;
-- no uniform compression;
-- bundle remains closed;
-- both members remain valid.
+OTHER observed:
+- pressure remains offset / misregistered;
+- uniform compression does not resolve;
+- wrapped bundle remains closed;
+- both members remain valid;
+- residual is pressure-process-native.
 
-Result:
-`PRESSURE DOES NOT REGISTER · BOTH MEMBERS REMAIN VALID`.
+USER verdict:
+# **CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS ✅**
 
-Truth boundary:
-`Editorial visualization of documented Toyama masuzushi material/process cues · not a producer replica, affiliation, or exact recipe.`
+Closure register:
+`POST_CLOSEOUT_R5_1B_FOOD_TOYAMA_USER_PASS_PROMOTION_STRONG.md`
+@ `ae46ac5a0783570da5c1e30191d78f2bd30439a3`.
 
-# LIVE CANDIDATE
+## Public promotion
 
-Deployment:
-`dpl_7vEBe7eRsDrZejyNUgdS8JuuoAob`
+Public wrapper:
+`families/food-toyama/index.html`
 
-State:
-`READY`
+Promotion commit:
+`997358f5c180f10b2a27be5d515ff0a8ae18e0b2`
 
-Exact deployed commit:
-`a9ecd75514d9dfc1aa6b222607ec6278e07c2090`
+LIVE promotion:
+- deployment `dpl_GgBo4wsWi6wK18u4GQihCCLqrUR2`
+- READY
+- exact deployed commit `997358f5c180f10b2a27be5d515ff0a8ae18e0b2`
+- host `relational-key-collectionrelational-key-collection-gc2uznpgn.vercel.app`
+- `/families/food-toyama/` verified HTTP 200 and serves the promotion wrapper.
 
-Host:
-`relational-key-collectionrelational-key-collection-czbloccp5.vercel.app`
+Shared runtime remains unchanged.
 
-Candidate route:
-`/families/food-toyama/r5-1.html`
-verified HTTP 200.
-
-Temporary share URL:
-`https://relational-key-collectionrelational-key-collection-czbloccp5.vercel.app/families/food-toyama/r5-1.html?_vercel_share=053AkygXfk5pazZG8fE8PZaUohmVMBE1`
+Food classification:
+# **ADEQUATE → STRONG**
 
 # STATE SEPARATION
 
 - PRIOR GLOBAL CLOSEOUT: PASS / frozen
 - SOURCE R5 queue: PASS
-- SOURCE R5.1 source audit: PASS
-- SOURCE R5.1 candidate: PASS
-- LIVE R5.1 candidate: READY / PASS
-- USER R5.1: PENDING
-- public Food route: unchanged
-- public Food promotion: NOT STARTED
+- SOURCE Food candidate: PASS
+- LIVE Food candidate: PASS
+- USER Food R5.1B: PASS
+- SOURCE Food promotion: PASS
+- LIVE Food promotion: PASS
+- Food classification: STRONG
 - shared runtime: unchanged
-- VALIDATED: 24 unchanged
-- Food classification: ADEQUATE unchanged
-- matrix: STRONG 13 / ADEQUATE 11 / EXPERIENCE DEBT 0 unchanged
+- VALIDATED: 24
+- matrix: STRONG 14 / ADEQUATE 10 / EXPERIENCE DEBT 0
 - PR #21: DRAFT / DO NOT MERGE
 
 # ACTIVE GATE / NEXT EXACT OUTPUT
 
-# **R5.1B — FOOD / TOYAMA USER MATCHING + OTHER REGRESSION**
+# **R5.2A — TEXTILE / BONWIRE SOURCE + MATERIAL EMBODIMENT AUDIT**
 
-Record one ~10–15 s proof:
-1. MATCHING PRESS → TEST RELATIONSHIP;
-2. hold reveal state;
-3. OTHER PRESS → TEST RELATIONSHIP;
-4. hold offset residual.
+Preserve native Textile law:
+`STRIP → ALIGN → INTERLACE → REGISTER → JOIN → CONTINUE`.
 
-Judge CAUSAL / EMBODIMENT-STRONG / VISUAL-SPECIFICITY / TRUTH separately.
+Audit whether loom-native depth, tension, over-under structure, edge ownership, deformation or weaving action can make the relation materially embodied enough to justify a STRONG candidate.
 
-Do not promote or reclassify Food before USER PASS.
+Do not patch for aesthetics alone.
+Do not mutate `families/_shared/round13r/index.html`.
+Create an isolated Textile candidate only after source/material audit defines a real pair-native mechanism improvement.
