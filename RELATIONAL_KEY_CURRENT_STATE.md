@@ -10,6 +10,12 @@ Draft PR: #21 — `DRAFT / DO NOT MERGE`
 **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 `PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
 
+Expansion laws remain frozen:
+- **EXPANSION MUST DEEPEN THE RELATION, NOT REPLACE IT.**
+- **TECHNOLOGY SERVES THE RELATIONAL MECHANISM.**
+- **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
+- family-specific depth must not mutate `families/_shared/round13r/index.html`.
+
 # FROZEN PRIOR CHECKPOINT ✅
 
 Previous Global Refinement closeout remains PASS / frozen.
@@ -26,86 +32,90 @@ Queue:
 Food → Textile → Metate → Tongiaki → Garamut → Kento → Swell → City → Service → Signal → Frida.
 
 Current matrix:
-# **STRONG 16 / ADEQUATE 8 / EXPERIENCE DEBT 0**
+# **STRONG 17 / ADEQUATE 7 / EXPERIENCE DEBT 0**
 
-Closed STRONG in R5:
+R5 does not authorize merge or review-state changes.
+
+# CLOSED STRONG IN R5 ✅
+
 - Food / Toyama — `PRESSURE-TO-UNFOLD REVEAL`
 - Textile / Bonwire — `SELVEDGE OVERCAST JOIN`
 - Metate / Teotitlán — `RECIPROCAL ABRASION / FINENESS ACCUMULATION`
+- Tongiaki / Tonga — `CROSSBEAM LASHING → SHARED PLATFORM`
 
-# R5.3 — METATE / TEOTITLÁN — CLOSED ✅
-
+## R5.4 Tongiaki / Tonga closure
 USER proof:
-`/mnt/data/834da9cc-30af-419a-8abe-eb0c97b20e67.mp4`
-15.53 s / 1906×964 / 30 fps / 466 frames.
+`/mnt/data/3687007b-e3e9-455a-b81b-0d5f92442a0f.mp4`
+13.23 s / 1916×964 / 30 fps / 397 frames.
 
 Verdict:
 `CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
 
 Promotion:
-`families/metate-teotitlan/index.html`
-@ `c85dfe25e6b6c03ef832d55d25e5d37ab0378b2a`.
+`families/tongiaki-tonga/index.html`
+@ `e79dbc07caf567e9502c7bbb8e43da0af6197b39`.
 
-Public route verified HTTP 200 on READY deployment:
-`dpl_3w3ZB1PshQ3CSUZUoAP5FRwGUbyJ`
-@ exact deployed commit `d692baa24cc2d7432714fbf727315bdf479a4ecd`.
+LIVE:
+`dpl_BtpqNFqCqhumeXm9e8tD5gUVATC6` — READY at exact promotion commit.
+Preview fetch is protected by Vercel SSO (`302` to auth); no app failure inferred.
 
 Closure:
-`POST_CLOSEOUT_R5_3C_METATE_TEOTITLAN_USER_PASS_PROMOTION_STRONG.md`
-@ `8ebb4fdb35d1174bc69fddc4a293a038dfe65017`.
+`POST_CLOSEOUT_R5_4C_TONGIAKI_TONGA_USER_PASS_PROMOTION_STRONG.md`
+@ `372ebc55452647b8c2a46e68d3a01cbcf6ac5f31`.
 
-Metate = STRONG.
+Tongiaki = STRONG.
 
-# R5.4 — TONGIAKI / TONGA — ACTIVE
+# R5.5 — GARAMUT / EAST SEPIK–RAMU — ACTIVE
 
-Baseline classification: ADEQUATE.
+Baseline classification: `ADEQUATE`.
 
 Source audit:
-`POST_CLOSEOUT_R5_4A_TONGIAKI_TONGA_SOURCE_STRUCTURAL_LASHING_AUDIT.md`
-@ `4b12b969b1f0e96ed18d2f158495ff2d6963c32a`.
+`POST_CLOSEOUT_R5_5A_GARAMUT_SEPIK_RAMU_SOURCE_SIGNAL_MATERIAL_AUDIT.md`
+@ `9efa41cad9c4eaf7e3c038845b803da821433dab`.
 
-Mechanism:
-# **CROSSBEAM LASHING → SHARED PLATFORM**
+Source-backed mechanism:
+# **IMPACT → BODY RESONANCE → DECAY → RE-ARM → INTERVAL MEMORY**
 
 Law:
-`HULLS → PARALLEL REGISTER → CROSSBEAMS SEAT → LASHINGS TENSION → DECK SPANS → SHARED PLATFORM`
+`POUNDER → CONTACT → RESONANT BODY → DECAY → RE-ARM → NEXT IMPACT → SEQUENCE PERSISTS`
 
 Candidate:
-`families/tongiaki-tonga/r5-4.html`
+`families/garamut-sepik-ramu/r5-5.html`
 
 Implementation:
-`d692baa24cc2d7432714fbf727315bdf479a4ecd`.
+`c209eb55dd8e2a2ca27dd839967ad722fa1b203f`.
 
 Candidate register:
-`POST_CLOSEOUT_R5_4B_TONGIAKI_TONGA_CROSSBEAM_LASHING_CANDIDATE.md`
-@ `a9695490f096c80219f969bb899e8f77da0ac4ca`.
+`POST_CLOSEOUT_R5_5B_GARAMUT_SEPIK_RAMU_RESONANCE_MEMORY_CANDIDATE.md`
+@ `2a6e8e2ef517d83556c1ba7d7d6b2ea09645bb26`.
 
 LIVE candidate:
-`dpl_3w3ZB1PshQ3CSUZUoAP5FRwGUbyJ` — READY.
-Host `relational-key-collectionrelational-key-collection-4gi5a57e3.vercel.app`.
+- deployment `dpl_5p5hxw8QkshrSta2jyVtPsLaYDmr`
+- READY
+- exact deployed commit `c209eb55dd8e2a2ca27dd839967ad722fa1b203f`
+- host `relational-key-collectionrelational-key-collection-61956b787.vercel.app`
+- candidate route `/families/garamut-sepik-ramu/r5-5.html` verified HTTP 200.
 
-MATCHING LASH:
-- two independently valid hulls;
-- parallel approach;
-- three crossbeams seat across both hull zones;
-- three fibre-lashing paths tension sequentially;
-- deck slats resolve only after all shared load paths register;
-- final `LASHINGS TENSIONED · SHARED PLATFORM FORMED`.
+MATCHING SIGNAL:
+- three direct pounder impacts;
+- each impact generates body-native resonance in Card B;
+- recoil / decay / re-arm is visible;
+- equal editorial intervals accumulate as internal memory marks on B;
+- final `ORDERED IMPACTS REGISTERED · RESONANT SEQUENCE PERSISTS`.
 
-OTHER LASH:
-- right hull remains longitudinally offset;
-- crossbeams misseat / angle;
-- lashings remain diagonal / dashed / incomplete;
-- shared deck does not resolve;
-- both hulls remain valid;
-- final `CROSSBEAMS MISSEAT · SLACK LASHING RESIDUAL · BOTH HULLS VALID`.
+OTHER SIGNAL:
+- same two valid members and three valid impacts;
+- every impact still resonates;
+- editorial intervals remain uneven;
+- internal memory marks stay offset;
+- final `THREE VALID IMPACTS · EDITORIAL INTERVALS DO NOT REGISTER`.
 
 Truth boundary:
-`Editorial structural visualization based on documented Tongan tongiaki double-hull, deck/platform and wider Polynesian lashing principles · not an exact reconstruction of historical joinery, knot sequence, rigging, hydrodynamics or navigation performance.`
+`Editorial timing comparison only · no community garamut code is reproduced, decoded or assigned meaning. Synthetic impact audio is interaction feedback, not authentic garamut timbre.`
 
-Public Tongiaki wrapper unchanged.
-Shared runtime unchanged.
-Tongiaki remains ADEQUATE pending USER proof.
+Public Garamut wrapper remains unchanged.
+Shared runtime remains unchanged.
+Garamut remains ADEQUATE until USER PASS.
 
 # STATE SEPARATION
 
@@ -113,26 +123,27 @@ Tongiaki remains ADEQUATE pending USER proof.
 - Food R5.1: STRONG / CLOSED
 - Textile R5.2: STRONG / CLOSED
 - Metate R5.3: STRONG / CLOSED
-- SOURCE Tongiaki audit: PASS
-- SOURCE Tongiaki candidate: PASS
-- LIVE Tongiaki candidate: READY
-- USER Tongiaki: PENDING
-- public Tongiaki promotion: NOT STARTED
+- Tongiaki R5.4: STRONG / CLOSED
+- SOURCE Garamut audit: PASS
+- SOURCE Garamut candidate: PASS
+- LIVE Garamut candidate: PASS / HTTP 200
+- USER Garamut: PENDING
+- public Garamut promotion: NOT STARTED
 - shared runtime: unchanged
 - VALIDATED: 24
-- matrix: STRONG 16 / ADEQUATE 8 / EXPERIENCE DEBT 0
+- matrix: STRONG 17 / ADEQUATE 7 / EXPERIENCE DEBT 0
 - PR #21: DRAFT / DO NOT MERGE
 
-# ACTIVE GATE
+# ACTIVE GATE / NEXT EXACT OUTPUT
 
-# **R5.4C — TONGIAKI / TONGA USER MATCHING + OTHER REGRESSION**
+# **R5.5C — GARAMUT / EAST SEPIK–RAMU USER MATCHING + OTHER REGRESSION**
 
 Record one ~10–15 s proof:
-1. `MATCHING LASH` → `TEST RELATIONSHIP`;
-2. hold final shared platform;
-3. `OTHER LASH` → `TEST RELATIONSHIP`;
-4. hold misseated / slack-lashing residual.
+1. `MATCHING SIGNAL` → `TEST RELATIONSHIP`;
+2. hold final resonance-memory state;
+3. `OTHER SIGNAL` → `TEST RELATIONSHIP`;
+4. hold offset interval-memory residual.
 
 Judge CAUSAL / EMBODIMENT-STRONG / VISUAL-SPECIFICITY / TRUTH separately.
 
-Do not promote before USER PASS.
+Do not promote or reclassify Garamut before USER PASS.
