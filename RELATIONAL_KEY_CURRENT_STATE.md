@@ -16,12 +16,16 @@ Expansion laws:
 - **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
 - **A RELATIONALLY CORRECT FAMILY IS NOT EXPERIENTIALLY COMPLETE IF ITS PLACE / MATERIAL / CULTURAL IDENTITY IS GENERIC.**
 
+Persistence protocol:
+`dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output`.
+
 # FROZEN PRIOR CHECKPOINT ✅
 
 Previous Global Refinement closeout remains PASS / frozen.
-VALIDATED 24.
-USER relational integrity 24/24 PASS.
-Shared runtime unchanged from PR base.
+- VALIDATED 24
+- USER relational integrity 24/24 PASS
+- route/promotion integrity closeout PASS
+- shared runtime unchanged from PR base
 
 # ACTIVE PHASE
 
@@ -31,7 +35,7 @@ Queue:
 Food → Textile → Metate → Tongiaki → Garamut → Kento → Swell → City → Service → Signal → Frida.
 
 Current matrix:
-# **STRONG 15 / ADEQUATE 9 / EXPERIENCE DEBT 0**
+# **STRONG 16 / ADEQUATE 8 / EXPERIENCE DEBT 0**
 
 R5 does not authorize merge or review-state changes.
 
@@ -40,94 +44,117 @@ Food = STRONG.
 Closure `POST_CLOSEOUT_R5_1B_FOOD_TOYAMA_USER_PASS_PROMOTION_STRONG.md` @ `ae46ac5a0783570da5c1e30191d78f2bd30439a3`.
 
 # R5.2 — TEXTILE / BONWIRE — CLOSED ✅
-
-Mechanism `SELVEDGE OVERCAST JOIN`.
-USER proof `/mnt/data/cbaa0da0-22b2-4dfe-95dd-c37517717fad.mp4` — 15.37 s / 1910×962 / 30 fps / 461 frames.
-USER verdict `CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
-Promotion `families/textile-bonwire/index.html` @ `e2eb119007d432587ec2f44b7799d813facaa589`.
-LIVE `dpl_9EvnuEgRC2g2B28giVQtmmRRC1GQ` READY.
-Closure `POST_CLOSEOUT_R5_2C_TEXTILE_BONWIRE_USER_PASS_PROMOTION_STRONG.md` @ `4855c1815a30a79b2b62295cebe4bed6b24d7795`.
 Textile = STRONG.
+Closure `POST_CLOSEOUT_R5_2C_TEXTILE_BONWIRE_USER_PASS_PROMOTION_STRONG.md` @ `4855c1815a30a79b2b62295cebe4bed6b24d7795`.
 
-# R5.3 — METATE / TEOTITLÁN — ACTIVE
+# R5.3 — METATE / TEOTITLÁN — CLOSED ✅
 
-Baseline: ADEQUATE.
+Mechanism:
+`RECIPROCAL ABRASION / FINENESS ACCUMULATION`.
+
+USER proof:
+`/mnt/data/834da9cc-30af-419a-8abe-eb0c97b20e67.mp4`
+- 15.53 s
+- 1906×964
+- 30 fps
+- 466 frames
+
+USER verdict:
+`CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
+
+Promotion:
+`families/metate-teotitlan/index.html`
+@ `c85dfe25e6b6c03ef832d55d25e5d37ab0378b2a`.
+
+Public Metate route verified HTTP 200 on subsequent READY deployment containing the promotion:
+`dpl_3w3ZB1PshQ3CSUZUoAP5FRwGUbyJ`
+@ exact deployed commit `d692baa24cc2d7432714fbf727315bdf479a4ecd`.
+
+Closure:
+`POST_CLOSEOUT_R5_3C_METATE_TEOTITLAN_USER_PASS_PROMOTION_STRONG.md`
+@ `8ebb4fdb35d1174bc69fddc4a293a038dfe65017`.
+
+Metate = STRONG.
+
+# R5.4 — TONGIAKI / TONGA — ACTIVE
+
+Baseline classification:
+`ADEQUATE`.
 
 Source audit:
-`POST_CLOSEOUT_R5_3A_METATE_TEOTITLAN_SOURCE_MATERIAL_MOTION_AUDIT.md`
-@ `3e9bf36edd45753b67dd732dbdf4c545bb2fef77`.
+`POST_CLOSEOUT_R5_4A_TONGIAKI_TONGA_SOURCE_STRUCTURAL_LASHING_AUDIT.md`
+@ `4b12b969b1f0e96ed18d2f158495ff2d6963c32a`.
 
 Source-backed mechanism:
-# **RECIPROCAL ABRASION / FINENESS ACCUMULATION**
+# **CROSSBEAM LASHING → SHARED PLATFORM**
 
 Law:
-`CONTACT → RECIPROCAL STROKE → SHEAR → FINENESS ACCUMULATES → GRIND CONTINUES`
+`HULLS → PARALLEL REGISTER → CROSSBEAMS SEAT → LASHINGS TENSION → DECK SPANS → SHARED PLATFORM`
 
 Candidate:
-`families/metate-teotitlan/r5-3.html`
+`families/tongiaki-tonga/r5-4.html`
 
 Implementation:
-`2618e8400eb74bc247ab4273312ff96c5cf0aeb3`.
+`d692baa24cc2d7432714fbf727315bdf479a4ecd`.
 
 Candidate register:
-`POST_CLOSEOUT_R5_3B_METATE_TEOTITLAN_RECIPROCAL_ABRASION_CANDIDATE.md`
-@ `9864ce35c0fbd9ae4ae42ddc908abee50b81bf28`.
+`POST_CLOSEOUT_R5_4B_TONGIAKI_TONGA_CROSSBEAM_LASHING_CANDIDATE.md`
+@ `a9695490f096c80219f969bb899e8f77da0ac4ca`.
 
-LIVE candidate:
-- deployment `dpl_J2Va8DZY6S4cBkvttPZQQxz7vsLe`
-- READY
-- exact deployed commit `2618e8400eb74bc247ab4273312ff96c5cf0aeb3`
-- host `relational-key-collectionrelational-key-collection-fm0sb6i8a.vercel.app`
-- route `/families/metate-teotitlan/r5-3.html` HTTP 200.
+LIVE candidate deployment:
+`dpl_3w3ZB1PshQ3CSUZUoAP5FRwGUbyJ`
+READY
+host `relational-key-collectionrelational-key-collection-4gi5a57e3.vercel.app`.
 
-MATCHING WORK:
-- both stones exist before relation;
-- contact registers;
-- six forward/return reciprocal reversals occur;
-- abrasion lane expands;
-- coarse particles shrink/fade;
-- fine material field accumulates;
-- final `RECIPROCAL ABRASION REGISTERED · FINE MATERIAL FIELD FORMED`.
+MATCHING LASH:
+- Hull A and Hull B remain independently valid;
+- parallel approach;
+- three crossbeams seat across both hull zones;
+- three fibre-lashing paths tension sequentially;
+- deck slats resolve only after all load paths register;
+- final `LASHINGS TENSIONED · SHARED PLATFORM FORMED`.
 
-OTHER WORK:
-- contact remains off axis / edge-biased;
-- coarse material shifts laterally;
-- coarse ridge remains;
-- both stones remain valid;
-- final `EDGE-BIASED ABRASION · COARSE RIDGE REMAINS`.
+OTHER LASH:
+- right hull remains longitudinally offset;
+- crossbeams misseat / angle;
+- lashings remain diagonal, dashed and incomplete;
+- shared deck does not resolve;
+- both hulls remain valid;
+- final `CROSSBEAMS MISSEAT · SLACK LASHING RESIDUAL · BOTH HULLS VALID`.
 
 Truth boundary:
-`Editorial visualization of documented Teotitlán/Oaxaca metate + metlapil grinding mechanics · material transformation is conceptual, not an exact recipe or ethnographic reconstruction.`
+`Editorial structural visualization based on documented Tongan tongiaki double-hull, deck/platform and wider Polynesian lashing principles · not an exact reconstruction of historical joinery, knot sequence, rigging, hydrodynamics or navigation performance.`
 
-Public Metate wrapper remains unchanged.
+Public Tongiaki wrapper remains unchanged.
 Shared runtime remains unchanged.
-Metate remains ADEQUATE until USER PASS.
+Tongiaki remains ADEQUATE pending USER proof.
 
 # STATE SEPARATION
 
-- prior Global closeout PASS / frozen
-- Food R5.1 STRONG / CLOSED
-- Textile R5.2 STRONG / CLOSED
-- SOURCE Metate audit PASS
-- SOURCE Metate candidate PASS
-- LIVE Metate candidate PASS
-- USER Metate PENDING
-- public Metate promotion NOT STARTED
-- shared runtime unchanged
-- VALIDATED 24 unchanged
-- matrix STRONG 15 / ADEQUATE 9 / EXPERIENCE DEBT 0
-- PR #21 Draft / DO NOT MERGE
+- PRIOR GLOBAL CLOSEOUT: PASS / frozen
+- Food R5.1: STRONG / CLOSED
+- Textile R5.2: STRONG / CLOSED
+- Metate R5.3: STRONG / CLOSED
+- SOURCE Tongiaki audit: PASS
+- SOURCE Tongiaki candidate: PASS
+- LIVE Tongiaki candidate: READY
+- USER Tongiaki: PENDING
+- public Tongiaki promotion: NOT STARTED
+- shared runtime: unchanged
+- VALIDATED: 24
+- matrix: STRONG 16 / ADEQUATE 8 / EXPERIENCE DEBT 0
+- PR #21: DRAFT / DO NOT MERGE
 
 # ACTIVE GATE / NEXT EXACT OUTPUT
 
-# **R5.3C — METATE / TEOTITLÁN USER MATCHING + OTHER REGRESSION**
+# **R5.4C — TONGIAKI / TONGA USER MATCHING + OTHER REGRESSION**
 
 Record one ~10–15 s proof:
-1. `MATCHING WORK` → `TEST RELATIONSHIP`;
-2. hold final fine-ground lane;
-3. `OTHER WORK` → `TEST RELATIONSHIP`;
-4. hold coarse-ridge residual.
+1. `MATCHING LASH` → `TEST RELATIONSHIP`;
+2. hold final shared platform;
+3. `OTHER LASH` → `TEST RELATIONSHIP`;
+4. hold misseated / slack-lashing residual.
 
 Judge CAUSAL / EMBODIMENT-STRONG / VISUAL-SPECIFICITY / TRUTH separately.
 
-Do not promote or reclassify Metate before USER PASS.
+Do not promote or reclassify Tongiaki before USER PASS.
