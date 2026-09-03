@@ -60,7 +60,7 @@ Law: `SWELL MEMORY + ATOLL FIELD → APPROACH → EDGE RESPONSE → TWO REFRACTE
 Candidate: `families/swell-marshall/r5-7.html`.
 Implementation: `e2b41b37500edc346164b937f43c3a25c505f731`.
 Candidate register: `POST_CLOSEOUT_R5_7B_SWELL_MARSHALL_LEE_CROSSING_CANDIDATE.md` @ `8f3f7b9ff06bcb4f1c953dd8e5b34a7f474e92fd`.
-USER gate register: `POST_CLOSEOUT_R5_7C_SWELL_MARSHALL_USER_GATE.md` (content blob `b0076bac2cd4953ee4c10742d4e4c921181ea281`; latest no-op normalization commit `f3808881b5254540d188c545769828c83f46fa50`).
+USER gate register: `POST_CLOSEOUT_R5_7C_SWELL_MARSHALL_USER_GATE.md` (content blob `b0076bac2cd4953ee4c10742d4e4c921181ea281`).
 
 LIVE candidate:
 - deployment `dpl_HdHuFuFVBQTh5HCWSWiiRNNQBhds`
@@ -90,25 +90,7 @@ Public Swell wrapper unchanged.
 Shared runtime unchanged.
 Swell remains ADEQUATE pending USER proof.
 
-# STATE SEPARATION
-- PRIOR GLOBAL CLOSEOUT: PASS / frozen
-- Food R5.1: STRONG / CLOSED
-- Textile R5.2: STRONG / CLOSED
-- Metate R5.3: STRONG / CLOSED
-- Tongiaki R5.4: STRONG / CLOSED
-- Garamut R5.5: STRONG / CLOSED
-- Kento R5.6: STRONG / CLOSED
-- SOURCE Swell audit: PASS
-- SOURCE Swell candidate: PASS
-- LIVE Swell candidate: PASS / HTTP 200
-- USER Swell: PENDING
-- public Swell promotion: NOT STARTED
-- shared runtime: unchanged
-- VALIDATED: 24
-- matrix: STRONG 19 / ADEQUATE 5 / EXPERIENCE DEBT 0
-- PR #21: DRAFT / DO NOT MERGE
-
-# ACTIVE GATE / NEXT EXACT OUTPUT
+# ACTIVE GATE
 # **R5.7C — SWELL / MARSHALL ISLANDS USER MATCHING + OTHER REGRESSION**
 
 Record one ~10–15 s proof:
