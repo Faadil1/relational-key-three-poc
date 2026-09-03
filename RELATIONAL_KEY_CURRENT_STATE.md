@@ -10,15 +10,6 @@ Draft PR: #21 — `DRAFT / DO NOT MERGE`
 **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 `PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
 
-Expansion laws:
-- **EXPANSION MUST DEEPEN THE RELATION, NOT REPLACE IT.**
-- **TECHNOLOGY SERVES THE RELATIONAL MECHANISM.**
-- **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
-- **A RELATIONALLY CORRECT FAMILY IS NOT EXPERIENTIALLY COMPLETE IF ITS PLACE / MATERIAL / CULTURAL IDENTITY IS GENERIC.**
-
-Persistence protocol:
-`dedicated register → CURRENT_STATE → HANDOVER → exact IDs → SOURCE/LIVE/USER/VALIDATED separated → exactly one next output`.
-
 # FROZEN PRIOR CHECKPOINT ✅
 
 Previous Global Refinement closeout remains PASS / frozen.
@@ -37,55 +28,40 @@ Food → Textile → Metate → Tongiaki → Garamut → Kento → Swell → Cit
 Current matrix:
 # **STRONG 16 / ADEQUATE 8 / EXPERIENCE DEBT 0**
 
-R5 does not authorize merge or review-state changes.
+# CLOSED R5 ✅
 
-# R5.1 — FOOD / TOYAMA — CLOSED ✅
-Food = STRONG.
-Closure `POST_CLOSEOUT_R5_1B_FOOD_TOYAMA_USER_PASS_PROMOTION_STRONG.md` @ `ae46ac5a0783570da5c1e30191d78f2bd30439a3`.
+- Food / Toyama — STRONG — `PRESSURE-TO-UNFOLD REVEAL`
+- Textile / Bonwire — STRONG — `SELVEDGE OVERCAST JOIN`
+- Metate / Teotitlán — STRONG — `RECIPROCAL ABRASION / FINENESS ACCUMULATION`
 
-# R5.2 — TEXTILE / BONWIRE — CLOSED ✅
-Textile = STRONG.
-Closure `POST_CLOSEOUT_R5_2C_TEXTILE_BONWIRE_USER_PASS_PROMOTION_STRONG.md` @ `4855c1815a30a79b2b62295cebe4bed6b24d7795`.
-
-# R5.3 — METATE / TEOTITLÁN — CLOSED ✅
-
-Mechanism:
-`RECIPROCAL ABRASION / FINENESS ACCUMULATION`.
-
-USER proof:
+Metate USER proof:
 `/mnt/data/834da9cc-30af-419a-8abe-eb0c97b20e67.mp4`
-- 15.53 s
-- 1906×964
-- 30 fps
-- 466 frames
+15.53 s / 1906×964 / 30 fps / 466 frames.
 
-USER verdict:
+Metate verdict:
 `CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
 
-Promotion:
+Metate promotion:
 `families/metate-teotitlan/index.html`
 @ `c85dfe25e6b6c03ef832d55d25e5d37ab0378b2a`.
 
-Public Metate route verified HTTP 200 on subsequent READY deployment containing the promotion:
+Public Metate route verified HTTP 200 on READY deployment:
 `dpl_3w3ZB1PshQ3CSUZUoAP5FRwGUbyJ`
 @ exact deployed commit `d692baa24cc2d7432714fbf727315bdf479a4ecd`.
 
-Closure:
+Metate closure:
 `POST_CLOSEOUT_R5_3C_METATE_TEOTITLAN_USER_PASS_PROMOTION_STRONG.md`
 @ `8ebb4fdb35d1174bc69fddc4a293a038dfe65017`.
 
-Metate = STRONG.
-
 # R5.4 — TONGIAKI / TONGA — ACTIVE
 
-Baseline classification:
-`ADEQUATE`.
+Baseline classification: `ADEQUATE`.
 
 Source audit:
 `POST_CLOSEOUT_R5_4A_TONGIAKI_TONGA_SOURCE_STRUCTURAL_LASHING_AUDIT.md`
 @ `4b12b969b1f0e96ed18d2f158495ff2d6963c32a`.
 
-Source-backed mechanism:
+Mechanism:
 # **CROSSBEAM LASHING → SHARED PLATFORM**
 
 Law:
@@ -101,23 +77,22 @@ Candidate register:
 `POST_CLOSEOUT_R5_4B_TONGIAKI_TONGA_CROSSBEAM_LASHING_CANDIDATE.md`
 @ `a9695490f096c80219f969bb899e8f77da0ac4ca`.
 
-LIVE candidate deployment:
-`dpl_3w3ZB1PshQ3CSUZUoAP5FRwGUbyJ`
-READY
-host `relational-key-collectionrelational-key-collection-4gi5a57e3.vercel.app`.
+LIVE candidate:
+`dpl_3w3ZB1PshQ3CSUZUoAP5FRwGUbyJ` — READY.
+Host: `relational-key-collectionrelational-key-collection-4gi5a57e3.vercel.app`.
 
 MATCHING LASH:
-- Hull A and Hull B remain independently valid;
+- two independently valid hulls;
 - parallel approach;
 - three crossbeams seat across both hull zones;
 - three fibre-lashing paths tension sequentially;
-- deck slats resolve only after all load paths register;
+- deck slats resolve only after the shared load paths register;
 - final `LASHINGS TENSIONED · SHARED PLATFORM FORMED`.
 
 OTHER LASH:
 - right hull remains longitudinally offset;
 - crossbeams misseat / angle;
-- lashings remain diagonal, dashed and incomplete;
+- lashings remain diagonal / dashed / incomplete;
 - shared deck does not resolve;
 - both hulls remain valid;
 - final `CROSSBEAMS MISSEAT · SLACK LASHING RESIDUAL · BOTH HULLS VALID`.
@@ -125,8 +100,8 @@ OTHER LASH:
 Truth boundary:
 `Editorial structural visualization based on documented Tongan tongiaki double-hull, deck/platform and wider Polynesian lashing principles · not an exact reconstruction of historical joinery, knot sequence, rigging, hydrodynamics or navigation performance.`
 
-Public Tongiaki wrapper remains unchanged.
-Shared runtime remains unchanged.
+Public Tongiaki wrapper unchanged.
+Shared runtime unchanged.
 Tongiaki remains ADEQUATE pending USER proof.
 
 # STATE SEPARATION
