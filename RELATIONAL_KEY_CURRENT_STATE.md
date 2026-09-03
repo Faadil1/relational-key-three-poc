@@ -47,22 +47,10 @@ R5 does not authorize merge or review-state changes.
 USER proof:
 `/mnt/data/11a7f871-3deb-4e01-854e-fd34579fccf4.mp4`
 16.63 s / 1900×968 / 30 fps / 499 frames.
-
-Verdict:
-`CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
-
-Promotion:
-`families/kento-japan/index.html`
-@ `fae7aeaef5e674e8da538b191586f8ee22437f38`.
-
-LIVE:
-`dpl_6BnZ11jPuBcYG3bBWT7o2DH8DbBc` — READY at exact promotion commit.
-Public route `/families/kento-japan/` verified HTTP 200 and redirects to `r5-6.html`.
-
-Closure:
-`POST_CLOSEOUT_R5_6C_KENTO_JAPAN_USER_PASS_PROMOTION_STRONG.md`
-@ `cdd646e78855515c9f686c2ed4abca4c946eaaad`.
-
+Verdict: `CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
+Promotion: `families/kento-japan/index.html` @ `fae7aeaef5e674e8da538b191586f8ee22437f38`.
+LIVE: `dpl_6BnZ11jPuBcYG3bBWT7o2DH8DbBc` — READY at exact promotion commit; public route HTTP 200.
+Closure: `POST_CLOSEOUT_R5_6C_KENTO_JAPAN_USER_PASS_PROMOTION_STRONG.md` @ `cdd646e78855515c9f686c2ed4abca4c946eaaad`.
 Kento = STRONG.
 
 # R5.7 — SWELL / MARSHALL ISLANDS — ACTIVE
@@ -71,8 +59,7 @@ Baseline classification: `ADEQUATE`.
 Existing G4 orientation/swell hierarchy polish remains valid and is not repeated.
 
 Source audit:
-`POST_CLOSEOUT_R5_7A_SWELL_MARSHALL_SOURCE_LEE_CROSSING_AUDIT.md`
-@ `85bf76042851dc611825c425363115e8574e2505`.
+`POST_CLOSEOUT_R5_7A_SWELL_MARSHALL_SOURCE_LEE_CROSSING_AUDIT.md` @ `85bf76042851dc611825c425363115e8574e2505`.
 
 Mechanism:
 # **INCIDENT SWELL → ATOLL EDGES → REFRACTED SHOULDERS → LEE CROSSING → LAND SIGNATURE**
@@ -83,9 +70,8 @@ Law:
 Candidate:
 `families/swell-marshall/r5-7.html`
 Implementation `e2b41b37500edc346164b937f43c3a25c505f731`.
-Candidate register:
-`POST_CLOSEOUT_R5_7B_SWELL_MARSHALL_LEE_CROSSING_CANDIDATE.md`
-@ `8f3f7b9ff06bcb4f1c953dd8e5b34a7f474e92fd`.
+Candidate register: `POST_CLOSEOUT_R5_7B_SWELL_MARSHALL_LEE_CROSSING_CANDIDATE.md` @ `8f3f7b9ff06bcb4f1c953dd8e5b34a7f474e92fd`.
+USER gate register: `POST_CLOSEOUT_R5_7C_SWELL_MARSHALL_USER_GATE.md` @ `5aa7f0a7cdff45b793dda8cc4106987cc9848d61`.
 
 LIVE candidate:
 - deployment `dpl_HdHuFuFVBQTh5HCWSWiiRNNQBhds`
