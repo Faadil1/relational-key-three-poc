@@ -42,31 +42,22 @@ Closed STRONG in R5:
 USER proof:
 `/mnt/data/2742d768-0cb4-4b70-9cc2-d8282f207fbd.mp4`
 15.87 s / 1914×968 / 30 fps / 476 frames.
-
 Verdict:
 `CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
-
 Promotion:
-`families/garamut-sepik-ramu/index.html`
-@ `c43d336163c54aeda85f931a2572cf1ed2cf0c11`.
-
+`families/garamut-sepik-ramu/index.html` @ `c43d336163c54aeda85f931a2572cf1ed2cf0c11`.
 LIVE:
 `dpl_A4EsSUgLDAomktN2hv4DnNmXENjf` — READY at exact promotion commit.
 Public route `/families/garamut-sepik-ramu/` verified HTTP 200.
-
 Closure:
-`POST_CLOSEOUT_R5_5C_GARAMUT_SEPIK_RAMU_USER_PASS_PROMOTION_STRONG.md`
-@ `7f4271616156272977a090d57247d0614f69dbea`.
-
-Garamut = STRONG.
+`POST_CLOSEOUT_R5_5C_GARAMUT_SEPIK_RAMU_USER_PASS_PROMOTION_STRONG.md` @ `7f4271616156272977a090d57247d0614f69dbea`.
 
 # R5.6 — KENTO / JAPAN — ACTIVE
 Baseline: ADEQUATE.
-G4 registration-legibility polish remains valid and is not being repeated.
+Existing G4 kentō-legibility polish remains valid and is not repeated.
 
 Source audit:
-`POST_CLOSEOUT_R5_6A_KENTO_JAPAN_SOURCE_SUCCESSIVE_REGISTRATION_AUDIT.md`
-@ `c19597db6e4ea591ff74901e07250aab1d1c9d2d`.
+`POST_CLOSEOUT_R5_6A_KENTO_JAPAN_SOURCE_SUCCESSIVE_REGISTRATION_AUDIT.md` @ `c19597db6e4ea591ff74901e07250aab1d1c9d2d`.
 
 Mechanism:
 # **RETURN-TO-KENTŌ → SUCCESSIVE COLOR BUILD**
@@ -78,8 +69,9 @@ Candidate:
 `families/kento-japan/r5-6.html`
 Implementation: `1c9789748c1b3131e4de32487ab539e1d771bb23`.
 Candidate register:
-`POST_CLOSEOUT_R5_6B_KENTO_JAPAN_SUCCESSIVE_REGISTRATION_CANDIDATE.md`
-@ `f125d41a9ace1be22918a240a440db215edfed7e`.
+`POST_CLOSEOUT_R5_6B_KENTO_JAPAN_SUCCESSIVE_REGISTRATION_CANDIDATE.md` @ `f125d41a9ace1be22918a240a440db215edfed7e`.
+USER gate register:
+`POST_CLOSEOUT_R5_6C_KENTO_JAPAN_USER_GATE.md` @ `d992f34fe9f5364cb5c8ba843d6336deb2c1aef7`.
 
 LIVE candidate:
 - deployment `dpl_5nFtxUPJewB4WjvRBrpsjgWF53gv`
