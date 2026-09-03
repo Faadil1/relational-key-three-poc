@@ -43,10 +43,7 @@ R5 does not authorize merge or review-state changes.
 - Kento / Japan — `RETURN-TO-KENTŌ → SUCCESSIVE COLOR BUILD`
 
 # R5.6 — KENTO / JAPAN — CLOSED ✅
-
-USER proof:
-`/mnt/data/11a7f871-3deb-4e01-854e-fd34579fccf4.mp4`
-16.63 s / 1900×968 / 30 fps / 499 frames.
+USER proof: `/mnt/data/11a7f871-3deb-4e01-854e-fd34579fccf4.mp4` — 16.63 s / 1900×968 / 30 fps / 499 frames.
 Verdict: `CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
 Promotion: `families/kento-japan/index.html` @ `fae7aeaef5e674e8da538b191586f8ee22437f38`.
 LIVE: `dpl_6BnZ11jPuBcYG3bBWT7o2DH8DbBc` — READY at exact promotion commit; public route HTTP 200.
@@ -54,24 +51,16 @@ Closure: `POST_CLOSEOUT_R5_6C_KENTO_JAPAN_USER_PASS_PROMOTION_STRONG.md` @ `cdd6
 Kento = STRONG.
 
 # R5.7 — SWELL / MARSHALL ISLANDS — ACTIVE
-
 Baseline classification: `ADEQUATE`.
 Existing G4 orientation/swell hierarchy polish remains valid and is not repeated.
 
-Source audit:
-`POST_CLOSEOUT_R5_7A_SWELL_MARSHALL_SOURCE_LEE_CROSSING_AUDIT.md` @ `85bf76042851dc611825c425363115e8574e2505`.
-
-Mechanism:
-# **INCIDENT SWELL → ATOLL EDGES → REFRACTED SHOULDERS → LEE CROSSING → LAND SIGNATURE**
-
-Law:
-`SWELL MEMORY + ATOLL FIELD → APPROACH → EDGE RESPONSE → TWO REFRACTED TRAINS → LEE CROSSING → RELATIONAL LAND SIGNATURE`
-
-Candidate:
-`families/swell-marshall/r5-7.html`
-Implementation `e2b41b37500edc346164b937f43c3a25c505f731`.
+Source audit: `POST_CLOSEOUT_R5_7A_SWELL_MARSHALL_SOURCE_LEE_CROSSING_AUDIT.md` @ `85bf76042851dc611825c425363115e8574e2505`.
+Mechanism: **INCIDENT SWELL → ATOLL EDGES → REFRACTED SHOULDERS → LEE CROSSING → LAND SIGNATURE**.
+Law: `SWELL MEMORY + ATOLL FIELD → APPROACH → EDGE RESPONSE → TWO REFRACTED TRAINS → LEE CROSSING → RELATIONAL LAND SIGNATURE`.
+Candidate: `families/swell-marshall/r5-7.html`.
+Implementation: `e2b41b37500edc346164b937f43c3a25c505f731`.
 Candidate register: `POST_CLOSEOUT_R5_7B_SWELL_MARSHALL_LEE_CROSSING_CANDIDATE.md` @ `8f3f7b9ff06bcb4f1c953dd8e5b34a7f474e92fd`.
-USER gate register: `POST_CLOSEOUT_R5_7C_SWELL_MARSHALL_USER_GATE.md` @ `5aa7f0a7cdff45b793dda8cc4106987cc9848d61`.
+USER gate register: `POST_CLOSEOUT_R5_7C_SWELL_MARSHALL_USER_GATE.md` @ `b9ad92538bda6ff521b722dd73bd610f9347b4c9`.
 
 LIVE candidate:
 - deployment `dpl_HdHuFuFVBQTh5HCWSWiiRNNQBhds`
