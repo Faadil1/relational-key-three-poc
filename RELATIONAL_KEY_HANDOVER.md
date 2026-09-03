@@ -28,8 +28,7 @@ Closeout register:
 # R5 — HUMAN-AUTHORIZED PHASE
 
 Queue/rules register:
-`POST_CLOSEOUT_R5_ADEQUATE_TO_STRONG_REFINEMENT_QUEUE.md`
-@ `80ed22ba1df441705c5c2557803f6683dc775d89`.
+`POST_CLOSEOUT_R5_ADEQUATE_TO_STRONG_REFINEMENT_QUEUE.md`.
 
 Queue:
 Food → Textile → Metate → Tongiaki → Garamut → Kento → Swell → City → Service → Signal → Frida.
@@ -48,30 +47,12 @@ Candidate:
 `families/food-toyama/r5-1.html`
 implementation `a9ecd75514d9dfc1aa6b222607ec6278e07c2090`.
 
-Candidate register:
-`POST_CLOSEOUT_R5_1_FOOD_TOYAMA_PRESSURE_TO_UNFOLD_CANDIDATE.md`
-@ `659edc4ff9ff30942b7bc3d955c4b0be726ba4e3`.
-
 USER proof:
 `/mnt/data/8487ea4b-e8a3-4f1e-ac3f-ad5467677015.mp4`
 - 13.90 s
 - 1910×960
 - 30 fps
 - 417 frames
-
-Observed MATCHING:
-- Card A Wappa Press and Card B Bamboo-Wrapped Wappa remain independently valid;
-- force transfers A → relation → B;
-- B compresses;
-- pressure releases;
-- leaves unfold;
-- masu-zushi reveal appears.
-
-Observed OTHER:
-- pressure remains offset / misregistered;
-- no full compression;
-- bundle remains closed;
-- both members remain valid.
 
 Verdict:
 # **CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS ✅**
@@ -83,9 +64,7 @@ commit `997358f5c180f10b2a27be5d515ff0a8ae18e0b2`.
 LIVE:
 - deployment `dpl_GgBo4wsWi6wK18u4GQihCCLqrUR2`
 - READY
-- exact deployed commit `997358f5c180f10b2a27be5d515ff0a8ae18e0b2`
-- host `relational-key-collectionrelational-key-collection-gc2uznpgn.vercel.app`
-- public Food route verified HTTP 200.
+- exact deployed commit `997358f5c180f10b2a27be5d515ff0a8ae18e0b2`.
 
 Closure register:
 `POST_CLOSEOUT_R5_1B_FOOD_TOYAMA_USER_PASS_PROMOTION_STRONG.md`
