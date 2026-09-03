@@ -27,33 +27,16 @@ Food → Textile → Metate → Tongiaki → Garamut → Kento → Swell → Cit
 # R5.1 FOOD / TOYAMA — CLOSED ✅
 
 Food = STRONG.
-
-Mechanism:
-`PRESSURE-TO-UNFOLD REVEAL`.
-
-USER proof:
-`/mnt/data/8487ea4b-e8a3-4f1e-ac3f-ad5467677015.mp4`
-13.90 s / 1910×960 / 30 fps / 417 frames.
-
-Verdict:
-`CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
-
-Promotion:
-`families/food-toyama/index.html`
-@ `997358f5c180f10b2a27be5d515ff0a8ae18e0b2`.
-
-LIVE:
-`dpl_GgBo4wsWi6wK18u4GQihCCLqrUR2` — READY.
-
-Closure:
-`POST_CLOSEOUT_R5_1B_FOOD_TOYAMA_USER_PASS_PROMOTION_STRONG.md`
-@ `ae46ac5a0783570da5c1e30191d78f2bd30439a3`.
+Mechanism `PRESSURE-TO-UNFOLD REVEAL`.
+USER proof `/mnt/data/8487ea4b-e8a3-4f1e-ac3f-ad5467677015.mp4` — 13.90 s / 1910×960 / 30 fps / 417 frames.
+Verdict `CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
+Promotion `families/food-toyama/index.html` @ `997358f5c180f10b2a27be5d515ff0a8ae18e0b2`.
+LIVE `dpl_GgBo4wsWi6wK18u4GQihCCLqrUR2` READY.
+Closure `POST_CLOSEOUT_R5_1B_FOOD_TOYAMA_USER_PASS_PROMOTION_STRONG.md` @ `ae46ac5a0783570da5c1e30191d78f2bd30439a3`.
 
 # R5.2 TEXTILE / BONWIRE — ACTIVE
 
-Baseline classification:
-`ADEQUATE`.
-
+Baseline: `ADEQUATE`.
 Frozen law:
 `STRIP → ALIGN → INTERLACE → REGISTER → JOIN → CONTINUE`.
 
@@ -63,13 +46,6 @@ Source audit:
 
 Source decision:
 # **SELVEDGE OVERCAST JOIN**
-
-Documented basis:
-- narrow Asante woven strips;
-- edge-to-edge assembly;
-- British Museum hand-sewn overcast stitch at selvedges;
-- Bonwire Asante narrow-strip provenance;
-- no invented motif symbolism.
 
 Candidate:
 `families/textile-bonwire/r5-2.html`
@@ -84,7 +60,7 @@ Candidate register:
 MATCHING target:
 - two valid woven strips remain dominant;
 - selvedges align;
-- overcast joining thread alternates across both edges;
+- joining thread alternates across both edges;
 - seam tension closes the gap;
 - final `SELVEDGES JOINED · WOVEN WIDTH CONTINUES`.
 
@@ -105,8 +81,8 @@ LIVE candidate:
 - host `relational-key-collectionrelational-key-collection-eout0z99l.vercel.app`
 - route `/families/textile-bonwire/r5-2.html` HTTP 200.
 
-Temporary share base:
-`https://relational-key-collectionrelational-key-collection-eout0z99l.vercel.app/?_vercel_share=yM5vZdxbzlAUMd8djNShhxudBFR2lb90`
+Temporary share URL:
+`https://relational-key-collectionrelational-key-collection-eout0z99l.vercel.app/families/textile-bonwire/r5-2.html?_vercel_share=yM5vZdxbzlAUMd8djNShhxudBFR2lb90`
 
 Public Textile wrapper remains unchanged.
 Shared runtime remains unchanged.
