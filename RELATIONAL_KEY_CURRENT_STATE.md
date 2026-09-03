@@ -144,6 +144,9 @@ Record one ~10–15 s proof:
 3. `OTHER SIGNAL` → `TEST RELATIONSHIP`;
 4. hold offset interval-memory residual.
 
+Candidate URL:
+`https://relational-key-collectionrelational-key-collection-61956b787.vercel.app/families/garamut-sepik-ramu/r5-5.html?_vercel_share=sMXuKAa5x54VjNVT2quqmTVTU121PQ95`
+
 Judge CAUSAL / EMBODIMENT-STRONG / VISUAL-SPECIFICITY / TRUTH separately.
 
 Do not promote or reclassify Garamut before USER PASS.
