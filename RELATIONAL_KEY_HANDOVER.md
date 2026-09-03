@@ -7,7 +7,7 @@ PR #21: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **R5.4C — TONGIAKI / TONGA USER MATCHING + OTHER REGRESSION**
+# **R5.5C — GARAMUT / EAST SEPIK–RAMU USER MATCHING + OTHER REGRESSION**
 
 Do NOT reopen prior Global Refinement closeout; it remains PASS / frozen.
 Do NOT mutate `families/_shared/round13r/index.html` for family-specific refinement.
@@ -17,8 +17,8 @@ Do NOT merge, mark Ready, request review, retarget or change PR state without se
 
 VALIDATED 24.
 USER relational integrity 24/24 PASS.
-Current R5 matrix:
-# **STRONG 16 / ADEQUATE 8 / EXPERIENCE DEBT 0**
+Current matrix:
+# **STRONG 17 / ADEQUATE 7 / EXPERIENCE DEBT 0**
 
 Queue:
 Food → Textile → Metate → Tongiaki → Garamut → Kento → Swell → City → Service → Signal → Frida.
@@ -27,87 +27,105 @@ Closed STRONG in R5:
 - Food / Toyama
 - Textile / Bonwire
 - Metate / Teotitlán
+- Tongiaki / Tonga
 
-Metate closure:
-`POST_CLOSEOUT_R5_3C_METATE_TEOTITLAN_USER_PASS_PROMOTION_STRONG.md`
-@ `8ebb4fdb35d1174bc69fddc4a293a038dfe65017`.
+# R5.4 TONGIAKI / TONGA — CLOSED ✅
 
-# R5.4 TONGIAKI / TONGA — ACTIVE
+USER proof:
+`/mnt/data/3687007b-e3e9-455a-b81b-0d5f92442a0f.mp4` — 13.23 s / 1916×964 / 30 fps / 397 frames.
+
+Verdict:
+`CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
+
+Promotion:
+`families/tongiaki-tonga/index.html` @ `e79dbc07caf567e9502c7bbb8e43da0af6197b39`.
+
+LIVE:
+`dpl_BtpqNFqCqhumeXm9e8tD5gUVATC6` — READY at exact promotion commit.
+Protected preview fetch returns Vercel SSO `302`; do not misclassify it as an application failure or claim an unobserved HTTP 200.
+
+Closure:
+`POST_CLOSEOUT_R5_4C_TONGIAKI_TONGA_USER_PASS_PROMOTION_STRONG.md`
+@ `372ebc55452647b8c2a46e68d3a01cbcf6ac5f31`.
+
+# R5.5 GARAMUT / EAST SEPIK–RAMU — ACTIVE
 
 Baseline: ADEQUATE.
 
 Source audit:
-`POST_CLOSEOUT_R5_4A_TONGIAKI_TONGA_SOURCE_STRUCTURAL_LASHING_AUDIT.md`
-@ `4b12b969b1f0e96ed18d2f158495ff2d6963c32a`.
+`POST_CLOSEOUT_R5_5A_GARAMUT_SEPIK_RAMU_SOURCE_SIGNAL_MATERIAL_AUDIT.md`
+@ `9efa41cad9c4eaf7e3c038845b803da821433dab`.
 
 Mechanism:
-# **CROSSBEAM LASHING → SHARED PLATFORM**
+# **IMPACT → BODY RESONANCE → DECAY → RE-ARM → INTERVAL MEMORY**
 
 Law:
-`HULLS → PARALLEL REGISTER → CROSSBEAMS SEAT → LASHINGS TENSION → DECK SPANS → SHARED PLATFORM`
+`POUNDER → CONTACT → RESONANT BODY → DECAY → RE-ARM → NEXT IMPACT → SEQUENCE PERSISTS`
 
 Candidate:
-`families/tongiaki-tonga/r5-4.html`
+`families/garamut-sepik-ramu/r5-5.html`
 
 Implementation:
-`d692baa24cc2d7432714fbf727315bdf479a4ecd`.
+`c209eb55dd8e2a2ca27dd839967ad722fa1b203f`.
 
 Candidate register:
-`POST_CLOSEOUT_R5_4B_TONGIAKI_TONGA_CROSSBEAM_LASHING_CANDIDATE.md`
-@ `a9695490f096c80219f969bb899e8f77da0ac4ca`.
+`POST_CLOSEOUT_R5_5B_GARAMUT_SEPIK_RAMU_RESONANCE_MEMORY_CANDIDATE.md`
+@ `2a6e8e2ef517d83556c1ba7d7d6b2ea09645bb26`.
 
 LIVE:
-- deployment `dpl_3w3ZB1PshQ3CSUZUoAP5FRwGUbyJ`
+- deployment `dpl_5p5hxw8QkshrSta2jyVtPsLaYDmr`
 - READY
-- exact deployed commit `d692baa24cc2d7432714fbf727315bdf479a4ecd`
-- host `relational-key-collectionrelational-key-collection-4gi5a57e3.vercel.app`.
+- exact deployed commit `c209eb55dd8e2a2ca27dd839967ad722fa1b203f`
+- host `relational-key-collectionrelational-key-collection-61956b787.vercel.app`
+- `/families/garamut-sepik-ramu/r5-5.html` verified HTTP 200.
 
-Candidate URL:
-`https://relational-key-collectionrelational-key-collection-4gi5a57e3.vercel.app/families/tongiaki-tonga/r5-4.html?_vercel_share=0IQFI1yYfawcgPI9AIa7Agb03aF5Jmkc`
+Temporary share URL base:
+`https://relational-key-collectionrelational-key-collection-61956b787.vercel.app/?_vercel_share=sMXuKAa5x54VjNVT2quqmTVTU121PQ95`
+
+Use candidate path with the same share token:
+`https://relational-key-collectionrelational-key-collection-61956b787.vercel.app/families/garamut-sepik-ramu/r5-5.html?_vercel_share=sMXuKAa5x54VjNVT2quqmTVTU121PQ95`
 
 MATCHING:
-- both hulls independently valid;
-- parallel approach;
-- three crossbeams seat;
-- three fibre-lashing paths tension sequentially;
-- deck slats resolve only after all shared load paths register;
-- final `LASHINGS TENSIONED · SHARED PLATFORM FORMED`.
+- three direct impacts authored by Card A;
+- each impact visibly propagates resonance inside Card B;
+- recoil / decay / re-arm is visible;
+- equal editorial intervals accumulate as internal memory marks;
+- final `ORDERED IMPACTS REGISTERED · RESONANT SEQUENCE PERSISTS`.
 
 OTHER:
-- right hull remains longitudinally offset;
-- crossbeams misseat / angle;
-- lashings stay dashed / diagonal / incomplete;
-- no shared deck;
-- both hulls valid;
-- final `CROSSBEAMS MISSEAT · SLACK LASHING RESIDUAL · BOTH HULLS VALID`.
+- same two valid members;
+- three valid impacts still resonate;
+- intervals are deliberately uneven;
+- internal memory remains offset;
+- final `THREE VALID IMPACTS · EDITORIAL INTERVALS DO NOT REGISTER`.
 
 Truth boundary:
-`Editorial structural visualization based on documented Tongan tongiaki double-hull, deck/platform and wider Polynesian lashing principles · not an exact reconstruction of historical joinery, knot sequence, rigging, hydrodynamics or navigation performance.`
+`Editorial timing comparison only · no community garamut code is reproduced, decoded or assigned meaning. Synthetic impact audio is interaction feedback, not authentic garamut timbre.`
 
-Public Tongiaki wrapper unchanged.
+Public Garamut wrapper unchanged.
 Shared runtime unchanged.
-Tongiaki remains ADEQUATE until USER proof.
+Garamut remains ADEQUATE until USER proof.
 
 # EXACT NEXT USER ACTION
 
 Record one ~10–15 s proof:
-1. `MATCHING LASH` → `TEST RELATIONSHIP`;
-2. hold final shared platform;
-3. `OTHER LASH` → `TEST RELATIONSHIP`;
-4. hold misseated/slack-lashing residual.
+1. `MATCHING SIGNAL` → `TEST RELATIONSHIP`;
+2. hold final resonance-memory state;
+3. `OTHER SIGNAL` → `TEST RELATIONSHIP`;
+4. hold offset interval-memory residual.
 
 On upload, judge separately:
 - CAUSAL / relational integrity;
 - EMBODIMENT / STRONG threshold;
-- VISUAL / Tonga/Tongiaki structural specificity;
-- TRUTH boundary.
+- VISUAL / Sepik-Ramu garamut material specificity;
+- TRUTH / community-code boundary.
 
 If USER PASS:
-1. promote Tongiaki-specific candidate only;
-2. verify public route LIVE;
-3. reclassify Tongiaki ADEQUATE → STRONG;
-4. matrix becomes STRONG 17 / ADEQUATE 7 / EXPERIENCE DEBT 0;
+1. promote Garamut-specific candidate only;
+2. verify LIVE public route;
+3. reclassify Garamut ADEQUATE → STRONG;
+4. matrix becomes STRONG 18 / ADEQUATE 6 / EXPERIENCE DEBT 0;
 5. update registers + CURRENT_STATE + HANDOVER + PR body;
-6. proceed to R5.5 Garamut / East Sepik–Ramu.
+6. proceed to R5.6 Kento / Japan.
 
 PR #21 remains Draft / DO NOT MERGE.
