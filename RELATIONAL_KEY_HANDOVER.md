@@ -6,7 +6,7 @@ Branch: `collection/global-refinement-1`
 PR #21: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
-# **R5.6C — KENTO / JAPAN USER MATCHING + OTHER REGRESSION**
+# **R5.7C — SWELL / MARSHALL ISLANDS USER MATCHING + OTHER REGRESSION**
 
 Do NOT reopen prior Global Refinement closeout; it remains PASS / frozen.
 Do NOT mutate `families/_shared/round13r/index.html` for family-specific refinement.
@@ -16,7 +16,7 @@ Do NOT merge, mark Ready, request review, retarget or change PR state without se
 VALIDATED 24.
 USER relational integrity 24/24 PASS.
 Current matrix:
-# **STRONG 18 / ADEQUATE 6 / EXPERIENCE DEBT 0**
+# **STRONG 19 / ADEQUATE 5 / EXPERIENCE DEBT 0**
 
 Queue:
 Food → Textile → Metate → Tongiaki → Garamut → Kento → Swell → City → Service → Signal → Frida.
@@ -27,84 +27,83 @@ Closed STRONG in R5:
 - Metate / Teotitlán
 - Tongiaki / Tonga
 - Garamut / East Sepik–Ramu
+- Kento / Japan
 
-# R5.5 GARAMUT / EAST SEPIK–RAMU — CLOSED ✅
+# R5.6 KENTO / JAPAN — CLOSED ✅
 USER proof:
-`/mnt/data/2742d768-0cb4-4b70-9cc2-d8282f207fbd.mp4` — 15.87 s / 1914×968 / 30 fps / 476 frames.
+`/mnt/data/11a7f871-3deb-4e01-854e-fd34579fccf4.mp4` — 16.63 s / 1900×968 / 30 fps / 499 frames.
 Verdict `CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
-Promotion `families/garamut-sepik-ramu/index.html` @ `c43d336163c54aeda85f931a2572cf1ed2cf0c11`.
-LIVE `dpl_A4EsSUgLDAomktN2hv4DnNmXENjf` READY at exact promotion commit; public route HTTP 200.
-Closure `POST_CLOSEOUT_R5_5C_GARAMUT_SEPIK_RAMU_USER_PASS_PROMOTION_STRONG.md` @ `7f4271616156272977a090d57247d0614f69dbea`.
+Promotion `families/kento-japan/index.html` @ `fae7aeaef5e674e8da538b191586f8ee22437f38`.
+LIVE `dpl_6BnZ11jPuBcYG3bBWT7o2DH8DbBc` READY at exact promotion commit; public route HTTP 200.
+Closure `POST_CLOSEOUT_R5_6C_KENTO_JAPAN_USER_PASS_PROMOTION_STRONG.md` @ `cdd646e78855515c9f686c2ed4abca4c946eaaad`.
 
-# R5.6 KENTO / JAPAN — ACTIVE
+# R5.7 SWELL / MARSHALL ISLANDS — ACTIVE
 Baseline: ADEQUATE.
-Existing G4 kentō-legibility polish is preserved; R5 deepens the process instead of repeating that polish.
+Existing G4 orientation/swell hierarchy polish is preserved; R5 deepens the physical swell × atoll relation.
 
 Source audit:
-`POST_CLOSEOUT_R5_6A_KENTO_JAPAN_SOURCE_SUCCESSIVE_REGISTRATION_AUDIT.md` @ `c19597db6e4ea591ff74901e07250aab1d1c9d2d`.
+`POST_CLOSEOUT_R5_7A_SWELL_MARSHALL_SOURCE_LEE_CROSSING_AUDIT.md` @ `85bf76042851dc611825c425363115e8574e2505`.
 
 Mechanism:
-# **RETURN-TO-KENTŌ → SUCCESSIVE COLOR BUILD**
+# **INCIDENT SWELL → ATOLL EDGES → REFRACTED SHOULDERS → LEE CROSSING → LAND SIGNATURE**
 
 Law:
-`BLOCK SET + PAPER → KAGI / HIKITSUKI SEAT → BAREN PRESS → LAYER TRANSFERS → LIFT → RETURN TO SAME KENTŌ → NEXT LAYER → IMAGE ACCUMULATES`
+`SWELL MEMORY + ATOLL FIELD → APPROACH → EDGE RESPONSE → TWO REFRACTED TRAINS → LEE CROSSING → RELATIONAL LAND SIGNATURE`
 
 Candidate:
-`families/kento-japan/r5-6.html`
-Implementation `1c9789748c1b3131e4de32487ab539e1d771bb23`.
-Candidate register `POST_CLOSEOUT_R5_6B_KENTO_JAPAN_SUCCESSIVE_REGISTRATION_CANDIDATE.md` @ `f125d41a9ace1be22918a240a440db215edfed7e`.
-USER gate register `POST_CLOSEOUT_R5_6C_KENTO_JAPAN_USER_GATE.md` @ `d992f34fe9f5364cb5c8ba843d6336deb2c1aef7`.
+`families/swell-marshall/r5-7.html`
+Implementation `e2b41b37500edc346164b937f43c3a25c505f731`.
+Candidate register `POST_CLOSEOUT_R5_7B_SWELL_MARSHALL_LEE_CROSSING_CANDIDATE.md` @ `8f3f7b9ff06bcb4f1c953dd8e5b34a7f474e92fd`.
 
 LIVE:
-- deployment `dpl_5nFtxUPJewB4WjvRBrpsjgWF53gv`
+- deployment `dpl_HdHuFuFVBQTh5HCWSWiiRNNQBhds`
 - READY
-- exact deployed commit `1c9789748c1b3131e4de32487ab539e1d771bb23`
-- host `relational-key-collectionrelational-key-collection-qq3u1hooq.vercel.app`
-- `/families/kento-japan/r5-6.html` verified HTTP 200.
+- exact deployed commit `e2b41b37500edc346164b937f43c3a25c505f731`
+- host `relational-key-collectionrelational-key-collection-9vgfkjynj.vercel.app`
+- `/families/swell-marshall/r5-7.html` verified HTTP 200.
 
 Candidate URL:
-`https://relational-key-collectionrelational-key-collection-qq3u1hooq.vercel.app/families/kento-japan/r5-6.html?_vercel_share=82zlSGxspefzMyEMWCf3UNIQxNxEcL9H`
+`https://relational-key-collectionrelational-key-collection-9vgfkjynj.vercel.app/families/swell-marshall/r5-7.html?_vercel_share=w3kc6Kug0vSlt6gAtPgTB05aAwTl9lr9`
 
 MATCHING:
-- three successive registered printing passes;
-- kagi + hikitsuki seat the paper each time;
-- baren press is visible each cycle;
-- paper lifts and returns;
-- three colour layers accumulate on Card B;
-- final `THREE COLOR LAYERS REGISTERED · ONE IMAGE ACCUMULATED`.
+- incident-swell memory and atoll/lee context exist independently;
+- incoming swell crosses the relation;
+- Card B visibly produces two shoulder/refraction trains;
+- those trains converge and cross inside the lee field;
+- final `LEE CROSSING REGISTERED · RELATIONAL LAND SIGNATURE PERSISTS`.
 
 OTHER:
-- three valid passes still occur;
-- third return seats off-register;
-- third colour layer is shifted, leaving a colour-fringe residual;
-- final `THREE VALID PASSES · ONE COLOR LAYER MISREGISTERED`.
+- same two valid members;
+- two valid swell trains still form;
+- crossing point is displaced outside the target lee field;
+- final `TWO VALID SWELL TRAINS · CROSSING POINT DISPLACED · BOTH RECORDS VALID`.
 
 Truth boundary:
-`Editorial visualization of documented kentō registration and successive colour-block printing mechanics · not a reconstruction of a specific historical block set, pigment recipe, workshop sequence or original print.`
+`Editorial visualization based on documented Marshallese wave piloting, stick-chart teaching models and island-disrupted swell / lee-crossing research · not a decoding of a historical chart, real-time navigation aid, exact oceanographic simulation or claim that every Marshallese wave concept maps to Western wave physics.`
 
-Public Kento wrapper unchanged.
+Public Swell wrapper unchanged.
 Shared runtime unchanged.
-Kento remains ADEQUATE until USER proof.
+Swell remains ADEQUATE until USER proof.
 
 # EXACT NEXT USER ACTION
-Record one ~12–18 s proof:
-1. `MATCHING SERIES` → `TEST REGISTRATION`;
-2. hold final three-layer accumulated image;
-3. `OTHER SERIES` → `TEST REGISTRATION`;
-4. hold shifted third-layer / colour-fringe residual.
+Record one ~10–15 s proof:
+1. `MATCHING SWELL` → `TEST RELATIONSHIP`;
+2. hold final lee-crossing state;
+3. `OTHER SWELL` → `TEST RELATIONSHIP`;
+4. hold displaced-crossing residual.
 
 On upload, judge separately:
 - CAUSAL / relational integrity;
 - EMBODIMENT / STRONG threshold;
-- VISUAL / kentō + successive colour registration specificity;
+- VISUAL / Marshallese swell-atoll specificity;
 - TRUTH boundary.
 
 If USER PASS:
-1. promote Kento-specific candidate only;
+1. promote Swell-specific candidate only;
 2. verify public route LIVE;
-3. reclassify Kento ADEQUATE → STRONG;
-4. matrix becomes STRONG 19 / ADEQUATE 5 / EXPERIENCE DEBT 0;
+3. reclassify Swell ADEQUATE → STRONG;
+4. matrix becomes STRONG 20 / ADEQUATE 4 / EXPERIENCE DEBT 0;
 5. update registers + CURRENT_STATE + HANDOVER + PR body;
-6. proceed to R5.7 Swell / Marshall Islands.
+6. proceed to R5.8 City / Gatineau.
 
 PR #21 remains Draft / DO NOT MERGE.
