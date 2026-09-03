@@ -9,14 +9,13 @@ PR #21: `DRAFT / DO NOT MERGE`
 
 # **R5 — ADEQUATE → STRONG EXPERIENTIAL REFINEMENT**
 
-This is a new phase opened by explicit human instruction after the prior Global Refinement closeout PASS.
+This phase was opened by explicit human instruction after the prior Global Refinement closeout PASS.
 
 The prior closeout remains frozen and valid:
 - VALIDATED 24;
 - USER relational integrity 24/24 PASS;
-- STRONG 13 / ADEQUATE 11 / EXPERIENCE DEBT 0;
 - shared runtime unchanged from PR base;
-- 24/24 route-integrity coverage closed;
+- 24/24 route-integrity closeout PASS;
 - no prior closed gate is invalidated by R5.
 
 R5 does **not** authorize merge or review-state changes on PR #21.
@@ -24,12 +23,9 @@ R5 does **not** authorize merge or review-state changes on PR #21.
 # GOVERNING INVARIANT
 
 **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
-
 `PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
 
-R5 promotion threshold is higher than ordinary PASS:
-
-A family may move `ADEQUATE → STRONG` only if:
+A family moves `ADEQUATE → STRONG` only if:
 1. both members remain independently legible before relation;
 2. the memorable event is materially / spatially / causally native to the pair;
 3. the interaction becomes more embodied, not merely more decorated;
@@ -39,89 +35,83 @@ A family may move `ADEQUATE → STRONG` only if:
 7. no shared-runtime mutation is used to gain family-specific depth;
 8. USER proof validates the actual candidate before reclassification.
 
-# CURRENT ADEQUATE SET — 11
+# EXECUTION ORDER
 
-The historical B2.5 ADEQUATE families:
 1. Food / Toyama
 2. Textile / Bonwire
-3. Kento / Japan
-4. Swell / Marshall Islands
-5. Metate / Teotitlán
-6. Tongiaki / Tonga
-7. Garamut / East Sepik–Ramu
-
-Former Experience Debt families already expanded and closed as ADEQUATE:
+3. Metate / Teotitlán
+4. Tongiaki / Tonga
+5. Garamut / East Sepik–Ramu
+6. Kento / Japan
+7. Swell / Marshall Islands
 8. City / Gatineau
 9. Service / Benin
 10. Signal / Nigeria
 11. Frida / Coyoacán
 
-# R5 EXECUTION ORDER
+Do not force all 11 to STRONG.
 
-Prioritize families not yet given a deep experiential expansion:
+# CURRENT PROGRESS
 
-1. **R5.1 — Food / Toyama**
-2. **R5.2 — Textile / Bonwire**
-3. **R5.3 — Metate / Teotitlán**
-4. **R5.4 — Tongiaki / Tonga**
-5. **R5.5 — Garamut / East Sepik–Ramu**
-6. **R5.6 — Kento / Japan** — already received G4 micro-polish; deeper expansion only if a real STRONG gap remains
-7. **R5.7 — Swell / Marshall Islands** — already received G4 micro-polish; deeper expansion only if a real STRONG gap remains
-8. **R5.8 — City / Gatineau** — recently expanded; re-audit later
-9. **R5.9 — Service / Benin** — recently expanded; re-audit later
-10. **R5.10 — Signal / Nigeria** — recently expanded; re-audit later
-11. **R5.11 — Frida / Coyoacán** — recently expanded; re-audit later
+## R5.1 — FOOD / TOYAMA — CLOSED ✅
 
-Do not force all 11 to STRONG. A family may remain ADEQUATE if further work would become spectacle, centralize the effect, falsify provenance, or replace its native relation.
-
-# R5.1 — FOOD / TOYAMA DIAGNOSTIC
-
-Current public Food uses the unchanged shared runtime and is relationally correct.
-
-Current law:
-`PRESS → ALIGN → REGISTER → RELEASE → UNFOLD → REVEAL`
-
-Current limitation:
-- current implementation mostly uses generic approach/registration choreography plus a static pressure band;
-- it does not actually embody the documented Toyama sequence of round bentwood container / bamboo leaves / pressing / release / unfolding / reveal.
-
-Source direction locked for candidate research:
-- Toyama official tourism: masu-zushi is a Toyama specialty, trout + vinegared rice, wrapped in bamboo leaves and pressed in a wooden frame/container;
-- official Toyama making experience documents sequential bamboo-leaf folding, lid placement, forceful pressing, weight, continued compression, then eventual opening;
-- MAFF documents masuzushi as pressed sushi layered in a bentwood food box and bamboo grass;
-- JNTO documents the distinctive round/cedar container and bamboo-leaf wrapped food object.
-
-Candidate direction:
+Promoted mechanism:
 # **PRESSURE-TO-UNFOLD REVEAL**
 
-Card A should own the pressing member / force condition.
-Card B should own the wrapped wappa food member.
-The relation should visibly transmit pressure across the pair, compress the food member, then release into a leaf-unfold / trout-rice reveal.
+Candidate:
+`families/food-toyama/r5-1.html`
+implementation `a9ecd75514d9dfc1aa6b222607ec6278e07c2090`.
 
-OTHER should show offset / incomplete pressure registration: both members remain valid, compression does not resolve uniformly, and the bundle remains closed or partially unresolved.
+USER proof:
+`/mnt/data/8487ea4b-e8a3-4f1e-ac3f-ad5467677015.mp4`
+13.90 s / 1910×960 / 30 fps / 417 frames.
 
-Truth boundary must remain editorial and producer-neutral.
+USER verdict:
+# **CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS ✅**
 
-# STATE SEPARATION
+Promotion:
+`families/food-toyama/index.html`
+@ `997358f5c180f10b2a27be5d515ff0a8ae18e0b2`.
 
-- PRIOR GLOBAL CLOSEOUT: PASS / frozen
-- SOURCE R5 queue: PASS
-- R5.1 source direction: PASS
-- R5.1 candidate: NOT YET BUILT at this register
-- USER R5.1: PENDING
-- public Food wrapper: unchanged
-- shared runtime: unchanged
-- VALIDATED: 24 unchanged
-- experiential matrix: STRONG 13 / ADEQUATE 11 / EXPERIENCE DEBT 0 unchanged
+LIVE:
+`dpl_GgBo4wsWi6wK18u4GQihCCLqrUR2` — READY.
+
+Closure register:
+`POST_CLOSEOUT_R5_1B_FOOD_TOYAMA_USER_PASS_PROMOTION_STRONG.md`
+@ `ae46ac5a0783570da5c1e30191d78f2bd30439a3`.
+
+Food classification:
+`ADEQUATE → STRONG`.
+
+Current matrix:
+# **STRONG 14 / ADEQUATE 10 / EXPERIENCE DEBT 0**
+
+VALIDATED remains 24.
+Shared runtime remains unchanged.
+
+## R5.2 — TEXTILE / BONWIRE — ACTIVE
+
+Baseline classification:
+`ADEQUATE`.
+
+Frozen law:
+`STRIP → ALIGN → INTERLACE → REGISTER → JOIN → CONTINUE`.
+
+Current limitation:
+- Asante / Bonwire identity and strip ownership are already present;
+- the event is still comparatively flat / graphic;
+- stronger loom-native depth, tension, over-under structure or deformation may make the relation more materially embodied.
 
 # NEXT EXACT OUTPUT
 
-# **R5.1A — FOOD / TOYAMA PRESSURE-TO-UNFOLD ISOLATED CANDIDATE**
+# **R5.2A — TEXTILE / BONWIRE SOURCE + MATERIAL EMBODIMENT AUDIT**
 
-Build a reversible family-specific candidate without changing:
-- `families/food-toyama/index.html`;
-- `families/_shared/round13r/index.html`;
-- registry counts;
-- any other family.
+Audit:
+- documented Bonwire / Asante kente weaving process and material structure;
+- warp/weft ownership and loom-native tension;
+- over-under / shed behavior that could belong to the relation;
+- process-native OTHER residual that does not invent symbolic pattern meaning;
+- smallest reversible family-specific candidate that could justify STRONG.
 
-Then deploy and request one USER MATCHING → OTHER proof before any promotion or STRONG reclassification.
+Do not mutate `families/_shared/round13r/index.html`.
+Do not create spectacle for its own sake.
