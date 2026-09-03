@@ -1,54 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>RELATIONAL KEY — Kento Register</title>
-<style>
-:root{--bg:#0b0b09;--ink:#eee8dc;--muted:#7e776b;--line:rgba(235,221,194,.14);--warm:#c9a66d;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:var(--bg);color:var(--ink)}body{display:grid;grid-template-rows:44px minmax(0,1fr);overflow:hidden}.framebar{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;padding:0 14px;border-bottom:1px solid var(--line);background:rgba(11,11,9,.96);min-width:0}.back{display:inline-flex;align-items:center;gap:8px;height:30px;padding:0 11px;border:1px solid var(--line);border-radius:999px;color:#d8bd8d;text-decoration:none;font:800 7px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.11em;white-space:nowrap}.back:hover{border-color:rgba(201,166,109,.45);background:rgba(201,166,109,.07)}.context{min-width:0;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font:700 6px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;color:var(--muted)}.law{font:800 6px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;color:#6f685d;white-space:nowrap}.frame{width:100%;height:100%;border:0;background:#0d0e0c;display:block}@media(max-width:680px){body{grid-template-rows:42px minmax(0,1fr)}.framebar{grid-template-columns:auto 1fr;padding:0 9px}.context{text-align:right}.law{display:none}.back{padding:0 9px;font-size:6px}}
-</style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RELATIONAL KEY — Kento Successive Registration</title>
+<style>html,body{margin:0;width:100%;height:100%;background:#0b0b09;color:#eee8dc;font-family:Inter,system-ui,sans-serif}.fallback{min-height:100%;display:grid;place-items:center}.fallback a{color:#d8bd8d}</style>
 </head>
 <body>
-<nav class="framebar" aria-label="Collection navigation">
-  <a class="back" href="/#grid">← BACK TO ATLAS</a>
-  <div class="context">JAPAN · KENTO REGISTER</div>
-  <div class="law">THE PAIR IS THE PRODUCT</div>
-</nav>
-<iframe class="frame" id="rk" title="Japan · Kento Register" src="/families/kento-japan/snapshot.html"></iframe>
+<div class="fallback"><a href="/families/kento-japan/r5-6.html">Open Kento Successive Registration</a></div>
 <script>
-const frame=document.getElementById('rk');
-frame.onload=()=>{
-  try{
-    const doc=frame.contentWindow.document;
-    const style=doc.createElement('style');
-    style.id='g4-2-kento-polish';
-    style.textContent=`
-      /* G4.2: registration-legibility only. No timing, state or semantic changes. */
-      .leftCard .kento,.rightCard .kento{width:52px;height:92px}
-      .kagi{width:28px;height:28px}
-      .leftCard .kagi{border-width:0 0 4px 4px}
-      .rightCard .kagi{border-width:0 4px 4px 0}
-      .hikitsuki{top:60px;width:37px;height:4px}
-      .pair[data-phase="align"] .kagi,.pair[data-phase="press"] .kagi,.pair[data-phase="registered"] .kagi{filter:drop-shadow(0 0 7px rgba(222,178,103,.76))}
-
-      .pair[data-phase="reject"] .paperColor{
-        transform:translate(22px,-13px);
-        opacity:.64;
-        filter:saturate(1.05) sepia(.04)
-      }
-      .pair[data-phase="reject"] .offsetMarks:before{height:3px;background:rgba(113,143,119,.88);transform:translateY(-7px)}
-      .pair[data-phase="reject"] .offsetMarks:after{height:3px;background:rgba(181,116,82,.86);transform:translateY(7px)}
-
-      @media(max-width:900px){
-        .leftCard .kento,.rightCard .kento{width:49px;height:88px}
-        .kagi{width:27px;height:27px}
-        .hikitsuki{width:35px;height:4px}
-      }
-    `;
-    doc.head.appendChild(style);
-  }catch(e){console.error('G4.2 Kento polish injection failed',e)}
-};
+// R5.6 public promotion: direct/public Kento access resolves to the USER-validated candidate.
+location.replace('/families/kento-japan/r5-6.html');
 </script>
 </body>
 </html>
