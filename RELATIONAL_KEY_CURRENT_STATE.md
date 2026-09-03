@@ -28,34 +28,37 @@ Food → Textile → Metate → Tongiaki → Garamut → Kento → Swell → Cit
 Current matrix:
 # **STRONG 16 / ADEQUATE 8 / EXPERIENCE DEBT 0**
 
-# CLOSED R5 ✅
+Closed STRONG in R5:
+- Food / Toyama — `PRESSURE-TO-UNFOLD REVEAL`
+- Textile / Bonwire — `SELVEDGE OVERCAST JOIN`
+- Metate / Teotitlán — `RECIPROCAL ABRASION / FINENESS ACCUMULATION`
 
-- Food / Toyama — STRONG — `PRESSURE-TO-UNFOLD REVEAL`
-- Textile / Bonwire — STRONG — `SELVEDGE OVERCAST JOIN`
-- Metate / Teotitlán — STRONG — `RECIPROCAL ABRASION / FINENESS ACCUMULATION`
+# R5.3 — METATE / TEOTITLÁN — CLOSED ✅
 
-Metate USER proof:
+USER proof:
 `/mnt/data/834da9cc-30af-419a-8abe-eb0c97b20e67.mp4`
 15.53 s / 1906×964 / 30 fps / 466 frames.
 
-Metate verdict:
+Verdict:
 `CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
 
-Metate promotion:
+Promotion:
 `families/metate-teotitlan/index.html`
 @ `c85dfe25e6b6c03ef832d55d25e5d37ab0378b2a`.
 
-Public Metate route verified HTTP 200 on READY deployment:
+Public route verified HTTP 200 on READY deployment:
 `dpl_3w3ZB1PshQ3CSUZUoAP5FRwGUbyJ`
 @ exact deployed commit `d692baa24cc2d7432714fbf727315bdf479a4ecd`.
 
-Metate closure:
+Closure:
 `POST_CLOSEOUT_R5_3C_METATE_TEOTITLAN_USER_PASS_PROMOTION_STRONG.md`
 @ `8ebb4fdb35d1174bc69fddc4a293a038dfe65017`.
 
+Metate = STRONG.
+
 # R5.4 — TONGIAKI / TONGA — ACTIVE
 
-Baseline classification: `ADEQUATE`.
+Baseline classification: ADEQUATE.
 
 Source audit:
 `POST_CLOSEOUT_R5_4A_TONGIAKI_TONGA_SOURCE_STRUCTURAL_LASHING_AUDIT.md`
@@ -79,14 +82,14 @@ Candidate register:
 
 LIVE candidate:
 `dpl_3w3ZB1PshQ3CSUZUoAP5FRwGUbyJ` — READY.
-Host: `relational-key-collectionrelational-key-collection-4gi5a57e3.vercel.app`.
+Host `relational-key-collectionrelational-key-collection-4gi5a57e3.vercel.app`.
 
 MATCHING LASH:
 - two independently valid hulls;
 - parallel approach;
 - three crossbeams seat across both hull zones;
 - three fibre-lashing paths tension sequentially;
-- deck slats resolve only after the shared load paths register;
+- deck slats resolve only after all shared load paths register;
 - final `LASHINGS TENSIONED · SHARED PLATFORM FORMED`.
 
 OTHER LASH:
@@ -120,7 +123,7 @@ Tongiaki remains ADEQUATE pending USER proof.
 - matrix: STRONG 16 / ADEQUATE 8 / EXPERIENCE DEBT 0
 - PR #21: DRAFT / DO NOT MERGE
 
-# ACTIVE GATE / NEXT EXACT OUTPUT
+# ACTIVE GATE
 
 # **R5.4C — TONGIAKI / TONGA USER MATCHING + OTHER REGRESSION**
 
@@ -132,4 +135,4 @@ Record one ~10–15 s proof:
 
 Judge CAUSAL / EMBODIMENT-STRONG / VISUAL-SPECIFICITY / TRUTH separately.
 
-Do not promote or reclassify Tongiaki before USER PASS.
+Do not promote before USER PASS.
