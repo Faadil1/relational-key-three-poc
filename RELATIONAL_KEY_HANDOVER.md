@@ -79,10 +79,7 @@ LIVE:
 - host `relational-key-collectionrelational-key-collection-61956b787.vercel.app`
 - `/families/garamut-sepik-ramu/r5-5.html` verified HTTP 200.
 
-Temporary share URL base:
-`https://relational-key-collectionrelational-key-collection-61956b787.vercel.app/?_vercel_share=sMXuKAa5x54VjNVT2quqmTVTU121PQ95`
-
-Use candidate path with the same share token:
+Temporary share URL:
 `https://relational-key-collectionrelational-key-collection-61956b787.vercel.app/families/garamut-sepik-ramu/r5-5.html?_vercel_share=sMXuKAa5x54VjNVT2quqmTVTU121PQ95`
 
 MATCHING:
