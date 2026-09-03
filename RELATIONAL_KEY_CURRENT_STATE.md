@@ -21,15 +21,11 @@ Persistence protocol:
 
 # FROZEN CHECKPOINT — PRIOR GLOBAL REFINEMENT ✅
 
-The previous Global Refinement is complete and remains valid.
-
-- G0/G1/G2/G3 PASS
-- Continental Balance Gate 2 PASS / CLOSED
-- B2.5 PASS / CLOSED
-- USER RELATIONAL INTEGRITY 24/24 PASS
+Previous Global Refinement remains complete and valid:
 - VALIDATED 24
+- USER relational integrity 24/24 PASS
 - G4 CLOSED
-- final closeout route/promotion integrity PASS
+- route/promotion integrity closeout PASS
 - shared runtime unchanged from PR base
 
 Frozen closeout matrix:
@@ -39,112 +35,116 @@ Closeout register:
 `GLOBAL_REFINEMENT_FINAL_CLOSEOUT_PUBLIC_ROUTE_PROMOTION_INTEGRITY_PASS.md`
 @ `dc3c8f0ce6626d63b74599c95bca41b0d598e3de`.
 
-The closeout is not reopened or invalidated by the new phase.
-
-# NEW HUMAN-AUTHORIZED PHASE
+# ACTIVE NEW PHASE
 
 # **R5 — ADEQUATE → STRONG EXPERIENTIAL REFINEMENT**
 
-Explicit human instruction on 2026-09-03 authorized continued refinement of the remaining ADEQUATE families.
-
-Dedicated queue / rules register:
+Human-authorized queue register:
 `POST_CLOSEOUT_R5_ADEQUATE_TO_STRONG_REFINEMENT_QUEUE.md`
 @ `80ed22ba1df441705c5c2557803f6683dc775d89`.
 
-R5 does NOT authorize:
-- merge;
-- Ready-for-review transition;
-- reviewer requests;
-- retargeting;
-- mutation of the shared runtime for family-specific depth.
-
-# ADEQUATE SET — 11
-
-Historical ADEQUATE:
-1. Food / Toyama
-2. Textile / Bonwire
-3. Kento / Japan
-4. Swell / Marshall Islands
-5. Metate / Teotitlán
-6. Tongiaki / Tonga
-7. Garamut / East Sepik–Ramu
-
-Former Experience Debt, already expanded to ADEQUATE:
-8. City / Gatineau
-9. Service / Benin
-10. Signal / Nigeria
-11. Frida / Coyoacán
-
-R5 order:
+Queue:
 **Food → Textile → Metate → Tongiaki → Garamut → Kento → Swell → City → Service → Signal → Frida**.
 
-Do not force every family to STRONG. Reclassification requires a genuinely more embodied pair-native experience, not more decoration.
+R5 does not authorize merge or PR review-state changes.
 
-# ACTIVE FAMILY — R5.1 FOOD / TOYAMA
+# R5.1 — FOOD / TOYAMA
 
-Current public route:
-`families/food-toyama/index.html`
+Baseline:
+- public `families/food-toyama/index.html` unchanged;
+- public wrapper blob `86f6b85796bec16dcb9077ed594a1ec86736b663`;
+- shared runtime unchanged;
+- baseline ambition `ADEQUATE`;
+- law `PRESS → ALIGN → REGISTER → RELEASE → UNFOLD → REVEAL`.
 
-Current source:
-unchanged shared runtime `families/_shared/round13r/index.html`.
-
-Current law:
-`PRESS → ALIGN → REGISTER → RELEASE → UNFOLD → REVEAL`
-
-Current ambition classification:
-`ADEQUATE`.
-
-Diagnostic:
-- relational law is correct;
-- material imagery is Toyama-specific;
-- existing runtime mainly performs generic approach/registration plus a static pressure band;
-- it does not yet embody the documented physical sequence strongly enough for STRONG.
-
-Source direction PASS:
-- Toyama masu-zushi = trout + vinegared rice in bamboo leaves / bamboo grass inside a round wooden/bentwood container;
-- pressing / weight is a real process condition;
-- release/opening and leaf unfolding reveal the food object;
-- producer-specific branding must not be copied or implied.
+Source basis PASS:
+Toyama masuzushi is documented as trout + vinegared rice with bamboo leaves / bamboo grass in a round wooden/bentwood container, completed through wrapping and applied pressure/weight before opening/reveal.
 
 Frozen candidate mechanism:
 # **PRESSURE-TO-UNFOLD REVEAL**
 
-MATCHING target:
-- Card A = pressing member / force condition;
-- Card B = wrapped wappa food member;
-- pressure visibly transmits A → relation → B;
-- B compresses under registered pressure;
-- release causes leaves to unfold and reveal the trout/rice wheel;
-- memorable moment belongs to the relation, not to a detached center object.
+Candidate:
+`families/food-toyama/r5-1.html`
 
-OTHER target:
-- pressure registration remains offset / incomplete;
-- both members remain valid;
+Implementation commit:
+`a9ecd75514d9dfc1aa6b222607ec6278e07c2090`
+
+Dedicated candidate register:
+`POST_CLOSEOUT_R5_1_FOOD_TOYAMA_PRESSURE_TO_UNFOLD_CANDIDATE.md`
+@ `659edc4ff9ff30942b7bc3d955c4b0be726ba4e3`.
+
+## MATCHING target
+
+Card A = pressing member / force condition.
+Card B = wrapped wappa food member.
+
+Sequence:
+`APPROACH → PRESSURE TRANSFER → COMPRESSION → RELEASE → UNFOLD → REVEAL`.
+
+Final candidate result:
+`LEAVES UNFOLD · MASU-ZUSHI REVEALED`.
+
+## OTHER target
+
+Offset/incomplete pressure registration:
+- press assembly and pressure band remain misregistered;
 - no uniform compression;
-- bundle remains closed or unresolved;
-- family-native residual is visible.
+- bundle remains closed;
+- both members remain valid.
+
+Result:
+`PRESSURE DOES NOT REGISTER · BOTH MEMBERS REMAIN VALID`.
 
 Truth boundary:
-editorial Toyama masuzushi process visualization; no producer affiliation; no exact recipe claim.
+`Editorial visualization of documented Toyama masuzushi material/process cues · not a producer replica, affiliation, or exact recipe.`
+
+# LIVE CANDIDATE
+
+Deployment:
+`dpl_7vEBe7eRsDrZejyNUgdS8JuuoAob`
+
+State:
+`READY`
+
+Exact deployed commit:
+`a9ecd75514d9dfc1aa6b222607ec6278e07c2090`
+
+Host:
+`relational-key-collectionrelational-key-collection-czbloccp5.vercel.app`
+
+Candidate route:
+`/families/food-toyama/r5-1.html`
+verified HTTP 200.
+
+Temporary share URL:
+`https://relational-key-collectionrelational-key-collection-czbloccp5.vercel.app/families/food-toyama/r5-1.html?_vercel_share=053AkygXfk5pazZG8fE8PZaUohmVMBE1`
 
 # STATE SEPARATION
 
 - PRIOR GLOBAL CLOSEOUT: PASS / frozen
 - SOURCE R5 queue: PASS
-- SOURCE R5.1 source direction: PASS
-- SOURCE R5.1 candidate: PENDING BUILD
-- LIVE R5.1: PENDING
+- SOURCE R5.1 source audit: PASS
+- SOURCE R5.1 candidate: PASS
+- LIVE R5.1 candidate: READY / PASS
 - USER R5.1: PENDING
 - public Food route: unchanged
+- public Food promotion: NOT STARTED
 - shared runtime: unchanged
 - VALIDATED: 24 unchanged
+- Food classification: ADEQUATE unchanged
 - matrix: STRONG 13 / ADEQUATE 11 / EXPERIENCE DEBT 0 unchanged
 - PR #21: DRAFT / DO NOT MERGE
 
 # ACTIVE GATE / NEXT EXACT OUTPUT
 
-# **R5.1A — FOOD / TOYAMA PRESSURE-TO-UNFOLD ISOLATED CANDIDATE**
+# **R5.1B — FOOD / TOYAMA USER MATCHING + OTHER REGRESSION**
 
-Build a reversible family-specific candidate, deploy it, then request one USER MATCHING → OTHER proof.
+Record one ~10–15 s proof:
+1. MATCHING PRESS → TEST RELATIONSHIP;
+2. hold reveal state;
+3. OTHER PRESS → TEST RELATIONSHIP;
+4. hold offset residual.
+
+Judge CAUSAL / EMBODIMENT-STRONG / VISUAL-SPECIFICITY / TRUTH separately.
 
 Do not promote or reclassify Food before USER PASS.
