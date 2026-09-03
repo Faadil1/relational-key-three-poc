@@ -37,47 +37,19 @@ Closure `POST_CLOSEOUT_R5_6C_KENTO_JAPAN_USER_PASS_PROMOTION_STRONG.md` @ `cdd64
 
 # R5.7 — SWELL / MARSHALL ISLANDS — ACTIVE
 Baseline: ADEQUATE.
-
-Source audit:
-`POST_CLOSEOUT_R5_7A_SWELL_MARSHALL_SOURCE_LEE_CROSSING_AUDIT.md` @ `85bf76042851dc611825c425363115e8574e2505`.
-
-Mechanism:
-# **INCIDENT SWELL → ATOLL EDGES → REFRACTED SHOULDERS → LEE CROSSING → LAND SIGNATURE**
-
-Law:
-`SWELL MEMORY + ATOLL FIELD → APPROACH → EDGE RESPONSE → TWO REFRACTED TRAINS → LEE CROSSING → RELATIONAL LAND SIGNATURE`
-
-Candidate:
-`families/swell-marshall/r5-7.html`
-Implementation `e2b41b37500edc346164b937f43c3a25c505f731`.
+Source audit `POST_CLOSEOUT_R5_7A_SWELL_MARSHALL_SOURCE_LEE_CROSSING_AUDIT.md` @ `85bf76042851dc611825c425363115e8574e2505`.
+Mechanism: **INCIDENT SWELL → ATOLL EDGES → REFRACTED SHOULDERS → LEE CROSSING → LAND SIGNATURE**.
+Candidate `families/swell-marshall/r5-7.html` @ implementation `e2b41b37500edc346164b937f43c3a25c505f731`.
 Candidate register `POST_CLOSEOUT_R5_7B_SWELL_MARSHALL_LEE_CROSSING_CANDIDATE.md` @ `8f3f7b9ff06bcb4f1c953dd8e5b34a7f474e92fd`.
-USER gate register `POST_CLOSEOUT_R5_7C_SWELL_MARSHALL_USER_GATE.md`; content blob `b0076bac2cd4953ee4c10742d4e4c921181ea281`, latest normalization commit `f3808881b5254540d188c545769828c83f46fa50`.
+USER gate register `POST_CLOSEOUT_R5_7C_SWELL_MARSHALL_USER_GATE.md` (blob `b0076bac2cd4953ee4c10742d4e4c921181ea281`).
+LIVE candidate `dpl_HdHuFuFVBQTh5HCWSWiiRNNQBhds` READY; route HTTP 200.
 
-LIVE candidate:
-- `dpl_HdHuFuFVBQTh5HCWSWiiRNNQBhds`
-- READY
-- exact commit `e2b41b37500edc346164b937f43c3a25c505f731`
-- route `/families/swell-marshall/r5-7.html` verified HTTP 200.
+MATCHING: two refracted trains cross inside Card B’s lee field → `LEE CROSSING REGISTERED · RELATIONAL LAND SIGNATURE PERSISTS`.
+OTHER: two valid trains remain but crossing is displaced → `TWO VALID SWELL TRAINS · CROSSING POINT DISPLACED · BOTH RECORDS VALID`.
 
-MATCHING:
-- two independently valid members;
-- incident swell enters relation;
-- atoll edge response generates two shoulder/refraction paths;
-- the two trains cross inside Card B’s lee field;
-- final `LEE CROSSING REGISTERED · RELATIONAL LAND SIGNATURE PERSISTS`.
+Truth boundary: editorial visualization only; no historical chart decoding or real-time navigation claim.
 
-OTHER:
-- two valid swell trains still form;
-- crossing point is displaced outside the target lee field;
-- both source records remain valid;
-- final `TWO VALID SWELL TRAINS · CROSSING POINT DISPLACED · BOTH RECORDS VALID`.
-
-Truth boundary:
-`Editorial visualization based on documented Marshallese wave piloting, stick-chart teaching models and island-disrupted swell / lee-crossing research · not a decoding of a historical chart, real-time navigation aid, exact oceanographic simulation or claim that every Marshallese wave concept maps to Western wave physics.`
-
-Public Swell wrapper unchanged.
-Shared runtime unchanged.
-Swell remains ADEQUATE pending USER proof.
+Public Swell wrapper unchanged. Shared runtime unchanged. Swell remains ADEQUATE pending USER proof.
 
 # ACTIVE GATE
 # **R5.7C — SWELL / MARSHALL ISLANDS USER MATCHING + OTHER REGRESSION**
