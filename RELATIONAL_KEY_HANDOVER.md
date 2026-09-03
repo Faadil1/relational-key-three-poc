@@ -7,89 +7,122 @@ PR #21: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **GLOBAL_REFINEMENT_CLOSEOUT — PUBLIC ROUTE + PROMOTION INTEGRITY AUDIT**
+# **HUMAN MERGE / PROMOTION DECISION REQUIRED**
 
-Do NOT restart B2.5 or the 24-family regression. Do NOT reopen G4. Do NOT reopen City, Service, Signal or Frida absent contradictory USER evidence. Do NOT mutate `families/_shared/round13r/index.html`. Do NOT merge PR #21 automatically.
+Global Refinement is complete. Do NOT restart B2.5, G4, City, Service, Signal or Frida absent contradictory new USER evidence. Do NOT mutate `families/_shared/round13r/index.html`. Do NOT merge, mark ready, request review, retarget, or promote automatically.
 
-# GLOBAL STATE
+# FINAL GLOBAL STATE
 
-VALIDATED 24. USER relational integrity 24/24 PASS. G4 CLOSED.
-Experiential matrix:
+VALIDATED 24.
+USER relational integrity 24/24 PASS.
+G4 CLOSED.
+GLOBAL REFINEMENT CLOSEOUT PASS.
+
+Final experiential matrix:
 # **STRONG 13 / ADEQUATE 11 / EXPERIENCE DEBT 0**
 
 No family remains in Experience Debt.
 
-City / Gatineau, Service / Benin, Signal / Nigeria and Frida / Coyoacán are CLOSED / ADEQUATE.
+Final closeout register:
+`GLOBAL_REFINEMENT_FINAL_CLOSEOUT_PUBLIC_ROUTE_PROMOTION_INTEGRITY_PASS.md`
+@ `dc3c8f0ce6626d63b74599c95bca41b0d598e3de`.
 
-# SIGNAL / NIGERIA — CLOSED ✅
+# ROUTE / PROMOTION INTEGRITY
 
-Candidate `families/signal-nigeria/exp-3.html` @ `7529cb83a3ed3cdedb315dce5f40e15f39fff7ec`.
-Valid USER proof `/mnt/data/7aa3ce7e-f28f-4cd0-b650-e21bc4ac3a58.mp4` — CAUSAL / VISUAL / TRUTH PASS.
-Public promotion LIVE `dpl_Hcmtp2YjMVecmzoExCfJREKD39SE` READY.
-Closure register `GLOBAL_REFINEMENT_EXP3A_SIGNAL_NIGERIA_NITEL_USER_PASS_PROMOTION_CLOSED.md` @ `f01a98c50631bf8d8139d605b21fbe61d988cded`.
-Signal = ADEQUATE / CLOSED.
+Authenticated baseline:
+`B2_5C_R1A_AUTHENTICATED_24_ROUTE_SMOKE_PASS.md`
+proved 24/24 canonical routes HTTP 200 plus registry 24/24.
 
-# FRIDA / COYOACÁN — CLOSED ✅
+Post-smoke compare from `f9e67670bd22ece1f6979c21af432c7b30e083d7` to audited product head `61beab8b775dafec75c108fdc1198c6461800abd` found exactly eight changed public wrappers:
+- Khipu
+- Kento
+- Siku
+- Swell
+- City
+- Service
+- Signal
+- Frida
 
-Frozen mechanism:
-# **LAYERED TRACE ALIGNMENT**
+All eight current wrapper blob SHAs equal their validated promotion blob SHAs:
+- Khipu `8db3841c1281757e156a0ba79450ee9ce2c2d75c`
+- Kento `60441dfe9ce13f29a4aa08f904d5720d4e434622`
+- Siku `ac311f4fce0db6d42423057da5f725cc8c7a6d29`
+- Swell `23420cdfc2d2f2cb8a271dcade6a62a315f358a5`
+- City `be039a8940979da8b8503cd6a3d0016cca350ab5`
+- Service `2d4a24fa767f86a0ac09fd6061c1049b1f1d57d1`
+- Signal `1283f1538dd4fb2b483912ac7e6ef5cc9ae4fa65`
+- Frida `dd91fab72fdc819c6a6df38733c8cd553daa0f6c`
 
-Candidate:
-`families/frida-coyoacan/exp-4.html`
-implementation `9586c52bd538eb9cba980b72230a36c98f369c90`.
+Therefore route-integrity coverage is closed 24/24 through baseline + exact post-smoke delta proof.
 
-Source/candidate register:
-`GLOBAL_REFINEMENT_EXP4_FRIDA_COYOACAN_LAYERED_TRACE_CANDIDATE.md` @ `f1340dce97a552f882c0b518619285ab0e3310cc`.
+# SHARED RUNTIME
 
-Valid USER proof:
-`/mnt/data/caf72604-43f0-498f-a1f1-2236aa8ed062.mp4`
-- 9.47 s
-- 1916×968
-- 30 fps
-- 284 frames
+Protected runtime:
+`families/_shared/round13r/index.html`
 
+It is absent from PR #21's full changed-file inventory relative to the base branch.
 Verdict:
-# **CAUSAL PASS / VISUAL PASS / TRUTH PASS ✅**
+# **UNCHANGED FROM PR BASE ✅**
 
-MATCHING:
-- Frida photographic-memory member and Casa Azul place/archive member remain independently legible;
-- three trace layers align across the relation;
-- state `PORTRAIT TRACE → CASA AZUL ALIGN → REGISTER`.
+# REGISTRY
 
-OTHER:
-- both members remain valid;
-- continuous trace alignment fails;
-- offset/ghosted residual layers remain;
-- state `TRACE OFFSET · BOTH ARCHIVE MEMBERS REMAIN VALID`.
+Current `collection/families.json`:
+- schema 1.3
+- validated_count 24
+- candidate_count 0
+- 24 canonical entries
+- continental distribution 4 / 4 / 4 / 4 / 4 / 4.
 
-Public promotion:
-- wrapper `families/frida-coyoacan/index.html`
-- promotion commit `0f344c3c1c0d8b2e07510e72581191d0aa831ea8`
-- direct/public access resolves to validated EXP-4;
-- nested EXP-4 baseline remains non-recursive;
-- explicit `index.html` route hardened;
-- shared runtime unchanged.
+Historical `polish_backlog` metadata is not the canonical Experience Debt matrix and remains unchanged.
 
-LIVE:
-- deployment `dpl_HrxiPAczhzCMEdrgTXh9Gjr3QpEY`
+# CLOSED EXPERIENCE-DEBT EXPANSIONS
+
+City / Gatineau = ADEQUATE / CLOSED.
+Service / Benin = ADEQUATE / CLOSED.
+Signal / Nigeria = ADEQUATE / CLOSED.
+Frida / Coyoacán = ADEQUATE / CLOSED.
+
+Signal:
+- candidate `families/signal-nigeria/exp-3.html`
+- USER CAUSAL / VISUAL / TRUTH PASS
+- promotion deployment `dpl_Hcmtp2YjMVecmzoExCfJREKD39SE` READY
+- closure `GLOBAL_REFINEMENT_EXP3A_SIGNAL_NIGERIA_NITEL_USER_PASS_PROMOTION_CLOSED.md` @ `f01a98c50631bf8d8139d605b21fbe61d988cded`.
+
+Frida:
+- candidate `families/frida-coyoacan/exp-4.html`
+- USER CAUSAL / VISUAL / TRUTH PASS
+- promotion deployment `dpl_HrxiPAczhzCMEdrgTXh9Gjr3QpEY` READY
+- closure `GLOBAL_REFINEMENT_EXP4A_FRIDA_COYOACAN_USER_PASS_PROMOTION_CLOSED.md` @ `05b319e24fd5099fe941029bc52910e76f5aa8f7`.
+
+# AUDITED DEPLOYMENT CHECKPOINT
+
+Before documentation-only closeout commits:
+- deployment `dpl_7NZZnUag1HwU457Za4pWSygEtBbT`
 - READY
-- exact deployed commit `0f344c3c1c0d8b2e07510e72581191d0aa831ea8`
-- host `relational-key-collectionrelational-key-collection-9pqg94wcb.vercel.app`
-- public `/families/frida-coyoacan/` verified HTTP 200 and serves the promotion wrapper.
+- exact product head `61beab8b775dafec75c108fdc1198c6461800abd`.
 
-Closure register:
-`GLOBAL_REFINEMENT_EXP4A_FRIDA_COYOACAN_USER_PASS_PROMOTION_CLOSED.md` @ `05b319e24fd5099fe941029bc52910e76f5aa8f7`.
+Subsequent closeout commits modify documentation/state only and do not alter audited family wrappers or shared runtime.
 
-Frida = ADEQUATE / CLOSED.
+# STATE SEPARATION
+
+- SOURCE collection PASS
+- LIVE baseline route smoke PASS
+- post-smoke delta wrappers 8/8 integrity PASS
+- shared runtime unchanged
+- USER relational integrity 24/24 PASS
+- Experience Debt 0
+- VALIDATED 24
+- unresolved product blocker NONE
+- unresolved technical blocker inside audited scope NONE
+- PR #21 remains Draft / DO NOT MERGE
 
 # EXACT NEXT ACTION
 
-Run one global closeout audit:
-1. verify final public route/promotion integrity across the collection;
-2. verify City / Service / Signal / Frida promotions do not mutate or regress the shared runtime;
-3. reconcile all final dedicated registers with CURRENT_STATE / HANDOVER / PR #21;
-4. confirm matrix remains STRONG 13 / ADEQUATE 11 / EXPERIENCE DEBT 0;
-5. produce the final closeout verdict;
-6. stop at the human merge/promotion decision.
+Wait for an explicit human decision choosing one of these directions:
+1. keep PR #21 Draft / retain audited branch;
+2. mark PR ready for review;
+3. request human review;
+4. authorize a specific merge/promotion path;
+5. explicitly defer merge.
 
-PR #21 remains Draft / DO NOT MERGE. Trust branch head over documentation-only commit IDs.
+Do not infer authorization from generic continuation language. Any change to PR review/merge/promotion state requires explicit human instruction.
