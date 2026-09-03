@@ -28,7 +28,7 @@ Previous Global Refinement remains complete and valid:
 - route/promotion integrity closeout PASS
 - shared runtime unchanged from PR base
 
-Frozen closeout register:
+Closeout register:
 `GLOBAL_REFINEMENT_FINAL_CLOSEOUT_PUBLIC_ROUTE_PROMOTION_INTEGRITY_PASS.md`
 @ `dc3c8f0ce6626d63b74599c95bca41b0d598e3de`.
 
@@ -36,124 +36,132 @@ Frozen closeout register:
 
 # **R5 — ADEQUATE → STRONG EXPERIENTIAL REFINEMENT**
 
-Queue/rules register:
-`POST_CLOSEOUT_R5_ADEQUATE_TO_STRONG_REFINEMENT_QUEUE.md`
-@ `80ed22ba1df441705c5c2557803f6683dc775d89`.
+Queue:
+Food → Textile → Metate → Tongiaki → Garamut → Kento → Swell → City → Service → Signal → Frida.
 
-Execution queue:
-**Food → Textile → Metate → Tongiaki → Garamut → Kento → Swell → City → Service → Signal → Frida**.
+R5 does not authorize merge or review-state changes.
 
-R5 does not authorize PR merge/review-state changes.
+# CURRENT MATRIX
 
-# CURRENT R5 MATRIX
-
-After Food / Toyama R5.1B promotion:
 # **STRONG 14 / ADEQUATE 10 / EXPERIENCE DEBT 0**
 
-VALIDATED remains 24.
-USER relational integrity remains 24/24 PASS.
+VALIDATED 24 unchanged.
 
 # R5.1 — FOOD / TOYAMA — CLOSED ✅
 
-Baseline law:
-`PRESS → ALIGN → REGISTER → RELEASE → UNFOLD → REVEAL`.
+Mechanism:
+`PRESSURE-TO-UNFOLD REVEAL`.
 
-Promoted mechanism:
-# **PRESSURE-TO-UNFOLD REVEAL**
-
-Candidate:
-`families/food-toyama/r5-1.html`
-
-Implementation:
-`a9ecd75514d9dfc1aa6b222607ec6278e07c2090`
-
-Candidate register:
-`POST_CLOSEOUT_R5_1_FOOD_TOYAMA_PRESSURE_TO_UNFOLD_CANDIDATE.md`
-@ `659edc4ff9ff30942b7bc3d955c4b0be726ba4e3`.
-
-Candidate LIVE:
-- deployment `dpl_7vEBe7eRsDrZejyNUgdS8JuuoAob`
-- READY
-- exact deployed commit `a9ecd75514d9dfc1aa6b222607ec6278e07c2090`.
-
-## USER R5.1B proof
-
-Video:
+USER proof:
 `/mnt/data/8487ea4b-e8a3-4f1e-ac3f-ad5467677015.mp4`
-
-Metadata:
-- 13.90 s
-- 1910×960
-- 30 fps
-- 417 frames
-
-MATCHING observed:
-- Wappa Press and Bamboo-Wrapped Wappa remain distinct members before relation;
-- force transfers A → relation → B;
-- B visibly compresses;
-- pressure releases;
-- bamboo leaves unfold;
-- masu-zushi is revealed;
-- center remains subordinate force-transfer evidence.
-
-OTHER observed:
-- pressure remains offset / misregistered;
-- uniform compression does not resolve;
-- wrapped bundle remains closed;
-- both members remain valid;
-- residual is pressure-process-native.
+13.90 s / 1910×960 / 30 fps / 417 frames.
 
 USER verdict:
-# **CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS ✅**
+`CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
+
+Promotion:
+`families/food-toyama/index.html`
+@ `997358f5c180f10b2a27be5d515ff0a8ae18e0b2`.
+
+LIVE:
+`dpl_GgBo4wsWi6wK18u4GQihCCLqrUR2` — READY.
 
 Closure register:
 `POST_CLOSEOUT_R5_1B_FOOD_TOYAMA_USER_PASS_PROMOTION_STRONG.md`
 @ `ae46ac5a0783570da5c1e30191d78f2bd30439a3`.
 
-## Public promotion
+Food = STRONG.
 
-Public wrapper:
-`families/food-toyama/index.html`
+# R5.2 — TEXTILE / BONWIRE — ACTIVE
 
-Promotion commit:
-`997358f5c180f10b2a27be5d515ff0a8ae18e0b2`
+Baseline classification:
+`ADEQUATE`.
 
-LIVE promotion:
-- deployment `dpl_GgBo4wsWi6wK18u4GQihCCLqrUR2`
+Frozen law:
+`STRIP → ALIGN → INTERLACE → REGISTER → JOIN → CONTINUE`.
+
+## R5.2A SOURCE / MATERIAL AUDIT — PASS ✅
+
+Audit register:
+`POST_CLOSEOUT_R5_2A_TEXTILE_BONWIRE_SOURCE_MATERIAL_AUDIT.md`
+@ `35a8b59a8a258bddfaae8ee456d146c83db65496`.
+
+Source-backed mechanism decision:
+# **SELVEDGE OVERCAST JOIN**
+
+Basis:
+- Asante kente uses narrow woven strips;
+- strips are sewn together edge-to-edge;
+- British Museum explicitly documents hand-sewn overcast stitch at the selvedges;
+- Bonwire Asante narrow-strip objects are documented by Smithsonian / British Museum;
+- no motif symbolism is inferred.
+
+## R5.2B ISOLATED CANDIDATE — READY ✅
+
+Candidate:
+`families/textile-bonwire/r5-2.html`
+
+Final candidate implementation:
+`4cfdcc56d77da2761ffe8612ec5523ac8149c6b3`
+
+Candidate register:
+`POST_CLOSEOUT_R5_2B_TEXTILE_BONWIRE_SELVEDGE_OVERCAST_CANDIDATE.md`
+@ `4aaca7a183492f95f68e51a246f13af9dda33aad`.
+
+MATCHING:
+- Strip A and Strip B exist independently;
+- facing selvedges align;
+- joining thread alternates across both edges;
+- seam tension closes the gap;
+- result `SELVEDGES JOINED · WOVEN WIDTH CONTINUES`.
+
+OTHER:
+- Card B is vertically offset;
+- stitch path becomes interrupted / missed;
+- seam does not close;
+- result `JOIN MISREGISTERS · BOTH WOVEN STRIPS REMAIN VALID`.
+
+Truth boundary:
+`Editorial visualization of documented Asante narrow-strip kente construction and selvedge joining · not a pattern facsimile or claim of symbolic motif meaning.`
+
+LIVE candidate:
+- deployment `dpl_3jaX4XKW52bmdLWE7k1eBDMWmoQ6`
 - READY
-- exact deployed commit `997358f5c180f10b2a27be5d515ff0a8ae18e0b2`
-- host `relational-key-collectionrelational-key-collection-gc2uznpgn.vercel.app`
-- `/families/food-toyama/` verified HTTP 200 and serves the promotion wrapper.
+- exact deployed commit `4cfdcc56d77da2761ffe8612ec5523ac8149c6b3`
+- host `relational-key-collectionrelational-key-collection-eout0z99l.vercel.app`
+- candidate route `/families/textile-bonwire/r5-2.html` verified HTTP 200.
+
+Public Textile wrapper remains unchanged:
+`families/textile-bonwire/index.html`
+blob `86f6b85796bec16dcb9077ed594a1ec86736b663`.
 
 Shared runtime remains unchanged.
-
-Food classification:
-# **ADEQUATE → STRONG**
 
 # STATE SEPARATION
 
 - PRIOR GLOBAL CLOSEOUT: PASS / frozen
-- SOURCE R5 queue: PASS
-- SOURCE Food candidate: PASS
-- LIVE Food candidate: PASS
-- USER Food R5.1B: PASS
-- SOURCE Food promotion: PASS
-- LIVE Food promotion: PASS
-- Food classification: STRONG
+- Food R5.1: STRONG / CLOSED
+- SOURCE Textile audit: PASS
+- SOURCE Textile candidate: PASS
+- LIVE Textile candidate: PASS
+- USER Textile: PENDING
+- public Textile promotion: NOT STARTED
 - shared runtime: unchanged
 - VALIDATED: 24
-- matrix: STRONG 14 / ADEQUATE 10 / EXPERIENCE DEBT 0
+- Textile remains ADEQUATE until USER PASS
+- matrix remains STRONG 14 / ADEQUATE 10 / EXPERIENCE DEBT 0
 - PR #21: DRAFT / DO NOT MERGE
 
 # ACTIVE GATE / NEXT EXACT OUTPUT
 
-# **R5.2A — TEXTILE / BONWIRE SOURCE + MATERIAL EMBODIMENT AUDIT**
+# **R5.2C — TEXTILE / BONWIRE USER MATCHING + OTHER REGRESSION**
 
-Preserve native Textile law:
-`STRIP → ALIGN → INTERLACE → REGISTER → JOIN → CONTINUE`.
+Record one ~10–15 s proof:
+1. `MATCHING JOIN` → `TEST RELATIONSHIP`;
+2. hold final registered seam;
+3. `OTHER JOIN` → `TEST RELATIONSHIP`;
+4. hold missed / offset overcast residual.
 
-Audit whether loom-native depth, tension, over-under structure, edge ownership, deformation or weaving action can make the relation materially embodied enough to justify a STRONG candidate.
+Judge CAUSAL / EMBODIMENT-STRONG / VISUAL-SPECIFICITY / TRUTH separately.
 
-Do not patch for aesthetics alone.
-Do not mutate `families/_shared/round13r/index.html`.
-Create an isolated Textile candidate only after source/material audit defines a real pair-native mechanism improvement.
+Do not promote or reclassify Textile before USER PASS.
