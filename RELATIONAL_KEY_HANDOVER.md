@@ -46,7 +46,7 @@ Law: `SWELL MEMORY + ATOLL FIELD → APPROACH → EDGE RESPONSE → TWO REFRACTE
 Candidate `families/swell-marshall/r5-7.html`.
 Implementation `e2b41b37500edc346164b937f43c3a25c505f731`.
 Candidate register `POST_CLOSEOUT_R5_7B_SWELL_MARSHALL_LEE_CROSSING_CANDIDATE.md` @ `8f3f7b9ff06bcb4f1c953dd8e5b34a7f474e92fd`.
-USER gate register `POST_CLOSEOUT_R5_7C_SWELL_MARSHALL_USER_GATE.md`; content blob `b0076bac2cd4953ee4c10742d4e4c921181ea281`, latest normalization commit `f3808881b5254540d188c545769828c83f46fa50`.
+USER gate register `POST_CLOSEOUT_R5_7C_SWELL_MARSHALL_USER_GATE.md` with content blob `b0076bac2cd4953ee4c10742d4e4c921181ea281`.
 
 LIVE:
 - deployment `dpl_HdHuFuFVBQTh5HCWSWiiRNNQBhds`
