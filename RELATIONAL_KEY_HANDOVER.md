@@ -1,15 +1,15 @@
 # RELATIONAL KEY — HANDOVER
 
-Updated: 2026-09-02
+Updated: 2026-09-03
 Repository: `Faadil1/relational-key-three-poc`
 Branch: `collection/global-refinement-1`
 PR #21: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
 
-# **EXP-4 — FRIDA / COYOACÁN SOURCE + VISUAL IDENTITY DEFINITION**
+# **EXP-4A — FRIDA / COYOACÁN LAYERED TRACE USER REGRESSION**
 
-Do NOT restart B2.5 or the 24-family regression. Do NOT reopen G4. Do NOT reopen City, Service or Signal absent contradictory USER evidence. Do NOT mutate `families/_shared/round13r/index.html`. Public Frida wrapper must remain unchanged until USER PASS.
+Do NOT restart B2.5 or the 24-family regression. Do NOT reopen G4. Do NOT reopen City, Service or Signal absent contradictory USER evidence. Do NOT mutate `families/_shared/round13r/index.html`. Do NOT promote Frida until valid USER PASS.
 
 # GLOBAL STATE
 
@@ -17,60 +17,96 @@ VALIDATED 24. USER relational integrity 24/24 PASS. G4 CLOSED.
 Experiential matrix:
 # **STRONG 13 / ADEQUATE 10 / EXPERIENCE DEBT 1**
 
-Only remaining Experience Debt:
+Only remaining debt:
 - Frida / Coyoacán
 
-City, Service and Signal are CLOSED / ADEQUATE.
-
-# SIGNAL / NIGERIA — CLOSED ✅
-
-Candidate `families/signal-nigeria/exp-3.html` @ `7529cb83a3ed3cdedb315dce5f40e15f39fff7ec`.
-Mechanism: **EARTH STATION → RELAY → LINK CONTINUES**.
-
-Valid USER proof:
-`/mnt/data/7aa3ce7e-f28f-4cd0-b650-e21bc4ac3a58.mp4` — 17.63 s / 1910×966 / 30 fps / 529 frames.
-Verdict: **CAUSAL PASS / VISUAL PASS / TRUTH PASS ✅**.
-
-Promotion:
-- public wrapper `families/signal-nigeria/index.html`
-- source promotion first landed @ `95a009e0ca91f8c1de2bfece4ae5ae001ac061d6`
-- retry LIVE commit with identical wrapper content `90f8240ba9e42378fd739bb03b5bda2858c7bb7d`
-- deployment `dpl_Hcmtp2YjMVecmzoExCfJREKD39SE`
-- READY
-- public `/families/signal-nigeria/` verified HTTP 200 and serves direct-access promotion to validated EXP-3
-- shared runtime unchanged
-
-Closure register:
-`GLOBAL_REFINEMENT_EXP3A_SIGNAL_NIGERIA_NITEL_USER_PASS_PROMOTION_CLOSED.md` @ `f01a98c50631bf8d8139d605b21fbe61d988cded`.
-
-Signal = ADEQUATE / CLOSED.
+City / Gatineau, Service / Benin and Signal / Nigeria are CLOSED / ADEQUATE.
 
 # FRIDA / COYOACÁN — ACTIVE
 
-Existing baseline concept:
-A memory claim meets an archive counterpart; the trace exists between them.
-
-Frozen expansion mechanism:
+Frozen mechanism:
 # **LAYERED TRACE ALIGNMENT**
 
-Required behavior:
-- Card A portrait/memory member and Card B place/archive member are independently legible before relation;
-- MATCHING aligns paired trace anchors/layers across both members and the gap;
-- the memorable moment belongs to what happens between Frida-memory and Coyoacán/Casa Azul archive/place;
-- OTHER leaves ghosted / offset trace residue while preserving both valid members;
-- no fake historical labels, dates, handwriting, annotations or invented provenance;
-- place/material/cultural identity must be specific enough to Frida / Coyoacán / Casa Azul and not generic Mexican styling;
-- isolated candidate first;
-- shared runtime untouched;
-- public Frida wrapper unchanged pending USER PASS.
+Dedicated source/candidate register:
+`GLOBAL_REFINEMENT_EXP4_FRIDA_COYOACAN_LAYERED_TRACE_CANDIDATE.md` @ `f1340dce97a552f882c0b518619285ab0e3310cc`.
 
-# EXACT NEXT ACTION
+Candidate:
+`families/frida-coyoacan/exp-4.html`
+implementation `9586c52bd538eb9cba980b72230a36c98f369c90`.
 
-1. Re-audit documented visual/source anchors for Frida Kahlo, Coyoacán and Casa Azul.
-2. Separate reusable/public-domain or safely synthesized cues from copyrighted image material.
-3. Define an archive-led visual language.
-4. Build `families/frida-coyoacan/exp-4.html` as isolated candidate.
-5. Deploy candidate and issue one USER preview.
-6. USER gate judges CAUSAL / VISUAL / TRUTH separately.
+Source identity anchors:
+- official Museo Frida Kahlo / Casa Azul place and collection descriptions;
+- Londres 247 · Coyoacán;
+- official Casa Azul dossier: volcanic stone / basalt, embedded jars, 1946 studio addition;
+- documented archive scale: 22,105 documents / 5,387 photographs;
+- Card A image: Guillermo Kahlo portrait of Frida, 16 Oct 1932, public domain via Wikimedia Commons;
+- Card B image: Casa Azul patio detail, public domain via Wikimedia Commons.
+
+Visual contract:
+- Card A = photographic memory / Frida member;
+- Card B = Casa Azul place/archive member;
+- no generic Mexican styling, flags, fake catalog numbers, invented handwriting or museum-logo facsimile;
+- truth boundary explicitly says editorial synthesis, not archival facsimile.
+
+Interaction contract:
+MATCHING:
+- both members independently legible before relation;
+- three member trace sheets approach alignment;
+- three pair-spanning trace lines resolve across the seam;
+- center remains subordinate;
+- state `PORTRAIT TRACE → CASA AZUL ALIGN → REGISTER`.
+
+OTHER:
+- both members remain valid;
+- continuous alignment does not resolve;
+- ghosted member sheets + offset residual fragments remain;
+- state `TRACE OFFSET · BOTH ARCHIVE MEMBERS REMAIN VALID`.
+
+Architecture:
+- isolated candidate only;
+- public `families/frida-coyoacan/index.html` unchanged;
+- shared runtime unchanged;
+- no cross-family inheritance.
+
+LIVE:
+- deployment `dpl_7Ht487z1RPRVA1cDMhhyZGz88jVj`
+- READY
+- exact deployed commit `9586c52bd538eb9cba980b72230a36c98f369c90`
+- host `relational-key-collectionrelational-key-collection-5rppykpqe.vercel.app`
+
+Share URL issued 2026-09-03:
+`https://relational-key-collectionrelational-key-collection-5rppykpqe.vercel.app/families/frida-coyoacan/exp-4.html?_vercel_share=waHIpARC3AmoICSXjB3lmTxf4nYkEq1J`
+
+State separation:
+- SOURCE baseline Frida relational PASS unchanged
+- SOURCE EXP-4 identity PASS
+- SOURCE EXP-4 candidate PASS
+- LIVE EXP-4 READY
+- USER EXP-4 PENDING
+- Frida EXPERIENCE DEBT pending USER proof
+- VALIDATED 24 unchanged
+
+# EXACT NEXT USER ACTION
+
+Record one ~10–15 s proof from the EXP-4 share URL:
+1. MATCHING CLAIM → TEST RELATIONSHIP
+2. hold aligned portrait → Casa Azul trace state
+3. OTHER CLAIM → TEST RELATIONSHIP
+4. hold offset trace residual
+
+Judge CAUSAL / VISUAL / TRUTH separately.
+
+If USER PASS:
+1. create final USER PASS / promotion register;
+2. promote only Frida-specific EXP-4 treatment into public wrapper;
+3. keep shared runtime unchanged;
+4. verify LIVE public Frida route;
+5. Frida EXPERIENCE DEBT → ADEQUATE;
+6. matrix → STRONG 13 / ADEQUATE 11 / EXPERIENCE DEBT 0;
+7. update CURRENT_STATE + HANDOVER + PR #21;
+8. then determine global refinement closeout gate.
+
+If USER FAIL:
+revise isolated Frida candidate only; do not invalidate baseline relational correctness.
 
 PR remains Draft / DO NOT MERGE. Trust branch head over documentation-only commit IDs.
