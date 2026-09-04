@@ -12,6 +12,8 @@ const fail = (message) => {
 
 const pkg = JSON.parse(read('package.json'));
 const app = read('src/App.jsx');
+const registry = read('src/sceneRegistry.js');
+const familyCanvas = read('src/FamilyCanvas.jsx');
 const pilots = read('src/pilots.js');
 const scenes = [
   read('src/scenes/AnamorphosisScene.jsx'),
@@ -31,10 +33,27 @@ for (const [name, version] of Object.entries(exactDependencies)) {
 }
 
 if (pkg.dependencies?.['@react-three/drei']) fail('Drei is not authorized in the three-pilot baseline');
-if ((app.match(/<Canvas/g) ?? []).length !== 1) fail('the pilot shell must instantiate exactly one active Canvas');
+if (app.includes('@react-three/fiber')) fail('shared product shell must not eagerly import R3F');
+if (app.includes('./scenes/')) fail('shared product shell must not eagerly import family scenes');
+if (!app.includes('<Suspense')) fail('shared shell must expose a bounded lazy-loading fallback');
+if ((familyCanvas.match(/<Canvas/g) ?? []).length !== 1) fail('FamilyCanvas must own exactly one Canvas definition');
+if (!familyCanvas.includes("from '@react-three/fiber'")) fail('R3F Canvas ownership must remain isolated in FamilyCanvas');
+if (!familyCanvas.includes('data-scene-runtime={sceneId}')) fail('active family runtime identity marker is missing');
 if (!app.includes('aria-live="polite"')) fail('dynamic relation result must use a polite live region');
 if (!app.includes('prefers-reduced-motion') && !read('src/styles.css').includes('prefers-reduced-motion')) {
   fail('reduced-motion contract is missing');
+}
+
+const lazyEntries = [
+  "lazy(() => import('./sceneEntries/AnamorphosisEntry.jsx'))",
+  "lazy(() => import('./sceneEntries/CouplerEntry.jsx'))",
+  "lazy(() => import('./sceneEntries/OmbakEntry.jsx'))",
+];
+for (const entry of lazyEntries) {
+  if (!registry.includes(entry)) fail(`missing lazy family entry: ${entry}`);
+}
+if ((registry.match(/lazy\(\(\) => import\(/g) ?? []).length !== 3) {
+  fail('scene registry must expose exactly three lazy family entries in the pilot gate');
 }
 
 for (const required of [
@@ -61,7 +80,10 @@ if (/useState\s*\(/.test(allScenes)) {
 
 if (!process.exitCode) {
   console.log('V2_CONTRACT_PASS');
-  console.log('one-active-canvas: PASS');
+  console.log('shared-shell-r3f-imports: NONE');
+  console.log('shared-shell-scene-imports: NONE');
+  console.log('lazy-family-entries: 3');
+  console.log('single-FamilyCanvas-definition: PASS');
   console.log('three-distinct-relational-laws: PASS');
   console.log('reduced-motion-contract: PASS');
   console.log('scene-level-useState: NONE');

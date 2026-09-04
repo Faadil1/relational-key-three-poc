@@ -5,9 +5,9 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build",
+    "build": "vite build && node scripts/check-scaling.mjs",
     "preview": "vite preview",
-    "check": "node scripts/check-contract.mjs && vite build"
+    "check": "node scripts/check-contract.mjs && npm run build"
   },
   "dependencies": {
     "@react-three/fiber": "9.7.0",

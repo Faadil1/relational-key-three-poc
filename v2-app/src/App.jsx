@@ -1,9 +1,6 @@
-import { useEffect, useMemo, useState } from 'react';
-import { Canvas } from '@react-three/fiber';
-import { AnamorphosisScene } from './scenes/AnamorphosisScene.jsx';
-import { CouplerScene } from './scenes/CouplerScene.jsx';
-import { OmbakScene } from './scenes/OmbakScene.jsx';
+import { Suspense, useEffect, useMemo, useState } from 'react';
 import { pilotById, pilots } from './pilots.js';
+import { sceneComponents } from './sceneRegistry.js';
 import { useOmbakAudio } from './useOmbakAudio.js';
 import { useReducedMotion } from './useReducedMotion.js';
 
@@ -36,6 +33,7 @@ export default function App() {
 
   const focusMode = launch.focusMode;
   const pilot = pilotById[activeId];
+  const ActiveScene = sceneComponents[activeId];
   const matching = relationMode === 'matching';
   const effectiveOmbakDifference = matching ? ombakDifference : Math.min(20, ombakDifference + 5);
   const audio = useOmbakAudio(ombakBase, effectiveOmbakDifference);
@@ -102,6 +100,23 @@ export default function App() {
       setOmbakDifference(INITIAL.ombakDifference);
     }
   };
+
+  const activeSceneProps = activeId === 'anamorphosis-paris'
+    ? { offset: anamorphosisOffset, setOffset: setAnamorphosisOffset, reducedMotion }
+    : activeId === 'coupler-virginia'
+      ? {
+          approach: couplerApproach,
+          setApproach: setCouplerApproach,
+          pull: couplerPull,
+          matching,
+          reducedMotion,
+        }
+      : {
+          differenceHz: ombakDifference,
+          playing: audio.playing,
+          matching,
+          reducedMotion,
+        };
 
   return (
     <main className={focusMode ? 'app-shell focus-mode' : 'app-shell'}>
@@ -178,39 +193,19 @@ export default function App() {
           )}
 
           <div className="canvas-wrap" aria-hidden="true">
-            <Canvas
-              key={activeId}
-              frameloop="demand"
-              dpr={[1, 1.5]}
-              camera={{ position: [0, 0.35, 6.2], fov: 42, near: 0.1, far: 40 }}
-              gl={{ antialias: true, alpha: false }}
-              onCreated={({ gl }) => gl.setClearColor('#c8c3b8')}
+            <Suspense
+              fallback={(
+                <div
+                  role="status"
+                  aria-live="polite"
+                  style={{ display: 'grid', placeItems: 'center', width: '100%', height: '100%', padding: 24 }}
+                >
+                  LOADING RELATIONAL SCENE · {pilot.label}
+                </div>
+              )}
             >
-              {activeId === 'anamorphosis-paris' && (
-                <AnamorphosisScene
-                  offset={anamorphosisOffset}
-                  setOffset={setAnamorphosisOffset}
-                  reducedMotion={reducedMotion}
-                />
-              )}
-              {activeId === 'coupler-virginia' && (
-                <CouplerScene
-                  approach={couplerApproach}
-                  setApproach={setCouplerApproach}
-                  pull={couplerPull}
-                  matching={matching}
-                  reducedMotion={reducedMotion}
-                />
-              )}
-              {activeId === 'ombak-bali' && (
-                <OmbakScene
-                  differenceHz={ombakDifference}
-                  playing={audio.playing}
-                  matching={matching}
-                  reducedMotion={reducedMotion}
-                />
-              )}
-            </Canvas>
+              <ActiveScene key={activeId} {...activeSceneProps} />
+            </Suspense>
           </div>
 
           <div className="status-strip" role="status" aria-live="polite" aria-atomic="true">
