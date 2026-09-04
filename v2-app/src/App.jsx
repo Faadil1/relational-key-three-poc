@@ -16,7 +16,16 @@ const INITIAL = {
 };
 
 export default function App() {
-  const [activeId, setActiveId] = useState('anamorphosis-paris');
+  const launch = useMemo(() => {
+    const params = new URLSearchParams(window.location.search);
+    const requestedPilot = params.get('pilot');
+    return {
+      focusMode: params.get('focus') === '1',
+      activeId: requestedPilot && pilotById[requestedPilot] ? requestedPilot : 'anamorphosis-paris',
+    };
+  }, []);
+
+  const [activeId, setActiveId] = useState(launch.activeId);
   const [relationMode, setRelationMode] = useState('other');
   const [anamorphosisOffset, setAnamorphosisOffset] = useState(INITIAL.anamorphosisOffset);
   const [couplerApproach, setCouplerApproach] = useState(INITIAL.couplerApproach);
@@ -25,10 +34,13 @@ export default function App() {
   const [ombakDifference, setOmbakDifference] = useState(INITIAL.ombakDifference);
   const reducedMotion = useReducedMotion();
 
+  const focusMode = launch.focusMode;
   const pilot = pilotById[activeId];
   const matching = relationMode === 'matching';
   const effectiveOmbakDifference = matching ? ombakDifference : Math.min(20, ombakDifference + 5);
   const audio = useOmbakAudio(ombakBase, effectiveOmbakDifference);
+  const focusHref = `?focus=1&pilot=${encodeURIComponent(activeId)}`;
+  const labHref = `?pilot=${encodeURIComponent(activeId)}`;
 
   useEffect(() => {
     if (activeId !== 'ombak-bali' && audio.playing) audio.stop();
@@ -92,33 +104,51 @@ export default function App() {
   };
 
   return (
-    <main className="app-shell">
-      <header className="masthead">
-        <div>
-          <p className="eyebrow">RELATIONAL KEY · V2.1 CONCEPT BUILDS</p>
-          <h1>THE RELATIONAL PAIR REMAINS THE PRODUCT.</h1>
-          <p className="lede">Archive-derived interaction studies · React + R3F / Three.js · V1 remains frozen.</p>
-        </div>
-        <div className="baseline" aria-label="Frozen baseline identity">
-          <span>V1 GOLDEN BASELINE</span>
-          <code>6821cd2</code>
-        </div>
-      </header>
+    <main className={focusMode ? 'app-shell focus-mode' : 'app-shell'}>
+      {focusMode ? (
+        <header className="focus-header">
+          <div>
+            <p className="eyebrow">RELATIONAL KEY · FOCUS EXPERIENCE · {pilot.className}</p>
+            <h1>{pilot.label}</h1>
+            <p className="focus-intent">{pilot.memorable}</p>
+          </div>
+          <div className="focus-meta">
+            <span>PAIR LAW</span>
+            <strong>{pilot.law}</strong>
+            <a className="focus-action" href={labHref}>LAB / EVIDENCE VIEW</a>
+          </div>
+        </header>
+      ) : (
+        <header className="masthead">
+          <div>
+            <p className="eyebrow">RELATIONAL KEY · V2.1 CONCEPT BUILDS</p>
+            <h1>THE RELATIONAL PAIR REMAINS THE PRODUCT.</h1>
+            <p className="lede">Archive-derived interaction studies · React + R3F / Three.js · V1 remains frozen.</p>
+          </div>
+          <div className="baseline" aria-label="Frozen baseline identity">
+            <span>V1 GOLDEN BASELINE</span>
+            <code>6821cd2</code>
+            <a className="focus-action" href={focusHref}>OPEN FOCUS EXPERIENCE</a>
+          </div>
+        </header>
+      )}
 
-      <nav className="pilot-tabs" aria-label="V2 pilot families">
-        {pilots.map((item) => (
-          <button
-            key={item.id}
-            type="button"
-            className={item.id === activeId ? 'pilot-tab active' : 'pilot-tab'}
-            aria-pressed={item.id === activeId}
-            onClick={() => setActiveId(item.id)}
-          >
-            <span>{item.label}</span>
-            <small>{item.className}</small>
-          </button>
-        ))}
-      </nav>
+      {!focusMode && (
+        <nav className="pilot-tabs" aria-label="V2 pilot families">
+          {pilots.map((item) => (
+            <button
+              key={item.id}
+              type="button"
+              className={item.id === activeId ? 'pilot-tab active' : 'pilot-tab'}
+              aria-pressed={item.id === activeId}
+              onClick={() => setActiveId(item.id)}
+            >
+              <span>{item.label}</span>
+              <small>{item.className}</small>
+            </button>
+          ))}
+        </nav>
+      )}
 
       <section className="pilot-grid" aria-labelledby="pilot-title">
         <div className="scene-column">

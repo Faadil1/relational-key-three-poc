@@ -130,12 +130,14 @@ function makeReflectionTexture(registered) {
 export function AnamorphosisScene({ offset, setOffset, reducedMotion }) {
   const dragging = useRef(false);
   const mirrorRef = useRef(null);
-  const dirty = useRef(true);
+  const dirty = useRef(false);
+  const mounted = useRef(false);
+  const worldPosition = useMemo(() => new THREE.Vector3(), []);
   const sourceTexture = useMemo(() => makeSourceTexture(), []);
   const registeredTexture = useMemo(() => makeReflectionTexture(true), []);
   const residualTexture = useMemo(() => makeReflectionTexture(false), []);
   const cubeTarget = useMemo(
-    () => new THREE.WebGLCubeRenderTarget(reducedMotion ? 48 : 72, {
+    () => new THREE.WebGLCubeRenderTarget(reducedMotion ? 32 : 48, {
       generateMipmaps: false,
       minFilter: THREE.LinearFilter,
     }),
@@ -147,13 +149,11 @@ export function AnamorphosisScene({ offset, setOffset, reducedMotion }) {
 
   useEffect(() => {
     scene.add(cubeCamera);
-    dirty.current = true;
-    invalidate();
     return () => {
       scene.remove(cubeCamera);
       cubeTarget.dispose();
     };
-  }, [cubeCamera, cubeTarget, invalidate, scene]);
+  }, [cubeCamera, cubeTarget, scene]);
 
   useEffect(() => () => {
     sourceTexture.dispose();
@@ -162,15 +162,19 @@ export function AnamorphosisScene({ offset, setOffset, reducedMotion }) {
   }, [sourceTexture, registeredTexture, residualTexture]);
 
   useEffect(() => {
+    if (!mounted.current) {
+      mounted.current = true;
+      return;
+    }
     dirty.current = true;
     invalidate();
-  }, [offset, registered, reducedMotion, invalidate]);
+  }, [offset, reducedMotion, invalidate]);
 
   useFrame(() => {
     if (!dirty.current || !mirrorRef.current) return;
     const mirror = mirrorRef.current;
     mirror.visible = false;
-    cubeCamera.position.copy(mirror.getWorldPosition(new THREE.Vector3()));
+    cubeCamera.position.copy(mirror.getWorldPosition(worldPosition));
     cubeCamera.update(gl, scene);
     mirror.visible = true;
     dirty.current = false;
@@ -218,7 +222,7 @@ export function AnamorphosisScene({ offset, setOffset, reducedMotion }) {
           }}
           onPointerCancel={() => { dragging.current = false; }}
         >
-          <cylinderGeometry args={[0.66, 0.66, 2.75, 72]} />
+          <cylinderGeometry args={[0.66, 0.66, 2.75, 48]} />
           <meshStandardMaterial
             color={registered ? '#d8d5ca' : '#77766f'}
             metalness={0.92}
@@ -240,12 +244,12 @@ export function AnamorphosisScene({ offset, setOffset, reducedMotion }) {
         </mesh>
 
         <mesh position={[0, 0, 0.7]}>
-          <torusGeometry args={[0.82, 0.025, 12, 64]} />
+          <torusGeometry args={[0.82, 0.025, 10, 48]} />
           <meshBasicMaterial color={registered ? '#d5b873' : '#6b6559'} transparent opacity={registered ? 0.92 : 0.45} />
         </mesh>
 
         <mesh position={[0, -1.43, 0]}>
-          <cylinderGeometry args={[0.78, 0.78, 0.11, 48]} />
+          <cylinderGeometry args={[0.78, 0.78, 0.11, 32]} />
           <meshStandardMaterial color="#0e100e" metalness={0.62} roughness={0.4} />
         </mesh>
       </group>

@@ -11,7 +11,7 @@ html { background: #e4dfd5; }
 body { margin: 0; min-width: 320px; min-height: 100%; }
 button, input { font: inherit; }
 button { min-height: 44px; }
-button:focus-visible, input:focus-visible, summary:focus-visible {
+button:focus-visible, input:focus-visible, summary:focus-visible, a:focus-visible {
   outline: 3px solid #1d1e1b;
   outline-offset: 3px;
 }
@@ -60,6 +60,20 @@ h3 { margin-bottom: 15px; font: 800 12px/1.2 ui-monospace, SFMono-Regular, Menlo
   letter-spacing: 0.07em;
 }
 .baseline code { font-size: 14px; letter-spacing: 0; }
+
+.focus-action {
+  display: inline-flex;
+  align-items: center;
+  width: fit-content;
+  min-height: 34px;
+  margin-top: 7px;
+  padding: 7px 9px;
+  border: 1px solid currentColor;
+  color: inherit;
+  text-decoration: none;
+  font: 800 10px/1.1 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: 0.08em;
+}
 
 .pilot-tabs {
   display: grid;
@@ -167,10 +181,132 @@ dd { margin: 0; font-size: 13px; line-height: 1.45; color: #454640; }
 .truth-panel p { padding: 0 18px; font-size: 13px; line-height: 1.5; }
 .truth-panel p:last-child { padding-bottom: 15px; }
 
+/* Focus Experience is a presentation surface for family-level comparison.
+   It does not change the mechanism, truth boundary, or lab evidence contract. */
+.focus-mode {
+  width: min(1720px, 100%);
+  min-height: 100vh;
+  padding: clamp(14px, 2vw, 28px);
+  color: #eee8dc;
+  background: #0d100d;
+}
+.focus-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(300px, .65fr);
+  gap: 28px;
+  align-items: end;
+  padding: 14px 0 18px;
+  margin-bottom: 14px;
+  border-top: 1px solid #a88d55;
+  border-bottom: 1px solid #343930;
+}
+.focus-header .eyebrow { color: #b9a579; }
+.focus-header h1 {
+  max-width: none;
+  margin: 0 0 8px;
+  font-size: clamp(42px, 5.6vw, 82px);
+  line-height: .92;
+  color: #f2ecdf;
+}
+.focus-intent {
+  max-width: 850px;
+  margin: 0;
+  color: #b9b7ad;
+  font-size: clamp(16px, 1.55vw, 22px);
+  line-height: 1.38;
+}
+.focus-meta {
+  display: grid;
+  gap: 8px;
+  align-content: end;
+  min-width: 0;
+  padding-left: 18px;
+  border-left: 1px solid #4a4e44;
+}
+.focus-meta > span {
+  color: #9e987f;
+  font: 800 10px/1.2 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: .13em;
+}
+.focus-meta strong {
+  color: #e5d5a7;
+  font: 800 12px/1.5 ui-monospace, SFMono-Regular, Menlo, monospace;
+}
+.focus-mode .focus-action { color: #dbc583; border-color: #7d6d43; }
+.focus-mode .pilot-grid {
+  grid-template-columns: minmax(0, 1fr) 320px;
+  gap: 12px;
+}
+.focus-mode .scene-heading {
+  min-height: 26px;
+  margin-bottom: 7px;
+  align-items: center;
+}
+.focus-mode .scene-heading .eyebrow,
+.focus-mode .scene-heading h2 { display: none; }
+.focus-mode .motion-note { color: #8e9388; text-align: left; }
+.focus-mode .canvas-wrap {
+  aspect-ratio: 16 / 9;
+  min-height: 590px;
+  border-color: #3a4037;
+  background: #11140f;
+  box-shadow: 0 22px 70px rgba(0, 0, 0, .32);
+}
+.focus-mode .status-strip {
+  border-color: #3a4037;
+  background: #151915;
+  color: #eadfbe;
+  min-height: 52px;
+  padding: 14px 16px;
+}
+.focus-mode .controls-column { align-self: stretch; align-content: start; }
+.focus-mode .control-panel,
+.focus-mode .truth-panel {
+  border-color: #3a4037;
+  background: #141813;
+  color: #e8e2d7;
+}
+.focus-mode .evidence-panel { display: none; }
+.focus-mode .control-panel h3 { color: #c8b77e; }
+.focus-mode .relation-buttons button,
+.focus-mode .micro-actions button {
+  border-color: #6f7165;
+  color: #e8e2d7;
+  background: transparent;
+}
+.focus-mode .relation-buttons button.active,
+.focus-mode .micro-actions button:hover {
+  background: #dfcf9d;
+  color: #151713;
+}
+.focus-mode .ghost { border-color: #4c5148 !important; }
+.focus-mode .range-control small,
+.focus-mode .small-copy,
+.focus-mode .truth-panel p { color: #9fa097; }
+.focus-mode .range-control input { accent-color: #d5bd78; }
+.focus-mode .truth-panel summary { color: #c7b981; }
+.focus-mode button:focus-visible,
+.focus-mode input:focus-visible,
+.focus-mode summary:focus-visible,
+.focus-mode a:focus-visible {
+  outline-color: #e2c975;
+}
+
+@media (max-width: 1100px) {
+  .focus-mode .pilot-grid { grid-template-columns: minmax(0, 1fr) 290px; }
+  .focus-mode .canvas-wrap { min-height: 500px; }
+}
+
 @media (max-width: 920px) {
   .pilot-grid { grid-template-columns: 1fr; }
   .controls-column { grid-template-columns: 1fr 1fr; }
   .truth-panel { grid-column: 1 / -1; }
+  .focus-header { grid-template-columns: 1fr; align-items: start; }
+  .focus-meta { padding: 12px 0 0; border-left: 0; border-top: 1px solid #343930; }
+  .focus-mode .pilot-grid { grid-template-columns: 1fr; }
+  .focus-mode .controls-column { grid-template-columns: 1fr 1fr; }
+  .focus-mode .truth-panel { grid-column: 1 / -1; }
+  .focus-mode .canvas-wrap { min-height: 440px; }
 }
 
 @media (max-width: 640px) {
@@ -186,6 +322,14 @@ dd { margin: 0; font-size: 13px; line-height: 1.45; color: #454640; }
   .controls-column { grid-template-columns: 1fr; }
   .truth-panel { grid-column: auto; }
   .relation-buttons { grid-template-columns: 1fr; }
+
+  .focus-mode { padding: 10px; }
+  .focus-header { padding-top: 10px; gap: 14px; }
+  .focus-header h1 { font-size: clamp(38px, 14vw, 62px); }
+  .focus-intent { font-size: 15px; }
+  .focus-mode .canvas-wrap { aspect-ratio: 1 / 1; min-height: 330px; }
+  .focus-mode .controls-column { grid-template-columns: 1fr; }
+  .focus-mode .truth-panel { grid-column: auto; }
 }
 
 @media (prefers-reduced-motion: reduce) {
