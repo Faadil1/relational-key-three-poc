@@ -7,7 +7,7 @@ function RailCard({ side, position, onPointerDown, onPointerMove, onPointerUp })
   const carY = BOTTOM + (TOP - BOTTOM) * position;
   const tint = side === 'A' ? '#a87956' : '#7d5a43';
   return (
-    <group name={`PAIR_MEMBER_${side}`}>
+    <group>
       <mesh>
         <boxGeometry args={[2.55, 3.7, 0.18]} />
         <meshStandardMaterial color="#171a18" roughness={0.95} />
@@ -81,7 +81,7 @@ export function FunicularScene({ positionA, setPositionA, reducedMotion }) {
       <directionalLight position={[3, 5, 5]} intensity={2.4} color="#e9dfcf" />
       <pointLight position={[0, 1.6, 3]} intensity={1.1} color={relationColor} />
 
-      <group position={[-1.72, 0, 0]}>
+      <group name="PAIR_MEMBER_A" position={[-1.72, 0, 0]}>
         <RailCard
           side="A"
           position={positionA}
@@ -90,7 +90,7 @@ export function FunicularScene({ positionA, setPositionA, reducedMotion }) {
           onPointerUp={end}
         />
       </group>
-      <group position={[1.72, 0, 0]}>
+      <group name="PAIR_MEMBER_B" position={[1.72, 0, 0]}>
         <RailCard
           side="B"
           position={positionB}
