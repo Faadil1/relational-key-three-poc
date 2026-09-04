@@ -14,58 +14,41 @@ R5 does not authorize merge or review-state changes.
 # EXECUTION ORDER
 Food → Textile → Metate → Tongiaki → Garamut → Kento → Swell → City → Service → Signal → Frida.
 
-Do not force all families to STRONG.
-
-# CURRENT MATRIX
+# CURRENT CLOSED MATRIX
 # **STRONG 20 / ADEQUATE 4 / EXPERIENCE DEBT 0**
 VALIDATED remains 24.
 
 # CLOSED R5 ✅
-- R5.1 Food / Toyama — STRONG — `PRESSURE-TO-UNFOLD REVEAL`
-- R5.2 Textile / Bonwire — STRONG — `SELVEDGE OVERCAST JOIN`
-- R5.3 Metate / Teotitlán — STRONG — `RECIPROCAL ABRASION / FINENESS ACCUMULATION`
-- R5.4 Tongiaki / Tonga — STRONG — `CROSSBEAM LASHING → SHARED PLATFORM`
-- R5.5 Garamut / East Sepik–Ramu — STRONG — `IMPACT → BODY RESONANCE → DECAY → RE-ARM → INTERVAL MEMORY`
-- R5.6 Kento / Japan — STRONG — `RETURN-TO-KENTŌ → SUCCESSIVE COLOR BUILD`
-- R5.7 Swell / Marshall Islands — STRONG — `INCIDENT SWELL → ATOLL EDGES → REFRACTED SHOULDERS → LEE CROSSING → LAND SIGNATURE`
+- R5.1 Food / Toyama — STRONG
+- R5.2 Textile / Bonwire — STRONG
+- R5.3 Metate / Teotitlán — STRONG
+- R5.4 Tongiaki / Tonga — STRONG
+- R5.5 Garamut / East Sepik–Ramu — STRONG
+- R5.6 Kento / Japan — STRONG
+- R5.7 Swell / Marshall Islands — STRONG
 
-# R5.8 — CITY / GATINEAU — ACTIVE
-Baseline: ADEQUATE.
-Source audit `POST_CLOSEOUT_R5_8A_CITY_GATINEAU_SOURCE_RIVER_SEAM_AUDIT.md` @ `88fab6997118aacd9168b7aa03a9f7298e18ec3a`.
+# R5.8 — CITY / GATINEAU — USER PASS ✅ / LIVE PROMOTION PENDING
 Mechanism: **RIVER-SEAM CROSSING / BANK-TO-BANK HANDOFF**.
 Candidate `families/city-gatineau/r5-8.html` @ `796ee8afc24c879d148b90046037f80b0c5bcec6`.
-Candidate blob `118cd6c5b65c9e7e8cc62842510cb37acc97d98a`.
 
-LIVE blocker history:
-- original candidate + Retry 01 hit Vercel Hobby `build-rate-limit`;
-- Retry 01 trigger `43c3c8a998191ac73e621142575ca9a18b7288e5`;
-- candidate unchanged.
+USER proof:
+`/mnt/data/940f9e51-5c51-4331-90b0-4a55800f684e.mp4` — 12.93 s / 1906×962 / 30 fps / 388 frames.
+USER verdict:
+`CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
 
-LIVE blocker resolved ✅
-- deployment `dpl_EzFX9UK9NJkHPvTp5UvoSRoKTjVA`
-- READY
-- deployed commit `91ad10e8ad6071b2ce6d5c8a1abde3f58070e41e`
-- exact candidate blob preserved at deployed commit.
+Promotion SOURCE:
+`families/city-gatineau/index.html` @ `952b7d973bdc0a81f421708668993040390c1b0d` → `r5-8.html`.
 
-Preview is Vercel-auth protected; raw automated route fetch returns SSO 302 rather than application failure. Temporary share URL generated.
+Pending-LIVE register:
+`POST_CLOSEOUT_R5_8C_CITY_GATINEAU_USER_PASS_PROMOTION_PENDING_LIVE.md` @ `2f3525bc4a01c04420557cc5ba9d6937e8ee5ca6`.
 
-USER gate:
-`POST_CLOSEOUT_R5_8C_CITY_GATINEAU_USER_GATE.md` @ `7bb5258dda14a29e05579aac56b399474fefa65c`.
-
-Candidate URL:
-`https://relational-key-collectionrelational-key-collection-cztjb30l3.vercel.app/families/city-gatineau/r5-8.html?_vercel_share=8sEtIUzNoG3jkCZ4xHf180lJUNz3zwde`
-
-Public City wrapper unchanged.
-Shared runtime unchanged.
-City remains ADEQUATE pending USER proof.
+Vercel status on promotion commit: Hobby `build-rate-limit`.
+No READY public-promotion deployment claimed yet.
 
 # ACTIVE GATE
-# **R5.8C — CITY / GATINEAU USER MATCHING + OTHER REGRESSION**
+# **R5.8C-LIVE — CITY PUBLIC PROMOTION RETRY**
 
-Required proof:
-1. `MATCHING CROSSING` → `TEST RELATIONSHIP`;
-2. hold final shared-span / handoff-crossing state;
-3. `OTHER CROSSING` → `TEST RELATIONSHIP`;
-4. hold offset-anchor / misseated-crossing residual.
-
-Only USER PASS may authorize City promotion and ADEQUATE → STRONG.
+Do not change City candidate semantics.
+Do not request another USER video.
+Next successful branch deployment containing `952b7d...` must be READY and the public City wrapper must route to `r5-8.html`.
+Only then close City STRONG, update matrix to `21 / 3 / 0`, and activate R5.9 Service / Benin.
