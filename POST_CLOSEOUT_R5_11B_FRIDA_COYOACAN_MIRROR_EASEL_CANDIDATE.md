@@ -46,6 +46,11 @@ Documented relationship only: mirror above the bed + specially made easel enable
 Initial Vercel status on implementation commit `9402db8b56e2922a74223d1ebba3035e06f91c01`: Hobby `build-rate-limit` failure.
 No application failure inferred.
 
+## Explicit human retry — 2026-09-04
+User requested `retenter frida`.
+This commit is a deployment-status retry only. No Frida semantics, candidate HTML, public wrapper, or shared runtime are changed.
+Candidate implementation remains exactly `9402db8b56e2922a74223d1ebba3035e06f91c01`.
+
 Next gate:
 # **R5.11B-LIVE — FRIDA / COYOACÁN CANDIDATE DEPLOYMENT**
 Require a READY branch deployment containing unchanged `r5-11.html`, then route/exact-commit integrity and one USER MATCHING + OTHER regression.
