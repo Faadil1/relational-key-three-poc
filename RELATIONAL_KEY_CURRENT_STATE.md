@@ -30,33 +30,18 @@ Closed STRONG in R5:
 Food / Toyama; Textile / Bonwire; Metate / Teotitlán; Tongiaki / Tonga; Garamut / East Sepik–Ramu; Kento / Japan; Swell / Marshall Islands; City / Gatineau; Service / Benin; Signal / Nigeria.
 
 # R5.11 — FRIDA / COYOACÁN — USER PASS / LIVE PROMOTION PENDING
-Mechanism:
-# **BED MIRROR → REFLECTED SELF → RECLINING EASEL → PAINTED REGISTER**
-Law: `MIRROR → REFLECTION LOCK → TRACE CARRIES → EASEL RECEIVES → PAINTED REGISTER`.
-
+Mechanism: **BED MIRROR → REFLECTED SELF → RECLINING EASEL → PAINTED REGISTER**.
 Candidate `families/frida-coyoacan/r5-11.html` @ `9402db8b56e2922a74223d1ebba3035e06f91c01`.
-Candidate blob `bd7e173b0f850293d74e7866497d23c00635ea8c`.
-Candidate deployment before USER: `dpl_7BoMjEUsCFPHQ2Pam75h2iPoGByW` READY on retry `793524ab6cf589d08c159f1cbbd4c8a75eb1f00b`; route HTTP 200; blob unchanged.
+Candidate LIVE before USER: `dpl_7BoMjEUsCFPHQ2Pam75h2iPoGByW` READY on `793524ab6cf589d08c159f1cbbd4c8a75eb1f00b`, candidate route HTTP 200, candidate blob unchanged.
 
-USER proof:
-`/mnt/data/2adce17d-ca10-4186-8ac0-c42537346194.mp4` — 19.50 s / 1914×970 / 30 fps / 585 frames.
-USER verdict:
-**CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS**.
+USER proof: `/mnt/data/2adce17d-ca10-4186-8ac0-c42537346194.mp4` — 19.50 s / 1914×970 / 30 fps / 585 frames.
+USER verdict: **CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS**.
 
 MATCHING observed: reflection → anchors lock → trace carries → outline → features → hair/crown → painted self-image formed.
 OTHER observed: mirror + easel + reflection remain valid; trace offset; ghosted/doubled red residual remains on Card B; painted register misaligns.
 
-Promotion SOURCE:
-`families/frida-coyoacan/index.html` → `/families/frida-coyoacan/r5-11.html` @ `5dfdbfb3e0c68411bff5ea02701a1059af9f0b11`.
-
-USER/PROMOTION register:
-`POST_CLOSEOUT_R5_11D_FRIDA_COYOACAN_USER_PASS_PROMOTION_PENDING_LIVE.md` created after USER PASS.
-
-LIVE promotion status:
-Vercel Hobby `build-rate-limit` on promotion commit and latest canonical head checked. No application failure inferred.
-No additional USER proof required.
-
-Truth boundary remains explicit: documented mirror-above-bed + specially made reclining-easel relationship; exact optics, geometry, anchors, timing, transfer and portrait contour are editorial, not a reconstruction of Frida's technique or a specific painting.
+Promotion SOURCE: `families/frida-coyoacan/index.html` → `/families/frida-coyoacan/r5-11.html` @ `5dfdbfb3e0c68411bff5ea02701a1059af9f0b11`.
+LIVE promotion currently blocked by Vercel Hobby `build-rate-limit`; no application failure inferred and no new USER proof required.
 
 # STATE SEPARATION
 - prior Global closeout: PASS / frozen
@@ -74,8 +59,4 @@ Truth boundary remains explicit: documented mirror-above-bed + specially made re
 # ACTIVE GATE
 # **R5.11D-LIVE — FRIDA / COYOACÁN PUBLIC PROMOTION RETRY**
 
-Next exact action:
-1. do not change Frida candidate or wrapper semantics;
-2. obtain READY deployment containing promotion commit or later descendant;
-3. verify public `/families/frida-coyoacan/` serves the promoted wrapper resolving to `r5-11.html`;
-4. only then reclassify Frida ADEQUATE → STRONG and close R5 at **STRONG 24 / ADEQUATE 0 / EXPERIENCE DEBT 0**.
+Obtain a READY deployment containing the promoted wrapper, verify public `/families/frida-coyoacan/` resolves to `r5-11.html`, then Frida becomes STRONG and R5 closes at **STRONG 24 / ADEQUATE 0 / EXPERIENCE DEBT 0**.
