@@ -6,7 +6,7 @@ Branch: `collection/global-refinement-1`
 PR #21: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
-# **R5.8B-LIVE — CITY / GATINEAU CANDIDATE DEPLOYMENT RETRY**
+# **R5.8C — CITY / GATINEAU USER MATCHING + OTHER REGRESSION**
 
 Do NOT reopen prior Global Refinement closeout; it remains PASS / frozen.
 Do NOT mutate `families/_shared/round13r/index.html` for family-specific refinement.
@@ -20,61 +20,76 @@ Current matrix: **STRONG 20 / ADEQUATE 4 / EXPERIENCE DEBT 0**.
 Closed STRONG in R5:
 Food / Toyama; Textile / Bonwire; Metate / Teotitlán; Tongiaki / Tonga; Garamut / East Sepik–Ramu; Kento / Japan; Swell / Marshall Islands.
 
-# R5.7 SWELL / MARSHALL ISLANDS — CLOSED ✅
-USER proof `/mnt/data/299de104-2352-483c-a8e6-512b52040e6d.mp4` — 12.90 s / 1912×964 / 30 fps / 387 frames.
-Verdict `CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
-Promotion `families/swell-marshall/index.html` @ `32b2744c9624a82ef2798b31266404e54f998771`.
-LIVE `dpl_Ew6K7raX9jBryigWqAkMr5xRsHLa` READY; public route HTTP 200.
-Closure `POST_CLOSEOUT_R5_7C_SWELL_MARSHALL_USER_PASS_PROMOTION_STRONG.md` @ `941f9f94f8556d77cf1ff046e5ff5c39e9702903`.
-
 # R5.8 CITY / GATINEAU — ACTIVE
 Baseline ADEQUATE.
 Source audit `POST_CLOSEOUT_R5_8A_CITY_GATINEAU_SOURCE_RIVER_SEAM_AUDIT.md` @ `88fab6997118aacd9168b7aa03a9f7298e18ec3a`.
 Mechanism: **RIVER-SEAM CROSSING / BANK-TO-BANK HANDOFF**.
 Candidate `families/city-gatineau/r5-8.html` @ implementation `796ee8afc24c879d148b90046037f80b0c5bcec6`.
-Dedicated blocker register latest commit: `127f99266f94222d189f13c907a5671c91ad793c`.
-R5 queue sync commit: `569fd310dbcb72e4344b733cae6d804729bf7672`.
-Current-state sync commit: `e5dd9540253482eab2fd34fb3599f59da1280fda`.
+Candidate blob `118cd6c5b65c9e7e8cc62842510cb37acc97d98a`.
 
 MATCHING design:
-- west-bank and east-bank route fragments are valid before relation;
+- west-bank and east-bank route fragments valid before relation;
 - river-edge anchors seat;
-- crossing span forms only when both anchors register;
-- handoff pulse crosses the river seam;
+- shared span forms;
+- handoff pulse crosses river seam;
 - east-bank route continues.
 
 OTHER design:
 - both route fragments remain valid;
-- anchors are vertically offset;
-- no shared span seats;
+- crossing anchors offset vertically;
+- no valid shared span seats;
 - residual is a misseated crossing.
 
 Truth boundary:
 conceptual Gatineau sector/waterway relationship only; not an operational transit map, real bridge alignment, STO route or navigation tool.
 
-# LIVE BLOCKER / RETRY 01
-Original candidate commit `796ee8afc24c879d148b90046037f80b0c5bcec6` received Vercel Hobby `build-rate-limit`.
-Retry 01 was triggered without candidate semantic/visual change at commit `43c3c8a998191ac73e621142575ca9a18b7288e5`.
-GitHub combined status for Retry 01 again reports Vercel `failure` pointing to `upgradeToPro=build-rate-limit`.
-No deployment newer than successful Swell deployment `dpl_Ew6K7raX9jBryigWqAkMr5xRsHLa` was created by the retry.
-Direct deployment fallback through the currently connected deployment action could not be used, so no alternate LIVE deployment is claimed.
+# LIVE — BLOCKER RESOLVED ✅
+Initial candidate + Retry 01 were blocked by Vercel Hobby build-rate-limit.
+Retry 01 trigger: `43c3c8a998191ac73e621142575ca9a18b7288e5`.
+No semantic candidate change occurred.
 
-Canonical interpretation:
-# **SOURCE CITY PASS / RETRY 01 BLOCKED / LIVE USER GATE NOT OPEN**
+Build capacity reopened and branch deployment succeeded:
+- `dpl_EzFX9UK9NJkHPvTp5UvoSRoKTjVA`
+- READY
+- host `relational-key-collectionrelational-key-collection-cztjb30l3.vercel.app`
+- deployed commit `91ad10e8ad6071b2ce6d5c8a1abde3f58070e41e`.
+
+Candidate integrity proof:
+- implementation blob = `118cd6c5b65c9e7e8cc62842510cb37acc97d98a`
+- deployed-commit blob = `118cd6c5b65c9e7e8cc62842510cb37acc97d98a`
+- exact candidate unchanged.
+
+Protected preview:
+raw automated fetch receives Vercel SSO 302 rather than application content; this is preview authentication, not a route/application failure. Temporary USER share access generated.
+
+USER gate register:
+`POST_CLOSEOUT_R5_8C_CITY_GATINEAU_USER_GATE.md` @ `7bb5258dda14a29e05579aac56b399474fefa65c`.
+
+Candidate URL:
+`https://relational-key-collectionrelational-key-collection-cztjb30l3.vercel.app/families/city-gatineau/r5-8.html?_vercel_share=8sEtIUzNoG3jkCZ4xHf180lJUNz3zwde`
 
 Public City wrapper unchanged.
 Shared runtime unchanged.
-City remains ADEQUATE.
+City remains ADEQUATE pending USER proof.
 
-# EXACT NEXT ACTION
-Retry only when deployment capacity is available, using the unchanged candidate `796ee8afc24c879d148b90046037f80b0c5bcec6`.
-Require:
-1. READY deployment;
-2. `/families/city-gatineau/r5-8.html` HTTP 200;
-3. temporary share URL;
-4. then one MATCHING + OTHER USER proof;
-5. judge CAUSAL / EMBODIMENT-STRONG / VISUAL-SPECIFICITY / TRUTH;
-6. only USER PASS may authorize City promotion and ADEQUATE → STRONG.
+# EXACT NEXT USER ACTION
+1. `MATCHING CROSSING` → `TEST RELATIONSHIP`;
+2. hold shared span / handoff crossing;
+3. `OTHER CROSSING` → `TEST RELATIONSHIP`;
+4. hold offset-anchor / misseated-crossing residual.
 
-Do not generate new semantic City commits merely to probe Vercel capacity.
+On upload judge separately:
+- CAUSAL;
+- EMBODIMENT-STRONG;
+- VISUAL-SPECIFICITY;
+- TRUTH.
+
+If USER PASS:
+1. promote City-specific candidate only;
+2. verify public route LIVE;
+3. reclassify City ADEQUATE → STRONG;
+4. matrix becomes STRONG 21 / ADEQUATE 3 / EXPERIENCE DEBT 0;
+5. update registers + CURRENT_STATE + HANDOVER + PR body;
+6. proceed to R5.9 Service / Benin.
+
 PR #21 remains Draft / DO NOT MERGE.
