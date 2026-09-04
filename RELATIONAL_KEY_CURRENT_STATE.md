@@ -6,7 +6,6 @@ Canonical branch: `collection/global-refinement-1`
 Draft PR: #21 — `DRAFT / DO NOT MERGE`
 
 # PRODUCT ROOT
-
 **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 `PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
 
@@ -18,10 +17,7 @@ Frozen expansion laws:
 
 # FROZEN PRIOR CHECKPOINT ✅
 Previous Global Refinement closeout remains PASS / frozen.
-- VALIDATED 24
-- USER relational integrity 24/24 PASS
-- route/promotion integrity closeout PASS
-- shared runtime unchanged from PR base
+VALIDATED 24. USER relational integrity 24/24 PASS. Shared runtime unchanged from PR base.
 
 # ACTIVE PHASE
 # **R5 — ADEQUATE → STRONG EXPERIENTIAL REFINEMENT**
@@ -30,55 +26,74 @@ Execution order:
 Food → Textile → Metate → Tongiaki → Garamut → Kento → Swell → City → Service → Signal → Frida.
 
 Current matrix:
-# **STRONG 19 / ADEQUATE 5 / EXPERIENCE DEBT 0**
+# **STRONG 20 / ADEQUATE 4 / EXPERIENCE DEBT 0**
 
-R5 does not authorize merge or review-state changes.
+Closed STRONG in R5:
+- Food / Toyama
+- Textile / Bonwire
+- Metate / Teotitlán
+- Tongiaki / Tonga
+- Garamut / East Sepik–Ramu
+- Kento / Japan
+- Swell / Marshall Islands
 
-# CLOSED STRONG IN R5 ✅
-- Food / Toyama — `PRESSURE-TO-UNFOLD REVEAL`
-- Textile / Bonwire — `SELVEDGE OVERCAST JOIN`
-- Metate / Teotitlán — `RECIPROCAL ABRASION / FINENESS ACCUMULATION`
-- Tongiaki / Tonga — `CROSSBEAM LASHING → SHARED PLATFORM`
-- Garamut / East Sepik–Ramu — `IMPACT → BODY RESONANCE → DECAY → RE-ARM → INTERVAL MEMORY`
-- Kento / Japan — `RETURN-TO-KENTŌ → SUCCESSIVE COLOR BUILD`
-
-# R5.6 — KENTO / JAPAN — CLOSED ✅
-USER proof: `/mnt/data/11a7f871-3deb-4e01-854e-fd34579fccf4.mp4` — 16.63 s / 1900×968 / 30 fps / 499 frames.
+# R5.7 — SWELL / MARSHALL ISLANDS — CLOSED ✅
+USER proof: `/mnt/data/299de104-2352-483c-a8e6-512b52040e6d.mp4` — 12.90 s / 1912×964 / 30 fps / 387 frames.
 Verdict: `CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
-Promotion: `families/kento-japan/index.html` @ `fae7aeaef5e674e8da538b191586f8ee22437f38`.
-LIVE: `dpl_6BnZ11jPuBcYG3bBWT7o2DH8DbBc` — READY at exact promotion commit; public route HTTP 200.
-Closure: `POST_CLOSEOUT_R5_6C_KENTO_JAPAN_USER_PASS_PROMOTION_STRONG.md` @ `cdd646e78855515c9f686c2ed4abca4c946eaaad`.
-Kento = STRONG.
+Promotion: `families/swell-marshall/index.html` @ `32b2744c9624a82ef2798b31266404e54f998771`.
+LIVE: `dpl_Ew6K7raX9jBryigWqAkMr5xRsHLa` — READY at exact promotion commit; public route HTTP 200.
+Closure: `POST_CLOSEOUT_R5_7C_SWELL_MARSHALL_USER_PASS_PROMOTION_STRONG.md` @ `941f9f94f8556d77cf1ff046e5ff5c39e9702903`.
+Swell = STRONG.
 
-# R5.7 — SWELL / MARSHALL ISLANDS — ACTIVE
-Baseline classification: `ADEQUATE`.
-Existing G4 orientation/swell hierarchy polish remains valid and is not repeated.
+# R5.8 — CITY / GATINEAU — ACTIVE
+Baseline: ADEQUATE.
+Existing EXP-1 / EXP-1B route handoff and Gatineau visual identity remain valid.
 
-Source audit: `POST_CLOSEOUT_R5_7A_SWELL_MARSHALL_SOURCE_LEE_CROSSING_AUDIT.md` @ `85bf76042851dc611825c425363115e8574e2505`.
-Mechanism: **INCIDENT SWELL → ATOLL EDGES → REFRACTED SHOULDERS → LEE CROSSING → LAND SIGNATURE**.
-Candidate: `families/swell-marshall/r5-7.html` @ `e2b41b37500edc346164b937f43c3a25c505f731`.
-Candidate register: `POST_CLOSEOUT_R5_7B_SWELL_MARSHALL_LEE_CROSSING_CANDIDATE.md` @ `8f3f7b9ff06bcb4f1c953dd8e5b34a7f474e92fd`.
-USER gate register: `POST_CLOSEOUT_R5_7C_SWELL_MARSHALL_USER_GATE.md` (blob `b0076bac2cd4953ee4c10742d4e4c921181ea281`).
-LIVE candidate: `dpl_HdHuFuFVBQTh5HCWSWiiRNNQBhds` — READY; route HTTP 200.
+Source audit:
+`POST_CLOSEOUT_R5_8A_CITY_GATINEAU_SOURCE_RIVER_SEAM_AUDIT.md`
+@ `88fab6997118aacd9168b7aa03a9f7298e18ec3a`.
 
-MATCHING: two refracted swell trains converge and cross inside Card B’s lee field → `LEE CROSSING REGISTERED · RELATIONAL LAND SIGNATURE PERSISTS`.
-OTHER: two valid swell trains remain but crossing is displaced → `TWO VALID SWELL TRAINS · CROSSING POINT DISPLACED · BOTH RECORDS VALID`.
+Mechanism:
+# **RIVER-SEAM CROSSING / BANK-TO-BANK HANDOFF**
 
-Truth boundary: editorial visualization only; no historical chart decoding, real-time navigation aid or exact oceanographic simulation claim.
+Law:
+`WEST-BANK ROUTE → RIVER EDGE → CROSSING ANCHORS SEAT → SPAN FORMS → HANDOFF CROSSES → EAST-BANK ROUTE CONTINUES`
 
-Public Swell wrapper unchanged. Shared runtime unchanged. Swell remains ADEQUATE pending USER proof.
+Candidate:
+`families/city-gatineau/r5-8.html`
+Implementation `796ee8afc24c879d148b90046037f80b0c5bcec6`.
 
-# ACTIVE GATE
-# **R5.7C — SWELL / MARSHALL ISLANDS USER MATCHING + OTHER REGRESSION**
+Candidate/blocker register:
+`POST_CLOSEOUT_R5_8B_CITY_GATINEAU_RIVER_SEAM_CANDIDATE_LIVE_BLOCKER.md`
+@ `378fcff2e7bd95e5e693013fd8040ec3bf79aa3c`.
 
-Candidate URL:
-`https://relational-key-collectionrelational-key-collection-9vgfkjynj.vercel.app/families/swell-marshall/r5-7.html?_vercel_share=w3kc6Kug0vSlt6gAtPgTB05aAwTl9lr9`
+SOURCE candidate: PASS.
+LIVE candidate: BLOCKED by Vercel Hobby `build-rate-limit` on exact candidate commit.
+Public City wrapper unchanged.
+Shared runtime unchanged.
+City remains ADEQUATE.
 
-Record one ~10–15 s proof:
-1. `MATCHING SWELL` → `TEST RELATIONSHIP`;
-2. hold final lee-crossing state;
-3. `OTHER SWELL` → `TEST RELATIONSHIP`;
-4. hold displaced-crossing residual.
+# STATE SEPARATION
+- PRIOR GLOBAL CLOSEOUT: PASS / frozen
+- Swell R5.7: STRONG / CLOSED
+- SOURCE City audit: PASS
+- SOURCE City candidate: PASS
+- LIVE City candidate: BLOCKED — Vercel build-rate-limit
+- USER City R5.8: NOT STARTED
+- public City R5.8 promotion: NOT STARTED
+- shared runtime: unchanged
+- VALIDATED: 24
+- matrix: STRONG 20 / ADEQUATE 4 / EXPERIENCE DEBT 0
+- PR #21: DRAFT / DO NOT MERGE
 
-Judge CAUSAL / EMBODIMENT-STRONG / VISUAL-SPECIFICITY / TRUTH separately.
-Do not promote or reclassify Swell before USER PASS.
+# ACTIVE GATE / NEXT EXACT OUTPUT
+# **R5.8B-LIVE — CITY / GATINEAU CANDIDATE DEPLOYMENT RETRY**
+
+When Vercel build capacity is available:
+1. deploy exact candidate `796ee8afc24c879d148b90046037f80b0c5bcec6` without semantic changes;
+2. require READY;
+3. verify `/families/city-gatineau/r5-8.html` HTTP 200;
+4. create temporary USER access URL;
+5. only then open City USER MATCHING + OTHER regression.
+
+Do not promote or reclassify City before USER PASS.
