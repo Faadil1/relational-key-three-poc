@@ -21,4 +21,4 @@ Shared runtime unchanged.
 
 # ACTIVE GATE
 # **R5.11D-LIVE — FRIDA / COYOACÁN PUBLIC PROMOTION RETRY**
-Require READY deployment containing the promoted wrapper and verify public `/families/frida-coyoacan/` resolves to `r5-11.html`. Then Frida becomes STRONG and R5 closes at **STRONG 24 / ADEQUATE 0 / EXPERIENCE DEBT 0**.
+Require READY deployment containing promoted wrapper and verify public `/families/frida-coyoacan/` resolves to `r5-11.html`. Then Frida becomes STRONG and R5 closes at **STRONG 24 / ADEQUATE 0 / EXPERIENCE DEBT 0**.
