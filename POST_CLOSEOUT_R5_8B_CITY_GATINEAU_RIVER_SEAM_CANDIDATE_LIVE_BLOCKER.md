@@ -46,10 +46,17 @@ Canonical interpretation:
 
 ## Retry 01
 
-A deployment-only retry is triggered on 2026-09-03 without any semantic or visual change to `families/city-gatineau/r5-8.html`.
+A deployment-only retry was triggered on 2026-09-03 without any semantic or visual change to `families/city-gatineau/r5-8.html`.
 The candidate implementation remains exactly `796ee8afc24c879d148b90046037f80b0c5bcec6`.
+Retry trigger commit: `43c3c8a998191ac73e621142575ca9a18b7288e5`.
 
-Retry acceptance criteria:
+Result:
+- Vercel status again returned `failure`;
+- target again points to Hobby `build-rate-limit`;
+- no new deployment was created after `dpl_Ew6K7raX9jBryigWqAkMr5xRsHLa`;
+- direct deployment fallback via the currently connected deployment action could not be used, so no alternate deployment is claimed.
+
+Retry acceptance criteria remain:
 1. Vercel deployment reaches `READY`;
 2. deployed branch contains the unchanged `r5-8.html` candidate;
 3. `/families/city-gatineau/r5-8.html` returns HTTP 200 through authenticated Vercel fetch;
@@ -58,5 +65,6 @@ Retry acceptance criteria:
 Do not infer application failure.
 Do not promote City.
 Do not request USER proof until the retry satisfies all acceptance criteria.
+Do not generate additional semantic candidate commits merely to probe capacity.
 Public City wrapper remains unchanged.
 Shared runtime remains unchanged.
