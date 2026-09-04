@@ -1,6 +1,6 @@
 # RELATIONAL KEY — R5.9C SERVICE / BENIN USER PASS — PROMOTION PENDING LIVE
 
-Date: 2026-09-03
+Date: 2026-09-04
 Branch: `collection/global-refinement-1`
 PR #21: `DRAFT / DO NOT MERGE`
 
@@ -47,8 +47,11 @@ LIVE promotion status:
 Vercel status on promotion commit reports Hobby `build-rate-limit` failure.
 No READY public-promotion deployment is claimed yet.
 
+Retry note — 2026-09-04:
+Explicit human retry requested. This commit changes only this pending-LIVE register to retrigger branch deployment. No Service candidate, public-wrapper semantics, or shared runtime changes are authorized or made.
+
 Canonical interpretation:
-# **USER PASS / PROMOTION COMMITTED / LIVE PROMOTION BLOCKED**
+# **USER PASS / PROMOTION COMMITTED / LIVE PROMOTION RETRY REQUESTED**
 
 Do not request another Service USER proof absent contradictory evidence.
 Do not change candidate semantics.
