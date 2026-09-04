@@ -17,7 +17,7 @@ Food → Textile → Metate → Tongiaki → Garamut → Kento → Swell → Cit
 Do not force all families to STRONG.
 
 # CURRENT MATRIX
-# **STRONG 19 / ADEQUATE 5 / EXPERIENCE DEBT 0**
+# **STRONG 20 / ADEQUATE 4 / EXPERIENCE DEBT 0**
 VALIDATED remains 24.
 
 # CLOSED R5 ✅
@@ -27,37 +27,32 @@ VALIDATED remains 24.
 - R5.4 Tongiaki / Tonga — STRONG — `CROSSBEAM LASHING → SHARED PLATFORM`
 - R5.5 Garamut / East Sepik–Ramu — STRONG — `IMPACT → BODY RESONANCE → DECAY → RE-ARM → INTERVAL MEMORY`
 - R5.6 Kento / Japan — STRONG — `RETURN-TO-KENTŌ → SUCCESSIVE COLOR BUILD`
+- R5.7 Swell / Marshall Islands — STRONG — `INCIDENT SWELL → ATOLL EDGES → REFRACTED SHOULDERS → LEE CROSSING → LAND SIGNATURE`
 
-## R5.6 Kento closure
-USER proof `/mnt/data/11a7f871-3deb-4e01-854e-fd34579fccf4.mp4` — 16.63 s / 1900×968 / 30 fps / 499 frames.
+## R5.7 Swell closure
+USER proof `/mnt/data/299de104-2352-483c-a8e6-512b52040e6d.mp4` — 12.90 s / 1912×964 / 30 fps / 387 frames.
 USER verdict `CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
-Promotion `families/kento-japan/index.html` @ `fae7aeaef5e674e8da538b191586f8ee22437f38`.
-LIVE `dpl_6BnZ11jPuBcYG3bBWT7o2DH8DbBc` READY; public route verified HTTP 200.
-Closure `POST_CLOSEOUT_R5_6C_KENTO_JAPAN_USER_PASS_PROMOTION_STRONG.md` @ `cdd646e78855515c9f686c2ed4abca4c946eaaad`.
+Promotion `families/swell-marshall/index.html` @ `32b2744c9624a82ef2798b31266404e54f998771`.
+LIVE `dpl_Ew6K7raX9jBryigWqAkMr5xRsHLa` READY; public route verified HTTP 200.
+Closure `POST_CLOSEOUT_R5_7C_SWELL_MARSHALL_USER_PASS_PROMOTION_STRONG.md` @ `941f9f94f8556d77cf1ff046e5ff5c39e9702903`.
 
-# R5.7 — SWELL / MARSHALL ISLANDS — ACTIVE
+# R5.8 — CITY / GATINEAU — ACTIVE
 Baseline: ADEQUATE.
-Source audit `POST_CLOSEOUT_R5_7A_SWELL_MARSHALL_SOURCE_LEE_CROSSING_AUDIT.md` @ `85bf76042851dc611825c425363115e8574e2505`.
-Mechanism: **INCIDENT SWELL → ATOLL EDGES → REFRACTED SHOULDERS → LEE CROSSING → LAND SIGNATURE**.
-Candidate `families/swell-marshall/r5-7.html` @ implementation `e2b41b37500edc346164b937f43c3a25c505f731`.
-Candidate register `POST_CLOSEOUT_R5_7B_SWELL_MARSHALL_LEE_CROSSING_CANDIDATE.md` @ `8f3f7b9ff06bcb4f1c953dd8e5b34a7f474e92fd`.
-USER gate register `POST_CLOSEOUT_R5_7C_SWELL_MARSHALL_USER_GATE.md` (blob `b0076bac2cd4953ee4c10742d4e4c921181ea281`).
-LIVE candidate `dpl_HdHuFuFVBQTh5HCWSWiiRNNQBhds` READY; route HTTP 200.
+Source audit `POST_CLOSEOUT_R5_8A_CITY_GATINEAU_SOURCE_RIVER_SEAM_AUDIT.md` @ `88fab6997118aacd9168b7aa03a9f7298e18ec3a`.
+Mechanism: **RIVER-SEAM CROSSING / BANK-TO-BANK HANDOFF**.
+Candidate `families/city-gatineau/r5-8.html` @ `796ee8afc24c879d148b90046037f80b0c5bcec6`.
+Candidate/blocker register `POST_CLOSEOUT_R5_8B_CITY_GATINEAU_RIVER_SEAM_CANDIDATE_LIVE_BLOCKER.md` @ `378fcff2e7bd95e5e693013fd8040ec3bf79aa3c`.
 
-MATCHING: two refracted trains cross inside Card B’s lee field → `LEE CROSSING REGISTERED · RELATIONAL LAND SIGNATURE PERSISTS`.
-OTHER: two valid trains remain but crossing is displaced → `TWO VALID SWELL TRAINS · CROSSING POINT DISPLACED · BOTH RECORDS VALID`.
-
-Truth boundary: editorial visualization only; no historical chart decoding or real-time navigation claim.
-
-Public Swell wrapper unchanged. Shared runtime unchanged. Swell remains ADEQUATE pending USER proof.
+SOURCE candidate: PASS.
+LIVE candidate: BLOCKED by Vercel Hobby build-rate-limit on exact candidate commit.
+Public City wrapper unchanged. Shared runtime unchanged. City remains ADEQUATE.
 
 # ACTIVE GATE
-# **R5.7C — SWELL / MARSHALL ISLANDS USER MATCHING + OTHER REGRESSION**
+# **R5.8B-LIVE — CITY / GATINEAU CANDIDATE DEPLOYMENT RETRY**
 
-Required proof:
-1. `MATCHING SWELL` → `TEST RELATIONSHIP`;
-2. hold final lee-crossing state;
-3. `OTHER SWELL` → `TEST RELATIONSHIP`;
-4. hold displaced-crossing residual.
-
-Only USER PASS may authorize Swell promotion and ADEQUATE → STRONG.
+Next:
+1. retry exact candidate deployment without semantic changes;
+2. require READY and candidate route HTTP 200;
+3. issue USER preview;
+4. judge MATCHING + OTHER proof;
+5. only USER PASS may authorize City ADEQUATE → STRONG.
