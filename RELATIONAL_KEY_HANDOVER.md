@@ -35,9 +35,10 @@ Promotion SOURCE:
 Pending-LIVE register:
 `POST_CLOSEOUT_R5_8C_CITY_GATINEAU_USER_PASS_PROMOTION_PENDING_LIVE.md` @ `2f3525bc4a01c04420557cc5ba9d6937e8ee5ca6`.
 
-Latest canonical syncs:
-- CURRENT_STATE `2cff10b67e62d41edb717d458415291e76495735`
-- R5 queue `d6faf0e87d25d02c76aa44993cd4d3d3f8b4cbd5`
+Latest canonical state commit:
+`25bad7c83a1ccfe0af7fc3d789b7f29df2b8b9d4`.
+R5 queue:
+`d6faf0e87d25d02c76aa44993cd4d3d3f8b4cbd5`.
 
 LIVE blocker:
 Vercel Hobby `build-rate-limit` still affects the promotion commit and later sync commits. This is deployment capacity only.
