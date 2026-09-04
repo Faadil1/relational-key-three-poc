@@ -1,0 +1,127 @@
+{
+  "registered_count": 24,
+  "pass_count": 24,
+  "results": [
+    {
+      "id": "city-gatineau",
+      "route": "/families/city-gatineau/",
+      "status": 200
+    },
+    {
+      "id": "service-benin",
+      "route": "/families/service-benin/",
+      "status": 200
+    },
+    {
+      "id": "signal-nigeria",
+      "route": "/families/signal-nigeria/",
+      "status": 200
+    },
+    {
+      "id": "frida-coyoacan",
+      "route": "/families/frida-coyoacan/",
+      "status": 200
+    },
+    {
+      "id": "food-toyama",
+      "route": "/families/food-toyama/",
+      "status": 200
+    },
+    {
+      "id": "textile-bonwire",
+      "route": "/families/textile-bonwire/",
+      "status": 200
+    },
+    {
+      "id": "zellige-fes",
+      "route": "/families/zellige-fes/",
+      "status": 200
+    },
+    {
+      "id": "khipu-peru",
+      "route": "/families/khipu-peru/",
+      "status": 200
+    },
+    {
+      "id": "kento-japan",
+      "route": "/families/kento-japan/",
+      "status": 200
+    },
+    {
+      "id": "ombak-bali",
+      "route": "/families/ombak-bali/",
+      "status": 200
+    },
+    {
+      "id": "swell-marshall",
+      "route": "/families/swell-marshall/",
+      "status": 200
+    },
+    {
+      "id": "stereoscopy-uk",
+      "route": "/families/stereoscopy-uk/",
+      "status": 200
+    },
+    {
+      "id": "siku-bolivia",
+      "route": "/families/siku-bolivia/",
+      "status": 200
+    },
+    {
+      "id": "hika-ahi-aotearoa",
+      "route": "/families/hika-ahi-aotearoa/",
+      "status": 200
+    },
+    {
+      "id": "boulle-france",
+      "route": "/families/boulle-france/",
+      "status": 200
+    },
+    {
+      "id": "astrolabe-isfahan",
+      "route": "/families/astrolabe-isfahan/",
+      "status": 200
+    },
+    {
+      "id": "coupler-virginia",
+      "route": "/families/coupler-virginia/",
+      "status": 200
+    },
+    {
+      "id": "metate-teotitlan",
+      "route": "/families/metate-teotitlan/",
+      "status": 200
+    },
+    {
+      "id": "funicular-valparaiso",
+      "route": "/families/funicular-valparaiso/",
+      "status": 200
+    },
+    {
+      "id": "mate-bombilla-argentina",
+      "route": "/families/mate-bombilla-argentina/",
+      "status": 200
+    },
+    {
+      "id": "tongiaki-tonga",
+      "route": "/families/tongiaki-tonga/",
+      "status": 200
+    },
+    {
+      "id": "garamut-sepik-ramu",
+      "route": "/families/garamut-sepik-ramu/",
+      "status": 200
+    },
+    {
+      "id": "anamorphosis-paris",
+      "route": "/families/anamorphosis-paris/",
+      "status": 200
+    },
+    {
+      "id": "music-box-sainte-croix",
+      "route": "/families/music-box-sainte-croix/",
+      "status": 200
+    }
+  ],
+  "failures": []
+}

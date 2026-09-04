@@ -1,0 +1,1393 @@
+{
+  "gate": "6.5",
+  "base_url": "http://127.0.0.1:4173",
+  "root": {
+    "desktop": {
+      "http_status": 200,
+      "family_count": 24,
+      "no_horizontal_overflow": true,
+      "diagnostics": {
+        "href": "http://127.0.0.1:4173/",
+        "title": "RELATIONAL KEY — Collection",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 3748,
+        "reducedMotion": false,
+        "resultRole": null,
+        "resultLive": null,
+        "resultAtomic": null,
+        "resultFontSize": null,
+        "truthFontSize": null,
+        "sourceFontSize": null,
+        "roleFontSize": null,
+        "contextFontSize": null,
+        "motionProbe": null
+      },
+      "errors": []
+    },
+    "mobile": {
+      "http_status": 200,
+      "family_count": 24,
+      "no_horizontal_overflow": true,
+      "diagnostics": {
+        "href": "http://127.0.0.1:4173/",
+        "title": "RELATIONAL KEY — Collection",
+        "width": 390,
+        "height": 844,
+        "scrollWidth": 390,
+        "scrollHeight": 9077,
+        "reducedMotion": false,
+        "resultRole": null,
+        "resultLive": null,
+        "resultAtomic": null,
+        "resultFontSize": null,
+        "truthFontSize": null,
+        "sourceFontSize": null,
+        "roleFontSize": null,
+        "contextFontSize": null,
+        "motionProbe": null
+      },
+      "errors": []
+    }
+  },
+  "representatives": {
+    "city-gatineau": {
+      "path": "/families/city-gatineau/r5-8.html",
+      "http_status": 200,
+      "idle": {
+        "href": "http://127.0.0.1:4173/families/city-gatineau/r5-8.html",
+        "title": "RELATIONAL KEY — Gatineau River-Seam Handoff",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "reducedMotion": false,
+        "resultRole": "status",
+        "resultLive": "polite",
+        "resultAtomic": "true",
+        "resultFontSize": "8px",
+        "truthFontSize": "8px",
+        "sourceFontSize": "8px",
+        "roleFontSize": "8px",
+        "contextFontSize": "8px",
+        "motionProbe": {
+          "transitionDuration": "0s",
+          "animationDuration": "0s"
+        }
+      },
+      "matching": {
+        "before": "TWO VALID CITY FRAGMENTS · CROSSING UNTESTED",
+        "after": "RIVER-SEAM HANDOFF REGISTERED · CITY PASSAGE CONTINUES",
+        "phase": "done",
+        "class": "result ok"
+      },
+      "other": {
+        "before": "TWO VALID CITY FRAGMENTS · CROSSING UNTESTED",
+        "after": "TWO VALID ROUTE FRAGMENTS · CROSSING ANCHORS OFFSET · NO SHARED SPAN",
+        "phase": "other",
+        "class": "result bad"
+      },
+      "interruption": {
+        "result": "TWO VALID ROUTE FRAGMENTS · CROSSING ANCHORS OFFSET · NO SHARED SPAN",
+        "phase": "other"
+      },
+      "keyboard": {
+        "focus": {
+          "activeId": "run",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineOffset": "3px",
+          "rect": {
+            "width": 220,
+            "height": 41
+          }
+        },
+        "result": "RIVER-SEAM HANDOFF REGISTERED · CITY PASSAGE CONTINUES",
+        "focus_input_path": "Tab",
+        "focus_http_status": 200
+      },
+      "mobile": {
+        "diagnostics": {
+          "href": "http://127.0.0.1:4173/families/city-gatineau/r5-8.html",
+          "title": "RELATIONAL KEY — Gatineau River-Seam Handoff",
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 1289,
+          "reducedMotion": false,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "9px",
+          "truthFontSize": "9px",
+          "sourceFontSize": "9px",
+          "roleFontSize": "9px",
+          "contextFontSize": "9px",
+          "motionProbe": {
+            "transitionDuration": "0s",
+            "animationDuration": "0s"
+          }
+        },
+        "no_horizontal_overflow": true
+      },
+      "reduced_motion": {
+        "before": {
+          "href": "http://127.0.0.1:4173/families/city-gatineau/r5-8.html",
+          "title": "RELATIONAL KEY — Gatineau River-Seam Handoff",
+          "width": 1440,
+          "height": 1000,
+          "scrollWidth": 1440,
+          "scrollHeight": 1000,
+          "reducedMotion": true,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "8px",
+          "truthFontSize": "8px",
+          "sourceFontSize": "8px",
+          "roleFontSize": "8px",
+          "contextFontSize": "8px",
+          "motionProbe": {
+            "transitionDuration": "1e-06s",
+            "animationDuration": "1e-06s"
+          }
+        },
+        "matching": {
+          "before": "TWO VALID CITY FRAGMENTS · CROSSING UNTESTED",
+          "after": "RIVER-SEAM HANDOFF REGISTERED · CITY PASSAGE CONTINUES",
+          "phase": "done",
+          "class": "result ok"
+        },
+        "after": {
+          "href": "http://127.0.0.1:4173/families/city-gatineau/r5-8.html",
+          "title": "RELATIONAL KEY — Gatineau River-Seam Handoff",
+          "width": 1440,
+          "height": 1000,
+          "scrollWidth": 1440,
+          "scrollHeight": 1000,
+          "reducedMotion": true,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "8px",
+          "truthFontSize": "8px",
+          "sourceFontSize": "8px",
+          "roleFontSize": "8px",
+          "contextFontSize": "8px",
+          "motionProbe": {
+            "transitionDuration": "1e-06s",
+            "animationDuration": "1e-06s"
+          }
+        }
+      },
+      "performance": {
+        "Nodes": 190,
+        "LayoutCount": 73,
+        "RecalcStyleCount": 184,
+        "LayoutDuration": 0.01054,
+        "RecalcStyleDuration": 0.009442,
+        "ScriptDuration": 0.005577,
+        "TaskDuration": 0.1012,
+        "JSHeapUsedSize": 2729944
+      },
+      "final": {
+        "href": "http://127.0.0.1:4173/families/city-gatineau/r5-8.html",
+        "title": "RELATIONAL KEY — Gatineau River-Seam Handoff",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "reducedMotion": false,
+        "resultRole": "status",
+        "resultLive": "polite",
+        "resultAtomic": "true",
+        "resultFontSize": "8px",
+        "truthFontSize": "8px",
+        "sourceFontSize": "8px",
+        "roleFontSize": "8px",
+        "contextFontSize": "8px",
+        "motionProbe": {
+          "transitionDuration": "0s",
+          "animationDuration": "0s"
+        }
+      },
+      "errors": []
+    },
+    "service-benin": {
+      "path": "/families/service-benin/r5-9.html",
+      "http_status": 200,
+      "idle": {
+        "href": "http://127.0.0.1:4173/families/service-benin/r5-9.html",
+        "title": "RELATIONAL KEY — Bénin Chip-Card / Publiphone Register",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "reducedMotion": false,
+        "resultRole": "status",
+        "resultLive": "polite",
+        "resultAtomic": "true",
+        "resultFontSize": "8px",
+        "truthFontSize": "8px",
+        "sourceFontSize": "8px",
+        "roleFontSize": "8px",
+        "contextFontSize": "8px",
+        "motionProbe": {
+          "transitionDuration": "0s",
+          "animationDuration": "0s"
+        }
+      },
+      "matching": {
+        "before": "TWO VALID OBJECTS · CONTACT RELATION UNTESTED",
+        "after": "CONTACT FIELD REGISTERED · LINE WINDOW OPEN",
+        "phase": "open",
+        "class": "result ok"
+      },
+      "other": {
+        "before": "TWO VALID OBJECTS · CONTACT RELATION UNTESTED",
+        "after": "TWO VALID OBJECTS · CONTACTS OFFSET · LINE WINDOW REMAINS CLOSED",
+        "phase": "other",
+        "class": "result bad"
+      },
+      "interruption": {
+        "result": "TWO VALID OBJECTS · CONTACTS OFFSET · LINE WINDOW REMAINS CLOSED",
+        "phase": "other"
+      },
+      "keyboard": {
+        "focus": {
+          "activeId": "run",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineOffset": "3px",
+          "rect": {
+            "width": 220,
+            "height": 41
+          }
+        },
+        "result": "CONTACT FIELD REGISTERED · LINE WINDOW OPEN",
+        "focus_input_path": "Tab",
+        "focus_http_status": 200
+      },
+      "mobile": {
+        "diagnostics": {
+          "href": "http://127.0.0.1:4173/families/service-benin/r5-9.html",
+          "title": "RELATIONAL KEY — Bénin Chip-Card / Publiphone Register",
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 1297,
+          "reducedMotion": false,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "9px",
+          "truthFontSize": "9px",
+          "sourceFontSize": "9px",
+          "roleFontSize": "9px",
+          "contextFontSize": "9px",
+          "motionProbe": {
+            "transitionDuration": "0s",
+            "animationDuration": "0s"
+          }
+        },
+        "no_horizontal_overflow": true
+      },
+      "reduced_motion": {
+        "before": {
+          "href": "http://127.0.0.1:4173/families/service-benin/r5-9.html",
+          "title": "RELATIONAL KEY — Bénin Chip-Card / Publiphone Register",
+          "width": 1440,
+          "height": 1000,
+          "scrollWidth": 1440,
+          "scrollHeight": 1000,
+          "reducedMotion": true,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "8px",
+          "truthFontSize": "8px",
+          "sourceFontSize": "8px",
+          "roleFontSize": "8px",
+          "contextFontSize": "8px",
+          "motionProbe": {
+            "transitionDuration": "1e-06s",
+            "animationDuration": "1e-06s"
+          }
+        },
+        "matching": {
+          "before": "TWO VALID OBJECTS · CONTACT RELATION UNTESTED",
+          "after": "CONTACT FIELD REGISTERED · LINE WINDOW OPEN",
+          "phase": "open",
+          "class": "result ok"
+        },
+        "after": {
+          "href": "http://127.0.0.1:4173/families/service-benin/r5-9.html",
+          "title": "RELATIONAL KEY — Bénin Chip-Card / Publiphone Register",
+          "width": 1440,
+          "height": 1000,
+          "scrollWidth": 1440,
+          "scrollHeight": 1000,
+          "reducedMotion": true,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "8px",
+          "truthFontSize": "8px",
+          "sourceFontSize": "8px",
+          "roleFontSize": "8px",
+          "contextFontSize": "8px",
+          "motionProbe": {
+            "transitionDuration": "1e-06s",
+            "animationDuration": "1e-06s"
+          }
+        }
+      },
+      "performance": {
+        "Nodes": 256,
+        "LayoutCount": 25,
+        "RecalcStyleCount": 168,
+        "LayoutDuration": 0.011408,
+        "RecalcStyleDuration": 0.012219,
+        "ScriptDuration": 0.005113,
+        "TaskDuration": 0.097491,
+        "JSHeapUsedSize": 2687264
+      },
+      "final": {
+        "href": "http://127.0.0.1:4173/families/service-benin/r5-9.html",
+        "title": "RELATIONAL KEY — Bénin Chip-Card / Publiphone Register",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "reducedMotion": false,
+        "resultRole": "status",
+        "resultLive": "polite",
+        "resultAtomic": "true",
+        "resultFontSize": "8px",
+        "truthFontSize": "8px",
+        "sourceFontSize": "8px",
+        "roleFontSize": "8px",
+        "contextFontSize": "8px",
+        "motionProbe": {
+          "transitionDuration": "0s",
+          "animationDuration": "0s"
+        }
+      },
+      "errors": []
+    },
+    "signal-nigeria": {
+      "path": "/families/signal-nigeria/r5-10.html",
+      "http_status": 200,
+      "idle": {
+        "href": "http://127.0.0.1:4173/families/signal-nigeria/r5-10.html",
+        "title": "RELATIONAL KEY — Nigeria Lanlate / Repeater Register",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "reducedMotion": false,
+        "resultRole": "status",
+        "resultLive": "polite",
+        "resultAtomic": "true",
+        "resultFontSize": "8px",
+        "truthFontSize": "8px",
+        "sourceFontSize": "8px",
+        "roleFontSize": "8px",
+        "contextFontSize": "8px",
+        "motionProbe": {
+          "transitionDuration": "0s",
+          "animationDuration": "0s"
+        }
+      },
+      "matching": {
+        "before": "TWO VALID SIGNAL MEMBERS · RELATION UNTESTED",
+        "after": "LANLATE CAPTURE CARRIED · THREE REPEATER HANDOFFS REGISTERED",
+        "phase": "complete",
+        "class": "result ok"
+      },
+      "other": {
+        "before": "TWO VALID SIGNAL MEMBERS · RELATION UNTESTED",
+        "after": "BOTH SIGNAL MEMBERS VALID · REPEATER HANDOFF OFFSET · LINK NOT CARRIED",
+        "phase": "otherbreak",
+        "class": "result bad"
+      },
+      "interruption": {
+        "result": "BOTH SIGNAL MEMBERS VALID · REPEATER HANDOFF OFFSET · LINK NOT CARRIED",
+        "phase": "otherbreak"
+      },
+      "keyboard": {
+        "focus": {
+          "activeId": "run",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineOffset": "3px",
+          "rect": {
+            "width": 220,
+            "height": 41
+          }
+        },
+        "result": "LANLATE CAPTURE CARRIED · THREE REPEATER HANDOFFS REGISTERED",
+        "focus_input_path": "Tab",
+        "focus_http_status": 200
+      },
+      "mobile": {
+        "diagnostics": {
+          "href": "http://127.0.0.1:4173/families/signal-nigeria/r5-10.html",
+          "title": "RELATIONAL KEY — Nigeria Lanlate / Repeater Register",
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 1279,
+          "reducedMotion": false,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "9px",
+          "truthFontSize": "9px",
+          "sourceFontSize": "9px",
+          "roleFontSize": "9px",
+          "contextFontSize": "9px",
+          "motionProbe": {
+            "transitionDuration": "0s",
+            "animationDuration": "0s"
+          }
+        },
+        "no_horizontal_overflow": true
+      },
+      "reduced_motion": {
+        "before": {
+          "href": "http://127.0.0.1:4173/families/signal-nigeria/r5-10.html",
+          "title": "RELATIONAL KEY — Nigeria Lanlate / Repeater Register",
+          "width": 1440,
+          "height": 1000,
+          "scrollWidth": 1440,
+          "scrollHeight": 1000,
+          "reducedMotion": true,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "8px",
+          "truthFontSize": "8px",
+          "sourceFontSize": "8px",
+          "roleFontSize": "8px",
+          "contextFontSize": "8px",
+          "motionProbe": {
+            "transitionDuration": "1e-06s",
+            "animationDuration": "1e-06s"
+          }
+        },
+        "matching": {
+          "before": "TWO VALID SIGNAL MEMBERS · RELATION UNTESTED",
+          "after": "LANLATE CAPTURE CARRIED · THREE REPEATER HANDOFFS REGISTERED",
+          "phase": "complete",
+          "class": "result ok"
+        },
+        "after": {
+          "href": "http://127.0.0.1:4173/families/signal-nigeria/r5-10.html",
+          "title": "RELATIONAL KEY — Nigeria Lanlate / Repeater Register",
+          "width": 1440,
+          "height": 1000,
+          "scrollWidth": 1440,
+          "scrollHeight": 1000,
+          "reducedMotion": true,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "8px",
+          "truthFontSize": "8px",
+          "sourceFontSize": "8px",
+          "roleFontSize": "8px",
+          "contextFontSize": "8px",
+          "motionProbe": {
+            "transitionDuration": "1e-06s",
+            "animationDuration": "1e-06s"
+          }
+        }
+      },
+      "performance": {
+        "Nodes": 158,
+        "LayoutCount": 161,
+        "RecalcStyleCount": 213,
+        "LayoutDuration": 0.017172,
+        "RecalcStyleDuration": 0.017333,
+        "ScriptDuration": 0.006246,
+        "TaskDuration": 0.131591,
+        "JSHeapUsedSize": 2752456
+      },
+      "final": {
+        "href": "http://127.0.0.1:4173/families/signal-nigeria/r5-10.html",
+        "title": "RELATIONAL KEY — Nigeria Lanlate / Repeater Register",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "reducedMotion": false,
+        "resultRole": "status",
+        "resultLive": "polite",
+        "resultAtomic": "true",
+        "resultFontSize": "8px",
+        "truthFontSize": "8px",
+        "sourceFontSize": "8px",
+        "roleFontSize": "8px",
+        "contextFontSize": "8px",
+        "motionProbe": {
+          "transitionDuration": "0s",
+          "animationDuration": "0s"
+        }
+      },
+      "errors": []
+    },
+    "frida-coyoacan": {
+      "path": "/families/frida-coyoacan/r5-11.html",
+      "http_status": 200,
+      "idle": {
+        "href": "http://127.0.0.1:4173/families/frida-coyoacan/r5-11.html",
+        "title": "RELATIONAL KEY — Frida / Coyoacán Mirror-to-Easel Register",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "reducedMotion": false,
+        "resultRole": "status",
+        "resultLive": "polite",
+        "resultAtomic": "true",
+        "resultFontSize": "8px",
+        "truthFontSize": "8px",
+        "sourceFontSize": "8px",
+        "roleFontSize": "8px",
+        "contextFontSize": "8px",
+        "motionProbe": {
+          "transitionDuration": "0s",
+          "animationDuration": "0s"
+        }
+      },
+      "matching": {
+        "before": "TWO VALID SUPPORTS · REFLECTION-TO-PAINT RELATION UNTESTED",
+        "after": "REFLECTION REGISTERED · PAINTED SELF-IMAGE FORMED",
+        "phase": "complete",
+        "class": "result ok"
+      },
+      "other": {
+        "before": "TWO VALID SUPPORTS · REFLECTION-TO-PAINT RELATION UNTESTED",
+        "after": "MIRROR + EASEL VALID · TRACE OFFSET · PAINTED REGISTER MISALIGNS",
+        "phase": "otherpaint",
+        "class": "result bad"
+      },
+      "interruption": {
+        "result": "MIRROR + EASEL VALID · TRACE OFFSET · PAINTED REGISTER MISALIGNS",
+        "phase": "otherpaint"
+      },
+      "keyboard": {
+        "focus": {
+          "activeId": "run",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineOffset": "3px",
+          "rect": {
+            "width": 220,
+            "height": 41
+          }
+        },
+        "result": "REFLECTION REGISTERED · PAINTED SELF-IMAGE FORMED",
+        "focus_input_path": "Tab",
+        "focus_http_status": 200
+      },
+      "mobile": {
+        "diagnostics": {
+          "href": "http://127.0.0.1:4173/families/frida-coyoacan/r5-11.html",
+          "title": "RELATIONAL KEY — Frida / Coyoacán Mirror-to-Easel Register",
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 1293,
+          "reducedMotion": false,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "9px",
+          "truthFontSize": "9px",
+          "sourceFontSize": "9px",
+          "roleFontSize": "9px",
+          "contextFontSize": "9px",
+          "motionProbe": {
+            "transitionDuration": "0s",
+            "animationDuration": "0s"
+          }
+        },
+        "no_horizontal_overflow": true
+      },
+      "reduced_motion": {
+        "before": {
+          "href": "http://127.0.0.1:4173/families/frida-coyoacan/r5-11.html",
+          "title": "RELATIONAL KEY — Frida / Coyoacán Mirror-to-Easel Register",
+          "width": 1440,
+          "height": 1000,
+          "scrollWidth": 1440,
+          "scrollHeight": 1000,
+          "reducedMotion": true,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "8px",
+          "truthFontSize": "8px",
+          "sourceFontSize": "8px",
+          "roleFontSize": "8px",
+          "contextFontSize": "8px",
+          "motionProbe": {
+            "transitionDuration": "1e-06s",
+            "animationDuration": "1e-06s"
+          }
+        },
+        "matching": {
+          "before": "TWO VALID SUPPORTS · REFLECTION-TO-PAINT RELATION UNTESTED",
+          "after": "REFLECTION REGISTERED · PAINTED SELF-IMAGE FORMED",
+          "phase": "complete",
+          "class": "result ok"
+        },
+        "after": {
+          "href": "http://127.0.0.1:4173/families/frida-coyoacan/r5-11.html",
+          "title": "RELATIONAL KEY — Frida / Coyoacán Mirror-to-Easel Register",
+          "width": 1440,
+          "height": 1000,
+          "scrollWidth": 1440,
+          "scrollHeight": 1000,
+          "reducedMotion": true,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "8px",
+          "truthFontSize": "8px",
+          "sourceFontSize": "8px",
+          "roleFontSize": "8px",
+          "contextFontSize": "8px",
+          "motionProbe": {
+            "transitionDuration": "1e-06s",
+            "animationDuration": "1e-06s"
+          }
+        }
+      },
+      "performance": {
+        "Nodes": 146,
+        "LayoutCount": 160,
+        "RecalcStyleCount": 219,
+        "LayoutDuration": 0.015595,
+        "RecalcStyleDuration": 0.012386,
+        "ScriptDuration": 0.006027,
+        "TaskDuration": 0.12436,
+        "JSHeapUsedSize": 2752608
+      },
+      "final": {
+        "href": "http://127.0.0.1:4173/families/frida-coyoacan/r5-11.html",
+        "title": "RELATIONAL KEY — Frida / Coyoacán Mirror-to-Easel Register",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "reducedMotion": false,
+        "resultRole": "status",
+        "resultLive": "polite",
+        "resultAtomic": "true",
+        "resultFontSize": "8px",
+        "truthFontSize": "8px",
+        "sourceFontSize": "8px",
+        "roleFontSize": "8px",
+        "contextFontSize": "8px",
+        "motionProbe": {
+          "transitionDuration": "0s",
+          "animationDuration": "0s"
+        }
+      },
+      "errors": [],
+      "mobile_touch": {
+        "http_status": 200,
+        "matching": {
+          "before": "TWO VALID SUPPORTS · REFLECTION-TO-PAINT RELATION UNTESTED",
+          "after": "REFLECTION REGISTERED · PAINTED SELF-IMAGE FORMED",
+          "phase": "complete",
+          "class": "result ok"
+        },
+        "diagnostics": {
+          "href": "http://127.0.0.1:4173/families/frida-coyoacan/r5-11.html",
+          "title": "RELATIONAL KEY — Frida / Coyoacán Mirror-to-Easel Register",
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 1293,
+          "reducedMotion": false,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "9px",
+          "truthFontSize": "9px",
+          "sourceFontSize": "9px",
+          "roleFontSize": "9px",
+          "contextFontSize": "9px",
+          "motionProbe": {
+            "transitionDuration": "0s",
+            "animationDuration": "0s"
+          }
+        },
+        "errors": []
+      }
+    },
+    "food-toyama": {
+      "path": "/families/food-toyama/r5-1.html",
+      "http_status": 200,
+      "idle": {
+        "href": "http://127.0.0.1:4173/families/food-toyama/r5-1.html",
+        "title": "RELATIONAL KEY — Toyama Pressure-to-Unfold",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "reducedMotion": false,
+        "resultRole": "status",
+        "resultLive": "polite",
+        "resultAtomic": "true",
+        "resultFontSize": "8px",
+        "truthFontSize": "8px",
+        "sourceFontSize": "8px",
+        "roleFontSize": "8px",
+        "contextFontSize": "8px",
+        "motionProbe": {
+          "transitionDuration": "0s",
+          "animationDuration": "0s"
+        }
+      },
+      "matching": {
+        "before": "TWO DISTINCT MEMBERS · PRESSURE UNREGISTERED",
+        "after": "LEAVES UNFOLD · MASU-ZUSHI REVEALED",
+        "phase": "reveal",
+        "class": "result ok"
+      },
+      "other": {
+        "before": "TWO DISTINCT MEMBERS · PRESSURE UNREGISTERED",
+        "after": "PRESSURE DOES NOT REGISTER · BOTH MEMBERS REMAIN VALID",
+        "phase": "other",
+        "class": "result bad"
+      },
+      "interruption": {
+        "result": "PRESSURE DOES NOT REGISTER · BOTH MEMBERS REMAIN VALID",
+        "phase": "other"
+      },
+      "keyboard": {
+        "focus": {
+          "activeId": "run",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineOffset": "3px",
+          "rect": {
+            "width": 210,
+            "height": 40
+          }
+        },
+        "result": "PRESSURE DOES NOT REGISTER · BOTH MEMBERS REMAIN VALID",
+        "focus_input_path": "Tab",
+        "focus_http_status": 200
+      },
+      "mobile": {
+        "diagnostics": {
+          "href": "http://127.0.0.1:4173/families/food-toyama/r5-1.html",
+          "title": "RELATIONAL KEY — Toyama Pressure-to-Unfold",
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 1104,
+          "reducedMotion": false,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "9px",
+          "truthFontSize": "9px",
+          "sourceFontSize": "9px",
+          "roleFontSize": "9px",
+          "contextFontSize": "9px",
+          "motionProbe": {
+            "transitionDuration": "0s",
+            "animationDuration": "0s"
+          }
+        },
+        "no_horizontal_overflow": true
+      },
+      "reduced_motion": {
+        "before": {
+          "href": "http://127.0.0.1:4173/families/food-toyama/r5-1.html",
+          "title": "RELATIONAL KEY — Toyama Pressure-to-Unfold",
+          "width": 1440,
+          "height": 1000,
+          "scrollWidth": 1440,
+          "scrollHeight": 1000,
+          "reducedMotion": true,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "8px",
+          "truthFontSize": "8px",
+          "sourceFontSize": "8px",
+          "roleFontSize": "8px",
+          "contextFontSize": "8px",
+          "motionProbe": {
+            "transitionDuration": "1e-06s",
+            "animationDuration": "1e-06s"
+          }
+        },
+        "matching": {
+          "before": "TWO DISTINCT MEMBERS · PRESSURE UNREGISTERED",
+          "after": "LEAVES UNFOLD · MASU-ZUSHI REVEALED",
+          "phase": "reveal",
+          "class": "result ok"
+        },
+        "after": {
+          "href": "http://127.0.0.1:4173/families/food-toyama/r5-1.html",
+          "title": "RELATIONAL KEY — Toyama Pressure-to-Unfold",
+          "width": 1440,
+          "height": 1000,
+          "scrollWidth": 1440,
+          "scrollHeight": 1000,
+          "reducedMotion": true,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "8px",
+          "truthFontSize": "8px",
+          "sourceFontSize": "8px",
+          "roleFontSize": "8px",
+          "contextFontSize": "8px",
+          "motionProbe": {
+            "transitionDuration": "1e-06s",
+            "animationDuration": "1e-06s"
+          }
+        }
+      },
+      "performance": {
+        "Nodes": 217,
+        "LayoutCount": 100,
+        "RecalcStyleCount": 183,
+        "LayoutDuration": 0.020049,
+        "RecalcStyleDuration": 0.020899,
+        "ScriptDuration": 0.006562,
+        "TaskDuration": 0.157383,
+        "JSHeapUsedSize": 2680488
+      },
+      "final": {
+        "href": "http://127.0.0.1:4173/families/food-toyama/r5-1.html",
+        "title": "RELATIONAL KEY — Toyama Pressure-to-Unfold",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "reducedMotion": false,
+        "resultRole": "status",
+        "resultLive": "polite",
+        "resultAtomic": "true",
+        "resultFontSize": "8px",
+        "truthFontSize": "8px",
+        "sourceFontSize": "8px",
+        "roleFontSize": "8px",
+        "contextFontSize": "8px",
+        "motionProbe": {
+          "transitionDuration": "0s",
+          "animationDuration": "0s"
+        }
+      },
+      "errors": []
+    },
+    "textile-bonwire": {
+      "path": "/families/textile-bonwire/r5-2.html",
+      "http_status": 200,
+      "idle": {
+        "href": "http://127.0.0.1:4173/families/textile-bonwire/r5-2.html",
+        "title": "RELATIONAL KEY — Bonwire Selvedge Overcast Join",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "reducedMotion": false,
+        "resultRole": "status",
+        "resultLive": "polite",
+        "resultAtomic": "true",
+        "resultFontSize": "8px",
+        "truthFontSize": "8px",
+        "sourceFontSize": "8px",
+        "roleFontSize": "8px",
+        "contextFontSize": "8px",
+        "motionProbe": {
+          "transitionDuration": "0s",
+          "animationDuration": "0s"
+        }
+      },
+      "matching": {
+        "before": "TWO VALID STRIPS · SELVEDGES UNREGISTERED",
+        "after": "SELVEDGES JOINED · WOVEN WIDTH CONTINUES",
+        "phase": "joined",
+        "class": "result ok"
+      },
+      "other": {
+        "before": "TWO VALID STRIPS · SELVEDGES UNREGISTERED",
+        "after": "JOIN MISREGISTERS · BOTH WOVEN STRIPS REMAIN VALID",
+        "phase": "other",
+        "class": "result badResult"
+      },
+      "interruption": {
+        "result": "JOIN MISREGISTERS · BOTH WOVEN STRIPS REMAIN VALID",
+        "phase": "other"
+      },
+      "keyboard": {
+        "focus": {
+          "activeId": "run",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineOffset": "3px",
+          "rect": {
+            "width": 210,
+            "height": 40
+          }
+        },
+        "result": "SELVEDGES JOINED · WOVEN WIDTH CONTINUES",
+        "focus_input_path": "Tab",
+        "focus_http_status": 200
+      },
+      "mobile": {
+        "diagnostics": {
+          "href": "http://127.0.0.1:4173/families/textile-bonwire/r5-2.html",
+          "title": "RELATIONAL KEY — Bonwire Selvedge Overcast Join",
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 1086,
+          "reducedMotion": false,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "9px",
+          "truthFontSize": "9px",
+          "sourceFontSize": "9px",
+          "roleFontSize": "9px",
+          "contextFontSize": "9px",
+          "motionProbe": {
+            "transitionDuration": "0s",
+            "animationDuration": "0s"
+          }
+        },
+        "no_horizontal_overflow": true
+      },
+      "reduced_motion": {
+        "before": {
+          "href": "http://127.0.0.1:4173/families/textile-bonwire/r5-2.html",
+          "title": "RELATIONAL KEY — Bonwire Selvedge Overcast Join",
+          "width": 1440,
+          "height": 1000,
+          "scrollWidth": 1440,
+          "scrollHeight": 1000,
+          "reducedMotion": true,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "8px",
+          "truthFontSize": "8px",
+          "sourceFontSize": "8px",
+          "roleFontSize": "8px",
+          "contextFontSize": "8px",
+          "motionProbe": {
+            "transitionDuration": "1e-06s",
+            "animationDuration": "1e-06s"
+          }
+        },
+        "matching": {
+          "before": "TWO VALID STRIPS · SELVEDGES UNREGISTERED",
+          "after": "SELVEDGES JOINED · WOVEN WIDTH CONTINUES",
+          "phase": "joined",
+          "class": "result ok"
+        },
+        "after": {
+          "href": "http://127.0.0.1:4173/families/textile-bonwire/r5-2.html",
+          "title": "RELATIONAL KEY — Bonwire Selvedge Overcast Join",
+          "width": 1440,
+          "height": 1000,
+          "scrollWidth": 1440,
+          "scrollHeight": 1000,
+          "reducedMotion": true,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "8px",
+          "truthFontSize": "8px",
+          "sourceFontSize": "8px",
+          "roleFontSize": "8px",
+          "contextFontSize": "8px",
+          "motionProbe": {
+            "transitionDuration": "1e-06s",
+            "animationDuration": "1e-06s"
+          }
+        }
+      },
+      "performance": {
+        "Nodes": 181,
+        "LayoutCount": 45,
+        "RecalcStyleCount": 164,
+        "LayoutDuration": 0.010047,
+        "RecalcStyleDuration": 0.008357,
+        "ScriptDuration": 0.00497,
+        "TaskDuration": 0.086584,
+        "JSHeapUsedSize": 2727984
+      },
+      "final": {
+        "href": "http://127.0.0.1:4173/families/textile-bonwire/r5-2.html",
+        "title": "RELATIONAL KEY — Bonwire Selvedge Overcast Join",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "reducedMotion": false,
+        "resultRole": "status",
+        "resultLive": "polite",
+        "resultAtomic": "true",
+        "resultFontSize": "8px",
+        "truthFontSize": "8px",
+        "sourceFontSize": "8px",
+        "roleFontSize": "8px",
+        "contextFontSize": "8px",
+        "motionProbe": {
+          "transitionDuration": "0s",
+          "animationDuration": "0s"
+        }
+      },
+      "errors": []
+    },
+    "swell-marshall": {
+      "path": "/families/swell-marshall/r5-7.html",
+      "http_status": 200,
+      "idle": {
+        "href": "http://127.0.0.1:4173/families/swell-marshall/r5-7.html",
+        "title": "RELATIONAL KEY — Swell Lee Crossing",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "reducedMotion": false,
+        "resultRole": "status",
+        "resultLive": "polite",
+        "resultAtomic": "true",
+        "resultFontSize": "8px",
+        "truthFontSize": "8px",
+        "sourceFontSize": "8px",
+        "roleFontSize": "8px",
+        "contextFontSize": "8px",
+        "motionProbe": {
+          "transitionDuration": "0s",
+          "animationDuration": "0s"
+        }
+      },
+      "matching": {
+        "before": "TWO VALID MEMBERS · SWELL / ATOLL RELATION UNTESTED",
+        "after": "LEE CROSSING REGISTERED · RELATIONAL LAND SIGNATURE PERSISTS",
+        "phase": "cross",
+        "class": "result ok"
+      },
+      "other": {
+        "before": "TWO VALID MEMBERS · SWELL / ATOLL RELATION UNTESTED",
+        "after": "TWO VALID SWELL TRAINS · CROSSING POINT DISPLACED · BOTH RECORDS VALID",
+        "phase": "other",
+        "class": "result bad"
+      },
+      "interruption": {
+        "result": "TWO VALID SWELL TRAINS · CROSSING POINT DISPLACED · BOTH RECORDS VALID",
+        "phase": "other"
+      },
+      "keyboard": {
+        "focus": {
+          "activeId": "run",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineOffset": "3px",
+          "rect": {
+            "width": 220,
+            "height": 41
+          }
+        },
+        "result": "TWO VALID SWELL TRAINS · CROSSING POINT DISPLACED · BOTH RECORDS VALID",
+        "focus_input_path": "Tab",
+        "focus_http_status": 200
+      },
+      "mobile": {
+        "diagnostics": {
+          "href": "http://127.0.0.1:4173/families/swell-marshall/r5-7.html",
+          "title": "RELATIONAL KEY — Swell Lee Crossing",
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 1293,
+          "reducedMotion": false,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "9px",
+          "truthFontSize": "9px",
+          "sourceFontSize": "9px",
+          "roleFontSize": "9px",
+          "contextFontSize": "9px",
+          "motionProbe": {
+            "transitionDuration": "0s",
+            "animationDuration": "0s"
+          }
+        },
+        "no_horizontal_overflow": true
+      },
+      "reduced_motion": {
+        "before": {
+          "href": "http://127.0.0.1:4173/families/swell-marshall/r5-7.html",
+          "title": "RELATIONAL KEY — Swell Lee Crossing",
+          "width": 1440,
+          "height": 1000,
+          "scrollWidth": 1440,
+          "scrollHeight": 1000,
+          "reducedMotion": true,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "8px",
+          "truthFontSize": "8px",
+          "sourceFontSize": "8px",
+          "roleFontSize": "8px",
+          "contextFontSize": "8px",
+          "motionProbe": {
+            "transitionDuration": "1e-06s",
+            "animationDuration": "1e-06s"
+          }
+        },
+        "matching": {
+          "before": "TWO VALID MEMBERS · SWELL / ATOLL RELATION UNTESTED",
+          "after": "LEE CROSSING REGISTERED · RELATIONAL LAND SIGNATURE PERSISTS",
+          "phase": "cross",
+          "class": "result ok"
+        },
+        "after": {
+          "href": "http://127.0.0.1:4173/families/swell-marshall/r5-7.html",
+          "title": "RELATIONAL KEY — Swell Lee Crossing",
+          "width": 1440,
+          "height": 1000,
+          "scrollWidth": 1440,
+          "scrollHeight": 1000,
+          "reducedMotion": true,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "8px",
+          "truthFontSize": "8px",
+          "sourceFontSize": "8px",
+          "roleFontSize": "8px",
+          "contextFontSize": "8px",
+          "motionProbe": {
+            "transitionDuration": "1e-06s",
+            "animationDuration": "1e-06s"
+          }
+        }
+      },
+      "performance": {
+        "Nodes": 208,
+        "LayoutCount": 7,
+        "RecalcStyleCount": 137,
+        "LayoutDuration": 0.007985,
+        "RecalcStyleDuration": 0.010466,
+        "ScriptDuration": 0.005857,
+        "TaskDuration": 0.091688,
+        "JSHeapUsedSize": 2763068
+      },
+      "final": {
+        "href": "http://127.0.0.1:4173/families/swell-marshall/r5-7.html",
+        "title": "RELATIONAL KEY — Swell Lee Crossing",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "reducedMotion": false,
+        "resultRole": "status",
+        "resultLive": "polite",
+        "resultAtomic": "true",
+        "resultFontSize": "8px",
+        "truthFontSize": "8px",
+        "sourceFontSize": "8px",
+        "roleFontSize": "8px",
+        "contextFontSize": "8px",
+        "motionProbe": {
+          "transitionDuration": "0s",
+          "animationDuration": "0s"
+        }
+      },
+      "errors": []
+    },
+    "stereoscopy-uk": {
+      "path": "/families/stereoscopy-uk/snapshot.html",
+      "http_status": 200,
+      "idle": {
+        "href": "http://127.0.0.1:4173/families/stereoscopy-uk/snapshot.html",
+        "title": "RELATIONAL KEY — Binocular Register",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "reducedMotion": false,
+        "resultRole": "status",
+        "resultLive": "polite",
+        "resultAtomic": "true",
+        "resultFontSize": "8px",
+        "truthFontSize": "8px",
+        "sourceFontSize": null,
+        "roleFontSize": "8px",
+        "contextFontSize": "8px",
+        "motionProbe": {
+          "transitionDuration": "0s",
+          "animationDuration": "0s"
+        }
+      },
+      "matching": {
+        "before": "MATCHING LEFT / RIGHT VIEWS SELECTED",
+        "after": "CONTINUE · BOTH VIEWS REMAIN DISTINCT",
+        "phase": "registered",
+        "class": "result"
+      },
+      "other": {
+        "before": "OTHER VIEW SELECTED · BOTH VIEWS REMAIN VALID",
+        "after": "CONTINUE · RELATION NOT REGISTERED",
+        "phase": "idle",
+        "class": "result"
+      },
+      "interruption": {
+        "result": "CONTINUE · BOTH VIEWS REMAIN DISTINCT",
+        "phase": "registered"
+      },
+      "keyboard": {
+        "focus": {
+          "activeId": "run",
+          "focusVisible": true,
+          "outlineStyle": "solid",
+          "outlineWidth": "2px",
+          "outlineOffset": "3px",
+          "rect": {
+            "width": 210,
+            "height": 42
+          }
+        },
+        "result": "CONTINUE · BOTH VIEWS REMAIN DISTINCT",
+        "focus_input_path": "Tab",
+        "focus_http_status": 200
+      },
+      "mobile": {
+        "diagnostics": {
+          "href": "http://127.0.0.1:4173/families/stereoscopy-uk/snapshot.html",
+          "title": "RELATIONAL KEY — Binocular Register",
+          "width": 390,
+          "height": 844,
+          "scrollWidth": 390,
+          "scrollHeight": 1232,
+          "reducedMotion": false,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "9px",
+          "truthFontSize": "9px",
+          "sourceFontSize": null,
+          "roleFontSize": "9px",
+          "contextFontSize": "9px",
+          "motionProbe": {
+            "transitionDuration": "0s",
+            "animationDuration": "0s"
+          }
+        },
+        "no_horizontal_overflow": true
+      },
+      "reduced_motion": {
+        "before": {
+          "href": "http://127.0.0.1:4173/families/stereoscopy-uk/snapshot.html",
+          "title": "RELATIONAL KEY — Binocular Register",
+          "width": 1440,
+          "height": 1000,
+          "scrollWidth": 1440,
+          "scrollHeight": 1000,
+          "reducedMotion": true,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "8px",
+          "truthFontSize": "8px",
+          "sourceFontSize": null,
+          "roleFontSize": "8px",
+          "contextFontSize": "8px",
+          "motionProbe": {
+            "transitionDuration": "1e-06s",
+            "animationDuration": "1e-06s"
+          }
+        },
+        "matching": {
+          "before": "MATCHING LEFT / RIGHT VIEWS SELECTED",
+          "after": "CONTINUE · BOTH VIEWS REMAIN DISTINCT",
+          "phase": "registered",
+          "class": "result"
+        },
+        "after": {
+          "href": "http://127.0.0.1:4173/families/stereoscopy-uk/snapshot.html",
+          "title": "RELATIONAL KEY — Binocular Register",
+          "width": 1440,
+          "height": 1000,
+          "scrollWidth": 1440,
+          "scrollHeight": 1000,
+          "reducedMotion": true,
+          "resultRole": "status",
+          "resultLive": "polite",
+          "resultAtomic": "true",
+          "resultFontSize": "8px",
+          "truthFontSize": "8px",
+          "sourceFontSize": null,
+          "roleFontSize": "8px",
+          "contextFontSize": "8px",
+          "motionProbe": {
+            "transitionDuration": "1e-06s",
+            "animationDuration": "1e-06s"
+          }
+        }
+      },
+      "performance": {
+        "Nodes": 147,
+        "LayoutCount": 9,
+        "RecalcStyleCount": 208,
+        "LayoutDuration": 0.00709,
+        "RecalcStyleDuration": 0.029591,
+        "ScriptDuration": 0.011065,
+        "TaskDuration": 0.171183,
+        "JSHeapUsedSize": 2694668
+      },
+      "final": {
+        "href": "http://127.0.0.1:4173/families/stereoscopy-uk/snapshot.html",
+        "title": "RELATIONAL KEY — Binocular Register",
+        "width": 1440,
+        "height": 1000,
+        "scrollWidth": 1440,
+        "scrollHeight": 1000,
+        "reducedMotion": false,
+        "resultRole": "status",
+        "resultLive": "polite",
+        "resultAtomic": "true",
+        "resultFontSize": "8px",
+        "truthFontSize": "8px",
+        "sourceFontSize": null,
+        "roleFontSize": "8px",
+        "contextFontSize": "8px",
+        "motionProbe": {
+          "transitionDuration": "0s",
+          "animationDuration": "0s"
+        }
+      },
+      "errors": []
+    }
+  },
+  "failures": [],
+  "verdict": "PASS"
+}
