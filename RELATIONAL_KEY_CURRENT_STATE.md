@@ -54,12 +54,12 @@ Promotion SOURCE commit:
 USER PASS / pending-LIVE register:
 `POST_CLOSEOUT_R5_8C_CITY_GATINEAU_USER_PASS_PROMOTION_PENDING_LIVE.md` @ `2f3525bc4a01c04420557cc5ba9d6937e8ee5ca6`.
 
-Latest syncs:
-- R5 queue `d6faf0e87d25d02c76aa44993cd4d3d3f8b4cbd5`
-- HANDOVER `ea08a71da8cdff5a6f8f235f844d5dcfb16aeede`
+Latest canonical references:
+- HANDOVER `15094777d8bbcffafd76389075b5c55becd4b31f`
+- R5 queue `c5659d2d434ef6f653a02924eeb417072a4fe956`
 
 LIVE promotion status:
-Vercel returned Hobby `build-rate-limit` on the promotion commit and subsequent canonical syncs. No READY deployment containing the public promotion is claimed yet.
+Vercel returned Hobby `build-rate-limit` on the promotion commit and subsequent syncs. No READY deployment containing the public promotion is claimed yet.
 
 # STATE SEPARATION
 - SOURCE City: PASS
