@@ -1,0 +1,23 @@
+/* Bounded Focus Experience intrinsic mobile repair.
+   Do not hide overflow: fit long family names and pair-law text inside the viewport. */
+@media (max-width: 640px) {
+  .focus-mode .focus-header,
+  .focus-mode .focus-header > div,
+  .focus-mode .focus-meta,
+  .focus-mode .focus-intent {
+    min-width: 0;
+    max-width: 100%;
+  }
+
+  .focus-mode .focus-header h1 {
+    max-width: 100%;
+    font-size: clamp(34px, 11vw, 48px);
+    line-height: 0.94;
+    overflow-wrap: break-word;
+  }
+
+  .focus-mode .focus-meta strong {
+    max-width: 100%;
+    overflow-wrap: anywhere;
+  }
+}
