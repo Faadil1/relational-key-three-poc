@@ -22,9 +22,16 @@ for (const [key, entry] of manifestEntries) {
   if (entry.src) bySource.set(entry.src, { key, entry });
 }
 
-const main = bySource.get('src/main.jsx');
-if (!main) fail('manifest must expose src/main.jsx');
-if (main && !main.entry.isEntry) fail('src/main.jsx must remain the product entry');
+const entryCandidates = manifestEntries
+  .filter(([, entry]) => entry.isEntry)
+  .map(([key, entry]) => ({ key, entry }));
+const main = bySource.get('src/main.jsx')
+  ?? bySource.get('index.html')
+  ?? (entryCandidates.length === 1 ? entryCandidates[0] : null);
+
+if (!main) fail('manifest must expose one product entry (index.html / src/main.jsx chain)');
+if (entryCandidates.length !== 1) fail(`expected exactly one product entry, found ${entryCandidates.length}`);
+if (main && !main.entry.isEntry) fail('resolved product entry must be marked isEntry');
 
 const families = [
   { id: 'anamorphosis-paris', src: 'src/sceneEntries/AnamorphosisEntry.jsx' },
@@ -76,6 +83,7 @@ for (const family of families) {
 
   const familyClosure = closure(found.key);
   familyClosures.push(familyClosure);
+  const incrementalKeys = new Set([...familyClosure].filter((key) => !initialClosure.has(key)));
   familyRows.push({
     id: family.id,
     source: family.src,
@@ -84,7 +92,8 @@ for (const family of families) {
     entryBytes: bytesForKey(found.key),
     staticClosureFiles: [...familyClosure].map((key) => manifest[key]?.file).filter(Boolean),
     staticClosureBytes: bytesForKeys(familyClosure),
-    incrementalBeyondInitialBytes: bytesForKeys(new Set([...familyClosure].filter((key) => !initialClosure.has(key)))),
+    incrementalBeyondInitialFiles: [...incrementalKeys].map((key) => manifest[key]?.file).filter(Boolean),
+    incrementalBeyondInitialBytes: bytesForKeys(incrementalKeys),
   });
 }
 
@@ -121,6 +130,7 @@ const report = {
   main: main
     ? {
         manifestKey: main.key,
+        source: main.entry.src ?? null,
         file: main.entry.file,
         entryBytes: bytesForKey(main.key),
         initialStaticFiles: initialFiles,
