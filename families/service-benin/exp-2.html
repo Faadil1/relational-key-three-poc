@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RELATIONAL KEY — Benin EXP-2 Service-Step Handoff Candidate</title>
+<style>
+:root{--bg:#0b0b09;--ink:#eee8dc;--muted:#7e776b;--line:rgba(235,221,194,.14);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:var(--bg);color:var(--ink)}body{display:grid;grid-template-rows:44px minmax(0,1fr);overflow:hidden}.framebar{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;padding:0 14px;border-bottom:1px solid var(--line);background:rgba(11,11,9,.96);min-width:0}.back{display:inline-flex;align-items:center;gap:8px;height:30px;padding:0 11px;border:1px solid var(--line);border-radius:999px;color:#d8bd8d;text-decoration:none;font:800 7px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.11em;white-space:nowrap}.context{min-width:0;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font:700 6px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;color:var(--muted)}.law{font:800 6px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;color:#6f685d;white-space:nowrap}.frame{width:100%;height:100%;border:0;background:#0d0e0c;display:block}@media(max-width:680px){body{grid-template-rows:42px minmax(0,1fr)}.framebar{grid-template-columns:auto 1fr;padding:0 9px}.context{text-align:right}.law{display:none}.back{padding:0 9px;font-size:6px}}
+</style>
+</head>
+<body>
+<nav class="framebar" aria-label="Collection navigation">
+  <a class="back" href="/#grid">← BACK TO ATLAS</a>
+  <div class="context">BENIN · SERVICE REGISTER · EXP-2 STEP HANDOFF</div>
+  <div class="law">THE PAIR IS THE PRODUCT</div>
+</nav>
+<iframe class="frame" id="rk" title="Benin · Service Register EXP-2 candidate" src="/families/_shared/round13r/index.html"></iframe>
+<script>
+const frame=document.getElementById('rk');
+frame.onload=()=>{
+  try{
+    const doc=frame.contentWindow.document;
+    const win=frame.contentWindow;
+    doc.querySelector('[data-e="service"]')?.click();
+    const activate=()=>{
+      const pair=doc.getElementById('pair'),leftCard=doc.querySelector('.leftCard'),rightCard=doc.querySelector('.rightCard'),bridge=doc.querySelector('.bridge'),run=doc.getElementById('run'),reset=doc.getElementById('reset'),claimButtons=[...doc.querySelectorAll('[data-claim]')];
+      if(!pair||!leftCard||!rightCard||!bridge||!run)return;
+      doc.body.classList.add('service-expansion');
+      pair.dataset.serviceExp='idle';
+
+      const style=doc.createElement('style');
+      style.id='exp-2-service-step-handoff';
+      style.textContent=`
+        /* EXP-2 Service: complementary steps remain card-owned; completion occurs through handoff. */
+        .service-expansion .junction{opacity:.18;transform:scale(.72);transition:.45s}
+        .service-expansion .pair[data-service-exp="registered"] .junction{opacity:.26;transform:scale(.76)}
+        .service-expansion .conn{opacity:.12!important}
+        .service-expansion .bridgeLabel{top:calc(50% + 41px);color:#8f826e}
+
+        .serviceExpTrack{position:absolute;z-index:8;left:8%;right:8%;top:24%;height:35%;display:grid;grid-template-columns:1fr 1fr;gap:12px;pointer-events:none;opacity:.56;transition:opacity .5s,transform .65s cubic-bezier(.2,.8,.2,1),filter .5s}
+        .serviceExpStep{position:relative;display:grid;place-items:center;border:1px solid rgba(98,69,38,.34);background:rgba(255,250,239,.55);color:#553c24;font:800 10px ui-monospace,monospace;letter-spacing:.08em;box-shadow:inset 0 0 0 1px rgba(255,255,255,.18);transition:.55s cubic-bezier(.2,.8,.2,1)}
+        .serviceExpStep:after{content:'';position:absolute;top:50%;width:12px;height:2px;background:rgba(171,118,55,.4)}
+        .serviceExpTrack.left .serviceExpStep:first-child:after,.serviceExpTrack.right .serviceExpStep:first-child:after{right:-12px}
+        .serviceExpTrack.left .serviceExpStep:last-child:after,.serviceExpTrack.right .serviceExpStep:last-child:after{display:none}
+        .serviceExpPort{position:absolute;z-index:9;top:41.5%;width:12px;height:12px;border-radius:50%;background:#e8d9bd;border:2px solid #a46f34;box-shadow:0 0 12px rgba(164,111,52,.24);pointer-events:none;opacity:.55;transition:.5s}
+        .leftCard .serviceExpPort{right:-4px}.rightCard .serviceExpPort{left:-4px}
+        .pair[data-service-exp="approach"] .serviceExpTrack{opacity:.82;filter:brightness(1.03)}
+        .pair[data-service-exp="approach"] .serviceExpPort{opacity:.9}
+        .pair[data-service-exp="registered"] .serviceExpTrack{opacity:1;filter:brightness(1.08)}
+        .pair[data-service-exp="registered"] .serviceExpStep{border-color:#b78343;background:rgba(255,244,220,.82);box-shadow:0 0 16px rgba(187,132,62,.12)}
+        .pair[data-service-exp="registered"] .serviceExpPort{opacity:1;box-shadow:0 0 16px rgba(196,143,70,.46)}
+        .pair[data-service-exp="other"] .serviceExpTrack{opacity:.9}
+        .pair[data-service-exp="other"] .serviceExpTrack.left{transform:translateY(-8px)}
+        .pair[data-service-exp="other"] .serviceExpTrack.right{transform:translateY(10px)}
+        .pair[data-service-exp="other"] .serviceExpPort{opacity:.75}
+
+        .serviceExpBridge{position:absolute;left:-4%;right:-4%;top:50%;height:90px;transform:translateY(-50%);z-index:10;pointer-events:none}
+        .serviceExpRail,.serviceExpResidualA,.serviceExpResidualB{position:absolute;border-radius:999px;opacity:0;transition:opacity .4s,transform .65s cubic-bezier(.2,.8,.2,1),box-shadow .45s}
+        .serviceExpRail{left:0;right:0;top:42px;height:4px;background:linear-gradient(90deg,#a56f34,#d3a35f 46%,#e6c68d 54%,#9d713f);transform:scaleX(.1);box-shadow:0 0 14px rgba(195,141,67,.14)}
+        .serviceExpToken{position:absolute;left:0;top:37px;width:14px;height:14px;border-radius:4px;background:#f3e5ca;border:2px solid #b37d3d;color:#5d4125;display:grid;place-items:center;font:900 5px ui-monospace,monospace;opacity:0;box-shadow:0 0 16px rgba(190,137,66,.42)}
+        .serviceExpResidualA{left:0;width:44%;top:29px;height:3px;background:linear-gradient(90deg,#a56f34,#d3a35f)}
+        .serviceExpResidualB{right:0;width:44%;top:56px;height:3px;background:linear-gradient(90deg,#d0ad73,#9d713f)}
+        .serviceExpState{position:absolute;left:50%;top:67px;transform:translateX(-50%);font:800 5px ui-monospace,monospace;letter-spacing:.11em;color:#86765f;white-space:nowrap;opacity:0;transition:.35s}
+
+        .pair[data-service-exp="approach"] .serviceExpRail{opacity:.32;transform:scaleX(.48)}
+        .pair[data-service-exp="registered"] .serviceExpRail{opacity:1;transform:scaleX(1);box-shadow:0 0 18px rgba(195,141,67,.34)}
+        .pair[data-service-exp="registered"] .serviceExpToken{opacity:1;animation:serviceHandoff 1.6s cubic-bezier(.2,.7,.2,1) infinite}
+        .pair[data-service-exp="registered"] .serviceExpState{opacity:1}
+        .pair[data-service-exp="registered"] .serviceExpState:after{content:'STEP HANDOFF · 01 → 02 → 03 → 04'}
+        .pair[data-service-exp="other"] .serviceExpResidualA,.pair[data-service-exp="other"] .serviceExpResidualB{opacity:1}
+        .pair[data-service-exp="other"] .serviceExpState{opacity:1;color:#9d7468}
+        .pair[data-service-exp="other"] .serviceExpState:after{content:'SEQUENCE RESIDUAL · BOTH FRAGMENTS VALID'}
+
+        @keyframes serviceHandoff{0%{left:0;opacity:.2;transform:scale(.76)}12%{opacity:1}48%{transform:scale(1.08)}88%{opacity:1}100%{left:calc(100% - 14px);opacity:.2;transform:scale(.76)}}
+        @media(max-width:900px){
+          .serviceExpTrack{top:20%;height:38%}.serviceExpBridge{left:50%;right:auto;top:0;bottom:0;width:82px;height:100%;transform:translateX(-50%)}
+          .serviceExpRail{left:39px;right:auto;top:0;bottom:0;width:4px;height:auto;transform:scaleY(.1)}
+          .pair[data-service-exp="approach"] .serviceExpRail{transform:scaleY(.48)}.pair[data-service-exp="registered"] .serviceExpRail{transform:scaleY(1)}
+          .serviceExpToken{left:34px;top:0}.pair[data-service-exp="registered"] .serviceExpToken{animation:serviceHandoffNarrow 1.6s cubic-bezier(.2,.7,.2,1) infinite}
+          .serviceExpResidualA{left:25px;top:0;width:3px;height:44%}.serviceExpResidualB{right:25px;top:auto;bottom:0;width:3px;height:44%}
+          .serviceExpState{top:50%;left:90px;transform:translateY(-50%);writing-mode:vertical-rl}
+          @keyframes serviceHandoffNarrow{0%{top:0;opacity:.2}12%{opacity:1}88%{opacity:1}100%{top:calc(100% - 14px);opacity:.2}}
+        }
+      `;
+      doc.head.appendChild(style);
+
+      const leftTrack=doc.createElement('div');leftTrack.className='serviceExpTrack left';leftTrack.innerHTML='<i class="serviceExpStep">01</i><i class="serviceExpStep">02</i>';leftCard.appendChild(leftTrack);
+      const lp=doc.createElement('i');lp.className='serviceExpPort';leftCard.appendChild(lp);
+      const rightTrack=doc.createElement('div');rightTrack.className='serviceExpTrack right';rightTrack.innerHTML='<i class="serviceExpStep">03</i><i class="serviceExpStep">04</i>';rightCard.appendChild(rightTrack);
+      const rp=doc.createElement('i');rp.className='serviceExpPort';rightCard.appendChild(rp);
+      const bridgeLayer=doc.createElement('div');bridgeLayer.className='serviceExpBridge';bridgeLayer.innerHTML='<i class="serviceExpRail"></i><i class="serviceExpResidualA"></i><i class="serviceExpResidualB"></i><i class="serviceExpToken">↦</i><span class="serviceExpState"></span>';bridge.appendChild(bridgeLayer);
+
+      let timer=0;const setStage=s=>pair.dataset.serviceExp=s;const activeClaim=()=>doc.querySelector('[data-claim].active')?.dataset.claim||'matching';claimButtons.forEach(btn=>btn.addEventListener('click',()=>{clearTimeout(timer);setStage('idle')}));reset?.addEventListener('click',()=>{clearTimeout(timer);setStage('idle')});run.addEventListener('click',()=>{clearTimeout(timer);const claim=activeClaim();setStage('approach');timer=win.setTimeout(()=>setStage(claim==='matching'?'registered':'other'),620)});
+    };
+    win.setTimeout(activate,80);
+  }catch(e){console.error('EXP-2 Service handoff injection failed',e)}
+};
+</script>
+</body>
+</html>

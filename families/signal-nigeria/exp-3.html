@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RELATIONAL KEY — Nigeria EXP-3 NITEL Relay Candidate</title>
+<style>html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#080b0d}.host{width:100%;height:100%;border:0;display:block;background:#080b0d}</style>
+</head>
+<body>
+<iframe class="host" id="host" title="Nigeria · Signal Portrait EXP-3 NITEL archive relay candidate" src="/families/signal-nigeria/index.html"></iframe>
+<script>
+const host=document.getElementById('host');
+host.onload=()=>{
+  try{
+    const wrapperDoc=host.contentWindow.document;
+    const context=wrapperDoc.querySelector('.context');
+    if(context)context.textContent='NIGERIA · NITEL · EARTH STATION / TRANSMISSION RELAY';
+    const inner=wrapperDoc.getElementById('rk'); if(!inner)return;
+    const inject=()=>{
+      try{
+        const doc=inner.contentWindow.document, win=inner.contentWindow;
+        if(doc.getElementById('exp-3-nitel-relay'))return;
+        const pair=doc.getElementById('pair'),leftCard=doc.querySelector('.leftCard'),rightCard=doc.querySelector('.rightCard'),leftMaterial=doc.getElementById('lm'),rightMaterial=doc.getElementById('rm'),bridge=doc.querySelector('.bridge'),run=doc.getElementById('run'),reset=doc.getElementById('reset'),claimButtons=[...doc.querySelectorAll('[data-claim]')];
+        if(!pair||!leftCard||!rightCard||!leftMaterial||!rightMaterial||!bridge||!run)return;
+        doc.body.classList.add('nitel-relay-v1');pair.dataset.signalExp='idle';
+        const kicker=doc.getElementById('kicker'),truth=doc.getElementById('truth');
+        if(kicker)kicker.textContent='NIGERIA · NITEL PHONECARD / RELAY PORTRAIT';
+        if(truth)truth.textContent='Editorial synthesis of documented NITEL phonecard, earth-station and transmission-tower cues · not an exact card replica or technical diagram.';
+
+        const style=doc.createElement('style');style.id='exp-3-nitel-relay';style.textContent=`
+          .nitel-relay-v1{background:radial-gradient(circle at 50% -15%,rgba(18,124,164,.11),transparent 34%),#090d0f}
+          .nitel-relay-v1 .intro span{color:#55b8d2}.nitel-relay-v1 .intro p{color:#9ba7a8}
+          .nitel-relay-v1 .signal .card{background:#101417;border-color:rgba(72,166,192,.22);box-shadow:0 34px 66px rgba(0,0,0,.5)}
+          .nitel-relay-v1 .signal .material{background:#eee9db!important;border-radius:10px}
+          .nitel-relay-v1 .signal .tower{opacity:0!important}
+          .nitel-relay-v1 .signal .shade{background:linear-gradient(90deg,rgba(7,12,14,.05),transparent 50%,rgba(8,13,15,.08)),linear-gradient(180deg,transparent 67%,rgba(6,9,10,.22))}
+          .nitel-relay-v1 .signal .role{background:#111820;border:1px solid #45a9c1;color:#f2f0e5}
+          .nitel-relay-v1 .signal .copy span{color:#75c9d8}.nitel-relay-v1 .signal .copy small{color:#c0c4bc}.nitel-relay-v1 .junction{opacity:.18}.nitel-relay-v1 .bridgeLabel{color:#718993}
+
+          .ngCard{position:absolute;inset:0;z-index:3;overflow:hidden;pointer-events:none;color:#15191a;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+          .ngHeader{position:absolute;left:5%;top:8%;font:900 8px ui-sans-serif,system-ui,sans-serif;letter-spacing:.01em;color:#1598ba}.ngHeader b{color:#111;font-weight:1000}.ngSerial{position:absolute;left:5%;top:17%;font:800 4.5px ui-monospace,monospace;letter-spacing:.12em;color:#555d5c}.ngUnits{position:absolute;left:5%;top:26%;font:1000 22px ui-sans-serif,system-ui,sans-serif;color:#111}.ngUnits small{font:800 6px ui-monospace,monospace;letter-spacing:.12em;margin-left:5px;color:#444}
+          .ngChip{position:absolute;left:6%;top:45%;width:70px;height:46px;border-radius:5px;background:#bd9750;border:1px solid #765d2c;display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);gap:2px;padding:4px;box-shadow:inset 0 0 0 2px rgba(255,244,190,.22)}.ngChip i{border:1px solid rgba(90,67,25,.55);border-radius:2px;background:linear-gradient(135deg,#e2c172,#a98439)}
+          .ngArt{position:absolute;right:4%;top:8%;width:48%;height:66%}.ngArt svg{width:100%;height:100%;overflow:visible}.ngGlobe{fill:none;stroke:#1598ba;stroke-width:2}.ngWave{fill:none;stroke:#1598ba;stroke-width:1.5;opacity:.55}.ngDish,.ngMast{fill:none;stroke:#15191a;stroke-width:3;stroke-linecap:round;stroke-linejoin:round}.ngNode{fill:#c93b32}.ngCard.right .ngGlobe,.ngCard.right .ngWave{stroke:#c93b32}.ngCard.right .ngNode{fill:#1598ba}
+          .ngBand{position:absolute;left:0;right:0;bottom:0;height:15%;background:#15191a;color:#eee9db;display:flex;align-items:center;gap:10px;padding:0 6%;font:900 7px ui-monospace,monospace;letter-spacing:.05em}.ngBand b{font:1000 11px ui-sans-serif,system-ui,sans-serif;color:#eee}.ngBand span{font-family:Georgia,serif;font-style:italic;font-size:9px}.ngYear{margin-left:auto;color:#5fc0d3;font-size:5px}.ngCard.right .ngYear{color:#df7068}
+
+          .ngCardPulse{position:absolute;z-index:8;width:11px;height:11px;border-radius:50%;opacity:0;pointer-events:none;transition:opacity .3s,transform .55s}.ngCardPulse.left{right:8%;top:43%;background:#59c9df;box-shadow:0 0 18px rgba(62,185,213,.8)}.ngCardPulse.right{left:8%;top:43%;background:#dc5c52;box-shadow:0 0 18px rgba(213,75,65,.72)}
+          .signalExpBridge{position:absolute;left:-6%;right:-6%;top:50%;height:92px;transform:translateY(-50%);z-index:10;pointer-events:none}.signalExpArc,.signalExpResidualA,.signalExpResidualB{position:absolute;opacity:0;transition:opacity .45s,transform .65s}.signalExpArc{left:0;right:0;top:28px;height:38px;border-top:3px solid #47b8d2;border-radius:50%;transform:scaleX(.25);filter:drop-shadow(0 -5px 10px rgba(64,174,202,.28))}.signalExpArc:after{content:'';position:absolute;left:50%;top:-5px;width:9px;height:9px;border-radius:50%;background:#f0e9d9;border:2px solid #53bfd5;box-shadow:0 0 17px rgba(83,191,213,.7);transform:translateX(-50%)}.signalExpResidualA{left:0;width:43%;top:21px;height:2px;background:linear-gradient(90deg,#1598ba,#5fc4d7);transform:translateY(-10px)}.signalExpResidualB{right:0;width:43%;top:61px;height:2px;background:linear-gradient(90deg,#db6a61,#c93b32);transform:translateY(10px)}.signalExpState{position:absolute;left:50%;top:72px;transform:translateX(-50%);font:900 5px ui-monospace,monospace;letter-spacing:.1em;white-space:nowrap;color:#6fa9b5;opacity:0}
+          .pair[data-signal-exp="approach"] .signalExpArc{opacity:.32;transform:scaleX(.55)}.pair[data-signal-exp="registered"] .signalExpArc{opacity:1;transform:scaleX(1)}.pair[data-signal-exp="registered"] .ngCardPulse{opacity:1}.pair[data-signal-exp="registered"] .ngCardPulse.left{animation:ngLeftPulse 1.35s ease-in-out infinite}.pair[data-signal-exp="registered"] .ngCardPulse.right{animation:ngRightPulse 1.35s ease-in-out infinite}.pair[data-signal-exp="registered"] .signalExpState{opacity:1}.pair[data-signal-exp="registered"] .signalExpState:after{content:'EARTH STATION → RELAY → LINK CONTINUES'}
+          .pair[data-signal-exp="other"] .signalExpResidualA,.pair[data-signal-exp="other"] .signalExpResidualB{opacity:1;transform:translateY(0)}.pair[data-signal-exp="other"] .signalExpState{opacity:1;color:#ba6a62}.pair[data-signal-exp="other"] .signalExpState:after{content:'RELAY OFFSET · BOTH SIGNAL OBJECTS VALID'}
+          @keyframes ngLeftPulse{0%,100%{transform:translateX(-10px);opacity:.3}50%{transform:translateX(12px);opacity:1}}@keyframes ngRightPulse{0%,100%{transform:translateX(10px);opacity:.3}50%{transform:translateX(-12px);opacity:1}}
+          @media(max-width:900px){.ngHeader{font-size:6px}.ngUnits{font-size:15px}.ngChip{width:52px;height:35px}.ngBand span{display:none}.signalExpBridge{left:50%;right:auto;top:-4%;bottom:-4%;width:70px;height:auto;transform:translateX(-50%)}.signalExpArc{left:31px;right:auto;top:0;bottom:0;width:36px;height:auto;border-top:0;border-left:3px solid #47b8d2;border-radius:50%;transform:scaleY(.25)}.pair[data-signal-exp="approach"] .signalExpArc{transform:scaleY(.55)}.pair[data-signal-exp="registered"] .signalExpArc{transform:scaleY(1)}.signalExpResidualA{left:20px;top:0;width:2px;height:42%}.signalExpResidualB{right:20px;top:auto;bottom:0;width:2px;height:42%}.signalExpState{left:76px;top:50%;transform:translateY(-50%);writing-mode:vertical-rl}}
+        `;doc.head.appendChild(style);
+
+        const art=(side)=>{const left=side==='left';const layer=doc.createElement('div');layer.className='ngCard '+side;layer.innerHTML=`<div class="ngHeader"><b>NITEL</b> · Nigerian Telecommunications Ltd</div><div class="ngSerial">${left?'EARTH STATION · ECAS / SIGNAL ORIGIN':'TRANSMISSION RELAY · NATIONAL LINK'}</div><div class="ngUnits">${left?'100':'300'}<small>UNITS</small></div><div class="ngChip">${'<i></i>'.repeat(6)}</div><div class="ngArt"><svg viewBox="0 0 200 140" aria-hidden="true"><circle class="ngGlobe" cx="99" cy="67" r="50"/><path class="ngWave" d="M52 47 Q99 12 146 47 M45 67 Q99 30 153 67 M52 88 Q99 122 146 88"/>${left?'<path class="ngDish" d="M75 86 Q99 100 118 76 Q95 65 75 86 Z M95 92 L87 112 M82 112 H102"/><circle class="ngNode" cx="116" cy="77" r="4"/>':'<path class="ngMast" d="M105 30 L86 113 M105 30 L126 113 M91 91 H121 M95 70 H116 M100 50 H111"/><circle class="ngNode" cx="106" cy="35" r="4"/>'}</svg></div><div class="ngBand"><b>NITEL</b><span>…Your link to the world</span><em class="ngYear">EDITORIAL · 1990s PHONECARD ARCHIVE</em></div>`;return layer};
+        leftMaterial.appendChild(art('left'));rightMaterial.appendChild(art('right'));
+        const lp=doc.createElement('i');lp.className='ngCardPulse left';leftCard.appendChild(lp);const rp=doc.createElement('i');rp.className='ngCardPulse right';rightCard.appendChild(rp);
+        const bridgeLayer=doc.createElement('div');bridgeLayer.className='signalExpBridge';bridgeLayer.innerHTML='<i class="signalExpArc"></i><i class="signalExpResidualA"></i><i class="signalExpResidualB"></i><span class="signalExpState"></span>';bridge.appendChild(bridgeLayer);
+        let timer=0;const setStage=s=>pair.dataset.signalExp=s;const activeClaim=()=>doc.querySelector('[data-claim].active')?.dataset.claim||'matching';claimButtons.forEach(btn=>btn.addEventListener('click',()=>{clearTimeout(timer);setStage('idle')}));reset?.addEventListener('click',()=>{clearTimeout(timer);setStage('idle')});run.addEventListener('click',()=>{clearTimeout(timer);const claim=activeClaim();setStage('approach');timer=win.setTimeout(()=>setStage(claim==='matching'?'registered':'other'),620)});
+      }catch(e){console.error('EXP-3 NITEL relay injection failed',e)}
+    };
+    if(inner.contentWindow?.document?.readyState==='complete')setTimeout(inject,180);
+    inner.addEventListener('load',()=>setTimeout(inject,180),{once:true});
+  }catch(e){console.error('EXP-3 host failed',e)}
+};
+</script>
+</body>
+</html>

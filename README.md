@@ -1,27 +1,55 @@
 # RELATIONAL KEY — Three.js Signature POC
 
-Day 17 / Round 11B technical proof.
+Canonical product invariant:
 
-**Live:** https://relational-key-three-poc.vercel.app
+**THE RELATIONAL PAIR REMAINS THE PRODUCT.**
 
-## Question being tested
-Can spatial interaction make **Registered Continuation** substantially more distinctive and understandable than the 2D baseline?
+Primary causal model:
 
-## Signature
-`GRAB → PROXIMITY → COMPARE → SNAP / RESIST → CONTINUE`
+`PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
 
-## Positive scenario
-Anchorage Museum / Family Plus / ROAM → Walt Disney Family Museum → Complimentary Admission.
+## Current program state — 2026-08-29
 
-## Negative scenario
-Anchorage Museum / Standard / ASTC → same destination → no reciprocal relationship. The credential remains valid.
+Global refinement:
+- G0 — PASS
+- G1 — PASS
+- G2 — PASS
+- G3 — PASS
+- G4 — PARKED until B2.5 closes
 
-## Prototype implementation
-The deployed POC is deliberately lightweight: native HTML/CSS/JS with Three.js loaded as an ES module. Three.js is used for spatial depth, direct manipulation, proximity, registration geometry, resistance and path continuation. The Figma Make V1 remains the frozen design/behavior baseline until the comparison gate is passed.
+Continental Balance Gate 2:
 
-## Acceptance gate
-1. Credential is directly draggable.
-2. Destination response is felt before contact.
-3. Valid relation produces an inevitable-feeling snap.
-4. Invalid relation feels physically different without relying on text.
-5. User can infer that matching is required before the path continues.
+**PASS / CLOSED ✅**
+
+`AFRICA 4 / ASIA 4 / NORTH AMERICA 4 / SOUTH AMERICA 4 / OCEANIA 4 / EUROPE 4`
+
+All six continents are validated at `4/4`.
+
+Swiss Music Box was the final closeout and is now **PASS / VALIDATED** after direct user evidence of:
+
+`CYLINDER DRAG → ANGLE CHANGE → PIN CROSSING → COMB RESPONSE`
+
+Final Swiss register:
+`CONTINENTAL_BALANCE_B2_4D_R1B_SWISS_MUSIC_BOX_DIRECT_DRAG_USER_PASS.md`
+
+## Active gate
+
+**B2.5 — 24-FAMILY COLLECTION REGRESSION**
+
+Next exact output:
+
+`B2.5A — 24-FAMILY REGRESSION MATRIX + EXECUTION ORDER`
+
+Canonical working branch:
+`collection/global-refinement-1`
+
+Draft PR:
+`#21 — RELATIONAL KEY — Global Refinement Pass`
+
+PR remains `DRAFT / DO NOT MERGE`.
+
+Canonical state:
+`RELATIONAL_KEY_CURRENT_STATE.md`
+
+Handover:
+`RELATIONAL_KEY_HANDOVER.md`

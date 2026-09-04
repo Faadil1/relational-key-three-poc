@@ -1,0 +1,57 @@
+/* V3.1 presentation layer: preserve V3 interaction depth, restore V2 restraint. */
+.intro p em{font-style:normal;color:var(--ink,#191a1d)}
+.residual{display:none!important}
+.technical-inspect{display:none!important}
+.result-detail{display:none!important}
+.result{bottom:42px;max-width:820px}
+.result-kicker{margin-bottom:8px}
+.result-title{max-width:900px;margin-inline:auto}
+.law{opacity:.72}
+
+.explain-trigger{position:absolute;right:18px;bottom:18px;z-index:9;border:1px solid #c9c1b6;background:rgba(247,244,237,.88);backdrop-filter:blur(14px);color:#191a1d;padding:11px 14px;font:600 9px/1 "Barlow Condensed",sans-serif;letter-spacing:.16em;text-transform:uppercase;cursor:pointer;transition:transform .2s ease,border-color .2s ease,background .2s ease}
+.explain-trigger:hover{transform:translateY(-1px);border-color:#ef4a24;background:#f9f5ed}
+.explain-trigger:focus-visible,.explain-close:focus-visible{outline:2px solid #1734e8;outline-offset:3px}
+
+.explain-backdrop{position:fixed;inset:0;z-index:40;background:rgba(19,20,23,.16);backdrop-filter:blur(3px);opacity:0;transition:opacity .28s ease}
+.explain-backdrop.open{opacity:1}
+.explain-panel{position:fixed;z-index:50;top:14px;right:14px;bottom:14px;width:min(430px,calc(100vw - 28px));padding:24px 24px 20px;background:rgba(248,245,238,.97);border:1px solid #d2cabf;box-shadow:0 24px 80px rgba(38,31,23,.16);transform:translateX(calc(100% + 30px));transition:transform .4s cubic-bezier(.22,1,.36,1);overflow:auto;overscroll-behavior:contain}
+.explain-panel.open{transform:translateX(0)}
+.explain-handle{display:none}
+.explain-head{display:flex;justify-content:space-between;align-items:flex-start;gap:18px;padding-bottom:22px;border-bottom:1px solid #d8d0c5}
+.explain-eyebrow{font:600 9px/1 "Barlow Condensed",sans-serif;letter-spacing:.18em;color:#918a82;text-transform:uppercase;margin-bottom:8px}
+.explain-head h2{margin:0;font:600 30px/1.02 Inter,sans-serif;letter-spacing:-.035em;color:#191a1d}
+.explain-close{border:0;background:transparent;color:#8b847b;padding:2px;font:600 9px/1 "Barlow Condensed",sans-serif;letter-spacing:.14em;cursor:pointer}
+.explain-lead{margin:22px 0 20px;font-size:14px;line-height:1.55;color:#625d57}
+.explain-steps{display:grid;gap:0;border-top:1px solid #d8d0c5}
+.explain-step{display:grid;grid-template-columns:34px 1fr;gap:12px;padding:16px 0;border-bottom:1px solid #d8d0c5}
+.explain-index{font:600 10px/1 "JetBrains Mono",monospace;color:#ef4a24;padding-top:3px}
+.explain-step span{display:block;font:600 9px/1 "Barlow Condensed",sans-serif;letter-spacing:.15em;color:#999188;text-transform:uppercase;margin-bottom:6px}
+.explain-step strong{display:block;font:600 17px/1.15 Inter,sans-serif;color:#191a1d}
+.explain-step small{display:block;margin-top:5px;font-size:11px;line-height:1.45;color:#817a72}
+.advanced-detail{margin-top:22px;border:1px solid #d8d0c5;background:rgba(255,255,255,.28)}
+.advanced-detail summary{cursor:pointer;list-style:none;padding:14px 15px;font:600 9px/1 "Barlow Condensed",sans-serif;letter-spacing:.14em;text-transform:uppercase;color:#6f6962}
+.advanced-detail summary::-webkit-details-marker{display:none}
+.advanced-detail summary:after{content:'+';float:right;color:#ef4a24;font-size:14px;margin-top:-2px}
+.advanced-detail[open] summary:after{content:'−'}
+.advanced-grid{display:grid;gap:0;border-top:1px solid #d8d0c5}
+.advanced-grid>div{padding:12px 15px;border-bottom:1px solid #e0d9cf}
+.advanced-grid span{display:block;font-size:9px;color:#999188;text-transform:uppercase;letter-spacing:.1em;margin-bottom:4px}
+.advanced-grid strong{font-size:12px;color:#282622}
+.advanced-detail p{margin:0;padding:14px 15px;font-size:10px;line-height:1.5;color:#8a837b}
+body.explain-open{overflow:hidden}
+
+@media(max-width:720px){
+  .result{bottom:70px}
+  .explain-trigger{right:50%;bottom:12px;transform:translateX(50%)}
+  .explain-trigger:hover{transform:translate(50%,-1px)}
+  .law{margin-top:22px}
+  .explain-backdrop{background:rgba(19,20,23,.22)}
+  .explain-panel{top:auto;left:8px;right:8px;bottom:8px;width:auto;max-height:min(76vh,680px);border-radius:22px 22px 12px 12px;padding:14px 18px 18px;transform:translateY(calc(100% + 20px));box-shadow:0 -18px 60px rgba(38,31,23,.16)}
+  .explain-panel.open{transform:translateY(0)}
+  .explain-handle{display:block;width:42px;height:4px;border-radius:999px;background:#c8c0b5;margin:0 auto 14px}
+  .explain-head{padding-bottom:16px}
+  .explain-head h2{font-size:26px}
+  .explain-lead{margin:18px 0 14px}
+}
+
+@media(prefers-reduced-motion:reduce){.explain-panel,.explain-backdrop,.explain-trigger{transition:none!important}}
