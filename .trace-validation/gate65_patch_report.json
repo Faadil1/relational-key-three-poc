@@ -1,21 +1,25 @@
 {
   "gate": "6.5",
   "scope": "bounded evaluator/accessibility repair",
-  "changed_file_count": 0,
+  "changed_file_count": 8,
   "files": [
     {
       "path": "families/food-toyama/r5-1.html",
-      "changed": false,
-      "changes": [],
+      "changed": true,
+      "changes": [
+        "keyboard_focus_visibility"
+      ],
       "bytes_before": 18864,
-      "bytes_after": 18864
+      "bytes_after": 19031
     },
     {
       "path": "families/textile-bonwire/r5-2.html",
-      "changed": false,
-      "changes": [],
+      "changed": true,
+      "changes": [
+        "keyboard_focus_visibility"
+      ],
       "bytes_before": 13529,
-      "bytes_after": 13529
+      "bytes_after": 13696
     },
     {
       "path": "families/metate-teotitlan/r5-3.html",
@@ -47,51 +51,64 @@
     },
     {
       "path": "families/swell-marshall/r5-7.html",
-      "changed": false,
-      "changes": [],
+      "changed": true,
+      "changes": [
+        "keyboard_focus_visibility"
+      ],
       "bytes_before": 15545,
-      "bytes_after": 15545
+      "bytes_after": 15712
     },
     {
       "path": "families/city-gatineau/r5-8.html",
-      "changed": false,
-      "changes": [],
+      "changed": true,
+      "changes": [
+        "keyboard_focus_visibility"
+      ],
       "bytes_before": 14103,
-      "bytes_after": 14103
+      "bytes_after": 14270
     },
     {
       "path": "families/service-benin/r5-9.html",
-      "changed": false,
-      "changes": [],
+      "changed": true,
+      "changes": [
+        "keyboard_focus_visibility"
+      ],
       "bytes_before": 15496,
-      "bytes_after": 15496
+      "bytes_after": 15663
     },
     {
       "path": "families/signal-nigeria/r5-10.html",
-      "changed": false,
-      "changes": [],
+      "changed": true,
+      "changes": [
+        "keyboard_focus_visibility"
+      ],
       "bytes_before": 16385,
-      "bytes_after": 16385
+      "bytes_after": 16552
     },
     {
       "path": "families/frida-coyoacan/r5-11.html",
-      "changed": false,
-      "changes": [],
+      "changed": true,
+      "changes": [
+        "keyboard_focus_visibility"
+      ],
       "bytes_before": 17468,
-      "bytes_after": 17468
+      "bytes_after": 17635
     },
     {
       "path": "families/stereoscopy-uk/snapshot.html",
-      "changed": false,
-      "changes": [],
+      "changed": true,
+      "changes": [
+        "keyboard_focus_visibility"
+      ],
       "bytes_before": 16653,
-      "bytes_after": 16653
+      "bytes_after": 16820
     }
   ],
   "invariants": {
     "stale_candidate_labels": [],
     "missing_status_contract": [],
     "missing_reduced_motion": [],
+    "missing_keyboard_focus_visibility": [],
     "missing_mobile_reflow_fix": [],
     "stale_overflow_hiding_masks": []
   },
