@@ -22,12 +22,8 @@ for (const [key, entry] of manifestEntries) {
   if (entry.src) bySource.set(entry.src, { key, entry });
 }
 
-const entryCandidates = manifestEntries
-  .filter(([, entry]) => entry.isEntry)
-  .map(([key, entry]) => ({ key, entry }));
-const main = bySource.get('src/main.jsx')
-  ?? bySource.get('index.html')
-  ?? (entryCandidates.length === 1 ? entryCandidates[0] : null);
+const entryCandidates = manifestEntries.filter(([, entry]) => entry.isEntry).map(([key, entry]) => ({ key, entry }));
+const main = bySource.get('src/main.jsx') ?? bySource.get('index.html') ?? (entryCandidates.length === 1 ? entryCandidates[0] : null);
 
 if (!main) fail('manifest must expose one product entry (index.html / src/main.jsx chain)');
 if (entryCandidates.length !== 1) fail(`expected exactly one product entry, found ${entryCandidates.length}`);
@@ -40,6 +36,9 @@ const families = [
   { id: 'kento-japan', src: 'src/sceneEntries/KentoEntry.jsx' },
   { id: 'stereoscopy-uk', src: 'src/sceneEntries/StereoscopyEntry.jsx' },
   { id: 'signal-nigeria', src: 'src/sceneEntries/SignalEntry.jsx' },
+  { id: 'astrolabe-isfahan', src: 'src/sceneEntries/AstrolabeEntry.jsx' },
+  { id: 'funicular-valparaiso', src: 'src/sceneEntries/FunicularEntry.jsx' },
+  { id: 'music-box-sainte-croix', src: 'src/sceneEntries/MusicBoxEntry.jsx' },
 ];
 
 function closure(startKey) {
@@ -61,7 +60,6 @@ function bytesForKey(key) {
   const full = path.join(dist, file);
   return fs.existsSync(full) ? fs.statSync(full).size : 0;
 }
-
 function bytesForKeys(keys) {
   return [...keys].reduce((sum, key) => sum + bytesForKey(key), 0);
 }
@@ -100,17 +98,11 @@ for (const family of families) {
   });
 }
 
-if (familyFiles.size !== families.length) {
-  fail(`expected ${families.length} distinct family entry files, found ${familyFiles.size}`);
-}
+if (familyFiles.size !== families.length) fail(`expected ${families.length} distinct family entry files, found ${familyFiles.size}`);
 
 let sharedDynamicKeys = new Set();
 if (familyClosures.length === families.length && familyClosures.length > 0) {
-  sharedDynamicKeys = new Set(
-    [...familyClosures[0]].filter(
-      (key) => familyClosures.every((familyClosure) => familyClosure.has(key)) && !initialClosure.has(key),
-    ),
-  );
+  sharedDynamicKeys = new Set([...familyClosures[0]].filter((key) => familyClosures.every((familyClosure) => familyClosure.has(key)) && !initialClosure.has(key)));
 }
 
 function walkJs(directory) {
@@ -129,30 +121,25 @@ const allJsBytes = allJs.reduce((sum, file) => sum + fs.statSync(file).size, 0);
 const initialFiles = [...initialClosure].map((key) => manifest[key]?.file).filter(Boolean);
 
 const report = {
-  schema: 'RELATIONAL_KEY_V2_SCALING_ARCHITECTURE_BUILD_002',
+  schema: 'RELATIONAL_KEY_V2_SCALING_ARCHITECTURE_BUILD_003',
   generatedAt: new Date().toISOString(),
   verdict: failures.length ? 'SCALING_ARCHITECTURE_BUILD_FAIL' : 'SCALING_ARCHITECTURE_BUILD_PASS',
   familyCount: families.length,
-  main: main
-    ? {
-        manifestKey: main.key,
-        source: main.entry.src ?? null,
-        file: main.entry.file,
-        entryBytes: bytesForKey(main.key),
-        initialStaticFiles: initialFiles,
-        initialStaticBytes: bytesForKeys(initialClosure),
-        dynamicImports: main.entry.dynamicImports ?? [],
-      }
-    : null,
+  main: main ? {
+    manifestKey: main.key,
+    source: main.entry.src ?? null,
+    file: main.entry.file,
+    entryBytes: bytesForKey(main.key),
+    initialStaticFiles: initialFiles,
+    initialStaticBytes: bytesForKeys(initialClosure),
+    dynamicImports: main.entry.dynamicImports ?? [],
+  } : null,
   families: familyRows,
   sharedDynamicRuntime: {
     files: [...sharedDynamicKeys].map((key) => manifest[key]?.file).filter(Boolean),
     bytes: bytesForKeys(sharedDynamicKeys),
   },
-  completeBuild: {
-    jsFileCount: allJs.length,
-    jsBytes: allJsBytes,
-  },
+  completeBuild: { jsFileCount: allJs.length, jsBytes: allJsBytes },
   failures,
 };
 
@@ -167,7 +154,5 @@ if (failures.length) {
 } else {
   console.log('V2_SCALING_ARCHITECTURE_BUILD_PASS');
   console.log(`initial-static-js-bytes: ${report.main?.initialStaticBytes ?? 0}`);
-  for (const family of familyRows) {
-    console.log(`${family.id}-incremental-js-bytes: ${family.incrementalBeyondInitialBytes}`);
-  }
+  for (const family of familyRows) console.log(`${family.id}-incremental-js-bytes: ${family.incrementalBeyondInitialBytes}`);
 }
