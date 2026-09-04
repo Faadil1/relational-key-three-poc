@@ -9,6 +9,22 @@ const SHOTS = path.join(OUT, 'screenshots');
 
 await fs.mkdir(SHOTS, { recursive: true });
 
+async function selectLegacyClaim(frame, claim) {
+  const claimSelector = `[data-claim="${claim}"]`;
+  if (await frame.locator(claimSelector).count()) {
+    await frame.locator(claimSelector).click();
+    return;
+  }
+  const mode = claim === 'matching' ? 'match' : 'other';
+  await frame.locator(`[data-mode="${mode}"]`).click();
+}
+
+async function runLegacyClaim(frame, claim, waitMs) {
+  await selectLegacyClaim(frame, claim);
+  await frame.locator('#run').click();
+  await frame.waitForTimeout(waitMs);
+}
+
 const pilots = [
   {
     id: 'anamorphosis-paris',
@@ -73,6 +89,51 @@ const pilots = [
     v2: {
       matchingExpect: /MATCHING .*7\.0 Hz beat envelope/i,
       otherExpect: /OTHER .*12\.0 Hz/i,
+    },
+  },
+  {
+    id: 'kento-japan',
+    label: 'Kento · Japan',
+    v1: {
+      matching: async (frame) => runLegacyClaim(frame, 'matching', 5600),
+      other: async (frame) => runLegacyClaim(frame, 'other', 5600),
+      read: async (frame) => (await frame.locator('#result').innerText()).trim(),
+      matchingExpect: /THREE COLOR LAYERS REGISTERED .* ONE IMAGE ACCUMULATED/i,
+      otherExpect: /ONE COLOR LAYER MISREGISTERED/i,
+    },
+    v2: {
+      matchingExpect: /MATCHING .*pressure transfers a registered layer/i,
+      otherExpect: /OTHER .*kentō registration is offset|OTHER .*offset layer/i,
+    },
+  },
+  {
+    id: 'stereoscopy-uk',
+    label: 'Stereoscopy · UK',
+    v1: {
+      matching: async (frame) => runLegacyClaim(frame, 'matching', 5400),
+      other: async (frame) => runLegacyClaim(frame, 'other', 5200),
+      read: async (frame) => (await frame.locator('#result').innerText()).trim(),
+      matchingExpect: /CONTROLLED DISPARITY IS PRESERVED|CONTINUE .* BOTH VIEWS REMAIN DISTINCT/i,
+      otherExpect: /RELATION NOT REGISTERED/i,
+    },
+    v2: {
+      matchingExpect: /MATCHING .*stable depth relation emerges/i,
+      otherExpect: /OTHER .*disparity refuses the intended fusion/i,
+    },
+  },
+  {
+    id: 'signal-nigeria',
+    label: 'Signal · Nigeria',
+    v1: {
+      matching: async (frame) => runLegacyClaim(frame, 'matching', 3800),
+      other: async (frame) => runLegacyClaim(frame, 'other', 3300),
+      read: async (frame) => (await frame.locator('#result').innerText()).trim(),
+      matchingExpect: /LANLATE CAPTURE CARRIED .* REPEATER HANDOFFS REGISTERED/i,
+      otherExpect: /LINK NOT CARRIED/i,
+    },
+    v2: {
+      matchingExpect: /MATCHING .*continuous relay path.*receiving card responds/i,
+      otherExpect: /OTHER .*relay path breaks/i,
     },
   },
 ];
@@ -232,11 +293,28 @@ async function runV1(browser, pilot) {
 
 async function chooseV2(page, pilot) {
   await page.getByRole('button', { name: new RegExp(pilot.label.split(' · ')[0], 'i') }).click();
+  await page.locator(`[data-scene-runtime="${pilot.id}"]`).waitFor({ state: 'attached', timeout: 10000 });
+  await page.locator('canvas').waitFor({ state: 'visible', timeout: 10000 });
   await page.waitForTimeout(100);
 }
 
 async function statusText(page) {
   return (await page.locator('.status-strip').innerText()).trim();
+}
+
+async function completeV2Matching(page, pilot) {
+  if (pilot.id === 'coupler-virginia') {
+    await page.getByRole('button', { name: 'PULL +' }).click();
+    await page.waitForTimeout(350);
+  }
+  if (pilot.id === 'ombak-bali') {
+    await page.getByRole('button', { name: /START SYNTHETIC AUDIO/i }).click();
+    await page.waitForTimeout(500);
+  }
+  if (pilot.id === 'kento-japan') {
+    await page.getByRole('button', { name: 'PRESS / TRANSFER', exact: true }).click();
+    await page.waitForTimeout(300);
+  }
 }
 
 async function runV2Desktop(browser, pilot) {
@@ -263,14 +341,7 @@ async function runV2Desktop(browser, pilot) {
 
   await page.getByRole('button', { name: 'MATCHING', exact: true }).click();
   await page.waitForTimeout(250);
-  if (pilot.id === 'coupler-virginia') {
-    await page.getByRole('button', { name: 'PULL +' }).click();
-    await page.waitForTimeout(350);
-  }
-  if (pilot.id === 'ombak-bali') {
-    await page.getByRole('button', { name: /START SYNTHETIC AUDIO/i }).click();
-    await page.waitForTimeout(500);
-  }
+  await completeV2Matching(page, pilot);
   const matching = await statusText(page);
   if (!pilot.v2.matchingExpect.test(matching)) throw new Error(`${pilot.id} V2 MATCHING mismatch: ${matching}`);
   await capture(page, `v2-${pilot.id}-matching`);
@@ -285,7 +356,6 @@ async function runV2Desktop(browser, pilot) {
     if (await stop.isVisible()) await stop.click();
   }
 
-  // Real keyboard activation on an existing native control.
   await page.getByRole('button', { name: 'OTHER', exact: true }).focus();
   await page.keyboard.press('Enter');
   await page.waitForTimeout(100);
@@ -316,10 +386,15 @@ async function runV2Mobile(browser, pilot) {
   await page.locator('canvas').waitFor({ state: 'visible' });
   await chooseV2(page, pilot);
   await page.getByRole('button', { name: 'MATCHING', exact: true }).click();
+  await completeV2Matching(page, pilot);
   await page.waitForTimeout(250);
   const layout = await page.evaluate(() => ({ width: innerWidth, scrollWidth: document.documentElement.scrollWidth }));
   if (layout.scrollWidth > layout.width) throw new Error(`${pilot.id} V2 mobile overflow ${layout.scrollWidth} > ${layout.width}`);
   await capture(page, `v2-${pilot.id}-mobile-matching`);
+  if (pilot.id === 'ombak-bali') {
+    const stop = page.getByRole('button', { name: /STOP AUDIO/i });
+    if (await stop.isVisible()) await stop.click();
+  }
   await context.close();
   return { pilot: pilot.id, layout, consoleErrors, pageErrors };
 }
@@ -332,15 +407,20 @@ async function runReducedMotion(browser, pilot) {
   const note = (await page.locator('.motion-note').innerText()).trim();
   if (!/Reduced motion active/i.test(note)) throw new Error(`${pilot.id} reduced-motion contract not active`);
   await page.getByRole('button', { name: 'MATCHING', exact: true }).click();
+  await completeV2Matching(page, pilot);
   await page.waitForTimeout(200);
   await capture(page, `v2-${pilot.id}-reduced-motion`);
+  if (pilot.id === 'ombak-bali') {
+    const stop = page.getByRole('button', { name: /STOP AUDIO/i });
+    if (await stop.isVisible()) await stop.click();
+  }
   await context.close();
   return { pilot: pilot.id, note, consoleErrors, pageErrors };
 }
 
 const browser = await chromium.launch({ headless: true, args: ['--use-angle=swiftshader', '--enable-webgl'] });
 const report = {
-  schema: 'RELATIONAL_KEY_V2_RUNTIME_COMPARE_001',
+  schema: 'RELATIONAL_KEY_V2_RUNTIME_COMPARE_002',
   generatedAt: new Date().toISOString(),
   v1Url: V1,
   v2Url: V2,
@@ -384,13 +464,12 @@ for (const pilot of pilots) {
   });
 }
 
-// Explicit semantic collision check for the Ombak migration.
 if (report.v1['ombak-bali']?.other && report.v2['ombak-bali']?.other) {
   const v1Other = report.v1['ombak-bali'].other;
   const v2Other = report.v2['ombak-bali'].other;
   if (/12\s*HZ/i.test(v1Other) && /1\.3|1\.2|1\.26/i.test(v2Other)) {
     hardFailure = true;
-    report.findings.push({ severity: 'FAIL', pilot: 'ombak-bali', message: 'Semantic drift: V1 OTHER is Δ12 Hz while V2 OTHER collapses toward ~1.26 Hz. V2 does not preserve the established OTHER relation.' });
+    report.findings.push({ severity: 'FAIL', pilot: 'ombak-bali', message: 'Semantic drift: V1 OTHER is Δ12 Hz while V2 OTHER collapses toward ~1.26 Hz.' });
   }
 }
 
@@ -398,7 +477,7 @@ report.verdict = hardFailure ? 'TARGETED_REWORK_REQUIRED' : 'BROWSER_RUNTIME_PAS
 await fs.writeFile(path.join(OUT, 'runtime-compare.json'), JSON.stringify(report, null, 2));
 
 const summary = [];
-summary.push(`# RELATIONAL KEY V2 runtime compare`);
+summary.push('# RELATIONAL KEY V2 runtime compare');
 summary.push(`Verdict: **${report.verdict}**`);
 summary.push('');
 for (const pilot of pilots) {
@@ -407,6 +486,7 @@ for (const pilot of pilots) {
   summary.push(`## ${pilot.label}`);
   if (!v1 || !v2) {
     summary.push('- Browser case incomplete.');
+    summary.push('');
     continue;
   }
   summary.push(`- V1 OTHER: ${v1.other}`);
