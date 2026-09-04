@@ -1,114 +1,15 @@
 <!doctype html>
 <html lang="fr">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>RELATIONAL KEY — Bénin Service Register</title>
-<style>
-html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#0a0907}.host{width:100%;height:100%;border:0;display:block;background:#0a0907}
-</style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RELATIONAL KEY — Bénin Chip-Card / Publiphone Register</title>
+<style>html,body{margin:0;width:100%;height:100%;background:#0b0907;color:#f1ead9;font-family:Inter,system-ui,sans-serif}.fallback{min-height:100%;display:grid;place-items:center}.fallback a{color:#d9bd83}</style>
 </head>
 <body>
-<iframe class="host" id="host" title="Bénin · Service Register archival phonecard identity" src="/families/service-benin/exp-2.html"></iframe>
+<div class="fallback"><a href="/families/service-benin/r5-9.html">Open Bénin Chip-Card / Publiphone Register</a></div>
 <script>
-const host=document.getElementById('host');
-host.onload=()=>{
-  try{
-    const wrapperDoc=host.contentWindow.document;
-    const context=wrapperDoc.querySelector('.context');
-    if(context)context.textContent='BÉNIN · SÉRIE J · TÉLÉCARTE / SERVICE HANDOFF';
-    const inner=wrapperDoc.getElementById('rk'); if(!inner)return;
-    const inject=()=>{
-      try{
-        const doc=inner.contentWindow.document;
-        if(doc.getElementById('exp-2c-benin-archive-card'))return;
-        const pair=doc.getElementById('pair');
-        const leftCard=doc.querySelector('.leftCard');
-        const rightCard=doc.querySelector('.rightCard');
-        const leftMaterial=doc.getElementById('lm');
-        const rightMaterial=doc.getElementById('rm');
-        if(!pair||!leftCard||!rightCard||!leftMaterial||!rightMaterial)return;
-
-        doc.body.classList.add('benin-archive-card-v1');
-        const kicker=doc.getElementById('kicker');
-        const truth=doc.getElementById('truth');
-        if(kicker)kicker.textContent='BÉNIN · PTT / OPT · SÉRIE J — LIAISONS & TRANSMISSIONS';
-        if(truth)truth.textContent='Synthèse éditoriale de marqueurs documentés de télécartes et services téléphoniques béninois · pas une réplique ni une procédure actuelle.';
-
-        const style=doc.createElement('style');
-        style.id='exp-2c-benin-archive-card';
-        style.textContent=`
-          .benin-archive-card-v1{background:radial-gradient(circle at 50% -12%,rgba(205,168,88,.10),transparent 34%),#0b0a08}
-          .benin-archive-card-v1 .intro span{color:#d5aa54}.benin-archive-card-v1 .intro p{color:#a9a08d}
-          .benin-archive-card-v1 .service .card{background:#18150f;border:1px solid rgba(210,176,106,.28);box-shadow:0 32px 68px rgba(0,0,0,.55)}
-          .benin-archive-card-v1 .service .material{background:#d6c8a8!important;border-radius:8px;box-shadow:inset 0 0 0 1px rgba(72,54,30,.22),inset 0 -18px 30px rgba(87,62,29,.10)}
-          .benin-archive-card-v1 .service .grid,.benin-archive-card-v1 .service .route{opacity:0!important}
-          .benin-archive-card-v1 .service .shade{background:linear-gradient(90deg,rgba(29,21,12,.16),transparent 45%,rgba(255,255,255,.08)),linear-gradient(180deg,transparent 62%,rgba(33,24,13,.16))}
-          .benin-archive-card-v1 .service .role{background:#17130d;color:#f2e7c9;border:1px solid #c69842;box-shadow:none}
-          .benin-archive-card-v1 .service .copy span{color:#f0d18d}.benin-archive-card-v1 .service .copy small{color:#c9bea6}
-          .benin-archive-card-v1 .junction{opacity:.15!important}
-          .benin-archive-card-v1 .bridgeLabel{color:#94866d}
-          .bjArchive{position:absolute;inset:0;z-index:3;overflow:hidden;pointer-events:none;color:#1e1a12;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
-          .bjFlagRail{position:absolute;left:0;top:0;right:0;height:7px;display:grid;grid-template-columns:1.25fr 1fr 1fr}
-          .bjFlagRail i:nth-child(1){background:#16835a}.bjFlagRail i:nth-child(2){background:#e0b83e}.bjFlagRail i:nth-child(3){background:#b64b3d}
-          .bjCountry{position:absolute;left:6%;top:9%;font:1000 22px/1 ui-sans-serif,system-ui,sans-serif;letter-spacing:.02em;color:#17140f}
-          .bjOffice{position:absolute;left:6%;top:24%;font:900 5.4px/1.2 ui-monospace,monospace;letter-spacing:.15em;color:#423823;text-transform:uppercase}
-          .bjSeries{position:absolute;left:6%;top:31%;font:800 4.8px/1.3 ui-monospace,monospace;letter-spacing:.12em;color:#62543b;text-transform:uppercase}
-          .bjUnits{position:absolute;right:5%;top:9%;text-align:right;font:1000 18px/1 ui-sans-serif,system-ui,sans-serif;color:#8e291f}
-          .bjUnits small{display:block;margin-top:4px;font:900 4.6px ui-monospace,monospace;letter-spacing:.16em;color:#4b3e29}
-          .bjChip{position:absolute;left:6%;top:43%;width:74px;height:50px;border-radius:6px;background:#caa452;border:1px solid #80672f;box-shadow:inset 0 0 0 2px rgba(255,244,190,.26),0 3px 7px rgba(54,38,16,.18);display:grid;grid-template-columns:repeat(3,1fr);grid-template-rows:repeat(2,1fr);gap:2px;padding:4px}
-          .bjChip i{border:1px solid rgba(94,72,26,.55);border-radius:2px;background:linear-gradient(135deg,#e3c273,#aa873d);position:relative}
-          .bjChip i:after{content:'';position:absolute;inset:32% -4px;border-top:1px solid rgba(92,68,23,.55)}
-          .bjChipTrace{position:absolute;left:calc(6% + 74px);top:calc(43% + 24px);width:42px;height:2px;background:#8b6f32;box-shadow:0 -9px #8b6f32,0 9px #8b6f32;opacity:.7}
-          .bjServiceStack{position:absolute;left:39%;top:44%;right:6%;display:grid;gap:5px}
-          .bjService{display:flex;align-items:center;min-height:17px;border-top:1px solid rgba(65,51,29,.28);border-bottom:1px solid rgba(255,255,255,.28);font:900 4.7px ui-monospace,monospace;letter-spacing:.09em;color:#3d3322;text-transform:uppercase}
-          .bjService:before{content:'•';margin-right:6px;color:#a22e22;font-size:8px}.bjService.hot{color:#8e291f}
-          .bjArchiveStrip{position:absolute;left:6%;right:6%;bottom:16%;height:18px;border:1px solid rgba(53,42,25,.35);display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:7px;padding:0 7px;background:rgba(244,233,201,.48);font:800 4.5px ui-monospace,monospace;letter-spacing:.11em;color:#3f3525}
-          .bjArchiveStrip b{font-weight:1000;color:#8e291f}.bjArchiveStrip em{font-style:normal;color:#1d644c}
-          .bjSerial{position:absolute;left:6%;bottom:8%;font:800 4.3px ui-monospace,monospace;letter-spacing:.13em;color:#5a4c35}
-          .bjDial{position:absolute;right:5%;bottom:7%;font:1000 8px ui-monospace,monospace;letter-spacing:.10em;color:#176c51}
-          .bjWear:before,.bjWear:after{content:'';position:absolute;pointer-events:none}
-          .bjWear:before{inset:0;background:repeating-linear-gradient(96deg,transparent 0 37px,rgba(73,56,28,.035) 38px 39px);mix-blend-mode:multiply}
-          .bjWear:after{left:0;right:0;bottom:2px;height:1px;background:rgba(83,63,30,.32);box-shadow:0 -1px rgba(255,255,255,.22)}
-          .benin-archive-card-v1 .serviceExpTrack{top:36%;height:24%;left:39%;right:6%;gap:6px;opacity:.88}
-          .benin-archive-card-v1 .serviceExpStep{background:#eee4c8;border:1px solid #8d6d36;color:#2c2619;border-radius:2px;font-size:8px;box-shadow:inset 0 0 0 1px rgba(255,255,255,.35)}
-          .benin-archive-card-v1 .serviceExpStep:after{background:#8c6e32}
-          .benin-archive-card-v1 .serviceExpPort{top:47%;background:#c59b45;border-color:#6d552b;box-shadow:0 0 0 2px rgba(218,195,139,.32)}
-          .benin-archive-card-v1 .serviceExpRail{height:3px;background:linear-gradient(90deg,#176c51 0%,#c59b45 42%,#c59b45 58%,#8e291f 100%);box-shadow:0 0 12px rgba(188,149,69,.22)}
-          .benin-archive-card-v1 .serviceExpToken{border-radius:2px;background:#d9b866;border-color:#765a2c;color:#17140e;box-shadow:0 0 13px rgba(203,166,79,.45)}
-          .benin-archive-card-v1 .serviceExpResidualA{background:linear-gradient(90deg,#176c51,#c59b45)}
-          .benin-archive-card-v1 .serviceExpResidualB{background:linear-gradient(90deg,#c59b45,#8e291f)}
-          .benin-archive-card-v1 .serviceExpState{color:#b69a61}.benin-archive-card-v1 .pair[data-service-exp="other"] .serviceExpState{color:#c2786f}
-          @media(max-width:900px){.bjCountry{font-size:15px}.bjUnits{font-size:13px}.bjChip{width:56px;height:38px}.bjChipTrace{display:none}.bjServiceStack{left:43%}.bjArchiveStrip{font-size:3.7px}.bjService{font-size:3.8px}.bjDial{font-size:6px}}
-        `;
-        doc.head.appendChild(style);
-
-        const mk=(side)=>{
-          const layer=doc.createElement('div');layer.className='bjArchive bjWear '+side;
-          const left=side==='left';
-          layer.innerHTML=`
-            <div class="bjFlagRail"><i></i><i></i><i></i></div>
-            <div class="bjCountry">BÉNIN</div>
-            <div class="bjOffice">${left?'PTT · TÉLÉCARTE':'OPT · SERVICE / TRANSMISSION'}</div>
-            <div class="bjSeries">SÉRIE J · POSTES · LIAISONS TÉLÉPHONIQUES · TRANSMISSIONS</div>
-            <div class="bjUnits">${left?'50':'120'}<small>UNITÉS</small></div>
-            <div class="bjChip">${'<i></i>'.repeat(6)}</div><i class="bjChipTrace"></i>
-            <div class="bjServiceStack">
-              <span class="bjService ${left?'hot':''}">${left?'COMPOSITION ABRÉGÉE':'RENVOI TEMPORAIRE'}</span>
-              <span class="bjService ${left?'':'hot'}">${left?'SERVICES PLUS':'CONFÉRENCE À TROIS'}</span>
-            </div>
-            <div class="bjArchiveStrip"><b>${left?'ORIGINE':'CONTINUATION'}</b><span>${left?'COTONOU · CARTE A · 01–02':'RÉSEAU · CARTE B · 03–04'}</span><em>${left?'PTT':'OPT'}</em></div>
-            <div class="bjSerial">N° ${left?'BJ-PTT-50-A / 01·02':'BJ-OPT-120-B / 03·04'} · ÉTUDE ÉDITORIALE</div>
-            <div class="bjDial">+229</div>`;
-          return layer;
-        };
-        leftMaterial.appendChild(mk('left'));rightMaterial.appendChild(mk('right'));
-      }catch(e){console.error('EXP-2C Benin archival identity injection failed',e)}
-    };
-    if(inner.contentWindow?.document?.readyState==='complete')setTimeout(inject,180);
-    inner.addEventListener('load',()=>setTimeout(inject,180),{once:true});
-  }catch(e){console.error('EXP-2C host failed',e)}
-};
+// R5.9 public promotion: direct/public Service access resolves to the USER-validated candidate.
+location.replace('/families/service-benin/r5-9.html');
 </script>
 </body>
 </html>
