@@ -33,38 +33,83 @@ Closed STRONG in R5:
 Food / Toyama; Textile / Bonwire; Metate / Teotitlán; Tongiaki / Tonga; Garamut / East Sepik–Ramu; Kento / Japan; Swell / Marshall Islands; City / Gatineau; Service / Benin; Signal / Nigeria.
 
 # R5.10 — SIGNAL / NIGERIA — STRONG / CLOSED ✅
-Mechanism:
-# **LANLATE EARTH STATION → REPEATER CHAIN → CARRIED LINK**
-
 Candidate `families/signal-nigeria/r5-10.html` @ `7a02cfd2d9e1c594cb2c7a7e760da9a017b2f126`.
 USER proof `/mnt/data/9d63ba8e-b24f-436f-aac3-de7c1c689af5.mp4` — 13.87 s / 1908×962 / 30 fps / 416 frames.
 Verdict `CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
 Promotion `families/signal-nigeria/index.html` @ `476a4d4e61f4a018ca6fbdf92475f7f864970890` → `/families/signal-nigeria/r5-10.html`.
-LIVE `dpl_8iVFnJVeotuHHchF91C5ejPseaXK` — READY on exact promotion commit.
-Public `/families/signal-nigeria/` verified HTTP 200 serving the exact promoted wrapper.
+LIVE `dpl_8iVFnJVeotuHHchF91C5ejPseaXK` READY on exact promotion commit.
+Public `/families/signal-nigeria/` verified HTTP 200.
 Closure `POST_CLOSEOUT_R5_10D_SIGNAL_NIGERIA_USER_PASS_LIVE_PROMOTION_STRONG_CLOSED.md` @ `7d8a99f8e26b43c2f2f970b765e6ed61b8fb8ecf`.
 Shared runtime unchanged.
-Signal = STRONG.
+
+# R5.11 — FRIDA / COYOACÁN — ACTIVE
+Baseline ADEQUATE.
+Prior EXP-4 remains valid but its consequence is abstract layered trace alignment.
+
+Source audit:
+`POST_CLOSEOUT_R5_11A_FRIDA_COYOACAN_MIRROR_EASEL_AUDIT.md` @ `f7ab7a80f8417d5213dd1e653f64751660a7ed99`.
+
+Source-backed mechanism:
+# **BED MIRROR → REFLECTED SELF → RECLINING EASEL → PAINTED REGISTER**
+
+Law:
+`MIRROR → REFLECTION LOCK → TRACE CARRIES → EASEL RECEIVES → PAINTED REGISTER`.
+
+Candidate:
+`families/frida-coyoacan/r5-11.html`
+Implementation:
+`9402db8b56e2922a74223d1ebba3035e06f91c01`.
+Candidate register:
+`POST_CLOSEOUT_R5_11B_FRIDA_COYOACAN_MIRROR_EASEL_CANDIDATE.md` @ `d09bf2540225f03da1c8201997a65d775ee4a4da`.
+
+MATCHING:
+- mirror and easel valid before relation;
+- reflected-self contour appears in Card A;
+- editorial reflection anchors lock;
+- subordinate trace crosses the seam;
+- outline, features and hair/crown register sequentially on Card B;
+- final `REFLECTION REGISTERED · PAINTED SELF-IMAGE FORMED`.
+
+OTHER:
+- mirror remains valid;
+- easel remains valid;
+- reflection remains visible;
+- cross-seam trace is offset;
+- canvas receives ghosted/doubled residual;
+- final `MIRROR + EASEL VALID · TRACE OFFSET · PAINTED REGISTER MISALIGNS`.
+
+Truth boundary:
+documented relationship = mirror above bed + specially made easel enabled Frida to begin drawing/painting while convalescing. Exact optics, mirror/easel geometry, registration anchors, timing, transfer and portrait contour are editorial; no claim of exact surviving hardware, Frida's stroke order, a literal optical-transfer technique, or a specific painting reconstruction.
+
+SOURCE candidate: PASS.
+Public Frida wrapper unchanged and still resolves to EXP-4.
+Shared runtime unchanged.
+Frida remains ADEQUATE.
+
+LIVE status:
+- implementation commit `9402db8b56e2922a74223d1ebba3035e06f91c01`: Vercel Hobby `build-rate-limit` failure;
+- candidate-register commit `d09bf2540225f03da1c8201997a65d775ee4a4da`: same `build-rate-limit` failure;
+- no application failure inferred.
 
 # STATE SEPARATION
 - prior Global closeout: PASS / frozen
-- Signal R5.10 SOURCE: PASS
-- Signal R5.10 USER: PASS ✅
-- Signal R5.10 LIVE promotion: PASS ✅
-- Signal R5.10 classification: STRONG / CLOSED
+- Signal R5.10: STRONG / CLOSED
+- Frida R5.11 SOURCE: PASS candidate
+- Frida R5.11 LIVE: BLOCKED / pending Vercel capacity
+- Frida R5.11 USER: NOT STARTED
+- Frida public promotion: NOT STARTED
 - shared runtime: unchanged
 - VALIDATED: 24
 - matrix: STRONG 23 / ADEQUATE 1 / EXPERIENCE DEBT 0
 - PR #21: DRAFT / DO NOT MERGE
 
 # ACTIVE GATE
-# **R5.11A — FRIDA / COYOACÁN SOURCE + MECHANISM AUDIT**
+# **R5.11B-LIVE — FRIDA / COYOACÁN CANDIDATE DEPLOYMENT**
 
 Next exact action:
-1. inspect current promoted Frida / Coyoacán implementation and prior EXP-4 evidence;
-2. preserve both members before relation;
-3. deepen the Coyoacán-specific layered-trace consequence rather than add generic center spectacle;
-4. distinguish documented Casa Azul / material / biographical cues from editorial reconstruction;
-5. keep public Frida wrapper unchanged until USER PASS;
-6. do not mutate shared runtime;
-7. build one isolated R5.11 candidate only if evidence supports a real STRONG-threshold mechanism.
+1. do not change Frida candidate semantics;
+2. obtain a READY branch deployment containing unchanged `r5-11.html`;
+3. verify candidate route or exact-commit integrity under preview authentication;
+4. generate temporary USER share access;
+5. open one MATCHING + OTHER USER regression;
+6. only USER PASS may authorize public Frida promotion and ADEQUATE → STRONG.
