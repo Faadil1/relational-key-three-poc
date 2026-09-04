@@ -6,7 +6,7 @@ Branch: `collection/global-refinement-1`
 PR #21: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
-# **R5.9B-LIVE — SERVICE / BENIN CANDIDATE DEPLOYMENT**
+# **R5.9C — SERVICE / BENIN USER MATCHING + OTHER REGRESSION**
 
 Do NOT reopen prior Global Refinement closeout; it remains PASS / frozen.
 Do NOT mutate `families/_shared/round13r/index.html` for family-specific refinement.
@@ -21,61 +21,64 @@ Closed STRONG in R5:
 Food / Toyama; Textile / Bonwire; Metate / Teotitlán; Tongiaki / Tonga; Garamut / East Sepik–Ramu; Kento / Japan; Swell / Marshall Islands; City / Gatineau.
 
 # R5.8 CITY / GATINEAU — CLOSED ✅
-USER proof `/mnt/data/940f9e51-5c51-4331-90b0-4a55800f684e.mp4` — 12.93 s / 1906×962 / 30 fps / 388 frames.
-Verdict `CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
-Promotion `families/city-gatineau/index.html` @ `952b7d973bdc0a81f421708668993040390c1b0d` → `r5-8.html`.
-Promotion retry `c3dffbf5b157c228db956cf6fd0ea337c76c4f2a` reached Vercel success.
-LIVE `dpl_DJHCAoYdkbtyy22Bbp9xg7rMu2Jw` READY on exact retry commit.
-Wrapper blob at deployed commit `bd85e3ff3d51c4ad1fb552e375837d3c6ee522e8` directly resolves to `r5-8.html`.
-Preview fetch is SSO-protected (302); deterministic exact-commit promotion integrity PASS.
+USER proof `/mnt/data/940f9e51-5c51-4331-90b0-4a55800f684e.mp4`.
+Promotion `families/city-gatineau/index.html` @ `952b7d973bdc0a81f421708668993040390c1b0d`.
+LIVE `dpl_DJHCAoYdkbtyy22Bbp9xg7rMu2Jw` READY on `c3dffbf5b157c228db956cf6fd0ea337c76c4f2a`.
 Closure `POST_CLOSEOUT_R5_8D_CITY_GATINEAU_USER_PASS_LIVE_PROMOTION_STRONG_CLOSED.md` @ `ac26df1253c64bd5480062f5b62ef37aa75abf27`.
 
 # R5.9 SERVICE / BENIN — ACTIVE
 Baseline ADEQUATE.
-Existing EXP-2C archive-led phonecard identity remains valid.
-Problem: causal memorable moment is still an abstract four-step handoff.
-
-Source basis:
-- Archives nationales du Bénin Série J: posts, telephone links, transmissions and attached telecom services.
-- ITU Bénin national report: supplementary digital services + public-phone deployment programme since 1995.
-- Office des P&T du Bénin chip-phonecard object evidence: 30/50/120 unit cards and Service PLUS vocabulary.
-
-Chosen mechanism:
-# **CHIP CARD → PUBLIC PHONE READER → CONTACT REGISTER → LINE WINDOW**
-
-Candidate `families/service-benin/r5-9.html`.
-Implementation `ffaab4d1a8268dad054c9c15a52e07f7c550833b`.
-Register `POST_CLOSEOUT_R5_9A_SERVICE_BENIN_CHIPCARD_PUBLIPHONE_CANDIDATE.md` @ `f11ac00f04a26f52d8ff5c8b0ca53d7fcebc086e`.
+Mechanism: **CHIP CARD → PUBLIC PHONE READER → CONTACT REGISTER → LINE WINDOW**.
+Candidate `families/service-benin/r5-9.html` @ implementation `ffaab4d1a8268dad054c9c15a52e07f7c550833b`.
 
 MATCHING:
-- phonecard and reader valid before relation;
+- phonecard + publiphone reader valid before relation;
 - card approaches and seats;
-- six editorial contacts register sequentially;
-- line window opens only after shared contact field exists.
+- editorial contacts 01…06 register sequentially;
+- line window opens only after complete registered contact field.
 
 OTHER:
-- card and reader remain valid;
-- card is offset;
+- both objects remain valid;
+- card remains vertically/rotationally offset;
 - partial contact residual only;
 - line window remains closed.
 
 Truth boundary:
-editorial reconstruction. Six-contact geometry, ordering, authorization timing, tariff/unit use and exact publiphone hardware are illustrative and must not be presented as historical operating procedure.
+editorial reconstruction. Contact geometry/order, authorization timing, tariff/unit use and exact publiphone hardware are illustrative, not historical procedure.
 
-Initial LIVE status:
-Vercel on implementation commit `ffaab4d1a8268dad054c9c15a52e07f7c550833b` returned Hobby `build-rate-limit`.
-No application failure inferred.
+# LIVE RETRY — PASS ✅
+Initial implementation deployment hit Vercel Hobby build-rate-limit.
+On explicit human retry, status-only register commit `b1d0df51e21da65914c2e58a1e4013683dcfb1fc` reached Vercel success.
+Deployment: `dpl_Cpms8R8DoV8grGrDqEyupBFZ1SVz` — READY.
+Host: `relational-key-collectionrelational-key-collection-gs11h2rb7.vercel.app`.
+Git compare from implementation to retry contains only canonical/register files; `families/service-benin/r5-9.html` is unchanged.
+Raw automated fetch gets Vercel SSO 302; preview auth only, not application failure.
+
+USER URL:
+`https://relational-key-collectionrelational-key-collection-gs11h2rb7.vercel.app/families/service-benin/r5-9.html?_vercel_share=Aig9K3bwt1yE1N99muNgLUjzmmhS5QDX`
+
 Public Service wrapper unchanged.
 Shared runtime unchanged.
-Service remains ADEQUATE.
+Service remains ADEQUATE pending USER proof.
 
-# EXACT NEXT ACTION
-1. retry/check branch deployment without Service semantic changes;
-2. require READY deployment containing unchanged `r5-9.html`;
-3. verify candidate route or exact-commit blob integrity under preview auth;
-4. generate temporary USER access;
-5. request one MATCHING + OTHER video;
-6. judge CAUSAL / EMBODIMENT-STRONG / VISUAL-SPECIFICITY / TRUTH;
-7. only USER PASS may authorize Service promotion and ADEQUATE → STRONG.
+# EXACT NEXT USER ACTION
+1. `MATCHING CONTACT` → `TEST RELATIONSHIP`;
+2. hold fully registered contact field + `LINE WINDOW OPEN`;
+3. `OTHER CONTACT` → `TEST RELATIONSHIP`;
+4. hold offset-card / partial-contact / closed-window residual.
+
+On upload judge:
+- CAUSAL;
+- EMBODIMENT-STRONG;
+- VISUAL-SPECIFICITY;
+- TRUTH.
+
+If USER PASS:
+1. promote Service-specific candidate only;
+2. verify LIVE public Service promotion;
+3. Service ADEQUATE → STRONG;
+4. matrix → **STRONG 22 / ADEQUATE 2 / EXPERIENCE DEBT 0**;
+5. update closure + CURRENT_STATE + HANDOVER + queue + PR body;
+6. proceed to R5.10 Signal / Nigeria.
 
 PR #21 remains Draft / DO NOT MERGE.
