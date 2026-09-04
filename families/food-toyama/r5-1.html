@@ -38,6 +38,17 @@
 @media (max-width: 960px) {
   .controls { width: 100% !important; max-width: 100% !important; }
 }
+
+/* TRACE Gate 6.5 — Toyama intrinsic mobile card reflow. */
+@media (max-width: 900px) {
+  .member { min-width: 0; max-width: 100%; }
+  .card { width: 100%; max-width: 100%; min-width: 0; }
+}
+/* Toyama uses sourceNote/rootLaw instead of the common source/root class names. */
+.sourceNote, .rootLaw { font-size: 8px !important; }
+@media (max-width: 560px) {
+  .sourceNote, .rootLaw { font-size: 9px !important; }
+}
 </style>
 </head>
 <body>
