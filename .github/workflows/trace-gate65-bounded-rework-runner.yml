@@ -1,0 +1,143 @@
+name: TRACE Gate 6.5 Bounded Rework Runner
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - '.github/workflows/trace-gate65-bounded-rework-runner.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  patch-and-capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 35
+    env:
+      TARGET_BRANCH: trace/gate-6-5-bounded-rework-001
+      TRACE_BASE_URL: http://127.0.0.1:4173
+    steps:
+      - name: Checkout bounded rework branch
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ env.TARGET_BRANCH }}
+          fetch-depth: 0
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Assert runner target and clean checkout
+        run: |
+          test "$(git branch --show-current)" = "$TARGET_BRANCH"
+          test -z "$(git status --porcelain)"
+
+      - name: Setup Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Apply bounded Gate 6.5 repair
+        run: python .trace-validation/gate65_bounded_rework.py
+
+      - name: Verify bounded diff surface
+        shell: bash
+        run: |
+          git diff --check
+          mapfile -t changed < <(git diff --name-only)
+          printf '%s\n' "${changed[@]}"
+          python - <<'PY'
+          import subprocess
+          allowed = {
+            'families/food-toyama/r5-1.html',
+            'families/textile-bonwire/r5-2.html',
+            'families/metate-teotitlan/r5-3.html',
+            'families/tongiaki-tonga/r5-4.html',
+            'families/garamut-sepik-ramu/r5-5.html',
+            'families/kento-japan/r5-6.html',
+            'families/swell-marshall/r5-7.html',
+            'families/city-gatineau/r5-8.html',
+            'families/service-benin/r5-9.html',
+            'families/signal-nigeria/r5-10.html',
+            'families/frida-coyoacan/r5-11.html',
+            'families/stereoscopy-uk/snapshot.html',
+            '.trace-validation/gate65_patch_report.json',
+          }
+          changed = set(subprocess.check_output(['git','diff','--name-only'], text=True).splitlines())
+          unexpected = sorted(changed - allowed)
+          missing_core = sorted({p for p in allowed if p.startswith('families/')} - changed)
+          if unexpected:
+              raise SystemExit(f'unexpected changed files: {unexpected}')
+          if missing_core:
+              raise SystemExit(f'expected bounded target did not change: {missing_core}')
+          print(f'bounded diff verified: {len(changed)} files')
+          PY
+          git diff -- . ':!.trace-validation/gate65_patch_report.json' > /tmp/gate65-bounded.patch
+
+      - name: Commit bounded repair
+        run: |
+          git config user.name "trace-gate65-bot"
+          git config user.email "trace-gate65-bot@users.noreply.github.com"
+          git add \
+            families/food-toyama/r5-1.html \
+            families/textile-bonwire/r5-2.html \
+            families/metate-teotitlan/r5-3.html \
+            families/tongiaki-tonga/r5-4.html \
+            families/garamut-sepik-ramu/r5-5.html \
+            families/kento-japan/r5-6.html \
+            families/swell-marshall/r5-7.html \
+            families/city-gatineau/r5-8.html \
+            families/service-benin/r5-9.html \
+            families/signal-nigeria/r5-10.html \
+            families/frida-coyoacan/r5-11.html \
+            families/stereoscopy-uk/snapshot.html \
+            .trace-validation/gate65_patch_report.json
+          git commit -m "fix(trace): apply bounded Gate 6.5 evaluator repair"
+          git push origin HEAD:$TARGET_BRANCH
+
+      - name: Install Playwright
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium
+
+      - name: Start exact-target static server
+        run: |
+          python -m http.server 4173 --bind 127.0.0.1 >/tmp/trace-http.log 2>&1 &
+          echo $! > /tmp/trace-http.pid
+          for i in {1..20}; do
+            if curl -fsS http://127.0.0.1:4173/ >/dev/null; then exit 0; fi
+            sleep 0.5
+          done
+          cat /tmp/trace-http.log
+          exit 1
+
+      - name: Run exact-target browser capture
+        run: python .trace-validation/gate65_runtime_capture.py
+
+      - name: Commit machine-readable runtime evidence
+        if: success()
+        run: |
+          git add \
+            .trace-validation/gate65-artifacts/gate65-runtime-report.json \
+            .trace-validation/gate65-artifacts/SUMMARY.md
+          git commit -m "test(trace): record Gate 6.5 exact-target runtime evidence"
+          git push origin HEAD:$TARGET_BRANCH
+
+      - name: Publish Gate 6.5 summary
+        if: always()
+        run: |
+          if [ -f .trace-validation/gate65-artifacts/SUMMARY.md ]; then
+            cat .trace-validation/gate65-artifacts/SUMMARY.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload bounded diff and exact-target capture bundle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: relational-key-trace-gate65-bounded-rework
+          path: |
+            /tmp/gate65-bounded.patch
+            .trace-validation/gate65_patch_report.json
+            .trace-validation/gate65-artifacts/
+          if-no-files-found: warn
+          retention-days: 30
