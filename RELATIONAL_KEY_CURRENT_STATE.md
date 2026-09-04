@@ -76,6 +76,7 @@ Exact deployed commit: `793524ab6cf589d08c159f1cbbd4c8a75eb1f00b`.
 Host: `relational-key-collectionrelational-key-collection-f2p5eonws.vercel.app`.
 Candidate route `/families/frida-coyoacan/r5-11.html` verified HTTP 200.
 Candidate blob at implementation and retry is identical: `bd7e173b0f850293d74e7866497d23c00635ea8c`.
+Candidate register normalized after LIVE retry @ `a64bb5d9ebe9fc575acbb1bbe53974d2f21b4d4c`.
 LIVE USER-gate register: `POST_CLOSEOUT_R5_11C_FRIDA_COYOACAN_LIVE_READY_USER_GATE.md` @ `9a74604da2efe55490df4c25a43cc85471905a26`.
 
 Temporary USER URL:
