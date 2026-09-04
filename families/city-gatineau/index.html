@@ -1,54 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>RELATIONAL KEY — Gatineau Registered City Passage</title>
-<style>html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#0b0b09}.host{width:100%;height:100%;border:0;display:block;background:#0b0b09}</style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RELATIONAL KEY — Gatineau River-Seam Crossing</title>
+<style>html,body{margin:0;width:100%;height:100%;background:#071018;color:#edf6f3;font-family:Inter,system-ui,sans-serif}.fallback{min-height:100%;display:grid;place-items:center}.fallback a{color:#8bd8e8}</style>
 </head>
 <body>
-<iframe class="host" id="host" title="Gatineau · Registered City Passage" src="/families/city-gatineau/exp-1.html"></iframe>
+<div class="fallback"><a href="/families/city-gatineau/r5-8.html">Open Gatineau River-Seam Crossing</a></div>
 <script>
-const host=document.getElementById('host');
-host.onload=()=>{
-  try{
-    const wrapperDoc=host.contentWindow.document;
-    const context=wrapperDoc.querySelector('.context');
-    if(context)context.textContent='GATINEAU · REGISTERED CITY PASSAGE · FIVE-SECTOR WATERWAY FIELD';
-    wrapperDoc.title='RELATIONAL KEY — Gatineau Registered City Passage';
-    const inner=wrapperDoc.getElementById('rk');
-    if(!inner)return;
-    const inject=()=>{
-      try{
-        const doc=inner.contentWindow.document;
-        if(doc.getElementById('gatineau-public-identity'))return;
-        const pair=doc.getElementById('pair'),leftMaterial=doc.getElementById('lm'),rightMaterial=doc.getElementById('rm');
-        if(!pair||!leftMaterial||!rightMaterial)return;
-        doc.body.classList.add('gatineau-identity-v1');
-        const kicker=doc.getElementById('kicker'),truth=doc.getElementById('truth');
-        if(kicker)kicker.textContent='GATINEAU · FIVE-SECTOR WATERWAY FIELD';
-        if(truth)truth.textContent='Conceptual territory geometry using documented sectors + waterways · not an operational transit map.';
-        const style=doc.createElement('style');style.id='gatineau-public-identity';style.textContent=`
-          .gatineau-identity-v1{background:radial-gradient(circle at 50% -16%,rgba(0,107,183,.15),transparent 35%),#081017}
-          .gatineau-identity-v1 .intro span{color:#00aae1}.gatineau-identity-v1 .intro p{color:#9bb9b1}
-          .gatineau-identity-v1 .city .card{background:#0d2230;border-color:rgba(0,170,225,.2);box-shadow:0 34px 66px rgba(0,0,0,.46),0 0 0 1px rgba(0,136,93,.05)}
-          .gatineau-identity-v1 .city .material{background:linear-gradient(145deg,#0b2235 0%,#153b65 48%,#0c4a40 100%)}
-          .gatineau-identity-v1 .city .grid{opacity:.11;background-image:linear-gradient(rgba(150,205,214,.24) 1px,transparent 1px),linear-gradient(90deg,rgba(150,205,214,.18) 1px,transparent 1px);background-size:24px 24px}
-          .gatineau-identity-v1 .city .material>.route{opacity:.08}.gatineau-identity-v1 .city .shade{background:linear-gradient(90deg,rgba(4,13,19,.62),rgba(4,13,19,.08) 58%),linear-gradient(180deg,rgba(4,13,19,.03) 45%,rgba(3,10,14,.68))}
-          .gatineau-identity-v1 .city .role{background:rgba(7,22,30,.76);border:1px solid rgba(0,170,225,.22);color:#dceef1}.gatineau-identity-v1 .city .copy span{color:#76d0d8}.gatineau-identity-v1 .city .copy small{color:#bfd0cb}
-          .gatIdentity{position:absolute;inset:0;z-index:2;pointer-events:none;overflow:hidden}.gatIdentity svg{position:absolute;inset:0;width:100%;height:100%}.gatContour{fill:none;stroke:rgba(209,231,223,.11);stroke-width:1}.gatRiverMain{fill:none;stroke:#006bb7;stroke-width:24;opacity:.78;filter:drop-shadow(0 0 9px rgba(0,107,183,.24))}.gatRiverLight{fill:none;stroke:#00aae1;stroke-width:4;opacity:.62}.gatGreen{fill:rgba(0,136,93,.18);stroke:rgba(140,198,62,.28);stroke-width:1}
-          .gatNode{position:absolute;width:8px;height:8px;border-radius:50%;background:#8cc63e;border:2px solid rgba(229,245,219,.9);box-shadow:0 0 14px rgba(140,198,62,.46)}.gatSector{position:absolute;font:800 5px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.1em;color:#d8eee6;text-shadow:0 2px 8px rgba(0,0,0,.8);white-space:nowrap}.gatWaterLabel{position:absolute;font:700 4.5px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.11em;color:#73c9df;opacity:.9;white-space:nowrap}
-          .gatIdentity.left .s-aylmer{left:14%;top:29%}.gatIdentity.left .n-aylmer{left:12%;top:35%}.gatIdentity.left .s-hull{left:60%;top:38%}.gatIdentity.left .n-hull{left:57%;top:44%}.gatIdentity.left .outaouais{left:9%;bottom:17%}.gatIdentity.left .gatRiverLabel{right:4%;top:18%;writing-mode:vertical-rl}
-          .gatIdentity.right .s-gatineau{left:13%;top:40%}.gatIdentity.right .n-gatineau{left:10%;top:46%}.gatIdentity.right .s-masson{left:53%;top:31%}.gatIdentity.right .n-masson{left:43%;top:37%}.gatIdentity.right .s-buck{left:75%;top:20%}.gatIdentity.right .n-buck{left:66%;top:26%}.gatIdentity.right .outaouais{left:10%;bottom:17%}
-          .gatineau-identity-v1 .cityExpCardRoute.left path{stroke:#00aae1;filter:drop-shadow(0 0 8px rgba(0,170,225,.4))}.gatineau-identity-v1 .cityExpCardRoute.right path{stroke:#8cc63e;filter:drop-shadow(0 0 8px rgba(140,198,62,.34))}.gatineau-identity-v1 .cityExpCardRoute.left circle{stroke:#7edaf0}.gatineau-identity-v1 .cityExpCardRoute.right circle{stroke:#b8df73}
-          .gatineau-identity-v1 .cityExpContinuous{background:linear-gradient(90deg,#006bb7 0%,#00aae1 42%,#7bcf88 58%,#00885d 100%);box-shadow:0 0 20px rgba(0,170,225,.3)}.gatineau-identity-v1 .cityExpSplitA{background:linear-gradient(90deg,#006bb7,#00aae1)}.gatineau-identity-v1 .cityExpSplitB{background:linear-gradient(90deg,#8cc63e,#00885d)}.gatineau-identity-v1 .cityExpPulse{background:#eef9f6;border-color:#00aae1;box-shadow:0 0 18px rgba(0,170,225,.8),0 0 28px rgba(140,198,62,.25)}.gatineau-identity-v1 .cityExpState{color:#7dcbd2}.gatineau-identity-v1 .bridgeLabel{color:#6e9eaa}.gatineau-identity-v1 .pair[data-city-exp="other"] .cityExpState{color:#a8c98b}
-        `;doc.head.appendChild(style);
-        const mk=side=>{const layer=doc.createElement('div');layer.className='gatIdentity '+side;if(side==='left'){layer.innerHTML=`<svg viewBox="0 0 300 160" preserveAspectRatio="none"><path class="gatGreen" d="M0 18 C52 4 106 18 144 5 C188 -8 229 9 300 0 L300 54 C245 48 190 58 145 49 C95 39 44 52 0 44 Z"/><path class="gatContour" d="M-10 54 C55 40 96 68 160 52 S254 48 315 64"/><path class="gatContour" d="M-10 72 C57 59 116 83 176 68 S251 67 318 79"/><path class="gatContour" d="M-10 92 C61 78 125 102 185 87 S260 85 320 97"/><path class="gatRiverMain" d="M-15 132 C44 117 93 139 147 128 S242 111 315 126"/><path class="gatRiverLight" d="M254 -14 C244 28 259 57 247 88 C240 106 247 122 240 144"/></svg><i class="gatNode n-aylmer"></i><span class="gatSector s-aylmer">AYLMER</span><i class="gatNode n-hull"></i><span class="gatSector s-hull">HULL</span><span class="gatWaterLabel outaouais">RIVIÈRE DES OUTAOUAIS</span><span class="gatWaterLabel gatRiverLabel">RIVIÈRE GATINEAU</span>`}else{layer.innerHTML=`<svg viewBox="0 0 300 160" preserveAspectRatio="none"><path class="gatGreen" d="M0 7 C56 0 98 19 142 8 C192 -5 238 11 300 2 L300 57 C245 49 199 65 150 52 C97 39 51 53 0 43 Z"/><path class="gatContour" d="M-15 60 C49 43 103 71 161 55 S251 49 315 64"/><path class="gatContour" d="M-15 80 C49 65 112 88 172 72 S254 70 315 83"/><path class="gatContour" d="M-15 99 C48 85 117 106 178 91 S260 88 315 101"/><path class="gatRiverMain" d="M-20 126 C42 113 92 135 151 124 S244 111 318 127"/><path class="gatRiverLight" d="M5 -12 C17 20 5 48 16 79 C24 100 14 121 21 143"/></svg><i class="gatNode n-gatineau"></i><span class="gatSector s-gatineau">GATINEAU</span><i class="gatNode n-masson"></i><span class="gatSector s-masson">MASSON-ANGERS</span><i class="gatNode n-buck"></i><span class="gatSector s-buck">BUCKINGHAM</span><span class="gatWaterLabel outaouais">RIVIÈRE DES OUTAOUAIS</span>`}return layer};leftMaterial.appendChild(mk('left'));rightMaterial.appendChild(mk('right'));
-      }catch(e){console.error('Gatineau public identity injection failed',e)}
-    };
-    if(inner.contentWindow?.document?.readyState==='complete')setTimeout(inject,180);inner.addEventListener('load',()=>setTimeout(inject,180),{once:true});
-  }catch(e){console.error('Gatineau public host failed',e)}
-};
+// R5.8 public promotion: direct/public City access resolves to the USER-validated candidate.
+location.replace('/families/city-gatineau/r5-8.html');
 </script>
 </body>
 </html>
