@@ -10,6 +10,10 @@ const INITIAL = {
   couplerPull: 0,
   ombakBase: 220,
   ombakDifference: 7,
+  kentoOffset: 0.28,
+  kentoPressed: false,
+  stereoDisparity: 0.72,
+  signalAlignment: 0.34,
 };
 
 export default function App() {
@@ -29,6 +33,10 @@ export default function App() {
   const [couplerPull, setCouplerPull] = useState(INITIAL.couplerPull);
   const [ombakBase, setOmbakBase] = useState(INITIAL.ombakBase);
   const [ombakDifference, setOmbakDifference] = useState(INITIAL.ombakDifference);
+  const [kentoOffset, setKentoOffset] = useState(INITIAL.kentoOffset);
+  const [kentoPressed, setKentoPressed] = useState(INITIAL.kentoPressed);
+  const [stereoDisparity, setStereoDisparity] = useState(INITIAL.stereoDisparity);
+  const [signalAlignment, setSignalAlignment] = useState(INITIAL.signalAlignment);
   const reducedMotion = useReducedMotion();
 
   const focusMode = launch.focusMode;
@@ -58,14 +66,40 @@ export default function App() {
       if (couplerApproach >= 0.63) return 'OTHER / CONTACT · contact exists, but no shared lock has registered.';
       return 'IDLE · two independently valid coupler members are separated.';
     }
-    if (!audio.playing) {
+    if (activeId === 'ombak-bali') {
+      if (!audio.playing) {
+        return matching
+          ? `MATCHING READY · synthetic paired sources differ by ${ombakDifference.toFixed(1)} Hz · audio is user-initiated.`
+          : `OTHER READY · synthetic paired sources differ by ${effectiveOmbakDifference.toFixed(1)} Hz · outside the matching study state.`;
+      }
       return matching
-        ? `MATCHING READY · synthetic paired sources differ by ${ombakDifference.toFixed(1)} Hz · audio is user-initiated.`
-        : `OTHER READY · synthetic paired sources differ by ${effectiveOmbakDifference.toFixed(1)} Hz · outside the matching study state.`;
+        ? `MATCHING · synthetic paired sources create a ${ombakDifference.toFixed(1)} Hz beat envelope.`
+        : `OTHER · both synthetic sources sound, but the selected pair relation is not the matching envelope (${effectiveOmbakDifference.toFixed(1)} Hz study difference).`;
     }
-    return matching
-      ? `MATCHING · synthetic paired sources create a ${ombakDifference.toFixed(1)} Hz beat envelope.`
-      : `OTHER · both synthetic sources sound, but the selected pair relation is not the matching envelope (${effectiveOmbakDifference.toFixed(1)} Hz study difference).`;
+    if (activeId === 'kento-japan') {
+      const registered = matching && Math.abs(kentoOffset) <= 0.08;
+      if (!kentoPressed) {
+        return registered
+          ? 'MATCHING READY · woodblock kentō and receiving sheet are registered · press to transfer.'
+          : 'OTHER · both cards remain valid · kentō registration is offset before transfer.';
+      }
+      return registered
+        ? 'MATCHING · kentō seats agree · pressure transfers a registered layer to the receiving sheet.'
+        : 'OTHER · both cards remain valid · pressure transfers an offset layer and registration fails.';
+    }
+    if (activeId === 'stereoscopy-uk') {
+      const fused = matching && stereoDisparity <= 0.24;
+      return fused
+        ? 'MATCHING · two flat view cards preserve controlled disparity · a stable depth relation emerges between them.'
+        : 'OTHER · both view cards remain valid · disparity refuses the intended fusion.';
+    }
+    if (activeId === 'signal-nigeria') {
+      const aligned = matching && signalAlignment >= 0.82;
+      return aligned
+        ? 'MATCHING · Lanlate uplink orientation establishes a continuous relay path · the receiving card responds.'
+        : 'OTHER · both signal cards remain valid · the relay path breaks before the receiving response registers.';
+    }
+    return 'RELATION STATE UNAVAILABLE.';
   }, [
     activeId,
     anamorphosisOffset,
@@ -75,15 +109,27 @@ export default function App() {
     audio.playing,
     ombakDifference,
     effectiveOmbakDifference,
+    kentoOffset,
+    kentoPressed,
+    stereoDisparity,
+    signalAlignment,
   ]);
 
   const applyRelation = (mode) => {
+    const nextMatching = mode === 'matching';
     setRelationMode(mode);
     if (activeId === 'anamorphosis-paris') {
-      setAnamorphosisOffset(mode === 'matching' ? 0 : 0.72);
+      setAnamorphosisOffset(nextMatching ? 0 : 0.72);
     } else if (activeId === 'coupler-virginia') {
       setCouplerApproach(1);
       setCouplerPull(0);
+    } else if (activeId === 'kento-japan') {
+      setKentoOffset(nextMatching ? 0 : 0.3);
+      setKentoPressed(false);
+    } else if (activeId === 'stereoscopy-uk') {
+      setStereoDisparity(nextMatching ? 0.16 : 0.72);
+    } else if (activeId === 'signal-nigeria') {
+      setSignalAlignment(nextMatching ? 1 : 0.34);
     }
   };
 
@@ -99,24 +145,34 @@ export default function App() {
       setOmbakBase(INITIAL.ombakBase);
       setOmbakDifference(INITIAL.ombakDifference);
     }
+    if (activeId === 'kento-japan') {
+      setKentoOffset(INITIAL.kentoOffset);
+      setKentoPressed(false);
+    }
+    if (activeId === 'stereoscopy-uk') setStereoDisparity(INITIAL.stereoDisparity);
+    if (activeId === 'signal-nigeria') setSignalAlignment(INITIAL.signalAlignment);
   };
 
-  const activeSceneProps = activeId === 'anamorphosis-paris'
-    ? { offset: anamorphosisOffset, setOffset: setAnamorphosisOffset, reducedMotion }
-    : activeId === 'coupler-virginia'
-      ? {
-          approach: couplerApproach,
-          setApproach: setCouplerApproach,
-          pull: couplerPull,
-          matching,
-          reducedMotion,
-        }
-      : {
-          differenceHz: ombakDifference,
-          playing: audio.playing,
-          matching,
-          reducedMotion,
-        };
+  let activeSceneProps = {};
+  if (activeId === 'anamorphosis-paris') {
+    activeSceneProps = { offset: anamorphosisOffset, setOffset: setAnamorphosisOffset, reducedMotion };
+  } else if (activeId === 'coupler-virginia') {
+    activeSceneProps = { approach: couplerApproach, setApproach: setCouplerApproach, pull: couplerPull, matching, reducedMotion };
+  } else if (activeId === 'ombak-bali') {
+    activeSceneProps = { differenceHz: ombakDifference, playing: audio.playing, matching, reducedMotion };
+  } else if (activeId === 'kento-japan') {
+    activeSceneProps = { offset: kentoOffset, pressed: kentoPressed, matching, reducedMotion };
+  } else if (activeId === 'stereoscopy-uk') {
+    activeSceneProps = { disparity: stereoDisparity, matching, reducedMotion };
+  } else if (activeId === 'signal-nigeria') {
+    activeSceneProps = { alignment: signalAlignment, matching, reducedMotion };
+  }
+
+  const selectFamily = (id) => {
+    if (activeId === 'ombak-bali' && audio.playing) audio.stop();
+    setActiveId(id);
+    setRelationMode('other');
+  };
 
   return (
     <main className={focusMode ? 'app-shell focus-mode' : 'app-shell'}>
@@ -136,9 +192,9 @@ export default function App() {
       ) : (
         <header className="masthead">
           <div>
-            <p className="eyebrow">RELATIONAL KEY · V2.1 CONCEPT BUILDS</p>
+            <p className="eyebrow">RELATIONAL KEY · V2.3 BOUNDED EXPANSION · WAVE 001</p>
             <h1>THE RELATIONAL PAIR REMAINS THE PRODUCT.</h1>
-            <p className="lede">Archive-derived interaction studies · React + R3F / Three.js · V1 remains frozen.</p>
+            <p className="lede">Two base cards stay visible and necessary · archive-derived interaction studies · React + R3F / Three.js · V1 remains frozen.</p>
           </div>
           <div className="baseline" aria-label="Frozen baseline identity">
             <span>V1 GOLDEN BASELINE</span>
@@ -149,14 +205,14 @@ export default function App() {
       )}
 
       {!focusMode && (
-        <nav className="pilot-tabs" aria-label="V2 pilot families">
+        <nav className="pilot-tabs" aria-label="V2 family studies">
           {pilots.map((item) => (
             <button
               key={item.id}
               type="button"
               className={item.id === activeId ? 'pilot-tab active' : 'pilot-tab'}
               aria-pressed={item.id === activeId}
-              onClick={() => setActiveId(item.id)}
+              onClick={() => selectFamily(item.id)}
             >
               <span>{item.label}</span>
               <small>{item.className}</small>
@@ -255,25 +311,11 @@ export default function App() {
               <>
                 <label className="range-control">
                   <span>Approach <output>{Math.round(couplerApproach * 100)}%</output></span>
-                  <input
-                    type="range"
-                    min="0"
-                    max="1"
-                    step="0.01"
-                    value={couplerApproach}
-                    onChange={(event) => setCouplerApproach(Number(event.target.value))}
-                  />
+                  <input type="range" min="0" max="1" step="0.01" value={couplerApproach} onChange={(event) => setCouplerApproach(Number(event.target.value))} />
                 </label>
                 <label className="range-control">
                   <span>Load-path pull <output>{Math.round(couplerPull * 100)}%</output></span>
-                  <input
-                    type="range"
-                    min="0"
-                    max="1"
-                    step="0.01"
-                    value={couplerPull}
-                    onChange={(event) => setCouplerPull(Number(event.target.value))}
-                  />
+                  <input type="range" min="0" max="1" step="0.01" value={couplerPull} onChange={(event) => setCouplerPull(Number(event.target.value))} />
                 </label>
                 <div className="micro-actions">
                   <button type="button" onClick={() => setCouplerApproach((value) => Math.min(1, value + 0.2))}>APPROACH +</button>
@@ -286,25 +328,11 @@ export default function App() {
               <>
                 <label className="range-control">
                   <span>Synthetic base frequency <output>{ombakBase} Hz</output></span>
-                  <input
-                    type="range"
-                    min="160"
-                    max="360"
-                    step="1"
-                    value={ombakBase}
-                    onChange={(event) => setOmbakBase(Number(event.target.value))}
-                  />
+                  <input type="range" min="160" max="360" step="1" value={ombakBase} onChange={(event) => setOmbakBase(Number(event.target.value))} />
                 </label>
                 <label className="range-control">
                   <span>Paired difference study <output>{ombakDifference.toFixed(1)} Hz</output></span>
-                  <input
-                    type="range"
-                    min="1"
-                    max="10"
-                    step="0.1"
-                    value={ombakDifference}
-                    onChange={(event) => setOmbakDifference(Number(event.target.value))}
-                  />
+                  <input type="range" min="1" max="10" step="0.1" value={ombakDifference} onChange={(event) => setOmbakDifference(Number(event.target.value))} />
                   <small>This is a synthetic study control, not a claim of one universal Balinese tuning.</small>
                 </label>
                 <div className="micro-actions">
@@ -315,6 +343,35 @@ export default function App() {
                   )}
                 </div>
               </>
+            )}
+
+            {activeId === 'kento-japan' && (
+              <>
+                <label className="range-control">
+                  <span>Kentō registration offset <output>{kentoOffset.toFixed(2)}</output></span>
+                  <input type="range" min="-0.5" max="0.5" step="0.01" value={kentoOffset} onChange={(event) => { setKentoOffset(Number(event.target.value)); setKentoPressed(false); }} />
+                  <small>The two base cards remain separate; registration determines whether transfer lands correctly.</small>
+                </label>
+                <div className="micro-actions">
+                  <button type="button" onClick={() => setKentoPressed(true)}>PRESS / TRANSFER</button>
+                </div>
+              </>
+            )}
+
+            {activeId === 'stereoscopy-uk' && (
+              <label className="range-control">
+                <span>Controlled disparity <output>{stereoDisparity.toFixed(2)}</output></span>
+                <input type="range" min="0.08" max="0.9" step="0.01" value={stereoDisparity} onChange={(event) => setStereoDisparity(Number(event.target.value))} />
+                <small>Depth is an optional relational reading; comprehension never depends on the viewer having stereopsis.</small>
+              </label>
+            )}
+
+            {activeId === 'signal-nigeria' && (
+              <label className="range-control">
+                <span>Uplink orientation <output>{Math.round(signalAlignment * 100)}%</output></span>
+                <input type="range" min="0" max="1" step="0.01" value={signalAlignment} onChange={(event) => setSignalAlignment(Number(event.target.value))} />
+                <small>The relay node visualizes the relationship; the two signal cards remain the persistent members.</small>
+              </label>
             )}
           </section>
 
