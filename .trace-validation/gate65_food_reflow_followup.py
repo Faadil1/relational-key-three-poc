@@ -1,9 +1,13 @@
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
-PATH = ROOT / "families/food-toyama/r5-1.html"
-MARKER = "TRACE Gate 6.5 — Toyama intrinsic mobile card reflow"
-CSS = """
+
+CASES = [
+    {
+        "name": "Toyama",
+        "path": ROOT / "families/food-toyama/r5-1.html",
+        "marker": "TRACE Gate 6.5 — Toyama intrinsic mobile card reflow",
+        "css": """
 /* TRACE Gate 6.5 — Toyama intrinsic mobile card reflow. */
 @media (max-width: 900px) {
   .member { min-width: 0; max-width: 100%; }
@@ -14,21 +18,45 @@ CSS = """
 @media (max-width: 560px) {
   .sourceNote, .rootLaw { font-size: 9px !important; }
 }
-""".strip()
+""".strip(),
+        "required": [
+            "TRACE Gate 6.5 — Toyama intrinsic mobile card reflow",
+            ".card { width: 100%; max-width: 100%; min-width: 0; }",
+            ".sourceNote, .rootLaw { font-size: 8px !important; }",
+        ],
+    },
+    {
+        "name": "Textile",
+        "path": ROOT / "families/textile-bonwire/r5-2.html",
+        "marker": "TRACE Gate 6.5 — Textile intrinsic mobile card reflow",
+        "css": """
+/* TRACE Gate 6.5 — Textile intrinsic mobile card reflow. */
+@media (max-width: 900px) {
+  .member { min-width: 0; max-width: 100%; }
+  .card { width: 100%; max-width: 100%; min-width: 0; }
+}
+""".strip(),
+        "required": [
+            "TRACE Gate 6.5 — Textile intrinsic mobile card reflow",
+            ".card { width: 100%; max-width: 100%; min-width: 0; }",
+        ],
+    },
+]
 
-text = PATH.read_text(encoding="utf-8")
-if MARKER not in text:
-    idx = text.rfind("</style>")
-    if idx < 0:
-        raise SystemExit("Toyama: missing </style>")
-    text = text[:idx] + "\n" + CSS + "\n" + text[idx:]
-    PATH.write_text(text, encoding="utf-8")
-    print("Toyama intrinsic mobile reflow repair applied")
-else:
-    print("Toyama intrinsic mobile reflow repair already present")
+for case in CASES:
+    path = case["path"]
+    text = path.read_text(encoding="utf-8")
+    if case["marker"] not in text:
+        idx = text.rfind("</style>")
+        if idx < 0:
+            raise SystemExit(f"{case['name']}: missing </style>")
+        text = text[:idx] + "\n" + case["css"] + "\n" + text[idx:]
+        path.write_text(text, encoding="utf-8")
+        print(f"{case['name']} intrinsic mobile reflow repair applied")
+    else:
+        print(f"{case['name']} intrinsic mobile reflow repair already present")
 
-post = PATH.read_text(encoding="utf-8")
-required = [MARKER, ".card { width: 100%; max-width: 100%; min-width: 0; }", ".sourceNote, .rootLaw { font-size: 8px !important; }"]
-missing = [item for item in required if item not in post]
-if missing:
-    raise SystemExit(f"Toyama follow-up invariant failed: {missing}")
+    post = path.read_text(encoding="utf-8")
+    missing = [item for item in case["required"] if item not in post]
+    if missing:
+        raise SystemExit(f"{case['name']} follow-up invariant failed: {missing}")
