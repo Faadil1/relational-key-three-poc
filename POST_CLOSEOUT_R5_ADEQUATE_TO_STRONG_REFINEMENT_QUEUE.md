@@ -29,30 +29,35 @@ VALIDATED remains 24.
 - R5.6 Kento / Japan — STRONG — `RETURN-TO-KENTŌ → SUCCESSIVE COLOR BUILD`
 - R5.7 Swell / Marshall Islands — STRONG — `INCIDENT SWELL → ATOLL EDGES → REFRACTED SHOULDERS → LEE CROSSING → LAND SIGNATURE`
 
-## R5.7 Swell closure
-USER proof `/mnt/data/299de104-2352-483c-a8e6-512b52040e6d.mp4` — 12.90 s / 1912×964 / 30 fps / 387 frames.
-USER verdict `CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
-Promotion `families/swell-marshall/index.html` @ `32b2744c9624a82ef2798b31266404e54f998771`.
-LIVE `dpl_Ew6K7raX9jBryigWqAkMr5xRsHLa` READY; public route verified HTTP 200.
-Closure `POST_CLOSEOUT_R5_7C_SWELL_MARSHALL_USER_PASS_PROMOTION_STRONG.md` @ `941f9f94f8556d77cf1ff046e5ff5c39e9702903`.
-
 # R5.8 — CITY / GATINEAU — ACTIVE
 Baseline: ADEQUATE.
 Source audit `POST_CLOSEOUT_R5_8A_CITY_GATINEAU_SOURCE_RIVER_SEAM_AUDIT.md` @ `88fab6997118aacd9168b7aa03a9f7298e18ec3a`.
 Mechanism: **RIVER-SEAM CROSSING / BANK-TO-BANK HANDOFF**.
 Candidate `families/city-gatineau/r5-8.html` @ `796ee8afc24c879d148b90046037f80b0c5bcec6`.
-Candidate/blocker register `POST_CLOSEOUT_R5_8B_CITY_GATINEAU_RIVER_SEAM_CANDIDATE_LIVE_BLOCKER.md` @ `378fcff2e7bd95e5e693013fd8040ec3bf79aa3c`.
+Dedicated blocker register latest commit `503a573f14e1b09f1ab0e1a913e389089630ae19`.
 
 SOURCE candidate: PASS.
-LIVE candidate: BLOCKED by Vercel Hobby build-rate-limit on exact candidate commit.
-Public City wrapper unchanged. Shared runtime unchanged. City remains ADEQUATE.
+Public City wrapper unchanged.
+Shared runtime unchanged.
+City remains ADEQUATE.
+
+## LIVE blocker / Retry 01
+Original candidate deployment was rejected by Vercel Hobby `build-rate-limit`.
+Retry 01 was triggered without semantic/visual changes at commit `43c3c8a998191ac73e621142575ca9a18b7288e5`.
+GitHub combined status for Retry 01 again reports Vercel failure with target `upgradeToPro=build-rate-limit`.
+No newer deployment was created after Swell promotion deployment `dpl_Ew6K7raX9jBryigWqAkMr5xRsHLa`.
+
+Canonical interpretation:
+# **SOURCE CITY PASS / LIVE CITY BLOCKED / USER CITY NOT STARTED**
 
 # ACTIVE GATE
 # **R5.8B-LIVE — CITY / GATINEAU CANDIDATE DEPLOYMENT RETRY**
 
-Next:
-1. retry exact candidate deployment without semantic changes;
-2. require READY and candidate route HTTP 200;
-3. issue USER preview;
-4. judge MATCHING + OTHER proof;
-5. only USER PASS may authorize City ADEQUATE → STRONG.
+Do not create semantic candidate changes just to probe capacity.
+Next successful attempt must reuse the unchanged candidate and satisfy:
+1. Vercel READY;
+2. `/families/city-gatineau/r5-8.html` HTTP 200;
+3. temporary USER share URL;
+4. then USER MATCHING + OTHER proof.
+
+Only USER PASS may authorize City promotion and ADEQUATE → STRONG.
