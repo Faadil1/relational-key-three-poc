@@ -6,7 +6,7 @@ Branch: `collection/global-refinement-1`
 PR #21: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
-# **R5.7C — SWELL / MARSHALL ISLANDS USER MATCHING + OTHER REGRESSION**
+# **R5.8B-LIVE — CITY / GATINEAU CANDIDATE DEPLOYMENT RETRY**
 
 Do NOT reopen prior Global Refinement closeout; it remains PASS / frozen.
 Do NOT mutate `families/_shared/round13r/index.html` for family-specific refinement.
@@ -15,44 +15,57 @@ Do NOT merge, mark Ready, request review, retarget or change PR state without se
 # GLOBAL / R5 STATE
 VALIDATED 24.
 USER relational integrity 24/24 PASS.
-Current matrix: **STRONG 19 / ADEQUATE 5 / EXPERIENCE DEBT 0**.
+Current matrix: **STRONG 20 / ADEQUATE 4 / EXPERIENCE DEBT 0**.
 
 Closed STRONG in R5:
-Food / Toyama; Textile / Bonwire; Metate / Teotitlán; Tongiaki / Tonga; Garamut / East Sepik–Ramu; Kento / Japan.
+Food / Toyama; Textile / Bonwire; Metate / Teotitlán; Tongiaki / Tonga; Garamut / East Sepik–Ramu; Kento / Japan; Swell / Marshall Islands.
 
-# R5.6 KENTO / JAPAN — CLOSED ✅
-USER proof `/mnt/data/11a7f871-3deb-4e01-854e-fd34579fccf4.mp4` — 16.63 s / 1900×968 / 30 fps / 499 frames.
+# R5.7 SWELL / MARSHALL ISLANDS — CLOSED ✅
+USER proof `/mnt/data/299de104-2352-483c-a8e6-512b52040e6d.mp4` — 12.90 s / 1912×964 / 30 fps / 387 frames.
 Verdict `CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
-Promotion `families/kento-japan/index.html` @ `fae7aeaef5e674e8da538b191586f8ee22437f38`.
-LIVE `dpl_6BnZ11jPuBcYG3bBWT7o2DH8DbBc` READY; public route HTTP 200.
-Closure `POST_CLOSEOUT_R5_6C_KENTO_JAPAN_USER_PASS_PROMOTION_STRONG.md` @ `cdd646e78855515c9f686c2ed4abca4c946eaaad`.
+Promotion `families/swell-marshall/index.html` @ `32b2744c9624a82ef2798b31266404e54f998771`.
+LIVE `dpl_Ew6K7raX9jBryigWqAkMr5xRsHLa` READY; public route HTTP 200.
+Closure `POST_CLOSEOUT_R5_7C_SWELL_MARSHALL_USER_PASS_PROMOTION_STRONG.md` @ `941f9f94f8556d77cf1ff046e5ff5c39e9702903`.
 
-# R5.7 SWELL / MARSHALL ISLANDS — ACTIVE
+# R5.8 CITY / GATINEAU — ACTIVE
 Baseline ADEQUATE.
-Source audit `POST_CLOSEOUT_R5_7A_SWELL_MARSHALL_SOURCE_LEE_CROSSING_AUDIT.md` @ `85bf76042851dc611825c425363115e8574e2505`.
-Mechanism: **INCIDENT SWELL → ATOLL EDGES → REFRACTED SHOULDERS → LEE CROSSING → LAND SIGNATURE**.
-Candidate `families/swell-marshall/r5-7.html` @ `e2b41b37500edc346164b937f43c3a25c505f731`.
-Candidate register `POST_CLOSEOUT_R5_7B_SWELL_MARSHALL_LEE_CROSSING_CANDIDATE.md` @ `8f3f7b9ff06bcb4f1c953dd8e5b34a7f474e92fd`.
-USER gate `POST_CLOSEOUT_R5_7C_SWELL_MARSHALL_USER_GATE.md` (blob `b0076bac2cd4953ee4c10742d4e4c921181ea281`).
-LIVE `dpl_HdHuFuFVBQTh5HCWSWiiRNNQBhds` READY; candidate route HTTP 200.
+Source audit `POST_CLOSEOUT_R5_8A_CITY_GATINEAU_SOURCE_RIVER_SEAM_AUDIT.md` @ `88fab6997118aacd9168b7aa03a9f7298e18ec3a`.
+Mechanism: **RIVER-SEAM CROSSING / BANK-TO-BANK HANDOFF**.
+Candidate `families/city-gatineau/r5-8.html` @ `796ee8afc24c879d148b90046037f80b0c5bcec6`.
+Candidate/blocker register `POST_CLOSEOUT_R5_8B_CITY_GATINEAU_RIVER_SEAM_CANDIDATE_LIVE_BLOCKER.md` @ `378fcff2e7bd95e5e693013fd8040ec3bf79aa3c`.
 
-Candidate URL:
-`https://relational-key-collectionrelational-key-collection-9vgfkjynj.vercel.app/families/swell-marshall/r5-7.html?_vercel_share=w3kc6Kug0vSlt6gAtPgTB05aAwTl9lr9`
+MATCHING design:
+- west-bank and east-bank route fragments are valid before relation;
+- river-edge anchors seat;
+- crossing span forms only when both anchors register;
+- handoff pulse crosses the river seam;
+- east-bank route continues.
 
-MATCHING: two refracted trains cross inside Card B’s lee field → `LEE CROSSING REGISTERED · RELATIONAL LAND SIGNATURE PERSISTS`.
-OTHER: two valid trains remain but crossing is displaced → `TWO VALID SWELL TRAINS · CROSSING POINT DISPLACED · BOTH RECORDS VALID`.
+OTHER design:
+- both route fragments remain valid;
+- anchors are vertically offset;
+- no shared span seats;
+- residual is a misseated crossing.
 
-Truth boundary: no historical chart decoding, no real-time navigation claim, no exact oceanographic simulation claim.
+Truth boundary:
+conceptual Gatineau sector/waterway relationship only; not an operational transit map, real bridge alignment, STO route or navigation tool.
 
-Public Swell wrapper unchanged. Shared runtime unchanged. Swell remains ADEQUATE pending USER proof.
+LIVE blocker:
+GitHub combined status for `796ee8afc24c879d148b90046037f80b0c5bcec6` reports Vercel failure pointing to Hobby `build-rate-limit` / upgrade-to-Pro page.
+Interpretation: infrastructure/build-capacity blocker, not application failure.
 
-# EXACT NEXT USER ACTION
-1. `MATCHING SWELL` → `TEST RELATIONSHIP`;
-2. hold final lee-crossing state;
-3. `OTHER SWELL` → `TEST RELATIONSHIP`;
-4. hold displaced-crossing residual.
+Public City wrapper unchanged.
+Shared runtime unchanged.
+City remains ADEQUATE.
 
-Judge CAUSAL / EMBODIMENT-STRONG / VISUAL-SPECIFICITY / TRUTH separately.
-If USER PASS: promote Swell, verify LIVE, reclassify to STRONG, matrix becomes 20 / 4 / 0, proceed to City / Gatineau.
+# EXACT NEXT ACTION
+When Vercel build capacity is available:
+1. retry deployment of exact candidate `796ee8afc24c879d148b90046037f80b0c5bcec6` without semantic changes;
+2. require READY;
+3. verify `/families/city-gatineau/r5-8.html` HTTP 200;
+4. generate USER-access preview;
+5. request one MATCHING + OTHER video;
+6. judge CAUSAL / EMBODIMENT-STRONG / VISUAL-SPECIFICITY / TRUTH;
+7. only USER PASS may authorize public City promotion and ADEQUATE → STRONG.
 
 PR #21 remains Draft / DO NOT MERGE.
