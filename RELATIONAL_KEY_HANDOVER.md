@@ -31,8 +31,7 @@ Closure `POST_CLOSEOUT_R5_7C_SWELL_MARSHALL_USER_PASS_PROMOTION_STRONG.md` @ `94
 Baseline ADEQUATE.
 Source audit `POST_CLOSEOUT_R5_8A_CITY_GATINEAU_SOURCE_RIVER_SEAM_AUDIT.md` @ `88fab6997118aacd9168b7aa03a9f7298e18ec3a`.
 Mechanism: **RIVER-SEAM CROSSING / BANK-TO-BANK HANDOFF**.
-Candidate `families/city-gatineau/r5-8.html` @ `796ee8afc24c879d148b90046037f80b0c5bcec6`.
-Candidate/blocker register `POST_CLOSEOUT_R5_8B_CITY_GATINEAU_RIVER_SEAM_CANDIDATE_LIVE_BLOCKER.md` @ `378fcff2e7bd95e5e693013fd8040ec3bf79aa3c`.
+Candidate `families/city-gatineau/r5-8.html` @ implementation `796ee8afc24c879d148b90046037f80b0c5bcec6`.
 
 MATCHING design:
 - west-bank and east-bank route fragments are valid before relation;
@@ -50,22 +49,29 @@ OTHER design:
 Truth boundary:
 conceptual Gatineau sector/waterway relationship only; not an operational transit map, real bridge alignment, STO route or navigation tool.
 
-LIVE blocker:
-GitHub combined status for `796ee8afc24c879d148b90046037f80b0c5bcec6` reports Vercel failure pointing to Hobby `build-rate-limit` / upgrade-to-Pro page.
-Interpretation: infrastructure/build-capacity blocker, not application failure.
+# LIVE BLOCKER
+Original candidate commit `796ee8afc24c879d148b90046037f80b0c5bcec6` received Vercel Hobby `build-rate-limit`.
+Dedicated blocker register was updated to trigger Retry 01 at commit `43c3c8a998191ac73e621142575ca9a18b7288e5` without any candidate semantic/visual change.
+GitHub combined status for Retry 01 again reports Vercel `failure` pointing to `upgradeToPro=build-rate-limit`.
+No deployment newer than successful Swell deployment `dpl_Ew6K7raX9jBryigWqAkMr5xRsHLa` was created by the retry.
+Direct deployment fallback through the currently connected deployment action could not be used, so no alternate LIVE deployment is claimed.
+
+Canonical interpretation:
+# **SOURCE CITY PASS / RETRY 01 BLOCKED / LIVE USER GATE NOT OPEN**
 
 Public City wrapper unchanged.
 Shared runtime unchanged.
 City remains ADEQUATE.
 
 # EXACT NEXT ACTION
-When Vercel build capacity is available:
-1. retry deployment of exact candidate `796ee8afc24c879d148b90046037f80b0c5bcec6` without semantic changes;
-2. require READY;
-3. verify `/families/city-gatineau/r5-8.html` HTTP 200;
-4. generate USER-access preview;
-5. request one MATCHING + OTHER video;
-6. judge CAUSAL / EMBODIMENT-STRONG / VISUAL-SPECIFICITY / TRUTH;
-7. only USER PASS may authorize public City promotion and ADEQUATE → STRONG.
+Retry only when deployment capacity is available, using the unchanged candidate `796ee8afc24c879d148b90046037f80b0c5bcec6`.
+Require:
+1. READY deployment;
+2. `/families/city-gatineau/r5-8.html` HTTP 200;
+3. temporary share URL;
+4. then one MATCHING + OTHER USER proof;
+5. judge CAUSAL / EMBODIMENT-STRONG / VISUAL-SPECIFICITY / TRUTH;
+6. only USER PASS may authorize City promotion and ADEQUATE → STRONG.
 
+Do not generate new semantic City commits merely to probe Vercel capacity.
 PR #21 remains Draft / DO NOT MERGE.
