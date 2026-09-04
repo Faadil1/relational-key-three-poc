@@ -30,6 +30,27 @@ const pilots = [
     other: /OTHER .*12\.0 Hz/i,
     matching: /MATCHING .*7\.0 Hz beat envelope/i,
   },
+  {
+    id: 'kento-japan',
+    label: 'Kento · Japan',
+    pair: ['WOODBLOCK / KENTŌ', 'REGISTRATION + PRESS', 'RECEIVING SHEET'],
+    other: /OTHER .*kentō registration is offset|OTHER .*offset layer/i,
+    matching: /MATCHING .*pressure transfers a registered layer/i,
+  },
+  {
+    id: 'stereoscopy-uk',
+    label: 'Stereoscopy · UK',
+    pair: ['LEFT VIEW CARD', 'CONTROLLED DISPARITY / FUSION', 'RIGHT VIEW CARD'],
+    other: /OTHER .*disparity refuses the intended fusion/i,
+    matching: /MATCHING .*stable depth relation emerges/i,
+  },
+  {
+    id: 'signal-nigeria',
+    label: 'Signal · Nigeria',
+    pair: ['LANLATE UPLINK CARD', 'SATELLITE RELAY PATH', 'REMOTE RECEIVE CARD'],
+    other: /OTHER .*relay path breaks/i,
+    matching: /MATCHING .*continuous relay path.*receiving card responds/i,
+  },
 ];
 
 async function newContext(browser, viewport = { width: 1440, height: 900 }) {
@@ -57,7 +78,8 @@ async function capture(page, name) {
 
 async function openFocus(page, pilot) {
   await page.goto(`${V2}/?focus=1&pilot=${encodeURIComponent(pilot.id)}`, { waitUntil: 'domcontentloaded' });
-  await page.locator('canvas').waitFor({ state: 'visible' });
+  await page.locator(`[data-scene-runtime="${pilot.id}"]`).waitFor({ state: 'attached', timeout: 10000 });
+  await page.locator('canvas').waitFor({ state: 'visible', timeout: 10000 });
   await page.waitForTimeout(180);
   if ((await page.locator('.focus-mode').count()) !== 1) throw new Error(`${pilot.id}: focus-mode shell missing`);
   if ((await page.locator('.pilot-tabs').count()) !== 0) throw new Error(`${pilot.id}: lab tabs leaked into focus mode`);
@@ -89,6 +111,10 @@ async function driveMatching(page, pilot) {
     await page.getByRole('button', { name: /START SYNTHETIC AUDIO/i }).click();
     await page.waitForTimeout(520);
   }
+  if (pilot.id === 'kento-japan') {
+    await page.getByRole('button', { name: 'PRESS / TRANSFER', exact: true }).click();
+    await page.waitForTimeout(280);
+  }
   const matching = await statusText(page);
   if (!pilot.matching.test(matching)) throw new Error(`${pilot.id}: focus MATCHING mismatch: ${matching}`);
   return matching;
@@ -96,7 +122,7 @@ async function driveMatching(page, pilot) {
 
 const browser = await chromium.launch({ headless: true, args: ['--use-angle=swiftshader', '--enable-webgl'] });
 const report = {
-  schema: 'RELATIONAL_KEY_V2_FOCUS_CAPTURE_002',
+  schema: 'RELATIONAL_KEY_V2_FOCUS_CAPTURE_003',
   generatedAt: new Date().toISOString(),
   v2Url: V2,
   pilots: {},
@@ -129,11 +155,14 @@ try {
         width: innerWidth,
         scrollWidth: document.documentElement.scrollWidth,
         canvas: document.querySelectorAll('canvas').length,
+        runtime: document.querySelectorAll('[data-scene-runtime]').length,
       }));
       if (desktopLayout.scrollWidth > desktopLayout.width) {
         throw new Error(`${pilot.id}: focus desktop overflow ${desktopLayout.scrollWidth} > ${desktopLayout.width}`);
       }
-      if (desktopLayout.canvas !== 1) throw new Error(`${pilot.id}: focus mode must retain exactly one canvas`);
+      if (desktopLayout.canvas !== 1 || desktopLayout.runtime !== 1) {
+        throw new Error(`${pilot.id}: focus mode must retain exactly one canvas/runtime`);
+      }
       if (desktop.consoleErrors.length || desktop.pageErrors.length) {
         throw new Error(`${pilot.id}: focus browser errors ${JSON.stringify({ consoleErrors: desktop.consoleErrors, pageErrors: desktop.pageErrors })}`);
       }
@@ -146,10 +175,12 @@ try {
       const mobileLayout = await mobile.page.evaluate(() => ({
         width: innerWidth,
         scrollWidth: document.documentElement.scrollWidth,
+        canvas: document.querySelectorAll('canvas').length,
       }));
       if (mobileLayout.scrollWidth > mobileLayout.width) {
         throw new Error(`${pilot.id}: focus mobile overflow ${mobileLayout.scrollWidth} > ${mobileLayout.width}`);
       }
+      if (mobileLayout.canvas !== 1) throw new Error(`${pilot.id}: focus mobile must retain exactly one canvas`);
       await capture(mobile.page, `focus-${pilot.id}-mobile-matching`);
       if (pilot.id === 'ombak-bali') {
         const stop = mobile.page.getByRole('button', { name: /STOP AUDIO/i });
