@@ -2,7 +2,7 @@ state_class: relational_key_v2_cycle
 project: RELATIONAL_KEY
 cycle: V2
 canonical_branch: v2/archive-interaction-3d-matrix-001
-last_updated_utc: "2026-09-04T16:55:00Z"
+last_updated_utc: "2026-09-04T19:39:30Z"
 
 baseline_v1:
   immutable: true
@@ -14,14 +14,18 @@ baseline_v1:
   final_matrix: STRONG_24_ADEQUATE_0_EXPERIENCE_DEBT_0
 
 v2:
-  status: V2_0A_ARCHIVE_REFRESH_PASS__V2_1_THREE_CONCEPT_BUILDS_AUTHORIZED
+  status: V2_3_WAVE_001_PASS__SIX_PROMOTION_CANDIDATES__WAVE_002_SELECTION_ONLY
   issue: 37
   charter: V2/RELATIONAL_KEY_V2_EVOLUTION_CHARTER.md
   matrix: V2/V2_0_24_FAMILY_ARCHIVE_INTERACTION_3D_OPPORTUNITY_MATRIX.md
   archive_refresh_seed: V2/V2_0A_PILOT_ARCHIVE_REFRESH_001.md
   archive_corpora_complete: V2/V2_0A_PILOT_ARCHIVE_CORPORA_COMPLETE_001.md
   archive_register_template: V2/ARCHIVE_RESEARCH_REGISTER_TEMPLATE.md
+  v2_1_closeout: V2/V2_1_RUNTIME_AND_EXPERIENCE_COMPARE_004.md
+  v2_3_wave_001_closeout: V2/V2_3_WAVE_001_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
   target_family_count: 24
+  promotion_candidate_count: 6
+  remaining_family_count: 18
   target_stack:
     - React
     - React_Three_Fiber
@@ -29,6 +33,8 @@ v2:
   atlas_24_live_webgl_canvases_allowed: false
   v1_in_place_rewrite_allowed: false
   ordinary_branch_vercel_preview_allowed: false
+  v2_family_promotion_to_v1_main_authorized: false
+  mass_24_family_port_authorized: false
 
 laws:
   - THE_RELATIONAL_PAIR_REMAINS_THE_PRODUCT
@@ -58,30 +64,53 @@ v2_0:
 
 v2_0a_archive_refresh:
   verdict: PASS
-  build_scope: THREE_CONCEPT_PILOTS_ONLY
   direct_archive_asset_default: DENY_UNLESS_EXPLICIT_RIGHTS_AND_PRODUCT_NEED
   procedural_geometry_default: true
   synthetic_audio_default: true
-  pilots:
-    anamorphosis_paris:
-      status: BUILD_AUTHORIZED
-      class: OPTICAL_SPATIAL
-      target: CYLINDRICAL_CATOPTRIC_RECTIFICATION
-      rights_boundary: PROCEDURAL_OR_EXPLICIT_PUBLIC_DOMAIN_ONLY
-    coupler_virginia:
-      status: BUILD_AUTHORIZED
-      class: MECHANICAL_CONTACT_LOAD
-      target: JANNEY_1873_ALEXANDRIA_ROTARY_HOOK_CATCH_GUARD_ARM
-      rights_boundary: PROCEDURAL_MODEL_FROM_VERIFIED_MECHANISM
-    ombak_bali:
-      status: BUILD_AUTHORIZED
-      class: TEMPORAL_RESONANCE_AUDIO_OPTIONAL
-      target: PAIRED_TUNING_BEAT_ENVELOPE
-      rights_boundary: SYNTHETIC_AUDIO_NO_ARCHIVE_RECORDING_REUSE
+
+v2_1:
+  verdict: PASS
+  exact_closeout: V2/V2_1_RUNTIME_AND_EXPERIENCE_COMPARE_004.md
+  promotion_candidates:
+    - anamorphosis-paris
+    - coupler-virginia
+    - ombak-bali
+
+v2_2_scaling_architecture:
+  verdict: PASS
+  one_shared_family_canvas: true
+  family_specific_lazy_chunks: true
+  one_active_webgl_canvas: true
+  atlas_24_eager_webgl_canvases: false
+
+v2_3_wave_001:
+  verdict: PASS
+  product_rework_head: 2e6639fa2f15c62eb5393ae14e96302f3cab1d70
+  exact_tested_head: 19f5b6c68e1c63c827010be988806248c740e220
+  closeout_commit: 16f148f97fdfaf7761f2ab083c81b6b6ea3d42e3
+  build_run: 33912033296
+  browser_run: 33912033187
+  evidence_artifact_id: 9951804458
+  evidence_artifact_sha256: 4bfc548b2eedf82cb044e72cf4cfd09ee8de444142a2bc71ca0e2df76dc81aec
+  browser_runtime: PASS_WITH_MEASURED_DIAGNOSTICS
+  focus_experience: PASS
+  scaling: PASS
+  two_base_cards_ci_enforced: true
+  archive_specificity_ci_enforced: true
+  promotion_candidates:
+    kento_japan:
+      status: V2_PILOT_PROMOTION_CANDIDATE
+      pair: WOODBLOCK_KENTO_TO_REGISTRATION_PRESS_TO_RECEIVING_SHEET
+    stereoscopy_uk:
+      status: V2_PILOT_PROMOTION_CANDIDATE
+      pair: LEFT_VIEW_CARD_TO_CONTROLLED_DISPARITY_FUSION_TO_RIGHT_VIEW_CARD
+    signal_nigeria:
+      status: V2_PILOT_PROMOTION_CANDIDATE
+      pair: LANLATE_EARTH_STATION_CARD_TO_CARRIED_SIGNAL_REPEATER_HANDOFF_TO_IKORODU_OGIDO_ALABATA_CHAIN
 
 runtime_assurance:
   doctrine: trace_web_runtime_assurance_plus_raw_bits_to_react_conceptual_source
-  react_specific_real_project_validation: NOW_AUTHORIZED_IN_V2_1
+  react_specific_real_project_validation: ACTIVE
   requirements:
     - exact_build_identity
     - React_Profiler_when_material
@@ -91,6 +120,9 @@ runtime_assurance:
     - reduced_motion_path
     - console_error_capture
     - V1_vs_V2_comparison
+  latest_exact_browser_verdict: BROWSER_RUNTIME_PASS_PENDING_HUMAN_V1_V2_EXPERIENCE_COMPARISON
+  latest_human_comparison: PASS
+  latest_scaling_verdict: SCALING_ARCHITECTURE_BROWSER_PASS
 
 deployment_budget:
   v2_work_branch_auto_deploy: false
@@ -98,14 +130,16 @@ deployment_budget:
   explicit_preview_only_when_gate_requires_live_url: true
 
 next_gate:
-  id: V2_1_THREE_DIVERSE_CONCEPT_BUILDS
-  build_allowed: true
-  allowed_families:
-    - anamorphosis-paris
-    - coupler-virginia
-    - ombak-bali
-  required_output: THREE_REACT_R3F_CONCEPT_BUILDS_PLUS_EXACT_V1_COMPARISON_EVIDENCE
+  id: V2_3_WAVE_002_SELECTION_AND_ARCHIVE_REFRESH
+  research_allowed: true
+  collision_scan_allowed: true
+  build_allowed: false
+  remaining_scope: 18
+  selection_size: SMALL_BOUNDED_WAVE
+  required_output: WAVE_002_SHORTLIST_PLUS_ARCHIVE_REFRESH_PLUS_COLLISION_CHECK_PLUS_BUILD_AUTHORIZATION_DECISION
   production_replacement_allowed: false
 
 blockers:
-  - V1_REPLACEMENT_BLOCKED_UNTIL_EACH_V2_FAMILY_BEATS_ITS_V1_PROMOTION_RUBRIC
+  - V1_REPLACEMENT_BLOCKED_UNTIL_PER_FAMILY_PROMOTION_DECISION_AND_SEPARATE_PRODUCTION_GATE
+  - WAVE_002_BUILD_BLOCKED_UNTIL_SHORTLIST_ARCHIVE_REFRESH_AND_COLLISION_CHECK_CLOSE
+  - MASS_24_FAMILY_PORT_NOT_AUTHORIZED
