@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef } from 'react';
 import * as THREE from 'three';
-import { useThree } from '@react-three/fiber';
+import { useFrame, useThree } from '@react-three/fiber';
 
 function makeSourceTexture() {
   const canvas = document.createElement('canvas');
@@ -129,11 +129,31 @@ function makeReflectionTexture(registered) {
 
 export function AnamorphosisScene({ offset, setOffset, reducedMotion }) {
   const dragging = useRef(false);
+  const mirrorRef = useRef(null);
+  const dirty = useRef(true);
   const sourceTexture = useMemo(() => makeSourceTexture(), []);
   const registeredTexture = useMemo(() => makeReflectionTexture(true), []);
   const residualTexture = useMemo(() => makeReflectionTexture(false), []);
-  const { invalidate } = useThree();
+  const cubeTarget = useMemo(
+    () => new THREE.WebGLCubeRenderTarget(reducedMotion ? 48 : 72, {
+      generateMipmaps: false,
+      minFilter: THREE.LinearFilter,
+    }),
+    [reducedMotion],
+  );
+  const cubeCamera = useMemo(() => new THREE.CubeCamera(0.1, 30, cubeTarget), [cubeTarget]);
+  const { gl, scene, invalidate } = useThree();
   const registered = Math.abs(offset) <= 0.18;
+
+  useEffect(() => {
+    scene.add(cubeCamera);
+    dirty.current = true;
+    invalidate();
+    return () => {
+      scene.remove(cubeCamera);
+      cubeTarget.dispose();
+    };
+  }, [cubeCamera, cubeTarget, invalidate, scene]);
 
   useEffect(() => () => {
     sourceTexture.dispose();
@@ -142,8 +162,19 @@ export function AnamorphosisScene({ offset, setOffset, reducedMotion }) {
   }, [sourceTexture, registeredTexture, residualTexture]);
 
   useEffect(() => {
+    dirty.current = true;
     invalidate();
   }, [offset, registered, reducedMotion, invalidate]);
+
+  useFrame(() => {
+    if (!dirty.current || !mirrorRef.current) return;
+    const mirror = mirrorRef.current;
+    mirror.visible = false;
+    cubeCamera.position.copy(mirror.getWorldPosition(new THREE.Vector3()));
+    cubeCamera.update(gl, scene);
+    mirror.visible = true;
+    dirty.current = false;
+  });
 
   const handleMove = (event) => {
     if (!dragging.current) return;
@@ -174,6 +205,7 @@ export function AnamorphosisScene({ offset, setOffset, reducedMotion }) {
 
       <group position={[0.92 + offset * 0.72, 0.18, 0.18]} rotation={[0, offset * 0.3, 0]}>
         <mesh
+          ref={mirrorRef}
           onPointerDown={(event) => {
             dragging.current = true;
             event.stopPropagation();
@@ -189,8 +221,10 @@ export function AnamorphosisScene({ offset, setOffset, reducedMotion }) {
           <cylinderGeometry args={[0.66, 0.66, 2.75, 72]} />
           <meshStandardMaterial
             color={registered ? '#d8d5ca' : '#77766f'}
-            metalness={0.88}
-            roughness={registered ? 0.16 : 0.3}
+            metalness={0.92}
+            roughness={registered ? 0.14 : 0.28}
+            envMap={cubeTarget.texture}
+            envMapIntensity={registered ? 0.72 : 0.4}
           />
         </mesh>
 
