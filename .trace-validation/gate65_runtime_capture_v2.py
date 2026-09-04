@@ -60,7 +60,42 @@ async def wait_run_cycle(page, timeout_ms: int = 12000) -> None:
         ) from exc
 
 
+async def page_diagnostics(page):
+    """Collect the base diagnostics plus local alternate class names.
+
+    Toyama uses `.sourceNote`/`.rootLaw` rather than `.source`/`.root`.
+    The assurance contract is semantic (evaluator-critical source/context text),
+    so the harness must measure either established naming convention.
+    """
+    return await page.evaluate(
+        """() => ({
+          href: location.href,
+          title: document.title,
+          width: innerWidth,
+          height: innerHeight,
+          scrollWidth: Math.max(document.documentElement.scrollWidth, document.body?.scrollWidth || 0),
+          scrollHeight: Math.max(document.documentElement.scrollHeight, document.body?.scrollHeight || 0),
+          reducedMotion: matchMedia('(prefers-reduced-motion: reduce)').matches,
+          resultRole: document.querySelector('#result')?.getAttribute('role') || null,
+          resultLive: document.querySelector('#result')?.getAttribute('aria-live') || null,
+          resultAtomic: document.querySelector('#result')?.getAttribute('aria-atomic') || null,
+          resultFontSize: document.querySelector('#result') ? getComputedStyle(document.querySelector('#result')).fontSize : null,
+          truthFontSize: document.querySelector('.truth') ? getComputedStyle(document.querySelector('.truth')).fontSize : null,
+          sourceFontSize: document.querySelector('.source, .sourceNote') ? getComputedStyle(document.querySelector('.source, .sourceNote')).fontSize : null,
+          roleFontSize: document.querySelector('.role, .eyeTag') ? getComputedStyle(document.querySelector('.role, .eyeTag')).fontSize : null,
+          contextFontSize: document.querySelector('.context, .meta, .rootLaw') ? getComputedStyle(document.querySelector('.context, .meta, .rootLaw')).fontSize : null,
+          motionProbe: (() => {
+            const el = document.querySelector('.member, .slot, .pair');
+            if (!el) return null;
+            const cs = getComputedStyle(el);
+            return {transitionDuration: cs.transitionDuration, animationDuration: cs.animationDuration};
+          })(),
+        })"""
+    )
+
+
 base.wait_run_cycle = wait_run_cycle
+base.page_diagnostics = page_diagnostics
 
 if __name__ == "__main__":
     asyncio.run(base.main())
