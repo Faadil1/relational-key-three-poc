@@ -1,0 +1,153 @@
+{
+  "gate": "6.5",
+  "scope": "bounded evaluator/accessibility repair",
+  "changed_file_count": 12,
+  "files": [
+    {
+      "path": "families/food-toyama/r5-1.html",
+      "changed": true,
+      "changes": [
+        "candidate_label_to_validated",
+        "programmatic_result_status",
+        "reduced_motion",
+        "evaluator_readability_floor"
+      ],
+      "bytes_before": 17417,
+      "bytes_after": 18294
+    },
+    {
+      "path": "families/textile-bonwire/r5-2.html",
+      "changed": true,
+      "changes": [
+        "candidate_label_to_validated",
+        "programmatic_result_status",
+        "reduced_motion",
+        "evaluator_readability_floor"
+      ],
+      "bytes_before": 12303,
+      "bytes_after": 13180
+    },
+    {
+      "path": "families/metate-teotitlan/r5-3.html",
+      "changed": true,
+      "changes": [
+        "candidate_label_to_validated",
+        "programmatic_result_status"
+      ],
+      "bytes_before": 15400,
+      "bytes_after": 15455
+    },
+    {
+      "path": "families/tongiaki-tonga/r5-4.html",
+      "changed": true,
+      "changes": [
+        "candidate_label_to_validated",
+        "programmatic_result_status"
+      ],
+      "bytes_before": 12858,
+      "bytes_after": 12913
+    },
+    {
+      "path": "families/garamut-sepik-ramu/r5-5.html",
+      "changed": true,
+      "changes": [
+        "candidate_label_to_validated",
+        "programmatic_result_status"
+      ],
+      "bytes_before": 14674,
+      "bytes_after": 14729
+    },
+    {
+      "path": "families/kento-japan/r5-6.html",
+      "changed": true,
+      "changes": [
+        "candidate_label_to_validated",
+        "programmatic_result_status"
+      ],
+      "bytes_before": 13375,
+      "bytes_after": 13430
+    },
+    {
+      "path": "families/swell-marshall/r5-7.html",
+      "changed": true,
+      "changes": [
+        "candidate_label_to_validated",
+        "programmatic_result_status",
+        "reduced_motion",
+        "evaluator_readability_floor"
+      ],
+      "bytes_before": 14514,
+      "bytes_after": 15391
+    },
+    {
+      "path": "families/city-gatineau/r5-8.html",
+      "changed": true,
+      "changes": [
+        "candidate_label_to_validated",
+        "programmatic_result_status",
+        "reduced_motion",
+        "evaluator_readability_floor"
+      ],
+      "bytes_before": 13072,
+      "bytes_after": 13949
+    },
+    {
+      "path": "families/service-benin/r5-9.html",
+      "changed": true,
+      "changes": [
+        "candidate_label_to_validated",
+        "programmatic_result_status",
+        "reduced_motion",
+        "evaluator_readability_floor"
+      ],
+      "bytes_before": 14465,
+      "bytes_after": 15342
+    },
+    {
+      "path": "families/signal-nigeria/r5-10.html",
+      "changed": true,
+      "changes": [
+        "candidate_label_to_validated",
+        "programmatic_result_status",
+        "reduced_motion",
+        "evaluator_readability_floor"
+      ],
+      "bytes_before": 15354,
+      "bytes_after": 16231
+    },
+    {
+      "path": "families/frida-coyoacan/r5-11.html",
+      "changed": true,
+      "changes": [
+        "candidate_label_to_validated",
+        "programmatic_result_status",
+        "reduced_motion",
+        "evaluator_readability_floor"
+      ],
+      "bytes_before": 16437,
+      "bytes_after": 17314
+    },
+    {
+      "path": "families/stereoscopy-uk/snapshot.html",
+      "changed": true,
+      "changes": [
+        "programmatic_result_status",
+        "reduced_motion",
+        "evaluator_readability_floor"
+      ],
+      "bytes_before": 15625,
+      "bytes_after": 16499
+    }
+  ],
+  "invariants": {
+    "stale_candidate_labels": [],
+    "missing_status_contract": [],
+    "missing_reduced_motion": []
+  },
+  "protected_behavior": [
+    "MATCHING/OTHER state-machine logic unchanged",
+    "pair geometry and product law unchanged",
+    "truth/source wording unchanged",
+    "R5 24/24 STRONG result unchanged"
+  ]
+}
