@@ -32,6 +32,7 @@ Baseline ADEQUATE.
 Source audit `POST_CLOSEOUT_R5_8A_CITY_GATINEAU_SOURCE_RIVER_SEAM_AUDIT.md` @ `88fab6997118aacd9168b7aa03a9f7298e18ec3a`.
 Mechanism: **RIVER-SEAM CROSSING / BANK-TO-BANK HANDOFF**.
 Candidate `families/city-gatineau/r5-8.html` @ implementation `796ee8afc24c879d148b90046037f80b0c5bcec6`.
+Dedicated blocker register latest commit: `503a573f14e1b09f1ab0e1a913e389089630ae19`.
 
 MATCHING design:
 - west-bank and east-bank route fragments are valid before relation;
@@ -49,9 +50,9 @@ OTHER design:
 Truth boundary:
 conceptual Gatineau sector/waterway relationship only; not an operational transit map, real bridge alignment, STO route or navigation tool.
 
-# LIVE BLOCKER
+# LIVE BLOCKER / RETRY 01
 Original candidate commit `796ee8afc24c879d148b90046037f80b0c5bcec6` received Vercel Hobby `build-rate-limit`.
-Dedicated blocker register was updated to trigger Retry 01 at commit `43c3c8a998191ac73e621142575ca9a18b7288e5` without any candidate semantic/visual change.
+Retry 01 was triggered without candidate semantic/visual change at commit `43c3c8a998191ac73e621142575ca9a18b7288e5`.
 GitHub combined status for Retry 01 again reports Vercel `failure` pointing to `upgradeToPro=build-rate-limit`.
 No deployment newer than successful Swell deployment `dpl_Ew6K7raX9jBryigWqAkMr5xRsHLa` was created by the retry.
 Direct deployment fallback through the currently connected deployment action could not be used, so no alternate LIVE deployment is claimed.
