@@ -62,7 +62,7 @@ for (const required of [
   'LOWER SOURCE + HIGHER SOURCE → FREQUENCY DIFFERENCE → SHARED BEAT ENVELOPE',
   'WOODBLOCK KENTŌ → REGISTRATION / PRESS → RECEIVING SHEET TRANSFER',
   'LEFT VIEW CARD + RIGHT VIEW CARD → CONTROLLED DISPARITY / FUSION → BINOCULAR DEPTH',
-  'LANLATE UPLINK CARD → SATELLITE RELAY PATH → REMOTE RECEIVE CARD',
+  'LANLATE EARTH-STATION CAPTURE → CARRIED SIGNAL / REPEATER HANDOFF → IKORODU · OGIDO · ALABATA CHAIN',
 ]) {
   if (!pilots.includes(required)) fail(`missing family law: ${required}`);
 }
@@ -91,9 +91,21 @@ for (let index = 0; index < sceneRows.length; index += 1) {
 for (const requiredPairLabel of [
   'WOODBLOCK / KENTŌ', 'RECEIVING SHEET',
   'LEFT VIEW CARD', 'RIGHT VIEW CARD',
-  'LANLATE UPLINK CARD', 'REMOTE RECEIVE CARD',
+  'LANLATE EARTH-STATION CARD', 'CARRIED SIGNAL / REPEATER HANDOFF', 'IKORODU → OGIDO → ALABATA CHAIN',
 ]) {
   if (!pilots.includes(requiredPairLabel)) fail(`missing explicit two-card identity: ${requiredPairLabel}`);
+}
+
+if (!scenes[4].includes('GalleryView')) {
+  fail('Stereoscopy must preserve two archive-specific procedural views rather than generic card decoration');
+}
+for (const repeaterName of ['IKORODU', 'OGIDO', 'ALABATA']) {
+  if (!scenes[5].includes(repeaterName)) {
+    fail(`Signal must preserve source-backed repeater identity in Card B: ${repeaterName}`);
+  }
+}
+if (!scenes[5].includes('REPEATER_')) {
+  fail('Signal repeater identities must remain explicit in the Three.js scene graph');
 }
 
 if (/useState\s*\(/.test(allScenes)) {
@@ -107,6 +119,7 @@ if (!process.exitCode) {
   console.log(`lazy-family-entries: ${sceneRows.length}`);
   console.log('single-FamilyCanvas-definition: PASS');
   console.log('wave-001-two-base-card-markers: PASS');
+  console.log('wave-001-archive-specificity-markers: PASS');
   console.log('six-distinct-relational-laws: PASS');
   console.log('reduced-motion-contract: PASS');
   console.log('scene-level-useState: NONE');
