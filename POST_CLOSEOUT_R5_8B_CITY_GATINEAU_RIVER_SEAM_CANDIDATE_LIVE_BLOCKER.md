@@ -56,6 +56,12 @@ Result:
 - no new deployment was created after `dpl_Ew6K7raX9jBryigWqAkMr5xRsHLa`;
 - direct deployment fallback via the currently connected deployment action could not be used, so no alternate deployment is claimed.
 
+Canonical sync after Retry 01:
+- blocker register commit `503a573f14e1b09f1ab0e1a913e389089630ae19`;
+- R5 queue commit `9da0a7df5fe65e62c0a7c25f1953946679498495`;
+- current state commit `a59f476e2790c2f038bb53dae2dabed488228c23`;
+- handover commit `b8f2c56257b48fe69efcdb5917e5f6361a882a9e`.
+
 Retry acceptance criteria remain:
 1. Vercel deployment reaches `READY`;
 2. deployed branch contains the unchanged `r5-8.html` candidate;
