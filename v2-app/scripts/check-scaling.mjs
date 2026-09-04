@@ -37,6 +37,9 @@ const families = [
   { id: 'anamorphosis-paris', src: 'src/sceneEntries/AnamorphosisEntry.jsx' },
   { id: 'coupler-virginia', src: 'src/sceneEntries/CouplerEntry.jsx' },
   { id: 'ombak-bali', src: 'src/sceneEntries/OmbakEntry.jsx' },
+  { id: 'kento-japan', src: 'src/sceneEntries/KentoEntry.jsx' },
+  { id: 'stereoscopy-uk', src: 'src/sceneEntries/StereoscopyEntry.jsx' },
+  { id: 'signal-nigeria', src: 'src/sceneEntries/SignalEntry.jsx' },
 ];
 
 function closure(startKey) {
@@ -97,13 +100,15 @@ for (const family of families) {
   });
 }
 
-if (familyFiles.size !== 3) fail(`expected 3 distinct family entry files, found ${familyFiles.size}`);
+if (familyFiles.size !== families.length) {
+  fail(`expected ${families.length} distinct family entry files, found ${familyFiles.size}`);
+}
 
 let sharedDynamicKeys = new Set();
-if (familyClosures.length === 3) {
+if (familyClosures.length === families.length && familyClosures.length > 0) {
   sharedDynamicKeys = new Set(
     [...familyClosures[0]].filter(
-      (key) => familyClosures[1].has(key) && familyClosures[2].has(key) && !initialClosure.has(key),
+      (key) => familyClosures.every((familyClosure) => familyClosure.has(key)) && !initialClosure.has(key),
     ),
   );
 }
@@ -124,9 +129,10 @@ const allJsBytes = allJs.reduce((sum, file) => sum + fs.statSync(file).size, 0);
 const initialFiles = [...initialClosure].map((key) => manifest[key]?.file).filter(Boolean);
 
 const report = {
-  schema: 'RELATIONAL_KEY_V2_SCALING_ARCHITECTURE_BUILD_001',
+  schema: 'RELATIONAL_KEY_V2_SCALING_ARCHITECTURE_BUILD_002',
   generatedAt: new Date().toISOString(),
   verdict: failures.length ? 'SCALING_ARCHITECTURE_BUILD_FAIL' : 'SCALING_ARCHITECTURE_BUILD_PASS',
+  familyCount: families.length,
   main: main
     ? {
         manifestKey: main.key,
