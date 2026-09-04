@@ -11,6 +11,9 @@ const families = [
   { id: 'anamorphosis-paris', label: /^Anamorphosis · Paris/i, src: 'src/sceneEntries/AnamorphosisEntry.jsx' },
   { id: 'coupler-virginia', label: /^Coupler · Virginia/i, src: 'src/sceneEntries/CouplerEntry.jsx' },
   { id: 'ombak-bali', label: /^Ombak · Bali/i, src: 'src/sceneEntries/OmbakEntry.jsx' },
+  { id: 'kento-japan', label: /^Kento · Japan/i, src: 'src/sceneEntries/KentoEntry.jsx' },
+  { id: 'stereoscopy-uk', label: /^Stereoscopy · UK/i, src: 'src/sceneEntries/StereoscopyEntry.jsx' },
+  { id: 'signal-nigeria', label: /^Signal · Nigeria/i, src: 'src/sceneEntries/SignalEntry.jsx' },
 ];
 
 const bySource = new Map();
@@ -63,7 +66,7 @@ async function waitForScene(page, id) {
 }
 
 const report = {
-  schema: 'RELATIONAL_KEY_V2_SCALING_ARCHITECTURE_BROWSER_001',
+  schema: 'RELATIONAL_KEY_V2_SCALING_ARCHITECTURE_BROWSER_002',
   generatedAt: new Date().toISOString(),
   v2Url: V2,
   manifestFamilyFiles: Object.fromEntries(families.map((family) => [family.id, family.file])),
@@ -110,6 +113,7 @@ try {
         pageErrors: observed.pageErrors,
       };
 
+      if (layout.scrollWidth > layout.width) throw new Error(`${family.id}: direct Focus overflow ${layout.scrollWidth} > ${layout.width}`);
       if (observed.consoleErrors.length || observed.pageErrors.length) {
         throw new Error(`${family.id}: browser errors present during direct Focus isolation`);
       }
@@ -125,8 +129,8 @@ try {
   const page = await context.newPage();
   const observed = observePage(page);
   try {
-    await page.goto(`${V2}/?pilot=anamorphosis-paris`, { waitUntil: 'domcontentloaded' });
-    await waitForScene(page, 'anamorphosis-paris');
+    await page.goto(`${V2}/?pilot=${families[0].id}`, { waitUntil: 'domcontentloaded' });
+    await waitForScene(page, families[0].id);
 
     await page.evaluate(() => {
       window.__rkCanvasPeak = document.querySelectorAll('canvas').length;
@@ -135,22 +139,31 @@ try {
       }, 5);
     });
 
-    const afterInitial = [...observed.scripts].sort();
-    if (!observed.scripts.has(families[0].file)) throw new Error('switch path: initial Anamorphosis chunk missing');
-    if (observed.scripts.has(families[1].file) || observed.scripts.has(families[2].file)) {
-      throw new Error('switch path: future family chunks loaded before user selection');
+    const checkpoints = [];
+    for (let index = 0; index < families.length; index += 1) {
+      const family = families[index];
+      if (index > 0) {
+        await page.getByRole('button', { name: family.label }).click();
+        await waitForScene(page, family.id);
+      }
+
+      if (!observed.scripts.has(family.file)) {
+        throw new Error(`switch path: ${family.id} chunk did not load when selected`);
+      }
+      const futureLoaded = families
+        .slice(index + 1)
+        .filter((future) => observed.scripts.has(future.file))
+        .map((future) => future.id);
+      if (futureLoaded.length) {
+        throw new Error(`switch path: future family chunks loaded before selection: ${futureLoaded.join(', ')}`);
+      }
+      checkpoints.push({
+        selected: family.id,
+        loadedScripts: [...observed.scripts].sort(),
+        canvasCount: await page.locator('canvas').count(),
+        runtimeCount: await page.locator('[data-scene-runtime]').count(),
+      });
     }
-
-    await page.getByRole('button', { name: families[1].label }).click();
-    await waitForScene(page, 'coupler-virginia');
-    const afterCoupler = [...observed.scripts].sort();
-    if (!observed.scripts.has(families[1].file)) throw new Error('switch path: Coupler chunk did not load on demand');
-    if (observed.scripts.has(families[2].file)) throw new Error('switch path: Ombak chunk loaded before Ombak selection');
-
-    await page.getByRole('button', { name: families[2].label }).click();
-    await waitForScene(page, 'ombak-bali');
-    const afterOmbak = [...observed.scripts].sort();
-    if (!observed.scripts.has(families[2].file)) throw new Error('switch path: Ombak chunk did not load on demand');
 
     const canvasPeak = await page.evaluate(() => {
       clearInterval(window.__rkCanvasProbe);
@@ -160,10 +173,8 @@ try {
     if (observed.consoleErrors.length || observed.pageErrors.length) throw new Error('switch path: browser errors present');
 
     report.switching = {
-      sequence: ['anamorphosis-paris', 'coupler-virginia', 'ombak-bali'],
-      afterInitial,
-      afterCoupler,
-      afterOmbak,
+      sequence: families.map((family) => family.id),
+      checkpoints,
       canvasPeak,
       finalCanvasCount: await page.locator('canvas').count(),
       finalRuntimeCount: await page.locator('[data-scene-runtime]').count(),
