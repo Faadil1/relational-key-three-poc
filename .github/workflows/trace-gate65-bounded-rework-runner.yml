@@ -37,7 +37,9 @@ jobs:
           python-version: '3.12'
 
       - name: Apply bounded Gate 6.5 repair
-        run: python .trace-validation/gate65_bounded_rework.py
+        run: |
+          python .trace-validation/gate65_bounded_rework.py
+          python .trace-validation/gate65_food_reflow_followup.py
 
       - name: Verify bounded incremental diff surface
         shell: bash
