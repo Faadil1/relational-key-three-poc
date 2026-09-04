@@ -2,7 +2,7 @@ state_class: relational_key_v2_cycle
 project: RELATIONAL_KEY
 cycle: V2
 canonical_branch: v2/archive-interaction-3d-matrix-001
-last_updated_utc: "2026-09-04T19:39:30Z"
+last_updated_utc: "2026-09-04T20:05:00Z"
 
 baseline_v1:
   immutable: true
@@ -14,7 +14,7 @@ baseline_v1:
   final_matrix: STRONG_24_ADEQUATE_0_EXPERIENCE_DEBT_0
 
 v2:
-  status: V2_3_WAVE_001_PASS__SIX_PROMOTION_CANDIDATES__WAVE_002_SELECTION_ONLY
+  status: V2_3_WAVE_002_BUILD_AUTHORIZED_EXACTLY_THREE
   issue: 37
   charter: V2/RELATIONAL_KEY_V2_EVOLUTION_CHARTER.md
   matrix: V2/V2_0_24_FAMILY_ARCHIVE_INTERACTION_3D_OPPORTUNITY_MATRIX.md
@@ -23,9 +23,11 @@ v2:
   archive_register_template: V2/ARCHIVE_RESEARCH_REGISTER_TEMPLATE.md
   v2_1_closeout: V2/V2_1_RUNTIME_AND_EXPERIENCE_COMPARE_004.md
   v2_3_wave_001_closeout: V2/V2_3_WAVE_001_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
+  v2_3_wave_002_selection: V2/V2_3_WAVE_002_SELECTION_ARCHIVE_REFRESH_001.md
   target_family_count: 24
   promotion_candidate_count: 6
-  remaining_family_count: 18
+  built_or_build_authorized_family_count: 9
+  remaining_unported_family_count: 15
   target_stack:
     - React
     - React_Three_Fiber
@@ -108,6 +110,34 @@ v2_3_wave_001:
       status: V2_PILOT_PROMOTION_CANDIDATE
       pair: LANLATE_EARTH_STATION_CARD_TO_CARRIED_SIGNAL_REPEATER_HANDOFF_TO_IKORODU_OGIDO_ALABATA_CHAIN
 
+v2_3_wave_002_selection:
+  verdict: PASS
+  selection_commit: 8df396b4b196b87aed85d2f998874a1dd8edaa13
+  selection_doc: V2/V2_3_WAVE_002_SELECTION_ARCHIVE_REFRESH_001.md
+  shortlist_size: 3
+  archive_refresh: PASS
+  collision_check: PASS
+  rights_boundaries: PASS
+  build_authorized_exactly_three: true
+  allowed_families:
+    astrolabe_isfahan:
+      status: BUILD_AUTHORIZED
+      pair: RETE_STAR_MAP_TO_SHARED_AXIS_RELATIVE_ROTATION_TO_LATITUDE_PLATE_LOCAL_HORIZON
+      asset_policy: PROCEDURAL_DEFAULT__SMITHSONIAN_PUBLIC_DOMAIN_MEDIA_OPTIONAL_IF_MATERIALLY_NEEDED
+    funicular_valparaiso:
+      status: BUILD_AUTHORIZED
+      pair: CAR_A_TO_SHARED_FUNICULAR_INVERSE_POSITION_TO_CAR_B
+      asset_policy: PROCEDURAL_ONLY_UNLESS_EXPLICIT_MEDIA_LICENSE_LATER_VERIFIED
+      semantic_contract: CONTINUOUS_VALID_RELATION__DO_NOT_FORCE_FALSE_MATCHING_OTHER_BINARY
+    music_box_sainte_croix:
+      status: BUILD_AUTHORIZED
+      pair: PINNED_CYLINDER_TO_PIN_TO_TOOTH_CONTACT_TO_TUNED_COMB
+      asset_policy: PROCEDURAL_GEOMETRY_AND_SYNTHETIC_AUDIO_ONLY
+  held_collision_examples:
+    frida_coyoacan: HELD_REFLECTION_TRACE_COLLISION_WITH_ANAMORPHOSIS
+    siku_bolivia: HELD_TEMPORAL_AUDIO_COLLISION_WITH_OMBAK
+  other_15_build_authorized: false
+
 runtime_assurance:
   doctrine: trace_web_runtime_assurance_plus_raw_bits_to_react_conceptual_source
   react_specific_real_project_validation: ACTIVE
@@ -130,16 +160,18 @@ deployment_budget:
   explicit_preview_only_when_gate_requires_live_url: true
 
 next_gate:
-  id: V2_3_WAVE_002_SELECTION_AND_ARCHIVE_REFRESH
+  id: V2_3_WAVE_002_THREE_CONCEPT_BUILDS
   research_allowed: true
-  collision_scan_allowed: true
-  build_allowed: false
-  remaining_scope: 18
-  selection_size: SMALL_BOUNDED_WAVE
-  required_output: WAVE_002_SHORTLIST_PLUS_ARCHIVE_REFRESH_PLUS_COLLISION_CHECK_PLUS_BUILD_AUTHORIZATION_DECISION
+  build_allowed: true
+  allowed_families:
+    - astrolabe-isfahan
+    - funicular-valparaiso
+    - music-box-sainte-croix
+  disallowed_remaining_family_count: 15
+  required_output: THREE_LAZY_REACT_R3F_BUILDS_PLUS_EXACT_V1_RUNTIME_FOCUS_SCALING_AND_HUMAN_COMPARISON
   production_replacement_allowed: false
 
 blockers:
   - V1_REPLACEMENT_BLOCKED_UNTIL_PER_FAMILY_PROMOTION_DECISION_AND_SEPARATE_PRODUCTION_GATE
-  - WAVE_002_BUILD_BLOCKED_UNTIL_SHORTLIST_ARCHIVE_REFRESH_AND_COLLISION_CHECK_CLOSE
+  - OTHER_15_FAMILY_BUILDS_NOT_AUTHORIZED
   - MASS_24_FAMILY_PORT_NOT_AUTHORIZED
