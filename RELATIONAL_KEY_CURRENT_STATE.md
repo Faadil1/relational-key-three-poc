@@ -65,11 +65,12 @@ Implementation `796ee8afc24c879d148b90046037f80b0c5bcec6`.
 
 Candidate/blocker register:
 `POST_CLOSEOUT_R5_8B_CITY_GATINEAU_RIVER_SEAM_CANDIDATE_LIVE_BLOCKER.md`.
-Latest blocker-register update / Retry 01 trigger: `43c3c8a998191ac73e621142575ca9a18b7288e5`.
+Latest blocker register commit: `503a573f14e1b09f1ab0e1a913e389089630ae19`.
+Retry 01 trigger commit: `43c3c8a998191ac73e621142575ca9a18b7288e5`.
 
 SOURCE candidate: PASS.
 LIVE candidate: BLOCKED by Vercel Hobby `build-rate-limit`.
-Retry 01 on commit `43c3c8a998191ac73e621142575ca9a18b7288e5` returned the same Vercel `build-rate-limit` failure.
+Retry 01 returned the same Vercel `build-rate-limit` failure.
 No new deployment was created after the last successful Swell deployment `dpl_Ew6K7raX9jBryigWqAkMr5xRsHLa`.
 Direct deployment fallback could not be used by the connected deployment action, so no alternate deployment is claimed.
 
