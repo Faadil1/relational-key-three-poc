@@ -12,18 +12,21 @@ const pilots = [
   {
     id: 'anamorphosis-paris',
     label: 'Anamorphosis · Paris',
+    pair: ['DISTORTED FIELD', 'CURVED REFLECTION', 'CYLINDRICAL REFLECTOR'],
     other: /OTHER .*not registered/i,
     matching: /MATCHING .*registered in reflection/i,
   },
   {
     id: 'coupler-virginia',
     label: 'Coupler · Virginia',
+    pair: ['PIVOTING HEAD', 'ROTARY HOOK / LATCH', 'MATING HEAD'],
     other: /OTHER \/ CONTACT/i,
     matching: /MATCHING .*locked relation.*pull transfers/i,
   },
   {
     id: 'ombak-bali',
     label: 'Ombak · Bali',
+    pair: ['PENGUMBANG', 'SHARED BEAT ENVELOPE', 'PENGISUP'],
     other: /OTHER .*12\.0 Hz/i,
     matching: /MATCHING .*7\.0 Hz beat envelope/i,
   },
@@ -62,6 +65,13 @@ async function openFocus(page, pilot) {
   if (title !== pilot.label) throw new Error(`${pilot.id}: focus title mismatch: ${title}`);
   const law = (await page.locator('.focus-meta strong').innerText()).trim();
   if (!law.includes('→')) throw new Error(`${pilot.id}: pair law is not evaluator-visible`);
+
+  const pairRail = page.locator('.pair-member-rail');
+  if ((await pairRail.count()) !== 1) throw new Error(`${pilot.id}: pair-member rail missing`);
+  const renderedPair = (await pairRail.locator('strong').allInnerTexts()).map((value) => value.trim());
+  if (JSON.stringify(renderedPair) !== JSON.stringify(pilot.pair)) {
+    throw new Error(`${pilot.id}: pair-member identity mismatch: ${JSON.stringify(renderedPair)}`);
+  }
 }
 
 async function statusText(page) {
@@ -86,7 +96,7 @@ async function driveMatching(page, pilot) {
 
 const browser = await chromium.launch({ headless: true, args: ['--use-angle=swiftshader', '--enable-webgl'] });
 const report = {
-  schema: 'RELATIONAL_KEY_V2_FOCUS_CAPTURE_001',
+  schema: 'RELATIONAL_KEY_V2_FOCUS_CAPTURE_002',
   generatedAt: new Date().toISOString(),
   v2Url: V2,
   pilots: {},
@@ -150,7 +160,13 @@ try {
       }
       await mobileContext.close();
 
-      report.pilots[pilot.id] = { other, matching, desktopLayout, mobileLayout };
+      report.pilots[pilot.id] = {
+        pair: pilot.pair,
+        other,
+        matching,
+        desktopLayout,
+        mobileLayout,
+      };
     } catch (error) {
       hardFailure = true;
       report.findings.push({ severity: 'FAIL', pilot: pilot.id, message: error.stack || String(error) });
@@ -174,6 +190,7 @@ for (const pilot of pilots) {
   if (!result) {
     summary.push('- Capture incomplete.');
   } else {
+    summary.push(`- Pair: ${result.pair.join(' → ')}`);
     summary.push(`- OTHER: ${result.other}`);
     summary.push(`- MATCHING: ${result.matching}`);
     summary.push(`- Desktop width: ${result.desktopLayout.scrollWidth}/${result.desktopLayout.width}`);

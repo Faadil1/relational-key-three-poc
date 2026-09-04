@@ -1,0 +1,63 @@
+/* Focus Experience relational identity rail.
+   Makes the two members and the relation explicit without changing mechanism state. */
+.pair-member-rail {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(150px, .72fr) minmax(0, 1fr);
+  gap: 8px;
+  align-items: stretch;
+  margin: 0 0 8px;
+}
+
+.pair-member-rail > div {
+  min-width: 0;
+  display: grid;
+  gap: 4px;
+  align-content: center;
+  min-height: 54px;
+  padding: 8px 11px;
+  border-top: 1px solid #353b33;
+  border-bottom: 1px solid #353b33;
+  color: #eee7d8;
+}
+
+.pair-member-rail > div:first-child { text-align: left; }
+.pair-member-rail > div:last-child { text-align: right; }
+.pair-member-rail .pair-relation {
+  text-align: center;
+  border-color: #8a7546;
+  background: rgba(208, 183, 112, .055);
+}
+
+.pair-member-rail small {
+  color: #858a80;
+  font: 800 8px/1.15 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: .13em;
+}
+
+.pair-member-rail strong {
+  min-width: 0;
+  color: #d9c27e;
+  font: 800 10px/1.28 ui-monospace, SFMono-Regular, Menlo, monospace;
+  letter-spacing: .055em;
+  overflow-wrap: anywhere;
+}
+
+.pair-member-rail .pair-relation strong { color: #f1dfaa; }
+
+@media (max-width: 640px) {
+  .pair-member-rail {
+    grid-template-columns: 1fr;
+    gap: 0;
+    margin-bottom: 8px;
+  }
+
+  .pair-member-rail > div {
+    min-height: 44px;
+    padding: 7px 9px;
+    border-bottom: 0;
+    text-align: left !important;
+  }
+
+  .pair-member-rail > div:last-child { border-bottom: 1px solid #353b33; }
+  .pair-member-rail .pair-relation { text-align: left; }
+}

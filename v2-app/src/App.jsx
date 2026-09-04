@@ -160,6 +160,23 @@ export default function App() {
             <p className="motion-note">{reducedMotion ? 'Reduced motion active' : 'Motion follows system preference'}</p>
           </div>
 
+          {focusMode && (
+            <div className="pair-member-rail" aria-label={`${pilot.label} relational pair`}>
+              <div>
+                <small>PAIR MEMBER A</small>
+                <strong>{pilot.pairMembers.a}</strong>
+              </div>
+              <div className="pair-relation">
+                <small>RELATION</small>
+                <strong>{pilot.pairMembers.relation}</strong>
+              </div>
+              <div>
+                <small>PAIR MEMBER B</small>
+                <strong>{pilot.pairMembers.b}</strong>
+              </div>
+            </div>
+          )}
+
           <div className="canvas-wrap" aria-hidden="true">
             <Canvas
               key={activeId}
