@@ -56,7 +56,9 @@ for (const row of sceneRows) {
   const lazyEntry = `lazy(() => import('./sceneEntries/${row.entry}'))`;
   if (!registry.includes(lazyEntry)) fail(`missing lazy family entry: ${lazyEntry}`);
 }
-if ((registry.match(/lazy\(\(\) => import\(/g) ?? []).length !== sceneRows.length) fail(`scene registry must expose exactly ${sceneRows.length} lazy family entries in V2.3 Waves 001-002`);
+if ((registry.match(/lazy\(\(\) => import\(/g) ?? []).length !== sceneRows.length) {
+  fail(`scene registry must expose exactly ${sceneRows.length} lazy family entries in V2.3 Waves 001-002`);
+}
 
 for (const required of [
   'DISTORTED FIELD → CYLINDRICAL REFLECTOR → RECTIFIED LEGIBILITY',
