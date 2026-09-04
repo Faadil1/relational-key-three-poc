@@ -57,7 +57,7 @@ jobs:
         if: github.event_name == 'push'
         shell: bash
         run: |
-          if git diff --quiet -- v2-app/package-lock.json; then
+          if [ -z "$(git status --porcelain -- v2-app/package-lock.json)" ]; then
             echo 'package-lock already canonical'
             exit 0
           fi
