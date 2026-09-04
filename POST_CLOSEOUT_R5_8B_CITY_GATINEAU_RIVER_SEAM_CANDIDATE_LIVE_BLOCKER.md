@@ -36,16 +36,27 @@ Conceptual Gatineau territory / waterway relationship only; not an operational t
 
 ## LIVE status
 
-GitHub/Vercel status on candidate commit:
+Original GitHub/Vercel status on candidate commit:
 - context `Vercel`
 - state `failure`
-- target indicates Hobby `build-rate-limit` / upgrade-to-Pro page.
+- target indicated Hobby `build-rate-limit` / upgrade-to-Pro page.
 
 Canonical interpretation:
 # **SOURCE CANDIDATE PASS / LIVE CANDIDATE BLOCKED — BUILD RATE LIMIT**
 
+## Retry 01
+
+A deployment-only retry is triggered on 2026-09-03 without any semantic or visual change to `families/city-gatineau/r5-8.html`.
+The candidate implementation remains exactly `796ee8afc24c879d148b90046037f80b0c5bcec6`.
+
+Retry acceptance criteria:
+1. Vercel deployment reaches `READY`;
+2. deployed branch contains the unchanged `r5-8.html` candidate;
+3. `/families/city-gatineau/r5-8.html` returns HTTP 200 through authenticated Vercel fetch;
+4. only then open USER proof.
+
 Do not infer application failure.
 Do not promote City.
-Do not request USER proof until an exact candidate deployment is READY and route-tested.
+Do not request USER proof until the retry satisfies all acceptance criteria.
 Public City wrapper remains unchanged.
 Shared runtime remains unchanged.
