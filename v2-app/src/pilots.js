@@ -47,6 +47,54 @@ export const pilots = [
     archiveBoundary:
       'Uses synthetic tones to model documented paired-tuning / ombak mechanics. No archive recording is reproduced and no universal Bali-wide beat rate is claimed.',
   },
+  {
+    id: 'kento-japan',
+    label: 'Kento · Japan',
+    className: 'PRINT / REGISTRATION / TRANSFER',
+    law: 'WOODBLOCK KENTŌ → REGISTRATION / PRESS → RECEIVING SHEET TRANSFER',
+    pairMembers: {
+      a: 'WOODBLOCK / KENTŌ',
+      relation: 'REGISTRATION + PRESS',
+      b: 'RECEIVING SHEET',
+    },
+    matching: 'The block-side kentō and receiving sheet agree before pressure transfers the procedural layer.',
+    other: 'Both cards remain valid, but pressure transfers the layer off-register.',
+    memorable: 'The cards separate after pressure and the receiving sheet reveals whether the pair truly registered.',
+    archiveBoundary:
+      'Mechanism is grounded in institutional descriptions of kentō registration. Geometry and transferred marks are procedural; no specific historical artwork is reproduced.',
+  },
+  {
+    id: 'stereoscopy-uk',
+    label: 'Stereoscopy · UK',
+    className: 'OPTICAL / DISPARITY / DEPTH',
+    law: 'LEFT VIEW CARD + RIGHT VIEW CARD → CONTROLLED DISPARITY / FUSION → BINOCULAR DEPTH',
+    pairMembers: {
+      a: 'LEFT VIEW CARD',
+      relation: 'CONTROLLED DISPARITY / FUSION',
+      b: 'RIGHT VIEW CARD',
+    },
+    matching: 'Two purpose-built views retain their difference while the controlled relation supports a stable depth reading.',
+    other: 'Both views remain valid but their disparity refuses the intended fusion.',
+    memorable: 'A spatial reading exists only because two flat view cards relate correctly.',
+    archiveBoundary:
+      'Uses purpose-built neutral views to model documented stereoscopic card/viewer mechanics. No historical view is required for the experience and stereopsis is not required for comprehension.',
+  },
+  {
+    id: 'signal-nigeria',
+    label: 'Signal · Nigeria',
+    className: 'SIGNAL / ORIENTATION / RELAY',
+    law: 'LANLATE UPLINK CARD → SATELLITE RELAY PATH → REMOTE RECEIVE CARD',
+    pairMembers: {
+      a: 'LANLATE UPLINK CARD',
+      relation: 'SATELLITE RELAY PATH',
+      b: 'REMOTE RECEIVE CARD',
+    },
+    matching: 'The uplink orientation establishes a continuous relay path and the receiving card visibly responds.',
+    other: 'Both signal cards remain valid, but the relay breaks before the receiving response can register.',
+    memorable: 'A carried signal becomes visible only as a path that leaves one card and arrives inside the other.',
+    archiveBoundary:
+      'Procedural abstraction informed by documented Nigerian satellite-earth-station and telecommunications history; not a certified reconstruction of Lanlate geometry, frequencies, routing or equipment.',
+  },
 ];
 
 export const pilotById = Object.fromEntries(pilots.map((pilot) => [pilot.id, pilot]));
