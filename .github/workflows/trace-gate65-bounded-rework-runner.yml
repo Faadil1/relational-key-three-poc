@@ -155,7 +155,7 @@ jobs:
           PY
 
       - name: Run exact-target browser capture
-        run: python .trace-validation/gate65_runtime_capture.py
+        run: python .trace-validation/gate65_runtime_capture_v2.py
 
       - name: Commit machine-readable runtime evidence
         if: success()
