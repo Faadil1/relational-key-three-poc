@@ -243,12 +243,17 @@ async function collect(page, cdp) {
   return { perf, browser };
 }
 
-async function innerFrame(page) {
-  await page.locator('iframe').waitFor({ state: 'attached' });
-  await page.waitForFunction(() => document.querySelector('iframe')?.contentDocument?.readyState === 'complete');
-  const frames = page.frames().filter((frame) => frame !== page.mainFrame());
-  if (frames.length !== 1) throw new Error(`Expected one V1 family iframe, found ${frames.length}`);
-  return frames[0];
+async function familySurface(page) {
+  await page.waitForLoadState('domcontentloaded');
+  await page.waitForTimeout(180);
+  const iframe = page.locator('iframe');
+  if (await iframe.count()) {
+    await page.waitForFunction(() => document.querySelector('iframe')?.contentDocument?.readyState === 'complete');
+    const frames = page.frames().filter((frame) => frame !== page.mainFrame());
+    if (frames.length !== 1) throw new Error(`Expected one V1 family iframe, found ${frames.length}`);
+    return frames[0];
+  }
+  return page;
 }
 
 async function capture(page, name) {
@@ -260,7 +265,7 @@ async function runV1(browser, pilot) {
   const session = await setupPage(context);
   const { page, cdp } = session;
   await page.goto(`${V1}/families/${pilot.id}/`, { waitUntil: 'domcontentloaded' });
-  const frame = await innerFrame(page);
+  const frame = await familySurface(page);
   await frame.waitForTimeout(250);
   const initial = await collect(page, cdp);
 
