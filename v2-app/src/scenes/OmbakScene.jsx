@@ -11,7 +11,7 @@ export function OmbakScene({ differenceHz, playing, matching, reducedMotion }) {
   const positions = useMemo(() => new Float32Array(POINTS * 3), []);
   const { invalidate } = useThree();
 
-  const effectiveDifference = matching ? differenceHz : Math.max(0.25, differenceHz * 0.18);
+  const effectiveDifference = matching ? differenceHz : Math.min(20, differenceHz + 5);
 
   useFrame(({ clock }) => {
     const t = clock.getElapsedTime();

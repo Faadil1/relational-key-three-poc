@@ -27,7 +27,7 @@ export default function App() {
 
   const pilot = pilotById[activeId];
   const matching = relationMode === 'matching';
-  const effectiveOmbakDifference = matching ? ombakDifference : Math.max(0.25, ombakDifference * 0.18);
+  const effectiveOmbakDifference = matching ? ombakDifference : Math.min(20, ombakDifference + 5);
   const audio = useOmbakAudio(ombakBase, effectiveOmbakDifference);
 
   useEffect(() => {
@@ -51,7 +51,7 @@ export default function App() {
     if (!audio.playing) {
       return matching
         ? `MATCHING READY · synthetic paired sources differ by ${ombakDifference.toFixed(1)} Hz · audio is user-initiated.`
-        : 'OTHER READY · sources remain independently valid; selected relation is intentionally outside the matching study state.';
+        : `OTHER READY · synthetic paired sources differ by ${effectiveOmbakDifference.toFixed(1)} Hz · outside the matching study state.`;
     }
     return matching
       ? `MATCHING · synthetic paired sources create a ${ombakDifference.toFixed(1)} Hz beat envelope.`

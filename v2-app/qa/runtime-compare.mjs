@@ -72,7 +72,7 @@ const pilots = [
     },
     v2: {
       matchingExpect: /MATCHING .*7\.0 Hz beat envelope/i,
-      otherExpect: /OTHER .*study difference/i,
+      otherExpect: /OTHER .*12\.0 Hz/i,
     },
   },
 ];
