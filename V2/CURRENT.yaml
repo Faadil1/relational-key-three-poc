@@ -2,6 +2,8 @@ state_class: relational_key_v2_cycle
 project: RELATIONAL_KEY
 cycle: V2
 canonical_branch: v2/archive-interaction-3d-matrix-001
+last_updated_utc: "2026-09-04T16:55:00Z"
+
 baseline_v1:
   immutable: true
   production_head: 6821cd2a9694635e2e6948747af45785fe7e3afe
@@ -10,12 +12,15 @@ baseline_v1:
   r5: CLOSED
   validated_families: 24
   final_matrix: STRONG_24_ADEQUATE_0_EXPERIENCE_DEBT_0
+
 v2:
-  status: V2_0_CONCEPT_MATRIX_COMPLETE_ARCHIVE_REFRESH_REQUIRED_BEFORE_V2_1_BUILD
-  implementation_authorized: false
+  status: V2_0A_ARCHIVE_REFRESH_PASS__V2_1_THREE_CONCEPT_BUILDS_AUTHORIZED
   issue: 37
   charter: V2/RELATIONAL_KEY_V2_EVOLUTION_CHARTER.md
   matrix: V2/V2_0_24_FAMILY_ARCHIVE_INTERACTION_3D_OPPORTUNITY_MATRIX.md
+  archive_refresh_seed: V2/V2_0A_PILOT_ARCHIVE_REFRESH_001.md
+  archive_corpora_complete: V2/V2_0A_PILOT_ARCHIVE_CORPORA_COMPLETE_001.md
+  archive_register_template: V2/ARCHIVE_RESEARCH_REGISTER_TEMPLATE.md
   target_family_count: 24
   target_stack:
     - React
@@ -24,6 +29,7 @@ v2:
   atlas_24_live_webgl_canvases_allowed: false
   v1_in_place_rewrite_allowed: false
   ordinary_branch_vercel_preview_allowed: false
+
 laws:
   - THE_RELATIONAL_PAIR_REMAINS_THE_PRODUCT
   - PAIR_MEMBER_TO_RELATION_TO_OTHER_MEMBER_RESPONSE
@@ -31,6 +37,7 @@ laws:
   - TECHNOLOGY_SERVES_THE_RELATIONAL_MECHANISM
   - THE_MEMORABLE_MOMENT_MUST_BELONG_TO_THE_PAIR
   - ARCHIVE_EVIDENCE_MUST_CHANGE_MECHANISM_NOT_DECORATE
+
 mandatory_tests:
   relational_specificity: REMOVE_EITHER_MEMBER_AND_MEMORABLE_MOMENT_BREAKS
   archive_specificity: REPLACE_ARCHIVE_RATIONALE_AND_CONCEPT_BREAKS
@@ -42,21 +49,63 @@ mandatory_tests:
     accessibility: GTE_V1_WITHIN_TESTED_SCOPE
     mobile_usability: GTE_V1
     runtime_cost: MEASURED_ACCEPTABLE
-pilot_shortlist:
-  - anamorphosis-paris
-  - coupler-virginia
-  - ombak-bali
-pilot_classes:
-  anamorphosis-paris: OPTICAL_SPATIAL
-  coupler-virginia: MECHANICAL_CONTACT_LOAD
-  ombak-bali: TEMPORAL_RESONANCE_AUDIO_OPTIONAL
+
+v2_0:
+  concept_matrix: PASS
+  family_count: 24
+  collision_clusters_recorded: true
+  three_pilot_shortlist: PASS
+
+v2_0a_archive_refresh:
+  verdict: PASS
+  build_scope: THREE_CONCEPT_PILOTS_ONLY
+  direct_archive_asset_default: DENY_UNLESS_EXPLICIT_RIGHTS_AND_PRODUCT_NEED
+  procedural_geometry_default: true
+  synthetic_audio_default: true
+  pilots:
+    anamorphosis_paris:
+      status: BUILD_AUTHORIZED
+      class: OPTICAL_SPATIAL
+      target: CYLINDRICAL_CATOPTRIC_RECTIFICATION
+      rights_boundary: PROCEDURAL_OR_EXPLICIT_PUBLIC_DOMAIN_ONLY
+    coupler_virginia:
+      status: BUILD_AUTHORIZED
+      class: MECHANICAL_CONTACT_LOAD
+      target: JANNEY_1873_ALEXANDRIA_ROTARY_HOOK_CATCH_GUARD_ARM
+      rights_boundary: PROCEDURAL_MODEL_FROM_VERIFIED_MECHANISM
+    ombak_bali:
+      status: BUILD_AUTHORIZED
+      class: TEMPORAL_RESONANCE_AUDIO_OPTIONAL
+      target: PAIRED_TUNING_BEAT_ENVELOPE
+      rights_boundary: SYNTHETIC_AUDIO_NO_ARCHIVE_RECORDING_REUSE
+
+runtime_assurance:
+  doctrine: trace_web_runtime_assurance_plus_raw_bits_to_react_conceptual_source
+  react_specific_real_project_validation: NOW_AUTHORIZED_IN_V2_1
+  requirements:
+    - exact_build_identity
+    - React_Profiler_when_material
+    - browser_performance_evidence
+    - repeated_mount_unmount_disposal_check
+    - mobile_constrained_device_path
+    - reduced_motion_path
+    - console_error_capture
+    - V1_vs_V2_comparison
+
+deployment_budget:
+  v2_work_branch_auto_deploy: false
+  local_ci_first: true
+  explicit_preview_only_when_gate_requires_live_url: true
+
 next_gate:
-  id: V2_0A_ARCHIVE_REFRESH
-  build_allowed: false
-  required_output: THREE_PILOT_ARCHIVE_CORPORA_PLUS_PROVENANCE_RIGHTS_TRUTH_BOUNDARIES
-  families:
+  id: V2_1_THREE_DIVERSE_CONCEPT_BUILDS
+  build_allowed: true
+  allowed_families:
     - anamorphosis-paris
     - coupler-virginia
     - ombak-bali
+  required_output: THREE_REACT_R3F_CONCEPT_BUILDS_PLUS_EXACT_V1_COMPARISON_EVIDENCE
+  production_replacement_allowed: false
+
 blockers:
-  - V2_1_BUILD_BLOCKED_UNTIL_PILOT_ARCHIVE_REFRESH_PASSES
+  - V1_REPLACEMENT_BLOCKED_UNTIL_EACH_V2_FAMILY_BEATS_ITS_V1_PROMOTION_RUBRIC
