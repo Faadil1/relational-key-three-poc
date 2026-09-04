@@ -34,32 +34,38 @@ Baseline: ADEQUATE.
 Source audit `POST_CLOSEOUT_R5_8A_CITY_GATINEAU_SOURCE_RIVER_SEAM_AUDIT.md` @ `88fab6997118aacd9168b7aa03a9f7298e18ec3a`.
 Mechanism: **RIVER-SEAM CROSSING / BANK-TO-BANK HANDOFF**.
 Candidate `families/city-gatineau/r5-8.html` @ `796ee8afc24c879d148b90046037f80b0c5bcec6`.
-Dedicated blocker register latest commit `127f99266f94222d189f13c907a5671c91ad793c`.
-Current state sync `e5dd9540253482eab2fd34fb3599f59da1280fda`.
-Handover sync `a3a4a24162ab2639e4353733d02f28738e8bd354`.
+Candidate blob `118cd6c5b65c9e7e8cc62842510cb37acc97d98a`.
 
-SOURCE candidate: PASS.
+LIVE blocker history:
+- original candidate + Retry 01 hit Vercel Hobby `build-rate-limit`;
+- Retry 01 trigger `43c3c8a998191ac73e621142575ca9a18b7288e5`;
+- candidate unchanged.
+
+LIVE blocker resolved ✅
+- deployment `dpl_EzFX9UK9NJkHPvTp5UvoSRoKTjVA`
+- READY
+- deployed commit `91ad10e8ad6071b2ce6d5c8a1abde3f58070e41e`
+- exact candidate blob preserved at deployed commit.
+
+Preview is Vercel-auth protected; raw automated route fetch returns SSO 302 rather than application failure. Temporary share URL generated.
+
+USER gate:
+`POST_CLOSEOUT_R5_8C_CITY_GATINEAU_USER_GATE.md` @ `7bb5258dda14a29e05579aac56b399474fefa65c`.
+
+Candidate URL:
+`https://relational-key-collectionrelational-key-collection-cztjb30l3.vercel.app/families/city-gatineau/r5-8.html?_vercel_share=8sEtIUzNoG3jkCZ4xHf180lJUNz3zwde`
+
 Public City wrapper unchanged.
 Shared runtime unchanged.
-City remains ADEQUATE.
-
-## LIVE blocker / Retry 01
-Original candidate deployment was rejected by Vercel Hobby `build-rate-limit`.
-Retry 01 was triggered without semantic/visual changes at commit `43c3c8a998191ac73e621142575ca9a18b7288e5`.
-GitHub combined status for Retry 01 again reports Vercel failure with target `upgradeToPro=build-rate-limit`.
-No newer deployment was created after Swell promotion deployment `dpl_Ew6K7raX9jBryigWqAkMr5xRsHLa`.
-
-Canonical interpretation:
-# **SOURCE CITY PASS / LIVE CITY BLOCKED / USER CITY NOT STARTED**
+City remains ADEQUATE pending USER proof.
 
 # ACTIVE GATE
-# **R5.8B-LIVE — CITY / GATINEAU CANDIDATE DEPLOYMENT RETRY**
+# **R5.8C — CITY / GATINEAU USER MATCHING + OTHER REGRESSION**
 
-Do not create semantic candidate changes just to probe capacity.
-Next successful attempt must reuse the unchanged candidate and satisfy:
-1. Vercel READY;
-2. `/families/city-gatineau/r5-8.html` HTTP 200;
-3. temporary USER share URL;
-4. then USER MATCHING + OTHER proof.
+Required proof:
+1. `MATCHING CROSSING` → `TEST RELATIONSHIP`;
+2. hold final shared-span / handoff-crossing state;
+3. `OTHER CROSSING` → `TEST RELATIONSHIP`;
+4. hold offset-anchor / misseated-crossing residual.
 
 Only USER PASS may authorize City promotion and ADEQUATE → STRONG.
