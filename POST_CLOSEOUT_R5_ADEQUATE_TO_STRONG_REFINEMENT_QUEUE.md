@@ -35,8 +35,8 @@ Source audit `POST_CLOSEOUT_R5_8A_CITY_GATINEAU_SOURCE_RIVER_SEAM_AUDIT.md` @ `8
 Mechanism: **RIVER-SEAM CROSSING / BANK-TO-BANK HANDOFF**.
 Candidate `families/city-gatineau/r5-8.html` @ `796ee8afc24c879d148b90046037f80b0c5bcec6`.
 Dedicated blocker register latest commit `127f99266f94222d189f13c907a5671c91ad793c`.
-Current state sync `91ad10e8ad6071b2ce6d5c8a1abde3f58070e41e`.
-Handover sync `d87a7a640b2ba6022defba7ce5f9a1911cd198eb`.
+Current state sync `e5dd9540253482eab2fd34fb3599f59da1280fda`.
+Handover sync `a3a4a24162ab2639e4353733d02f28738e8bd354`.
 
 SOURCE candidate: PASS.
 Public City wrapper unchanged.
