@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width,initial-scale=1" />
+<title>RELATIONAL KEY — Tongiaki Twin Hull Register</title>
+<style>
+:root{--ink:#1e211f;--muted:#6d706c;--paper:#f1ede3;--card:#faf7ef;--line:#cbc4b6;--wood:#756048;--wood2:#8a7459;--accent:#3d5d56;--shadow:0 18px 48px rgba(28,31,29,.10)}
+*{box-sizing:border-box}html,body{margin:0;min-height:100%;background:var(--paper);color:var(--ink);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}body{padding:34px}
+main{max-width:1180px;margin:0 auto}.eyebrow,.meta,.truth,.source,.memberLabel,.memberMeta,.hint{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;text-transform:uppercase;letter-spacing:.08em}.eyebrow{font-size:12px;color:var(--accent);margin-bottom:12px}.top{display:flex;justify-content:space-between;gap:28px;align-items:flex-start;margin-bottom:22px}.top h1{margin:0;font-size:clamp(34px,5vw,68px);line-height:.94;letter-spacing:-.055em;font-weight:650;max-width:760px}.meta{font-size:11px;line-height:1.65;color:var(--muted);max-width:300px}.law{margin:18px 0 28px;padding:15px 18px;border-left:2px solid var(--accent);font-size:17px;line-height:1.5;background:rgba(255,255,255,.3)}
+.pair{position:relative;display:grid;grid-template-columns:minmax(0,1fr) 92px minmax(0,1fr);align-items:stretch;min-height:550px}.member{position:relative;background:var(--card);border:1px solid var(--line);box-shadow:var(--shadow);border-radius:24px;padding:20px;overflow:hidden;min-width:0}.memberHead{display:flex;justify-content:space-between;gap:14px;align-items:flex-start}.memberLabel{font-size:11px;color:var(--accent)}.memberTitle{font-size:22px;font-weight:620;margin-top:4px}.memberMeta{font-size:10px;color:var(--muted);text-align:right;line-height:1.5}.stage{position:relative;height:400px;margin-top:18px;border:1px solid rgba(117,96,72,.18);border-radius:18px;background:linear-gradient(180deg,rgba(255,255,255,.58),rgba(229,221,207,.45));overflow:hidden;touch-action:none}.axis{position:absolute;left:50%;top:9%;bottom:9%;border-left:1px dashed rgba(61,93,86,.22)}.lane{position:absolute;inset:22px;border:1px dashed rgba(61,93,86,.12);border-radius:14px}.hull{--x:0px;--y:0px;position:absolute;left:50%;top:50%;width:78px;height:252px;transform:translate(calc(-50% + var(--x)),calc(-50% + var(--y)));border:0;background:transparent;padding:0;cursor:grab;touch-action:none;outline:none}.hull:active,.hull.dragging{cursor:grabbing}.hull:focus-visible .hullBody{box-shadow:0 0 0 3px rgba(61,93,86,.24),0 12px 26px rgba(28,31,29,.15)}.hullBody{position:absolute;inset:0;background:linear-gradient(90deg,var(--wood),var(--wood2));clip-path:polygon(50% 0,78% 8%,90% 26%,94% 74%,78% 93%,50% 100%,22% 93%,6% 74%,10% 26%,22% 8%);box-shadow:0 12px 26px rgba(28,31,29,.15)}.hullBody:after{content:"";position:absolute;inset:17px 25px;border-left:1px solid rgba(255,255,255,.28);border-right:1px solid rgba(255,255,255,.18)}.hullTag{position:absolute;left:50%;top:50%;transform:translate(-50%,-50%) rotate(-90deg);white-space:nowrap;font:10px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;color:#f3eadc}.hint{position:absolute;left:14px;right:14px;bottom:12px;font-size:9px;color:var(--muted);text-align:center}
+.relation{position:relative;display:flex;align-items:center;justify-content:center;overflow:visible}.relation:before{content:"";position:absolute;top:9%;bottom:9%;left:50%;border-left:1px solid rgba(30,33,31,.12)}.bridge{--bridge-y:0px;position:absolute;left:-18px;right:-18px;top:50%;height:188px;transform:translateY(calc(-50% + var(--bridge-y)));opacity:0;transition:opacity .18s ease}.boom{position:absolute;left:0;right:0;height:2px;background:var(--accent);transform-origin:center;opacity:.78}.boom:nth-child(1){top:38px}.boom:nth-child(2){top:92px}.boom:nth-child(3){top:146px}.deck{position:absolute;left:7px;right:7px;top:48px;height:92px;border:1px solid rgba(61,93,86,.35);background:rgba(61,93,86,.06);border-radius:8px}.pair.coupled .bridge{opacity:1}.relationBadge{position:relative;z-index:2;width:82px;padding:9px 6px;border:1px solid var(--line);background:var(--paper);border-radius:999px;text-align:center;font:9px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.09em;line-height:1.35;color:var(--muted)}.pair.coupled .relationBadge{color:var(--accent);border-color:rgba(61,93,86,.42)}
+.controls{display:flex;gap:10px;align-items:center;margin-top:18px;flex-wrap:wrap}.controls button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:10px 14px;font:10px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.08em;text-transform:uppercase;cursor:pointer}.readout{margin-top:14px;padding:16px 18px;border:1px solid var(--line);background:rgba(255,255,255,.35);border-radius:16px;font-size:14px;line-height:1.55}.readout strong{color:var(--accent)}.truth{margin-top:18px;font-size:10px;color:var(--muted);line-height:1.55}.source{margin-top:8px;font-size:9px;color:#83857f;line-height:1.55}
+@media(max-width:760px){body{padding:18px}.top{display:block}.meta{margin-top:14px}.pair{grid-template-columns:minmax(0,1fr) 48px minmax(0,1fr);min-height:490px}.member{padding:12px;border-radius:18px}.memberTitle{font-size:16px}.memberMeta{display:none}.stage{height:350px}.hull{width:58px;height:218px}.relationBadge{width:46px;font-size:7px;padding:7px 3px}.bridge{left:-10px;right:-10px}.hint{font-size:7px}}
+@media(max-width:460px){body{padding:10px}.top h1{font-size:32px}.law{font-size:14px}.pair{grid-template-columns:minmax(0,1fr) 38px minmax(0,1fr)}.memberLabel{font-size:8px}.memberTitle{font-size:13px}.stage{height:320px}.hull{width:50px;height:190px}.controls button{padding:9px 11px}.readout{font-size:12px}}
+</style>
+</head>
+<body>
+<main>
+  <div class="eyebrow">RELATIONAL KEY · OCEANIA CANDIDATE · TONGATAPU / TONGA</div>
+  <div class="top">
+    <h1>TONGIAKI<br>TWIN HULL REGISTER</h1>
+    <div class="meta">STRUCTURAL / VOYAGING MEMORY<br>R4 · STRUCTURAL COUPLING<br>DIRECT ALIGNMENT STUDY</div>
+  </div>
+  <div class="law">Two hulls joined in parallel form a shared, more stable voyaging platform. The interface demonstrates only the documented structural relation — not hydrodynamic performance.</div>
+
+  <section class="pair" id="pair" aria-label="Two relational hull members">
+    <article class="member">
+      <div class="memberHead"><div><div class="memberLabel">CARD A</div><div class="memberTitle">HULL A</div></div><div class="memberMeta">PORT MEMBER<br>DIRECT INPUT</div></div>
+      <div class="stage" id="stageA"><div class="axis"></div><div class="lane"></div>
+        <button class="hull" id="hullA" aria-label="Hull A editorial position" aria-valuetext="uncoupled position"><span class="hullBody"></span><span class="hullTag">TONGIAKI · HULL A</span></button>
+        <div class="hint">DRAG INBOARD + FORE/AFT · ARROWS ALSO MOVE</div>
+      </div>
+    </article>
+
+    <div class="relation" aria-hidden="true">
+      <div class="bridge" id="bridge"><div class="boom"></div><div class="boom"></div><div class="boom"></div><div class="deck"></div></div>
+      <div class="relationBadge" id="relationBadge">TWO HULLS<br>UNCOUPLED</div>
+    </div>
+
+    <article class="member">
+      <div class="memberHead"><div><div class="memberLabel">CARD B</div><div class="memberTitle">HULL B</div></div><div class="memberMeta">STARBOARD MEMBER<br>DIRECT INPUT</div></div>
+      <div class="stage" id="stageB"><div class="axis"></div><div class="lane"></div>
+        <button class="hull" id="hullB" aria-label="Hull B editorial position" aria-valuetext="uncoupled position"><span class="hullBody"></span><span class="hullTag">TONGIAKI · HULL B</span></button>
+        <div class="hint">DRAG INBOARD + FORE/AFT · ARROWS ALSO MOVE</div>
+      </div>
+    </article>
+  </section>
+
+  <div class="controls"><button id="reset">RESET · DISTINCT HULLS</button></div>
+  <div class="readout" id="readout"><strong>DISTINCT</strong> · two valid hull members; no shared platform is formed.</div>
+  <div class="truth">STRUCTURAL TRANSLATION · TONGAN TONGIAKI DOUBLE-HULL RELATION · EDITORIAL ALIGNMENT THRESHOLD · NOT A HYDRODYNAMIC OR NAVIGATION SIMULATOR</div>
+  <div class="source">Source anchors: Te Ara — Polynesian double hull / Tongatapu; Te Ara — Tongiaki in Tongatapu, Tonga; Museum of New Zealand Te Papa Tongarewa — Model Tongiaki and Pacific canoes documentation.</div>
+</main>
+<script>
+const pair=document.getElementById('pair'),hullA=document.getElementById('hullA'),hullB=document.getElementById('hullB'),stageA=document.getElementById('stageA'),stageB=document.getElementById('stageB'),bridge=document.getElementById('bridge'),relationBadge=document.getElementById('relationBadge'),readout=document.getElementById('readout'),resetBtn=document.getElementById('reset');
+const LIMIT_X=64,LIMIT_Y=54,APPROACH=48,ALIGN=15,STEP=8;
+let pos={A:{x:8,y:-34},B:{x:-8,y:34}},drag=null,wasCoupled=false;
+function clamp(v,min,max){return Math.max(min,Math.min(max,v))}
+function apply(which){const p=pos[which],el=which==='A'?hullA:hullB;el.style.setProperty('--x',`${p.x}px`);el.style.setProperty('--y',`${p.y}px`);el.setAttribute('aria-valuetext',`editorial inboard ${Math.round(Math.abs(p.x))} pixels, fore-aft offset ${Math.round(p.y)} pixels`)}
+function coupledNow(){return pos.A.x>=APPROACH&&pos.B.x<=-APPROACH&&Math.abs(pos.A.y-pos.B.y)<=ALIGN}
+function render(){apply('A');apply('B');const coupled=coupledNow(),approached=pos.A.x>=APPROACH&&pos.B.x<=-APPROACH,aligned=Math.abs(pos.A.y-pos.B.y)<=ALIGN,avg=(pos.A.y+pos.B.y)/2;bridge.style.setProperty('--bridge-y',`${avg}px`);pair.classList.toggle('coupled',coupled);if(coupled){wasCoupled=true;relationBadge.innerHTML='PARALLEL<br>COUPLING';readout.innerHTML='<strong>SHARED PLATFORM</strong> · both hulls are approached and longitudinally aligned; subordinate booms/deck now express the documented double-hull structure.'}else if(wasCoupled){relationBadge.innerHTML='OTHER<br>RELATION';readout.innerHTML='<strong>UNCOUPLED · TWO VALID HULLS</strong> · the editorial coupling threshold is no longer met; neither hull is invalid.'}else if(approached&&!aligned){relationBadge.innerHTML='APPROACHED<br>OFFSET';readout.innerHTML='<strong>APPROACHED</strong> · both hulls are inboard, but their longitudinal axes remain offset.'}else if(aligned&&!approached){relationBadge.innerHTML='ALIGNED<br>SEPARATE';readout.innerHTML='<strong>ALIGNED</strong> · the hull axes agree; bring both members inboard to form the structural relation.'}else{relationBadge.innerHTML='TWO HULLS<br>UNCOUPLED';readout.innerHTML='<strong>DISTINCT</strong> · two valid hull members; no shared platform is formed.'}}
+function moveTo(which,x,y){pos[which].x=which==='A'?clamp(x,0,LIMIT_X):clamp(x,-LIMIT_X,0);pos[which].y=clamp(y,-LIMIT_Y,LIMIT_Y);render()}
+function startDrag(e,which){const el=which==='A'?hullA:hullB;drag={which,id:e.pointerId,startX:e.clientX,startY:e.clientY,x:pos[which].x,y:pos[which].y};el.classList.add('dragging');el.setPointerCapture(e.pointerId)}
+function moveDrag(e,which){if(!drag||drag.which!==which)return;const dx=e.clientX-drag.startX,dy=e.clientY-drag.startY;moveTo(which,drag.x+dx,drag.y+dy)}
+function endDrag(which){const el=which==='A'?hullA:hullB;el.classList.remove('dragging');if(drag){try{el.releasePointerCapture(drag.id)}catch{}drag=null}}
+function keyMove(e,which){if(!['ArrowLeft','ArrowRight','ArrowUp','ArrowDown'].includes(e.key))return;e.preventDefault();let {x,y}=pos[which];if(e.key==='ArrowLeft')x-=STEP;if(e.key==='ArrowRight')x+=STEP;if(e.key==='ArrowUp')y-=STEP;if(e.key==='ArrowDown')y+=STEP;moveTo(which,x,y)}
+function bind(el,which){el.addEventListener('pointerdown',e=>startDrag(e,which));el.addEventListener('pointermove',e=>moveDrag(e,which));el.addEventListener('pointerup',()=>endDrag(which));el.addEventListener('pointercancel',()=>endDrag(which));el.addEventListener('lostpointercapture',()=>endDrag(which));el.addEventListener('keydown',e=>keyMove(e,which))}
+function reset(){wasCoupled=false;pos={A:{x:8,y:-34},B:{x:-8,y:34}};render();hullA.focus({preventScroll:true})}
+bind(hullA,'A');bind(hullB,'B');resetBtn.onclick=reset;render();
+</script>
+</body>
+</html>

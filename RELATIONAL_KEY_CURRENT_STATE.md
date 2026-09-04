@@ -1,100 +1,62 @@
 # RELATIONAL KEY — ÉTAT CANONIQUE COURANT
 
-Date: 2026-08-25
+Date: 2026-09-04
 Repository: `Faadil1/relational-key-three-poc`
-Canonical working branch: `collection/consolidation-gate-1`
-Consolidation PR: **#20 — RELATIONAL KEY — Collection Consolidation Gate**
-PR status: `DRAFT / DO NOT MERGE`
-Latest verified milestone: `COLLECTION_C3_2D_TWO_ROUTE_CLOSEOUT_PASS.md`
+Canonical branch: `collection/global-refinement-1`
+Draft PR: #21 — `DRAFT / DO NOT MERGE`
 
-## Product invariant
+# PRODUCT ROOT
+**THE RELATIONAL PAIR REMAINS THE PRODUCT.**
+`PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
 
-# **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
+Frozen laws:
+- **EXPANSION MUST DEEPEN THE RELATION, NOT REPLACE IT.**
+- **TECHNOLOGY SERVES THE RELATIONAL MECHANISM.**
+- **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
+- family-specific refinement must not mutate `families/_shared/round13r/index.html`.
 
-## Continental Balance Gate 1
+# FROZEN PRIOR CHECKPOINT ✅
+Prior Global Refinement closeout remains PASS / frozen.
+VALIDATED 24. USER relational integrity 24/24 PASS.
 
-Status: `CLOSED`
+# R5 — ADEQUATE → STRONG EXPERIENTIAL REFINEMENT
+# **CLOSED ✅**
 
-Distribution:
-# `AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
+Final matrix:
+# **STRONG 24 / ADEQUATE 0 / EXPERIENCE DEBT 0**
+VALIDATED remains 24.
 
-Family expansion remains paused.
+Closed STRONG in R5:
+Food / Toyama; Textile / Bonwire; Metate / Teotitlán; Tongiaki / Tonga; Garamut / East Sepik–Ramu; Kento / Japan; Swell / Marshall Islands; City / Gatineau; Service / Benin; Signal / Nigeria; Frida / Coyoacán.
 
-## Collection validation ledger
+# R5.11 — FRIDA / COYOACÁN — STRONG / CLOSED ✅
+Mechanism:
+**BED MIRROR → REFLECTED SELF → RECLINING EASEL → PAINTED REGISTER**.
+Law:
+`MIRROR → REFLECTION LOCK → TRACE CARRIES → EASEL RECEIVES → PAINTED REGISTER`.
 
-# **15 / 15 families have independent user visual or visual+audio gates.**
-# **15 / 15 consolidated direct family routes have now been verified live.**
+Candidate `families/frida-coyoacan/r5-11.html` @ `9402db8b56e2922a74223d1ebba3035e06f91c01`.
+USER proof `/mnt/data/2adce17d-ca10-4186-8ac0-c42537346194.mp4` — 19.50 s / 1914×970 / 30 fps / 585 frames.
+USER verdict: **CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS**.
+Promotion SOURCE `families/frida-coyoacan/index.html` → `/families/frida-coyoacan/r5-11.html` @ `5dfdbfb3e0c68411bff5ea02701a1059af9f0b11`.
+LIVE promotion: `dpl_2WsrmHsDitGLkx1x3K6LMz35S9yv` READY on exact deployed commit `7a820f4f4158112abec435f5eb5dc292918d3ee9`.
+Public `/families/frida-coyoacan/` verified HTTP 200 and resolves to `r5-11.html`.
+Closure `POST_CLOSEOUT_R5_11E_FRIDA_COYOACAN_USER_PASS_LIVE_PROMOTION_STRONG_R5_CLOSED.md` @ `6ae2214f75d05b4610335bf16056a82b1afa5aeb`.
 
-## Collection Consolidation Gate
+# RUNTIME INTEGRITY
+`families/_shared/round13r/index.html` remains unchanged from PR base `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`; it is absent from the base→promotion-descendant changed-file compare.
 
-### C1 — Inventory + Architecture Freeze
-Status: `PASS`
-Register: `COLLECTION_CONSOLIDATION_C1_INVENTORY_ARCHITECTURE.md`
+# STATE SEPARATION
+- prior Global closeout: PASS / frozen
+- R5: CLOSED
+- SOURCE: final Frida promotion recorded
+- LIVE: final Frida promotion READY + HTTP 200
+- USER: Frida PASS
+- VALIDATED: 24
+- matrix: STRONG 24 / ADEQUATE 0 / EXPERIENCE DEBT 0
+- shared runtime: unchanged
+- PR #21: DRAFT / DO NOT MERGE
 
-### C2 — Source Capture & Snapshot Import
-Status: `PASS`
-Register: `COLLECTION_CONSOLIDATION_C2_SOURCE_CAPTURE_PASS.md`
-
-Regression anchors:
-- nine autonomous exact snapshots — `e7e1473b0d789fa09b33e2e5b8961c33f32227d2`
-- six-family shared runtime + launch routes — `9321844cac8c2e9ccedda7e206b1ee03445bed83`
-
-### C3 — Collection Shell
-Status: `PASS WITH POLISH`
-Implementation: `f7416092c64fd7fd17b5771f002fdae5b0e1433f`
-
-Dedicated consolidation Preview:
-- project ID: `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
-- deployment: `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ`
-- URL: `https://relational-key-collectionrelational-key-collection-4834ctm8z.vercel.app`
-- branch: `collection/consolidation-gate-1`
-- state: `READY`
-
-Verified collection gates:
-- `ROOT LIVE PASS` ✅
-- `SHELL VISUAL PASS` ✅
-- continent filters ✅
-- search + zero-result state ✅
-- return via browser Back ✅ with polish backlog
-- `15 / 15 LIVE ROUTE PASS` ✅
-- `COLLECTION USABILITY PASS WITH POLISH` ✅
-
-Route-closeout register:
-`COLLECTION_C3_2D_TWO_ROUTE_CLOSEOUT_PASS.md`
-
-Final two routes closed in the 21.03 s user capture:
-- `/families/zellige-fes/` → `Fès · Zellige` / Tessellated Register ✅
-- `/families/food-toyama/` → `EDIBLE PASSAGE` / Toyama ✅
-
-## GLOBAL REFINEMENT
-
-# **STATUS: OPEN**
-
-Global Refinement may now be planned, but implementation should begin only from a clean consolidated baseline after PR #20's explicit merge gate.
-
-Priority refinement backlog:
-1. explicit `← Back to Atlas` around family views;
-2. improve very small mono/chip/card metadata;
-3. improve family individuality at shell level without cultural skinning;
-4. preserve golden family mechanisms and regression anchors;
-5. systematically address `PASS WITH POLISH` family backlog;
-6. improve collection ↔ family transition/cohesion;
-7. maintain the pair as the product; do not turn the gap into the product.
-
-## Immediate next output
-
-# **C3.3 — CONSOLIDATION MERGE GATE**
-
-Do not merge PR #20 without explicit user authorization.
-
-After merge:
-- create a fresh branch for Global Refinement from the merged consolidated baseline;
-- freeze that merge SHA as the pre-refinement regression anchor;
-- begin refinement in staged gates, not as one uncontrolled redesign.
-
-Status vocabulary:
-`15/15 LIVE ROUTE PASS ≠ GLOBAL REFINEMENT IMPLEMENTED ≠ FINAL COLLECTION PASS`.
-
-## Persistence protocol
-
-After every significant milestone, update this file + `RELATIONAL_KEY_HANDOVER.md` with exact branches, commits, deployments, gates and next output.
+# NEXT EXACT GATE
+No further R5 family refinement remains.
+Any merge, Ready-for-review, reviewer request, retargeting, or new phase requires explicit human instruction.

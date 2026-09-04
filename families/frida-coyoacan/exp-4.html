@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RELATIONAL KEY — Frida / Coyoacán EXP-4 Layered Trace Candidate</title>
+<style>html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#090909}.host{width:100%;height:100%;border:0;display:block;background:#090909}</style>
+</head>
+<body>
+<iframe class="host" id="host" title="Frida Kahlo · Coyoacán EXP-4 layered trace alignment candidate" src="/families/frida-coyoacan/"></iframe>
+<script>
+const host=document.getElementById('host');
+host.onload=()=>{
+  try{
+    const wrapperDoc=host.contentWindow.document;
+    const context=wrapperDoc.querySelector('.context');
+    if(context)context.textContent='COYOACÁN · CASA AZUL · PHOTOGRAPH / PLACE ARCHIVE TRACE';
+    const inner=wrapperDoc.getElementById('rk'); if(!inner)return;
+    const inject=()=>{
+      try{
+        const doc=inner.contentWindow.document, win=inner.contentWindow;
+        if(doc.getElementById('exp-4-frida-layered-trace'))return;
+        const pair=doc.getElementById('pair'),leftCard=doc.querySelector('.leftCard'),rightCard=doc.querySelector('.rightCard'),leftMaterial=doc.getElementById('lm'),rightMaterial=doc.getElementById('rm'),bridge=doc.querySelector('.bridge'),run=doc.getElementById('run'),reset=doc.getElementById('reset'),claimButtons=[...doc.querySelectorAll('[data-claim]')];
+        if(!pair||!leftCard||!rightCard||!leftMaterial||!rightMaterial||!bridge||!run)return;
+
+        doc.body.classList.add('frida-casa-archive-v1');
+        pair.dataset.fridaExp='idle';
+
+        const setText=(id,text)=>{const el=doc.getElementById(id);if(el)el.textContent=text};
+        setText('kicker','FRIDA KAHLO · COYOACÁN · CASA AZUL / ARCHIVE TRACE');
+        setText('name','LAYERED TRACE ALIGNMENT');
+        setText('desc','A photographic memory claim and a place archive resolve only when their trace anchors align.');
+        setText('lr','CARD A · MEMORY CLAIM');
+        setText('lk','PHOTOGRAPHIC TRACE');
+        setText('lt','Frida Kahlo');
+        setText('lx','Guillermo Kahlo · 1932');
+        setText('rr','CARD B · PLACE ARCHIVE');
+        setText('rk','COYOACÁN · LONDRES 247');
+        setText('rt','Casa Azul');
+        setText('rx','Place / collection trace');
+        setText('bl','TRACE SEAM');
+        setText('law','PORTRAIT → TRACE ANCHORS → PLACE ALIGNMENT → REGISTER');
+        setText('truth','Editorial synthesis from documented Casa Azul place/archive cues and public-domain photographic sources · not an archival facsimile or invented historical annotation layer.');
+
+        const style=doc.createElement('style');
+        style.id='exp-4-frida-layered-trace';
+        style.textContent=`
+          .frida-casa-archive-v1{background:radial-gradient(circle at 50% -12%,rgba(22,74,198,.12),transparent 33%),#0a0a09}
+          .frida-casa-archive-v1 .intro span{color:#5f82df}.frida-casa-archive-v1 .intro p{color:#a49d90}
+          .frida-casa-archive-v1 .frida .card{background:#10110f;border:1px solid rgba(76,103,172,.28);box-shadow:0 34px 68px rgba(0,0,0,.54)}
+          .frida-casa-archive-v1 .frida .material{background:#18191a!important}
+          .frida-casa-archive-v1 .frida .material>img{opacity:0!important}
+          .frida-casa-archive-v1 .frida .shade{background:linear-gradient(90deg,rgba(4,6,8,.06),transparent 46%,rgba(4,5,6,.24)),linear-gradient(180deg,transparent 58%,rgba(4,5,6,.56))}
+          .frida-casa-archive-v1 .frida .role{background:rgba(13,14,14,.88);border:1px solid rgba(97,130,217,.65);color:#f0eadf}
+          .frida-casa-archive-v1 .frida .copy span{color:#91a8e8}.frida-casa-archive-v1 .frida .copy small{color:#c7beb0}
+          .frida-casa-archive-v1 .junction{opacity:.16}.frida-casa-archive-v1 .bridgeLabel{color:#7e7b75}
+
+          .fkPhoto,.fkPlace{position:absolute;inset:0;z-index:2;overflow:hidden;pointer-events:none}
+          .fkPhoto{background:linear-gradient(90deg,rgba(8,9,10,.03),rgba(8,9,10,.34)),url('https://upload.wikimedia.org/wikipedia/commons/0/06/Frida_Kahlo%2C_by_Guillermo_Kahlo.jpg') center 28%/cover no-repeat;filter:grayscale(1) contrast(1.04)}
+          .fkPhoto:after{content:'';position:absolute;inset:0;background:linear-gradient(135deg,rgba(28,67,165,.10),transparent 44%,rgba(164,71,45,.06));mix-blend-mode:screen}
+          .fkPlace{background:linear-gradient(90deg,rgba(7,10,12,.14),rgba(7,9,10,.04) 55%,rgba(5,6,7,.18)),url('https://upload.wikimedia.org/wikipedia/commons/e/e0/PatioCasaAzulDetail.JPG') center 40%/cover no-repeat}
+          .fkPlace:after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(20,72,193,.08),transparent 36%,rgba(0,0,0,.08))}
+
+          .fkArchiveGrid{position:absolute;inset:0;z-index:4;pointer-events:none;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+          .fkArchiveGrid:before{content:'';position:absolute;inset:7% 6%;border:1px solid rgba(225,218,198,.32);background-image:linear-gradient(rgba(231,224,204,.10) 1px,transparent 1px),linear-gradient(90deg,rgba(231,224,204,.10) 1px,transparent 1px);background-size:42px 42px;box-shadow:inset 0 0 0 1px rgba(0,0,0,.24)}
+          .fkCorner{position:absolute;width:18px;height:18px;border-color:#d2c7af;opacity:.8}.fkCorner.tl{left:5%;top:6%;border-left:2px solid;border-top:2px solid}.fkCorner.tr{right:5%;top:6%;border-right:2px solid;border-top:2px solid}.fkCorner.bl{left:5%;bottom:6%;border-left:2px solid;border-bottom:2px solid}.fkCorner.br{right:5%;bottom:6%;border-right:2px solid;border-bottom:2px solid}
+          .fkIndex{position:absolute;z-index:5;padding:6px 8px;background:rgba(7,8,8,.78);border:1px solid rgba(218,205,180,.28);color:#d9d0bf;font:800 4.8px/1.45 ui-monospace,monospace;letter-spacing:.11em;text-transform:uppercase;backdrop-filter:blur(4px)}
+          .fkIndex.top{right:5%;top:8%;text-align:right}.fkIndex.bottom{right:5%;bottom:8%;text-align:right}.fkIndex b{display:block;color:#83a2ef;font-size:6px}.fkIndex em{font-style:normal;color:#c6785f}
+          .fkPlace .fkIndex b{color:#83a2ef}.fkPlace .fkIndex em{color:#78aa87}
+          .fkBlueBar{position:absolute;z-index:4;left:0;top:0;bottom:0;width:8px;background:#174bc3}.fkRedBar{position:absolute;z-index:4;right:0;top:0;bottom:0;width:5px;background:#a9472d}.fkGreenTick{position:absolute;z-index:4;right:8%;top:9%;width:26px;height:9px;border-top:3px solid #237f5f;border-right:3px solid #237f5f}
+
+          .fkTraceSheets{position:absolute;inset:0;z-index:7;pointer-events:none}
+          .fkSheet{position:absolute;left:12%;right:12%;height:1px;opacity:.42;transition:transform .65s ease,opacity .45s ease,filter .45s ease}.fkSheet:before,.fkSheet:after{content:'';position:absolute;top:-4px;width:9px;height:9px;border-radius:50%;border:1px solid currentColor;background:rgba(12,13,13,.78)}.fkSheet:before{left:0}.fkSheet:after{right:0}
+          .fkSheet.s1{top:35%;background:#6f91e8;color:#6f91e8}.fkSheet.s2{top:49%;background:#d4c8ac;color:#d4c8ac}.fkSheet.s3{top:63%;background:#a9472d;color:#a9472d}.fkTraceSheets.left .fkSheet{transform:translateX(-10px)}.fkTraceSheets.right .fkSheet{transform:translateX(10px)}
+          .pair[data-frida-exp="approach"] .fkTraceSheets.left .fkSheet{transform:translateX(2px);opacity:.65}.pair[data-frida-exp="approach"] .fkTraceSheets.right .fkSheet{transform:translateX(-2px);opacity:.65}
+          .pair[data-frida-exp="registered"] .fkTraceSheets .fkSheet{transform:translateX(0);opacity:.95;filter:drop-shadow(0 0 7px rgba(116,145,221,.35))}
+          .pair[data-frida-exp="other"] .fkTraceSheets.left .s1{transform:translate(-6px,-9px)}.pair[data-frida-exp="other"] .fkTraceSheets.left .s2{transform:translate(-9px,4px)}.pair[data-frida-exp="other"] .fkTraceSheets.left .s3{transform:translate(-4px,10px)}.pair[data-frida-exp="other"] .fkTraceSheets.right .s1{transform:translate(7px,7px)}.pair[data-frida-exp="other"] .fkTraceSheets.right .s2{transform:translate(9px,-5px)}.pair[data-frida-exp="other"] .fkTraceSheets.right .s3{transform:translate(5px,-11px)}
+
+          .fkBridge{position:absolute;left:-9%;right:-9%;top:50%;height:118px;transform:translateY(-50%);z-index:12;pointer-events:none}
+          .fkLine,.fkResidualL,.fkResidualR{position:absolute;height:2px;opacity:0;transition:opacity .42s ease,transform .68s cubic-bezier(.2,.8,.2,1)}
+          .fkLine{left:0;right:0;transform:scaleX(.16)}.fkLine.l1{top:28px;background:linear-gradient(90deg,#6f91e8,#d4c8ac 50%,#6f91e8)}.fkLine.l2{top:56px;background:linear-gradient(90deg,#d4c8ac,#174bc3 50%,#d4c8ac)}.fkLine.l3{top:84px;background:linear-gradient(90deg,#a9472d,#d4c8ac 50%,#237f5f)}
+          .fkLine:after{content:'';position:absolute;left:50%;top:50%;width:10px;height:10px;border:1px solid currentColor;border-radius:50%;background:#111310;transform:translate(-50%,-50%);box-shadow:0 0 0 5px rgba(104,134,216,.06)}
+          .pair[data-frida-exp="approach"] .fkLine{opacity:.32;transform:scaleX(.56)}.pair[data-frida-exp="registered"] .fkLine{opacity:1;transform:scaleX(1)}
+          .fkResidualL{left:0;width:44%;background:linear-gradient(90deg,#6f91e8,#d4c8ac)}.fkResidualR{right:0;width:44%;background:linear-gradient(90deg,#d4c8ac,#237f5f)}.fkResidualL.r1{top:20px;transform:translateY(-10px)}.fkResidualR.r1{top:34px;transform:translateY(8px)}.fkResidualL.r2{top:53px;transform:translateY(7px)}.fkResidualR.r2{top:67px;transform:translateY(-8px)}.fkResidualL.r3{top:88px;background:linear-gradient(90deg,#a9472d,#d4c8ac);transform:translateY(-8px)}.fkResidualR.r3{top:100px;background:linear-gradient(90deg,#d4c8ac,#237f5f);transform:translateY(8px)}
+          .pair[data-frida-exp="other"] .fkResidualL,.pair[data-frida-exp="other"] .fkResidualR{opacity:.92;transform:translateY(0)}
+          .fkState{position:absolute;left:50%;bottom:1px;transform:translateX(-50%);font:900 5px ui-monospace,monospace;letter-spacing:.11em;white-space:nowrap;opacity:0;color:#8fa7e4}.pair[data-frida-exp="registered"] .fkState{opacity:1}.pair[data-frida-exp="registered"] .fkState:after{content:'PORTRAIT TRACE → CASA AZUL ALIGN → REGISTER'}.pair[data-frida-exp="other"] .fkState{opacity:1;color:#bd7663}.pair[data-frida-exp="other"] .fkState:after{content:'TRACE OFFSET · BOTH ARCHIVE MEMBERS REMAIN VALID'}
+
+          .fkRegStamp{position:absolute;z-index:9;right:6%;bottom:23%;padding:5px 7px;border:1px solid rgba(220,211,190,.35);background:rgba(10,11,11,.72);font:800 4.2px ui-monospace,monospace;letter-spacing:.1em;color:#cfc4af;opacity:.86}.fkRegStamp b{color:#7e9ce5}.fkRegStamp em{font-style:normal;color:#75a984}
+          @media(max-width:900px){.fkIndex{font-size:3.8px}.fkIndex b{font-size:4.6px}.fkBridge{left:50%;right:auto;top:-3%;bottom:-3%;width:88px;height:auto;transform:translateX(-50%)}.fkLine{top:0!important;bottom:0;width:2px;height:auto;left:auto;right:auto;transform:scaleY(.16)}.fkLine.l1{left:24px;background:linear-gradient(#6f91e8,#d4c8ac,#6f91e8)}.fkLine.l2{left:43px;background:linear-gradient(#d4c8ac,#174bc3,#d4c8ac)}.fkLine.l3{left:62px;background:linear-gradient(#a9472d,#d4c8ac,#237f5f)}.pair[data-frida-exp="approach"] .fkLine{transform:scaleY(.56)}.pair[data-frida-exp="registered"] .fkLine{transform:scaleY(1)}.fkResidualL,.fkResidualR{width:2px;height:44%;left:auto;right:auto}.fkResidualL.r1{left:22px;top:0}.fkResidualR.r1{left:34px;top:auto;bottom:0}.fkResidualL.r2{left:42px;top:0}.fkResidualR.r2{left:54px;top:auto;bottom:0}.fkResidualL.r3{left:62px;top:0}.fkResidualR.r3{left:74px;top:auto;bottom:0}.fkState{left:93px;bottom:auto;top:50%;transform:translateY(-50%);writing-mode:vertical-rl}}
+        `;
+        doc.head.appendChild(style);
+
+        const corners='<i class="fkCorner tl"></i><i class="fkCorner tr"></i><i class="fkCorner bl"></i><i class="fkCorner br"></i>';
+        const leftLayer=doc.createElement('div');
+        leftLayer.className='fkPhoto';
+        leftLayer.innerHTML=`<div class="fkArchiveGrid">${corners}</div><i class="fkBlueBar"></i><i class="fkRedBar"></i><div class="fkIndex top"><b>PHOTOGRAPH TRACE · 1932</b>GUILLERMO KAHLO<br>GELATIN SILVER PRINT</div><div class="fkIndex bottom"><em>MEMORY MEMBER</em><br>FRIDA KAHLO · COYOACÁN</div>`;
+        const rightLayer=doc.createElement('div');
+        rightLayer.className='fkPlace';
+        rightLayer.innerHTML=`<div class="fkArchiveGrid">${corners}</div><i class="fkBlueBar"></i><i class="fkRedBar"></i><i class="fkGreenTick"></i><div class="fkIndex top"><b>CASA AZUL · PLACE TRACE</b>LONDRES 247 · COYOACÁN<br>STUDIO / COURTYARD MATERIAL</div><div class="fkIndex bottom"><em>ARCHIVE SCALE · DOCUMENTED</em><br>22,105 DOCS · 5,387 PHOTOS</div>`;
+        leftMaterial.appendChild(leftLayer);rightMaterial.appendChild(rightLayer);
+
+        const traces=(side)=>{const t=doc.createElement('div');t.className='fkTraceSheets '+side;t.innerHTML='<i class="fkSheet s1"></i><i class="fkSheet s2"></i><i class="fkSheet s3"></i>';return t};
+        leftCard.appendChild(traces('left'));rightCard.appendChild(traces('right'));
+        const stamp=doc.createElement('div');stamp.className='fkRegStamp';stamp.innerHTML='<b>ARCHIVO / CASA</b><br><em>EDITORIAL TRACE INDEX</em>';rightCard.appendChild(stamp);
+
+        const bridgeLayer=doc.createElement('div');bridgeLayer.className='fkBridge';bridgeLayer.innerHTML='<i class="fkLine l1"></i><i class="fkLine l2"></i><i class="fkLine l3"></i><i class="fkResidualL r1"></i><i class="fkResidualR r1"></i><i class="fkResidualL r2"></i><i class="fkResidualR r2"></i><i class="fkResidualL r3"></i><i class="fkResidualR r3"></i><span class="fkState"></span>';bridge.appendChild(bridgeLayer);
+
+        let timer=0;const setStage=s=>pair.dataset.fridaExp=s;const activeClaim=()=>doc.querySelector('[data-claim].active')?.dataset.claim||'matching';
+        claimButtons.forEach(btn=>btn.addEventListener('click',()=>{clearTimeout(timer);setStage('idle')}));
+        reset?.addEventListener('click',()=>{clearTimeout(timer);setStage('idle')});
+        run.addEventListener('click',()=>{clearTimeout(timer);const claim=activeClaim();setStage('approach');timer=win.setTimeout(()=>setStage(claim==='matching'?'registered':'other'),620)});
+      }catch(e){console.error('EXP-4 Frida layered trace injection failed',e)}
+    };
+    if(inner.contentWindow?.document?.readyState==='complete')setTimeout(inject,180);
+    inner.addEventListener('load',()=>setTimeout(inject,180),{once:true});
+  }catch(e){console.error('EXP-4 host failed',e)}
+};
+</script>
+</body>
+</html>

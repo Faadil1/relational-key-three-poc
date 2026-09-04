@@ -1,0 +1,68 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RELATIONAL KEY — Benin EXP-2B Telecom Object Candidate</title>
+<style>html,body{margin:0;width:100%;height:100%;overflow:hidden;background:#090d09}.host{width:100%;height:100%;border:0;display:block;background:#090d09}</style>
+</head>
+<body>
+<iframe class="host" id="host" title="Benin · Service Register EXP-2B telecom-object candidate" src="/families/service-benin/exp-2.html"></iframe>
+<script>
+const host=document.getElementById('host');
+host.onload=()=>{
+  try{
+    const wrapperDoc=host.contentWindow.document;
+    const context=wrapperDoc.querySelector('.context');
+    if(context)context.textContent='BENIN · SERVICE REGISTER · PREPAID CALLING CARD HANDOFF';
+    const inner=wrapperDoc.getElementById('rk');if(!inner)return;
+    const inject=()=>{
+      try{
+        const doc=inner.contentWindow.document;
+        if(doc.getElementById('exp-2b-benin-telecom-object'))return;
+        const pair=doc.getElementById('pair'),leftCard=doc.querySelector('.leftCard'),rightCard=doc.querySelector('.rightCard'),leftMaterial=doc.getElementById('lm'),rightMaterial=doc.getElementById('rm');
+        if(!pair||!leftCard||!rightCard||!leftMaterial||!rightMaterial)return;
+        doc.body.classList.add('benin-telecom-identity');
+        const kicker=doc.getElementById('kicker'),truth=doc.getElementById('truth');
+        if(kicker)kicker.textContent='BENIN · PREPAID CALLING / SERVICE REGISTER';
+        if(truth)truth.textContent='Archive- and phonecard-derived service-object language · editorial reconstruction, not a current official telecom procedure.';
+
+        const style=doc.createElement('style');style.id='exp-2b-benin-telecom-object';style.textContent=`
+          .benin-telecom-identity{background:radial-gradient(circle at 50% -20%,rgba(0,116,80,.17),transparent 33%),#0b100c}
+          .benin-telecom-identity .intro span{color:#d79b32}.benin-telecom-identity .intro p{color:#b8c5af}
+          .benin-telecom-identity .service .card{background:#102317;border-color:rgba(215,155,50,.28);box-shadow:0 32px 65px rgba(0,0,0,.48),0 0 0 1px rgba(0,116,80,.14)}
+          .benin-telecom-identity .service .material{background:linear-gradient(135deg,#0b3929 0%,#126046 43%,#0d271c 100%)}
+          .benin-telecom-identity .service .grid{opacity:.06}.benin-telecom-identity .service .shade{background:linear-gradient(90deg,rgba(4,12,7,.58),rgba(4,12,7,.05) 55%),linear-gradient(180deg,transparent 42%,rgba(5,11,7,.7))}
+          .benin-telecom-identity .service .role{background:#f0eadb;border:1px solid rgba(201,145,42,.52);color:#213027;box-shadow:0 4px 0 rgba(0,0,0,.18)}
+          .benin-telecom-identity .service .copy span{color:#f6ebce}.benin-telecom-identity .service .copy small{color:#c7d3c3}
+
+          .beninCardField{position:absolute;inset:0;z-index:3;pointer-events:none;overflow:hidden}
+          .beninCardBand{position:absolute;left:0;top:0;bottom:0;width:17%;background:#06734f;border-right:1px solid rgba(255,255,255,.14)}
+          .beninCardBand:after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(135deg,transparent 0 9px,rgba(255,184,49,.32) 9px 14px,transparent 14px 23px);opacity:.58}
+          .beninPattern{position:absolute;right:0;top:0;width:34%;height:44%;opacity:.62;background:repeating-linear-gradient(90deg,#f1ead7 0 8px,#171915 8px 16px,#d98c2c 16px 22px,#171915 22px 30px);clip-path:polygon(0 0,100% 0,100% 100%,15% 85%)}
+          .beninPattern:after{content:'';position:absolute;inset:0;background:repeating-linear-gradient(45deg,transparent 0 12px,rgba(255,255,255,.16) 12px 14px)}
+          .beninDenom{position:absolute;left:3.8%;top:10%;writing-mode:vertical-rl;transform:rotate(180deg);font:900 13px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.06em;color:#fff0ce;text-shadow:0 2px 8px rgba(0,0,0,.35)}
+          .beninServiceLabel{position:absolute;left:21%;top:10%;font:900 7px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.14em;color:#f0e6cd}.beninServiceSub{position:absolute;left:21%;top:17%;font:800 5px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;color:#e3a941}
+          .beninSerial{position:absolute;left:21%;bottom:18%;padding:4px 7px;border:1px dashed rgba(244,234,210,.42);background:rgba(6,20,12,.46);font:800 5px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.16em;color:#e7ddc4}.beninSerial:before{content:'N° SÉRIE · '}
+          .beninFoil{position:absolute;right:9%;bottom:17%;width:26%;height:9%;border-radius:2px;background:repeating-linear-gradient(135deg,#a9afa6 0 5px,#d5d8cf 5px 10px,#979e94 10px 15px);border:1px solid rgba(255,255,255,.24);box-shadow:inset 0 0 0 1px rgba(0,0,0,.12)}
+          .beninFoil:after{content:'SERVICE REGISTER';position:absolute;inset:0;display:grid;place-items:center;font:900 4.3px ui-monospace,monospace;letter-spacing:.12em;color:#324139;text-shadow:0 1px rgba(255,255,255,.35)}
+          .beninMicro{position:absolute;left:21%;bottom:9%;font:700 4.2px ui-monospace,monospace;letter-spacing:.09em;color:#b9c6b7}.beninStamp{position:absolute;right:8%;top:49%;width:50px;height:50px;border:1px solid rgba(217,140,44,.48);border-radius:50%;display:grid;place-items:center;transform:rotate(-9deg);font:900 5px ui-monospace,monospace;letter-spacing:.08em;text-align:center;color:#e3a941;opacity:.76}
+          .benin-telecom-identity .serviceExpTrack{top:27%;height:29%;left:22%;right:11%;z-index:8}.benin-telecom-identity .serviceExpStep{background:#efe8d7;border-color:#d39a3b;color:#163528;border-radius:2px;box-shadow:0 4px 0 rgba(2,20,11,.24)}
+          .benin-telecom-identity .pair[data-service-exp="registered"] .serviceExpStep{background:#fff4d7;border-color:#e2a846;box-shadow:0 0 18px rgba(225,160,52,.18),0 4px 0 rgba(2,20,11,.24)}
+          .benin-telecom-identity .serviceExpPort{background:#e5a33b;border-color:#f4e4bd;box-shadow:0 0 15px rgba(225,160,52,.32)}
+          .benin-telecom-identity .serviceExpRail{background:linear-gradient(90deg,#08744f,#e4a33a 46%,#f0d487 54%,#08744f);box-shadow:0 0 16px rgba(17,125,83,.28)}
+          .benin-telecom-identity .serviceExpToken{background:#fff1c9;border-color:#0c7b53;color:#173b2c;box-shadow:0 0 17px rgba(228,163,58,.46)}
+          .benin-telecom-identity .serviceExpResidualA{background:linear-gradient(90deg,#08744f,#e4a33a)}.benin-telecom-identity .serviceExpResidualB{background:linear-gradient(90deg,#f0d487,#08744f)}.benin-telecom-identity .serviceExpState{color:#e3b45f}
+          @media(max-width:900px){.beninPattern,.beninStamp,.beninFoil{opacity:.4}.beninDenom{font-size:9px}.beninServiceLabel{font-size:5px}.beninServiceSub,.beninSerial,.beninMicro{font-size:3.8px}}
+        `;doc.head.appendChild(style);
+
+        const mk=(side)=>{const layer=doc.createElement('div');layer.className='beninCardField '+side;layer.innerHTML=`<i class="beninCardBand"></i><i class="beninPattern"></i><span class="beninDenom">5 000 CFA</span><span class="beninServiceLabel">${side==='left'?'OPT BÉNIN · CALLING CREDIT':'SERVICE · TRANSMISSION'}</span><span class="beninServiceSub">${side==='left'?'PREPAID CALLING CARD':'REGISTERED CONTINUATION'}</span><span class="beninSerial">${side==='left'?'01-02 / 229 / A':'03-04 / 229 / B'}</span><i class="beninFoil"></i><span class="beninMicro">${side==='left'?'CREDIT / ORIGIN FRAGMENT':'DESTINATION / SERVICE FRAGMENT'}</span><i class="beninStamp">${side==='left'?'COTONOU<br>ORIGIN':'HANDOFF<br>VALID'}</i>`;return layer};
+        leftMaterial.appendChild(mk('left'));rightMaterial.appendChild(mk('right'));
+      }catch(e){console.error('EXP-2B Benin visual injection failed',e)}
+    };
+    if(inner.contentWindow?.document?.readyState==='complete')setTimeout(inject,180);inner.addEventListener('load',()=>setTimeout(inject,180),{once:true});
+  }catch(e){console.error('EXP-2B host failed',e)}
+};
+</script>
+</body>
+</html>

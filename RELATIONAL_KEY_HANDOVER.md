@@ -1,96 +1,37 @@
 # RELATIONAL KEY — HANDOVER
 
-Updated: 2026-08-25
+Updated: 2026-09-04
 Repository: `Faadil1/relational-key-three-poc`
-Working branch: `collection/consolidation-gate-1`
-Draft PR: **#20 — RELATIONAL KEY — Collection Consolidation Gate**
-PR status: `DRAFT / DO NOT MERGE`
+Branch: `collection/global-refinement-1`
+PR #21: `DRAFT / DO NOT MERGE`
 
 # RESUME HERE
+# **R5 CLOSED — HUMAN DECISION REQUIRED FOR ANY NEXT PHASE**
 
-RELATIONAL KEY has completed:
-- Continental Balance Gate 1;
-- C1 — Inventory + Architecture Freeze;
-- C2 — Source Capture & Snapshot Import;
-- C3 — Collection Shell implementation + source pass;
-- C3.1 — dedicated Preview root live pass;
-- C3.2A — shell visual pass;
-- C3.2B — functional shell pass;
-- C3.2C — route completion to 13/15;
-- C3.2D — final two-route closeout.
+Do NOT reopen prior Global Refinement closeout; it remains PASS / frozen.
+Do NOT mutate `families/_shared/round13r/index.html` for family-specific refinement.
+Do NOT merge, mark Ready, request review, retarget, or change PR state without explicit human instruction.
 
-Canonical invariant:
-# **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
+# GLOBAL / R5 STATE
+VALIDATED 24.
+USER relational integrity 24/24 PASS.
+Final R5 matrix: **STRONG 24 / ADEQUATE 0 / EXPERIENCE DEBT 0**.
 
-Distribution:
-`AFRICA 4 / ASIA 3 / NORTH AMERICA 2 / SOUTH AMERICA 2 / OCEANIA 2 / EUROPE 2`
+R5 closed STRONG:
+Food / Toyama; Textile / Bonwire; Metate / Teotitlán; Tongiaki / Tonga; Garamut / East Sepik–Ramu; Kento / Japan; Swell / Marshall Islands; City / Gatineau; Service / Benin; Signal / Nigeria; Frida / Coyoacán.
 
-# FINAL CONSOLIDATION VALIDATION
+# R5.11 FRIDA / COYOACÁN — CLOSED ✅
+Mechanism:
+**BED MIRROR → REFLECTED SELF → RECLINING EASEL → PAINTED REGISTER**.
+Candidate `families/frida-coyoacan/r5-11.html` @ `9402db8b56e2922a74223d1ebba3035e06f91c01`.
+USER proof `/mnt/data/2adce17d-ca10-4186-8ac0-c42537346194.mp4` — PASS.
+Promotion `families/frida-coyoacan/index.html` @ `5dfdbfb3e0c68411bff5ea02701a1059af9f0b11` → `/families/frida-coyoacan/r5-11.html`.
+LIVE `dpl_2WsrmHsDitGLkx1x3K6LMz35S9yv` READY on `7a820f4f4158112abec435f5eb5dc292918d3ee9`; public route HTTP 200.
+Closure `POST_CLOSEOUT_R5_11E_FRIDA_COYOACAN_USER_PASS_LIVE_PROMOTION_STRONG_R5_CLOSED.md` @ `6ae2214f75d05b4610335bf16056a82b1afa5aeb`.
 
-**15 / 15 families** have independent user visual or visual+audio gates.
+# RUNTIME INTEGRITY
+Shared runtime remains unchanged from PR base `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`.
 
-**15 / 15 consolidated direct routes are verified live in the authenticated Vercel Preview.**
-
-Final closeout register:
-`COLLECTION_C3_2D_TWO_ROUTE_CLOSEOUT_PASS.md`
-
-Final two routes verified:
-- `/families/zellige-fes/` → Fès / Zellige Tessellated Register ✅
-- `/families/food-toyama/` → EDIBLE PASSAGE / Toyama ✅
-
-Consolidation Preview:
-- project `prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny`
-- deployment `dpl_EDB2pc91vwmk1n1DnSs52hQD5gjJ`
-- URL `https://relational-key-collectionrelational-key-collection-4834ctm8z.vercel.app`
-- branch `collection/consolidation-gate-1`
-- state `READY`
-
-Collection verdict:
-# `ROOT LIVE PASS`
-# `SHELL VISUAL PASS`
-# `15/15 LIVE ROUTE PASS`
-# `COLLECTION USABILITY PASS WITH POLISH`
-
-Shell controls already verified:
-- continent filtering;
-- text search;
-- combined filter/search zero-result state;
-- clearing query restores results;
-- browser Back returns to atlas.
-
-# GLOBAL REFINEMENT
-
-# **OPEN — IMPLEMENTATION NOT YET STARTED**
-
-Do not mutate family snapshots on the current consolidation branch before PR #20's explicit merge gate.
-
-Global Refinement backlog:
-1. add explicit collection-level `← Back to Atlas` navigation around family views;
-2. enlarge/clarify tiny secondary mono metadata, chips and card labels where needed;
-3. increase shell-level family individuality without generic cultural skinning;
-4. preserve all golden family mechanisms and source regression anchors;
-5. address family `PASS WITH POLISH` backlog systematically;
-6. improve collection-to-family and family-to-collection transition/cohesion;
-7. keep the pair as the product; never make the center/gap the primary product.
-
-# IMMEDIATE NEXT TASK — C3.3 CONSOLIDATION MERGE GATE
-
-PR #20 is still Draft.
-
-Wait for explicit user authorization before:
-- marking PR #20 Ready;
-- squash-merging it;
-- creating the fresh Global Refinement branch.
-
-After merge:
-1. freeze the merge SHA as the consolidated pre-refinement anchor;
-2. create a fresh refinement branch from that SHA;
-3. execute refinement in staged gates with regression checks against the golden family references.
-
-Do not reopen route validation unless a future refinement changes routing.
-
-## Persistence protocol
-
-After every significant milestone update `RELATIONAL_KEY_CURRENT_STATE.md` + this handover.
-
-If a new conversation starts here, resume at **C3.3 — CONSOLIDATION MERGE GATE**.
+# EXACT NEXT ACTION
+None inside R5.
+Wait for explicit human instruction before starting a new refinement phase or changing PR #21 state.
