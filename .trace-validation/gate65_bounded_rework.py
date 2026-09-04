@@ -1,7 +1,6 @@
 from __future__ import annotations
 
 import json
-import re
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -62,6 +61,11 @@ READABILITY_CSS = """
 }
 """.strip()
 
+REFLOW_CSS = """
+/* TRACE Gate 6.5 — bounded mobile reflow repair. */
+html, body { overflow-x: hidden; }
+""".strip()
+
 STATUS_OPEN = '<div class="result" id="result">'
 STATUS_REPLACEMENT = '<div class="result" id="result" role="status" aria-live="polite" aria-atomic="true">'
 
@@ -92,7 +96,10 @@ def patch_file(path: str, *, r5_number: int | None, representative: bool) -> dic
         elif stale_count == 0 and final_count >= 1:
             pass
         else:
-            raise RuntimeError(f"{path}: expected exactly one stale label or an existing validated label; stale={stale_count}, final={final_count}")
+            raise RuntimeError(
+                f"{path}: expected exactly one stale label or an existing validated label; "
+                f"stale={stale_count}, final={final_count}"
+            )
 
     if path in STATUS_FILES:
         if STATUS_REPLACEMENT in text:
@@ -105,12 +112,29 @@ def patch_file(path: str, *, r5_number: int | None, representative: bool) -> dic
             changes.append("programmatic_result_status")
 
     if representative:
-        text, added = inject_before_style_close(text, REDUCED_MOTION_CSS, "TRACE Gate 6.5 — reduced-motion assurance")
+        text, added = inject_before_style_close(
+            text,
+            REDUCED_MOTION_CSS,
+            "TRACE Gate 6.5 — reduced-motion assurance",
+        )
         if added:
             changes.append("reduced_motion")
-        text, added = inject_before_style_close(text, READABILITY_CSS, "TRACE Gate 6.5 — evaluator-critical readability floor")
+
+        text, added = inject_before_style_close(
+            text,
+            READABILITY_CSS,
+            "TRACE Gate 6.5 — evaluator-critical readability floor",
+        )
         if added:
             changes.append("evaluator_readability_floor")
+
+        text, added = inject_before_style_close(
+            text,
+            REFLOW_CSS,
+            "TRACE Gate 6.5 — bounded mobile reflow repair",
+        )
+        if added:
+            changes.append("mobile_reflow_overflow_guard")
 
     if text != original:
         file_path.write_text(text, encoding="utf-8")
@@ -144,13 +168,17 @@ def verify_invariants() -> dict:
     checks["missing_status_contract"] = missing_status
 
     missing_reduce = []
+    missing_reflow = []
     for path in REPRESENTATIVES.values():
         text = (ROOT / path).read_text(encoding="utf-8")
         if "prefers-reduced-motion" not in text:
             missing_reduce.append(path)
+        if "TRACE Gate 6.5 — bounded mobile reflow repair" not in text:
+            missing_reflow.append(path)
     checks["missing_reduced_motion"] = missing_reduce
+    checks["missing_mobile_reflow_guard"] = missing_reflow
 
-    if stale or missing_status or missing_reduce:
+    if stale or missing_status or missing_reduce or missing_reflow:
         raise RuntimeError(f"post-patch invariant failure: {checks}")
     return checks
 
@@ -159,8 +187,16 @@ def main() -> None:
     reports = []
     representative_paths = set(REPRESENTATIVES.values())
     for n, path in R5_FILES.items():
-        reports.append(patch_file(path, r5_number=n, representative=path in representative_paths))
-    reports.append(patch_file(REPRESENTATIVES["stereoscopy-uk"], r5_number=None, representative=True))
+        reports.append(
+            patch_file(path, r5_number=n, representative=path in representative_paths)
+        )
+    reports.append(
+        patch_file(
+            REPRESENTATIVES["stereoscopy-uk"],
+            r5_number=None,
+            representative=True,
+        )
+    )
 
     invariants = verify_invariants()
     changed = [r for r in reports if r["changed"]]
@@ -178,7 +214,10 @@ def main() -> None:
         ],
     }
     out = ROOT / ".trace-validation" / "gate65_patch_report.json"
-    out.write_text(json.dumps(report, indent=2, ensure_ascii=False) + "\n", encoding="utf-8")
+    out.write_text(
+        json.dumps(report, indent=2, ensure_ascii=False) + "\n",
+        encoding="utf-8",
+    )
     print(json.dumps(report, indent=2, ensure_ascii=False))
 
 
