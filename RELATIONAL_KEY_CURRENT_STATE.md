@@ -64,11 +64,15 @@ Candidate:
 Implementation `796ee8afc24c879d148b90046037f80b0c5bcec6`.
 
 Candidate/blocker register:
-`POST_CLOSEOUT_R5_8B_CITY_GATINEAU_RIVER_SEAM_CANDIDATE_LIVE_BLOCKER.md`
-@ `378fcff2e7bd95e5e693013fd8040ec3bf79aa3c`.
+`POST_CLOSEOUT_R5_8B_CITY_GATINEAU_RIVER_SEAM_CANDIDATE_LIVE_BLOCKER.md`.
+Latest blocker-register update / Retry 01 trigger: `43c3c8a998191ac73e621142575ca9a18b7288e5`.
 
 SOURCE candidate: PASS.
-LIVE candidate: BLOCKED by Vercel Hobby `build-rate-limit` on exact candidate commit.
+LIVE candidate: BLOCKED by Vercel Hobby `build-rate-limit`.
+Retry 01 on commit `43c3c8a998191ac73e621142575ca9a18b7288e5` returned the same Vercel `build-rate-limit` failure.
+No new deployment was created after the last successful Swell deployment `dpl_Ew6K7raX9jBryigWqAkMr5xRsHLa`.
+Direct deployment fallback could not be used by the connected deployment action, so no alternate deployment is claimed.
+
 Public City wrapper unchanged.
 Shared runtime unchanged.
 City remains ADEQUATE.
@@ -79,6 +83,7 @@ City remains ADEQUATE.
 - SOURCE City audit: PASS
 - SOURCE City candidate: PASS
 - LIVE City candidate: BLOCKED — Vercel build-rate-limit
+- Retry 01: FAILED — same build-rate-limit, candidate unchanged
 - USER City R5.8: NOT STARTED
 - public City R5.8 promotion: NOT STARTED
 - shared runtime: unchanged
@@ -89,11 +94,12 @@ City remains ADEQUATE.
 # ACTIVE GATE / NEXT EXACT OUTPUT
 # **R5.8B-LIVE — CITY / GATINEAU CANDIDATE DEPLOYMENT RETRY**
 
-When Vercel build capacity is available:
-1. deploy exact candidate `796ee8afc24c879d148b90046037f80b0c5bcec6` without semantic changes;
-2. require READY;
-3. verify `/families/city-gatineau/r5-8.html` HTTP 200;
-4. create temporary USER access URL;
-5. only then open City USER MATCHING + OTHER regression.
+Next attempt must reuse the unchanged candidate `796ee8afc24c879d148b90046037f80b0c5bcec6`.
+Acceptance criteria remain:
+1. Vercel deployment reaches READY;
+2. `/families/city-gatineau/r5-8.html` returns HTTP 200;
+3. create temporary USER access URL;
+4. only then open City USER MATCHING + OTHER regression.
 
+Do not create additional semantic candidate commits just to retry capacity.
 Do not promote or reclassify City before USER PASS.
