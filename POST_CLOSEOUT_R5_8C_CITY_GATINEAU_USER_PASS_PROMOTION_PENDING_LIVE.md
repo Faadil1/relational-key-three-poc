@@ -46,8 +46,12 @@ LIVE promotion status:
 Vercel status on promotion commit reports Hobby `build-rate-limit` failure.
 No READY promotion deployment is claimed yet.
 
+## Promotion Retry 01
+Triggered 2026-09-03 without semantic, visual, wrapper, candidate or shared-runtime changes. This documentation-only commit exists solely to trigger a fresh branch deployment containing the already-committed public promotion `952b7d973bdc0a81f421708668993040390c1b0d`.
+Acceptance remains: READY deployment containing the promotion commit, then public `/families/city-gatineau/` route verification.
+
 Canonical interpretation:
-# **USER PASS / PROMOTION COMMITTED / LIVE PROMOTION BLOCKED**
+# **USER PASS / PROMOTION COMMITTED / LIVE PROMOTION RETRY TRIGGERED**
 
 Do not request another City USER proof absent contradictory evidence.
 Do not change candidate semantics.
