@@ -1,59 +1,15 @@
 <!doctype html>
 <html lang="en">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>RELATIONAL KEY — Swell Register</title>
-<style>
-:root{--bg:#0b0b09;--ink:#eee8dc;--muted:#7e776b;--line:rgba(235,221,194,.14);font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
-*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;background:var(--bg);color:var(--ink)}body{display:grid;grid-template-rows:44px minmax(0,1fr);overflow:hidden}.framebar{display:grid;grid-template-columns:auto 1fr auto;align-items:center;gap:14px;padding:0 14px;border-bottom:1px solid var(--line);background:rgba(11,11,9,.96);min-width:0}.back{display:inline-flex;align-items:center;gap:8px;height:30px;padding:0 11px;border:1px solid var(--line);border-radius:999px;color:#d8bd8d;text-decoration:none;font:800 7px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.11em;white-space:nowrap}.context{min-width:0;text-align:center;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;font:700 6px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;color:var(--muted)}.law{font:800 6px ui-monospace,SFMono-Regular,Menlo,monospace;letter-spacing:.12em;color:#6f685d;white-space:nowrap}.frame{width:100%;height:100%;border:0;background:#0d0e0c;display:block}@media(max-width:680px){body{grid-template-rows:42px minmax(0,1fr)}.framebar{grid-template-columns:auto 1fr;padding:0 9px}.context{text-align:right}.law{display:none}.back{padding:0 9px;font-size:6px}}
-</style>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>RELATIONAL KEY — Swell Lee Crossing</title>
+<style>html,body{margin:0;width:100%;height:100%;background:#061015;color:#eef5f2;font-family:Inter,system-ui,sans-serif}.fallback{min-height:100%;display:grid;place-items:center}.fallback a{color:#a8e3ea}</style>
 </head>
 <body>
-<nav class="framebar" aria-label="Collection navigation">
-  <a class="back" href="/#grid">← BACK TO ATLAS</a>
-  <div class="context">MARSHALL ISLANDS · SWELL REGISTER</div>
-  <div class="law">THE PAIR IS THE PRODUCT</div>
-</nav>
-<iframe class="frame" id="rk" title="Marshall Islands · Swell Register" src="/families/swell-marshall/snapshot.html"></iframe>
+<div class="fallback"><a href="/families/swell-marshall/r5-7.html">Open Swell Lee Crossing</a></div>
 <script>
-const frame=document.getElementById('rk');
-frame.onload=()=>{
-  try{
-    const doc=frame.contentWindow.document;
-    const style=doc.createElement('style');
-    style.id='g4-4-swell-polish';
-    style.textContent=`
-      /* G4.4: orientation/swell hierarchy only. No state, timing or semantic changes. */
-      .orientation{
-        width:14px;
-        height:14px;
-        box-shadow:0 0 22px rgba(115,207,228,.72),0 0 0 4px rgba(115,207,228,.05)
-      }
-      .pair[data-phase="registered"] .orientation{
-        transform:translate(-50%,-50%) scale(1.05);
-        box-shadow:0 0 26px rgba(115,207,228,.9),0 0 0 5px rgba(115,207,228,.07)
-      }
-      .pair[data-phase="other"] .orientation{
-        transform:translate(-50%,-50%) scale(.95);
-        box-shadow:0 0 22px rgba(226,140,104,.85),0 0 0 4px rgba(226,140,104,.05)
-      }
-      .pair[data-phase="registered"] .f1{stroke-width:2.7;opacity:1}
-      .pair[data-phase="registered"] .f2{stroke-width:1.8;opacity:.9}
-      .pair[data-phase="registered"] .f3{stroke-width:1.7;opacity:.74}
-      .pair[data-phase="other"] .f1{stroke-width:2.6}
-      .pair[data-phase="other"] .f2{stroke-width:1.8}
-      .pair[data-phase="other"] .f3{stroke-width:1.7}
-      .bridgeLabel{font-size:5.8px;color:#829a9d}
-
-      @media(max-width:920px){
-        .orientation{width:13px;height:13px}
-        .bridgeLabel{font-size:5.5px}
-      }
-    `;
-    doc.head.appendChild(style);
-  }catch(e){console.error('G4.4 Swell polish injection failed',e)}
-};
+// R5.7 public promotion: direct/public Swell access resolves to the USER-validated candidate.
+location.replace('/families/swell-marshall/r5-7.html');
 </script>
 </body>
 </html>
