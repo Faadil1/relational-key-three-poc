@@ -1,6 +1,6 @@
 # RELATIONAL KEY — ÉTAT CANONIQUE COURANT
 
-Date: 2026-09-03
+Date: 2026-09-04
 Repository: `Faadil1/relational-key-three-poc`
 Canonical branch: `collection/global-refinement-1`
 Draft PR: #21 — `DRAFT / DO NOT MERGE`
@@ -25,69 +25,63 @@ VALIDATED 24. USER relational integrity 24/24 PASS. Shared runtime unchanged fro
 Order:
 Food → Textile → Metate → Tongiaki → Garamut → Kento → Swell → City → Service → Signal → Frida.
 
-Current CLOSED matrix:
-# **STRONG 21 / ADEQUATE 3 / EXPERIENCE DEBT 0**
+Current closed matrix:
+# **STRONG 22 / ADEQUATE 2 / EXPERIENCE DEBT 0**
+VALIDATED remains 24.
 
 Closed STRONG in R5:
-Food / Toyama; Textile / Bonwire; Metate / Teotitlán; Tongiaki / Tonga; Garamut / East Sepik–Ramu; Kento / Japan; Swell / Marshall Islands; City / Gatineau.
+Food / Toyama; Textile / Bonwire; Metate / Teotitlán; Tongiaki / Tonga; Garamut / East Sepik–Ramu; Kento / Japan; Swell / Marshall Islands; City / Gatineau; Service / Benin.
 
-# R5.9 — SERVICE / BENIN — USER PASS ✅ / PROMOTION PENDING LIVE
-Baseline ADEQUATE until LIVE promotion closure.
+# R5.9 — SERVICE / BENIN — STRONG / CLOSED ✅
 Mechanism:
 # **CHIP CARD → PUBLIC PHONE READER → CONTACT REGISTER → LINE WINDOW**
 
-Candidate `families/service-benin/r5-9.html`.
-Implementation `ffaab4d1a8268dad054c9c15a52e07f7c550833b`.
-LIVE candidate proof before USER:
-- retry/status commit `b1d0df51e21da65914c2e58a1e4013683dcfb1fc`
-- deployment `dpl_Cpms8R8DoV8grGrDqEyupBFZ1SVz` — READY
-- candidate unchanged from implementation to retry; only canonical/register files changed.
+Candidate `families/service-benin/r5-9.html` @ implementation `ffaab4d1a8268dad054c9c15a52e07f7c550833b`.
 
 USER proof:
 `/mnt/data/cc84b5d8-b132-49cf-8975-c2f0d7e8b631.mp4` — 10.20 s / 1912×966 / 30 fps / 306 frames.
-
-Observed MATCHING:
-phonecard + reader valid → card seats → contacts register sequentially → all six editorial contacts active → `LINE WINDOW OPEN · EDITORIAL` → `CONTACT FIELD REGISTERED · LINE WINDOW OPEN`.
-
-Observed OTHER:
-phonecard + reader remain valid → card offset/rotated → only partial contacts active → line window remains closed → `TWO VALID OBJECTS · CONTACTS OFFSET · LINE WINDOW REMAINS CLOSED`.
-
 USER verdict:
 `CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
 
-Truth boundary remains explicit:
-editorial reconstruction combining documented Bénin PTT chip-phonecard objects and documented publiphone context; contact geometry/order, authorization timing, tariff/unit use and exact hardware are illustrative, not historical operating procedure.
-
 Promotion SOURCE:
 `families/service-benin/index.html` @ `7f80542b55dfca6b45ec2b246d202e485e13448a` → `/families/service-benin/r5-9.html`.
-USER-PASS/pending-LIVE register:
-`POST_CLOSEOUT_R5_9C_SERVICE_BENIN_USER_PASS_PROMOTION_PENDING_LIVE.md` @ `beabedea811e2b242065442012580f3d270162e9`.
 
-LIVE promotion status:
-Vercel on promotion commit `7f80542b...` returned Hobby `build-rate-limit` failure.
-No READY public-promotion deployment is claimed yet.
-No additional Service USER proof is required absent contradictory evidence.
+Promotion retry:
+`22b380efd6eea53e317a4bfa5fc0d48de38aa066`.
+LIVE:
+`dpl_c16YpK1hJxbQ9Jt2SpCoDgZriyVZ` — READY.
+Host:
+`relational-key-collectionrelational-key-collection-ma5sq0s7s.vercel.app`.
+
+Public `/families/service-benin/` verified HTTP 200 serving the exact promoted wrapper redirecting to `r5-9.html`.
+Wrapper blob at deployed retry commit:
+`1fa936311e9d62927eb6d6a10ddf537c82673b90`.
+
+Closure:
+`POST_CLOSEOUT_R5_9D_SERVICE_BENIN_USER_PASS_LIVE_PROMOTION_STRONG_CLOSED.md` @ `5998d2191eada23d5a446d465c5e15a75d165a19`.
+
+Truth boundary remains explicit: contact geometry/order, authorization timing, tariff/unit use and exact publiphone hardware are illustrative/editorial, not claimed as historical operating procedure.
+Shared runtime unchanged.
+Service = STRONG.
 
 # STATE SEPARATION
 - prior Global closeout: PASS / frozen
-- City R5.8: STRONG / CLOSED
-- SOURCE Service R5.9 candidate: PASS
-- LIVE Service candidate: READY / unchanged integrity PASS
-- USER Service R5.9: PASS ✅
-- Service promotion SOURCE: COMMITTED ✅
-- Service public LIVE promotion: BLOCKED / PENDING
-- Service STRONG closure: PENDING LIVE
+- Service R5.9 SOURCE: PASS
+- Service R5.9 USER: PASS ✅
+- Service R5.9 LIVE promotion: PASS ✅
+- Service R5.9 classification: STRONG / CLOSED
 - shared runtime: unchanged
 - VALIDATED: 24
-- CLOSED matrix remains STRONG 21 / ADEQUATE 3 / EXPERIENCE DEBT 0 until LIVE closure
+- matrix: STRONG 22 / ADEQUATE 2 / EXPERIENCE DEBT 0
 - PR #21: DRAFT / DO NOT MERGE
 
 # ACTIVE GATE
-# **R5.9C-LIVE — SERVICE / BENIN PUBLIC PROMOTION RETRY**
+# **R5.10A — SIGNAL / NIGERIA SOURCE + MECHANISM AUDIT**
 
 Next exact action:
-1. do not change Service candidate semantics;
-2. retry/check branch deployment until a READY deployment includes promotion commit `7f80542b...`;
-3. verify public `/families/service-benin/` resolves to `/families/service-benin/r5-9.html` by route fetch or exact-commit wrapper integrity under preview auth;
-4. then close Service STRONG and matrix → **STRONG 22 / ADEQUATE 2 / EXPERIENCE DEBT 0**;
-5. proceed directly to **R5.10 Signal / Nigeria**.
+1. inspect the currently promoted Signal / Nigeria mechanism and prior EXP-3 evidence;
+2. preserve both members before relation;
+3. deepen the Nigeria-specific signal/relay consequence rather than decorate the center;
+4. keep public Signal wrapper unchanged until USER PASS;
+5. do not mutate shared runtime;
+6. produce one isolated R5.10 candidate only if the audit supports a real STRONG-threshold mechanism.
