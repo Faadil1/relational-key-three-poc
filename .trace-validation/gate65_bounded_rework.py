@@ -61,9 +61,16 @@ READABILITY_CSS = """
 }
 """.strip()
 
-REFLOW_CSS = """
+OLD_REFLOW_CSS = """
 /* TRACE Gate 6.5 — bounded mobile reflow repair. */
 html, body { overflow-x: hidden; }
+""".strip()
+
+REFLOW_CSS = """
+/* TRACE Gate 6.5 — bounded mobile reflow repair. */
+@media (max-width: 960px) {
+  .controls { width: 100% !important; max-width: 100% !important; }
+}
 """.strip()
 
 STATUS_OPEN = '<div class="result" id="result">'
@@ -128,13 +135,17 @@ def patch_file(path: str, *, r5_number: int | None, representative: bool) -> dic
         if added:
             changes.append("evaluator_readability_floor")
 
-        text, added = inject_before_style_close(
-            text,
-            REFLOW_CSS,
-            "TRACE Gate 6.5 — bounded mobile reflow repair",
-        )
-        if added:
-            changes.append("mobile_reflow_overflow_guard")
+        if OLD_REFLOW_CSS in text:
+            text = text.replace(OLD_REFLOW_CSS, REFLOW_CSS, 1)
+            changes.append("mobile_reflow_intrinsic_controls_fix")
+        elif REFLOW_CSS not in text:
+            text, added = inject_before_style_close(
+                text,
+                REFLOW_CSS,
+                "TRACE Gate 6.5 — bounded mobile reflow repair",
+            )
+            if added:
+                changes.append("mobile_reflow_intrinsic_controls_fix")
 
     if text != original:
         file_path.write_text(text, encoding="utf-8")
@@ -169,16 +180,20 @@ def verify_invariants() -> dict:
 
     missing_reduce = []
     missing_reflow = []
+    stale_reflow_masks = []
     for path in REPRESENTATIVES.values():
         text = (ROOT / path).read_text(encoding="utf-8")
         if "prefers-reduced-motion" not in text:
             missing_reduce.append(path)
-        if "TRACE Gate 6.5 — bounded mobile reflow repair" not in text:
+        if REFLOW_CSS not in text:
             missing_reflow.append(path)
+        if OLD_REFLOW_CSS in text:
+            stale_reflow_masks.append(path)
     checks["missing_reduced_motion"] = missing_reduce
-    checks["missing_mobile_reflow_guard"] = missing_reflow
+    checks["missing_mobile_reflow_fix"] = missing_reflow
+    checks["stale_overflow_hiding_masks"] = stale_reflow_masks
 
-    if stale or missing_status or missing_reduce or missing_reflow:
+    if stale or missing_status or missing_reduce or missing_reflow or stale_reflow_masks:
         raise RuntimeError(f"post-patch invariant failure: {checks}")
     return checks
 
