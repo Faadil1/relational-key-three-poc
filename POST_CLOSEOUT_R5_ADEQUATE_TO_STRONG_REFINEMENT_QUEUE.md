@@ -42,7 +42,11 @@ Promotion SOURCE:
 Pending-LIVE register:
 `POST_CLOSEOUT_R5_8C_CITY_GATINEAU_USER_PASS_PROMOTION_PENDING_LIVE.md` @ `2f3525bc4a01c04420557cc5ba9d6937e8ee5ca6`.
 
-Vercel status on promotion commit and later queue sync remains Hobby `build-rate-limit`.
+Canonical state:
+`RELATIONAL_KEY_CURRENT_STATE.md` @ `25bad7c83a1ccfe0af7fc3d789b7f29df2b8b9d4`.
+HANDOVER @ `15094777d8bbcffafd76389075b5c55becd4b31f`.
+
+Vercel status on promotion commit and later syncs remains Hobby `build-rate-limit`.
 No READY public-promotion deployment is claimed yet.
 
 # ACTIVE GATE
