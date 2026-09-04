@@ -7,6 +7,12 @@ on:
     paths:
       - '.trace-validation/**'
       - '.github/workflows/trace-gate65-capture.yml'
+  pull_request:
+    branches:
+      - main
+    paths:
+      - '.trace-validation/**'
+      - '.github/workflows/trace-gate65-capture.yml'
   workflow_dispatch:
 
 permissions:
