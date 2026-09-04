@@ -67,6 +67,7 @@ Candidate/blocker register:
 `POST_CLOSEOUT_R5_8B_CITY_GATINEAU_RIVER_SEAM_CANDIDATE_LIVE_BLOCKER.md`.
 Latest blocker register commit: `503a573f14e1b09f1ab0e1a913e389089630ae19`.
 Retry 01 trigger commit: `43c3c8a998191ac73e621142575ca9a18b7288e5`.
+R5 queue sync commit: `9da0a7df5fe65e62c0a7c25f1953946679498495`.
 
 SOURCE candidate: PASS.
 LIVE candidate: BLOCKED by Vercel Hobby `build-rate-limit`.
