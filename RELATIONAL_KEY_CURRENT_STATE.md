@@ -2,8 +2,12 @@
 
 Date: 2026-09-04
 Repository: `Faadil1/relational-key-three-poc`
-Canonical branch: `collection/global-refinement-1`
-Draft PR: #21 — `DRAFT / DO NOT MERGE`
+Canonical source of truth: `main`
+Production merge commit: `0f4b6bad893c0387de36f751fc651f5a6267c16d`
+Integration PR: #22 — MERGED
+Historical refinement PR: #21 — remains Draft / historical only
+Production deployment: `dpl_2Lc7VLQjHbGDjCfNetNWQ7dpE6Ms` — READY / target `production`
+Stable production URL: `https://relational-key-collectionrelational.vercel.app/`
 
 # PRODUCT ROOT
 **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
@@ -15,48 +19,48 @@ Frozen laws:
 - **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
 - family-specific refinement must not mutate `families/_shared/round13r/index.html`.
 
-# FROZEN PRIOR CHECKPOINT ✅
+# GLOBAL / R5 CLOSEOUT ✅
 Prior Global Refinement closeout remains PASS / frozen.
-VALIDATED 24. USER relational integrity 24/24 PASS.
+R5 is CLOSED.
 
-# R5 — ADEQUATE → STRONG EXPERIENTIAL REFINEMENT
-# **CLOSED ✅**
-
-Final matrix:
+Final state:
 # **STRONG 24 / ADEQUATE 0 / EXPERIENCE DEBT 0**
-VALIDATED remains 24.
+- VALIDATED 24
+- USER relational integrity 24/24 PASS
+- all 24 family public promotions complete
+- shared runtime integrity preserved
 
-Closed STRONG in R5:
-Food / Toyama; Textile / Bonwire; Metate / Teotitlán; Tongiaki / Tonga; Garamut / East Sepik–Ramu; Kento / Japan; Swell / Marshall Islands; City / Gatineau; Service / Benin; Signal / Nigeria; Frida / Coyoacán.
+# PRODUCTION INTEGRITY ✅
+`collection/global-refinement-1` was merged to `main` through PR #22.
+Post-merge compare confirmed `main` contains 100% of the finalized branch; the only additional commit was the merge commit and there were zero file differences.
+Vercel production deployed exact merge commit `0f4b6bad893c0387de36f751fc651f5a6267c16d` as `dpl_2Lc7VLQjHbGDjCfNetNWQ7dpE6Ms`, state READY.
 
-# R5.11 — FRIDA / COYOACÁN — STRONG / CLOSED ✅
-Mechanism:
-**BED MIRROR → REFLECTED SELF → RECLINING EASEL → PAINTED REGISTER**.
-Law:
-`MIRROR → REFLECTION LOCK → TRACE CARRIES → EASEL RECEIVES → PAINTED REGISTER`.
+# TRACE DESIGN HANDOFF — AUTHORIZED
+Human instruction on 2026-09-04: involve TRACE Design for the next phase.
 
-Candidate `families/frida-coyoacan/r5-11.html` @ `9402db8b56e2922a74223d1ebba3035e06f91c01`.
-USER proof `/mnt/data/2adce17d-ca10-4186-8ac0-c42537346194.mp4` — 19.50 s / 1914×970 / 30 fps / 585 frames.
-USER verdict: **CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS**.
-Promotion SOURCE `families/frida-coyoacan/index.html` → `/families/frida-coyoacan/r5-11.html` @ `5dfdbfb3e0c68411bff5ea02701a1059af9f0b11`.
-LIVE promotion: `dpl_2WsrmHsDitGLkx1x3K6LMz35S9yv` READY on exact deployed commit `7a820f4f4158112abec435f5eb5dc292918d3ee9`.
-Public `/families/frida-coyoacan/` verified HTTP 200 and resolves to `r5-11.html`.
-Closure `POST_CLOSEOUT_R5_11E_FRIDA_COYOACAN_USER_PASS_LIVE_PROMOTION_STRONG_R5_CLOSED.md` @ `6ae2214f75d05b4610335bf16056a82b1afa5aeb`.
+TRACE must treat the 24-family causal/experiential result as frozen imported evidence, not silently rerun or invalidate prior gates.
+TRACE owns the next design/experience assurance phase only.
 
-# RUNTIME INTEGRITY
-`families/_shared/round13r/index.html` remains unchanged from PR base `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`; it is absent from the base→promotion-descendant changed-file compare.
+Target TRACE entry:
+- project slug: `relational-key`
+- state class: TRACE project runtime
+- entry phase: E — Evaluation & Evolution
+- entry gate: **6.5 — Evaluation Capture**
+- purpose: audit the finished production system in evaluator-facing contexts before any new refinement or portfolio packaging
+- do not reopen family mechanics unless concrete evaluation evidence identifies a specific regression
 
-# STATE SEPARATION
-- prior Global closeout: PASS / frozen
-- R5: CLOSED
-- SOURCE: final Frida promotion recorded
-- LIVE: final Frida promotion READY + HTTP 200
-- USER: Frida PASS
+Expected TRACE sequence:
+`6.5 Evaluation Capture → 6.75 Demo Narrative / Evidence Film → 7 Freeze / Promotion verification → 8 Post-mortem / Learning Promotion`
+
+# SOURCE / LIVE / USER / VALIDATED
+- SOURCE: `main`; finalized product content merged through PR #22
+- LIVE: production READY at stable Vercel alias
+- USER: 24/24 relational integrity PASS; all R5 USER gates PASS
 - VALIDATED: 24
-- matrix: STRONG 24 / ADEQUATE 0 / EXPERIENCE DEBT 0
-- shared runtime: unchanged
-- PR #21: DRAFT / DO NOT MERGE
+- MATRIX: STRONG 24 / ADEQUATE 0 / EXPERIENCE DEBT 0
 
-# NEXT EXACT GATE
-No further R5 family refinement remains.
-Any merge, Ready-for-review, reviewer request, retargeting, or new phase requires explicit human instruction.
+# ACTIVE GATE
+# **TRACE ONBOARDING → GATE 6.5 EVALUATION CAPTURE**
+
+No further R5 family refinement is active.
+Any new product-design change must come from a bounded TRACE finding or explicit human instruction.
