@@ -30,29 +30,15 @@ VALIDATED remains 24.
 - R5.9 Service / Benin — STRONG
 - R5.10 Signal / Nigeria — STRONG
 
-## Signal closure
-Candidate `families/signal-nigeria/r5-10.html` @ `7a02cfd2d9e1c594cb2c7a7e760da9a017b2f126`.
-USER proof `/mnt/data/9d63ba8e-b24f-436f-aac3-de7c1c689af5.mp4` — PASS.
-Promotion `families/signal-nigeria/index.html` @ `476a4d4e61f4a018ca6fbdf92475f7f864970890`.
-LIVE `dpl_8iVFnJVeotuHHchF91C5ejPseaXK` READY; public route HTTP 200.
-Closure `POST_CLOSEOUT_R5_10D_SIGNAL_NIGERIA_USER_PASS_LIVE_PROMOTION_STRONG_CLOSED.md` @ `7d8a99f8e26b43c2f2f970b765e6ed61b8fb8ecf`.
-
 # R5.11 — FRIDA / COYOACÁN — ACTIVE
 Baseline ADEQUATE.
-
-Audit:
-`POST_CLOSEOUT_R5_11A_FRIDA_COYOACAN_MIRROR_EASEL_AUDIT.md` @ `f7ab7a80f8417d5213dd1e653f64751660a7ed99`.
-
 Mechanism:
 # **BED MIRROR → REFLECTED SELF → RECLINING EASEL → PAINTED REGISTER**
-
 Law:
 `MIRROR → REFLECTION LOCK → TRACE CARRIES → EASEL RECEIVES → PAINTED REGISTER`.
 
-Candidate:
-`families/frida-coyoacan/r5-11.html` @ `9402db8b56e2922a74223d1ebba3035e06f91c01`.
-Candidate register:
-`POST_CLOSEOUT_R5_11B_FRIDA_COYOACAN_MIRROR_EASEL_CANDIDATE.md` @ `d09bf2540225f03da1c8201997a65d775ee4a4da`.
+Candidate `families/frida-coyoacan/r5-11.html` @ `9402db8b56e2922a74223d1ebba3035e06f91c01`.
+Candidate blob `bd7e173b0f850293d74e7866497d23c00635ea8c`.
 
 MATCHING:
 reflection → anchor lock → carried trace → outline → features → hair/crown → `REFLECTION REGISTERED · PAINTED SELF-IMAGE FORMED`.
@@ -63,17 +49,29 @@ mirror + easel remain valid; reflection remains valid; carried trace offset; gho
 Truth boundary:
 mirror/easel relationship is documented by the Museo Frida Kahlo; exact geometry, optics, anchors, timing, transfer and portrait contour are editorial and do not claim reconstruction of a specific painting or Frida's technique.
 
-Initial LIVE status:
-implementation and candidate-register commits both hit Vercel Hobby `build-rate-limit`.
+## LIVE retry PASS ✅
+Human retry commit `793524ab6cf589d08c159f1cbbd4c8a75eb1f00b`.
+Deployment `dpl_7BoMjEUsCFPHQ2Pam75h2iPoGByW` — READY.
+Host `relational-key-collectionrelational-key-collection-f2p5eonws.vercel.app`.
+Candidate route verified HTTP 200.
+Candidate blob remains identical to implementation.
+USER gate register `POST_CLOSEOUT_R5_11C_FRIDA_COYOACAN_LIVE_READY_USER_GATE.md` @ `9a74604da2efe55490df4c25a43cc85471905a26`.
+
+USER URL:
+`https://relational-key-collectionrelational-key-collection-f2p5eonws.vercel.app/families/frida-coyoacan/r5-11.html?_vercel_share=2104MEVhAVDTcLbI3jVpY8XmvDdrg4eB`
+
 Public Frida wrapper unchanged.
 Shared runtime unchanged.
-Frida remains ADEQUATE.
+Frida remains ADEQUATE pending USER proof.
 
 # ACTIVE GATE
-# **R5.11B-LIVE — FRIDA / COYOACÁN CANDIDATE DEPLOYMENT**
+# **R5.11C — FRIDA / COYOACÁN USER MATCHING + OTHER REGRESSION**
 
-Do not change candidate semantics to probe capacity.
-Require READY deployment containing unchanged `r5-11.html`, then candidate route/exact-commit integrity proof, temporary USER share URL, and one MATCHING + OTHER USER regression.
+Required:
+1. `MATCHING REFLECTION` → `TEST RELATIONSHIP`;
+2. hold final painted-register state;
+3. `OTHER REFLECTION` → `TEST RELATIONSHIP`;
+4. hold ghosted/doubled residual.
+
 Only USER PASS may authorize public Frida promotion and ADEQUATE → STRONG.
-
 Frida / Coyoacán is the final remaining ADEQUATE family in R5.
