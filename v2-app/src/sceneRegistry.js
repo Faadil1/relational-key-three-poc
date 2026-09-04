@@ -7,4 +7,7 @@ export const sceneComponents = Object.freeze({
   'kento-japan': lazy(() => import('./sceneEntries/KentoEntry.jsx')),
   'stereoscopy-uk': lazy(() => import('./sceneEntries/StereoscopyEntry.jsx')),
   'signal-nigeria': lazy(() => import('./sceneEntries/SignalEntry.jsx')),
+  'astrolabe-isfahan': lazy(() => import('./sceneEntries/AstrolabeEntry.jsx')),
+  'funicular-valparaiso': lazy(() => import('./sceneEntries/FunicularEntry.jsx')),
+  'music-box-sainte-croix': lazy(() => import('./sceneEntries/MusicBoxEntry.jsx')),
 });
