@@ -1,0 +1,62 @@
+state_class: relational_key_v2_cycle
+project: RELATIONAL_KEY
+cycle: V2
+canonical_branch: v2/archive-interaction-3d-matrix-001
+baseline_v1:
+  immutable: true
+  production_head: 6821cd2a9694635e2e6948747af45785fe7e3afe
+  product_content_merge: dbdebc588690d4a3a031b827203199d366ba7c5a
+  exact_gate_6_5_evidence_commit: 99ec04045a9b48f293d008c5137c36bd75425d7e
+  r5: CLOSED
+  validated_families: 24
+  final_matrix: STRONG_24_ADEQUATE_0_EXPERIENCE_DEBT_0
+v2:
+  status: V2_0_CONCEPT_MATRIX_COMPLETE_ARCHIVE_REFRESH_REQUIRED_BEFORE_V2_1_BUILD
+  implementation_authorized: false
+  issue: 37
+  charter: V2/RELATIONAL_KEY_V2_EVOLUTION_CHARTER.md
+  matrix: V2/V2_0_24_FAMILY_ARCHIVE_INTERACTION_3D_OPPORTUNITY_MATRIX.md
+  target_family_count: 24
+  target_stack:
+    - React
+    - React_Three_Fiber
+    - Three_js
+  atlas_24_live_webgl_canvases_allowed: false
+  v1_in_place_rewrite_allowed: false
+  ordinary_branch_vercel_preview_allowed: false
+laws:
+  - THE_RELATIONAL_PAIR_REMAINS_THE_PRODUCT
+  - PAIR_MEMBER_TO_RELATION_TO_OTHER_MEMBER_RESPONSE
+  - EXPANSION_MUST_DEEPEN_THE_RELATION_NOT_REPLACE_IT
+  - TECHNOLOGY_SERVES_THE_RELATIONAL_MECHANISM
+  - THE_MEMORABLE_MOMENT_MUST_BELONG_TO_THE_PAIR
+  - ARCHIVE_EVIDENCE_MUST_CHANGE_MECHANISM_NOT_DECORATE
+mandatory_tests:
+  relational_specificity: REMOVE_EITHER_MEMBER_AND_MEMORABLE_MOMENT_BREAKS
+  archive_specificity: REPLACE_ARCHIVE_RATIONALE_AND_CONCEPT_BREAKS
+  promotion_vs_v1:
+    relational_clarity: GTE_V1
+    interaction_quality: GT_V1
+    memorability: GT_V1
+    truth_integrity: EQ_V1
+    accessibility: GTE_V1_WITHIN_TESTED_SCOPE
+    mobile_usability: GTE_V1
+    runtime_cost: MEASURED_ACCEPTABLE
+pilot_shortlist:
+  - anamorphosis-paris
+  - coupler-virginia
+  - ombak-bali
+pilot_classes:
+  anamorphosis-paris: OPTICAL_SPATIAL
+  coupler-virginia: MECHANICAL_CONTACT_LOAD
+  ombak-bali: TEMPORAL_RESONANCE_AUDIO_OPTIONAL
+next_gate:
+  id: V2_0A_ARCHIVE_REFRESH
+  build_allowed: false
+  required_output: THREE_PILOT_ARCHIVE_CORPORA_PLUS_PROVENANCE_RIGHTS_TRUTH_BOUNDARIES
+  families:
+    - anamorphosis-paris
+    - coupler-virginia
+    - ombak-bali
+blockers:
+  - V2_1_BUILD_BLOCKED_UNTIL_PILOT_ARCHIVE_REFRESH_PASSES
