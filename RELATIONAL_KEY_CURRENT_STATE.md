@@ -5,25 +5,58 @@ Repository: `Faadil1/relational-key-three-poc`
 Canonical branch: `collection/global-refinement-1`
 Draft PR: #21 — `DRAFT / DO NOT MERGE`
 
-# R5 CURRENT MATRIX
-# **STRONG 23 / ADEQUATE 1 / EXPERIENCE DEBT 0**
-VALIDATED 24. USER relational integrity 24/24 PASS. Shared runtime unchanged.
+# PRODUCT ROOT
+**THE RELATIONAL PAIR REMAINS THE PRODUCT.**
+`PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
 
-Closed STRONG: Food / Toyama; Textile / Bonwire; Metate / Teotitlán; Tongiaki / Tonga; Garamut / East Sepik–Ramu; Kento / Japan; Swell / Marshall Islands; City / Gatineau; Service / Benin; Signal / Nigeria.
+Frozen laws:
+- **EXPANSION MUST DEEPEN THE RELATION, NOT REPLACE IT.**
+- **TECHNOLOGY SERVES THE RELATIONAL MECHANISM.**
+- **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
+- family-specific refinement must not mutate `families/_shared/round13r/index.html`.
 
-# R5.11 — FRIDA / COYOACÁN — USER PASS ✅ / LIVE PROMOTION PENDING
-Mechanism: **BED MIRROR → REFLECTED SELF → RECLINING EASEL → PAINTED REGISTER**.
+# FROZEN PRIOR CHECKPOINT ✅
+Prior Global Refinement closeout remains PASS / frozen.
+VALIDATED 24. USER relational integrity 24/24 PASS.
+
+# R5 — ADEQUATE → STRONG EXPERIENTIAL REFINEMENT
+# **CLOSED ✅**
+
+Final matrix:
+# **STRONG 24 / ADEQUATE 0 / EXPERIENCE DEBT 0**
+VALIDATED remains 24.
+
+Closed STRONG in R5:
+Food / Toyama; Textile / Bonwire; Metate / Teotitlán; Tongiaki / Tonga; Garamut / East Sepik–Ramu; Kento / Japan; Swell / Marshall Islands; City / Gatineau; Service / Benin; Signal / Nigeria; Frida / Coyoacán.
+
+# R5.11 — FRIDA / COYOACÁN — STRONG / CLOSED ✅
+Mechanism:
+**BED MIRROR → REFLECTED SELF → RECLINING EASEL → PAINTED REGISTER**.
+Law:
+`MIRROR → REFLECTION LOCK → TRACE CARRIES → EASEL RECEIVES → PAINTED REGISTER`.
+
 Candidate `families/frida-coyoacan/r5-11.html` @ `9402db8b56e2922a74223d1ebba3035e06f91c01`.
-Candidate LIVE proof: `dpl_7BoMjEUsCFPHQ2Pam75h2iPoGByW` READY; candidate route HTTP 200.
 USER proof `/mnt/data/2adce17d-ca10-4186-8ac0-c42537346194.mp4` — 19.50 s / 1914×970 / 30 fps / 585 frames.
 USER verdict: **CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS**.
-MATCHING: reflection → anchors lock → trace carries → painted outline/features/hair accumulate on Card B.
-OTHER: mirror + easel + reflection remain valid; trace offset; ghosted/doubled red residual; painted register misaligns.
 Promotion SOURCE `families/frida-coyoacan/index.html` → `/families/frida-coyoacan/r5-11.html` @ `5dfdbfb3e0c68411bff5ea02701a1059af9f0b11`.
-Promotion LIVE currently blocked by Vercel Hobby `build-rate-limit`; no application failure inferred and no new USER proof required.
+LIVE promotion: `dpl_2WsrmHsDitGLkx1x3K6LMz35S9yv` READY on exact deployed commit `7a820f4f4158112abec435f5eb5dc292918d3ee9`.
+Public `/families/frida-coyoacan/` verified HTTP 200 and resolves to `r5-11.html`.
+Closure `POST_CLOSEOUT_R5_11E_FRIDA_COYOACAN_USER_PASS_LIVE_PROMOTION_STRONG_R5_CLOSED.md` @ `6ae2214f75d05b4610335bf16056a82b1afa5aeb`.
 
-# ACTIVE GATE
-# **R5.11D-LIVE — FRIDA / COYOACÁN PUBLIC PROMOTION RETRY**
-Require READY deployment containing promotion commit or descendant and verify public `/families/frida-coyoacan/` resolves to `r5-11.html`. Then Frida → STRONG and R5 closes at **STRONG 24 / ADEQUATE 0 / EXPERIENCE DEBT 0**.
+# RUNTIME INTEGRITY
+`families/_shared/round13r/index.html` remains unchanged from PR base `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`; it is absent from the base→promotion-descendant changed-file compare.
 
-PR #21 remains DRAFT / DO NOT MERGE.
+# STATE SEPARATION
+- prior Global closeout: PASS / frozen
+- R5: CLOSED
+- SOURCE: final Frida promotion recorded
+- LIVE: final Frida promotion READY + HTTP 200
+- USER: Frida PASS
+- VALIDATED: 24
+- matrix: STRONG 24 / ADEQUATE 0 / EXPERIENCE DEBT 0
+- shared runtime: unchanged
+- PR #21: DRAFT / DO NOT MERGE
+
+# NEXT EXACT GATE
+No further R5 family refinement remains.
+Any merge, Ready-for-review, reviewer request, retargeting, or new phase requires explicit human instruction.
