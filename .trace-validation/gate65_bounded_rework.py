@@ -61,6 +61,15 @@ READABILITY_CSS = """
 }
 """.strip()
 
+FOCUS_CSS = """
+/* TRACE Gate 6.5 — bounded keyboard focus visibility. */
+.controls button:focus-visible,
+.back:focus-visible {
+  outline: 2px solid #fff;
+  outline-offset: 3px;
+}
+""".strip()
+
 OLD_REFLOW_CSS = """
 /* TRACE Gate 6.5 — bounded mobile reflow repair. */
 html, body { overflow-x: hidden; }
@@ -135,6 +144,14 @@ def patch_file(path: str, *, r5_number: int | None, representative: bool) -> dic
         if added:
             changes.append("evaluator_readability_floor")
 
+        text, added = inject_before_style_close(
+            text,
+            FOCUS_CSS,
+            "TRACE Gate 6.5 — bounded keyboard focus visibility",
+        )
+        if added:
+            changes.append("keyboard_focus_visibility")
+
         if OLD_REFLOW_CSS in text:
             text = text.replace(OLD_REFLOW_CSS, REFLOW_CSS, 1)
             changes.append("mobile_reflow_intrinsic_controls_fix")
@@ -179,21 +196,25 @@ def verify_invariants() -> dict:
     checks["missing_status_contract"] = missing_status
 
     missing_reduce = []
+    missing_focus = []
     missing_reflow = []
     stale_reflow_masks = []
     for path in REPRESENTATIVES.values():
         text = (ROOT / path).read_text(encoding="utf-8")
         if "prefers-reduced-motion" not in text:
             missing_reduce.append(path)
+        if "TRACE Gate 6.5 — bounded keyboard focus visibility" not in text:
+            missing_focus.append(path)
         if REFLOW_CSS not in text:
             missing_reflow.append(path)
         if OLD_REFLOW_CSS in text:
             stale_reflow_masks.append(path)
     checks["missing_reduced_motion"] = missing_reduce
+    checks["missing_keyboard_focus_visibility"] = missing_focus
     checks["missing_mobile_reflow_fix"] = missing_reflow
     checks["stale_overflow_hiding_masks"] = stale_reflow_masks
 
-    if stale or missing_status or missing_reduce or missing_reflow or stale_reflow_masks:
+    if stale or missing_status or missing_reduce or missing_focus or missing_reflow or stale_reflow_masks:
         raise RuntimeError(f"post-patch invariant failure: {checks}")
     return checks
 
