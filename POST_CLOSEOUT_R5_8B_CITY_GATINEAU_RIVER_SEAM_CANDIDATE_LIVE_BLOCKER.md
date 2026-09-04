@@ -11,6 +11,7 @@ Source audit:
 Candidate:
 `families/city-gatineau/r5-8.html`
 Implementation `796ee8afc24c879d148b90046037f80b0c5bcec6`.
+Candidate blob SHA: `118cd6c5b65c9e7e8cc62842510cb37acc97d98a`.
 
 Mechanism:
 # **RIVER-SEAM CROSSING / BANK-TO-BANK HANDOFF**
@@ -34,43 +35,33 @@ OTHER:
 Truth boundary:
 Conceptual Gatineau territory / waterway relationship only; not an operational transit map, real bridge alignment, STO route or navigation tool.
 
-## LIVE status
+## LIVE blocker history
 
-Original GitHub/Vercel status on candidate commit:
-- context `Vercel`
-- state `failure`
-- target indicated Hobby `build-rate-limit` / upgrade-to-Pro page.
+Original candidate commit and Retry 01 both hit Vercel Hobby `build-rate-limit`.
+Retry 01 trigger commit: `43c3c8a998191ac73e621142575ca9a18b7288e5`.
+No semantic or visual candidate change was made.
+
+## Retry 02 / blocker resolution ✅
+
+Build capacity reopened.
+A branch deployment reached READY:
+- deployment `dpl_EzFX9UK9NJkHPvTp5UvoSRoKTjVA`
+- host `relational-key-collectionrelational-key-collection-cztjb30l3.vercel.app`
+- deployed commit `91ad10e8ad6071b2ce6d5c8a1abde3f58070e41e`
+- state `READY`.
+
+Deterministic candidate-integrity check:
+- blob at implementation commit `796ee8af...`: `118cd6c5b65c9e7e8cc62842510cb37acc97d98a`
+- blob at deployed commit `91ad10e8...`: `118cd6c5b65c9e7e8cc62842510cb37acc97d98a`
+- result: exact candidate unchanged.
+
+Protected-preview route behavior:
+- automated raw fetch of `/families/city-gatineau/r5-8.html` returns `302` to Vercel SSO, not 404/application failure;
+- temporary Vercel share access was generated for USER testing.
 
 Canonical interpretation:
-# **SOURCE CANDIDATE PASS / LIVE CANDIDATE BLOCKED — BUILD RATE LIMIT**
+# **SOURCE PASS / LIVE READY / EXACT CANDIDATE INTEGRITY PASS / PREVIEW AUTH-PROTECTED / USER GATE OPEN**
 
-## Retry 01
-
-A deployment-only retry was triggered on 2026-09-03 without any semantic or visual change to `families/city-gatineau/r5-8.html`.
-The candidate implementation remains exactly `796ee8afc24c879d148b90046037f80b0c5bcec6`.
-Retry trigger commit: `43c3c8a998191ac73e621142575ca9a18b7288e5`.
-
-Result:
-- Vercel status again returned `failure`;
-- target again points to Hobby `build-rate-limit`;
-- no new deployment was created after `dpl_Ew6K7raX9jBryigWqAkMr5xRsHLa`;
-- direct deployment fallback via the currently connected deployment action could not be used, so no alternate deployment is claimed.
-
-Canonical sync after Retry 01:
-- blocker register commit `503a573f14e1b09f1ab0e1a913e389089630ae19`;
-- R5 queue commit `9da0a7df5fe65e62c0a7c25f1953946679498495`;
-- current state commit `a59f476e2790c2f038bb53dae2dabed488228c23`;
-- handover commit `b8f2c56257b48fe69efcdb5917e5f6361a882a9e`.
-
-Retry acceptance criteria remain:
-1. Vercel deployment reaches `READY`;
-2. deployed branch contains the unchanged `r5-8.html` candidate;
-3. `/families/city-gatineau/r5-8.html` returns HTTP 200 through authenticated Vercel fetch;
-4. only then open USER proof.
-
-Do not infer application failure.
-Do not promote City.
-Do not request USER proof until the retry satisfies all acceptance criteria.
-Do not generate additional semantic candidate commits merely to probe capacity.
 Public City wrapper remains unchanged.
 Shared runtime remains unchanged.
+City remains ADEQUATE until USER PASS.
