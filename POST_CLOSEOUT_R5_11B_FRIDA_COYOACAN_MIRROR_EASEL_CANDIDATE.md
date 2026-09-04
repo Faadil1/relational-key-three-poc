@@ -11,6 +11,7 @@ Audit commit: `f7ab7a80f8417d5213dd1e653f64751660a7ed99`
 ## Candidate
 `families/frida-coyoacan/r5-11.html`
 Implementation commit: `9402db8b56e2922a74223d1ebba3035e06f91c01`
+Candidate blob: `bd7e173b0f850293d74e7866497d23c00635ea8c`.
 
 Mechanism:
 # **BED MIRROR → REFLECTED SELF → RECLINING EASEL → PAINTED REGISTER**
@@ -43,14 +44,12 @@ Documented relationship only: mirror above the bed + specially made easel enable
 - Frida remains ADEQUATE pending USER proof.
 
 ## LIVE status
-Initial Vercel status on implementation commit `9402db8b56e2922a74223d1ebba3035e06f91c01`: Hobby `build-rate-limit` failure.
-No application failure inferred.
-
-## Explicit human retry — 2026-09-04
-User requested `retenter frida`.
-This commit is a deployment-status retry only. No Frida semantics, candidate HTML, public wrapper, or shared runtime are changed.
-Candidate implementation remains exactly `9402db8b56e2922a74223d1ebba3035e06f91c01`.
+Initial implementation and candidate-register builds hit Vercel Hobby `build-rate-limit`; no application failure inferred.
+Human retry `retenter frida` created status-only retry commit `793524ab6cf589d08c159f1cbbd4c8a75eb1f00b` with no semantic changes.
+Deployment `dpl_7BoMjEUsCFPHQ2Pam75h2iPoGByW` is READY on that exact retry commit.
+Candidate route verified HTTP 200.
+Candidate blob at retry remains `bd7e173b0f850293d74e7866497d23c00635ea8c`, identical to implementation.
+USER gate register: `POST_CLOSEOUT_R5_11C_FRIDA_COYOACAN_LIVE_READY_USER_GATE.md` @ `9a74604da2efe55490df4c25a43cc85471905a26`.
 
 Next gate:
-# **R5.11B-LIVE — FRIDA / COYOACÁN CANDIDATE DEPLOYMENT**
-Require a READY branch deployment containing unchanged `r5-11.html`, then route/exact-commit integrity and one USER MATCHING + OTHER regression.
+# **R5.11C — FRIDA / COYOACÁN USER MATCHING + OTHER REGRESSION**
