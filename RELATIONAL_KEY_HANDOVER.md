@@ -16,6 +16,7 @@ USER proof `/mnt/data/2adce17d-ca10-4186-8ac0-c42537346194.mp4` — 19.50 s / 19
 USER verdict: `CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
 Promotion SOURCE `families/frida-coyoacan/index.html` → `/families/frida-coyoacan/r5-11.html` @ `5dfdbfb3e0c68411bff5ea02701a1059af9f0b11`.
 Promotion LIVE currently blocked by Vercel Hobby `build-rate-limit`; no application failure inferred and no new USER proof required.
+Shared runtime unchanged.
 
 # EXACT NEXT ACTION
-Retry Vercel only. Require READY deployment containing promotion commit or descendant. Verify public `/families/frida-coyoacan/` resolves to `r5-11.html`. Then create final Frida/R5 closure, set matrix to **STRONG 24 / ADEQUATE 0 / EXPERIENCE DEBT 0**, update canonical docs and PR body. PR remains Draft / DO NOT MERGE unless separately authorized.
+Retry Vercel only. Require READY deployment containing promotion commit or descendant. Verify public `/families/frida-coyoacan/` resolves to `r5-11.html`. Then create final Frida/R5 closure and set matrix to **STRONG 24 / ADEQUATE 0 / EXPERIENCE DEBT 0**. PR remains Draft / DO NOT MERGE unless separately authorized.
