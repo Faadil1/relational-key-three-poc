@@ -29,27 +29,48 @@ VALIDATED remains 24.
 - R5.8 City / Gatineau — STRONG
 - R5.9 Service / Benin — STRONG
 
-## Service closure
-Candidate `families/service-benin/r5-9.html` @ `ffaab4d1a8268dad054c9c15a52e07f7c550833b`.
-USER proof `/mnt/data/cc84b5d8-b132-49cf-8975-c2f0d7e8b631.mp4` — PASS.
-Promotion `families/service-benin/index.html` @ `7f80542b55dfca6b45ec2b246d202e485e13448a`.
-Retry `22b380efd6eea53e317a4bfa5fc0d48de38aa066`.
-LIVE `dpl_c16YpK1hJxbQ9Jt2SpCoDgZriyVZ` READY.
-Public `/families/service-benin/` verified HTTP 200 serving the promoted wrapper redirecting to `r5-9.html`.
-Closure `POST_CLOSEOUT_R5_9D_SERVICE_BENIN_USER_PASS_LIVE_PROMOTION_STRONG_CLOSED.md` @ `5998d2191eada23d5a446d465c5e15a75d165a19`.
-
 # R5.10 — SIGNAL / NIGERIA — ACTIVE
 Baseline ADEQUATE.
 
+Audit:
+`POST_CLOSEOUT_R5_10A_SIGNAL_NIGERIA_LANLATE_REPEATER_AUDIT.md` @ `2ec07bdd2ea95e34b760997ac4595d43f3c996ca`.
+
+Mechanism:
+# **LANLATE EARTH STATION → REPEATER CHAIN → CARRIED LINK**
+
+Law:
+`BEAM → DISH FOCUS → FEED CAPTURE → IKORODU → OGIDO → ALABATA → LINK CARRIED`.
+
+Candidate:
+`families/signal-nigeria/r5-10.html` @ `7a02cfd2d9e1c594cb2c7a7e760da9a017b2f126`.
+Candidate register:
+`POST_CLOSEOUT_R5_10B_SIGNAL_NIGERIA_LANLATE_REPEATER_CANDIDATE.md` @ `563be9abe78843259690be1a03c6b6666290eec3`.
+
+MATCHING:
+beam → focus → feed capture → IKORODU → OGIDO → ALABATA → `CARRIED LINK REGISTERED`.
+
+OTHER:
+both members remain valid; beam/focus/feed remain valid; final relay handoff displaced; output remains open; link not carried.
+
+Truth boundary:
+site names are source-backed; exact topology, geography, frequencies, antenna geometry, timing, propagation and hardware are editorial.
+
+LIVE:
+`dpl_CveydAySzSYjiHcZwGnXYNyY8wJe` READY on exact candidate implementation commit.
+Candidate route verified HTTP 200.
+Public Signal wrapper unchanged.
+Shared runtime unchanged.
+Signal remains ADEQUATE pending USER proof.
+
 # ACTIVE GATE
-# **R5.10A — SIGNAL / NIGERIA SOURCE + MECHANISM AUDIT**
+# **R5.10C — SIGNAL / NIGERIA USER MATCHING + OTHER REGRESSION**
 
 Required:
-1. inspect current Signal family implementation and prior EXP-3 evidence;
-2. preserve validated Nigeria-specific signal/relay identity;
-3. search for a deeper pair-native consequence owned by both members;
-4. avoid generic center spectacle;
-5. keep public Signal wrapper and shared runtime unchanged during audit;
-6. build one isolated R5.10 candidate only if evidence supports a real STRONG threshold.
+1. `MATCHING CHAIN` → `TEST RELATIONSHIP`;
+2. hold all three repeater nodes + carried-link final state;
+3. `OTHER CHAIN` → `TEST RELATIONSHIP`;
+4. hold displaced final handoff / open-output residual.
+
+Only USER PASS may authorize public Signal promotion and ADEQUATE → STRONG.
 
 After Signal, final remaining ADEQUATE family is Frida / Coyoacán.
