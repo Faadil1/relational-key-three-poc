@@ -111,8 +111,8 @@ const pilots = [
   {
     id: 'music-box-sainte-croix', label: 'Music Box · Sainte-Croix', labels: ['OTHER CYLINDER', 'CYLINDER A'],
     v1: {
-      other: async (f) => { await f.locator('#resetBtn').click(); await f.locator('#otherBtn').click(); await f.locator('#engageBtn').click(); await f.locator('#cylinderWrap').focus(); await f.keyboard.press('ArrowRight'); await f.keyboard.press('ArrowRight'); await f.waitForTimeout(180); },
-      matching: async (f) => { await f.locator('#resetBtn').click(); await f.locator('#engageBtn').click(); await f.locator('#cylinderWrap').focus(); await f.keyboard.press('ArrowRight'); await f.keyboard.press('ArrowRight'); await f.keyboard.press('ArrowRight'); await f.waitForTimeout(180); },
+      other: async (f) => { await f.locator('#resetBtn').click(); await f.locator('#otherBtn').click(); await f.locator('#engageBtn').click(); const control = f.locator('#cylinderWrap'); await control.focus(); await control.press('ArrowRight'); await control.press('ArrowRight'); await f.waitForTimeout(180); },
+      matching: async (f) => { await f.locator('#resetBtn').click(); await f.locator('#engageBtn').click(); const control = f.locator('#cylinderWrap'); await control.focus(); await control.press('ArrowRight'); await control.press('ArrowRight'); await control.press('ArrowRight'); await f.waitForTimeout(180); },
       read: async (f) => `${(await f.locator('#cylinderTitle').innerText()).trim()} · ${(await f.locator('#readout').innerText()).trim()}`,
       otherExpect: /Other Cylinder .*DECODED|Other Cylinder .*ENGAGED/i, matchingExpect: /Cylinder A .*DECODED|Cylinder A .*ENGAGED/i,
     },
