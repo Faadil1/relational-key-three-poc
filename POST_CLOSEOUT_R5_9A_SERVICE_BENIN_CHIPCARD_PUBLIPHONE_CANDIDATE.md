@@ -76,6 +76,11 @@ The candidate does not reproduce an operational service command or present-day p
 Initial Vercel status on implementation commit `ffaab4d1a8268dad054c9c15a52e07f7c550833b` = `failure` pointing to Hobby `build-rate-limit`.
 Interpretation: deployment capacity blocker, not application failure.
 
+### Retry 01
+On explicit human instruction to retry, a deployment-only/status-register commit was created without any semantic, visual or runtime change to `families/service-benin/r5-9.html`.
+Candidate implementation remains exactly `ffaab4d1a8268dad054c9c15a52e07f7c550833b`.
+Acceptance remains READY + unchanged candidate integrity before USER proof.
+
 Public Service wrapper unchanged.
 Shared runtime unchanged.
 Service remains ADEQUATE until USER PASS + public promotion.
