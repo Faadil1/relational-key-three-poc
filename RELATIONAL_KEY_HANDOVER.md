@@ -33,6 +33,8 @@ Source audit `POST_CLOSEOUT_R5_8A_CITY_GATINEAU_SOURCE_RIVER_SEAM_AUDIT.md` @ `8
 Mechanism: **RIVER-SEAM CROSSING / BANK-TO-BANK HANDOFF**.
 Candidate `families/city-gatineau/r5-8.html` @ implementation `796ee8afc24c879d148b90046037f80b0c5bcec6`.
 Dedicated blocker register latest commit: `503a573f14e1b09f1ab0e1a913e389089630ae19`.
+R5 queue sync commit: `9da0a7df5fe65e62c0a7c25f1953946679498495`.
+Current-state sync commit: `a59f476e2790c2f038bb53dae2dabed488228c23`.
 
 MATCHING design:
 - west-bank and east-bank route fragments are valid before relation;
