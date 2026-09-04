@@ -47,7 +47,7 @@ const pilots = [
   {
     id: 'signal-nigeria',
     label: 'Signal · Nigeria',
-    pair: ['LANLATE UPLINK CARD', 'SATELLITE RELAY PATH', 'REMOTE RECEIVE CARD'],
+    pair: ['LANLATE EARTH-STATION CARD', 'CARRIED SIGNAL / REPEATER HANDOFF', 'IKORODU → OGIDO → ALABATA CHAIN'],
     other: /OTHER .*relay path breaks/i,
     matching: /MATCHING .*continuous relay path.*receiving card responds/i,
   },
