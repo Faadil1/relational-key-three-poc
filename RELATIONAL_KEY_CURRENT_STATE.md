@@ -50,7 +50,7 @@ Law:
 `MIRROR → REFLECTION LOCK → TRACE CARRIES → EASEL RECEIVES → PAINTED REGISTER`.
 
 Candidate `families/frida-coyoacan/r5-11.html` @ implementation `9402db8b56e2922a74223d1ebba3035e06f91c01`.
-Candidate register `POST_CLOSEOUT_R5_11B_FRIDA_COYOACAN_MIRROR_EASEL_CANDIDATE.md`.
+Candidate blob: `bd7e173b0f850293d74e7866497d23c00635ea8c`.
 
 MATCHING:
 - mirror and easel valid before relation;
