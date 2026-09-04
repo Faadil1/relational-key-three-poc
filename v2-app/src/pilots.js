@@ -73,27 +73,27 @@ export const pilots = [
       relation: 'CONTROLLED DISPARITY / FUSION',
       b: 'RIGHT VIEW CARD',
     },
-    matching: 'Two purpose-built views retain their difference while the controlled relation supports a stable depth reading.',
+    matching: 'Two archive-derived gallery views retain their difference while the controlled relation supports a stable depth reading.',
     other: 'Both views remain valid but their disparity refuses the intended fusion.',
     memorable: 'A spatial reading exists only because two flat view cards relate correctly.',
     archiveBoundary:
-      'Uses purpose-built neutral views to model documented stereoscopic card/viewer mechanics. No historical view is required for the experience and stereopsis is not required for comprehension.',
+      'Procedural paired gallery views are grounded in the same 1871 exhibition-room stereocard lineage used by V1; no archival raster is reproduced. Controlled viewpoint difference, not decorative 3D, drives the depth relation, and stereopsis is not required for comprehension.',
   },
   {
     id: 'signal-nigeria',
     label: 'Signal · Nigeria',
-    className: 'SIGNAL / ORIENTATION / RELAY',
-    law: 'LANLATE UPLINK CARD → SATELLITE RELAY PATH → REMOTE RECEIVE CARD',
+    className: 'SIGNAL / CARRIED LINK / REPEATER HANDOFF',
+    law: 'LANLATE EARTH-STATION CAPTURE → CARRIED SIGNAL / REPEATER HANDOFF → IKORODU · OGIDO · ALABATA CHAIN',
     pairMembers: {
-      a: 'LANLATE UPLINK CARD',
-      relation: 'SATELLITE RELAY PATH',
-      b: 'REMOTE RECEIVE CARD',
+      a: 'LANLATE EARTH-STATION CARD',
+      relation: 'CARRIED SIGNAL / REPEATER HANDOFF',
+      b: 'IKORODU → OGIDO → ALABATA CHAIN',
     },
-    matching: 'The uplink orientation establishes a continuous relay path and the receiving card visibly responds.',
-    other: 'Both signal cards remain valid, but the relay breaks before the receiving response can register.',
-    memorable: 'A carried signal becomes visible only as a path that leaves one card and arrives inside the other.',
+    matching: 'Lanlate capture establishes a carried path; the three source-backed repeater handoffs register before link output.',
+    other: 'Both cards remain valid, but the handoff chain breaks before the final repeater can register the carried link.',
+    memorable: 'A carried signal visibly leaves the earth-station card and only completes when the repeater chain on the other card responds.',
     archiveBoundary:
-      'Procedural abstraction informed by documented Nigerian satellite-earth-station and telecommunications history; not a certified reconstruction of Lanlate geometry, frequencies, routing or equipment.',
+      'Site names are source-backed. Routing, geometry, frequencies, hop timing and signal behavior remain illustrative rather than a certified historical engineering diagram.',
   },
 ];
 
