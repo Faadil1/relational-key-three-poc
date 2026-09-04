@@ -33,7 +33,9 @@
 }
 
 /* TRACE Gate 6.5 — bounded mobile reflow repair. */
-html, body { overflow-x: hidden; }
+@media (max-width: 960px) {
+  .controls { width: 100% !important; max-width: 100% !important; }
+}
 </style>
 </head>
 <body>
