@@ -2,36 +2,64 @@
 
 Updated: 2026-09-04
 Repository: `Faadil1/relational-key-three-poc`
-Branch: `collection/global-refinement-1`
-PR #21: `DRAFT / DO NOT MERGE`
+Canonical source of truth: `main`
+Production merge commit: `0f4b6bad893c0387de36f751fc651f5a6267c16d`
+Integration PR #22: MERGED
+Historical PR #21: Draft / historical only
+Production deployment: `dpl_2Lc7VLQjHbGDjCfNetNWQ7dpE6Ms` — READY
+Stable URL: `https://relational-key-collectionrelational.vercel.app/`
 
 # RESUME HERE
-# **R5 CLOSED — HUMAN DECISION REQUIRED FOR ANY NEXT PHASE**
+# **TRACE DESIGN — GATE 6.5 EVALUATION CAPTURE**
 
-Do NOT reopen prior Global Refinement closeout; it remains PASS / frozen.
+Human authorization: involve TRACE Design for the next phase.
+
+Do NOT reopen the completed R5 queue by default.
 Do NOT mutate `families/_shared/round13r/index.html` for family-specific refinement.
-Do NOT merge, mark Ready, request review, retarget, or change PR state without explicit human instruction.
+Do NOT reinterpret prior USER evidence as TRACE evidence; import it as frozen project evidence and evaluate the finished production experience separately.
 
-# GLOBAL / R5 STATE
-VALIDATED 24.
-USER relational integrity 24/24 PASS.
-Final R5 matrix: **STRONG 24 / ADEQUATE 0 / EXPERIENCE DEBT 0**.
+# FROZEN PRODUCT STATE
+- VALIDATED 24
+- USER relational integrity 24/24 PASS
+- final matrix: **STRONG 24 / ADEQUATE 0 / EXPERIENCE DEBT 0**
+- Global Refinement: CLOSED / frozen
+- R5: CLOSED / frozen
+- public promotion: complete
+- `main`: final source of truth
+- Vercel production: READY
 
-R5 closed STRONG:
-Food / Toyama; Textile / Bonwire; Metate / Teotitlán; Tongiaki / Tonga; Garamut / East Sepik–Ramu; Kento / Japan; Swell / Marshall Islands; City / Gatineau; Service / Benin; Signal / Nigeria; Frida / Coyoacán.
+# PRODUCT ROOT
+**THE RELATIONAL PAIR REMAINS THE PRODUCT.**
+`PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
 
-# R5.11 FRIDA / COYOACÁN — CLOSED ✅
-Mechanism:
-**BED MIRROR → REFLECTED SELF → RECLINING EASEL → PAINTED REGISTER**.
-Candidate `families/frida-coyoacan/r5-11.html` @ `9402db8b56e2922a74223d1ebba3035e06f91c01`.
-USER proof `/mnt/data/2adce17d-ca10-4186-8ac0-c42537346194.mp4` — PASS.
-Promotion `families/frida-coyoacan/index.html` @ `5dfdbfb3e0c68411bff5ea02701a1059af9f0b11` → `/families/frida-coyoacan/r5-11.html`.
-LIVE `dpl_2WsrmHsDitGLkx1x3K6LMz35S9yv` READY on `7a820f4f4158112abec435f5eb5dc292918d3ee9`; public route HTTP 200.
-Closure `POST_CLOSEOUT_R5_11E_FRIDA_COYOACAN_USER_PASS_LIVE_PROMOTION_STRONG_R5_CLOSED.md` @ `6ae2214f75d05b4610335bf16056a82b1afa5aeb`.
+Frozen laws:
+- **EXPANSION MUST DEEPEN THE RELATION, NOT REPLACE IT.**
+- **TECHNOLOGY SERVES THE RELATIONAL MECHANISM.**
+- **THE MEMORABLE MOMENT MUST BELONG TO THE PAIR.**
 
-# RUNTIME INTEGRITY
-Shared runtime remains unchanged from PR base `79ba99ec739dfffb40563e9a89edfdffe0fdd3d5`.
+# TRACE ENTRY CONTRACT
+Project slug: `relational-key`
+State class: TRACE project runtime
+Phase: E — Evaluation & Evolution
+Current gate: **6.5 — Evaluation Capture**
 
-# EXACT NEXT ACTION
-None inside R5.
-Wait for explicit human instruction before starting a new refinement phase or changing PR #21 state.
+Gate 6.5 objective:
+Audit the production artifact in the real evaluator-facing contexts that matter: desktop, mobile/responsive, collection navigation, individual family route, first-impression clarity, readable proof, visual identity continuity, and capture quality.
+
+Gate 6.5 must answer:
+1. Can a new evaluator understand the relational-pair product without chat context?
+2. Are the 24 families navigable and legible as one coherent collection while preserving individuality?
+3. Are critical promises visible and experienceable in real viewport/capture contexts?
+4. Does any production route, typography, responsive state, or presentation layer undermine the validated mechanics?
+5. What is the minimum bounded rework, if any, before portfolio/demo packaging?
+
+If Gate 6.5 PASS:
+→ Gate 6.75 Demo Narrative / Evidence Film.
+Then → Gate 7 Freeze / Promotion verification.
+Then → Gate 8 Post-mortem / Learning Promotion.
+
+If Gate 6.5 finds a concrete regression:
+→ open only the smallest targeted TRACE rework gate needed; do not restart R5 globally.
+
+# EXACT NEXT OUTPUT
+Create TRACE project state + Project Adapter for `relational-key`, import frozen evidence, and produce **TRACE Gate 6.5 Evaluation Capture Plan / Assurance Baseline**.
