@@ -1,0 +1,54 @@
+name: TRACE Gate 6.5 Production Capture
+
+on:
+  push:
+    branches:
+      - trace/gate-6-5-capture-001
+    paths:
+      - '.trace-validation/**'
+      - '.github/workflows/trace-gate65-capture.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  capture:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    env:
+      RELATIONAL_KEY_PRODUCTION_URL: https://relational-key-collectionrelational.vercel.app
+      TRACE_CAPTURE_OUT: trace-gate65-artifacts
+    steps:
+      - name: Checkout exact validation head
+        uses: actions/checkout@v4
+
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Install Playwright
+        run: |
+          python -m pip install --upgrade pip
+          python -m pip install playwright==1.55.0
+          python -m playwright install --with-deps chromium
+
+      - name: Capture production Gate 6.5 evidence
+        run: python .trace-validation/gate65_capture.py
+
+      - name: Publish summary
+        if: always()
+        run: |
+          if [ -f trace-gate65-artifacts/SUMMARY.md ]; then
+            cat trace-gate65-artifacts/SUMMARY.md >> "$GITHUB_STEP_SUMMARY"
+          fi
+
+      - name: Upload Gate 6.5 evidence bundle
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: relational-key-trace-gate65-capture
+          path: trace-gate65-artifacts/
+          if-no-files-found: error
+          retention-days: 30
