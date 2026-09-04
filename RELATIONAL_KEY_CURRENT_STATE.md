@@ -55,7 +55,7 @@ USER PASS / pending-LIVE register:
 `POST_CLOSEOUT_R5_8C_CITY_GATINEAU_USER_PASS_PROMOTION_PENDING_LIVE.md` @ `2f3525bc4a01c04420557cc5ba9d6937e8ee5ca6`.
 
 LIVE promotion status:
-Vercel returned Hobby `build-rate-limit` on the promotion commit. No READY deployment containing the public promotion is claimed yet.
+Vercel returned Hobby `build-rate-limit` on the promotion commit and subsequent canonical syncs. No READY deployment containing the public promotion is claimed yet.
 
 # STATE SEPARATION
 - SOURCE City: PASS
@@ -73,7 +73,7 @@ Vercel returned Hobby `build-rate-limit` on the promotion commit. No READY deplo
 
 Next exact action:
 1. do not modify City candidate or wrapper semantics;
-2. wait/retry until any branch deployment containing promotion commit `952b7d...` reaches READY;
+2. retry/check until any branch deployment containing promotion commit `952b7d...` reaches READY;
 3. verify `/families/city-gatineau/` serves the redirect to `r5-8.html`;
 4. then close City STRONG and matrix → `21 / 3 / 0`;
 5. proceed to R5.9 Service / Benin.
