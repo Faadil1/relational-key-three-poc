@@ -15,7 +15,7 @@ R5 does not authorize merge or review-state changes.
 Food → Textile → Metate → Tongiaki → Garamut → Kento → Swell → City → Service → Signal → Frida.
 
 # CURRENT CLOSED MATRIX
-# **STRONG 20 / ADEQUATE 4 / EXPERIENCE DEBT 0**
+# **STRONG 21 / ADEQUATE 3 / EXPERIENCE DEBT 0**
 VALIDATED remains 24.
 
 # CLOSED R5 ✅
@@ -26,33 +26,43 @@ VALIDATED remains 24.
 - R5.5 Garamut / East Sepik–Ramu — STRONG
 - R5.6 Kento / Japan — STRONG
 - R5.7 Swell / Marshall Islands — STRONG
+- R5.8 City / Gatineau — STRONG
 
-# R5.8 — CITY / GATINEAU — USER PASS ✅ / LIVE PROMOTION PENDING
-Mechanism: **RIVER-SEAM CROSSING / BANK-TO-BANK HANDOFF**.
-Candidate `families/city-gatineau/r5-8.html` @ `796ee8afc24c879d148b90046037f80b0c5bcec6`.
+## City closure
+USER proof `/mnt/data/940f9e51-5c51-4331-90b0-4a55800f684e.mp4`.
+Promotion `families/city-gatineau/index.html` @ `952b7d973bdc0a81f421708668993040390c1b0d`.
+LIVE `dpl_DJHCAoYdkbtyy22Bbp9xg7rMu2Jw` READY on `c3dffbf5b157c228db956cf6fd0ea337c76c4f2a`.
+Closure `POST_CLOSEOUT_R5_8D_CITY_GATINEAU_USER_PASS_LIVE_PROMOTION_STRONG_CLOSED.md` @ `ac26df1253c64bd5480062f5b62ef37aa75abf27`.
 
-USER proof:
-`/mnt/data/940f9e51-5c51-4331-90b0-4a55800f684e.mp4` — 12.93 s / 1906×962 / 30 fps / 388 frames.
-USER verdict:
-`CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS`.
+# R5.9 — SERVICE / BENIN — ACTIVE
+Baseline ADEQUATE.
+Mechanism:
+# **CHIP CARD → PUBLIC PHONE READER → CONTACT REGISTER → LINE WINDOW**
 
-Promotion SOURCE:
-`families/city-gatineau/index.html` @ `952b7d973bdc0a81f421708668993040390c1b0d` → `r5-8.html`.
+Candidate `families/service-benin/r5-9.html` @ implementation `ffaab4d1a8268dad054c9c15a52e07f7c550833b`.
+Candidate/source register `POST_CLOSEOUT_R5_9A_SERVICE_BENIN_CHIPCARD_PUBLIPHONE_CANDIDATE.md` @ `f11ac00f04a26f52d8ff5c8b0ca53d7fcebc086e`.
 
-Pending-LIVE register:
-`POST_CLOSEOUT_R5_8C_CITY_GATINEAU_USER_PASS_PROMOTION_PENDING_LIVE.md` @ `2f3525bc4a01c04420557cc5ba9d6937e8ee5ca6`.
+Source basis:
+- Archives nationales du Bénin Série J;
+- ITU Bénin telecommunications report documenting supplementary services and publiphone rollout;
+- PTT Bénin chip-phonecard object evidence.
 
-Canonical state:
-`RELATIONAL_KEY_CURRENT_STATE.md` @ `25bad7c83a1ccfe0af7fc3d789b7f29df2b8b9d4`.
-HANDOVER @ `15094777d8bbcffafd76389075b5c55becd4b31f`.
+MATCHING:
+`APPROACH → SEAT → CONTACT 01…06 → REGISTER → LINE WINDOW OPEN`.
+OTHER:
+valid card + valid reader remain offset; partial contact residual; line window closed.
 
-Vercel status on promotion commit and later syncs remains Hobby `build-rate-limit`.
-No READY public-promotion deployment is claimed yet.
+Truth boundary:
+six-contact geometry, sequence timing, tariff/unit consumption and exact public-phone hardware are editorial/illustrative, not claimed as historical procedure.
+
+Initial Vercel status on implementation commit = Hobby `build-rate-limit` failure.
+Public Service wrapper unchanged.
+Shared runtime unchanged.
+Service remains ADEQUATE.
 
 # ACTIVE GATE
-# **R5.8C-LIVE — CITY PUBLIC PROMOTION RETRY**
+# **R5.9B-LIVE — SERVICE / BENIN CANDIDATE DEPLOYMENT**
 
-Do not change City candidate semantics.
-Do not request another USER video.
-Next successful branch deployment containing `952b7d...` must be READY and the public City wrapper must route to `r5-8.html`.
-Only then close City STRONG, update matrix to `21 / 3 / 0`, and activate R5.9 Service / Benin.
+Do not change Service candidate semantics just to probe capacity.
+Require READY deployment containing unchanged `r5-9.html`, then candidate route/exact-commit integrity proof, temporary USER share URL, and one MATCHING + OTHER USER regression.
+Only USER PASS may authorize Service promotion and ADEQUATE → STRONG.
