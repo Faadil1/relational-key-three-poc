@@ -34,39 +34,26 @@ Mechanism:
 # **BED MIRROR → REFLECTED SELF → RECLINING EASEL → PAINTED REGISTER**
 Law: `MIRROR → REFLECTION LOCK → TRACE CARRIES → EASEL RECEIVES → PAINTED REGISTER`.
 
-Candidate `families/frida-coyoacan/r5-11.html` @ implementation `9402db8b56e2922a74223d1ebba3035e06f91c01`.
+Candidate `families/frida-coyoacan/r5-11.html` @ `9402db8b56e2922a74223d1ebba3035e06f91c01`.
 Candidate blob `bd7e173b0f850293d74e7866497d23c00635ea8c`.
-Candidate LIVE proof before USER:
-- retry `793524ab6cf589d08c159f1cbbd4c8a75eb1f00b`;
-- deployment `dpl_7BoMjEUsCFPHQ2Pam75h2iPoGByW` READY;
-- candidate route HTTP 200;
-- deployed candidate blob identical to implementation.
+Candidate deployment before USER: `dpl_7BoMjEUsCFPHQ2Pam75h2iPoGByW` READY on retry `793524ab6cf589d08c159f1cbbd4c8a75eb1f00b`; route HTTP 200; blob unchanged.
 
 USER proof:
-`/mnt/data/2adce17d-ca10-4186-8ac0-c42537346194.mp4`
-- 19.50 s
-- 1914×970
-- 30 fps
-- 585 frames
-
-Observed MATCHING:
-reflection visible → anchors lock → trace carries → outline → features → hair/crown → final painted self-image formed.
-
-Observed OTHER:
-mirror + easel remain valid; reflection remains valid; trace offset; canvas retains ghosted/doubled red residual; painted register misaligns without invalidating either member.
-
+`/mnt/data/2adce17d-ca10-4186-8ac0-c42537346194.mp4` — 19.50 s / 1914×970 / 30 fps / 585 frames.
 USER verdict:
 **CAUSAL PASS / EMBODIMENT-STRONG PASS / VISUAL-SPECIFICITY PASS / TRUTH PASS**.
 
+MATCHING observed: reflection → anchors lock → trace carries → outline → features → hair/crown → painted self-image formed.
+OTHER observed: mirror + easel + reflection remain valid; trace offset; ghosted/doubled red residual remains on Card B; painted register misaligns.
+
 Promotion SOURCE:
-`families/frida-coyoacan/index.html` now resolves to `/families/frida-coyoacan/r5-11.html`.
-Promotion commit: `5dfdbfb3e0c68411bff5ea02701a1059af9f0b11`.
+`families/frida-coyoacan/index.html` → `/families/frida-coyoacan/r5-11.html` @ `5dfdbfb3e0c68411bff5ea02701a1059af9f0b11`.
 
 USER/PROMOTION register:
-`POST_CLOSEOUT_R5_11D_FRIDA_COYOACAN_USER_PASS_PROMOTION_PENDING_LIVE.md` @ `ab47ab3bc202fde064e13f7ecc3e25f8e8297b25`.
+`POST_CLOSEOUT_R5_11D_FRIDA_COYOACAN_USER_PASS_PROMOTION_PENDING_LIVE.md` created after USER PASS.
 
 LIVE promotion status:
-Vercel Hobby `build-rate-limit` on promotion commit. No application failure inferred.
+Vercel Hobby `build-rate-limit` on promotion commit and latest canonical head checked. No application failure inferred.
 No additional USER proof required.
 
 Truth boundary remains explicit: documented mirror-above-bed + specially made reclining-easel relationship; exact optics, geometry, anchors, timing, transfer and portrait contour are editorial, not a reconstruction of Frida's technique or a specific painting.
