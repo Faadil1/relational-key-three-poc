@@ -1,24 +1,20 @@
 {
   "gate": "6.5",
   "scope": "bounded evaluator/accessibility repair",
-  "changed_file_count": 8,
+  "changed_file_count": 0,
   "files": [
     {
       "path": "families/food-toyama/r5-1.html",
-      "changed": true,
-      "changes": [
-        "mobile_reflow_intrinsic_controls_fix"
-      ],
-      "bytes_before": 18385,
+      "changed": false,
+      "changes": [],
+      "bytes_before": 18448,
       "bytes_after": 18448
     },
     {
       "path": "families/textile-bonwire/r5-2.html",
-      "changed": true,
-      "changes": [
-        "mobile_reflow_intrinsic_controls_fix"
-      ],
-      "bytes_before": 13271,
+      "changed": false,
+      "changes": [],
+      "bytes_before": 13334,
       "bytes_after": 13334
     },
     {
@@ -51,56 +47,44 @@
     },
     {
       "path": "families/swell-marshall/r5-7.html",
-      "changed": true,
-      "changes": [
-        "mobile_reflow_intrinsic_controls_fix"
-      ],
-      "bytes_before": 15482,
+      "changed": false,
+      "changes": [],
+      "bytes_before": 15545,
       "bytes_after": 15545
     },
     {
       "path": "families/city-gatineau/r5-8.html",
-      "changed": true,
-      "changes": [
-        "mobile_reflow_intrinsic_controls_fix"
-      ],
-      "bytes_before": 14040,
+      "changed": false,
+      "changes": [],
+      "bytes_before": 14103,
       "bytes_after": 14103
     },
     {
       "path": "families/service-benin/r5-9.html",
-      "changed": true,
-      "changes": [
-        "mobile_reflow_intrinsic_controls_fix"
-      ],
-      "bytes_before": 15433,
+      "changed": false,
+      "changes": [],
+      "bytes_before": 15496,
       "bytes_after": 15496
     },
     {
       "path": "families/signal-nigeria/r5-10.html",
-      "changed": true,
-      "changes": [
-        "mobile_reflow_intrinsic_controls_fix"
-      ],
-      "bytes_before": 16322,
+      "changed": false,
+      "changes": [],
+      "bytes_before": 16385,
       "bytes_after": 16385
     },
     {
       "path": "families/frida-coyoacan/r5-11.html",
-      "changed": true,
-      "changes": [
-        "mobile_reflow_intrinsic_controls_fix"
-      ],
-      "bytes_before": 17405,
+      "changed": false,
+      "changes": [],
+      "bytes_before": 17468,
       "bytes_after": 17468
     },
     {
       "path": "families/stereoscopy-uk/snapshot.html",
-      "changed": true,
-      "changes": [
-        "mobile_reflow_intrinsic_controls_fix"
-      ],
-      "bytes_before": 16590,
+      "changed": false,
+      "changes": [],
+      "bytes_before": 16653,
       "bytes_after": 16653
     }
   ],
