@@ -2,117 +2,36 @@ import { chromium } from 'playwright';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-const V1 = process.env.RK_V1_URL || 'http://127.0.0.1:4173';
-const V2 = process.env.RK_V2_URL || 'http://127.0.0.1:4174';
-const OUT = process.env.RK_RUNTIME_OUT || 'wave3-runtime-evidence';
-const SHOTS = path.join(OUT, 'screenshots');
-await fs.mkdir(SHOTS, { recursive: true });
-const manifest = JSON.parse(await fs.readFile('dist/.vite/manifest.json', 'utf8'));
-const bySource = new Map(Object.entries(manifest).filter(([,v]) => v.src).map(([k,v]) => [v.src,{ key:k, entry:v }]));
+const V1=process.env.RK_V1_URL||'http://127.0.0.1:4173';
+const V2=process.env.RK_V2_URL||'http://127.0.0.1:4174';
+const OUT=process.env.RK_RUNTIME_OUT||'wave3-runtime-evidence';
+const SHOTS=path.join(OUT,'screenshots');
+await fs.mkdir(SHOTS,{recursive:true});
+const manifest=JSON.parse(await fs.readFile('dist/.vite/manifest.json','utf8'));
+const bySource=new Map(Object.entries(manifest).filter(([,v])=>v.src).map(([k,v])=>[v.src,{key:k,entry:v}]));
 
-const families = [
-  {
-    id:'boulle-france', label:'Boulle · France', src:'src/sceneEntries/BoulleEntry.jsx',
-    pair:['PREMIÈRE PARTIE MATERIAL FIELD','SHARED CUT / RECIPROCAL EXCHANGE','CONTRE-PARTIE MATERIAL FIELD'],
-    v1:{
-      other:async f=>{await f.locator('[data-mode="other"]').click();await f.locator('#run').click();await f.waitForTimeout(4700)},
-      matching:async f=>{await f.locator('[data-mode="match"]').click();await f.locator('#run').click();await f.waitForTimeout(5600)},
-      read:async f=>(await f.locator('#result').innerText()).trim(),
-      otherExpect:/SELECTED RELATION NOT REGISTERED|NO COMPLETE PARTIE/i,
-      matchingExpect:/BOTH OBJECTS REMAIN DISTINCT|PARTIE AND CONTREPARTIE ARE RECIPROCAL/i,
-    },
-    v2:{other:/OTHER .*cut paths do not resolve into one reciprocal map/i,matching:/MATCHING .*one shared cut yields two reciprocal material inverses/i},
-  },
-  {
-    id:'khipu-peru', label:'Khipu · Peru', src:'src/sceneEntries/KhipuEntry.jsx',
-    pair:['PRIMARY / CARRYING CORD FIELD','SHARED TENSION / ATTACHMENT','SECONDARY CORD + KNOT FIELD'],
-    v1:{
-      other:async f=>{await f.locator('#other').click();await f.locator('#run').click();await f.waitForTimeout(1750)},
-      matching:async f=>{await f.locator('#match').click();await f.locator('#run').click();await f.waitForTimeout(1750)},
-      read:async f=>(await f.locator('#result').innerText()).trim(),
-      otherExpect:/RESIST .* residual .* both records remain valid/i,
-      matchingExpect:/REGISTERED .* structural continuation resolved .* meaning not inferred/i,
-    },
-    v2:{other:/OTHER .*tension and attachment positions retain a visible residual/i,matching:/MATCHING .*shared tension settles the structural attachment/i},
-  },
-  {
-    id:'mate-bombilla-argentina', label:'Mate + Bombilla · Argentina', src:'src/sceneEntries/MateBombillaEntry.jsx',
-    pair:['MATE / PARTICLE FIELD','BOMBILLA INSERTION + PERFORATED FILTER','SELECTIVE FLOW PATH'],
-    v1:{
-      other:async f=>{await f.locator('#reset').click();await f.waitForTimeout(120)},
-      matching:async f=>{await f.locator('#reset').click();await f.locator('#insert').click();await f.waitForTimeout(760);const b=f.locator('#bombilla');await b.focus();await b.press('Space',{delay:180});await f.waitForTimeout(120)},
-      read:async f=>(await f.locator('#result').innerText()).trim(),
-      otherExpect:/SEPARATE .* no selective flow path/i,
-      matchingExpect:/DRAW ACTIVE .* liquid follows the bombilla path .* particulate yerba remains/i,
-    },
-    v2:{other:/OTHER .*partial insertion does not establish a complete selective passage/i,matching:/MATCHING .*liquid passes through the filter path .* particulate matter remains contained/i},
-  },
+const families=[
+{id:'boulle-france',label:'Boulle · France',src:'src/sceneEntries/BoulleEntry.jsx',pair:['PREMIÈRE PARTIE MATERIAL FIELD','SHARED CUT / RECIPROCAL EXCHANGE','CONTRE-PARTIE MATERIAL FIELD'],v1:{other:async f=>{await f.locator('[data-mode="other"]').click();await f.locator('#run').click();await f.waitForTimeout(4700)},matching:async f=>{await f.locator('[data-mode="match"]').click();await f.locator('#run').click();await f.waitForTimeout(5600)},read:async f=>(await f.locator('#result').innerText()).trim(),otherExpect:/SELECTED RELATION NOT REGISTERED|NO COMPLETE PARTIE/i,matchingExpect:/BOTH OBJECTS REMAIN DISTINCT|PARTIE AND CONTREPARTIE ARE RECIPROCAL/i},v2:{other:/OTHER .*cut paths do not resolve into one reciprocal map/i,matching:/MATCHING .*one shared cut yields two reciprocal material inverses/i}},
+{id:'khipu-peru',label:'Khipu · Peru',src:'src/sceneEntries/KhipuEntry.jsx',pair:['PRIMARY / CARRYING CORD FIELD','SHARED TENSION / ATTACHMENT','SECONDARY CORD + KNOT FIELD'],v1:{other:async f=>{await f.locator('#other').click();await f.locator('#run').click();await f.waitForTimeout(1750)},matching:async f=>{await f.locator('#match').click();await f.locator('#run').click();await f.waitForTimeout(1750)},read:async f=>(await f.locator('#result').innerText()).trim(),otherExpect:/RESIST .* residual .* both records remain valid/i,matchingExpect:/REGISTERED .* structural continuation resolved .* meaning not inferred/i},v2:{other:/OTHER .*tension and attachment positions retain a visible residual/i,matching:/MATCHING .*shared tension settles the structural attachment/i}},
+{id:'mate-bombilla-argentina',label:'Mate + Bombilla · Argentina',src:'src/sceneEntries/MateBombillaEntry.jsx',pair:['MATE / PARTICLE FIELD','BOMBILLA INSERTION + PERFORATED FILTER','SELECTIVE FLOW PATH'],v1:{other:async f=>{await f.locator('#reset').click();await f.waitForTimeout(120)},matching:async f=>{await f.locator('#reset').click();await f.locator('#insert').click();await f.waitForTimeout(760);const b=f.locator('#bombilla');await b.focus();await b.dispatchEvent('keydown',{code:'Space',key:' ',bubbles:true});await f.waitForTimeout(180)},cleanup:async f=>{const b=f.locator('#bombilla');await b.dispatchEvent('keyup',{code:'Space',key:' ',bubbles:true});await f.waitForTimeout(80)},read:async f=>(await f.locator('#result').innerText()).trim(),otherExpect:/SEPARATE .* no selective flow path/i,matchingExpect:/DRAW ACTIVE .* liquid follows the bombilla path .* particulate yerba remains/i},v2:{other:/OTHER .*partial insertion does not establish a complete selective passage/i,matching:/MATCHING .*liquid passes through the filter path .* particulate matter remains contained/i}},
 ];
+for(const family of families){const found=bySource.get(family.src);if(!found)throw new Error(`Manifest missing ${family.src}`);family.chunk=found.entry.file;if(!found.entry.isDynamicEntry)throw new Error(`${family.id}: family entry must be dynamic`)}
 
-for (const family of families) {
-  const found = bySource.get(family.src);
-  if (!found) throw new Error(`Manifest missing ${family.src}`);
-  family.chunk = found.entry.file;
-  if (!found.entry.isDynamicEntry) throw new Error(`${family.id}: family entry must be dynamic`);
-}
-
-async function context(browser, opts={}) {
-  const ctx = await browser.newContext({viewport:opts.viewport||{width:1440,height:900},reducedMotion:opts.reducedMotion||'no-preference',deviceScaleFactor:1});
-  await ctx.route('**/*', route => { const u=new URL(route.request().url()); return (u.hostname==='127.0.0.1'||u.hostname==='localhost') ? route.continue() : route.abort('blockedbyclient'); });
-  return ctx;
-}
-async function pageWithObservers(ctx){
-  const page=await ctx.newPage(), consoleErrors=[], pageErrors=[], scripts=new Set();
-  page.on('console',m=>{if(m.type()==='error')consoleErrors.push(m.text())});
-  page.on('pageerror',e=>pageErrors.push(e.message));
-  page.on('request',r=>{if(r.resourceType()==='script')scripts.add(new URL(r.url()).pathname.replace(/^\//,''))});
-  return {page,consoleErrors,pageErrors,scripts};
-}
-async function v1Surface(page){await page.waitForLoadState('domcontentloaded');await page.waitForTimeout(180);const iframe=page.locator('iframe');if(await iframe.count()){await page.waitForFunction(()=>document.querySelector('iframe')?.contentDocument?.readyState==='complete');const frames=page.frames().filter(f=>f!==page.mainFrame());if(frames.length!==1)throw new Error(`expected one V1 iframe, got ${frames.length}`);return frames[0]}return page}
+async function newContext(browser,opts={}){const ctx=await browser.newContext({viewport:opts.viewport||{width:1440,height:900},reducedMotion:opts.reducedMotion||'no-preference',deviceScaleFactor:1});await ctx.route('**/*',route=>{const u=new URL(route.request().url());return(u.hostname==='127.0.0.1'||u.hostname==='localhost')?route.continue():route.abort('blockedbyclient')});return ctx}
+async function observedPage(ctx){const page=await ctx.newPage(),consoleErrors=[],pageErrors=[],scripts=new Set();page.on('console',m=>{if(m.type()==='error')consoleErrors.push(m.text())});page.on('pageerror',e=>pageErrors.push(e.message));page.on('request',r=>{if(r.resourceType()==='script')scripts.add(new URL(r.url()).pathname.replace(/^\//,''))});return{page,consoleErrors,pageErrors,scripts}}
+async function v1Surface(page){await page.waitForLoadState('domcontentloaded');await page.waitForTimeout(180);if(await page.locator('iframe').count()){await page.waitForFunction(()=>document.querySelector('iframe')?.contentDocument?.readyState==='complete');const frames=page.frames().filter(f=>f!==page.mainFrame());if(frames.length!==1)throw new Error(`expected one V1 iframe, got ${frames.length}`);return frames[0]}return page}
 async function shot(page,name){await page.screenshot({path:path.join(SHOTS,`${name}.png`),fullPage:true})}
-async function status(page){return (await page.locator('.status-strip').innerText()).trim()}
 async function openV2(page,family){await page.goto(`${V2}/?pilot=${family.id}`,{waitUntil:'domcontentloaded'});await page.locator(`[data-scene-runtime="${family.id}"]`).waitFor({state:'attached',timeout:10000});await page.locator('canvas').waitFor({state:'visible',timeout:10000});await page.waitForTimeout(220)}
-async function assertV2Surface(page,family){
-  const pair=(await page.locator('.pair-member-rail strong').allInnerTexts()).map(v=>v.trim());
-  if(JSON.stringify(pair)!==JSON.stringify(family.pair))throw new Error(`${family.id}: pair rail mismatch ${JSON.stringify(pair)}`);
-  const live=await page.locator('.status-strip').getAttribute('aria-live'), role=await page.locator('.status-strip').getAttribute('role');
-  if(live!=='polite'||role!=='status')throw new Error(`${family.id}: live region contract missing`);
-  const layout=await page.evaluate(()=>({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,canvas:document.querySelectorAll('canvas').length,runtime:document.querySelectorAll('[data-scene-runtime]').length}));
-  if(layout.scrollWidth>layout.width)throw new Error(`${family.id}: overflow ${layout.scrollWidth}>${layout.width}`);
-  if(layout.canvas!==1||layout.runtime!==1)throw new Error(`${family.id}: expected one canvas/runtime`);
-  return layout;
-}
+async function assertSurface(page,family){const pair=(await page.locator('.pair-member-rail strong').allInnerTexts()).map(v=>v.trim());if(JSON.stringify(pair)!==JSON.stringify(family.pair))throw new Error(`${family.id}: pair rail mismatch ${JSON.stringify(pair)}`);if(await page.locator('.status-strip').getAttribute('aria-live')!=='polite'||await page.locator('.status-strip').getAttribute('role')!=='status')throw new Error(`${family.id}: live region contract missing`);const layout=await page.evaluate(()=>({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,canvas:document.querySelectorAll('canvas').length,runtime:document.querySelectorAll('[data-scene-runtime]').length}));if(layout.scrollWidth>layout.width)throw new Error(`${family.id}: overflow ${layout.scrollWidth}>${layout.width}`);if(layout.canvas!==1||layout.runtime!==1)throw new Error(`${family.id}: expected one canvas/runtime`);return layout}
+async function status(page){return(await page.locator('.status-strip').innerText()).trim()}
 
 const browser=await chromium.launch({headless:true,args:['--use-angle=swiftshader','--enable-webgl']});
-const report={schema:'RELATIONAL_KEY_V2_WAVE_003_EXACT_RUNTIME_COMPARE_001',generatedAt:new Date().toISOString(),head:process.env.GITHUB_SHA||null,v1Url:V1,v2Url:V2,families:{},findings:[]};
-let failed=false;
-try{
-  for(const family of families){
-    try{
-      const v1ctx=await context(browser), v1obs=await pageWithObservers(v1ctx);await v1obs.page.goto(`${V1}/families/${family.id}/`,{waitUntil:'domcontentloaded'});const frame=await v1Surface(v1obs.page);
-      await family.v1.other(frame);const v1Other=await family.v1.read(frame);if(!family.v1.otherExpect.test(v1Other))throw new Error(`${family.id}: V1 OTHER mismatch: ${v1Other}`);await shot(v1obs.page,`v1-${family.id}-state-a`);
-      await family.v1.matching(frame);const v1Matching=await family.v1.read(frame);if(!family.v1.matchingExpect.test(v1Matching))throw new Error(`${family.id}: V1 MATCHING mismatch: ${v1Matching}`);await shot(v1obs.page,`v1-${family.id}-state-b`);await v1ctx.close();
-
-      const dctx=await context(browser), d=await pageWithObservers(dctx);await openV2(d.page,family);const desktop=await assertV2Surface(d.page,family);
-      await d.page.getByRole('button',{name:'OTHER',exact:true}).click();await d.page.waitForTimeout(180);const v2Other=await status(d.page);if(!family.v2.other.test(v2Other))throw new Error(`${family.id}: V2 OTHER mismatch: ${v2Other}`);await shot(d.page,`v2-${family.id}-state-a`);
-      await d.page.getByRole('button',{name:'MATCHING',exact:true}).click();await d.page.waitForTimeout(220);const v2Matching=await status(d.page);if(!family.v2.matching.test(v2Matching))throw new Error(`${family.id}: V2 MATCHING mismatch: ${v2Matching}`);await shot(d.page,`v2-${family.id}-state-b`);
-      const unrelated=families.filter(f=>f.id!==family.id).map(f=>f.chunk).filter(file=>d.scripts.has(file));if(unrelated.length)throw new Error(`${family.id}: unrelated Wave3 chunks eager-loaded: ${unrelated.join(', ')}`);
-      if(!d.scripts.has(family.chunk))throw new Error(`${family.id}: own dynamic entry ${family.chunk} not requested`);
-      if(d.consoleErrors.length||d.pageErrors.length)throw new Error(`${family.id}: desktop browser errors ${JSON.stringify({console:d.consoleErrors,page:d.pageErrors})}`);
-      await dctx.close();
-
-      const mctx=await context(browser,{viewport:{width:390,height:844}}),m=await pageWithObservers(mctx);await openV2(m.page,family);await m.page.getByRole('button',{name:'MATCHING',exact:true}).click();await m.page.waitForTimeout(180);const mobile=await assertV2Surface(m.page,family);await shot(m.page,`v2-${family.id}-mobile-state-b`);if(m.consoleErrors.length||m.pageErrors.length)throw new Error(`${family.id}: mobile browser errors`);await mctx.close();
-
-      const rctx=await context(browser,{reducedMotion:'reduce'}),r=await pageWithObservers(rctx);await openV2(r.page,family);const note=(await r.page.locator('.motion-note').innerText()).trim();if(!/Reduced motion active/i.test(note))throw new Error(`${family.id}: reduced-motion contract inactive`);await r.page.getByRole('button',{name:'MATCHING',exact:true}).click();await r.page.waitForTimeout(120);await shot(r.page,`v2-${family.id}-reduced-motion`);if(r.consoleErrors.length||r.pageErrors.length)throw new Error(`${family.id}: reduced-motion browser errors`);await rctx.close();
-
-      report.families[family.id]={chunk:family.chunk,pair:family.pair,v1:{other:v1Other,matching:v1Matching},v2:{other:v2Other,matching:v2Matching},desktop,mobile,reducedMotion:note};
-    }catch(error){failed=true;report.findings.push({severity:'FAIL',family:family.id,message:error.stack||String(error)});}
-  }
-}finally{await browser.close()}
-report.verdict=failed?'WAVE_003_TARGETED_REWORK_REQUIRED':'WAVE_003_BROWSER_RUNTIME_PASS_PENDING_HUMAN_V1_V2_COMPARISON';
-await fs.writeFile(path.join(OUT,'wave3-runtime-compare.json'),JSON.stringify(report,null,2));
-const md=['# RELATIONAL KEY V2 Wave 003 exact runtime compare',`Verdict: **${report.verdict}**`,''];
-for(const family of families){const x=report.families[family.id];md.push(`## ${family.label}`);if(!x){md.push('- Incomplete.','');continue}md.push(`- V1 A: ${x.v1.other}`,`- V1 B: ${x.v1.matching}`,`- V2 A: ${x.v2.other}`,`- V2 B: ${x.v2.matching}`,`- Chunk: ${x.chunk}`,`- Desktop width: ${x.desktop.scrollWidth}/${x.desktop.width}`,`- Mobile width: ${x.mobile.scrollWidth}/${x.mobile.width}`,`- Reduced motion: ${x.reducedMotion}`,'')}
-if(report.findings.length){md.push('## Findings');for(const f of report.findings)md.push(`- ${f.severity} · ${f.family} · ${f.message}`)}
-await fs.writeFile(path.join(OUT,'wave3-runtime-compare.md'),md.join('\n'));
-console.log(`WAVE3_VERDICT=${report.verdict}`);if(failed)process.exitCode=1;
+const report={schema:'RELATIONAL_KEY_V2_WAVE_003_EXACT_RUNTIME_COMPARE_002',generatedAt:new Date().toISOString(),head:process.env.GITHUB_SHA||null,v1Url:V1,v2Url:V2,families:{},findings:[]};let failed=false;
+try{for(const family of families){try{
+const v1ctx=await newContext(browser),v1obs=await observedPage(v1ctx);await v1obs.page.goto(`${V1}/families/${family.id}/`,{waitUntil:'domcontentloaded'});const frame=await v1Surface(v1obs.page);await family.v1.other(frame);const v1Other=await family.v1.read(frame);if(!family.v1.otherExpect.test(v1Other))throw new Error(`${family.id}: V1 OTHER mismatch: ${v1Other}`);await shot(v1obs.page,`v1-${family.id}-state-a`);await family.v1.matching(frame);const v1Matching=await family.v1.read(frame);if(!family.v1.matchingExpect.test(v1Matching))throw new Error(`${family.id}: V1 MATCHING mismatch: ${v1Matching}`);await shot(v1obs.page,`v1-${family.id}-state-b`);if(family.v1.cleanup)await family.v1.cleanup(frame);await v1ctx.close();
+const dctx=await newContext(browser),d=await observedPage(dctx);await openV2(d.page,family);const desktop=await assertSurface(d.page,family);await d.page.getByRole('button',{name:'OTHER',exact:true}).click();await d.page.waitForTimeout(180);const v2Other=await status(d.page);if(!family.v2.other.test(v2Other))throw new Error(`${family.id}: V2 OTHER mismatch: ${v2Other}`);await shot(d.page,`v2-${family.id}-state-a`);await d.page.getByRole('button',{name:'MATCHING',exact:true}).click();await d.page.waitForTimeout(220);const v2Matching=await status(d.page);if(!family.v2.matching.test(v2Matching))throw new Error(`${family.id}: V2 MATCHING mismatch: ${v2Matching}`);await shot(d.page,`v2-${family.id}-state-b`);const unrelated=families.filter(f=>f.id!==family.id).map(f=>f.chunk).filter(file=>d.scripts.has(file));if(unrelated.length)throw new Error(`${family.id}: unrelated Wave3 chunks eager-loaded: ${unrelated.join(', ')}`);if(!d.scripts.has(family.chunk))throw new Error(`${family.id}: own dynamic entry not requested`);if(d.consoleErrors.length||d.pageErrors.length)throw new Error(`${family.id}: desktop browser errors ${JSON.stringify({console:d.consoleErrors,page:d.pageErrors})}`);await dctx.close();
+const mctx=await newContext(browser,{viewport:{width:390,height:844}}),m=await observedPage(mctx);await openV2(m.page,family);await m.page.getByRole('button',{name:'MATCHING',exact:true}).click();await m.page.waitForTimeout(180);const mobile=await assertSurface(m.page,family);await shot(m.page,`v2-${family.id}-mobile-state-b`);if(m.consoleErrors.length||m.pageErrors.length)throw new Error(`${family.id}: mobile browser errors`);await mctx.close();
+const rctx=await newContext(browser,{reducedMotion:'reduce'}),r=await observedPage(rctx);await openV2(r.page,family);const note=(await r.page.locator('.motion-note').innerText()).trim();if(!/Reduced motion active/i.test(note))throw new Error(`${family.id}: reduced-motion contract inactive`);await r.page.getByRole('button',{name:'MATCHING',exact:true}).click();await r.page.waitForTimeout(120);await shot(r.page,`v2-${family.id}-reduced-motion`);if(r.consoleErrors.length||r.pageErrors.length)throw new Error(`${family.id}: reduced-motion browser errors`);await rctx.close();
+report.families[family.id]={chunk:family.chunk,pair:family.pair,v1:{other:v1Other,matching:v1Matching},v2:{other:v2Other,matching:v2Matching},desktop,mobile,reducedMotion:note};
+}catch(error){failed=true;report.findings.push({severity:'FAIL',family:family.id,message:error.stack||String(error)})}}}finally{await browser.close()}
+report.verdict=failed?'WAVE_003_TARGETED_REWORK_REQUIRED':'WAVE_003_BROWSER_RUNTIME_PASS_PENDING_HUMAN_V1_V2_COMPARISON';await fs.writeFile(path.join(OUT,'wave3-runtime-compare.json'),JSON.stringify(report,null,2));const md=['# RELATIONAL KEY V2 Wave 003 exact runtime compare',`Verdict: **${report.verdict}**`,''];for(const family of families){const x=report.families[family.id];md.push(`## ${family.label}`);if(!x){md.push('- Incomplete.','');continue}md.push(`- V1 A: ${x.v1.other}`,`- V1 B: ${x.v1.matching}`,`- V2 A: ${x.v2.other}`,`- V2 B: ${x.v2.matching}`,`- Chunk: ${x.chunk}`,`- Desktop width: ${x.desktop.scrollWidth}/${x.desktop.width}`,`- Mobile width: ${x.mobile.scrollWidth}/${x.mobile.width}`,`- Reduced motion: ${x.reducedMotion}`,'')}if(report.findings.length){md.push('## Findings');for(const f of report.findings)md.push(`- ${f.severity} · ${f.family} · ${f.message}`)}await fs.writeFile(path.join(OUT,'wave3-runtime-compare.md'),md.join('\n'));console.log(`WAVE3_VERDICT=${report.verdict}`);if(failed)process.exitCode=1;
