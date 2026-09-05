@@ -58,6 +58,12 @@ jobs:
           RK_V2_URL: http://127.0.0.1:4174
           RK_RUNTIME_OUT: wave3-runtime-evidence
         run: node qa/wave3-runtime-compare.mjs
+      - name: Prove all twelve family chunks remain isolated
+        working-directory: v2-app
+        env:
+          RK_V2_URL: http://127.0.0.1:4174
+          RK_RUNTIME_OUT: wave3-runtime-evidence
+        run: node qa/all12-chunk-isolation.mjs
       - name: Upload Wave 003 evidence
         if: always()
         uses: actions/upload-artifact@v4
