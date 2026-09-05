@@ -88,12 +88,21 @@ function observePage(page) {
   const scripts = new Set();
   const consoleErrors = [];
   const pageErrors = [];
+  const intentionalNetworkBlocks = [];
   page.on('request', (request) => {
     if (request.resourceType() === 'script') scripts.add(new URL(request.url()).pathname.replace(/^\/+/, ''));
   });
-  page.on('console', (message) => { if (message.type() === 'error') consoleErrors.push(message.text()); });
+  page.on('console', (message) => {
+    if (message.type() !== 'error') return;
+    const text = message.text();
+    if (/ERR_BLOCKED_BY_CLIENT/i.test(text)) {
+      intentionalNetworkBlocks.push(text);
+      return;
+    }
+    consoleErrors.push(text);
+  });
   page.on('pageerror', (error) => pageErrors.push(error.message));
-  return { scripts, consoleErrors, pageErrors };
+  return { scripts, consoleErrors, pageErrors, intentionalNetworkBlocks };
 }
 
 async function capture(page, name) {
@@ -118,7 +127,13 @@ async function runV1(browser, family) {
   await capture(page, `v1-${family.id}-matching`);
 
   if (observed.consoleErrors.length || observed.pageErrors.length) throw new Error(`${family.id}: V1 browser errors ${JSON.stringify(observed)}`);
-  const result = { other, matching, consoleErrors: observed.consoleErrors, pageErrors: observed.pageErrors };
+  const result = {
+    other,
+    matching,
+    consoleErrors: observed.consoleErrors,
+    pageErrors: observed.pageErrors,
+    intentionalNetworkBlocks: observed.intentionalNetworkBlocks,
+  };
   await context.close();
   return result;
 }
@@ -160,6 +175,7 @@ async function runV2Desktop(browser, family) {
 
   const layout = await page.evaluate(() => ({ width: innerWidth, scrollWidth: document.documentElement.scrollWidth, canvas: document.querySelectorAll('canvas').length }));
   if (layout.scrollWidth > layout.width) throw new Error(`${family.id}: desktop overflow ${layout.scrollWidth} > ${layout.width}`);
+  if (observed.intentionalNetworkBlocks.length) throw new Error(`${family.id}: V2 attempted blocked external resources ${JSON.stringify(observed.intentionalNetworkBlocks)}`);
   if (observed.consoleErrors.length || observed.pageErrors.length) throw new Error(`${family.id}: browser errors ${JSON.stringify(observed)}`);
 
   const result = { other, matching, pair: family.pair, layout, ownEntry: family.file, eagerWave004Entries: eagerOthers, loadedScripts: [...observed.scripts].sort() };
@@ -180,6 +196,7 @@ async function runMobile(browser, family) {
   if (layout.scrollWidth > layout.width) throw new Error(`${family.id}: mobile overflow ${layout.scrollWidth} > ${layout.width}`);
   if (layout.canvas !== 1) throw new Error(`${family.id}: mobile canvas count ${layout.canvas}`);
   await capture(page, `v2-${family.id}-mobile-matching`);
+  if (observed.intentionalNetworkBlocks.length) throw new Error(`${family.id}: mobile V2 attempted blocked external resources`);
   if (observed.consoleErrors.length || observed.pageErrors.length) throw new Error(`${family.id}: mobile browser errors`);
   await context.close();
   return { status, layout };
@@ -197,6 +214,7 @@ async function runReducedMotion(browser, family) {
   const status = (await page.locator('.status-strip').innerText()).trim();
   if (!family.v2.matchingExpect.test(status)) throw new Error(`${family.id}: reduced-motion matching mismatch: ${status}`);
   await capture(page, `v2-${family.id}-reduced-motion`);
+  if (observed.intentionalNetworkBlocks.length) throw new Error(`${family.id}: reduced-motion V2 attempted blocked external resources`);
   if (observed.consoleErrors.length || observed.pageErrors.length) throw new Error(`${family.id}: reduced-motion browser errors`);
   await context.close();
   return { note, status };
@@ -246,6 +264,7 @@ for (const family of families) {
     summary.push(`- Mobile width: ${row.mobile.layout.scrollWidth}/${row.mobile.layout.width}`);
     summary.push(`- Reduced motion: ${row.reducedMotion.note}`);
     summary.push(`- Lazy entry: ${row.v2.ownEntry}`);
+    if (row.v1.intentionalNetworkBlocks?.length) summary.push(`- V1 intentional external-resource blocks: ${row.v1.intentionalNetworkBlocks.length}`);
   }
   summary.push('');
 }
