@@ -63,14 +63,14 @@ function Comb({ activeTooth }) {
         const height = 0.86 + tooth * 0.07;
         const active = activeTooth === tooth;
         return (
-          <mesh key={tooth} position={[x, -0.19 + height / 2, 0]} rotation={[0, 0, active ? -0.035 : 0]}>
-            <boxGeometry args={[0.12, height, 0.15]} />
+          <mesh key={tooth} position={[x, -0.19 + height / 2, active ? 0.08 : 0]} rotation={[0, 0, active ? -0.11 : 0]}>
+            <boxGeometry args={[active ? 0.16 : 0.12, height, 0.15]} />
             <meshStandardMaterial
-              color={active ? '#f1dfb4' : '#b7b3aa'}
+              color={active ? '#fff0c7' : '#b7b3aa'}
               metalness={0.78}
               roughness={0.22}
-              emissive={active ? '#735622' : '#000000'}
-              emissiveIntensity={active ? 0.5 : 0}
+              emissive={active ? '#b27a28' : '#000000'}
+              emissiveIntensity={active ? 1.15 : 0}
             />
           </mesh>
         );
@@ -107,6 +107,7 @@ export function MusicBoxScene({ engaged, angle, setAngle, pattern, reducedMotion
   };
 
   const contactColor = activePin ? '#ead2a2' : engaged ? '#af8b59' : '#5a5145';
+  const contactY = activePin ? -0.67 + (activePin.tooth / 5) * 1.34 : 0;
 
   return (
     <>
@@ -152,6 +153,23 @@ export function MusicBoxScene({ engaged, angle, setAngle, pattern, reducedMotion
           <meshStandardMaterial color={contactColor} emissive={contactColor} emissiveIntensity={activePin ? 0.75 : 0.1} />
         </mesh>
       </group>
+
+      {activePin && (
+        <group name="CONTACT_EVENT_WITNESS" position={[0, contactY, 0.56]}>
+          <mesh>
+            <boxGeometry args={[3.72, 0.028, 0.028]} />
+            <meshStandardMaterial color="#f4ddb0" emissive="#b67b2b" emissiveIntensity={0.95} metalness={0.32} roughness={0.32} />
+          </mesh>
+          <mesh position={[-1.86, 0, 0]}>
+            <sphereGeometry args={[0.075, 14, 10]} />
+            <meshStandardMaterial color="#fff0c7" emissive="#b67b2b" emissiveIntensity={0.9} />
+          </mesh>
+          <mesh position={[1.86, 0, 0]}>
+            <sphereGeometry args={[0.075, 14, 10]} />
+            <meshStandardMaterial color="#fff0c7" emissive="#b67b2b" emissiveIntensity={0.9} />
+          </mesh>
+        </group>
+      )}
 
       <mesh position={[0, -2.04, -0.5]} rotation={[-Math.PI / 2, 0, 0]}>
         <planeGeometry args={[10, 8]} />
