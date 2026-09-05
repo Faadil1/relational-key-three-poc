@@ -24,6 +24,7 @@ function MaterialField({ side, matching }) {
 
 export function BoulleScene({ separated, matching, reducedMotion }) {
   const gap=0.28;
+  const cutOffset=matching?0:0.36;
   return <>
     <color attach="background" args={['#090806']}/><ambientLight intensity={0.82}/><directionalLight position={[2.8,4.8,5]} intensity={2.5} color="#f0dfbc"/><pointLight position={[0,0.5,3]} intensity={matching?1.45:0.62} color="#d6a85e"/>
     <group name="PAIR_MEMBER_A" position={[-1.72-gap,0,0]}><MaterialField side="A" matching={matching}/></group>
@@ -36,8 +37,8 @@ export function BoulleScene({ separated, matching, reducedMotion }) {
         <mesh name="CUT_TRANSFER_A" position={[-0.86,0,0]}><boxGeometry args={[0.72,0.035,0.035]}/><meshStandardMaterial color="#e1ba70" emissive="#8e5d22" emissiveIntensity={0.6}/></mesh>
         <mesh name="CUT_TRANSFER_B" position={[0.86,0,0]}><boxGeometry args={[0.72,0.035,0.035]}/><meshStandardMaterial color="#5b321f" emissive="#39180d" emissiveIntensity={0.5}/></mesh>
       </> : <>
-        <mesh name="UNRESOLVED_CUT_A" position={[-0.42,0.28,0]} rotation={[0,0,-0.72]}><boxGeometry args={[0.72,0.04,0.04]}/><meshStandardMaterial color="#d7ad63"/></mesh>
-        <mesh name="UNRESOLVED_CUT_B" position={[0.42,-0.3,0]} rotation={[0,0,-0.72]}><boxGeometry args={[0.72,0.04,0.04]}/><meshStandardMaterial color="#4d2c1c"/></mesh>
+        <mesh name="UNRESOLVED_CUT_A" position={[-0.42,cutOffset,0]} rotation={[0,0,-0.72]}><boxGeometry args={[0.72,0.04,0.04]}/><meshStandardMaterial color="#d7ad63"/></mesh>
+        <mesh name="UNRESOLVED_CUT_B" position={[0.42,-cutOffset,0]} rotation={[0,0,-0.72]}><boxGeometry args={[0.72,0.04,0.04]}/><meshStandardMaterial color="#4d2c1c"/></mesh>
       </>}
     </group>
     <mesh position={[0,-2.04,-0.55]} rotation={[-Math.PI/2,0,0]}><planeGeometry args={[10,8]}/><meshStandardMaterial color="#070604" roughness={1}/></mesh>
