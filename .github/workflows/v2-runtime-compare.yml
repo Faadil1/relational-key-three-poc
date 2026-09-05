@@ -68,6 +68,7 @@ jobs:
           cp dist/scaling-architecture.json runtime-evidence/scaling-architecture-build.json
           node qa/scaling-architecture.mjs
           node qa/wave003-compare.mjs
+          node qa/all12-chunk-isolation.mjs
 
       - name: Upload runtime evidence
         if: always()
