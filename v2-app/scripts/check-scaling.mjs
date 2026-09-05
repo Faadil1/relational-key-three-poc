@@ -37,6 +37,9 @@ const families = [
   ['boulle-france', 'src/sceneEntries/BoulleEntry.jsx'],
   ['khipu-peru', 'src/sceneEntries/KhipuEntry.jsx'],
   ['mate-bombilla-argentina', 'src/sceneEntries/MateBombillaEntry.jsx'],
+  ['service-benin', 'src/sceneEntries/ServiceBeninEntry.jsx'],
+  ['food-toyama', 'src/sceneEntries/FoodToyamaEntry.jsx'],
+  ['hika-ahi-aotearoa', 'src/sceneEntries/HikaAhiEntry.jsx'],
 ].map(([id, src]) => ({ id, src }));
 
 function closure(startKey) {
@@ -106,7 +109,7 @@ function walkJs(directory) {
 }
 const allJs = walkJs(path.join(dist, 'assets'));
 const report = {
-  schema: 'RELATIONAL_KEY_V2_SCALING_ARCHITECTURE_BUILD_004',
+  schema: 'RELATIONAL_KEY_V2_SCALING_ARCHITECTURE_BUILD_005',
   generatedAt: new Date().toISOString(),
   verdict: failures.length ? 'SCALING_ARCHITECTURE_BUILD_FAIL' : 'SCALING_ARCHITECTURE_BUILD_PASS',
   familyCount: families.length,

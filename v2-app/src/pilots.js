@@ -110,6 +110,33 @@ export const pilots = [
     memorable: 'At the pair interface, one represented material passes while another visibly remains behind.',
     archiveBoundary: 'Structural translation of the mate-vessel ↔ perforated bombilla filtering subsystem. It is not the full social practice, a hydraulic model, or a national-exclusivity claim; procedural geometry is used by default.',
   },
+  {
+    id: 'service-benin', label: 'Service · Benin', className: 'TELECOM / CONTACT / SERVICE REGISTER',
+    law: 'BÉNIN TELEPHONE-CARD MEMBER → REGISTERED CONTACT / SERVICE HANDOFF → PUBLIPHONE SERVICE WINDOW RESPONSE',
+    pairMembers: { a: 'BÉNIN TELEPHONE-CARD MEMBER', relation: 'REGISTERED CONTACT / SERVICE HANDOFF', b: 'PUBLIPHONE / SERVICE-READER MEMBER' },
+    matching: 'The two telecom members register one bounded contact relation and the opposite-member service window responds.',
+    other: 'Both historical-object roles remain valid, but the editorial contact field stays offset and no service-window response registers.',
+    memorable: 'A service state appears only after the card and reader become one registered pair.',
+    archiveBoundary: 'Grounded in Archives nationales du Bénin Série J and the 1999 ITU Bénin telecom report. The card-reader pairing, contact geometry and line-window behavior are editorial relational reconstruction, not a documented historical operating procedure; no archive raster is reproduced.',
+  },
+  {
+    id: 'food-toyama', label: 'Food · Toyama', className: 'PACKAGE / PRESSURE / REVEAL',
+    law: 'PRESS / PACKAGE CONSTRAINT → ORDERED RELEASE RELATION → BAMBOO-LEAF FAN / REVEAL RESPONSE',
+    pairMembers: { a: 'PRESS / PACKAGE-CONSTRAINT MEMBER', relation: 'ORDERED RELEASE / PRESSURE TRANSFER', b: 'BAMBOO-LEAF / REVEAL MEMBER' },
+    matching: 'A documented pressed/wrapped package relation releases in order and the receiving member opens into a shared bamboo-leaf reveal.',
+    other: 'Both package members remain valid, but an incomplete editorial release does not register the shared reveal.',
+    memorable: 'The food register becomes visible only because one member releases the constraint that the other member answers.',
+    archiveBoundary: 'Mechanism is grounded in MAFF and official Toyama process references for masu-zushi packaging, pressing and opening. Geometry is procedural only; no commercial package, archive image, food-safety claim or universal regional form is reproduced.',
+  },
+  {
+    id: 'hika-ahi-aotearoa', label: 'Hika Ahi · Aotearoa', className: 'FRICTION / INTERFACE / EMBER',
+    law: 'HIKA RECIPROCAL STROKE + GROOVED BASE RESISTANCE → SUSTAINED FRICTION RELATION → EMBER STATE AT THE INTERFACE',
+    pairMembers: { a: 'HIKA / RUBBING MEMBER', relation: 'CONTROLLED FRICTION / GROOVE CONTACT', b: 'KAUAHI / GROOVED BASE MEMBER' },
+    matching: 'Sustained bounded friction remains localized at the groove relation and produces an editorial ember witness at the shared interface.',
+    other: 'Both tool members remain valid, but offset contact dissipates the represented heat and no ember register forms.',
+    memorable: 'The ember belongs to neither object alone; it appears exactly where the two members work against each other.',
+    archiveBoundary: 'Mechanism-level procedural translation grounded in Te Papa material on hika ahi. Te Papa object and archive media remain reference-only / All Rights Reserved and are not reproduced. No ritual, whakapapa, ceremonial, universal-Māori, practical ignition or survival-instruction claim is made.',
+  },
 ];
 
 export const pilotById = Object.fromEntries(pilots.map((pilot) => [pilot.id, pilot]));

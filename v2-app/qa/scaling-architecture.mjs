@@ -17,6 +17,12 @@ const families = [
   { id: 'astrolabe-isfahan', label: /^Astrolabe · Isfahan/i, src: 'src/sceneEntries/AstrolabeEntry.jsx' },
   { id: 'funicular-valparaiso', label: /^Funicular · Valparaíso/i, src: 'src/sceneEntries/FunicularEntry.jsx' },
   { id: 'music-box-sainte-croix', label: /^Music Box · Sainte-Croix/i, src: 'src/sceneEntries/MusicBoxEntry.jsx' },
+  { id: 'boulle-france', label: /^Boulle · France/i, src: 'src/sceneEntries/BoulleEntry.jsx' },
+  { id: 'khipu-peru', label: /^Khipu · Peru/i, src: 'src/sceneEntries/KhipuEntry.jsx' },
+  { id: 'mate-bombilla-argentina', label: /^Mate \+ Bombilla · Argentina/i, src: 'src/sceneEntries/MateBombillaEntry.jsx' },
+  { id: 'service-benin', label: /^Service · Benin/i, src: 'src/sceneEntries/ServiceBeninEntry.jsx' },
+  { id: 'food-toyama', label: /^Food · Toyama/i, src: 'src/sceneEntries/FoodToyamaEntry.jsx' },
+  { id: 'hika-ahi-aotearoa', label: /^Hika Ahi · Aotearoa/i, src: 'src/sceneEntries/HikaAhiEntry.jsx' },
 ];
 
 const bySource = new Map();
@@ -60,7 +66,7 @@ async function waitForScene(page, id) {
 }
 
 const report = {
-  schema: 'RELATIONAL_KEY_V2_SCALING_ARCHITECTURE_BROWSER_003',
+  schema: 'RELATIONAL_KEY_V2_SCALING_ARCHITECTURE_BROWSER_004',
   generatedAt: new Date().toISOString(),
   v2Url: V2,
   manifestFamilyFiles: Object.fromEntries(families.map((family) => [family.id, family.file])),

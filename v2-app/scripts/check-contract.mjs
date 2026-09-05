@@ -28,6 +28,9 @@ const sceneRows = [
   { id: 'boulle-france', path: 'src/scenes/BoulleScene.jsx', entry: 'BoulleEntry.jsx', pairMarkers: true },
   { id: 'khipu-peru', path: 'src/scenes/KhipuScene.jsx', entry: 'KhipuEntry.jsx', pairMarkers: true },
   { id: 'mate-bombilla-argentina', path: 'src/scenes/MateBombillaScene.jsx', entry: 'MateBombillaEntry.jsx', pairMarkers: true },
+  { id: 'service-benin', path: 'src/scenes/ServiceBeninScene.jsx', entry: 'ServiceBeninEntry.jsx', pairMarkers: true },
+  { id: 'food-toyama', path: 'src/scenes/FoodToyamaScene.jsx', entry: 'FoodToyamaEntry.jsx', pairMarkers: true },
+  { id: 'hika-ahi-aotearoa', path: 'src/scenes/HikaAhiScene.jsx', entry: 'HikaAhiEntry.jsx', pairMarkers: true },
 ];
 const scenes = Object.fromEntries(sceneRows.map((row) => [row.id, read(row.path)]));
 const allScenes = Object.values(scenes).join('\n');
@@ -49,6 +52,9 @@ if (!app.includes('musicBoxPattern')) fail('Music Box alternate-valid cylinder s
 if (!app.includes('boulleSeparated')) fail('Boulle reciprocal separation state is missing');
 if (!app.includes('khipuTension')) fail('Khipu structural tension state is missing');
 if (!app.includes('mateInsertion')) fail('Mate + Bombilla insertion state is missing');
+if (!app.includes('serviceContact')) fail('Service Benin contact state is missing');
+if (!app.includes('foodRelease')) fail('Food Toyama release state is missing');
+if (!app.includes('hikaFriction')) fail('Hika Ahi friction state is missing');
 if (!app.includes('prefers-reduced-motion') && !styles.includes('prefers-reduced-motion')) fail('reduced-motion contract is missing');
 
 for (const row of sceneRows) {
@@ -75,6 +81,9 @@ for (const law of [
   'STACKED MATERIAL FIELDS → ONE SHARED CUT → TWO RECIPROCAL INVERSE SURFACES',
   'CARRYING CORD → SHARED TENSION / ATTACHMENT → SECONDARY CORD + KNOT POSITION RESPONSE',
   'MATE PARTICLE MEDIUM → BOMBILLA INSERTION / PERFORATED FILTER → SELECTIVE PASSAGE + CONTAINMENT',
+  'BÉNIN TELEPHONE-CARD MEMBER → REGISTERED CONTACT / SERVICE HANDOFF → PUBLIPHONE SERVICE WINDOW RESPONSE',
+  'PRESS / PACKAGE CONSTRAINT → ORDERED RELEASE RELATION → BAMBOO-LEAF FAN / REVEAL RESPONSE',
+  'HIKA RECIPROCAL STROKE + GROOVED BASE RESISTANCE → SUSTAINED FRICTION RELATION → EMBER STATE AT THE INTERFACE',
 ]) if (!pilots.includes(law)) fail(`missing family law: ${law}`);
 
 if (!scenes['anamorphosis-paris'].includes('WebGLCubeRenderTarget') || !scenes['anamorphosis-paris'].includes('CubeCamera')) fail('Anamorphosis must preserve the real reflection path');
@@ -82,13 +91,21 @@ if (!scenes['coupler-virginia'].includes('locked') || !scenes['coupler-virginia'
 if (!scenes['ombak-bali'].includes('effectiveDifference') || !scenes['ombak-bali'].includes('invalidate')) fail('Ombak must preserve bounded paired-difference rendering');
 if (!scenes['funicular-valparaiso'].includes('positionB = 1 - positionA')) fail('Funicular must preserve exact inverse positional relation');
 if (!scenes['music-box-sainte-croix'].includes('PATTERNS') || !scenes['music-box-sainte-croix'].includes('activePin')) fail('Music Box must preserve deterministic pin decoding');
-
 if (!scenes['boulle-france'].includes('RECIPROCAL_CUT') || !scenes['boulle-france'].includes('PREMIERE_PARTIE') || !scenes['boulle-france'].includes('CONTRE_PARTIE')) fail('Boulle must preserve one-cut reciprocal inversion specificity');
 if (!scenes['khipu-peru'].includes('SHARED_TENSION_ATTACHMENT') || !scenes['khipu-peru'].includes('KNOT_REGISTER') || !scenes['khipu-peru'].includes('SECONDARY_CORD')) fail('Khipu must preserve structural cord/tension/knot specificity');
 if (/https?:\/\//i.test(scenes['khipu-peru'])) fail('Khipu Wave 003 must remain procedural-only with no remote archival raster');
 if (/decode|translation|numeric value|administrative meaning/i.test(scenes['khipu-peru'])) fail('Khipu scene must not encode semantic decoding claims');
 if (!pilots.includes('No numeric, linguistic, administrative or historical message decoding is claimed')) fail('Khipu truth boundary must explicitly prohibit semantic decoding');
 if (!scenes['mate-bombilla-argentina'].includes('PERFORATED_FILTER') || !scenes['mate-bombilla-argentina'].includes('SELECTIVE_PASSAGE') || !scenes['mate-bombilla-argentina'].includes('PARTICLE_FIELD')) fail('Mate + Bombilla must preserve insertion/filter/selective-passage specificity');
+
+if (!scenes['service-benin'].includes('BENIN_TELEPHONE_CARD') || !scenes['service-benin'].includes('EDITORIAL_CONTACT') || !scenes['service-benin'].includes('PUBLIPHONE_WINDOW')) fail('Service Benin must preserve telephone-card/contact/service-window specificity');
+if (/https?:\/\//i.test(scenes['service-benin'])) fail('Service Benin Wave 004 must remain procedural-only with no remote archive raster');
+if (!pilots.includes('not a documented historical operating procedure')) fail('Service Benin truth boundary must keep the editorial procedure disclaimer');
+if (!scenes['food-toyama'].includes('PRESS_PACKAGE_CONSTRAINT') || !scenes['food-toyama'].includes('ORDERED_RELEASE') || !scenes['food-toyama'].includes('BAMBOO_LEAF_REVEAL')) fail('Food Toyama must preserve press/release/leaf-reveal specificity');
+if (/https?:\/\//i.test(scenes['food-toyama'])) fail('Food Toyama Wave 004 must remain procedural-only with no remote archive/commercial raster');
+if (!scenes['hika-ahi-aotearoa'].includes('HIKA_STROKE') || !scenes['hika-ahi-aotearoa'].includes('GROOVED_BASE') || !scenes['hika-ahi-aotearoa'].includes('FRICTION_INTERFACE') || !scenes['hika-ahi-aotearoa'].includes('EMBER_WITNESS')) fail('Hika Ahi must preserve tool/friction/interface/ember specificity');
+if (/https?:\/\//i.test(scenes['hika-ahi-aotearoa'])) fail('Hika Ahi Wave 004 must remain procedural-only with no Te Papa archive raster');
+if (!pilots.includes('No ritual, whakapapa, ceremonial, universal-Māori, practical ignition or survival-instruction claim is made')) fail('Hika Ahi truth boundary must preserve contextual and practical-instruction limits');
 if (/useState\s*\(/.test(allScenes)) fail('scene-level continuous/render state should not be stored in React useState');
 
 if (!process.exitCode) {
@@ -100,5 +117,8 @@ if (!process.exitCode) {
   console.log('wave-003-boulle-reciprocal-cut: PASS');
   console.log('wave-003-khipu-procedural-structural-only: PASS');
   console.log('wave-003-mate-bombilla-selective-passage: PASS');
+  console.log('wave-004-service-benin-procedural-contact-register: PASS');
+  console.log('wave-004-food-toyama-procedural-release-reveal: PASS');
+  console.log('wave-004-hika-ahi-procedural-friction-ember: PASS');
   console.log('scene-level-useState: NONE');
 }
