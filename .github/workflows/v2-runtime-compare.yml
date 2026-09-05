@@ -67,6 +67,7 @@ jobs:
           node qa/focus-capture.mjs
           cp dist/scaling-architecture.json runtime-evidence/scaling-architecture-build.json
           node qa/scaling-architecture.mjs
+          node qa/wave003-compare.mjs
 
       - name: Upload runtime evidence
         if: always()

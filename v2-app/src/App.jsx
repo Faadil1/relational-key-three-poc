@@ -20,6 +20,9 @@ const INITIAL = {
   musicBoxEngaged: false,
   musicBoxAngle: 0,
   musicBoxPattern: 'A',
+  boulleSeparated: false,
+  khipuTension: 0.28,
+  mateInsertion: 0.18,
 };
 
 export default function App() {
@@ -49,6 +52,9 @@ export default function App() {
   const [musicBoxEngaged, setMusicBoxEngaged] = useState(INITIAL.musicBoxEngaged);
   const [musicBoxAngle, setMusicBoxAngle] = useState(INITIAL.musicBoxAngle);
   const [musicBoxPattern, setMusicBoxPattern] = useState(INITIAL.musicBoxPattern);
+  const [boulleSeparated, setBoulleSeparated] = useState(INITIAL.boulleSeparated);
+  const [khipuTension, setKhipuTension] = useState(INITIAL.khipuTension);
+  const [mateInsertion, setMateInsertion] = useState(INITIAL.mateInsertion);
   const reducedMotion = useReducedMotion();
 
   const focusMode = launch.focusMode;
@@ -127,103 +133,76 @@ export default function App() {
       if (!musicBoxEngaged) return `SEPARATE · editorial Cylinder ${musicBoxPattern} and tuned-comb member are both visible · no contact.`;
       return `ENGAGED · Cylinder ${musicBoxPattern} at ${Math.round(musicBoxAngle)}° · pin geometry is decoded through visible comb-tooth contact events.`;
     }
+    if (activeId === 'boulle-france') {
+      if (!boulleSeparated) return 'IDLE · two distinct material fields await a shared cut relation.';
+      return matching
+        ? 'MATCHING · one shared cut produces reciprocal première-partie / contre-partie inverse surfaces.'
+        : 'OTHER · both material fields remain valid · selected cuts do not produce one reciprocal inverse map.';
+    }
+    if (activeId === 'khipu-peru') {
+      const registered = matching && khipuTension >= 0.72;
+      return registered
+        ? 'MATCHING · shared tension settles carrying and secondary cords into a stable structural knot-position register · meaning is not inferred.'
+        : 'OTHER · both cord systems remain valid · attachment and knot positions retain a visible structural residual.';
+    }
+    if (activeId === 'mate-bombilla-argentina') {
+      const engaged = matching && mateInsertion >= 0.72;
+      return engaged
+        ? 'MATCHING · perforated bombilla insertion establishes selective passage · represented liquid passes while particulate matter remains contained.'
+        : 'OTHER · both filter-system members remain valid · incomplete insertion does not establish selective passage.';
+    }
     return 'RELATION STATE UNAVAILABLE.';
   }, [
-    activeId,
-    anamorphosisOffset,
-    matching,
-    couplerApproach,
-    couplerPull,
-    audio.playing,
-    ombakDifference,
-    effectiveOmbakDifference,
-    kentoOffset,
-    kentoPressed,
-    stereoDisparity,
-    signalAlignment,
-    astrolabeAngle,
-    astrolabePlateMode,
-    funicularPositionA,
-    musicBoxEngaged,
-    musicBoxAngle,
-    musicBoxPattern,
+    activeId, anamorphosisOffset, matching, couplerApproach, couplerPull, audio.playing,
+    ombakDifference, effectiveOmbakDifference, kentoOffset, kentoPressed, stereoDisparity,
+    signalAlignment, astrolabeAngle, astrolabePlateMode, funicularPositionA, musicBoxEngaged,
+    musicBoxAngle, musicBoxPattern, boulleSeparated, khipuTension, mateInsertion,
   ]);
 
   const applyRelation = (mode) => {
     const nextMatching = mode === 'matching';
     setRelationMode(mode);
-    if (activeId === 'anamorphosis-paris') {
-      setAnamorphosisOffset(nextMatching ? 0 : 0.72);
-    } else if (activeId === 'coupler-virginia') {
-      setCouplerApproach(1);
-      setCouplerPull(0);
-    } else if (activeId === 'kento-japan') {
-      setKentoOffset(nextMatching ? 0 : 0.3);
-      setKentoPressed(false);
-    } else if (activeId === 'stereoscopy-uk') {
-      setStereoDisparity(nextMatching ? 0.16 : 0.72);
-    } else if (activeId === 'signal-nigeria') {
-      setSignalAlignment(nextMatching ? 1 : 0.34);
-    } else if (activeId === 'astrolabe-isfahan') {
-      setAstrolabePlateMode(nextMatching ? 'local' : 'other');
-      setAstrolabeAngle(nextMatching ? 42 : 22);
-    } else if (activeId === 'music-box-sainte-croix') {
-      setMusicBoxEngaged(true);
-      setMusicBoxPattern(nextMatching ? 'A' : 'B');
-      setMusicBoxAngle(nextMatching ? 52 : 68);
-    }
+    if (activeId === 'anamorphosis-paris') setAnamorphosisOffset(nextMatching ? 0 : 0.72);
+    else if (activeId === 'coupler-virginia') { setCouplerApproach(1); setCouplerPull(0); }
+    else if (activeId === 'kento-japan') { setKentoOffset(nextMatching ? 0 : 0.3); setKentoPressed(false); }
+    else if (activeId === 'stereoscopy-uk') setStereoDisparity(nextMatching ? 0.16 : 0.72);
+    else if (activeId === 'signal-nigeria') setSignalAlignment(nextMatching ? 1 : 0.34);
+    else if (activeId === 'astrolabe-isfahan') { setAstrolabePlateMode(nextMatching ? 'local' : 'other'); setAstrolabeAngle(nextMatching ? 42 : 22); }
+    else if (activeId === 'music-box-sainte-croix') { setMusicBoxEngaged(true); setMusicBoxPattern(nextMatching ? 'A' : 'B'); setMusicBoxAngle(nextMatching ? 52 : 68); }
+    else if (activeId === 'boulle-france') setBoulleSeparated(true);
+    else if (activeId === 'khipu-peru') setKhipuTension(nextMatching ? 1 : 0.62);
+    else if (activeId === 'mate-bombilla-argentina') setMateInsertion(nextMatching ? 1 : 0.55);
   };
 
   const resetActive = () => {
     setRelationMode('other');
     if (activeId === 'anamorphosis-paris') setAnamorphosisOffset(INITIAL.anamorphosisOffset);
-    if (activeId === 'coupler-virginia') {
-      setCouplerApproach(INITIAL.couplerApproach);
-      setCouplerPull(0);
-    }
-    if (activeId === 'ombak-bali') {
-      audio.stop();
-      setOmbakBase(INITIAL.ombakBase);
-      setOmbakDifference(INITIAL.ombakDifference);
-    }
-    if (activeId === 'kento-japan') {
-      setKentoOffset(INITIAL.kentoOffset);
-      setKentoPressed(false);
-    }
+    if (activeId === 'coupler-virginia') { setCouplerApproach(INITIAL.couplerApproach); setCouplerPull(0); }
+    if (activeId === 'ombak-bali') { audio.stop(); setOmbakBase(INITIAL.ombakBase); setOmbakDifference(INITIAL.ombakDifference); }
+    if (activeId === 'kento-japan') { setKentoOffset(INITIAL.kentoOffset); setKentoPressed(false); }
     if (activeId === 'stereoscopy-uk') setStereoDisparity(INITIAL.stereoDisparity);
     if (activeId === 'signal-nigeria') setSignalAlignment(INITIAL.signalAlignment);
-    if (activeId === 'astrolabe-isfahan') {
-      setAstrolabeAngle(INITIAL.astrolabeAngle);
-      setAstrolabePlateMode(INITIAL.astrolabePlateMode);
-    }
+    if (activeId === 'astrolabe-isfahan') { setAstrolabeAngle(INITIAL.astrolabeAngle); setAstrolabePlateMode(INITIAL.astrolabePlateMode); }
     if (activeId === 'funicular-valparaiso') setFunicularPositionA(INITIAL.funicularPositionA);
-    if (activeId === 'music-box-sainte-croix') {
-      setMusicBoxEngaged(INITIAL.musicBoxEngaged);
-      setMusicBoxAngle(INITIAL.musicBoxAngle);
-      setMusicBoxPattern(INITIAL.musicBoxPattern);
-    }
+    if (activeId === 'music-box-sainte-croix') { setMusicBoxEngaged(INITIAL.musicBoxEngaged); setMusicBoxAngle(INITIAL.musicBoxAngle); setMusicBoxPattern(INITIAL.musicBoxPattern); }
+    if (activeId === 'boulle-france') setBoulleSeparated(INITIAL.boulleSeparated);
+    if (activeId === 'khipu-peru') setKhipuTension(INITIAL.khipuTension);
+    if (activeId === 'mate-bombilla-argentina') setMateInsertion(INITIAL.mateInsertion);
   };
 
   let activeSceneProps = {};
-  if (activeId === 'anamorphosis-paris') {
-    activeSceneProps = { offset: anamorphosisOffset, setOffset: setAnamorphosisOffset, reducedMotion };
-  } else if (activeId === 'coupler-virginia') {
-    activeSceneProps = { approach: couplerApproach, setApproach: setCouplerApproach, pull: couplerPull, matching, reducedMotion };
-  } else if (activeId === 'ombak-bali') {
-    activeSceneProps = { differenceHz: ombakDifference, playing: audio.playing, matching, reducedMotion };
-  } else if (activeId === 'kento-japan') {
-    activeSceneProps = { offset: kentoOffset, pressed: kentoPressed, matching, reducedMotion };
-  } else if (activeId === 'stereoscopy-uk') {
-    activeSceneProps = { disparity: stereoDisparity, matching, reducedMotion };
-  } else if (activeId === 'signal-nigeria') {
-    activeSceneProps = { alignment: signalAlignment, matching, reducedMotion };
-  } else if (activeId === 'astrolabe-isfahan') {
-    activeSceneProps = { angle: astrolabeAngle, setAngle: setAstrolabeAngle, plateMode: astrolabePlateMode, reducedMotion };
-  } else if (activeId === 'funicular-valparaiso') {
-    activeSceneProps = { positionA: funicularPositionA, setPositionA: setFunicularPositionA, reducedMotion };
-  } else if (activeId === 'music-box-sainte-croix') {
-    activeSceneProps = { engaged: musicBoxEngaged, angle: musicBoxAngle, setAngle: setMusicBoxAngle, pattern: musicBoxPattern, reducedMotion };
-  }
+  if (activeId === 'anamorphosis-paris') activeSceneProps = { offset: anamorphosisOffset, setOffset: setAnamorphosisOffset, reducedMotion };
+  else if (activeId === 'coupler-virginia') activeSceneProps = { approach: couplerApproach, setApproach: setCouplerApproach, pull: couplerPull, matching, reducedMotion };
+  else if (activeId === 'ombak-bali') activeSceneProps = { differenceHz: ombakDifference, playing: audio.playing, matching, reducedMotion };
+  else if (activeId === 'kento-japan') activeSceneProps = { offset: kentoOffset, pressed: kentoPressed, matching, reducedMotion };
+  else if (activeId === 'stereoscopy-uk') activeSceneProps = { disparity: stereoDisparity, matching, reducedMotion };
+  else if (activeId === 'signal-nigeria') activeSceneProps = { alignment: signalAlignment, matching, reducedMotion };
+  else if (activeId === 'astrolabe-isfahan') activeSceneProps = { angle: astrolabeAngle, setAngle: setAstrolabeAngle, plateMode: astrolabePlateMode, reducedMotion };
+  else if (activeId === 'funicular-valparaiso') activeSceneProps = { positionA: funicularPositionA, setPositionA: setFunicularPositionA, reducedMotion };
+  else if (activeId === 'music-box-sainte-croix') activeSceneProps = { engaged: musicBoxEngaged, angle: musicBoxAngle, setAngle: setMusicBoxAngle, pattern: musicBoxPattern, reducedMotion };
+  else if (activeId === 'boulle-france') activeSceneProps = { separated: boulleSeparated, matching, reducedMotion };
+  else if (activeId === 'khipu-peru') activeSceneProps = { tension: khipuTension, matching, reducedMotion };
+  else if (activeId === 'mate-bombilla-argentina') activeSceneProps = { insertion: mateInsertion, matching, reducedMotion };
 
   const selectFamily = (id) => {
     if (activeId === 'ombak-bali' && audio.playing) audio.stop();
@@ -262,7 +241,7 @@ export default function App() {
       ) : (
         <header className="masthead">
           <div>
-            <p className="eyebrow">RELATIONAL KEY · V2.3 BOUNDED EXPANSION · WAVES 001–002</p>
+            <p className="eyebrow">RELATIONAL KEY · V2.4 BOUNDED EXPANSION · WAVES 001–003</p>
             <h1>THE RELATIONAL PAIR REMAINS THE PRODUCT.</h1>
             <p className="lede">Two base cards stay visible and necessary · archive-derived interaction studies · React + R3F / Three.js · V1 remains frozen.</p>
           </div>
@@ -277,15 +256,8 @@ export default function App() {
       {!focusMode && (
         <nav className="pilot-tabs" aria-label="V2 family studies">
           {pilots.map((item) => (
-            <button
-              key={item.id}
-              type="button"
-              className={item.id === activeId ? 'pilot-tab active' : 'pilot-tab'}
-              aria-pressed={item.id === activeId}
-              onClick={() => selectFamily(item.id)}
-            >
-              <span>{item.label}</span>
-              <small>{item.className}</small>
+            <button key={item.id} type="button" className={item.id === activeId ? 'pilot-tab active' : 'pilot-tab'} aria-pressed={item.id === activeId} onClick={() => selectFamily(item.id)}>
+              <span>{item.label}</span><small>{item.className}</small>
             </button>
           ))}
         </nav>
@@ -294,10 +266,7 @@ export default function App() {
       <section className="pilot-grid" aria-labelledby="pilot-title">
         <div className="scene-column">
           <div className="scene-heading">
-            <div>
-              <p className="eyebrow">{pilot.className}</p>
-              <h2 id="pilot-title">{pilot.label}</h2>
-            </div>
+            <div><p className="eyebrow">{pilot.className}</p><h2 id="pilot-title">{pilot.label}</h2></div>
             <p className="motion-note">{reducedMotion ? 'Reduced motion active' : 'Motion follows system preference'}</p>
           </div>
 
@@ -314,14 +283,12 @@ export default function App() {
               <ActiveScene key={activeId} {...activeSceneProps} />
             </Suspense>
           </div>
-
           <div className="status-strip" role="status" aria-live="polite" aria-atomic="true">{status}</div>
         </div>
 
         <aside className="controls-column" aria-label={`${pilot.label} controls and evidence`}>
           <section className="control-panel">
             <h3>{activeId === 'funicular-valparaiso' ? 'RELATION CONTROL' : 'RELATION TEST'}</h3>
-
             {activeId === 'funicular-valparaiso' ? (
               <div className="relation-buttons">
                 <button type="button" className="primary" onClick={() => setFunicularPositionA((value) => 1 - value)}>SWAP START</button>
@@ -335,59 +302,18 @@ export default function App() {
               </div>
             )}
 
-            {activeId === 'anamorphosis-paris' && (
-              <label className="range-control">
-                <span>Reflector relation offset <output>{anamorphosisOffset.toFixed(2)}</output></span>
-                <input type="range" min="-1" max="1" step="0.01" value={anamorphosisOffset} onChange={(event) => setAnamorphosisOffset(Number(event.target.value))} />
-                <small>Drag the cylinder directly or use this keyboard/touch-safe control.</small>
-              </label>
-            )}
-
-            {activeId === 'coupler-virginia' && (
-              <>
-                <label className="range-control"><span>Approach <output>{Math.round(couplerApproach * 100)}%</output></span><input type="range" min="0" max="1" step="0.01" value={couplerApproach} onChange={(event) => setCouplerApproach(Number(event.target.value))} /></label>
-                <label className="range-control"><span>Load-path pull <output>{Math.round(couplerPull * 100)}%</output></span><input type="range" min="0" max="1" step="0.01" value={couplerPull} onChange={(event) => setCouplerPull(Number(event.target.value))} /></label>
-                <div className="micro-actions"><button type="button" onClick={() => setCouplerApproach((value) => Math.min(1, value + 0.2))}>APPROACH +</button><button type="button" onClick={() => setCouplerPull((value) => Math.min(1, value + 0.25))}>PULL +</button></div>
-              </>
-            )}
-
-            {activeId === 'ombak-bali' && (
-              <>
-                <label className="range-control"><span>Synthetic base frequency <output>{ombakBase} Hz</output></span><input type="range" min="160" max="360" step="1" value={ombakBase} onChange={(event) => setOmbakBase(Number(event.target.value))} /></label>
-                <label className="range-control"><span>Paired difference study <output>{ombakDifference.toFixed(1)} Hz</output></span><input type="range" min="1" max="10" step="0.1" value={ombakDifference} onChange={(event) => setOmbakDifference(Number(event.target.value))} /><small>This is a synthetic study control, not a claim of one universal Balinese tuning.</small></label>
-                <div className="micro-actions">{!audio.playing ? <button type="button" onClick={audio.start}>START SYNTHETIC AUDIO</button> : <button type="button" onClick={audio.stop}>STOP AUDIO</button>}</div>
-              </>
-            )}
-
-            {activeId === 'kento-japan' && (
-              <>
-                <label className="range-control"><span>Kentō registration offset <output>{kentoOffset.toFixed(2)}</output></span><input type="range" min="-0.5" max="0.5" step="0.01" value={kentoOffset} onChange={(event) => { setKentoOffset(Number(event.target.value)); setKentoPressed(false); }} /><small>The two base cards remain separate; registration determines whether transfer lands correctly.</small></label>
-                <div className="micro-actions"><button type="button" onClick={() => setKentoPressed(true)}>PRESS / TRANSFER</button></div>
-              </>
-            )}
-
-            {activeId === 'stereoscopy-uk' && (
-              <label className="range-control"><span>Controlled disparity <output>{stereoDisparity.toFixed(2)}</output></span><input type="range" min="0.08" max="0.9" step="0.01" value={stereoDisparity} onChange={(event) => setStereoDisparity(Number(event.target.value))} /><small>Depth is an optional relational reading; comprehension never depends on the viewer having stereopsis.</small></label>
-            )}
-
-            {activeId === 'signal-nigeria' && (
-              <label className="range-control"><span>Uplink orientation <output>{Math.round(signalAlignment * 100)}%</output></span><input type="range" min="0" max="1" step="0.01" value={signalAlignment} onChange={(event) => setSignalAlignment(Number(event.target.value))} /><small>The relay node visualizes the relationship; the two signal cards remain the persistent members.</small></label>
-            )}
-
-            {activeId === 'astrolabe-isfahan' && (
-              <label className="range-control"><span>Rete relative rotation <output>{Math.round(astrolabeAngle)}°</output></span><input type="range" min="-180" max="180" step="1" value={astrolabeAngle} onChange={(event) => setAstrolabeAngle(Number(event.target.value))} /><small>The latitude plate stays stationary while the rete rotates around the shared axis. This is a structural reading, not an astronomical calculator.</small></label>
-            )}
-
-            {activeId === 'funicular-valparaiso' && (
-              <label className="range-control"><span>Car A height <output>{Math.round(funicularPositionA * 100)}%</output></span><input type="range" min="0" max="1" step="0.01" value={funicularPositionA} onChange={(event) => setFunicularPositionA(Number(event.target.value))} /><small>Car B is always solved as the exact inverse position. Either car can also be dragged directly in the scene.</small></label>
-            )}
-
-            {activeId === 'music-box-sainte-croix' && (
-              <>
-                <label className="range-control"><span>Manual cylinder rotation <output>{Math.round(musicBoxAngle)}°</output></span><input type="range" min="0" max="359" step="1" value={musicBoxAngle} onChange={(event) => setMusicBoxAngle(Number(event.target.value))} /><small>Visual tooth response is the proof. No historical recording or authentic Paillard tune is used.</small></label>
-                <div className="micro-actions"><button type="button" onClick={() => setMusicBoxEngaged((value) => !value)}>{musicBoxEngaged ? 'DISENGAGE' : 'ENGAGE CYLINDER + COMB'}</button></div>
-              </>
-            )}
+            {activeId === 'anamorphosis-paris' && <label className="range-control"><span>Reflector relation offset <output>{anamorphosisOffset.toFixed(2)}</output></span><input type="range" min="-1" max="1" step="0.01" value={anamorphosisOffset} onChange={(event) => setAnamorphosisOffset(Number(event.target.value))} /><small>Drag the cylinder directly or use this keyboard/touch-safe control.</small></label>}
+            {activeId === 'coupler-virginia' && <><label className="range-control"><span>Approach <output>{Math.round(couplerApproach * 100)}%</output></span><input type="range" min="0" max="1" step="0.01" value={couplerApproach} onChange={(event) => setCouplerApproach(Number(event.target.value))} /></label><label className="range-control"><span>Load-path pull <output>{Math.round(couplerPull * 100)}%</output></span><input type="range" min="0" max="1" step="0.01" value={couplerPull} onChange={(event) => setCouplerPull(Number(event.target.value))} /></label><div className="micro-actions"><button type="button" onClick={() => setCouplerApproach((value) => Math.min(1, value + 0.2))}>APPROACH +</button><button type="button" onClick={() => setCouplerPull((value) => Math.min(1, value + 0.25))}>PULL +</button></div></>}
+            {activeId === 'ombak-bali' && <><label className="range-control"><span>Synthetic base frequency <output>{ombakBase} Hz</output></span><input type="range" min="160" max="360" step="1" value={ombakBase} onChange={(event) => setOmbakBase(Number(event.target.value))} /></label><label className="range-control"><span>Paired difference study <output>{ombakDifference.toFixed(1)} Hz</output></span><input type="range" min="1" max="10" step="0.1" value={ombakDifference} onChange={(event) => setOmbakDifference(Number(event.target.value))} /><small>This is a synthetic study control, not a claim of one universal Balinese tuning.</small></label><div className="micro-actions">{!audio.playing ? <button type="button" onClick={audio.start}>START SYNTHETIC AUDIO</button> : <button type="button" onClick={audio.stop}>STOP AUDIO</button>}</div></>}
+            {activeId === 'kento-japan' && <><label className="range-control"><span>Kentō registration offset <output>{kentoOffset.toFixed(2)}</output></span><input type="range" min="-0.5" max="0.5" step="0.01" value={kentoOffset} onChange={(event) => { setKentoOffset(Number(event.target.value)); setKentoPressed(false); }} /><small>The two base cards remain separate; registration determines whether transfer lands correctly.</small></label><div className="micro-actions"><button type="button" onClick={() => setKentoPressed(true)}>PRESS / TRANSFER</button></div></>}
+            {activeId === 'stereoscopy-uk' && <label className="range-control"><span>Controlled disparity <output>{stereoDisparity.toFixed(2)}</output></span><input type="range" min="0.08" max="0.9" step="0.01" value={stereoDisparity} onChange={(event) => setStereoDisparity(Number(event.target.value))} /><small>Depth is an optional relational reading; comprehension never depends on the viewer having stereopsis.</small></label>}
+            {activeId === 'signal-nigeria' && <label className="range-control"><span>Uplink orientation <output>{Math.round(signalAlignment * 100)}%</output></span><input type="range" min="0" max="1" step="0.01" value={signalAlignment} onChange={(event) => setSignalAlignment(Number(event.target.value))} /><small>The relay node visualizes the relationship; the two signal cards remain the persistent members.</small></label>}
+            {activeId === 'astrolabe-isfahan' && <label className="range-control"><span>Rete relative rotation <output>{Math.round(astrolabeAngle)}°</output></span><input type="range" min="-180" max="180" step="1" value={astrolabeAngle} onChange={(event) => setAstrolabeAngle(Number(event.target.value))} /><small>The latitude plate stays stationary while the rete rotates around the shared axis. This is a structural reading, not an astronomical calculator.</small></label>}
+            {activeId === 'funicular-valparaiso' && <label className="range-control"><span>Car A height <output>{Math.round(funicularPositionA * 100)}%</output></span><input type="range" min="0" max="1" step="0.01" value={funicularPositionA} onChange={(event) => setFunicularPositionA(Number(event.target.value))} /><small>Car B is always solved as the exact inverse position. Either car can also be dragged directly in the scene.</small></label>}
+            {activeId === 'music-box-sainte-croix' && <><label className="range-control"><span>Manual cylinder rotation <output>{Math.round(musicBoxAngle)}°</output></span><input type="range" min="0" max="359" step="1" value={musicBoxAngle} onChange={(event) => setMusicBoxAngle(Number(event.target.value))} /><small>Visual tooth response is the proof. No historical recording or authentic Paillard tune is used.</small></label><div className="micro-actions"><button type="button" onClick={() => setMusicBoxEngaged((value) => !value)}>{musicBoxEngaged ? 'DISENGAGE' : 'ENGAGE CYLINDER + COMB'}</button></div></>}
+            {activeId === 'boulle-france' && <><label className="range-control"><span>Reciprocal cut state <output>{boulleSeparated ? 'SEPARATED' : 'STACKED'}</output></span><small>One shared procedural cut must create both inverse surfaces; no wildlife material or fabrication recipe is modeled.</small></label><div className="micro-actions"><button type="button" onClick={() => setBoulleSeparated(true)}>SEPARATE RECIPROCAL CUT</button></div></>}
+            {activeId === 'khipu-peru' && <label className="range-control"><span>Shared tension <output>{Math.round(khipuTension * 100)}%</output></span><input type="range" min="0" max="1" step="0.01" value={khipuTension} onChange={(event) => setKhipuTension(Number(event.target.value))} /><small>Structural attachment only. No numerical, linguistic or administrative decoding is inferred.</small></label>}
+            {activeId === 'mate-bombilla-argentina' && <label className="range-control"><span>Bombilla insertion <output>{Math.round(mateInsertion * 100)}%</output></span><input type="range" min="0" max="1" step="0.01" value={mateInsertion} onChange={(event) => setMateInsertion(Number(event.target.value))} /><small>Selective passage is a procedural structural proof, not a fluid or physiological simulation.</small></label>}
           </section>
 
           <section className="evidence-panel">

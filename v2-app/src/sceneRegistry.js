@@ -10,4 +10,7 @@ export const sceneComponents = Object.freeze({
   'astrolabe-isfahan': lazy(() => import('./sceneEntries/AstrolabeEntry.jsx')),
   'funicular-valparaiso': lazy(() => import('./sceneEntries/FunicularEntry.jsx')),
   'music-box-sainte-croix': lazy(() => import('./sceneEntries/MusicBoxEntry.jsx')),
+  'boulle-france': lazy(() => import('./sceneEntries/BoulleEntry.jsx')),
+  'khipu-peru': lazy(() => import('./sceneEntries/KhipuEntry.jsx')),
+  'mate-bombilla-argentina': lazy(() => import('./sceneEntries/MateBombillaEntry.jsx')),
 });
