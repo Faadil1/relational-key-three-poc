@@ -2,7 +2,7 @@ state_class: relational_key_v2_cycle
 project: RELATIONAL_KEY
 cycle: V2
 canonical_branch: v2/archive-interaction-3d-matrix-001
-last_updated_utc: "2026-09-05T07:24:03Z"
+last_updated_utc: "2026-09-05T08:23:12Z"
 
 baseline_v1:
   immutable: true
@@ -14,7 +14,7 @@ baseline_v1:
   final_matrix: STRONG_24_ADEQUATE_0_EXPERIENCE_DEBT_0
 
 v2:
-  status: V2_3_WAVE_003_BUILD_AUTHORIZED_EXACTLY_THREE
+  status: V2_4_WAVE_003_PASS__WAVE_004_SELECTION_AUTHORIZED
   issue: 37
   charter: V2/RELATIONAL_KEY_V2_EVOLUTION_CHARTER.md
   matrix: V2/V2_0_24_FAMILY_ARCHIVE_INTERACTION_3D_OPPORTUNITY_MATRIX.md
@@ -26,10 +26,11 @@ v2:
   v2_3_wave_002_selection: V2/V2_3_WAVE_002_SELECTION_ARCHIVE_REFRESH_001.md
   v2_3_wave_002_closeout: V2/V2_3_WAVE_002_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
   v2_3_wave_003_selection: V2/V2_3_WAVE_003_SELECTION_ARCHIVE_REFRESH_001.md
+  v2_4_wave_003_closeout: V2/V2_4_WAVE_003_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
   target_family_count: 24
-  promotion_candidate_count: 9
+  promotion_candidate_count: 12
   built_or_build_authorized_family_count: 12
-  remaining_unported_family_count: 15
+  remaining_unported_family_count: 12
   target_stack:
     - React
     - React_Three_Fiber
@@ -194,6 +195,43 @@ v2_3_wave_003_selection:
       asset_policy: PROCEDURAL_DEFAULT__NMAI_PUBLIC_DOMAIN_REFERENCE_OPTIONAL_IF_MATERIALLY_NEEDED
   other_12_build_authorized: false
 
+v2_4_wave_003:
+  verdict: PASS
+  initial_exact_tested_head: 445f9fb4da8b66ed621bf07434a668c82acdcad5
+  initial_browser_run: 33954563577
+  initial_evidence_artifact_id: 9965968916
+  initial_evidence_artifact_sha256: 51ab2146cec1489c6836b7d15c4bcec2d1eeb5427a9eaeb4f4c0c7975d64f471
+  exact_tested_head: 92256034d57a5bd8de3d80f2a3fcc6d2f99dcfa2
+  closeout_doc_commit: 203e3be8a346c3b09415e2ce20252516df723455
+  closeout_doc: V2/V2_4_WAVE_003_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
+  build_run: 33954894455
+  browser_run: 33954894450
+  evidence_artifact_id: 9966088296
+  evidence_artifact_sha256: 378aef662737fc73d8c14083a639aad9007f330bd2348a2a7aa4c0597d9761ec
+  browser_runtime: PASS_WITH_MEASURED_DIAGNOSTICS
+  focus_experience: PASS
+  scaling: PASS
+  mobile_390: PASS
+  reduced_motion: PASS
+  lazy_family_entries: 12
+  one_active_family_canvas: true
+  promotion_candidates:
+    boulle_france:
+      status: V2_PILOT_PROMOTION_CANDIDATE
+      pair: STACKED_MATERIAL_A_AND_B_TO_ONE_SHARED_CUT_TO_TWO_RECIPROCAL_INVERSE_SURFACES
+      first_human_compare: HOLD_RECIPROCAL_INVERSION_VISUAL_DIFFERENCE_TOO_WEAK
+      bounded_rework_head: 92256034d57a5bd8de3d80f2a3fcc6d2f99dcfa2
+      final_human_compare: PASS
+    khipu_peru:
+      status: V2_PILOT_PROMOTION_CANDIDATE
+      pair: PRIMARY_CORD_TENSION_TO_SHARED_ATTACHMENT_RELATION_TO_SECONDARY_CORD_AND_KNOT_POSITION_RESPONSE
+      semantic_contract: STRUCTURAL_ONLY__NO_NUMERIC_LINGUISTIC_ADMINISTRATIVE_OR_HISTORICAL_MESSAGE_DECODING
+      final_human_compare: PASS
+    mate_bombilla_argentina:
+      status: V2_PILOT_PROMOTION_CANDIDATE
+      pair: MATE_MEDIUM_AND_PARTICLES_TO_BOMBILLA_INSERTION_PERFORATED_FILTER_TO_SELECTIVE_PASSAGE_AND_CONTAINMENT
+      final_human_compare: PASS
+
 runtime_assurance:
   doctrine: trace_web_runtime_assurance_plus_raw_bits_to_react_conceptual_source
   react_specific_real_project_validation: ACTIVE
@@ -209,8 +247,9 @@ runtime_assurance:
   latest_exact_browser_verdict: BROWSER_RUNTIME_PASS_PENDING_HUMAN_V1_V2_EXPERIENCE_COMPARISON
   latest_human_comparison: PASS
   latest_scaling_verdict: SCALING_ARCHITECTURE_BROWSER_PASS
-  latest_exact_tested_head: a23c75112bcbb5cfd865c17c40971e73f6bfec1e
-  latest_evidence_artifact_id: 9965133702
+  latest_exact_tested_head: 92256034d57a5bd8de3d80f2a3fcc6d2f99dcfa2
+  latest_evidence_artifact_id: 9966088296
+  latest_evidence_artifact_sha256: 378aef662737fc73d8c14083a639aad9007f330bd2348a2a7aa4c0597d9761ec
 
 deployment_budget:
   v2_work_branch_auto_deploy: false
@@ -218,18 +257,15 @@ deployment_budget:
   explicit_preview_only_when_gate_requires_live_url: true
 
 next_gate:
-  id: V2_3_WAVE_003_THREE_CONCEPT_BUILDS
+  id: V2_4_WAVE_004_SELECTION_COLLISION_AND_ARCHIVE_REFRESH
   research_allowed: true
-  build_allowed: true
-  allowed_families:
-    - boulle-france
-    - khipu-peru
-    - mate-bombilla-argentina
-  disallowed_remaining_family_count: 12
-  required_output: THREE_LAZY_REACT_R3F_BUILDS_PLUS_EXACT_V1_RUNTIME_FOCUS_SCALING_AND_HUMAN_COMPARISON
+  build_allowed: false
+  selection_must_be_bounded: true
+  remaining_candidate_pool_count: 12
+  required_output: SMALL_WAVE_004_SHORTLIST_PLUS_COLLISION_MATRIX_PLUS_ARCHIVE_RIGHTS_REFRESH_PLUS_EXPLICIT_BUILD_AUTHORIZATION
   production_replacement_allowed: false
 
 blockers:
   - V1_REPLACEMENT_BLOCKED_UNTIL_PER_FAMILY_PROMOTION_DECISION_AND_SEPARATE_PRODUCTION_GATE
-  - OTHER_12_FAMILY_BUILDS_NOT_AUTHORIZED
+  - REMAINING_12_FAMILY_BUILDS_NOT_AUTHORIZED
   - MASS_24_FAMILY_PORT_NOT_AUTHORIZED
