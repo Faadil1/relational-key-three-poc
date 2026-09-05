@@ -2,7 +2,7 @@ state_class: relational_key_v2_cycle
 project: RELATIONAL_KEY
 cycle: V2
 canonical_branch: v2/archive-interaction-3d-matrix-001
-last_updated_utc: "2026-09-05T07:20:05Z"
+last_updated_utc: "2026-09-05T07:24:03Z"
 
 baseline_v1:
   immutable: true
@@ -14,7 +14,7 @@ baseline_v1:
   final_matrix: STRONG_24_ADEQUATE_0_EXPERIENCE_DEBT_0
 
 v2:
-  status: V2_3_WAVE_002_PASS__WAVE_003_SELECTION_AUTHORIZED
+  status: V2_3_WAVE_003_BUILD_AUTHORIZED_EXACTLY_THREE
   issue: 37
   charter: V2/RELATIONAL_KEY_V2_EVOLUTION_CHARTER.md
   matrix: V2/V2_0_24_FAMILY_ARCHIVE_INTERACTION_3D_OPPORTUNITY_MATRIX.md
@@ -25,9 +25,10 @@ v2:
   v2_3_wave_001_closeout: V2/V2_3_WAVE_001_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
   v2_3_wave_002_selection: V2/V2_3_WAVE_002_SELECTION_ARCHIVE_REFRESH_001.md
   v2_3_wave_002_closeout: V2/V2_3_WAVE_002_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
+  v2_3_wave_003_selection: V2/V2_3_WAVE_003_SELECTION_ARCHIVE_REFRESH_001.md
   target_family_count: 24
   promotion_candidate_count: 9
-  built_or_build_authorized_family_count: 9
+  built_or_build_authorized_family_count: 12
   remaining_unported_family_count: 15
   target_stack:
     - React
@@ -134,9 +135,6 @@ v2_3_wave_002_selection:
       status: BUILD_AUTHORIZED
       pair: PINNED_CYLINDER_TO_PIN_TO_TOOTH_CONTACT_TO_TUNED_COMB
       asset_policy: PROCEDURAL_GEOMETRY_AND_SYNTHETIC_AUDIO_ONLY
-  held_collision_examples:
-    frida_coyoacan: HELD_REFLECTION_TRACE_COLLISION_WITH_ANAMORPHOSIS
-    siku_bolivia: HELD_TEMPORAL_AUDIO_COLLISION_WITH_OMBAK
 
 v2_3_wave_002:
   verdict: PASS
@@ -171,6 +169,31 @@ v2_3_wave_002:
       bounded_rework_head: a23c75112bcbb5cfd865c17c40971e73f6bfec1e
       final_human_compare: PASS
 
+v2_3_wave_003_selection:
+  verdict: PASS
+  selection_commit: cbc8839c54b9e3ac671700c147848e0efd22d282
+  selection_doc: V2/V2_3_WAVE_003_SELECTION_ARCHIVE_REFRESH_001.md
+  shortlist_size: 3
+  archive_refresh: PASS
+  collision_check: PASS
+  rights_boundaries: PASS
+  build_authorized_exactly_three: true
+  allowed_families:
+    boulle_france:
+      status: BUILD_AUTHORIZED
+      pair: STACKED_MATERIAL_A_AND_B_TO_ONE_SHARED_CUT_TO_TWO_RECIPROCAL_INVERSE_SURFACES
+      asset_policy: PROCEDURAL_DEFAULT__MET_PUBLIC_DOMAIN_REFERENCE_OPTIONAL_IF_MATERIALLY_NEEDED
+    khipu_peru:
+      status: BUILD_AUTHORIZED
+      pair: PRIMARY_CORD_TENSION_TO_SHARED_ATTACHMENT_RELATION_TO_SECONDARY_CORD_AND_KNOT_POSITION_RESPONSE
+      asset_policy: PROCEDURAL_ONLY__NMAI_AND_PEABODY_OBJECT_RECORDS_REFERENCE_ONLY
+      semantic_contract: STRUCTURAL_ONLY__NO_NUMERIC_LINGUISTIC_OR_ADMINISTRATIVE_DECODING
+    mate_bombilla_argentina:
+      status: BUILD_AUTHORIZED
+      pair: MATE_MEDIUM_AND_PARTICLES_TO_BOMBILLA_INSERTION_PERFORATED_FILTER_TO_SELECTIVE_PASSAGE_AND_CONTAINMENT
+      asset_policy: PROCEDURAL_DEFAULT__NMAI_PUBLIC_DOMAIN_REFERENCE_OPTIONAL_IF_MATERIALLY_NEEDED
+  other_12_build_authorized: false
+
 runtime_assurance:
   doctrine: trace_web_runtime_assurance_plus_raw_bits_to_react_conceptual_source
   react_specific_real_project_validation: ACTIVE
@@ -195,16 +218,18 @@ deployment_budget:
   explicit_preview_only_when_gate_requires_live_url: true
 
 next_gate:
-  id: V2_3_WAVE_003_SELECTION_COLLISION_AND_ARCHIVE_REFRESH
+  id: V2_3_WAVE_003_THREE_CONCEPT_BUILDS
   research_allowed: true
-  build_allowed: false
-  selection_must_be_bounded: true
-  remaining_candidate_pool_count: 15
-  required_output: SMALL_WAVE_003_SHORTLIST_PLUS_COLLISION_MATRIX_PLUS_ARCHIVE_RIGHTS_REFRESH_PLUS_EXPLICIT_BUILD_AUTHORIZATION
+  build_allowed: true
+  allowed_families:
+    - boulle-france
+    - khipu-peru
+    - mate-bombilla-argentina
+  disallowed_remaining_family_count: 12
+  required_output: THREE_LAZY_REACT_R3F_BUILDS_PLUS_EXACT_V1_RUNTIME_FOCUS_SCALING_AND_HUMAN_COMPARISON
   production_replacement_allowed: false
 
 blockers:
   - V1_REPLACEMENT_BLOCKED_UNTIL_PER_FAMILY_PROMOTION_DECISION_AND_SEPARATE_PRODUCTION_GATE
-  - WAVE_003_BUILDS_BLOCKED_UNTIL_SELECTION_COLLISION_ARCHIVE_REFRESH_PASS
-  - REMAINING_15_FAMILY_BUILDS_NOT_AUTHORIZED
+  - OTHER_12_FAMILY_BUILDS_NOT_AUTHORIZED
   - MASS_24_FAMILY_PORT_NOT_AUTHORIZED
