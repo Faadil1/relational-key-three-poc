@@ -2,7 +2,7 @@ state_class: relational_key_v2_cycle
 project: RELATIONAL_KEY
 cycle: V2
 canonical_branch: v2/archive-interaction-3d-matrix-001
-last_updated_utc: "2026-09-04T20:05:00Z"
+last_updated_utc: "2026-09-05T07:20:05Z"
 
 baseline_v1:
   immutable: true
@@ -14,7 +14,7 @@ baseline_v1:
   final_matrix: STRONG_24_ADEQUATE_0_EXPERIENCE_DEBT_0
 
 v2:
-  status: V2_3_WAVE_002_BUILD_AUTHORIZED_EXACTLY_THREE
+  status: V2_3_WAVE_002_PASS__WAVE_003_SELECTION_AUTHORIZED
   issue: 37
   charter: V2/RELATIONAL_KEY_V2_EVOLUTION_CHARTER.md
   matrix: V2/V2_0_24_FAMILY_ARCHIVE_INTERACTION_3D_OPPORTUNITY_MATRIX.md
@@ -24,8 +24,9 @@ v2:
   v2_1_closeout: V2/V2_1_RUNTIME_AND_EXPERIENCE_COMPARE_004.md
   v2_3_wave_001_closeout: V2/V2_3_WAVE_001_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
   v2_3_wave_002_selection: V2/V2_3_WAVE_002_SELECTION_ARCHIVE_REFRESH_001.md
+  v2_3_wave_002_closeout: V2/V2_3_WAVE_002_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
   target_family_count: 24
-  promotion_candidate_count: 6
+  promotion_candidate_count: 9
   built_or_build_authorized_family_count: 9
   remaining_unported_family_count: 15
   target_stack:
@@ -136,7 +137,39 @@ v2_3_wave_002_selection:
   held_collision_examples:
     frida_coyoacan: HELD_REFLECTION_TRACE_COLLISION_WITH_ANAMORPHOSIS
     siku_bolivia: HELD_TEMPORAL_AUDIO_COLLISION_WITH_OMBAK
-  other_15_build_authorized: false
+
+v2_3_wave_002:
+  verdict: PASS
+  exact_tested_head: a23c75112bcbb5cfd865c17c40971e73f6bfec1e
+  closeout_doc_commit: 952fe961aa771fa5b17024245419a7ff61810f71
+  closeout_doc: V2/V2_3_WAVE_002_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
+  build_run: 33951845354
+  browser_run: 33951845352
+  evidence_artifact_id: 9965133702
+  evidence_artifact_sha256: 433add9ba598c8d5421faf98809a006c1849227a1130cc550a19bec96f35813f
+  browser_runtime: PASS_WITH_MEASURED_DIAGNOSTICS
+  focus_experience: PASS
+  scaling: PASS
+  mobile_390: PASS
+  reduced_motion: PASS
+  two_base_cards_ci_enforced: true
+  archive_specificity_ci_enforced: true
+  distinct_relational_laws_ci_enforced: true
+  funicular_nonbinary_contract_ci_enforced: true
+  promotion_candidates:
+    astrolabe_isfahan:
+      status: V2_PILOT_PROMOTION_CANDIDATE
+      pair: RETE_STAR_MAP_TO_SHARED_AXIS_RELATIVE_ROTATION_TO_LATITUDE_PLATE_LOCAL_HORIZON
+    funicular_valparaiso:
+      status: V2_PILOT_PROMOTION_CANDIDATE
+      pair: CAR_A_TO_SHARED_FUNICULAR_INVERSE_POSITION_TO_CAR_B
+      semantic_contract: CONTINUOUS_VALID_RELATION__NO_FALSE_SUCCESS_FAILURE_BINARY
+    music_box_sainte_croix:
+      status: V2_PILOT_PROMOTION_CANDIDATE
+      pair: PINNED_CYLINDER_TO_PIN_TO_TOOTH_CONTACT_TO_TUNED_COMB
+      first_human_compare: HOLD_CONTACT_EVENT_VISUAL_WITNESS_TOO_WEAK
+      bounded_rework_head: a23c75112bcbb5cfd865c17c40971e73f6bfec1e
+      final_human_compare: PASS
 
 runtime_assurance:
   doctrine: trace_web_runtime_assurance_plus_raw_bits_to_react_conceptual_source
@@ -153,6 +186,8 @@ runtime_assurance:
   latest_exact_browser_verdict: BROWSER_RUNTIME_PASS_PENDING_HUMAN_V1_V2_EXPERIENCE_COMPARISON
   latest_human_comparison: PASS
   latest_scaling_verdict: SCALING_ARCHITECTURE_BROWSER_PASS
+  latest_exact_tested_head: a23c75112bcbb5cfd865c17c40971e73f6bfec1e
+  latest_evidence_artifact_id: 9965133702
 
 deployment_budget:
   v2_work_branch_auto_deploy: false
@@ -160,18 +195,16 @@ deployment_budget:
   explicit_preview_only_when_gate_requires_live_url: true
 
 next_gate:
-  id: V2_3_WAVE_002_THREE_CONCEPT_BUILDS
+  id: V2_3_WAVE_003_SELECTION_COLLISION_AND_ARCHIVE_REFRESH
   research_allowed: true
-  build_allowed: true
-  allowed_families:
-    - astrolabe-isfahan
-    - funicular-valparaiso
-    - music-box-sainte-croix
-  disallowed_remaining_family_count: 15
-  required_output: THREE_LAZY_REACT_R3F_BUILDS_PLUS_EXACT_V1_RUNTIME_FOCUS_SCALING_AND_HUMAN_COMPARISON
+  build_allowed: false
+  selection_must_be_bounded: true
+  remaining_candidate_pool_count: 15
+  required_output: SMALL_WAVE_003_SHORTLIST_PLUS_COLLISION_MATRIX_PLUS_ARCHIVE_RIGHTS_REFRESH_PLUS_EXPLICIT_BUILD_AUTHORIZATION
   production_replacement_allowed: false
 
 blockers:
   - V1_REPLACEMENT_BLOCKED_UNTIL_PER_FAMILY_PROMOTION_DECISION_AND_SEPARATE_PRODUCTION_GATE
-  - OTHER_15_FAMILY_BUILDS_NOT_AUTHORIZED
+  - WAVE_003_BUILDS_BLOCKED_UNTIL_SELECTION_COLLISION_ARCHIVE_REFRESH_PASS
+  - REMAINING_15_FAMILY_BUILDS_NOT_AUTHORIZED
   - MASS_24_FAMILY_PORT_NOT_AUTHORIZED
