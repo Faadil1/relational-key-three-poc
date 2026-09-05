@@ -2,7 +2,7 @@ state_class: relational_key_v2_cycle
 project: RELATIONAL_KEY
 cycle: V2
 canonical_branch: v2/archive-interaction-3d-matrix-001
-last_updated_utc: "2026-09-05T14:13:53Z"
+last_updated_utc: "2026-09-05T14:28:40Z"
 
 baseline_v1:
   immutable: true
@@ -14,7 +14,7 @@ baseline_v1:
   final_matrix: STRONG_24_ADEQUATE_0_EXPERIENCE_DEBT_0
 
 v2:
-  status: V2_4_WAVE_003_PASS__WAVE_004_SELECTION_AUTHORIZED
+  status: V2_4_WAVE_004_SELECTION_PASS__WAVE_004_BUILD_AUTHORIZED
   issue: 37
   charter: V2/RELATIONAL_KEY_V2_EVOLUTION_CHARTER.md
   matrix: V2/V2_0_24_FAMILY_ARCHIVE_INTERACTION_3D_OPPORTUNITY_MATRIX.md
@@ -27,9 +27,10 @@ v2:
   v2_3_wave_002_closeout: V2/V2_3_WAVE_002_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
   v2_3_wave_003_selection: V2/V2_3_WAVE_003_SELECTION_ARCHIVE_REFRESH_001.md
   v2_4_wave_003_closeout: V2/V2_4_WAVE_003_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
+  v2_4_wave_004_selection: V2/V2_4_WAVE_004_SELECTION_ARCHIVE_REFRESH_001.md
   target_family_count: 24
   promotion_candidate_count: 12
-  built_or_build_authorized_family_count: 12
+  built_or_build_authorized_family_count: 15
   remaining_unported_family_count: 12
   target_stack:
     - React
@@ -257,6 +258,34 @@ v2_4_wave_003_qa_reconciliation:
     - NO_V1_OR_PRODUCTION_REPLACEMENT
     - NO_VERCEL_DEPLOYMENT
 
+v2_4_wave_004_selection:
+  verdict: PASS
+  selection_commit: 6e1bb4e0a1292176a7b770da0788a51ef8d5fee5
+  selection_doc: V2/V2_4_WAVE_004_SELECTION_ARCHIVE_REFRESH_001.md
+  shortlist_size: 3
+  archive_refresh: PASS
+  collision_check: PASS
+  rights_boundaries: PASS
+  contextual_truth_boundaries: PASS
+  build_authorized_exactly_three: true
+  allowed_families:
+    service_benin:
+      status: BUILD_AUTHORIZED
+      pair: BENIN_TELEPHONE_CARD_MEMBER_TO_REGISTERED_CONTACT_SERVICE_HANDOFF_TO_PUBLIPHONE_SERVICE_WINDOW_RESPONSE
+      asset_policy: PROCEDURAL_ONLY_FOR_BUILD__ARCHIVES_NATIONALES_AND_ITU_REFERENCE_TEXT_ONLY
+      truth_boundary: EXACT_CARD_READER_PAIRING_AND_CONTACT_BEHAVIOR_ARE_EDITORIAL_NOT_HISTORICAL_PROCEDURE
+    food_toyama:
+      status: BUILD_AUTHORIZED
+      pair: PRESS_PACKAGE_CONSTRAINT_TO_ORDERED_RELEASE_TO_BAMBOO_LEAF_FAN_REVEAL_RESPONSE
+      asset_policy: PROCEDURAL_ONLY_FOR_BUILD__MAFF_AND_TOYAMA_OFFICIAL_PROCESS_REFERENCE_ONLY
+      semantic_contract: OTHER_IS_EDITORIAL_INCOMPLETE_RELATION_NOT_FOOD_QUALITY_OR_CULTURAL_JUDGMENT
+    hika_ahi_aotearoa:
+      status: BUILD_AUTHORIZED
+      pair: HIKA_RECIPROCAL_STROKE_PLUS_GROOVED_BASE_RESISTANCE_TO_SUSTAINED_FRICTION_TO_LOCALIZED_EMBER_STATE
+      asset_policy: PROCEDURAL_ONLY__TE_PAPA_OBJECT_AND_ARCHIVE_MEDIA_REFERENCE_ONLY__NO_RASTER_REUSE
+      semantic_contract: MECHANISM_ONLY__NO_RITUAL_WHakapapa_CEREMONIAL_OR_UNIVERSAL_MAORI_CLAIMS
+  other_9_build_authorized: false
+
 runtime_assurance:
   doctrine: trace_web_runtime_assurance_plus_raw_bits_to_react_conceptual_source
   react_specific_real_project_validation: ACTIVE
@@ -282,15 +311,20 @@ deployment_budget:
   explicit_preview_only_when_gate_requires_live_url: true
 
 next_gate:
-  id: V2_4_WAVE_004_SELECTION_COLLISION_AND_ARCHIVE_REFRESH
+  id: V2_5_WAVE_004_THREE_CONCEPT_BUILDS_PLUS_EXACT_V1_RUNTIME_FOCUS_SCALING_AND_HUMAN_COMPARISON
   research_allowed: true
-  build_allowed: false
-  selection_must_be_bounded: true
-  remaining_candidate_pool_count: 12
-  required_output: SMALL_WAVE_004_SHORTLIST_PLUS_COLLISION_MATRIX_PLUS_ARCHIVE_RIGHTS_REFRESH_PLUS_EXPLICIT_BUILD_AUTHORIZATION
+  build_allowed: true
+  build_authorized_exactly_three: true
+  allowed_families:
+    - service-benin
+    - food-toyama
+    - hika-ahi-aotearoa
+  remaining_candidate_pool_count: 9
+  required_output: THREE_BOUNDED_FAMILY_BUILDS_PLUS_CONTRACT_CI_PLUS_EXACT_BROWSER_RUNTIME_PLUS_SCALING_PLUS_MOBILE_REDUCED_MOTION_PLUS_V1_HUMAN_COMPARISON
   production_replacement_allowed: false
+  vercel_preview_allowed: false
 
 blockers:
   - V1_REPLACEMENT_BLOCKED_UNTIL_PER_FAMILY_PROMOTION_DECISION_AND_SEPARATE_PRODUCTION_GATE
-  - REMAINING_12_FAMILY_BUILDS_NOT_AUTHORIZED
+  - REMAINING_9_FAMILY_BUILDS_NOT_AUTHORIZED
   - MASS_24_FAMILY_PORT_NOT_AUTHORIZED
