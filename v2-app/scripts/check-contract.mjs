@@ -6,6 +6,7 @@ const here = path.dirname(fileURLToPath(import.meta.url));
 const root = path.resolve(here, '..');
 const read = (relative) => fs.readFileSync(path.join(root, relative), 'utf8');
 const fail = (message) => { console.error(`V2_CONTRACT_FAIL: ${message}`); process.exitCode = 1; };
+const hasMarker = (source, marker) => source.includes(`name="${marker}"`) || source.includes(`'${marker}'`) || source.includes(`"${marker}"`);
 
 const pkg = JSON.parse(read('package.json'));
 const app = read('src/App.jsx');
@@ -55,8 +56,8 @@ for (const row of sceneRows) {
   if (!registry.includes(lazyEntry)) fail(`missing lazy family entry: ${lazyEntry}`);
   if (row.pairMarkers) {
     const scene = scenes[row.id];
-    if (!scene.includes('name="PAIR_MEMBER_A"') || !scene.includes('name="PAIR_MEMBER_B"')) fail(`${row.id} must keep both pair members explicit`);
-    if (!scene.includes('name="RELATION"')) fail(`${row.id} must expose an explicit relation object`);
+    if (!hasMarker(scene, 'PAIR_MEMBER_A') || !hasMarker(scene, 'PAIR_MEMBER_B')) fail(`${row.id} must keep both pair members explicit`);
+    if (!hasMarker(scene, 'RELATION')) fail(`${row.id} must expose an explicit relation object`);
   }
 }
 if ((registry.match(/lazy\(\(\) => import\(/g) ?? []).length !== sceneRows.length) fail(`scene registry must expose exactly ${sceneRows.length} lazy family entries`);
