@@ -1,9 +1,26 @@
 export function ServiceBeninScene({ contact, matching, reducedMotion }) {
   const progress = Math.max(0, Math.min(1, contact));
   const registered = matching && progress >= 0.72;
-  const travel = (reducedMotion ? 0.42 : 0.78) * progress;
+  const travel = (reducedMotion ? 0.46 : 0.86) * progress;
   const offsetY = matching ? 0 : 0.34 * progress;
   const glow = registered ? 1 : Math.max(0.08, progress * 0.45);
+
+  const TelephoneCue = ({ muted = false }) => (
+    <group name="TELEPHONE_SERVICE_CUE" rotation={[0, 0, -0.58]}>
+      <mesh>
+        <boxGeometry args={[0.62, 0.11, 0.045]} />
+        <meshStandardMaterial color={muted ? '#75684d' : '#8f6f2f'} roughness={0.68} />
+      </mesh>
+      <mesh position={[-0.27, 0.13, 0]} rotation={[0, 0, 0.32]}>
+        <boxGeometry args={[0.18, 0.28, 0.055]} />
+        <meshStandardMaterial color={muted ? '#75684d' : '#8f6f2f'} roughness={0.68} />
+      </mesh>
+      <mesh position={[0.27, -0.13, 0]} rotation={[0, 0, 0.32]}>
+        <boxGeometry args={[0.18, 0.28, 0.055]} />
+        <meshStandardMaterial color={muted ? '#75684d' : '#8f6f2f'} roughness={0.68} />
+      </mesh>
+    </group>
+  );
 
   return (
     <>
@@ -22,6 +39,9 @@ export function ServiceBeninScene({ contact, matching, reducedMotion }) {
             <boxGeometry args={[2.55, 0.09, 0.04]} />
             <meshStandardMaterial color="#1d7b55" roughness={0.6} />
           </mesh>
+          <group position={[-0.58, 0.64, 0.155]}>
+            <TelephoneCue />
+          </group>
           <mesh position={[0.58, 0.46, 0.13]}>
             <boxGeometry args={[0.95, 0.72, 0.05]} />
             <meshStandardMaterial color="#c9a34e" metalness={0.42} roughness={0.5} />
@@ -40,6 +60,14 @@ export function ServiceBeninScene({ contact, matching, reducedMotion }) {
             <boxGeometry args={[1.22, 0.055, 0.04]} />
             <meshStandardMaterial color="#927e53" roughness={0.72} />
           </mesh>
+          <mesh position={[-0.82, -1.18, 0.13]}>
+            <boxGeometry args={[0.44, 0.08, 0.04]} />
+            <meshStandardMaterial color="#1d7b55" roughness={0.62} />
+          </mesh>
+          <mesh position={[-0.3, -1.18, 0.13]}>
+            <boxGeometry args={[0.34, 0.08, 0.04]} />
+            <meshStandardMaterial color="#c9a34e" roughness={0.62} />
+          </mesh>
         </group>
       </group>
 
@@ -49,6 +77,9 @@ export function ServiceBeninScene({ contact, matching, reducedMotion }) {
             <boxGeometry args={[2.65, 3.55, 0.24]} />
             <meshStandardMaterial color="#1b1812" roughness={0.78} />
           </mesh>
+          <group position={[-0.72, 1.14, 0.17]} scale={0.78}>
+            <TelephoneCue muted />
+          </group>
           <mesh position={[0, 0.52, 0.15]}>
             <boxGeometry args={[1.8, 1.22, 0.08]} />
             <meshStandardMaterial color="#090907" roughness={0.88} />
@@ -83,7 +114,7 @@ export function ServiceBeninScene({ contact, matching, reducedMotion }) {
             </mesh>
           )))}
         </group>
-        <mesh position={[0, -0.62, 0]}>
+        <mesh position={[0, -0.62, 0]} scale={[registered ? 1.22 : 0.82, 1, 1]}>
           <boxGeometry args={[1.2, 0.055, 0.055]} />
           <meshStandardMaterial color={registered ? '#2b9965' : '#6a5d42'} emissive={registered ? '#1b6b43' : '#000000'} emissiveIntensity={registered ? 0.8 : 0} />
         </mesh>
