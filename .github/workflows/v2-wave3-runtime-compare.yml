@@ -1,0 +1,76 @@
+name: V2 Wave 003 Exact Runtime Compare
+
+on:
+  push:
+    branches:
+      - 'v2/wave-003-builds'
+    paths:
+      - 'v2-app/**'
+      - '.github/workflows/v2-wave3-runtime-compare.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  wave3-browser-compare:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Setup Node 24
+        uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: v2-app/package-lock.json
+      - name: Install exact V2 graph
+        working-directory: v2-app
+        run: npm ci --ignore-scripts
+      - name: Security audit
+        working-directory: v2-app
+        run: npm audit --audit-level=high
+      - name: Contract and production build
+        working-directory: v2-app
+        run: npm run check
+      - name: Install bounded browser harness
+        working-directory: v2-app
+        run: |
+          npm install --no-save --package-lock=false playwright@1.60.0
+          npx playwright install --with-deps chromium
+      - name: Start exact local V1 and V2 servers
+        shell: bash
+        run: |
+          python3 -m http.server 4173 --bind 127.0.0.1 --directory . > /tmp/rk-v1-wave3.log 2>&1 &
+          python3 -m http.server 4174 --bind 127.0.0.1 --directory v2-app/dist > /tmp/rk-v2-wave3.log 2>&1 &
+          for port in 4173 4174; do
+            for i in $(seq 1 30); do
+              if curl -fsS "http://127.0.0.1:${port}/" >/dev/null; then break; fi
+              sleep 1
+            done
+            curl -fsS "http://127.0.0.1:${port}/" >/dev/null
+          done
+      - name: Run Wave 003 exact browser evidence
+        working-directory: v2-app
+        env:
+          RK_V1_URL: http://127.0.0.1:4173
+          RK_V2_URL: http://127.0.0.1:4174
+          RK_RUNTIME_OUT: wave3-runtime-evidence
+        run: node qa/wave3-runtime-compare.mjs
+      - name: Upload Wave 003 evidence
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: relational-key-v2-wave3-runtime-compare
+          path: v2-app/wave3-runtime-evidence/
+          if-no-files-found: error
+          retention-days: 14
+      - name: Show local server logs on failure
+        if: failure()
+        shell: bash
+        run: |
+          echo '--- V1 server ---'
+          cat /tmp/rk-v1-wave3.log || true
+          echo '--- V2 server ---'
+          cat /tmp/rk-v2-wave3.log || true
