@@ -23,6 +23,9 @@ const INITIAL = {
   boulleSeparated: false,
   khipuTension: 0.28,
   mateInsertion: 0.18,
+  serviceContact: 0.18,
+  foodRelease: 0.12,
+  hikaFriction: 0.18,
 };
 
 export default function App() {
@@ -55,6 +58,9 @@ export default function App() {
   const [boulleSeparated, setBoulleSeparated] = useState(INITIAL.boulleSeparated);
   const [khipuTension, setKhipuTension] = useState(INITIAL.khipuTension);
   const [mateInsertion, setMateInsertion] = useState(INITIAL.mateInsertion);
+  const [serviceContact, setServiceContact] = useState(INITIAL.serviceContact);
+  const [foodRelease, setFoodRelease] = useState(INITIAL.foodRelease);
+  const [hikaFriction, setHikaFriction] = useState(INITIAL.hikaFriction);
   const reducedMotion = useReducedMotion();
 
   const focusMode = launch.focusMode;
@@ -151,12 +157,31 @@ export default function App() {
         ? 'MATCHING · perforated bombilla insertion establishes selective passage · represented liquid passes while particulate matter remains contained.'
         : 'OTHER · both filter-system members remain valid · incomplete insertion does not establish selective passage.';
     }
+    if (activeId === 'service-benin') {
+      const registered = matching && serviceContact >= 0.72;
+      return registered
+        ? 'MATCHING · registered Bénin telecom contact establishes the relation · publiphone service window responds.'
+        : 'OTHER · both telecom members remain valid · contact field stays offset and service window remains closed.';
+    }
+    if (activeId === 'food-toyama') {
+      const revealed = matching && foodRelease >= 0.72;
+      return revealed
+        ? 'MATCHING · ordered pressure release transfers across the pair · bamboo-leaf field opens into one shared reveal.'
+        : 'OTHER · both package members remain valid · release order remains incomplete and the shared reveal does not register.';
+    }
+    if (activeId === 'hika-ahi-aotearoa') {
+      const ember = matching && hikaFriction >= 0.72;
+      return ember
+        ? 'MATCHING · sustained friction remains localized at the groove relation · bounded ember witness appears at the interface.'
+        : 'OTHER · both hika ahi tool members remain valid · contact is offset and heat dissipates without an ember register.';
+    }
     return 'RELATION STATE UNAVAILABLE.';
   }, [
     activeId, anamorphosisOffset, matching, couplerApproach, couplerPull, audio.playing,
     ombakDifference, effectiveOmbakDifference, kentoOffset, kentoPressed, stereoDisparity,
     signalAlignment, astrolabeAngle, astrolabePlateMode, funicularPositionA, musicBoxEngaged,
     musicBoxAngle, musicBoxPattern, boulleSeparated, khipuTension, mateInsertion,
+    serviceContact, foodRelease, hikaFriction,
   ]);
 
   const applyRelation = (mode) => {
@@ -172,6 +197,9 @@ export default function App() {
     else if (activeId === 'boulle-france') setBoulleSeparated(true);
     else if (activeId === 'khipu-peru') setKhipuTension(nextMatching ? 1 : 0.62);
     else if (activeId === 'mate-bombilla-argentina') setMateInsertion(nextMatching ? 1 : 0.55);
+    else if (activeId === 'service-benin') setServiceContact(nextMatching ? 1 : 0.48);
+    else if (activeId === 'food-toyama') setFoodRelease(nextMatching ? 1 : 0.42);
+    else if (activeId === 'hika-ahi-aotearoa') setHikaFriction(nextMatching ? 1 : 0.46);
   };
 
   const resetActive = () => {
@@ -188,6 +216,9 @@ export default function App() {
     if (activeId === 'boulle-france') setBoulleSeparated(INITIAL.boulleSeparated);
     if (activeId === 'khipu-peru') setKhipuTension(INITIAL.khipuTension);
     if (activeId === 'mate-bombilla-argentina') setMateInsertion(INITIAL.mateInsertion);
+    if (activeId === 'service-benin') setServiceContact(INITIAL.serviceContact);
+    if (activeId === 'food-toyama') setFoodRelease(INITIAL.foodRelease);
+    if (activeId === 'hika-ahi-aotearoa') setHikaFriction(INITIAL.hikaFriction);
   };
 
   let activeSceneProps = {};
@@ -203,6 +234,9 @@ export default function App() {
   else if (activeId === 'boulle-france') activeSceneProps = { separated: boulleSeparated, matching, reducedMotion };
   else if (activeId === 'khipu-peru') activeSceneProps = { tension: khipuTension, matching, reducedMotion };
   else if (activeId === 'mate-bombilla-argentina') activeSceneProps = { insertion: mateInsertion, matching, reducedMotion };
+  else if (activeId === 'service-benin') activeSceneProps = { contact: serviceContact, matching, reducedMotion };
+  else if (activeId === 'food-toyama') activeSceneProps = { release: foodRelease, matching, reducedMotion };
+  else if (activeId === 'hika-ahi-aotearoa') activeSceneProps = { friction: hikaFriction, matching, reducedMotion };
 
   const selectFamily = (id) => {
     if (activeId === 'ombak-bali' && audio.playing) audio.stop();
@@ -241,7 +275,7 @@ export default function App() {
       ) : (
         <header className="masthead">
           <div>
-            <p className="eyebrow">RELATIONAL KEY · V2.4 BOUNDED EXPANSION · WAVES 001–003</p>
+            <p className="eyebrow">RELATIONAL KEY · V2.5 BOUNDED EXPANSION · WAVES 001–004</p>
             <h1>THE RELATIONAL PAIR REMAINS THE PRODUCT.</h1>
             <p className="lede">Two base cards stay visible and necessary · archive-derived interaction studies · React + R3F / Three.js · V1 remains frozen.</p>
           </div>
@@ -314,6 +348,9 @@ export default function App() {
             {activeId === 'boulle-france' && <><label className="range-control"><span>Reciprocal cut state <output>{boulleSeparated ? 'SEPARATED' : 'STACKED'}</output></span><small>One shared procedural cut must create both inverse surfaces; no wildlife material or fabrication recipe is modeled.</small></label><div className="micro-actions"><button type="button" onClick={() => setBoulleSeparated(true)}>SEPARATE RECIPROCAL CUT</button></div></>}
             {activeId === 'khipu-peru' && <label className="range-control"><span>Shared tension <output>{Math.round(khipuTension * 100)}%</output></span><input type="range" min="0" max="1" step="0.01" value={khipuTension} onChange={(event) => setKhipuTension(Number(event.target.value))} /><small>Structural attachment only. No numerical, linguistic or administrative decoding is inferred.</small></label>}
             {activeId === 'mate-bombilla-argentina' && <label className="range-control"><span>Bombilla insertion <output>{Math.round(mateInsertion * 100)}%</output></span><input type="range" min="0" max="1" step="0.01" value={mateInsertion} onChange={(event) => setMateInsertion(Number(event.target.value))} /><small>Selective passage is a procedural structural proof, not a fluid or physiological simulation.</small></label>}
+            {activeId === 'service-benin' && <label className="range-control"><span>Registered contact <output>{Math.round(serviceContact * 100)}%</output></span><input type="range" min="0" max="1" step="0.01" value={serviceContact} onChange={(event) => setServiceContact(Number(event.target.value))} /><small>Contact geometry and line-window response are editorial proof, not a reconstructed historical operating procedure.</small></label>}
+            {activeId === 'food-toyama' && <label className="range-control"><span>Package release <output>{Math.round(foodRelease * 100)}%</output></span><input type="range" min="0" max="1" step="0.01" value={foodRelease} onChange={(event) => setFoodRelease(Number(event.target.value))} /><small>The interaction demonstrates bounded package/press/reveal mechanics only; no food-quality or preparation claim is made.</small></label>}
+            {activeId === 'hika-ahi-aotearoa' && <label className="range-control"><span>Bounded friction witness <output>{Math.round(hikaFriction * 100)}%</output></span><input type="range" min="0" max="1" step="0.01" value={hikaFriction} onChange={(event) => setHikaFriction(Number(event.target.value))} /><small>Mechanism-level relation only. This is not practical ignition guidance and no archive media is reproduced.</small></label>}
           </section>
 
           <section className="evidence-panel">
