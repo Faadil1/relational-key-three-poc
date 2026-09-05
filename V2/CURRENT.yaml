@@ -2,7 +2,7 @@ state_class: relational_key_v2_cycle
 project: RELATIONAL_KEY
 cycle: V2
 canonical_branch: v2/archive-interaction-3d-matrix-001
-last_updated_utc: "2026-09-05T08:23:12Z"
+last_updated_utc: "2026-09-05T14:13:53Z"
 
 baseline_v1:
   immutable: true
@@ -232,6 +232,31 @@ v2_4_wave_003:
       pair: MATE_MEDIUM_AND_PARTICLES_TO_BOMBILLA_INSERTION_PERFORATED_FILTER_TO_SELECTIVE_PASSAGE_AND_CONTAINMENT
       final_human_compare: PASS
 
+v2_4_wave_003_qa_reconciliation:
+  id: V2_4_WAVE_003_QA_RECONCILIATION_001
+  verdict: PASS
+  source_parallel_test_head: 50959d7a095f8cdfee64b30086792b870511e7e6
+  bounded_reconciliation_head: 23fee9a364b05fe94370226fb480ca737b396d42
+  canonical_merge_head: ffca7f15b94e01e89b183f237f536f176ddd48fe
+  canonical_runtime_run: 33970951023
+  canonical_pilot_ci_run: 33970951031
+  evidence_artifact_id: 9970960006
+  evidence_artifact_sha256: 975bdd21682be535210b1cfd82203a508c8253ba4c3322761d1ab588fe0b49d4
+  all12_chunk_isolation:
+    schema: RELATIONAL_KEY_V2_ALL12_DIRECT_CHUNK_ISOLATION_001
+    verdict: ALL12_CHUNK_ISOLATION_PASS
+    family_count: 12
+    findings: []
+    one_active_family_canvas: true
+    one_active_family_runtime: true
+    unrelated_family_entries_loaded: 0
+  scope:
+    - QA_ONLY
+    - NO_PARALLEL_WAVE_003_IMPLEMENTATION_IMPORTED
+    - NO_WAVE_004_BUILD_AUTHORIZATION
+    - NO_V1_OR_PRODUCTION_REPLACEMENT
+    - NO_VERCEL_DEPLOYMENT
+
 runtime_assurance:
   doctrine: trace_web_runtime_assurance_plus_raw_bits_to_react_conceptual_source
   react_specific_real_project_validation: ACTIVE
@@ -247,9 +272,9 @@ runtime_assurance:
   latest_exact_browser_verdict: BROWSER_RUNTIME_PASS_PENDING_HUMAN_V1_V2_EXPERIENCE_COMPARISON
   latest_human_comparison: PASS
   latest_scaling_verdict: SCALING_ARCHITECTURE_BROWSER_PASS
-  latest_exact_tested_head: 92256034d57a5bd8de3d80f2a3fcc6d2f99dcfa2
-  latest_evidence_artifact_id: 9966088296
-  latest_evidence_artifact_sha256: 378aef662737fc73d8c14083a639aad9007f330bd2348a2a7aa4c0597d9761ec
+  latest_exact_tested_head: ffca7f15b94e01e89b183f237f536f176ddd48fe
+  latest_evidence_artifact_id: 9970960006
+  latest_evidence_artifact_sha256: 975bdd21682be535210b1cfd82203a508c8253ba4c3322761d1ab588fe0b49d4
 
 deployment_budget:
   v2_work_branch_auto_deploy: false
