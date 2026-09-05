@@ -2,7 +2,7 @@ state_class: relational_key_v2_cycle
 project: RELATIONAL_KEY
 cycle: V2
 canonical_branch: v2/archive-interaction-3d-matrix-001
-last_updated_utc: "2026-09-05T14:28:40Z"
+last_updated_utc: "2026-09-05T17:10:00Z"
 
 baseline_v1:
   immutable: true
@@ -14,7 +14,7 @@ baseline_v1:
   final_matrix: STRONG_24_ADEQUATE_0_EXPERIENCE_DEBT_0
 
 v2:
-  status: V2_4_WAVE_004_SELECTION_PASS__WAVE_004_BUILD_AUTHORIZED
+  status: V2_5_WAVE_004_PASS__15_PROMOTION_CANDIDATES__WAVE_005_SELECTION_NEXT
   issue: 37
   charter: V2/RELATIONAL_KEY_V2_EVOLUTION_CHARTER.md
   matrix: V2/V2_0_24_FAMILY_ARCHIVE_INTERACTION_3D_OPPORTUNITY_MATRIX.md
@@ -28,10 +28,11 @@ v2:
   v2_3_wave_003_selection: V2/V2_3_WAVE_003_SELECTION_ARCHIVE_REFRESH_001.md
   v2_4_wave_003_closeout: V2/V2_4_WAVE_003_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
   v2_4_wave_004_selection: V2/V2_4_WAVE_004_SELECTION_ARCHIVE_REFRESH_001.md
+  v2_5_wave_004_closeout: V2/V2_5_WAVE_004_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
   target_family_count: 24
-  promotion_candidate_count: 12
+  promotion_candidate_count: 15
   built_or_build_authorized_family_count: 15
-  remaining_unported_family_count: 12
+  remaining_unported_family_count: 9
   target_stack:
     - React
     - React_Three_Fiber
@@ -283,8 +284,58 @@ v2_4_wave_004_selection:
       status: BUILD_AUTHORIZED
       pair: HIKA_RECIPROCAL_STROKE_PLUS_GROOVED_BASE_RESISTANCE_TO_SUSTAINED_FRICTION_TO_LOCALIZED_EMBER_STATE
       asset_policy: PROCEDURAL_ONLY__TE_PAPA_OBJECT_AND_ARCHIVE_MEDIA_REFERENCE_ONLY__NO_RASTER_REUSE
-      semantic_contract: MECHANISM_ONLY__NO_RITUAL_WHakapapa_CEREMONIAL_OR_UNIVERSAL_MAORI_CLAIMS
+      semantic_contract: MECHANISM_ONLY__NO_RITUAL_WHAKAPAPA_CEREMONIAL_OR_UNIVERSAL_MAORI_CLAIMS
   other_9_build_authorized: false
+
+v2_5_wave_004:
+  verdict: PASS
+  closeout_doc: V2/V2_5_WAVE_004_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
+  closeout_doc_commit: 4940611389a753ab7fc5b213723bdb6aa082ccca
+  initial_exact_tested_head: 65dd9869ee96813059c33158e68c6a51e733f937
+  initial_browser_run: 33977940636
+  initial_evidence_artifact_id: 9972955208
+  initial_evidence_artifact_sha256: eec917b43280ea3c1065c26f981f326fa58fd82f624ac70a588567a59501eba7
+  first_human_compare: HOLD
+  exact_tested_head: 98cb53b1bd8319fe786f2bf4d0e75d9b399a34b7
+  build_run: 33979695172
+  browser_run: 33979695211
+  evidence_artifact_id: 9973464025
+  evidence_artifact_sha256: 669a4646f507514c808c97cefc3a58df3c35027d5f43ef61aa9b49cc5cdf393a
+  browser_runtime: PASS
+  focus_experience: PASS
+  scaling: PASS
+  mobile_390: PASS
+  reduced_motion: PASS
+  lazy_family_entries: 15
+  one_active_family_canvas: true
+  all15_chunk_isolation:
+    schema: RELATIONAL_KEY_V2_ALL15_DIRECT_CHUNK_ISOLATION_001
+    verdict: ALL15_CHUNK_ISOLATION_PASS
+    family_count: 15
+    findings: []
+    one_active_family_canvas: true
+    one_active_family_runtime: true
+    unrelated_family_entries_loaded: 0
+  promotion_candidates:
+    service_benin:
+      status: V2_PILOT_PROMOTION_CANDIDATE
+      pair: BENIN_TELEPHONE_CARD_MEMBER_TO_REGISTERED_CONTACT_SERVICE_HANDOFF_TO_PUBLIPHONE_SERVICE_WINDOW_RESPONSE
+      first_human_compare: HOLD_GENERIC_KEYCARD_VISUAL_LANGUAGE_TOO_STRONG
+      bounded_rework_head: 8d4e4148eed850221393c7a6e20005bb266615e2
+      final_human_compare: PASS
+    food_toyama:
+      status: V2_PILOT_PROMOTION_CANDIDATE
+      pair: PRESS_PACKAGE_CONSTRAINT_TO_ORDERED_RELEASE_TO_BAMBOO_LEAF_FAN_REVEAL_RESPONSE
+      first_human_compare: HOLD_MEMBER_A_RELEASE_CAUSALITY_VISUALLY_TOO_WEAK
+      bounded_rework_head: 6311f6f76921bb87512274c09c4f89d9013fa77b
+      final_human_compare: PASS
+    hika_ahi_aotearoa:
+      status: V2_PILOT_PROMOTION_CANDIDATE
+      pair: HIKA_RECIPROCAL_STROKE_PLUS_GROOVED_BASE_RESISTANCE_TO_SUSTAINED_FRICTION_TO_LOCALIZED_EMBER_STATE
+      first_human_compare: HOLD_EMBER_WITNESS_TOO_BRIDGE_CENTRIC
+      bounded_rework_head: 98cb53b1bd8319fe786f2bf4d0e75d9b399a34b7
+      semantic_contract: MECHANISM_ONLY__NO_RITUAL_WHAKAPAPA_CEREMONIAL_OR_UNIVERSAL_MAORI_CLAIMS
+      final_human_compare: PASS
 
 runtime_assurance:
   doctrine: trace_web_runtime_assurance_plus_raw_bits_to_react_conceptual_source
@@ -298,12 +349,12 @@ runtime_assurance:
     - reduced_motion_path
     - console_error_capture
     - V1_vs_V2_comparison
-  latest_exact_browser_verdict: BROWSER_RUNTIME_PASS_PENDING_HUMAN_V1_V2_EXPERIENCE_COMPARISON
+  latest_exact_browser_verdict: WAVE_004_BROWSER_RUNTIME_PASS
   latest_human_comparison: PASS
   latest_scaling_verdict: SCALING_ARCHITECTURE_BROWSER_PASS
-  latest_exact_tested_head: ffca7f15b94e01e89b183f237f536f176ddd48fe
-  latest_evidence_artifact_id: 9970960006
-  latest_evidence_artifact_sha256: 975bdd21682be535210b1cfd82203a508c8253ba4c3322761d1ab588fe0b49d4
+  latest_exact_tested_head: 98cb53b1bd8319fe786f2bf4d0e75d9b399a34b7
+  latest_evidence_artifact_id: 9973464025
+  latest_evidence_artifact_sha256: 669a4646f507514c808c97cefc3a58df3c35027d5f43ef61aa9b49cc5cdf393a
 
 deployment_budget:
   v2_work_branch_auto_deploy: false
@@ -311,20 +362,15 @@ deployment_budget:
   explicit_preview_only_when_gate_requires_live_url: true
 
 next_gate:
-  id: V2_5_WAVE_004_THREE_CONCEPT_BUILDS_PLUS_EXACT_V1_RUNTIME_FOCUS_SCALING_AND_HUMAN_COMPARISON
+  id: V2_6_WAVE_005_SELECTION_COLLISION_AND_ARCHIVE_REFRESH
   research_allowed: true
-  build_allowed: true
-  build_authorized_exactly_three: true
-  allowed_families:
-    - service-benin
-    - food-toyama
-    - hika-ahi-aotearoa
+  build_allowed: false
   remaining_candidate_pool_count: 9
-  required_output: THREE_BOUNDED_FAMILY_BUILDS_PLUS_CONTRACT_CI_PLUS_EXACT_BROWSER_RUNTIME_PLUS_SCALING_PLUS_MOBILE_REDUCED_MOTION_PLUS_V1_HUMAN_COMPARISON
+  required_output: BOUNDED_WAVE_005_SHORTLIST_PLUS_COLLISION_SCAN_PLUS_ARCHIVE_RIGHTS_CONTEXTUAL_TRUTH_REFRESH_PLUS_EXPLICIT_BUILD_AUTHORIZATION_PROPOSAL
   production_replacement_allowed: false
   vercel_preview_allowed: false
 
 blockers:
   - V1_REPLACEMENT_BLOCKED_UNTIL_PER_FAMILY_PROMOTION_DECISION_AND_SEPARATE_PRODUCTION_GATE
-  - REMAINING_9_FAMILY_BUILDS_NOT_AUTHORIZED
+  - REMAINING_9_FAMILY_BUILDS_NOT_AUTHORIZED_UNTIL_WAVE_005_SELECTION_PASS
   - MASS_24_FAMILY_PORT_NOT_AUTHORIZED
