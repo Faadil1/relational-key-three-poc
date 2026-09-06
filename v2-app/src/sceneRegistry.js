@@ -16,4 +16,7 @@ export const sceneComponents = Object.freeze({
   'service-benin': lazy(() => import('./sceneEntries/ServiceBeninEntry.jsx')),
   'food-toyama': lazy(() => import('./sceneEntries/FoodToyamaEntry.jsx')),
   'hika-ahi-aotearoa': lazy(() => import('./sceneEntries/HikaAhiEntry.jsx')),
+  'metate-teotitlan': lazy(() => import('./sceneEntries/MetateEntry.jsx')),
+  'zellige-fes': lazy(() => import('./sceneEntries/ZelligeEntry.jsx')),
+  'swell-marshall': lazy(() => import('./sceneEntries/SwellEntry.jsx')),
 });
