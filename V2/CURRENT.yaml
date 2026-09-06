@@ -2,7 +2,7 @@ state_class: relational_key_v2_cycle
 project: RELATIONAL_KEY
 cycle: V2
 canonical_branch: v2/archive-interaction-3d-matrix-001
-last_updated_utc: "2026-09-05T17:10:00Z"
+last_updated_utc: "2026-09-06T12:02:58Z"
 
 baseline_v1:
   immutable: true
@@ -14,7 +14,7 @@ baseline_v1:
   final_matrix: STRONG_24_ADEQUATE_0_EXPERIENCE_DEBT_0
 
 v2:
-  status: V2_5_WAVE_004_PASS__15_PROMOTION_CANDIDATES__WAVE_005_SELECTION_NEXT
+  status: V2_6_WAVE_005_BUILD_AUTHORIZED_EXACTLY_THREE
   issue: 37
   charter: V2/RELATIONAL_KEY_V2_EVOLUTION_CHARTER.md
   matrix: V2/V2_0_24_FAMILY_ARCHIVE_INTERACTION_3D_OPPORTUNITY_MATRIX.md
@@ -29,9 +29,10 @@ v2:
   v2_4_wave_003_closeout: V2/V2_4_WAVE_003_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
   v2_4_wave_004_selection: V2/V2_4_WAVE_004_SELECTION_ARCHIVE_REFRESH_001.md
   v2_5_wave_004_closeout: V2/V2_5_WAVE_004_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
+  v2_6_wave_005_selection: V2/V2_6_WAVE_005_SELECTION_ARCHIVE_REFRESH_001.md
   target_family_count: 24
   promotion_candidate_count: 15
-  built_or_build_authorized_family_count: 15
+  built_or_build_authorized_family_count: 18
   remaining_unported_family_count: 9
   target_stack:
     - React
@@ -168,6 +169,7 @@ v2_3_wave_002:
     music_box_sainte_croix:
       status: V2_PILOT_PROMOTION_CANDIDATE
       pair: PINNED_CYLINDER_TO_PIN_TO_TOOTH_CONTACT_TO_TUNED_COMB
+
       first_human_compare: HOLD_CONTACT_EVENT_VISUAL_WITNESS_TOO_WEAK
       bounded_rework_head: a23c75112bcbb5cfd865c17c40971e73f6bfec1e
       final_human_compare: PASS
@@ -337,6 +339,42 @@ v2_5_wave_004:
       semantic_contract: MECHANISM_ONLY__NO_RITUAL_WHAKAPAPA_CEREMONIAL_OR_UNIVERSAL_MAORI_CLAIMS
       final_human_compare: PASS
 
+v2_6_wave_005_selection:
+  verdict: PASS
+  selection_commit: 001e70ed60b731676f064b96de6250bfbeedb7f5
+  selection_doc: V2/V2_6_WAVE_005_SELECTION_ARCHIVE_REFRESH_001.md
+  shortlist_size: 3
+  remaining_pool_before_selection: 9
+  archive_refresh: PASS
+  collision_check: PASS
+  rights_boundaries: PASS
+  contextual_truth_boundaries: PASS
+  build_authorized_exactly_three: true
+  allowed_families:
+    metate_teotitlan:
+      status: BUILD_AUTHORIZED
+      pair: METATE_RECEIVING_GRINDING_SURFACE_TO_RECIPROCAL_ABRASION_SHEAR_TO_METLAPIL_MOVING_GRINDING_STONE_AND_FINENESS_RESPONSE
+      asset_policy: PROCEDURAL_ONLY_FOR_BUILD__INAH_AND_NMAI_REFERENCE_TEXT_OBJECT_METADATA_ONLY
+      truth_boundary: EDITORIAL_MECHANISM_TRANSLATION__NOT_EXACT_RECIPE_ETHNOGRAPHIC_RECONSTRUCTION_OR_UNIVERSAL_CULTURAL_CLAIM
+    zellige_fes:
+      status: BUILD_AUTHORIZED
+      pair: MATERIAL_EDGE_A_TO_GEOMETRIC_FIT_JOINT_SEATING_TO_MATERIAL_EDGE_B_TESSELLATION_CONTINUATION
+      asset_policy: PROCEDURAL_ONLY_FOR_BUILD__MET_FEZ_CRAFT_PROCESS_AND_COURT_REFERENCE_TEXT_ONLY
+      semantic_contract: EDGE_MATERIAL_RESOLVES_RELATIONSHIP__NO_GENERIC_PUZZLE_OR_COPIED_DECORATIVE_PATTERN
+    swell_marshall:
+      status: BUILD_AUTHORIZED
+      pair: SWELL_MEMORY_MEMBER_TO_ATOLL_DEFLECTION_INTERSECTION_RELATION_TO_ATOLL_CONTEXT_MEMBER_ORIENTATION_RESPONSE
+      asset_policy: PROCEDURAL_ONLY_FOR_BUILD__SMITHSONIAN_WAVE_NAVIGATION_REFERENCE_TEXT_AND_METADATA_ONLY
+      truth_boundary: NO_SPECIFIC_CHART_DECODING_NO_EXACT_ISLAND_IDENTITY_NO_TO_SCALE_MAP_NO_REAL_TIME_NAVIGATION_CLAIM
+  held_remaining_six:
+    city_gatineau: HOLD_ALIGNMENT_CLUSTER_DENSITY
+    frida_coyoacan: HOLD_REFLECTION_COLLISION_AND_RIGHTS_CONTEXT
+    textile_bonwire: HOLD_TENSION_COLLISION_AND_MOTIF_SENSITIVITY
+    siku_bolivia: HOLD_TEMPORAL_AUDIO_COLLISION
+    garamut_sepik_ramu: HOLD_TEMPORAL_IMPACT_SIGNAL_AND_CONTEXT_SENSITIVITY
+    tongiaki_tonga: HOLD_STRUCTURAL_TENSION_COLLISION_AND_RECONSTRUCTION_RISK
+  other_6_build_authorized: false
+
 runtime_assurance:
   doctrine: trace_web_runtime_assurance_plus_raw_bits_to_react_conceptual_source
   react_specific_real_project_validation: ACTIVE
@@ -362,15 +400,19 @@ deployment_budget:
   explicit_preview_only_when_gate_requires_live_url: true
 
 next_gate:
-  id: V2_6_WAVE_005_SELECTION_COLLISION_AND_ARCHIVE_REFRESH
+  id: V2_6_WAVE_005_THREE_CONCEPT_BUILDS
   research_allowed: true
-  build_allowed: false
-  remaining_candidate_pool_count: 9
-  required_output: BOUNDED_WAVE_005_SHORTLIST_PLUS_COLLISION_SCAN_PLUS_ARCHIVE_RIGHTS_CONTEXTUAL_TRUTH_REFRESH_PLUS_EXPLICIT_BUILD_AUTHORIZATION_PROPOSAL
+  build_allowed: true
+  allowed_families:
+    - metate-teotitlan
+    - zellige-fes
+    - swell-marshall
+  disallowed_remaining_family_count: 6
+  required_output: THREE_LAZY_REACT_R3F_BUILDS_PLUS_EXACT_V1_RUNTIME_FOCUS_ALL18_CHUNK_ISOLATION_MOBILE_REDUCED_MOTION_AND_HUMAN_COMPARISON
   production_replacement_allowed: false
   vercel_preview_allowed: false
 
 blockers:
   - V1_REPLACEMENT_BLOCKED_UNTIL_PER_FAMILY_PROMOTION_DECISION_AND_SEPARATE_PRODUCTION_GATE
-  - REMAINING_9_FAMILY_BUILDS_NOT_AUTHORIZED_UNTIL_WAVE_005_SELECTION_PASS
+  - OTHER_6_FAMILY_BUILDS_NOT_AUTHORIZED
   - MASS_24_FAMILY_PORT_NOT_AUTHORIZED
