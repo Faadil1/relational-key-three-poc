@@ -1,8 +1,12 @@
 import { Suspense, useEffect, useMemo, useState } from 'react';
-import { pilotById, pilots } from './pilots.js';
+import { pilots as legacyPilots } from './pilots.js';
+import { wave005Families, wave005Ids } from './wave005Families.js';
 import { sceneComponents } from './sceneRegistry.js';
 import { useOmbakAudio } from './useOmbakAudio.js';
 import { useReducedMotion } from './useReducedMotion.js';
+
+const pilots = [...legacyPilots, ...wave005Families];
+const pilotById = Object.fromEntries(pilots.map((pilot) => [pilot.id, pilot]));
 
 const INITIAL = {
   anamorphosisOffset: 0.7,
@@ -175,9 +179,12 @@ export default function App() {
         ? 'MATCHING · sustained friction remains localized at the groove relation · bounded ember witness appears at the interface.'
         : 'OTHER · both hika ahi tool members remain valid · contact is offset and heat dissipates without an ember register.';
     }
+    if (wave005Ids.has(activeId)) {
+      return matching ? `MATCHING · ${pilot.matching}` : `OTHER · ${pilot.other}`;
+    }
     return 'RELATION STATE UNAVAILABLE.';
   }, [
-    activeId, anamorphosisOffset, matching, couplerApproach, couplerPull, audio.playing,
+    activeId, pilot, anamorphosisOffset, matching, couplerApproach, couplerPull, audio.playing,
     ombakDifference, effectiveOmbakDifference, kentoOffset, kentoPressed, stereoDisparity,
     signalAlignment, astrolabeAngle, astrolabePlateMode, funicularPositionA, musicBoxEngaged,
     musicBoxAngle, musicBoxPattern, boulleSeparated, khipuTension, mateInsertion,
@@ -237,6 +244,7 @@ export default function App() {
   else if (activeId === 'service-benin') activeSceneProps = { contact: serviceContact, matching, reducedMotion };
   else if (activeId === 'food-toyama') activeSceneProps = { release: foodRelease, matching, reducedMotion };
   else if (activeId === 'hika-ahi-aotearoa') activeSceneProps = { friction: hikaFriction, matching, reducedMotion };
+  else if (wave005Ids.has(activeId)) activeSceneProps = { matching, reducedMotion };
 
   const selectFamily = (id) => {
     if (activeId === 'ombak-bali' && audio.playing) audio.stop();
@@ -275,7 +283,7 @@ export default function App() {
       ) : (
         <header className="masthead">
           <div>
-            <p className="eyebrow">RELATIONAL KEY · V2.5 BOUNDED EXPANSION · WAVES 001–004</p>
+            <p className="eyebrow">RELATIONAL KEY · V2.7 BOUNDED EXPANSION · ALL 24 FAMILIES</p>
             <h1>THE RELATIONAL PAIR REMAINS THE PRODUCT.</h1>
             <p className="lede">Two base cards stay visible and necessary · archive-derived interaction studies · React + R3F / Three.js · V1 remains frozen.</p>
           </div>
@@ -351,6 +359,7 @@ export default function App() {
             {activeId === 'service-benin' && <label className="range-control"><span>Registered contact <output>{Math.round(serviceContact * 100)}%</output></span><input type="range" min="0" max="1" step="0.01" value={serviceContact} onChange={(event) => setServiceContact(Number(event.target.value))} /><small>Contact geometry and line-window response are editorial proof, not a reconstructed historical operating procedure.</small></label>}
             {activeId === 'food-toyama' && <label className="range-control"><span>Package release <output>{Math.round(foodRelease * 100)}%</output></span><input type="range" min="0" max="1" step="0.01" value={foodRelease} onChange={(event) => setFoodRelease(Number(event.target.value))} /><small>The interaction demonstrates bounded package/press/reveal mechanics only; no food-quality or preparation claim is made.</small></label>}
             {activeId === 'hika-ahi-aotearoa' && <label className="range-control"><span>Bounded friction witness <output>{Math.round(hikaFriction * 100)}%</output></span><input type="range" min="0" max="1" step="0.01" value={hikaFriction} onChange={(event) => setHikaFriction(Number(event.target.value))} /><small>Mechanism-level relation only. This is not practical ignition guidance and no archive media is reproduced.</small></label>}
+            {wave005Ids.has(activeId) && <p className="small-copy">Wave 005 uses a deterministic OTHER ↔ MATCHING relation switch in the first build. Family-specific interaction enrichment is allowed only after exact V1 comparison identifies a need.</p>}
           </section>
 
           <section className="evidence-panel">

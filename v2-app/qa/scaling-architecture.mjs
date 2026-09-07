@@ -2,167 +2,23 @@ import { chromium } from 'playwright';
 import fs from 'node:fs/promises';
 import path from 'node:path';
 
-const V2 = process.env.RK_V2_URL || 'http://127.0.0.1:4174';
-const OUT = process.env.RK_RUNTIME_OUT || 'runtime-evidence';
-const manifest = JSON.parse(await fs.readFile('dist/.vite/manifest.json', 'utf8'));
-await fs.mkdir(OUT, { recursive: true });
-
-const families = [
-  { id: 'anamorphosis-paris', label: /^Anamorphosis · Paris/i, src: 'src/sceneEntries/AnamorphosisEntry.jsx' },
-  { id: 'coupler-virginia', label: /^Coupler · Virginia/i, src: 'src/sceneEntries/CouplerEntry.jsx' },
-  { id: 'ombak-bali', label: /^Ombak · Bali/i, src: 'src/sceneEntries/OmbakEntry.jsx' },
-  { id: 'kento-japan', label: /^Kento · Japan/i, src: 'src/sceneEntries/KentoEntry.jsx' },
-  { id: 'stereoscopy-uk', label: /^Stereoscopy · UK/i, src: 'src/sceneEntries/StereoscopyEntry.jsx' },
-  { id: 'signal-nigeria', label: /^Signal · Nigeria/i, src: 'src/sceneEntries/SignalEntry.jsx' },
-  { id: 'astrolabe-isfahan', label: /^Astrolabe · Isfahan/i, src: 'src/sceneEntries/AstrolabeEntry.jsx' },
-  { id: 'funicular-valparaiso', label: /^Funicular · Valparaíso/i, src: 'src/sceneEntries/FunicularEntry.jsx' },
-  { id: 'music-box-sainte-croix', label: /^Music Box · Sainte-Croix/i, src: 'src/sceneEntries/MusicBoxEntry.jsx' },
-  { id: 'boulle-france', label: /^Boulle · France/i, src: 'src/sceneEntries/BoulleEntry.jsx' },
-  { id: 'khipu-peru', label: /^Khipu · Peru/i, src: 'src/sceneEntries/KhipuEntry.jsx' },
-  { id: 'mate-bombilla-argentina', label: /^Mate \+ Bombilla · Argentina/i, src: 'src/sceneEntries/MateBombillaEntry.jsx' },
-  { id: 'service-benin', label: /^Service · Benin/i, src: 'src/sceneEntries/ServiceBeninEntry.jsx' },
-  { id: 'food-toyama', label: /^Food · Toyama/i, src: 'src/sceneEntries/FoodToyamaEntry.jsx' },
-  { id: 'hika-ahi-aotearoa', label: /^Hika Ahi · Aotearoa/i, src: 'src/sceneEntries/HikaAhiEntry.jsx' },
+const V2=process.env.RK_V2_URL||'http://127.0.0.1:4174';
+const OUT=process.env.RK_RUNTIME_OUT||'runtime-evidence';
+const manifest=JSON.parse(await fs.readFile('dist/.vite/manifest.json','utf8'));
+await fs.mkdir(OUT,{recursive:true});
+const defs=[
+['anamorphosis-paris','Anamorphosis · Paris','AnamorphosisEntry.jsx'],['coupler-virginia','Coupler · Virginia','CouplerEntry.jsx'],['ombak-bali','Ombak · Bali','OmbakEntry.jsx'],['kento-japan','Kento · Japan','KentoEntry.jsx'],['stereoscopy-uk','Stereoscopy · UK','StereoscopyEntry.jsx'],['signal-nigeria','Signal · Nigeria','SignalEntry.jsx'],['astrolabe-isfahan','Astrolabe · Isfahan','AstrolabeEntry.jsx'],['funicular-valparaiso','Funicular · Valparaíso','FunicularEntry.jsx'],['music-box-sainte-croix','Music Box · Sainte-Croix','MusicBoxEntry.jsx'],['boulle-france','Boulle · France','BoulleEntry.jsx'],['khipu-peru','Khipu · Peru','KhipuEntry.jsx'],['mate-bombilla-argentina','Mate + Bombilla · Argentina','MateBombillaEntry.jsx'],['service-benin','Service · Benin','ServiceBeninEntry.jsx'],['food-toyama','Food · Toyama','FoodToyamaEntry.jsx'],['hika-ahi-aotearoa','Hika Ahi · Aotearoa','HikaAhiEntry.jsx'],['city-gatineau','City · Gatineau','CityGatineauEntry.jsx'],['frida-coyoacan','Frida · Coyoacán','FridaCoyoacanEntry.jsx'],['textile-bonwire','Textile · Bonwire','TextileBonwireEntry.jsx'],['zellige-fes','Zellige · Fès','ZelligeFesEntry.jsx'],['swell-marshall','Swell · Marshall','SwellMarshallEntry.jsx'],['siku-bolivia','Siku · Bolivia','SikuBoliviaEntry.jsx'],['metate-teotitlan','Metate · Teotitlán','MetateTeotitlanEntry.jsx'],['tongiaki-tonga','Tongiaki · Tonga','TongiakiTongaEntry.jsx'],['garamut-sepik-ramu','Garamut · Sepik / Ramu','GaramutSepikRamuEntry.jsx']
 ];
-
-const bySource = new Map();
-for (const [key, entry] of Object.entries(manifest)) if (entry.src) bySource.set(entry.src, { key, entry });
-for (const family of families) {
-  const found = bySource.get(family.src);
-  if (!found) throw new Error(`Missing scaling manifest entry for ${family.id}`);
-  family.file = found.entry.file;
-}
-
-function assetPath(url) {
-  const parsed = new URL(url);
-  return parsed.pathname.replace(/^\/+/, '');
-}
-async function newContext(browser, viewport = { width: 1440, height: 900 }) {
-  const context = await browser.newContext({ viewport, deviceScaleFactor: 1 });
-  await context.route('**/*', async (route) => {
-    const url = new URL(route.request().url());
-    if (url.hostname === '127.0.0.1' || url.hostname === 'localhost') return route.continue();
-    return route.abort('blockedbyclient');
-  });
-  return context;
-}
-function observePage(page) {
-  const scripts = new Set();
-  const consoleErrors = [];
-  const pageErrors = [];
-  page.on('request', (request) => { if (request.resourceType() === 'script') scripts.add(assetPath(request.url())); });
-  page.on('console', (message) => { if (message.type() === 'error') consoleErrors.push(message.text()); });
-  page.on('pageerror', (error) => pageErrors.push(error.message));
-  return { scripts, consoleErrors, pageErrors };
-}
-async function waitForScene(page, id) {
-  await page.locator(`[data-scene-runtime="${id}"]`).waitFor({ state: 'attached', timeout: 10000 });
-  await page.locator('canvas').waitFor({ state: 'visible', timeout: 10000 });
-  await page.waitForTimeout(180);
-  const canvasCount = await page.locator('canvas').count();
-  const runtimeCount = await page.locator('[data-scene-runtime]').count();
-  if (canvasCount !== 1) throw new Error(`${id}: expected exactly one Canvas after resolve, found ${canvasCount}`);
-  if (runtimeCount !== 1) throw new Error(`${id}: expected exactly one scene runtime marker, found ${runtimeCount}`);
-}
-
-const report = {
-  schema: 'RELATIONAL_KEY_V2_SCALING_ARCHITECTURE_BROWSER_004',
-  generatedAt: new Date().toISOString(),
-  v2Url: V2,
-  manifestFamilyFiles: Object.fromEntries(families.map((family) => [family.id, family.file])),
-  directFocusIsolation: {},
-  switching: null,
-  findings: [],
-};
-let hardFailure = false;
-const browser = await chromium.launch({ headless: true, args: ['--use-angle=swiftshader', '--enable-webgl'] });
-
-try {
-  for (const family of families) {
-    const context = await newContext(browser);
-    const page = await context.newPage();
-    const observed = observePage(page);
-    try {
-      await page.goto(`${V2}/?focus=1&pilot=${family.id}`, { waitUntil: 'domcontentloaded' });
-      await waitForScene(page, family.id);
-      await page.waitForTimeout(250);
-      const loaded = [...observed.scripts].sort();
-      const otherFamilyFiles = families.filter((item) => item.id !== family.id).map((item) => item.file);
-      if (!observed.scripts.has(family.file)) throw new Error(`${family.id}: own dynamic entry ${family.file} was not requested`);
-      const eagerOthers = otherFamilyFiles.filter((file) => observed.scripts.has(file));
-      if (eagerOthers.length) throw new Error(`${family.id}: unrelated family entries were eagerly requested: ${eagerOthers.join(', ')}`);
-      const layout = await page.evaluate(() => ({
-        width: innerWidth,
-        scrollWidth: document.documentElement.scrollWidth,
-        canvasCount: document.querySelectorAll('canvas').length,
-        runtimeIds: [...document.querySelectorAll('[data-scene-runtime]')].map((node) => node.getAttribute('data-scene-runtime')),
-      }));
-      report.directFocusIsolation[family.id] = { ownEntry: family.file, loadedScripts: loaded, unrelatedFamilyEntriesLoaded: eagerOthers, layout, consoleErrors: observed.consoleErrors, pageErrors: observed.pageErrors };
-      if (layout.scrollWidth > layout.width) throw new Error(`${family.id}: direct Focus overflow ${layout.scrollWidth} > ${layout.width}`);
-      if (observed.consoleErrors.length || observed.pageErrors.length) throw new Error(`${family.id}: browser errors present during direct Focus isolation`);
-    } catch (error) {
-      hardFailure = true;
-      report.findings.push({ severity: 'FAIL', pilot: family.id, message: error.stack || String(error) });
-    } finally {
-      await context.close();
-    }
-  }
-
-  const context = await newContext(browser);
-  const page = await context.newPage();
-  const observed = observePage(page);
-  try {
-    await page.goto(`${V2}/?pilot=${families[0].id}`, { waitUntil: 'domcontentloaded' });
-    await waitForScene(page, families[0].id);
-    await page.evaluate(() => {
-      window.__rkCanvasPeak = document.querySelectorAll('canvas').length;
-      window.__rkCanvasProbe = setInterval(() => {
-        window.__rkCanvasPeak = Math.max(window.__rkCanvasPeak, document.querySelectorAll('canvas').length);
-      }, 5);
-    });
-
-    const checkpoints = [];
-    for (let index = 0; index < families.length; index += 1) {
-      const family = families[index];
-      if (index > 0) {
-        await page.getByRole('button', { name: family.label }).click();
-        await waitForScene(page, family.id);
-      }
-      if (!observed.scripts.has(family.file)) throw new Error(`switch path: ${family.id} chunk did not load when selected`);
-      const futureLoaded = families.slice(index + 1).filter((future) => observed.scripts.has(future.file)).map((future) => future.id);
-      if (futureLoaded.length) throw new Error(`switch path: future family chunks loaded before selection: ${futureLoaded.join(', ')}`);
-      checkpoints.push({ selected: family.id, loadedScripts: [...observed.scripts].sort(), canvasCount: await page.locator('canvas').count(), runtimeCount: await page.locator('[data-scene-runtime]').count() });
-    }
-
-    const canvasPeak = await page.evaluate(() => {
-      clearInterval(window.__rkCanvasProbe);
-      return window.__rkCanvasPeak;
-    });
-    if (canvasPeak !== 1) throw new Error(`switch path: Canvas peak must remain 1, observed ${canvasPeak}`);
-    if (observed.consoleErrors.length || observed.pageErrors.length) throw new Error('switch path: browser errors present');
-    report.switching = {
-      sequence: families.map((family) => family.id),
-      checkpoints,
-      canvasPeak,
-      finalCanvasCount: await page.locator('canvas').count(),
-      finalRuntimeCount: await page.locator('[data-scene-runtime]').count(),
-      consoleErrors: observed.consoleErrors,
-      pageErrors: observed.pageErrors,
-    };
-  } catch (error) {
-    hardFailure = true;
-    report.findings.push({ severity: 'FAIL', pilot: 'switching-sequence', message: error.stack || String(error) });
-  } finally {
-    await context.close();
-  }
-} finally {
-  await browser.close();
-}
-
-report.verdict = hardFailure ? 'SCALING_ARCHITECTURE_BROWSER_FAIL' : 'SCALING_ARCHITECTURE_BROWSER_PASS';
-await fs.writeFile(path.join(OUT, 'scaling-architecture-browser.json'), JSON.stringify(report, null, 2));
-console.log('RK_SCALING_BROWSER_REPORT_BEGIN');
-console.log(JSON.stringify(report, null, 2));
-console.log('RK_SCALING_BROWSER_REPORT_END');
-console.log(`SCALING_VERDICT=${report.verdict}`);
-if (hardFailure) process.exitCode = 1;
+const bySource=new Map(Object.entries(manifest).filter(([,v])=>v.src).map(([k,v])=>[v.src,{key:k,entry:v}]));
+const families=defs.map(([id,label,file])=>{const src=`src/sceneEntries/${file}`,found=bySource.get(src);if(!found)throw new Error(`Missing scaling manifest entry for ${id}`);return{id,label,src,file:found.entry.file};});
+const assetPath=url=>new URL(url).pathname.replace(/^\/+/, '');
+async function newContext(browser,viewport={width:1440,height:900}){const context=await browser.newContext({viewport,deviceScaleFactor:1});await context.route('**/*',route=>{const url=new URL(route.request().url());return(url.hostname==='127.0.0.1'||url.hostname==='localhost')?route.continue():route.abort('blockedbyclient');});return context;}
+function observePage(page){const scripts=new Set(),consoleErrors=[],pageErrors=[];page.on('request',r=>{if(r.resourceType()==='script')scripts.add(assetPath(r.url()));});page.on('console',m=>{if(m.type()==='error')consoleErrors.push(m.text());});page.on('pageerror',e=>pageErrors.push(e.message));return{scripts,consoleErrors,pageErrors};}
+async function waitForScene(page,id){await page.locator(`[data-scene-runtime="${id}"]`).waitFor({state:'attached',timeout:10000});await page.locator('canvas').waitFor({state:'visible',timeout:10000});await page.waitForTimeout(180);const canvasCount=await page.locator('canvas').count(),runtimeCount=await page.locator('[data-scene-runtime]').count();if(canvasCount!==1)throw new Error(`${id}: expected exactly one Canvas after resolve, found ${canvasCount}`);if(runtimeCount!==1)throw new Error(`${id}: expected exactly one scene runtime marker, found ${runtimeCount}`);}
+const report={schema:'RELATIONAL_KEY_V2_SCALING_ARCHITECTURE_BROWSER_005',generatedAt:new Date().toISOString(),v2Url:V2,manifestFamilyFiles:Object.fromEntries(families.map(f=>[f.id,f.file])),directFocusIsolation:{},switching:null,findings:[]};let hardFailure=false;
+const browser=await chromium.launch({headless:true,args:['--use-angle=swiftshader','--enable-webgl']});
+try{
+ for(const family of families){const context=await newContext(browser),page=await context.newPage(),observed=observePage(page);try{await page.goto(`${V2}/?focus=1&pilot=${family.id}`,{waitUntil:'domcontentloaded'});await waitForScene(page,family.id);await page.waitForTimeout(220);const otherFamilyFiles=families.filter(x=>x.id!==family.id).map(x=>x.file);if(!observed.scripts.has(family.file))throw new Error(`${family.id}: own dynamic entry ${family.file} was not requested`);const eagerOthers=otherFamilyFiles.filter(file=>observed.scripts.has(file));if(eagerOthers.length)throw new Error(`${family.id}: unrelated family entries eagerly requested: ${eagerOthers.join(', ')}`);const layout=await page.evaluate(()=>({width:innerWidth,scrollWidth:document.documentElement.scrollWidth,canvasCount:document.querySelectorAll('canvas').length,runtimeIds:[...document.querySelectorAll('[data-scene-runtime]')].map(n=>n.getAttribute('data-scene-runtime'))}));report.directFocusIsolation[family.id]={ownEntry:family.file,unrelatedFamilyEntriesLoaded:eagerOthers,layout,consoleErrors:observed.consoleErrors,pageErrors:observed.pageErrors};if(layout.scrollWidth>layout.width)throw new Error(`${family.id}: direct Focus overflow ${layout.scrollWidth}>${layout.width}`);if(observed.consoleErrors.length||observed.pageErrors.length)throw new Error(`${family.id}: browser errors present during direct Focus isolation`);}catch(error){hardFailure=true;report.findings.push({severity:'FAIL',pilot:family.id,message:error.stack||String(error)});}finally{await context.close();}}
+ const context=await newContext(browser),page=await context.newPage(),observed=observePage(page);try{await page.goto(`${V2}/?pilot=${families[0].id}`,{waitUntil:'domcontentloaded'});await waitForScene(page,families[0].id);await page.evaluate(()=>{window.__rkCanvasPeak=document.querySelectorAll('canvas').length;window.__rkCanvasProbe=setInterval(()=>{window.__rkCanvasPeak=Math.max(window.__rkCanvasPeak,document.querySelectorAll('canvas').length);},5);});const checkpoints=[];for(let index=0;index<families.length;index+=1){const family=families[index];if(index>0){await page.getByRole('button',{name:new RegExp(`^${family.label.replace(/[.*+?^${}()|[\]\\]/g,'\\$&')}`,'i')}).click();await waitForScene(page,family.id);}if(!observed.scripts.has(family.file))throw new Error(`switch path: ${family.id} chunk did not load when selected`);const futureLoaded=families.slice(index+1).filter(f=>observed.scripts.has(f.file)).map(f=>f.id);if(futureLoaded.length)throw new Error(`switch path: future family chunks loaded before selection: ${futureLoaded.join(', ')}`);checkpoints.push({selected:family.id,canvasCount:await page.locator('canvas').count(),runtimeCount:await page.locator('[data-scene-runtime]').count()});}const canvasPeak=await page.evaluate(()=>{clearInterval(window.__rkCanvasProbe);return window.__rkCanvasPeak;});if(canvasPeak!==1)throw new Error(`switch path: Canvas peak must remain 1, observed ${canvasPeak}`);if(observed.consoleErrors.length||observed.pageErrors.length)throw new Error('switch path: browser errors present');report.switching={sequence:families.map(f=>f.id),checkpoints,canvasPeak,finalCanvasCount:await page.locator('canvas').count(),finalRuntimeCount:await page.locator('[data-scene-runtime]').count(),consoleErrors:observed.consoleErrors,pageErrors:observed.pageErrors};}catch(error){hardFailure=true;report.findings.push({severity:'FAIL',pilot:'switching-sequence',message:error.stack||String(error)});}finally{await context.close();}
+}finally{await browser.close();}
+report.verdict=hardFailure?'SCALING_ARCHITECTURE_BROWSER_FAIL':'SCALING_ARCHITECTURE_BROWSER_PASS';await fs.writeFile(path.join(OUT,'scaling-architecture-browser.json'),JSON.stringify(report,null,2));console.log(`SCALING_VERDICT=${report.verdict}`);if(hardFailure)process.exitCode=1;

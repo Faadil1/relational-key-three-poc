@@ -2,47 +2,36 @@ state_class: relational_key_v2_cycle
 project: RELATIONAL_KEY
 cycle: V2
 canonical_branch: v2/archive-interaction-3d-matrix-001
-last_updated_utc: "2026-09-06T12:02:58Z"
+last_updated_utc: "2026-09-07T19:42:00Z"
 
 baseline_v1:
   immutable: true
   production_head: 6821cd2a9694635e2e6948747af45785fe7e3afe
-  product_content_merge: dbdebc588690d4a3a031b827203199d366ba7c5a
-  exact_gate_6_5_evidence_commit: 99ec04045a9b48f293d008c5137c36bd75425d7e
-  r5: CLOSED
   validated_families: 24
   final_matrix: STRONG_24_ADEQUATE_0_EXPERIENCE_DEBT_0
+  replacement_authorized: false
 
 v2:
-  status: V2_6_WAVE_005_BUILD_AUTHORIZED_EXACTLY_THREE
+  status: V2_8A_WAVE_005_PASS__24_PROMOTION_CANDIDATES__V2_9_COLLECTION_AUDIT_NEXT
   issue: 37
   charter: V2/RELATIONAL_KEY_V2_EVOLUTION_CHARTER.md
   matrix: V2/V2_0_24_FAMILY_ARCHIVE_INTERACTION_3D_OPPORTUNITY_MATRIX.md
-  archive_refresh_seed: V2/V2_0A_PILOT_ARCHIVE_REFRESH_001.md
-  archive_corpora_complete: V2/V2_0A_PILOT_ARCHIVE_CORPORA_COMPLETE_001.md
-  archive_register_template: V2/ARCHIVE_RESEARCH_REGISTER_TEMPLATE.md
-  v2_1_closeout: V2/V2_1_RUNTIME_AND_EXPERIENCE_COMPARE_004.md
-  v2_3_wave_001_closeout: V2/V2_3_WAVE_001_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
-  v2_3_wave_002_selection: V2/V2_3_WAVE_002_SELECTION_ARCHIVE_REFRESH_001.md
-  v2_3_wave_002_closeout: V2/V2_3_WAVE_002_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
-  v2_3_wave_003_selection: V2/V2_3_WAVE_003_SELECTION_ARCHIVE_REFRESH_001.md
-  v2_4_wave_003_closeout: V2/V2_4_WAVE_003_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
-  v2_4_wave_004_selection: V2/V2_4_WAVE_004_SELECTION_ARCHIVE_REFRESH_001.md
-  v2_5_wave_004_closeout: V2/V2_5_WAVE_004_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
-  v2_6_wave_005_selection: V2/V2_6_WAVE_005_SELECTION_ARCHIVE_REFRESH_001.md
   target_family_count: 24
-  promotion_candidate_count: 15
-  built_or_build_authorized_family_count: 18
-  remaining_unported_family_count: 9
+  promotion_candidate_count: 24
+  built_family_count: 24
+  remaining_unported_family_count: 0
   target_stack:
     - React
     - React_Three_Fiber
     - Three_js
+  one_shared_family_canvas: true
+  family_specific_lazy_chunks: true
+  one_active_webgl_canvas: true
   atlas_24_live_webgl_canvases_allowed: false
   v1_in_place_rewrite_allowed: false
   ordinary_branch_vercel_preview_allowed: false
   v2_family_promotion_to_v1_main_authorized: false
-  mass_24_family_port_authorized: false
+  production_replacement_authorized: false
 
 laws:
   - THE_RELATIONAL_PAIR_REMAINS_THE_PRODUCT
@@ -64,335 +53,115 @@ mandatory_tests:
     mobile_usability: GTE_V1
     runtime_cost: MEASURED_ACCEPTABLE
 
-v2_0:
-  concept_matrix: PASS
-  family_count: 24
-  collision_clusters_recorded: true
-  three_pilot_shortlist: PASS
+history:
+  v2_1_closeout: V2/V2_1_RUNTIME_AND_EXPERIENCE_COMPARE_004.md
+  v2_3_wave_001_closeout: V2/V2_3_WAVE_001_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
+  v2_3_wave_002_selection: V2/V2_3_WAVE_002_SELECTION_ARCHIVE_REFRESH_001.md
+  v2_3_wave_002_closeout: V2/V2_3_WAVE_002_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
+  v2_3_wave_003_selection: V2/V2_3_WAVE_003_SELECTION_ARCHIVE_REFRESH_001.md
+  v2_4_wave_003_closeout: V2/V2_4_WAVE_003_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
+  v2_4_wave_004_selection: V2/V2_4_WAVE_004_SELECTION_ARCHIVE_REFRESH_001.md
+  v2_5_wave_004_closeout: V2/V2_5_WAVE_004_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
+  v2_6_wave_005_original_selection: V2/V2_6_WAVE_005_SELECTION_ARCHIVE_REFRESH_001.md
+  v2_6a_wave_005_all9_expansion: V2/V2_6A_WAVE_005_ALL9_EXPANSION_AUTHORIZATION_001.md
+  v2_7_wave_005_first_human_compare: V2/V2_7_WAVE_005_FIRST_HUMAN_COMPARE_HOLD_001.md
+  v2_8_wave_005_closeout: V2/V2_8_WAVE_005_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
 
-v2_0a_archive_refresh:
+wave_005:
   verdict: PASS
-  direct_archive_asset_default: DENY_UNLESS_EXPLICIT_RIGHTS_AND_PRODUCT_NEED
-  procedural_geometry_default: true
-  synthetic_audio_default: true
+  original_selection:
+    verdict: PASS
+    selected_exactly_three:
+      - metate-teotitlan
+      - zellige-fes
+      - swell-marshall
+    historical_authorization_boundary_preserved: true
+  human_expansion:
+    verdict: PASS
+    authorization_commit: ca77b9ecd532e22a141bce6bd1ec516b7a255e8f
+    authorization: EXACTLY_ALL_REMAINING_NINE_IN_ONE_BOUNDED_BUILD
+    blockers_after_refresh: 0
+    selected:
+      - city-gatineau
+      - frida-coyoacan
+      - textile-bonwire
+      - zellige-fes
+      - swell-marshall
+      - siku-bolivia
+      - metate-teotitlan
+      - tongiaki-tonga
+      - garamut-sepik-ramu
+  initial_build:
+    exact_tested_head: ae3dcb957baa5e5da0f978bcc49fe23c1c6523a3
+    pilot_ci_run: 34145350206
+    browser_run: 34145350299
+    evidence_artifact_id: 10027634928
+    evidence_artifact_sha256: 544bbf946bdbb588f30a99196d3c9bdfe05a9bfef81bf1fb8a5999f29b695748
+    all24_chunk_isolation: PASS
+    scaling: PASS
+  first_human_compare:
+    verdict: HOLD
+    record_commit: c27b671e031fba46b522fcb8bab95809659a7111
+    pass_without_rework:
+      - siku-bolivia
+    holds:
+      city_gatineau: HOLD_ROUTE_HANDOFF_TOO_ABSTRACT_VS_V1
+      frida_coyoacan: HOLD_MIRROR_EASEL_IDENTITY_TOO_GENERIC
+      textile_bonwire: HOLD_WOVEN_IDENTITY_AND_SELVEDGE_JOIN_TOO_GENERIC
+      zellige_fes: HOLD_MATERIAL_FIT_READS_AS_GENERIC_PUZZLE
+      swell_marshall: HOLD_REFRACTION_AND_LEE_CROSSING_TOO_VECTORIAL
+      metate_teotitlan: HOLD_MANO_METATE_OBJECT_IDENTITY_AND_ACCUMULATION_TOO_ABSTRACT
+      tongiaki_tonga: HOLD_COUPLING_VISIBLE_BUT_COORDINATED_PLATFORM_RESPONSE_TOO_WEAK
+      garamut_sepik_ramu: HOLD_RESONANT_BODY_RESPONSE_TOO_PARTICLE_LIKE
+  bounded_rework:
+    exact_tested_head: d0ce1e203606d9bfeb655021c5f64a8fc6d3bf5c
+    pilot_ci_run: 34147044209
+    browser_run: 34147044202
+    evidence_artifact_id: 10028203216
+    evidence_artifact_sha256: b5a18e9a9b8ff452d8bd01fbecf9d54b1aa3e0b99666b78c0b03bc065953135e
+    final_human_compare: PASS_9_OF_9
+  post_pass_polish:
+    scope: EXACTLY_EIGHT_FORMER_HOLD_SCENES
+    exact_tested_head: 903f87acebac5a05096c983ab067776354132c1c
+    pilot_ci_run: 34149109333
+    browser_run: 34149109351
+    evidence_artifact_id: 10028887447
+    evidence_artifact_sha256: 3a918797b13c7b5c6aedde8d39a9336c42c09c2e56923febdae98f5bb6d3807d
+    visual_rereview: PASS
+    wave_branch_merge_head: b3f69e57269146b23babf350d62389c0ac40ff7c
+  runtime:
+    latest_exact_browser_verdict: PASS
+    latest_scaling_verdict: SCALING_ARCHITECTURE_BROWSER_PASS
+    latest_chunk_isolation_verdict: ALL24_CHUNK_ISOLATION_PASS
+    mobile_390: PASS
+    reduced_motion: PASS
+    external_archive_media_requests_v2_wave005: 0
 
-v2_1:
-  verdict: PASS
-  exact_closeout: V2/V2_1_RUNTIME_AND_EXPERIENCE_COMPARE_004.md
-  promotion_candidates:
-    - anamorphosis-paris
-    - coupler-virginia
-    - ombak-bali
-
-v2_2_scaling_architecture:
-  verdict: PASS
-  one_shared_family_canvas: true
-  family_specific_lazy_chunks: true
-  one_active_webgl_canvas: true
-  atlas_24_eager_webgl_canvases: false
-
-v2_3_wave_001:
-  verdict: PASS
-  product_rework_head: 2e6639fa2f15c62eb5393ae14e96302f3cab1d70
-  exact_tested_head: 19f5b6c68e1c63c827010be988806248c740e220
-  closeout_commit: 16f148f97fdfaf7761f2ab083c81b6b6ea3d42e3
-  build_run: 33912033296
-  browser_run: 33912033187
-  evidence_artifact_id: 9951804458
-  evidence_artifact_sha256: 4bfc548b2eedf82cb044e72cf4cfd09ee8de444142a2bc71ca0e2df76dc81aec
-  browser_runtime: PASS_WITH_MEASURED_DIAGNOSTICS
-  focus_experience: PASS
-  scaling: PASS
-  two_base_cards_ci_enforced: true
-  archive_specificity_ci_enforced: true
-  promotion_candidates:
-    kento_japan:
-      status: V2_PILOT_PROMOTION_CANDIDATE
-      pair: WOODBLOCK_KENTO_TO_REGISTRATION_PRESS_TO_RECEIVING_SHEET
-    stereoscopy_uk:
-      status: V2_PILOT_PROMOTION_CANDIDATE
-      pair: LEFT_VIEW_CARD_TO_CONTROLLED_DISPARITY_FUSION_TO_RIGHT_VIEW_CARD
-    signal_nigeria:
-      status: V2_PILOT_PROMOTION_CANDIDATE
-      pair: LANLATE_EARTH_STATION_CARD_TO_CARRIED_SIGNAL_REPEATER_HANDOFF_TO_IKORODU_OGIDO_ALABATA_CHAIN
-
-v2_3_wave_002_selection:
-  verdict: PASS
-  selection_commit: 8df396b4b196b87aed85d2f998874a1dd8edaa13
-  selection_doc: V2/V2_3_WAVE_002_SELECTION_ARCHIVE_REFRESH_001.md
-  shortlist_size: 3
-  archive_refresh: PASS
-  collision_check: PASS
-  rights_boundaries: PASS
-  build_authorized_exactly_three: true
-  allowed_families:
-    astrolabe_isfahan:
-      status: BUILD_AUTHORIZED
-      pair: RETE_STAR_MAP_TO_SHARED_AXIS_RELATIVE_ROTATION_TO_LATITUDE_PLATE_LOCAL_HORIZON
-      asset_policy: PROCEDURAL_DEFAULT__SMITHSONIAN_PUBLIC_DOMAIN_MEDIA_OPTIONAL_IF_MATERIALLY_NEEDED
-    funicular_valparaiso:
-      status: BUILD_AUTHORIZED
-      pair: CAR_A_TO_SHARED_FUNICULAR_INVERSE_POSITION_TO_CAR_B
-      asset_policy: PROCEDURAL_ONLY_UNLESS_EXPLICIT_MEDIA_LICENSE_LATER_VERIFIED
-      semantic_contract: CONTINUOUS_VALID_RELATION__DO_NOT_FORCE_FALSE_MATCHING_OTHER_BINARY
-    music_box_sainte_croix:
-      status: BUILD_AUTHORIZED
-      pair: PINNED_CYLINDER_TO_PIN_TO_TOOTH_CONTACT_TO_TUNED_COMB
-      asset_policy: PROCEDURAL_GEOMETRY_AND_SYNTHETIC_AUDIO_ONLY
-
-v2_3_wave_002:
-  verdict: PASS
-  exact_tested_head: a23c75112bcbb5cfd865c17c40971e73f6bfec1e
-  closeout_doc_commit: 952fe961aa771fa5b17024245419a7ff61810f71
-  closeout_doc: V2/V2_3_WAVE_002_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
-  build_run: 33951845354
-  browser_run: 33951845352
-  evidence_artifact_id: 9965133702
-  evidence_artifact_sha256: 433add9ba598c8d5421faf98809a006c1849227a1130cc550a19bec96f35813f
-  browser_runtime: PASS_WITH_MEASURED_DIAGNOSTICS
-  focus_experience: PASS
-  scaling: PASS
-  mobile_390: PASS
-  reduced_motion: PASS
-  two_base_cards_ci_enforced: true
-  archive_specificity_ci_enforced: true
-  distinct_relational_laws_ci_enforced: true
-  funicular_nonbinary_contract_ci_enforced: true
-  promotion_candidates:
-    astrolabe_isfahan:
-      status: V2_PILOT_PROMOTION_CANDIDATE
-      pair: RETE_STAR_MAP_TO_SHARED_AXIS_RELATIVE_ROTATION_TO_LATITUDE_PLATE_LOCAL_HORIZON
-    funicular_valparaiso:
-      status: V2_PILOT_PROMOTION_CANDIDATE
-      pair: CAR_A_TO_SHARED_FUNICULAR_INVERSE_POSITION_TO_CAR_B
-      semantic_contract: CONTINUOUS_VALID_RELATION__NO_FALSE_SUCCESS_FAILURE_BINARY
-    music_box_sainte_croix:
-      status: V2_PILOT_PROMOTION_CANDIDATE
-      pair: PINNED_CYLINDER_TO_PIN_TO_TOOTH_CONTACT_TO_TUNED_COMB
-
-      first_human_compare: HOLD_CONTACT_EVENT_VISUAL_WITNESS_TOO_WEAK
-      bounded_rework_head: a23c75112bcbb5cfd865c17c40971e73f6bfec1e
-      final_human_compare: PASS
-
-v2_3_wave_003_selection:
-  verdict: PASS
-  selection_commit: cbc8839c54b9e3ac671700c147848e0efd22d282
-  selection_doc: V2/V2_3_WAVE_003_SELECTION_ARCHIVE_REFRESH_001.md
-  shortlist_size: 3
-  archive_refresh: PASS
-  collision_check: PASS
-  rights_boundaries: PASS
-  build_authorized_exactly_three: true
-  allowed_families:
-    boulle_france:
-      status: BUILD_AUTHORIZED
-      pair: STACKED_MATERIAL_A_AND_B_TO_ONE_SHARED_CUT_TO_TWO_RECIPROCAL_INVERSE_SURFACES
-      asset_policy: PROCEDURAL_DEFAULT__MET_PUBLIC_DOMAIN_REFERENCE_OPTIONAL_IF_MATERIALLY_NEEDED
-    khipu_peru:
-      status: BUILD_AUTHORIZED
-      pair: PRIMARY_CORD_TENSION_TO_SHARED_ATTACHMENT_RELATION_TO_SECONDARY_CORD_AND_KNOT_POSITION_RESPONSE
-      asset_policy: PROCEDURAL_ONLY__NMAI_AND_PEABODY_OBJECT_RECORDS_REFERENCE_ONLY
-      semantic_contract: STRUCTURAL_ONLY__NO_NUMERIC_LINGUISTIC_OR_ADMINISTRATIVE_DECODING
-    mate_bombilla_argentina:
-      status: BUILD_AUTHORIZED
-      pair: MATE_MEDIUM_AND_PARTICLES_TO_BOMBILLA_INSERTION_PERFORATED_FILTER_TO_SELECTIVE_PASSAGE_AND_CONTAINMENT
-      asset_policy: PROCEDURAL_DEFAULT__NMAI_PUBLIC_DOMAIN_REFERENCE_OPTIONAL_IF_MATERIALLY_NEEDED
-  other_12_build_authorized: false
-
-v2_4_wave_003:
-  verdict: PASS
-  initial_exact_tested_head: 445f9fb4da8b66ed621bf07434a668c82acdcad5
-  initial_browser_run: 33954563577
-  initial_evidence_artifact_id: 9965968916
-  initial_evidence_artifact_sha256: 51ab2146cec1489c6836b7d15c4bcec2d1eeb5427a9eaeb4f4c0c7975d64f471
-  exact_tested_head: 92256034d57a5bd8de3d80f2a3fcc6d2f99dcfa2
-  closeout_doc_commit: 203e3be8a346c3b09415e2ce20252516df723455
-  closeout_doc: V2/V2_4_WAVE_003_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
-  build_run: 33954894455
-  browser_run: 33954894450
-  evidence_artifact_id: 9966088296
-  evidence_artifact_sha256: 378aef662737fc73d8c14083a639aad9007f330bd2348a2a7aa4c0597d9761ec
-  browser_runtime: PASS_WITH_MEASURED_DIAGNOSTICS
-  focus_experience: PASS
-  scaling: PASS
-  mobile_390: PASS
-  reduced_motion: PASS
-  lazy_family_entries: 12
-  one_active_family_canvas: true
-  promotion_candidates:
-    boulle_france:
-      status: V2_PILOT_PROMOTION_CANDIDATE
-      pair: STACKED_MATERIAL_A_AND_B_TO_ONE_SHARED_CUT_TO_TWO_RECIPROCAL_INVERSE_SURFACES
-      first_human_compare: HOLD_RECIPROCAL_INVERSION_VISUAL_DIFFERENCE_TOO_WEAK
-      bounded_rework_head: 92256034d57a5bd8de3d80f2a3fcc6d2f99dcfa2
-      final_human_compare: PASS
-    khipu_peru:
-      status: V2_PILOT_PROMOTION_CANDIDATE
-      pair: PRIMARY_CORD_TENSION_TO_SHARED_ATTACHMENT_RELATION_TO_SECONDARY_CORD_AND_KNOT_POSITION_RESPONSE
-      semantic_contract: STRUCTURAL_ONLY__NO_NUMERIC_LINGUISTIC_ADMINISTRATIVE_OR_HISTORICAL_MESSAGE_DECODING
-      final_human_compare: PASS
-    mate_bombilla_argentina:
-      status: V2_PILOT_PROMOTION_CANDIDATE
-      pair: MATE_MEDIUM_AND_PARTICLES_TO_BOMBILLA_INSERTION_PERFORATED_FILTER_TO_SELECTIVE_PASSAGE_AND_CONTAINMENT
-      final_human_compare: PASS
-
-v2_4_wave_003_qa_reconciliation:
-  id: V2_4_WAVE_003_QA_RECONCILIATION_001
-  verdict: PASS
-  source_parallel_test_head: 50959d7a095f8cdfee64b30086792b870511e7e6
-  bounded_reconciliation_head: 23fee9a364b05fe94370226fb480ca737b396d42
-  canonical_merge_head: ffca7f15b94e01e89b183f237f536f176ddd48fe
-  canonical_runtime_run: 33970951023
-  canonical_pilot_ci_run: 33970951031
-  evidence_artifact_id: 9970960006
-  evidence_artifact_sha256: 975bdd21682be535210b1cfd82203a508c8253ba4c3322761d1ab588fe0b49d4
-  all12_chunk_isolation:
-    schema: RELATIONAL_KEY_V2_ALL12_DIRECT_CHUNK_ISOLATION_001
-    verdict: ALL12_CHUNK_ISOLATION_PASS
-    family_count: 12
-    findings: []
-    one_active_family_canvas: true
-    one_active_family_runtime: true
-    unrelated_family_entries_loaded: 0
-  scope:
-    - QA_ONLY
-    - NO_PARALLEL_WAVE_003_IMPLEMENTATION_IMPORTED
-    - NO_WAVE_004_BUILD_AUTHORIZATION
-    - NO_V1_OR_PRODUCTION_REPLACEMENT
-    - NO_VERCEL_DEPLOYMENT
-
-v2_4_wave_004_selection:
-  verdict: PASS
-  selection_commit: 6e1bb4e0a1292176a7b770da0788a51ef8d5fee5
-  selection_doc: V2/V2_4_WAVE_004_SELECTION_ARCHIVE_REFRESH_001.md
-  shortlist_size: 3
-  archive_refresh: PASS
-  collision_check: PASS
-  rights_boundaries: PASS
-  contextual_truth_boundaries: PASS
-  build_authorized_exactly_three: true
-  allowed_families:
-    service_benin:
-      status: BUILD_AUTHORIZED
-      pair: BENIN_TELEPHONE_CARD_MEMBER_TO_REGISTERED_CONTACT_SERVICE_HANDOFF_TO_PUBLIPHONE_SERVICE_WINDOW_RESPONSE
-      asset_policy: PROCEDURAL_ONLY_FOR_BUILD__ARCHIVES_NATIONALES_AND_ITU_REFERENCE_TEXT_ONLY
-      truth_boundary: EXACT_CARD_READER_PAIRING_AND_CONTACT_BEHAVIOR_ARE_EDITORIAL_NOT_HISTORICAL_PROCEDURE
-    food_toyama:
-      status: BUILD_AUTHORIZED
-      pair: PRESS_PACKAGE_CONSTRAINT_TO_ORDERED_RELEASE_TO_BAMBOO_LEAF_FAN_REVEAL_RESPONSE
-      asset_policy: PROCEDURAL_ONLY_FOR_BUILD__MAFF_AND_TOYAMA_OFFICIAL_PROCESS_REFERENCE_ONLY
-      semantic_contract: OTHER_IS_EDITORIAL_INCOMPLETE_RELATION_NOT_FOOD_QUALITY_OR_CULTURAL_JUDGMENT
-    hika_ahi_aotearoa:
-      status: BUILD_AUTHORIZED
-      pair: HIKA_RECIPROCAL_STROKE_PLUS_GROOVED_BASE_RESISTANCE_TO_SUSTAINED_FRICTION_TO_LOCALIZED_EMBER_STATE
-      asset_policy: PROCEDURAL_ONLY__TE_PAPA_OBJECT_AND_ARCHIVE_MEDIA_REFERENCE_ONLY__NO_RASTER_REUSE
-      semantic_contract: MECHANISM_ONLY__NO_RITUAL_WHAKAPAPA_CEREMONIAL_OR_UNIVERSAL_MAORI_CLAIMS
-  other_9_build_authorized: false
-
-v2_5_wave_004:
-  verdict: PASS
-  closeout_doc: V2/V2_5_WAVE_004_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
-  closeout_doc_commit: 4940611389a753ab7fc5b213723bdb6aa082ccca
-  initial_exact_tested_head: 65dd9869ee96813059c33158e68c6a51e733f937
-  initial_browser_run: 33977940636
-  initial_evidence_artifact_id: 9972955208
-  initial_evidence_artifact_sha256: eec917b43280ea3c1065c26f981f326fa58fd82f624ac70a588567a59501eba7
-  first_human_compare: HOLD
-  exact_tested_head: 98cb53b1bd8319fe786f2bf4d0e75d9b399a34b7
-  build_run: 33979695172
-  browser_run: 33979695211
-  evidence_artifact_id: 9973464025
-  evidence_artifact_sha256: 669a4646f507514c808c97cefc3a58df3c35027d5f43ef61aa9b49cc5cdf393a
-  browser_runtime: PASS
-  focus_experience: PASS
-  scaling: PASS
-  mobile_390: PASS
-  reduced_motion: PASS
-  lazy_family_entries: 15
-  one_active_family_canvas: true
-  all15_chunk_isolation:
-    schema: RELATIONAL_KEY_V2_ALL15_DIRECT_CHUNK_ISOLATION_001
-    verdict: ALL15_CHUNK_ISOLATION_PASS
-    family_count: 15
-    findings: []
-    one_active_family_canvas: true
-    one_active_family_runtime: true
-    unrelated_family_entries_loaded: 0
-  promotion_candidates:
-    service_benin:
-      status: V2_PILOT_PROMOTION_CANDIDATE
-      pair: BENIN_TELEPHONE_CARD_MEMBER_TO_REGISTERED_CONTACT_SERVICE_HANDOFF_TO_PUBLIPHONE_SERVICE_WINDOW_RESPONSE
-      first_human_compare: HOLD_GENERIC_KEYCARD_VISUAL_LANGUAGE_TOO_STRONG
-      bounded_rework_head: 8d4e4148eed850221393c7a6e20005bb266615e2
-      final_human_compare: PASS
-    food_toyama:
-      status: V2_PILOT_PROMOTION_CANDIDATE
-      pair: PRESS_PACKAGE_CONSTRAINT_TO_ORDERED_RELEASE_TO_BAMBOO_LEAF_FAN_REVEAL_RESPONSE
-      first_human_compare: HOLD_MEMBER_A_RELEASE_CAUSALITY_VISUALLY_TOO_WEAK
-      bounded_rework_head: 6311f6f76921bb87512274c09c4f89d9013fa77b
-      final_human_compare: PASS
-    hika_ahi_aotearoa:
-      status: V2_PILOT_PROMOTION_CANDIDATE
-      pair: HIKA_RECIPROCAL_STROKE_PLUS_GROOVED_BASE_RESISTANCE_TO_SUSTAINED_FRICTION_TO_LOCALIZED_EMBER_STATE
-      first_human_compare: HOLD_EMBER_WITNESS_TOO_BRIDGE_CENTRIC
-      bounded_rework_head: 98cb53b1bd8319fe786f2bf4d0e75d9b399a34b7
-      semantic_contract: MECHANISM_ONLY__NO_RITUAL_WHAKAPAPA_CEREMONIAL_OR_UNIVERSAL_MAORI_CLAIMS
-      final_human_compare: PASS
-
-v2_6_wave_005_selection:
-  verdict: PASS
-  selection_commit: 001e70ed60b731676f064b96de6250bfbeedb7f5
-  selection_doc: V2/V2_6_WAVE_005_SELECTION_ARCHIVE_REFRESH_001.md
-  shortlist_size: 3
-  remaining_pool_before_selection: 9
-  archive_refresh: PASS
-  collision_check: PASS
-  rights_boundaries: PASS
-  contextual_truth_boundaries: PASS
-  build_authorized_exactly_three: true
-  allowed_families:
-    metate_teotitlan:
-      status: BUILD_AUTHORIZED
-      pair: METATE_RECEIVING_GRINDING_SURFACE_TO_RECIPROCAL_ABRASION_SHEAR_TO_METLAPIL_MOVING_GRINDING_STONE_AND_FINENESS_RESPONSE
-      asset_policy: PROCEDURAL_ONLY_FOR_BUILD__INAH_AND_NMAI_REFERENCE_TEXT_OBJECT_METADATA_ONLY
-      truth_boundary: EDITORIAL_MECHANISM_TRANSLATION__NOT_EXACT_RECIPE_ETHNOGRAPHIC_RECONSTRUCTION_OR_UNIVERSAL_CULTURAL_CLAIM
-    zellige_fes:
-      status: BUILD_AUTHORIZED
-      pair: MATERIAL_EDGE_A_TO_GEOMETRIC_FIT_JOINT_SEATING_TO_MATERIAL_EDGE_B_TESSELLATION_CONTINUATION
-      asset_policy: PROCEDURAL_ONLY_FOR_BUILD__MET_FEZ_CRAFT_PROCESS_AND_COURT_REFERENCE_TEXT_ONLY
-      semantic_contract: EDGE_MATERIAL_RESOLVES_RELATIONSHIP__NO_GENERIC_PUZZLE_OR_COPIED_DECORATIVE_PATTERN
-    swell_marshall:
-      status: BUILD_AUTHORIZED
-      pair: SWELL_MEMORY_MEMBER_TO_ATOLL_DEFLECTION_INTERSECTION_RELATION_TO_ATOLL_CONTEXT_MEMBER_ORIENTATION_RESPONSE
-      asset_policy: PROCEDURAL_ONLY_FOR_BUILD__SMITHSONIAN_WAVE_NAVIGATION_REFERENCE_TEXT_AND_METADATA_ONLY
-      truth_boundary: NO_SPECIFIC_CHART_DECODING_NO_EXACT_ISLAND_IDENTITY_NO_TO_SCALE_MAP_NO_REAL_TIME_NAVIGATION_CLAIM
-  held_remaining_six:
-    city_gatineau: HOLD_ALIGNMENT_CLUSTER_DENSITY
-    frida_coyoacan: HOLD_REFLECTION_COLLISION_AND_RIGHTS_CONTEXT
-    textile_bonwire: HOLD_TENSION_COLLISION_AND_MOTIF_SENSITIVITY
-    siku_bolivia: HOLD_TEMPORAL_AUDIO_COLLISION
-    garamut_sepik_ramu: HOLD_TEMPORAL_IMPACT_SIGNAL_AND_CONTEXT_SENSITIVITY
-    tongiaki_tonga: HOLD_STRUCTURAL_TENSION_COLLISION_AND_RECONSTRUCTION_RISK
-  other_6_build_authorized: false
-
-runtime_assurance:
-  doctrine: trace_web_runtime_assurance_plus_raw_bits_to_react_conceptual_source
-  react_specific_real_project_validation: ACTIVE
-  requirements:
-    - exact_build_identity
-    - React_Profiler_when_material
-    - browser_performance_evidence
-    - repeated_mount_unmount_disposal_check
-    - mobile_constrained_device_path
-    - reduced_motion_path
-    - console_error_capture
-    - V1_vs_V2_comparison
-  latest_exact_browser_verdict: WAVE_004_BROWSER_RUNTIME_PASS
-  latest_human_comparison: PASS
-  latest_scaling_verdict: SCALING_ARCHITECTURE_BROWSER_PASS
-  latest_exact_tested_head: 98cb53b1bd8319fe786f2bf4d0e75d9b399a34b7
-  latest_evidence_artifact_id: 9973464025
-  latest_evidence_artifact_sha256: 669a4646f507514c808c97cefc3a58df3c35027d5f43ef61aa9b49cc5cdf393a
+promotion_candidates:
+  - anamorphosis-paris
+  - coupler-virginia
+  - ombak-bali
+  - kento-japan
+  - stereoscopy-uk
+  - signal-nigeria
+  - astrolabe-isfahan
+  - funicular-valparaiso
+  - music-box-sainte-croix
+  - boulle-france
+  - khipu-peru
+  - mate-bombilla-argentina
+  - service-benin
+  - food-toyama
+  - hika-ahi-aotearoa
+  - city-gatineau
+  - frida-coyoacan
+  - textile-bonwire
+  - zellige-fes
+  - swell-marshall
+  - siku-bolivia
+  - metate-teotitlan
+  - tongiaki-tonga
+  - garamut-sepik-ramu
 
 deployment_budget:
   v2_work_branch_auto_deploy: false
@@ -400,19 +169,15 @@ deployment_budget:
   explicit_preview_only_when_gate_requires_live_url: true
 
 next_gate:
-  id: V2_6_WAVE_005_THREE_CONCEPT_BUILDS
+  id: V2_9_ALL24_COLLECTION_LEVEL_COLLISION_ACCESSIBILITY_RUNTIME_AND_HUMAN_COHERENCE_AUDIT
   research_allowed: true
-  build_allowed: true
-  allowed_families:
-    - metate-teotitlan
-    - zellige-fes
-    - swell-marshall
-  disallowed_remaining_family_count: 6
-  required_output: THREE_LAZY_REACT_R3F_BUILDS_PLUS_EXACT_V1_RUNTIME_FOCUS_ALL18_CHUNK_ISOLATION_MOBILE_REDUCED_MOTION_AND_HUMAN_COMPARISON
+  build_allowed: false
+  bounded_rework_allowed_only_after_explicit_defect: true
+  required_output: ALL24_COLLECTION_LEVEL_COLLISION_DIFFERENTIATION_PLUS_NAVIGATION_STATE_RESET_DISPOSAL_ACCESSIBILITY_MOBILE_RUNTIME_AND_HUMAN_COHERENCE_VERDICT
   production_replacement_allowed: false
   vercel_preview_allowed: false
 
 blockers:
-  - V1_REPLACEMENT_BLOCKED_UNTIL_PER_FAMILY_PROMOTION_DECISION_AND_SEPARATE_PRODUCTION_GATE
-  - OTHER_6_FAMILY_BUILDS_NOT_AUTHORIZED
-  - MASS_24_FAMILY_PORT_NOT_AUTHORIZED
+  - V1_REPLACEMENT_BLOCKED_PENDING_V2_9_AND_SEPARATE_PRODUCTION_GATE
+  - PRODUCTION_PROMOTION_NOT_AUTHORIZED
+  - VERCEL_PREVIEW_NOT_AUTHORIZED
