@@ -137,33 +137,6 @@ export const pilots = [
     memorable: 'The ember belongs to neither object alone; it appears exactly where the two members work against each other.',
     archiveBoundary: 'Mechanism-level procedural translation grounded in Te Papa material on hika ahi. Te Papa object and archive media remain reference-only / All Rights Reserved and are not reproduced. No ritual, whakapapa, ceremonial, universal-Māori, practical ignition or survival-instruction claim is made.',
   },
-  {
-    id: 'metate-teotitlan', label: 'Metate · Teotitlán', className: 'MATERIAL / RECIPROCAL ABRASION / FINENESS',
-    law: 'METATE / RECEIVING GRINDING SURFACE → RECIPROCAL ABRASION / SHEAR → METLAPIL / MOVING GRINDING STONE + FINENESS RESPONSE',
-    pairMembers: { a: 'METATE / RECEIVING GRINDING SURFACE', relation: 'RECIPROCAL ABRASION / SHEAR', b: 'METLAPIL / MOVING GRINDING STONE' },
-    matching: 'Repeated reciprocal work accumulates a finer material lane on the receiving metate surface.',
-    other: 'Both stones remain valid, but off-axis abrasion pushes material toward one edge and leaves a coarse residual ridge.',
-    memorable: 'The material field visibly changes only because the two stones repeatedly work against each other.',
-    archiveBoundary: 'Editorial structural translation grounded in documented Teotitlán/Oaxaca metate + metlapil mechanics. Procedural geometry is used; this is not an exact recipe, ethnographic reconstruction, or universal cultural claim.',
-  },
-  {
-    id: 'zellige-fes', label: 'Zellige · Fès', className: 'MATERIAL / EDGE FIT / TESSELLATION',
-    law: 'MATERIAL EDGE A → GEOMETRIC FIT / JOINT SEATING → MATERIAL EDGE B / TESSELLATION CONTINUATION',
-    pairMembers: { a: 'MATERIAL EDGE A', relation: 'GEOMETRIC FIT / JOINT SEATING', b: 'MATERIAL EDGE B' },
-    matching: 'The paired material edges physically seat into one joint and the tessellation rhythm continues across the seam.',
-    other: 'Both material assemblies remain valid, but incompatible edge geometry leaves a visible gap or overlap residual.',
-    memorable: 'The final seam exists only because two distinct material edges complete one another.',
-    archiveBoundary: 'Procedural structural translation grounded in documented Fez zillij craftsmanship and cut-tile assembly logic. No historic panel, institutional mark, or culturally representative pattern is reproduced.',
-  },
-  {
-    id: 'swell-marshall', label: 'Swell · Marshall Islands', className: 'ENVIRONMENT / DEFLECTION / ORIENTATION',
-    law: 'SWELL MEMORY MEMBER → ATOLL DEFLECTION / INTERSECTION RELATION → ATOLL CONTEXT MEMBER / ORIENTATION RESPONSE',
-    pairMembers: { a: 'SWELL MEMORY', relation: 'ATOLL DEFLECTION / INTERSECTION', b: 'ATOLL CONTEXT' },
-    matching: 'A bounded swell field deflects through the atoll-context relation and a stable orientation cue registers between the members.',
-    other: 'Both records remain valid, but a different interaction point remains without the registered orientation response.',
-    memorable: 'Orientation appears only because the swell-memory and atoll-context cards alter one another through the shared field.',
-    archiveBoundary: 'Procedural structural translation grounded in Marshallese stick-chart and swell/island contextual sources. It does not decode a specific chart, assign exact islands, claim scale, reproduce navigational instruction, or function as a real-time navigation tool.',
-  },
 ];
 
 export const pilotById = Object.fromEntries(pilots.map((pilot) => [pilot.id, pilot]));

@@ -15,7 +15,7 @@ permissions:
 jobs:
   browser-compare:
     runs-on: ubuntu-latest
-    timeout-minutes: 25
+    timeout-minutes: 40
     steps:
       - name: Checkout
         uses: actions/checkout@v4
@@ -69,7 +69,8 @@ jobs:
           node qa/scaling-architecture.mjs
           node qa/wave003-compare.mjs
           node qa/wave004-compare.mjs
-          node qa/all15-chunk-isolation.mjs
+          node qa/wave005-compare.mjs
+          node qa/all24-chunk-isolation.mjs
 
       - name: Upload runtime evidence
         if: always()
