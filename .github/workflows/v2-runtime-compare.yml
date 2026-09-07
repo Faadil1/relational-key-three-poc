@@ -56,7 +56,7 @@ jobs:
             curl -fsS "http://127.0.0.1:${port}/" >/dev/null
           done
 
-      - name: Run V1 vs V2 exact-browser + scaling gates
+      - name: Run V1 vs V2 exact-browser + scaling + collection audit gates
         working-directory: v2-app
         env:
           RK_V1_URL: http://127.0.0.1:4173
@@ -71,6 +71,7 @@ jobs:
           node qa/wave004-compare.mjs
           node qa/wave005-compare.mjs
           node qa/all24-chunk-isolation.mjs
+          node qa/all24-collection-audit.mjs
 
       - name: Upload runtime evidence
         if: always()

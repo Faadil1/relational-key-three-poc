@@ -2,7 +2,7 @@ state_class: relational_key_v2_cycle
 project: RELATIONAL_KEY
 cycle: V2
 canonical_branch: v2/archive-interaction-3d-matrix-001
-last_updated_utc: "2026-09-07T19:42:00Z"
+last_updated_utc: "2026-09-07T20:29:00Z"
 
 baseline_v1:
   immutable: true
@@ -12,7 +12,7 @@ baseline_v1:
   replacement_authorized: false
 
 v2:
-  status: V2_8A_WAVE_005_PASS__24_PROMOTION_CANDIDATES__V2_9_COLLECTION_AUDIT_NEXT
+  status: V2_9_ALL24_COLLECTION_AUDIT_PASS__24_OF_24_TECHNICAL_AND_HUMAN_COHERENCE__V2_10_PRODUCTION_DECISION_NEXT
   issue: 37
   charter: V2/RELATIONAL_KEY_V2_EVOLUTION_CHARTER.md
   matrix: V2/V2_0_24_FAMILY_ARCHIVE_INTERACTION_3D_OPPORTUNITY_MATRIX.md
@@ -66,6 +66,7 @@ history:
   v2_6a_wave_005_all9_expansion: V2/V2_6A_WAVE_005_ALL9_EXPANSION_AUTHORIZATION_001.md
   v2_7_wave_005_first_human_compare: V2/V2_7_WAVE_005_FIRST_HUMAN_COMPARE_HOLD_001.md
   v2_8_wave_005_closeout: V2/V2_8_WAVE_005_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
+  v2_9_all24_collection_closeout: V2/V2_9_ALL24_COLLECTION_LEVEL_AUDIT_001.md
 
 wave_005:
   verdict: PASS
@@ -137,6 +138,49 @@ wave_005:
     reduced_motion: PASS
     external_archive_media_requests_v2_wave005: 0
 
+v2_9_collection_audit:
+  verdict: PASS
+  first_run:
+    verdict: HOLD
+    qa_head: 50afd0c9e857987ae10c7e8848250fbd3bc741f2
+    browser_run: 34157543412
+    evidence_artifact_id: 10031645369
+    evidence_artifact_sha256: a3c94e6f09a3aabcc60e98020e7d0bbd0361bc719b2d6d078cf22659d0b6d6f8
+    findings_total: 28
+    state_reset_failure_families: 14
+    range_label_failure_families: 14
+  bounded_fix:
+    exact_tested_head: 34676c1fb40cb262b6f94d707e51d70a4c5314da
+    scope: SHARED_APP_SHELL_STATE_RESET_PLUS_EXPLICIT_RANGE_LABEL_ASSOCIATION_ONLY
+    pilot_ci_run: 34158897671
+    browser_run: 34158897632
+    evidence_artifact_id: 10032088835
+    evidence_artifact_sha256: 9c8541cb8f4858bb3f4dd6e19c01ed9b8306dbb3858f43dbec58786ee75e5e1f
+  technical:
+    verdict: V2_9_COLLECTION_TECHNICAL_PASS_PENDING_HUMAN_COHERENCE
+    family_count: 24
+    findings: 0
+    state_reset_failures: 0
+    external_requests: 0
+    console_errors: 0
+    page_errors: 0
+    desktop_canvas_peak: 1
+    mobile_390_canvas_peak: 1
+    reduced_motion_canvas_peak: 1
+    duplicate_laws: 0
+    duplicate_memorable_moments: 0
+    missing_pair_members: 0
+  human_coherence:
+    verdict: PASS
+    captures_reviewed: 48
+    alignment_registration: PASS
+    reflection_trace: PASS
+    tension_structural: PASS
+    wave_signal_temporal: PASS
+    contact_material: PASS
+    boulle_singleton: PASS
+    bounded_rework_required: false
+
 promotion_candidates:
   - anamorphosis-paris
   - coupler-virginia
@@ -169,15 +213,15 @@ deployment_budget:
   explicit_preview_only_when_gate_requires_live_url: true
 
 next_gate:
-  id: V2_9_ALL24_COLLECTION_LEVEL_COLLISION_ACCESSIBILITY_RUNTIME_AND_HUMAN_COHERENCE_AUDIT
+  id: V2_10_PRODUCTION_PROMOTION_DECISION_AND_V1_REPLACEMENT_AUTHORIZATION
   research_allowed: true
   build_allowed: false
-  bounded_rework_allowed_only_after_explicit_defect: true
-  required_output: ALL24_COLLECTION_LEVEL_COLLISION_DIFFERENTIATION_PLUS_NAVIGATION_STATE_RESET_DISPOSAL_ACCESSIBILITY_MOBILE_RUNTIME_AND_HUMAN_COHERENCE_VERDICT
+  bounded_rework_allowed_only_after_explicit_defect: false
+  required_output: EXPLICIT_HUMAN_PRODUCTION_PROMOTION_DECISION_WITH_V1_FREEZE_ROLLBACK_AND_DEPLOYMENT_BOUNDARY
   production_replacement_allowed: false
   vercel_preview_allowed: false
 
 blockers:
-  - V1_REPLACEMENT_BLOCKED_PENDING_V2_9_AND_SEPARATE_PRODUCTION_GATE
+  - V1_REPLACEMENT_BLOCKED_PENDING_EXPLICIT_V2_10_HUMAN_AUTHORIZATION
   - PRODUCTION_PROMOTION_NOT_AUTHORIZED
   - VERCEL_PREVIEW_NOT_AUTHORIZED
