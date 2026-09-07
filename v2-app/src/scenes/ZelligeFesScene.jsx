@@ -1,38 +1,51 @@
 import { Bar, CardPanel, Dot, Stage } from './Wave005Primitives.jsx';
 
-const tilePositions=[[-0.58,0.64],[-0.02,0.64],[0.54,0.64],[-0.58,0.08],[-0.02,0.08],[0.54,0.08],[-0.58,-0.48],[-0.02,-0.48],[0.54,-0.48]];
+const field = [
+  [-0.58,0.58], [0,0.58], [0.58,0.58],
+  [-0.58,0],               [0.58,0],
+  [-0.58,-0.58],[0,-0.58],[0.58,-0.58],
+];
 
-function Tile({x,y,active=false,rotation=0}){
-  return <mesh position={[x,y,0.18]} rotation={[0,0,rotation]}><cylinderGeometry args={[0.27,0.27,0.07,8]} /><meshStandardMaterial color={active?'#66a79d':'#aa8b56'} emissive={active?'#285f58':'#000'} emissiveIntensity={active?0.55:0} roughness={0.72}/></mesh>;
+function Diamond({ x, y, color='#ad8c55', active=false, scale=1 }) {
+  return (
+    <mesh position={[x,y,0.2]} rotation={[0,0,Math.PI/4]} scale={scale}>
+      <boxGeometry args={[0.42,0.42,0.08]} />
+      <meshStandardMaterial color={color} emissive={active?'#245f58':'#000'} emissiveIntensity={active?0.55:0} roughness={0.72} />
+    </mesh>
+  );
 }
 
 export function ZelligeFesScene({ matching, reducedMotion }) {
-  const seat = matching ? (reducedMotion ? 0.18 : 0.42) : 0;
+  const pieceX = matching ? 1.92 : (reducedMotion ? -0.12 : -0.52);
   return (
     <>
       <Stage background="#0c1010" accent="#4b8d88" />
       <group name="PAIR_MEMBER_A">
         <CardPanel position={[-1.92,0,0]} rotation={[0,0.065,-0.018]} color="#182526">
           <group name="CUT_PROFILE_A">
-            {tilePositions.map(([x,y],i)=><Tile key={`${x}-${y}`} x={x} y={y} rotation={(i%3)*0.18} />)}
-            <mesh position={[0,-1.1,0.2]} rotation={[0,0,0.39]}><cylinderGeometry args={[0.36,0.36,0.08,8]}/><meshStandardMaterial color="#d0b06b" roughness={0.7}/></mesh>
+            {[-0.72,-0.24,0.24,0.72].map((y,i)=><Diamond key={y} x={0.2+(i%2)*0.34} y={y} color={i%2?'#d1ae69':'#8da172'} scale={0.9} />)}
+            <Bar position={[-0.56,0,0.18]} size={[0.08,2.18,0.05]} color="#cfb26f" />
+            <Bar position={[0.58,0,0.17]} size={[0.08,2.18,0.05]} color="#6f8d76" />
           </group>
         </CardPanel>
       </group>
+
       <group name="PAIR_MEMBER_B">
         <CardPanel position={[1.92,0,0]} rotation={[0,-0.065,0.018]} color="#172326">
           <group name="TESSELLATION_B">
-            {tilePositions.map(([x,y],i)=><Tile key={`${x}-${y}`} x={x} y={y} active={matching&&i===4} rotation={-(i%3)*0.18} />)}
-            <mesh position={[0,-1.1,0.2]} rotation={[0,0,-0.39]}><cylinderGeometry args={[0.36,0.36,0.08,8]}/><meshStandardMaterial color="#87926b" roughness={0.7}/></mesh>
+            {field.map(([x,y],i)=><Diamond key={`${x}-${y}`} x={x} y={y} color={i%2?'#b28f57':'#7f986d'} active={matching && i%3===1} />)}
+            <Bar position={[0,0,0.16]} size={[0.72,0.72,0.03]} color="#101819" rotation={[0,0,Math.PI/4]} />
           </group>
         </CardPanel>
       </group>
-      <group name="RELATION" position={[0,-0.05,0.5]}>
-        <group name="MATERIAL_FIT" position={[matching?seat:0,matching?0:0.28,0]} rotation={[0,0,matching?0:-0.26]}>
-          <mesh><cylinderGeometry args={[0.46,0.46,0.12,8]}/><meshStandardMaterial color={matching?'#d5b46b':'#665e4e'} emissive={matching?'#70551d':'#000'} emissiveIntensity={matching?0.45:0} roughness={0.64}/></mesh>
-          <Dot position={[0,0,0.12]} radius={0.08} color={matching?'#82b6a5':'#5f594e'} />
+
+      <group name="RELATION" position={[0,0,0.54]}>
+        <group name="MATERIAL_FIT" position={[pieceX,0,0]}>
+          <Diamond x={0} y={0} color={matching?'#d6b46d':'#6d6250'} active={matching} scale={1.04} />
+          <Dot position={[0,0,0.14]} radius={0.06} color={matching?'#9ad0b7':'#635d52'} />
         </group>
-        <Bar position={[0,-0.72,0]} size={[matching?1.1:0.58,0.07,0.04]} color={matching?'#78afa0':'#61584a'} />
+        <Bar position={[0,-0.86,0]} size={[matching?2.9:0.72,0.055,0.035]} color={matching?'#79afa0':'#61584a'} />
+        {matching && [-0.72,-0.36,0,0.36,0.72].map((x)=><Dot key={x} position={[x,-0.86,0.07]} radius={0.038} color="#a9c6a2" />)}
       </group>
     </>
   );
