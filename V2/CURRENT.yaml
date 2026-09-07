@@ -2,17 +2,21 @@ state_class: relational_key_v2_cycle
 project: RELATIONAL_KEY
 cycle: V2
 canonical_branch: v2/archive-interaction-3d-matrix-001
-last_updated_utc: "2026-09-07T20:29:00Z"
+last_updated_utc: "2026-09-07T21:03:00Z"
 
 baseline_v1:
   immutable: true
   production_head: 6821cd2a9694635e2e6948747af45785fe7e3afe
+  live_main_head: 5076c129c48426733a9a7dbaefa85145ff4b5139
+  live_production_deployment: dpl_7BudQj9bccqH7UXxZ6tKT2oBt3YH
+  live_production_http: 200
+  rollback_candidate: true
   validated_families: 24
   final_matrix: STRONG_24_ADEQUATE_0_EXPERIENCE_DEBT_0
   replacement_authorized: false
 
 v2:
-  status: V2_9_ALL24_COLLECTION_AUDIT_PASS__24_OF_24_TECHNICAL_AND_HUMAN_COHERENCE__V2_10_PRODUCTION_DECISION_NEXT
+  status: V2_10_CONDITIONAL_GO__PRODUCT_SUCCESSOR_APPROVED__V1_REPLACEMENT_WITHHELD__V2_10A_PACKAGING_PREVIEW_NEXT
   issue: 37
   charter: V2/RELATIONAL_KEY_V2_EVOLUTION_CHARTER.md
   matrix: V2/V2_0_24_FAMILY_ARCHIVE_INTERACTION_3D_OPPORTUNITY_MATRIX.md
@@ -67,6 +71,7 @@ history:
   v2_7_wave_005_first_human_compare: V2/V2_7_WAVE_005_FIRST_HUMAN_COMPARE_HOLD_001.md
   v2_8_wave_005_closeout: V2/V2_8_WAVE_005_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
   v2_9_all24_collection_closeout: V2/V2_9_ALL24_COLLECTION_LEVEL_AUDIT_001.md
+  v2_10_production_decision: V2/V2_10_PRODUCTION_PROMOTION_DECISION_001.md
 
 wave_005:
   verdict: PASS
@@ -181,6 +186,32 @@ v2_9_collection_audit:
     boulle_singleton: PASS
     bounded_rework_required: false
 
+v2_10_production_decision:
+  verdict: CONDITIONAL_GO
+  product_successor: APPROVED
+  production_replacement_authorized: false
+  v1_replacement_authorized: false
+  blocker: DEPLOYMENT_SHAPE_NOT_YET_PROVEN_FOR_V2
+  canonical_v2_head: 387a524cae7c5417c2f1bf2442e0cae92d27fbf4
+  main_live_head: 5076c129c48426733a9a7dbaefa85145ff4b5139
+  main_delta_from_frozen_v1: README_ONLY
+  v2_app_root: v2-app
+  v2_build_contract: VITE_BUILD_PLUS_SCALING_CHECK
+  vercel_project_id: prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny
+  vercel_framework: null
+  current_production:
+    stable_alias: https://relational-key-collectionrelational.vercel.app/
+    http_status: 200
+    deployment_id: dpl_7BudQj9bccqH7UXxZ6tKT2oBt3YH
+    source_sha: 5076c129c48426733a9a7dbaefa85145ff4b5139
+    ready_state: READY
+    rollback_candidate: true
+  secondary_rollback:
+    deployment_id: dpl_HuDASoX8BUWcvjqXVHLZsDSui1oL
+    source_sha: 6821cd2a9694635e2e6948747af45785fe7e3afe
+    ready_state: READY
+    rollback_candidate: true
+
 promotion_candidates:
   - anamorphosis-paris
   - coupler-virginia
@@ -213,15 +244,17 @@ deployment_budget:
   explicit_preview_only_when_gate_requires_live_url: true
 
 next_gate:
-  id: V2_10_PRODUCTION_PROMOTION_DECISION_AND_V1_REPLACEMENT_AUTHORIZATION
+  id: V2_10A_PRODUCTION_ARTIFACT_PACKAGING_PREVIEW_AND_ROLLBACK_PROOF
   research_allowed: true
-  build_allowed: false
-  bounded_rework_allowed_only_after_explicit_defect: false
-  required_output: EXPLICIT_HUMAN_PRODUCTION_PROMOTION_DECISION_WITH_V1_FREEZE_ROLLBACK_AND_DEPLOYMENT_BOUNDARY
+  build_allowed: true
+  build_scope: DEPLOYMENT_PACKAGING_ONLY_NO_FAMILY_SEMANTIC_REWORK
+  bounded_rework_allowed_only_after_explicit_defect: true
+  required_output: DEPLOYABLE_V2_ARTIFACT_PLUS_EXACT_CI_PLUS_SINGLE_VERCEL_PREVIEW_PLUS_LIVE_ROOT_24_FAMILY_MOBILE_REDUCED_MOTION_KEYBOARD_AND_ROLLBACK_PROOF
   production_replacement_allowed: false
-  vercel_preview_allowed: false
+  vercel_preview_allowed: true
+  vercel_preview_budget: EXACTLY_ONE_EXPLICIT_PREVIEW_FOR_THIS_GATE
 
 blockers:
-  - V1_REPLACEMENT_BLOCKED_PENDING_EXPLICIT_V2_10_HUMAN_AUTHORIZATION
+  - V1_REPLACEMENT_BLOCKED_PENDING_V2_10A_DEPLOYABLE_ARTIFACT_AND_PREVIEW_PROOF
   - PRODUCTION_PROMOTION_NOT_AUTHORIZED
-  - VERCEL_PREVIEW_NOT_AUTHORIZED
+  - MAIN_FORCE_REPLACEMENT_PROHIBITED
