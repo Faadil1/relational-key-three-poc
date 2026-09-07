@@ -9,18 +9,20 @@ function WovenStrip({ side }) {
   const colors = side === 'A' ? warpColorsA : warpColorsB;
   return (
     <group>
-      {warps.map((x,i)=><Bar key={`w-${x}`} position={[x,0,0.18]} size={[0.105,2.24,0.045]} color={colors[i]} />)}
-      {rows.map((y,i)=><Bar key={`r-${y}`} position={[0,y,0.2]} size={[1.86,0.045,0.035]} color={i%2?'#d0b16e':'#8d7047'} />)}
-      <Bar position={[side==='A'?0.96:-0.96,0,0.24]} size={[0.1,2.32,0.05]} color="#d8bd78" />
+      {warps.map((x,i)=><Bar key={`w-${x}`} position={[x,0,0.18+(i%2)*0.018]} size={[0.105,2.24,0.045]} color={colors[i]} />)}
+      {rows.map((y,i)=><Bar key={`r-${y}`} position={[0,y,0.22+(i%2)*0.015]} size={[1.86,0.045,0.035]} color={i%2?'#d0b16e':'#8d7047'} />)}
+      <Bar position={[side==='A'?0.96:-0.96,0,0.25]} size={[0.1,2.32,0.05]} color="#dec27c" />
+      {[-0.84,-0.56,-0.28,0,0.28,0.56,0.84].map((y)=><Dot key={`edge-${y}`} position={[side==='A'?0.96:-0.96,y,0.3]} radius={0.035} color="#ead39a" />)}
     </group>
   );
 }
 
 export function TextileBonwireScene({ matching, reducedMotion }) {
-  const reach = matching ? (reducedMotion ? 0.92 : 1.2) : 0.28;
+  const reach = matching ? (reducedMotion ? 0.94 : 1.22) : 0.28;
+  const stitchYs = [-0.78,-0.52,-0.26,0,0.26,0.52,0.78];
   return (
     <>
-      <Stage background="#0f100d" accent="#8e7a45" />
+      <Stage background="#0f100d" accent="#8f7b46" />
       <group name="PAIR_MEMBER_A">
         <CardPanel position={[-1.92,0,0]} rotation={[0,0.06,-0.015]} color="#24251d">
           <group name="WOVEN_STRIP_A"><WovenStrip side="A" /></group>
@@ -32,22 +34,22 @@ export function TextileBonwireScene({ matching, reducedMotion }) {
         </CardPanel>
       </group>
 
-      <group name="RELATION" position={[0,0,0.52]}>
+      <group name="RELATION" position={[0,0,0.54]}>
         <group name="SELVEDGE_JOIN">
-          {[-0.78,-0.52,-0.26,0,0.26,0.52,0.78].map((y,i)=>(
-            <Bar
-              key={y}
-              position={[0,y,0]}
-              size={[reach,0.055,0.04]}
-              color={matching?(i%2?'#d7b66e':'#8fa06d'):'#62594a'}
-              rotation={[0,0,matching?(i%2?0.42:-0.42):0.16]}
-            />
+          {stitchYs.map((y,i)=>(
+            <group key={y} position={[0,y,0]}>
+              <Bar position={[0,0,0]} size={[reach,0.052,0.04]} color={matching?(i%2?'#d9b86f':'#92a374'):'#62594a'} rotation={[0,0,matching?(i%2?0.5:-0.5):0.16]} />
+              {matching && <Bar position={[0,0,0.055]} size={[reach*0.86,0.032,0.024]} color="#ead39a" rotation={[0,0,i%2?-0.5:0.5]} />}
+            </group>
           ))}
-          {matching && [-0.65,-0.39,-0.13,0.13,0.39,0.65].map((y,i)=><Dot key={y} position={[0,y,0.08]} radius={0.055} color={i%2?'#e3c98f':'#9ca872'} emissive="#6b582f" emissiveIntensity={0.45} />)}
+          {matching && [-0.65,-0.39,-0.13,0.13,0.39,0.65].map((y,i)=><Dot key={y} position={[0,y,0.11]} radius={0.052} color={i%2?'#e8ce95':'#a4b07b'} emissive="#6d5a30" emissiveIntensity={0.48} />)}
+          <Bar position={[-0.66,0, -0.02]} size={[0.045,2.12,0.03]} color="#806d4b" />
+          <Bar position={[0.66,0,-0.02]} size={[0.045,2.12,0.03]} color="#806d4b" />
         </group>
         <group name="TEXTILE_CONTINUATION" visible={matching}>
-          <Bar position={[0,1.04,0.02]} size={[1.4,0.07,0.035]} color="#c9af72" />
-          <Bar position={[0,-1.04,0.02]} size={[1.4,0.07,0.035]} color="#c9af72" />
+          <Bar position={[0,1.04,0.02]} size={[1.52,0.07,0.035]} color="#ccb276" />
+          <Bar position={[0,-1.04,0.02]} size={[1.52,0.07,0.035]} color="#ccb276" />
+          {[-0.5,0,0.5].map((x)=><Dot key={x} position={[x,1.04,0.07]} radius={0.035} color="#e2c98e" />)}
         </group>
       </group>
     </>
