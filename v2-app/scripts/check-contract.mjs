@@ -13,6 +13,8 @@ const app = read('src/App.jsx');
 const registry = read('src/sceneRegistry.js');
 const familyCanvas = read('src/FamilyCanvas.jsx');
 const pilots = read('src/pilots.js');
+const wave005 = read('src/wave005Families.js');
+const allPilotCopy = `${pilots}\n${wave005}`;
 const styles = read('src/styles.css');
 
 const sceneRows = [
@@ -31,6 +33,15 @@ const sceneRows = [
   { id: 'service-benin', path: 'src/scenes/ServiceBeninScene.jsx', entry: 'ServiceBeninEntry.jsx', pairMarkers: true },
   { id: 'food-toyama', path: 'src/scenes/FoodToyamaScene.jsx', entry: 'FoodToyamaEntry.jsx', pairMarkers: true },
   { id: 'hika-ahi-aotearoa', path: 'src/scenes/HikaAhiScene.jsx', entry: 'HikaAhiEntry.jsx', pairMarkers: true },
+  { id: 'city-gatineau', path: 'src/scenes/CityGatineauScene.jsx', entry: 'CityGatineauEntry.jsx', pairMarkers: true },
+  { id: 'frida-coyoacan', path: 'src/scenes/FridaCoyoacanScene.jsx', entry: 'FridaCoyoacanEntry.jsx', pairMarkers: true },
+  { id: 'textile-bonwire', path: 'src/scenes/TextileBonwireScene.jsx', entry: 'TextileBonwireEntry.jsx', pairMarkers: true },
+  { id: 'zellige-fes', path: 'src/scenes/ZelligeFesScene.jsx', entry: 'ZelligeFesEntry.jsx', pairMarkers: true },
+  { id: 'swell-marshall', path: 'src/scenes/SwellMarshallScene.jsx', entry: 'SwellMarshallEntry.jsx', pairMarkers: true },
+  { id: 'siku-bolivia', path: 'src/scenes/SikuBoliviaScene.jsx', entry: 'SikuBoliviaEntry.jsx', pairMarkers: true },
+  { id: 'metate-teotitlan', path: 'src/scenes/MetateTeotitlanScene.jsx', entry: 'MetateTeotitlanEntry.jsx', pairMarkers: true },
+  { id: 'tongiaki-tonga', path: 'src/scenes/TongiakiTongaScene.jsx', entry: 'TongiakiTongaEntry.jsx', pairMarkers: true },
+  { id: 'garamut-sepik-ramu', path: 'src/scenes/GaramutSepikRamuScene.jsx', entry: 'GaramutSepikRamuEntry.jsx', pairMarkers: true },
 ];
 const scenes = Object.fromEntries(sceneRows.map((row) => [row.id, read(row.path)]));
 const allScenes = Object.values(scenes).join('\n');
@@ -46,15 +57,7 @@ if ((familyCanvas.match(/<Canvas/g) ?? []).length !== 1) fail('FamilyCanvas must
 if (!familyCanvas.includes("from '@react-three/fiber'")) fail('R3F Canvas ownership must remain isolated in FamilyCanvas');
 if (!familyCanvas.includes('data-scene-runtime={sceneId}')) fail('active family runtime identity marker is missing');
 if (!app.includes('aria-live="polite"')) fail('dynamic relation result must use a polite live region');
-if (!app.includes('funicularPositionA')) fail('Funicular continuous relation state is missing');
-if (!app.includes('astrolabePlateMode')) fail('Astrolabe alternate-valid plate state is missing');
-if (!app.includes('musicBoxPattern')) fail('Music Box alternate-valid cylinder state is missing');
-if (!app.includes('boulleSeparated')) fail('Boulle reciprocal separation state is missing');
-if (!app.includes('khipuTension')) fail('Khipu structural tension state is missing');
-if (!app.includes('mateInsertion')) fail('Mate + Bombilla insertion state is missing');
-if (!app.includes('serviceContact')) fail('Service Benin contact state is missing');
-if (!app.includes('foodRelease')) fail('Food Toyama release state is missing');
-if (!app.includes('hikaFriction')) fail('Hika Ahi friction state is missing');
+if (!app.includes('wave005Ids.has(activeId)')) fail('Wave 005 generic bounded relation bridge is missing from the shared shell');
 if (!app.includes('prefers-reduced-motion') && !styles.includes('prefers-reduced-motion')) fail('reduced-motion contract is missing');
 
 for (const row of sceneRows) {
@@ -84,7 +87,16 @@ for (const law of [
   'BÉNIN TELEPHONE-CARD MEMBER → REGISTERED CONTACT / SERVICE HANDOFF → PUBLIPHONE SERVICE WINDOW RESPONSE',
   'PRESS / PACKAGE CONSTRAINT → ORDERED RELEASE RELATION → BAMBOO-LEAF FAN / REVEAL RESPONSE',
   'HIKA RECIPROCAL STROKE + GROOVED BASE RESISTANCE → SUSTAINED FRICTION RELATION → EMBER STATE AT THE INTERFACE',
-]) if (!pilots.includes(law)) fail(`missing family law: ${law}`);
+  'ROUTE MEMBER A → REGISTERED VALIDATION SEAM → ROUTE CONTINUATION MEMBER B',
+  'MIRROR / TRACE MEMBER → REFLECTED PATH / ORIENTATION → RECEIVING EASEL / REGISTER MEMBER',
+  'NARROW WOVEN STRIP A → SELVEDGE ALIGNMENT / INTERLACING → STRUCTURAL TEXTILE CONTINUATION B',
+  'CUT ZELLIGE PROFILE A → MATERIAL FIT / SEATING RELATION → TESSELLATION CONTINUATION B',
+  'SWELL VECTOR A → ISLAND / CHART RELATION → DEFLECTED / REFRACTED WAVE RESPONSE B',
+  'IRA NOTE SET A + ARCA COMPLEMENT B → ALTERNATING INTERLOCK → SHARED PHRASE',
+  'MANO / APPLIED STROKE A → PRESSURE + ABRASION INTERFACE → CUMULATIVE GRIND TRACE B',
+  'HULL A + HULL B → SPACING / CROSS-DECK COUPLING → COORDINATED STABILITY RESPONSE',
+  'BEATER / ORDERED IMPACT A → SLIT-GONG MATERIAL RESONANCE → TEMPORAL EVENT TRACE B',
+]) if (!allPilotCopy.includes(law)) fail(`missing family law: ${law}`);
 
 if (!scenes['anamorphosis-paris'].includes('WebGLCubeRenderTarget') || !scenes['anamorphosis-paris'].includes('CubeCamera')) fail('Anamorphosis must preserve the real reflection path');
 if (!scenes['coupler-virginia'].includes('locked') || !scenes['coupler-virginia'].includes('pull')) fail('Coupler must preserve contact/lock/load state');
@@ -93,19 +105,42 @@ if (!scenes['funicular-valparaiso'].includes('positionB = 1 - positionA')) fail(
 if (!scenes['music-box-sainte-croix'].includes('PATTERNS') || !scenes['music-box-sainte-croix'].includes('activePin')) fail('Music Box must preserve deterministic pin decoding');
 if (!scenes['boulle-france'].includes('RECIPROCAL_CUT') || !scenes['boulle-france'].includes('PREMIERE_PARTIE') || !scenes['boulle-france'].includes('CONTRE_PARTIE')) fail('Boulle must preserve one-cut reciprocal inversion specificity');
 if (!scenes['khipu-peru'].includes('SHARED_TENSION_ATTACHMENT') || !scenes['khipu-peru'].includes('KNOT_REGISTER') || !scenes['khipu-peru'].includes('SECONDARY_CORD')) fail('Khipu must preserve structural cord/tension/knot specificity');
-if (/https?:\/\//i.test(scenes['khipu-peru'])) fail('Khipu Wave 003 must remain procedural-only with no remote archival raster');
-if (/decode|translation|numeric value|administrative meaning/i.test(scenes['khipu-peru'])) fail('Khipu scene must not encode semantic decoding claims');
-if (!pilots.includes('No numeric, linguistic, administrative or historical message decoding is claimed')) fail('Khipu truth boundary must explicitly prohibit semantic decoding');
 if (!scenes['mate-bombilla-argentina'].includes('PERFORATED_FILTER') || !scenes['mate-bombilla-argentina'].includes('SELECTIVE_PASSAGE') || !scenes['mate-bombilla-argentina'].includes('PARTICLE_FIELD')) fail('Mate + Bombilla must preserve insertion/filter/selective-passage specificity');
-
 if (!scenes['service-benin'].includes('BENIN_TELEPHONE_CARD') || !scenes['service-benin'].includes('EDITORIAL_CONTACT') || !scenes['service-benin'].includes('PUBLIPHONE_WINDOW')) fail('Service Benin must preserve telephone-card/contact/service-window specificity');
-if (/https?:\/\//i.test(scenes['service-benin'])) fail('Service Benin Wave 004 must remain procedural-only with no remote archive raster');
-if (!pilots.includes('not a documented historical operating procedure')) fail('Service Benin truth boundary must keep the editorial procedure disclaimer');
 if (!scenes['food-toyama'].includes('PRESS_PACKAGE_CONSTRAINT') || !scenes['food-toyama'].includes('ORDERED_RELEASE') || !scenes['food-toyama'].includes('BAMBOO_LEAF_REVEAL')) fail('Food Toyama must preserve press/release/leaf-reveal specificity');
-if (/https?:\/\//i.test(scenes['food-toyama'])) fail('Food Toyama Wave 004 must remain procedural-only with no remote archive/commercial raster');
 if (!scenes['hika-ahi-aotearoa'].includes('HIKA_STROKE') || !scenes['hika-ahi-aotearoa'].includes('GROOVED_BASE') || !scenes['hika-ahi-aotearoa'].includes('FRICTION_INTERFACE') || !scenes['hika-ahi-aotearoa'].includes('EMBER_WITNESS')) fail('Hika Ahi must preserve tool/friction/interface/ember specificity');
-if (/https?:\/\//i.test(scenes['hika-ahi-aotearoa'])) fail('Hika Ahi Wave 004 must remain procedural-only with no Te Papa archive raster');
-if (!pilots.includes('No ritual, whakapapa, ceremonial, universal-Māori, practical ignition or survival-instruction claim is made')) fail('Hika Ahi truth boundary must preserve contextual and practical-instruction limits');
+
+const wave005Markers = {
+  'city-gatineau': ['ROUTE_MEMBER_A','VALIDATION_SEAM','ROUTE_MEMBER_B','ROUTE_CONTINUATION'],
+  'frida-coyoacan': ['MIRROR_TRACE','REFLECTED_PATH','EASEL_REGISTER'],
+  'textile-bonwire': ['WOVEN_STRIP_A','SELVEDGE_JOIN','WOVEN_STRIP_B','TEXTILE_CONTINUATION'],
+  'zellige-fes': ['CUT_PROFILE_A','MATERIAL_FIT','TESSELLATION_B'],
+  'swell-marshall': ['SWELL_VECTOR_A','ISLAND_RELATION','REFRACTED_WAVE_B','WAVE_DEFLECTION_REGISTER'],
+  'siku-bolivia': ['IRA_NOTE_SET','ARCA_NOTE_SET','INTERLOCK_TRACE','SHARED_PHRASE'],
+  'metate-teotitlan': ['MANO_STROKE','ABRASION_INTERFACE','GRIND_TRACE'],
+  'tongiaki-tonga': ['HULL_A','CROSS_DECK_COUPLING','HULL_B','STABILITY_RESPONSE'],
+  'garamut-sepik-ramu': ['BEATER_IMPACT','SLIT_GONG_BODY','EVENT_TRACE','ORDERED_IMPACT_REGISTER'],
+};
+for (const [id, markers] of Object.entries(wave005Markers)) {
+  for (const marker of markers) if (!hasMarker(scenes[id], marker)) fail(`${id} missing specificity marker ${marker}`);
+  if (/https?:\/\//i.test(scenes[id])) fail(`${id} Wave 005 scene must remain procedural-only with no remote media`);
+}
+
+for (const requiredBoundary of [
+  'no STO branding, fare account, entitlement, exact validator UI',
+  'No likeness, painting, artwork, photograph',
+  'no named or meaning-bearing motif',
+  'No historic panel, protected decorative composition',
+  'no specific historic chart, route, bearing, navigation tutorial',
+  'no authentic melody, archive recording',
+  'not a food-preparation tutorial',
+  'no Te Papa raster, sailing/navigation instruction',
+  'no community-specific message meaning',
+]) if (!allPilotCopy.toLowerCase().includes(requiredBoundary.toLowerCase())) fail(`missing Wave 005 truth boundary: ${requiredBoundary}`);
+
+for (const id of ['khipu-peru','service-benin','food-toyama','hika-ahi-aotearoa',...Object.keys(wave005Markers)]) {
+  if (/https?:\/\//i.test(scenes[id])) fail(`${id} must not request remote archive/media assets from scene code`);
+}
 if (/useState\s*\(/.test(allScenes)) fail('scene-level continuous/render state should not be stored in React useState');
 
 if (!process.exitCode) {
@@ -114,11 +149,7 @@ if (!process.exitCode) {
   console.log('shared-shell-scene-imports: NONE');
   console.log(`lazy-family-entries: ${sceneRows.length}`);
   console.log('single-FamilyCanvas-definition: PASS');
-  console.log('wave-003-boulle-reciprocal-cut: PASS');
-  console.log('wave-003-khipu-procedural-structural-only: PASS');
-  console.log('wave-003-mate-bombilla-selective-passage: PASS');
-  console.log('wave-004-service-benin-procedural-contact-register: PASS');
-  console.log('wave-004-food-toyama-procedural-release-reveal: PASS');
-  console.log('wave-004-hika-ahi-procedural-friction-ember: PASS');
+  console.log('wave-005-all-nine-procedural-specificity: PASS');
+  console.log('wave-005-cultural-truth-boundaries: PASS');
   console.log('scene-level-useState: NONE');
 }
