@@ -2,7 +2,7 @@ state_class: relational_key_v2_cycle
 project: RELATIONAL_KEY
 cycle: V2
 canonical_branch: v2/archive-interaction-3d-matrix-001
-last_updated_utc: "2026-09-07T21:03:00Z"
+last_updated_utc: "2026-09-07T23:02:00Z"
 
 baseline_v1:
   immutable: true
@@ -16,10 +16,11 @@ baseline_v1:
   replacement_authorized: false
 
 v2:
-  status: V2_10_CONDITIONAL_GO__PRODUCT_SUCCESSOR_APPROVED__V1_REPLACEMENT_WITHHELD__V2_10A_PACKAGING_PREVIEW_NEXT
+  status: V2_10A_PASS__DEPLOYABLE_V2_PREVIEW_PROVEN__FINAL_PRODUCTION_SWITCH_AUTHORIZATION_NEXT
   issue: 37
   charter: V2/RELATIONAL_KEY_V2_EVOLUTION_CHARTER.md
   matrix: V2/V2_0_24_FAMILY_ARCHIVE_INTERACTION_3D_OPPORTUNITY_MATRIX.md
+  astra_evaluation_brief: V2/ASTRA_V1_V2_EVALUATION_BRIEF.md
   target_family_count: 24
   promotion_candidate_count: 24
   built_family_count: 24
@@ -72,6 +73,8 @@ history:
   v2_8_wave_005_closeout: V2/V2_8_WAVE_005_RUNTIME_AND_EXPERIENCE_COMPARE_001.md
   v2_9_all24_collection_closeout: V2/V2_9_ALL24_COLLECTION_LEVEL_AUDIT_001.md
   v2_10_production_decision: V2/V2_10_PRODUCTION_PROMOTION_DECISION_001.md
+  v2_10a_packaging_preview_closeout: V2/V2_10A_PRODUCTION_ARTIFACT_PACKAGING_PREVIEW_AND_ROLLBACK_PROOF_001.md
+  astra_v1_v2_evaluation_brief: V2/ASTRA_V1_V2_EVALUATION_BRIEF.md
 
 wave_005:
   verdict: PASS
@@ -191,14 +194,13 @@ v2_10_production_decision:
   product_successor: APPROVED
   production_replacement_authorized: false
   v1_replacement_authorized: false
-  blocker: DEPLOYMENT_SHAPE_NOT_YET_PROVEN_FOR_V2
-  canonical_v2_head: 387a524cae7c5417c2f1bf2442e0cae92d27fbf4
+  blocker_at_decision_time: DEPLOYMENT_SHAPE_NOT_YET_PROVEN_FOR_V2
+  decision_gate_closed: true
   main_live_head: 5076c129c48426733a9a7dbaefa85145ff4b5139
   main_delta_from_frozen_v1: README_ONLY
   v2_app_root: v2-app
   v2_build_contract: VITE_BUILD_PLUS_SCALING_CHECK
   vercel_project_id: prj_MzOjapRX1t2Gfcl7xJCVWtKtQFny
-  vercel_framework: null
   current_production:
     stable_alias: https://relational-key-collectionrelational.vercel.app/
     http_status: 200
@@ -211,6 +213,34 @@ v2_10_production_decision:
     source_sha: 6821cd2a9694635e2e6948747af45785fe7e3afe
     ready_state: READY
     rollback_candidate: true
+
+v2_10a_production_artifact_packaging_preview:
+  verdict: PASS
+  source_packaging_branch: v2/v2-10a-production-packaging-001
+  exact_browser_tested_source_head: 3cb8d0d573212052d839be4f690454b128af800e
+  packaging_scope: README_PLUS_VERCEL_CONFIG_PLUS_QA_WORKFLOW_ONLY
+  family_scene_semantic_changes: 0
+  pilot_ci_run: 34162034611
+  full_browser_run: 34162053216
+  full_browser_verdict: PASS
+  runtime_artifact_id: 10033084999
+  runtime_artifact_sha256: 8ff12cbcb300ac58d393f27c32856d0fde2c5f3f06371e320c3b8b30c7522341
+  all24_chunk_isolation: PASS
+  scaling_architecture: PASS
+  collection_audit: PASS
+  preview_branch: preview/v2-10a-production-candidate
+  preview_transport_commit: 43692003b85c2ab6e84e5ea062cb6d86f9e04dbc
+  preview_transport_diff_from_tested_source_files: 0
+  preview_deployment_id: dpl_959A57SDwj1jMXN4xQC8Xk6xDrrM
+  preview_deployment_url: https://relational-key-collectionrelational-key-collection-7885ckl6c.vercel.app/
+  preview_state: READY
+  preview_target: null
+  preview_root_http: 200
+  preview_title: RELATIONAL_KEY_V2_RELATIONAL_PILOTS
+  build_fingerprint_matches_ci: true
+  v1_production_unchanged_after_preview: true
+  v1_production_http_after_preview: 200
+  production_switch_performed: false
 
 promotion_candidates:
   - anamorphosis-paris
@@ -242,19 +272,22 @@ deployment_budget:
   v2_work_branch_auto_deploy: false
   local_ci_first: true
   explicit_preview_only_when_gate_requires_live_url: true
+  v2_10a_preview_budget: EXACTLY_ONE
+  v2_10a_preview_consumed: true
+  additional_v2_10a_preview_allowed: false
 
 next_gate:
-  id: V2_10A_PRODUCTION_ARTIFACT_PACKAGING_PREVIEW_AND_ROLLBACK_PROOF
+  id: V2_10B_FINAL_PRODUCTION_SWITCH_AUTHORIZATION_AND_ALIAS_PROMOTION
   research_allowed: true
-  build_allowed: true
-  build_scope: DEPLOYMENT_PACKAGING_ONLY_NO_FAMILY_SEMANTIC_REWORK
-  bounded_rework_allowed_only_after_explicit_defect: true
-  required_output: DEPLOYABLE_V2_ARTIFACT_PLUS_EXACT_CI_PLUS_SINGLE_VERCEL_PREVIEW_PLUS_LIVE_ROOT_24_FAMILY_MOBILE_REDUCED_MOTION_KEYBOARD_AND_ROLLBACK_PROOF
-  production_replacement_allowed: false
-  vercel_preview_allowed: true
-  vercel_preview_budget: EXACTLY_ONE_EXPLICIT_PREVIEW_FOR_THIS_GATE
+  build_allowed: false
+  evaluation_allowed: true
+  astra_external_evaluation_allowed: true
+  required_input: EXPLICIT_USER_PRODUCTION_REPLACEMENT_AUTHORIZATION_AFTER_REVIEW
+  production_replacement_allowed_without_explicit_authorization: false
+  required_output_if_authorized: EXACT_V2_PRODUCTION_PROMOTION_PLUS_POST_SWITCH_SMOKE_PLUS_ROLLBACK_CONFIRMATION
+  v1_rollback_anchor_must_remain_available: true
 
 blockers:
-  - V1_REPLACEMENT_BLOCKED_PENDING_V2_10A_DEPLOYABLE_ARTIFACT_AND_PREVIEW_PROOF
-  - PRODUCTION_PROMOTION_NOT_AUTHORIZED
+  - PRODUCTION_SWITCH_REQUIRES_EXPLICIT_USER_AUTHORIZATION_AFTER_REVIEW
   - MAIN_FORCE_REPLACEMENT_PROHIBITED
+  - NO_ADDITIONAL_V2_10A_PREVIEW_DEPLOYMENTS
