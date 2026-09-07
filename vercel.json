@@ -1,5 +1,8 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "installCommand": "cd v2-app && npm ci --ignore-scripts",
+  "buildCommand": "cd v2-app && npm run build",
+  "outputDirectory": "v2-app/dist",
   "git": {
     "deploymentEnabled": {
       "**": false,

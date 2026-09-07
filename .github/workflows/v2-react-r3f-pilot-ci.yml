@@ -4,14 +4,19 @@ on:
   push:
     branches:
       - 'v2/**'
+      - 'preview/**'
     paths:
       - 'v2-app/**'
       - 'V2/**'
+      - 'README.md'
+      - 'vercel.json'
       - '.github/workflows/v2-react-r3f-pilot-ci.yml'
   pull_request:
     paths:
       - 'v2-app/**'
       - 'V2/**'
+      - 'README.md'
+      - 'vercel.json'
       - '.github/workflows/v2-react-r3f-pilot-ci.yml'
 
 permissions:
@@ -31,6 +36,27 @@ jobs:
         with:
           node-version: 24
 
+      - name: Verify V2 production packaging contract
+        shell: bash
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const config = JSON.parse(fs.readFileSync('vercel.json', 'utf8'));
+          const expected = {
+            installCommand: 'cd v2-app && npm ci --ignore-scripts',
+            buildCommand: 'cd v2-app && npm run build',
+            outputDirectory: 'v2-app/dist',
+          };
+          for (const [key, value] of Object.entries(expected)) {
+            if (config[key] !== value) throw new Error(`${key} mismatch: ${config[key]} !== ${value}`);
+          }
+          const deployment = config.git?.deploymentEnabled || {};
+          if (deployment['**'] !== false || deployment.main !== true || deployment['preview/**'] !== true || deployment['preview-*'] !== true) {
+            throw new Error('Vercel deployment-budget default-deny contract changed');
+          }
+          console.log('V2 production packaging contract: PASS');
+          NODE
+
       - name: Materialize exact lockfile
         working-directory: v2-app
         run: npm install --package-lock-only --ignore-scripts --no-audit
@@ -47,6 +73,13 @@ jobs:
         working-directory: v2-app
         run: npm run check
 
+      - name: Verify packaged output exists
+        shell: bash
+        run: |
+          test -f v2-app/dist/index.html
+          test -d v2-app/dist/assets
+          echo 'Packaged V2 output: PASS'
+
       - name: Report bounded bundle sizes
         working-directory: v2-app
         shell: bash
@@ -54,7 +87,7 @@ jobs:
           find dist/assets -maxdepth 1 -type f -printf '%f %s bytes\n' | sort
 
       - name: Commit lockfile if first materialization changed it
-        if: github.event_name == 'push'
+        if: github.event_name == 'push' && startsWith(github.ref_name, 'v2/')
         shell: bash
         run: |
           if [ -z "$(git status --porcelain -- v2-app/package-lock.json)" ]; then
