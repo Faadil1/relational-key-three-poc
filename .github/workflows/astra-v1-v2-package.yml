@@ -1,0 +1,119 @@
+name: Astra V1 V2 Review Package
+
+on:
+  push:
+    branches:
+      - 'v2/astra-v1-v2-package-001'
+    paths:
+      - '.github/workflows/astra-v1-v2-package.yml'
+
+permissions:
+  contents: read
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout full repository history
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Build exact V1 and V2 source snapshots
+        shell: bash
+        run: |
+          set -euo pipefail
+          V1_SHA='5076c129c48426733a9a7dbaefa85145ff4b5139'
+          V2_SHA='a820898d017836f5144afe986867dfad242503bf'
+          ROOT='RELATIONAL_KEY_ASTRA_V1_V2_REVIEW'
+
+          rm -rf "$ROOT"
+          mkdir -p "$ROOT/V1_STABLE_SOURCE" "$ROOT/V2_CANDIDATE_SOURCE"
+
+          git archive "$V1_SHA" | tar -x -C "$ROOT/V1_STABLE_SOURCE"
+          git archive "$V2_SHA" | tar -x -C "$ROOT/V2_CANDIDATE_SOURCE"
+
+          cp "$ROOT/V2_CANDIDATE_SOURCE/V2/ASTRA_V1_V2_EVALUATION_BRIEF.md" "$ROOT/ASTRA_EVALUATION_BRIEF.md"
+
+          cat > "$ROOT/READ_ME_FIRST.md" <<'EOF'
+          # RELATIONAL KEY — Astra V1 ↔ V2 Review Package
+
+          This package contains the two exact source snapshots to compare.
+
+          ## V1 — stable/live reference
+
+          Folder: `V1_STABLE_SOURCE/`
+
+          Commit: `5076c129c48426733a9a7dbaefa85145ff4b5139`
+
+          Live: https://relational-key-collectionrelational.vercel.app/
+
+          Frozen V1 functional baseline: `6821cd2a9694635e2e6948747af45785fe7e3afe`.
+          The live V1 commit differs from that frozen baseline only by the portfolio README update.
+
+          ## V2 — production candidate
+
+          Folder: `V2_CANDIDATE_SOURCE/`
+
+          Canonical commit: `a820898d017836f5144afe986867dfad242503bf`
+
+          V2 app source: `V2_CANDIDATE_SOURCE/v2-app/`
+
+          Canonical state: `V2_CANDIDATE_SOURCE/V2/CURRENT.yaml`
+
+          Evaluation brief: `ASTRA_EVALUATION_BRIEF.md`
+
+          Preview deployment:
+          https://relational-key-collectionrelational-key-collection-7885ckl6c.vercel.app/
+
+          Preview deployment ID: `dpl_959A57SDwj1jMXN4xQC8Xk6xDrrM`
+
+          Exact browser-tested packaging source: `3cb8d0d573212052d839be4f690454b128af800e`
+
+          Browser run: `34162053216` — PASS
+
+          Runtime artifact: `10033084999`
+
+          Runtime artifact digest:
+          `sha256:8ff12cbcb300ac58d393f27c32856d0fde2c5f3f06371e320c3b8b30c7522341`
+
+          The preview transport commit `43692003b85c2ab6e84e5ea062cb6d86f9e04dbc` has zero changed files versus the exact browser-tested source tree.
+
+          ## Critical product law
+
+          **THE RELATIONAL PAIR REMAINS THE PRODUCT.**
+
+          `PAIR MEMBER → RELATION → OTHER MEMBER RESPONSE`
+
+          Read `ASTRA_EVALUATION_BRIEF.md` before proposing changes.
+
+          Production V1 has NOT been replaced. V2 remains a candidate pending explicit production-switch authorization after review.
+          EOF
+
+          cat > "$ROOT/MANIFEST.txt" <<EOF
+          package_generated_from_repo=Faadil1/relational-key-three-poc
+          v1_live_source=$V1_SHA
+          v1_frozen_baseline=6821cd2a9694635e2e6948747af45785fe7e3afe
+          v2_canonical_source=$V2_SHA
+          v2_exact_browser_tested_packaging=3cb8d0d573212052d839be4f690454b128af800e
+          v2_preview_transport=43692003b85c2ab6e84e5ea062cb6d86f9e04dbc
+          v2_preview_deployment=dpl_959A57SDwj1jMXN4xQC8Xk6xDrrM
+          v2_browser_run=34162053216
+          v2_runtime_artifact=10033084999
+          v2_runtime_artifact_sha256=8ff12cbcb300ac58d393f27c32856d0fde2c5f3f06371e320c3b8b30c7522341
+          production_switch_performed=false
+          EOF
+
+          find "$ROOT" -type f -print0 | sort -z | xargs -0 sha256sum > "$ROOT/SHA256SUMS.txt"
+          zip -r -q RELATIONAL_KEY_ASTRA_V1_V2_REVIEW.zip "$ROOT"
+          sha256sum RELATIONAL_KEY_ASTRA_V1_V2_REVIEW.zip > RELATIONAL_KEY_ASTRA_V1_V2_REVIEW.zip.sha256
+
+      - name: Upload Astra review package
+        uses: actions/upload-artifact@v4
+        with:
+          name: relational-key-astra-v1-v2-review
+          path: |
+            RELATIONAL_KEY_ASTRA_V1_V2_REVIEW.zip
+            RELATIONAL_KEY_ASTRA_V1_V2_REVIEW.zip.sha256
+          if-no-files-found: error
+          retention-days: 14
