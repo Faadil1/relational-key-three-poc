@@ -23,7 +23,7 @@ WebGL failure fallback and richer direct manipulation remain follow-up work. Do 
 
 ## Reference handling
 
-The supplied simeydotme/pokemon-cards-css repository is a GPLv3 CSS/Svelte reference, not the Blender generation skill mentioned in the post. No code or assets were copied. Visual inspiration: localized surface response. The exact new Blender skill repository was not identified from the supplied links; it was not installed.
+The supplied simeydotme/pokemon-cards-css repository is a GPLv3 CSS/Svelte reference, not the Blender generation skill mentioned in the post. No code or assets were copied. Visual inspiration: localized surface response. The exact Blender skill was subsequently identified as EverettFish/holo-card-studio, inspected at b470957e0dea681eadc05e467a57bdc84b702333 (MIT). SKILL.md, verification guidance and the web shader template were read. It was evaluated, not installed or executed. No generation pipeline or artwork from it was incorporated.
 
 References supplied by the user:
 - https://github.com/simeydotme/pokemon-cards-css
@@ -34,3 +34,13 @@ References supplied by the user:
 ## Next review gate
 
 Inspect intermediate and terminal states for both families at desktop, 390px mobile and reduced-motion; test keyboard completion and removal of each member. Compare the V1 terminal captures, including Siku's iframe, with this branch. Retain HOLD if causal legibility, material identity or usability regresses. Promote neither canonical V2 nor V1 automatically.
+
+## Holo Card Studio assessment
+
+Source: https://github.com/EverettFish/holo-card-studio
+
+Useful principles for a later material pass: register subject/background/line/text layers; keep typography at zero depth; transform viewing direction into a consistent card coordinate frame; bound grazing-angle UV displacement; mask material response locally; test both directions of tilt. Blender node graphs must be rebuilt in web shaders, rather than claimed to survive glTF export.
+
+Do not transplant the template wholesale: it centers one collectible card, foil/stars and an effect-control interface. Those are not evidence of a two-member relation. Its continuous compositor rendering also conflicts with this project's demand-rendered architecture. No generated cultural imagery, universal rainbow coating, automatic rotation or sparkle system is approved by this reference assessment.
+
+Build CI at a30c43fa2d32df0feeb033c4f47a65db9cf55d25: success (run 34188756322), including mechanism tests and security audit. Runtime run 34188756287 must be consulted separately; a build pass is not visual acceptance.
