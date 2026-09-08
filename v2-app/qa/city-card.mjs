@@ -21,6 +21,7 @@ try{for(const mode of ['desktop','mobile','reduced']){
  await page.getByRole('link',{name:/Consulter la carte municipale/}).waitFor();
  await page.screenshot({path:`${out}/${mode}-verso.png`,fullPage:true});
  await button('RECTO A').click();await button('AUTRE LIAISON').click();assert.match(await status(),/RACCORD DÉCALÉ/);assert.equal(await button('FAIRE PASSER').isDisabled(),true);
+ await page.screenshot({path:`${out}/${mode}-other.png`,fullPage:true});
  await button('RECOMMENCER').click();assert.match(await status(),/DEUX FRAGMENTS/);
  assert.equal(await page.locator('canvas').count(),1);assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth),true);assert.deepEqual(errors,[]);
  if(mode==='reduced'){const before=await page.locator('canvas').screenshot();await page.waitForTimeout(300);assert.equal(Buffer.compare(before,await page.locator('canvas').screenshot()),0);}

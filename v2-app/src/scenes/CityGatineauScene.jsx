@@ -24,7 +24,7 @@ function PrintedCard({member,back,mobile,transferred,position,drag}) {
 export function CityGatineauScene({state,dispatch}) {
  const {size,viewport,camera}=useThree();const mobile=size.width<600;const start=useRef(null);
  const distance=mobile?1.035+state.gap*.46:1.625+state.gap*.42;
- const a=mobile?[0,distance,0]:[-distance,0,0];const b=mobile?[state.offset,-distance,0]:[distance,state.offset,0];
+ const a=mobile?[0,distance,0]:[-distance,0,0];const b=mobile?[state.offset*.55,-distance,0]:[distance,state.offset,0];
  const drag={onPointerDown:e=>{e.stopPropagation();start.current={x:e.clientX,y:e.clientY,gap:state.gap};e.target.setPointerCapture(e.pointerId);},onPointerMove:e=>{if(!start.current)return;e.stopPropagation();const view=viewport.getCurrentViewport(camera);const delta=mobile?(e.clientY-start.current.y)/size.height*view.height:(e.clientX-start.current.x)/size.width*view.width;dispatch({type:'move',gap:start.current.gap+delta/(mobile?.46:.42)});},onPointerUp:e=>{if(!start.current)return;start.current=null;e.target.releasePointerCapture(e.pointerId);},onPointerCancel:()=>{start.current=null;}};
  return <>
   <color attach="background" args={['#c8cbc0']}/><ambientLight intensity={1.8}/><directionalLight position={[-3,5,7]} intensity={2}/>
