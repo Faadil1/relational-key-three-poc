@@ -13,7 +13,7 @@ const foilFragment=`varying vec2 vUv;uniform float angle;void main(){float p=vUv
 export function CollectibleCard({texture,position,back,presentation={angle:0,foil:true},edge='#b6b0a1',children}) {
  const shadow=useMemo(()=>{
   const canvas=document.createElement('canvas');canvas.width=512;canvas.height=328;
-  const c=canvas.getContext('2d');c.shadowColor='rgba(20,20,12,.24)';c.shadowBlur=14;c.fillStyle='rgba(20,20,12,.22)';c.beginPath();c.roundRect(24,24,464,280,20);c.fill();
+  const c=canvas.getContext('2d');c.shadowColor='rgba(20,20,12,.16)';c.shadowBlur=14;c.fillStyle='rgba(20,20,12,.12)';c.beginPath();c.roundRect(24,24,464,280,20);c.fill();
   return new CanvasTexture(canvas);
  },[]);
  useEffect(()=>()=>shadow.dispose(),[shadow]);
@@ -23,8 +23,8 @@ export function CollectibleCard({texture,position,back,presentation={angle:0,foi
  useEffect(()=>()=>face.dispose(),[face]);
  useEffect(()=>()=>texture.dispose(),[texture]);
  return <group position={position}>
-  <mesh position={[.015,-.045,-.45]}><planeGeometry args={[3.7,2.38]}/><meshBasicMaterial map={shadow} transparent depthWrite={false} toneMapped={false}/></mesh>
   <group rotation={[presentation.angle*.18,presentation.angle,0]}>
+  <mesh position={[.015,-.035,-.055]}><planeGeometry args={[3.55,2.36]}/><meshBasicMaterial map={shadow} transparent depthWrite={false} toneMapped={false}/></mesh>
   <mesh position={[0,0,-.035]}><extrudeGeometry args={[shape,{depth:.035,bevelEnabled:true,bevelSize:.008,bevelThickness:.008,bevelSegments:3,steps:1}]}/><meshStandardMaterial color={edge} roughness={.5} metalness={.18}/></mesh>
   <mesh geometry={face} position={[0,0,.012]}><meshBasicMaterial map={texture} toneMapped={false}/></mesh>
   {!back && presentation.foil && <mesh position={[1.47,.06,.018]}><planeGeometry args={[.018,1.48]}/><shaderMaterial vertexShader={foilVertex} fragmentShader={foilFragment} uniforms={uniforms} toneMapped={false}/></mesh>}
