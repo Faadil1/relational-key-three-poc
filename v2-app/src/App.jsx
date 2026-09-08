@@ -1,8 +1,10 @@
-import { Suspense, useEffect, useMemo, useState } from 'react';
+import { Suspense, useEffect, useMemo, useReducer, useState } from 'react';
 import { pilots as legacyPilots } from './pilots.js';
 import { wave005Families, wave005Ids } from './wave005Families.js';
 import { sceneComponents } from './sceneRegistry.js';
 import { useOmbakAudio } from './useOmbakAudio.js';
+import { RelationalStudyControls } from './RelationalStudyControls.jsx';
+import { studyIds, initialMetate, metateReducer, initialSiku, sikuReducer, metateStatus, sikuStatus } from './familyModels/relationalStudies.js';
 import { useReducedMotion } from './useReducedMotion.js';
 
 const pilots = [...legacyPilots, ...wave005Families];
@@ -66,6 +68,8 @@ export default function App() {
   const [foodRelease, setFoodRelease] = useState(INITIAL.foodRelease);
   const [hikaFriction, setHikaFriction] = useState(INITIAL.hikaFriction);
   const reducedMotion = useReducedMotion();
+  const [metate, dispatchMetate] = useReducer(metateReducer, undefined, initialMetate);
+  const [siku, dispatchSiku] = useReducer(sikuReducer, undefined, initialSiku);
 
   const focusMode = launch.focusMode;
   const pilot = pilotById[activeId];
@@ -179,6 +183,8 @@ export default function App() {
         ? 'MATCHING · sustained friction remains localized at the groove relation · bounded ember witness appears at the interface.'
         : 'OTHER · both hika ahi tool members remain valid · contact is offset and heat dissipates without an ember register.';
     }
+    if (activeId === 'metate-teotitlan') return metateStatus(metate);
+    if (activeId === 'siku-bolivia') return sikuStatus(siku);
     if (wave005Ids.has(activeId)) {
       return matching ? `MATCHING · ${pilot.matching}` : `OTHER · ${pilot.other}`;
     }
@@ -188,12 +194,14 @@ export default function App() {
     ombakDifference, effectiveOmbakDifference, kentoOffset, kentoPressed, stereoDisparity,
     signalAlignment, astrolabeAngle, astrolabePlateMode, funicularPositionA, musicBoxEngaged,
     musicBoxAngle, musicBoxPattern, boulleSeparated, khipuTension, mateInsertion,
-    serviceContact, foodRelease, hikaFriction,
+    serviceContact, foodRelease, hikaFriction, metate, siku,
   ]);
 
   const applyRelation = (mode) => {
     const nextMatching = mode === 'matching';
     setRelationMode(mode);
+    if (activeId === 'metate-teotitlan') dispatchMetate({ type: 'contact', value: nextMatching });
+    if (activeId === 'siku-bolivia') dispatchSiku({ type: 'relation', value: nextMatching });
     if (activeId === 'anamorphosis-paris') setAnamorphosisOffset(nextMatching ? 0 : 0.72);
     else if (activeId === 'coupler-virginia') { setCouplerApproach(1); setCouplerPull(0); }
     else if (activeId === 'kento-japan') { setKentoOffset(nextMatching ? 0 : 0.3); setKentoPressed(false); }
@@ -210,6 +218,8 @@ export default function App() {
   };
 
   const resetActive = () => {
+    dispatchMetate({ type: 'reset' });
+    dispatchSiku({ type: 'reset' });
     setRelationMode('other');
     if (activeId === 'anamorphosis-paris') setAnamorphosisOffset(INITIAL.anamorphosisOffset);
     if (activeId === 'coupler-virginia') { setCouplerApproach(INITIAL.couplerApproach); setCouplerPull(0); }
@@ -244,6 +254,8 @@ export default function App() {
   else if (activeId === 'service-benin') activeSceneProps = { contact: serviceContact, matching, reducedMotion };
   else if (activeId === 'food-toyama') activeSceneProps = { release: foodRelease, matching, reducedMotion };
   else if (activeId === 'hika-ahi-aotearoa') activeSceneProps = { friction: hikaFriction, matching, reducedMotion };
+  else if (activeId === 'metate-teotitlan') activeSceneProps = { state: metate, reducedMotion };
+  else if (activeId === 'siku-bolivia') activeSceneProps = { state: siku, reducedMotion };
   else if (wave005Ids.has(activeId)) activeSceneProps = { matching, reducedMotion };
 
   const selectFamily = (id) => {
@@ -266,7 +278,7 @@ export default function App() {
         : ['MATCHING', 'OTHER'];
 
   return (
-    <main className={focusMode ? 'app-shell focus-mode' : 'app-shell'}>
+    <main className={`${focusMode ? 'app-shell focus-mode' : 'app-shell'}${studyIds.has(activeId) ? ' relational-study' : ''}`}>
       {focusMode ? (
         <header className="focus-header">
           <div>
@@ -312,7 +324,7 @@ export default function App() {
             <p className="motion-note">{reducedMotion ? 'Reduced motion active' : 'Motion follows system preference'}</p>
           </div>
 
-          {focusMode && (
+          {(focusMode || studyIds.has(activeId)) && (
             <div className="pair-member-rail" aria-label={`${pilot.label} relational pair`}>
               <div><small>PAIR MEMBER A</small><strong>{pilot.pairMembers.a}</strong></div>
               <div className="pair-relation"><small>RELATION</small><strong>{pilot.pairMembers.relation}</strong></div>
@@ -320,7 +332,7 @@ export default function App() {
             </div>
           )}
 
-          <div className="canvas-wrap" aria-hidden="true">
+          <div className="canvas-wrap" aria-hidden={studyIds.has(activeId) ? undefined : true}>
             <Suspense fallback={<div role="status" aria-live="polite" style={{ display: 'grid', placeItems: 'center', width: '100%', height: '100%', padding: 24 }}>LOADING RELATIONAL SCENE · {pilot.label}</div>}>
               <ActiveScene key={activeId} {...activeSceneProps} />
             </Suspense>
@@ -359,7 +371,8 @@ export default function App() {
             {activeId === 'service-benin' && <label className="range-control" htmlFor="rk-service-contact"><span>Registered contact <output>{Math.round(serviceContact * 100)}%</output></span><input id="rk-service-contact" type="range" min="0" max="1" step="0.01" value={serviceContact} onChange={(event) => setServiceContact(Number(event.target.value))} /><small>Contact geometry and line-window response are editorial proof, not a reconstructed historical operating procedure.</small></label>}
             {activeId === 'food-toyama' && <label className="range-control" htmlFor="rk-food-release"><span>Package release <output>{Math.round(foodRelease * 100)}%</output></span><input id="rk-food-release" type="range" min="0" max="1" step="0.01" value={foodRelease} onChange={(event) => setFoodRelease(Number(event.target.value))} /><small>The interaction demonstrates bounded package/press/reveal mechanics only; no food-quality or preparation claim is made.</small></label>}
             {activeId === 'hika-ahi-aotearoa' && <label className="range-control" htmlFor="rk-hika-friction"><span>Bounded friction witness <output>{Math.round(hikaFriction * 100)}%</output></span><input id="rk-hika-friction" type="range" min="0" max="1" step="0.01" value={hikaFriction} onChange={(event) => setHikaFriction(Number(event.target.value))} /><small>Mechanism-level relation only. This is not practical ignition guidance and no archive media is reproduced.</small></label>}
-            {wave005Ids.has(activeId) && <p className="small-copy">Wave 005 uses a deterministic OTHER ↔ MATCHING relation switch in the first build. Family-specific interaction enrichment is allowed only after exact V1 comparison identifies a need.</p>}
+            <RelationalStudyControls id={activeId} metate={metate} dispatchMetate={dispatchMetate} siku={siku} dispatchSiku={dispatchSiku} />
+            {wave005Ids.has(activeId) && !studyIds.has(activeId) && <p className="small-copy">Wave 005 uses a deterministic OTHER ↔ MATCHING relation switch in the first build. Family-specific interaction enrichment is allowed only after exact V1 comparison identifies a need.</p>}
           </section>
 
           <section className="evidence-panel">

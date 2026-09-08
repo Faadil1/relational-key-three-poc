@@ -69,6 +69,10 @@ jobs:
         working-directory: v2-app
         run: npm audit --audit-level=high
 
+      - name: Relational mechanism tests
+        working-directory: v2-app
+        run: npm test
+
       - name: Relational contract + production build
         working-directory: v2-app
         run: npm run check
