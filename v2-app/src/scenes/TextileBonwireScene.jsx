@@ -5,11 +5,12 @@ import { CollectibleCard, CardTable, useCardPositions } from './CollectibleCard.
 import { textileArtwork } from './CollectibleArtwork.js';
 export function TextileBonwireScene({state,presentation,backs}) {
  const positions=useCardPositions(),mobile=positions[0][0]===0;
+ const receivingPosition=state.aligned?positions[1]:positions[1].map((value,i)=>value+((mobile?i===0:i===1)?.16:0));
  const a=useMemo(()=>textileArtwork('A',backs.A,state,mobile),[backs.A,state,mobile]);
  const b=useMemo(()=>textileArtwork('B',backs.B,state,mobile),[backs.B,state,mobile]);
  return <><CardTable color="#cecbb9"/>
   <group name="PAIR_MEMBER_A"><group name="WOVEN_STRIP_A"><CollectibleCard texture={a} position={positions[0]} back={backs.A} presentation={presentation}/></group></group>
-  <group name="PAIR_MEMBER_B"><group name="WOVEN_STRIP_B"><CollectibleCard texture={b} position={positions[1]} back={backs.B} presentation={presentation}/></group></group>
+  <group name="PAIR_MEMBER_B"><group name="WOVEN_STRIP_B"><CollectibleCard texture={b} position={receivingPosition} back={backs.B} presentation={presentation}/></group></group>
   <group name="RELATION"><group name="SELVEDGE_JOIN" userData={{stitches:state.stitches}}>{!backs.A&&!backs.B&&Array.from({length:state.stitches},(_,i)=><Stitch key={i} index={i} mobile={mobile} angle={presentation.angle}/>)}</group><group name="TEXTILE_CONTINUATION" visible={state.stitches===7}/></group>
  </>;
 }

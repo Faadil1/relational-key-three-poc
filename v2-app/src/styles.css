@@ -412,3 +412,10 @@ dd { margin: 0; font-size: 13px; line-height: 1.45; color: #454640; }
  .collectible-batch .focus-header h1 { font-size: 42px; }
  .collectible-batch .pair-member-rail { display: none; }
 }
+
+.collectible-batch .pair-member-rail .pair-relation strong { color: #343c32; }
+
+.collectible-batch .relation-buttons button { color: #343c32; background: #f5f0e3; border-color: #858b79; }
+.collectible-batch .relation-buttons button.active { background: #343c32; color: #fff9e8; }
+.collectible-batch .relation-buttons button:hover { background: #d8d6bf; color: #343c32; }
+.collectible-batch .control-panel h3, .collectible-batch .truth-panel summary { color: #4a5144; }
