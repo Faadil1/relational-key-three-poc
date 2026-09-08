@@ -1,15 +1,19 @@
 import { useLayoutEffect } from 'react';
 import { Canvas, useThree } from '@react-three/fiber';
 
-function FitPair() {
+function FitPair({ sceneId }) {
   const { camera, size, invalidate } = useThree();
   useLayoutEffect(() => {
     const tangent = Math.tan(camera.fov * Math.PI / 360);
-    camera.position.set(0, 0, Math.max(3.7 / (tangent * (size.width / size.height)), 2.3 / tangent) + .8);
+    const city = sceneId === 'city-gatineau';
+    const narrow = size.width < 600;
+    const halfWidth = city ? (narrow ? 1.95 : 4.0) : 3.7;
+    const halfHeight = city ? (narrow ? 2.65 : 1.5) : 2.3;
+    camera.position.set(0, 0, Math.max(halfWidth / (tangent * (size.width / size.height)), halfHeight / tangent) + .8);
     camera.lookAt(0,0,0);
     camera.updateProjectionMatrix();
     invalidate();
-  }, [camera, size.width, size.height, invalidate]);
+  }, [camera, size.width, size.height, invalidate, sceneId]);
   return null;
 }
 export function FamilyCanvas({ sceneId, children }) {
@@ -22,7 +26,7 @@ export function FamilyCanvas({ sceneId, children }) {
       gl={{ antialias: true, alpha: false }}
       onCreated={({ gl }) => gl.setClearColor('#c8c3b8')}
     >
-      {['metate-teotitlan', 'siku-bolivia'].includes(sceneId) && <FitPair />}
+      {['metate-teotitlan', 'siku-bolivia', 'city-gatineau'].includes(sceneId) && <FitPair sceneId={sceneId} />}
       {children}
     </Canvas>
   );

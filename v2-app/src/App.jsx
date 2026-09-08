@@ -1,3 +1,5 @@
+import { CityCardControls } from './CityCardControls.jsx';
+import { initialCity, cityReducer, cityStatus } from './familyModels/cityPair.js';
 import { Suspense, useEffect, useMemo, useReducer, useState } from 'react';
 import { pilots as legacyPilots } from './pilots.js';
 import { wave005Families, wave005Ids } from './wave005Families.js';
@@ -68,6 +70,7 @@ export default function App() {
   const [foodRelease, setFoodRelease] = useState(INITIAL.foodRelease);
   const [hikaFriction, setHikaFriction] = useState(INITIAL.hikaFriction);
   const reducedMotion = useReducedMotion();
+  const [city, dispatchCity] = useReducer(cityReducer, undefined, initialCity);
   const [presentation, setPresentation] = useState({ angle: 0, foil: true });
   const [metate, dispatchMetate] = useReducer(metateReducer, undefined, initialMetate);
   const [siku, dispatchSiku] = useReducer(sikuReducer, undefined, initialSiku);
@@ -184,6 +187,7 @@ export default function App() {
         ? 'MATCHING · sustained friction remains localized at the groove relation · bounded ember witness appears at the interface.'
         : 'OTHER · both hika ahi tool members remain valid · contact is offset and heat dissipates without an ember register.';
     }
+    if (activeId === 'city-gatineau') return cityStatus(city);
     if (activeId === 'metate-teotitlan') return metateStatus(metate);
     if (activeId === 'siku-bolivia') return sikuStatus(siku);
     if (wave005Ids.has(activeId)) {
@@ -195,12 +199,13 @@ export default function App() {
     ombakDifference, effectiveOmbakDifference, kentoOffset, kentoPressed, stereoDisparity,
     signalAlignment, astrolabeAngle, astrolabePlateMode, funicularPositionA, musicBoxEngaged,
     musicBoxAngle, musicBoxPattern, boulleSeparated, khipuTension, mateInsertion,
-    serviceContact, foodRelease, hikaFriction, metate, siku,
+    serviceContact, foodRelease, hikaFriction, metate, siku, city,
   ]);
 
   const applyRelation = (mode) => {
     const nextMatching = mode === 'matching';
     setRelationMode(mode);
+    if (activeId === 'city-gatineau') { dispatchCity({type:'offset',value:!nextMatching}); dispatchCity({type:'move',gap:0}); }
     if (activeId === 'metate-teotitlan') dispatchMetate({ type: 'contact', value: nextMatching });
     if (activeId === 'siku-bolivia') dispatchSiku({ type: 'relation', value: nextMatching });
     if (activeId === 'anamorphosis-paris') setAnamorphosisOffset(nextMatching ? 0 : 0.72);
@@ -219,6 +224,7 @@ export default function App() {
   };
 
   const resetActive = () => {
+    dispatchCity({type:'reset'});
     setPresentation({ angle: 0, foil: true });
     dispatchMetate({ type: 'reset' });
     dispatchSiku({ type: 'reset' });
@@ -258,6 +264,7 @@ export default function App() {
   else if (activeId === 'hika-ahi-aotearoa') activeSceneProps = { friction: hikaFriction, matching, reducedMotion };
   else if (activeId === 'metate-teotitlan') activeSceneProps = { state: metate, reducedMotion, presentation };
   else if (activeId === 'siku-bolivia') activeSceneProps = { state: siku, reducedMotion, presentation };
+  else if (activeId === 'city-gatineau') activeSceneProps = {state:city,dispatch:dispatchCity,reducedMotion};
   else if (wave005Ids.has(activeId)) activeSceneProps = { matching, reducedMotion };
 
   const selectFamily = (id) => {
@@ -280,7 +287,7 @@ export default function App() {
         : ['MATCHING', 'OTHER'];
 
   return (
-    <main className={`${focusMode ? 'app-shell focus-mode' : 'app-shell'}${studyIds.has(activeId) ? ' relational-study' : ''}`}>
+    <main className={`${focusMode ? 'app-shell focus-mode' : 'app-shell'}${studyIds.has(activeId) ? ' relational-study' : ''}${activeId === 'city-gatineau' ? ' city-collectible' : ''}`}>
       {focusMode ? (
         <header className="focus-header">
           <div>
@@ -326,7 +333,7 @@ export default function App() {
             <p className="motion-note">{reducedMotion ? 'Reduced motion active' : 'Motion follows system preference'}</p>
           </div>
 
-          {(focusMode || studyIds.has(activeId)) && (
+          {(focusMode || studyIds.has(activeId) || activeId === 'city-gatineau') && (
             <div className="pair-member-rail" aria-label={`${pilot.label} relational pair`}>
               <div><small>PAIR MEMBER A</small><strong>{pilot.pairMembers.a}</strong></div>
               <div className="pair-relation"><small>RELATION</small><strong>{pilot.pairMembers.relation}</strong></div>
@@ -334,7 +341,7 @@ export default function App() {
             </div>
           )}
 
-          <div className="canvas-wrap" aria-hidden={studyIds.has(activeId) ? undefined : true}>
+          <div className="canvas-wrap" aria-hidden={studyIds.has(activeId) || activeId === 'city-gatineau' ? undefined : true}>
             <Suspense fallback={<div role="status" aria-live="polite" style={{ display: 'grid', placeItems: 'center', width: '100%', height: '100%', padding: 24 }}>LOADING RELATIONAL SCENE · {pilot.label}</div>}>
               <ActiveScene key={activeId} {...activeSceneProps} />
             </Suspense>
@@ -345,7 +352,7 @@ export default function App() {
         <aside className="controls-column" aria-label={`${pilot.label} controls and evidence`}>
           <section className="control-panel">
             <h3>{activeId === 'funicular-valparaiso' ? 'RELATION CONTROL' : 'RELATION TEST'}</h3>
-            {activeId === 'funicular-valparaiso' ? (
+            {activeId === 'city-gatineau' && focusMode ? <CityCardControls state={city} dispatch={dispatchCity} /> : activeId === 'funicular-valparaiso' ? (
               <div className="relation-buttons">
                 <button type="button" className="primary" onClick={() => setFunicularPositionA((value) => 1 - value)}>SWAP START</button>
                 <button type="button" className="ghost" onClick={resetActive}>RESET</button>
@@ -379,7 +386,8 @@ export default function App() {
               <p className="small-copy">An editorial finish on the card support, not a claim about the represented objects. Viewing angle never changes the relation.</p>
             </details>}
             <RelationalStudyControls id={activeId} metate={metate} dispatchMetate={dispatchMetate} siku={siku} dispatchSiku={dispatchSiku} />
-            {wave005Ids.has(activeId) && !studyIds.has(activeId) && <p className="small-copy">Wave 005 uses a deterministic OTHER ↔ MATCHING relation switch in the first build. Family-specific interaction enrichment is allowed only after exact V1 comparison identifies a need.</p>}
+            {activeId === 'city-gatineau' && !focusMode && <CityCardControls state={city} dispatch={dispatchCity} />}
+            {wave005Ids.has(activeId) && activeId !== 'city-gatineau' && !studyIds.has(activeId) && <p className="small-copy">Wave 005 uses a deterministic OTHER ↔ MATCHING relation switch in the first build. Family-specific interaction enrichment is allowed only after exact V1 comparison identifies a need.</p>}
           </section>
 
           <section className="evidence-panel">

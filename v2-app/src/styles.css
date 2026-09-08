@@ -357,3 +357,33 @@ dd { margin: 0; font-size: 13px; line-height: 1.45; color: #454640; }
 .study-presentation { margin-top: 14px; border-top: 1px solid #77796b; padding-top: 10px; }
 .study-presentation summary { min-height: 44px; cursor: pointer; font-size: 11px; display: list-item; padding-top: 12px; }
 .foil-toggle { display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 13px; }
+
+/* City: a printed pair on a tabletop, with manipulation as the primary control. */
+.city-collectible.focus-mode { background: #e7e9df; color: #173f45; }
+.city-collectible .focus-header { border-color: #a3b2a7; }
+.city-collectible .focus-header h1 { color: #173f45; }
+.city-collectible .focus-header .eyebrow, .city-collectible .focus-intent { color: #496963; }
+.city-collectible .focus-meta { display: none; }
+.city-collectible .focus-header { grid-template-columns: 1fr; }
+.city-collectible .canvas-wrap { min-height: 440px; background: #c8cbc0; box-shadow: none; border-color: #a5b0a2; }
+.city-collectible .canvas-wrap canvas { touch-action: none; }
+.city-collectible .pair-member-rail { background: #e7e9df; color: #173f45; }
+.city-collectible .pair-member-rail small, .city-collectible .pair-member-rail strong { color: #173f45; }
+.city-collectible .pair-member-rail .pair-relation { background: #d8dfd2; }
+.city-collectible .control-panel, .city-collectible .truth-panel, .city-collectible .status-strip { background: #f3f1e7; color: #173f45; border-color: #a5b0a2; }
+.city-collectible .micro-actions button { color: #173f45; border-color: #8a9f92; border-radius: 4px; }
+.city-collectible .micro-actions button:hover { background: #173f45; color: #f3f1e7; }
+.city-collectible .micro-actions button:disabled { opacity: .5; }
+.city-collectible .small-copy, .city-collectible .truth-panel p, .city-collectible .motion-note { color: #536b61; }
+.city-collectible .control-panel h3, .city-collectible .truth-panel summary { color: #173f45; }
+.city-collectible button:focus-visible, .city-collectible input:focus-visible, .city-collectible summary:focus-visible, .city-collectible a:focus-visible { outline-color: #176b79; }
+.city-instruction { font: 28px/1.12 Georgia,serif; }
+.city-source-note { margin-top: 20px; border-top: 1px solid #a5b0a2; padding-top: 18px; font-size: 13px; line-height: 1.5; }
+.city-source-note a { color: #145361; text-underline-offset: 3px; }
+.city-card-controls details { margin-top: 20px; font-size: 12px; }
+.city-card-controls summary { min-height: 44px; padding-top: 12px; cursor: pointer; }
+@media (max-width:640px) {
+ .city-collectible .canvas-wrap { aspect-ratio: .8; min-height: 420px; }
+ .city-collectible .focus-header h1 { font-size: 42px; }
+ .city-collectible .pair-member-rail { display: none; }
+}

@@ -1,87 +1,35 @@
-import { Bar, CardPanel, Dot, Stage } from './Wave005Primitives.jsx';
+import { useEffect, useMemo, useRef } from 'react';
+import { useThree } from '@react-three/fiber';
+import { Shape, ShapeGeometry } from 'three';
+import { cityArtwork } from './CityCardArtwork.js';
+import { Bar } from './Wave005Primitives.jsx';
+import { cityReady } from '../familyModels/cityPair.js';
 
-const routeNodesA = [
-  [-0.94,0.88],[-0.62,0.86],[-0.3,0.62],[0.02,0.3],[0.34,0.02],[0.68,-0.12],[0.94,-0.08],
-];
-const routeNodesB = [
-  [-0.94,-0.08],[-0.66,0.02],[-0.34,0.18],[0.02,0.42],[0.34,0.7],[0.68,0.92],[0.96,0.94],
-];
-
-function RouteNode({ x, y, live=false, terminal=false }) {
-  return <Dot position={[x,y,0.23]} radius={terminal?0.105:0.055} color={terminal?'#d8bd78':(live?'#c5e6d9':'#698882')} emissive={live?'#4d7d74':'#000'} emissiveIntensity={live?0.45:0} />;
+function roundedCard() {
+ const s=new Shape(),w=3.2,h=2.016,r=.12,x=-w/2,y=-h/2;
+ s.moveTo(x+r,y);s.lineTo(x+w-r,y);s.quadraticCurveTo(x+w,y,x+w,y+r);s.lineTo(x+w,y+h-r);s.quadraticCurveTo(x+w,y+h,x+w-r,y+h);s.lineTo(x+r,y+h);s.quadraticCurveTo(x,y+h,x,y+h-r);s.lineTo(x,y+r);s.quadraticCurveTo(x,y,x+r,y);
+ return s;
 }
-
-export function CityGatineauScene({ matching, reducedMotion }) {
-  const live = matching;
-  const pulseXs = reducedMotion ? [-0.62,0,0.62] : [-0.78,-0.52,-0.26,0,0.26,0.52,0.78];
-  return (
-    <>
-      <Stage background="#081114" accent="#4f9da3" />
-
-      <group name="PAIR_MEMBER_A">
-        <CardPanel position={[-1.92, 0, 0]} rotation={[0,0.07,-0.015]} color="#17272a">
-          <group name="ROUTE_MEMBER_A">
-            <mesh position={[0.98,0,0.12]}>
-              <boxGeometry args={[0.18,2.55,0.08]} />
-              <meshStandardMaterial color="#153b45" roughness={0.78} />
-            </mesh>
-            <Bar position={[0.9,0,0.18]} size={[0.035,2.44,0.04]} color="#3d6c72" />
-            <Bar position={[-0.62,0.84,0.18]} size={[0.66,0.09,0.045]} color="#79c3bf" />
-            <Bar position={[-0.26,0.62,0.19]} size={[0.54,0.09,0.045]} color="#79c3bf" rotation={[0,0,-0.48]} />
-            <Bar position={[0.08,0.3,0.19]} size={[0.54,0.09,0.045]} color="#79c3bf" rotation={[0,0,-0.72]} />
-            <Bar position={[0.44,0.02,0.19]} size={[0.56,0.09,0.045]} color={live?'#9fded4':'#6b8f89'} rotation={[0,0,-0.34]} />
-            <Bar position={[0.76,-0.1,0.2]} size={[0.44,0.09,0.045]} color={live?'#b6e8dd':'#6b8f89'} rotation={[0,0,-0.08]} />
-            {routeNodesA.map(([x,y],i)=><RouteNode key={`${x}-${y}`} x={x} y={y} live={live&&i>3} terminal={i===0} />)}
-            <group name="VALIDATOR_APERTURE_A" position={[0.8,-0.64,0.25]}>
-              <mesh><boxGeometry args={[0.36,0.56,0.08]} /><meshStandardMaterial color="#213b3e" roughness={0.55} /></mesh>
-              <Bar position={[0,0.08,0.06]} size={[0.18,0.035,0.03]} color={live?'#9bd8c6':'#7c755f'} />
-              <Dot position={[0,-0.11,0.07]} radius={0.045} color={live?'#b6df9c':'#6b6253'} emissive={live?'#5b854b':'#000'} emissiveIntensity={live?0.8:0} />
-            </group>
-          </group>
-        </CardPanel>
-      </group>
-
-      <group name="PAIR_MEMBER_B">
-        <CardPanel position={[1.92,0,0]} rotation={[0,-0.07,0.015]} color="#17272a">
-          <group name="ROUTE_MEMBER_B">
-            <mesh position={[-0.98,0,0.12]}>
-              <boxGeometry args={[0.18,2.55,0.08]} />
-              <meshStandardMaterial color="#153b45" roughness={0.78} />
-            </mesh>
-            <Bar position={[-0.9,0,0.18]} size={[0.035,2.44,0.04]} color="#3d6c72" />
-            <Bar position={[-0.76,-0.08,0.2]} size={[0.44,0.09,0.045]} color={live?'#b6e8dd':'#6b8f89'} rotation={[0,0,0.1]} />
-            <Bar position={[-0.42,0.04,0.19]} size={[0.56,0.09,0.045]} color={live?'#9fded4':'#6b8f89'} rotation={[0,0,0.34]} />
-            <Bar position={[-0.06,0.3,0.19]} size={[0.54,0.09,0.045]} color="#79c3bf" rotation={[0,0,0.68]} />
-            <Bar position={[0.3,0.64,0.19]} size={[0.58,0.09,0.045]} color="#79c3bf" rotation={[0,0,0.5]} />
-            <Bar position={[0.66,0.9,0.18]} size={[0.66,0.09,0.045]} color="#79c3bf" />
-            {routeNodesB.map(([x,y],i)=><RouteNode key={`${x}-${y}`} x={x} y={y} live={live&&i<3} terminal={i===routeNodesB.length-1} />)}
-            <group name="RECEIVER_WINDOW_B" position={[-0.8,-0.64,0.25]}>
-              <mesh><boxGeometry args={[0.36,0.56,0.08]} /><meshStandardMaterial color="#213b3e" roughness={0.55} /></mesh>
-              <Bar position={[0,0.08,0.06]} size={[0.18,0.035,0.03]} color={live?'#9bd8c6':'#7c755f'} />
-              <Dot position={[0,-0.11,0.07]} radius={0.045} color={live?'#b6df9c':'#6b6253'} emissive={live?'#5b854b':'#000'} emissiveIntensity={live?0.8:0} />
-            </group>
-          </group>
-        </CardPanel>
-      </group>
-
-      <group name="RELATION" position={[0,-0.08,0.54]}>
-        <group name="VALIDATION_SEAM">
-          <mesh position={[0,0,-0.04]}><boxGeometry args={[0.32,2.46,0.1]} /><meshStandardMaterial color="#0f3038" roughness={0.86} /></mesh>
-          <mesh position={[0,0.02,0.02]} rotation={[0,0,live?0:0.12]}>
-            <boxGeometry args={[0.72,0.82,0.12]} />
-            <meshStandardMaterial color={live?'#265f56':'#3c3b31'} emissive={live?'#163e39':'#000'} emissiveIntensity={live?0.85:0} roughness={0.6} />
-          </mesh>
-          <Bar position={[0,0.12,0.1]} size={[0.42,0.05,0.035]} color={live?'#9bdcc8':'#84775e'} />
-          <Dot position={[0,-0.17,0.12]} radius={0.075} color={live?'#bfe4a8':'#6d6250'} emissive={live?'#60894e':'#000'} emissiveIntensity={live?0.95:0} />
-        </group>
-
-        <group name="ROUTE_CONTINUATION">
-          <Bar position={[-0.56,0.02,0.08]} size={[live?1.12:0.34,0.095,0.045]} color={live?'#a4e2d7':'#5e7772'} emissive={live?'#32766f':'#000'} emissiveIntensity={live?0.72:0} rotation={[0,0,-0.08]} />
-          <Bar position={[0.56,0.02,0.08]} size={[live?1.12:0.34,0.095,0.045]} color={live?'#a4e2d7':'#5e7772'} emissive={live?'#32766f':'#000'} emissiveIntensity={live?0.72:0} rotation={[0,0,0.08]} />
-          {live && pulseXs.map((x,i)=><Dot key={x} position={[x,0.02,0.15]} radius={0.04+(i%3)*0.006} color="#e2e9b5" emissive="#738553" emissiveIntensity={0.72} />)}
-          <Bar position={[0,-0.44,0.03]} size={[live?1.54:0.62,0.04,0.025]} color={live?'#6fa4a3':'#425b60'} />
-        </group>
-      </group>
-    </>
-  );
+function PrintedCard({member,back,mobile,transferred,position,drag}) {
+ const shape=useMemo(roundedCard,[]);
+ const face=useMemo(()=>{const g=new ShapeGeometry(shape,16),p=g.attributes.position,uv=g.attributes.uv;for(let i=0;i<uv.count;i++)uv.setXY(i,(p.getX(i)+1.6)/3.2,(p.getY(i)+1.008)/2.016);return g;},[shape]);
+ const texture=useMemo(()=>cityArtwork(member,back,mobile,transferred),[member,back,mobile,transferred]);
+ useEffect(()=>()=>texture.dispose(),[texture]);useEffect(()=>()=>face.dispose(),[face]);
+ return <group position={position} {...drag}>
+  <mesh position={[0,0,-.025]}><extrudeGeometry args={[shape,{depth:.035,bevelEnabled:true,bevelSize:.008,bevelThickness:.008,bevelSegments:3,steps:1}]}/><meshStandardMaterial color="#c4c7bd" roughness={.43} metalness={.12}/></mesh>
+  <mesh geometry={face} position={[0,0,.02]}><meshStandardMaterial map={texture} roughness={.68} metalness={.02}/></mesh>
+  {!back && <mesh position={[member==='A'?-1.47:1.47,.21,.024]}><planeGeometry args={[.035,1.23]}/><meshPhysicalMaterial color="#c9d9c8" metalness={.45} roughness={.3} iridescence={1} iridescenceIOR={1.3} iridescenceThicknessRange={[180,380]}/></mesh>}
+ </group>;
+}
+export function CityGatineauScene({state,dispatch}) {
+ const {size,viewport,camera}=useThree();const mobile=size.width<600;const start=useRef(null);
+ const distance=mobile?1.035+state.gap*.46:1.625+state.gap*.42;
+ const a=mobile?[0,distance,0]:[-distance,0,0];const b=mobile?[state.offset,-distance,0]:[distance,state.offset,0];
+ const drag={onPointerDown:e=>{e.stopPropagation();start.current={x:e.clientX,y:e.clientY,gap:state.gap};e.target.setPointerCapture(e.pointerId);},onPointerMove:e=>{if(!start.current)return;e.stopPropagation();const view=viewport.getCurrentViewport(camera);const delta=mobile?(e.clientY-start.current.y)/size.height*view.height:(e.clientX-start.current.x)/size.width*view.width;dispatch({type:'move',gap:start.current.gap+delta/(mobile?.46:.42)});},onPointerUp:e=>{if(!start.current)return;start.current=null;e.target.releasePointerCapture(e.pointerId);},onPointerCancel:()=>{start.current=null;}};
+ return <>
+  <color attach="background" args={['#c8cbc0']}/><ambientLight intensity={1.8}/><directionalLight position={[-3,5,7]} intensity={2}/>
+  <group name="PAIR_MEMBER_A"><group name="ROUTE_MEMBER_A"><PrintedCard member="A" back={state.backA} mobile={mobile} transferred={state.transferred} position={a}/></group></group>
+  <group name="PAIR_MEMBER_B"><group name="ROUTE_MEMBER_B"><PrintedCard member="B" back={state.backB} mobile={mobile} transferred={state.transferred} position={b} drag={drag}/></group></group>
+  <group name="RELATION"><group name="VALIDATION_SEAM"><group name="ROUTE_CONTINUATION" visible={cityReady(state)}><Bar position={[0,0,.025]} size={mobile?[.03,.07,.015]:[.07,.03,.015]} color={state.transferred?'#dcbc54':'#e7e9dc'}/></group></group></group>
+ </>;
 }
