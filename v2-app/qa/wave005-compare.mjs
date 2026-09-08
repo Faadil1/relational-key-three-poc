@@ -58,6 +58,7 @@ async function chooseRelation(page,family,matching){
  if(matching) await page.getByRole('button',{name:'FAIRE PASSER',exact:true}).click();
 }
 async function completeStudy(page,family){
+  if(family.id==='textile-bonwire'){for(let i=0;i<7;i++)await page.getByRole('button',{name:'AJOUTER UN POINT',exact:true}).click();if(!/CONTINUATION FORMED/.test(await page.locator('.status-strip').innerText()))throw new Error('Textile join incomplete');}
   if(family.id==='metate-teotitlan'){
     if(Number(await page.locator('#grind-work').getAttribute('value'))!==0) throw new Error('Metate claims work before movement');
     for(let i=0;i<6;i++) await page.getByRole('button',{name:'MAKE ONE STROKE',exact:true}).click();

@@ -1,3 +1,6 @@
+import { CollectibleControls } from './CollectibleControls.jsx';
+import { collectibleCopy } from './collectibleCopy.js';
+import { collectibleIds, initialTextile, textileReducer, textileStatus } from './familyModels/collectibleBatch.js';
 import { CityCardControls } from './CityCardControls.jsx';
 import { initialCity, cityReducer, cityStatus } from './familyModels/cityPair.js';
 import { Suspense, useEffect, useMemo, useReducer, useState } from 'react';
@@ -70,6 +73,8 @@ export default function App() {
   const [foodRelease, setFoodRelease] = useState(INITIAL.foodRelease);
   const [hikaFriction, setHikaFriction] = useState(INITIAL.hikaFriction);
   const reducedMotion = useReducedMotion();
+  const [backs, setBacks] = useState({A:false,B:false});
+  const [textile, dispatchTextile] = useReducer(textileReducer, undefined, initialTextile);
   const [city, dispatchCity] = useReducer(cityReducer, undefined, initialCity);
   const [presentation, setPresentation] = useState({ angle: 0, foil: true });
   const [metate, dispatchMetate] = useReducer(metateReducer, undefined, initialMetate);
@@ -187,6 +192,7 @@ export default function App() {
         ? 'MATCHING · sustained friction remains localized at the groove relation · bounded ember witness appears at the interface.'
         : 'OTHER · both hika ahi tool members remain valid · contact is offset and heat dissipates without an ember register.';
     }
+    if (activeId === 'textile-bonwire') return textileStatus(textile);
     if (activeId === 'city-gatineau') return cityStatus(city);
     if (activeId === 'metate-teotitlan') return metateStatus(metate);
     if (activeId === 'siku-bolivia') return sikuStatus(siku);
@@ -199,12 +205,13 @@ export default function App() {
     ombakDifference, effectiveOmbakDifference, kentoOffset, kentoPressed, stereoDisparity,
     signalAlignment, astrolabeAngle, astrolabePlateMode, funicularPositionA, musicBoxEngaged,
     musicBoxAngle, musicBoxPattern, boulleSeparated, khipuTension, mateInsertion,
-    serviceContact, foodRelease, hikaFriction, metate, siku, city,
+    serviceContact, foodRelease, hikaFriction, metate, siku, city, textile,
   ]);
 
   const applyRelation = (mode) => {
     const nextMatching = mode === 'matching';
     setRelationMode(mode);
+    if (activeId === 'textile-bonwire') dispatchTextile({type:'align',value:nextMatching});
     if (activeId === 'city-gatineau') { dispatchCity({type:'offset',value:!nextMatching}); dispatchCity({type:'move',gap:0}); }
     if (activeId === 'metate-teotitlan') dispatchMetate({ type: 'contact', value: nextMatching });
     if (activeId === 'siku-bolivia') dispatchSiku({ type: 'relation', value: nextMatching });
@@ -224,6 +231,8 @@ export default function App() {
   };
 
   const resetActive = () => {
+    setBacks({A:false,B:false});
+    dispatchTextile({type:'reset'});
     dispatchCity({type:'reset'});
     setPresentation({ angle: 0, foil: true });
     dispatchMetate({ type: 'reset' });
@@ -256,15 +265,16 @@ export default function App() {
   else if (activeId === 'astrolabe-isfahan') activeSceneProps = { angle: astrolabeAngle, setAngle: setAstrolabeAngle, plateMode: astrolabePlateMode, reducedMotion };
   else if (activeId === 'funicular-valparaiso') activeSceneProps = { positionA: funicularPositionA, setPositionA: setFunicularPositionA, reducedMotion };
   else if (activeId === 'music-box-sainte-croix') activeSceneProps = { engaged: musicBoxEngaged, angle: musicBoxAngle, setAngle: setMusicBoxAngle, pattern: musicBoxPattern, reducedMotion };
-  else if (activeId === 'boulle-france') activeSceneProps = { separated: boulleSeparated, matching, reducedMotion };
+  else if (activeId === 'boulle-france') activeSceneProps = { separated: boulleSeparated, matching, reducedMotion, presentation, backs };
   else if (activeId === 'khipu-peru') activeSceneProps = { tension: khipuTension, matching, reducedMotion };
   else if (activeId === 'mate-bombilla-argentina') activeSceneProps = { insertion: mateInsertion, matching, reducedMotion };
   else if (activeId === 'service-benin') activeSceneProps = { contact: serviceContact, matching, reducedMotion };
   else if (activeId === 'food-toyama') activeSceneProps = { release: foodRelease, matching, reducedMotion };
   else if (activeId === 'hika-ahi-aotearoa') activeSceneProps = { friction: hikaFriction, matching, reducedMotion };
-  else if (activeId === 'metate-teotitlan') activeSceneProps = { state: metate, reducedMotion, presentation };
-  else if (activeId === 'siku-bolivia') activeSceneProps = { state: siku, reducedMotion, presentation };
+  else if (activeId === 'metate-teotitlan') activeSceneProps = { state: metate, reducedMotion, presentation, backs };
+  else if (activeId === 'siku-bolivia') activeSceneProps = { state: siku, reducedMotion, presentation, backs };
   else if (activeId === 'city-gatineau') activeSceneProps = {state:city,dispatch:dispatchCity,reducedMotion};
+  else if (activeId === 'textile-bonwire') activeSceneProps = {state:textile,presentation,backs};
   else if (wave005Ids.has(activeId)) activeSceneProps = { matching, reducedMotion };
 
   const selectFamily = (id) => {
@@ -287,13 +297,13 @@ export default function App() {
         : ['MATCHING', 'OTHER'];
 
   return (
-    <main className={`${focusMode ? 'app-shell focus-mode' : 'app-shell'}${studyIds.has(activeId) ? ' relational-study' : ''}${activeId === 'city-gatineau' ? ' city-collectible' : ''}`}>
+    <main className={`${focusMode ? 'app-shell focus-mode' : 'app-shell'}${studyIds.has(activeId) ? ' relational-study' : ''}${activeId === 'city-gatineau' ? ' city-collectible' : ''}${collectibleIds.has(activeId) ? ' collectible-batch' : ''}`}>
       {focusMode ? (
         <header className="focus-header">
           <div>
             <p className="eyebrow">RELATIONAL KEY · FOCUS EXPERIENCE · {pilot.className}</p>
             <h1>{pilot.label}</h1>
-            <p className="focus-intent">{activeId === 'city-gatineau' ? 'Rapprochez deux fragments de Gatineau. Découvrez ce qui peut passer de l’un à l’autre.' : pilot.memorable}</p>
+            <p className="focus-intent">{activeId === 'city-gatineau' ? 'Rapprochez deux fragments de Gatineau. Découvrez ce qui peut passer de l’un à l’autre.' : collectibleCopy[activeId]?.intent || pilot.memorable}</p>
           </div>
           <div className="focus-meta">
             <span>PAIR LAW</span>
@@ -380,14 +390,15 @@ export default function App() {
             {activeId === 'service-benin' && <label className="range-control" htmlFor="rk-service-contact"><span>Registered contact <output>{Math.round(serviceContact * 100)}%</output></span><input id="rk-service-contact" type="range" min="0" max="1" step="0.01" value={serviceContact} onChange={(event) => setServiceContact(Number(event.target.value))} /><small>Contact geometry and line-window response are editorial proof, not a reconstructed historical operating procedure.</small></label>}
             {activeId === 'food-toyama' && <label className="range-control" htmlFor="rk-food-release"><span>Package release <output>{Math.round(foodRelease * 100)}%</output></span><input id="rk-food-release" type="range" min="0" max="1" step="0.01" value={foodRelease} onChange={(event) => setFoodRelease(Number(event.target.value))} /><small>The interaction demonstrates bounded package/press/reveal mechanics only; no food-quality or preparation claim is made.</small></label>}
             {activeId === 'hika-ahi-aotearoa' && <label className="range-control" htmlFor="rk-hika-friction"><span>Bounded friction witness <output>{Math.round(hikaFriction * 100)}%</output></span><input id="rk-hika-friction" type="range" min="0" max="1" step="0.01" value={hikaFriction} onChange={(event) => setHikaFriction(Number(event.target.value))} /><small>Mechanism-level relation only. This is not practical ignition guidance and no archive media is reproduced.</small></label>}
-            {studyIds.has(activeId) && <details className="study-presentation"><summary>VIEW THE CARD MATERIAL</summary>
+            {collectibleIds.has(activeId) && <details className="study-presentation"><summary>VIEW THE CARD MATERIAL</summary>
               <label className="range-control" htmlFor="pair-view-angle"><span>Shared viewing angle <output>{Math.round(presentation.angle * 180 / Math.PI)}°</output></span><input id="pair-view-angle" type="range" min="-0.22" max="0.22" step="0.02" value={presentation.angle} onChange={event => setPresentation(value => ({ ...value, angle: Number(event.target.value) }))} /></label>
               <label className="foil-toggle"><input type="checkbox" checked={presentation.foil} onChange={event => setPresentation(value => ({ ...value, foil: event.target.checked }))} /> Holographic card finish</label>
               <p className="small-copy">An editorial finish on the card support, not a claim about the represented objects. Viewing angle never changes the relation.</p>
             </details>}
+            <CollectibleControls id={activeId} backs={backs} setBacks={setBacks} textile={textile} dispatchTextile={dispatchTextile} />
             <RelationalStudyControls id={activeId} metate={metate} dispatchMetate={dispatchMetate} siku={siku} dispatchSiku={dispatchSiku} />
             {activeId === 'city-gatineau' && !focusMode && <CityCardControls state={city} dispatch={dispatchCity} />}
-            {wave005Ids.has(activeId) && activeId !== 'city-gatineau' && !studyIds.has(activeId) && <p className="small-copy">Wave 005 uses a deterministic OTHER ↔ MATCHING relation switch in the first build. Family-specific interaction enrichment is allowed only after exact V1 comparison identifies a need.</p>}
+            {wave005Ids.has(activeId) && activeId !== 'city-gatineau' && !collectibleIds.has(activeId) && <p className="small-copy">Wave 005 uses a deterministic OTHER ↔ MATCHING relation switch in the first build. Family-specific interaction enrichment is allowed only after exact V1 comparison identifies a need.</p>}
           </section>
 
           <section className="evidence-panel">
