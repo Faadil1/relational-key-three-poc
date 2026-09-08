@@ -1,5 +1,5 @@
-import { useMemo, useRef } from 'react';
-import { useFrame } from '@react-three/fiber';
+import { useLayoutEffect, useMemo, useRef } from 'react';
+import { useFrame, useThree } from '@react-three/fiber';
 import { Color, Matrix4, Vector3 } from 'three';
 
 // Parallax and noise adapted from Holo Card Studio (MIT); see THIRD_PARTY_NOTICES.md.
@@ -31,9 +31,13 @@ void main(){
 
 export function HoloPairCard({ position, color, children, presentation, kind = 0 }) {
   const root = useRef();
+  const invalidate = useThree(state => state.invalidate);
   const inverse = useMemo(() => new Matrix4(), []);
   const uniforms = useMemo(() => ({ uView:{value:new Vector3(0,0,1)}, uBase:{value:new Color(color)}, uFoil:{value:0}, uKind:{value:kind} }), [color,kind]);
-  uniforms.uFoil.value = presentation.foil ? .65 : 0;
+  useLayoutEffect(() => {
+    uniforms.uFoil.value = presentation.foil ? .65 : 0;
+    invalidate();
+  }, [presentation.foil, uniforms, invalidate]);
   useFrame(({camera}) => {
     root.current.updateWorldMatrix(true,false);
     inverse.copy(root.current.matrixWorld).invert();
