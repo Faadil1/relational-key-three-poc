@@ -1,4 +1,5 @@
-import { Bar, CardPanel, Stage } from './Wave005Primitives.jsx';
+import { HoloPairCard } from './HoloPairCard.jsx';
+import { Bar, Stage } from './Wave005Primitives.jsx';
 import { sharedPhrase } from '../familyModels/relationalStudies.js';
 
 function PipeSet({ side, active, enabled }) {
@@ -10,13 +11,13 @@ function PipeSet({ side, active, enabled }) {
     {active === i && <mesh position={[0,height/2+.13,0]}><sphereGeometry args={[.065,12,8]}/><meshStandardMaterial color="#ead8a0" emissive="#bba471" emissiveIntensity={.35}/></mesh>}
   </group>)}</>;
 }
-export function SikuBoliviaScene({ state }) {
+export function SikuBoliviaScene({ state, presentation }) {
   const last = state.events.at(-1) || [];
   const index = Math.floor((state.events.length-1)/2);
   return <>
     <Stage background="#171910" accent="#ac9661"/>
-    <group name="PAIR_MEMBER_A"><CardPanel position={[-1.8,0,0]} color="#303125"><group name="IRA_NOTE_SET"><PipeSet side="A" enabled={state.members !== 'B'} active={last.includes('A') ? index : -1}/></group></CardPanel></group>
-    <group name="PAIR_MEMBER_B"><CardPanel position={[1.8,0,0]} color="#272f24"><group name="ARCA_NOTE_SET"><PipeSet side="B" enabled={state.members !== 'A'} active={last.includes('B') ? index : -1}/></group></CardPanel></group>
+    <group name="PAIR_MEMBER_A"><HoloPairCard presentation={presentation} kind={1} position={[-1.8,0,0]} color="#303125"><group name="IRA_NOTE_SET"><PipeSet side="A" enabled={state.members !== 'B'} active={last.includes('A') ? index : -1}/></group></HoloPairCard></group>
+    <group name="PAIR_MEMBER_B"><HoloPairCard presentation={presentation} kind={1} position={[1.8,0,0]} color="#272f24"><group name="ARCA_NOTE_SET"><PipeSet side="B" enabled={state.members !== 'A'} active={last.includes('B') ? index : -1}/></group></HoloPairCard></group>
     <group name="RELATION" position={[0,-1.4,.55]}><group name="INTERLOCK_TRACE">
       {Array.from({length:8},(_,i) => <group key={i} position={[(i-3.5)*.55,0,0]}>
         <Bar size={[.38,.025,.025]} color="#65664f"/>

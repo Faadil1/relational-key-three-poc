@@ -68,6 +68,7 @@ export default function App() {
   const [foodRelease, setFoodRelease] = useState(INITIAL.foodRelease);
   const [hikaFriction, setHikaFriction] = useState(INITIAL.hikaFriction);
   const reducedMotion = useReducedMotion();
+  const [presentation, setPresentation] = useState({ angle: 0, foil: true });
   const [metate, dispatchMetate] = useReducer(metateReducer, undefined, initialMetate);
   const [siku, dispatchSiku] = useReducer(sikuReducer, undefined, initialSiku);
 
@@ -218,6 +219,7 @@ export default function App() {
   };
 
   const resetActive = () => {
+    setPresentation({ angle: 0, foil: true });
     dispatchMetate({ type: 'reset' });
     dispatchSiku({ type: 'reset' });
     setRelationMode('other');
@@ -254,8 +256,8 @@ export default function App() {
   else if (activeId === 'service-benin') activeSceneProps = { contact: serviceContact, matching, reducedMotion };
   else if (activeId === 'food-toyama') activeSceneProps = { release: foodRelease, matching, reducedMotion };
   else if (activeId === 'hika-ahi-aotearoa') activeSceneProps = { friction: hikaFriction, matching, reducedMotion };
-  else if (activeId === 'metate-teotitlan') activeSceneProps = { state: metate, reducedMotion };
-  else if (activeId === 'siku-bolivia') activeSceneProps = { state: siku, reducedMotion };
+  else if (activeId === 'metate-teotitlan') activeSceneProps = { state: metate, reducedMotion, presentation };
+  else if (activeId === 'siku-bolivia') activeSceneProps = { state: siku, reducedMotion, presentation };
   else if (wave005Ids.has(activeId)) activeSceneProps = { matching, reducedMotion };
 
   const selectFamily = (id) => {
@@ -371,6 +373,11 @@ export default function App() {
             {activeId === 'service-benin' && <label className="range-control" htmlFor="rk-service-contact"><span>Registered contact <output>{Math.round(serviceContact * 100)}%</output></span><input id="rk-service-contact" type="range" min="0" max="1" step="0.01" value={serviceContact} onChange={(event) => setServiceContact(Number(event.target.value))} /><small>Contact geometry and line-window response are editorial proof, not a reconstructed historical operating procedure.</small></label>}
             {activeId === 'food-toyama' && <label className="range-control" htmlFor="rk-food-release"><span>Package release <output>{Math.round(foodRelease * 100)}%</output></span><input id="rk-food-release" type="range" min="0" max="1" step="0.01" value={foodRelease} onChange={(event) => setFoodRelease(Number(event.target.value))} /><small>The interaction demonstrates bounded package/press/reveal mechanics only; no food-quality or preparation claim is made.</small></label>}
             {activeId === 'hika-ahi-aotearoa' && <label className="range-control" htmlFor="rk-hika-friction"><span>Bounded friction witness <output>{Math.round(hikaFriction * 100)}%</output></span><input id="rk-hika-friction" type="range" min="0" max="1" step="0.01" value={hikaFriction} onChange={(event) => setHikaFriction(Number(event.target.value))} /><small>Mechanism-level relation only. This is not practical ignition guidance and no archive media is reproduced.</small></label>}
+            {studyIds.has(activeId) && <details className="study-presentation"><summary>VIEW THE CARD MATERIAL</summary>
+              <label className="range-control" htmlFor="pair-view-angle"><span>Shared viewing angle <output>{Math.round(presentation.angle * 180 / Math.PI)}°</output></span><input id="pair-view-angle" type="range" min="-0.22" max="0.22" step="0.02" value={presentation.angle} onChange={event => setPresentation(value => ({ ...value, angle: Number(event.target.value) }))} /></label>
+              <label className="foil-toggle"><input type="checkbox" checked={presentation.foil} onChange={event => setPresentation(value => ({ ...value, foil: event.target.checked }))} /> Holographic card finish</label>
+              <p className="small-copy">An editorial finish on the card support, not a claim about the represented objects. Viewing angle never changes the relation.</p>
+            </details>}
             <RelationalStudyControls id={activeId} metate={metate} dispatchMetate={dispatchMetate} siku={siku} dispatchSiku={dispatchSiku} />
             {wave005Ids.has(activeId) && !studyIds.has(activeId) && <p className="small-copy">Wave 005 uses a deterministic OTHER ↔ MATCHING relation switch in the first build. Family-specific interaction enrichment is allowed only after exact V1 comparison identifies a need.</p>}
           </section>

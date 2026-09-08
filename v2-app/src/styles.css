@@ -354,3 +354,6 @@ dd { margin: 0; font-size: 13px; line-height: 1.45; color: #454640; }
   .relational-study .focus-header { gap: 8px; }
   .relational-study .focus-meta { display: none; }
 }
+.study-presentation { margin-top: 14px; border-top: 1px solid #77796b; padding-top: 10px; }
+.study-presentation summary { min-height: 44px; cursor: pointer; font-size: 11px; display: list-item; padding-top: 12px; }
+.foil-toggle { display: flex; align-items: center; gap: 10px; min-height: 44px; font-size: 13px; }
