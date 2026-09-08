@@ -17,7 +17,7 @@ function PrintedCard({member,back,mobile,transferred,position,drag}) {
  useEffect(()=>()=>texture.dispose(),[texture]);useEffect(()=>()=>face.dispose(),[face]);
  return <group position={position} {...drag}>
   <mesh position={[0,0,-.025]}><extrudeGeometry args={[shape,{depth:.035,bevelEnabled:true,bevelSize:.008,bevelThickness:.008,bevelSegments:3,steps:1}]}/><meshStandardMaterial color="#c4c7bd" roughness={.43} metalness={.12}/></mesh>
-  <mesh geometry={face} position={[0,0,.02]}><meshStandardMaterial map={texture} roughness={.68} metalness={.02}/></mesh>
+  <mesh geometry={face} position={[0,0,.02]}><meshBasicMaterial map={texture} toneMapped={false}/></mesh>
   {!back && <mesh position={[member==='A'?-1.47:1.47,.21,.024]}><planeGeometry args={[.035,1.23]}/><meshPhysicalMaterial color="#c9d9c8" metalness={.45} roughness={.3} iridescence={1} iridescenceIOR={1.3} iridescenceThicknessRange={[180,380]}/></mesh>}
  </group>;
 }

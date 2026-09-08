@@ -293,7 +293,7 @@ export default function App() {
           <div>
             <p className="eyebrow">RELATIONAL KEY · FOCUS EXPERIENCE · {pilot.className}</p>
             <h1>{pilot.label}</h1>
-            <p className="focus-intent">{pilot.memorable}</p>
+            <p className="focus-intent">{activeId === 'city-gatineau' ? 'Rapprochez deux fragments de Gatineau. Découvrez ce qui peut passer de l’un à l’autre.' : pilot.memorable}</p>
           </div>
           <div className="focus-meta">
             <span>PAIR LAW</span>

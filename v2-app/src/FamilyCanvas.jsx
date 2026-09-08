@@ -7,8 +7,8 @@ function FitPair({ sceneId }) {
     const tangent = Math.tan(camera.fov * Math.PI / 360);
     const city = sceneId === 'city-gatineau';
     const narrow = size.width < 600;
-    const halfWidth = city ? (narrow ? 1.95 : 4.0) : 3.7;
-    const halfHeight = city ? (narrow ? 2.65 : 1.5) : 2.3;
+    const halfWidth = city ? (narrow ? 1.72 : 4.0) : 3.7;
+    const halfHeight = city ? (narrow ? 2.55 : 1.5) : 2.3;
     camera.position.set(0, 0, Math.max(halfWidth / (tangent * (size.width / size.height)), halfHeight / tangent) + .8);
     camera.lookAt(0,0,0);
     camera.updateProjectionMatrix();

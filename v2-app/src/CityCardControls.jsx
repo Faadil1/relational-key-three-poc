@@ -2,6 +2,7 @@ import { cityReady } from './familyModels/cityPair.js';
 export const citySource = 'https://www.gatineau.ca/portail/default.aspx?p=publications_cartes_statistiques_donnees_ouvertes%2Fcartes%2Fcarte_interactive_secteurs';
 export function CityCardControls({state,dispatch}) {
  return <div className="city-card-controls">
+  <p className="small-copy">CARTE A · L’autre rive.<br/>CARTE B · Le passage.</p>
   <p className="city-instruction">Deux cartes. Un passage à découvrir.</p>
   <p className="small-copy">Glissez la carte B vers A. Quand les raccords se présentent, transmettez le passage.</p>
   <div className="micro-actions"><button onClick={()=>dispatch({type:'move',gap:0})}>RAPPROCHER LES CARTES</button><button disabled={!cityReady(state) || state.transferred} onClick={()=>dispatch({type:'send'})}>FAIRE PASSER</button></div>
