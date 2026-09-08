@@ -31,21 +31,22 @@ void main(){
 
 export function HoloPairCard({ position, color, children, presentation, kind = 0 }) {
   const root = useRef();
+  const material = useRef();
   const invalidate = useThree(state => state.invalidate);
   const inverse = useMemo(() => new Matrix4(), []);
   const uniforms = useMemo(() => ({ uView:{value:new Vector3(0,0,1)}, uBase:{value:new Color(color)}, uFoil:{value:0}, uKind:{value:kind} }), [color,kind]);
   useLayoutEffect(() => {
-    uniforms.uFoil.value = presentation.foil ? .65 : 0;
     invalidate();
   }, [presentation.foil, uniforms, invalidate]);
   useFrame(({camera}) => {
     root.current.updateWorldMatrix(true,false);
     inverse.copy(root.current.matrixWorld).invert();
-    uniforms.uView.value.copy(camera.position).applyMatrix4(inverse).normalize();
+    material.current.uniforms.uFoil.value = presentation.foil ? .65 : 0;
+    material.current.uniforms.uView.value.copy(camera.position).applyMatrix4(inverse).normalize();
   });
   return <group ref={root} position={position} rotation={[presentation.angle*.18,presentation.angle,0]}>
     <mesh><boxGeometry args={[2.62,3.52,.22]}/><meshStandardMaterial color={color} roughness={.85}/></mesh>
-    <mesh position={[0,0,.112]}><planeGeometry args={[2.6,3.5]}/><shaderMaterial vertexShader={vertex} fragmentShader={fragment} uniforms={uniforms}/></mesh>
+    <mesh position={[0,0,.112]}><planeGeometry args={[2.6,3.5]}/><shaderMaterial ref={material} vertexShader={vertex} fragmentShader={fragment} uniforms={uniforms}/></mesh>
     <group position={[0,0,.06]}>{children}</group>
   </group>;
 }
