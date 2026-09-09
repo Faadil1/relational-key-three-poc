@@ -5,7 +5,7 @@ const out='batch-evidence';await fs.mkdir(out,{recursive:true});
 const browser=await chromium.launch({headless:true,args:['--use-angle=swiftshader','--enable-webgl']});
 const results=[];
 try{
- for(const id of ['metate-teotitlan','siku-bolivia','textile-bonwire','boulle-france'])for(const mode of ['desktop','mobile','reduced']){
+ for(const id of ['metate-teotitlan','siku-bolivia','textile-bonwire','boulle-france','frida-coyoacan','zellige-fes','swell-marshall','tongiaki-tonga'])for(const mode of ['desktop','mobile','reduced']){
   const context=await browser.newContext({viewport:mode==='mobile'?{width:390,height:844}:{width:1440,height:900},reducedMotion:mode==='reduced'?'reduce':'no-preference'});
   const page=await context.newPage(),errors=[];
   page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
@@ -16,7 +16,9 @@ try{
   const count=id.startsWith('metate')?6:id.startsWith('siku')?8:7;
   if(action){const button=page.getByRole('button',{name:action,exact:true});await button.focus();for(let i=0;i<count;i++)await button.press('Enter');}
   await page.waitForTimeout(250);
-  const status=await page.locator('.status-strip').innerText();assert.match(status,/TRACE FORMED|PHRASE FORMED|CONTINUATION FORMED|reciprocal première/);
+  const status=await page.locator('.status-strip').innerText();
+  if(id.startsWith('metate')||id.startsWith('siku')||id.startsWith('textile')||id.startsWith('boulle')) assert.match(status,/TRACE FORMED|PHRASE FORMED|CONTINUATION FORMED|reciprocal première/);
+  else assert.match(status,/^MATCHING/);
   const complete=await canvas.screenshot({path:`${out}/${id}-${mode}-complete.png`});assert.notEqual(Buffer.compare(initial,complete),0);
   await page.screenshot({path:`${out}/${id}-${mode}-page.png`,fullPage:true});
   for(const member of ['A','B']){
