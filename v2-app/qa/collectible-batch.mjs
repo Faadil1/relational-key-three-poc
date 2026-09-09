@@ -5,7 +5,7 @@ const out='batch-evidence';await fs.mkdir(out,{recursive:true});
 const browser=await chromium.launch({headless:true,args:['--use-angle=swiftshader','--enable-webgl']});
 const results=[];
 try{
- for(const id of ['metate-teotitlan','siku-bolivia','textile-bonwire','boulle-france','frida-coyoacan','zellige-fes','swell-marshall','tongiaki-tonga','garamut-sepik-ramu','khipu-peru','mate-bombilla-argentina','hika-ahi-aotearoa','music-box-sainte-croix','funicular-valparaiso','signal-nigeria','astrolabe-isfahan'])for(const mode of ['desktop','mobile','reduced']){
+ for(const id of ['metate-teotitlan','siku-bolivia','textile-bonwire','boulle-france','frida-coyoacan','zellige-fes','swell-marshall','tongiaki-tonga','garamut-sepik-ramu','khipu-peru','mate-bombilla-argentina','hika-ahi-aotearoa','music-box-sainte-croix','funicular-valparaiso','signal-nigeria','astrolabe-isfahan','service-benin','food-toyama','kento-japan','stereoscopy-uk'])for(const mode of ['desktop','mobile','reduced']){
   const context=await browser.newContext({viewport:mode==='mobile'?{width:390,height:844}:{width:1440,height:900},reducedMotion:mode==='reduced'?'reduce':'no-preference'});
   const page=await context.newPage(),errors=[];
   page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});
@@ -16,6 +16,7 @@ try{
   const action=id.startsWith('metate')?'MAKE ONE STROKE':id.startsWith('siku')?'NEXT BEAT':id.startsWith('textile')?'AJOUTER UN POINT':null;
   const count=id.startsWith('metate')?6:id.startsWith('siku')?8:7;
   if(action){const button=page.getByRole('button',{name:action,exact:true});await button.focus();for(let i=0;i<count;i++)await button.press('Enter');}
+  if(id.startsWith('kento')) await page.getByRole('button',{name:'PRESS / TRANSFER',exact:true}).click();
   await page.waitForTimeout(250);
   const status=await page.locator('.status-strip').innerText();
   if(id.startsWith('metate')||id.startsWith('siku')||id.startsWith('textile')||id.startsWith('boulle')) assert.match(status,/TRACE FORMED|PHRASE FORMED|CONTINUATION FORMED|reciprocal première/);

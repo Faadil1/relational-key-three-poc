@@ -10,6 +10,7 @@ function FitPair({ sceneId }) {
       'frida-coyoacan','zellige-fes','swell-marshall','tongiaki-tonga',
       'garamut-sepik-ramu','khipu-peru','mate-bombilla-argentina','hika-ahi-aotearoa',
       'music-box-sainte-croix','funicular-valparaiso','signal-nigeria','astrolabe-isfahan',
+      'service-benin','food-toyama','kento-japan','stereoscopy-uk',
     ].includes(sceneId);
     const narrow = size.width < 600;
     const halfWidth = city ? (narrow ? 1.72 : 4.0) : 3.7;
@@ -36,6 +37,7 @@ export function FamilyCanvas({ sceneId, children }) {
         'frida-coyoacan', 'zellige-fes', 'swell-marshall', 'tongiaki-tonga',
         'garamut-sepik-ramu', 'khipu-peru', 'mate-bombilla-argentina', 'hika-ahi-aotearoa',
         'music-box-sainte-croix', 'funicular-valparaiso', 'signal-nigeria', 'astrolabe-isfahan',
+        'service-benin', 'food-toyama', 'kento-japan', 'stereoscopy-uk',
       ].includes(sceneId) && <FitPair sceneId={sceneId} />}
       {children}
     </Canvas>

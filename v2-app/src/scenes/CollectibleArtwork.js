@@ -18,6 +18,10 @@ const palettes={
  'funicular-valparaiso':[['#24302c','#d4a36f'],['#dfc79c','#26312d']],
  'signal-nigeria':[['#112c28','#7fd0aa'],['#dbe7d6','#14302e']],
  'astrolabe-isfahan':[['#21180f','#d7b06c'],['#e1c891','#2d2014']],
+ 'service-benin':[['#1d2d25','#d8bf78'],['#ead7a5','#213126']],
+ 'food-toyama':[['#262116','#d5b16d'],['#e0c48b','#203424']],
+ 'kento-japan':[['#332116','#e0b879'],['#eadccc','#2d251d']],
+ 'stereoscopy-uk':[['#1d2732','#8fb4d8'],['#ead0c6','#332127']],
 };
 function surface(id,member,back) {
  const canvas=document.createElement('canvas');canvas.width=1200;canvas.height=756;
@@ -300,6 +304,79 @@ export function astrolabeArtwork(member,back,angle=0,plateMode='other') {
    line(cx-170,cy+(local?-22:42),cx+170,cy+(local?-22:42),local?'#f0d89c':ink,8);
    text(local?'HORIZON LOCAL ACTIF':'AUTRE PLATEAU VALIDE',60,596,25);
   }
+ }
+ return finish(s);
+}
+
+export function serviceArtwork(member,back,contact=0,matching=false) {
+ const s=surface('service-benin',member,back),{c,text,line,ink,a}=s;
+ if(!back){
+  const registered=matching&&contact>=.72;
+  if(a){
+   c.fillStyle='#d8c99f';c.beginPath();c.roundRect(260,260,680,260,24);c.fill();
+   c.fillStyle='#1d7b55';c.fillRect(280,282,640,34);
+   c.fillStyle='#c9a34e';c.fillRect(650,355,190,112);
+   for(let y=0;y<2;y++)for(let x=0;x<3;x++){c.fillStyle='#ead18a';c.fillRect(678+x*48,382+y*38,30,24);}
+   line(305,560,895,560,registered?'#d8b35f':ink,registered?8:4);
+   text(registered?'CONTACT ENREGISTRÉ':'CONTACT DÉCALÉ',60,596,25);
+  }else{
+   c.fillStyle='#1b1812';c.beginPath();c.roundRect(300,245,600,330,28);c.fill();
+   c.fillStyle=registered?'#255d42':'#10100d';c.fillRect(390,420,420,95);
+   for(let y=0;y<2;y++)for(let x=0;x<3;x++){c.fillStyle=registered?'#c9a34e':'#453a27';c.fillRect(425+x*120,295+y*55,70,38);}
+   if(registered)for(let i=0;i<4;i++)line(460+i*90,540,520+i*90,540,'#58b17c',7);
+   text(registered?'FENÊTRE SERVICE OUVERTE':'LECTEUR EN ATTENTE',60,596,25);
+  }
+ }
+ return finish(s);
+}
+
+export function foodArtwork(member,back,release=0,matching=false) {
+ const s=surface('food-toyama',member,back),{c,text,line,ink,a}=s;
+ if(!back){
+  const revealed=matching&&release>=.72,fan=revealed?1:release*.35;
+  if(a){
+   c.fillStyle='#c7a16f';c.beginPath();c.ellipse(590,390,255,120,0,0,7);c.fill();
+   c.fillStyle='#5e5a4f';c.beginPath();c.ellipse(590,310-release*65,120,45,0,0,7);c.fill();
+   line(350,390,830,390,ink,9);line(590,250,590,535,revealed?'#d8bd7c':ink,revealed?8:4);
+   text(revealed?'CONTRAINTE RELÂCHÉE':'PAQUET CONTRAINT',60,596,25);
+  }else{
+   c.fillStyle='#c6a271';c.beginPath();c.ellipse(590,400,245,118,0,0,7);c.fill();
+   for(let i=-3;i<=3;i++){c.save();c.translate(590,392);c.rotate(i*.28*fan);c.fillStyle=i%2?'#4d7448':'#315d39';c.fillRect(-18,-175,36,260);c.restore();}
+   c.fillStyle=revealed?'#d98667':'#274f31';c.beginPath();c.ellipse(590,405,125,55,0,0,7);c.fill();
+   text(revealed?'RÉVÉLATION OUVERTE':'FEUILLE FERMÉE',60,596,25);
+  }
+ }
+ return finish(s);
+}
+
+export function kentoArtwork(member,back,offset=0,pressed=false,matching=false) {
+ const s=surface('kento-japan',member,back),{c,text,line,ink,a}=s;
+ if(!back){
+  const registered=matching&&Math.abs(offset)<=.08,shift=offset*230;
+  if(a){
+   c.fillStyle='#493020';c.fillRect(255,250,690,300);
+   c.fillStyle='#d0a566';c.fillRect(715,365,180,24);c.fillRect(690,380,24,190);
+   c.strokeStyle='#8a5d3c';c.lineWidth=18;c.beginPath();c.arc(460,390,105,.2,5.1);c.stroke();
+   text(registered?'KENTŌ ALIGNÉ':'REPÈRE DÉCALÉ',60,596,25);
+  }else{
+   c.fillStyle='#e5dcc8';c.fillRect(280,250,640,315);
+   c.fillStyle='#7b6544';c.fillRect(350+shift,365+shift*.25,180,18);c.fillRect(350+shift,380+shift*.25,18,170);
+   if(pressed){c.fillStyle=registered?'#557e91cc':'#d98e8bcc';c.fillRect(430+shift,350+shift*.15,330,82);c.fillStyle=registered?'#b67f52cc':'#7da7d9aa';c.fillRect(470+shift,456+shift*.15,280,72);}
+   text(pressed?(registered?'TRANSFERT JUSTE':'TRANSFERT OFF-REGISTER'):'FEUILLE EN ATTENTE',60,596,25);
+  }
+ }
+ return finish(s);
+}
+
+export function stereoscopyArtwork(member,back,disparity=.72,matching=false) {
+ const s=surface('stereoscopy-uk',member,back),{c,text,line,ink,a}=s;
+ if(!back){
+  const controlled=matching&&disparity<=.24,side=a?-1:1,shift=side*disparity*80;
+  c.fillStyle='#252c33';c.fillRect(255,240,690,335);
+  for(let i=0;i<4;i++){const x=365+i*120+shift*(i*.18);c.fillStyle=i%2?'#d7c48e':a?'#7da7d9':'#d98e8b';c.fillRect(x,300,34,220);c.beginPath();c.arc(x+17,292,45,Math.PI,0);c.strokeStyle=c.fillStyle;c.lineWidth=10;c.stroke();}
+  c.fillStyle=controlled?'#e0b36a':a?'#7da7d9':'#d98e8b';c.globalAlpha=controlled?.82:.35;c.fillRect(515+shift*.2,360,170,118);c.globalAlpha=1;
+  if(controlled){line(350,565,850,565,'#e0b36a',8);line(455,525,745,320,'#e0b36a',4);}
+  text(controlled?'DISPARITÉ CONTRÔLÉE':'VUE PLATE ACTIVE',60,596,25);
  }
  return finish(s);
 }

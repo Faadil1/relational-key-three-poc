@@ -34,6 +34,13 @@ export const previewLots = [
     note: 'Quatrième bloc de quatre familles imprimées : mémoire mécanique, mouvement inverse, relais porté et lecture céleste.',
     families: ['music-box-sainte-croix', 'funicular-valparaiso', 'signal-nigeria', 'astrolabe-isfahan'],
   },
+  {
+    id: 'collectible-batch-005',
+    title: 'Collectible batch 005',
+    status: 'Implementation candidate · final pre-Vercel lot',
+    note: 'Cinquième bloc de quatre familles imprimées : service enregistré, paquet révélé, transfert d’impression et profondeur binoculaire.',
+    families: ['service-benin', 'food-toyama', 'kento-japan', 'stereoscopy-uk'],
+  },
 ];
 
 export const previewLotById = Object.fromEntries(previewLots.map((lot) => [lot.id, lot]));

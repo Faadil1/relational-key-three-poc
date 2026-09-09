@@ -323,8 +323,8 @@ export default function App() {
   if (activeId === 'anamorphosis-paris') activeSceneProps = { offset: anamorphosisOffset, setOffset: setAnamorphosisOffset, reducedMotion };
   else if (activeId === 'coupler-virginia') activeSceneProps = { approach: couplerApproach, setApproach: setCouplerApproach, pull: couplerPull, matching, reducedMotion };
   else if (activeId === 'ombak-bali') activeSceneProps = { differenceHz: ombakDifference, playing: audio.playing, matching, reducedMotion };
-  else if (activeId === 'kento-japan') activeSceneProps = { offset: kentoOffset, pressed: kentoPressed, matching, reducedMotion };
-  else if (activeId === 'stereoscopy-uk') activeSceneProps = { disparity: stereoDisparity, matching, reducedMotion };
+  else if (activeId === 'kento-japan') activeSceneProps = { offset: kentoOffset, pressed: kentoPressed, matching, reducedMotion, presentation, backs };
+  else if (activeId === 'stereoscopy-uk') activeSceneProps = { disparity: stereoDisparity, matching, reducedMotion, presentation, backs };
   else if (activeId === 'signal-nigeria') activeSceneProps = { alignment: signalAlignment, matching, reducedMotion, presentation, backs };
   else if (activeId === 'astrolabe-isfahan') activeSceneProps = { angle: astrolabeAngle, setAngle: setAstrolabeAngle, plateMode: astrolabePlateMode, reducedMotion, presentation, backs };
   else if (activeId === 'funicular-valparaiso') activeSceneProps = { positionA: funicularPositionA, setPositionA: setFunicularPositionA, reducedMotion, presentation, backs };
@@ -332,8 +332,8 @@ export default function App() {
   else if (activeId === 'boulle-france') activeSceneProps = { separated: boulleSeparated, matching, reducedMotion, presentation, backs };
   else if (activeId === 'khipu-peru') activeSceneProps = { tension: khipuTension, matching, reducedMotion, presentation, backs };
   else if (activeId === 'mate-bombilla-argentina') activeSceneProps = { insertion: mateInsertion, matching, reducedMotion, presentation, backs };
-  else if (activeId === 'service-benin') activeSceneProps = { contact: serviceContact, matching, reducedMotion };
-  else if (activeId === 'food-toyama') activeSceneProps = { release: foodRelease, matching, reducedMotion };
+  else if (activeId === 'service-benin') activeSceneProps = { contact: serviceContact, matching, reducedMotion, presentation, backs };
+  else if (activeId === 'food-toyama') activeSceneProps = { release: foodRelease, matching, reducedMotion, presentation, backs };
   else if (activeId === 'hika-ahi-aotearoa') activeSceneProps = { friction: hikaFriction, matching, reducedMotion, presentation, backs };
   else if (activeId === 'metate-teotitlan') activeSceneProps = { state: metate, reducedMotion, presentation, backs };
   else if (activeId === 'siku-bolivia') activeSceneProps = { state: siku, reducedMotion, presentation, backs };

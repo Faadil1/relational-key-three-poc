@@ -3,6 +3,7 @@ export const collectibleIds = new Set([
  'frida-coyoacan', 'zellige-fes', 'swell-marshall', 'tongiaki-tonga',
  'garamut-sepik-ramu', 'khipu-peru', 'mate-bombilla-argentina', 'hika-ahi-aotearoa',
  'music-box-sainte-croix', 'funicular-valparaiso', 'signal-nigeria', 'astrolabe-isfahan',
+ 'service-benin', 'food-toyama', 'kento-japan', 'stereoscopy-uk',
 ]);
 export const initialTextile = () => ({ aligned: false, stitches: 0 });
 export function textileReducer(state, action) {
