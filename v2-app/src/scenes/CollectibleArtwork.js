@@ -10,6 +10,10 @@ const palettes={
  'zellige-fes':[['#173739','#e2c476'],['#ead7a4','#174449']],
  'swell-marshall':[['#18343d','#c6e6df'],['#e4d6aa','#16404a']],
  'tongiaki-tonga':[['#253431','#e1bd78'],['#e0c996','#27383a']],
+ 'garamut-sepik-ramu':[['#2d2118','#e0ad78'],['#d7b98a','#2c1f17']],
+ 'khipu-peru':[['#2a2118','#e6bd80'],['#ead4aa','#35271b']],
+ 'mate-bombilla-argentina':[['#263a2e','#dfc58b'],['#ead8b0','#2c4233']],
+ 'hika-ahi-aotearoa':[['#302116','#f0b56d'],['#ead2a8','#38251a']],
 };
 function surface(id,member,back) {
  const canvas=document.createElement('canvas');canvas.width=1200;canvas.height=756;
@@ -169,6 +173,55 @@ export function tongiakiArtwork(member,back,matching) {
   else{for(let x=340;x<=560;x+=74)line(x,330,x+30,470,ink,6);}
   c.strokeStyle=matching?'#7fb6b0':ink;c.lineWidth=5;c.beginPath();c.arc(600,400,245,0.16,2.98);c.stroke();
   text(matching?'PLATEFORME COUPLÉE':'COQUES SÉPARÉES',60,596,25);
+ }
+ return finish(s);
+}
+
+export function garamutArtwork(member,back,matching) {
+ const s=surface('garamut-sepik-ramu',member,back),{c,text,line,ink,a}=s;
+ if(!back){
+  if(a){
+   c.fillStyle='#8b5f3c';c.save();c.translate(590,385);c.rotate(-.34);c.fillRect(-330,-42,660,84);c.restore();
+   c.fillStyle=matching?'#f0bd82':'#735640';c.beginPath();c.arc(830,300,64,0,7);c.fill();
+   line(190,540,910,540,ink,5);text(matching?'IMPACT ENREGISTRÉ':'BATTE SÉPARÉE',60,596,25);
+  }else{
+   c.fillStyle='#7d5438';c.beginPath();c.ellipse(610,384,380,122,0,0,7);c.fill();
+   c.fillStyle='#25160f';c.fillRect(310,360,600,42);
+   if(matching){for(let r=70;r<260;r+=45){c.strokeStyle=ink;c.lineWidth=5;c.beginPath();c.ellipse(330,384,r,r*.55,0,0,7);c.stroke();}}
+   for(let i=0;i<5;i++)line(380+i*95,548,425+i*95,matching?500:535,ink,6);
+   text(matching?'TRACE D’ÉVÉNEMENT':'CORPS SILENCIEUX',60,596,25);
+  }
+ }
+ return finish(s);
+}
+
+export function khipuArtwork(member,back,tension,matching) {
+ const s=surface('khipu-peru',member,back),{c,text,line,ink,a}=s;
+ if(!back){
+  const strong=matching&&tension>=.72,settle=tension*42,offset=!matching&& !a?55:0;
+  line(170,260,1030,260,ink,10);
+  for(let i=0;i<6;i++){const x=220+i*145+((i%2?1:-1)*offset);line(x,260,x,535-settle*(i%3)/3,ink,7);for(let k=0;k<2;k++){c.strokeStyle=strong?'#e9bd77':ink;c.lineWidth=8;c.beginPath();c.arc(x,345+k*82-settle*.25,28,0,7);c.stroke();}}
+  line(170,575,1030,575,strong?'#e9bd77':ink,strong?8:3);text(strong?'REGISTRE TENDU':'POSITIONS RÉSIDUELLES',60,620,25);
+ }
+ return finish(s);
+}
+
+export function mateArtwork(member,back,insertion,matching) {
+ const s=surface('mate-bombilla-argentina',member,back),{c,text,line,ink,a}=s;
+ if(!back){
+  const engaged=matching&&insertion>=.72;
+  if(a){c.fillStyle='#6f4b30';c.beginPath();c.ellipse(585,405,300,165,0,0,7);c.fill();for(let i=0;i<38;i++){c.fillStyle=i%2?'#71805a':'#5d6d49';c.beginPath();c.arc(350+(i*73)%470,315+(i*41)%170,9+(i%3)*3,0,7);c.fill();}text('MILIEU PARTICULAIRE',60,596,25);}
+  else{c.save();c.translate(585,370);c.rotate(-.8);c.strokeStyle=ink;c.lineWidth=22;c.beginPath();c.moveTo(0,-210);c.lineTo(0,170);c.stroke();c.fillStyle=engaged?'#d4c28f':'#8c908c';c.beginPath();c.ellipse(0,190,80,48,0,0,7);c.fill();c.restore();if(engaged)for(let i=0;i<5;i++){line(680+i*48,245,705+i*48,185,ink,5);}text(engaged?'PASSAGE SÉLECTIF':'FILTRE NON ENGAGÉ',60,596,25);}
+ }
+ return finish(s);
+}
+
+export function hikaArtwork(member,back,friction,matching) {
+ const s=surface('hika-ahi-aotearoa',member,back),{c,text,line,ink,a}=s;
+ if(!back){
+  const ember=matching&&friction>=.72,heat=matching?friction:friction*.4;
+  if(a){c.save();c.translate(625,385);c.rotate(-.58-heat*.35);c.fillStyle='#9b6b3e';c.fillRect(-55,-260,110,520);c.restore();text(matching?'STROKE LOCALISÉ':'CONTACT DÉCALÉ',60,596,25);}
+  else{c.fillStyle='#845832';c.fillRect(250,340,700,128);c.fillStyle='#2b1b12';c.fillRect(340,386,520,28);if(ember){c.fillStyle='#ffb45d';c.beginPath();c.arc(610,400,55,0,7);c.fill();c.fillStyle='#fff0bd';c.beginPath();c.arc(610,400,20,0,7);c.fill();}else{c.strokeStyle=ink;c.lineWidth=4;c.beginPath();c.arc(610,400,38,0,7);c.stroke();}text(ember?'TÉMOIN À L’INTERFACE':'CHALEUR NON STABLE',60,596,25);}
  }
  return finish(s);
 }

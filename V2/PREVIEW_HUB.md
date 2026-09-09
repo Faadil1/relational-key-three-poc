@@ -26,6 +26,10 @@ The hub is intentionally light. It does not mount a Three.js canvas or load fami
    - Families: `frida-coyoacan`, `zellige-fes`, `swell-marshall`, `tongiaki-tonga`
    - Status: implementation candidate, source/cultural hold pending.
 
+4. `collectible-batch-003`
+   - Families: `garamut-sepik-ramu`, `khipu-peru`, `mate-bombilla-argentina`, `hika-ahi-aotearoa`
+   - Status: implementation candidate, human hold on culturally sensitive edges.
+
 ## Vercel build quota rule
 
 Current account limit: 100 builds per 24 hours.

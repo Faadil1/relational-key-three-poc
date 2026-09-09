@@ -330,11 +330,11 @@ export default function App() {
   else if (activeId === 'funicular-valparaiso') activeSceneProps = { positionA: funicularPositionA, setPositionA: setFunicularPositionA, reducedMotion };
   else if (activeId === 'music-box-sainte-croix') activeSceneProps = { engaged: musicBoxEngaged, angle: musicBoxAngle, setAngle: setMusicBoxAngle, pattern: musicBoxPattern, reducedMotion };
   else if (activeId === 'boulle-france') activeSceneProps = { separated: boulleSeparated, matching, reducedMotion, presentation, backs };
-  else if (activeId === 'khipu-peru') activeSceneProps = { tension: khipuTension, matching, reducedMotion };
-  else if (activeId === 'mate-bombilla-argentina') activeSceneProps = { insertion: mateInsertion, matching, reducedMotion };
+  else if (activeId === 'khipu-peru') activeSceneProps = { tension: khipuTension, matching, reducedMotion, presentation, backs };
+  else if (activeId === 'mate-bombilla-argentina') activeSceneProps = { insertion: mateInsertion, matching, reducedMotion, presentation, backs };
   else if (activeId === 'service-benin') activeSceneProps = { contact: serviceContact, matching, reducedMotion };
   else if (activeId === 'food-toyama') activeSceneProps = { release: foodRelease, matching, reducedMotion };
-  else if (activeId === 'hika-ahi-aotearoa') activeSceneProps = { friction: hikaFriction, matching, reducedMotion };
+  else if (activeId === 'hika-ahi-aotearoa') activeSceneProps = { friction: hikaFriction, matching, reducedMotion, presentation, backs };
   else if (activeId === 'metate-teotitlan') activeSceneProps = { state: metate, reducedMotion, presentation, backs };
   else if (activeId === 'siku-bolivia') activeSceneProps = { state: siku, reducedMotion, presentation, backs };
   else if (activeId === 'city-gatineau') activeSceneProps = {state:city,dispatch:dispatchCity,reducedMotion};

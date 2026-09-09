@@ -8,6 +8,7 @@ function FitPair({ sceneId }) {
     const city = [
       'city-gatineau','metate-teotitlan','siku-bolivia','textile-bonwire','boulle-france',
       'frida-coyoacan','zellige-fes','swell-marshall','tongiaki-tonga',
+      'garamut-sepik-ramu','khipu-peru','mate-bombilla-argentina','hika-ahi-aotearoa',
     ].includes(sceneId);
     const narrow = size.width < 600;
     const halfWidth = city ? (narrow ? 1.72 : 4.0) : 3.7;
@@ -32,6 +33,7 @@ export function FamilyCanvas({ sceneId, children }) {
       {[
         'metate-teotitlan', 'siku-bolivia', 'city-gatineau', 'textile-bonwire', 'boulle-france',
         'frida-coyoacan', 'zellige-fes', 'swell-marshall', 'tongiaki-tonga',
+        'garamut-sepik-ramu', 'khipu-peru', 'mate-bombilla-argentina', 'hika-ahi-aotearoa',
       ].includes(sceneId) && <FitPair sceneId={sceneId} />}
       {children}
     </Canvas>
