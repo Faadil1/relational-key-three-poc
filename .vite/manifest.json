@@ -1,28 +1,28 @@
 {
-  "_CollectibleArtwork-CnQEikMK.js": {
-    "file": "assets/CollectibleArtwork-CnQEikMK.js",
+  "_CollectibleArtwork-CKLtTwaq.js": {
+    "file": "assets/CollectibleArtwork-CKLtTwaq.js",
     "name": "CollectibleArtwork",
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js"
+      "_FamilyCanvas-DZelTwfu.js"
     ]
   },
-  "_FamilyCanvas-cTixS70X.js": {
-    "file": "assets/FamilyCanvas-cTixS70X.js",
+  "_FamilyCanvas-DZelTwfu.js": {
+    "file": "assets/FamilyCanvas-DZelTwfu.js",
     "name": "FamilyCanvas",
     "imports": [
       "index.html"
     ]
   },
-  "_Wave005Primitives-Fdfr8OCW.js": {
-    "file": "assets/Wave005Primitives-Fdfr8OCW.js",
+  "_Wave005Primitives-DWeet-aX.js": {
+    "file": "assets/Wave005Primitives-DWeet-aX.js",
     "name": "Wave005Primitives",
     "imports": [
       "index.html"
     ]
   },
   "index.html": {
-    "file": "assets/index-C1VKtSX9.js",
+    "file": "assets/index-DeJhVMFT.js",
     "name": "index",
     "src": "index.html",
     "isEntry": true,
@@ -57,253 +57,253 @@
     ]
   },
   "src/sceneEntries/AnamorphosisEntry.jsx": {
-    "file": "assets/AnamorphosisEntry-CyGwsReu.js",
+    "file": "assets/AnamorphosisEntry-7iMpUlnk.js",
     "name": "AnamorphosisEntry",
     "src": "src/sceneEntries/AnamorphosisEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js"
+      "_FamilyCanvas-DZelTwfu.js"
     ]
   },
   "src/sceneEntries/AstrolabeEntry.jsx": {
-    "file": "assets/AstrolabeEntry-BmY1s3U6.js",
+    "file": "assets/AstrolabeEntry-B4o380rn.js",
     "name": "AstrolabeEntry",
     "src": "src/sceneEntries/AstrolabeEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js"
+      "_FamilyCanvas-DZelTwfu.js"
     ]
   },
   "src/sceneEntries/BoulleEntry.jsx": {
-    "file": "assets/BoulleEntry-Chw2cZtN.js",
+    "file": "assets/BoulleEntry-CwN9CcR9.js",
     "name": "BoulleEntry",
     "src": "src/sceneEntries/BoulleEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js",
-      "_CollectibleArtwork-CnQEikMK.js"
+      "_FamilyCanvas-DZelTwfu.js",
+      "_CollectibleArtwork-CKLtTwaq.js"
     ]
   },
   "src/sceneEntries/CityGatineauEntry.jsx": {
-    "file": "assets/CityGatineauEntry-D9ooSFDQ.js",
+    "file": "assets/CityGatineauEntry-BlA6Mi2y.js",
     "name": "CityGatineauEntry",
     "src": "src/sceneEntries/CityGatineauEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js",
-      "_Wave005Primitives-Fdfr8OCW.js"
+      "_FamilyCanvas-DZelTwfu.js",
+      "_Wave005Primitives-DWeet-aX.js"
     ]
   },
   "src/sceneEntries/CouplerEntry.jsx": {
-    "file": "assets/CouplerEntry-DKri4A-V.js",
+    "file": "assets/CouplerEntry-Bo0XTl0W.js",
     "name": "CouplerEntry",
     "src": "src/sceneEntries/CouplerEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js"
+      "_FamilyCanvas-DZelTwfu.js"
     ]
   },
   "src/sceneEntries/FoodToyamaEntry.jsx": {
-    "file": "assets/FoodToyamaEntry-CQIs9R6-.js",
+    "file": "assets/FoodToyamaEntry-DFDsDyeL.js",
     "name": "FoodToyamaEntry",
     "src": "src/sceneEntries/FoodToyamaEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js"
+      "_FamilyCanvas-DZelTwfu.js"
     ]
   },
   "src/sceneEntries/FridaCoyoacanEntry.jsx": {
-    "file": "assets/FridaCoyoacanEntry-B4n7hAZY.js",
+    "file": "assets/FridaCoyoacanEntry-nMlhgVTk.js",
     "name": "FridaCoyoacanEntry",
     "src": "src/sceneEntries/FridaCoyoacanEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js",
-      "_Wave005Primitives-Fdfr8OCW.js"
+      "_FamilyCanvas-DZelTwfu.js",
+      "_Wave005Primitives-DWeet-aX.js"
     ]
   },
   "src/sceneEntries/FunicularEntry.jsx": {
-    "file": "assets/FunicularEntry-DMXwtepC.js",
+    "file": "assets/FunicularEntry-s73qRZkc.js",
     "name": "FunicularEntry",
     "src": "src/sceneEntries/FunicularEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js"
+      "_FamilyCanvas-DZelTwfu.js"
     ]
   },
   "src/sceneEntries/GaramutSepikRamuEntry.jsx": {
-    "file": "assets/GaramutSepikRamuEntry-BwciDyGo.js",
+    "file": "assets/GaramutSepikRamuEntry-DN4g9GhS.js",
     "name": "GaramutSepikRamuEntry",
     "src": "src/sceneEntries/GaramutSepikRamuEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js",
-      "_Wave005Primitives-Fdfr8OCW.js"
+      "_FamilyCanvas-DZelTwfu.js",
+      "_Wave005Primitives-DWeet-aX.js"
     ]
   },
   "src/sceneEntries/HikaAhiEntry.jsx": {
-    "file": "assets/HikaAhiEntry-JbpMixIj.js",
+    "file": "assets/HikaAhiEntry-CWF7JxBz.js",
     "name": "HikaAhiEntry",
     "src": "src/sceneEntries/HikaAhiEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js"
+      "_FamilyCanvas-DZelTwfu.js"
     ]
   },
   "src/sceneEntries/KentoEntry.jsx": {
-    "file": "assets/KentoEntry-5Qm4pa3P.js",
+    "file": "assets/KentoEntry-Oi5JpXjH.js",
     "name": "KentoEntry",
     "src": "src/sceneEntries/KentoEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js"
+      "_FamilyCanvas-DZelTwfu.js"
     ]
   },
   "src/sceneEntries/KhipuEntry.jsx": {
-    "file": "assets/KhipuEntry-DznJcVs5.js",
+    "file": "assets/KhipuEntry-DEImVaPu.js",
     "name": "KhipuEntry",
     "src": "src/sceneEntries/KhipuEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js"
+      "_FamilyCanvas-DZelTwfu.js"
     ]
   },
   "src/sceneEntries/MateBombillaEntry.jsx": {
-    "file": "assets/MateBombillaEntry-vkNmQva2.js",
+    "file": "assets/MateBombillaEntry-CNSpEi18.js",
     "name": "MateBombillaEntry",
     "src": "src/sceneEntries/MateBombillaEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js"
+      "_FamilyCanvas-DZelTwfu.js"
     ]
   },
   "src/sceneEntries/MetateTeotitlanEntry.jsx": {
-    "file": "assets/MetateTeotitlanEntry-BHzrEDhy.js",
+    "file": "assets/MetateTeotitlanEntry-C6rtz_6a.js",
     "name": "MetateTeotitlanEntry",
     "src": "src/sceneEntries/MetateTeotitlanEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js",
-      "_CollectibleArtwork-CnQEikMK.js"
+      "_FamilyCanvas-DZelTwfu.js",
+      "_CollectibleArtwork-CKLtTwaq.js"
     ]
   },
   "src/sceneEntries/MusicBoxEntry.jsx": {
-    "file": "assets/MusicBoxEntry-wWphBuqE.js",
+    "file": "assets/MusicBoxEntry-BVxEPHMT.js",
     "name": "MusicBoxEntry",
     "src": "src/sceneEntries/MusicBoxEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js"
+      "_FamilyCanvas-DZelTwfu.js"
     ]
   },
   "src/sceneEntries/OmbakEntry.jsx": {
-    "file": "assets/OmbakEntry-DMEx5Gwn.js",
+    "file": "assets/OmbakEntry-KtqMJuGa.js",
     "name": "OmbakEntry",
     "src": "src/sceneEntries/OmbakEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js"
+      "_FamilyCanvas-DZelTwfu.js"
     ]
   },
   "src/sceneEntries/ServiceBeninEntry.jsx": {
-    "file": "assets/ServiceBeninEntry-DHE1GLRQ.js",
+    "file": "assets/ServiceBeninEntry-DDp88DFv.js",
     "name": "ServiceBeninEntry",
     "src": "src/sceneEntries/ServiceBeninEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js"
+      "_FamilyCanvas-DZelTwfu.js"
     ]
   },
   "src/sceneEntries/SignalEntry.jsx": {
-    "file": "assets/SignalEntry-D87rWZTD.js",
+    "file": "assets/SignalEntry-DXbNgrjY.js",
     "name": "SignalEntry",
     "src": "src/sceneEntries/SignalEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js"
+      "_FamilyCanvas-DZelTwfu.js"
     ]
   },
   "src/sceneEntries/SikuBoliviaEntry.jsx": {
-    "file": "assets/SikuBoliviaEntry-BhS20KQY.js",
+    "file": "assets/SikuBoliviaEntry-VJ1XWkiS.js",
     "name": "SikuBoliviaEntry",
     "src": "src/sceneEntries/SikuBoliviaEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js",
-      "_CollectibleArtwork-CnQEikMK.js"
+      "_FamilyCanvas-DZelTwfu.js",
+      "_CollectibleArtwork-CKLtTwaq.js"
     ]
   },
   "src/sceneEntries/StereoscopyEntry.jsx": {
-    "file": "assets/StereoscopyEntry-Dd4_Fx8u.js",
+    "file": "assets/StereoscopyEntry-D_1x-bqe.js",
     "name": "StereoscopyEntry",
     "src": "src/sceneEntries/StereoscopyEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js"
+      "_FamilyCanvas-DZelTwfu.js"
     ]
   },
   "src/sceneEntries/SwellMarshallEntry.jsx": {
-    "file": "assets/SwellMarshallEntry-DEYDL9t-.js",
+    "file": "assets/SwellMarshallEntry-BKu4lVJ9.js",
     "name": "SwellMarshallEntry",
     "src": "src/sceneEntries/SwellMarshallEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js",
-      "_Wave005Primitives-Fdfr8OCW.js"
+      "_FamilyCanvas-DZelTwfu.js",
+      "_Wave005Primitives-DWeet-aX.js"
     ]
   },
   "src/sceneEntries/TextileBonwireEntry.jsx": {
-    "file": "assets/TextileBonwireEntry-BcvegJTG.js",
+    "file": "assets/TextileBonwireEntry-D4x9xKAQ.js",
     "name": "TextileBonwireEntry",
     "src": "src/sceneEntries/TextileBonwireEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js",
-      "_CollectibleArtwork-CnQEikMK.js"
+      "_FamilyCanvas-DZelTwfu.js",
+      "_CollectibleArtwork-CKLtTwaq.js"
     ]
   },
   "src/sceneEntries/TongiakiTongaEntry.jsx": {
-    "file": "assets/TongiakiTongaEntry-CCZ4zogJ.js",
+    "file": "assets/TongiakiTongaEntry-CPE_4ssg.js",
     "name": "TongiakiTongaEntry",
     "src": "src/sceneEntries/TongiakiTongaEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js",
-      "_Wave005Primitives-Fdfr8OCW.js"
+      "_FamilyCanvas-DZelTwfu.js",
+      "_Wave005Primitives-DWeet-aX.js"
     ]
   },
   "src/sceneEntries/ZelligeFesEntry.jsx": {
-    "file": "assets/ZelligeFesEntry-DzS10fqA.js",
+    "file": "assets/ZelligeFesEntry-DzTe0U-a.js",
     "name": "ZelligeFesEntry",
     "src": "src/sceneEntries/ZelligeFesEntry.jsx",
     "isDynamicEntry": true,
     "imports": [
       "index.html",
-      "_FamilyCanvas-cTixS70X.js",
-      "_Wave005Primitives-Fdfr8OCW.js"
+      "_FamilyCanvas-DZelTwfu.js",
+      "_Wave005Primitives-DWeet-aX.js"
     ]
   }
 }
