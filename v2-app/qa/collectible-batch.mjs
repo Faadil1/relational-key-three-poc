@@ -5,7 +5,7 @@ const out='batch-evidence';await fs.mkdir(out,{recursive:true});
 const browser=await chromium.launch({headless:true,args:['--use-angle=swiftshader','--enable-webgl']});
 const results=[];
 try{
- for(const id of ['metate-teotitlan','siku-bolivia','textile-bonwire','boulle-france','frida-coyoacan','zellige-fes','swell-marshall','tongiaki-tonga','garamut-sepik-ramu','khipu-peru','mate-bombilla-argentina','hika-ahi-aotearoa'])for(const mode of ['desktop','mobile','reduced']){
+ for(const id of ['metate-teotitlan','siku-bolivia','textile-bonwire','boulle-france','frida-coyoacan','zellige-fes','swell-marshall','tongiaki-tonga','garamut-sepik-ramu','khipu-peru','mate-bombilla-argentina','hika-ahi-aotearoa','music-box-sainte-croix','funicular-valparaiso','signal-nigeria','astrolabe-isfahan'])for(const mode of ['desktop','mobile','reduced']){
   const context=await browser.newContext({viewport:mode==='mobile'?{width:390,height:844}:{width:1440,height:900},reducedMotion:mode==='reduced'?'reduce':'no-preference'});
   const page=await context.newPage(),errors=[];
   page.on('pageerror',e=>errors.push(e.message));page.on('console',m=>{if(m.type()==='error')errors.push(m.text());});

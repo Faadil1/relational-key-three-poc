@@ -325,10 +325,10 @@ export default function App() {
   else if (activeId === 'ombak-bali') activeSceneProps = { differenceHz: ombakDifference, playing: audio.playing, matching, reducedMotion };
   else if (activeId === 'kento-japan') activeSceneProps = { offset: kentoOffset, pressed: kentoPressed, matching, reducedMotion };
   else if (activeId === 'stereoscopy-uk') activeSceneProps = { disparity: stereoDisparity, matching, reducedMotion };
-  else if (activeId === 'signal-nigeria') activeSceneProps = { alignment: signalAlignment, matching, reducedMotion };
-  else if (activeId === 'astrolabe-isfahan') activeSceneProps = { angle: astrolabeAngle, setAngle: setAstrolabeAngle, plateMode: astrolabePlateMode, reducedMotion };
-  else if (activeId === 'funicular-valparaiso') activeSceneProps = { positionA: funicularPositionA, setPositionA: setFunicularPositionA, reducedMotion };
-  else if (activeId === 'music-box-sainte-croix') activeSceneProps = { engaged: musicBoxEngaged, angle: musicBoxAngle, setAngle: setMusicBoxAngle, pattern: musicBoxPattern, reducedMotion };
+  else if (activeId === 'signal-nigeria') activeSceneProps = { alignment: signalAlignment, matching, reducedMotion, presentation, backs };
+  else if (activeId === 'astrolabe-isfahan') activeSceneProps = { angle: astrolabeAngle, setAngle: setAstrolabeAngle, plateMode: astrolabePlateMode, reducedMotion, presentation, backs };
+  else if (activeId === 'funicular-valparaiso') activeSceneProps = { positionA: funicularPositionA, setPositionA: setFunicularPositionA, reducedMotion, presentation, backs };
+  else if (activeId === 'music-box-sainte-croix') activeSceneProps = { engaged: musicBoxEngaged, angle: musicBoxAngle, setAngle: setMusicBoxAngle, pattern: musicBoxPattern, reducedMotion, presentation, backs };
   else if (activeId === 'boulle-france') activeSceneProps = { separated: boulleSeparated, matching, reducedMotion, presentation, backs };
   else if (activeId === 'khipu-peru') activeSceneProps = { tension: khipuTension, matching, reducedMotion, presentation, backs };
   else if (activeId === 'mate-bombilla-argentina') activeSceneProps = { insertion: mateInsertion, matching, reducedMotion, presentation, backs };

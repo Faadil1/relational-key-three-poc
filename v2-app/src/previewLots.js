@@ -27,6 +27,13 @@ export const previewLots = [
     note: 'Troisième bloc de quatre familles imprimées : impact, tension, filtration et friction comme relations matérielles.',
     families: ['garamut-sepik-ramu', 'khipu-peru', 'mate-bombilla-argentina', 'hika-ahi-aotearoa'],
   },
+  {
+    id: 'collectible-batch-004',
+    title: 'Collectible batch 004',
+    status: 'Implementation candidate · source hold',
+    note: 'Quatrième bloc de quatre familles imprimées : mémoire mécanique, mouvement inverse, relais porté et lecture céleste.',
+    families: ['music-box-sainte-croix', 'funicular-valparaiso', 'signal-nigeria', 'astrolabe-isfahan'],
+  },
 ];
 
 export const previewLotById = Object.fromEntries(previewLots.map((lot) => [lot.id, lot]));

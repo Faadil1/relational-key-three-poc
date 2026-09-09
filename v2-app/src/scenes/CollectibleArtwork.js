@@ -14,6 +14,10 @@ const palettes={
  'khipu-peru':[['#2a2118','#e6bd80'],['#ead4aa','#35271b']],
  'mate-bombilla-argentina':[['#263a2e','#dfc58b'],['#ead8b0','#2c4233']],
  'hika-ahi-aotearoa':[['#302116','#f0b56d'],['#ead2a8','#38251a']],
+ 'music-box-sainte-croix':[['#241d16','#e6c586'],['#ead6a2','#30231a']],
+ 'funicular-valparaiso':[['#24302c','#d4a36f'],['#dfc79c','#26312d']],
+ 'signal-nigeria':[['#112c28','#7fd0aa'],['#dbe7d6','#14302e']],
+ 'astrolabe-isfahan':[['#21180f','#d7b06c'],['#e1c891','#2d2014']],
 };
 function surface(id,member,back) {
  const canvas=document.createElement('canvas');canvas.width=1200;canvas.height=756;
@@ -222,6 +226,80 @@ export function hikaArtwork(member,back,friction,matching) {
   const ember=matching&&friction>=.72,heat=matching?friction:friction*.4;
   if(a){c.save();c.translate(625,385);c.rotate(-.58-heat*.35);c.fillStyle='#9b6b3e';c.fillRect(-55,-260,110,520);c.restore();text(matching?'STROKE LOCALISÉ':'CONTACT DÉCALÉ',60,596,25);}
   else{c.fillStyle='#845832';c.fillRect(250,340,700,128);c.fillStyle='#2b1b12';c.fillRect(340,386,520,28);if(ember){c.fillStyle='#ffb45d';c.beginPath();c.arc(610,400,55,0,7);c.fill();c.fillStyle='#fff0bd';c.beginPath();c.arc(610,400,20,0,7);c.fill();}else{c.strokeStyle=ink;c.lineWidth=4;c.beginPath();c.arc(610,400,38,0,7);c.stroke();}text(ember?'TÉMOIN À L’INTERFACE':'CHALEUR NON STABLE',60,596,25);}
+ }
+ return finish(s);
+}
+
+export function musicBoxArtwork(member,back,{engaged=false,angle=0,pattern='A'}={}) {
+ const s=surface('music-box-sainte-croix',member,back),{c,text,line,ink,a}=s;
+ if(!back){
+  const active=engaged;
+  if(a){
+   c.fillStyle='#7f5a37';c.beginPath();c.ellipse(600,382,330,112,0,0,7);c.fill();
+   for(let i=0;i<12;i++){const theta=(angle+i*31)%360*Math.PI/180,x=600+Math.cos(theta)*245,y=382+Math.sin(theta)*58;c.fillStyle=pattern==='A'?'#efd18d':'#b78f5c';c.beginPath();c.arc(x,y,10+(i%3)*3,0,7);c.fill();}
+   line(250,535,950,535,active?'#f0d28a':ink,active?8:4);
+   text(active?`CYLINDRE ENGAGÉ · ${Math.round(angle)}°`:'MÉMOIRE SÉPARÉE',60,596,25);
+  }else{
+   for(let i=0;i<9;i++){const x=310+i*70,h=120+i*10;c.fillStyle=active&&i%3===1?'#fff0bf':'#837d72';c.fillRect(x,430-h,28,h);}
+   c.fillStyle='#6d6558';c.fillRect(260,430,690,56);
+   if(active){for(let i=0;i<4;i++)line(380+i*130,245,380+i*130,310,'#f0d28a',7);}
+   text(active?'DENTS EN RÉPONSE':'PEIGNE EN ATTENTE',60,596,25);
+  }
+ }
+ return finish(s);
+}
+
+export function funicularArtwork(member,back,positionA=0) {
+ const s=surface('funicular-valparaiso',member,back),{c,text,line,ink,a}=s;
+ if(!back){
+  const p=a?positionA:1-positionA,y=505-p*260,otherY=505-(1-p)*260;
+  line(360,235,360,530,ink,8);line(840,235,840,530,ink,8);
+  for(let i=0;i<6;i++)line(310,255+i*48,890,255+i*48,'#ffffff33',2);
+  c.fillStyle=a?'#9c6b45':'#75563f';c.beginPath();c.roundRect(270,y-42,250,84,12);c.fill();
+  c.fillStyle='#2b302e';c.fillRect(322,y-20,92,32);
+  c.strokeStyle='#d9bd83';c.lineWidth=6;c.beginPath();c.moveTo(520,y);c.bezierCurveTo(620,y-120,720,otherY+120,820,otherY);c.stroke();
+  c.fillStyle='#8b7656';c.beginPath();c.roundRect(720,otherY-28,150,56,10);c.fill();
+  text(a?`VOITURE A · ${Math.round(p*100)}%`:`RÉPONSE INVERSE · ${Math.round(p*100)}%`,60,596,25);
+ }
+ return finish(s);
+}
+
+export function signalArtwork(member,back,alignment=0,matching=false) {
+ const s=surface('signal-nigeria',member,back),{c,text,line,ink,a}=s;
+ if(!back){
+  const aligned=matching&&alignment>=.82;
+  if(a){
+   c.strokeStyle=aligned?'#7fd0aa':ink;c.lineWidth=12;c.beginPath();c.arc(450,360,145,-.55,3.9);c.stroke();
+   line(450,500,450,610,ink,8);line(338,610,562,610,ink,7);
+   const dx=(1-alignment)*130;line(535,315,875+dx,280,aligned?'#7fd0aa':'#9b6b5f',aligned?7:4);
+   text(aligned?'CAPTURE ALIGNÉE':'CAPTURE DÉCALÉE',60,596,25);
+  }else{
+   const xs=[330,600,870];
+   xs.forEach((x,i)=>{c.fillStyle=aligned||i<2?'#3e8c70':'#8b504a';c.fillRect(x-20,310-i*18,40,160);c.beginPath();c.arc(x,292-i*18,26,0,7);c.fill();});
+   line(xs[0],292,xs[1],274,aligned?'#7fd0aa':'#76857d',6);
+   line(xs[1],274,xs[2],256,aligned?'#7fd0aa':'#9b4e48',6);
+   if(aligned)for(let i=0;i<4;i++)line(885+i*30,256,910+i*30,240,'#7fd0aa',5);
+   text(aligned?'HANDOFF COMPLET':'CHAÎNE INTERROMPUE',60,596,25);
+  }
+ }
+ return finish(s);
+}
+
+export function astrolabeArtwork(member,back,angle=0,plateMode='other') {
+ const s=surface('astrolabe-isfahan',member,back),{c,text,line,ink,a}=s;
+ if(!back){
+  const local=plateMode==='local',cx=600,cy=385;
+  c.strokeStyle=ink;c.lineWidth=8;c.beginPath();c.arc(cx,cy,185,0,7);c.stroke();
+  c.lineWidth=3;for(let r=60;r<=150;r+=30){c.beginPath();c.arc(cx,cy,r,0,7);c.stroke();}
+  if(a){
+   c.save();c.translate(cx,cy);c.rotate(angle*Math.PI/180);
+   for(let i=0;i<8;i++){const th=i*Math.PI/4;line(0,0,Math.cos(th)*170,Math.sin(th)*170,ink,4);c.fillStyle='#e7c37b';c.beginPath();c.arc(Math.cos(th+.22)*120,Math.sin(th+.22)*120,9,0,7);c.fill();}
+   c.restore();text(`RETE ROTATIF · ${Math.round(angle)}°`,60,596,25);
+  }else{
+   for(let y=-120;y<=120;y+=60)line(cx-150+Math.abs(y)*.35,cy+y,cx+150-Math.abs(y)*.35,cy+y,local?'#e1c891':'#9f7654',5);
+   line(cx-170,cy+(local?-22:42),cx+170,cy+(local?-22:42),local?'#f0d89c':ink,8);
+   text(local?'HORIZON LOCAL ACTIF':'AUTRE PLATEAU VALIDE',60,596,25);
+  }
  }
  return finish(s);
 }
