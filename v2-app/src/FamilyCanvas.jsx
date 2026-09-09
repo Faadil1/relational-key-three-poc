@@ -5,7 +5,10 @@ function FitPair({ sceneId }) {
   const { camera, size, invalidate } = useThree();
   useLayoutEffect(() => {
     const tangent = Math.tan(camera.fov * Math.PI / 360);
-    const city = ['city-gatineau','metate-teotitlan','siku-bolivia','textile-bonwire','boulle-france'].includes(sceneId);
+    const city = [
+      'city-gatineau','metate-teotitlan','siku-bolivia','textile-bonwire','boulle-france',
+      'frida-coyoacan','zellige-fes','swell-marshall','tongiaki-tonga',
+    ].includes(sceneId);
     const narrow = size.width < 600;
     const halfWidth = city ? (narrow ? 1.72 : 4.0) : 3.7;
     const halfHeight = city ? (narrow ? 2.55 : 1.5) : 2.3;
@@ -26,7 +29,10 @@ export function FamilyCanvas({ sceneId, children }) {
       gl={{ antialias: true, alpha: false }}
       onCreated={({ gl }) => gl.setClearColor('#c8c3b8')}
     >
-      {['metate-teotitlan', 'siku-bolivia', 'city-gatineau', 'textile-bonwire', 'boulle-france'].includes(sceneId) && <FitPair sceneId={sceneId} />}
+      {[
+        'metate-teotitlan', 'siku-bolivia', 'city-gatineau', 'textile-bonwire', 'boulle-france',
+        'frida-coyoacan', 'zellige-fes', 'swell-marshall', 'tongiaki-tonga',
+      ].includes(sceneId) && <FitPair sceneId={sceneId} />}
       {children}
     </Canvas>
   );

@@ -6,6 +6,10 @@ const palettes={
  'siku-bolivia':[['#ac442d','#fff1d6'],['#e4b64e','#412e2a']],
  'textile-bonwire':[['#1f4142','#f0d8a0'],['#efdbb3','#263e3c']],
  'boulle-france':[['#30241f','#e6c987'],['#d8b472','#30241f']],
+ 'frida-coyoacan':[['#2b1f20','#eed2a8'],['#dfc7a0','#312723']],
+ 'zellige-fes':[['#173739','#e2c476'],['#ead7a4','#174449']],
+ 'swell-marshall':[['#18343d','#c6e6df'],['#e4d6aa','#16404a']],
+ 'tongiaki-tonga':[['#253431','#e1bd78'],['#e0c996','#27383a']],
 };
 function surface(id,member,back) {
  const canvas=document.createElement('canvas');canvas.width=1200;canvas.height=756;
@@ -97,6 +101,74 @@ export function boulleArtwork(member,back,separated,matching) {
   // Engraved construction lines are original editorial marks.
   for(let i=1;i<6;i++)line(x,y+i*h/6,x+w,y+i*h/6,separated?(a?'#d7b66e55':'#30241f55'):ink,1);
   text(separated?(matching?'MÊME CONTOUR / MATIÈRES INVERSÉES':'DÉCOUPES DIFFÉRENTES'):'DEUX COUCHES / AVANT SÉPARATION',60,611,23);
+ }
+ return finish(s);
+}
+
+export function fridaArtwork(member,back,matching) {
+ const s=surface('frida-coyoacan',member,back),{c,text,line,ink,a}=s;
+ if(!back){
+  if(a){
+   c.strokeStyle=ink;c.lineWidth=17;c.beginPath();c.ellipse(430,365,215,165,0,0,7);c.stroke();
+   c.fillStyle='#ffffff1a';c.beginPath();c.ellipse(430,365,180,132,0,0,7);c.fill();
+   line(280,530,580,530,ink,9);line(340,530,250,620,ink,8);line(520,530,620,620,ink,8);
+   const hit=matching?390:515;line(620,365,905,hit,ink,6);text(matching?'TRACE ORIENTÉE':'TRACE DÉCALÉE',60,596,25);
+  }else{
+   c.fillStyle='#d8c3a0';c.fillRect(315,230,520,335);c.strokeStyle=ink;c.lineWidth=9;c.strokeRect(315,230,520,335);
+   line(575,565,575,640,ink,9);line(395,640,755,640,ink,8);line(405,640,300,710,ink,6);line(745,640,850,710,ink,6);
+   c.strokeStyle=matching?'#9d443c':ink;c.lineWidth=matching?8:3;c.beginPath();c.arc(570,390,72,0.2,5.4);c.stroke();
+   line(520,420,610,352,matching?'#9d443c':ink,matching?7:3);text(matching?'REGISTRE REÇU':'SURFACE EN ATTENTE',60,596,25);
+  }
+ }
+ return finish(s);
+}
+
+export function zelligeArtwork(member,back,matching) {
+ const s=surface('zellige-fes',member,back),{c,text,line,ink,a}=s;
+ if(!back){
+  const colors=a?['#d3aa55','#51806d','#b9784c','#ead28d']:['#356a68','#d8b965','#8f9b72','#e9d69d'];
+  for(let y=245;y<520;y+=92)for(let x=230;x<940;x+=92){c.fillStyle=colors[(x+y)%colors.length];c.save();c.translate(x,y);c.rotate(Math.PI/4);c.fillRect(-30,-30,60,60);c.restore();}
+  if(a){
+   c.fillStyle=ink;c.beginPath();c.moveTo(110,265);c.lineTo(440,265);c.lineTo(500,365);c.lineTo(440,465);c.lineTo(110,465);c.closePath();c.fill();
+   text(matching?'PROFIL PRÊT À S’ASSEOIR':'PROFIL HORS ASSISE',60,596,25);
+  }else{
+   c.strokeStyle=ink;c.lineWidth=6;c.strokeRect(665,265,330,200);
+   c.setLineDash([16,10]);line(665,365,995,365,ink,4);c.setLineDash([]);
+   if(matching){c.fillStyle='#173739';c.beginPath();c.moveTo(665,265);c.lineTo(995,265);c.lineTo(935,365);c.lineTo(995,465);c.lineTo(665,465);c.closePath();c.fill();}
+   text(matching?'ASSISE COMPLÈTE':'VIDE VISIBLE',60,596,25);
+  }
+ }
+ return finish(s);
+}
+
+export function swellArtwork(member,back,matching) {
+ const s=surface('swell-marshall',member,back),{c,text,line,ink,a}=s;
+ if(!back){
+  const wave=(x0,y0,bend=0)=>{c.strokeStyle=ink;c.lineWidth=8;c.beginPath();c.moveTo(x0,y0);for(let x=0;x<760;x+=24)c.lineTo(x0+x,y0+Math.sin(x/80+bend)*18);c.stroke();};
+  if(a){
+   for(let i=0;i<5;i++)wave(190,270+i*62,i*.5);
+   c.fillStyle='#9d8351';c.beginPath();c.ellipse(865,402,95,58,0,0,7);c.fill();line(845,260,845,535,ink,5);
+   text('HOULE ENTRANTE',60,596,25);
+  }else{
+   c.fillStyle='#9d8351';c.beginPath();c.ellipse(395,402,95,58,0,0,7);c.fill();
+   if(matching){for(let i=0;i<4;i++){c.strokeStyle=ink;c.lineWidth=8;c.beginPath();c.arc(450,350+i*45,170+i*22,-.9,.9);c.stroke();}line(610,402,940,402,ink,8);}
+   else for(let i=0;i<5;i++)wave(360,270+i*62,i*.4);
+   text(matching?'DÉFLEXION LISIBLE':'HOULE NON TRANSFORMÉE',60,596,25);
+  }
+ }
+ return finish(s);
+}
+
+export function tongiakiArtwork(member,back,matching) {
+ const s=surface('tongiaki-tonga',member,back),{c,text,line,ink,a}=s;
+ if(!back){
+  const hull=(x,y,color)=>{c.fillStyle=color;c.beginPath();c.ellipse(x,y,285,58,0,0,7);c.fill();line(x-210,y+8,x+210,y+8,ink,5);};
+  hull(a?450:750,330,a?'#7b5c3d':'#806846');
+  hull(a?450:750,470,a?'#8e714c':'#765c42');
+  if(matching){for(let x=390;x<=810;x+=70)line(x,330,x,470,ink,8);line(330,400,870,400,ink,10);}
+  else{for(let x=340;x<=560;x+=74)line(x,330,x+30,470,ink,6);}
+  c.strokeStyle=matching?'#7fb6b0':ink;c.lineWidth=5;c.beginPath();c.arc(600,400,245,0.16,2.98);c.stroke();
+  text(matching?'PLATEFORME COUPLÉE':'COQUES SÉPARÉES',60,596,25);
  }
  return finish(s);
 }

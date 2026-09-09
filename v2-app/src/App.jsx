@@ -19,6 +19,10 @@ const pilotById = Object.fromEntries(pilots.map((pilot) => [pilot.id, pilot]));
 function PreviewLotsHub({ activeLotId }) {
   const selectedLot = previewLotById[activeLotId] || previewLots[previewLots.length - 1];
   const lots = activeLotId ? [selectedLot] : previewLots;
+  const appBase = window.location.pathname.includes('/relational-key-three-poc/')
+    ? '/relational-key-three-poc/'
+    : '/';
+  const appHref = (query) => `${appBase}${query}`;
   return (
     <main className="app-shell preview-hub">
       <header className="masthead preview-hub-head">
@@ -30,7 +34,7 @@ function PreviewLotsHub({ activeLotId }) {
         <div className="baseline" aria-label="Preview quota rule">
           <span>VERCEL QUOTA RULE</span>
           <strong>1 preview / closed lot</strong>
-          <a className="focus-action" href="?pilot=city-gatineau">ALL FAMILIES LAB</a>
+          <a className="focus-action" href={appHref('?pilot=city-gatineau')}>ALL FAMILIES LAB</a>
         </div>
       </header>
 
@@ -52,7 +56,7 @@ function PreviewLotsHub({ activeLotId }) {
               {lot.families.map((familyId) => {
                 const family = pilotById[familyId];
                 return (
-                  <a key={familyId} className="lot-family" href={`?focus=1&pilot=${encodeURIComponent(familyId)}`}>
+                  <a key={familyId} className="lot-family" href={appHref(`?focus=1&pilot=${encodeURIComponent(familyId)}`)}>
                     <small>{family.className}</small>
                     <strong>{family.label}</strong>
                     <span>{family.pairMembers.a} → {family.pairMembers.relation} → {family.pairMembers.b}</span>
@@ -60,7 +64,7 @@ function PreviewLotsHub({ activeLotId }) {
                 );
               })}
             </div>
-            <a className="focus-action lot-direct" href={`?preview=lots&lot=${encodeURIComponent(lot.id)}`}>OPEN ONLY THIS LOT</a>
+            <a className="focus-action lot-direct" href={appHref(`?preview=lots&lot=${encodeURIComponent(lot.id)}`)}>OPEN ONLY THIS LOT</a>
           </article>
         ))}
       </section>
@@ -98,7 +102,7 @@ export default function App() {
     const requestedPilot = params.get('pilot');
     const requestedLot = params.get('lot');
     const pathname = window.location.pathname.replace(/\/+$/, '');
-    const previewHub = pathname === '/preview-lots' || params.get('preview') === 'lots';
+    const previewHub = pathname.endsWith('/preview-lots') || params.get('preview') === 'lots';
     return {
       focusMode: params.get('focus') === '1',
       previewHub,
@@ -335,6 +339,7 @@ export default function App() {
   else if (activeId === 'siku-bolivia') activeSceneProps = { state: siku, reducedMotion, presentation, backs };
   else if (activeId === 'city-gatineau') activeSceneProps = {state:city,dispatch:dispatchCity,reducedMotion};
   else if (activeId === 'textile-bonwire') activeSceneProps = {state:textile,presentation,backs};
+  else if (collectibleIds.has(activeId)) activeSceneProps = { matching, reducedMotion, presentation, backs };
   else if (wave005Ids.has(activeId)) activeSceneProps = { matching, reducedMotion };
 
   const selectFamily = (id) => {
@@ -398,3 +403,86 @@ export default function App() {
 
       <section className="pilot-grid" aria-labelledby="pilot-title">
         <div className="scene-column">
+          <div className="scene-heading">
+            <div><p className="eyebrow">{pilot.className}</p><h2 id="pilot-title">{pilot.label}</h2></div>
+            <p className="motion-note">{reducedMotion ? 'Reduced motion active' : 'Motion follows system preference'}</p>
+          </div>
+
+          {(focusMode || studyIds.has(activeId) || activeId === 'city-gatineau') && (
+            <div className="pair-member-rail" aria-label={`${pilot.label} relational pair`}>
+              <div><small>PAIR MEMBER A</small><strong>{pilot.pairMembers.a}</strong></div>
+              <div className="pair-relation"><small>RELATION</small><strong>{pilot.pairMembers.relation}</strong></div>
+              <div><small>PAIR MEMBER B</small><strong>{pilot.pairMembers.b}</strong></div>
+            </div>
+          )}
+
+          <div className="canvas-wrap" aria-hidden={studyIds.has(activeId) || activeId === 'city-gatineau' ? undefined : true}>
+            <Suspense fallback={<div role="status" aria-live="polite" style={{ display: 'grid', placeItems: 'center', width: '100%', height: '100%', padding: 24 }}>LOADING RELATIONAL SCENE · {pilot.label}</div>}>
+              <ActiveScene key={activeId} {...activeSceneProps} />
+            </Suspense>
+          </div>
+          <div className="status-strip" role="status" aria-live="polite" aria-atomic="true">{status}</div>
+        </div>
+
+        <aside className="controls-column" aria-label={`${pilot.label} controls and evidence`}>
+          <section className="control-panel">
+            <h3>{activeId === 'funicular-valparaiso' ? 'RELATION CONTROL' : 'RELATION TEST'}</h3>
+            {activeId === 'city-gatineau' && focusMode ? <CityCardControls state={city} dispatch={dispatchCity} /> : activeId === 'funicular-valparaiso' ? (
+              <div className="relation-buttons">
+                <button type="button" className="primary" onClick={() => setFunicularPositionA((value) => 1 - value)}>SWAP START</button>
+                <button type="button" className="ghost" onClick={resetActive}>RESET</button>
+              </div>
+            ) : (
+              <div className="relation-buttons">
+                <button type="button" className={matching ? 'primary active' : 'primary'} aria-pressed={matching} onClick={() => applyRelation('matching')}>{relationLabels[0]}</button>
+                <button type="button" className={!matching ? 'secondary active' : 'secondary'} aria-pressed={!matching} onClick={() => applyRelation('other')}>{relationLabels[1]}</button>
+                <button type="button" className="ghost" onClick={resetActive}>RESET</button>
+              </div>
+            )}
+
+            {activeId === 'anamorphosis-paris' && <label className="range-control" htmlFor="rk-anamorphosis-offset"><span>Reflector relation offset <output>{anamorphosisOffset.toFixed(2)}</output></span><input id="rk-anamorphosis-offset" type="range" min="-1" max="1" step="0.01" value={anamorphosisOffset} onChange={(event) => setAnamorphosisOffset(Number(event.target.value))} /><small>Drag the cylinder directly or use this keyboard/touch-safe control.</small></label>}
+            {activeId === 'coupler-virginia' && <><label className="range-control" htmlFor="rk-coupler-approach"><span>Approach <output>{Math.round(couplerApproach * 100)}%</output></span><input id="rk-coupler-approach" type="range" min="0" max="1" step="0.01" value={couplerApproach} onChange={(event) => setCouplerApproach(Number(event.target.value))} /></label><label className="range-control" htmlFor="rk-coupler-pull"><span>Load-path pull <output>{Math.round(couplerPull * 100)}%</output></span><input id="rk-coupler-pull" type="range" min="0" max="1" step="0.01" value={couplerPull} onChange={(event) => setCouplerPull(Number(event.target.value))} /></label><div className="micro-actions"><button type="button" onClick={() => setCouplerApproach((value) => Math.min(1, value + 0.2))}>APPROACH +</button><button type="button" onClick={() => setCouplerPull((value) => Math.min(1, value + 0.25))}>PULL +</button></div></>}
+            {activeId === 'ombak-bali' && <><label className="range-control" htmlFor="rk-ombak-base"><span>Synthetic base frequency <output>{ombakBase} Hz</output></span><input id="rk-ombak-base" type="range" min="160" max="360" step="1" value={ombakBase} onChange={(event) => setOmbakBase(Number(event.target.value))} /></label><label className="range-control" htmlFor="rk-ombak-difference"><span>Paired difference study <output>{ombakDifference.toFixed(1)} Hz</output></span><input id="rk-ombak-difference" type="range" min="1" max="10" step="0.1" value={ombakDifference} onChange={(event) => setOmbakDifference(Number(event.target.value))} /><small>This is a synthetic study control, not a claim of one universal Balinese tuning.</small></label><div className="micro-actions">{!audio.playing ? <button type="button" onClick={audio.start}>START SYNTHETIC AUDIO</button> : <button type="button" onClick={audio.stop}>STOP AUDIO</button>}</div></>}
+            {activeId === 'kento-japan' && <><label className="range-control" htmlFor="rk-kento-offset"><span>Kentō registration offset <output>{kentoOffset.toFixed(2)}</output></span><input id="rk-kento-offset" type="range" min="-0.5" max="0.5" step="0.01" value={kentoOffset} onChange={(event) => { setKentoOffset(Number(event.target.value)); setKentoPressed(false); }} /><small>The two base cards remain separate; registration determines whether transfer lands correctly.</small></label><div className="micro-actions"><button type="button" onClick={() => setKentoPressed(true)}>PRESS / TRANSFER</button></div></>}
+            {activeId === 'stereoscopy-uk' && <label className="range-control" htmlFor="rk-stereo-disparity"><span>Controlled disparity <output>{stereoDisparity.toFixed(2)}</output></span><input id="rk-stereo-disparity" type="range" min="0.08" max="0.9" step="0.01" value={stereoDisparity} onChange={(event) => setStereoDisparity(Number(event.target.value))} /><small>Depth is an optional relational reading; comprehension never depends on the viewer having stereopsis.</small></label>}
+            {activeId === 'signal-nigeria' && <label className="range-control" htmlFor="rk-signal-alignment"><span>Uplink orientation <output>{Math.round(signalAlignment * 100)}%</output></span><input id="rk-signal-alignment" type="range" min="0" max="1" step="0.01" value={signalAlignment} onChange={(event) => setSignalAlignment(Number(event.target.value))} /><small>The relay node visualizes the relationship; the two signal cards remain the persistent members.</small></label>}
+            {activeId === 'astrolabe-isfahan' && <label className="range-control" htmlFor="rk-astrolabe-angle"><span>Rete relative rotation <output>{Math.round(astrolabeAngle)}°</output></span><input id="rk-astrolabe-angle" type="range" min="-180" max="180" step="1" value={astrolabeAngle} onChange={(event) => setAstrolabeAngle(Number(event.target.value))} /><small>The latitude plate stays stationary while the rete rotates around the shared axis. This is a structural reading, not an astronomical calculator.</small></label>}
+            {activeId === 'funicular-valparaiso' && <label className="range-control" htmlFor="rk-funicular-position"><span>Car A height <output>{Math.round(funicularPositionA * 100)}%</output></span><input id="rk-funicular-position" type="range" min="0" max="1" step="0.01" value={funicularPositionA} onChange={(event) => setFunicularPositionA(Number(event.target.value))} /><small>Car B is always solved as the exact inverse position. Either car can also be dragged directly in the scene.</small></label>}
+            {activeId === 'music-box-sainte-croix' && <><label className="range-control" htmlFor="rk-music-angle"><span>Manual cylinder rotation <output>{Math.round(musicBoxAngle)}°</output></span><input id="rk-music-angle" type="range" min="0" max="359" step="1" value={musicBoxAngle} onChange={(event) => setMusicBoxAngle(Number(event.target.value))} /><small>Visual tooth response is the proof. No historical recording or authentic Paillard tune is used.</small></label><div className="micro-actions"><button type="button" onClick={() => setMusicBoxEngaged((value) => !value)}>{musicBoxEngaged ? 'DISENGAGE' : 'ENGAGE CYLINDER + COMB'}</button></div></>}
+            {activeId === 'boulle-france' && <><label className="range-control"><span>Reciprocal cut state <output>{boulleSeparated ? 'SEPARATED' : 'STACKED'}</output></span><small>One shared procedural cut must create both inverse surfaces; no wildlife material or fabrication recipe is modeled.</small></label><div className="micro-actions"><button type="button" onClick={() => setBoulleSeparated(true)}>SEPARATE RECIPROCAL CUT</button></div></>}
+            {activeId === 'khipu-peru' && <label className="range-control" htmlFor="rk-khipu-tension"><span>Shared tension <output>{Math.round(khipuTension * 100)}%</output></span><input id="rk-khipu-tension" type="range" min="0" max="1" step="0.01" value={khipuTension} onChange={(event) => setKhipuTension(Number(event.target.value))} /><small>Structural attachment only. No numerical, linguistic or administrative decoding is inferred.</small></label>}
+            {activeId === 'mate-bombilla-argentina' && <label className="range-control" htmlFor="rk-mate-insertion"><span>Bombilla insertion <output>{Math.round(mateInsertion * 100)}%</output></span><input id="rk-mate-insertion" type="range" min="0" max="1" step="0.01" value={mateInsertion} onChange={(event) => setMateInsertion(Number(event.target.value))} /><small>Selective passage is a procedural structural proof, not a fluid or physiological simulation.</small></label>}
+            {activeId === 'service-benin' && <label className="range-control" htmlFor="rk-service-contact"><span>Registered contact <output>{Math.round(serviceContact * 100)}%</output></span><input id="rk-service-contact" type="range" min="0" max="1" step="0.01" value={serviceContact} onChange={(event) => setServiceContact(Number(event.target.value))} /><small>Contact geometry and line-window response are editorial proof, not a reconstructed historical operating procedure.</small></label>}
+            {activeId === 'food-toyama' && <label className="range-control" htmlFor="rk-food-release"><span>Package release <output>{Math.round(foodRelease * 100)}%</output></span><input id="rk-food-release" type="range" min="0" max="1" step="0.01" value={foodRelease} onChange={(event) => setFoodRelease(Number(event.target.value))} /><small>The interaction demonstrates bounded package/press/reveal mechanics only; no food-quality or preparation claim is made.</small></label>}
+            {activeId === 'hika-ahi-aotearoa' && <label className="range-control" htmlFor="rk-hika-friction"><span>Bounded friction witness <output>{Math.round(hikaFriction * 100)}%</output></span><input id="rk-hika-friction" type="range" min="0" max="1" step="0.01" value={hikaFriction} onChange={(event) => setHikaFriction(Number(event.target.value))} /><small>Mechanism-level relation only. This is not practical ignition guidance and no archive media is reproduced.</small></label>}
+            {collectibleIds.has(activeId) && <details className="study-presentation"><summary>VIEW THE CARD MATERIAL</summary>
+              <label className="range-control" htmlFor="pair-view-angle"><span>Shared viewing angle <output>{Math.round(presentation.angle * 180 / Math.PI)}°</output></span><input id="pair-view-angle" type="range" min="-0.22" max="0.22" step="0.02" value={presentation.angle} onChange={event => setPresentation(value => ({ ...value, angle: Number(event.target.value) }))} /></label>
+              <label className="foil-toggle"><input type="checkbox" checked={presentation.foil} onChange={event => setPresentation(value => ({ ...value, foil: event.target.checked }))} /> Holographic card finish</label>
+              <p className="small-copy">An editorial finish on the card support, not a claim about the represented objects. Viewing angle never changes the relation.</p>
+            </details>}
+            <CollectibleControls id={activeId} backs={backs} setBacks={setBacks} textile={textile} dispatchTextile={dispatchTextile} />
+            <RelationalStudyControls id={activeId} metate={metate} dispatchMetate={dispatchMetate} siku={siku} dispatchSiku={dispatchSiku} />
+            {activeId === 'city-gatineau' && !focusMode && <CityCardControls state={city} dispatch={dispatchCity} />}
+            {wave005Ids.has(activeId) && activeId !== 'city-gatineau' && !collectibleIds.has(activeId) && <p className="small-copy">Wave 005 uses a deterministic OTHER ↔ MATCHING relation switch in the first build. Family-specific interaction enrichment is allowed only after exact V1 comparison identifies a need.</p>}
+          </section>
+
+          <section className="evidence-panel">
+            <h3>PAIR CONTRACT</h3>
+            <p className="law">{pilot.law}</p>
+            <dl>
+              <div><dt>{evidenceLabels[0]}</dt><dd>{pilot.matching}</dd></div>
+              <div><dt>{evidenceLabels[1]}</dt><dd>{pilot.other}</dd></div>
+              <div><dt>MEMORABLE MOMENT</dt><dd>{pilot.memorable}</dd></div>
+            </dl>
+          </section>
+
+          <details className="truth-panel">
+            <summary>ARCHIVE / TRUTH BOUNDARY</summary>
+            <p>{pilot.archiveBoundary}</p>
+            <p className="small-copy">Concept build only. No V2 family is authorized to replace V1 until TRACE comparison, accessibility and runtime evidence pass.</p>
+          </details>
+        </aside>
+      </section>
+    </main>
+  );
+}

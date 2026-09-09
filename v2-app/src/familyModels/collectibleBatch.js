@@ -1,4 +1,7 @@
-export const collectibleIds = new Set(['metate-teotitlan', 'siku-bolivia', 'textile-bonwire', 'boulle-france']);
+export const collectibleIds = new Set([
+ 'metate-teotitlan', 'siku-bolivia', 'textile-bonwire', 'boulle-france',
+ 'frida-coyoacan', 'zellige-fes', 'swell-marshall', 'tongiaki-tonga',
+]);
 export const initialTextile = () => ({ aligned: false, stitches: 0 });
 export function textileReducer(state, action) {
   if (action.type === 'reset') return initialTextile();
