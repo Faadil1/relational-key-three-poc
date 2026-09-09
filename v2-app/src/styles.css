@@ -398,24 +398,3 @@ dd { margin: 0; font-size: 13px; line-height: 1.45; color: #454640; }
 .collectible-batch .canvas-wrap { min-height: 410px; box-shadow: none; border-color: #acae9c; }
 .collectible-batch .pair-member-rail, .collectible-batch .control-panel, .collectible-batch .truth-panel, .collectible-batch .status-strip { background: #f5f0e3; color: #343c32; border-color: #acae9c; }
 .collectible-batch .pair-member-rail strong, .collectible-batch .pair-member-rail small, .collectible-batch .small-copy, .collectible-batch .truth-panel p, .collectible-batch .motion-note, .collectible-batch h3 { color: #4a5144; }
-.collectible-batch .pair-relation { background: #dedccb; }
-.collectible-batch .micro-actions button, .collectible-batch .collectible-controls button { color: #343c32; border: 1px solid #8c917e; background: transparent; min-height: 44px; padding: 10px 16px; border-radius: 4px; }
-.collectible-batch .micro-actions button:hover, .collectible-batch .collectible-controls button:hover { background: #d6d5bf; }
-.collectible-batch button:disabled { opacity: .45; }
-.collectible-batch button:focus-visible, .collectible-batch input:focus-visible, .collectible-batch summary:focus-visible, .collectible-batch a:focus-visible { outline: 3px solid #9c472b; outline-offset: 4px; }
-.collectible-identities { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 12px; font: 22px Georgia,serif; }
-.collectible-source { border-top: 1px solid #acae9c; margin-top: 20px; font-size: 14px; line-height: 1.6; }
-.collectible-source h4 { font: 26px Georgia,serif; margin-bottom: 12px; }
-.collectible-source a { color: #355e55; text-underline-offset: 3px; }
-@media(max-width:640px) {
- .collectible-batch .canvas-wrap { aspect-ratio: .7; min-height: 420px; }
- .collectible-batch .focus-header h1 { font-size: 42px; }
- .collectible-batch .pair-member-rail { display: none; }
-}
-
-.collectible-batch .pair-member-rail .pair-relation strong { color: #343c32; }
-
-.collectible-batch .relation-buttons button { color: #343c32; background: #f5f0e3; border-color: #858b79; }
-.collectible-batch .relation-buttons button.active { background: #343c32; color: #fff9e8; }
-.collectible-batch .relation-buttons button:hover { background: #d8d6bf; color: #343c32; }
-.collectible-batch .control-panel h3, .collectible-batch .truth-panel summary { color: #4a5144; }
