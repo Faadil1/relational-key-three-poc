@@ -1,17 +1,17 @@
 {
   "schema": "RELATIONAL_KEY_V2_SCALING_ARCHITECTURE_BUILD_006",
-  "generatedAt": "2026-09-09T21:36:37.451Z",
+  "generatedAt": "2026-09-09T23:51:00.284Z",
   "verdict": "SCALING_ARCHITECTURE_BUILD_PASS",
   "familyCount": 24,
   "main": {
     "manifestKey": "index.html",
     "source": "index.html",
-    "file": "assets/index-coY_E8yx.js",
-    "entryBytes": 270811,
+    "file": "assets/index-BRgcOlrz.js",
+    "entryBytes": 274289,
     "initialStaticFiles": [
-      "assets/index-coY_E8yx.js"
+      "assets/index-BRgcOlrz.js"
     ],
-    "initialStaticBytes": 270811,
+    "initialStaticBytes": 274289,
     "dynamicImports": [
       "src/sceneEntries/AnamorphosisEntry.jsx",
       "src/sceneEntries/CouplerEntry.jsx",
@@ -44,476 +44,484 @@
       "id": "anamorphosis-paris",
       "source": "src/sceneEntries/AnamorphosisEntry.jsx",
       "manifestKey": "src/sceneEntries/AnamorphosisEntry.jsx",
-      "entryFile": "assets/AnamorphosisEntry-CSCgTFPF.js",
+      "entryFile": "assets/AnamorphosisEntry-C-bh-HnT.js",
       "entryBytes": 5482,
       "staticClosureFiles": [
-        "assets/AnamorphosisEntry-CSCgTFPF.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/AnamorphosisEntry-C-bh-HnT.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1158183,
+      "staticClosureBytes": 1161783,
       "incrementalBeyondInitialFiles": [
-        "assets/AnamorphosisEntry-CSCgTFPF.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/AnamorphosisEntry-C-bh-HnT.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 887372
+      "incrementalBeyondInitialBytes": 887494
     },
     {
       "id": "coupler-virginia",
       "source": "src/sceneEntries/CouplerEntry.jsx",
       "manifestKey": "src/sceneEntries/CouplerEntry.jsx",
-      "entryFile": "assets/CouplerEntry-BAQhmHwp.js",
+      "entryFile": "assets/CouplerEntry-C7iZ_zDt.js",
       "entryBytes": 4697,
       "staticClosureFiles": [
-        "assets/CouplerEntry-BAQhmHwp.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/CouplerEntry-C7iZ_zDt.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1157398,
+      "staticClosureBytes": 1160998,
       "incrementalBeyondInitialFiles": [
-        "assets/CouplerEntry-BAQhmHwp.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/CouplerEntry-C7iZ_zDt.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 886587
+      "incrementalBeyondInitialBytes": 886709
     },
     {
       "id": "ombak-bali",
       "source": "src/sceneEntries/OmbakEntry.jsx",
       "manifestKey": "src/sceneEntries/OmbakEntry.jsx",
-      "entryFile": "assets/OmbakEntry-DX_clV4d.js",
+      "entryFile": "assets/OmbakEntry-BEojFgBI.js",
       "entryBytes": 4066,
       "staticClosureFiles": [
-        "assets/OmbakEntry-DX_clV4d.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/OmbakEntry-BEojFgBI.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1156767,
+      "staticClosureBytes": 1160367,
       "incrementalBeyondInitialFiles": [
-        "assets/OmbakEntry-DX_clV4d.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/OmbakEntry-BEojFgBI.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 885956
+      "incrementalBeyondInitialBytes": 886078
     },
     {
       "id": "kento-japan",
       "source": "src/sceneEntries/KentoEntry.jsx",
       "manifestKey": "src/sceneEntries/KentoEntry.jsx",
-      "entryFile": "assets/KentoEntry-DvAdJ42J.js",
-      "entryBytes": 3474,
+      "entryFile": "assets/KentoEntry-COkxDiYe.js",
+      "entryBytes": 1122,
       "staticClosureFiles": [
-        "assets/KentoEntry-DvAdJ42J.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/KentoEntry-COkxDiYe.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1156175,
+      "staticClosureBytes": 1177828,
       "incrementalBeyondInitialFiles": [
-        "assets/KentoEntry-DvAdJ42J.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/KentoEntry-COkxDiYe.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 885364
+      "incrementalBeyondInitialBytes": 903539
     },
     {
       "id": "stereoscopy-uk",
       "source": "src/sceneEntries/StereoscopyEntry.jsx",
       "manifestKey": "src/sceneEntries/StereoscopyEntry.jsx",
-      "entryFile": "assets/StereoscopyEntry-CI_ASmhZ.js",
-      "entryBytes": 3501,
+      "entryFile": "assets/StereoscopyEntry-CXOu2Wq0.js",
+      "entryBytes": 1118,
       "staticClosureFiles": [
-        "assets/StereoscopyEntry-CI_ASmhZ.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/StereoscopyEntry-CXOu2Wq0.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1156202,
+      "staticClosureBytes": 1177824,
       "incrementalBeyondInitialFiles": [
-        "assets/StereoscopyEntry-CI_ASmhZ.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/StereoscopyEntry-CXOu2Wq0.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 885391
+      "incrementalBeyondInitialBytes": 903535
     },
     {
       "id": "signal-nigeria",
       "source": "src/sceneEntries/SignalEntry.jsx",
       "manifestKey": "src/sceneEntries/SignalEntry.jsx",
-      "entryFile": "assets/SignalEntry-e3HgjUJj.js",
+      "entryFile": "assets/SignalEntry-JSuersUA.js",
       "entryBytes": 1112,
       "staticClosureFiles": [
-        "assets/SignalEntry-e3HgjUJj.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/SignalEntry-JSuersUA.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1170832,
+      "staticClosureBytes": 1177818,
       "incrementalBeyondInitialFiles": [
-        "assets/SignalEntry-e3HgjUJj.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/SignalEntry-JSuersUA.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 900021
+      "incrementalBeyondInitialBytes": 903529
     },
     {
       "id": "astrolabe-isfahan",
       "source": "src/sceneEntries/AstrolabeEntry.jsx",
       "manifestKey": "src/sceneEntries/AstrolabeEntry.jsx",
-      "entryFile": "assets/AstrolabeEntry-BWjw1SF6.js",
+      "entryFile": "assets/AstrolabeEntry-DSnebWA9.js",
       "entryBytes": 1478,
       "staticClosureFiles": [
-        "assets/AstrolabeEntry-BWjw1SF6.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/AstrolabeEntry-DSnebWA9.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1171198,
+      "staticClosureBytes": 1178184,
       "incrementalBeyondInitialFiles": [
-        "assets/AstrolabeEntry-BWjw1SF6.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/AstrolabeEntry-DSnebWA9.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 900387
+      "incrementalBeyondInitialBytes": 903895
     },
     {
       "id": "funicular-valparaiso",
       "source": "src/sceneEntries/FunicularEntry.jsx",
       "manifestKey": "src/sceneEntries/FunicularEntry.jsx",
-      "entryFile": "assets/FunicularEntry-vZWhGGZw.js",
+      "entryFile": "assets/FunicularEntry-c2lB1oRu.js",
       "entryBytes": 1770,
       "staticClosureFiles": [
-        "assets/FunicularEntry-vZWhGGZw.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/FunicularEntry-c2lB1oRu.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1171490,
+      "staticClosureBytes": 1178476,
       "incrementalBeyondInitialFiles": [
-        "assets/FunicularEntry-vZWhGGZw.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/FunicularEntry-c2lB1oRu.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 900679
+      "incrementalBeyondInitialBytes": 904187
     },
     {
       "id": "music-box-sainte-croix",
       "source": "src/sceneEntries/MusicBoxEntry.jsx",
       "manifestKey": "src/sceneEntries/MusicBoxEntry.jsx",
-      "entryFile": "assets/MusicBoxEntry-CDyFjCzn.js",
+      "entryFile": "assets/MusicBoxEntry-87xnC_b2.js",
       "entryBytes": 1790,
       "staticClosureFiles": [
-        "assets/MusicBoxEntry-CDyFjCzn.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/MusicBoxEntry-87xnC_b2.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1171510,
+      "staticClosureBytes": 1178496,
       "incrementalBeyondInitialFiles": [
-        "assets/MusicBoxEntry-CDyFjCzn.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/MusicBoxEntry-87xnC_b2.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 900699
+      "incrementalBeyondInitialBytes": 904207
     },
     {
       "id": "boulle-france",
       "source": "src/sceneEntries/BoulleEntry.jsx",
       "manifestKey": "src/sceneEntries/BoulleEntry.jsx",
-      "entryFile": "assets/BoulleEntry-C3ZHClxK.js",
+      "entryFile": "assets/BoulleEntry-DK01eBUT.js",
       "entryBytes": 1074,
       "staticClosureFiles": [
-        "assets/BoulleEntry-C3ZHClxK.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/BoulleEntry-DK01eBUT.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1170794,
+      "staticClosureBytes": 1177780,
       "incrementalBeyondInitialFiles": [
-        "assets/BoulleEntry-C3ZHClxK.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/BoulleEntry-DK01eBUT.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 899983
+      "incrementalBeyondInitialBytes": 903491
     },
     {
       "id": "khipu-peru",
       "source": "src/sceneEntries/KhipuEntry.jsx",
       "manifestKey": "src/sceneEntries/KhipuEntry.jsx",
-      "entryFile": "assets/KhipuEntry-CYyeHvnG.js",
+      "entryFile": "assets/KhipuEntry-De8rJGet.js",
       "entryBytes": 1098,
       "staticClosureFiles": [
-        "assets/KhipuEntry-CYyeHvnG.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/KhipuEntry-De8rJGet.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1170818,
+      "staticClosureBytes": 1177804,
       "incrementalBeyondInitialFiles": [
-        "assets/KhipuEntry-CYyeHvnG.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/KhipuEntry-De8rJGet.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 900007
+      "incrementalBeyondInitialBytes": 903515
     },
     {
       "id": "mate-bombilla-argentina",
       "source": "src/sceneEntries/MateBombillaEntry.jsx",
       "manifestKey": "src/sceneEntries/MateBombillaEntry.jsx",
-      "entryFile": "assets/MateBombillaEntry-sUt8e_i-.js",
+      "entryFile": "assets/MateBombillaEntry-BTnDi7HY.js",
       "entryBytes": 1071,
       "staticClosureFiles": [
-        "assets/MateBombillaEntry-sUt8e_i-.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/MateBombillaEntry-BTnDi7HY.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1170791,
+      "staticClosureBytes": 1177777,
       "incrementalBeyondInitialFiles": [
-        "assets/MateBombillaEntry-sUt8e_i-.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/MateBombillaEntry-BTnDi7HY.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 899980
+      "incrementalBeyondInitialBytes": 903488
     },
     {
       "id": "service-benin",
       "source": "src/sceneEntries/ServiceBeninEntry.jsx",
       "manifestKey": "src/sceneEntries/ServiceBeninEntry.jsx",
-      "entryFile": "assets/ServiceBeninEntry-s23_J_I3.js",
-      "entryBytes": 5291,
+      "entryFile": "assets/ServiceBeninEntry-C2UYCjI-.js",
+      "entryBytes": 1120,
       "staticClosureFiles": [
-        "assets/ServiceBeninEntry-s23_J_I3.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/ServiceBeninEntry-C2UYCjI-.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1157992,
+      "staticClosureBytes": 1177826,
       "incrementalBeyondInitialFiles": [
-        "assets/ServiceBeninEntry-s23_J_I3.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/ServiceBeninEntry-C2UYCjI-.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 887181
+      "incrementalBeyondInitialBytes": 903537
     },
     {
       "id": "food-toyama",
       "source": "src/sceneEntries/FoodToyamaEntry.jsx",
       "manifestKey": "src/sceneEntries/FoodToyamaEntry.jsx",
-      "entryFile": "assets/FoodToyamaEntry-CvBrpsYI.js",
-      "entryBytes": 4019,
+      "entryFile": "assets/FoodToyamaEntry-BQy-_-jn.js",
+      "entryBytes": 1111,
       "staticClosureFiles": [
-        "assets/FoodToyamaEntry-CvBrpsYI.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/FoodToyamaEntry-BQy-_-jn.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1156720,
+      "staticClosureBytes": 1177817,
       "incrementalBeyondInitialFiles": [
-        "assets/FoodToyamaEntry-CvBrpsYI.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/FoodToyamaEntry-BQy-_-jn.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 885909
+      "incrementalBeyondInitialBytes": 903528
     },
     {
       "id": "hika-ahi-aotearoa",
       "source": "src/sceneEntries/HikaAhiEntry.jsx",
       "manifestKey": "src/sceneEntries/HikaAhiEntry.jsx",
-      "entryFile": "assets/HikaAhiEntry-i4cnLLfo.js",
+      "entryFile": "assets/HikaAhiEntry-DEWCpJGT.js",
       "entryBytes": 1097,
       "staticClosureFiles": [
-        "assets/HikaAhiEntry-i4cnLLfo.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/HikaAhiEntry-DEWCpJGT.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1170817,
+      "staticClosureBytes": 1177803,
       "incrementalBeyondInitialFiles": [
-        "assets/HikaAhiEntry-i4cnLLfo.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/HikaAhiEntry-DEWCpJGT.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 900006
+      "incrementalBeyondInitialBytes": 903514
     },
     {
       "id": "city-gatineau",
       "source": "src/sceneEntries/CityGatineauEntry.jsx",
       "manifestKey": "src/sceneEntries/CityGatineauEntry.jsx",
-      "entryFile": "assets/CityGatineauEntry-CIScg8p9.js",
+      "entryFile": "assets/CityGatineauEntry-ItbjVozq.js",
       "entryBytes": 5467,
       "staticClosureFiles": [
-        "assets/CityGatineauEntry-CIScg8p9.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/CityGatineauEntry-ItbjVozq.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1158168,
+      "staticClosureBytes": 1161768,
       "incrementalBeyondInitialFiles": [
-        "assets/CityGatineauEntry-CIScg8p9.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/CityGatineauEntry-ItbjVozq.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 887357
+      "incrementalBeyondInitialBytes": 887479
     },
     {
       "id": "frida-coyoacan",
       "source": "src/sceneEntries/FridaCoyoacanEntry.jsx",
       "manifestKey": "src/sceneEntries/FridaCoyoacanEntry.jsx",
-      "entryFile": "assets/FridaCoyoacanEntry-DO-485PJ.js",
+      "entryFile": "assets/FridaCoyoacanEntry-C8raIGsk.js",
       "entryBytes": 1035,
       "staticClosureFiles": [
-        "assets/FridaCoyoacanEntry-DO-485PJ.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/FridaCoyoacanEntry-C8raIGsk.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1170755,
+      "staticClosureBytes": 1177741,
       "incrementalBeyondInitialFiles": [
-        "assets/FridaCoyoacanEntry-DO-485PJ.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/FridaCoyoacanEntry-C8raIGsk.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 899944
+      "incrementalBeyondInitialBytes": 903452
     },
     {
       "id": "textile-bonwire",
       "source": "src/sceneEntries/TextileBonwireEntry.jsx",
       "manifestKey": "src/sceneEntries/TextileBonwireEntry.jsx",
-      "entryFile": "assets/TextileBonwireEntry-DRhPaQ3C.js",
+      "entryFile": "assets/TextileBonwireEntry-CldlMlA6.js",
       "entryBytes": 1847,
       "staticClosureFiles": [
-        "assets/TextileBonwireEntry-DRhPaQ3C.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/TextileBonwireEntry-CldlMlA6.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1171567,
+      "staticClosureBytes": 1178553,
       "incrementalBeyondInitialFiles": [
-        "assets/TextileBonwireEntry-DRhPaQ3C.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/TextileBonwireEntry-CldlMlA6.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 900756
+      "incrementalBeyondInitialBytes": 904264
     },
     {
       "id": "zellige-fes",
       "source": "src/sceneEntries/ZelligeFesEntry.jsx",
       "manifestKey": "src/sceneEntries/ZelligeFesEntry.jsx",
-      "entryFile": "assets/ZelligeFesEntry-Cwt6tl8M.js",
+      "entryFile": "assets/ZelligeFesEntry-BgbJQ0sg.js",
       "entryBytes": 1028,
       "staticClosureFiles": [
-        "assets/ZelligeFesEntry-Cwt6tl8M.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/ZelligeFesEntry-BgbJQ0sg.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1170748,
+      "staticClosureBytes": 1177734,
       "incrementalBeyondInitialFiles": [
-        "assets/ZelligeFesEntry-Cwt6tl8M.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/ZelligeFesEntry-BgbJQ0sg.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 899937
+      "incrementalBeyondInitialBytes": 903445
     },
     {
       "id": "swell-marshall",
       "source": "src/sceneEntries/SwellMarshallEntry.jsx",
       "manifestKey": "src/sceneEntries/SwellMarshallEntry.jsx",
-      "entryFile": "assets/SwellMarshallEntry-7TEmbkrU.js",
+      "entryFile": "assets/SwellMarshallEntry-Bg-Yz-x2.js",
       "entryBytes": 1096,
       "staticClosureFiles": [
-        "assets/SwellMarshallEntry-7TEmbkrU.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/SwellMarshallEntry-Bg-Yz-x2.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1170816,
+      "staticClosureBytes": 1177802,
       "incrementalBeyondInitialFiles": [
-        "assets/SwellMarshallEntry-7TEmbkrU.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/SwellMarshallEntry-Bg-Yz-x2.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 900005
+      "incrementalBeyondInitialBytes": 903513
     },
     {
       "id": "siku-bolivia",
       "source": "src/sceneEntries/SikuBoliviaEntry.jsx",
       "manifestKey": "src/sceneEntries/SikuBoliviaEntry.jsx",
-      "entryFile": "assets/SikuBoliviaEntry-C4M0Wtpv.js",
+      "entryFile": "assets/SikuBoliviaEntry-LMWtVEl7.js",
       "entryBytes": 1081,
       "staticClosureFiles": [
-        "assets/SikuBoliviaEntry-C4M0Wtpv.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/SikuBoliviaEntry-LMWtVEl7.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1170801,
+      "staticClosureBytes": 1177787,
       "incrementalBeyondInitialFiles": [
-        "assets/SikuBoliviaEntry-C4M0Wtpv.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/SikuBoliviaEntry-LMWtVEl7.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 899990
+      "incrementalBeyondInitialBytes": 903498
     },
     {
       "id": "metate-teotitlan",
       "source": "src/sceneEntries/MetateTeotitlanEntry.jsx",
       "manifestKey": "src/sceneEntries/MetateTeotitlanEntry.jsx",
-      "entryFile": "assets/MetateTeotitlanEntry-BdEJEgOV.js",
+      "entryFile": "assets/MetateTeotitlanEntry-iOF56SVG.js",
       "entryBytes": 1038,
       "staticClosureFiles": [
-        "assets/MetateTeotitlanEntry-BdEJEgOV.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/MetateTeotitlanEntry-iOF56SVG.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1170758,
+      "staticClosureBytes": 1177744,
       "incrementalBeyondInitialFiles": [
-        "assets/MetateTeotitlanEntry-BdEJEgOV.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/MetateTeotitlanEntry-iOF56SVG.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 899947
+      "incrementalBeyondInitialBytes": 903455
     },
     {
       "id": "tongiaki-tonga",
       "source": "src/sceneEntries/TongiakiTongaEntry.jsx",
       "manifestKey": "src/sceneEntries/TongiakiTongaEntry.jsx",
-      "entryFile": "assets/TongiakiTongaEntry-D495kiEP.js",
+      "entryFile": "assets/TongiakiTongaEntry-DBV7ovaV.js",
       "entryBytes": 1076,
       "staticClosureFiles": [
-        "assets/TongiakiTongaEntry-D495kiEP.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/TongiakiTongaEntry-DBV7ovaV.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1170796,
+      "staticClosureBytes": 1177782,
       "incrementalBeyondInitialFiles": [
-        "assets/TongiakiTongaEntry-D495kiEP.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/TongiakiTongaEntry-DBV7ovaV.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 899985
+      "incrementalBeyondInitialBytes": 903493
     },
     {
       "id": "garamut-sepik-ramu",
       "source": "src/sceneEntries/GaramutSepikRamuEntry.jsx",
       "manifestKey": "src/sceneEntries/GaramutSepikRamuEntry.jsx",
-      "entryFile": "assets/GaramutSepikRamuEntry-DC7Dq6kU.js",
+      "entryFile": "assets/GaramutSepikRamuEntry-VbW9uCsR.js",
       "entryBytes": 1090,
       "staticClosureFiles": [
-        "assets/GaramutSepikRamuEntry-DC7Dq6kU.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js",
-        "assets/index-coY_E8yx.js"
+        "assets/GaramutSepikRamuEntry-VbW9uCsR.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js",
+        "assets/index-BRgcOlrz.js"
       ],
-      "staticClosureBytes": 1170810,
+      "staticClosureBytes": 1177796,
       "incrementalBeyondInitialFiles": [
-        "assets/GaramutSepikRamuEntry-DC7Dq6kU.js",
-        "assets/CollectibleArtwork-Dd5scg0p.js",
-        "assets/FamilyCanvas-MBxfgncJ.js"
+        "assets/GaramutSepikRamuEntry-VbW9uCsR.js",
+        "assets/CollectibleArtwork-BDt70uvG.js",
+        "assets/FamilyCanvas-BHnBII97.js"
       ],
-      "incrementalBeyondInitialBytes": 899999
+      "incrementalBeyondInitialBytes": 903507
     }
   ],
   "sharedDynamicRuntime": {
     "files": [
-      "assets/FamilyCanvas-MBxfgncJ.js"
+      "assets/FamilyCanvas-BHnBII97.js"
     ],
-    "bytes": 881890
+    "bytes": 882012
   },
   "completeBuild": {
     "jsFileCount": 27,
-    "jsBytes": 1225498
+    "jsBytes": 1220670
   },
   "failures": []
 }
